@@ -1,4 +1,4 @@
-# content-catalog
+# Cloud SIEM Content Catalog
 This repository serves as a single place to view Cloud SIEM content (Rules, Mappers, Parsers, and Normalization Schema) in both markdown form and CSVs. This catalog is automatically generated based on content included out of the box as it is released. Changes manually introduced to individual markdown files will be overwritten by said automation.
 
 # How do I use it?
