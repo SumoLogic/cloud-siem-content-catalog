@@ -5,8 +5,8 @@
 |File|Description|
 |----|-----------|
 |[rules.csv](rules.csv)|The entire rule set in a CSV|
-|[threat_rules.csv](threat_rules.csv)|Each [normalized threat rule](https://help.sumologic.com/Cloud_SIEM_Enterprise/CSE_Schema/Field_Mapping_for_Security_Event_Sources) and its assoicated mappings using the `threat_ruleType` schema field.|
-|[auth_rules.csv](auth_rules.csv)|Each [normalized authentication rule](https://help.sumologic.com/Cloud_SIEM_Enterprise/CSE_Rules/Normalized_Authentication_Rules) and its assoicated mappings using the `normalizedAction` schema field.|
+|[threat_rules.csv](threat_rules.csv)|Each [normalized threat rule](https://help.sumologic.com/docs/cse/rules/normalized-threat-rules/) and its associated mappings using the `threat_ruleType` schema field.|
+|[auth_rules.csv](auth_rules.csv)|Each [normalized authentication rule](https://help.sumologic.com/docs/cse/rules/normalized-authentication-rules/) and its associated mappings using the `normalizedAction` schema field.|
 
 ## All Rules
 
