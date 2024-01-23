@@ -3,6 +3,9 @@
 Below is a full list of vendors for which there are supported products in Cloud SIEM.
 
 |Vendor|Number of Products|
+|------|------------------|
+|[1Password](d0455ea1-e901-4999-b047-0533d16adfdc.md)|1|
+|[Adaxes](87fd53e1-0bfd-4e53-9979-4fb6ec196cc2.md)|1|
 |[Airtable](38db1e35-cb46-4a49-ae8c-b6f766ff5378.md)|1|
 |[Akamai](47292522-c7f4-4c0e-9ab5-4426c0215be3.md)|2|
 |[Alibaba](d7de27e2-7680-48a0-96aa-1c26cf8d1ca4.md)|1|
