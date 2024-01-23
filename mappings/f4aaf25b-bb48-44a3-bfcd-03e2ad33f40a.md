@@ -1,0 +1,25 @@
+# [Mappings](README.md): Cylance Audit 3
+
+## Input Requirements
+
+|Legacy Parser Grok Patterns|
+|-------------|
+|[CYLANCE_AUDIT3](../legacy_parsers/CYLANCE_AUDIT3.md)|
+
+## Record Output
+
+|Output|Value|
+|------|-----|
+|Vendor|Cylance|
+|Product|Protect|
+|Record Type|Endpoint|
+
+## Fields Mapped
+
+|Cloud SIEM Schema Field|Original Record Key|Notes|
+|-----------------------|-------------------|-----|
+|description|None|The static text `System Security` is populated in this schema field.|
+|device_hostname|device_name||
+|device_ip|src_ip||
+|user_username|username||
+

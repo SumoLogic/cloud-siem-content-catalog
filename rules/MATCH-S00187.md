@@ -1,0 +1,35 @@
+# [Rules](README.md): Process Execution Inside Webserver Root Folder
+
+## Description
+A process was executed from inside a web hosting directory. This signal could indicate when adversaries upload a malicious file to the webserver and run the file as a process. Approved web applications that require process execution from inside the web hosting directory should be excluded from the rule and filtered out.
+
+## Additional Details
+|Detail|Value|
+|----|----|
+|Type|Templated Match|
+|Category|Persistence|
+|Apply Risk to Entities|device_hostname, device_ip, user_username|
+|Signal Name|Process Execution Inside Webserver Root Folder|
+|Summary Expression|Process executed in web host directory: {{baseImage}}|
+|Score/Severity|Static: 3|
+|Enabled by Default|True|
+|Prototype|False|
+|Tags|_mitreAttackTactic:TA0001, _mitreAttackTactic:TA0002, _mitreAttackTechnique:T1190, _mitreAttackTechnique:T1203|
+## Vendors and Products
+- [Carbon Black - Cloud](../products/46433485-9c31-4b45-97c8-4d57ec90e72e.md)
+- [CrowdStrike - FDR](../products/569a3a44-c29f-492e-bcf4-5dc04e2ab0f3.md)
+- [CrowdStrike - Falcon](../products/840c72e0-4e47-41e7-9b93-31f55d12f07d.md)
+- [Microsoft - Windows](../products/1ff7546c-cb36-4a24-87f7-89d2cecc5761.md)
+- [VMware - Carbon Black Cloud](../products/f9cea291-9030-4e41-9836-6dd9274d6df4.md)
+
+
+## Fields Used
+
+|Origin|Field|
+|----|----|
+|Normalized Schema|baseImage|
+|Normalized Schema|device_hostname|
+|Normalized Schema|device_ip|
+|Normalized Schema|user_username|
+
+

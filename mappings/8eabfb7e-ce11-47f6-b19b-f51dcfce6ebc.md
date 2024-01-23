@@ -1,0 +1,29 @@
+# [Mappings](README.md): Cisco Meraki Flow Start
+
+## Input Requirements
+
+|Legacy Parser Grok Patterns|
+|-------------|
+|[CISCO_MERAKI_FLOW_START](../legacy_parsers/CISCO_MERAKI_FLOW_START.md)|
+
+## Record Output
+
+|Output|Value|
+|------|-----|
+|Vendor|Cisco Systems|
+|Product|Meraki|
+|Record Type|NetworkFlow|
+
+## Fields Mapped
+
+|Cloud SIEM Schema Field|Original Record Key|Notes|
+|-----------------------|-------------------|-----|
+|dstDevice_ip|dst_ip||
+|dstDevice_natIp|xlate_dst_ip||
+|dstPort|dst_port||
+|ipProtocol|protocol||
+|srcDevice_ip|src_ip||
+|srcDevice_natIp|xlate_src_ip||
+|srcPort|src_port||
+|timestamp|log_timestamp|We expect the orginal record value of `log_timestamp` is in the format `epoch_float`|
+
