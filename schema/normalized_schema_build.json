@@ -1,0 +1,4650 @@
+{
+    "_cipCollector": {
+        "description": "This field does not have a defined description yet.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "_cipCollectorId": {
+        "description": "This field does not have a defined description yet.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "long"
+    },
+    "_cipEncoding": {
+        "description": "This field does not have a defined description yet.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "_cipFormat": {
+        "description": "This field does not have a defined description yet.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "_cipMessageTime": {
+        "description": "This field does not have a defined description yet.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "long"
+    },
+    "_cipSource": {
+        "description": "This field does not have a defined description yet.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "_cipSourceHost": {
+        "description": "This field does not have a defined description yet.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "_cipSourceId": {
+        "description": "This field does not have a defined description yet.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "long"
+    },
+    "_cipSourceName": {
+        "description": "This field does not have a defined description yet.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "_entityFieldsCriticality": {
+        "description": "A map of entity fields to criticality from direct entity metadata configuration or from existing entity group configuration.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "map[string]string"
+    },
+    "_entityFieldsSuppressed": {
+        "description": "A map of entity fields to suppressed flag from direct entity metadata configuration or from existing entity group configuration.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "map[string]boolean"
+    },
+    "_matchingIndicators": {
+        "description": "This field does not have a defined description yet.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "map[string]array[MatchingIndicator]"
+    },
+    "accountId": {
+        "description": "A unique identifier tied to an organizational account, such as a tenant. Common with cloud services where sub-accounts or multiple tenants can be present. Not to be used as a user account identifier.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "action": {
+        "description": "Action summarizes an operation undertaken by a device or user and recorded in a log.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "application": {
+        "description": "A service or software application referenced in a log indicating its execution, presence, or as context for a given event.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "authProvider": {
+        "description": "The SSO provider for an authentication attempt. Often found in cloud authentication events and is expected to be NULL if SSO was not used for the authentication attempt.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "baseImage": {
+        "description": "The name of an executable process. Often found in process auditing and malware detection events.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": "_process",
+        "mappable": true,
+        "type": "string"
+    },
+    "bro_dceRpc_endpoint": {
+        "description": "Endpoint name looked up from the uuid.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_dceRpc_namedPipe": {
+        "description": "Remote pipe name.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_dceRpc_operation": {
+        "description": "Operation seen in the DCE-RPC call.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_dceRpc_rtt": {
+        "description": "Round trip time from the request to the response. If either the request or response wasn't seen, this will be null.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "float"
+    },
+    "bro_dhcp_assignedIp": {
+        "description": "IP address assigned by the dhcp server.",
+        "enrichment_populated": false,
+        "enrichment_type": "ip",
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_dhcp_assignedIp_asnNumber": {
+        "description": "An autonomous system number for the IP address based on the Neustar GeoIP database.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "int"
+    },
+    "bro_dhcp_assignedIp_asnOrg": {
+        "description": "Organization associated with the IP address address based on the Neustar GeoIP database.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_dhcp_assignedIp_city": {
+        "description": "City for the IP address based on the Neustar GeoIP database.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_dhcp_assignedIp_countryCode": {
+        "description": "Country Code for the IP address based on the Neustar GeoIP database.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_dhcp_assignedIp_countryName": {
+        "description": "Country Code for the IP address based on the Neustar GeoIP database.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_dhcp_assignedIp_ipv4IntValue": {
+        "description": "The ipv4 address stored as an unsigned 64-bit integer value",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "long"
+    },
+    "bro_dhcp_assignedIp_isInternal": {
+        "description": "Signifies whether the IP address is internal or external. True if internal, False if external.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "boolean"
+    },
+    "bro_dhcp_assignedIp_isp": {
+        "description": "Internet Service Provider for the IP address based on the Neustar GeoIP database.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_dhcp_assignedIp_latitude": {
+        "description": "Latitude for the IP address based on the Neustar GeoIP database.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "float"
+    },
+    "bro_dhcp_assignedIp_location": {
+        "description": "This value is populated based on the Network Blocks you have uploaded. When there is a match, it will be populated with the network block label.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_dhcp_assignedIp_longitude": {
+        "description": "Longitude for the IP address based on the Neustar GeoIP database.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "float"
+    },
+    "bro_dhcp_assignedIp_region": {
+        "description": "State or Territory for the IP address based on the Neustar GeoIP database.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_dhcp_assignedIp_version": {
+        "description": "The version of IP protocol (e.g. 4 or 6)",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "int"
+    },
+    "bro_dhcp_leaseTime": {
+        "description": "IP address lease interval.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "double"
+    },
+    "bro_dhcp_mac": {
+        "description": "Client's hardware address.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_dns_answers": {
+        "description": "The set of resource descriptions in the DNS query answer.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "array[BroDnsAnswer]"
+    },
+    "bro_dns_qclass": {
+        "description": "The QCLASS value specifying the class of the DNS query.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_file_bytes": {
+        "description": "Total number of bytes that are supposed to comprise the full file.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "map[string]string"
+    },
+    "bro_file_connUids": {
+        "description": "Connection UIDs over which the file was transferred.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "array[string]"
+    },
+    "bro_file_depth": {
+        "description": "A value to represent the depth of this file in relation to its source. In SMTP, it is the depth of the MIME attachment on the message. In HTTP, it is the depth of the request within the TCP connection.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "int"
+    },
+    "bro_file_isOrigin": {
+        "description": "If the source of this file is a network connection, this field indicates if the file is being sent by the originator of the connection or the responder.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "boolean"
+    },
+    "bro_file_localOrigin": {
+        "description": "If the source of this file is a network connection, this field indicates if the data originated from the local network or not.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "boolean"
+    },
+    "bro_file_parentFuid": {
+        "description": "Identifier associated with a container file from which this one was extracted as part of the file analysis.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_file_source": {
+        "description": "An identification of the source of the file data. I.e. it may be a network protocol over which it was transferred, or a local file path which was read, or some other input source.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_flow_duration": {
+        "description": "This field does not have a defined description yet.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "float"
+    },
+    "bro_flow_history": {
+        "description": "This field does not have a defined description yet.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_flow_inIpBytes": {
+        "description": "This field does not have a defined description yet.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "long"
+    },
+    "bro_flow_origL2Addr": {
+        "description": "This field does not have a defined description yet.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_flow_outIpBytes": {
+        "description": "This field does not have a defined description yet.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "long"
+    },
+    "bro_flow_respL2Addr": {
+        "description": "This field does not have a defined description yet.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_flow_service": {
+        "description": "This field does not have a defined description yet.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "array[string]"
+    },
+    "bro_ftp_arg": {
+        "description": "Argument for the command if one is given.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_ftp_cmdarg": {
+        "description": "This field does not have a defined description yet.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "BroFtpCmdarg"
+    },
+    "bro_ftp_command": {
+        "description": "Command given by the client.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_ftp_cwd": {
+        "description": "Current working directory that this session is in.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_ftp_dataChannel": {
+        "description": "Expected FTP data channel.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "BroFtpDataChannel"
+    },
+    "bro_ftp_fileSize": {
+        "description": "Size of the file if the command indicates a file transfer.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_ftp_fuid": {
+        "description": "File unique ID.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_ftp_lastAuthRequested": {
+        "description": "This field does not have a defined description yet.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_ftp_mimeType": {
+        "description": "Sniffed mime type of file.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_ftp_passive": {
+        "description": "Indicates if the session is in active or passive mode.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "boolean"
+    },
+    "bro_ftp_password": {
+        "description": "Password for the current FTP session if captured.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_ftp_pendingCommands": {
+        "description": "This field does not have a defined description yet.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "array[BroFtpCmdarg]"
+    },
+    "bro_ftp_replyCode": {
+        "description": "Reply code from the FTP server in response to the command.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "int"
+    },
+    "bro_ftp_replyMsg": {
+        "description": "Reply message from the FTP server in response to the command.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_http_cookieVars": {
+        "description": "This field does not have a defined description yet.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "array[string]"
+    },
+    "bro_http_origFuids": {
+        "description": "This field does not have a defined description yet.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "array[string]"
+    },
+    "bro_http_origMimeTypes": {
+        "description": "This field does not have a defined description yet.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "array[string]"
+    },
+    "bro_http_request_contentLength": {
+        "description": "This field does not have a defined description yet.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "int"
+    },
+    "bro_http_request_headers": {
+        "description": "A list of HTTP headers typically used to indicate proxied requests.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "map[string]string"
+    },
+    "bro_http_request_password": {
+        "description": "This field does not have a defined description yet.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_http_request_proxied": {
+        "description": "All of the headers that may indicate if the request was proxied.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "array[string]"
+    },
+    "bro_http_response_headers": {
+        "description": "This field does not have a defined description yet.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "map[string]string"
+    },
+    "bro_http_response_infoCode": {
+        "description": "This field does not have a defined description yet.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "int"
+    },
+    "bro_http_response_infoMsg": {
+        "description": "This field does not have a defined description yet.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_http_response_respFuids": {
+        "description": "An ordered vector of file unique IDs.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "array[string]"
+    },
+    "bro_http_response_respMimeTypes": {
+        "description": "An ordered vector of mime types.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "array[string]"
+    },
+    "bro_http_tags": {
+        "description": "This field does not have a defined description yet.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "array[string]"
+    },
+    "bro_http_transDepth": {
+        "description": "Represents the pipelined depth into the connection of this request/response transaction.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "int"
+    },
+    "bro_http_uriVars": {
+        "description": "This field does not have a defined description yet.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "array[string]"
+    },
+    "bro_irc_additionalData": {
+        "description": "Any additional data for the IRC command.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_irc_command": {
+        "description": "Command given by the IRC client.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_irc_nick": {
+        "description": "Nickname given for the IRC connection.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_irc_value": {
+        "description": "Value for the IRC command given by the client.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_kerberos_cipher": {
+        "description": "Ticket encryption type",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_kerberos_client": {
+        "description": "This field does not have a defined description yet.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_kerberos_clientCert": {
+        "description": "This field does not have a defined description yet.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "map[string]string"
+    },
+    "bro_kerberos_errorCode": {
+        "description": "This field does not have a defined description yet.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "int"
+    },
+    "bro_kerberos_errorMsg": {
+        "description": "This field does not have a defined description yet.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_kerberos_forwardable": {
+        "description": "Forwardable ticket requested",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "boolean"
+    },
+    "bro_kerberos_from": {
+        "description": "Timestamp ticket valid from",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "float"
+    },
+    "bro_kerberos_renewable": {
+        "description": "Renewable ticket requested",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "boolean"
+    },
+    "bro_kerberos_requestType": {
+        "description": "Request type - Authentication Service (\"AS\") or Ticket Granting Service (\"TGS\")",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_kerberos_serverCert": {
+        "description": "This field does not have a defined description yet.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "map[string]string"
+    },
+    "bro_kerberos_service": {
+        "description": "This field does not have a defined description yet.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_kerberos_success": {
+        "description": "This field does not have a defined description yet.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "boolean"
+    },
+    "bro_kerberos_til": {
+        "description": "Timestamp ticket valid to",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "float"
+    },
+    "bro_ntlm_domainname": {
+        "description": "Domain name given by the NTLM client.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_ntlm_status": {
+        "description": "This field does not have a defined description yet.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_ntlm_success": {
+        "description": "Indicates whether or not the NTLM authentication was successful.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "boolean"
+    },
+    "bro_protocol": {
+        "description": "Network protocol of the traffic analyzed.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_radius_connectInfo": {
+        "description": "RADIUS connect information, if present.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_radius_mac": {
+        "description": "RADIUS client MAC address, if present.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_radius_remoteIp": {
+        "description": "RADIUS client IP address.",
+        "enrichment_populated": false,
+        "enrichment_type": "ip",
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_radius_remoteIp_asnNumber": {
+        "description": "An autonomous system number for the IP address based on the Neustar GeoIP database.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "int"
+    },
+    "bro_radius_remoteIp_asnOrg": {
+        "description": "Organization associated with the IP address address based on the Neustar GeoIP database.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_radius_remoteIp_city": {
+        "description": "City for the IP address based on the Neustar GeoIP database.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_radius_remoteIp_countryCode": {
+        "description": "Country Code for the IP address based on the Neustar GeoIP database.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_radius_remoteIp_countryName": {
+        "description": "Country Code for the IP address based on the Neustar GeoIP database.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_radius_remoteIp_ipv4IntValue": {
+        "description": "The ipv4 address stored as an unsigned 64-bit integer value",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "long"
+    },
+    "bro_radius_remoteIp_isInternal": {
+        "description": "Signifies whether the IP address is internal or external. True if internal, False if external.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "boolean"
+    },
+    "bro_radius_remoteIp_isp": {
+        "description": "Internet Service Provider for the IP address based on the Neustar GeoIP database.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_radius_remoteIp_latitude": {
+        "description": "Latitude for the IP address based on the Neustar GeoIP database.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "float"
+    },
+    "bro_radius_remoteIp_location": {
+        "description": "This value is populated based on the Network Blocks you have uploaded. When there is a match, it will be populated with the network block label.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_radius_remoteIp_longitude": {
+        "description": "Longitude for the IP address based on the Neustar GeoIP database.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "float"
+    },
+    "bro_radius_remoteIp_region": {
+        "description": "State or Territory for the IP address based on the Neustar GeoIP database.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_radius_remoteIp_version": {
+        "description": "The version of IP protocol (e.g. 4 or 6)",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "int"
+    },
+    "bro_radius_result": {
+        "description": "Successful or failed RADIUS authentication.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_rdp_certCount": {
+        "description": "The number of certs seen. X.509 can transfer an entire certificate chain.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "int"
+    },
+    "bro_rdp_certPermanent": {
+        "description": "Indicates if the provided certificate or certificate chain is permanent or temporary.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "boolean"
+    },
+    "bro_rdp_certType": {
+        "description": "If the connection is being encrypted with native RDP encryption, this is the type of cert being used.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_rdp_clientBuild": {
+        "description": "RDP client version used by the client machine.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_rdp_clientDigProductId": {
+        "description": "Product ID of the RDP client machine.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_rdp_clientName": {
+        "description": "Name of the RDP client machine.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_rdp_cookie": {
+        "description": "Cookie value used by the RDP client machine. This is typically a username.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_rdp_desktopHeight": {
+        "description": "This field does not have a defined description yet.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_rdp_desktopWidth": {
+        "description": "Desktop width of the RDP client machine.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_rdp_done": {
+        "description": "Track status of logging RDP connections.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "boolean"
+    },
+    "bro_rdp_encryptionLevel": {
+        "description": "Encryption level of the RDP connection.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_rdp_encryptionMethod": {
+        "description": "Encryption method of the RDP connection.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_rdp_keyboardLayout": {
+        "description": "Keyboard layout (language) of the RDP client machine.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_rdp_requestedColorDepth": {
+        "description": "Desktop height of the RDP client machine.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_rdp_result": {
+        "description": "Status result for the connection. It's a mix between RDP negotiation failure messages and GCC server create response messages.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_rdp_securityProtocol": {
+        "description": "Security protocol chosen by the RDP server.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_rdp_ssl": {
+        "description": "Flag the RDP connection if it was seen over SSL.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "boolean"
+    },
+    "bro_rfb_authenticationMethod": {
+        "description": "Identifier of RFB authentication method used.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_rfb_authenticationSuccessful": {
+        "description": "Whether or not RFB authentication was successful.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "boolean"
+    },
+    "bro_rfb_clientMajorVersion": {
+        "description": "Major version of the RFB client.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_rfb_clientMinorVersion": {
+        "description": "Minor version of the RFB client.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_rfb_desktopName": {
+        "description": "Name of the screen that is being shared.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_rfb_height": {
+        "description": "Height of the screen that is being shared.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "int"
+    },
+    "bro_rfb_serverMajorVersion": {
+        "description": "Major version of the RFB server.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_rfb_serverMinorVersion": {
+        "description": "Minor version of the RFB server.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_rfb_sharedSession": {
+        "description": "Whether the RFB client has an exclusive or a shared session.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "boolean"
+    },
+    "bro_rfb_width": {
+        "description": "Width of the screen that is being shared.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "int"
+    },
+    "bro_sip_headers": {
+        "description": "This field does not have a defined description yet.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "map[string]string"
+    },
+    "bro_sip_requestBodyLength": {
+        "description": "This field does not have a defined description yet.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "int"
+    },
+    "bro_sip_requestFrom": {
+        "description": "Contents of the response From: header (Note: The tag= value that's usually appended to the sender is stripped off and not logged)",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_sip_requestMethod": {
+        "description": "Verb used in the SIP request (INVITE, REGISTER etc.).",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_sip_requestPath": {
+        "description": "The client message transmission path, as extracted from the headers.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "array[string]"
+    },
+    "bro_sip_requestTo": {
+        "description": "This field does not have a defined description yet.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_sip_requestUri": {
+        "description": "URI used in the request.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_sip_responseBodyLength": {
+        "description": "This field does not have a defined description yet.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "int"
+    },
+    "bro_sip_responseFrom": {
+        "description": "Contents of the response From: header (Note: The tag= value that's usually appended to the sender is stripped off and not logged)",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_sip_responsePath": {
+        "description": "The server message transmission path, as extracted from the headers.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "array[string]"
+    },
+    "bro_sip_responseTo": {
+        "description": "This field does not have a defined description yet.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_sip_statusCode": {
+        "description": "This field does not have a defined description yet.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "int"
+    },
+    "bro_sip_statusMsg": {
+        "description": "Verb used in the SIP request (INVITE, REGISTER etc.).",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_smb_command": {
+        "description": "This field does not have a defined description yet.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "BroSmbCommand"
+    },
+    "bro_smb_file": {
+        "description": "This field does not have a defined description yet.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "BroSmbFile"
+    },
+    "bro_smb_mapping": {
+        "description": "This field does not have a defined description yet.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "BroSmbMapping"
+    },
+    "bro_smb_tree": {
+        "description": "This field does not have a defined description yet.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "BroSmbTree"
+    },
+    "bro_smtp_headers": {
+        "description": "This field does not have a defined description yet.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "BroSmtpHeaders"
+    },
+    "bro_smtp_isWebmail": {
+        "description": "Boolean indicator of if the SMTP message was sent through a webmail interface.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "boolean"
+    },
+    "bro_smtp_lastReply": {
+        "description": "The last message that the SMTP server sent to the client.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_smtp_path": {
+        "description": "The SMTP message transmission path, as extracted from the headers.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_smtp_tls": {
+        "description": "Indicates that the SMTP connection has switched to using TLS.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "boolean"
+    },
+    "bro_smtp_transDepth": {
+        "description": "A count to represent the depth of this SMTP message transaction in a single connection where multiple messages were transferred.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "int"
+    },
+    "bro_smtp_userAgent": {
+        "description": "Value of the User-Agent header from the SMTP client.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_snmp_community": {
+        "description": "The community string of the first SNMP packet associated with the session. This is used as part of SNMP's (v1 and v2c) administrative/security framework. See RFC 1157 or RFC 1901.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_snmp_displayString": {
+        "description": "A system description of the SNMP responder endpoint.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_snmp_duration": {
+        "description": "The amount of time between the first packet beloning to the SNMP session and the latest one seen.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "double"
+    },
+    "bro_snmp_getBulkRequests": {
+        "description": "The number of variable bindings in GetBulkRequest PDUs seen for the session.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "int"
+    },
+    "bro_snmp_getRequests": {
+        "description": "The number of variable bindings in GetRequest/GetNextRequest PDUs seen for the session.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "int"
+    },
+    "bro_snmp_getResponses": {
+        "description": "The number of variable bindings in GetResponse/Response PDUs seen for the session.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "int"
+    },
+    "bro_snmp_setRequests": {
+        "description": "The number of variable bindings in SetRequest PDUs seen for the session.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "int"
+    },
+    "bro_snmp_upSince": {
+        "description": "The time at which the SNMP responder endpoint claims it's been up since.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "long"
+    },
+    "bro_snmp_version": {
+        "description": "The version of SNMP being used.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_socks_boundIp": {
+        "description": "Proxy server bound address.",
+        "enrichment_populated": false,
+        "enrichment_type": "ip",
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_socks_boundIp_asnNumber": {
+        "description": "An autonomous system number for the IP address based on the Neustar GeoIP database.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "int"
+    },
+    "bro_socks_boundIp_asnOrg": {
+        "description": "Organization associated with the IP address address based on the Neustar GeoIP database.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_socks_boundIp_city": {
+        "description": "City for the IP address based on the Neustar GeoIP database.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_socks_boundIp_countryCode": {
+        "description": "Country Code for the IP address based on the Neustar GeoIP database.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_socks_boundIp_countryName": {
+        "description": "Country Code for the IP address based on the Neustar GeoIP database.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_socks_boundIp_ipv4IntValue": {
+        "description": "The ipv4 address stored as an unsigned 64-bit integer value",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "long"
+    },
+    "bro_socks_boundIp_isInternal": {
+        "description": "Signifies whether the IP address is internal or external. True if internal, False if external.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "boolean"
+    },
+    "bro_socks_boundIp_isp": {
+        "description": "Internet Service Provider for the IP address based on the Neustar GeoIP database.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_socks_boundIp_latitude": {
+        "description": "Latitude for the IP address based on the Neustar GeoIP database.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "float"
+    },
+    "bro_socks_boundIp_location": {
+        "description": "This value is populated based on the Network Blocks you have uploaded. When there is a match, it will be populated with the network block label.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_socks_boundIp_longitude": {
+        "description": "Longitude for the IP address based on the Neustar GeoIP database.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "float"
+    },
+    "bro_socks_boundIp_region": {
+        "description": "State or Territory for the IP address based on the Neustar GeoIP database.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_socks_boundIp_version": {
+        "description": "The version of IP protocol (e.g. 4 or 6)",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "int"
+    },
+    "bro_socks_boundName": {
+        "description": "Proxy server bound name.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_socks_boundPort": {
+        "description": "Proxy server bound port.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "int"
+    },
+    "bro_socks_password": {
+        "description": "Password used to request a login to the proxy.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_socks_requestIp": {
+        "description": "Client requested address.",
+        "enrichment_populated": false,
+        "enrichment_type": "ip",
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_socks_requestIp_asnNumber": {
+        "description": "An autonomous system number for the IP address based on the Neustar GeoIP database.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "int"
+    },
+    "bro_socks_requestIp_asnOrg": {
+        "description": "Organization associated with the IP address address based on the Neustar GeoIP database.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_socks_requestIp_city": {
+        "description": "City for the IP address based on the Neustar GeoIP database.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_socks_requestIp_countryCode": {
+        "description": "Country Code for the IP address based on the Neustar GeoIP database.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_socks_requestIp_countryName": {
+        "description": "Country Code for the IP address based on the Neustar GeoIP database.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_socks_requestIp_ipv4IntValue": {
+        "description": "The ipv4 address stored as an unsigned 64-bit integer value",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "long"
+    },
+    "bro_socks_requestIp_isInternal": {
+        "description": "Signifies whether the IP address is internal or external. True if internal, False if external.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "boolean"
+    },
+    "bro_socks_requestIp_isp": {
+        "description": "Internet Service Provider for the IP address based on the Neustar GeoIP database.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_socks_requestIp_latitude": {
+        "description": "Latitude for the IP address based on the Neustar GeoIP database.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "float"
+    },
+    "bro_socks_requestIp_location": {
+        "description": "This value is populated based on the Network Blocks you have uploaded. When there is a match, it will be populated with the network block label.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_socks_requestIp_longitude": {
+        "description": "Longitude for the IP address based on the Neustar GeoIP database.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "float"
+    },
+    "bro_socks_requestIp_region": {
+        "description": "State or Territory for the IP address based on the Neustar GeoIP database.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_socks_requestIp_version": {
+        "description": "The version of IP protocol (e.g. 4 or 6)",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "int"
+    },
+    "bro_socks_requestName": {
+        "description": "Client requested name.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_socks_requestPort": {
+        "description": "Client requested port.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "int"
+    },
+    "bro_socks_status": {
+        "description": "Server status for the attempt at using the proxy.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_socks_version": {
+        "description": "This field does not have a defined description yet.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "int"
+    },
+    "bro_ssh_authSuccess": {
+        "description": "SSH authentication result (T=success, F=failure, unset=unknown)",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "boolean"
+    },
+    "bro_ssh_cipherAlgorithm": {
+        "description": "The SSH encryption algorithm in use",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_ssh_client": {
+        "description": "The SSH client's version string",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_ssh_compressionAlgorithm": {
+        "description": "The SSH compression algorithm in use",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_ssh_hostKeyAlgorithm": {
+        "description": "The SSH server host key's algorithm",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_ssh_keyExchangeAlgorithm": {
+        "description": "The SSH key exchange algorithm in use",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_ssh_macAlgorithm": {
+        "description": "The SSH signing (MAC) algorithm in use",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_ssh_server": {
+        "description": "The SSH server's version string",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_ssh_version": {
+        "description": "SSH major version (1 or 2)",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "int"
+    },
+    "bro_ssl_certChainFuids": {
+        "description": "An ordered vector of all certificate file unique IDs for the certificates offered by the SSL/TLS server.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "array[string]"
+    },
+    "bro_ssl_cipher": {
+        "description": "SSL/TLS cipher suite that the server chose.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_ssl_clientCertChainFuids": {
+        "description": "An ordered vector of all certificate file unique IDs for the certificates offered by the SSL/TLS client.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "array[string]"
+    },
+    "bro_ssl_curve": {
+        "description": "Elliptic curve the SSL/TLS server chose when using ECDH/ECDHE.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_ssl_established": {
+        "description": "Flag to indicate if this SSL/TLS session has been established successfully, or if it was aborted during the handshake.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "boolean"
+    },
+    "bro_ssl_issuer": {
+        "description": "Subject of the signer of the X.509 certificate offered by the SSL/TLS server.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_ssl_nextProtocol": {
+        "description": "Next protocol the SSL/TLS server chose using the application layer next protocol extension, if present.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_ssl_resumed": {
+        "description": "Flag to indicate if the SSL/TLS session was resumed reusing the key material exchanged in an earlier connection.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "boolean"
+    },
+    "bro_ssl_serverName": {
+        "description": "Value of the Server Name Indicator SSL/TLS extension. It indicates the server name that the client was requesting.",
+        "enrichment_populated": false,
+        "enrichment_type": "domain",
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_ssl_serverName_alexaRank": {
+        "description": "Domain ranking in the alexa top 10k sites. NULL if not in the list.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "long"
+    },
+    "bro_ssl_serverName_conditionalFrequency": {
+        "description": "(Deprecated) DO NOT INCLUDE IN THE DOCUMENTATION",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "double"
+    },
+    "bro_ssl_serverName_entropyFqdn": {
+        "description": "The entropy calculation of the fqdn field.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "double"
+    },
+    "bro_ssl_serverName_entropyRootDomain": {
+        "description": "The entropy calculation of the rootDomain field.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "double"
+    },
+    "bro_ssl_serverName_entropySubDomain": {
+        "description": "Entropy is the measure of disorder. If this case on the sub domain.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "double"
+    },
+    "bro_ssl_serverName_fqdn": {
+        "description": "The fully qualified domain name (e.g. somehost.sumologic.com).",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_ssl_serverName_possibleDga": {
+        "description": "Whether or not this domain is potentially a Domain Generation Algorithm created domain based on our backend analytics.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "boolean"
+    },
+    "bro_ssl_serverName_possibleDynDns": {
+        "description": "A likely dynamically (not static) IP address associated with this domain.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "boolean"
+    },
+    "bro_ssl_serverName_rootDomain": {
+        "description": "The root domain of hostname in the domain (e.g. sumologic.com).",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_ssl_serverName_tld": {
+        "description": "The top-level-domain field of the domain name (e.g. com, net, org)",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_ssl_subject": {
+        "description": "Subject of the X.509 certificate offered by the SSL/TLS server.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bro_ssl_version": {
+        "description": "SSL/TLS version that the server chose.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "bytesIn": {
+        "description": "Amount of data received in bytes",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "long"
+    },
+    "bytesOut": {
+        "description": "Amount of data sent in bytes",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "long"
+    },
+    "cause": {
+        "description": "Complementary to Cause, this field describes the reason for any particular outcome in a record in a common way.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "changeTarget": {
+        "description": "The user, group, policy or other resource which is to be or has been modified, deleted, or created.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "changeType": {
+        "description": "The nature of the modification (modify, delete, create) and often the category of the object to be acted upon (user, group, policy, or other resource).",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "cloud_provider": {
+        "description": "The name of the cloud infrastucture operator, typically a public cloud provider. E.g. Google Cloud Platform (GCP), Amazon Web Services (AWS), Microsoft Azure, Alibaba Cloud etc.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "cloud_region": {
+        "description": "The physical location a cloud provider operates their infrastucture from. E.g. AWS us-east-2 (Ohio), Azure Central US (Iowa), GCP asia-northeast1-a (Tokyo) etc.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "cloud_service": {
+        "description": "The specific service offering from a cloud provider. E.g. AWS VPC Flow, Azure Virtual Machines, AWS Lambda, Alibaba Cloud ECS, GCP Compute Engine etc.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "cloud_zone": {
+        "description": "The cloud infrastucture isolated within a region on which a resource is located or is running.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "commandLine": {
+        "description": "The instruction or set of instructions inputted into a text interface such as the command prompt (cmd.exe) or PowerShell in Windows, or terminal on Unix based systems.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": "_command",
+        "mappable": true,
+        "type": "string"
+    },
+    "cseSignal": {
+        "description": "Used for signals received via log path e.g. scheduled search alert from CIP.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "map[string]string"
+    },
+    "day": {
+        "description": "Day pulled from the timestamp.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "int"
+    },
+    "description": {
+        "description": "The summary conveying the high level meaning of a log message in a human readable form. In some circumstances no summary is provided in the log, this field is often manually defined in the mapping as a constant or as a lookup based on event IDs in the log message.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "device_container_id": {
+        "description": "The unique identifier provided to a discreet container which packages together the elements required to run software.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "device_container_name": {
+        "description": "The name provided to a discreet container which packages together the elements required to run software.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "device_container_runtime": {
+        "description": "The provider name of the engine whine underpins the container. E.g. Docker, AWS Lambda, containerd",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "device_hostname": {
+        "description": "The computer name that generated the log message. Common examples include, but are not limited to, the endpoint reporting an infection or the network appliance reporting allowed or blocked network traffic. \nIn cases where the log data has a source or destination context, there are situations where identical data is populated in one of those fields and this field. An example would be authentication logs from a firewall. The device_hostname would be the same as the dstDevice_hostname because the firewall is reporting a network authentication log about itself.",
+        "enrichment_populated": false,
+        "enrichment_type": "normalizedHostname",
+        "entity_type": "_hostname",
+        "mappable": true,
+        "type": "string"
+    },
+    "device_hostname_raw": {
+        "description": "The device hostname before any enrichments are applied. As the hostname appears in the original log message.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": "_hostname",
+        "mappable": false,
+        "type": "string"
+    },
+    "device_image": {
+        "description": "The snapshot of the state of a device or similar which can be used to deploy or reproduce a system. E.g. A VM image, a container image. ",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "device_ip": {
+        "description": "The internet protocol (IP) address of a computer that generated the log message. Common examples include, but are not limited to, the endpoint reporting an infection or the network appliance reporting allowed or blocked network traffic. \nIn cases where the log data has a source or destination context, there are situations where identical data is populated in one of those fields and this field. An example would be authentication logs from a firewall. The device_ip would be the same as the dstDevice_ip because the firewall is reporting a network authentication log about itself.",
+        "enrichment_populated": false,
+        "enrichment_type": "ip",
+        "entity_type": "_ip",
+        "mappable": true,
+        "type": "string"
+    },
+    "device_ip_asnNumber": {
+        "description": "The autonomous system number for the device IP address based on the Neustar GeoIP database, typically assigned to internet service providers.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "int"
+    },
+    "device_ip_asnOrg": {
+        "description": "The organzation associated with the ASN based on the Neustar GeoIP database, typically assigned to internet service providers.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "device_ip_city": {
+        "description": "City for the device IP address based on the Neustar GeoIP database.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "device_ip_countryCode": {
+        "description": "Country code (e.g. US, CA, DE) for the device IP address based on the Neustar GeoIP database.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "device_ip_countryName": {
+        "description": "Name of the country for the device IP address based on the Neustar GeoIP database.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "device_ip_ipv4IntValue": {
+        "description": "The ipv4 address stored as an unsigned 64-bit integer value",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "long"
+    },
+    "device_ip_isInternal": {
+        "description": "Signifies whether the device IP address is internal or external. True if internal, False if external.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "boolean"
+    },
+    "device_ip_isp": {
+        "description": "Internet Service Provider for the IP address based on the Neustar GeoIP database.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "device_ip_latitude": {
+        "description": "Geographic latitude coordinate for the device IP address based on the Neustar GeoIP database.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "float"
+    },
+    "device_ip_location": {
+        "description": "This value is populated based on uploaded Network Blocks. When there is a match, it will be populated with the network block label.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "device_ip_longitude": {
+        "description": "Longitude coordinate for the device IP address based on the Neustar GeoIP database.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "float"
+    },
+    "device_ip_region": {
+        "description": "State or Territory for the device IP address based on the Neustar GeoIP database.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "device_ip_version": {
+        "description": "Version of the IP protocol of the device IP.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "int"
+    },
+    "device_k8s_deployment": {
+        "description": "The deployment name described in the log",
+        "enrichment_populated": false,
+        "enrichment_type": "normalizedDeploymentName",
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "device_k8s_namespace": {
+        "description": "The namespace name within which resources are running as described in the log",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "device_k8s_normalizedDeploymentName": {
+        "description": "Combination of namespace and pod to allow organizations to identify pods uniquely within their environment.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": "_deployment",
+        "mappable": false,
+        "type": "string"
+    },
+    "device_k8s_normalizedPodName": {
+        "description": "Combination of namespace and pod to allow organizations to identify pods uniquely within their environment.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": "_pod",
+        "mappable": false,
+        "type": "string"
+    },
+    "device_k8s_normalizedReplicaSetName": {
+        "description": "Combination of namespace and replicaSet to allow organizations to identify replicaSets uniquely within their environment.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": "_replicaset",
+        "mappable": false,
+        "type": "string"
+    },
+    "device_k8s_pod": {
+        "description": "The name given to a pod described in the log",
+        "enrichment_populated": false,
+        "enrichment_type": "normalizedPodName",
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "device_k8s_replicaSet": {
+        "description": "The replica set name described in the log",
+        "enrichment_populated": false,
+        "enrichment_type": "normalizedReplicaSetName",
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "device_mac": {
+        "description": "The media access control (MAC) ID of the device that generated the log message. Common examples include, but are not limited to, the endpoint reporting an infection or the network appliance reporting allowed or blocked network traffic. \nIn cases where the log data has a source or destination context, there are situations where identical data is populated in one of those fields and this field. An example would be authentication logs from a firewall. The device_mac would be the same as the dstDevice_mac because the firewall is reporting a network authentication log about itself.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": "_mac",
+        "mappable": true,
+        "type": "string"
+    },
+    "device_natIp": {
+        "description": "The external network address translated (NAT) IP address of the device that generated the log message. Common examples include, but are not limited to, the endpoint reporting an infection or the network appliance reporting allowed or blocked network traffic. \nIn cases where the log data has a source or destination context, there are situations where identical data is populated in one of those fields and this field. An example would be authentication logs from a firewall. The device_natIp would be the same as the dstDevice_natIp because the firewall is reporting a network authentication log about itself.",
+        "enrichment_populated": false,
+        "enrichment_type": "ip",
+        "entity_type": "_ip",
+        "mappable": true,
+        "type": "string"
+    },
+    "device_natIp_asnNumber": {
+        "description": "The autonomous system number for the NAT device IP address based on the Neustar GeoIP database, typically assigned to internet service providers.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "int"
+    },
+    "device_natIp_asnOrg": {
+        "description": "The organzation associated with the ASN based on the Neustar GeoIP database, typically assigned to internet service providers.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "device_natIp_city": {
+        "description": "City for the NAT device IP address based on the Neustar GeoIP database.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "device_natIp_countryCode": {
+        "description": "Country code (e.g. US, CA, DE) for the NAT device IP address based on the Neustar GeoIP database.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "device_natIp_countryName": {
+        "description": "Name of the country for the NAT device IP address based on the Neustar GeoIP database.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "device_natIp_ipv4IntValue": {
+        "description": "The ipv4 address stored as an unsigned 64-bit integer value",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "long"
+    },
+    "device_natIp_isInternal": {
+        "description": "Signifies whether the NAT device IP address is internal or external. True if internal, False if external.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "boolean"
+    },
+    "device_natIp_isp": {
+        "description": "Internet Service Provider for the IP address based on the Neustar GeoIP database.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "device_natIp_latitude": {
+        "description": "Geographic latitude coordinate for the NAT device IP address based on the Neustar GeoIP database.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "float"
+    },
+    "device_natIp_location": {
+        "description": "This value is populated based on uploaded Network Blocks. When there is a match, it will be populated with the network block label.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "device_natIp_longitude": {
+        "description": "Longitude coordinate for the NAT device IP address based on the Neustar GeoIP database.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "float"
+    },
+    "device_natIp_region": {
+        "description": "State or Territory for the NAT device IP address based on the Neustar GeoIP database.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "device_natIp_version": {
+        "description": "Version of the IP protocol of the NAT device IP.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "int"
+    },
+    "device_osName": {
+        "description": "The operating system name present on the computer that generated the log message. Common examples include, but are not limited to, the endpoint reporting an infection or the network appliance reporting allowed or blocked network traffic. \nIn cases where the log data has a source or destination context, there are situations where identical data is populated in one of those fields and this field. An example would be authentication logs from a firewall. The device_osName would be the same as the dstDevice_osName because the firewall is reporting a network authentication log about itself.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "device_type": {
+        "description": "The instance, compute, or machine type. Typically used in cloud environments to describe computing specifications.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "device_uniqueId": {
+        "description": "The vendor or product specific identifier for a computer that generated the log message. Common examples include, but are not limited to, the endpoint reporting an infection or the network appliance reporting allowed or blocked network traffic. This field is also frequently used by cloud providers to identify instances.\nIn cases where the log data has a source or destination context, there are situations where identical data is populated in one of those fields and this field. An example would be authentication logs from a firewall. The device_mac would be the same as the dstDevice_mac because the firewall is reporting a network authentication log about itself.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "dns_query": {
+        "description": "The entire DNS request made from the client machine to the DNS server.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "dns_queryDomain": {
+        "description": "The fully qualified domain name being queried for in a DNS request if present",
+        "enrichment_populated": false,
+        "enrichment_type": "domain",
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "dns_queryDomain_alexaRank": {
+        "description": "Domain ranking in the alexa top 10k sites. NULL if not in the list.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "long"
+    },
+    "dns_queryDomain_conditionalFrequency": {
+        "description": "(Deprecated) DO NOT INCLUDE IN THE DOCUMENTATION",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "double"
+    },
+    "dns_queryDomain_entropyFqdn": {
+        "description": "The entropy calculation of the fqdn field.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "double"
+    },
+    "dns_queryDomain_entropyRootDomain": {
+        "description": "The entropy calculation of the rootDomain field.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "double"
+    },
+    "dns_queryDomain_entropySubDomain": {
+        "description": "Entropy is the measure of disorder. If this case on the sub domain.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "double"
+    },
+    "dns_queryDomain_fqdn": {
+        "description": "The fully qualified domain name (e.g. somehost.sumologic.com).",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "dns_queryDomain_possibleDga": {
+        "description": "Whether or not this domain is potentially a Domain Generation Algorithm created domain based on our backend analytics.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "boolean"
+    },
+    "dns_queryDomain_possibleDynDns": {
+        "description": "A likely dynamically (not static) IP address associated with this domain.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "boolean"
+    },
+    "dns_queryDomain_rootDomain": {
+        "description": "The root domain of hostname in the domain (e.g. sumologic.com).",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "dns_queryDomain_tld": {
+        "description": "The top-level-domain field of the domain name (e.g. com, net, org)",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "dns_queryType": {
+        "description": "The type of DNS record which is being queried for by the client",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "dns_reply": {
+        "description": "The DNS reply which can be a single record or multiple records concatenated into a string.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "dns_replyDomain": {
+        "description": "The domain contained within the DNS if the reply contains a domain.",
+        "enrichment_populated": false,
+        "enrichment_type": "domain",
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "dns_replyDomain_alexaRank": {
+        "description": "Domain ranking in the alexa top 10k sites. NULL if not in the list.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "long"
+    },
+    "dns_replyDomain_conditionalFrequency": {
+        "description": "(Deprecated) DO NOT INCLUDE IN THE DOCUMENTATION",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "double"
+    },
+    "dns_replyDomain_entropyFqdn": {
+        "description": "The entropy calculation of the fqdn field.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "double"
+    },
+    "dns_replyDomain_entropyRootDomain": {
+        "description": "The entropy calculation of the rootDomain field.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "double"
+    },
+    "dns_replyDomain_entropySubDomain": {
+        "description": "Entropy is the measure of disorder. If this case on the sub domain.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "double"
+    },
+    "dns_replyDomain_fqdn": {
+        "description": "The fully qualified domain name (e.g. somehost.sumologic.com).",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "dns_replyDomain_possibleDga": {
+        "description": "Whether or not this domain is potentially a Domain Generation Algorithm created domain based on our backend analytics.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "boolean"
+    },
+    "dns_replyDomain_possibleDynDns": {
+        "description": "A likely dynamically (not static) IP address associated with this domain.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "boolean"
+    },
+    "dns_replyDomain_rootDomain": {
+        "description": "The root domain of hostname in the domain (e.g. sumologic.com).",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "dns_replyDomain_tld": {
+        "description": "The top-level-domain field of the domain name (e.g. com, net, org)",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "dns_replyIp": {
+        "description": "The IP address contained within the DNS if the reply contains an IP address.",
+        "enrichment_populated": false,
+        "enrichment_type": "ip",
+        "entity_type": "_ip",
+        "mappable": true,
+        "type": "string"
+    },
+    "dns_replyIp_asnNumber": {
+        "description": "The autonomous system number for the DNS Reply IP address based on the Neustar GeoIP database, typically assigned to internet service providers.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "int"
+    },
+    "dns_replyIp_asnOrg": {
+        "description": "The organzation associated with the ASN based on the Neustar GeoIP database, typically assigned to internet service providers.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "dns_replyIp_city": {
+        "description": "City for the DNS Reply IP address based on the Neustar GeoIP database.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "dns_replyIp_countryCode": {
+        "description": "Country code (e.g. US, CA, DE) for the DNS Reply IP address based on the Neustar GeoIP database.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "dns_replyIp_countryName": {
+        "description": "Name of the country for the DNS Reply IP address based on the Neustar GeoIP database.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "dns_replyIp_ipv4IntValue": {
+        "description": "The ipv4 address stored as an unsigned 64-bit integer value",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "long"
+    },
+    "dns_replyIp_isInternal": {
+        "description": "Signifies whether the DNS Reply IP address is internal or external. True if internal, False if external.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "boolean"
+    },
+    "dns_replyIp_isp": {
+        "description": "Internet Service Provider for the IP address based on the Neustar GeoIP database.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "dns_replyIp_latitude": {
+        "description": "Geographic latitude coordinate for the DNS Reply IP address based on the Neustar GeoIP database.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "float"
+    },
+    "dns_replyIp_location": {
+        "description": "This value is populated based on uploaded Network Blocks. When there is a match, it will be populated with the network block label.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "dns_replyIp_longitude": {
+        "description": "Longitude coordinate for the DNS Reply IP address based on the Neustar GeoIP database.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "float"
+    },
+    "dns_replyIp_region": {
+        "description": "State or Territory for the DNS Reply IP address based on the Neustar GeoIP database.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "dns_replyIp_version": {
+        "description": "Version of the IP protocol of the DNS Reply IP.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "int"
+    },
+    "dns_returnCode": {
+        "description": "-| The code or message indicating the outcome of a DNS request.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "dstDevice_container_id": {
+        "description": "The unique identifier provided to a discreet container which packages together the elements required to run software.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "dstDevice_container_name": {
+        "description": "The name provided to a discreet container which packages together the elements required to run software.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "dstDevice_container_runtime": {
+        "description": "The provider name of the engine whine underpins the container. E.g. Docker, AWS Lambda, containerd",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "dstDevice_hostname": {
+        "description": "The name of the host for which network traffic is destined.",
+        "enrichment_populated": false,
+        "enrichment_type": "normalizedHostname",
+        "entity_type": "_hostname",
+        "mappable": true,
+        "type": "string"
+    },
+    "dstDevice_hostname_raw": {
+        "description": "The destination device hostname before any enrichments are applied. As the hostname appears in the original log message.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": "_hostname",
+        "mappable": false,
+        "type": "string"
+    },
+    "dstDevice_image": {
+        "description": "The snapshot of the state of a device or similar which can be used to deploy or reproduce a system for which traffic is destined. E.g. A VM image, a container image. ",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "dstDevice_ip": {
+        "description": "The IP address of the host for which network traffic is destined.",
+        "enrichment_populated": false,
+        "enrichment_type": "ip",
+        "entity_type": "_ip",
+        "mappable": true,
+        "type": "string"
+    },
+    "dstDevice_ip_asnNumber": {
+        "description": "The autonomous system number for the destination device IP address based on the Neustar GeoIP database, typically assigned to internet service providers.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "int"
+    },
+    "dstDevice_ip_asnOrg": {
+        "description": "The organzation associated with the ASN based on the Neustar GeoIP database, typically assigned to internet service providers.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "dstDevice_ip_city": {
+        "description": "City for the destination device IP address based on the Neustar GeoIP database.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "dstDevice_ip_countryCode": {
+        "description": "Country code (e.g. US, CA, DE) for the destination device IP address based on the Neustar GeoIP database.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "dstDevice_ip_countryName": {
+        "description": "Name of the country for the destination device IP address based on the Neustar GeoIP database.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "dstDevice_ip_ipv4IntValue": {
+        "description": "The ipv4 address stored as an unsigned 64-bit integer value",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "long"
+    },
+    "dstDevice_ip_isInternal": {
+        "description": "Signifies whether the destination device IP address is internal or external. True if internal, False if external.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "boolean"
+    },
+    "dstDevice_ip_isp": {
+        "description": "Internet Service Provider for the IP address based on the Neustar GeoIP database.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "dstDevice_ip_latitude": {
+        "description": "Geographic latitude coordinate for the destination device IP address based on the Neustar GeoIP database.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "float"
+    },
+    "dstDevice_ip_location": {
+        "description": "This value is populated based on uploaded Network Blocks. When there is a match, it will be populated with the network block label.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "dstDevice_ip_longitude": {
+        "description": "Longitude coordinate for the destination device IP address based on the Neustar GeoIP database.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "float"
+    },
+    "dstDevice_ip_region": {
+        "description": "State or Territory for the destination device IP address based on the Neustar GeoIP database.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "dstDevice_ip_version": {
+        "description": "Version of the IP protocol of the destination device IP.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "int"
+    },
+    "dstDevice_k8s_deployment": {
+        "description": "The deployment name described in the log",
+        "enrichment_populated": false,
+        "enrichment_type": "normalizedDeploymentName",
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "dstDevice_k8s_namespace": {
+        "description": "The namespace name within which resources are running as described in the log.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "dstDevice_k8s_normalizedDeploymentName": {
+        "description": "Combination of namespace and deployment to allow organizations to identify deployments uniquely within their environment.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": "_deployment",
+        "mappable": false,
+        "type": "string"
+    },
+    "dstDevice_k8s_normalizedPodName": {
+        "description": "Combination of namespace and pod to allow organizations to identify pods uniquely within their environment.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": "_pod",
+        "mappable": false,
+        "type": "string"
+    },
+    "dstDevice_k8s_normalizedReplicaSetName": {
+        "description": "Combination of namespace and replicaSet to allow organizations to identify replicaSets uniquely within their environment.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": "_replicaset",
+        "mappable": false,
+        "type": "string"
+    },
+    "dstDevice_k8s_pod": {
+        "description": "The name given to a pod described in the log.",
+        "enrichment_populated": false,
+        "enrichment_type": "normalizedPodName",
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "dstDevice_k8s_replicaSet": {
+        "description": "The replica set name described in the log",
+        "enrichment_populated": false,
+        "enrichment_type": "normalizedReplicaSetName",
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "dstDevice_mac": {
+        "description": "The media access control (MAC) address of the host for which network traffic is destined.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": "_mac",
+        "mappable": true,
+        "type": "string"
+    },
+    "dstDevice_natIp": {
+        "description": "The external IP in cases where the internal IP goes through network address translation.",
+        "enrichment_populated": false,
+        "enrichment_type": "ip",
+        "entity_type": "_ip",
+        "mappable": true,
+        "type": "string"
+    },
+    "dstDevice_natIp_asnNumber": {
+        "description": "An autonomous system number for the IP address based on the Neustar GeoIP database.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "int"
+    },
+    "dstDevice_natIp_asnOrg": {
+        "description": "Organization associated with the IP address address based on the Neustar GeoIP database.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "dstDevice_natIp_city": {
+        "description": "City for the IP address based on the Neustar GeoIP database.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "dstDevice_natIp_countryCode": {
+        "description": "Country Code for the IP address based on the Neustar GeoIP database.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "dstDevice_natIp_countryName": {
+        "description": "Country Code for the IP address based on the Neustar GeoIP database.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "dstDevice_natIp_ipv4IntValue": {
+        "description": "The ipv4 address stored as an unsigned 64-bit integer value",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "long"
+    },
+    "dstDevice_natIp_isInternal": {
+        "description": "Signifies whether the IP address is internal or external. True if internal, False if external.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "boolean"
+    },
+    "dstDevice_natIp_isp": {
+        "description": "Internet Service Provider for the IP address based on the Neustar GeoIP database.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "dstDevice_natIp_latitude": {
+        "description": "Latitude for the IP address based on the Neustar GeoIP database.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "float"
+    },
+    "dstDevice_natIp_location": {
+        "description": "This value is populated based on the Network Blocks you have uploaded. When there is a match, it will be populated with the network block label.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "dstDevice_natIp_longitude": {
+        "description": "Longitude for the IP address based on the Neustar GeoIP database.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "float"
+    },
+    "dstDevice_natIp_region": {
+        "description": "State or Territory for the IP address based on the Neustar GeoIP database.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "dstDevice_natIp_version": {
+        "description": "The version of IP protocol (e.g. 4 or 6)",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "int"
+    },
+    "dstDevice_osName": {
+        "description": "The operating system running on the host for which network traffic is destined.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "dstDevice_type": {
+        "description": "The instance, compute, or machine type which network traffic is destined to. Typically used in cloud environments to describe computing specifications.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "dstDevice_uniqueId": {
+        "description": "The unique ID of the host which network traffic is destined to. This field is frequently used by cloud providers to identify instances.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "dstPort": {
+        "description": "The port number for which the network traffic is destined",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "int"
+    },
+    "email_messageId": {
+        "description": "A semi-unique identifier for an e-mail message generated by the sending mail system often ending with the fully qualified domain name of the sending system. It is not completely unique as copies of the same e-mail message, such as one sent to multiple recipients, may have the same message ID. Different mail systems may form message IDs in different ways.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "email_recipient": {
+        "description": "Address of the e-mail recipient. Note that only a single recipient can be mapped from a log. To be used only for logs related specifically to e-mail activity (spam filtering, message tracking, etc).",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "email_sender": {
+        "description": "Address of the e-mail sender. To be used only for logs related specifically to e-mail activity (spam filtering, message tracking, etc).",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "email_subject": {
+        "description": "Subject line of an e-mail",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "errorCode": {
+        "description": "Machine code or shortform message that represents a specific error.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "errorText": {
+        "description": "Human readable description of a specific error.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "fieldTags": {
+        "description": "A map of entity fields to a list of tags for that entity.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "map[string]array[string]"
+    },
+    "fields": {
+        "description": "This is a general purpose container for all un-mapped data from the log line.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "map[string]string"
+    },
+    "file_basename": {
+        "description": "The name and extension (if applicable) of a file without the path.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": "_file",
+        "mappable": true,
+        "type": "string"
+    },
+    "file_hash_imphash": {
+        "description": "File hash created using the Import Hash (Imphash) algorithm.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": "_hash",
+        "mappable": true,
+        "type": "string"
+    },
+    "file_hash_md5": {
+        "description": "File hash created using the 128 bit MD5 algorithm.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": "_hash",
+        "mappable": true,
+        "type": "string"
+    },
+    "file_hash_pehash": {
+        "description": "Hash value for Portable Executable (PE) file binaries created using the PEHash algorithm.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": "_hash",
+        "mappable": true,
+        "type": "string"
+    },
+    "file_hash_sha1": {
+        "description": "Hash of the file generated using the SHA1 algorithm",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": "_hash",
+        "mappable": true,
+        "type": "string"
+    },
+    "file_hash_sha256": {
+        "description": "Hash of the file generated using the SHA256 algorithm",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": "_hash",
+        "mappable": true,
+        "type": "string"
+    },
+    "file_hash_ssdeep": {
+        "description": "The fuzzy hash of the file generated using ssdeep.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": "_hash",
+        "mappable": true,
+        "type": "string"
+    },
+    "file_mimeType": {
+        "description": "Two-part media type (MIME type/subtype) indicating the nature and format of a file transmitted over the internet.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "file_path": {
+        "description": "The full path (if possible) of the file. This field may contain partial paths and serves as the general placeholder for file/process path fields.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": "_file",
+        "mappable": true,
+        "type": "string"
+    },
+    "file_size": {
+        "description": "Count of bytes taken up by the file.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "long"
+    },
+    "file_uid": {
+        "description": "The data source specific unique identifier for the file, often a GUID.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "flowState": {
+        "description": "Value indicating the state (e.g. begin, end, or continue) of a network traffic flow as it enters or exits an interface.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "friendlyName": {
+        "description": "Name of the table the data is mapped to. Always Record for V3.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "fromUser_authDomain": {
+        "description": "The domain associated with this particular user. (e.g. sumologic.com, sumologic.local)",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "fromUser_email": {
+        "description": "The associated email address assigned to this user.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "fromUser_role": {
+        "description": "The role of the user account in question. Typically, this shows up in CloudTrail logs as an assumed role, but can be broadly applied to other logs.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "fromUser_userId": {
+        "description": "The source unique identifier for the user account.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "fromUser_username": {
+        "description": "The name commonly used to identify the user. May include the domain.  If name normalization occurs, this will be the normalized name.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "fromUser_username_raw": {
+        "description": "The raw (un-normalized) version of a username.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "fromUser_username_role": {
+        "description": "The role that is parsed out of the normalized username (usually from an AWS assumed role ARN).",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "hour": {
+        "description": "Hour pulled from the timestamp.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "int"
+    },
+    "http_category": {
+        "description": "The high level category determined by a service based on the url or domain.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "http_contentLength": {
+        "description": "The number of bytes of data in the body of the request.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "int"
+    },
+    "http_hostname": {
+        "description": "Name of the host within an HTTP request",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "http_method": {
+        "description": "Type of HTTP request being made (e.g. GET, POST)",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "http_referer": {
+        "description": "Identifies the address of the webpage (i.e. the URI or IRI) which is linked to the resource being requested to determine the origin of the request.",
+        "enrichment_populated": false,
+        "enrichment_type": "url_domain",
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "http_referer_alexaRank": {
+        "description": "The HTTP referer domain's rank among the top 10k sites by Alexa traffic rank. NULL if not in the list.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "long"
+    },
+    "http_referer_conditionalFrequency": {
+        "description": "(Deprecated) DO NOT INCLUDE IN THE DOCUMENTATION",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "double"
+    },
+    "http_referer_entropyFqdn": {
+        "description": "The entropy calculation of the Fully Qualified Domain Name (FQDN) of the HTTP referer.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "double"
+    },
+    "http_referer_entropyRootDomain": {
+        "description": "The entropy calculation of the root domain of the HTTP referer.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "double"
+    },
+    "http_referer_entropySubDomain": {
+        "description": "Deprecated and not populated",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "double"
+    },
+    "http_referer_fqdn": {
+        "description": "The fully qualified domain name in the HTTP referer URL (e.g. somehost.sumologic.com).",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": "_domain",
+        "mappable": false,
+        "type": "string"
+    },
+    "http_referer_path": {
+        "description": "The path component of the HTTP referer URL (e.g. somepath/something)",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "http_referer_possibleDga": {
+        "description": "Whether or not this domain is potentially a Domain Generation Algorithm created domain based on our backend analytics.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "boolean"
+    },
+    "http_referer_possibleDynDns": {
+        "description": "A likely dynamically (not static) IP address associated with this domain.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "boolean"
+    },
+    "http_referer_protocol": {
+        "description": "The HTTP referer URL protocol (e.g. https).",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "http_referer_queryParameters": {
+        "description": "The query parameters of a URL if present",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "http_referer_rootDomain": {
+        "description": "The root domain of hostname in the HTTP referer URL (e.g. sumologic.com).",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "http_referer_tld": {
+        "description": "The top-level-domain field of the domain name in the HTTP referer URL (e.g. com, net, org)",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "http_requestHeaders": {
+        "description": "A map of the HTTP request headers.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "map[string]string"
+    },
+    "http_response_contentLength": {
+        "description": "The number of bytes of data in the body of the response.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "int"
+    },
+    "http_response_contentType": {
+        "description": "Two-part media type (MIME type/subtype) indicating the nature and format of data contained within an HTTP response.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "http_response_statusCode": {
+        "description": "The numeric response code for an HTTP request",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "int"
+    },
+    "http_response_statusText": {
+        "description": "The response text for an HTTP request corresponding to an HTTP status code.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "http_url": {
+        "description": "The Uniform Resource Locator (URL) of an HTTP resource (a web page).",
+        "enrichment_populated": false,
+        "enrichment_type": "url_domain",
+        "entity_type": "_url",
+        "mappable": true,
+        "type": "string"
+    },
+    "http_url_alexaRank": {
+        "description": "The HTTP referer domain's rank among the top 10k sites by Alexa traffic rank. NULL if not in the list.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "long"
+    },
+    "http_url_conditionalFrequency": {
+        "description": "(Deprecated) DO NOT INCLUDE IN THE DOCUMENTATION",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "double"
+    },
+    "http_url_entropyFqdn": {
+        "description": "The entropy calculation of the Fully Qualified Domain Name (FQDN) of the HTTP referer.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "double"
+    },
+    "http_url_entropyRootDomain": {
+        "description": "The entropy calculation of the root domain of the HTTP referer.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "double"
+    },
+    "http_url_entropySubDomain": {
+        "description": "Deprecated and not populated",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "double"
+    },
+    "http_url_fqdn": {
+        "description": "The fully qualified domain name in the HTTP URL (e.g. somehost.sumologic.com).",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": "_domain",
+        "mappable": false,
+        "type": "string"
+    },
+    "http_url_path": {
+        "description": "The path component of the HTTP URL (e.g. somepath/something)",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "http_url_possibleDga": {
+        "description": "Whether or not this domain is potentially a Domain Generation Algorithm created domain based on our backend analytics.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "boolean"
+    },
+    "http_url_possibleDynDns": {
+        "description": "A likely dynamically (not static) IP address associated with this domain.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "boolean"
+    },
+    "http_url_protocol": {
+        "description": "The HTTP URL protocol (e.g. https).",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "http_url_queryParameters": {
+        "description": "The query parameters of a URL if present",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "http_url_rootDomain": {
+        "description": "The root domain of hostname in the HTTP URL (e.g. sumologic.com).",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "http_url_tld": {
+        "description": "The top-level-domain field of the domain name in the HTTP URL (e.g. com, net, org)",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "http_userAgent": {
+        "description": "Software agent that is acting on behalf of a user in an HTTP request.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": "_useragent",
+        "mappable": true,
+        "type": "string"
+    },
+    "ipProtocol": {
+        "description": "The transport layer internet protocol used in the traffic that generated the log event. This should be the IP protocol keyword or the protocol number, such as ICMP or 1, TCP or 6, UDP or 17 as defined by the Internet Assigned Numbers Authority (IANA).",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "listMatches": {
+        "description": "Name(s) of the match list(s) that a value in the log matched on.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "array[string]"
+    },
+    "logonType": {
+        "description": "The method of authentication or type of user session initiated.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "matchedItems": {
+        "description": "Value(s) in the match list(s) that an a value in the log matched on.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "array[MatchedItem]"
+    },
+    "metadata_defaultTz": {
+        "description": "Default timezone for timestamp parsing",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "int"
+    },
+    "metadata_deviceEventId": {
+        "description": "Vendor specific event identifier. Is provided in the parser output and determines which mapping will be used.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "metadata_mapperName": {
+        "description": "CSE mapper name which normalizes the record.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "metadata_mapperUid": {
+        "description": "Universally unique identifier for CSE normalization mappers.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "metadata_orgId": {
+        "description": "The Sumo Customer Org ID that originated the raw log message.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "metadata_parseTime": {
+        "description": "The time at which the log line was parsed into a record by the parser and mapper service in milliseconds since epoch",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "long"
+    },
+    "metadata_parser": {
+        "description": "Name of the parser which extracted fields from the original log message.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "metadata_product": {
+        "description": "The specific product name of the data source.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "metadata_productGuid": {
+        "description": "Globally unique identifier for the combined vendor and product.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "metadata_receiptTime": {
+        "description": "The time at which the log line was received by the collector in milliseconds since epoch",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "long"
+    },
+    "metadata_relayHostname": {
+        "description": "(Deprecated) Hostname of the syslog server that forwarded the log to the Sumo Logic sensor.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "metadata_relayIp": {
+        "description": "(Deprecated) IP address of the syslog server that forwarded the log to the Sumo Logic sensor.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "metadata_schemaVersion": {
+        "description": "The current schema version (3).",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "int"
+    },
+    "metadata_sensorId": {
+        "description": "UID of the Sumo Logic sensor used to ingest the log.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "metadata_sensorInformation": {
+        "description": "(Deprecated) Information about the sensor used to ingest the log.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "map[string]string"
+    },
+    "metadata_sensorZone": {
+        "description": "A name propagated from the sensors. In the case where sensors are installed in environments with overlapping IP address spaces, this is used to distinguish two identical IP addresses from each other.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "metadata_sourceBlockId": {
+        "description": "The _blockId of the original source log message (from SumoLogic).",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "metadata_sourceCategory": {
+        "description": "The Sumologic source category of the data.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "metadata_sourceMessageId": {
+        "description": "The _messageID of the original source log message (from SumoLogic CIP).",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "metadata_tenantId": {
+        "description": "(Deprecated) Unique identifier for the portal that data is being sent to.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "metadata_vendor": {
+        "description": "The name of the company responsible for the data source.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "mfa": {
+        "description": "True or false showing whether or not an authentication event was performed with multi-factor authentication.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "boolean"
+    },
+    "moduleType": {
+        "description": "Attribute of a file loaded by a process to extend functionality which identifies its file type or otherwise indicating how it is to behave.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "month": {
+        "description": "Month pulled from the timestamp.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "int"
+    },
+    "normalizedAction": {
+        "description": "Complementary to the Action field, this field describes the initiation of an activity in a common way across records. normalizedAction is meant to describe the attempt of an action, using the success boolean as a modifier indicating whether or not the action was successful. Further, normalizedAction should be paired with normalizedResource to indicate where or upon what the initiated action was attempted against.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "normalizedCause": {
+        "description": "Complementary to Cause, this field describes the reason for any particular outcome in a record in a common way.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "normalizedResource": {
+        "description": "Complementary to Resource, this field describes the resource being acted upon or otherwise referenced within a record in a common way across records. Intended to be used to provide further normalized context to a record, particularly in tandem with normalizedAction.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "normalizedSeverity": {
+        "description": "Severity score on a scale of 0 to 10 with 0 being informational and 10 being critical. This is defined either explicitly per mapping or by a lookup to normalize a vendor specific severity level. Certain normalized threat rules will use normalizedSeverity to pass a dynamic severity into the signal. normalizedSeverity is an enforced output value field, this means that the output value must be an integer between 0 and 10.",
+        "enrichment_populated": false,
+        "enrichment_type": "severity",
+        "entity_type": null,
+        "mappable": true,
+        "type": "int"
+    },
+    "normalizedSeverity_description": {
+        "description": "A string representing the severity.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "objectClassification": {
+        "description": "The classification of the record, based on the object type. This field was originally set by sumostream, but because this field exists in the normalized index in CIP, we should set it in Carto such that rules can be written against it.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "objectType": {
+        "description": "The name of the top level schema object type. (e.g. Authentication, Audit, Endpoint, Network, Notification, etc.). Displayed as Record Type in the UI.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "packetsIn": {
+        "description": "The count of packets received in a network connection.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "long"
+    },
+    "packetsOut": {
+        "description": "The count of packets sent in a network connection.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "long"
+    },
+    "parentBaseImage": {
+        "description": "The name of an executable process which has spawned a child process. Often found in process auditing and malware detection events.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": "_process",
+        "mappable": true,
+        "type": "string"
+    },
+    "parentCommandLine": {
+        "description": "The instruction or set of instructions inputted into a text interface such as the command prompt (cmd.exe) or PowerShell in Windows, or terminal on Unix based systems associated with a parent process.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "parentPid": {
+        "description": "The process id of the program that initiated a process (typically the parentBaseImage).",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "int"
+    },
+    "pid": {
+        "description": "The process id of a process (typically the baseImage).",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "int"
+    },
+    "processUid": {
+        "description": "A data source specific unique identifier for a process, often a GUID.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "resource": {
+        "description": "Generalized field to capture an object referenced within a log that does not have a more specific field currently specified in the mapping schema. (e.g. a file is a resource, however file_basename and file_path both exist to capture this value)",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "resourceType": {
+        "description": "Generalized field to help describe the nature of a resource. Used when a resource exists for which there is no more specific field specified for that type of resource. (e.g. a file is a type of resource, file_basename exists to capture the name of the file and describes the type)",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "sessionId": {
+        "description": "An ephemeral and at least semi-unique identifier of a connection between two systems. E.g. HTTP session, user logon session, TCP session identifiers",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "severity": {
+        "description": "The source specific severity level with no normalization.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "sourceUid": {
+        "description": "A UID that is defined by the record itself. Each record is assigned a UID during mapping, but this is the unique identifier field that may exist within an originating record.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "srcDevice_container_id": {
+        "description": "The unique identifier provided to a discreet container which packages together the elements required to run software.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "srcDevice_container_name": {
+        "description": "The name provided to a discreet container which packages together the elements required to run software.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "srcDevice_container_runtime": {
+        "description": "The provider name of the engine whine underpins the container. E.g. Docker, AWS Lambda, containerd",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "srcDevice_hostname": {
+        "description": "The name of the host which network traffic originated from.",
+        "enrichment_populated": false,
+        "enrichment_type": "normalizedHostname",
+        "entity_type": "_hostname",
+        "mappable": true,
+        "type": "string"
+    },
+    "srcDevice_hostname_raw": {
+        "description": "The source device hostname before any enrichments are applied. As the hostname appears in the original log message.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": "_hostname",
+        "mappable": false,
+        "type": "string"
+    },
+    "srcDevice_image": {
+        "description": "The snapshot of the state of a device or similar which can be used to deploy or reproduce a system for which traffic is originating. E.g. A VM image, a container image. ",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "srcDevice_ip": {
+        "description": "The IP address of the host which network traffic originated from.",
+        "enrichment_populated": false,
+        "enrichment_type": "ip",
+        "entity_type": "_ip",
+        "mappable": true,
+        "type": "string"
+    },
+    "srcDevice_ip_asnNumber": {
+        "description": "The autonomous system number for the source device IP address based on the Neustar GeoIP database, typically assigned to internet service providers.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "int"
+    },
+    "srcDevice_ip_asnOrg": {
+        "description": "The organzation associated with the ASN based on the Neustar GeoIP database, typically assigned to internet service providers.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "srcDevice_ip_city": {
+        "description": "City for the source device IP address based on the Neustar GeoIP database.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "srcDevice_ip_countryCode": {
+        "description": "Country code (e.g. US, CA, DE) for the source device IP address based on the Neustar GeoIP database.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "srcDevice_ip_countryName": {
+        "description": "Name of the country for the source device IP address based on the Neustar GeoIP database.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "srcDevice_ip_ipv4IntValue": {
+        "description": "The ipv4 address stored as an unsigned 64-bit integer value",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "long"
+    },
+    "srcDevice_ip_isInternal": {
+        "description": "Signifies whether the source device IP address is internal or external. True if internal, False if external.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "boolean"
+    },
+    "srcDevice_ip_isp": {
+        "description": "Internet Service Provider for the IP address based on the Neustar GeoIP database.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "srcDevice_ip_latitude": {
+        "description": "Geographic latitude coordinate for the source device IP address based on the Neustar GeoIP database.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "float"
+    },
+    "srcDevice_ip_location": {
+        "description": "This value is populated based on uploaded Network Blocks. When there is a match, it will be populated with the network block label.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "srcDevice_ip_longitude": {
+        "description": "Longitude coordinate for the source device IP address based on the Neustar GeoIP database.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "float"
+    },
+    "srcDevice_ip_region": {
+        "description": "State or Territory for the source device IP address based on the Neustar GeoIP database.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "srcDevice_ip_version": {
+        "description": "Version of the IP protocol of the source device IP.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "int"
+    },
+    "srcDevice_k8s_deployment": {
+        "description": "The deployment name described in the log",
+        "enrichment_populated": false,
+        "enrichment_type": "normalizedDeploymentName",
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "srcDevice_k8s_namespace": {
+        "description": "The namespace name within which resources are running as described in the log.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "srcDevice_k8s_normalizedDeploymentName": {
+        "description": "Combination of namespace and deployment to allow organizations to identify deployments uniquely within their environment.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": "_deployment",
+        "mappable": false,
+        "type": "string"
+    },
+    "srcDevice_k8s_normalizedPodName": {
+        "description": "Combination of namespace and pod to allow organizations to identify pods uniquely within their environment.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": "_pod",
+        "mappable": false,
+        "type": "string"
+    },
+    "srcDevice_k8s_normalizedReplicaSetName": {
+        "description": "Combination of namespace and replicaSet to allow organizations to identify replicaSets uniquely within their environment.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": "_replicaset",
+        "mappable": false,
+        "type": "string"
+    },
+    "srcDevice_k8s_pod": {
+        "description": "The name given to a pod described in the log.",
+        "enrichment_populated": false,
+        "enrichment_type": "normalizedPodName",
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "srcDevice_k8s_replicaSet": {
+        "description": "The replica set name described in the log",
+        "enrichment_populated": false,
+        "enrichment_type": "normalizedReplicaSetName",
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "srcDevice_mac": {
+        "description": "The media access control (MAC) address of the host which network traffic originated from.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": "_mac",
+        "mappable": true,
+        "type": "string"
+    },
+    "srcDevice_natIp": {
+        "description": "The external IP in cases where the internal IP goes through network address translation.",
+        "enrichment_populated": false,
+        "enrichment_type": "ip",
+        "entity_type": "_ip",
+        "mappable": true,
+        "type": "string"
+    },
+    "srcDevice_natIp_asnNumber": {
+        "description": "An autonomous system number for the IP address based on the Neustar GeoIP database.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "int"
+    },
+    "srcDevice_natIp_asnOrg": {
+        "description": "Organization associated with the IP address address based on the Neustar GeoIP database.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "srcDevice_natIp_city": {
+        "description": "City for the IP address based on the Neustar GeoIP database.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "srcDevice_natIp_countryCode": {
+        "description": "Country Code for the IP address based on the Neustar GeoIP database.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "srcDevice_natIp_countryName": {
+        "description": "Country Code for the IP address based on the Neustar GeoIP database.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "srcDevice_natIp_ipv4IntValue": {
+        "description": "The ipv4 address stored as an unsigned 64-bit integer value",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "long"
+    },
+    "srcDevice_natIp_isInternal": {
+        "description": "Signifies whether the IP address is internal or external. True if internal, False if external.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "boolean"
+    },
+    "srcDevice_natIp_isp": {
+        "description": "Internet Service Provider for the IP address based on the Neustar GeoIP database.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "srcDevice_natIp_latitude": {
+        "description": "Latitude for the IP address based on the Neustar GeoIP database.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "float"
+    },
+    "srcDevice_natIp_location": {
+        "description": "This value is populated based on the Network Blocks you have uploaded. When there is a match, it will be populated with the network block label.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "srcDevice_natIp_longitude": {
+        "description": "Longitude for the IP address based on the Neustar GeoIP database.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "float"
+    },
+    "srcDevice_natIp_region": {
+        "description": "State or Territory for the IP address based on the Neustar GeoIP database.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "srcDevice_natIp_version": {
+        "description": "The version of IP protocol (e.g. 4 or 6)",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "int"
+    },
+    "srcDevice_osName": {
+        "description": "The operating system running on the host which network traffic originated from.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "srcDevice_type": {
+        "description": "The instance, compute, or machine type which network traffic originated from. Typically used in cloud environments to describe computing specifications.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "srcDevice_uniqueId": {
+        "description": "The unique ID of the host which network traffic originated from. This field is frequently used by cloud providers to identify instances.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "srcPort": {
+        "description": "The port number which the network traffic originated from.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "int"
+    },
+    "success": {
+        "description": "True or false showing whether or not an action or event recorded in a log was successful. This field is either defined as a constant or based on a lookup in a mapping.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "boolean"
+    },
+    "targetUser_authDomain": {
+        "description": "The authentication domain of a user which is subject to or is otherwise impacted by activity undertaken by another user. Such as the Active Directory domain to which a new user account being created belongs.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "targetUser_email": {
+        "description": "E-Mail address associated with the user which is subject to activity undertaken by another account. Such as an E-Mail address which was created for a new user account.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": "_email",
+        "mappable": true,
+        "type": "string"
+    },
+    "targetUser_role": {
+        "description": "A privileged persona assumed by a user which is subject to activity undertaken by another user. Such as in CloudTrail logs as well as similar cases where a user is recorded taking on a different role for specific privileged activity.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "targetUser_userId": {
+        "description": "The semi-unique identifier associated with a user account which is subject to activity undertaken by another user account.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "targetUser_username": {
+        "description": "The name commonly used to identify the user. May include the domain.  If name normalization occurs, this will be the normalized name.",
+        "enrichment_populated": false,
+        "enrichment_type": "normalizedUsername",
+        "entity_type": "_username",
+        "mappable": true,
+        "type": "string"
+    },
+    "targetUser_username_raw": {
+        "description": "The raw (un-normalized) version of a username.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": "_username",
+        "mappable": false,
+        "type": "string"
+    },
+    "targetUser_username_role": {
+        "description": "The role that is parsed out of the normalized username (usually from an AWS assumed role ARN).",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "tcpProtocol": {
+        "description": "Application layer protocol used to establish the connection as defined by the Internet protocol Suite (TCP/IP).",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "threat_category": {
+        "description": "The type of threat determined by a service based on the signature or threat name.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "threat_identifier": {
+        "description": "The identifier or indicator specific to a threat (not a vulnerability). Generally speaking this should be populated with an indicator value.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "threat_name": {
+        "description": "Name of a specific threat (not a vulnerability), such as malware or an exploit. Often a threat signature.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "threat_referenceUrl": {
+        "description": "An external URL that can provide more information about the threat. This should NOT be the URL that represents an observed HTTP request.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "threat_ruleType": {
+        "description": "This field should be used with logs that indicate detection of a security event has already occurred. These logs are produced by a security product's own detection capabilities like signatures or rule sets. \nAs an example, if a log has a severity, risk, or impact in the message, it should have threat_ruleType included and populated in its mapper. \nThe logs using this field will all be a form of pass through content. Messages that do not include security event detection must leave this field out of the mapper or leave it blank.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "threat_signalName": {
+        "description": "This field is used in conjunction with normalized rules designed to directly pass through security alerts from other security products, appliances, and services. Those rules will use the text populated in this field as an element of the signal name, allowing different signal names for different products while retaining the normalized rule logic.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "threat_signalSummary": {
+        "description": "This field is used in conjunction with normalized rules. Those rules will use the text populated in this field as an element of the signal summary, allowing different signal summaries for different products while retaining the normalized rule logic.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "timestamp": {
+        "description": "The timestamp of the event stored as milliseconds since epoch. Time can be directly mapped if the log contains epoch time, however other time formats can be mapped if the format is provided. If no timestamp is defined in the mapping, ingest time will be used by default.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "long"
+    },
+    "uid": {
+        "description": "UID for the parsed record in Sumo Logic CSE.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "user_authDomain": {
+        "description": "The authentication domain associated with an acting user. Such as an Active Directory domain of a user logging in or is performing an action.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "user_email": {
+        "description": "E-Mail address associated with the acting user.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": "_email",
+        "mappable": true,
+        "type": "string"
+    },
+    "user_role": {
+        "description": "A privileged persona which is assumed by an acting user. Such as in CloudTrail logs as well as similar cases where a user is recorded taking on a different role for specific privileged activity.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "user_userId": {
+        "description": "The semi-unique identifier associated with an acting user account.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "user_username": {
+        "description": "The name commonly used to identify the user. May include the domain.  If name normalization occurs, this will be the normalized name.",
+        "enrichment_populated": false,
+        "enrichment_type": "normalizedUsername",
+        "entity_type": "_username",
+        "mappable": true,
+        "type": "string"
+    },
+    "user_username_raw": {
+        "description": "The actor username before any enrichments are applied. As the username appears in the original log message.",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": "_username",
+        "mappable": false,
+        "type": "string"
+    },
+    "user_username_role": {
+        "description": "The role that is extracted from the normalized actor username (such as from an AWS assumed role ARN).",
+        "enrichment_populated": true,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
+    "vuln_bugtraq": {
+        "description": "Bugtraq identifier assigned by SecurityFocus. BugTraq is a full disclosure moderated mailing list for the detailed discussion and announcement of computer security vulnerabilities.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "vuln_cert": {
+        "description": "Numeric identifier for a vulnerability assigned by the United States Computer Emergency Readiness Team Coordination Center (US CERT/CC).",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "vuln_cve": {
+        "description": "Common Vulnerabilities and Exposures identifier for the vulnerability. Follows the format CVE-<year>-<number>",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "vuln_cvss": {
+        "description": "Common Vulnerability Scoring System (CVSS) score designed to help responders to prioritize their response and resources to a vulnerability.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "vuln_name": {
+        "description": "Name that briefly summarizes the nature of a vulnerability. ",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "vuln_reference": {
+        "description": "Additional information on a vulnerability in the form of a link, a specific vendor ID (e.g. MS14-068), or further description.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "year": {
+        "description": "Year pulled from the timestamp.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "int"
+    }
+}

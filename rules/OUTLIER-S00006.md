@@ -1,0 +1,38 @@
+# [Rules](README.md): Spike in Data Transferred Outbound by User
+
+## Description
+Observes excessive amount of bytes out proxy traffic from a username based on a daily outlier standard deviation using a designated historic baseline. The minimum sum of bytes out expected by default is set to 600000000.
+
+## Additional Details
+|Detail|Value|
+|----|----|
+|Type|Outlier|
+|Category|Exfiltration|
+|Apply Risk to Entities|user_username|
+|Signal Name|Spike in Data Transferred Outbound by User|
+|Summary Expression|Excessive daily total of bytes out identified for user: {{user_username}} based on daily historic activity|
+|Retention Window|7776000000|
+|Baseline Window|604800000|
+|Standard Deviation Threshold|2|
+|Floor Value|600000000|
+|Score/Severity|Static: 3|
+|Enabled by Default|True|
+|Prototype|False|
+|Tags|_mitreAttackTactic:TA0010, _mitreAttackTechnique:T1030|
+## Vendors and Products
+- [Forcepoint - Web Security](../products/e90edc67-68d4-4d67-82f6-4524f94b59bb.md)
+- [Fortinet - Fortigate](../products/c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad.md)
+- [McAfee - Web Gateway](../products/003d35b3-3ba8-4e93-8776-e5810b4e243e.md)
+- [Squid - Squid Proxy](../products/af61d8a8-3eba-42fb-9f17-87443924f3f4.md)
+
+
+## Fields Used
+
+|Origin|Field|
+|----|----|
+|Normalized Schema|bytesOut|
+|Normalized Schema|isNull|
+|Normalized Schema|objectType|
+|Normalized Schema|user_username|
+
+

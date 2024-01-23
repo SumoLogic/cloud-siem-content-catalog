@@ -1,0 +1,38 @@
+# [Rules](README.md): WMIPRVSE Spawning Process
+
+## Description
+Observes for child processes spawned by WMIPRVSE
+
+## Additional Details
+|Detail|Value|
+|----|----|
+|Type|Templated Match|
+|Category|Unknown/Other|
+|Apply Risk to Entities|device_hostname, user_username|
+|Signal Name|WMIPRVSE Spawning Process|
+|Summary Expression|Wmiprvse observed spawning child process {{baseImage}} on {{device_hostname}}|
+|Score/Severity|Static: 3|
+|Enabled by Default|True|
+|Prototype|False|
+|Tags|_mitreAttackTactic:TA0002, _mitreAttackTechnique:T1047|
+## Vendors and Products
+- [CrowdStrike - FDR](../products/569a3a44-c29f-492e-bcf4-5dc04e2ab0f3.md)
+- [Cylance - Protect](../products/60829f4a-7acb-47d1-ad23-8424fcf83dcb.md)
+- [Microsoft - Azure](../products/a1225af5-e778-4068-a9a2-47da93d1ff24.md)
+- [Microsoft - Office 365](../products/d3ed003d-5ddd-4c7a-bea5-63eae6311833.md)
+- [Microsoft - Windows](../products/1ff7546c-cb36-4a24-87f7-89d2cecc5761.md)
+- [Palo Alto Networks - Cortex XDR](../products/146522A1-DC9A-40A5-A909-2EB3B665B1D1.md)
+
+
+## Fields Used
+
+|Origin|Field|
+|----|----|
+|Normalized Schema|device_hostname|
+|Direct from Record|fields['EventData.SubjectLogonId']|
+|Normalized Schema|isNull|
+|Normalized Schema|parentBaseImage|
+|Normalized Schema|user_userId|
+|Normalized Schema|user_username|
+
+

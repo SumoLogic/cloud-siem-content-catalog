@@ -1,0 +1,44 @@
+# [Rules](README.md): DNS Lookup of High Entropy Domain
+
+## Description
+DNS lookup of a high entropy domain name, which may be indicative of a domain generation algorithm (DGA) related domain.  This technique is described at https://attack.mitre.org/techniques/T1483/.
+
+## Additional Details
+|Detail|Value|
+|----|----|
+|Type|Match|
+|Category|Exfiltration|
+|Apply Risk to Entities|srcDevice_ip|
+|Signal Name|DNS Lookup of High Entropy Domain|
+|Summary Expression|High entropy domain: {{dns_queryDomain_rootDomain}}|
+|Score/Severity|Static: 2|
+|Enabled by Default|True|
+|Prototype|False|
+|Tags|_mitreAttackTactic:TA0010, _mitreAttackTactic:TA0011, _mitreAttackTechnique:T1568, _mitreAttackTechnique:T1568.002|
+## Vendors and Products
+- [Amazon AWS - Application Load Balancer](../products/5bb9e0b3-8d57-4b10-8952-0b6ffe91b599.md)
+- [Amazon AWS - Route53](../products/e2393771-bda2-414a-8661-0a57069287ad.md)
+- [Bro - Bro](../products/37C866BF-72E1-470A-9072-EDB908F56951.md)
+- [Cisco Systems - Firepower](../products/da9e05a5-3fd3-46a7-a107-ae03c01e3f5a.md)
+- [Cisco Systems - Umbrella](../products/5ba50e74-3c05-4ea8-aeaf-5efde588c60f.md)
+- [Cloudflare - Logpush](../products/c2503fcc-ef30-4e40-bb32-0bf47151b140.md)
+- [Fortinet - Fortigate](../products/c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad.md)
+- [Google - Google Cloud Platform](../products/dcc85cfc-a698-4d09-87de-f2c723f3ad07.md)
+- [ISC - Bind](../products/1768a42a-37e6-4a2b-aa42-314583f63e1b.md)
+- [McAfee - Web Gateway](../products/003d35b3-3ba8-4e93-8776-e5810b4e243e.md)
+- [Microsoft - Azure](../products/a1225af5-e778-4068-a9a2-47da93d1ff24.md)
+- [Sophos - UTM 9](../products/0fb003bc-8383-442f-8f3d-afcfbaefe617.md)
+- [Zscaler - Firewall](../products/9e0641a7-22ce-4ac8-8113-ee48b368ac3d.md)
+- [Zscaler - Nanolog Streaming Service](../products/6299d728-14f7-455e-85c5-ea8ec65a654a.md)
+
+
+## Fields Used
+
+|Origin|Field|
+|----|----|
+|Normalized Schema|dns_queryDomain_alexaRank|
+|Normalized Schema|dns_queryDomain_entropyRootDomain|
+|Normalized Schema|listMatches|
+|Normalized Schema|srcDevice_ip|
+
+

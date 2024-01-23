@@ -1,0 +1,34 @@
+# [Mappings](README.md): AWSGuardDuty_ResourceConsumption (Sumo Logic)
+
+## Input Requirements
+
+|Input|Value|
+|-----|-----|
+|Vendor|AWS|
+|Product|GuardDuty-Sumo-Logic|
+|Log Format|JSON|
+|Event ID Regex Pattern|`ResourceConsumption.*`|
+
+## Record Output
+
+|Output|Value|
+|------|-----|
+|Vendor|Amazon AWS|
+|Product|GuardDuty|
+|Record Type|Audit|
+
+## Fields Mapped
+
+|Cloud SIEM Schema Field|Original Record Key|Notes|
+|-----------------------|-------------------|-----|
+|accountId|accountId||
+|description|title||
+|device_ip|service.action.awsApiCallAction.remoteIpDetails.ipAddressV4||
+|normalizedSeverity|severity||
+|severity|severity||
+|threat_name|type||
+|threat_ruleType|None|The static text `direct` is populated in this schema field.|
+|threat_signalName|description||
+|timestamp|time|We expect the orginal record value of `time` is in the format `yyyy-MM-dd'T'HH:mm:ss'Z'`|
+|user_username|resource.accessKeyDetails.userName||
+

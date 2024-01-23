@@ -1,0 +1,32 @@
+# [Mappings](README.md): Pritunl Auth VPN Logs
+
+## Input Requirements
+
+|Input|Value|
+|-----|-----|
+|Vendor|Pritunl|
+|Product|VPN|
+|Log Format|JSON|
+|Event ID Regex Pattern|`sso_auth_success`|
+
+## Record Output
+
+|Output|Value|
+|------|-----|
+|Vendor|Pritunl|
+|Product|Pritunl|
+|Record Type|Authentication|
+
+## Fields Mapped
+
+|Cloud SIEM Schema Field|Original Record Key|Notes|
+|-----------------------|-------------------|-----|
+|device_hostname|host_name||
+|device_ip|host_local_address||
+|normalizedAction|None|The static text `logon` is populated in this schema field.|
+|srcDevice_hostname|host_name||
+|srcDevice_ip|host_local_address||
+|success|event|This is a lookup field. More info to come in the catalog later...|
+|timestamp|timestamp|We expect the orginal record value of `timestamp` is in the format `epoch_float`|
+|user_username|user_name||
+

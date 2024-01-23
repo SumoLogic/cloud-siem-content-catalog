@@ -1,0 +1,33 @@
+# [Mappings](README.md): Check Point HTTPS Logs
+
+## Input Requirements
+
+|Input|Value|
+|-----|-----|
+|Vendor|Check Point|
+|Product|Firewall|
+|Log Format|JSON|
+|Event ID Regex Pattern|`HTTPS Inspect\|https inspect`|
+
+## Record Output
+
+|Output|Value|
+|------|-----|
+|Vendor|CheckPoint|
+|Product|Firewall and VPN|
+|Record Type|Network|
+
+## Fields Mapped
+
+|Cloud SIEM Schema Field|Original Record Key|Notes|
+|-----------------------|-------------------|-----|
+|action|action||
+|device_ip|origin||
+|dstDevice_ip|dst||
+|dstPort|service||
+|ipProtocol|proto||
+|srcDevice_ip|src||
+|srcDevice_natIp|xlatesrc||
+|srcPort|s_port||
+|timestamp|time|We expect the orginal record value of `time` is in the format `epoch`|
+

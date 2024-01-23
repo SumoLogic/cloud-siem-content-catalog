@@ -1,0 +1,40 @@
+# [Mappings](README.md): CloudTrail - iam.amazonaws.com - CreatePolicyVersion
+
+## Input Requirements
+
+|Input|Value|
+|-----|-----|
+|Vendor|AWS|
+|Product|CloudTrail|
+|Log Format|JSON|
+|Event ID Regex Pattern|`AwsApiCall-CreatePolicyVersion`|
+
+## Record Output
+
+|Output|Value|
+|------|-----|
+|Vendor|Amazon AWS|
+|Product|CloudTrail|
+|Record Type|AuditChange|
+
+## Fields Mapped
+
+|Cloud SIEM Schema Field|Original Record Key|Notes|
+|-----------------------|-------------------|-----|
+|accountId|userIdentity.accountId||
+|action|eventName||
+|application|eventSource||
+|changeTarget|requestParameters.policyArn||
+|changeType|None|The static text `create` is populated in this schema field.|
+|cloud_provider|None|The static text `AWS` is populated in this schema field.|
+|cloud_region|awsRegion||
+|cloud_service|None|The static text `IAM` is populated in this schema field.|
+|description|None|The static text `A new version of an existing managed IAM policy was created.` is populated in this schema field.|
+|device_ip|sourceIPAddress||
+|http_userAgent|userAgent||
+|normalizedAction|None|The static text `delete` is populated in this schema field.|
+|normalizedSeverity|None|The static text `1` is populated in this schema field.|
+|srcDevice_ip|sourceIPAddress||
+|timestamp|eventTime|We expect the orginal record value of `eventTime` is in the format `yyyy-MM-dd'T'HH:mm:ss'Z'`|
+|user_username|userIdentity.sessionContext.sourceIdentity||
+
