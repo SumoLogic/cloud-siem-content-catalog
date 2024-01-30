@@ -287,11 +287,14 @@
 |FIRST-S00021|[First Seen Azure Virtual Machine Run Command Issued by User](FIRST-S00021.md)|
 |FIRST-S00046|[First Seen Client Generating MailIItemsAccessed Event from User](FIRST-S00046.md)|
 |FIRST-S00028|[First Seen Common Windows Recon Commands From User](FIRST-S00028.md)|
+|FIRST-S00052|[First Seen DNS Request for High Entropy Domain](FIRST-S00052.md)|
 |FIRST-S00055|[First Seen Denied Inbound Autonomous System (AS) Interaction](FIRST-S00055.md)|
 |FIRST-S00013|[First Seen Driver Load - Global](FIRST-S00013.md)|
 |FIRST-S00014|[First Seen Driver Load - Host](FIRST-S00014.md)|
 |FIRST-S00007|[First Seen DynamoDB Enumeration from User](FIRST-S00007.md)|
+|FIRST-S00049|[First Seen HTTP Connection to High Entropy Domain](FIRST-S00049.md)|
 |FIRST-S00031|[First Seen IP Address Associated with User for a Successful Azure AD Sign In Event](FIRST-S00031.md)|
+|FIRST-S00051|[First Seen Inbound Network Protocol and DstPort pair](FIRST-S00051.md)|
 |FIRST-S00027|[First Seen InstallUtil Allow List Bypass From User](FIRST-S00027.md)|
 |FIRST-S00042|[First Seen Ioreg Usage from User](FIRST-S00042.md)|
 |FIRST-S00017|[First Seen Kerberoasting Attempt from User - Global](FIRST-S00017.md)|
@@ -301,6 +304,7 @@
 |FIRST-S00015|[First Seen Macro Execution from User](FIRST-S00015.md)|
 |FIRST-S00016|[First Seen Non-Network/Non-System Logon from User](FIRST-S00016.md)|
 |FIRST-S00030|[First Seen Outbound Connection to External IP Address on Port 445 from IP Address](FIRST-S00030.md)|
+|FIRST-S00053|[First Seen Outbound Network Protocol and DstPort pair](FIRST-S00053.md)|
 |FIRST-S00010|[First Seen PowerShell Execution from Computer](FIRST-S00010.md)|
 |FIRST-S00009|[First Seen RDP Logon From User](FIRST-S00009.md)|
 |FIRST-S00022|[First Seen S3 Bucket ACL Enumeration by User](FIRST-S00022.md)|
@@ -538,6 +542,9 @@
 |MATCH-S00554|[Outbound IRC Traffic](MATCH-S00554.md)|
 |LEGACY-S00056|[Outbound TFTP Traffic](LEGACY-S00056.md)|
 |THRESHOLD-S00048|[Outbound Traffic to Countries Outside the United States](THRESHOLD-S00048.md)|
+|OUTLIER-S00012|[Outlier in Data Inbound per Hour](OUTLIER-S00012.md)|
+|OUTLIER-S00013|[Outlier in Data Outbound Per Day by Admin or Sensitive Device](OUTLIER-S00013.md)|
+|OUTLIER-S00015|[Outlier in Data Outbound Per Hour by Admin or Sensitive Device](OUTLIER-S00015.md)|
 |MATCH-S00755|[Outlook Form Creation](MATCH-S00755.md)|
 |MATCH-S00756|[Outlook Homepage Modification](MATCH-S00756.md)|
 |MATCH-S00683|[Overly Permissive Chmod Command](MATCH-S00683.md)|
