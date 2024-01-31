@@ -20,6 +20,7 @@ Dynamic DNS providers are often abused to host malware control servers and other
 - [Cisco Systems - Firepower](../products/da9e05a5-3fd3-46a7-a107-ae03c01e3f5a.md)
 - [Cisco Systems - Umbrella](../products/5ba50e74-3c05-4ea8-aeaf-5efde588c60f.md)
 - [McAfee - Web Gateway](../products/003d35b3-3ba8-4e93-8776-e5810b4e243e.md)
+- [Netskope - Security Cloud](../products/B3582ED2-1A0C-452D-9802-97433D143486.md)
 - [Sophos - UTM 9](../products/0fb003bc-8383-442f-8f3d-afcfbaefe617.md)
 
 
