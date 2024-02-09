@@ -1,15 +1,11 @@
 # Rules
-
 ## Useful CSVs
-
 |File|Description|
 |----|-----------|
 |[rules.csv](rules.csv)|The entire rule set in a CSV|
 |[threat_rules.csv](threat_rules.csv)|Each [normalized threat rule](https://help.sumologic.com/docs/cse/rules/normalized-threat-rules/) and its associated mappings using the `threat_ruleType` schema field.|
 |[auth_rules.csv](auth_rules.csv)|Each [normalized authentication rule](https://help.sumologic.com/docs/cse/rules/normalized-authentication-rules/) and its associated mappings using the `normalizedAction` schema field.|
-
 ## All Rules
-
 |Rule ID|Name|
 |----|----|
 |MATCH-S00574|[.NET Framework Remote Code Execution Vulnerability](MATCH-S00574.md)|
@@ -148,7 +144,6 @@
 |MATCH-S00801|[Azure - Virtual Machine Started](MATCH-S00801.md)|
 |MATCH-S00802|[Azure - Virtual Machine Stopped](MATCH-S00802.md)|
 |MATCH-S00838|[Azure Active Directory Authentication Method Changed](MATCH-S00838.md)|
-|MATCH-S00896|[Azure Authentication Policy Change](MATCH-S00896.md)|
 |MATCH-S00836|[Azure Conditional Access Policy Disabled](MATCH-S00836.md)|
 |MATCH-S00864|[Azure Firewall Rule Modified](MATCH-S00864.md)|
 |MATCH-S00891|[Azure OAUTH Application Consent from User](MATCH-S00891.md)|
@@ -186,7 +181,6 @@
 |MATCH-S00209|[CVE-2021-44228 Log4j2 Java Library 0-Day Attempt](MATCH-S00209.md)|
 |CHAIN-S00017|[Change of Azure MFA Method followed by Risky SignIn](CHAIN-S00017.md)|
 |MATCH-S00821|[Chromium Browser History Access by Non-Browser Process](MATCH-S00821.md)|
-|MATCH-S00897|[Chromium Extension Installed](MATCH-S00897.md)|
 |MATCH-S00819|[Chromium Process Started With Debugging Port](MATCH-S00819.md)|
 |MATCH-S00074|[Cisco Stealthwatch Template Alerts](MATCH-S00074.md)|
 |LEGACY-S00190|[Cisco Umbrella - DNS Request Category: Adware](LEGACY-S00190.md)|
@@ -289,14 +283,10 @@
 |FIRST-S00021|[First Seen Azure Virtual Machine Run Command Issued by User](FIRST-S00021.md)|
 |FIRST-S00046|[First Seen Client Generating MailIItemsAccessed Event from User](FIRST-S00046.md)|
 |FIRST-S00028|[First Seen Common Windows Recon Commands From User](FIRST-S00028.md)|
-|FIRST-S00052|[First Seen DNS Request for High Entropy Domain](FIRST-S00052.md)|
-|FIRST-S00055|[First Seen Denied Inbound Autonomous System (AS) Interaction](FIRST-S00055.md)|
 |FIRST-S00013|[First Seen Driver Load - Global](FIRST-S00013.md)|
 |FIRST-S00014|[First Seen Driver Load - Host](FIRST-S00014.md)|
 |FIRST-S00007|[First Seen DynamoDB Enumeration from User](FIRST-S00007.md)|
-|FIRST-S00049|[First Seen HTTP Connection to High Entropy Domain](FIRST-S00049.md)|
 |FIRST-S00031|[First Seen IP Address Associated with User for a Successful Azure AD Sign In Event](FIRST-S00031.md)|
-|FIRST-S00051|[First Seen Inbound Network Protocol and DstPort pair](FIRST-S00051.md)|
 |FIRST-S00027|[First Seen InstallUtil Allow List Bypass From User](FIRST-S00027.md)|
 |FIRST-S00042|[First Seen Ioreg Usage from User](FIRST-S00042.md)|
 |FIRST-S00017|[First Seen Kerberoasting Attempt from User - Global](FIRST-S00017.md)|
@@ -512,7 +502,6 @@
 |MATCH-S00644|[New Kubernetes Namespace Created](MATCH-S00644.md)|
 |MATCH-S00156|[New Suspicious cmd.exe / regedit.exe / powershell.exe Service Launch](MATCH-S00156.md)|
 |MATCH-S00152|[New or Renamed Windows User Account Mimicking a Machine Account](MATCH-S00152.md)|
-|MATCH-S00895|[NinjaCopy Usage Detected](MATCH-S00895.md)|
 |LEGACY-S00181|[Noncompliant Protocol Tunnel Over Common Service Port](LEGACY-S00181.md)|
 |MATCH-S00402|[Normalized Security Signal](MATCH-S00402.md)|
 |MATCH-S00288|[NotPetya Ransomware Activity](MATCH-S00288.md)|
@@ -544,8 +533,6 @@
 |MATCH-S00554|[Outbound IRC Traffic](MATCH-S00554.md)|
 |LEGACY-S00056|[Outbound TFTP Traffic](LEGACY-S00056.md)|
 |THRESHOLD-S00048|[Outbound Traffic to Countries Outside the United States](THRESHOLD-S00048.md)|
-|OUTLIER-S00013|[Outlier in Data Outbound Per Day by Admin or Sensitive Device](OUTLIER-S00013.md)|
-|OUTLIER-S00015|[Outlier in Data Outbound Per Hour by Admin or Sensitive Device](OUTLIER-S00015.md)|
 |MATCH-S00755|[Outlook Form Creation](MATCH-S00755.md)|
 |MATCH-S00756|[Outlook Homepage Modification](MATCH-S00756.md)|
 |MATCH-S00683|[Overly Permissive Chmod Command](MATCH-S00683.md)|
