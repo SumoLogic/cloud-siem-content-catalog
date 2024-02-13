@@ -1,11 +1,15 @@
 # Rules
+
 ## Useful CSVs
+
 |File|Description|
 |----|-----------|
 |[rules.csv](rules.csv)|The entire rule set in a CSV|
 |[threat_rules.csv](threat_rules.csv)|Each [normalized threat rule](https://help.sumologic.com/docs/cse/rules/normalized-threat-rules/) and its associated mappings using the `threat_ruleType` schema field.|
 |[auth_rules.csv](auth_rules.csv)|Each [normalized authentication rule](https://help.sumologic.com/docs/cse/rules/normalized-authentication-rules/) and its associated mappings using the `normalizedAction` schema field.|
+
 ## All Rules
+
 |Rule ID|Name|
 |----|----|
 |MATCH-S00574|[.NET Framework Remote Code Execution Vulnerability](MATCH-S00574.md)|

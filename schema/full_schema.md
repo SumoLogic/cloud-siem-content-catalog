@@ -552,7 +552,7 @@ In cases where the log data has a source or destination context, there are situa
 |targetUser_email|string|E-Mail address associated with the user which is subject to activity undertaken by another account. Such as an E-Mail address which was created for a new user account.|
 |targetUser_role|string|A privileged persona assumed by a user which is subject to activity undertaken by another user. Such as in CloudTrail logs as well as similar cases where a user is recorded taking on a different role for specific privileged activity.|
 |targetUser_userId|string|The semi-unique identifier associated with a user account which is subject to activity undertaken by another user account.|
-|targetUser_username|string|The name commonly used to identify the user. May include the domain.  If name normalization occurs, this will be the normalized name.|
+|targetUser_username|string|User an action is performed on or is otherwise impacted by an action taken by another user. Such as a user whose account is disabled by an administrator.|
 |targetUser_username_raw|string|The raw (un-normalized) version of a username.|
 |targetUser_username_role|string|The role that is parsed out of the normalized username (usually from an AWS assumed role ARN).|
 |tcpProtocol|string|Application layer protocol used to establish the connection as defined by the Internet protocol Suite (TCP/IP).|
@@ -571,7 +571,7 @@ The logs using this field will all be a form of pass through content. Messages t
 |user_email|string|E-Mail address associated with the acting user.|
 |user_role|string|A privileged persona which is assumed by an acting user. Such as in CloudTrail logs as well as similar cases where a user is recorded taking on a different role for specific privileged activity.|
 |user_userId|string|The semi-unique identifier associated with an acting user account.|
-|user_username|string|The name commonly used to identify the user. May include the domain.  If name normalization occurs, this will be the normalized name.|
+|user_username|string|User performing an action. Such as an administrator disabling another user account.|
 |user_username_raw|string|The actor username before any enrichments are applied. As the username appears in the original log message.|
 |user_username_role|string|The role that is extracted from the normalized actor username (such as from an AWS assumed role ARN).|
 |vuln_bugtraq|string|Bugtraq identifier assigned by SecurityFocus. BugTraq is a full disclosure moderated mailing list for the detailed discussion and announcement of computer security vulnerabilities.|

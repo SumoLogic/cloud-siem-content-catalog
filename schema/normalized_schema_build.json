@@ -4432,7 +4432,7 @@
         "type": "string"
     },
     "targetUser_username": {
-        "description": "The name commonly used to identify the user. May include the domain.  If name normalization occurs, this will be the normalized name.",
+        "description": "User an action is performed on or is otherwise impacted by an action taken by another user. Such as a user whose account is disabled by an administrator.",
         "enrichment_populated": false,
         "enrichment_type": "normalizedUsername",
         "entity_type": "_username",
@@ -4568,7 +4568,7 @@
         "type": "string"
     },
     "user_username": {
-        "description": "The name commonly used to identify the user. May include the domain.  If name normalization occurs, this will be the normalized name.",
+        "description": "User performing an action. Such as an administrator disabling another user account.",
         "enrichment_populated": false,
         "enrichment_type": "normalizedUsername",
         "entity_type": "_username",

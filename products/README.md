@@ -217,6 +217,7 @@ Below is a full list of products supported by Cloud SIEM.
 |[Tenable](../vendors/600BEF8F-BE81-4767-8322-72116C16DB20.md)|[Cloud API](1C384C22-411B-49C0-8029-A7F6C13424B1.md)|
 |[Thinkst Canary](../vendors/0152e233-fce6-4cbf-9edc-721d7bef94f8.md)|[Thinkst Canary](bff00521-0a45-4237-b853-cf21860f88bd.md)|
 |[Thycotic Software](../vendors/260cf6fd-c701-4ace-b39a-ac4a84ee791c.md)|[Secret Server](7cd93e5f-5165-41a9-a14c-bf3b1e413b6f.md)|
+|[Trellix](../vendors/9bec8407-4182-46ec-99dd-2adfade15652.md)|[MVision EPO](cf037e61-5600-4595-8cdb-41716f264528.md)|
 |[Trend Micro](../vendors/8af48b83-18bf-4233-ad51-db37baca0313.md)|[Apex Central](F362EA03-9BBB-4701-B2DF-5460C4A289CF.md)|
 |[Trend Micro](../vendors/8af48b83-18bf-4233-ad51-db37baca0313.md)|[Control Manager](bb75c481-648d-4953-80cf-1c8cbde8fbb8.md)|
 |[Trend Micro](../vendors/8af48b83-18bf-4233-ad51-db37baca0313.md)|[Deep Security](57cec26c-f94e-4403-add4-dae2382b5c16.md)|
@@ -229,6 +230,7 @@ Below is a full list of products supported by Cloud SIEM.
 |[Vectra](../vendors/7a3d1a5c-ba67-4597-971f-7057e8f6c8bb.md)|[Cognito](51afd72e-94b0-42f3-b65c-cf8edbacf7cf.md)|
 |[Wiz](../vendors/2cde0cac-102b-4756-9a56-81437fea1400.md)|[Wiz](52ac893d-bdf9-4e2c-be83-5f43842a179d.md)|
 |[Workday](../vendors/6e7ce4b2-569e-476d-b732-7b3a71b1e12a.md)|[Workday](0438df6b-16ba-4da7-a7a7-626316d0061f.md)|
+|[Zero Networks](../vendors/3e3c8813-9644-4fd6-9d6f-78bb8ffc5f44.md)|[Segment](cf2af9e8-bade-4f28-8bca-b30aa41baec4.md)|
 |[Zoom](../vendors/bda720cd-399c-4dcc-9289-19ad0c9cb221.md)|[Zoom](ad8d40a9-ee64-4615-bd92-aa964b4ae3b0.md)|
 |[Zscaler](../vendors/9dfd2223-1656-4faf-a38a-5a91978fa15e.md)|[Firewall](9e0641a7-22ce-4ac8-8113-ee48b368ac3d.md)|
 |[Zscaler](../vendors/9dfd2223-1656-4faf-a38a-5a91978fa15e.md)|[Nanolog Streaming Service](6299d728-14f7-455e-85c5-ea8ec65a654a.md)|
