@@ -120,6 +120,7 @@ Below is a full list of vendors for which there are supported products in Cloud 
 |[Tenable](600BEF8F-BE81-4767-8322-72116C16DB20.md)|1|
 |[Thinkst Canary](0152e233-fce6-4cbf-9edc-721d7bef94f8.md)|1|
 |[Thycotic Software](260cf6fd-c701-4ace-b39a-ac4a84ee791c.md)|1|
+|[Trellix](9bec8407-4182-46ec-99dd-2adfade15652.md)|1|
 |[Trend Micro](8af48b83-18bf-4233-ad51-db37baca0313.md)|4|
 |[Twistlock](97C36046-B516-41F8-9751-4C788AA33785.md)|1|
 |[VMware](fbf25b91-89f1-45c4-903d-664b328bc6e0.md)|3|
@@ -127,5 +128,6 @@ Below is a full list of vendors for which there are supported products in Cloud 
 |[Vectra](7a3d1a5c-ba67-4597-971f-7057e8f6c8bb.md)|1|
 |[Wiz](2cde0cac-102b-4756-9a56-81437fea1400.md)|1|
 |[Workday](6e7ce4b2-569e-476d-b732-7b3a71b1e12a.md)|1|
+|[Zero Networks](3e3c8813-9644-4fd6-9d6f-78bb8ffc5f44.md)|1|
 |[Zoom](bda720cd-399c-4dcc-9289-19ad0c9cb221.md)|1|
 |[Zscaler](9dfd2223-1656-4faf-a38a-5a91978fa15e.md)|4|
