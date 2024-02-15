@@ -41,7 +41,7 @@ Below is a full list of vendors for which there are supported products in Cloud 
 |[Docker](d8aec2d6-4a0d-4112-bb17-c26470eedb0c.md)|1|
 |[DocuSign](0a880f0c-fcd6-4cf8-bfa1-00e5f25f1c09.md)|1|
 |[Dropbox](a0a4317b-2185-4c72-a8f2-13033636a8d6.md)|1|
-|[Druva](fafcf2d2-4fb8-4903-92ad-5a5572ceb75a.md)|1|
+|[Druva](fafcf2d2-4fb8-4903-92ad-5a5572ceb75a.md)|2|
 |[Duo Security](2a10e3c0-7835-4b29-81a4-9a7573b2f345.md)|1|
 |[ESET](ced86de0-64e4-4e7c-ae25-fb5b3dff3cb8.md)|1|
 |[Egnyte](54b483b4-c7b0-4e6e-802b-e5d7709781ef.md)|1|

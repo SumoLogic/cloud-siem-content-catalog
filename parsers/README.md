@@ -64,6 +64,7 @@ The `type` listed lets you know if you can directly apply the parser to a collec
 |Parser|/Parsers/System/Dell/Dell SonicWall|
 |Parser|/Parsers/System/Docker/Docker JSON|
 |Parser|/Parsers/System/DocuSign/DocuSign Monitor|
+|Parser|/Parsers/System/Druva/Druva Cyber Resilience|
 |Parser|/Parsers/System/Druva/Druva inSync Cloud|
 |Parser|/Parsers/System/Duo Security/Duo Multi-Factor Authentication|
 |Parser|/Parsers/System/ESET/ESET|
