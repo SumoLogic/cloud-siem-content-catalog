@@ -558,6 +558,8 @@ You will find our complete list of mappers for content here.
  - [DocuSign Monitor - Catch All](7fb377e0-a51a-4bc8-af3e-eec40dda35ac.md)
  - [Dropbox - Authentication](00f242ba-1200-4750-bdc0-68c0a7d58249.md)
  - [Dropbox - Catch All](2d51b1e4-02fd-471c-a423-9cda9eb3cda5.md)
+ - [Druva Cyber Resilience - Admin Logon](501b4a1f-2af4-4523-8fcf-43af82eea412.md)
+ - [Druva Cyber Resilience - Catch All](ac571cea-315a-4348-b665-d1daf97832d2.md)
  - [Druva inSync - Catch All](18768bc7-df8e-437a-8ac9-8eab87db4add.md)
  - [Duo Authentication via CEF](addda6e4-9041-11e8-9eb6-529269fb1459.md)
  - [Duo Security Admin API - Audit](640b4eb0-669a-46f4-9229-48c30c50e5ef.md)

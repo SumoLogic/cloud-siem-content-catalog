@@ -81,6 +81,7 @@ Below is a full list of products supported by Cloud SIEM.
 |[Docker](../vendors/d8aec2d6-4a0d-4112-bb17-c26470eedb0c.md)|[Docker](2f305793-ce37-44cb-84bc-1b89b4367d3c.md)|
 |[DocuSign](../vendors/0a880f0c-fcd6-4cf8-bfa1-00e5f25f1c09.md)|[Monitor](b26a9f95-4fe6-4eb4-aeeb-50fa20b395e7.md)|
 |[Dropbox](../vendors/a0a4317b-2185-4c72-a8f2-13033636a8d6.md)|[Dropbox](5bfda3d2-03e7-4d9a-8072-c59430a131d7.md)|
+|[Druva](../vendors/fafcf2d2-4fb8-4903-92ad-5a5572ceb75a.md)|[Druva Cyber Resilience](ff876bd5-dfbd-42ff-b141-34f584d1306d.md)|
 |[Druva](../vendors/fafcf2d2-4fb8-4903-92ad-5a5572ceb75a.md)|[Druva inSync Cloud](2d47fe59-4607-48f7-a21a-eb3f5f051660.md)|
 |[Duo Security](../vendors/2a10e3c0-7835-4b29-81a4-9a7573b2f345.md)|[Multi-Factor Authentication (MFA)](acb7e80e-2b66-496c-ba2e-1e7c3933a98e.md)|
 |[ESET](../vendors/ced86de0-64e4-4e7c-ae25-fb5b3dff3cb8.md)|[ESET](8e605871-e24c-4126-8fed-af8b13871595.md)|
