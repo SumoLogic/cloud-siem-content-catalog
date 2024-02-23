@@ -287,7 +287,6 @@
 |FIRST-S00021|[First Seen Azure Virtual Machine Run Command Issued by User](FIRST-S00021.md)|
 |FIRST-S00046|[First Seen Client Generating MailIItemsAccessed Event from User](FIRST-S00046.md)|
 |FIRST-S00028|[First Seen Common Windows Recon Commands From User](FIRST-S00028.md)|
-|FIRST-S00052|[First Seen DNS Request for High Entropy Domain](FIRST-S00052.md)|
 |FIRST-S00013|[First Seen Driver Load - Global](FIRST-S00013.md)|
 |FIRST-S00014|[First Seen Driver Load - Host](FIRST-S00014.md)|
 |FIRST-S00007|[First Seen DynamoDB Enumeration from User](FIRST-S00007.md)|
