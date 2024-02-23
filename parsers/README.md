@@ -21,6 +21,7 @@ The `type` listed lets you know if you can directly apply the parser to a collec
 |Parser|/Parsers/System/AWS/AWS WAF|
 |Parser|/Parsers/System/AWS/CloudTrail|
 |Parser|/Parsers/System/AWS/GuardDuty|
+|Parser|/Parsers/System/Abnormal Security/Abnormal Security|
 |Parser|/Parsers/System/Adaxes/Adaxes Syslog|
 |Parser|/Parsers/System/Airtable/Airtable Audit C2C|
 |Parser|/Parsers/System/Aqua/Aqua JSON|
@@ -50,6 +51,7 @@ The `type` listed lets you know if you can directly apply the parser to a collec
 |Parser|/Parsers/System/Claroty/Claroty xDome CEF|
 |Parser|/Parsers/System/Cloudflare/Cloudflare Logpush|
 |Parser|/Parsers/System/Code42/Code42|
+|Parser|/Parsers/System/Code42/Code42 Incydr|
 |Parser|/Parsers/System/Corelight/Corelight NSM|
 |Parser|/Parsers/System/CrowdStrike/CrowdStrike FDR - JSON|
 |Parser|/Parsers/System/CrowdStrike/CrowdStrike Falcon Endpoint - CEF|
@@ -64,6 +66,7 @@ The `type` listed lets you know if you can directly apply the parser to a collec
 |Parser|/Parsers/System/Dell/Dell SonicWall|
 |Parser|/Parsers/System/Docker/Docker JSON|
 |Parser|/Parsers/System/DocuSign/DocuSign Monitor|
+|Parser|/Parsers/System/Druva/Druva Cyber Resilience|
 |Parser|/Parsers/System/Druva/Druva inSync Cloud|
 |Parser|/Parsers/System/Duo Security/Duo Multi-Factor Authentication|
 |Parser|/Parsers/System/ESET/ESET|
@@ -88,6 +91,7 @@ The `type` listed lets you know if you can directly apply the parser to a collec
 |Parser|/Parsers/System/Imperva/Imperva Incapsula|
 |Parser|/Parsers/System/Infoblox/Infoblox|
 |Parser|/Parsers/System/Jamf/Jamf|
+|Parser|/Parsers/System/JumpCloud/JumpCloud Directory Insights|
 |Parser|/Parsers/System/Juniper/Juniper SRX Series Firewall Syslog|
 |Parser|/Parsers/System/Juniper/Juniper SSG Series Firewall Syslog|
 |Parser|/Parsers/System/Kemp/Kemp LoadMaster Syslog|

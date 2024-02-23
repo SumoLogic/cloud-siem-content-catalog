@@ -50,6 +50,7 @@ Passes through an alert from an endpoint security product and adjusts the severi
 - [Trend Micro - Deep Security](../products/57cec26c-f94e-4403-add4-dae2382b5c16.md)
 - [VMware - Carbon Black Cloud](../products/f9cea291-9030-4e41-9836-6dd9274d6df4.md)
 - [Varonis - DatAdvantage](../products/4d6a3683-4edb-4330-9e9f-b8608cd63981.md)
+- [Varonis - DatAlert](../products/bd98578e-3f97-4e5a-93ec-bbff28f90ccf.md)
 - [Vectra - Cognito](../products/51afd72e-94b0-42f3-b65c-cf8edbacf7cf.md)
 - [Zscaler - Nanolog Streaming Service](../products/6299d728-14f7-455e-85c5-ea8ec65a654a.md)
 

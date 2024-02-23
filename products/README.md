@@ -5,6 +5,7 @@ Below is a full list of products supported by Cloud SIEM.
 |Vendor|Product|
 |------|-------|
 |[1Password](../vendors/d0455ea1-e901-4999-b047-0533d16adfdc.md)|[1Password](3fe1afe0-c1c2-45d6-835e-0bdb1e4b703f.md)|
+|[Abnormal Security](../vendors/9a831235-b5bc-4119-818b-99f76e9743c6.md)|[Abnormal Security](2b79254e-8017-4dbf-8e39-590132172a7d.md)|
 |[Adaxes](../vendors/87fd53e1-0bfd-4e53-9979-4fb6ec196cc2.md)|[Adaxes](4572a37e-bff1-44bd-9e55-3b67dad06bfe.md)|
 |[Airtable](../vendors/38db1e35-cb46-4a49-ae8c-b6f766ff5378.md)|[Airtable Audit](bee5bdb2-df30-4c71-9c13-fe207a101bb3.md)|
 |[Akamai](../vendors/47292522-c7f4-4c0e-9ab5-4426c0215be3.md)|[SIEM](9a28f2af-5526-414d-973b-c3fc7984b8a1.md)|
@@ -64,6 +65,7 @@ Below is a full list of products supported by Cloud SIEM.
 |[Claroty](../vendors/7d7a8243-bd53-417a-93f7-b73f800b1925.md)|[Claroty xDome](8cdfb3fc-8700-4012-bf3d-7dfc147d291b.md)|
 |[Cloudflare](../vendors/4c1c0f12-5d0a-4f0c-918f-c83dca43c967.md)|[Logpush](c2503fcc-ef30-4e40-bb32-0bf47151b140.md)|
 |[Code42](../vendors/f764fde6-a435-42cb-9407-15734a99d657.md)|[Code42](be11069a-30d6-4439-b9c8-9d4f47c13160.md)|
+|[Code42](../vendors/f764fde6-a435-42cb-9407-15734a99d657.md)|[Incydr](cc523ad6-7193-4de5-a254-d0243fca63f3.md)|
 |[Corelight](../vendors/6b5528e6-3d06-460d-b730-b5fa4b18ce18.md)|[NSM](1eecf521-df5d-4fc5-83b4-69f128056fdb.md)|
 |[CrowdStrike](../vendors/79ade329-b6d4-43ae-8db1-2a9cc45c0fb0.md)|[FDR](569a3a44-c29f-492e-bcf4-5dc04e2ab0f3.md)|
 |[CrowdStrike](../vendors/79ade329-b6d4-43ae-8db1-2a9cc45c0fb0.md)|[Falcon](840c72e0-4e47-41e7-9b93-31f55d12f07d.md)|
@@ -81,6 +83,7 @@ Below is a full list of products supported by Cloud SIEM.
 |[Docker](../vendors/d8aec2d6-4a0d-4112-bb17-c26470eedb0c.md)|[Docker](2f305793-ce37-44cb-84bc-1b89b4367d3c.md)|
 |[DocuSign](../vendors/0a880f0c-fcd6-4cf8-bfa1-00e5f25f1c09.md)|[Monitor](b26a9f95-4fe6-4eb4-aeeb-50fa20b395e7.md)|
 |[Dropbox](../vendors/a0a4317b-2185-4c72-a8f2-13033636a8d6.md)|[Dropbox](5bfda3d2-03e7-4d9a-8072-c59430a131d7.md)|
+|[Druva](../vendors/fafcf2d2-4fb8-4903-92ad-5a5572ceb75a.md)|[Druva Cyber Resilience](ff876bd5-dfbd-42ff-b141-34f584d1306d.md)|
 |[Druva](../vendors/fafcf2d2-4fb8-4903-92ad-5a5572ceb75a.md)|[Druva inSync Cloud](2d47fe59-4607-48f7-a21a-eb3f5f051660.md)|
 |[Duo Security](../vendors/2a10e3c0-7835-4b29-81a4-9a7573b2f345.md)|[Multi-Factor Authentication (MFA)](acb7e80e-2b66-496c-ba2e-1e7c3933a98e.md)|
 |[ESET](../vendors/ced86de0-64e4-4e7c-ae25-fb5b3dff3cb8.md)|[ESET](8e605871-e24c-4126-8fed-af8b13871595.md)|
@@ -114,6 +117,7 @@ Below is a full list of products supported by Cloud SIEM.
 |[Infoblox](../vendors/fa08cfce-e611-42b7-8317-8b0beca298d5.md)|[Network Identity Operating System](43808f4c-15e9-480c-ab1a-38bdef3b6798.md)|
 |[Intersect Alliance](../vendors/005c835d-f067-4147-9da9-fe4d2691247e.md)|[Snare Enterprise Agent for Windows](d9af8a59-8835-467e-aeea-fd6fc2e210da.md)|
 |[Jamf](../vendors/3fe48850-f882-43c3-ab80-1e0354cf2aba.md)|[Jamf](5c2cc0de-ca31-4ef0-bcfa-133fc8b387ad.md)|
+|[JumpCloud](../vendors/138e3b9f-8b41-43d8-ba4c-823bef814d38.md)|[Directory Insights](05bfaf47-5e21-4d5f-b724-98960a6fca8a.md)|
 |[Juniper](../vendors/AFDA386E-E25E-421D-85F7-ACEC262D73C2.md)|[SRX Series Firewall](A17B3F3C-04F1-40C8-9497-3C499EB18A74.md)|
 |[Juniper](../vendors/AFDA386E-E25E-421D-85F7-ACEC262D73C2.md)|[SSG Series Firewall](19d02d3a-ecc8-4154-942b-911132f8838a.md)|
 |[KasperskyLab](../vendors/8011e6fe-1e65-4603-aa2e-15c9b33cb0fd.md)|[SecurityCenter](a29a5331-583b-4153-8b07-20b3126b0d33.md)|

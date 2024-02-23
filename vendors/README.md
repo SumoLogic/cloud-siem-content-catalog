@@ -5,6 +5,7 @@ Below is a full list of vendors for which there are supported products in Cloud 
 |Vendor|Number of Products|
 |------|------------------|
 |[1Password](d0455ea1-e901-4999-b047-0533d16adfdc.md)|1|
+|[Abnormal Security](9a831235-b5bc-4119-818b-99f76e9743c6.md)|1|
 |[Adaxes](87fd53e1-0bfd-4e53-9979-4fb6ec196cc2.md)|1|
 |[Airtable](38db1e35-cb46-4a49-ae8c-b6f766ff5378.md)|1|
 |[Akamai](47292522-c7f4-4c0e-9ab5-4426c0215be3.md)|2|
@@ -26,7 +27,7 @@ Below is a full list of vendors for which there are supported products in Cloud 
 |[Citrix](f3d0223a-78a7-42f6-93cc-3bcd15569a5b.md)|3|
 |[Claroty](7d7a8243-bd53-417a-93f7-b73f800b1925.md)|1|
 |[Cloudflare](4c1c0f12-5d0a-4f0c-918f-c83dca43c967.md)|2|
-|[Code42](f764fde6-a435-42cb-9407-15734a99d657.md)|1|
+|[Code42](f764fde6-a435-42cb-9407-15734a99d657.md)|2|
 |[Corelight](6b5528e6-3d06-460d-b730-b5fa4b18ce18.md)|1|
 |[CrowdStrike](79ade329-b6d4-43ae-8db1-2a9cc45c0fb0.md)|2|
 |[Cyber-Ark](8a3d333e-ffad-49ed-9edd-0cf1c797b24f.md)|3|
@@ -41,7 +42,7 @@ Below is a full list of vendors for which there are supported products in Cloud 
 |[Docker](d8aec2d6-4a0d-4112-bb17-c26470eedb0c.md)|1|
 |[DocuSign](0a880f0c-fcd6-4cf8-bfa1-00e5f25f1c09.md)|1|
 |[Dropbox](a0a4317b-2185-4c72-a8f2-13033636a8d6.md)|1|
-|[Druva](fafcf2d2-4fb8-4903-92ad-5a5572ceb75a.md)|1|
+|[Druva](fafcf2d2-4fb8-4903-92ad-5a5572ceb75a.md)|2|
 |[Duo Security](2a10e3c0-7835-4b29-81a4-9a7573b2f345.md)|1|
 |[ESET](ced86de0-64e4-4e7c-ae25-fb5b3dff3cb8.md)|1|
 |[Egnyte](54b483b4-c7b0-4e6e-802b-e5d7709781ef.md)|1|
@@ -65,6 +66,7 @@ Below is a full list of vendors for which there are supported products in Cloud 
 |[Infoblox](fa08cfce-e611-42b7-8317-8b0beca298d5.md)|2|
 |[Intersect Alliance](005c835d-f067-4147-9da9-fe4d2691247e.md)|1|
 |[Jamf](3fe48850-f882-43c3-ab80-1e0354cf2aba.md)|1|
+|[JumpCloud](138e3b9f-8b41-43d8-ba4c-823bef814d38.md)|1|
 |[Juniper](AFDA386E-E25E-421D-85F7-ACEC262D73C2.md)|2|
 |[KasperskyLab](8011e6fe-1e65-4603-aa2e-15c9b33cb0fd.md)|1|
 |[Kemp](fe56e139-6049-4d78-9665-df7d5f80d996.md)|1|
