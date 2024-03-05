@@ -40,7 +40,6 @@ Detects excessive failed login attempts for the same username based on a daily o
 - [OneLogin - OneLogin Single Sign-On](../products/e43ba0e4-1e3f-40c6-8bca-cb06a656a40b.md)
 - [Palo Alto Networks - GlobalProtect](../products/b0fe0dde-4e19-4712-957b-1ea7418c132e.md)
 - [Palo Alto Networks - Next Generation Firewall](../products/46f5fa2c-1a62-4692-82ad-ed87800a0adb.md)
-- [RSA - SecurID Runtime](../products/4809be0f-c6f3-4cbb-b1f6-ae9ae817712e.md)
 - [RSA - SecurID SinglePoint](../products/90bba037-f944-480e-89fa-a3b104451af3.md)
 
 

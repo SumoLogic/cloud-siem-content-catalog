@@ -16,6 +16,7 @@ The System Integrity Protection (SIP) feature of MacOS helps to prevent the exec
 |Prototype|False|
 |Tags|_mitreAttackTactic:TA0005, _mitreAttackTechnique:T1553.006|
 ## Vendors and Products
+- [CrowdStrike - FDR](../products/569a3a44-c29f-492e-bcf4-5dc04e2ab0f3.md)
 
 
 ## Fields Used

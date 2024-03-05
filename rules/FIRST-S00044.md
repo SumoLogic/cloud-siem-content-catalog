@@ -14,7 +14,7 @@ This alert looks at a first seen application ID accessing an Office 365/Exchange
 |Retention Window|7776000000|
 |Baseline Window|1209600000|
 |Baseline Type|PER_ENTITY|
-|Score/Severity|Static: 4|
+|Score/Severity|Static: 1|
 |Enabled by Default|True|
 |Prototype|False|
 |Tags|_mitreAttackTactic:TA0009, _mitreAttackTechnique:T1114|
