@@ -120,6 +120,7 @@ Below is a full list of products supported by Cloud SIEM.
 |[JumpCloud](../vendors/138e3b9f-8b41-43d8-ba4c-823bef814d38.md)|[Directory Insights](05bfaf47-5e21-4d5f-b724-98960a6fca8a.md)|
 |[Juniper](../vendors/AFDA386E-E25E-421D-85F7-ACEC262D73C2.md)|[SRX Series Firewall](A17B3F3C-04F1-40C8-9497-3C499EB18A74.md)|
 |[Juniper](../vendors/AFDA386E-E25E-421D-85F7-ACEC262D73C2.md)|[SSG Series Firewall](19d02d3a-ecc8-4154-942b-911132f8838a.md)|
+|[Kaltura](../vendors/c65f8f5f-ea11-4b41-858b-99731d306f81.md)|[Kaltura](6ca874c3-4a65-40bc-ba04-9d8820d794e4.md)|
 |[KasperskyLab](../vendors/8011e6fe-1e65-4603-aa2e-15c9b33cb0fd.md)|[SecurityCenter](a29a5331-583b-4153-8b07-20b3126b0d33.md)|
 |[Kemp](../vendors/fe56e139-6049-4d78-9665-df7d5f80d996.md)|[LoadMaster](e0763d80-29ce-43a0-b0ab-69c621abb3eb.md)|
 |[Kubernetes](../vendors/b19b9592-1616-4013-9ad4-f6d2a93da669.md)|[Kubernetes](74662794-d8de-42ec-b504-cc0bccfaddd9.md)|

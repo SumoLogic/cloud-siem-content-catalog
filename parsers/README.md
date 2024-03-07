@@ -94,6 +94,7 @@ The `type` listed lets you know if you can directly apply the parser to a collec
 |Parser|/Parsers/System/JumpCloud/JumpCloud Directory Insights|
 |Parser|/Parsers/System/Juniper/Juniper SRX Series Firewall Syslog|
 |Parser|/Parsers/System/Juniper/Juniper SSG Series Firewall Syslog|
+|Parser|/Parsers/System/Kaltura/Kaltura|
 |Parser|/Parsers/System/Kemp/Kemp LoadMaster Syslog|
 |Parser|/Parsers/System/KnowBe4/KnowBe4 KMSAT C2C|
 |Parser|/Parsers/System/Kubernetes/Kubernetes|

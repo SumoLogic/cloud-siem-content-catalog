@@ -16,6 +16,7 @@ Monitors for audit message and command line parameters that indicate attempted e
 |Prototype|False|
 |Tags|_mitreAttackTactic:TA0004, _mitreAttackTechnique:T1068|
 ## Vendors and Products
+- [CrowdStrike - FDR](../products/569a3a44-c29f-492e-bcf4-5dc04e2ab0f3.md)
 - [Linux - Linux OS Syslog](../products/0e20c932-d992-4bd4-b276-c15119ca5c0b.md)
 
 
