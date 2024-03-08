@@ -721,6 +721,7 @@ You will find our complete list of mappers for content here.
  - [Juniper SSG Series Firewall - Audit Messaging](5795bcd3-1acf-4bb6-baa5-da51f3b98ebf.md)
  - [Juniper SSG Series Firewall - Traffic Messaging](a4e98835-f83c-433f-9e92-69b33c844b8f.md)
  - [Juniper Session Create Close Logs](12ed73e8-7948-489e-a53e-5e18c8b121c2.md)
+ - [Kaltura Audits](9d0e7856-d0b0-48d0-9719-67dd4fcff3be.md)
  - [Kaspersky Catch All](46cfe6ac-20b1-47c4-952b-5acfdeb52b51.md)
  - [Kemp Load Balancer Catch All](d445809e-76ab-4a59-a4d6-2277b3069347.md)
  - [Kemp WAF Message](83ecd496-9783-4309-80ca-ee18f0ee92ef.md)

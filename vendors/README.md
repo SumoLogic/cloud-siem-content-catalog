@@ -68,6 +68,7 @@ Below is a full list of vendors for which there are supported products in Cloud 
 |[Jamf](3fe48850-f882-43c3-ab80-1e0354cf2aba.md)|1|
 |[JumpCloud](138e3b9f-8b41-43d8-ba4c-823bef814d38.md)|1|
 |[Juniper](AFDA386E-E25E-421D-85F7-ACEC262D73C2.md)|2|
+|[Kaltura](c65f8f5f-ea11-4b41-858b-99731d306f81.md)|1|
 |[KasperskyLab](8011e6fe-1e65-4603-aa2e-15c9b33cb0fd.md)|1|
 |[Kemp](fe56e139-6049-4d78-9665-df7d5f80d996.md)|1|
 |[Kubernetes](b19b9592-1616-4013-9ad4-f6d2a93da669.md)|1|
