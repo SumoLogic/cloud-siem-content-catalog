@@ -7,7 +7,7 @@
 |Vendor|1Password|
 |Product|1Password|
 |Log Format|JSON|
-|Event ID Regex Pattern|`audit`|
+|Event ID Regex Pattern|`audit.*`|
 
 ## Record Output
 

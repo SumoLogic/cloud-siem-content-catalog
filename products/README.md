@@ -44,6 +44,7 @@ Below is a full list of products supported by Cloud SIEM.
 |[Carbon Black](../vendors/c2ea2e5e-92f2-49e8-9812-64e60dba63a2.md)|[Defense](4448ca62-bb4f-4859-a6a2-d9262f9e48f0.md)|
 |[Carbon Black](../vendors/c2ea2e5e-92f2-49e8-9812-64e60dba63a2.md)|[Protect](ada54150-f29e-43a5-9d20-b98ee2d17430.md)|
 |[Carbon Black](../vendors/c2ea2e5e-92f2-49e8-9812-64e60dba63a2.md)|[Response](ca9373c1-d3cb-47f2-8dd9-c6580b4c60fe.md)|
+|[Cato Networks](../vendors/53e043b0-76e3-471a-84ec-0266a4f3b279.md)|[Cato Networks](168afd8d-2893-4c74-95b1-a975d576ea56.md)|
 |[CheckPoint](../vendors/6ee43776-3c2c-49b9-a5cf-51309e815aa3.md)|[Application Control](1624169f-36c4-4309-8400-1409a171d00b.md)|
 |[CheckPoint](../vendors/6ee43776-3c2c-49b9-a5cf-51309e815aa3.md)|[Avanan](b8956e27-b893-4518-85ff-20835710c3cf.md)|
 |[CheckPoint](../vendors/6ee43776-3c2c-49b9-a5cf-51309e815aa3.md)|[Firewall and VPN](c3c1a4fc-10cc-4155-8a30-a3bb14fc9f31.md)|
