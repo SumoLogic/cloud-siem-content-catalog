@@ -22,6 +22,7 @@ Below is a full list of vendors for which there are supported products in Cloud 
 |[Box](985e5f6a-2411-41d9-9d46-98471f702f28.md)|1|
 |[Bro](F64FF115-D5EE-40D0-ABAD-DAD7BA87F70D.md)|1|
 |[Carbon Black](c2ea2e5e-92f2-49e8-9812-64e60dba63a2.md)|4|
+|[Cato Networks](53e043b0-76e3-471a-84ec-0266a4f3b279.md)|1|
 |[CheckPoint](6ee43776-3c2c-49b9-a5cf-51309e815aa3.md)|6|
 |[Cisco Systems](e2d55f62-8ebb-4d00-b2f9-b55d1fa642bb.md)|13|
 |[Citrix](f3d0223a-78a7-42f6-93cc-3bcd15569a5b.md)|3|

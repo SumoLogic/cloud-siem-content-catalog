@@ -30,7 +30,6 @@ Encoding in hexadecimal is a way that attackers can bypass network security devi
 - [Microsoft - Windows](../products/1ff7546c-cb36-4a24-87f7-89d2cecc5761.md)
 - [Netskope - Security Cloud](../products/B3582ED2-1A0C-452D-9802-97433D143486.md)
 - [Sophos - UTM 9](../products/0fb003bc-8383-442f-8f3d-afcfbaefe617.md)
-- [Zscaler - Firewall](../products/9e0641a7-22ce-4ac8-8113-ee48b368ac3d.md)
 - [Zscaler - Nanolog Streaming Service](../products/6299d728-14f7-455e-85c5-ea8ec65a654a.md)
 
 

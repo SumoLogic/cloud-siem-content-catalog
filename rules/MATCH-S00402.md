@@ -32,7 +32,6 @@ Passes through an alert from an endpoint security product and adjusts the severi
 - [Google - G Suite](../products/e73cd65a-7a4b-4ce9-9d73-e5d9c824c214.md)
 - [Google - Google Cloud Platform](../products/dcc85cfc-a698-4d09-87de-f2c723f3ad07.md)
 - [Kemp - LoadMaster](../products/e0763d80-29ce-43a0-b0ab-69c621abb3eb.md)
-- [McAfee - Mvision ENS](../products/2ca68325-8140-4a98-bb30-365bfb75e777.md)
 - [Microsoft - Advanced Threat Analytics](../products/ae48ad1f-04e5-47c6-9892-25555e5f728b.md)
 - [Microsoft - Azure](../products/a1225af5-e778-4068-a9a2-47da93d1ff24.md)
 - [Microsoft - Cloud App Security](../products/86e85e72-d3b1-4f1d-b195-5ca3d90e9461.md)
