@@ -10,7 +10,7 @@ This alert detects a shell launched by an office product or browser that should 
 |Category|Execution|
 |Apply Risk to Entities|device_ip, user_username, device_hostname|
 |Signal Name|Office Application or Browser Launching Shell|
-|Summary Expression|None|
+|Summary Expression|Office process: {{parentBaseImage}} spawned shell process: {{baseImage}}|
 |Score/Severity|Static: 3|
 |Enabled by Default|True|
 |Prototype|False|

@@ -33,7 +33,6 @@ A record flagged a hostname or domain from a threat intelligence match list
 - [Fortinet - Fortigate](../products/c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad.md)
 - [Google - Google Cloud Platform](../products/dcc85cfc-a698-4d09-87de-f2c723f3ad07.md)
 - [ISC - Bind](../products/1768a42a-37e6-4a2b-aa42-314583f63e1b.md)
-- [Juniper - SRX Series Firewall](../products/A17B3F3C-04F1-40C8-9497-3C499EB18A74.md)
 - [Microsoft - Azure](../products/a1225af5-e778-4068-a9a2-47da93d1ff24.md)
 - [Microsoft - DNS](../products/e362ae18-9af1-496d-9ace-efa05a8381c6.md)
 - [Microsoft - Graph Security API](../products/ef42eb74-7444-4fee-b231-b4eb1e7c9660.md)
