@@ -32,6 +32,7 @@ The `type` listed lets you know if you can directly apply the parser to a collec
 |Parser|/Parsers/System/Blue Coat/Blue Coat ProxySG CEF|
 |Parser|/Parsers/System/Blue Coat/Blue Coat ProxySG CSV|
 |Parser|/Parsers/System/BlueCat/BlueCat DHCP-DNS Syslog|
+|Parser|/Parsers/System/Cato Networks/Cato Networks|
 |Parser|/Parsers/System/Check Point/Check Point Avanan JSON|
 |Parser|/Parsers/System/Check Point/Check Point Firewall JSON|
 |Parser|/Parsers/System/Check Point/Check Point Firewall Syslog|
