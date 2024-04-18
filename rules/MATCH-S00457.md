@@ -18,6 +18,7 @@ Observes for file uploads above 50MB in size. It is recommended to tune this rul
 ## Vendors and Products
 - [Bro - Bro](../products/37C866BF-72E1-470A-9072-EDB908F56951.md)
 - [Cisco Systems - ASA](../products/be4f7473-fe69-4311-8859-3561900060bf.md)
+- [Dell - Firewall](../products/b1639f7f-4c11-4d29-ab69-368cf0e05e25.md)
 - [Fortinet - Fortigate](../products/c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad.md)
 - [Netskope - Security Cloud](../products/B3582ED2-1A0C-452D-9802-97433D143486.md)
 - [Palo Alto Networks - Next Generation Firewall](../products/46f5fa2c-1a62-4692-82ad-ed87800a0adb.md)

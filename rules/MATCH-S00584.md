@@ -18,7 +18,6 @@ Observes for possible attempts to download PwnDrp red team tooling
 ## Vendors and Products
 - [Netskope - Security Cloud](../products/B3582ED2-1A0C-452D-9802-97433D143486.md)
 - [Symantec - Proxy Secure Gateway](../products/991a55cf-8c5a-49ba-ae72-6f64a002bacf.md)
-- [Zscaler - Nanolog Streaming Service](../products/6299d728-14f7-455e-85c5-ea8ec65a654a.md)
 
 
 ## Fields Used
