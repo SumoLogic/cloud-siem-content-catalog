@@ -17,7 +17,6 @@ Detect creation of dump files containing the memory space of lsass.exe, which co
 |Tags|_mitreAttackTactic:TA0006, _mitreAttackTechnique:T1003, _mitreAttackTechnique:T1003.001, _mitreAttackTechnique:T1003.007|
 ## Vendors and Products
 - [Microsoft - Windows](../products/1ff7546c-cb36-4a24-87f7-89d2cecc5761.md)
-- [Tanium - Tanium Core](../products/5b49e894-92e8-45ad-8575-fe78b4f2e31b.md)
 
 
 ## Fields Used

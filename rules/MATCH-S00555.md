@@ -17,6 +17,7 @@ This rule detects allowed inbound traffic from an IP address associated with a k
 |Tags||
 ## Vendors and Products
 - [Amazon AWS - Elastic Load Balancer](../products/59a3cd41-b6d2-4ab7-a0ff-6d5abd14ac43.md)
+- [Amazon AWS - Network Firewall](../products/3a82061c-2ca3-4289-9c9b-78756001aa38.md)
 - [Amazon AWS - VpcFlowLogs](../products/021d1ded-1c82-4663-bf5d-d6ed5170efa3.md)
 - [Amazon AWS - Web Application Firewall (WAF)](../products/072b85a2-1765-45c2-911d-b0509880326e.md)
 - [CheckPoint - Application Control](../products/1624169f-36c4-4309-8400-1409a171d00b.md)
