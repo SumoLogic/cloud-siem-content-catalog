@@ -10,7 +10,7 @@ Detects rundll32 loaded from a temp directory with a by ordinal load. This activ
 |Category|Execution|
 |Apply Risk to Entities|device_hostname, device_ip, user_username, srcDevice_hostname, srcDevice_ip|
 |Signal Name|Rundll32.exe Load from TEMP Directory with By Ordinal Load|
-|Summary Expression|Qbot and Bazar trojan activity detected on host: {{device_hostname}}|
+|Summary Expression|Highly suspicious execution of rundll32.exe from TEMP detected on host: {{device_hostname}}|
 |Score/Severity|Static: 10|
 |Enabled by Default|True|
 |Prototype|False|
