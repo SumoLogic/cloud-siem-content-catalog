@@ -148,6 +148,7 @@
 |MATCH-S00801|[Azure - Virtual Machine Started](MATCH-S00801.md)|
 |MATCH-S00802|[Azure - Virtual Machine Stopped](MATCH-S00802.md)|
 |MATCH-S00838|[Azure Active Directory Authentication Method Changed](MATCH-S00838.md)|
+|MATCH-S00896|[Azure Authentication Policy Change](MATCH-S00896.md)|
 |MATCH-S00836|[Azure Conditional Access Policy Disabled](MATCH-S00836.md)|
 |MATCH-S00864|[Azure Firewall Rule Modified](MATCH-S00864.md)|
 |MATCH-S00891|[Azure OAUTH Application Consent from User](MATCH-S00891.md)|
@@ -506,6 +507,7 @@
 |MATCH-S00644|[New Kubernetes Namespace Created](MATCH-S00644.md)|
 |MATCH-S00156|[New Suspicious cmd.exe / regedit.exe / powershell.exe Service Launch](MATCH-S00156.md)|
 |MATCH-S00152|[New or Renamed Windows User Account Mimicking a Machine Account](MATCH-S00152.md)|
+|MATCH-S00895|[NinjaCopy Usage Detected](MATCH-S00895.md)|
 |LEGACY-S00181|[Noncompliant Protocol Tunnel Over Common Service Port](LEGACY-S00181.md)|
 |MATCH-S00402|[Normalized Security Signal](MATCH-S00402.md)|
 |MATCH-S00288|[NotPetya Ransomware Activity](MATCH-S00288.md)|
@@ -519,6 +521,12 @@
 |MATCH-S00832|[Office 365 Inbox Rule Updated](MATCH-S00832.md)|
 |MATCH-S00831|[Office 365 Unified Audit Logging Disabled](MATCH-S00831.md)|
 |MATCH-S00137|[Office Application or Browser Launching Shell](MATCH-S00137.md)|
+|MATCH-S00906|[Okta - Application Created](MATCH-S00906.md)|
+|MATCH-S00903|[Okta - Device Added To User](MATCH-S00903.md)|
+|MATCH-S00904|[Okta - Device Removed From User](MATCH-S00904.md)|
+|CHAIN-S00020|[Okta - MFA Denied Followed by Successful Logon](CHAIN-S00020.md)|
+|AGGREGATION-S00008|[Okta - Session Anomaly (Multiple ASNs)](AGGREGATION-S00008.md)|
+|AGGREGATION-S00009|[Okta - Session Anomaly (Multiple User Agents)](AGGREGATION-S00009.md)|
 |MATCH-S00635|[Okta API Token Created](MATCH-S00635.md)|
 |MATCH-S00433|[Okta Account Lockout](MATCH-S00433.md)|
 |MATCH-S00769|[Okta Account Primary Email Address Update](MATCH-S00769.md)|
@@ -540,6 +548,7 @@
 |MATCH-S00755|[Outlook Form Creation](MATCH-S00755.md)|
 |MATCH-S00756|[Outlook Homepage Modification](MATCH-S00756.md)|
 |MATCH-S00683|[Overly Permissive Chmod Command](MATCH-S00683.md)|
+|MATCH-S00900|[Overly-Permissive Active Directory Certificate Template Loaded](MATCH-S00900.md)|
 |MATCH-S00890|[Owner Added to Azure Service Principal](MATCH-S00890.md)|
 |MATCH-S00698|[PATH Set to Current Directory](MATCH-S00698.md)|
 |MATCH-S00610|[PSExec Named Pipe Created by Non-PsExec Process](MATCH-S00610.md)|
@@ -563,6 +572,7 @@
 |MATCH-S00451|[Possible Malicious Nirsoft Tool Usage](MATCH-S00451.md)|
 |THRESHOLD-S00028|[Possible TOR Connection](THRESHOLD-S00028.md)|
 |MATCH-S00876|[Potential AWS Security Credential Access via curl](MATCH-S00876.md)|
+|CHAIN-S00019|[Potential Active Directory Certificate Services Enrollment Agent Misconfiguration](CHAIN-S00019.md)|
 |CHAIN-S00012|[Potential Azure Persistence via Automation Accounts](CHAIN-S00012.md)|
 |MATCH-S00459|[Potential Cobalt Strike Profile](MATCH-S00459.md)|
 |MATCH-S00865|[Potential Docker Escape via Command Line](MATCH-S00865.md)|
@@ -576,6 +586,8 @@
 |MATCH-S00824|[Potential XMRig Execution with Traffic](MATCH-S00824.md)|
 |LEGACY-S00062|[Potential malicious JVM download](LEGACY-S00062.md)|
 |LEGACY-S00063|[Potential malicious document executed](LEGACY-S00063.md)|
+|MATCH-S00898|[Potentially Misconfigured Active Directory Certificate Template Loaded](MATCH-S00898.md)|
+|MATCH-S00901|[Potentially Vulnerable Active Directory Certificate Services Template Loaded](MATCH-S00901.md)|
 |LEGACY-S00064|[Potentially vulnerable software detected](LEGACY-S00064.md)|
 |MATCH-S00136|[PowerShell Encoded Command](MATCH-S00136.md)|
 |MATCH-S00149|[PowerShell File Download](MATCH-S00149.md)|
@@ -725,6 +737,8 @@
 |MATCH-S00337|[Suspect Svchost Activity](MATCH-S00337.md)|
 |MATCH-S00841|[Suspicious AWS CLI Keys Access on Linux Host](MATCH-S00841.md)|
 |AGGREGATION-S00003|[Suspicious AWS Lambda Enumeration](AGGREGATION-S00003.md)|
+|MATCH-S00899|[Suspicious Active Directory Certificate Modification](MATCH-S00899.md)|
+|MATCH-S00902|[Suspicious Active Directory Certificate Modification - Enrollment Agent](MATCH-S00902.md)|
 |MATCH-S00817|[Suspicious Azure Active Directory Device Code Authentication](MATCH-S00817.md)|
 |MATCH-S00842|[Suspicious Azure CLI Keys Access on Linux Host](MATCH-S00842.md)|
 |MATCH-S00359|[Suspicious Certutil Command](MATCH-S00359.md)|
