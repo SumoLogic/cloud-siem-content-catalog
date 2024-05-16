@@ -17,7 +17,6 @@ Observes for outbound traffic to a proxy anonymizer. This rule requires a list p
 |Tags|_mitreAttackTactic:TA0011, _mitreAttackTechnique:T1090, _mitreAttackTechnique:T1090.002, _mitreAttackTechnique:T1090.003|
 ## Vendors and Products
 - [Fortinet - Fortigate](../products/c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad.md)
-- [Palo Alto Networks - Next Generation Firewall](../products/46f5fa2c-1a62-4692-82ad-ed87800a0adb.md)
 
 
 ## Fields Used

@@ -27,7 +27,6 @@
 |severity|severity||
 |srcDevice_ip|request.ipChain.1.ip||
 |success|outcome.result|This is a lookup field. More info to come in the catalog later...|
-|timestamp|published|We expect the orginal record value of `published` is in the format `yyyy-MM-dd'T'HH:mm:ss.SSSZ`|
 |user_authDomain|securityContext.domain||
 |user_userId|actor.id||
 |user_username|target.1.alternateId||

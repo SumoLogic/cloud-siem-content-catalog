@@ -266,7 +266,6 @@
 |MATCH-S00827|[Exposed AWS SNS Topic Created](MATCH-S00827.md)|
 |MATCH-S00823|[Exposed AWS SQS Queue Created](MATCH-S00823.md)|
 |MATCH-S00304|[External Device Installation Denied](MATCH-S00304.md)|
-|MATCH-S00408|[Fake Windows Processes](MATCH-S00408.md)|
 |MATCH-S00392|[File or Folder Permissions Modifications](MATCH-S00392.md)|
 |MATCH-S00394|[Findstr Launching .lnk File](MATCH-S00394.md)|
 |MATCH-S00454|[Firewall Allowed SMB Traffic](MATCH-S00454.md)|

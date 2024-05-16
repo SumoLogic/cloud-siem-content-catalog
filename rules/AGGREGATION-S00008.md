@@ -17,6 +17,7 @@
 |Prototype|False|
 |Tags|_mitreAttackTactic:TA0001, _mitreAttackTechnique:T1078.004|
 ## Vendors and Products
+- [Okta - Single Sign-On](../products/51278354-d6b5-4c8e-a8fd-8197df334e67.md)
 
 
 ## Fields Used
