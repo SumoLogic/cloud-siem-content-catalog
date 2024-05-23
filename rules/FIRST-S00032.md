@@ -1,7 +1,7 @@
 # [Rules](README.md): First Seen Kubectl Command From User
 
 ## Description
-{{user_username}} has issued a Kubectl command which was first seen since the baseline period on {{device_hostname}}
+Kubectl can be used to administer Kubernetes clusters, this alert looks for a first seen Kubectl command line from a user since the baseline period.
 
 ## Additional Details
 |Detail|Value|
@@ -10,7 +10,7 @@
 |Category|Execution|
 |Apply Risk to Entities|user_username|
 |Signal Name|First Seen Kubectl Command From {{user_username}}|
-|Summary Expression|Kubectl can be used to administer Kubernetes clusters, this alert looks for a first seen Kubectl command line from a user since the baseline period.|
+|Summary Expression|{{user_username}} has issued a Kubectl command which was first seen since the baseline period on {{device_hostname}}|
 |Retention Window|7776000000|
 |Baseline Window|1814400000|
 |Baseline Type|PER_ENTITY|
@@ -29,7 +29,6 @@
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|device_hostname|
 |Normalized Schema|isBlank|
 |Normalized Schema|objectType|
 |Normalized Schema|user_username|

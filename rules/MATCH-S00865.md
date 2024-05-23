@@ -1,7 +1,7 @@
 # [Rules](README.md): Potential Docker Escape via Command Line
 
 ## Description
-A command line value of {{commandLine}} was executed on {{device_hostname}} - this rule looks for whether the raw Docker socket was used for container creation as well as a bind mount of /hostfs which could facilitate a container escape and allow command execuiton on the Docker host.
+This rule looks for whether the raw Docker socket was used for container creation as well as a bind mount of /hostfs which could facilitate a container escape and allow command execuiton on the Docker host.
 
 ## Additional Details
 |Detail|Value|
@@ -23,7 +23,6 @@ A command line value of {{commandLine}} was executed on {{device_hostname}} - th
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|commandLine|
 |Normalized Schema|device_hostname|
 
 

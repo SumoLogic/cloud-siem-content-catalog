@@ -1,7 +1,7 @@
 # [Rules](README.md): First Seen AWS EKS Secrets Enumeration from IP Address
 
 ## Description
-{{srcDevice_ip}} has enumerated secrets on an AWS EKS cluster for the first time since the baseline period.
+Adversaries may enumerate various Kubernetes secrets in order to escalate privileges or to look for persistence avenues.
 
 ## Additional Details
 |Detail|Value|
@@ -10,7 +10,7 @@
 |Category|Discovery|
 |Apply Risk to Entities|srcDevice_ip|
 |Signal Name|First Seen AWS EKS Secrets Enumeration from {{srcDevice_ip}}|
-|Summary Expression|Adversaries may enumerate various Kubernetes secrets in order to escalate privileges or to look for persistence avenues.|
+|Summary Expression|{{srcDevice_ip}} has enumerated secrets on an AWS EKS cluster for the first time since the baseline period.|
 |Retention Window|7776000000|
 |Baseline Window|1814400000|
 |Baseline Type|GLOBAL|

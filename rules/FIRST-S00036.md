@@ -1,7 +1,7 @@
 # [Rules](README.md): First Seen AWS EKS API Call via CloudTrail from User
 
 ## Description
-The user {{user_username}} has performed an operation on an EKS cluster for the first time since the baseline period.
+This rule looks for a first seen AWS EKS API call from a user since the baseline period.
 
 ## Additional Details
 |Detail|Value|
@@ -10,7 +10,7 @@ The user {{user_username}} has performed an operation on an EKS cluster for the 
 |Category|Discovery|
 |Apply Risk to Entities|user_username|
 |Signal Name|First Seen AWS EKS API Call ({{action}})  via CloudTrail from User|
-|Summary Expression|This rule looks for a first seen AWS EKS API call from a user since the baseline period.|
+|Summary Expression|The user {{user_username}} has performed an operation on an EKS cluster for the first time since the baseline period.|
 |Retention Window|7776000000|
 |Baseline Window|1814400000|
 |Baseline Type|PER_ENTITY|

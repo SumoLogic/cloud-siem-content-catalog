@@ -1,7 +1,7 @@
 # [Rules](README.md): Okta - Application Created
 
 ## Description
-An Okta application has been created by {{user_username}} from the IP address of {{device_ip}} . Ensure that this activity is expected and authorized. Only Okta administrators should be creating applications. Check the Okta administrator portal for more details regarding the application in question such as scopes and access levels. The field "fields["target.1.alternateId"]" contains the name of the application that was created
+This rule looks for an Okta application being created. Ensure that this activity is expected and authorized. Only Okta administrators should be creating applications. Check the Okta administrator portal for more details regarding the application in question such as scopes and access levels. The field "fields["target.1.alternateId"]" contains the name of the application that was created
 
 ## Additional Details
 |Detail|Value|
@@ -23,7 +23,6 @@ An Okta application has been created by {{user_username}} from the IP address of
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|device_ip|
 |Normalized Schema|metadata_deviceEventId|
 |Normalized Schema|metadata_vendor|
 |Normalized Schema|success|

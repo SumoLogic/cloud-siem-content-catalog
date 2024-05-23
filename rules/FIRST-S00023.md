@@ -1,7 +1,7 @@
 # [Rules](README.md): First Seen AWS API Gateway Enumeration by User
 
 ## Description
-{{user_username}} has enumerated an AWS API Gateway resources for the first time since the baseline period.
+Threat actors may collect information from AWS API Gateway, including enumeration of access they have to such resources.
 
 ## Additional Details
 |Detail|Value|
@@ -10,7 +10,7 @@
 |Category|Collection|
 |Apply Risk to Entities|user_username|
 |Signal Name|First Seen AWS API Gateway Enumeration By User|
-|Summary Expression|Threat actors may collect information from AWS API Gateway, including enumeration of access they have to such resources.|
+|Summary Expression|{{user_username}} has enumerated an AWS API Gateway resources for the first time since the baseline period.|
 |Retention Window|5184000000|
 |Baseline Window|1209600000|
 |Baseline Type|GLOBAL|

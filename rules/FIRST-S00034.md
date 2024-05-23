@@ -1,7 +1,7 @@
 # [Rules](README.md): First Seen Session Token Granted to User from New IP
 
 ## Description
-An AWS Session token was issued for the first time since the baseline period to {{user_username}} using the IP address of {{srcDevice_ip}}
+Session tokens return a temporary set of credentials that cosnist of an access key ID, a secret and a session token. This alert triggers when a session token is issued for the first time since the baseline period.
 
 ## Additional Details
 |Detail|Value|
@@ -10,7 +10,7 @@ An AWS Session token was issued for the first time since the baseline period to 
 |Category|Defense Evasion|
 |Apply Risk to Entities|user_username|
 |Signal Name|First Seen IP AWS Session Token Issued to {{user_username}}|
-|Summary Expression|Session tokens return a temporary set of credentials that cosnist of an access key ID, a secret and a session token. This alert triggers when a session token is issued for the first time since the baseline period.|
+|Summary Expression|An AWS Session token was issued for the first time since the baseline period to {{user_username}} using the IP address of {{srcDevice_ip}}|
 |Retention Window|7776000000|
 |Baseline Window|1814400000|
 |Baseline Type|PER_ENTITY|
@@ -30,7 +30,6 @@ An AWS Session token was issued for the first time since the baseline period to 
 |Normalized Schema|application|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|
-|Normalized Schema|srcDevice_ip|
 |Normalized Schema|user_username|
 
 
