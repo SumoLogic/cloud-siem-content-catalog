@@ -1,7 +1,7 @@
 # [Rules](README.md): First Seen S3 Bucket ACL Enumeration by User
 
 ## Description
-{{user_username}} has enumerated an AWS S3 Bucket ACL for the first time since the baseline period.
+Threat actors may collect information from AWS S3 buckets, including enumeration of access they have to such resources.
 
 ## Additional Details
 |Detail|Value|
@@ -10,7 +10,7 @@
 |Category|Collection|
 |Apply Risk to Entities|user_username|
 |Signal Name|First Seen S3 Bucket ACL Enumeration by User|
-|Summary Expression|Threat actors may collect information from AWS S3 buckets, including enumeration of access they have to such resources.|
+|Summary Expression|{{user_username}} has enumerated an AWS S3 Bucket ACL for the first time since the baseline period.|
 |Retention Window|7776000000|
 |Baseline Window|3024000000|
 |Baseline Type|PER_ENTITY|

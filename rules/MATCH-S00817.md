@@ -1,7 +1,7 @@
 # [Rules](README.md): Suspicious Azure Active Directory Device Code Authentication
 
 ## Description
-A device code authentication flow was completed to the following resource: {{application}}.  Successful Device Code authentication flows result in the issuance of an Azure Primary Refresh Token which can be used to access, enumerate or - if the relevant permissions exist - to modify Azure resources.
+Successful Device Code authentication flows result in the issuance of an Azure Primary Refresh Token which can be used to access, enumerate or - if the relevant permissions exist - to modify Azure resources.
 
 ## Additional Details
 |Detail|Value|
@@ -23,7 +23,6 @@ A device code authentication flow was completed to the following resource: {{app
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|application|
 |Normalized Schema|errorCode|
 |Direct from Record|fields['properties.appDisplayName']|
 |Direct from Record|fields['properties.authenticationProtocol']|

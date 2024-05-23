@@ -1,7 +1,7 @@
 # [Rules](README.md): Okta - Session Anomaly (Multiple ASNs)
 
 ## Description
-{{user_username}} has utilized multiple distinct ASNs when performing authentication through Okta. This activity could potentially indicate credential theft or a general session anomaly. Examine other Okta related events surrounding the time period for this signal, pivoting off the username value to examine if any other suspicious activity has taken place. If this rule is generating false positives, adjust the threshold value and consider excluding certain user accounts via tuning expression.
+This rule detects when a user has utilized multiple distinct ASNs when performing authentication through Okta. This activity could potentially indicate credential theft or a general session anomaly. Examine other Okta related events surrounding the time period for this signal, pivoting off the username value to examine if any other suspicious activity has taken place. If this rule is generating false positives, adjust the threshold value and consider excluding certain user accounts via tuning expression.
 
 ## Additional Details
 |Detail|Value|

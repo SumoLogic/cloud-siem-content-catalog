@@ -307,13 +307,17 @@
 |FIRST-S00034|[First Seen Session Token Granted to User from New IP](FIRST-S00034.md)|
 |FIRST-S00029|[First Seen Successful Authentication From Unexpected Country](FIRST-S00029.md)|
 |FIRST-S00033|[First Seen Terminal-Attached Pod Deployed to EKS](FIRST-S00033.md)|
+|FIRST-S00061|[First Seen USB device in use on Windows host](FIRST-S00061.md)|
 |FIRST-S00005|[First Seen User Creation From User](FIRST-S00005.md)|
 |FIRST-S00006|[First Seen Weak Kerberos Encryption from User](FIRST-S00006.md)|
 |FIRST-S00038|[First Seen Wget Usage from User](FIRST-S00038.md)|
 |FIRST-S00040|[First Seen cURL execution from User](FIRST-S00040.md)|
+|FIRST-S00059|[First Seen esentutl command From User](FIRST-S00059.md)|
 |FIRST-S00039|[First Seen mdfind Usage from User](FIRST-S00039.md)|
 |FIRST-S00041|[First Seen networksetup Usage from User](FIRST-S00041.md)|
 |FIRST-S00043|[First Seen pbpaste Usage from User](FIRST-S00043.md)|
+|FIRST-S00058|[First Seen vssadmin command From User](FIRST-S00058.md)|
+|FIRST-S00060|[First Seen wbadmin command From User](FIRST-S00060.md)|
 |FIRST-S00008|[First Seen whoami command From User](FIRST-S00008.md)|
 |LEGACY-S00037|[Fortinet Critical App-Risk](LEGACY-S00037.md)|
 |LEGACY-S00038|[Fortinet High App-Risk](LEGACY-S00038.md)|
@@ -524,6 +528,9 @@
 |MATCH-S00903|[Okta - Device Added To User](MATCH-S00903.md)|
 |MATCH-S00904|[Okta - Device Removed From User](MATCH-S00904.md)|
 |CHAIN-S00020|[Okta - MFA Denied Followed by Successful Logon](CHAIN-S00020.md)|
+|MATCH-S00908|[Okta - MFA Request Denied by User](MATCH-S00908.md)|
+|MATCH-S00907|[Okta - Policy Rule Added](MATCH-S00907.md)|
+|MATCH-S00905|[Okta - Programmatic Access to Users API Endpoint](MATCH-S00905.md)|
 |AGGREGATION-S00008|[Okta - Session Anomaly (Multiple ASNs)](AGGREGATION-S00008.md)|
 |AGGREGATION-S00009|[Okta - Session Anomaly (Multiple User Agents)](AGGREGATION-S00009.md)|
 |MATCH-S00635|[Okta API Token Created](MATCH-S00635.md)|
@@ -754,7 +761,9 @@
 |MATCH-S00840|[Suspicious Lambda Function - IAM Policy Attached](MATCH-S00840.md)|
 |CHAIN-S00015|[Suspicious Linux Execution Chain](CHAIN-S00015.md)|
 |MATCH-S00464|[Suspicious Non-Standard InstallUtil Execution](MATCH-S00464.md)|
+|MATCH-S00917|[Suspicious PowerShell Application Window Discovery COM method ](MATCH-S00917.md)|
 |MATCH-S00191|[Suspicious PowerShell Keywords](MATCH-S00191.md)|
+|MATCH-S00920|[Suspicious PowerShell Window Discovery Cmdlet execution](MATCH-S00920.md)|
 |MATCH-S00135|[Suspicious Registry Key Modification](MATCH-S00135.md)|
 |MATCH-S00164|[Suspicious Shells Spawned by Web Servers](MATCH-S00164.md)|
 |MATCH-S00500|[Suspicious Shortcut File Launching Process](MATCH-S00500.md)|
@@ -765,6 +774,7 @@
 |MATCH-S00158|[Suspicious Windows ANONYMOUS LOGON Account Created](MATCH-S00158.md)|
 |MATCH-S00551|[Suspicious Writes To System Volume Information](MATCH-S00551.md)|
 |MATCH-S00550|[Suspicious Writes To Windows Recycle Bin](MATCH-S00550.md)|
+|MATCH-S00918|[Suspicious cat of PAM common-password policy](MATCH-S00918.md)|
 |MATCH-S00886|[Suspicious chmod Execution](MATCH-S00886.md)|
 |MATCH-S00342|[Suspicious use of Dev-Tools-Launcher](MATCH-S00342.md)|
 |MATCH-S00699|[Sysmon - RawAccessRead Event](MATCH-S00699.md)|
@@ -882,6 +892,7 @@
 |MATCH-S00863|[Zoom - Recording Modification](MATCH-S00863.md)|
 |MATCH-S00508|[Zoom Child Process](MATCH-S00508.md)|
 |MATCH-S00061|[Zscaler - Allowed Elevated Risk Score Events](MATCH-S00061.md)|
+|MATCH-S00919|[chage command use on host](MATCH-S00919.md)|
 |MATCH-S00263|[iOS Implant URL Pattern](MATCH-S00263.md)|
 |MATCH-S00880|[macOS - Entitlement Enumeration via Xattr](MATCH-S00880.md)|
 |MATCH-S00883|[macOS - Keychain Enumeration](MATCH-S00883.md)|

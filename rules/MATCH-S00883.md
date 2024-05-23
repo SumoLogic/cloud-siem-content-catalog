@@ -1,7 +1,7 @@
 # [Rules](README.md): macOS - Keychain Enumeration
 
 ## Description
-Keychains were listed on {{device_hostname}} by {{user_username}} - threat actors may be able to list or acquire credentials from keychains, this alert looks for enumeration of available keychains on a given host.
+Threat actors may be able to list or acquire credentials from keychains, this alert looks for enumeration of available keychains on a given host.
 
 ## Additional Details
 |Detail|Value|
@@ -9,8 +9,8 @@ Keychains were listed on {{device_hostname}} by {{user_username}} - threat actor
 |Type|Templated Match|
 |Category|Credential Access|
 |Apply Risk to Entities|user_username|
-|Signal Name|macOS - Keychain Enumeration|
-|Summary Expression|macOS - Keychain Enumeration on {{device_hostname}}|
+|Signal Name|macOS - Keychain Enumeration on {{device_hostname}}|
+|Summary Expression|macOS - Keychain Enumeration on {{device_hostname}} by {{user_username}}|
 |Score/Severity|Static: 2|
 |Enabled by Default|True|
 |Prototype|False|
