@@ -14,7 +14,7 @@ CVE-2020-1472 can be exploited by attackers to hijack enterprise servers due to 
 |Score/Severity|Static: 3|
 |Enabled by Default|True|
 |Prototype|False|
-|Tags|_mitreAttackTactic:TA0006, _mitreAttackTechnique:T1003, _mitreAttackTechnique:T1003.001, _mitreAttackTechnique:T1003.005|
+|Tags|_mitreAttackTactic:TA0006, _mitreAttackTechnique:T1003, _mitreAttackTechnique:T1003.005|
 ## Vendors and Products
 - [Microsoft - Windows](../products/1ff7546c-cb36-4a24-87f7-89d2cecc5761.md)
 

@@ -36,6 +36,7 @@ Apache Log4j2 <=2.14.1 using JNDI features has an exploit allowing attackers to 
 - [Imperva - Imperva Incapsula](../products/2a236ab1-77d2-4867-a571-a1cfd64528e6.md)
 - [Kemp - LoadMaster](../products/e0763d80-29ce-43a0-b0ab-69c621abb3eb.md)
 - [Linux - Linux OS Syslog](../products/0e20c932-d992-4bd4-b276-c15119ca5c0b.md)
+- [McAfee - Web Gateway](../products/003d35b3-3ba8-4e93-8776-e5810b4e243e.md)
 - [Microsoft - Azure](../products/a1225af5-e778-4068-a9a2-47da93d1ff24.md)
 - [Microsoft - IIS](../products/fca8785d-4823-4442-86b2-8acbaa176da4.md)
 - [OISF - Suricata IDS](../products/afabb29d-e728-410f-b7c6-acfa9efbe1ed.md)

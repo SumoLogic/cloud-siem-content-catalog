@@ -19,7 +19,6 @@ Observes for SMTP traffic on non-SMTP hosts. This may be indicative of spambot a
 - [Amazon AWS - VpcFlowLogs](../products/021d1ded-1c82-4663-bf5d-d6ed5170efa3.md)
 - [Bro - Bro](../products/37C866BF-72E1-470A-9072-EDB908F56951.md)
 - [Cisco Systems - ASA](../products/be4f7473-fe69-4311-8859-3561900060bf.md)
-- [Cisco Systems - Firepower](../products/da9e05a5-3fd3-46a7-a107-ae03c01e3f5a.md)
 - [Cisco Systems - Meraki](../products/724c9add-8cd9-4013-b9e1-a907b96da426.md)
 - [CrowdStrike - FDR](../products/569a3a44-c29f-492e-bcf4-5dc04e2ab0f3.md)
 - [Dell - Firewall](../products/b1639f7f-4c11-4d29-ab69-368cf0e05e25.md)

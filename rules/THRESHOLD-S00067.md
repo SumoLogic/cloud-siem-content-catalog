@@ -16,7 +16,7 @@ An attack against CVE-2020-1472 may create thousands of NetrServerReqChallenge &
 |Score/Severity|Static: 3|
 |Enabled by Default|True|
 |Prototype|False|
-|Tags|_mitreAttackTactic:TA0006, _mitreAttackTechnique:T1003, _mitreAttackTechnique:T1003.001, _mitreAttackTechnique:T1003.005|
+|Tags|_mitreAttackTactic:TA0006, _mitreAttackTechnique:T1003, _mitreAttackTechnique:T1003.005|
 ## Vendors and Products
 - [Bro - Bro](../products/37C866BF-72E1-470A-9072-EDB908F56951.md)
 
