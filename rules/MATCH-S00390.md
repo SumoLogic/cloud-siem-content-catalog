@@ -23,7 +23,7 @@ HKLM\Sam
 |Score/Severity|Static: 3|
 |Enabled by Default|True|
 |Prototype|False|
-|Tags|_mitreAttackTactic:TA0005, _mitreAttackTactic:TA0008, _mitreAttackTactic:TA0006, _mitreAttackTechnique:T1550, _mitreAttackTechnique:T1003, _mitreAttackTechnique:T1550.002, _mitreAttackTechnique:T1003.001|
+|Tags|_mitreAttackTactic:TA0005, _mitreAttackTactic:TA0008, _mitreAttackTactic:TA0006, _mitreAttackTechnique:T1550, _mitreAttackTechnique:T1003, _mitreAttackTechnique:T1550.002|
 ## Vendors and Products
 - [Microsoft - Windows](../products/1ff7546c-cb36-4a24-87f7-89d2cecc5761.md)
 

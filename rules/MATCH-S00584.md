@@ -14,7 +14,7 @@ Observes for possible attempts to download PwnDrp red team tooling
 |Score/Severity|Static: 5|
 |Enabled by Default|True|
 |Prototype|False|
-|Tags|_mitreAttackTactic:TA0011, _mitreAttackTactic:TA0006, _mitreAttackTechnique:T1071, _mitreAttackTechnique:T1071.001, _mitreAttackTechnique:T1003, _mitreAttackTechnique:T1003.002|
+|Tags|_mitreAttackTactic:TA0011, _mitreAttackTactic:TA0006, _mitreAttackTechnique:T1071, _mitreAttackTechnique:T1071.001, _mitreAttackTechnique:T1003|
 ## Vendors and Products
 - [Netskope - Security Cloud](../products/B3582ED2-1A0C-452D-9802-97433D143486.md)
 - [Symantec - Proxy Secure Gateway](../products/991a55cf-8c5a-49ba-ae72-6f64a002bacf.md)

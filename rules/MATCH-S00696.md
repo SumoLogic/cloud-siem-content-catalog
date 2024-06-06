@@ -14,7 +14,7 @@ The DPAPI (Data Protection Application Programming Interface) Key is used to enc
 |Score/Severity|Static: 2|
 |Enabled by Default|True|
 |Prototype|False|
-|Tags|_mitreAttackTactic:TA0006, _mitreAttackTechnique:T1003, _mitreAttackTechnique:T1555, _mitreAttackTechnique:T1003.002, _mitreAttackTechnique:T1003.006, _mitreAttackTechnique:T1555.003|
+|Tags|_mitreAttackTactic:TA0006, _mitreAttackTechnique:T1003, _mitreAttackTechnique:T1555, _mitreAttackTechnique:T1555.003|
 ## Vendors and Products
 - [Microsoft - Windows](../products/1ff7546c-cb36-4a24-87f7-89d2cecc5761.md)
 
