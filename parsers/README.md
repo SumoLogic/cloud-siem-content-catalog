@@ -190,6 +190,7 @@ The `type` listed lets you know if you can directly apply the parser to a collec
 |Parser|/Parsers/System/Sophos/Sophos Central C2C JSON|
 |Parser|/Parsers/System/Sophos/Sophos UTM|
 |Parser|/Parsers/System/Squid/Squid Proxy Syslog|
+|Parser|/Parsers/System/Sucuri/Sucuri WAF|
 |Parser|/Parsers/System/Suricata/Suricata Syslog|
 |Parser|/Parsers/System/Symantec/Data Loss Prevention/Symantec DLP|
 |Parser|/Parsers/System/Symantec/Symantec Endpoint Protection/Symantec Endpoint Protection-Syslog|

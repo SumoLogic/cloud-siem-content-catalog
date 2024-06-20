@@ -18,7 +18,6 @@ Observed when lamba getfunction AWS API call is made, indicitive of possible rec
 ## Vendors and Products
 - [Amazon AWS - AWS S3 Server Access Logs](../products/41f70c6e-18a9-462c-a04d-4edc7baead7a.md)
 - [Amazon AWS - CloudTrail](../products/033624b0-218e-4dcb-b93f-0f1fb1806c56.md)
-- [Netskope - Security Cloud](../products/B3582ED2-1A0C-452D-9802-97433D143486.md)
 
 
 ## Fields Used

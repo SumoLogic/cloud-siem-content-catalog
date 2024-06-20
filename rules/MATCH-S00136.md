@@ -10,7 +10,7 @@ PowerShell can execute encoded Base64 strings with the Encoded Command cmdlet. A
 |Category|Execution|
 |Apply Risk to Entities|device_hostname, device_ip, user_username|
 |Signal Name|PowerShell Encoded Command|
-|Summary Expression|Encoded Powershell command executed on host: {{device_hostname}}, command: {{commandLine}}|
+|Summary Expression|Encoded Powershell command executed on host: {{device_hostname}}|
 |Score/Severity|Static: 2|
 |Enabled by Default|True|
 |Prototype|False|

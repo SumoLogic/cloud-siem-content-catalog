@@ -58,7 +58,7 @@ Below is a full list of vendors for which there are supported products in Cloud 
 |[Fortinet](fb9941c5-6624-4175-af84-9e8127134889.md)|2|
 |[Gigamon](f575ffed-7b6d-406e-9a55-848b4b6a720f.md)|1|
 |[Github](193c791a-bb10-4742-a429-1256535f888b.md)|1|
-|[Google](45601247-66a5-4c9c-b3af-c422f5b4cbeb.md)|3|
+|[Google](45601247-66a5-4c9c-b3af-c422f5b4cbeb.md)|4|
 |[HP](8C78ABDA-69C2-480A-9D64-F906C68AE8EC.md)|4|
 |[IBM](24ace3b6-5dfa-4a4f-a3ed-1c99f3384b34.md)|3|
 |[ISC](1583cfd2-7ece-4060-991b-06dcf8567943.md)|1|
@@ -117,6 +117,7 @@ Below is a full list of vendors for which there are supported products in Cloud 
 |[Snowflake](5541f59d-e27d-48e6-a35c-34fb75e9cf13.md)|1|
 |[Sophos](dc8564e3-6c44-463a-8bad-36618a688d57.md)|3|
 |[Squid](470cb4ad-ac19-442b-9b3a-28b979d47d8e.md)|1|
+|[Sucuri](cdfd2ba0-77eb-4e11-b071-6f4d01fda607.md)|1|
 |[Sumo Logic](34A5019C-7BEC-4BF8-A3B7-C38D567126C6.md)|1|
 |[Symantec](64c7f49c-f95a-4f4a-8540-56ec5fb1d96b.md)|4|
 |[Sysdig](c4de0854-e718-45e1-a4c8-63623755aa43.md)|1|

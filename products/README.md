@@ -102,6 +102,7 @@ Below is a full list of products supported by Cloud SIEM.
 |[Fortinet](../vendors/fb9941c5-6624-4175-af84-9e8127134889.md)|[Fortigate](c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad.md)|
 |[Gigamon](../vendors/f575ffed-7b6d-406e-9a55-848b4b6a720f.md)|[ThreatInsight](ca0aa08e-dae9-4e52-9b69-25ba79bc708f.md)|
 |[Github](../vendors/193c791a-bb10-4742-a429-1256535f888b.md)|[Github](33410b0f-3ca6-46ee-b781-b54f1218dfea.md)|
+|[Google](../vendors/45601247-66a5-4c9c-b3af-c422f5b4cbeb.md)|[BigQuery](a67d97fe-6e68-4cfb-9500-cfc5492da565.md)|
 |[Google](../vendors/45601247-66a5-4c9c-b3af-c422f5b4cbeb.md)|[G Suite](e73cd65a-7a4b-4ce9-9d73-e5d9c824c214.md)|
 |[Google](../vendors/45601247-66a5-4c9c-b3af-c422f5b4cbeb.md)|[Google Cloud Platform](dcc85cfc-a698-4d09-87de-f2c723f3ad07.md)|
 |[Google](../vendors/45601247-66a5-4c9c-b3af-c422f5b4cbeb.md)|[Security Command Center](78a80406-d37b-4a17-a25e-dbf53289b647.md)|
@@ -213,6 +214,7 @@ Below is a full list of products supported by Cloud SIEM.
 |[Sophos](../vendors/dc8564e3-6c44-463a-8bad-36618a688d57.md)|[Endpoint](6c0a9bbd-3d2c-4120-83f8-aa5e147c8c6b.md)|
 |[Sophos](../vendors/dc8564e3-6c44-463a-8bad-36618a688d57.md)|[UTM 9](0fb003bc-8383-442f-8f3d-afcfbaefe617.md)|
 |[Squid](../vendors/470cb4ad-ac19-442b-9b3a-28b979d47d8e.md)|[Squid Proxy](af61d8a8-3eba-42fb-9f17-87443924f3f4.md)|
+|[Sucuri](../vendors/cdfd2ba0-77eb-4e11-b071-6f4d01fda607.md)|[WAF](5595ffd4-04f9-418c-b9c4-2f913f39ff68.md)|
 |[Sumo Logic](../vendors/34A5019C-7BEC-4BF8-A3B7-C38D567126C6.md)|[Scheduled Searches](3BC43668-77AA-41E6-801E-447AE1291408.md)|
 |[Symantec](../vendors/64c7f49c-f95a-4f4a-8540-56ec5fb1d96b.md)|[Data Loss Prevention](DFD96D65-65F6-413B-B4BE-F09D4870B377.md)|
 |[Symantec](../vendors/64c7f49c-f95a-4f4a-8540-56ec5fb1d96b.md)|[Endpoint Protection](eb2f69a8-8d13-447f-9859-1ad0979b4a24.md)|
