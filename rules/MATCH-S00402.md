@@ -34,7 +34,6 @@ Passes through an alert from an endpoint security product and adjusts the severi
 - [Google - Security Command Center](../products/78a80406-d37b-4a17-a25e-dbf53289b647.md)
 - [Microsoft - Advanced Threat Analytics](../products/ae48ad1f-04e5-47c6-9892-25555e5f728b.md)
 - [Microsoft - Azure](../products/a1225af5-e778-4068-a9a2-47da93d1ff24.md)
-- [Microsoft - Cloud App Security](../products/86e85e72-d3b1-4f1d-b195-5ca3d90e9461.md)
 - [Microsoft - Graph Identity Protection API](../products/4da7313c-5123-4eae-bb84-5d868fc55a74.md)
 - [Microsoft - Graph Security API](../products/ef42eb74-7444-4fee-b231-b4eb1e7c9660.md)
 - [Microsoft - Office 365](../products/d3ed003d-5ddd-4c7a-bea5-63eae6311833.md)
