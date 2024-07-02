@@ -100,6 +100,7 @@ Below is a full list of products supported by Cloud SIEM.
 |[FireEye](../vendors/1430ab5c-7b8b-44e9-a8ec-83076fa374eb.md)|[Web Malware Protection System](4bd29040-065f-4657-999c-3e03ec907f5e.md)|
 |[Forcepoint](../vendors/d87adcd6-ae92-4195-9a13-f111175b4e57.md)|[Web Security](e90edc67-68d4-4d67-82f6-4524f94b59bb.md)|
 |[Fortinet](../vendors/fb9941c5-6624-4175-af84-9e8127134889.md)|[Fortigate](c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad.md)|
+|[Genetec](../vendors/e71c7bca-0423-4dbe-885e-efed5e058190.md)|[Synergis](d44f6049-5d4e-44c3-a1df-528356f99a8a.md)|
 |[Gigamon](../vendors/f575ffed-7b6d-406e-9a55-848b4b6a720f.md)|[ThreatInsight](ca0aa08e-dae9-4e52-9b69-25ba79bc708f.md)|
 |[Github](../vendors/193c791a-bb10-4742-a429-1256535f888b.md)|[Github](33410b0f-3ca6-46ee-b781-b54f1218dfea.md)|
 |[Google](../vendors/45601247-66a5-4c9c-b3af-c422f5b4cbeb.md)|[BigQuery](a67d97fe-6e68-4cfb-9500-cfc5492da565.md)|
@@ -118,6 +119,7 @@ Below is a full list of products supported by Cloud SIEM.
 |[Infoblox](../vendors/fa08cfce-e611-42b7-8317-8b0beca298d5.md)|[DDI](ebf65636-e08d-4560-a692-d7ee9692b7db.md)|
 |[Infoblox](../vendors/fa08cfce-e611-42b7-8317-8b0beca298d5.md)|[Network Identity Operating System](43808f4c-15e9-480c-ab1a-38bdef3b6798.md)|
 |[Intersect Alliance](../vendors/005c835d-f067-4147-9da9-fe4d2691247e.md)|[Snare Enterprise Agent for Windows](d9af8a59-8835-467e-aeea-fd6fc2e210da.md)|
+|[JFrog](../vendors/ddbcc96c-f6b8-42b3-9456-8bc6ac5e8313.md)|[Artifactory](abe4975e-de65-4f82-8b35-e6ce392e165c.md)|
 |[Jamf](../vendors/3fe48850-f882-43c3-ab80-1e0354cf2aba.md)|[Jamf](5c2cc0de-ca31-4ef0-bcfa-133fc8b387ad.md)|
 |[JumpCloud](../vendors/138e3b9f-8b41-43d8-ba4c-823bef814d38.md)|[Directory Insights](05bfaf47-5e21-4d5f-b724-98960a6fca8a.md)|
 |[Juniper](../vendors/AFDA386E-E25E-421D-85F7-ACEC262D73C2.md)|[SRX Series Firewall](A17B3F3C-04F1-40C8-9497-3C499EB18A74.md)|
