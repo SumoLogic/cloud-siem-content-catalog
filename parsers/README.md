@@ -26,6 +26,7 @@ The `type` listed lets you know if you can directly apply the parser to a collec
 |Parser|/Parsers/System/Airtable/Airtable Audit C2C|
 |Parser|/Parsers/System/Aqua/Aqua JSON|
 |Parser|/Parsers/System/Atlassian/Atlassian Confluence Access Logs|
+|Parser|/Parsers/System/Atlassian/Atlassian Jira|
 |Parser|/Parsers/System/Auth0/Auth0|
 |Parser|/Parsers/System/Bandura/Bandura Syslog|
 |Parser|/Parsers/System/Blue Coat/Blue Coat ProxySG|
@@ -81,7 +82,9 @@ The `type` listed lets you know if you can directly apply the parser to a collec
 |Parser|/Parsers/System/Fortinet/Fortigate/Fortigate-CEF|
 |Parser|/Parsers/System/Fortinet/Fortigate/Fortigate-JSON|
 |Parser|/Parsers/System/Fortinet/Fortigate/Fortigate-Syslog|
+|Parser|/Parsers/System/Genetec/Genetec Synergis|
 |Parser|/Parsers/System/Gigamon/GigamonTI|
+|Parser|/Parsers/System/Github/Github|
 |Parser|/Parsers/System/Google/G Suite Alert Center|
 |Parser|/Parsers/System/Google/G Suite Audit|
 |Parser|/Parsers/System/Google/GCP|
@@ -91,6 +94,7 @@ The `type` listed lets you know if you can directly apply the parser to a collec
 |Parser|/Parsers/System/ISC/ISC BIND|
 |Parser|/Parsers/System/Imperva/Imperva Incapsula|
 |Parser|/Parsers/System/Infoblox/Infoblox|
+|Parser|/Parsers/System/JFrog/JFrog Artifactory|
 |Parser|/Parsers/System/Jamf/Jamf|
 |Parser|/Parsers/System/JumpCloud/JumpCloud Directory Insights|
 |Parser|/Parsers/System/Juniper/Juniper SRX Series Firewall Syslog|

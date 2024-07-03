@@ -18,7 +18,6 @@ Detects multiple failed login attempts for the same username over a 24 hour time
 |Prototype|False|
 |Tags|_mitreAttackTactic:TA0001, _mitreAttackTactic:TA0006, _mitreAttackTechnique:T1110, _mitreAttackTechnique:T1078, _mitreAttackTechnique:T1586, _mitreAttackTactic:TA0008, _mitreAttackTechnique:T1110.002, _mitreAttackTechnique:T1110.001|
 ## Vendors and Products
-- [Alibaba - ActionTrail](../products/79055042-52c8-4998-b201-bd2cd2dbca1f.md)
 - [Amazon AWS - CloudTrail](../products/033624b0-218e-4dcb-b93f-0f1fb1806c56.md)
 - [Cisco Systems - ASA](../products/be4f7473-fe69-4311-8859-3561900060bf.md)
 - [Cisco Systems - Identity Services Engine](../products/153794da-09e8-48fe-b511-1306fbb94d07.md)
@@ -29,6 +28,7 @@ Detects multiple failed login attempts for the same username over a 24 hour time
 - [Fortinet - Fortigate](../products/c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad.md)
 - [Google - G Suite](../products/e73cd65a-7a4b-4ce9-9d73-e5d9c824c214.md)
 - [HP - Aruba ClearPass](../products/12aba181-2b31-472c-a685-2be492f4778d.md)
+- [JFrog - Artifactory](../products/abe4975e-de65-4f82-8b35-e6ce392e165c.md)
 - [Linux - Linux OS Syslog](../products/0e20c932-d992-4bd4-b276-c15119ca5c0b.md)
 - [Linux - Systemd Journal](../products/5be5af82-c248-4c4c-a485-0571025f242c.md)
 - [ManageEngine - adauditplus](../products/7205db83-88e8-4074-8288-136a6c493d69.md)

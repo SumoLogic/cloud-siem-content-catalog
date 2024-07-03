@@ -56,6 +56,7 @@ Below is a full list of vendors for which there are supported products in Cloud 
 |[FireEye](1430ab5c-7b8b-44e9-a8ec-83076fa374eb.md)|3|
 |[Forcepoint](d87adcd6-ae92-4195-9a13-f111175b4e57.md)|1|
 |[Fortinet](fb9941c5-6624-4175-af84-9e8127134889.md)|2|
+|[Genetec](e71c7bca-0423-4dbe-885e-efed5e058190.md)|1|
 |[Gigamon](f575ffed-7b6d-406e-9a55-848b4b6a720f.md)|1|
 |[Github](193c791a-bb10-4742-a429-1256535f888b.md)|1|
 |[Google](45601247-66a5-4c9c-b3af-c422f5b4cbeb.md)|4|
@@ -66,6 +67,7 @@ Below is a full list of vendors for which there are supported products in Cloud 
 |[Imperva](50bd76b3-148f-4b03-9d2f-b70851bc6c2f.md)|3|
 |[Infoblox](fa08cfce-e611-42b7-8317-8b0beca298d5.md)|2|
 |[Intersect Alliance](005c835d-f067-4147-9da9-fe4d2691247e.md)|1|
+|[JFrog](ddbcc96c-f6b8-42b3-9456-8bc6ac5e8313.md)|1|
 |[Jamf](3fe48850-f882-43c3-ab80-1e0354cf2aba.md)|1|
 |[JumpCloud](138e3b9f-8b41-43d8-ba4c-823bef814d38.md)|1|
 |[Juniper](AFDA386E-E25E-421D-85F7-ACEC262D73C2.md)|2|
