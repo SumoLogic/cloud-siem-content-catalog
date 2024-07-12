@@ -70,6 +70,7 @@ Below is a full list of products supported by Cloud SIEM.
 |[Corelight](../vendors/6b5528e6-3d06-460d-b730-b5fa4b18ce18.md)|[NSM](1eecf521-df5d-4fc5-83b4-69f128056fdb.md)|
 |[CrowdStrike](../vendors/79ade329-b6d4-43ae-8db1-2a9cc45c0fb0.md)|[FDR](569a3a44-c29f-492e-bcf4-5dc04e2ab0f3.md)|
 |[CrowdStrike](../vendors/79ade329-b6d4-43ae-8db1-2a9cc45c0fb0.md)|[Falcon](840c72e0-4e47-41e7-9b93-31f55d12f07d.md)|
+|[CrowdStrike](../vendors/79ade329-b6d4-43ae-8db1-2a9cc45c0fb0.md)|[Spotlight](4c960ed9-3858-46ea-aa59-f81489d93deb.md)|
 |[Cyber-Ark](../vendors/8a3d333e-ffad-49ed-9edd-0cf1c797b24f.md)|[Endpoint Privilege Manager](96d1bd4a-9285-439e-b81c-1a32f7688dac.md)|
 |[Cyber-Ark](../vendors/8a3d333e-ffad-49ed-9edd-0cf1c797b24f.md)|[Enterprise Password Vault](36f5ca33-0c1e-4223-8215-977ea04425ba.md)|
 |[Cybereason](../vendors/1a51cb88-ebc9-4655-bce4-3d788bf19e89.md)|[Endpoint Security](12d00042-d90d-4055-a171-01a1f635a613.md)|
@@ -122,9 +123,11 @@ Below is a full list of products supported by Cloud SIEM.
 |[JFrog](../vendors/ddbcc96c-f6b8-42b3-9456-8bc6ac5e8313.md)|[Artifactory](abe4975e-de65-4f82-8b35-e6ce392e165c.md)|
 |[Jamf](../vendors/3fe48850-f882-43c3-ab80-1e0354cf2aba.md)|[Jamf](5c2cc0de-ca31-4ef0-bcfa-133fc8b387ad.md)|
 |[JumpCloud](../vendors/138e3b9f-8b41-43d8-ba4c-823bef814d38.md)|[Directory Insights](05bfaf47-5e21-4d5f-b724-98960a6fca8a.md)|
+|[JumpCloud](../vendors/138e3b9f-8b41-43d8-ba4c-823bef814d38.md)|[IdP](1ed80351-d779-4f1f-9ddb-b3881f19d487.md)|
 |[Juniper](../vendors/AFDA386E-E25E-421D-85F7-ACEC262D73C2.md)|[SRX Series Firewall](A17B3F3C-04F1-40C8-9497-3C499EB18A74.md)|
 |[Juniper](../vendors/AFDA386E-E25E-421D-85F7-ACEC262D73C2.md)|[SSG Series Firewall](19d02d3a-ecc8-4154-942b-911132f8838a.md)|
 |[Kaltura](../vendors/c65f8f5f-ea11-4b41-858b-99731d306f81.md)|[Kaltura](6ca874c3-4a65-40bc-ba04-9d8820d794e4.md)|
+|[KasperskyLab](../vendors/8011e6fe-1e65-4603-aa2e-15c9b33cb0fd.md)|[Endpoint Security](3e98366a-4ed2-459f-8602-631a174f4e18.md)|
 |[KasperskyLab](../vendors/8011e6fe-1e65-4603-aa2e-15c9b33cb0fd.md)|[SecurityCenter](a29a5331-583b-4153-8b07-20b3126b0d33.md)|
 |[Kemp](../vendors/fe56e139-6049-4d78-9665-df7d5f80d996.md)|[LoadMaster](e0763d80-29ce-43a0-b0ab-69c621abb3eb.md)|
 |[Kubernetes](../vendors/b19b9592-1616-4013-9ad4-f6d2a93da669.md)|[Kubernetes](74662794-d8de-42ec-b504-cc0bccfaddd9.md)|

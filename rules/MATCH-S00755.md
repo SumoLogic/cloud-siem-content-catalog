@@ -23,7 +23,7 @@ Detects Outlook Form creation.  Outlook forms can be used to execute code on a c
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|baseimage|
+|Normalized Schema|baseImage|
 |Normalized Schema|changeTarget|
 |Normalized Schema|device_hostname|
 

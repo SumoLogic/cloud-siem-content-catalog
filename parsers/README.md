@@ -58,6 +58,7 @@ The `type` listed lets you know if you can directly apply the parser to a collec
 |Parser|/Parsers/System/CrowdStrike/CrowdStrike FDR - JSON|
 |Parser|/Parsers/System/CrowdStrike/CrowdStrike Falcon Endpoint - CEF|
 |Parser|/Parsers/System/CrowdStrike/CrowdStrike Falcon Endpoint - JSON|
+|Parser|/Parsers/System/CrowdStrike/CrowdStrike Spotlight|
 |Parser|/Parsers/System/Cyber-Ark/Cyber-Ark Vault - CEF|
 |Parser|/Parsers/System/Cyber-Ark/CyberArk EPM JSON|
 |Parser|/Parsers/System/Cylance/Cylance Syslog|
@@ -97,9 +98,11 @@ The `type` listed lets you know if you can directly apply the parser to a collec
 |Parser|/Parsers/System/JFrog/JFrog Artifactory|
 |Parser|/Parsers/System/Jamf/Jamf|
 |Parser|/Parsers/System/JumpCloud/JumpCloud Directory Insights|
+|Parser|/Parsers/System/JumpCloud/JumpCloud IdP|
 |Parser|/Parsers/System/Juniper/Juniper SRX Series Firewall Syslog|
 |Parser|/Parsers/System/Juniper/Juniper SSG Series Firewall Syslog|
 |Parser|/Parsers/System/Kaltura/Kaltura|
+|Parser|/Parsers/System/Kaspersky/Kaspersky Endpoint Security|
 |Parser|/Parsers/System/Kemp/Kemp LoadMaster Syslog|
 |Parser|/Parsers/System/KnowBe4/KnowBe4 KMSAT C2C|
 |Parser|/Parsers/System/Kubernetes/Kubernetes|

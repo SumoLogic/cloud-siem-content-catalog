@@ -30,7 +30,7 @@ Below is a full list of vendors for which there are supported products in Cloud 
 |[Cloudflare](4c1c0f12-5d0a-4f0c-918f-c83dca43c967.md)|2|
 |[Code42](f764fde6-a435-42cb-9407-15734a99d657.md)|2|
 |[Corelight](6b5528e6-3d06-460d-b730-b5fa4b18ce18.md)|1|
-|[CrowdStrike](79ade329-b6d4-43ae-8db1-2a9cc45c0fb0.md)|2|
+|[CrowdStrike](79ade329-b6d4-43ae-8db1-2a9cc45c0fb0.md)|3|
 |[Cyber-Ark](8a3d333e-ffad-49ed-9edd-0cf1c797b24f.md)|3|
 |[Cybereason](1a51cb88-ebc9-4655-bce4-3d788bf19e89.md)|1|
 |[Cylance](c57feda1-8da4-464d-b6cf-2c9982b71e57.md)|1|
@@ -69,10 +69,10 @@ Below is a full list of vendors for which there are supported products in Cloud 
 |[Intersect Alliance](005c835d-f067-4147-9da9-fe4d2691247e.md)|1|
 |[JFrog](ddbcc96c-f6b8-42b3-9456-8bc6ac5e8313.md)|1|
 |[Jamf](3fe48850-f882-43c3-ab80-1e0354cf2aba.md)|1|
-|[JumpCloud](138e3b9f-8b41-43d8-ba4c-823bef814d38.md)|1|
+|[JumpCloud](138e3b9f-8b41-43d8-ba4c-823bef814d38.md)|2|
 |[Juniper](AFDA386E-E25E-421D-85F7-ACEC262D73C2.md)|2|
 |[Kaltura](c65f8f5f-ea11-4b41-858b-99731d306f81.md)|1|
-|[KasperskyLab](8011e6fe-1e65-4603-aa2e-15c9b33cb0fd.md)|1|
+|[KasperskyLab](8011e6fe-1e65-4603-aa2e-15c9b33cb0fd.md)|2|
 |[Kemp](fe56e139-6049-4d78-9665-df7d5f80d996.md)|1|
 |[Kubernetes](b19b9592-1616-4013-9ad4-f6d2a93da669.md)|1|
 |[Lacework](b5ad3497-214f-4952-9191-e98262709251.md)|1|

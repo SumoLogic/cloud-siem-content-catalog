@@ -27,6 +27,7 @@ A record flagged a file hash from a threat intelligence match list
 - [Cloudflare - Logpush](../products/c2503fcc-ef30-4e40-bb32-0bf47151b140.md)
 - [CrowdStrike - FDR](../products/569a3a44-c29f-492e-bcf4-5dc04e2ab0f3.md)
 - [CrowdStrike - Falcon](../products/840c72e0-4e47-41e7-9b93-31f55d12f07d.md)
+- [Cybereason - Endpoint Security](../products/12d00042-d90d-4055-a171-01a1f635a613.md)
 - [Cylance - Protect](../products/60829f4a-7acb-47d1-ad23-8424fcf83dcb.md)
 - [FireEye - Endpoint Security](../products/8c342fa0-4147-47c9-b574-965ad2eddafa.md)
 - [Fortinet - Fortigate](../products/c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad.md)

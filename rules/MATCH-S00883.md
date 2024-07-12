@@ -16,6 +16,7 @@ Threat actors may be able to list or acquire credentials from keychains, this al
 |Prototype|False|
 |Tags|_mitreAttackTactic:TA0006, _mitreAttackTechnique:T1555.001|
 ## Vendors and Products
+- [CrowdStrike - FDR](../products/569a3a44-c29f-492e-bcf4-5dc04e2ab0f3.md)
 
 
 ## Fields Used
