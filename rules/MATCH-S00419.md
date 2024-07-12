@@ -10,7 +10,7 @@ Observes for common file extensions appearing before the actual file extension (
 |Category|Defense Evasion|
 |Apply Risk to Entities|device_hostname, device_ip, user_username|
 |Signal Name|Multiple File Extensions|
-|Summary Expression|File: {{baseimage}} found with multiple extensions on host: {{device_hostname}}|
+|Summary Expression|File: {{baseImage}} found with multiple extensions on host: {{device_hostname}}|
 |Score/Severity|Static: 2|
 |Enabled by Default|True|
 |Prototype|False|
