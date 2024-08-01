@@ -16,11 +16,9 @@ A record flagged a file hash from a threat intelligence match list
 |Prototype|False|
 |Tags||
 ## Vendors and Products
-- [Bitdefender - GravityZone](../products/046b3623-69fe-409f-9e80-fd3ebef0654f.md)
 - [Bro - Bro](../products/37C866BF-72E1-470A-9072-EDB908F56951.md)
 - [Carbon Black - Cloud](../products/46433485-9c31-4b45-97c8-4d57ec90e72e.md)
 - [Carbon Black - Defense](../products/4448ca62-bb4f-4859-a6a2-d9262f9e48f0.md)
-- [Carbon Black - Protect](../products/ada54150-f29e-43a5-9d20-b98ee2d17430.md)
 - [Cisco Systems - Advanced Malware Protection (AMP)](../products/7eaa4c44-5b7f-4d9e-8c1c-c4105c2b7506.md)
 - [Cisco Systems - Meraki](../products/724c9add-8cd9-4013-b9e1-a907b96da426.md)
 - [Cisco Systems - Umbrella](../products/5ba50e74-3c05-4ea8-aeaf-5efde588c60f.md)

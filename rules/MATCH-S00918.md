@@ -16,6 +16,7 @@ The Pluggable Authentication Module (PAM) in Linux allows system administrators 
 |Prototype|False|
 |Tags|_mitreAttackTactic:TA0007, _mitreAttackTechnique:T1201|
 ## Vendors and Products
+- [CrowdStrike - FDR](../products/569a3a44-c29f-492e-bcf4-5dc04e2ab0f3.md)
 - [Linux - Sysmon for Linux](../products/b238758d-ade8-41d2-b32d-c99159e9fd74.md)
 
 

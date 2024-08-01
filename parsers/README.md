@@ -14,6 +14,7 @@ The `type` listed lets you know if you can directly apply the parser to a collec
 |Parser|/Parsers/System/AWS/AWS ELB|
 |Parser|/Parsers/System/AWS/AWS Inspector|
 |Parser|/Parsers/System/AWS/AWS Network Firewall|
+|Parser|/Parsers/System/AWS/AWS Redshift|
 |Parser|/Parsers/System/AWS/AWS Route 53|
 |Parser|/Parsers/System/AWS/AWS S3 Server Access Logs|
 |Parser|/Parsers/System/AWS/AWS Security Hub|
@@ -80,6 +81,7 @@ The `type` listed lets you know if you can directly apply the parser to a collec
 |Parser|/Parsers/System/Falco/Falco JSON|
 |Parser|/Parsers/System/FireEye/FireEye CMS CEF|
 |Parser|/Parsers/System/FireEye/FireEye Web MPS JSON|
+|Parser|/Parsers/System/Forescout/Forescout CounterACT|
 |Parser|/Parsers/System/Fortinet/Fortigate/Fortigate-CEF|
 |Parser|/Parsers/System/Fortinet/Fortigate/Fortigate-JSON|
 |Parser|/Parsers/System/Fortinet/Fortigate/Fortigate-Syslog|
@@ -201,6 +203,7 @@ The `type` listed lets you know if you can directly apply the parser to a collec
 |Parser|/Parsers/System/Suricata/Suricata Syslog|
 |Parser|/Parsers/System/Symantec/Data Loss Prevention/Symantec DLP|
 |Parser|/Parsers/System/Symantec/Symantec Endpoint Protection/Symantec Endpoint Protection-Syslog|
+|Parser|/Parsers/System/Symantec/Symantec Endpoint Security|
 |Parser|/Parsers/System/Sysdig/Sysdig JSON|
 |Parser|/Parsers/System/Tanium/Tanium CEF|
 |Parser|/Parsers/System/Tanium/Tanium JSON|
@@ -211,6 +214,7 @@ The `type` listed lets you know if you can directly apply the parser to a collec
 |Parser|/Parsers/System/Trend Micro/Trend Micro Vision One|
 |Parser|/Parsers/System/Twistlock/Twistlock|
 |Parser|/Parsers/System/VMware/Carbon Black Cloud|
+|Parser|/Parsers/System/VMware/VMware NSX|
 |Parser|/Parsers/System/Varonis/Varonis DatAlert Syslog|
 |Parser|/Parsers/System/Wiz/Wiz|
 |Parser|/Parsers/System/Workday/Workday|

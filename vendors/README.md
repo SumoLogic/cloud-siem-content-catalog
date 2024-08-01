@@ -11,7 +11,7 @@ Below is a full list of vendors for which there are supported products in Cloud 
 |[Akamai](47292522-c7f4-4c0e-9ab5-4426c0215be3.md)|2|
 |[Alibaba](d7de27e2-7680-48a0-96aa-1c26cf8d1ca4.md)|1|
 |[AlphaSOC](84ffd6de-c32b-49fe-88cb-d3e744df4141.md)|1|
-|[Amazon AWS](210d6727-ac50-468e-ab00-1f7586845326.md)|17|
+|[Amazon AWS](210d6727-ac50-468e-ab00-1f7586845326.md)|18|
 |[Aqua](0531e9df-c128-4c67-9a81-66ffcce41f9a.md)|1|
 |[Atlassian](4d40dc7a-b95e-476c-9fb0-7163ea7fd335.md)|2|
 |[Auth0](f002a19c-876e-4a33-8be0-ed3b922d19bc.md)|1|
@@ -55,6 +55,7 @@ Below is a full list of vendors for which there are supported products in Cloud 
 |[Falco](10e77c32-f195-465d-8104-845a3cf20287.md)|1|
 |[FireEye](1430ab5c-7b8b-44e9-a8ec-83076fa374eb.md)|3|
 |[Forcepoint](d87adcd6-ae92-4195-9a13-f111175b4e57.md)|1|
+|[Forescout](6c9f6918-bc90-4374-a64c-dede7df92204.md)|1|
 |[Fortinet](fb9941c5-6624-4175-af84-9e8127134889.md)|2|
 |[Genetec](e71c7bca-0423-4dbe-885e-efed5e058190.md)|1|
 |[Gigamon](f575ffed-7b6d-406e-9a55-848b4b6a720f.md)|1|
@@ -121,7 +122,7 @@ Below is a full list of vendors for which there are supported products in Cloud 
 |[Squid](470cb4ad-ac19-442b-9b3a-28b979d47d8e.md)|1|
 |[Sucuri](cdfd2ba0-77eb-4e11-b071-6f4d01fda607.md)|1|
 |[Sumo Logic](34A5019C-7BEC-4BF8-A3B7-C38D567126C6.md)|1|
-|[Symantec](64c7f49c-f95a-4f4a-8540-56ec5fb1d96b.md)|4|
+|[Symantec](64c7f49c-f95a-4f4a-8540-56ec5fb1d96b.md)|5|
 |[Sysdig](c4de0854-e718-45e1-a4c8-63623755aa43.md)|1|
 |[Tanium](c7a342e6-5621-401a-ac5c-80ea3f2db23c.md)|1|
 |[Tenable](600BEF8F-BE81-4767-8322-72116C16DB20.md)|1|
@@ -130,7 +131,7 @@ Below is a full list of vendors for which there are supported products in Cloud 
 |[Trellix](9bec8407-4182-46ec-99dd-2adfade15652.md)|1|
 |[Trend Micro](8af48b83-18bf-4233-ad51-db37baca0313.md)|4|
 |[Twistlock](97C36046-B516-41F8-9751-4C788AA33785.md)|1|
-|[VMware](fbf25b91-89f1-45c4-903d-664b328bc6e0.md)|3|
+|[VMware](fbf25b91-89f1-45c4-903d-664b328bc6e0.md)|4|
 |[Varonis](20270f89-127e-4055-96ec-56045e67e163.md)|2|
 |[Vectra](7a3d1a5c-ba67-4597-971f-7057e8f6c8bb.md)|1|
 |[Wiz](2cde0cac-102b-4756-9a56-81437fea1400.md)|1|
