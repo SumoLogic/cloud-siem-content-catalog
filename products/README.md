@@ -24,6 +24,7 @@ Below is a full list of products supported by Cloud SIEM.
 |[Amazon AWS](../vendors/210d6727-ac50-468e-ab00-1f7586845326.md)|[GuardDuty](2ca0adcf-7616-4474-8557-a3773515aa6d.md)|
 |[Amazon AWS](../vendors/210d6727-ac50-468e-ab00-1f7586845326.md)|[Inspector](ab4056ab-305e-4362-add8-c15c1f7b8afc.md)|
 |[Amazon AWS](../vendors/210d6727-ac50-468e-ab00-1f7586845326.md)|[Network Firewall](3a82061c-2ca3-4289-9c9b-78756001aa38.md)|
+|[Amazon AWS](../vendors/210d6727-ac50-468e-ab00-1f7586845326.md)|[Redshift](74e6d624-f15b-430c-a173-67d6168085f5.md)|
 |[Amazon AWS](../vendors/210d6727-ac50-468e-ab00-1f7586845326.md)|[Route53](e2393771-bda2-414a-8661-0a57069287ad.md)|
 |[Amazon AWS](../vendors/210d6727-ac50-468e-ab00-1f7586845326.md)|[Security Hub](d0aebc1c-db4d-440f-b69f-70dae24befff.md)|
 |[Amazon AWS](../vendors/210d6727-ac50-468e-ab00-1f7586845326.md)|[Trusted Advisor](99d21ed4-c3fb-452e-8e4a-a10ff4b94fe0.md)|
@@ -100,6 +101,7 @@ Below is a full list of products supported by Cloud SIEM.
 |[FireEye](../vendors/1430ab5c-7b8b-44e9-a8ec-83076fa374eb.md)|[Endpoint Security](8c342fa0-4147-47c9-b574-965ad2eddafa.md)|
 |[FireEye](../vendors/1430ab5c-7b8b-44e9-a8ec-83076fa374eb.md)|[Web Malware Protection System](4bd29040-065f-4657-999c-3e03ec907f5e.md)|
 |[Forcepoint](../vendors/d87adcd6-ae92-4195-9a13-f111175b4e57.md)|[Web Security](e90edc67-68d4-4d67-82f6-4524f94b59bb.md)|
+|[Forescout](../vendors/6c9f6918-bc90-4374-a64c-dede7df92204.md)|[CounterACT](4cb92d57-85e6-49ca-9682-4fca0b72f6bf.md)|
 |[Fortinet](../vendors/fb9941c5-6624-4175-af84-9e8127134889.md)|[Fortigate](c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad.md)|
 |[Genetec](../vendors/e71c7bca-0423-4dbe-885e-efed5e058190.md)|[Synergis](d44f6049-5d4e-44c3-a1df-528356f99a8a.md)|
 |[Gigamon](../vendors/f575ffed-7b6d-406e-9a55-848b4b6a720f.md)|[ThreatInsight](ca0aa08e-dae9-4e52-9b69-25ba79bc708f.md)|
@@ -223,6 +225,7 @@ Below is a full list of products supported by Cloud SIEM.
 |[Sumo Logic](../vendors/34A5019C-7BEC-4BF8-A3B7-C38D567126C6.md)|[Scheduled Searches](3BC43668-77AA-41E6-801E-447AE1291408.md)|
 |[Symantec](../vendors/64c7f49c-f95a-4f4a-8540-56ec5fb1d96b.md)|[Data Loss Prevention](DFD96D65-65F6-413B-B4BE-F09D4870B377.md)|
 |[Symantec](../vendors/64c7f49c-f95a-4f4a-8540-56ec5fb1d96b.md)|[Endpoint Protection](eb2f69a8-8d13-447f-9859-1ad0979b4a24.md)|
+|[Symantec](../vendors/64c7f49c-f95a-4f4a-8540-56ec5fb1d96b.md)|[Endpoint Security](a6052aa3-1bb6-4e31-8f51-b32058928c67.md)|
 |[Symantec](../vendors/64c7f49c-f95a-4f4a-8540-56ec5fb1d96b.md)|[Proxy Secure Gateway](991a55cf-8c5a-49ba-ae72-6f64a002bacf.md)|
 |[Symantec](../vendors/64c7f49c-f95a-4f4a-8540-56ec5fb1d96b.md)|[Web Security Service](bf865cb5-0b26-4010-8b3c-5ae2d1f716d8.md)|
 |[Sysdig](../vendors/c4de0854-e718-45e1-a4c8-63623755aa43.md)|[Sysdig](55ec1d4a-6985-4f04-8de5-f9812871fda2.md)|
@@ -238,6 +241,7 @@ Below is a full list of products supported by Cloud SIEM.
 |[Twistlock](../vendors/97C36046-B516-41F8-9751-4C788AA33785.md)|[Twistlock](581D3DD8-4DA7-4192-9E49-320D7AFB8B53.md)|
 |[VMware](../vendors/fbf25b91-89f1-45c4-903d-664b328bc6e0.md)|[Carbon Black Cloud](f9cea291-9030-4e41-9836-6dd9274d6df4.md)|
 |[VMware](../vendors/fbf25b91-89f1-45c4-903d-664b328bc6e0.md)|[Horizon](30e76023-289c-40f2-a9a4-7ce4677a5e7d.md)|
+|[VMware](../vendors/fbf25b91-89f1-45c4-903d-664b328bc6e0.md)|[NSX](acc19092-f1ce-4641-a4db-530a55418c1d.md)|
 |[Varonis](../vendors/20270f89-127e-4055-96ec-56045e67e163.md)|[DatAdvantage](4d6a3683-4edb-4330-9e9f-b8608cd63981.md)|
 |[Varonis](../vendors/20270f89-127e-4055-96ec-56045e67e163.md)|[DatAlert](bd98578e-3f97-4e5a-93ec-bbff28f90ccf.md)|
 |[Vectra](../vendors/7a3d1a5c-ba67-4597-971f-7057e8f6c8bb.md)|[Cognito](51afd72e-94b0-42f3-b65c-cf8edbacf7cf.md)|

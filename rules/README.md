@@ -291,6 +291,7 @@
 |FIRST-S00014|[First Seen Driver Load - Host](FIRST-S00014.md)|
 |FIRST-S00007|[First Seen DynamoDB Enumeration from User](FIRST-S00007.md)|
 |FIRST-S00031|[First Seen IP Address Associated with User for a Successful Azure AD Sign In Event](FIRST-S00031.md)|
+|FIRST-S00062|[First Seen IP Address Connecting to Active Directory Certificate Services Process](FIRST-S00062.md)|
 |FIRST-S00027|[First Seen InstallUtil Allow List Bypass From User](FIRST-S00027.md)|
 |FIRST-S00042|[First Seen Ioreg Usage from User](FIRST-S00042.md)|
 |FIRST-S00017|[First Seen Kerberoasting Attempt from User - Global](FIRST-S00017.md)|
@@ -309,6 +310,7 @@
 |FIRST-S00033|[First Seen Terminal-Attached Pod Deployed to EKS](FIRST-S00033.md)|
 |FIRST-S00061|[First Seen USB device in use on Windows host](FIRST-S00061.md)|
 |FIRST-S00005|[First Seen User Creation From User](FIRST-S00005.md)|
+|FIRST-S00088|[First Seen User Performing NTLM Authentication to Host](FIRST-S00088.md)|
 |FIRST-S00006|[First Seen Weak Kerberos Encryption from User](FIRST-S00006.md)|
 |FIRST-S00038|[First Seen Wget Usage from User](FIRST-S00038.md)|
 |FIRST-S00040|[First Seen cURL execution from User](FIRST-S00040.md)|

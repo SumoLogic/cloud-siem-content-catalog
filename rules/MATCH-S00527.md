@@ -17,7 +17,6 @@ The rule detects email files created outside the normal Outlook directory.
 |Tags|_mitreAttackTactic:TA0005, _mitreAttackTechnique:T1036, _mitreAttackTechnique:T1036.005, _mitreAttackTechnique:T1036.004|
 ## Vendors and Products
 - [Bitdefender - GravityZone](../products/046b3623-69fe-409f-9e80-fd3ebef0654f.md)
-- [Carbon Black - Cloud](../products/46433485-9c31-4b45-97c8-4d57ec90e72e.md)
 - [Cisco Systems - ASA](../products/be4f7473-fe69-4311-8859-3561900060bf.md)
 - [Code42 - Incydr](../products/cc523ad6-7193-4de5-a254-d0243fca63f3.md)
 - [Egnyte - DLP](../products/114420df-d10c-4e88-92e9-0d95102c1a3d.md)

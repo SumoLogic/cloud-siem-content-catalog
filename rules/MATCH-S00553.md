@@ -30,6 +30,7 @@ Detects RDP Traffic to a public-facing asset.
 - [Palo Alto Networks - Next Generation Firewall](../products/46f5fa2c-1a62-4692-82ad-ed87800a0adb.md)
 - [Zscaler - Firewall](../products/9e0641a7-22ce-4ac8-8113-ee48b368ac3d.md)
 - [Zscaler - Nanolog Streaming Service](../products/6299d728-14f7-455e-85c5-ea8ec65a654a.md)
+- [Zscaler - ZPA Log Streaming Service](../products/4a75a995-0e10-45fc-8b4d-7fcfc0e98e25.md)
 
 
 ## Fields Used
