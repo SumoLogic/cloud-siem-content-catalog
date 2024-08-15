@@ -126,9 +126,9 @@
 |MATCH-S00788|[Azure - Key Deletion](MATCH-S00788.md)|
 |MATCH-S00789|[Azure - Key Purged](MATCH-S00789.md)|
 |MATCH-S00792|[Azure - Key Vault Deleted](MATCH-S00792.md)|
-|MATCH-S00231|[Azure - Member Added to Company Administrator Role](MATCH-S00231.md)|
-|MATCH-S00233|[Azure - Member Added to Company Administrator Role Non-PIM](MATCH-S00233.md)|
-|MATCH-S00229|[Azure - Member Added to Non-Company Administrator Role](MATCH-S00229.md)|
+|MATCH-S00231|[Azure - Member Added to Global Administrator Role](MATCH-S00231.md)|
+|MATCH-S00233|[Azure - Member Added to Global Administrator Role Non-PIM](MATCH-S00233.md)|
+|MATCH-S00229|[Azure - Member Added to Non-Global Administrator Role](MATCH-S00229.md)|
 |MATCH-S00140|[Azure - Policy Added](MATCH-S00140.md)|
 |MATCH-S00142|[Azure - Policy Deleted](MATCH-S00142.md)|
 |MATCH-S00144|[Azure - Policy Updated](MATCH-S00144.md)|
@@ -299,6 +299,7 @@
 |FIRST-S00032|[First Seen Kubectl Command From User](FIRST-S00032.md)|
 |FIRST-S00004|[First Seen Local Group Addition by User](FIRST-S00004.md)|
 |FIRST-S00015|[First Seen Macro Execution from User](FIRST-S00015.md)|
+|FIRST-S00088|[First Seen NTLM Authentication to Host (User)](FIRST-S00088.md)|
 |FIRST-S00016|[First Seen Non-Network/Non-System Logon from User](FIRST-S00016.md)|
 |FIRST-S00030|[First Seen Outbound Connection to External IP Address on Port 445 from IP Address](FIRST-S00030.md)|
 |FIRST-S00010|[First Seen PowerShell Execution from Computer](FIRST-S00010.md)|
@@ -310,7 +311,6 @@
 |FIRST-S00033|[First Seen Terminal-Attached Pod Deployed to EKS](FIRST-S00033.md)|
 |FIRST-S00061|[First Seen USB device in use on Windows host](FIRST-S00061.md)|
 |FIRST-S00005|[First Seen User Creation From User](FIRST-S00005.md)|
-|FIRST-S00088|[First Seen User Performing NTLM Authentication to Host](FIRST-S00088.md)|
 |FIRST-S00006|[First Seen Weak Kerberos Encryption from User](FIRST-S00006.md)|
 |FIRST-S00038|[First Seen Wget Usage from User](FIRST-S00038.md)|
 |FIRST-S00040|[First Seen cURL execution from User](FIRST-S00040.md)|

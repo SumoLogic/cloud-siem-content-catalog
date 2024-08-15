@@ -496,6 +496,7 @@ In cases where the log data has a source or destination context, there are situa
 |parentPid|int|The process id of the program that initiated a process (typically the parentBaseImage).|
 |pid|int|The process id of a process (typically the baseImage).|
 |processUid|string|A data source specific unique identifier for a process, often a GUID.|
+|repository|string|The name or path of a centrally managed object storage location, such as a Git repository, a container repository, or similar concepts.|
 |resource|string|Generalized field to capture an object referenced within a log that does not have a more specific field currently specified in the mapping schema. (e.g. a file is a resource, however file_basename and file_path both exist to capture this value)|
 |resourceType|string|Generalized field to help describe the nature of a resource. Used when a resource exists for which there is no more specific field specified for that type of resource. (e.g. a file is a type of resource, file_basename exists to capture the name of the file and describes the type)|
 |sessionId|string|An ephemeral and at least semi-unique identifier of a connection between two systems. E.g. HTTP session, user logon session, TCP session identifiers|

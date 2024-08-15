@@ -3983,6 +3983,14 @@
         "mappable": true,
         "type": "string"
     },
+    "repository": {
+        "description": "The name or path of a centrally managed object storage location, such as a Git repository, a container repository, or similar concepts.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": "_file",
+        "mappable": true,
+        "type": "string"
+    },
     "resource": {
         "description": "Generalized field to capture an object referenced within a log that does not have a more specific field currently specified in the mapping schema. (e.g. a file is a resource, however file_basename and file_path both exist to capture this value)",
         "enrichment_populated": false,
