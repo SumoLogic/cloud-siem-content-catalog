@@ -1,7 +1,7 @@
-# [Rules](README.md): Azure - Member Added to Company Administrator Role Non-PIM
+# [Rules](README.md): Azure - Member Added to Global Administrator Role Non-PIM
 
 ## Description
-Detects member additions to the Company (Global) Administrator role outside of Privileged Identity Manager (PIM). This is a suspicious activity, and could be performed by an adversary to escalate privileges.
+Detects member additions to the Global Administrator role outside of Privileged Identity Manager (PIM). This is a suspicious activity, and could be performed by an adversary to escalate privileges.
 
 ## Additional Details
 |Detail|Value|
@@ -9,8 +9,8 @@ Detects member additions to the Company (Global) Administrator role outside of P
 |Type|Templated Match|
 |Category|Privilege Escalation|
 |Apply Risk to Entities|device_hostname, device_ip, targetUser_username, user_username, srcDevice_ip|
-|Signal Name|Azure - Member Added to Company (Global) Administrator Role Outside of PIM|
-|Summary Expression|{{changeTarget}} added to Company (Global) Administrator role by IP {{device_ip}}|
+|Signal Name|Azure - Member Added to Global Administrator Role Outside of PIM|
+|Summary Expression|{{changeTarget}} added to Global Administrator role by IP {{device_ip}}|
 |Score/Severity|Static: 5|
 |Enabled by Default|True|
 |Prototype|False|

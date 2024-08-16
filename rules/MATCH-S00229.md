@@ -1,4 +1,4 @@
-# [Rules](README.md): Azure - Member Added to Non-Company Administrator Role
+# [Rules](README.md): Azure - Member Added to Non-Global Administrator Role
 
 ## Description
 Detects member additions to a non-administrative role. This is a routine activity, but could be performed by an adversary to escalate privileges.
@@ -7,7 +7,7 @@ Detects member additions to a non-administrative role. This is a routine activit
 |Detail|Value|
 |----|----|
 |Type|Templated Match|
-|Category|Privilege Escalation|
+|Category|Persistence|
 |Apply Risk to Entities|device_hostname, device_ip, targetUser_username, user_username, srcDevice_ip|
 |Signal Name|Azure - Member Added to {{fields['properties.targetResources.1.modifiedProperties.2.newValue']}} Role|
 |Summary Expression|{{changeTarget}} added to {{fields['properties.targetResources.1.modifiedProperties.2.newValue']}} role by IP {{device_ip}}|

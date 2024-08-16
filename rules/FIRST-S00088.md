@@ -1,4 +1,4 @@
-# [Rules](README.md): First Seen User Performing NTLM Authentication to Host
+# [Rules](README.md): First Seen NTLM Authentication to Host (User)
 
 ## Description
 A user has performed NTLM authentication to a host on the network for the first time since the baseline period has been established. Rule is disabled by default and requires tuning. Tuning guidance: depending on configurations in the environment, NTLM authentication may be necessary and expected. Examine the username, source IP and destination host in order to ensure that this activity is expected. Look at other signals around the entity in question to determine if any other type of suspicious activity may have occurred. It may also be prudent to isolate the rule to sensitive users and groups
@@ -19,6 +19,7 @@ A user has performed NTLM authentication to a host on the network for the first 
 |Prototype|False|
 |Tags|_mitreAttackTactic:TA0006, _mitreAttackTechnique:T1558, _mitreAttackTechnique:T1649|
 ## Vendors and Products
+- [Microsoft - Windows](../products/1ff7546c-cb36-4a24-87f7-89d2cecc5761.md)
 
 
 ## Fields Used

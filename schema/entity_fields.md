@@ -36,6 +36,7 @@ Here is a list of schema fields which Cloud SIEM considers entites and the type 
 |http_url_fqdn|_domain|
 |http_userAgent|_useragent|
 |parentBaseImage|_process|
+|repository|_file|
 |srcDevice_hostname|_hostname|
 |srcDevice_hostname_raw|_hostname|
 |srcDevice_ip|_ip|
