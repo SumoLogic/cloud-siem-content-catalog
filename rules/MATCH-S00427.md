@@ -10,7 +10,7 @@ Detects a process memory dump performed via ordinal function 24 in comsvcs.dll.
 |Category|Credential Access|
 |Apply Risk to Entities|device_hostname, device_ip, user_username|
 |Signal Name|Process Dump via Rundll32 and Comsvcs.dll|
-|Summary Expression|Powershell command executed on host: {{device_hostname}}, command: {{commandLine}}|
+|Summary Expression|A process dump has been observed using RUNDLL32 and COMSVCS on host: {{device_hostname}}|
 |Score/Severity|Static: 4|
 |Enabled by Default|True|
 |Prototype|False|

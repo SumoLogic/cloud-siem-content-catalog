@@ -10,7 +10,7 @@ An attacker can use WMI to execute scripts on a host by pointing to malicious XS
 |Category|Execution|
 |Apply Risk to Entities|device_hostname, device_ip, user_username|
 |Signal Name|WMI Process Get Brief|
-|Summary Expression|Detected WMI process get brief on host: {{device_hostname}} using command: {{commandLine}}|
+|Summary Expression|Detected WMI process get brief on host: {{device_hostname}}|
 |Score/Severity|Static: 3|
 |Enabled by Default|True|
 |Prototype|False|

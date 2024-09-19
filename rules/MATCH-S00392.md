@@ -10,7 +10,7 @@ Detects a file or folder permissions modifications.
 |Category|Defense Evasion|
 |Apply Risk to Entities|device_hostname, device_ip, user_username|
 |Signal Name|File or Folder Permissions Modifications|
-|Summary Expression|User: {{user_username}} executed command: {{commandLine}} on host: {{device_hostname}}|
+|Summary Expression|User: {{user_username}} executed file or folder modification on host: {{device_hostname}}|
 |Score/Severity|Static: 1|
 |Enabled by Default|True|
 |Prototype|False|

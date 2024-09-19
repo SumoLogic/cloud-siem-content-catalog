@@ -10,7 +10,7 @@ PowerShell scripts are commonly used as droppers, which will download additional
 |Category|Execution|
 |Apply Risk to Entities|device_hostname, device_ip, user_username|
 |Signal Name|PowerShell File Download|
-|Summary Expression|Powershell command executed on host: {{device_hostname}}, command: {{commandLine}}|
+|Summary Expression|Powershell file download command executed on host: {{device_hostname}}|
 |Score/Severity|Static: 3|
 |Enabled by Default|True|
 |Prototype|False|

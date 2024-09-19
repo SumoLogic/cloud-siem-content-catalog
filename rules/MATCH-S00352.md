@@ -10,7 +10,7 @@ Detection for mshta.exe suspicious execution patterns sometimes involving file p
 |Category|Defense Evasion|
 |Apply Risk to Entities|device_hostname, device_ip, user_username|
 |Signal Name|MSHTA Suspicious Execution|
-|Summary Expression|Suspicious command: {{commandLine}} executed on host: {{device_hostname}}|
+|Summary Expression|Suspicious MSHTA execution on host: {{device_hostname}}|
 |Score/Severity|Static: 3|
 |Enabled by Default|True|
 |Prototype|False|

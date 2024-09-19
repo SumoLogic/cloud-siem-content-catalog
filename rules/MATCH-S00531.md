@@ -10,7 +10,7 @@ Attackers often disable security tools to avoid detection. This rule looks for t
 |Category|Defense Evasion|
 |Apply Risk to Entities|user_username, device_ip, device_hostname|
 |Signal Name|Unload Sysmon Filter Driver|
-|Summary Expression|Attempt to unload Sysmon filter driver on host: {{device_hostname}} with command: {{commandLine}}|
+|Summary Expression|Attempt to unload Sysmon filter driver on host: {{device_hostname}}|
 |Score/Severity|Static: 5|
 |Enabled by Default|True|
 |Prototype|False|

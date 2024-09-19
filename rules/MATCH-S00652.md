@@ -10,7 +10,7 @@ Detects kubectl used to delete Kubernetes cronjobs. Kubernetes Job is a controll
 |Category|Execution|
 |Apply Risk to Entities|device_hostname, device_ip, user_username, srcDevice_ip, srcDevice_hostname, dstDevice_hostname, dstDevice_ip|
 |Signal Name|Kubernetes DeleteCronjob|
-|Summary Expression|User: {{user_username}} ran command: {{commandLine}}|
+|Summary Expression|User: {{user_username}} ran a command to delete a cronjob using kubectl|
 |Score/Severity|Static: 2|
 |Enabled by Default|True|
 |Prototype|False|

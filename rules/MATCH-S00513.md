@@ -10,7 +10,7 @@ This rule looks for an intrusion product detecting a critical severity intrusion
 |Category|Discovery|
 |Apply Risk to Entities|srcDevice_hostname, srcDevice_ip, user_username|
 |Signal Name|{{metadata_vendor}} {{metadata_product}} Critical Severity Intrusion Signature - {{threat_name}}|
-|Summary Expression|Detected a critical severity intrusion: {{threat_name}} from host: {{srcDevice_hostname}} IP: {{srcDevice_ip}}|
+|Summary Expression|Detected a critical severity intrusion: {{threat_name}} from IP: {{srcDevice_ip}}|
 |Score/Severity|Static: 4|
 |Enabled by Default|True|
 |Prototype|False|

@@ -10,7 +10,7 @@ Detects specific process parameters as seen in DTRACK infections
 |Category|Execution|
 |Apply Risk to Entities|device_hostname, device_ip, user_username|
 |Signal Name|DTRACK Process Creation|
-|Summary Expression|User: {{user_username}} executed command: {{commandLine}} on host: {{device_hostname}}|
+|Summary Expression|DTRACK command observed from user: {{user_username}} executed on host: {{device_hostname}}|
 |Score/Severity|Static: 3|
 |Enabled by Default|True|
 |Prototype|False|

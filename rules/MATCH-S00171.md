@@ -10,7 +10,7 @@ This rule detects the creation of a Windows scheduled task via PowerSploit or th
 |Category|Persistence|
 |Apply Risk to Entities|device_hostname, device_ip, user_username|
 |Signal Name|Windows - Powershell Scheduled Task Creation from PowerSploit or Empire|
-|Summary Expression|Parent process: {{parentBaseImage}} spawned process: {{baseImage}} on host: {{device_hostname}} with command: {{commandLine}}|
+|Summary Expression|Parent process: {{parentBaseImage}} spawned process: {{baseImage}} on host: {{device_hostname}}|
 |Score/Severity|Static: 4|
 |Enabled by Default|True|
 |Prototype|False|

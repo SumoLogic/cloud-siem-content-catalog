@@ -10,7 +10,7 @@ Detects suspicious command line arguments of common data compression tools.
 |Category|Exfiltration|
 |Apply Risk to Entities|device_hostname, device_ip, user_username|
 |Signal Name|Suspicious Compression Tool Parameters|
-|Summary Expression|Suspicious command on host: {{device_hostname}} command: {{commandLine}}|
+|Summary Expression|Suspicious compression tools use on host: {{device_hostname}}|
 |Score/Severity|Static: 1|
 |Enabled by Default|True|
 |Prototype|False|

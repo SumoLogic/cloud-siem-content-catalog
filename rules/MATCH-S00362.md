@@ -10,7 +10,7 @@ Detects a suspicious curl process start the adds a file to a web request.
 |Category|Exfiltration|
 |Apply Risk to Entities|device_hostname, device_ip, user_username|
 |Signal Name|Suspicious Curl File Upload|
-|Summary Expression|Suspicious command on host: {{device_hostname}} command: {{commandLine}}|
+|Summary Expression|Suspicious cURL command on host: {{device_hostname}}|
 |Score/Severity|Static: 2|
 |Enabled by Default|True|
 |Prototype|False|

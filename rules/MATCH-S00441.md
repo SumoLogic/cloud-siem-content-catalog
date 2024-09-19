@@ -10,7 +10,7 @@ Observes for net.exe being used to delete a network share.
 |Category|Lateral Movement|
 |Apply Risk to Entities|device_hostname, device_ip, user_username|
 |Signal Name|Delete Windows Share|
-|Summary Expression|{{commandLine}} executed on host: {{device_hostname}} by user: {{user_username}}|
+|Summary Expression|A user: {{user_username}} has executed a command to delete a network share on host: {{device_hostname}}|
 |Score/Severity|Static: 1|
 |Enabled by Default|True|
 |Prototype|False|

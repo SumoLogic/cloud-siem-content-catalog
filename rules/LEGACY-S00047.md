@@ -17,6 +17,7 @@ Although executable and dynamic-link libraries (.exe, .dll) are regularly downlo
 |Tags|_mitreAttackTactic:TA0002, _mitreAttackTactic:TA0001, _mitreAttackTechnique:T1204, _mitreAttackTechnique:T1190, _mitreAttackTechnique:T1566, _mitreAttackTechnique:T1566.002, _mitreAttackTechnique:T1204.003, _mitreAttackTechnique:T1204.002, _mitreAttackTechnique:T1204.001|
 ## Vendors and Products
 - [Bro - Bro](../products/37C866BF-72E1-470A-9072-EDB908F56951.md)
+- [CheckPoint - SmartDefense](../products/2b82e665-bdde-474a-ae29-4f0f76598556.md)
 - [CheckPoint - URL Filtering](../products/2a678bcd-898e-43cd-ab3f-91feb0602a18.md)
 - [Cisco Systems - ASA](../products/be4f7473-fe69-4311-8859-3561900060bf.md)
 - [Cisco Systems - Firepower](../products/da9e05a5-3fd3-46a7-a107-ae03c01e3f5a.md)

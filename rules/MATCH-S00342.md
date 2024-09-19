@@ -10,7 +10,7 @@ DevToolsLauncher.exe has a switch 'LaunchForDeploy' that takes the location of a
 |Category|Execution|
 |Apply Risk to Entities|device_hostname, device_ip, user_username|
 |Signal Name|Suspicious use of Dev-Tools-Launcher|
-|Summary Expression|Suspicious use of DevToolsLauncher on host: {{device_hostname}} with command: {{commandLine}}|
+|Summary Expression|Suspicious use of DevToolsLauncher on host: {{device_hostname}}|
 |Score/Severity|Static: 3|
 |Enabled by Default|True|
 |Prototype|False|

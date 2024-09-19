@@ -10,7 +10,7 @@ A scheduled task was created in Windows or Azure. It is common for system admini
 |Category|Persistence|
 |Apply Risk to Entities|device_hostname, device_ip, user_username|
 |Signal Name|Windows - Scheduled Task Creation|
-|Summary Expression|Detected scheduled trask creation on host: {{device_hostname}} using command: {{commandLine}}|
+|Summary Expression|Detected scheduled trask creation on host: {{device_hostname}}|
 |Score/Severity|Static: 1|
 |Enabled by Default|False|
 |Prototype|False|

@@ -10,7 +10,7 @@ The PATH environment variable should always be set to an absolute directory path
 |Category|Privilege Escalation|
 |Apply Risk to Entities|device_hostname, user_username|
 |Signal Name|PATH Variable Set to Current Directory|
-|Summary Expression|{{user_username}} executed the command {{commandLine}} on host {{device_hostname}}|
+|Summary Expression|User: {{user_username}} executed a command on host {{device_hostname}} to set the PATH variable|
 |Score/Severity|Static: 4|
 |Enabled by Default|True|
 |Prototype|False|

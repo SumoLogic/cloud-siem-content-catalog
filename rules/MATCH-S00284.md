@@ -10,7 +10,7 @@ Detects the deletion of backup catalogs on a Windows host through the command li
 |Category|Impact|
 |Apply Risk to Entities|device_hostname, device_ip, user_username|
 |Signal Name|Windows - Delete Windows Backup Catalog|
-|Summary Expression|Observed backup deletion on host: {{device_hostname}} with command: {{commandLine}}|
+|Summary Expression|Observed backup deletion on host: {{device_hostname}}|
 |Score/Severity|Static: 4|
 |Enabled by Default|True|
 |Prototype|False|

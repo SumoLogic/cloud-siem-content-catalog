@@ -10,7 +10,7 @@ Identifies use of various commands to query a system's time. This technique may 
 |Category|Discovery|
 |Apply Risk to Entities|device_hostname, user_username|
 |Signal Name|Windows - System Time Discovery|
-|Summary Expression|Detected system time discovery on host: {{device_hostname}} using command: {{commandLine}}|
+|Summary Expression|Detected system time discovery on host: {{device_hostname}}|
 |Score/Severity|Static: 1|
 |Enabled by Default|True|
 |Prototype|False|

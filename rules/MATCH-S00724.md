@@ -10,7 +10,7 @@ The Windows Update Agent executable, wuauclt.exe, can be abused by attackers to 
 |Category|Defense Evasion|
 |Apply Risk to Entities|user_username, device_hostname|
 |Signal Name|Windows Update Agent DLL Changed|
-|Summary Expression|User {{user_username}} ran the command {{commandLine}} on host {{device_hostname}}|
+|Summary Expression|User {{user_username}} ran a command on host {{device_hostname}} to modify the Windows Update Agent|
 |Score/Severity|Static: 4|
 |Enabled by Default|True|
 |Prototype|False|

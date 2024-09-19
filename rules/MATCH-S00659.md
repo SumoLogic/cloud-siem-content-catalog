@@ -10,7 +10,7 @@ Package management utilities should be considered anomalous when used inside con
 |Category|Execution|
 |Apply Risk to Entities|user_username|
 |Signal Name|Package Management Utility in Container|
-|Summary Expression|Package management software keyword found in command: {{commandLine}}|
+|Summary Expression|Package management software keyword found in command|
 |Score/Severity|Static: 3|
 |Enabled by Default|True|
 |Prototype|False|

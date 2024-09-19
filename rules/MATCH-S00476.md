@@ -10,7 +10,7 @@ From FireEye Red Team Tool Countermeasures: This IOC detects suspicious executio
 |Category|Defense Evasion|
 |Apply Risk to Entities|device_hostname, device_ip, user_username|
 |Signal Name|Suspicious Execution of Search Indexer|
-|Summary Expression|Suspicious command on host: {{device_hostname}} command: {{commandLine}}|
+|Summary Expression|Suspicious command on host: {{device_hostname}}|
 |Score/Severity|Static: 5|
 |Enabled by Default|True|
 |Prototype|False|

@@ -10,7 +10,7 @@ Monitors for exploitation of CVE-2022-30190 as indicated by an abnormal child pr
 |Category|Execution|
 |Apply Risk to Entities|user_username, device_hostname, device_ip|
 |Signal Name|Abnormal Child Process - sdiagnhost.exe - CVE-2022-30190|
-|Summary Expression|{{parentBaseImage}} spawned {{baseImage}} with command {{commandLine}}|
+|Summary Expression|{{parentBaseImage}} spawned {{baseImage}} as an abnormal child process|
 |Score/Severity|Static: 3|
 |Enabled by Default|True|
 |Prototype|False|

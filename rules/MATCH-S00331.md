@@ -10,7 +10,7 @@ Detects process injection using the signed Windows tool Mavinject32.exe
 |Category|Execution|
 |Apply Risk to Entities|device_hostname, device_ip, user_username|
 |Signal Name|MavInject Process Injection|
-|Summary Expression|Process injection indicator in command: {{commandLine}}|
+|Summary Expression|Process injection indicator in command on host: {{device_hostname}}|
 |Score/Severity|Static: 3|
 |Enabled by Default|True|
 |Prototype|False|

@@ -11,7 +11,7 @@ This alert looks for evidence of the native signed Windows binary InstallUtil.ex
 |Category|Defense Evasion|
 |Apply Risk to Entities|device_hostname, user_username|
 |Signal Name|Suspicious Non-Standard InstallUtil Execution|
-|Summary Expression|Parent process: {{parentBaseImage}} spawned process: {{baseImage}} with command: {{commandLine}}|
+|Summary Expression|Suspicious InstallUtil Execution - Parent process: {{parentBaseImage}} spawned process: {{baseImage}} on host: {{device_hostname}}|
 |Score/Severity|Static: 5|
 |Enabled by Default|True|
 |Prototype|False|

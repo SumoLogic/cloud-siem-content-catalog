@@ -10,7 +10,7 @@ This rule looks for processes referencing the plist files that determine which a
 |Category|Persistence|
 |Apply Risk to Entities|device_hostname, device_ip, user_username|
 |Signal Name|MacOS - Re-Opened Applications|
-|Summary Expression|Startup file referenced on host: {{device_hostname}} in command: {{commandLine}}|
+|Summary Expression|Startup file referenced on host: {{device_hostname}}|
 |Score/Severity|Static: 1|
 |Enabled by Default|True|
 |Prototype|False|

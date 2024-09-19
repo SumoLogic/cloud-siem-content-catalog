@@ -10,7 +10,7 @@ This rule looks for an intrusion product detecting a low severity intrusion sign
 |Category|Discovery|
 |Apply Risk to Entities|srcDevice_hostname, srcDevice_ip, user_username|
 |Signal Name|{{metadata_vendor}} {{metadata_product}} Low Severity Intrusion Signature|
-|Summary Expression|Low Severity Intrusion Signature detected: {{threat_name}} from host: {{srcDevice_hostname}} IP: {{srcDevice_ip}}|
+|Summary Expression|Low Severity Intrusion Signature detected: {{threat_name}} from IP: {{srcDevice_ip}}|
 |Score/Severity|Static: 1|
 |Enabled by Default|True|
 |Prototype|False|

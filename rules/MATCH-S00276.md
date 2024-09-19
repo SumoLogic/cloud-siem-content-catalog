@@ -10,7 +10,7 @@ The Squiblydoo technique is a way for unapproved scripts to run on a machine tha
 |Category|Defense Evasion|
 |Apply Risk to Entities|device_hostname, device_ip, user_username|
 |Signal Name|Windows - Possible Squiblydoo Technique Observed|
-|Summary Expression|Detected possible Squiblydoo activity on host: {{device_hostname}} using command: {{commandLine}}|
+|Summary Expression|Detected possible Squiblydoo activity on host: {{device_hostname}}|
 |Score/Severity|Static: 2|
 |Enabled by Default|True|
 |Prototype|False|

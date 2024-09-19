@@ -10,7 +10,7 @@ This rule detects the creation of a symlink to a shadow copy.
 |Category|Credential Access|
 |Apply Risk to Entities|device_hostname, device_ip, user_username|
 |Signal Name|Credential Dumping Via Symlink To Shadow Copy|
-|Summary Expression|User: {{user_username}} executed command: {{commandLine}} on host: {{device_hostname}}|
+|Summary Expression|User: {{user_username}} executed command on host: {{device_hostname}}|
 |Score/Severity|Static: 4|
 |Enabled by Default|True|
 |Prototype|False|

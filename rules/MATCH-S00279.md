@@ -10,7 +10,7 @@ Looks for process creation with command line references that are consistent with
 |Category|Command and Control|
 |Apply Risk to Entities|device_hostname, device_ip, user_username|
 |Signal Name|TAIDOOR RAT DLL Load|
-|Summary Expression|RAT activity on host: {{device_hostname}} with command: {{commandLine}}|
+|Summary Expression|RAT activity on host: {{device_hostname}}|
 |Score/Severity|Static: 3|
 |Enabled by Default|True|
 |Prototype|False|

@@ -10,7 +10,7 @@ Observes for a user performing a whoami command for the first time.
 |Category|Discovery|
 |Apply Risk to Entities|user_username|
 |Signal Name|First Seen whoami command From User|
-|Summary Expression|First Seen use of whoami command: {{commandLine}} by the user: {{user_username}}|
+|Summary Expression|First Seen use of whoami executed by the user: {{user_username}}|
 |Retention Window|7776000000|
 |Baseline Window|1209600000|
 |Baseline Type|GLOBAL|

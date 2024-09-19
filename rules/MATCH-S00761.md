@@ -10,7 +10,7 @@ Detects the Volume Shadow Copy service being stopped using net stop. This activi
 |Category|Impact|
 |Apply Risk to Entities|device_hostname, user_username, device_ip|
 |Signal Name|Volume Shadow Copy Service Stopped|
-|Summary Expression|{{user_username}} ran the command {{commandLine}}  on {{device_hostname}}|
+|Summary Expression|The Volume Shadow Copy Service has been stopped on host: {{device_hostname}}|
 |Score/Severity|Static: 5|
 |Enabled by Default|True|
 |Prototype|False|

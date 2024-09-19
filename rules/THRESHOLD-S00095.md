@@ -10,7 +10,7 @@ Detects multiple failed login attempts from a single source with unique username
 |Category|Initial Access|
 |Apply Risk to Entities|srcDevice_hostname, srcDevice_ip|
 |Signal Name|Password Attack|
-|Summary Expression|Password attack from IP: {{srcDevice_ip}} host: {{srcDevice_hostname}}|
+|Summary Expression|Password attack from IP: {{srcDevice_ip}}|
 |Threshold Count|10|
 |Threshold Window|24h|
 |Score/Severity|Static: 4|

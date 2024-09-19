@@ -10,7 +10,7 @@ The rule looks for the Console Window Host process (connhost.exe) executed using
 |Category|Execution|
 |Apply Risk to Entities|device_hostname, user_username, device_ip|
 |Signal Name|Windows Connhost Started Forcefully|
-|Summary Expression|Ryuk ransomware indicator found on host: {{device_hostname}} with command: {{commandLine}}|
+|Summary Expression|Windows Connhost has been started forcefully on host: {{device_hostname}}|
 |Score/Severity|Static: 1|
 |Enabled by Default|False|
 |Prototype|False|
@@ -18,6 +18,7 @@ The rule looks for the Console Window Host process (connhost.exe) executed using
 ## Vendors and Products
 - [CrowdStrike - FDR](../products/569a3a44-c29f-492e-bcf4-5dc04e2ab0f3.md)
 - [Cylance - Protect](../products/60829f4a-7acb-47d1-ad23-8424fcf83dcb.md)
+- [Microsoft - Azure](../products/a1225af5-e778-4068-a9a2-47da93d1ff24.md)
 - [Microsoft - Windows](../products/1ff7546c-cb36-4a24-87f7-89d2cecc5761.md)
 - [VMware - Carbon Black Cloud](../products/f9cea291-9030-4e41-9836-6dd9274d6df4.md)
 

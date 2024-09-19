@@ -757,6 +757,8 @@ You will find our complete list of mappers for content here.
  - [LastPass - Shared Folder Created](b40f0d69-d076-4bac-a1f2-900cc4dc1fc3.md)
  - [LastPass - Super Admin Password Reset](927bc9a6-d62a-4c17-bc0e-f6ff601f51ed.md)
  - [LastPass Catch All](ee1d046d-031f-4a93-982c-e024a76f9732.md)
+ - [LastPass Failed Login Attempt](068cb1b6-3f1d-4f03-906f-cc240d3bdf83.md)
+ - [LastPass Reporting](69cbcdf5-5291-4e07-99e4-5eded22d2589.md)
  - [Laurel Linux Audit - Catch All](b1a5df95-3108-40d4-acc3-3322b0bc7688.md)
  - [Laurel Linux Audit - System Call](402fc87e-2abc-4f24-ae5d-8978f793fb92.md)
  - [Laurel Linux Audit - User Logon](b0dca67a-1761-4570-b44b-cc83be28887b.md)

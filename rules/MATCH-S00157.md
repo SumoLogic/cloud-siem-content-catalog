@@ -10,7 +10,7 @@ This alert detects a process executing with a name that closely resembles a defa
 |Category|Defense Evasion|
 |Apply Risk to Entities|device_hostname, device_ip, user_username|
 |Signal Name|Windows Process Name Impersonation - "{{baseImage}} "|
-|Summary Expression|Detected Windows process name impersonation on host: {{device_hostname}} from process: {{commandLine}}|
+|Summary Expression|Detected Windows process name impersonation on host: {{device_hostname}}|
 |Score/Severity|Static: 5|
 |Enabled by Default|True|
 |Prototype|False|

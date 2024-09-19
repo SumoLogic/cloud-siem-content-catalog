@@ -10,7 +10,7 @@ Indicates a process has started with charachteristics that are highly similar to
 |Category|Execution|
 |Apply Risk to Entities|device_hostname, device_ip, user_username|
 |Signal Name|Ryuk Ransomware Endpoint Indicator|
-|Summary Expression|Ryuk ransomeware execution behavior detected on host: {{device_hostname}} in command: {{commandLine}}|
+|Summary Expression|Ryuk ransomeware execution behavior detected on host: {{device_hostname}}|
 |Score/Severity|Static: 3|
 |Enabled by Default|True|
 |Prototype|False|

@@ -1,7 +1,7 @@
 # [Rules](README.md): Suspicious DC Logon
 
 ## Description
-Shows RemoteInteractive logons, such as RDP sessions, to domain controllers. Requires customer to setup the domain_controllers match list
+Shows RemoteInteractive logons, such as RDP sessions, to domain controllers. Requires customer to setup the domain_controller_hostnames match list
 
 ## Additional Details
 |Detail|Value|
