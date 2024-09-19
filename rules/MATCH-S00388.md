@@ -10,7 +10,7 @@ Potential adversaries stopping ETW providers recording loaded .NET assemblies.
 |Category|Execution|
 |Apply Risk to Entities|device_hostname, device_ip, user_username|
 |Signal Name|COMPlus_ETWEnabled Command Line Arguments|
-|Summary Expression|User: {{user_username}} executed the command: {{commandLine}} on host: {{device_hostname}}|
+|Summary Expression|COMPlus ETWEnabled commands observed from user: {{user_username}} on host: {{device_hostname}}|
 |Score/Severity|Static: 3|
 |Enabled by Default|True|
 |Prototype|False|

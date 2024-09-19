@@ -10,7 +10,7 @@ Detects kubectl used to list Kubernetes cronjobs. Kubernetes Job is a controller
 |Category|Execution|
 |Apply Risk to Entities|device_hostname, device_ip, user_username, srcDevice_ip, srcDevice_hostname, dstDevice_hostname, dstDevice_ip|
 |Signal Name|Kubernetes ListCronjobs|
-|Summary Expression|User: {{user_username}} ran command: {{commandLine}}|
+|Summary Expression|User: {{user_username}} ran a command using kubectl to get cronjobs|
 |Score/Severity|Static: 2|
 |Enabled by Default|True|
 |Prototype|False|

@@ -10,7 +10,7 @@ This rule detects credential dumping using copy command from a shadow copy.
 |Category|Credential Access|
 |Apply Risk to Entities|user_username, device_ip, device_hostname|
 |Signal Name|Credential Dumping Via Copy Command From Shadow Copy|
-|Summary Expression|User: {{user_username}} executed command: {{commandLine}} on host: {{device_hostname}}|
+|Summary Expression|User: {{user_username}} executed a command on host: {{device_hostname}}|
 |Score/Severity|Static: 4|
 |Enabled by Default|True|
 |Prototype|False|

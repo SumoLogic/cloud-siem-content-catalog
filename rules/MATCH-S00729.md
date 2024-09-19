@@ -10,7 +10,7 @@ The com.apple.quarantine flag is usually automatically set for downloaded files 
 |Category|Defense Evasion|
 |Apply Risk to Entities|device_hostname, user_username, device_ip|
 |Signal Name|MacOS Gatekeeper Bypass|
-|Summary Expression|User {{user_username}} ran the command "{{commandLine}}" on host {{device_hostname}}|
+|Summary Expression|A macOS Gatekeeper bypass has been observed on host {{device_hostname}}|
 |Score/Severity|Static: 3|
 |Enabled by Default|True|
 |Prototype|False|

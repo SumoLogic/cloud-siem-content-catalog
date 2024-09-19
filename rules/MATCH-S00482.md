@@ -10,7 +10,7 @@ From FireEye Red Team Tool Countermeasures: Impacket-Obfuscation is a slightly o
 |Category|Defense Evasion|
 |Apply Risk to Entities|device_hostname, device_ip, user_username|
 |Signal Name|Impacket-Obfuscation SMBEXEC Utility|
-|Summary Expression|Impacket obfuscation detected. Command: {{commandLine}} from user: {{user_username}} on host: {{device_hostname}}|
+|Summary Expression|Impacket obfuscation detected from user: {{user_username}} on host: {{device_hostname}}|
 |Score/Severity|Static: 5|
 |Enabled by Default|True|
 |Prototype|False|

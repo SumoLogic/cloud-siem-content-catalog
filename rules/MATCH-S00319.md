@@ -10,7 +10,7 @@ Detects typical Dridex process patterns
 |Category|Execution|
 |Apply Risk to Entities|device_hostname, device_ip, user_username|
 |Signal Name|Dridex Process Pattern|
-|Summary Expression|User: {{user_username}} executed command: {{commandLine}} on host: {{device_hostname}}|
+|Summary Expression|A suspicious command execution was observed on host: {{device_hostname}}|
 |Score/Severity|Static: 3|
 |Enabled by Default|True|
 |Prototype|False|

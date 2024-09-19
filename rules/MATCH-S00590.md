@@ -10,7 +10,7 @@ Observes for indicators associated with Elise backdoor activity as used by APT32
 |Category|Unknown/Other|
 |Apply Risk to Entities|device_hostname, user_username|
 |Signal Name|Elise Backdoor|
-|Summary Expression|Observed the following Elise backdoor indicators: User: {{user_username}} executed command: {{commandLine}} on host: {{device_hostname}}|
+|Summary Expression|Observed the following Elise backdoor indicators executed by user: {{user_username}} on host: {{device_hostname}}|
 |Score/Severity|Static: 5|
 |Enabled by Default|True|
 |Prototype|False|

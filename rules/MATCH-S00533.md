@@ -10,7 +10,7 @@ The rule looks for a Windows Security Account Manager (SAM) was stopped via comm
 |Category|Defense Evasion|
 |Apply Risk to Entities|device_hostname, device_ip, user_username|
 |Signal Name|Windows Security Account Manager Stopped|
-|Summary Expression|Detected Windows Security Account Manager being stopped on host: {{device_hostname}} using command: {{commandLine}}|
+|Summary Expression|Detected Windows Security Account Manager being stopped on host: {{device_hostname}}|
 |Score/Severity|Static: 4|
 |Enabled by Default|True|
 |Prototype|False|

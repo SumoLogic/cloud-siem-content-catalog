@@ -233,7 +233,6 @@
 |THRESHOLD-S00044|[DNS DGA Lookup Behavior - NXDOMAIN Responses](THRESHOLD-S00044.md)|
 |LEGACY-S00026|[DNS Lookup of High Entropy Domain](LEGACY-S00026.md)|
 |MATCH-S00375|[DNS RCE Exploit CVE-2020-1350](MATCH-S00375.md)|
-|LEGACY-S00180|[DNS query for dynamic DNS provider](LEGACY-S00180.md)|
 |MATCH-S00211|[DNS.EXE Observed as Parent Process](MATCH-S00211.md)|
 |MATCH-S00695|[DPAPI Key Manipulation - Backup of Backup Key](MATCH-S00695.md)|
 |MATCH-S00696|[DPAPI Key Manipulation - Extracting Backup Key](MATCH-S00696.md)|

@@ -11,7 +11,7 @@ LNKSmasher embeds an arbitrary payload in an LNK that can be executed by the emb
 |Category|Execution|
 |Apply Risk to Entities|device_hostname, user_username|
 |Signal Name|LNKSmasher Utility Commands|
-|Summary Expression|Command with LNKSmasher Utility indicators detected on host: {{device_hostname}}, command: {{commandLine}}|
+|Summary Expression|Command with LNKSmasher Utility indicators detected on host: {{device_hostname}}|
 |Score/Severity|Static: 5|
 |Enabled by Default|True|
 |Prototype|False|

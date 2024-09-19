@@ -10,7 +10,7 @@ Detects a set of commands often used in recon stages by different attack groups
 |Category|Discovery|
 |Apply Risk to Entities|device_hostname, user_username|
 |Signal Name|Recon Using Common Windows Commands|
-|Summary Expression|Detected reconnaissance activity on host: {{device_hostname}} using command: {{commandLine}}|
+|Summary Expression|Detected reconnaissance activity on host: {{device_hostname}}|
 |Score/Severity|Static: 1|
 |Enabled by Default|True|
 |Prototype|False|

@@ -10,7 +10,7 @@ Mimikatzs LSADUMP::DCShadow module can be used to make AD updates by temporarily
 |Category|Defense Evasion|
 |Apply Risk to Entities|device_hostname, device_ip, user_username|
 |Signal Name|Windows - Rogue Domain Controller - dcshadow|
-|Summary Expression|Detected dcshadow rogue domain controller activity on host: {{device_hostname}} using command: {{commandLine}}|
+|Summary Expression|Detected dcshadow rogue domain controller activity on host: {{device_hostname}}|
 |Score/Severity|Static: 5|
 |Enabled by Default|True|
 |Prototype|False|

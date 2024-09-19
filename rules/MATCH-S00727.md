@@ -10,7 +10,7 @@ CPL files are DLL libraries that export a CPlApplet and are normally executed vi
 |Category|Defense Evasion|
 |Apply Risk to Entities|device_hostname, user_username|
 |Signal Name|CPL File Executed from Temp Directory|
-|Summary Expression|User {{user_username}} ran command {{commandLine}} on host {{device_hostname}}|
+|Summary Expression|User {{user_username}} exected a CPL file from a temp directory on host {{device_hostname}}|
 |Score/Severity|Static: 6|
 |Enabled by Default|True|
 |Prototype|False|

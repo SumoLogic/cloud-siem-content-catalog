@@ -10,7 +10,7 @@ From FireEye Red Team Tool Countermeasures: This IOC detects indicators associat
 |Category|Execution|
 |Apply Risk to Entities|device_hostname, device_ip, user_username|
 |Signal Name|Suspicious Use of Workflow Compiler for Payload Execution|
-|Summary Expression|Parent process: {{parentBaseImage}} spawned process: {{baseImage}} on host: {{device_hostname}} with command: {{commandLine}}|
+|Summary Expression|Parent process: {{parentBaseImage}} spawned process: {{baseImage}} on host: {{device_hostname}}|
 |Score/Severity|Static: 5|
 |Enabled by Default|True|
 |Prototype|False|

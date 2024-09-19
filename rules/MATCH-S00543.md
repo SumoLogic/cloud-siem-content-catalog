@@ -10,7 +10,7 @@ This rule looks for events where PsExec.exe is run with the accepteula flag in t
 |Category|Execution|
 |Apply Risk to Entities|device_hostname, device_ip, user_username|
 |Signal Name|Detect Psexec With Accepteula Flag|
-|Summary Expression|{{commandLine}} executed on host: {{device_hostname}} by user: {{user_username}}|
+|Summary Expression|PSExec has been executed on host: {{device_hostname}} by user: {{user_username}}|
 |Score/Severity|Static: 3|
 |Enabled by Default|True|
 |Prototype|False|
@@ -19,7 +19,6 @@ This rule looks for events where PsExec.exe is run with the accepteula flag in t
 - [CrowdStrike - FDR](../products/569a3a44-c29f-492e-bcf4-5dc04e2ab0f3.md)
 - [Cylance - Protect](../products/60829f4a-7acb-47d1-ad23-8424fcf83dcb.md)
 - [Microsoft - Azure](../products/a1225af5-e778-4068-a9a2-47da93d1ff24.md)
-- [Microsoft - Office 365](../products/d3ed003d-5ddd-4c7a-bea5-63eae6311833.md)
 - [Microsoft - Windows](../products/1ff7546c-cb36-4a24-87f7-89d2cecc5761.md)
 
 

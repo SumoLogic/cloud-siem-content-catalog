@@ -10,7 +10,7 @@ Detects when Win32_PingStatus is invoked to ping a device.
 |Category|Execution|
 |Apply Risk to Entities|device_hostname, user_username|
 |Signal Name|WMI Ping Sweep|
-|Summary Expression|{{user_username}} ran the command {{commandLine}}  on {{device_hostname}}|
+|Summary Expression|A WMI Ping Sweep has been detected on host: {{device_hostname}}|
 |Score/Severity|Static: 5|
 |Enabled by Default|True|
 |Prototype|False|

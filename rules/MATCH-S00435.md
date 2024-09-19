@@ -10,7 +10,7 @@ Extensible Stylesheet Language (XSL) files are commonly used to describe the pro
 |Category|Defense Evasion|
 |Apply Risk to Entities|device_hostname, device_ip, user_username|
 |Signal Name|XSL Script Processing|
-|Summary Expression|Detected XSL script processing on host: {{device_hostname}} using command: {{commandLine}}|
+|Summary Expression|Detected XSL script processing on host: {{device_hostname}}|
 |Score/Severity|Static: 1|
 |Enabled by Default|True|
 |Prototype|False|

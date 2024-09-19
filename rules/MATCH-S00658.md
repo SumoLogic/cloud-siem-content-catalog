@@ -10,7 +10,7 @@ Container Management Utility in Container
 |Category|Execution|
 |Apply Risk to Entities|user_username|
 |Signal Name|Container Management Utility in Container|
-|Summary Expression|User: {{user_username}} executed command: {{commandLine}}|
+|Summary Expression|User: {{user_username}} executed a container management command within the container using kubectl|
 |Score/Severity|Static: 3|
 |Enabled by Default|True|
 |Prototype|False|

@@ -10,7 +10,7 @@ Detects a suspicious command line execution that includes an URL and AppData str
 |Category|Command and Control|
 |Apply Risk to Entities|device_hostname, device_ip, user_username|
 |Signal Name|Command Line Execution with Suspicious URL and AppData Strings|
-|Summary Expression|User: {{user_username}} executed the command: {{commandLine}} on host: {{device_hostname}}|
+|Summary Expression|User: {{user_username}} executed a suspicious command containing a URL and AppData string on host: {{device_hostname}}|
 |Score/Severity|Static: 3|
 |Enabled by Default|True|
 |Prototype|False|

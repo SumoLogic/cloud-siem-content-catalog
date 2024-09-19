@@ -14,7 +14,7 @@ It is recommended to tune this rule to hosts/users that are not ordinarily bypas
 |Category|Execution|
 |Apply Risk to Entities|device_hostname, device_ip, user_username|
 |Signal Name|Powershell Execution Policy Bypass|
-|Summary Expression|Powershell command executed on host: {{device_hostname}}, command: {{commandLine}}|
+|Summary Expression|Powershell execution bypass command executed on host: {{device_hostname}}|
 |Score/Severity|Static: 1|
 |Enabled by Default|False|
 |Prototype|False|

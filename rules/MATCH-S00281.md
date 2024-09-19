@@ -10,7 +10,7 @@ Detects the use of various Get-Process PowerShell commands to discover informati
 |Category|Discovery|
 |Apply Risk to Entities|device_hostname, device_ip, user_username|
 |Signal Name|Windows - PowerShell Process Discovery|
-|Summary Expression|Detected PowerShell process discovery on host: {{device_hostname}} using command: {{commandLine}}|
+|Summary Expression|Detected PowerShell process discovery on host: {{device_hostname}}|
 |Score/Severity|Static: 2|
 |Enabled by Default|True|
 |Prototype|False|

@@ -10,7 +10,7 @@ Attackers will often utilize The Managed Object Format (MOF) compiler to conceal
 |Category|Execution|
 |Apply Risk to Entities|device_hostname, device_ip, user_username|
 |Signal Name|WMI Managed Object Format (MOF) Process Execution|
-|Summary Expression|Detected WMI Managed Object Format Process execution on host: {{device_hostname}} using command: {{commandLine}}|
+|Summary Expression|Detected WMI Managed Object Format Process execution on host: {{device_hostname}}|
 |Score/Severity|Static: 3|
 |Enabled by Default|True|
 |Prototype|False|

@@ -10,7 +10,7 @@ Detects suspicious file execution by wscript and cscript
 |Category|Execution|
 |Apply Risk to Entities|device_hostname, device_ip, user_username|
 |Signal Name|WMIExec VBS Script|
-|Summary Expression|Detected VB Script execution on host: {{device_hostname}} using command: {{commandLine}}|
+|Summary Expression|Detected VB Script execution on host: {{device_hostname}}|
 |Score/Severity|Static: 3|
 |Enabled by Default|True|
 |Prototype|False|

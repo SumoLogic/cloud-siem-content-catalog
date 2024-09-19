@@ -10,7 +10,7 @@ The System Integrity Protection (SIP) feature of MacOS helps to prevent the exec
 |Category|Defense Evasion|
 |Apply Risk to Entities|device_hostname, device_ip, user_username|
 |Signal Name|MacOS System Integrity Protection Disabled|
-|Summary Expression|User {{user_username}} ran the command "{{commandLine}}" on host {{device_hostname}}|
+|Summary Expression|User: {{user_username}} disabled System Integrity Protecion on host: {{device_hostname}}|
 |Score/Severity|Static: 3|
 |Enabled by Default|True|
 |Prototype|False|

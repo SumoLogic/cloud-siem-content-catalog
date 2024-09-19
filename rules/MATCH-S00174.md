@@ -10,7 +10,7 @@ This rule looks for web server executables attempting to use commands commonly a
 |Category|Persistence|
 |Apply Risk to Entities|device_hostname, device_ip, user_username|
 |Signal Name|Web Services Executing Common Web Shell Commands|
-|Summary Expression|Observed common web shell commands on host: {{device_hostname}} in command: {{commandLine}}|
+|Summary Expression|Observed common web shell commands on host: {{device_hostname}}|
 |Score/Severity|Static: 4|
 |Enabled by Default|True|
 |Prototype|False|

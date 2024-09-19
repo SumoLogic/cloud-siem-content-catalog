@@ -10,12 +10,13 @@ Detects executable file extension written to the PolicyDefinitions directory. Th
 |Category|Collection|
 |Apply Risk to Entities|device_hostname, user_username, device_ip|
 |Signal Name|Unusual Staging Directory - PolicyDefinitions|
-|Summary Expression|{{user_username}} ran the command {{commandLine}}  on {{device_hostname}}|
+|Summary Expression|User: {{user_username}} has executed an unusual staging directory on host: {{device_hostname}}|
 |Score/Severity|Static: 2|
 |Enabled by Default|True|
 |Prototype|False|
 |Tags|_mitreAttackTactic:TA0009, _mitreAttackTechnique:T1074, _mitreAttackTechnique:T1074.001|
 ## Vendors and Products
+- [CrowdStrike - FDR](../products/569a3a44-c29f-492e-bcf4-5dc04e2ab0f3.md)
 - [Microsoft - Windows](../products/1ff7546c-cb36-4a24-87f7-89d2cecc5761.md)
 
 

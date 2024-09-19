@@ -10,7 +10,7 @@ Detects downloaded payloads from remote server.
 |Category|Command and Control|
 |Apply Risk to Entities|device_hostname, device_ip, user_username|
 |Signal Name|Web Download via Office Binaries|
-|Summary Expression|Office process: {{baseImage}} executed remote download command: {{commandLine}}|
+|Summary Expression|Office process: {{baseImage}} has executed a remote download|
 |Score/Severity|Static: 1|
 |Enabled by Default|True|
 |Prototype|False|

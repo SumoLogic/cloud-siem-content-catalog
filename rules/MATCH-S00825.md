@@ -10,7 +10,7 @@ A ListSecrets API call has been made to the AWS Secrets Manager service. Ensure 
 |Category|Credential Access|
 |Apply Risk to Entities|user_username|
 |Signal Name|AWS Secrets Manager Enumeration|
-|Summary Expression|{{user_username}} has enumerated AWS Secrets Manager secrets from {{srcDevice_ip}}|
+|Summary Expression|{{user_username}} has enumerated AWS Secrets Manager secrets|
 |Score/Severity|Static: 3|
 |Enabled by Default|True|
 |Prototype|False|

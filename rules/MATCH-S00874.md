@@ -10,7 +10,7 @@ Observed when lamba getfunction AWS API call is made, indicitive of possible rec
 |Category|Discovery|
 |Apply Risk to Entities|user_username|
 |Signal Name|AWS Lamda Function Recon|
-|Summary Expression|AWS lamda function observed in cloudtrail  from {{srcDevice_ip}}|
+|Summary Expression|AWS lamda function observed in cloudtrail|
 |Score/Severity|Static: 2|
 |Enabled by Default|True|
 |Prototype|False|

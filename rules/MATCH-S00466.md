@@ -10,7 +10,7 @@ Detects suspicious msiexec process starts with web addresses as parameter.
 |Category|Command and Control|
 |Apply Risk to Entities|device_hostname, device_ip, user_username|
 |Signal Name|MsiExec Web Install|
-|Summary Expression|Web address found within install parameter on host: {{device_hostname}}, command: {{commandLine}}|
+|Summary Expression|Web address found within install parameter on host: {{device_hostname}}|
 |Score/Severity|Static: 3|
 |Enabled by Default|True|
 |Prototype|False|

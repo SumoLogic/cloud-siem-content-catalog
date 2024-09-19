@@ -10,7 +10,7 @@ Detects wmiexec/dcomexec/atexec/smbexec from Impacket framework
 |Category|Lateral Movement|
 |Apply Risk to Entities|device_hostname, device_ip, user_username|
 |Signal Name|Impacket Lateralization Detection|
-|Summary Expression|Impacket lateralization detected in command: {{commandLine}} from user: {{user_username}} on host: {{device_hostname}}|
+|Summary Expression|Impacket lateralization detected on command line from user: {{user_username}} on host: {{device_hostname}}|
 |Score/Severity|Static: 3|
 |Enabled by Default|True|
 |Prototype|False|

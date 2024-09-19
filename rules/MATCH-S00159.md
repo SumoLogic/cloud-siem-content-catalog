@@ -10,7 +10,7 @@ Microsoft’s Net.exe can be used for multiple Discovery tactics, including Pass
 |Category|Discovery|
 |Apply Risk to Entities|device_hostname, device_ip, user_username|
 |Signal Name|Detected Discovery using net.exe on host|
-|Summary Expression|Detected permission group discovery using net.exe on host: {{device_hostname}} using command: {{commandLine}}|
+|Summary Expression|Detected permission group discovery using net.exe on host: {{device_hostname}}|
 |Score/Severity|Static: 1|
 |Enabled by Default|True|
 |Prototype|False|

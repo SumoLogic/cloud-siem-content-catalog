@@ -10,7 +10,7 @@ Suspicious System Network Configuration Discovery Activity - T1016
 |Category|Discovery|
 |Apply Risk to Entities|device_hostname, device_ip, user_username|
 |Signal Name|IPCONFIG Command Executed|
-|Summary Expression|Detected System Network Configuration using IPCONFIG on host: {{device_hostname}} using command: {{commandLine}}|
+|Summary Expression|Detected System Network Configuration using IPCONFIG on host: {{device_hostname}}|
 |Score/Severity|Static: 1|
 |Enabled by Default|True|
 |Prototype|False|

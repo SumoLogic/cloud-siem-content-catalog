@@ -10,7 +10,7 @@ Detect the use of Windows Defender to download payloads.
 |Category|Command and Control|
 |Apply Risk to Entities|device_hostname, device_ip, user_username|
 |Signal Name|Windows Defender Download Activity|
-|Summary Expression|Observed payload download on host: {{device_hostname}} with command: {{commandLine}}|
+|Summary Expression|Observed payload download using Windows Defender on host: {{device_hostname}}|
 |Score/Severity|Static: 3|
 |Enabled by Default|True|
 |Prototype|False|

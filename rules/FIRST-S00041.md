@@ -10,7 +10,7 @@ A user has executed a networksetup command not seen since the baseline period. T
 |Category|Discovery|
 |Apply Risk to Entities|user_username|
 |Signal Name|First Seen networksetup Usage from User|
-|Summary Expression|{{user_username}} has executed a networksetup command with the command line of: {{commandLine}}  from {{device_hostname}}|
+|Summary Expression|{{user_username}} has executed a networksetup command on host: {{device_hostname}}|
 |Retention Window|7776000000|
 |Baseline Window|1209600000|
 |Baseline Type|PER_ENTITY|

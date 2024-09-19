@@ -10,7 +10,7 @@ Threat actors may use the vssadmin utility to create volume shadow copies on a W
 |Category|Defense Evasion|
 |Apply Risk to Entities|user_username, device_hostname|
 |Signal Name|First Seen vssadmin command  by {{user_username}}|
-|Summary Expression|First Seen vssadmin command  by {{user_username}}  on the {{device_hostname}} with the command line: {{commandLine}}|
+|Summary Expression|First Seen vssadmin command by User: {{user_username}} on the Host: {{device_hostname}}|
 |Retention Window|7776000000|
 |Baseline Window|2592000000|
 |Baseline Type|GLOBAL|

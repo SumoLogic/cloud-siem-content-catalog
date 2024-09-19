@@ -10,7 +10,7 @@ Detects a set of commands often used in recon stages by different attack groups.
 |Category|Discovery|
 |Apply Risk to Entities|device_hostname, user_username|
 |Signal Name|First Seen Common Windows Recon Commands From User|
-|Summary Expression|Detected reconnaissance activity from user: {{user_username}} on host: {{device_hostname}} using command: {{commandLine}}|
+|Summary Expression|Detected reconnaissance activity from user: {{user_username}} on host: {{device_hostname}}|
 |Retention Window|7776000000|
 |Baseline Window|1209600000|
 |Baseline Type|GLOBAL|
