@@ -72,6 +72,7 @@ Below is a full list of products supported by Cloud SIEM.
 |[CrowdStrike](../vendors/79ade329-b6d4-43ae-8db1-2a9cc45c0fb0.md)|[FDR](569a3a44-c29f-492e-bcf4-5dc04e2ab0f3.md)|
 |[CrowdStrike](../vendors/79ade329-b6d4-43ae-8db1-2a9cc45c0fb0.md)|[Falcon](840c72e0-4e47-41e7-9b93-31f55d12f07d.md)|
 |[CrowdStrike](../vendors/79ade329-b6d4-43ae-8db1-2a9cc45c0fb0.md)|[Spotlight](4c960ed9-3858-46ea-aa59-f81489d93deb.md)|
+|[Custom](../vendors/d49a8edc-47d3-4d1d-8ff9-02f28c13b6c4.md)|[Custom](44dc8fc8-d6eb-4769-9a28-ec95612e63c0.md)|
 |[Cyber-Ark](../vendors/8a3d333e-ffad-49ed-9edd-0cf1c797b24f.md)|[Endpoint Privilege Manager](96d1bd4a-9285-439e-b81c-1a32f7688dac.md)|
 |[Cyber-Ark](../vendors/8a3d333e-ffad-49ed-9edd-0cf1c797b24f.md)|[Enterprise Password Vault](36f5ca33-0c1e-4223-8215-977ea04425ba.md)|
 |[Cybereason](../vendors/1a51cb88-ebc9-4655-bce4-3d788bf19e89.md)|[Endpoint Security](12d00042-d90d-4055-a171-01a1f635a613.md)|
@@ -113,6 +114,7 @@ Below is a full list of products supported by Cloud SIEM.
 |[HP](../vendors/8C78ABDA-69C2-480A-9D64-F906C68AE8EC.md)|[Aruba ClearPass](12aba181-2b31-472c-a685-2be492f4778d.md)|
 |[HP](../vendors/8C78ABDA-69C2-480A-9D64-F906C68AE8EC.md)|[Aruba Mobility Master](c568879a-11ef-4566-bc20-71ce8136a469.md)|
 |[HP](../vendors/8C78ABDA-69C2-480A-9D64-F906C68AE8EC.md)|[vSentry](fa6946f2-53a4-469b-8e0a-e6676af53175.md)|
+|[Honeywell](../vendors/e7e04985-0828-4b29-ad06-e9d8569087d7.md)|[Pro Watch](144fe7b4-26e5-47d4-8164-4ff5bd73d06f.md)|
 |[IBM](../vendors/24ace3b6-5dfa-4a4f-a3ed-1c99f3384b34.md)|[Guardium](dca03a0f-0053-4c34-b7b6-56060bbd110c.md)|
 |[IBM](../vendors/24ace3b6-5dfa-4a4f-a3ed-1c99f3384b34.md)|[WebSEAL Reverse Proxy](58ebda18-c14a-472e-94f8-77a762a10aaa.md)|
 |[ISC](../vendors/1583cfd2-7ece-4060-991b-06dcf8567943.md)|[Bind](1768a42a-37e6-4a2b-aa42-314583f63e1b.md)|
@@ -247,6 +249,7 @@ Below is a full list of products supported by Cloud SIEM.
 |[Vectra](../vendors/7a3d1a5c-ba67-4597-971f-7057e8f6c8bb.md)|[Cognito](51afd72e-94b0-42f3-b65c-cf8edbacf7cf.md)|
 |[Wiz](../vendors/2cde0cac-102b-4756-9a56-81437fea1400.md)|[Wiz](52ac893d-bdf9-4e2c-be83-5f43842a179d.md)|
 |[Workday](../vendors/6e7ce4b2-569e-476d-b732-7b3a71b1e12a.md)|[Workday](0438df6b-16ba-4da7-a7a7-626316d0061f.md)|
+|[Zendesk](../vendors/18db13d4-1574-465b-a203-1c76456e70b4.md)|[Zendesk](a301559a-8110-4dd0-a41d-35b9baa1c740.md)|
 |[Zero Networks](../vendors/3e3c8813-9644-4fd6-9d6f-78bb8ffc5f44.md)|[Segment](cf2af9e8-bade-4f28-8bca-b30aa41baec4.md)|
 |[Zoom](../vendors/bda720cd-399c-4dcc-9289-19ad0c9cb221.md)|[Zoom](ad8d40a9-ee64-4615-bd92-aa964b4ae3b0.md)|
 |[Zscaler](../vendors/9dfd2223-1656-4faf-a38a-5a91978fa15e.md)|[Firewall](9e0641a7-22ce-4ac8-8113-ee48b368ac3d.md)|

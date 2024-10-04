@@ -31,6 +31,7 @@ Below is a full list of vendors for which there are supported products in Cloud 
 |[Code42](f764fde6-a435-42cb-9407-15734a99d657.md)|2|
 |[Corelight](6b5528e6-3d06-460d-b730-b5fa4b18ce18.md)|1|
 |[CrowdStrike](79ade329-b6d4-43ae-8db1-2a9cc45c0fb0.md)|3|
+|[Custom](d49a8edc-47d3-4d1d-8ff9-02f28c13b6c4.md)|1|
 |[Cyber-Ark](8a3d333e-ffad-49ed-9edd-0cf1c797b24f.md)|3|
 |[Cybereason](1a51cb88-ebc9-4655-bce4-3d788bf19e89.md)|1|
 |[Cylance](c57feda1-8da4-464d-b6cf-2c9982b71e57.md)|1|
@@ -59,9 +60,10 @@ Below is a full list of vendors for which there are supported products in Cloud 
 |[Fortinet](fb9941c5-6624-4175-af84-9e8127134889.md)|2|
 |[Genetec](e71c7bca-0423-4dbe-885e-efed5e058190.md)|1|
 |[Gigamon](f575ffed-7b6d-406e-9a55-848b4b6a720f.md)|1|
-|[Github](193c791a-bb10-4742-a429-1256535f888b.md)|1|
+|[Github](193c791a-bb10-4742-a429-1256535f888b.md)|2|
 |[Google](45601247-66a5-4c9c-b3af-c422f5b4cbeb.md)|4|
 |[HP](8C78ABDA-69C2-480A-9D64-F906C68AE8EC.md)|4|
+|[Honeywell](e7e04985-0828-4b29-ad06-e9d8569087d7.md)|1|
 |[IBM](24ace3b6-5dfa-4a4f-a3ed-1c99f3384b34.md)|3|
 |[ISC](1583cfd2-7ece-4060-991b-06dcf8567943.md)|1|
 |[Illumio](ca524eee-b1aa-4a59-8d5d-45c765ee9e08.md)|1|
@@ -136,6 +138,7 @@ Below is a full list of vendors for which there are supported products in Cloud 
 |[Vectra](7a3d1a5c-ba67-4597-971f-7057e8f6c8bb.md)|1|
 |[Wiz](2cde0cac-102b-4756-9a56-81437fea1400.md)|1|
 |[Workday](6e7ce4b2-569e-476d-b732-7b3a71b1e12a.md)|1|
+|[Zendesk](18db13d4-1574-465b-a203-1c76456e70b4.md)|1|
 |[Zero Networks](3e3c8813-9644-4fd6-9d6f-78bb8ffc5f44.md)|1|
 |[Zoom](bda720cd-399c-4dcc-9289-19ad0c9cb221.md)|1|
 |[Zscaler](9dfd2223-1656-4faf-a38a-5a91978fa15e.md)|4|

@@ -21,6 +21,7 @@
 
 |Cloud SIEM Schema Field|Original Record Key|Notes|
 |-----------------------|-------------------|-----|
+|cause|reason||
 |description|description||
 |errorCode|status||
 |errorText|reason||

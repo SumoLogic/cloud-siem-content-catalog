@@ -1,4 +1,4 @@
-# [Mappings](README.md): CloudTrail - logs.amazonaws.com - DeleteDestination
+# [Mappings](README.md): CloudTrail - logs.amazonaws.com - DeleteDestination|DeleteLogGroup|DeleteLogStream
 
 ## Input Requirements
 
@@ -7,7 +7,7 @@
 |Vendor|AWS|
 |Product|CloudTrail|
 |Log Format|JSON|
-|Event ID Regex Pattern|`AwsApiCall-DeleteDestination`|
+|Event ID Regex Pattern|`AwsApiCall-(DeleteDestination\|DeleteLogGroup\|DeleteLogStream)`|
 
 ## Record Output
 
@@ -25,15 +25,15 @@
 |action|eventName||
 |application|eventSource||
 |changeTarget|requestParameters.destinationName||
-|changeType|None|The static text `delete` is populated in this schema field.|
+|changeType|eventName|This is a lookup field. More info to come in the catalog later...|
 |cloud_provider|None|The static text `AWS` is populated in this schema field.|
 |cloud_region|awsRegion||
 |cloud_service|None|The static text `Logs` is populated in this schema field.|
-|description|None|The static text `Deletes the specified AWS logging destination, and eventually disables all the subscription filters that publish to it.` is populated in this schema field.|
+|description|eventName|This is a lookup field. More info to come in the catalog later...|
 |device_ip|sourceIPAddress||
 |http_userAgent|userAgent||
-|normalizedAction|None|The static text `delete` is populated in this schema field.|
-|normalizedSeverity|None|The static text `3` is populated in this schema field.|
+|normalizedAction|eventName|This is a lookup field. More info to come in the catalog later...|
+|normalizedSeverity|eventName|This is a lookup field. More info to come in the catalog later...|
 |srcDevice_ip|sourceIPAddress||
 |timestamp|eventTime|We expect the orginal record value of `eventTime` is in the format `yyyy-MM-dd'T'HH:mm:ss'Z'`|
 |user_username|userIdentity.sessionContext.sourceIdentity||

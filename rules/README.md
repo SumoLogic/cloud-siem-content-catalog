@@ -16,6 +16,10 @@
 |MATCH-S00458|[ADPassHunt Tool](MATCH-S00458.md)|
 |MATCH-S00307|[AWS - Excessive OAuth Application Permissions Scope](MATCH-S00307.md)|
 |MATCH-S00306|[AWS - New UserPoolClient Created](MATCH-S00306.md)|
+|MATCH-S00922|[AWS Bedrock Agent Created](MATCH-S00922.md)|
+|MATCH-S00924|[AWS Bedrock Guardrail Deleted](MATCH-S00924.md)|
+|MATCH-S00923|[AWS Bedrock Model Invocation Denied for User](MATCH-S00923.md)|
+|MATCH-S00921|[AWS Bedrock Model Invocation Logging Configuration Change Observed](MATCH-S00921.md)|
 |MATCH-S00715|[AWS Cloud Storage Deletion](MATCH-S00715.md)|
 |AGGREGATION-S00002|[AWS CloudTrail - Aggressive Reconnaissance](AGGREGATION-S00002.md)|
 |LEGACY-S00207|[AWS CloudTrail - Customer Master Key Disabled or Scheduled for Deletion](LEGACY-S00207.md)|
@@ -49,6 +53,7 @@
 |MATCH-S00671|[AWS Config Recorder Deletion](MATCH-S00671.md)|
 |MATCH-S00672|[AWS Config Recorder Stopped](MATCH-S00672.md)|
 |MATCH-S00670|[AWS Config Service Tampering](MATCH-S00670.md)|
+|OUTLIER-S00024|[AWS DynamoDB Outlier in GetItem Events from User](OUTLIER-S00024.md)|
 |MATCH-S00654|[AWS ECS Cluster Deleted](MATCH-S00654.md)|
 |MATCH-S00873|[AWS EKS Cluster Configuration Updated](MATCH-S00873.md)|
 |MATCH-S00872|[AWS EKS Failed Curl Authentication Attempt](MATCH-S00872.md)|
@@ -69,6 +74,7 @@
 |MATCH-S00677|[AWS Route 53 Service Tampering](MATCH-S00677.md)|
 |MATCH-S00680|[AWS Route 53 TestDNSAnswer](MATCH-S00680.md)|
 |MATCH-S00678|[AWS Route 53 Traffic Policy Creation](MATCH-S00678.md)|
+|OUTLIER-S00025|[AWS S3 Outlier in PutObject Denied Events](OUTLIER-S00025.md)|
 |MATCH-S00825|[AWS Secrets Manager Enumeration](MATCH-S00825.md)|
 |MATCH-S00875|[AWS VPC FLow Log Deletion](MATCH-S00875.md)|
 |MATCH-S00674|[AWS WAF Access Control List Updated](MATCH-S00674.md)|
@@ -271,6 +277,7 @@
 |FIRST-S00047|[First Seen ASN Associated with User for a Successful Azure AD Sign In Event](FIRST-S00047.md)|
 |FIRST-S00002|[First Seen AWS API Call from User](FIRST-S00002.md)|
 |FIRST-S00023|[First Seen AWS API Gateway Enumeration by User](FIRST-S00023.md)|
+|FIRST-S00084|[First Seen AWS Bedrock API Call from User](FIRST-S00084.md)|
 |FIRST-S00036|[First Seen AWS EKS API Call via CloudTrail from User](FIRST-S00036.md)|
 |FIRST-S00037|[First Seen AWS EKS Admission Controller Created by IP Address](FIRST-S00037.md)|
 |FIRST-S00035|[First Seen AWS EKS Secrets Enumeration from IP Address](FIRST-S00035.md)|
@@ -291,6 +298,7 @@
 |FIRST-S00007|[First Seen DynamoDB Enumeration from User](FIRST-S00007.md)|
 |FIRST-S00031|[First Seen IP Address Associated with User for a Successful Azure AD Sign In Event](FIRST-S00031.md)|
 |FIRST-S00062|[First Seen IP Address Connecting to Active Directory Certificate Services Process](FIRST-S00062.md)|
+|FIRST-S00086|[First Seen IP Address Performing Trufflehog AWS Credential Verification](FIRST-S00086.md)|
 |FIRST-S00027|[First Seen InstallUtil Allow List Bypass From User](FIRST-S00027.md)|
 |FIRST-S00042|[First Seen Ioreg Usage from User](FIRST-S00042.md)|
 |FIRST-S00017|[First Seen Kerberoasting Attempt from User - Global](FIRST-S00017.md)|
@@ -298,18 +306,22 @@
 |FIRST-S00032|[First Seen Kubectl Command From User](FIRST-S00032.md)|
 |FIRST-S00004|[First Seen Local Group Addition by User](FIRST-S00004.md)|
 |FIRST-S00015|[First Seen Macro Execution from User](FIRST-S00015.md)|
+|FIRST-S00081|[First Seen Model ID in AWS Bedrock Put Entitlement by User](FIRST-S00081.md)|
 |FIRST-S00088|[First Seen NTLM Authentication to Host (User)](FIRST-S00088.md)|
 |FIRST-S00016|[First Seen Non-Network/Non-System Logon from User](FIRST-S00016.md)|
 |FIRST-S00030|[First Seen Outbound Connection to External IP Address on Port 445 from IP Address](FIRST-S00030.md)|
 |FIRST-S00010|[First Seen PowerShell Execution from Computer](FIRST-S00010.md)|
 |FIRST-S00009|[First Seen RDP Logon From User](FIRST-S00009.md)|
+|FIRST-S00085|[First Seen Role Creating AWS Bedrock Agent](FIRST-S00085.md)|
 |FIRST-S00022|[First Seen S3 Bucket ACL Enumeration by User](FIRST-S00022.md)|
 |FIRST-S00025|[First Seen SMB Allowed Traffic From IP](FIRST-S00025.md)|
 |FIRST-S00034|[First Seen Session Token Granted to User from New IP](FIRST-S00034.md)|
 |FIRST-S00029|[First Seen Successful Authentication From Unexpected Country](FIRST-S00029.md)|
 |FIRST-S00033|[First Seen Terminal-Attached Pod Deployed to EKS](FIRST-S00033.md)|
 |FIRST-S00061|[First Seen USB device in use on Windows host](FIRST-S00061.md)|
+|FIRST-S00087|[First Seen User Creating or Modifying EC2 Launch Template](FIRST-S00087.md)|
 |FIRST-S00005|[First Seen User Creation From User](FIRST-S00005.md)|
+|FIRST-S00082|[First Seen User Enumerating AWS Bedrock Models](FIRST-S00082.md)|
 |FIRST-S00006|[First Seen Weak Kerberos Encryption from User](FIRST-S00006.md)|
 |FIRST-S00038|[First Seen Wget Usage from User](FIRST-S00038.md)|
 |FIRST-S00040|[First Seen cURL execution from User](FIRST-S00040.md)|
@@ -552,6 +564,8 @@
 |MATCH-S00554|[Outbound IRC Traffic](MATCH-S00554.md)|
 |LEGACY-S00056|[Outbound TFTP Traffic](LEGACY-S00056.md)|
 |THRESHOLD-S00048|[Outbound Traffic to Countries Outside the United States](THRESHOLD-S00048.md)|
+|OUTLIER-S00019|[Outlier in AWS Bedrock API Calls from User](OUTLIER-S00019.md)|
+|OUTLIER-S00022|[Outlier in AWS Bedrock Foundation Model Enumeration Calls from User ](OUTLIER-S00022.md)|
 |MATCH-S00755|[Outlook Form Creation](MATCH-S00755.md)|
 |MATCH-S00756|[Outlook Homepage Modification](MATCH-S00756.md)|
 |MATCH-S00683|[Overly Permissive Chmod Command](MATCH-S00683.md)|
@@ -796,6 +810,7 @@
 |MATCH-S00559|[Traffic to Honeypot IP](MATCH-S00559.md)|
 |MATCH-S00563|[Traffic to Proxy Anonymizers](MATCH-S00563.md)|
 |MATCH-S00588|[Trickbot Malware Recon Activity](MATCH-S00588.md)|
+|MATCH-S00925|[Trufflehog AWS Credential Verification Detected](MATCH-S00925.md)|
 |MATCH-S00577|[Turla Group Commands](MATCH-S00577.md)|
 |MATCH-S00542|[Unauthorized Access Attempt Detected](MATCH-S00542.md)|
 |MATCH-S00313|[Unauthorized External Device Installation](MATCH-S00313.md)|
