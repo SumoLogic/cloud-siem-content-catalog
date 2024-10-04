@@ -8,6 +8,7 @@
 |MATCH-S00513|[Critical Severity Intrusion Signature](../rules/MATCH-S00513.md)|
 |MATCH-S00454|[Firewall Allowed SMB Traffic](../rules/MATCH-S00454.md)|
 |FIRST-S00030|[First Seen Outbound Connection to External IP Address on Port 445 from IP Address](../rules/FIRST-S00030.md)|
+|FIRST-S00025|[First Seen SMB Allowed Traffic From IP](../rules/FIRST-S00025.md)|
 |MATCH-S00666|[High Severity Intrusion Signature](../rules/MATCH-S00666.md)|
 |THRESHOLD-S00079|[Inbound Port Scan](../rules/THRESHOLD-S00079.md)|
 |THRESHOLD-S00081|[Internal Port Sweep](../rules/THRESHOLD-S00081.md)|

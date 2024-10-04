@@ -16,7 +16,6 @@ A record flagged a file hash from a threat intelligence match list
 |Prototype|False|
 |Tags||
 ## Vendors and Products
-- [Bro - Bro](../products/37C866BF-72E1-470A-9072-EDB908F56951.md)
 - [Carbon Black - Cloud](../products/46433485-9c31-4b45-97c8-4d57ec90e72e.md)
 - [Carbon Black - Defense](../products/4448ca62-bb4f-4859-a6a2-d9262f9e48f0.md)
 - [Cisco Systems - Advanced Malware Protection (AMP)](../products/7eaa4c44-5b7f-4d9e-8c1c-c4105c2b7506.md)

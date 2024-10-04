@@ -21,6 +21,7 @@
 
 |Cloud SIEM Schema Field|Original Record Key|Notes|
 |-----------------------|-------------------|-----|
+|cause|outcome.reason||
 |description|displayMessage||
 |device_ip|client.ipAddress||
 |normalizedAction|None|The static text `logon` is populated in this schema field.|
