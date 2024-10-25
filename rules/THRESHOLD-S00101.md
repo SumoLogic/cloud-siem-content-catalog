@@ -10,7 +10,7 @@ This rule detects when a large number of documents are accessed in a short timef
 |Category|Collection|
 |Apply Risk to Entities|user_username|
 |Signal Name|Sharepoint - Excessive Documents Accessed by User|
-|Summary Expression|Sharepoint - Excessive Documents Accessed from {{device_ip}} by {{user_username}}|
+|Summary Expression|Sharepoint - Excessive Documents Accessed by {{user_username}}|
 |Threshold Count|30|
 |Threshold Window|5m|
 |Score/Severity|Static: 1|
@@ -32,6 +32,7 @@ This rule detects when a large number of documents are accessed in a short timef
 |Normalized Schema|metadata_deviceEventId|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|
+|Normalized Schema|resource|
 |Normalized Schema|user_username|
 
 

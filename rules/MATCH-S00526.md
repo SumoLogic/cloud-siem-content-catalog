@@ -10,13 +10,12 @@ This rule detects the creation of a symlink to a shadow copy.
 |Category|Credential Access|
 |Apply Risk to Entities|device_hostname, device_ip, user_username|
 |Signal Name|Credential Dumping Via Symlink To Shadow Copy|
-|Summary Expression|User: {{user_username}} executed command: {{commandLine}} on host: {{device_hostname}}|
+|Summary Expression|User: {{user_username}} executed command on host: {{device_hostname}}|
 |Score/Severity|Static: 4|
 |Enabled by Default|True|
 |Prototype|False|
 |Tags|_mitreAttackTactic:TA0006, _mitreAttackTechnique:T1003|
 ## Vendors and Products
-- [CrowdStrike - FDR](../products/569a3a44-c29f-492e-bcf4-5dc04e2ab0f3.md)
 - [Microsoft - Windows](../products/1ff7546c-cb36-4a24-87f7-89d2cecc5761.md)
 
 

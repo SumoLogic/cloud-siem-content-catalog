@@ -10,7 +10,7 @@ Detects specific process characteristics of Winnti Pipemon malware reported by E
 |Category|Execution|
 |Apply Risk to Entities|device_hostname, device_ip, user_username|
 |Signal Name|Winnti Pipemon Characteristics|
-|Summary Expression|Detected Winnti pipemon malware on host: {{device_hostname}} using command: {{commandLine}}|
+|Summary Expression|Detected Winnti pipemon malware on host: {{device_hostname}}|
 |Score/Severity|Static: 3|
 |Enabled by Default|True|
 |Prototype|False|

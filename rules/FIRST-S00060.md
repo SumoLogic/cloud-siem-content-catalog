@@ -10,7 +10,7 @@ Threat actors may use the wbadmin utility to create volume shadow copies and/or 
 |Category|Defense Evasion|
 |Apply Risk to Entities|user_username, device_hostname|
 |Signal Name|First Seen wbadmin command  by {{user_username}}|
-|Summary Expression|First Seen wbadmin command  by {{user_username}}  on the {{device_hostname}} with the command line: {{commandLine}}|
+|Summary Expression|First Seen wbadmin command by User: {{user_username}} on Host: {{device_hostname}}|
 |Retention Window|7776000000|
 |Baseline Window|2592000000|
 |Baseline Type|GLOBAL|

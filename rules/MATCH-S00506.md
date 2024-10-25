@@ -10,7 +10,7 @@ Observes for command line arguments with sc.exe indicating Windows services bein
 |Category|Persistence|
 |Apply Risk to Entities|device_hostname, user_username|
 |Signal Name|SC Exe Manipulating Windows Services|
-|Summary Expression|SC.exe manipulating Windows services on host: {{device_hostname}} with command: {{commandLine}}|
+|Summary Expression|SC.exe manipulating Windows services observed on host: {{device_hostname}}|
 |Score/Severity|Static: 2|
 |Enabled by Default|True|
 |Prototype|False|

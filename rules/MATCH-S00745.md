@@ -10,14 +10,13 @@ Detects commands associated with enumerations of loadable kernel modules. LKMs c
 |Category|Persistence|
 |Apply Risk to Entities|device_hostname, device_ip, user_username|
 |Signal Name|Loadable Kernel Module Enumeration|
-|Summary Expression|LKM enumeration detected on host: {{device_hostname}}  with command: {{commandLine}}|
+|Summary Expression|LKM enumeration detected on host: {{device_hostname}}|
 |Score/Severity|Static: 1|
 |Enabled by Default|True|
 |Prototype|False|
 |Tags|_mitreAttackTactic:TA0003, _mitreAttackTechnique:T1547.006, _mitreAttackTactic:TA0007|
 ## Vendors and Products
 - [CrowdStrike - FDR](../products/569a3a44-c29f-492e-bcf4-5dc04e2ab0f3.md)
-- [Laurel - Laurel Linux Audit](../products/f3803323-e4d1-4098-96c6-12e5bf2ab1f5.md)
 - [Linux - Linux OS Syslog](../products/0e20c932-d992-4bd4-b276-c15119ca5c0b.md)
 - [Linux - Sysmon for Linux](../products/b238758d-ade8-41d2-b32d-c99159e9fd74.md)
 - [Linux - Systemd Journal](../products/5be5af82-c248-4c4c-a485-0571025f242c.md)

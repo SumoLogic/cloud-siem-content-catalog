@@ -10,7 +10,7 @@ Windows services launching from locations outside of their standard installation
 |Category|Persistence|
 |Apply Risk to Entities|device_hostname, device_ip, user_username|
 |Signal Name|Windows Service Executed from Nonstandard Execution Path|
-|Summary Expression|Detected service: {{baseImage}} execution from nonstandard path on host: {{device_hostname}} using command: {{commandLine}}|
+|Summary Expression|Detected service: {{baseImage}} execution from nonstandard path on host: {{device_hostname}}|
 |Score/Severity|Static: 7|
 |Enabled by Default|True|
 |Prototype|False|

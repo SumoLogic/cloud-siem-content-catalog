@@ -10,7 +10,7 @@ Observes for a firewall blocking a large amount traffic from a single host in a 
 |Category|Unknown/Other|
 |Apply Risk to Entities|srcDevice_hostname, srcDevice_ip|
 |Signal Name|Excessive Outbound Firewall Blocks|
-|Summary Expression|Firewall blocked traffic from IP: {{srcDevice_ip}} Host:{{srcDevice_hostname}} at a high rate within a 5 minute window|
+|Summary Expression|Firewall blocked traffic from IP: {{srcDevice_ip}} at a high rate within a 5 minute window|
 |Threshold Count|500|
 |Threshold Window|5m|
 |Score/Severity|Static: 1|

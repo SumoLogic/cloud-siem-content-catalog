@@ -10,7 +10,7 @@ This rule detects when a large number of documents are downloaded in a short tim
 |Category|Collection|
 |Apply Risk to Entities|device_ip|
 |Signal Name|Sharepoint - External IP Downloaded Excessive Documents|
-|Summary Expression|Sharepoint - Excessive Documents Downloaded from {{device_ip}} by {{user_username}}|
+|Summary Expression|Sharepoint - Excessive Documents Downloaded from {{device_ip}}|
 |Threshold Count|20|
 |Threshold Window|5m|
 |Score/Severity|Static: 1|
@@ -34,6 +34,7 @@ This rule detects when a large number of documents are downloaded in a short tim
 |Normalized Schema|metadata_deviceEventId|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|
+|Normalized Schema|resource|
 |Normalized Schema|user_username|
 
 

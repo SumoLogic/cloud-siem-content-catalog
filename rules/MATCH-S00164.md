@@ -17,9 +17,9 @@ Web servers that spawn shell processes could be the result of a successfully pla
 |Tags|_mitreAttackTactic:TA0003, _mitreAttackTechnique:T1505, _mitreAttackTechnique:T1505.003|
 ## Vendors and Products
 - [CrowdStrike - FDR](../products/569a3a44-c29f-492e-bcf4-5dc04e2ab0f3.md)
-- [Cylance - Protect](../products/60829f4a-7acb-47d1-ad23-8424fcf83dcb.md)
 - [Microsoft - Azure](../products/a1225af5-e778-4068-a9a2-47da93d1ff24.md)
 - [Microsoft - Windows](../products/1ff7546c-cb36-4a24-87f7-89d2cecc5761.md)
+- [VMware - Carbon Black Cloud](../products/f9cea291-9030-4e41-9836-6dd9274d6df4.md)
 
 
 ## Fields Used

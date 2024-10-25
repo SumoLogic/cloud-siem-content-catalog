@@ -10,7 +10,7 @@ Detects NotPetya ransomware activity by identifying one of these occurring: the 
 |Category|Execution|
 |Apply Risk to Entities|device_hostname, device_ip, user_username|
 |Signal Name|NotPetya Ransomware Activity|
-|Summary Expression|NotPetya ransomware activity detected on host: {{device_hostname}} in command: {{commandLine}}|
+|Summary Expression|NotPetya ransomware activity detected on host: {{device_hostname}}|
 |Score/Severity|Static: 3|
 |Enabled by Default|True|
 |Prototype|False|

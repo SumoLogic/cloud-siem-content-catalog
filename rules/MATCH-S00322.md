@@ -10,7 +10,7 @@ Detects Russian group activity as described in Global Threat Report 2019 by Crow
 |Category|Execution|
 |Apply Risk to Entities|device_hostname, device_ip, user_username|
 |Signal Name|Judgement Panda Credential Access Activity|
-|Summary Expression|Judgement Panda credential access activity detected from process: {{baseImage}} using command: {{commandLine}} on host: {{device_hostname}}|
+|Summary Expression|Judgement Panda credential access activity detected from process: {{baseImage}} on host: {{device_hostname}}|
 |Score/Severity|Static: 3|
 |Enabled by Default|True|
 |Prototype|False|

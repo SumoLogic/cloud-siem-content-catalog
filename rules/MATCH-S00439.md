@@ -10,7 +10,7 @@ The psr.exe captures desktop screenshots and saves them on the local machine.
 |Category|Collection|
 |Apply Risk to Entities|device_hostname, device_ip, user_username|
 |Signal Name|Psr.exe Capture Screenshots|
-|Summary Expression|Process: {{baseImage}} executed on host: {{device_hostname}} with command: {{commandLine}}|
+|Summary Expression|Process: {{baseImage}} executed on host: {{device_hostname}}|
 |Score/Severity|Static: 4|
 |Enabled by Default|True|
 |Prototype|False|

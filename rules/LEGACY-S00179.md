@@ -17,7 +17,6 @@ vpnoverdns.com is a free service providing VPN functionality over DNS. DNS resol
 |Tags|_mitreAttackTactic:TA0001, _mitreAttackTactic:TA0003, _mitreAttackTactic:TA0010, _mitreAttackTechnique:T1133|
 ## Vendors and Products
 - [Bro - Bro](../products/37C866BF-72E1-470A-9072-EDB908F56951.md)
-- [Infoblox - Network Identity Operating System](../products/43808f4c-15e9-480c-ab1a-38bdef3b6798.md)
 
 
 ## Fields Used

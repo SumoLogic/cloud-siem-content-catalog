@@ -10,7 +10,7 @@ Local system account - Suspicious System Owner/User Discovery Activity - T1033 -
 |Category|Discovery|
 |Apply Risk to Entities|device_hostname, device_ip, user_username|
 |Signal Name|Local system execution of whoami.exe from {{device_hostname}}|
-|Summary Expression|Whoami exected on host: {{device_hostname}} with command: {{commandLine}}|
+|Summary Expression|Whoami exected on host: {{device_hostname}}|
 |Score/Severity|Static: 2|
 |Enabled by Default|True|
 |Prototype|False|

@@ -33,6 +33,7 @@ This rule detects when a large number of documents are downloaded in a short tim
 |Normalized Schema|metadata_deviceEventId|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|
+|Normalized Schema|resource|
 |Normalized Schema|user_username|
 
 

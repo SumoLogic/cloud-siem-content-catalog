@@ -25,6 +25,7 @@ The `type` listed lets you know if you can directly apply the parser to a collec
 |Parser|/Parsers/System/Abnormal Security/Abnormal Security|
 |Parser|/Parsers/System/Adaxes/Adaxes Syslog|
 |Parser|/Parsers/System/Airtable/Airtable Audit C2C|
+|Parser|/Parsers/System/Apache/Apache HTTP Server|
 |Parser|/Parsers/System/Aqua/Aqua JSON|
 |Parser|/Parsers/System/Atlassian/Atlassian Confluence Access Logs|
 |Parser|/Parsers/System/Atlassian/Atlassian Jira|
@@ -87,6 +88,7 @@ The `type` listed lets you know if you can directly apply the parser to a collec
 |Parser|/Parsers/System/Fortinet/Fortigate/Fortigate-Syslog|
 |Parser|/Parsers/System/Genetec/Genetec Synergis|
 |Parser|/Parsers/System/Gigamon/GigamonTI|
+|Parser|/Parsers/System/Github/GitHub Enterprise Audit|
 |Parser|/Parsers/System/Github/Github|
 |Parser|/Parsers/System/Google/G Suite Alert Center|
 |Parser|/Parsers/System/Google/G Suite Audit|
@@ -94,6 +96,7 @@ The `type` listed lets you know if you can directly apply the parser to a collec
 |Parser|/Parsers/System/Google/GCP BigQuery Gmail|
 |Parser|/Parsers/System/Google/Security Command Center|
 |Parser|/Parsers/System/HP/Aruba ClearPass - Syslog|
+|Parser|/Parsers/System/Honeywell/Honeywell Pro-Watch|
 |Parser|/Parsers/System/ISC/ISC BIND|
 |Parser|/Parsers/System/Imperva/Imperva Incapsula|
 |Parser|/Parsers/System/Infoblox/Infoblox|
@@ -104,6 +107,7 @@ The `type` listed lets you know if you can directly apply the parser to a collec
 |Parser|/Parsers/System/Juniper/Juniper SRX Series Firewall Syslog|
 |Parser|/Parsers/System/Juniper/Juniper SSG Series Firewall Syslog|
 |Parser|/Parsers/System/Kaltura/Kaltura|
+|Parser|/Parsers/System/Kandji/Kandji EDR|
 |Parser|/Parsers/System/Kaspersky/Kaspersky Endpoint Security|
 |Parser|/Parsers/System/Kemp/Kemp LoadMaster Syslog|
 |Parser|/Parsers/System/KnowBe4/KnowBe4 KMSAT C2C|
@@ -209,6 +213,7 @@ The `type` listed lets you know if you can directly apply the parser to a collec
 |Parser|/Parsers/System/Tanium/Tanium JSON|
 |Parser|/Parsers/System/Tanium/Tanium Syslog|
 |Parser|/Parsers/System/Thinkst Canary/Thinkst Canary|
+|Parser|/Parsers/System/Thinkst Canary/Thinkst Canary JSON|
 |Parser|/Parsers/System/Trellix/Trellix MVision EPO|
 |Parser|/Parsers/System/Trend Micro/Trend Micro Deep Security - CEF|
 |Parser|/Parsers/System/Trend Micro/Trend Micro Vision One|
@@ -219,6 +224,7 @@ The `type` listed lets you know if you can directly apply the parser to a collec
 |Parser|/Parsers/System/Wiz/Wiz|
 |Parser|/Parsers/System/Workday/Workday|
 |Parser|/Parsers/System/Zeek/Zeek|
+|Parser|/Parsers/System/Zendesk/Zendesk|
 |Parser|/Parsers/System/Zero Networks/Zero Networks Segment|
 |Parser|/Parsers/System/Zoom/Zoom|
 |Parser|/Parsers/System/Zscaler/Zscaler Nanolog Streaming Service/Zscaler Nanolog Streaming Service-CEF|

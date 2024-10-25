@@ -10,7 +10,7 @@ Dump sam, system or security hives using REG.exe utility.
 |Category|Credential Access|
 |Apply Risk to Entities|device_ip, user_username, device_hostname|
 |Signal Name|Grabbing Sensitive Hives via Reg Utility|
-|Summary Expression|User: {{user_username}} ran command: {{commandLine}} on host: {{device_hostname}}|
+|Summary Expression|User: {{user_username}} has been observed using the REG utility to possibly dump sensitive information on host: {{device_hostname}}|
 |Score/Severity|Static: 2|
 |Enabled by Default|True|
 |Prototype|False|

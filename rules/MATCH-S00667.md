@@ -10,7 +10,7 @@ This rule looks for an intrusion product detecting a medium severity intrusion s
 |Category|Discovery|
 |Apply Risk to Entities|srcDevice_hostname, srcDevice_ip, user_username|
 |Signal Name|{{metadata_vendor}} {{metadata_product}} Medium Severity Intrusion Signature|
-|Summary Expression|Medium Severity Intrusion Signature detected: {{threat_name}} from host: {{srcDevice_hostname}} IP: {{srcDevice_ip}}|
+|Summary Expression|Medium Severity Intrusion Signature detected: {{threat_name}} from IP: {{srcDevice_ip}}|
 |Score/Severity|Static: 2|
 |Enabled by Default|True|
 |Prototype|False|

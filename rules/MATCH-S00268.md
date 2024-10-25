@@ -10,7 +10,7 @@ Detects the use of the runas command. Runas can be used to create impersonation 
 |Category|Privilege Escalation|
 |Apply Risk to Entities|device_hostname, device_ip, user_username|
 |Signal Name|Windows - Possible Impersonation Token Creation Using Runas|
-|Summary Expression|Detected potential impersonation token creation on host: {{device_hostname}} using command: {{commandLine}}|
+|Summary Expression|Detected potential impersonation token creation on host: {{device_hostname}}|
 |Score/Severity|Static: 1|
 |Enabled by Default|True|
 |Prototype|False|

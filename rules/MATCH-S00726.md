@@ -10,7 +10,7 @@ Kernel Extensions in macOS can be used by adversaries to execute malicious code 
 |Category|Persistence|
 |Apply Risk to Entities|device_hostname, device_ip, user_username|
 |Signal Name|macOS Kernel Extension Load|
-|Summary Expression|Observed kextload command on host: {{device_hostname}} with command: {{commandLine}}|
+|Summary Expression|Observed kextload command on host: {{device_hostname}}|
 |Score/Severity|Static: 2|
 |Enabled by Default|True|
 |Prototype|True|

@@ -10,7 +10,7 @@ This rule looks for flags passed to schtasks.exe on the command-line that indica
 |Category|Execution|
 |Apply Risk to Entities|device_hostname, device_ip, user_username|
 |Signal Name|Schtasks Used For Forcing A Reboot|
-|Summary Expression|Scheduled task used to force reboot on host: {{device_hostname}} with command: {{commandLine}}|
+|Summary Expression|Scheduled task used to force reboot on host: {{device_hostname}}|
 |Score/Severity|Static: 4|
 |Enabled by Default|True|
 |Prototype|False|

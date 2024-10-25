@@ -12,6 +12,7 @@ Below is a full list of vendors for which there are supported products in Cloud 
 |[Alibaba](d7de27e2-7680-48a0-96aa-1c26cf8d1ca4.md)|1|
 |[AlphaSOC](84ffd6de-c32b-49fe-88cb-d3e744df4141.md)|1|
 |[Amazon AWS](210d6727-ac50-468e-ab00-1f7586845326.md)|18|
+|[Apache](c6fc7838-0007-4966-90aa-b7704fd70eac.md)|1|
 |[Aqua](0531e9df-c128-4c67-9a81-66ffcce41f9a.md)|1|
 |[Atlassian](4d40dc7a-b95e-476c-9fb0-7163ea7fd335.md)|2|
 |[Auth0](f002a19c-876e-4a33-8be0-ed3b922d19bc.md)|1|
@@ -59,9 +60,10 @@ Below is a full list of vendors for which there are supported products in Cloud 
 |[Fortinet](fb9941c5-6624-4175-af84-9e8127134889.md)|2|
 |[Genetec](e71c7bca-0423-4dbe-885e-efed5e058190.md)|1|
 |[Gigamon](f575ffed-7b6d-406e-9a55-848b4b6a720f.md)|1|
-|[Github](193c791a-bb10-4742-a429-1256535f888b.md)|1|
+|[Github](193c791a-bb10-4742-a429-1256535f888b.md)|2|
 |[Google](45601247-66a5-4c9c-b3af-c422f5b4cbeb.md)|4|
 |[HP](8C78ABDA-69C2-480A-9D64-F906C68AE8EC.md)|4|
+|[Honeywell](e7e04985-0828-4b29-ad06-e9d8569087d7.md)|1|
 |[IBM](24ace3b6-5dfa-4a4f-a3ed-1c99f3384b34.md)|3|
 |[ISC](1583cfd2-7ece-4060-991b-06dcf8567943.md)|1|
 |[Illumio](ca524eee-b1aa-4a59-8d5d-45c765ee9e08.md)|1|
@@ -73,6 +75,7 @@ Below is a full list of vendors for which there are supported products in Cloud 
 |[JumpCloud](138e3b9f-8b41-43d8-ba4c-823bef814d38.md)|2|
 |[Juniper](AFDA386E-E25E-421D-85F7-ACEC262D73C2.md)|2|
 |[Kaltura](c65f8f5f-ea11-4b41-858b-99731d306f81.md)|1|
+|[Kandji](82cd909b-8f8d-4603-8fe7-5ed3f8382ba0.md)|1|
 |[KasperskyLab](8011e6fe-1e65-4603-aa2e-15c9b33cb0fd.md)|2|
 |[Kemp](fe56e139-6049-4d78-9665-df7d5f80d996.md)|1|
 |[Kubernetes](b19b9592-1616-4013-9ad4-f6d2a93da669.md)|1|
@@ -136,6 +139,7 @@ Below is a full list of vendors for which there are supported products in Cloud 
 |[Vectra](7a3d1a5c-ba67-4597-971f-7057e8f6c8bb.md)|1|
 |[Wiz](2cde0cac-102b-4756-9a56-81437fea1400.md)|1|
 |[Workday](6e7ce4b2-569e-476d-b732-7b3a71b1e12a.md)|1|
+|[Zendesk](18db13d4-1574-465b-a203-1c76456e70b4.md)|1|
 |[Zero Networks](3e3c8813-9644-4fd6-9d6f-78bb8ffc5f44.md)|1|
 |[Zoom](bda720cd-399c-4dcc-9289-19ad0c9cb221.md)|1|
 |[Zscaler](9dfd2223-1656-4faf-a38a-5a91978fa15e.md)|4|

@@ -10,7 +10,7 @@ This rule looks for the execution of adfind.exe with command-line arguments that
 |Category|Discovery|
 |Apply Risk to Entities|device_hostname, device_ip, user_username|
 |Signal Name|Windows Adfind Exe|
-|Summary Expression|ADFind executed on host: {{device_hostname}} with command: {{commandLine}}|
+|Summary Expression|ADFind executed on host: {{device_hostname}}|
 |Score/Severity|Static: 5|
 |Enabled by Default|True|
 |Prototype|False|

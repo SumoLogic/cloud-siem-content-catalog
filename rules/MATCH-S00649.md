@@ -10,7 +10,7 @@ Detects access to the Kubernetes service account access token that is stored wit
 |Category|Execution|
 |Apply Risk to Entities|device_hostname, device_ip, user_username, srcDevice_ip, srcDevice_hostname, dstDevice_hostname, dstDevice_ip|
 |Signal Name|Kubernetes Service Account Token File Accessed|
-|Summary Expression|User: {{user_username}} ran command: {{commandLine}}|
+|Summary Expression|User: {{user_username}} ran a command to access a Service Account token file|
 |Score/Severity|Static: 2|
 |Enabled by Default|True|
 |Prototype|False|

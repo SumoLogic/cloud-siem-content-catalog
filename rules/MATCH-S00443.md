@@ -10,7 +10,7 @@ Observes for net.exe being used to create a network share.
 |Category|Lateral Movement|
 |Apply Risk to Entities|device_hostname, device_ip, user_username|
 |Signal Name|Create Windows Share|
-|Summary Expression|User: {{user_username}} executed command: {{commandLine}}|
+|Summary Expression|User: {{user_username}} executed command to create a network share on host: {{device_hostname}}|
 |Score/Severity|Static: 1|
 |Enabled by Default|True|
 |Prototype|False|

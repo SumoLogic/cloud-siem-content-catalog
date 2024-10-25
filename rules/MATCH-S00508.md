@@ -16,7 +16,6 @@ Observes for Zoom creating child processes
 |Prototype|True|
 |Tags|_mitreAttackTactic:TA0002|
 ## Vendors and Products
-- [Carbon Black - Protect](../products/ada54150-f29e-43a5-9d20-b98ee2d17430.md)
 - [Cisco Systems - Advanced Malware Protection (AMP)](../products/7eaa4c44-5b7f-4d9e-8c1c-c4105c2b7506.md)
 - [CrowdStrike - FDR](../products/569a3a44-c29f-492e-bcf4-5dc04e2ab0f3.md)
 - [Microsoft - Azure](../products/a1225af5-e778-4068-a9a2-47da93d1ff24.md)

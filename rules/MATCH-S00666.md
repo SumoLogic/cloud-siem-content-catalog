@@ -10,12 +10,13 @@ This rule looks for an intrusion product detecting a high severity intrusion sig
 |Category|Discovery|
 |Apply Risk to Entities|srcDevice_hostname, srcDevice_ip, user_username|
 |Signal Name|{{metadata_vendor}} {{metadata_product}} High Severity Intrusion Signature|
-|Summary Expression|High Severity Intrusion Signature detected: {{threat_name}} from host: {{srcDevice_hostname}} IP: {{srcDevice_ip}}|
+|Summary Expression|High Severity Intrusion Signature detected: {{threat_name}} from IP: {{srcDevice_ip}}|
 |Score/Severity|Static: 3|
 |Enabled by Default|True|
 |Prototype|False|
 |Tags|_mitreAttackTactic:TA0007, _mitreAttackTechnique:T1046|
 ## Vendors and Products
+- [Amazon AWS - Network Firewall](../products/3a82061c-2ca3-4289-9c9b-78756001aa38.md)
 - [Cisco Systems - ASA](../products/be4f7473-fe69-4311-8859-3561900060bf.md)
 - [Cisco Systems - Firepower](../products/da9e05a5-3fd3-46a7-a107-ae03c01e3f5a.md)
 - [Cisco Systems - Meraki](../products/724c9add-8cd9-4013-b9e1-a907b96da426.md)

@@ -17,6 +17,7 @@ It is extremely abnormal for svchost.exe to spawn without any CLI arguments and 
 |Tags|_mitreAttackTactic:TA0002, _mitreAttackTactic:TA0004, _mitreAttackTactic:TA0005, _mitreAttackTechnique:T1055, _mitreAttackTechnique:T1055.001, _mitreAttackTechnique:T1055.002, _mitreAttackTechnique:T1055.003, _mitreAttackTechnique:T1055.004, _mitreAttackTechnique:T1055.009, _mitreAttackTechnique:T1055.012, _mitreAttackTechnique:T1055.013, _mitreAttackTechnique:T1569.002, _mitreAttackTechnique:T1569|
 ## Vendors and Products
 - [CrowdStrike - FDR](../products/569a3a44-c29f-492e-bcf4-5dc04e2ab0f3.md)
+- [CrowdStrike - Falcon](../products/840c72e0-4e47-41e7-9b93-31f55d12f07d.md)
 - [Microsoft - Windows](../products/1ff7546c-cb36-4a24-87f7-89d2cecc5761.md)
 
 

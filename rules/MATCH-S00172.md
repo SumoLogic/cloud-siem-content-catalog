@@ -10,7 +10,7 @@ Harvesting of Wifi Credentials Using netsh.exe
 |Category|Discovery|
 |Apply Risk to Entities|device_hostname, device_ip, user_username|
 |Signal Name|WiFi Credential Harvesting with netsh|
-|Summary Expression|Detected WiFi credential harvesting using netsh on host: {{device_hostname}} using command: {{commandLine}}|
+|Summary Expression|Detected WiFi credential harvesting using netsh on host: {{device_hostname}}|
 |Score/Severity|Static: 1|
 |Enabled by Default|True|
 |Prototype|False|
