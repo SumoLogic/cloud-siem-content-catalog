@@ -32,6 +32,7 @@ Below is a full list of vendors for which there are supported products in Cloud 
 |[Code42](f764fde6-a435-42cb-9407-15734a99d657.md)|2|
 |[Corelight](6b5528e6-3d06-460d-b730-b5fa4b18ce18.md)|1|
 |[CrowdStrike](79ade329-b6d4-43ae-8db1-2a9cc45c0fb0.md)|3|
+|[Custom](d49a8edc-47d3-4d1d-8ff9-02f28c13b6c4.md)|1|
 |[Cyber-Ark](8a3d333e-ffad-49ed-9edd-0cf1c797b24f.md)|3|
 |[Cybereason](1a51cb88-ebc9-4655-bce4-3d788bf19e89.md)|1|
 |[Cylance](c57feda1-8da4-464d-b6cf-2c9982b71e57.md)|1|

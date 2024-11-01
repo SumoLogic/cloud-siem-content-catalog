@@ -73,6 +73,7 @@ Below is a full list of products supported by Cloud SIEM.
 |[CrowdStrike](../vendors/79ade329-b6d4-43ae-8db1-2a9cc45c0fb0.md)|[FDR](569a3a44-c29f-492e-bcf4-5dc04e2ab0f3.md)|
 |[CrowdStrike](../vendors/79ade329-b6d4-43ae-8db1-2a9cc45c0fb0.md)|[Falcon](840c72e0-4e47-41e7-9b93-31f55d12f07d.md)|
 |[CrowdStrike](../vendors/79ade329-b6d4-43ae-8db1-2a9cc45c0fb0.md)|[Spotlight](4c960ed9-3858-46ea-aa59-f81489d93deb.md)|
+|[Custom](../vendors/d49a8edc-47d3-4d1d-8ff9-02f28c13b6c4.md)|[Custom](44dc8fc8-d6eb-4769-9a28-ec95612e63c0.md)|
 |[Cyber-Ark](../vendors/8a3d333e-ffad-49ed-9edd-0cf1c797b24f.md)|[Endpoint Privilege Manager](96d1bd4a-9285-439e-b81c-1a32f7688dac.md)|
 |[Cyber-Ark](../vendors/8a3d333e-ffad-49ed-9edd-0cf1c797b24f.md)|[Enterprise Password Vault](36f5ca33-0c1e-4223-8215-977ea04425ba.md)|
 |[Cybereason](../vendors/1a51cb88-ebc9-4655-bce4-3d788bf19e89.md)|[Endpoint Security](12d00042-d90d-4055-a171-01a1f635a613.md)|
