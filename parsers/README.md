@@ -30,6 +30,7 @@ The `type` listed lets you know if you can directly apply the parser to a collec
 |Parser|/Parsers/System/Atlassian/Atlassian Confluence Access Logs|
 |Parser|/Parsers/System/Atlassian/Atlassian Jira|
 |Parser|/Parsers/System/Auth0/Auth0|
+|Parser|/Parsers/System/Automox/Automox|
 |Parser|/Parsers/System/Bandura/Bandura Syslog|
 |Parser|/Parsers/System/Blue Coat/Blue Coat ProxySG|
 |Parser|/Parsers/System/Blue Coat/Blue Coat ProxySG CEF|
@@ -69,6 +70,7 @@ The `type` listed lets you know if you can directly apply the parser to a collec
 |Parser|/Parsers/System/Darktrace/Darktrace Syslog|
 |Parser|/Parsers/System/Dataminr/Dataminr|
 |Parser|/Parsers/System/Dell/Dell SonicWall|
+|Parser|/Parsers/System/Digital Guardian/Digital Guardian ARC|
 |Parser|/Parsers/System/Docker/Docker JSON|
 |Parser|/Parsers/System/DocuSign/DocuSign Monitor|
 |Parser|/Parsers/System/Druva/Druva Cyber Resilience|
@@ -221,6 +223,7 @@ The `type` listed lets you know if you can directly apply the parser to a collec
 |Parser|/Parsers/System/VMware/Carbon Black Cloud|
 |Parser|/Parsers/System/VMware/VMware NSX|
 |Parser|/Parsers/System/Varonis/Varonis DatAlert Syslog|
+|Parser|/Parsers/System/WatchGuard/WatchGuard Fireware|
 |Parser|/Parsers/System/Wiz/Wiz|
 |Parser|/Parsers/System/Workday/Workday|
 |Parser|/Parsers/System/Zeek/Zeek|
