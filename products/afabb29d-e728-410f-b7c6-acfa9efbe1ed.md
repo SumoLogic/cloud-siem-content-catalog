@@ -15,6 +15,7 @@
 |THRESHOLD-S00514|[Intrusion Scan - Targeted](../rules/THRESHOLD-S00514.md)|
 |THRESHOLD-S00515|[Intrusion Sweep](../rules/THRESHOLD-S00515.md)|
 |MATCH-S00667|[Medium Severity Intrusion Signature](../rules/MATCH-S00667.md)|
+|THRESHOLD-S00048|[Outbound Traffic to Countries Outside the United States](../rules/THRESHOLD-S00048.md)|
 |MATCH-S00560|[SMTP Traffic from Non-SMTP Servers](../rules/MATCH-S00560.md)|
 |LEGACY-S00093|[Script/CLI UserAgent string](../rules/LEGACY-S00093.md)|
 |LEGACY-S00182|[Suspicious HTTP User-Agent](../rules/LEGACY-S00182.md)|

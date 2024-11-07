@@ -16,6 +16,7 @@ Below is a full list of vendors for which there are supported products in Cloud 
 |[Aqua](0531e9df-c128-4c67-9a81-66ffcce41f9a.md)|1|
 |[Atlassian](4d40dc7a-b95e-476c-9fb0-7163ea7fd335.md)|2|
 |[Auth0](f002a19c-876e-4a33-8be0-ed3b922d19bc.md)|1|
+|[Automox](2dcbfadf-26a8-4066-8e65-5bb5fd19df29.md)|1|
 |[Bandura](ec354a4c-a761-4e18-8ceb-194d6e8692e2.md)|1|
 |[Bitdefender](04de471f-70b0-4ffb-89a9-f094ef242248.md)|1|
 |[BlackBerry](ac6a961b-590c-4dd4-8402-56f4a4cddd98.md)|1|
@@ -32,7 +33,6 @@ Below is a full list of vendors for which there are supported products in Cloud 
 |[Code42](f764fde6-a435-42cb-9407-15734a99d657.md)|2|
 |[Corelight](6b5528e6-3d06-460d-b730-b5fa4b18ce18.md)|1|
 |[CrowdStrike](79ade329-b6d4-43ae-8db1-2a9cc45c0fb0.md)|3|
-|[Custom](d49a8edc-47d3-4d1d-8ff9-02f28c13b6c4.md)|1|
 |[Cyber-Ark](8a3d333e-ffad-49ed-9edd-0cf1c797b24f.md)|3|
 |[Cybereason](1a51cb88-ebc9-4655-bce4-3d788bf19e89.md)|1|
 |[Cylance](c57feda1-8da4-464d-b6cf-2c9982b71e57.md)|1|
@@ -41,7 +41,7 @@ Below is a full list of vendors for which there are supported products in Cloud 
 |[Datto](1E4721C4-DC98-456D-B0DF-80365924683A.md)|2|
 |[Dell](e8044d20-923d-423e-8203-ddf6f05cbae6.md)|2|
 |[Demisto](C279B799-AD59-4B49-9582-5F9FD106079F.md)|1|
-|[Digital Guardian](c10788a1-0da8-483c-b87a-e6351984fab5.md)|1|
+|[Digital Guardian](c10788a1-0da8-483c-b87a-e6351984fab5.md)|2|
 |[Docker](d8aec2d6-4a0d-4112-bb17-c26470eedb0c.md)|1|
 |[DocuSign](0a880f0c-fcd6-4cf8-bfa1-00e5f25f1c09.md)|1|
 |[Dropbox](a0a4317b-2185-4c72-a8f2-13033636a8d6.md)|1|
@@ -138,6 +138,7 @@ Below is a full list of vendors for which there are supported products in Cloud 
 |[VMware](fbf25b91-89f1-45c4-903d-664b328bc6e0.md)|4|
 |[Varonis](20270f89-127e-4055-96ec-56045e67e163.md)|2|
 |[Vectra](7a3d1a5c-ba67-4597-971f-7057e8f6c8bb.md)|1|
+|[WatchGuard](a6e8752b-5e5d-47b0-8f42-68cd438f5264.md)|2|
 |[Wiz](2cde0cac-102b-4756-9a56-81437fea1400.md)|1|
 |[Workday](6e7ce4b2-569e-476d-b732-7b3a71b1e12a.md)|1|
 |[Zendesk](18db13d4-1574-465b-a203-1c76456e70b4.md)|1|

@@ -108,6 +108,7 @@
 |MATCH-S00417|[Attrib.exe use to Hide Files and Folders](MATCH-S00417.md)|
 |MATCH-S00215|[Auth0 - High Risk Event](MATCH-S00215.md)|
 |MATCH-S00685|[Authentication Without MFA](MATCH-S00685.md)|
+|CHAIN-S00018|[Autorun file created after USB disk mount on host](CHAIN-S00018.md)|
 |MATCH-S00564|[Azorult Malware Registry Key](MATCH-S00564.md)|
 |MATCH-S00226|[Azure - Add Member to Group](MATCH-S00226.md)|
 |MATCH-S00220|[Azure - Add Member to Role Outside of PIM](MATCH-S00220.md)|
@@ -278,6 +279,7 @@
 |FIRST-S00002|[First Seen AWS API Call from User](FIRST-S00002.md)|
 |FIRST-S00023|[First Seen AWS API Gateway Enumeration by User](FIRST-S00023.md)|
 |FIRST-S00084|[First Seen AWS Bedrock API Call from User](FIRST-S00084.md)|
+|FIRST-S00071|[First Seen AWS ConsoleLogin by User](FIRST-S00071.md)|
 |FIRST-S00036|[First Seen AWS EKS API Call via CloudTrail from User](FIRST-S00036.md)|
 |FIRST-S00037|[First Seen AWS EKS Admission Controller Created by IP Address](FIRST-S00037.md)|
 |FIRST-S00035|[First Seen AWS EKS Secrets Enumeration from IP Address](FIRST-S00035.md)|
@@ -290,12 +292,15 @@
 |FIRST-S00048|[First Seen Azure Device Code Authentication from User](FIRST-S00048.md)|
 |FIRST-S00019|[First Seen Azure Member Addition to Group from User](FIRST-S00019.md)|
 |FIRST-S00020|[First Seen Azure OAUTH Application Consent from User](FIRST-S00020.md)|
+|FIRST-S00080|[First Seen Azure Portal access by User](FIRST-S00080.md)|
 |FIRST-S00021|[First Seen Azure Virtual Machine Run Command Issued by User](FIRST-S00021.md)|
 |FIRST-S00046|[First Seen Client Generating MailIItemsAccessed Event from User](FIRST-S00046.md)|
 |FIRST-S00028|[First Seen Common Windows Recon Commands From User](FIRST-S00028.md)|
 |FIRST-S00013|[First Seen Driver Load - Global](FIRST-S00013.md)|
 |FIRST-S00014|[First Seen Driver Load - Host](FIRST-S00014.md)|
 |FIRST-S00007|[First Seen DynamoDB Enumeration from User](FIRST-S00007.md)|
+|FIRST-S00073|[First Seen Get-ADDefaultDomainPasswordPolicy](FIRST-S00073.md)|
+|FIRST-S00072|[First Seen Group Policy Discovery Operation](FIRST-S00072.md)|
 |FIRST-S00031|[First Seen IP Address Associated with User for a Successful Azure AD Sign In Event](FIRST-S00031.md)|
 |FIRST-S00062|[First Seen IP Address Connecting to Active Directory Certificate Services Process](FIRST-S00062.md)|
 |FIRST-S00086|[First Seen IP Address Performing Trufflehog AWS Credential Verification](FIRST-S00086.md)|
@@ -308,6 +313,7 @@
 |FIRST-S00015|[First Seen Macro Execution from User](FIRST-S00015.md)|
 |FIRST-S00081|[First Seen Model ID in AWS Bedrock Put Entitlement by User](FIRST-S00081.md)|
 |FIRST-S00088|[First Seen NTLM Authentication to Host (User)](FIRST-S00088.md)|
+|FIRST-S00076|[First Seen Net Command Use on Host](FIRST-S00076.md)|
 |FIRST-S00016|[First Seen Non-Network/Non-System Logon from User](FIRST-S00016.md)|
 |FIRST-S00030|[First Seen Outbound Connection to External IP Address on Port 445 from IP Address](FIRST-S00030.md)|
 |FIRST-S00010|[First Seen PowerShell Execution from Computer](FIRST-S00010.md)|
@@ -317,6 +323,7 @@
 |FIRST-S00025|[First Seen SMB Allowed Traffic From IP](FIRST-S00025.md)|
 |FIRST-S00034|[First Seen Session Token Granted to User from New IP](FIRST-S00034.md)|
 |FIRST-S00029|[First Seen Successful Authentication From Unexpected Country](FIRST-S00029.md)|
+|FIRST-S00065|[First Seen Successful Authentication From Unexpected Country (SILENT MODE)](FIRST-S00065.md)|
 |FIRST-S00033|[First Seen Terminal-Attached Pod Deployed to EKS](FIRST-S00033.md)|
 |FIRST-S00061|[First Seen USB device in use on Windows host](FIRST-S00061.md)|
 |FIRST-S00087|[First Seen User Creating or Modifying EC2 Launch Template](FIRST-S00087.md)|
@@ -325,7 +332,9 @@
 |FIRST-S00006|[First Seen Weak Kerberos Encryption from User](FIRST-S00006.md)|
 |FIRST-S00038|[First Seen Wget Usage from User](FIRST-S00038.md)|
 |FIRST-S00040|[First Seen cURL execution from User](FIRST-S00040.md)|
+|FIRST-S00074|[First Seen driverquery execution on host](FIRST-S00074.md)|
 |FIRST-S00059|[First Seen esentutl command From User](FIRST-S00059.md)|
+|FIRST-S00079|[First Seen gpresult execution on host](FIRST-S00079.md)|
 |FIRST-S00039|[First Seen mdfind Usage from User](FIRST-S00039.md)|
 |FIRST-S00041|[First Seen networksetup Usage from User](FIRST-S00041.md)|
 |FIRST-S00043|[First Seen pbpaste Usage from User](FIRST-S00043.md)|
@@ -540,8 +549,14 @@
 |MATCH-S00906|[Okta - Application Created](MATCH-S00906.md)|
 |MATCH-S00903|[Okta - Device Added To User](MATCH-S00903.md)|
 |MATCH-S00904|[Okta - Device Removed From User](MATCH-S00904.md)|
+|FIRST-S00067|[Okta - First Seen Client ID/ASN combo in successful OIDC token grant](FIRST-S00067.md)|
+|FIRST-S00068|[Okta - First Seen User Accessing Admin Application](FIRST-S00068.md)|
+|FIRST-S00066|[Okta - First Seen User Requesting Report](FIRST-S00066.md)|
 |CHAIN-S00020|[Okta - MFA Denied Followed by Successful Logon](CHAIN-S00020.md)|
 |MATCH-S00908|[Okta - MFA Request Denied by User](MATCH-S00908.md)|
+|OUTLIER-S00018|[Okta - Outlier in ASNs Used to Access Applications](OUTLIER-S00018.md)|
+|OUTLIER-S00017|[Okta - Outlier in MFA Attempts Denied by User](OUTLIER-S00017.md)|
+|OUTLIER-S00016|[Okta - Outlier in OIDC token request failures](OUTLIER-S00016.md)|
 |MATCH-S00907|[Okta - Policy Rule Added](MATCH-S00907.md)|
 |MATCH-S00905|[Okta - Programmatic Access to Users API Endpoint](MATCH-S00905.md)|
 |AGGREGATION-S00008|[Okta - Session Anomaly (Multiple ASNs)](AGGREGATION-S00008.md)|
@@ -566,6 +581,8 @@
 |THRESHOLD-S00048|[Outbound Traffic to Countries Outside the United States](THRESHOLD-S00048.md)|
 |OUTLIER-S00019|[Outlier in AWS Bedrock API Calls from User](OUTLIER-S00019.md)|
 |OUTLIER-S00022|[Outlier in AWS Bedrock Foundation Model Enumeration Calls from User ](OUTLIER-S00022.md)|
+|OUTLIER-S00013|[Outlier in Data Outbound Per Day by Admin or Sensitive Device](OUTLIER-S00013.md)|
+|OUTLIER-S00015|[Outlier in Data Outbound Per Hour by Admin or Sensitive Device](OUTLIER-S00015.md)|
 |MATCH-S00755|[Outlook Form Creation](MATCH-S00755.md)|
 |MATCH-S00756|[Outlook Homepage Modification](MATCH-S00756.md)|
 |MATCH-S00683|[Overly Permissive Chmod Command](MATCH-S00683.md)|

@@ -36,6 +36,7 @@ A record flagged a file hash from a threat intelligence match list
 - [Proofpoint - Targeted Attack Protection](../products/de3d4b6b-36a3-4436-8bfc-0561ac95037e.md)
 - [Sophos - Central](../products/e5a708c9-82be-4df9-8ea0-07cac95abf2a.md)
 - [VMware - Carbon Black Cloud](../products/f9cea291-9030-4e41-9836-6dd9274d6df4.md)
+- [Zscaler - Nanolog Streaming Service](../products/6299d728-14f7-455e-85c5-ea8ec65a654a.md)
 
 
 ## Fields Used
