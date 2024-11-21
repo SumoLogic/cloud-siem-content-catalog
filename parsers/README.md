@@ -30,6 +30,7 @@ The `type` listed lets you know if you can directly apply the parser to a collec
 |Parser|/Parsers/System/Atlassian/Atlassian Confluence Access Logs|
 |Parser|/Parsers/System/Atlassian/Atlassian Jira|
 |Parser|/Parsers/System/Auth0/Auth0|
+|Parser|/Parsers/System/Automox/Automox|
 |Parser|/Parsers/System/Bandura/Bandura Syslog|
 |Parser|/Parsers/System/Blue Coat/Blue Coat ProxySG|
 |Parser|/Parsers/System/Blue Coat/Blue Coat ProxySG CEF|
@@ -69,6 +70,7 @@ The `type` listed lets you know if you can directly apply the parser to a collec
 |Parser|/Parsers/System/Darktrace/Darktrace Syslog|
 |Parser|/Parsers/System/Dataminr/Dataminr|
 |Parser|/Parsers/System/Dell/Dell SonicWall|
+|Parser|/Parsers/System/Digital Guardian/Digital Guardian ARC|
 |Parser|/Parsers/System/Docker/Docker JSON|
 |Parser|/Parsers/System/DocuSign/DocuSign Monitor|
 |Parser|/Parsers/System/Druva/Druva Cyber Resilience|
@@ -189,9 +191,11 @@ The `type` listed lets you know if you can directly apply the parser to a collec
 |Parser|/Parsers/System/PingIdentity/PingFederate|
 |Parser|/Parsers/System/Pulse Secure/Pulse Secure Appliance|
 |Parser|/Parsers/System/Qualys/Qualys Vulnerability Data|
+|Parser|/Parsers/System/Qumulo/Qumulo Core|
 |Parser|/Parsers/System/RSA/RSA SecurID Runtime CSV|
 |Parser|/Parsers/System/RSA/RSA SecurID SinglePoint|
 |Parser|/Parsers/System/Radiant Logic/Radiant Logic VDS|
+|Parser|/Parsers/System/Salesforce/Salesforce|
 |Parser|/Parsers/System/SentinelOne/SentinelOne CEF|
 |Parser|/Parsers/System/SentinelOne/SentinelOne Syslog|
 |Parser|/Parsers/System/Shared/Formatter|
@@ -212,6 +216,7 @@ The `type` listed lets you know if you can directly apply the parser to a collec
 |Parser|/Parsers/System/Tanium/Tanium CEF|
 |Parser|/Parsers/System/Tanium/Tanium JSON|
 |Parser|/Parsers/System/Tanium/Tanium Syslog|
+|Parser|/Parsers/System/Teramind/Teramind Teraserver|
 |Parser|/Parsers/System/Thinkst Canary/Thinkst Canary|
 |Parser|/Parsers/System/Thinkst Canary/Thinkst Canary JSON|
 |Parser|/Parsers/System/Trellix/Trellix MVision EPO|
@@ -221,6 +226,7 @@ The `type` listed lets you know if you can directly apply the parser to a collec
 |Parser|/Parsers/System/VMware/Carbon Black Cloud|
 |Parser|/Parsers/System/VMware/VMware NSX|
 |Parser|/Parsers/System/Varonis/Varonis DatAlert Syslog|
+|Parser|/Parsers/System/WatchGuard/WatchGuard Fireware|
 |Parser|/Parsers/System/Wiz/Wiz|
 |Parser|/Parsers/System/Workday/Workday|
 |Parser|/Parsers/System/Zeek/Zeek|
