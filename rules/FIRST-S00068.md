@@ -9,9 +9,9 @@ A user not seen since the baseline period has accessed the Okta admin applicatio
 |Type|First Seen|
 |Category|Initial Access|
 |Apply Risk to Entities|user_username|
-|Signal Name|Okta - First Seen User:{{user_username}}  Accessing Admin Application|
+|Signal Name|Okta - First Seen User:{{user_username}}  has successfully accessed the Okta Admin Application|
 |Summary Expression|First Seen User ( {{user_username}} )  Accessing Okta Admin Application|
-|Retention Window|3024000000|
+|Retention Window|7776000000|
 |Baseline Window|2592000000|
 |Baseline Type|GLOBAL|
 |Score/Severity|Static: 3|

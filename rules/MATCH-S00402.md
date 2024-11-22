@@ -25,7 +25,6 @@ Passes through an alert from an endpoint security product and adjusts the severi
 - [Claroty - Claroty xDome](../products/8cdfb3fc-8700-4012-bf3d-7dfc147d291b.md)
 - [CrowdStrike - FDR](../products/569a3a44-c29f-492e-bcf4-5dc04e2ab0f3.md)
 - [CrowdStrike - Falcon](../products/840c72e0-4e47-41e7-9b93-31f55d12f07d.md)
-- [Cybereason - Endpoint Security](../products/12d00042-d90d-4055-a171-01a1f635a613.md)
 - [Cylance - Protect](../products/60829f4a-7acb-47d1-ad23-8424fcf83dcb.md)
 - [Egnyte - DLP](../products/114420df-d10c-4e88-92e9-0d95102c1a3d.md)
 - [FireEye - Central Management System](../products/a4b7d3df-ec31-4c94-bf09-2f790db91de1.md)

@@ -111,6 +111,7 @@ Below is a full list of vendors for which there are supported products in Cloud 
 |[Proofpoint](e0bbbae5-9a03-48f4-b138-9c3b49522f1a.md)|2|
 |[Pulse](e5d4eae7-8ba6-46ed-9876-58d5763398ea.md)|1|
 |[Qualys](fb83d074-c6cf-4fc7-9020-5d3e364acd17.md)|1|
+|[Qumulo](24406280-8b09-4c4e-b327-e25a4186756e.md)|1|
 |[RSA](8c02f96f-60b2-48d6-bfe6-1605adaf4d51.md)|2|
 |[Radiant Logic](153587d2-8b18-4f65-ada3-2ed4ebfc281f.md)|1|
 |[Redlock](94c035a7-d8ba-4c66-bda6-2fe19db458d6.md)|1|
@@ -130,6 +131,7 @@ Below is a full list of vendors for which there are supported products in Cloud 
 |[Sysdig](c4de0854-e718-45e1-a4c8-63623755aa43.md)|1|
 |[Tanium](c7a342e6-5621-401a-ac5c-80ea3f2db23c.md)|1|
 |[Tenable](600BEF8F-BE81-4767-8322-72116C16DB20.md)|1|
+|[Teramind](98def8bd-ffc2-475c-9d77-f85bf7b7b727.md)|1|
 |[Thinkst Canary](0152e233-fce6-4cbf-9edc-721d7bef94f8.md)|1|
 |[Thycotic Software](260cf6fd-c701-4ace-b39a-ac4a84ee791c.md)|1|
 |[Trellix](9bec8407-4182-46ec-99dd-2adfade15652.md)|1|
