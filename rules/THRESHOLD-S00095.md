@@ -1,4 +1,4 @@
-# [Rules](README.md): Password Attack
+# [Rules](README.md): Password Attack from Host
 
 ## Description
 Detects multiple failed login attempts from a single source with unique usernames over a 24 hour timeframe. This is designed to catch both slow and quick password spray type attacks. The threshold and time frame can be adjusted based on the customer's environment.
@@ -8,9 +8,9 @@ Detects multiple failed login attempts from a single source with unique username
 |----|----|
 |Type|Threshold|
 |Category|Initial Access|
-|Apply Risk to Entities|srcDevice_hostname, srcDevice_ip|
-|Signal Name|Password Attack|
-|Summary Expression|Password attack from IP: {{srcDevice_ip}}|
+|Apply Risk to Entities|srcDevice_hostname|
+|Signal Name|Password Attack from Host|
+|Summary Expression|Password attack from host: {{srcDevice_hostname}}|
 |Threshold Count|10|
 |Threshold Window|24h|
 |Score/Severity|Static: 4|
@@ -39,6 +39,7 @@ Detects multiple failed login attempts from a single source with unique username
 - [OneLogin - OneLogin Single Sign-On](../products/e43ba0e4-1e3f-40c6-8bca-cb06a656a40b.md)
 - [Palo Alto Networks - GlobalProtect](../products/b0fe0dde-4e19-4712-957b-1ea7418c132e.md)
 - [Palo Alto Networks - Next Generation Firewall](../products/46f5fa2c-1a62-4692-82ad-ed87800a0adb.md)
+- [PingIdentity - PingFederate](../products/b0a0ae6d-dd5b-450c-9d68-36d6c61c67b0.md)
 - [RSA - SecurID Runtime](../products/4809be0f-c6f3-4cbb-b1f6-ae9ae817712e.md)
 - [RSA - SecurID SinglePoint](../products/90bba037-f944-480e-89fa-a3b104451af3.md)
 
@@ -56,7 +57,6 @@ Detects multiple failed login attempts from a single source with unique username
 |Normalized Schema|normalizedAction|
 |Normalized Schema|objectType|
 |Normalized Schema|srcDevice_hostname|
-|Normalized Schema|srcDevice_ip|
 |Normalized Schema|success|
 |Normalized Schema|user_username|
 

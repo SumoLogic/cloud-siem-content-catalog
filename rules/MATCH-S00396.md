@@ -16,6 +16,7 @@ A typical ping packet will be very small. A large ICMP packet may indicate the p
 |Prototype|False|
 |Tags|_mitreAttackTactic:TA0011, _mitreAttackTechnique:T1095|
 ## Vendors and Products
+- [Amazon AWS - VpcFlowLogs](../products/021d1ded-1c82-4663-bf5d-d6ed5170efa3.md)
 - [CheckPoint - SmartDefense](../products/2b82e665-bdde-474a-ae29-4f0f76598556.md)
 - [Cisco Systems - ASA](../products/be4f7473-fe69-4311-8859-3561900060bf.md)
 - [Fortinet - Fortigate](../products/c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad.md)

@@ -191,9 +191,11 @@ The `type` listed lets you know if you can directly apply the parser to a collec
 |Parser|/Parsers/System/PingIdentity/PingFederate|
 |Parser|/Parsers/System/Pulse Secure/Pulse Secure Appliance|
 |Parser|/Parsers/System/Qualys/Qualys Vulnerability Data|
+|Parser|/Parsers/System/Qumulo/Qumulo Core|
 |Parser|/Parsers/System/RSA/RSA SecurID Runtime CSV|
 |Parser|/Parsers/System/RSA/RSA SecurID SinglePoint|
 |Parser|/Parsers/System/Radiant Logic/Radiant Logic VDS|
+|Parser|/Parsers/System/Salesforce/Salesforce|
 |Parser|/Parsers/System/SentinelOne/SentinelOne CEF|
 |Parser|/Parsers/System/SentinelOne/SentinelOne Syslog|
 |Parser|/Parsers/System/Shared/Formatter|
@@ -214,6 +216,7 @@ The `type` listed lets you know if you can directly apply the parser to a collec
 |Parser|/Parsers/System/Tanium/Tanium CEF|
 |Parser|/Parsers/System/Tanium/Tanium JSON|
 |Parser|/Parsers/System/Tanium/Tanium Syslog|
+|Parser|/Parsers/System/Teramind/Teramind Teraserver|
 |Parser|/Parsers/System/Thinkst Canary/Thinkst Canary|
 |Parser|/Parsers/System/Thinkst Canary/Thinkst Canary JSON|
 |Parser|/Parsers/System/Trellix/Trellix MVision EPO|

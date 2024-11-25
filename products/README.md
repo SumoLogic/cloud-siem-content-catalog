@@ -211,6 +211,7 @@ Below is a full list of products supported by Cloud SIEM.
 |[Proofpoint](../vendors/e0bbbae5-9a03-48f4-b138-9c3b49522f1a.md)|[Targeted Attack Protection](de3d4b6b-36a3-4436-8bfc-0561ac95037e.md)|
 |[Pulse](../vendors/e5d4eae7-8ba6-46ed-9876-58d5763398ea.md)|[Secure Appliance](f964982c-a892-4bab-a216-42fad3dbabde.md)|
 |[Qualys](../vendors/fb83d074-c6cf-4fc7-9020-5d3e364acd17.md)|[VMScan](08d5e888-ae62-462a-80d9-c0df7d3643c1.md)|
+|[Qumulo](../vendors/24406280-8b09-4c4e-b327-e25a4186756e.md)|[Qumulo Core](9f827ef8-9682-4152-beb0-310ff4cd1ecc.md)|
 |[RSA](../vendors/8c02f96f-60b2-48d6-bfe6-1605adaf4d51.md)|[SecurID Runtime](4809be0f-c6f3-4cbb-b1f6-ae9ae817712e.md)|
 |[RSA](../vendors/8c02f96f-60b2-48d6-bfe6-1605adaf4d51.md)|[SecurID SinglePoint](90bba037-f944-480e-89fa-a3b104451af3.md)|
 |[Radiant Logic](../vendors/153587d2-8b18-4f65-ada3-2ed4ebfc281f.md)|[VDS](e9e9aa2c-ad30-475f-9774-f652c37176f9.md)|
@@ -237,6 +238,7 @@ Below is a full list of products supported by Cloud SIEM.
 |[Sysdig](../vendors/c4de0854-e718-45e1-a4c8-63623755aa43.md)|[Sysdig](55ec1d4a-6985-4f04-8de5-f9812871fda2.md)|
 |[Tanium](../vendors/c7a342e6-5621-401a-ac5c-80ea3f2db23c.md)|[Tanium Core](5b49e894-92e8-45ad-8575-fe78b4f2e31b.md)|
 |[Tenable](../vendors/600BEF8F-BE81-4767-8322-72116C16DB20.md)|[Cloud API](1C384C22-411B-49C0-8029-A7F6C13424B1.md)|
+|[Teramind](../vendors/98def8bd-ffc2-475c-9d77-f85bf7b7b727.md)|[Teraserver](898d54b3-40b0-44ec-ac23-78ee03ee81f4.md)|
 |[Thinkst Canary](../vendors/0152e233-fce6-4cbf-9edc-721d7bef94f8.md)|[Thinkst Canary](bff00521-0a45-4237-b853-cf21860f88bd.md)|
 |[Thycotic Software](../vendors/260cf6fd-c701-4ace-b39a-ac4a84ee791c.md)|[Secret Server](7cd93e5f-5165-41a9-a14c-bf3b1e413b6f.md)|
 |[Trellix](../vendors/9bec8407-4182-46ec-99dd-2adfade15652.md)|[MVision EPO](cf037e61-5600-4595-8cdb-41716f264528.md)|

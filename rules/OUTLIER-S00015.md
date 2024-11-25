@@ -20,6 +20,9 @@ A larger than typical amount of data has been observed being sent outbound from 
 |Prototype|False|
 |Tags|_mitreAttackTechnique:T1030, _mitreAttackTechnique:T1071, _mitreAttackTechnique:T1567, _mitreAttackTactic:TA0010, _mitreAttackTactic:TA0011|
 ## Vendors and Products
+- [Fortinet - Fortigate](../products/c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad.md)
+- [Juniper - SRX Series Firewall](../products/A17B3F3C-04F1-40C8-9497-3C499EB18A74.md)
+- [Palo Alto Networks - Next Generation Firewall](../products/46f5fa2c-1a62-4692-82ad-ed87800a0adb.md)
 
 
 ## Fields Used
