@@ -386,6 +386,28 @@
 |MATCH-S00625|[GCP Permission Denied](MATCH-S00625.md)|
 |THRESHOLD-S00091|[GCP Port Scan](THRESHOLD-S00091.md)|
 |THRESHOLD-S00090|[GCP Port Sweep](THRESHOLD-S00090.md)|
+|MATCH-S00952|[GitHub - Administrator Added or Invited](MATCH-S00952.md)|
+|MATCH-S00953|[GitHub - Audit Logging Modification](MATCH-S00953.md)|
+|MATCH-S00954|[GitHub - Copilot Seat Cancelled by GitHub](MATCH-S00954.md)|
+|FIRST-S00091|[GitHub - First Seen Activity From Country for User](FIRST-S00091.md)|
+|FIRST-S00090|[GitHub - First Seen Application Interacting with API](FIRST-S00090.md)|
+|MATCH-S00950|[GitHub - Member Invitation or Addition](MATCH-S00950.md)|
+|MATCH-S00955|[GitHub - Member Permissions Modification](MATCH-S00955.md)|
+|MATCH-S00956|[GitHub - OAuth Application Activity](MATCH-S00956.md)|
+|MATCH-S00957|[GitHub - Organization Transfer](MATCH-S00957.md)|
+|OUTLIER-S00026|[GitHub - Outlier in Distinct User Agent Strings by User](OUTLIER-S00026.md)|
+|OUTLIER-S00028|[GitHub - Outlier in Removal Actions by User](OUTLIER-S00028.md)|
+|OUTLIER-S00027|[GitHub - Outlier in Repository Cloning or Downloads](OUTLIER-S00027.md)|
+|MATCH-S00958|[GitHub - PR Review Requirement Removed](MATCH-S00958.md)|
+|MATCH-S00959|[GitHub - Repository Public Key Deletion](MATCH-S00959.md)|
+|MATCH-S00960|[GitHub - Repository Transfer](MATCH-S00960.md)|
+|MATCH-S00961|[GitHub - Repository Visibility Changed to Public](MATCH-S00961.md)|
+|MATCH-S00962|[GitHub - Repository Visibility Permissions Changed](MATCH-S00962.md)|
+|MATCH-S00963|[GitHub - SSH Key Created for Private Repo](MATCH-S00963.md)|
+|MATCH-S00964|[GitHub - SSO Recovery Codes Access Activity](MATCH-S00964.md)|
+|MATCH-S00951|[GitHub - Secret Scanning Alert](MATCH-S00951.md)|
+|MATCH-S00965|[GitHub - Secret Scanning Potentially Disabled](MATCH-S00965.md)|
+|MATCH-S00966|[GitHub - Two-Factor Authentication Disabled for Organization](MATCH-S00966.md)|
 |LEGACY-S00039|[GitHub Raw URL Resource Request](LEGACY-S00039.md)|
 |MATCH-S00098|[Global YARA Rule](MATCH-S00098.md)|
 |MATCH-S00535|[Golden SAML Indicator : Certificate Export](MATCH-S00535.md)|

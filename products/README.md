@@ -10,6 +10,7 @@ Below is a full list of products supported by Cloud SIEM.
 |[Airtable](../vendors/38db1e35-cb46-4a49-ae8c-b6f766ff5378.md)|[Airtable Audit](bee5bdb2-df30-4c71-9c13-fe207a101bb3.md)|
 |[Akamai](../vendors/47292522-c7f4-4c0e-9ab5-4426c0215be3.md)|[SIEM](9a28f2af-5526-414d-973b-c3fc7984b8a1.md)|
 |[Akamai](../vendors/47292522-c7f4-4c0e-9ab5-4426c0215be3.md)|[Web Application Firewall](ae07663e-2c2c-4932-be5d-c9f985e95276.md)|
+|[Alert Logic](../vendors/2d3caafe-6797-48fd-8b34-be92acd326ee.md)|[Alert Logic](03fee4d2-a777-47a6-94d6-55a00dc6ea16.md)|
 |[Alibaba](../vendors/d7de27e2-7680-48a0-96aa-1c26cf8d1ca4.md)|[ActionTrail](79055042-52c8-4998-b201-bd2cd2dbca1f.md)|
 |[AlphaSOC](../vendors/84ffd6de-c32b-49fe-88cb-d3e744df4141.md)|[Network Flight Recorder](f3ee680a-bbe5-4fa8-a92e-9b191286f8e2.md)|
 |[Amazon AWS](../vendors/210d6727-ac50-468e-ab00-1f7586845326.md)|[API Gateway](9f76f1fd-fbb0-42d2-9bf5-0f4fd2c1ab82.md)|
@@ -28,6 +29,7 @@ Below is a full list of products supported by Cloud SIEM.
 |[Amazon AWS](../vendors/210d6727-ac50-468e-ab00-1f7586845326.md)|[Route53](e2393771-bda2-414a-8661-0a57069287ad.md)|
 |[Amazon AWS](../vendors/210d6727-ac50-468e-ab00-1f7586845326.md)|[Security Hub](d0aebc1c-db4d-440f-b69f-70dae24befff.md)|
 |[Amazon AWS](../vendors/210d6727-ac50-468e-ab00-1f7586845326.md)|[Trusted Advisor](99d21ed4-c3fb-452e-8e4a-a10ff4b94fe0.md)|
+|[Amazon AWS](../vendors/210d6727-ac50-468e-ab00-1f7586845326.md)|[VPC Transit Gateways Flow Logs](0e3d5c19-0a50-4ecf-b6f9-b1410d5dbb63.md)|
 |[Amazon AWS](../vendors/210d6727-ac50-468e-ab00-1f7586845326.md)|[VpcFlowLogs](021d1ded-1c82-4663-bf5d-d6ed5170efa3.md)|
 |[Amazon AWS](../vendors/210d6727-ac50-468e-ab00-1f7586845326.md)|[Web Application Firewall (WAF)](072b85a2-1765-45c2-911d-b0509880326e.md)|
 |[Apache](../vendors/c6fc7838-0007-4966-90aa-b7704fd70eac.md)|[Apache HTTP Server](6787d77a-1ee0-43d4-8ca0-96af8ee755bc.md)|
@@ -175,6 +177,7 @@ Below is a full list of products supported by Cloud SIEM.
 |[Microsoft](../vendors/2b002817-fd14-49b3-a3fe-c9761275b931.md)|[Azure Storage Analytics](4411adbb-f3f4-4e6e-a174-694fef8d7a47.md)|
 |[Microsoft](../vendors/2b002817-fd14-49b3-a3fe-c9761275b931.md)|[Cloud App Security](86e85e72-d3b1-4f1d-b195-5ca3d90e9461.md)|
 |[Microsoft](../vendors/2b002817-fd14-49b3-a3fe-c9761275b931.md)|[DNS](e362ae18-9af1-496d-9ace-efa05a8381c6.md)|
+|[Microsoft](../vendors/2b002817-fd14-49b3-a3fe-c9761275b931.md)|[Defender Advanced Hunting](3382523e-2072-41bd-b50b-6b148957d0b0.md)|
 |[Microsoft](../vendors/2b002817-fd14-49b3-a3fe-c9761275b931.md)|[Exchange](c8301344-a2be-4203-8081-776bec73221f.md)|
 |[Microsoft](../vendors/2b002817-fd14-49b3-a3fe-c9761275b931.md)|[Graph AD Reporting API](fe5a3e8b-8b6e-44c7-92a8-adfb20df5c75.md)|
 |[Microsoft](../vendors/2b002817-fd14-49b3-a3fe-c9761275b931.md)|[Graph Identity Protection API](4da7313c-5123-4eae-bb84-5d868fc55a74.md)|
