@@ -19,12 +19,14 @@ The `type` listed lets you know if you can directly apply the parser to a collec
 |Parser|/Parsers/System/AWS/AWS S3 Server Access Logs|
 |Parser|/Parsers/System/AWS/AWS Security Hub|
 |Parser|/Parsers/System/AWS/AWS VPC Flow|
+|Parser|/Parsers/System/AWS/AWS VPC Transit Gateways Flow Logs|
 |Parser|/Parsers/System/AWS/AWS WAF|
 |Parser|/Parsers/System/AWS/CloudTrail|
 |Parser|/Parsers/System/AWS/GuardDuty|
 |Parser|/Parsers/System/Abnormal Security/Abnormal Security|
 |Parser|/Parsers/System/Adaxes/Adaxes Syslog|
 |Parser|/Parsers/System/Airtable/Airtable Audit C2C|
+|Parser|/Parsers/System/Alert Logic/Alert Logic|
 |Parser|/Parsers/System/Apache/Apache HTTP Server|
 |Parser|/Parsers/System/Aqua/Aqua JSON|
 |Parser|/Parsers/System/Atlassian/Atlassian Confluence Access Logs|
@@ -134,6 +136,7 @@ The `type` listed lets you know if you can directly apply the parser to a collec
 |Parser|/Parsers/System/Microsoft/Graph Security Alert API|
 |Parser|/Parsers/System/Microsoft/Microsoft Azure JSON|
 |Parser|/Parsers/System/Microsoft/Microsoft Azure Nested JSON|
+|Parser|/Parsers/System/Microsoft/Microsoft Defender Advanced Hunting|
 |Parser|/Parsers/System/Microsoft/Microsoft IIS|
 |Parser|/Parsers/System/Microsoft/Microsoft SQL Server|
 |Parser|/Parsers/System/Microsoft/O365 Exchange Message Trace C2C|

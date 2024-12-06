@@ -9,9 +9,10 @@ Below is a full list of vendors for which there are supported products in Cloud 
 |[Adaxes](87fd53e1-0bfd-4e53-9979-4fb6ec196cc2.md)|1|
 |[Airtable](38db1e35-cb46-4a49-ae8c-b6f766ff5378.md)|1|
 |[Akamai](47292522-c7f4-4c0e-9ab5-4426c0215be3.md)|2|
+|[Alert Logic](2d3caafe-6797-48fd-8b34-be92acd326ee.md)|1|
 |[Alibaba](d7de27e2-7680-48a0-96aa-1c26cf8d1ca4.md)|1|
 |[AlphaSOC](84ffd6de-c32b-49fe-88cb-d3e744df4141.md)|1|
-|[Amazon AWS](210d6727-ac50-468e-ab00-1f7586845326.md)|18|
+|[Amazon AWS](210d6727-ac50-468e-ab00-1f7586845326.md)|19|
 |[Apache](c6fc7838-0007-4966-90aa-b7704fd70eac.md)|1|
 |[Aqua](0531e9df-c128-4c67-9a81-66ffcce41f9a.md)|1|
 |[Atlassian](4d40dc7a-b95e-476c-9fb0-7163ea7fd335.md)|2|
@@ -89,7 +90,7 @@ Below is a full list of vendors for which there are supported products in Cloud 
 |[ManageEngine](e6417fdd-1aa1-436e-a659-38d71e51599f.md)|1|
 |[McAfee](20dec895-f649-4959-9717-104fb68bb5b4.md)|18|
 |[Micro Focus](23850303-a1da-4c95-83f1-bd9d3b5104b8.md)|3|
-|[Microsoft](2b002817-fd14-49b3-a3fe-c9761275b931.md)|16|
+|[Microsoft](2b002817-fd14-49b3-a3fe-c9761275b931.md)|17|
 |[Mimecast](7BC43DFE-C5DD-4766-88E7-C163D82BBBF8.md)|1|
 |[Miro](9f149da1-2831-465f-8bb1-a5950ccaec0c.md)|1|
 |[Netskope](E9BF4F45-AB91-40F6-9EA0-21B48D69FF1F.md)|2|

@@ -17,6 +17,7 @@ Observes for keywords associated with execution of DNScat malware via powershell
 |Tags|_mitreAttackTactic:TA0010, _mitreAttackTechnique:T1048, _mitreAttackTechnique:T1048.003|
 ## Vendors and Products
 - [Microsoft - Windows](../products/1ff7546c-cb36-4a24-87f7-89d2cecc5761.md)
+- [VMware - Carbon Black Cloud](../products/f9cea291-9030-4e41-9836-6dd9274d6df4.md)
 
 
 ## Fields Used
