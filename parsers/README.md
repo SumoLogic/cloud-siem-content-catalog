@@ -75,6 +75,7 @@ The `type` listed lets you know if you can directly apply the parser to a collec
 |Parser|/Parsers/System/Digital Guardian/Digital Guardian ARC|
 |Parser|/Parsers/System/Docker/Docker JSON|
 |Parser|/Parsers/System/DocuSign/DocuSign Monitor|
+|Parser|/Parsers/System/Dragos/Dragos|
 |Parser|/Parsers/System/Druva/Druva Cyber Resilience|
 |Parser|/Parsers/System/Druva/Druva inSync Cloud|
 |Parser|/Parsers/System/Duo Security/Duo Multi-Factor Authentication|
@@ -162,6 +163,7 @@ The `type` listed lets you know if you can directly apply the parser to a collec
 |Parser|/Parsers/System/Microsoft/Windows-Syslog Tenable LCE|
 |Parser|/Parsers/System/Microsoft/Windows-Syslog WinCollect|
 |Parser|/Parsers/System/Microsoft/Windows-XML|
+|Parser|/Parsers/System/Mindpoint Group/Mindpoint Group Keeper|
 |Parser|/Parsers/System/Miro/Miro Audit C2C|
 |Parser|/Parsers/System/Netskope/Netskope Security Cloud JSON|
 |Parser|/Parsers/System/Nginx/Nginx Syslog|
@@ -225,6 +227,7 @@ The `type` listed lets you know if you can directly apply the parser to a collec
 |Parser|/Parsers/System/Trellix/Trellix MVision EPO|
 |Parser|/Parsers/System/Trend Micro/Trend Micro Deep Security - CEF|
 |Parser|/Parsers/System/Trend Micro/Trend Micro Vision One|
+|Parser|/Parsers/System/Trust Login/Trust Login|
 |Parser|/Parsers/System/Twistlock/Twistlock|
 |Parser|/Parsers/System/VMware/Carbon Black Cloud|
 |Parser|/Parsers/System/VMware/VMware NSX|
