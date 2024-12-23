@@ -16,6 +16,7 @@ Threat actors may list attributes for certain files on a macOS host in order to 
 |Prototype|False|
 |Tags|_mitreAttackTactic:TA0005, _mitreAttackTechnique:T1553.001|
 ## Vendors and Products
+- [CrowdStrike - FDR](../products/569a3a44-c29f-492e-bcf4-5dc04e2ab0f3.md)
 
 
 ## Fields Used

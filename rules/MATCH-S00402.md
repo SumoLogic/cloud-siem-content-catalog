@@ -48,6 +48,7 @@ Passes through an alert from an endpoint security product and adjusts the severi
 - [VMware - Carbon Black Cloud](../products/f9cea291-9030-4e41-9836-6dd9274d6df4.md)
 - [Varonis - DatAdvantage](../products/4d6a3683-4edb-4330-9e9f-b8608cd63981.md)
 - [Varonis - DatAlert](../products/bd98578e-3f97-4e5a-93ec-bbff28f90ccf.md)
+- [Vectra - Cognito](../products/51afd72e-94b0-42f3-b65c-cf8edbacf7cf.md)
 
 
 ## Fields Used

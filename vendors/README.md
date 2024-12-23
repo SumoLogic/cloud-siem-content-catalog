@@ -45,6 +45,7 @@ Below is a full list of vendors for which there are supported products in Cloud 
 |[Digital Guardian](c10788a1-0da8-483c-b87a-e6351984fab5.md)|2|
 |[Docker](d8aec2d6-4a0d-4112-bb17-c26470eedb0c.md)|1|
 |[DocuSign](0a880f0c-fcd6-4cf8-bfa1-00e5f25f1c09.md)|1|
+|[Dragos](7bc07051-39d8-408f-9371-a5cf300c36e0.md)|1|
 |[Dropbox](a0a4317b-2185-4c72-a8f2-13033636a8d6.md)|1|
 |[Druva](fafcf2d2-4fb8-4903-92ad-5a5572ceb75a.md)|2|
 |[Duo Security](2a10e3c0-7835-4b29-81a4-9a7573b2f345.md)|1|
@@ -92,6 +93,7 @@ Below is a full list of vendors for which there are supported products in Cloud 
 |[Micro Focus](23850303-a1da-4c95-83f1-bd9d3b5104b8.md)|3|
 |[Microsoft](2b002817-fd14-49b3-a3fe-c9761275b931.md)|17|
 |[Mimecast](7BC43DFE-C5DD-4766-88E7-C163D82BBBF8.md)|1|
+|[Mindpoint Group](f438572b-ed7f-4048-bb30-4a30c1babd81.md)|1|
 |[Miro](9f149da1-2831-465f-8bb1-a5950ccaec0c.md)|1|
 |[Netskope](E9BF4F45-AB91-40F6-9EA0-21B48D69FF1F.md)|2|
 |[Nginx](d791c42f-e0dc-4e3b-a980-28166725805a.md)|1|
@@ -137,6 +139,7 @@ Below is a full list of vendors for which there are supported products in Cloud 
 |[Thycotic Software](260cf6fd-c701-4ace-b39a-ac4a84ee791c.md)|1|
 |[Trellix](9bec8407-4182-46ec-99dd-2adfade15652.md)|1|
 |[Trend Micro](8af48b83-18bf-4233-ad51-db37baca0313.md)|4|
+|[Trust Login](78eae2f3-199e-48ca-aaf6-53f6a19e854a.md)|1|
 |[Twistlock](97C36046-B516-41F8-9751-4C788AA33785.md)|1|
 |[VMware](fbf25b91-89f1-45c4-903d-664b328bc6e0.md)|4|
 |[Varonis](20270f89-127e-4055-96ec-56045e67e163.md)|2|

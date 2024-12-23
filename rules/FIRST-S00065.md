@@ -1,4 +1,4 @@
-# [Rules](README.md): First Seen Successful Authentication From Unexpected Country (SILENT MODE)
+# [Rules](README.md): First Seen Successful Authentication From Unexpected Country
 
 ## Description
 First Seen rule which triggers when there are at least two successful logins from the same user with different country codes indicating possible credential theft. It is recommended to add filtering criteria to the expression to reduce false positives, such as known VPN addresses.(If degradation issues occur it is recommendation implementing tuning around your expected network)

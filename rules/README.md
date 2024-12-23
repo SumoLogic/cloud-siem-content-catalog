@@ -321,8 +321,7 @@
 |FIRST-S00022|[First Seen S3 Bucket ACL Enumeration by User](FIRST-S00022.md)|
 |FIRST-S00025|[First Seen SMB Allowed Traffic From IP](FIRST-S00025.md)|
 |FIRST-S00034|[First Seen Session Token Granted to User from New IP](FIRST-S00034.md)|
-|FIRST-S00029|[First Seen Successful Authentication From Unexpected Country](FIRST-S00029.md)|
-|FIRST-S00065|[First Seen Successful Authentication From Unexpected Country (SILENT MODE)](FIRST-S00065.md)|
+|FIRST-S00065|[First Seen Successful Authentication From Unexpected Country](FIRST-S00065.md)|
 |FIRST-S00033|[First Seen Terminal-Attached Pod Deployed to EKS](FIRST-S00033.md)|
 |FIRST-S00061|[First Seen USB device in use on Windows host](FIRST-S00061.md)|
 |FIRST-S00087|[First Seen User Creating or Modifying EC2 Launch Template](FIRST-S00087.md)|

@@ -90,6 +90,7 @@ Below is a full list of products supported by Cloud SIEM.
 |[Digital Guardian](../vendors/c10788a1-0da8-483c-b87a-e6351984fab5.md)|[EDR](eef5aad0-1c6e-4c8a-bb83-03a04743ee18.md)|
 |[Docker](../vendors/d8aec2d6-4a0d-4112-bb17-c26470eedb0c.md)|[Docker](2f305793-ce37-44cb-84bc-1b89b4367d3c.md)|
 |[DocuSign](../vendors/0a880f0c-fcd6-4cf8-bfa1-00e5f25f1c09.md)|[Monitor](b26a9f95-4fe6-4eb4-aeeb-50fa20b395e7.md)|
+|[Dragos](../vendors/7bc07051-39d8-408f-9371-a5cf300c36e0.md)|[Dragos](9824a0d3-66e0-4f24-a383-9a23c92ee8a8.md)|
 |[Dropbox](../vendors/a0a4317b-2185-4c72-a8f2-13033636a8d6.md)|[Dropbox](5bfda3d2-03e7-4d9a-8072-c59430a131d7.md)|
 |[Druva](../vendors/fafcf2d2-4fb8-4903-92ad-5a5572ceb75a.md)|[Druva Cyber Resilience](ff876bd5-dfbd-42ff-b141-34f584d1306d.md)|
 |[Druva](../vendors/fafcf2d2-4fb8-4903-92ad-5a5572ceb75a.md)|[Druva inSync Cloud](2d47fe59-4607-48f7-a21a-eb3f5f051660.md)|
@@ -189,6 +190,7 @@ Below is a full list of products supported by Cloud SIEM.
 |[Microsoft](../vendors/2b002817-fd14-49b3-a3fe-c9761275b931.md)|[Windows](1ff7546c-cb36-4a24-87f7-89d2cecc5761.md)|
 |[Microsoft](../vendors/2b002817-fd14-49b3-a3fe-c9761275b931.md)|[Windows Firewall Management](e91e068a-fe7e-45d4-98c6-1cc1e3d4d99f.md)|
 |[Mimecast](../vendors/7BC43DFE-C5DD-4766-88E7-C163D82BBBF8.md)|[Mimecast](54B36B3F-A63F-4BA4-9DE4-02DBF69A429F.md)|
+|[Mindpoint Group](../vendors/f438572b-ed7f-4048-bb30-4a30c1babd81.md)|[Keeper](3fac5918-eea5-4dc0-a5fe-6c94c1919482.md)|
 |[Miro](../vendors/9f149da1-2831-465f-8bb1-a5950ccaec0c.md)|[Miro Audit](7888afe3-4f07-4f44-bc2f-5eccb59751f9.md)|
 |[Netskope](../vendors/E9BF4F45-AB91-40F6-9EA0-21B48D69FF1F.md)|[Security Cloud](B3582ED2-1A0C-452D-9802-97433D143486.md)|
 |[Netskope](../vendors/E9BF4F45-AB91-40F6-9EA0-21B48D69FF1F.md)|[WebTx](9e838f93-c9e7-4592-a980-cf9dfb704784.md)|
@@ -249,6 +251,7 @@ Below is a full list of products supported by Cloud SIEM.
 |[Trend Micro](../vendors/8af48b83-18bf-4233-ad51-db37baca0313.md)|[Control Manager](bb75c481-648d-4953-80cf-1c8cbde8fbb8.md)|
 |[Trend Micro](../vendors/8af48b83-18bf-4233-ad51-db37baca0313.md)|[Deep Security](57cec26c-f94e-4403-add4-dae2382b5c16.md)|
 |[Trend Micro](../vendors/8af48b83-18bf-4233-ad51-db37baca0313.md)|[Vision One](72a5ddec-abb9-41ff-a2da-6a58beff980c.md)|
+|[Trust Login](../vendors/78eae2f3-199e-48ca-aaf6-53f6a19e854a.md)|[Trust Login](ca37057c-0d7b-452c-b5b4-948b699262ed.md)|
 |[Twistlock](../vendors/97C36046-B516-41F8-9751-4C788AA33785.md)|[Twistlock](581D3DD8-4DA7-4192-9E49-320D7AFB8B53.md)|
 |[VMware](../vendors/fbf25b91-89f1-45c4-903d-664b328bc6e0.md)|[Carbon Black Cloud](f9cea291-9030-4e41-9836-6dd9274d6df4.md)|
 |[VMware](../vendors/fbf25b91-89f1-45c4-903d-664b328bc6e0.md)|[Horizon](30e76023-289c-40f2-a9a4-7ce4677a5e7d.md)|
