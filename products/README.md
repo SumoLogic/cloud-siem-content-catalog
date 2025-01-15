@@ -51,6 +51,7 @@ Below is a full list of products supported by Cloud SIEM.
 |[Carbon Black](../vendors/c2ea2e5e-92f2-49e8-9812-64e60dba63a2.md)|[Response](ca9373c1-d3cb-47f2-8dd9-c6580b4c60fe.md)|
 |[Cato Networks](../vendors/53e043b0-76e3-471a-84ec-0266a4f3b279.md)|[Cato Networks](168afd8d-2893-4c74-95b1-a975d576ea56.md)|
 |[CheckPoint](../vendors/6ee43776-3c2c-49b9-a5cf-51309e815aa3.md)|[Application Control](1624169f-36c4-4309-8400-1409a171d00b.md)|
+|[CheckPoint](../vendors/6ee43776-3c2c-49b9-a5cf-51309e815aa3.md)|[Application Control URL Filtering](ec98f4a8-f961-4e5b-ad7c-dc3c64301f47.md)|
 |[CheckPoint](../vendors/6ee43776-3c2c-49b9-a5cf-51309e815aa3.md)|[Avanan](b8956e27-b893-4518-85ff-20835710c3cf.md)|
 |[CheckPoint](../vendors/6ee43776-3c2c-49b9-a5cf-51309e815aa3.md)|[Firewall and VPN](c3c1a4fc-10cc-4155-8a30-a3bb14fc9f31.md)|
 |[CheckPoint](../vendors/6ee43776-3c2c-49b9-a5cf-51309e815aa3.md)|[IPS](18397be3-8078-4de3-96b1-860d22fd7bd6.md)|
@@ -175,6 +176,7 @@ Below is a full list of products supported by Cloud SIEM.
 |[Micro Focus](../vendors/23850303-a1da-4c95-83f1-bd9d3b5104b8.md)|[Voltage SecureData Enterprise](1acddae8-dd0e-46f8-a324-9d9144cd8b3f.md)|
 |[Microsoft](../vendors/2b002817-fd14-49b3-a3fe-c9761275b931.md)|[Advanced Threat Analytics](ae48ad1f-04e5-47c6-9892-25555e5f728b.md)|
 |[Microsoft](../vendors/2b002817-fd14-49b3-a3fe-c9761275b931.md)|[Azure](a1225af5-e778-4068-a9a2-47da93d1ff24.md)|
+|[Microsoft](../vendors/2b002817-fd14-49b3-a3fe-c9761275b931.md)|[Azure DevOps Auditing](c3b61ddb-4d2d-497c-b873-28938036b67b.md)|
 |[Microsoft](../vendors/2b002817-fd14-49b3-a3fe-c9761275b931.md)|[Azure Storage Analytics](4411adbb-f3f4-4e6e-a174-694fef8d7a47.md)|
 |[Microsoft](../vendors/2b002817-fd14-49b3-a3fe-c9761275b931.md)|[Cloud App Security](86e85e72-d3b1-4f1d-b195-5ca3d90e9461.md)|
 |[Microsoft](../vendors/2b002817-fd14-49b3-a3fe-c9761275b931.md)|[DNS](e362ae18-9af1-496d-9ace-efa05a8381c6.md)|
@@ -209,6 +211,7 @@ Below is a full list of products supported by Cloud SIEM.
 |[Palo Alto Networks](../vendors/938210de-ab6c-46fb-89d7-8530682581c6.md)|[Next Generation Firewall](46f5fa2c-1a62-4692-82ad-ed87800a0adb.md)|
 |[Palo Alto Networks](../vendors/938210de-ab6c-46fb-89d7-8530682581c6.md)|[Prisma Cloud](343b9323-d279-40d9-946f-809242e5cf98.md)|
 |[PassiveDns](../vendors/ab6459e5-53ac-4791-845f-0f7b861a8f4c.md)|[PassiveDns](0bcb4a3b-cfd5-4a53-a42d-b2f17a0efbff.md)|
+|[Pfsense](../vendors/6c0a6808-4153-4db0-81e4-430dd908c1a8.md)|[Pfsense Firewall](ef11c9cd-df72-42c6-81f5-70b91fd0f38a.md)|
 |[PingIdentity](../vendors/b65ae958-55ad-43d0-a2d9-ac04442e0a36.md)|[PingFederate](b0a0ae6d-dd5b-450c-9d68-36d6c61c67b0.md)|
 |[PreemptSecurity](../vendors/15c77a62-0fbb-4a60-9fae-ead49ec423f9.md)|[PBF](134ee5df-403a-4b13-b0e7-7c8e0ebd3901.md)|
 |[Pritunl](../vendors/598b6820-feff-4169-89da-77211493a91d.md)|[Pritunl](70f80fa8-200a-449b-8100-f8d4b7687380.md)|

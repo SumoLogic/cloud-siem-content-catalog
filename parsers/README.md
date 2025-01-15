@@ -193,6 +193,7 @@ The `type` listed lets you know if you can directly apply the parser to a collec
 |Parser|/Parsers/System/Parser Templates/Windows XML Template Commented|
 |Parser|/Parsers/System/Parser Templates/XML Template|
 |Parser|/Parsers/System/Parser Templates/XML Template Commented|
+|Parser|/Parsers/System/Pfsense/Pfsense Firewall|
 |Parser|/Parsers/System/PingIdentity/PingFederate|
 |Parser|/Parsers/System/Pulse Secure/Pulse Secure Appliance|
 |Parser|/Parsers/System/Qualys/Qualys Vulnerability Data|
