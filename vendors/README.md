@@ -26,7 +26,7 @@ Below is a full list of vendors for which there are supported products in Cloud 
 |[Bro](F64FF115-D5EE-40D0-ABAD-DAD7BA87F70D.md)|1|
 |[Carbon Black](c2ea2e5e-92f2-49e8-9812-64e60dba63a2.md)|4|
 |[Cato Networks](53e043b0-76e3-471a-84ec-0266a4f3b279.md)|1|
-|[CheckPoint](6ee43776-3c2c-49b9-a5cf-51309e815aa3.md)|6|
+|[CheckPoint](6ee43776-3c2c-49b9-a5cf-51309e815aa3.md)|7|
 |[Cisco Systems](e2d55f62-8ebb-4d00-b2f9-b55d1fa642bb.md)|13|
 |[Citrix](f3d0223a-78a7-42f6-93cc-3bcd15569a5b.md)|3|
 |[Claroty](7d7a8243-bd53-417a-93f7-b73f800b1925.md)|1|
@@ -91,7 +91,7 @@ Below is a full list of vendors for which there are supported products in Cloud 
 |[ManageEngine](e6417fdd-1aa1-436e-a659-38d71e51599f.md)|1|
 |[McAfee](20dec895-f649-4959-9717-104fb68bb5b4.md)|18|
 |[Micro Focus](23850303-a1da-4c95-83f1-bd9d3b5104b8.md)|3|
-|[Microsoft](2b002817-fd14-49b3-a3fe-c9761275b931.md)|17|
+|[Microsoft](2b002817-fd14-49b3-a3fe-c9761275b931.md)|18|
 |[Mimecast](7BC43DFE-C5DD-4766-88E7-C163D82BBBF8.md)|1|
 |[Mindpoint Group](f438572b-ed7f-4048-bb30-4a30c1babd81.md)|1|
 |[Miro](9f149da1-2831-465f-8bb1-a5950ccaec0c.md)|1|
@@ -108,6 +108,7 @@ Below is a full list of vendors for which there are supported products in Cloud 
 |[Ossec](1eceb40f-85d7-45ea-b341-864a38ea0775.md)|1|
 |[Palo Alto Networks](938210de-ab6c-46fb-89d7-8530682581c6.md)|5|
 |[PassiveDns](ab6459e5-53ac-4791-845f-0f7b861a8f4c.md)|1|
+|[Pfsense](6c0a6808-4153-4db0-81e4-430dd908c1a8.md)|1|
 |[PingIdentity](b65ae958-55ad-43d0-a2d9-ac04442e0a36.md)|1|
 |[PreemptSecurity](15c77a62-0fbb-4a60-9fae-ead49ec423f9.md)|1|
 |[Pritunl](598b6820-feff-4169-89da-77211493a91d.md)|1|
