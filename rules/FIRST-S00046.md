@@ -1,4 +1,4 @@
-# [Rules](README.md): First Seen Client Generating MailIItemsAccessed Event from User
+# [Rules](README.md): First Seen Client Generating MailItemsAccessed Event from User
 
 ## Description
 This alert looks at a First Seen client accessing an Office 365/Exchange mail box item. The MailItemsAccessed may not always be enabled within an Entra/Azure/Office 365 tenant and is dependent on Microsoft licensing requirements. See the following guide from CISA for additional information on this event type and investigation steps: https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-193a
@@ -9,7 +9,7 @@ This alert looks at a First Seen client accessing an Office 365/Exchange mail bo
 |Type|First Seen|
 |Category|Collection|
 |Apply Risk to Entities|user_username|
-|Signal Name|First Seen Client Generating MailIItemsAccessed Event from {{user_username}}|
+|Signal Name|First Seen Client Generating MailItemsAccessed Event from {{user_username}}|
 |Summary Expression|A First Seen client was observed as accessing an Office 365 mail item since the baseline period.|
 |Retention Window|7776000000|
 |Baseline Window|1209600000|

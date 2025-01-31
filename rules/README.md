@@ -288,13 +288,13 @@
 |LEGACY-S00036|[First Seen Access - SMB Share](LEGACY-S00036.md)|
 |FIRST-S00001|[First Seen Administrative Privileges Granted for User](FIRST-S00001.md)|
 |FIRST-S00026|[First Seen Anonymous Logon Change Activity to Domain Controller](FIRST-S00026.md)|
-|FIRST-S00044|[First Seen AppID Generating MailIItemsAccessed Event from User](FIRST-S00044.md)|
+|FIRST-S00044|[First Seen AppID Generating MailItemsAccessed Event from User](FIRST-S00044.md)|
 |FIRST-S00048|[First Seen Azure Device Code Authentication from User](FIRST-S00048.md)|
 |FIRST-S00019|[First Seen Azure Member Addition to Group from User](FIRST-S00019.md)|
 |FIRST-S00020|[First Seen Azure OAUTH Application Consent from User](FIRST-S00020.md)|
 |FIRST-S00080|[First Seen Azure Portal access by User](FIRST-S00080.md)|
 |FIRST-S00021|[First Seen Azure Virtual Machine Run Command Issued by User](FIRST-S00021.md)|
-|FIRST-S00046|[First Seen Client Generating MailIItemsAccessed Event from User](FIRST-S00046.md)|
+|FIRST-S00046|[First Seen Client Generating MailItemsAccessed Event from User](FIRST-S00046.md)|
 |FIRST-S00028|[First Seen Common Windows Recon Commands From User](FIRST-S00028.md)|
 |FIRST-S00013|[First Seen Driver Load - Global](FIRST-S00013.md)|
 |FIRST-S00014|[First Seen Driver Load - Host](FIRST-S00014.md)|
@@ -592,7 +592,6 @@
 |MATCH-S00766|[Okta MFA Deactivated for User](MATCH-S00766.md)|
 |MATCH-S00767|[Okta MFA Device Reset](MATCH-S00767.md)|
 |MATCH-S00636|[Okta User Attempted to Access Unauthorized App](MATCH-S00636.md)|
-|MATCH-S00604|[OneLogin - API Credentials - Key Used from Untrusted Location](MATCH-S00604.md)|
 |MATCH-S00605|[OneLogin - API Credentials - New Key Created](MATCH-S00605.md)|
 |MATCH-S00609|[OneLogin - Login Failed - MFA Unsuccessful](MATCH-S00609.md)|
 |MATCH-S00556|[Outbound Data Transfer Protocol Over Non-standard Port](MATCH-S00556.md)|

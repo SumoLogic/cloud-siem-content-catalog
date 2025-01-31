@@ -76,6 +76,7 @@ Below is a full list of products supported by Cloud SIEM.
 |[Corelight](../vendors/6b5528e6-3d06-460d-b730-b5fa4b18ce18.md)|[NSM](1eecf521-df5d-4fc5-83b4-69f128056fdb.md)|
 |[CrowdStrike](../vendors/79ade329-b6d4-43ae-8db1-2a9cc45c0fb0.md)|[FDR](569a3a44-c29f-492e-bcf4-5dc04e2ab0f3.md)|
 |[CrowdStrike](../vendors/79ade329-b6d4-43ae-8db1-2a9cc45c0fb0.md)|[Falcon](840c72e0-4e47-41e7-9b93-31f55d12f07d.md)|
+|[CrowdStrike](../vendors/79ade329-b6d4-43ae-8db1-2a9cc45c0fb0.md)|[Filevantage](a1f79987-b765-4f6f-bfe5-d657baa35144.md)|
 |[CrowdStrike](../vendors/79ade329-b6d4-43ae-8db1-2a9cc45c0fb0.md)|[Spotlight](4c960ed9-3858-46ea-aa59-f81489d93deb.md)|
 |[Cyber-Ark](../vendors/8a3d333e-ffad-49ed-9edd-0cf1c797b24f.md)|[Endpoint Privilege Manager](96d1bd4a-9285-439e-b81c-1a32f7688dac.md)|
 |[Cyber-Ark](../vendors/8a3d333e-ffad-49ed-9edd-0cf1c797b24f.md)|[Enterprise Password Vault](36f5ca33-0c1e-4223-8215-977ea04425ba.md)|
