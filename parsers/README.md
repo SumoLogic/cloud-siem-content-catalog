@@ -63,6 +63,7 @@ The `type` listed lets you know if you can directly apply the parser to a collec
 |Parser|/Parsers/System/CrowdStrike/CrowdStrike FDR - JSON|
 |Parser|/Parsers/System/CrowdStrike/CrowdStrike Falcon Endpoint - CEF|
 |Parser|/Parsers/System/CrowdStrike/CrowdStrike Falcon Endpoint - JSON|
+|Parser|/Parsers/System/CrowdStrike/CrowdStrike Filevantage|
 |Parser|/Parsers/System/CrowdStrike/CrowdStrike Spotlight|
 |Parser|/Parsers/System/Cyber-Ark/Cyber-Ark Vault - CEF|
 |Parser|/Parsers/System/Cyber-Ark/CyberArk EPM JSON|
@@ -83,6 +84,7 @@ The `type` listed lets you know if you can directly apply the parser to a collec
 |Parser|/Parsers/System/Egnyte/Egnyte DLP|
 |Parser|/Parsers/System/Exabeam/Exabeam Security Management Platform (SMP) Syslog|
 |Parser|/Parsers/System/Extrahop/Extrahop CEF|
+|Parser|/Parsers/System/Extrahop/Extrahop JSON|
 |Parser|/Parsers/System/F5/F5 Syslog|
 |Parser|/Parsers/System/Falco/Falco JSON|
 |Parser|/Parsers/System/FireEye/FireEye CMS CEF|
