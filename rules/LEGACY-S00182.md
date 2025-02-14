@@ -17,7 +17,9 @@ Common administrative tools may be used by malware authors and attackers who use
 |Tags|_mitreAttackTactic:TA0002, _mitreAttackTactic:TA0004, _mitreAttackTactic:TA0005, _mitreAttackTactic:TA0007, _mitreAttackTactic:TA0011, _mitreAttackTechnique:T1059, _mitreAttackTechnique:T1059.003, _mitreAttackTechnique:T1059.001, _mitreAttackTechnique:T1083, _mitreAttackTechnique:T1132, _mitreAttackTechnique:T1548, _mitreAttackTactic:TA0009, _mitreAttackTechnique:T1213, _mitreAttackTechnique:T1213.001|
 ## Vendors and Products
 - [Akamai - SIEM](../products/9a28f2af-5526-414d-973b-c3fc7984b8a1.md)
+- [Akamai - Web Application Firewall](../products/ae07663e-2c2c-4932-be5d-c9f985e95276.md)
 - [Amazon AWS - API Gateway](../products/9f76f1fd-fbb0-42d2-9bf5-0f4fd2c1ab82.md)
+- [Amazon AWS - AWS S3 Server Access Logs](../products/41f70c6e-18a9-462c-a04d-4edc7baead7a.md)
 - [Amazon AWS - Application Load Balancer](../products/5bb9e0b3-8d57-4b10-8952-0b6ffe91b599.md)
 - [Amazon AWS - CloudFront](../products/44f07c08-c2ad-4a95-a058-1d0737ff90db.md)
 - [Amazon AWS - CloudTrail](../products/033624b0-218e-4dcb-b93f-0f1fb1806c56.md)

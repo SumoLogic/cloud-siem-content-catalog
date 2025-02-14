@@ -163,6 +163,7 @@ You will find our complete list of mappers for content here.
  - [Carbon Black Cloud - CONTAINER_RUNTIME](c79ca29b-5742-4668-982f-7ef30300299d.md)
  - [Carbon Black Cloud - FACET](81112448-48b5-4799-bc6e-a712a87ca34c.md)
  - [Carbon Black Cloud - Observation event](1780bb82-3701-457c-a922-33e7a397199e.md)
+ - [Carbon Black Cloud - alert event](3b517eda-5d3d-4d61-8172-708087653723.md)
  - [Carbon Black Cloud API Call](50ee5df8-20ae-4183-a282-b96369005935.md)
  - [Carbon Black Cloud Alert - CB_ANALYTICS](4acf430c-7582-4e40-a3ce-050f7f78bd29.md)
  - [Carbon Black Cloud Alert - Tuned Activity](020bc223-86b6-4b9b-9c39-4864eed1510b.md)
