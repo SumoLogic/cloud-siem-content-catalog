@@ -7,7 +7,7 @@
 |Vendor|Netskope|
 |Product|Security Cloud|
 |Log Format|JSON|
-|Event ID Regex Pattern|`bulk_download`|
+|Event ID Regex Pattern|`(?i)(bulk_download\|bulk download)`|
 
 ## Record Output
 
@@ -22,10 +22,21 @@
 |Cloud SIEM Schema Field|Original Record Key|Notes|
 |-----------------------|-------------------|-----|
 |action|activity||
+|application|app||
+|device_hostname|hostname||
 |device_ip|userip||
 |device_natIp|srcip||
-|file_basename|object||
+|device_osName|os_version||
+|dstDevice_ip|dstip||
+|dstPort|dstport||
+|file_basename|file_path||
 |file_hash_md5|md5||
-|threat_name|alert||
+|http_category|category||
+|http_referer|referer||
+|http_url|url||
+|http_userAgent|useragent||
+|srcDevice_ip|srcip||
+|threat_name|alert_name||
+|user_email|user||
 |user_username|user||
 

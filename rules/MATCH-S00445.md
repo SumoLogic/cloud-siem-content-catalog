@@ -22,7 +22,6 @@ https://techviral.net/ransomware-encrypted-file-extensions/
 |Tags|_mitreAttackTactic:TA0040, _mitreAttackTechnique:T1486|
 ## Vendors and Products
 - [Cloudflare - Logpush](../products/c2503fcc-ef30-4e40-bb32-0bf47151b140.md)
-- [CrowdStrike - FDR](../products/569a3a44-c29f-492e-bcf4-5dc04e2ab0f3.md)
 - [Digital Guardian - ARC](../products/975d678e-eb46-4155-9427-0fa307971fcd.md)
 - [Fortinet - Fortigate](../products/c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad.md)
 - [JFrog - Artifactory](../products/abe4975e-de65-4f82-8b35-e6ce392e165c.md)
