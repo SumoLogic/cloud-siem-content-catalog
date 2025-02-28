@@ -16,8 +16,6 @@ Requests to web applications containing SQL statement keywords may indicate atte
 |Prototype|False|
 |Tags|_mitreAttackTactic:TA0001, _mitreAttackTechnique:T1190|
 ## Vendors and Products
-- [Amazon AWS - CloudFront](../products/44f07c08-c2ad-4a95-a058-1d0737ff90db.md)
-- [Amazon AWS - Web Application Firewall (WAF)](../products/072b85a2-1765-45c2-911d-b0509880326e.md)
 - [Bro - Bro](../products/37C866BF-72E1-470A-9072-EDB908F56951.md)
 - [Zscaler - Nanolog Streaming Service](../products/6299d728-14f7-455e-85c5-ea8ec65a654a.md)
 
