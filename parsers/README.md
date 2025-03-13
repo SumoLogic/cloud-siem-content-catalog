@@ -34,6 +34,8 @@ The `type` listed lets you know if you can directly apply the parser to a collec
 |Parser|/Parsers/System/Auth0/Auth0|
 |Parser|/Parsers/System/Automox/Automox|
 |Parser|/Parsers/System/Bandura/Bandura Syslog|
+|Parser|/Parsers/System/Barracuda/Barracuda CloudGen|
+|Parser|/Parsers/System/Barracuda/Barracuda WAF|
 |Parser|/Parsers/System/Blue Coat/Blue Coat ProxySG|
 |Parser|/Parsers/System/Blue Coat/Blue Coat ProxySG CEF|
 |Parser|/Parsers/System/Blue Coat/Blue Coat ProxySG CSV|
@@ -66,6 +68,7 @@ The `type` listed lets you know if you can directly apply the parser to a collec
 |Parser|/Parsers/System/CrowdStrike/CrowdStrike Filevantage|
 |Parser|/Parsers/System/CrowdStrike/CrowdStrike Spotlight|
 |Parser|/Parsers/System/Cyber-Ark/Cyber-Ark Vault - CEF|
+|Parser|/Parsers/System/Cyber-Ark/CyberArk Audit|
 |Parser|/Parsers/System/Cyber-Ark/CyberArk EPM JSON|
 |Parser|/Parsers/System/Cylance/Cylance Syslog|
 |Parser|/Parsers/System/Cylance/Cylance Threat JSON|

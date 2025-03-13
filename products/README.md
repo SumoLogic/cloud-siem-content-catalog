@@ -39,6 +39,8 @@ Below is a full list of products supported by Cloud SIEM.
 |[Auth0](../vendors/f002a19c-876e-4a33-8be0-ed3b922d19bc.md)|[Auth0](0b45ccba-20b4-41e4-973d-b50fd291944d.md)|
 |[Automox](../vendors/2dcbfadf-26a8-4066-8e65-5bb5fd19df29.md)|[Automox](aee72653-0ff3-49de-9344-db8a0151f4b3.md)|
 |[Bandura](../vendors/ec354a4c-a761-4e18-8ceb-194d6e8692e2.md)|[Threat Intelligence Gateway](e33f1966-bba7-49e1-8a70-1a8ed8b55a42.md)|
+|[Barracuda](../vendors/bd0dae54-a8b1-4d8e-b3b0-3384cf676355.md)|[CloudGen Firewall](34dd9c1e-ceec-4cba-8f5d-4776f680d785.md)|
+|[Barracuda](../vendors/bd0dae54-a8b1-4d8e-b3b0-3384cf676355.md)|[Web Application Firewall](798f8da8-c85b-4e9a-b2f1-eae0b07532fb.md)|
 |[Bitdefender](../vendors/04de471f-70b0-4ffb-89a9-f094ef242248.md)|[GravityZone](046b3623-69fe-409f-9e80-fd3ebef0654f.md)|
 |[BlackBerry](../vendors/ac6a961b-590c-4dd4-8402-56f4a4cddd98.md)|[Workspace](73b9a62a-936c-45df-b8d7-9f2160989c13.md)|
 |[BlueCat](../vendors/84c66be7-708d-4381-af25-61234598eca3.md)|[DHCP](b41d0cdc-3938-4da1-9013-d3433b311c51.md)|
@@ -78,6 +80,7 @@ Below is a full list of products supported by Cloud SIEM.
 |[CrowdStrike](../vendors/79ade329-b6d4-43ae-8db1-2a9cc45c0fb0.md)|[Falcon](840c72e0-4e47-41e7-9b93-31f55d12f07d.md)|
 |[CrowdStrike](../vendors/79ade329-b6d4-43ae-8db1-2a9cc45c0fb0.md)|[Filevantage](a1f79987-b765-4f6f-bfe5-d657baa35144.md)|
 |[CrowdStrike](../vendors/79ade329-b6d4-43ae-8db1-2a9cc45c0fb0.md)|[Spotlight](4c960ed9-3858-46ea-aa59-f81489d93deb.md)|
+|[Cyber-Ark](../vendors/8a3d333e-ffad-49ed-9edd-0cf1c797b24f.md)|[CyberArk Audit](54f01856-e973-4d7b-a3eb-95cc08ff44f5.md)|
 |[Cyber-Ark](../vendors/8a3d333e-ffad-49ed-9edd-0cf1c797b24f.md)|[Endpoint Privilege Manager](96d1bd4a-9285-439e-b81c-1a32f7688dac.md)|
 |[Cyber-Ark](../vendors/8a3d333e-ffad-49ed-9edd-0cf1c797b24f.md)|[Enterprise Password Vault](36f5ca33-0c1e-4223-8215-977ea04425ba.md)|
 |[Cybereason](../vendors/1a51cb88-ebc9-4655-bce4-3d788bf19e89.md)|[Endpoint Security](12d00042-d90d-4055-a171-01a1f635a613.md)|
