@@ -157,6 +157,22 @@
 |MATCH-S00838|[Azure Active Directory Authentication Method Changed](MATCH-S00838.md)|
 |MATCH-S00896|[Azure Authentication Policy Change](MATCH-S00896.md)|
 |MATCH-S00836|[Azure Conditional Access Policy Disabled](MATCH-S00836.md)|
+|CHAIN-S00022|[Azure DevOps - Agent Pool Created and Deleted within a Short Period](CHAIN-S00022.md)|
+|MATCH-S00997|[Azure DevOps - Browser Observed in Personal Access Token (PAT) Use](MATCH-S00997.md)|
+|MATCH-S00995|[Azure DevOps - Change Made to Administrator Group](MATCH-S00995.md)|
+|FIRST-S00098|[Azure DevOps - First Seen Pull Request Policy Bypassed](FIRST-S00098.md)|
+|FIRST-S00099|[Azure DevOps - First Seen User Creating Agent Pool](FIRST-S00099.md)|
+|FIRST-S00092|[Azure DevOps - First Seen User Creating Release Pipeline](FIRST-S00092.md)|
+|FIRST-S00097|[Azure DevOps - First Seen User Modifying Build Variables](FIRST-S00097.md)|
+|FIRST-S00096|[Azure DevOps - First Seen User Modifying Release Pipeline](FIRST-S00096.md)|
+|MATCH-S00998|[Azure DevOps - Known Malicious Tooling Detected ADOKit](MATCH-S00998.md)|
+|MATCH-S00994|[Azure DevOps - Member Added to Sensitive Group](MATCH-S00994.md)|
+|FIRST-S00095|[Azure DevOps - New Agent OS Added to Agent Pool](FIRST-S00095.md)|
+|FIRST-S00094|[Azure DevOps - New Extension Installed](FIRST-S00094.md)|
+|OUTLIER-S00030|[Azure DevOps - Outlier in Pools Deleted Rapidly](OUTLIER-S00030.md)|
+|MATCH-S00996|[Azure DevOps - Personal Access Token (PAT) Misuse Observed](MATCH-S00996.md)|
+|CHAIN-S00021|[Azure DevOps - Pipeline Created and Deleted within a Short Period](CHAIN-S00021.md)|
+|MATCH-S00993|[Azure DevOps - Pipeline Retention Settings Reduced](MATCH-S00993.md)|
 |MATCH-S00864|[Azure Firewall Rule Modified](MATCH-S00864.md)|
 |MATCH-S00891|[Azure OAUTH Application Consent from User](MATCH-S00891.md)|
 |MATCH-S00818|[Azure PRT Token Issued via Non Interactive Login](MATCH-S00818.md)|

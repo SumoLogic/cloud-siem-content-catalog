@@ -24,7 +24,9 @@
 |action|action||
 |application|client.app_name||
 |srcDevice_ip|client.ip_address||
+|srcDevice_osName|client.os_name||
 |success|category|This is a lookup field. More info to come in the catalog later...|
-|user_userId|target_user.uuid||
-|user_username|target_user.email||
+|targetUser_email|target_user.email||
+|targetUser_userId|target_user.uuid||
+|targetUser_username|target_user.name||
 

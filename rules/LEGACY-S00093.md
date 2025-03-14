@@ -16,6 +16,7 @@ This pattern discovers HTTP communications from an internal source where a devel
 |Prototype|False|
 |Tags|_mitreAttackTactic:TA0002, _mitreAttackTechnique:T1105, _mitreAttackTechnique:T1059, _mitreAttackTechnique:T1059.003|
 ## Vendors and Products
+- [Barracuda - Web Application Firewall](../products/798f8da8-c85b-4e9a-b2f1-eae0b07532fb.md)
 - [Bro - Bro](../products/37C866BF-72E1-470A-9072-EDB908F56951.md)
 - [Cisco Systems - Firepower](../products/da9e05a5-3fd3-46a7-a107-ae03c01e3f5a.md)
 - [Cisco Systems - Meraki](../products/724c9add-8cd9-4013-b9e1-a907b96da426.md)

@@ -128,6 +128,238 @@ Adding a user to a role, especially one with administrative privileges, outside 
 "Microsoft","Azure","MATCH-S00808","templated_match","Persistence","True","False","","_mitreAttackTactic:TA0003, _mitreAttackTactic:TA0005, _mitreAttackTechnique:T1610, _mitreAttackTechnique:T1204, _mitreAttackTechnique:T1204.003","Azure - Container Instance Creation/Modification","Detects creations or modifications of Azure containers (Azure logs creations or modifications as write operations). An adversary might create a container for use in malicious activity or to evade detection."
 "Microsoft","Azure","MATCH-S00809","templated_match","Execution","True","False","","_mitreAttackTactic:TA0002, _mitreAttackTactic:TA0005, _mitreAttackTechnique:T1610, _mitreAttackTechnique:T1204, _mitreAttackTechnique:T1204.003","Azure - Container Start","Detects Azure container starts. An adversary may use containers for malicious activity or to evade detection."
 "Microsoft","Azure","MATCH-S00235","templated_match","Persistence","True","False","","_mitreAttackTactic:TA0003, _mitreAttackTechnique:T1136, _mitreAttackTechnique:T1136.002, _mitreAttackTechnique:T1136.003","Azure - Create User","Detects user creation. While this is a routine activity, user creation could be used by an adversary for persistence."
+"","","CHAIN-S00022","chain","Defense Evasion","True","False","","_mitreAttackTechnique:T1578, _mitreAttackTactic:TA0005","Azure DevOps - Agent Pool Created and Deleted within a Short Period","Context:
+An attacker may create Azure DevOps Agent Pools for malicious activity that are separate from an organization’s pools.
+
+Detection:
+This detection monitors for the creation and deletion of Agent Pools within 5 days by the same user, with the intent of finding Agent Pools active for short durations.
+
+Recommended Actions:
+If an alert occurs, investigate the actions taken by the account to determine if this is normal operation of deleting pools or if this suspicious activity. 
+
+Tuning Recommendations: 
+If necessary, add a tuning expression for users who frequently create and delete agent pools within the time period specified.
+If necessary, adjust the ""within"" time period to better represent what is considered a short time period in your organization. Note that 5 days is the maximum time period you can specify for a chain rules.
+
+Credits: 
+This rule is loosely based on the Azure Sentinel ADOAgentPoolCreatedDeleted.yaml detection.
+"
+"","","MATCH-S00997","templated_match","Credential Access","True","False","","_mitreAttackTechnique:T1528, _mitreAttackTactic:TA0006","Azure DevOps - Browser Observed in Personal Access Token (PAT) Use","Context:
+Personal Access Tokens (PATs) can be used to authenticate into Azure DevOps. PATs are intended to be used for authenticating automated access to Azure rather than for interactive use cases. Observing PAT authentication in interactive use cases could indicate that the PAT was stolen.
+
+Detection:
+This detection monitors for the use of a PAT for authentication from a User Agent String indicating a web browser.
+
+Recommended Actions:
+Investigate the user account associated with the Personal Access Token and the user’s workstation for signs of compromise.
+
+Tuning Recommendations:
+If your organization has known legitimate use cases for PAT authentication with a browser, add a tuning expression specific to the known use case. For example, you may tune out specific users, user agent strings or IP addresses as known use cases.
+
+Credits:
+This detection is based on the Azure Sentinel ADOPATUsedWithBrowser.yaml rule."
+"","","MATCH-S00995","templated_match","Unknown/Other","True","False","","_mitreAttackTechnique:T1098.003","Azure DevOps - Change Made to Administrator Group","Context:
+Any additions to administrative groups such as Project Administrators or Project Collection Administrators is noteworthy as they result in the user having a broad set of permissions.
+
+Detection:
+This detection monitors for additions to the following groups: Project Administrators, Project Collection Administrators, Project Collection Service Accounts, Build Administrators, Project Collection Build Administrators
+
+Recommended Actions:
+Determine whether the group modification was an approved change (for example, look for a change control ticket).
+Investigate the user who modified the group for indications of account compromise or other insider threat activity.
+
+Tuning Recommendations:
+n/a
+
+Credits:
+This detection is based on the Azure Sentinel AzDOAdminGroupAdditions.yaml rule."
+"","","FIRST-S00098","first_seen","Unknown/Other","True","False","","_mitreAttackTechnique:T1098.001","Azure DevOps - First Seen Pull Request Policy Bypassed","Context:
+An attacker can use pull request bypasses to introduce malicious code into production by circumventing normal review processes.
+
+Detection:
+This detection monitors for when a user performs a pull request bypass for the first time.
+
+Tuning Recommendations:
+If there is a known use case for pull request bypasses (emergency updates, lack of available review staff, etc.), add a tuning expression to exclude the user from the detection.
+
+Recommended Actions:
+Determine whether the pull request bypass was expected.
+Investigate the user who performed the pull request bypass for indications of account compromise or other insider threat activity.
+
+Credits:
+This detection is based on the Azure Sentinel AzDOHistoricPrPolicyBypassing.yaml rule."
+"","","FIRST-S00099","first_seen","Defense Evasion","True","False","","_mitreAttackTechnique:T1578.002, _mitreAttackTactic:TA0005","Azure DevOps - First Seen User Creating Agent Pool","Context:
+Azure DevOps (ADO) Agent Pools are a key resource. Hosted or self-hosted pools can be created for use in the DevOps pipeline. An attacker with ADO access allowing for pool creation, may create agent pools for malicious use.
+
+Detection:
+This detection monitors for new users creating an agent pool. This user has not been observed creating agent pools during the baseline period and may be a new admin or involved in suspicious account activity.
+
+Recommended Actions:
+Investigate the account observed creating the new agent pool for signs of account compromise or insider threat activity.
+
+Tuning Recommendations:
+Create a tuning expression with a list of admin user_username values that should be excluded from detection if they were not in the baseline."
+"","","FIRST-S00092","first_seen","Unknown/Other","True","False","","_mitreAttackTechnique:T1578.005","Azure DevOps - First Seen User Creating Release Pipeline","Context:
+Creation or modification of release pipelines provide opportunities for the attacker to introduce malicious code into the release process.
+Detection:
+This detection monitors for users creating a release pipeline for the first time after the baseline period (by default, 90 days).
+Recommended Actions:
+Investigate the pipeline that has been created for malicious content and the user account activity for signs of account compromise or insider threat activity.
+Tuning Recommendations:
+Maintain a match list of users known and approved to create Azure DevOps pipeline and add it as a tuning expression for the rule.
+Credits:
+This detection is based on the Azure Sentinel ADOPipelineModifiedbyNewUser.yaml rule."
+"","","FIRST-S00097","first_seen","Unknown/Other","True","False","","_mitreAttackTechnique:T1578.005","Azure DevOps - First Seen User Modifying Build Variables","Context:
+An attacker can modify a variable group to alter the execution of the build pipeline for malicious results.
+
+Detection:
+This detection monitors for a user modifying a variable group for the first time.
+
+Recommended Actions:
+Determine whether the variable group modification was a known change.
+Investigate the user who reduced the retention setting for indications of account compromise or other insider threat activity.
+
+Tuning Recommendations:
+Maintain a match list of users known and approved to modify variable groups and add it as a tuning expression for the rule.
+
+Credits:
+This detection is based on the Azure Sentinel ADOVariableModifiedByNewUser.yaml rule."
+"","","FIRST-S00096","first_seen","Unknown/Other","True","False","","_mitreAttackTechnique:T1578.005","Azure DevOps - First Seen User Modifying Release Pipeline","Context:
+Creation or modification of release pipelines provide opportunities for the attacker to introduce malicious code into the release process.
+
+Detection:
+This detection monitors for users modifying a release pipeline for the first time after the baseline period (by default, 90 days).
+
+Recommended Actions:
+Investigate the pipeline that has been created for malicious content and the user account activity for signs of account compromise or insider threat activity.
+
+Tuning Recommendations:
+Maintain a match list of users known and approved to create Azure DevOps pipeline and add it as a tuning expression for the rule.
+
+Credits:
+This detection is based on the Azure Sentinel ADOPipelineModifiedbyNewUser.yaml rule."
+"","","MATCH-S00998","templated_match","Collection","True","False","","_mitreAttackTechnique:T1119, _mitreAttackTactic:TA0009","Azure DevOps - Known Malicious Tooling Detected ADOKit","Context:
+The IBM X-Force Red team released the Azure DevOps Services Attack Toolkit (ADOKit) for Black Hat Arsenal 2024.
+
+Detection:
+This is a simple detection matching on “ADOKit” at the start of the HTTP User Agent String (UAS). This detection effectively catches basic ADOKit use. It is brittle to attackers changing the User Agent String to another more innocuous browser to mask the traffic.
+
+Recommended Actions: 
+Determine the user using the ADOKit tooling and the activities they have taken against the Azure DevOps environment.
+
+Tuning Recommendations:
+Create a rule tuning expression to tune out accounts permitted to use ADOKit, such as red teams, penetration testers, or admin users. 
+
+Credits:
+This detection is based on the Azure Sentinel ADOMaliciousToolingDetections1.yaml detection."
+"","","MATCH-S00994","templated_match","Unknown/Other","True","False","","_mitreAttackTechnique:T1078.004","Azure DevOps - Member Added to Sensitive Group","Context:
+Any changes to administrative groups such as Project Administrators or Project Collection Administrators is noteworthy as they result in the user having a broad set of permissions.
+
+Detection:
+This detection monitors for changes to the following groups: Project Administrators, Project Collection Administrators, Project Collection Service Accounts, Build Administrator
+
+Recommended Actions:
+Determine whether the group modification was an approved change (for example, look for a change control ticket).
+Investigate the user who modified the group for indications of account compromise or other insider threat activity.
+
+Tuning Recommendations:
+n/a
+
+Credits:
+This detection is based on the Azure Sentinel NewPAPCAPCASaddedtoADO.yaml rule."
+"","","FIRST-S00095","first_seen","Unknown/Other","True","False","","_mitreAttackTechnique:T1053","Azure DevOps - New Agent OS Added to Agent Pool","Context:
+An attacker could add an agent to an agent pool for the purpose of running malicious code during pipeline execution.
+
+Detection:
+This detection monitors for the addition of an agent to an agent pool when the OS of the agent has not been observed in this pool during the baseline period.
+
+Recommended Actions:
+Investigate whether the addition of the agent was an expected activity.
+Review build artifacts resulting from the pipeline for malicious code.
+Review execution activity on the agent during pipeline execution.
+Investigate the user for indications of account compromise or insider threat activity.
+
+Tuning Recommendations:
+Add tuning expressions to exclude known agent additions in which the agent has a distinct operating system from the pool baseline. The tuning expression could be based on metadata such as the user or the OS.
+
+Credits:
+This detection is based on the Azure Sentinel NewAgentAddedToPoolbyNewUserorofNewOS.yaml rule."
+"","","FIRST-S00094","first_seen","Persistence","True","False","","_mitreAttackTechnique:T1505, _mitreAttackTactic:TA0003","Azure DevOps - New Extension Installed","Context:
+Azure DevOps can add extensions for additional features. Attackers with sufficient privileges may install a malicious extension for malicious use. 
+
+Detection:
+This detection monitors for new extensions installed organization-wide after a 30-day baseline, based on the user installing the new extension.
+
+Recommended Actions: 
+As new extensions are installed, investigate the user engaging in the activity to assess the intent. Review whether the user has been active and engaged in other suspicious activity.  
+
+Tuning Recommendations:
+Add a tuning expression with user_username values or a match list for users known and trusted to install extensions. 
+A tuning expression of permitted PublisherName values can be used to add further filtering. You may want to increase the severity of this rule if your organization only permits certain PublisherNames.
+ 
+Credits:
+This detection is based on the Azure Sentinel ADONewExtensionAdded.yaml rule."
+"","","OUTLIER-S00030","outlier","Defense Evasion","True","False","","_mitreAttackTechnique:T1578.002, _mitreAttackTactic:TA0005","Azure DevOps - Outlier in Pools Deleted Rapidly","Context:
+An Attacker with sufficient administrative access to Azure DevOps (ADO) may abuse this access to destroy existing resources by deleting pools. 
+
+Detection:
+This detection identifies statistical outliers in user behavior for the number of pools deleted in an hourly window. 
+
+Recommended Actions: 
+If an alert occurs, investigate the actions taken by the account to determine if this is normal operation of deleting pools or if this suspicious activity. 
+
+Tuning Recommendations:
+Determine if the baseline basis should be hourly or daily based on normal activity in your organization. 
+If the detection is proving to be too sensitive to the number of pools deleted, adjust the floor value (currently 3) to a number that is less sensitive but within reason. Use Sumo Search using a count and the _timeslice function to aggregate on the number of pools deleted within the hourly (or daily) periods to find what is an acceptable level of activity to not alert on."
+"","","MATCH-S00996","templated_match","Unknown/Other","True","False","","_mitreAttackTechnique:T1496","Azure DevOps - Personal Access Token (PAT) Misuse Observed","Context:
+Authentication to Azure DevOps via a Personal Access Token (PAT) is intended for particular use cases and should not be observed with all actions in Azure. This Alert detects whenever a PAT is used in ways that PATs are not normally used. If unusual PAT use is observed it potentially indicates the PAT was stolen by an attacker.
+
+Detection:
+This detection monitors for use of a Personal Access Token in conjunction with categories of action that aren’t normally associated with PAT authentication.
+
+Recommended Actions:
+Determine whether the PAT use is part of a known and approved use case.
+Investigate the user whose PAT was used for indications of account compromise or other insider threat activity. 
+Investigate the workstation of the user for indications of compromise.
+
+Tuning Recommendations:
+If your organization has known use cases, such as automation, that trigger this rule, add a tuning expression to exclude either the action or other distinguishing metadata such as the user.
+
+Credits:
+This detection is based on the Azure Sentinel AzDOPatSessionMisuse.yaml rule."
+"","","CHAIN-S00021","chain","Unknown/Other","True","False","","_mitreAttackTechnique:T1072","Azure DevOps - Pipeline Created and Deleted within a Short Period","Context:
+An attacker may use a pipeline for malicious activity such as introducing malicious code into production or executing malicious code in an agent pool. The attacker likely will delete the pipeline after achieving their objectives in order to cover their tracks.
+
+Detection:
+This detection monitors for the creation and deletion of the same pipeline within a short period (by default, a day).
+
+Recommended Actions:
+Investigate whether the rapid creation and deletion of the pipeline was an expected activity. 
+Review build artifacts resulting from the pipeline for malicious code. 
+Investigate the user for indications of account compromise or insider threat activity.
+
+Tuning Recommendations:
+Adjust the time constraints of the rule from one day to one which aligns better to the practices in your organization. 
+If there are known use cases for rapid creation and deletion of pipelines in your organization, add a tuning expression to exclude the distinguishing metadata such as the username.
+
+Credits:
+This detection is based on the Azure Sentinel AzDOPipelineCreatedDeletedOneDay.yaml rule.
+"
+"","","MATCH-S00993","templated_match","Unknown/Other","True","False","","_mitreAttackTechnique:T1564","Azure DevOps - Pipeline Retention Settings Reduced","Context:
+AzureDevOps retains items such as run records and produced artifacts for a configurable amount of time. An attacker can cover up evidence of malicious activity by reducing the retention time.
+
+Detection:
+This detection monitors for any reduction in the pipeline retention settings.
+
+Tuning Recommendations:
+n/a
+
+Recommended Actions:
+Determine whether the retention setting reduction was an approved change (for example, look for a change control ticket).
+Investigate the user who reduced the retention setting for indications of account compromise or insider threat activity.
+
+Credits:
+This detection is based on the Azure Sentinel ADORetentionReduced.yaml rule."
 "Microsoft","Azure","MATCH-S00795","templated_match","Defense Evasion","True","False","","_mitreAttackTactic:TA0005, _mitreAttackTechnique:T1562, _mitreAttackTechnique:T1562.008, _mitreAttackTechnique:T1562.001","Azure - Diagnostic Setting Deleted","Detects diagnostic setting deletions, which may represent an adversary disabling logging."
 "Microsoft","Azure","MATCH-S00796","templated_match","Defense Evasion","True","False","","_mitreAttackTactic:TA0005, _mitreAttackTechnique:T1562, _mitreAttackTechnique:T1562.008, _mitreAttackTechnique:T1562.001","Azure - Diagnostic Setting Modified","Detects diagnostic setting modifications, which include disabling certain logging, enabling certain logging, altering the destination of logs, or creating a diagnostic setting."
 "Microsoft","Azure","MATCH-S00797","templated_match","Defense Evasion","True","False","","_mitreAttackTactic:TA0005, _mitreAttackTechnique:T1562, _mitreAttackTechnique:T1562.008, _mitreAttackTechnique:T1562.001","Azure - Event Hub Deleted","Detects Azure Event Hub deletions. Event Hubs are the primary method for logs to be forwarded to a destination outside of Azure (such as a SIEM) and as such, deleting an Event Hub may compromise monitoring."
