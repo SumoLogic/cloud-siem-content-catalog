@@ -261,6 +261,7 @@ Below is a full list of products supported by Cloud SIEM.
 |[Trust Login](../vendors/78eae2f3-199e-48ca-aaf6-53f6a19e854a.md)|[Trust Login](ca37057c-0d7b-452c-b5b4-948b699262ed.md)|
 |[Twistlock](../vendors/97C36046-B516-41F8-9751-4C788AA33785.md)|[Twistlock](581D3DD8-4DA7-4192-9E49-320D7AFB8B53.md)|
 |[VMware](../vendors/fbf25b91-89f1-45c4-903d-664b328bc6e0.md)|[Carbon Black Cloud](f9cea291-9030-4e41-9836-6dd9274d6df4.md)|
+|[VMware](../vendors/fbf25b91-89f1-45c4-903d-664b328bc6e0.md)|[ESXi](8151e52c-df0d-42d2-978f-2d17e24ae41c.md)|
 |[VMware](../vendors/fbf25b91-89f1-45c4-903d-664b328bc6e0.md)|[Horizon](30e76023-289c-40f2-a9a4-7ce4677a5e7d.md)|
 |[VMware](../vendors/fbf25b91-89f1-45c4-903d-664b328bc6e0.md)|[NSX](acc19092-f1ce-4641-a4db-530a55418c1d.md)|
 |[Varonis](../vendors/20270f89-127e-4055-96ec-56045e67e163.md)|[DatAdvantage](4d6a3683-4edb-4330-9e9f-b8608cd63981.md)|
