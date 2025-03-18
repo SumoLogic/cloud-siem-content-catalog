@@ -236,6 +236,7 @@ The `type` listed lets you know if you can directly apply the parser to a collec
 |Parser|/Parsers/System/Trust Login/Trust Login|
 |Parser|/Parsers/System/Twistlock/Twistlock|
 |Parser|/Parsers/System/VMware/Carbon Black Cloud|
+|Parser|/Parsers/System/VMware/VMware ESXi|
 |Parser|/Parsers/System/VMware/VMware NSX|
 |Parser|/Parsers/System/Varonis/Varonis DatAlert Syslog|
 |Parser|/Parsers/System/WatchGuard/WatchGuard Fireware|

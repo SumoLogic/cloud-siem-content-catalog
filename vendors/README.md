@@ -143,7 +143,7 @@ Below is a full list of vendors for which there are supported products in Cloud 
 |[Trend Micro](8af48b83-18bf-4233-ad51-db37baca0313.md)|4|
 |[Trust Login](78eae2f3-199e-48ca-aaf6-53f6a19e854a.md)|1|
 |[Twistlock](97C36046-B516-41F8-9751-4C788AA33785.md)|1|
-|[VMware](fbf25b91-89f1-45c4-903d-664b328bc6e0.md)|4|
+|[VMware](fbf25b91-89f1-45c4-903d-664b328bc6e0.md)|5|
 |[Varonis](20270f89-127e-4055-96ec-56045e67e163.md)|2|
 |[Vectra](7a3d1a5c-ba67-4597-971f-7057e8f6c8bb.md)|1|
 |[WatchGuard](a6e8752b-5e5d-47b0-8f42-68cd438f5264.md)|2|
