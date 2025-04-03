@@ -42,6 +42,7 @@ Below is a full list of products supported by Cloud SIEM.
 |[Barracuda](../vendors/bd0dae54-a8b1-4d8e-b3b0-3384cf676355.md)|[CloudGen Firewall](34dd9c1e-ceec-4cba-8f5d-4776f680d785.md)|
 |[Barracuda](../vendors/bd0dae54-a8b1-4d8e-b3b0-3384cf676355.md)|[Web Application Firewall](798f8da8-c85b-4e9a-b2f1-eae0b07532fb.md)|
 |[Bitdefender](../vendors/04de471f-70b0-4ffb-89a9-f094ef242248.md)|[GravityZone](046b3623-69fe-409f-9e80-fd3ebef0654f.md)|
+|[Bitwarden](../vendors/64e8afa6-12e6-453f-9b86-dc0ff9bf6e57.md)|[Bitwarden](ebb99eec-3585-4673-ac0f-676632a78305.md)|
 |[BlackBerry](../vendors/ac6a961b-590c-4dd4-8402-56f4a4cddd98.md)|[Workspace](73b9a62a-936c-45df-b8d7-9f2160989c13.md)|
 |[BlueCat](../vendors/84c66be7-708d-4381-af25-61234598eca3.md)|[DHCP](b41d0cdc-3938-4da1-9013-d3433b311c51.md)|
 |[BlueCat](../vendors/84c66be7-708d-4381-af25-61234598eca3.md)|[DNS](51c950b2-21b8-402f-94d2-f9525cc3e4f1.md)|
@@ -75,6 +76,7 @@ Below is a full list of products supported by Cloud SIEM.
 |[Cloudflare](../vendors/4c1c0f12-5d0a-4f0c-918f-c83dca43c967.md)|[Logpush](c2503fcc-ef30-4e40-bb32-0bf47151b140.md)|
 |[Code42](../vendors/f764fde6-a435-42cb-9407-15734a99d657.md)|[Code42](be11069a-30d6-4439-b9c8-9d4f47c13160.md)|
 |[Code42](../vendors/f764fde6-a435-42cb-9407-15734a99d657.md)|[Incydr](cc523ad6-7193-4de5-a254-d0243fca63f3.md)|
+|[CommScope](../vendors/e69bff14-6237-4997-a447-4fc02feaeeaf.md)|[CommScope](c8729aa1-2b08-4623-bfe5-3c02c49e8a55.md)|
 |[Corelight](../vendors/6b5528e6-3d06-460d-b730-b5fa4b18ce18.md)|[NSM](1eecf521-df5d-4fc5-83b4-69f128056fdb.md)|
 |[CrowdStrike](../vendors/79ade329-b6d4-43ae-8db1-2a9cc45c0fb0.md)|[FDR](569a3a44-c29f-492e-bcf4-5dc04e2ab0f3.md)|
 |[CrowdStrike](../vendors/79ade329-b6d4-43ae-8db1-2a9cc45c0fb0.md)|[Falcon](840c72e0-4e47-41e7-9b93-31f55d12f07d.md)|
@@ -248,6 +250,7 @@ Below is a full list of products supported by Cloud SIEM.
 |[Symantec](../vendors/64c7f49c-f95a-4f4a-8540-56ec5fb1d96b.md)|[Proxy Secure Gateway](991a55cf-8c5a-49ba-ae72-6f64a002bacf.md)|
 |[Symantec](../vendors/64c7f49c-f95a-4f4a-8540-56ec5fb1d96b.md)|[Web Security Service](bf865cb5-0b26-4010-8b3c-5ae2d1f716d8.md)|
 |[Sysdig](../vendors/c4de0854-e718-45e1-a4c8-63623755aa43.md)|[Sysdig](55ec1d4a-6985-4f04-8de5-f9812871fda2.md)|
+|[Sysdig](../vendors/c4de0854-e718-45e1-a4c8-63623755aa43.md)|[Sysdig Secure](6bbcec6d-3e8e-4796-97ba-4ea647e7ab2b.md)|
 |[Tanium](../vendors/c7a342e6-5621-401a-ac5c-80ea3f2db23c.md)|[Tanium Core](5b49e894-92e8-45ad-8575-fe78b4f2e31b.md)|
 |[Tenable](../vendors/600BEF8F-BE81-4767-8322-72116C16DB20.md)|[Cloud API](1C384C22-411B-49C0-8029-A7F6C13424B1.md)|
 |[Teramind](../vendors/98def8bd-ffc2-475c-9d77-f85bf7b7b727.md)|[Teraserver](898d54b3-40b0-44ec-ac23-78ee03ee81f4.md)|
@@ -261,6 +264,7 @@ Below is a full list of products supported by Cloud SIEM.
 |[Trust Login](../vendors/78eae2f3-199e-48ca-aaf6-53f6a19e854a.md)|[Trust Login](ca37057c-0d7b-452c-b5b4-948b699262ed.md)|
 |[Twistlock](../vendors/97C36046-B516-41F8-9751-4C788AA33785.md)|[Twistlock](581D3DD8-4DA7-4192-9E49-320D7AFB8B53.md)|
 |[VMware](../vendors/fbf25b91-89f1-45c4-903d-664b328bc6e0.md)|[Carbon Black Cloud](f9cea291-9030-4e41-9836-6dd9274d6df4.md)|
+|[VMware](../vendors/fbf25b91-89f1-45c4-903d-664b328bc6e0.md)|[ESXi](8151e52c-df0d-42d2-978f-2d17e24ae41c.md)|
 |[VMware](../vendors/fbf25b91-89f1-45c4-903d-664b328bc6e0.md)|[Horizon](30e76023-289c-40f2-a9a4-7ce4677a5e7d.md)|
 |[VMware](../vendors/fbf25b91-89f1-45c4-903d-664b328bc6e0.md)|[NSX](acc19092-f1ce-4641-a4db-530a55418c1d.md)|
 |[Varonis](../vendors/20270f89-127e-4055-96ec-56045e67e163.md)|[DatAdvantage](4d6a3683-4edb-4330-9e9f-b8608cd63981.md)|

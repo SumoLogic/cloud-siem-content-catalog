@@ -21,6 +21,7 @@ Below is a full list of vendors for which there are supported products in Cloud 
 |[Bandura](ec354a4c-a761-4e18-8ceb-194d6e8692e2.md)|1|
 |[Barracuda](bd0dae54-a8b1-4d8e-b3b0-3384cf676355.md)|2|
 |[Bitdefender](04de471f-70b0-4ffb-89a9-f094ef242248.md)|1|
+|[Bitwarden](64e8afa6-12e6-453f-9b86-dc0ff9bf6e57.md)|1|
 |[BlackBerry](ac6a961b-590c-4dd4-8402-56f4a4cddd98.md)|1|
 |[BlueCat](84c66be7-708d-4381-af25-61234598eca3.md)|2|
 |[Box](985e5f6a-2411-41d9-9d46-98471f702f28.md)|1|
@@ -33,6 +34,7 @@ Below is a full list of vendors for which there are supported products in Cloud 
 |[Claroty](7d7a8243-bd53-417a-93f7-b73f800b1925.md)|1|
 |[Cloudflare](4c1c0f12-5d0a-4f0c-918f-c83dca43c967.md)|2|
 |[Code42](f764fde6-a435-42cb-9407-15734a99d657.md)|2|
+|[CommScope](e69bff14-6237-4997-a447-4fc02feaeeaf.md)|1|
 |[Corelight](6b5528e6-3d06-460d-b730-b5fa4b18ce18.md)|1|
 |[CrowdStrike](79ade329-b6d4-43ae-8db1-2a9cc45c0fb0.md)|4|
 |[Cyber-Ark](8a3d333e-ffad-49ed-9edd-0cf1c797b24f.md)|4|
@@ -133,7 +135,7 @@ Below is a full list of vendors for which there are supported products in Cloud 
 |[Sucuri](cdfd2ba0-77eb-4e11-b071-6f4d01fda607.md)|1|
 |[Sumo Logic](34A5019C-7BEC-4BF8-A3B7-C38D567126C6.md)|1|
 |[Symantec](64c7f49c-f95a-4f4a-8540-56ec5fb1d96b.md)|5|
-|[Sysdig](c4de0854-e718-45e1-a4c8-63623755aa43.md)|1|
+|[Sysdig](c4de0854-e718-45e1-a4c8-63623755aa43.md)|2|
 |[Tanium](c7a342e6-5621-401a-ac5c-80ea3f2db23c.md)|1|
 |[Tenable](600BEF8F-BE81-4767-8322-72116C16DB20.md)|1|
 |[Teramind](98def8bd-ffc2-475c-9d77-f85bf7b7b727.md)|1|
@@ -143,7 +145,7 @@ Below is a full list of vendors for which there are supported products in Cloud 
 |[Trend Micro](8af48b83-18bf-4233-ad51-db37baca0313.md)|4|
 |[Trust Login](78eae2f3-199e-48ca-aaf6-53f6a19e854a.md)|1|
 |[Twistlock](97C36046-B516-41F8-9751-4C788AA33785.md)|1|
-|[VMware](fbf25b91-89f1-45c4-903d-664b328bc6e0.md)|4|
+|[VMware](fbf25b91-89f1-45c4-903d-664b328bc6e0.md)|5|
 |[Varonis](20270f89-127e-4055-96ec-56045e67e163.md)|2|
 |[Vectra](7a3d1a5c-ba67-4597-971f-7057e8f6c8bb.md)|1|
 |[WatchGuard](a6e8752b-5e5d-47b0-8f42-68cd438f5264.md)|2|
