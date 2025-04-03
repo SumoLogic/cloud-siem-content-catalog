@@ -849,11 +849,35 @@
 |MATCH-S00279|[TAIDOOR RAT DLL Load](MATCH-S00279.md)|
 |MATCH-S00595|[Telegram API Access](MATCH-S00595.md)|
 |LEGACY-S00170|[The Audit Log was Cleared - 1102](LEGACY-S00170.md)|
+|MATCH-S01010|[Threat Intel - DNS Query Domain](MATCH-S01010.md)|
+|MATCH-S01011|[Threat Intel - DNS Reply Domain](MATCH-S01011.md)|
+|MATCH-S01007|[Threat Intel - Destination Device Hostname](MATCH-S01007.md)|
+|MATCH-S01024|[Threat Intel - Destination IP Address (High Confidence)](MATCH-S01024.md)|
+|MATCH-S01026|[Threat Intel - Destination IP Address (Low Confidence)](MATCH-S01026.md)|
+|MATCH-S01028|[Threat Intel - Destination IP Address (Medium Confidence)](MATCH-S01028.md)|
+|MATCH-S01006|[Threat Intel - Device Hostname](MATCH-S01006.md)|
 |LEGACY-S00110|[Threat Intel - Device IP Matched Threat Intel Domain Name](LEGACY-S00110.md)|
 |LEGACY-S00111|[Threat Intel - Device IP Matched Threat Intel URL](LEGACY-S00111.md)|
+|MATCH-S01008|[Threat Intel - HTTP Hostname](MATCH-S01008.md)|
+|MATCH-S01012|[Threat Intel - HTTP Referrer Domain](MATCH-S01012.md)|
+|MATCH-S01009|[Threat Intel - HTTP Referrer Hostname](MATCH-S01009.md)|
+|MATCH-S01015|[Threat Intel - HTTP URL](MATCH-S01015.md)|
+|MATCH-S01014|[Threat Intel - HTTP URL FQDN](MATCH-S01014.md)|
+|MATCH-S01013|[Threat Intel - HTTP URL Root Domain](MATCH-S01013.md)|
+|MATCH-S00999|[Threat Intel - IMPHASH Match](MATCH-S00999.md)|
 |MATCH-S00555|[Threat Intel - Inbound Traffic Context](MATCH-S00555.md)|
+|MATCH-S01023|[Threat Intel - Inbound Traffic from Threat Feed IP (High Confidence)](MATCH-S01023.md)|
+|MATCH-S01025|[Threat Intel - Inbound Traffic from Threat Feed IP (Low Confidence)](MATCH-S01025.md)|
+|MATCH-S01027|[Threat Intel - Inbound Traffic from Threat Feed IP (Medium Confidence)](MATCH-S01027.md)|
+|MATCH-S01000|[Threat Intel - MD5 Match](MATCH-S01000.md)|
 |LEGACY-S00109|[Threat Intel - Matched Domain Name](LEGACY-S00109.md)|
 |LEGACY-S00108|[Threat Intel - Matched File Hash](LEGACY-S00108.md)|
+|MATCH-S01001|[Threat Intel - PEHASH Match](MATCH-S01001.md)|
+|MATCH-S01003|[Threat Intel - SHA1 Match](MATCH-S01003.md)|
+|MATCH-S01004|[Threat Intel - SHA256 Match](MATCH-S01004.md)|
+|MATCH-S01002|[Threat Intel - SSDEEP Match](MATCH-S01002.md)|
+|MATCH-S01005|[Threat Intel - Source Hostname](MATCH-S01005.md)|
+|MATCH-S01018|[Threat Intel - Successful Authentication from Threat Feed IP](MATCH-S01018.md)|
 |MATCH-S00815|[Threat Intel - Successful Authentication from Threat IP](MATCH-S00815.md)|
 |LEGACY-S00107|[Threat Intel Match - IP Address](LEGACY-S00107.md)|
 |THRESHOLD-S00075|[Too Many Kerberos Encryption Downgrade SPNs (Kerberoasting)](THRESHOLD-S00075.md)|

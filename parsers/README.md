@@ -36,6 +36,7 @@ The `type` listed lets you know if you can directly apply the parser to a collec
 |Parser|/Parsers/System/Bandura/Bandura Syslog|
 |Parser|/Parsers/System/Barracuda/Barracuda CloudGen|
 |Parser|/Parsers/System/Barracuda/Barracuda WAF|
+|Parser|/Parsers/System/Bitwarden/Bitwarden|
 |Parser|/Parsers/System/Blue Coat/Blue Coat ProxySG|
 |Parser|/Parsers/System/Blue Coat/Blue Coat ProxySG CEF|
 |Parser|/Parsers/System/Blue Coat/Blue Coat ProxySG CSV|
@@ -61,6 +62,7 @@ The `type` listed lets you know if you can directly apply the parser to a collec
 |Parser|/Parsers/System/Cloudflare/Cloudflare Logpush|
 |Parser|/Parsers/System/Code42/Code42|
 |Parser|/Parsers/System/Code42/Code42 Incydr|
+|Parser|/Parsers/System/CommScope/CommScope|
 |Parser|/Parsers/System/Corelight/Corelight NSM|
 |Parser|/Parsers/System/CrowdStrike/CrowdStrike FDR - JSON|
 |Parser|/Parsers/System/CrowdStrike/CrowdStrike Falcon Endpoint - CEF|
@@ -168,6 +170,7 @@ The `type` listed lets you know if you can directly apply the parser to a collec
 |Parser|/Parsers/System/Microsoft/Windows-Syslog Tenable LCE|
 |Parser|/Parsers/System/Microsoft/Windows-Syslog WinCollect|
 |Parser|/Parsers/System/Microsoft/Windows-XML|
+|Parser|/Parsers/System/Mimecast/Mimecast|
 |Parser|/Parsers/System/Mindpoint Group/Mindpoint Group Keeper|
 |Parser|/Parsers/System/Miro/Miro Audit C2C|
 |Parser|/Parsers/System/Netskope/Netskope Security Cloud JSON|
@@ -224,6 +227,7 @@ The `type` listed lets you know if you can directly apply the parser to a collec
 |Parser|/Parsers/System/Symantec/Symantec Endpoint Protection/Symantec Endpoint Protection-Syslog|
 |Parser|/Parsers/System/Symantec/Symantec Endpoint Security|
 |Parser|/Parsers/System/Sysdig/Sysdig JSON|
+|Parser|/Parsers/System/Sysdig/Sysdig Secure|
 |Parser|/Parsers/System/Tanium/Tanium CEF|
 |Parser|/Parsers/System/Tanium/Tanium JSON|
 |Parser|/Parsers/System/Tanium/Tanium Syslog|
@@ -236,6 +240,7 @@ The `type` listed lets you know if you can directly apply the parser to a collec
 |Parser|/Parsers/System/Trust Login/Trust Login|
 |Parser|/Parsers/System/Twistlock/Twistlock|
 |Parser|/Parsers/System/VMware/Carbon Black Cloud|
+|Parser|/Parsers/System/VMware/VMware ESXi|
 |Parser|/Parsers/System/VMware/VMware NSX|
 |Parser|/Parsers/System/Varonis/Varonis DatAlert Syslog|
 |Parser|/Parsers/System/WatchGuard/WatchGuard Fireware|
