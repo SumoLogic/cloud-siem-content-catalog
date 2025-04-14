@@ -3295,6 +3295,14 @@
         "mappable": false,
         "type": "string"
     },
+    "fromUser_phoneNumber": {
+        "description": "The telephone number associated with a user.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
     "fromUser_role": {
         "description": "The role of the user account in question. Typically, this shows up in CloudTrail logs as an assumed role, but can be broadly applied to other logs.",
         "enrichment_populated": false,
@@ -4423,6 +4431,14 @@
         "mappable": true,
         "type": "string"
     },
+    "targetUser_phoneNumber": {
+        "description": "Telephone number associated with the impacted or acted upon user.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
     "targetUser_role": {
         "description": "A privileged persona assumed by a user which is subject to activity undertaken by another user. Such as in CloudTrail logs as well as similar cases where a user is recorded taking on a different role for specific privileged activity.",
         "enrichment_populated": false,
@@ -4556,6 +4572,14 @@
         "enrichment_populated": false,
         "enrichment_type": null,
         "entity_type": "_email",
+        "mappable": true,
+        "type": "string"
+    },
+    "user_phoneNumber": {
+        "description": "Telephone number associated with the acting user.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
         "mappable": true,
         "type": "string"
     },

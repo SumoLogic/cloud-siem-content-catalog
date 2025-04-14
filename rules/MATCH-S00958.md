@@ -1,7 +1,7 @@
 # [Rules](README.md): GitHub - PR Review Requirement Removed
 
 ## Description
-Detects GitHub pull request review requirements being removed from a repository either via branch protection rule or ruleset.
+Detects GitHub pull request review requirements being removed from a repository either via branch protection rule or ruleset. This detection was developed utilizing GitHub Enterprise Audit logging. Refer to https://help.sumologic.com/docs/integrations/app-development/github/#collecting-logs-for-github for instructions on ingesting GitHub Enterprise Audit logs.
 
 ## Additional Details
 |Detail|Value|

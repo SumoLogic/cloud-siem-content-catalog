@@ -1,7 +1,7 @@
 # [Rules](README.md): GitHub - Outlier in Distinct User Agent Strings by User
 
 ## Description
-Detects an outlier in the number of distinct user agent strings for a GitHub user. Unusual user agent strings for a user account could indicate account takeover.
+Detects an outlier in the number of distinct user agent strings for a GitHub user. Unusual user agent strings for a user account could indicate account takeover. This detection was developed utilizing GitHub Enterprise Audit logging. Refer to https://help.sumologic.com/docs/integrations/app-development/github/#collecting-logs-for-github for instructions on ingesting GitHub Enterprise Audit logs.
 
 ## Additional Details
 |Detail|Value|

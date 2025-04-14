@@ -1,7 +1,7 @@
 # [Rules](README.md): GitHub - Audit Logging Modification
 
 ## Description
-Detects modifications to the GitHub Enterprise Audit Log. Modifications and deletions have the potential to reduce visibility of malicious activity.
+Detects modifications to the GitHub Enterprise Audit Log. Modifications and deletions have the potential to reduce visibility of malicious activity. This detection was developed utilizing GitHub Enterprise Audit logging. Refer to https://help.sumologic.com/docs/integrations/app-development/github/#collecting-logs-for-github for instructions on ingesting GitHub Enterprise Audit logs.
 
 ## Additional Details
 |Detail|Value|

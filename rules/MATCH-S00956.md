@@ -1,7 +1,7 @@
 # [Rules](README.md): GitHub - OAuth Application Activity
 
 ## Description
-Detects OAuth application activities within GitHub. OAuth application management and access activity should be monitored for potential abuse by malicous actors, either by creating malicious access paths within GitHub, or destruction of GitHub infrastructure.
+Detects OAuth application activities within GitHub. OAuth application management and access activity should be monitored for potential abuse by malicous actors, either by creating malicious access paths within GitHub, or destruction of GitHub infrastructure. This detection was developed utilizing GitHub Enterprise Audit logging. Refer to https://help.sumologic.com/docs/integrations/app-development/github/#collecting-logs-for-github for instructions on ingesting GitHub Enterprise Audit logs.
 
 ## Additional Details
 |Detail|Value|

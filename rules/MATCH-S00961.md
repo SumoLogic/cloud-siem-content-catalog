@@ -1,7 +1,7 @@
 # [Rules](README.md): GitHub - Repository Visibility Changed to Public
 
 ## Description
-Detects a user making a repository public. This action should be closely monitored and mitigative actions taken even if the published repository is deleted, or reverted to private. Reference: https://trufflesecurity.com/blog/anyone-can-access-deleted-and-private-repo-data-github
+Detects a user making a repository public. This action should be closely monitored and mitigative actions taken even if the published repository is deleted, or reverted to private. Reference: https://trufflesecurity.com/blog/anyone-can-access-deleted-and-private-repo-data-github. This detection was developed utilizing GitHub Enterprise Audit logging. Refer to https://help.sumologic.com/docs/integrations/app-development/github/#collecting-logs-for-github for instructions on ingesting GitHub Enterprise Audit logs.
 
 ## Additional Details
 |Detail|Value|

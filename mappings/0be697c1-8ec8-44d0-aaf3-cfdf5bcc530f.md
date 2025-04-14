@@ -26,6 +26,7 @@
 |changeTarget|EventData.PipeName||
 |description|None|The static text `Sysmon observed a pipe creation` is populated in this schema field.|
 |device_hostname|Computer||
+|normalizedAction|None|The static text `create` is populated in this schema field.|
 |pid|EventData.ProcessId||
 |resource|EventData.PipeName||
 |sourceUid|EventRecordID||

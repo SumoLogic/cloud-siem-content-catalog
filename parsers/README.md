@@ -216,6 +216,7 @@ The `type` listed lets you know if you can directly apply the parser to a collec
 |Parser|/Parsers/System/Shared/Process CEF Fields|
 |Parser|/Parsers/System/Shared/Syslog Headers|
 |Parser|/Parsers/System/Signal Science/Signal Science WAF|
+|Parser|/Parsers/System/Slack/Slack Enterprise Audit|
 |Parser|/Parsers/System/Snort/Snort|
 |Parser|/Parsers/System/Snowflake/Snowflake|
 |Parser|/Parsers/System/Sophos/Sophos Central C2C JSON|

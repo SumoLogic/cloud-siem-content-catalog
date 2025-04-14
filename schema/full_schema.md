@@ -410,6 +410,7 @@ In cases where the log data has a source or destination context, there are situa
 |friendlyName|string|Name of the table the data is mapped to. Always Record for V3.|
 |fromUser_authDomain|string|The domain associated with this particular user. (e.g. sumologic.com, sumologic.local)|
 |fromUser_email|string|The associated email address assigned to this user.|
+|fromUser_phoneNumber|string|The telephone number associated with a user.|
 |fromUser_role|string|The role of the user account in question. Typically, this shows up in CloudTrail logs as an assumed role, but can be broadly applied to other logs.|
 |fromUser_userId|string|The source unique identifier for the user account.|
 |fromUser_username|string|The name commonly used to identify the user. May include the domain.  If name normalization occurs, this will be the normalized name.|
@@ -551,6 +552,7 @@ In cases where the log data has a source or destination context, there are situa
 |success|boolean|True or false showing whether or not an action or event recorded in a log was successful. This field is either defined as a constant or based on a lookup in a mapping.|
 |targetUser_authDomain|string|The authentication domain of a user which is subject to or is otherwise impacted by activity undertaken by another user. Such as the Active Directory domain to which a new user account being created belongs.|
 |targetUser_email|string|E-Mail address associated with the user which is subject to activity undertaken by another account. Such as an E-Mail address which was created for a new user account.|
+|targetUser_phoneNumber|string|Telephone number associated with the impacted or acted upon user.|
 |targetUser_role|string|A privileged persona assumed by a user which is subject to activity undertaken by another user. Such as in CloudTrail logs as well as similar cases where a user is recorded taking on a different role for specific privileged activity.|
 |targetUser_userId|string|The semi-unique identifier associated with a user account which is subject to activity undertaken by another user account.|
 |targetUser_username|string|User an action is performed on or is otherwise impacted by an action taken by another user. Such as a user whose account is disabled by an administrator.|
@@ -570,6 +572,7 @@ The logs using this field will all be a form of pass through content. Messages t
 |uid|string|UID for the parsed record in Sumo Logic CSE.|
 |user_authDomain|string|The authentication domain associated with an acting user. Such as an Active Directory domain of a user logging in or is performing an action.|
 |user_email|string|E-Mail address associated with the acting user.|
+|user_phoneNumber|string|Telephone number associated with the acting user.|
 |user_role|string|A privileged persona which is assumed by an acting user. Such as in CloudTrail logs as well as similar cases where a user is recorded taking on a different role for specific privileged activity.|
 |user_userId|string|The semi-unique identifier associated with an acting user account.|
 |user_username|string|User performing an action. Such as an administrator disabling another user account.|

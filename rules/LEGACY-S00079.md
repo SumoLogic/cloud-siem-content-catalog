@@ -17,7 +17,6 @@ Requests to web applications containing SQL statement keywords may indicate atte
 |Tags|_mitreAttackTactic:TA0001, _mitreAttackTechnique:T1190|
 ## Vendors and Products
 - [Bro - Bro](../products/37C866BF-72E1-470A-9072-EDB908F56951.md)
-- [Zscaler - Nanolog Streaming Service](../products/6299d728-14f7-455e-85c5-ea8ec65a654a.md)
 
 
 ## Fields Used

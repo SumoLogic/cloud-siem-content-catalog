@@ -1,7 +1,7 @@
 # [Rules](README.md): AWS Lambda Function Recon
 
 ## Description
-Observed when lamba getfunction AWS API call is made, indicitive of possible recon activity
+Observed when Lambda getfunction AWS API call is made, indicitive of possible recon activity
 
 ## Additional Details
 |Detail|Value|
@@ -9,8 +9,8 @@ Observed when lamba getfunction AWS API call is made, indicitive of possible rec
 |Type|Templated Match|
 |Category|Discovery|
 |Apply Risk to Entities|user_username|
-|Signal Name|AWS Lamda Function Recon|
-|Summary Expression|AWS lamda function observed in cloudtrail|
+|Signal Name|AWS Lambda Function Recon|
+|Summary Expression|AWS Lambda function observed in cloudtrail|
 |Score/Severity|Static: 2|
 |Enabled by Default|True|
 |Prototype|False|

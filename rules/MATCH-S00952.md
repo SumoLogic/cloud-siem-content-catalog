@@ -1,7 +1,7 @@
 # [Rules](README.md): GitHub - Administrator Added or Invited
 
 ## Description
-Detects additions or invitations of GitHub Administrators. Illegitimate addition of administrative users could be an indication of priviledge escalation or persistence by adversaries.
+Detects additions or invitations of GitHub Administrators. Illegitimate addition of administrative users could be an indication of priviledge escalation or persistence by adversaries. This detection was developed utilizing GitHub Enterprise Audit logging. Refer to https://help.sumologic.com/docs/integrations/app-development/github/#collecting-logs-for-github for instructions on ingesting GitHub Enterprise Audit logs.
 
 ## Additional Details
 |Detail|Value|

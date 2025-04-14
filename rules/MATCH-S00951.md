@@ -1,7 +1,7 @@
 # [Rules](README.md): GitHub - Secret Scanning Alert
 
 ## Description
-Observes for secret scanning alerts from GitHub. Secrets detected by GitHub Enterprise Cloud undergo validation by GitHub automatically, to determine whether they are actively in use, this is not surfaced in the audit log, and will require separate inspection. For more information see : [Evaluating alerts from secret scanning](https://docs.github.com/en/code-security/secret-scanning/managing-alerts-from-secret-scanning/evaluating-alerts)
+Observes for secret scanning alerts from GitHub. Secrets detected by GitHub Enterprise Cloud undergo validation by GitHub automatically, to determine whether they are actively in use, this is not surfaced in the audit log, and will require separate inspection. For more information see : [Evaluating alerts from secret scanning](https://docs.github.com/en/code-security/secret-scanning/managing-alerts-from-secret-scanning/evaluating-alerts). This detection was developed utilizing GitHub Enterprise Audit logging. Refer to https://help.sumologic.com/docs/integrations/app-development/github/#collecting-logs-for-github for instructions on ingesting GitHub Enterprise Audit logs.
 
 ## Additional Details
 |Detail|Value|

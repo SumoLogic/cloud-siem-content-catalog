@@ -1,7 +1,7 @@
 # [Rules](README.md): GitHub - Two-Factor Authentication Disabled for Organization
 
 ## Description
-Observes for two-factor authentication being disabled for a GitHub organization. Removing two-factor authentication requirements significantly degrades the security of the GitHub organization by permitting password only authentication.
+Observes for two-factor authentication being disabled for a GitHub organization. Removing two-factor authentication requirements significantly degrades the security of the GitHub organization by permitting password only authentication. This detection was developed utilizing GitHub Enterprise Audit logging. Refer to https://help.sumologic.com/docs/integrations/app-development/github/#collecting-logs-for-github for instructions on ingesting GitHub Enterprise Audit logs.
 
 ## Additional Details
 |Detail|Value|
