@@ -1,7 +1,7 @@
 # [Rules](README.md): GitHub - First Seen Application Interacting with API
 
 ## Description
-Detects new application usage of the GitHub API. New applications utilizing the API may be routine, however this may also reveal malicious applications utilzing the API.
+Detects new application usage of the GitHub API. New applications utilizing the API may be routine, however this may also reveal malicious applications utilzing the API. This detection was developed utilizing GitHub Enterprise Audit logging. Refer to https://help.sumologic.com/docs/integrations/app-development/github/#collecting-logs-for-github for instructions on ingesting GitHub Enterprise Audit logs.
 
 ## Additional Details
 |Detail|Value|

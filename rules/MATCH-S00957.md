@@ -1,7 +1,7 @@
 # [Rules](README.md): GitHub - Organization Transfer
 
 ## Description
-Detects transfers of an organization to another enterprise This is a sensitive activity that should be monitored to ensure organizations and their repositories are not being transferred without proper authorization.
+Detects transfers of an organization to another enterprise This is a sensitive activity that should be monitored to ensure organizations and their repositories are not being transferred without proper authorization. This detection was developed utilizing GitHub Enterprise Audit logging. Refer to https://help.sumologic.com/docs/integrations/app-development/github/#collecting-logs-for-github for instructions on ingesting GitHub Enterprise Audit logs.
 
 ## Additional Details
 |Detail|Value|

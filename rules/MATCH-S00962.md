@@ -1,7 +1,7 @@
 # [Rules](README.md): GitHub - Repository Visibility Permissions Changed
 
 ## Description
-Detects repository visibility permissions being changed to allow members of an organization to change the visibility of repositories. This activity introduces the potential for data leakage if a private or internal repository is changed to public and should be monitored to ensure no inadvertent or malicious publication of a repository.
+Detects repository visibility permissions being changed to allow members of an organization to change the visibility of repositories. This activity introduces the potential for data leakage if a private or internal repository is changed to public and should be monitored to ensure no inadvertent or malicious publication of a repository. This detection was developed utilizing GitHub Enterprise Audit logging. Refer to https://help.sumologic.com/docs/integrations/app-development/github/#collecting-logs-for-github for instructions on ingesting GitHub Enterprise Audit logs.
 
 ## Additional Details
 |Detail|Value|

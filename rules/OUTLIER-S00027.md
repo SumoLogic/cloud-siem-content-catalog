@@ -1,7 +1,7 @@
 # [Rules](README.md): GitHub - Outlier in Repository Cloning or Downloads
 
 ## Description
-Detects an unusual number of repository clones for a user. Unusual repository cloning could indicate data exfiltration or discovery.
+Detects an unusual number of repository clones for a user. Unusual repository cloning could indicate data exfiltration or discovery. This detection was developed utilizing GitHub Enterprise Audit logging. Refer to https://help.sumologic.com/docs/integrations/app-development/github/#collecting-logs-for-github for instructions on ingesting GitHub Enterprise Audit logs.
 
 ## Additional Details
 |Detail|Value|

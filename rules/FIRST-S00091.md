@@ -1,7 +1,7 @@
 # [Rules](README.md): GitHub - First Seen Activity From Country for User
 
 ## Description
-Detects GitHub user activity from a new country. User account compromises can be detected through unusual geolocation in some cases. To lower possible false positives, a tuning expression for expected country names or codes can be added,.
+Detects GitHub user activity from a new country. User account compromises can be detected through unusual geolocation in some cases. To lower possible false positives, a tuning expression for expected country names or codes can be added,. This detection was developed utilizing GitHub Enterprise Audit logging. Refer to https://help.sumologic.com/docs/integrations/app-development/github/#collecting-logs-for-github for instructions on ingesting GitHub Enterprise Audit logs.
 
 ## Additional Details
 |Detail|Value|

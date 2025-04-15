@@ -1,7 +1,7 @@
 # [Rules](README.md): GitHub - Member Invitation or Addition
 
 ## Description
-Detects new user additions or invitations to the business or organizations GitHub. New user additions/invitations should be monitored as they could be a vector for malicious actors to establish access or persistence.
+Detects new user additions or invitations to the business or organizations GitHub. New user additions/invitations should be monitored as they could be a vector for malicious actors to establish access or persistence. This detection was developed utilizing GitHub Enterprise Audit logging. Refer to https://help.sumologic.com/docs/integrations/app-development/github/#collecting-logs-for-github for instructions on ingesting GitHub Enterprise Audit logs.
 
 ## Additional Details
 |Detail|Value|

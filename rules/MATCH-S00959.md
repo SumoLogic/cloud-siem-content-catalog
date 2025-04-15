@@ -1,7 +1,7 @@
 # [Rules](README.md): GitHub - Repository Public Key Deletion
 
 ## Description
-Detects deletions of SSH keys in GitHub. Unusual deletions could represent an adversary attempting to disrupt normal operations by denying access.
+Detects deletions of SSH keys in GitHub. Unusual deletions could represent an adversary attempting to disrupt normal operations by denying access. This detection was developed utilizing GitHub Enterprise Audit logging. Refer to https://help.sumologic.com/docs/integrations/app-development/github/#collecting-logs-for-github for instructions on ingesting GitHub Enterprise Audit logs.
 
 ## Additional Details
 |Detail|Value|

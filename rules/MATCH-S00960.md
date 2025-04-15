@@ -1,7 +1,7 @@
 # [Rules](README.md): GitHub - Repository Transfer
 
 ## Description
-Detects transfers of a repository to another organization or user. This is a sensitive activity that GitHub places in the "Danger Zone" of repository setting and should be monitored to ensure no unauthorized transfers are taking place.
+Detects transfers of a repository to another organization or user. This is a sensitive activity that GitHub places in the "Danger Zone" of repository setting and should be monitored to ensure no unauthorized transfers are taking place. This detection was developed utilizing GitHub Enterprise Audit logging. Refer to https://help.sumologic.com/docs/integrations/app-development/github/#collecting-logs-for-github for instructions on ingesting GitHub Enterprise Audit logs.
 
 ## Additional Details
 |Detail|Value|

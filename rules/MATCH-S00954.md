@@ -1,7 +1,7 @@
 # [Rules](README.md): GitHub - Copilot Seat Cancelled by GitHub
 
 ## Description
-Observes for GitHub staff manually revoking copilot access for a user. This action is likely to be rare and may be indicative of a user violating the [acceptable use policy for GitHub](https://docs.github.com/en/site-policy/acceptable-use-policies)
+Observes for GitHub staff manually revoking copilot access for a user. This action is likely to be rare and may be indicative of a user violating the [acceptable use policy for GitHub](https://docs.github.com/en/site-policy/acceptable-use-policies). This detection was developed utilizing GitHub Enterprise Audit logging. Refer to https://help.sumologic.com/docs/integrations/app-development/github/#collecting-logs-for-github for instructions on ingesting GitHub Enterprise Audit logs.
 
 ## Additional Details
 |Detail|Value|

@@ -1,7 +1,7 @@
 # [Rules](README.md): GitHub - Secret Scanning Potentially Disabled
 
 ## Description
-Detects actions which disable or modify secret scanning policies for an organization or repository. Modifying or disabling secret scanning may lead to inadvertent leaking of credentials.
+Detects actions which disable or modify secret scanning policies for an organization or repository. Modifying or disabling secret scanning may lead to inadvertent leaking of credentials. This detection was developed utilizing GitHub Enterprise Audit logging. Refer to https://help.sumologic.com/docs/integrations/app-development/github/#collecting-logs-for-github for instructions on ingesting GitHub Enterprise Audit logs.
 
 ## Additional Details
 |Detail|Value|

@@ -1,7 +1,7 @@
 # [Rules](README.md): GitHub - SSO Recovery Codes Access Activity
 
 ## Description
-Detects activities accessing SSO recovery codes. SSO recovery codes can enable a user to bypass normal more stringent authentication routes.
+Detects activities accessing SSO recovery codes. SSO recovery codes can enable a user to bypass normal more stringent authentication routes. This detection was developed utilizing GitHub Enterprise Audit logging. Refer to https://help.sumologic.com/docs/integrations/app-development/github/#collecting-logs-for-github for instructions on ingesting GitHub Enterprise Audit logs.
 
 ## Additional Details
 |Detail|Value|

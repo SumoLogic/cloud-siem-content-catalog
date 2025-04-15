@@ -1,7 +1,7 @@
 # [Rules](README.md): GitHub - SSH Key Created for Private Repo
 
 ## Description
-Detects the creation of an SSH key for a private GitHub repository.  Performed maliciously, creating an SSH key could create a parallel access path for an attacker.
+Detects the creation of an SSH key for a private GitHub repository.  Performed maliciously, creating an SSH key could create a parallel access path for an attacker. This detection was developed utilizing GitHub Enterprise Audit logging. Refer to https://help.sumologic.com/docs/integrations/app-development/github/#collecting-logs-for-github for instructions on ingesting GitHub Enterprise Audit logs.
 
 ## Additional Details
 |Detail|Value|

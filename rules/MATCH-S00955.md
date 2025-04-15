@@ -1,7 +1,7 @@
 # [Rules](README.md): GitHub - Member Permissions Modification
 
 ## Description
-Detects modifications of GitHub user permissions. Added permissions for a user should be monitored for potential privilege escalation by an adversary.
+Detects modifications of GitHub user permissions. Added permissions for a user should be monitored for potential privilege escalation by an adversary. This detection was developed utilizing GitHub Enterprise Audit logging. Refer to https://help.sumologic.com/docs/integrations/app-development/github/#collecting-logs-for-github for instructions on ingesting GitHub Enterprise Audit logs.
 
 ## Additional Details
 |Detail|Value|
