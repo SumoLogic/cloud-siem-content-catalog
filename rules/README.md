@@ -859,8 +859,8 @@
 |LEGACY-S00110|[Threat Intel - Device IP Matched Threat Intel Domain Name](LEGACY-S00110.md)|
 |LEGACY-S00111|[Threat Intel - Device IP Matched Threat Intel URL](LEGACY-S00111.md)|
 |MATCH-S01008|[Threat Intel - HTTP Hostname](MATCH-S01008.md)|
-|MATCH-S01012|[Threat Intel - HTTP Referrer Domain](MATCH-S01012.md)|
-|MATCH-S01009|[Threat Intel - HTTP Referrer Hostname](MATCH-S01009.md)|
+|MATCH-S01009|[Threat Intel - HTTP Referer](MATCH-S01009.md)|
+|MATCH-S01012|[Threat Intel - HTTP Referer Root Domain](MATCH-S01012.md)|
 |MATCH-S01015|[Threat Intel - HTTP URL](MATCH-S01015.md)|
 |MATCH-S01014|[Threat Intel - HTTP URL FQDN](MATCH-S01014.md)|
 |MATCH-S01013|[Threat Intel - HTTP URL Root Domain](MATCH-S01013.md)|

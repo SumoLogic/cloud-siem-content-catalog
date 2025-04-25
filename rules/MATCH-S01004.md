@@ -22,6 +22,7 @@ This rule detects a SHA256 hash indicator match from a threat intelligence feed
 
 |Origin|Field|
 |----|----|
+|Normalized Schema|SHA-256|
 |Normalized Schema|confidence|
 |Normalized Schema|device_hostname|
 |Normalized Schema|device_ip|
