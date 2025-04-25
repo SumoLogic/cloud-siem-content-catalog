@@ -32,7 +32,6 @@ This rule detects a PEHASH indicator match from a threat intelligence feed
 |Normalized Schema|srcDevice_ip|
 |Normalized Schema|srcDevice_mac|
 |Normalized Schema|srcDevice_natIp|
-|Normalized Schema|type|
 |Normalized Schema|user_username|
 
 

@@ -1,4 +1,4 @@
-# [Rules](README.md): Threat Intel - HTTP Referrer Hostname
+# [Rules](README.md): Threat Intel - HTTP Referer
 
 ## Description
 This rule detects an indicator match from a threat intelligence feed
@@ -9,8 +9,8 @@ This rule detects an indicator match from a threat intelligence feed
 |Type|Templated Match|
 |Category|Threat Intelligence|
 |Apply Risk to Entities|srcDevice_hostname, srcDevice_ip, srcDevice_natIp, srcDevice_mac, user_username, dns_replyIp|
-|Signal Name|Threat Intel - HTTP Referrer Hostname|
-|Summary Expression|Threat Intel - HTTP Referrer Hostname detected for: {{http_referrerHostname}}|
+|Signal Name|Threat Intel - HTTP Referer|
+|Summary Expression|Threat Intel - HTTP Referer detected for: {{http_referer}}|
 |Score/Severity|Static: 2|
 |Enabled by Default|True|
 |Prototype|False|

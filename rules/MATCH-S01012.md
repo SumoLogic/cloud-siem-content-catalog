@@ -1,4 +1,4 @@
-# [Rules](README.md): Threat Intel - HTTP Referrer Domain
+# [Rules](README.md): Threat Intel - HTTP Referer Root Domain
 
 ## Description
 This rule detects an indicator match from a threat intelligence feed
@@ -9,8 +9,8 @@ This rule detects an indicator match from a threat intelligence feed
 |Type|Templated Match|
 |Category|Threat Intelligence|
 |Apply Risk to Entities|srcDevice_hostname, srcDevice_ip, srcDevice_natIp, srcDevice_mac, user_username, dns_replyIp|
-|Signal Name|Threat Intel - HTTP Referrer Domain|
-|Summary Expression|Threat Intel - HTTP Referrer Domain detected for: {{http_referrerDomain}}|
+|Signal Name|Threat Intel - HTTP Referer Root Domain|
+|Summary Expression|Threat Intel - HTTP Root Domain detected for: {{http_referer_rootDomain}}|
 |Score/Severity|Static: 2|
 |Enabled by Default|True|
 |Prototype|False|
@@ -22,7 +22,6 @@ This rule detects an indicator match from a threat intelligence feed
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|OR|
 |Normalized Schema|confidence|
 |Normalized Schema|dns_replyIp|
 |Normalized Schema|listMatches|

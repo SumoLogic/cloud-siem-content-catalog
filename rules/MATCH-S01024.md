@@ -25,6 +25,7 @@ This rule detects traffic to IP address with a high confidence rating from a thr
 - [Illumio - Adaptive Security Platform](../products/1afb4979-e858-43fe-8a55-87f444f0417b.md)
 - [Netskope - Security Cloud](../products/B3582ED2-1A0C-452D-9802-97433D143486.md)
 - [Palo Alto Networks - Next Generation Firewall](../products/46f5fa2c-1a62-4692-82ad-ed87800a0adb.md)
+- [Pfsense - Pfsense Firewall](../products/ef11c9cd-df72-42c6-81f5-70b91fd0f38a.md)
 
 
 ## Fields Used
