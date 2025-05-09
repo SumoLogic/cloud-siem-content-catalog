@@ -94,7 +94,7 @@ Below is a full list of vendors for which there are supported products in Cloud 
 |[ManageEngine](e6417fdd-1aa1-436e-a659-38d71e51599f.md)|1|
 |[McAfee](20dec895-f649-4959-9717-104fb68bb5b4.md)|18|
 |[Micro Focus](23850303-a1da-4c95-83f1-bd9d3b5104b8.md)|3|
-|[Microsoft](2b002817-fd14-49b3-a3fe-c9761275b931.md)|18|
+|[Microsoft](2b002817-fd14-49b3-a3fe-c9761275b931.md)|19|
 |[Mimecast](7BC43DFE-C5DD-4766-88E7-C163D82BBBF8.md)|1|
 |[Mindpoint Group](f438572b-ed7f-4048-bb30-4a30c1babd81.md)|1|
 |[Miro](9f149da1-2831-465f-8bb1-a5950ccaec0c.md)|1|

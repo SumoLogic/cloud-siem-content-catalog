@@ -22,7 +22,9 @@
 |Cloud SIEM Schema Field|Original Record Key|Notes|
 |-----------------------|-------------------|-----|
 |action|action||
-|severity|severity||
+|normalizedAction|asa_event_id|This is a lookup field. More info to come in the catalog later...|
+|normalizedSeverity|severity|This is a lookup field. More info to come in the catalog later...|
+|severity|severity|This is a lookup field. More info to come in the catalog later...|
 |srcDevice_ip|source_ip||
 |success|None|The static text `true` is populated in this schema field.|
 |user_username|user||

@@ -184,6 +184,7 @@ Below is a full list of products supported by Cloud SIEM.
 |[Microsoft](../vendors/2b002817-fd14-49b3-a3fe-c9761275b931.md)|[Azure](a1225af5-e778-4068-a9a2-47da93d1ff24.md)|
 |[Microsoft](../vendors/2b002817-fd14-49b3-a3fe-c9761275b931.md)|[Azure DevOps Auditing](c3b61ddb-4d2d-497c-b873-28938036b67b.md)|
 |[Microsoft](../vendors/2b002817-fd14-49b3-a3fe-c9761275b931.md)|[Azure Storage Analytics](4411adbb-f3f4-4e6e-a174-694fef8d7a47.md)|
+|[Microsoft](../vendors/2b002817-fd14-49b3-a3fe-c9761275b931.md)|[Azure Virtual Network](20b56f37-5fc0-485a-b5da-4010f9025b93.md)|
 |[Microsoft](../vendors/2b002817-fd14-49b3-a3fe-c9761275b931.md)|[Cloud App Security](86e85e72-d3b1-4f1d-b195-5ca3d90e9461.md)|
 |[Microsoft](../vendors/2b002817-fd14-49b3-a3fe-c9761275b931.md)|[DNS](e362ae18-9af1-496d-9ace-efa05a8381c6.md)|
 |[Microsoft](../vendors/2b002817-fd14-49b3-a3fe-c9761275b931.md)|[Defender Advanced Hunting](3382523e-2072-41bd-b50b-6b148957d0b0.md)|
