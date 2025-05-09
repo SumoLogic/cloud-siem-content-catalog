@@ -54,6 +54,7 @@
 |MATCH-S00672|[AWS Config Recorder Stopped](MATCH-S00672.md)|
 |MATCH-S00670|[AWS Config Service Tampering](MATCH-S00670.md)|
 |OUTLIER-S00024|[AWS DynamoDB Outlier in GetItem Events from User](OUTLIER-S00024.md)|
+|OUTLIER-S00033|[AWS DynamoDB Outlier in PutItem Events from User](OUTLIER-S00033.md)|
 |MATCH-S00654|[AWS ECS Cluster Deleted](MATCH-S00654.md)|
 |MATCH-S00873|[AWS EKS Cluster Configuration Updated](MATCH-S00873.md)|
 |MATCH-S00872|[AWS EKS Failed Curl Authentication Attempt](MATCH-S00872.md)|
@@ -343,6 +344,7 @@
 |FIRST-S00087|[First Seen User Creating or Modifying EC2 Launch Template](FIRST-S00087.md)|
 |FIRST-S00005|[First Seen User Creation From User](FIRST-S00005.md)|
 |FIRST-S00082|[First Seen User Enumerating AWS Bedrock Models](FIRST-S00082.md)|
+|FIRST-S00100|[First Seen User Enumerating Custom AWS Bedrock Models](FIRST-S00100.md)|
 |FIRST-S00006|[First Seen Weak Kerberos Encryption from User](FIRST-S00006.md)|
 |FIRST-S00038|[First Seen Wget Usage from User](FIRST-S00038.md)|
 |FIRST-S00040|[First Seen cURL execution from User](FIRST-S00040.md)|
@@ -618,6 +620,8 @@
 |OUTLIER-S00022|[Outlier in AWS Bedrock Foundation Model Enumeration Calls from User ](OUTLIER-S00022.md)|
 |OUTLIER-S00013|[Outlier in Data Outbound Per Day by Admin or Sensitive Device](OUTLIER-S00013.md)|
 |OUTLIER-S00015|[Outlier in Data Outbound Per Hour by Admin or Sensitive Device](OUTLIER-S00015.md)|
+|OUTLIER-S00032|[Outlier in Data Transferred from an S3 Bucket by User](OUTLIER-S00032.md)|
+|OUTLIER-S00031|[Outlier in Data Transferred into an S3 Bucket by User](OUTLIER-S00031.md)|
 |MATCH-S00755|[Outlook Form Creation](MATCH-S00755.md)|
 |MATCH-S00756|[Outlook Homepage Modification](MATCH-S00756.md)|
 |MATCH-S00683|[Overly Permissive Chmod Command](MATCH-S00683.md)|

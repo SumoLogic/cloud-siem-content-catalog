@@ -23,7 +23,8 @@
 |-----------------------|-------------------|-----|
 |action|action||
 |description|reason||
-|severity|severity||
+|normalizedSeverity|severity|This is a lookup field. More info to come in the catalog later...|
+|severity|severity|This is a lookup field. More info to come in the catalog later...|
 |success|None|The static text `false` is populated in this schema field.|
 |user_username|user||
 

@@ -140,6 +140,7 @@ The `type` listed lets you know if you can directly apply the parser to a collec
 |Parser|/Parsers/System/McAfee/McAfee Web Gateway CSV|
 |Parser|/Parsers/System/McAfee/Shared/Syslog Headers McAfee|
 |Parser|/Parsers/System/Microsoft/Azure Storage Analytics|
+|Parser|/Parsers/System/Microsoft/Azure Virtual Network|
 |Parser|/Parsers/System/Microsoft/Exchange|
 |Parser|/Parsers/System/Microsoft/Graph Security Alert API|
 |Parser|/Parsers/System/Microsoft/Microsoft Azure JSON|
@@ -211,6 +212,7 @@ The `type` listed lets you know if you can directly apply the parser to a collec
 |Parser|/Parsers/System/Radiant Logic/Radiant Logic VDS|
 |Parser|/Parsers/System/Salesforce/Salesforce|
 |Parser|/Parsers/System/SentinelOne/SentinelOne CEF|
+|Parser|/Parsers/System/SentinelOne/SentinelOne MGMT API|
 |Parser|/Parsers/System/SentinelOne/SentinelOne Syslog|
 |Parser|/Parsers/System/Shared/Formatter|
 |Parser|/Parsers/System/Shared/Process CEF Fields|

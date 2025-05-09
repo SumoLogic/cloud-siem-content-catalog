@@ -122,6 +122,7 @@ You will find our complete list of mappers for content here.
  - [Azure ServicePrincipalSignInLogs](1b23141e-b15d-4b26-b792-6b0ca3a0b63a.md)
  - [Azure Storage Analytics](19954168-98d6-487c-849d-a48c156ca12e.md)
  - [Azure User Risk Events](379364a9-1ef1-4546-bbf6-4065b2d781e8.md)
+ - [Azure Virtual Network Flow logs](5230380b-14fd-447e-8a0f-c652769e95b0.md)
  - [Azure Write and Delete Logs](e364663b-43c0-4be0-af90-b085fa0d5be8.md)
  - [AzureActivityLog 01](2c7bf143-bd3e-4b3f-ac0c-19ba568922fc.md)
  - [AzureActivityLog AuditLogs](22fd3764-dd3a-403f-833b-be8a1fa12df7.md)

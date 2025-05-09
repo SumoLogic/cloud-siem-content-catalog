@@ -28,5 +28,5 @@
 |srcPort|source_port||
 |timestamp|timestamp|We expect the orginal record value of `timestamp` is in the format `yyyy/MM/dd HH:mm:ss`|
 |user_email|email_address||
-|user_username|email_address||
+|user_username|email_address|This is a split field. More info to come in the catalog later...|
 

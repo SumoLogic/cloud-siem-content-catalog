@@ -8,9 +8,9 @@ Detects typically routine administrative activity, but should be monitored in ca
 |----|----|
 |Type|Templated Match|
 |Category|Credential Access|
-|Apply Risk to Entities|device_hostname, device_ip, user_username, srcDevice_ip|
+|Apply Risk to Entities|device_hostname, device_ip, targetUser_username, srcDevice_ip|
 |Signal Name|O365 - Users Password Reset|
-|Summary Expression|The account {{user_username}} was reset by the account {{fields['UserId']}}|
+|Summary Expression|The account {{targetUser_username}}  was reset by the account {{user_username}}|
 |Score/Severity|Static: 1|
 |Enabled by Default|True|
 |Prototype|False|
@@ -30,6 +30,7 @@ Detects typically routine administrative activity, but should be monitored in ca
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|
 |Normalized Schema|srcDevice_ip|
+|Normalized Schema|targetUser_username|
 |Normalized Schema|user_username|
 
 
