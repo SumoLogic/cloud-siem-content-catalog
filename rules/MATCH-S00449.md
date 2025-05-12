@@ -32,7 +32,6 @@ It is recommended to tune this rule to hosts/users that are not ordinarily bypas
 |----|----|
 |Normalized Schema|baseImage|
 |Normalized Schema|commandLine|
-|Normalized Schema|commandline|
 |Normalized Schema|device_hostname|
 |Normalized Schema|device_ip|
 |Normalized Schema|user_username|
