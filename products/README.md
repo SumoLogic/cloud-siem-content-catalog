@@ -77,6 +77,7 @@ Below is a full list of products supported by Cloud SIEM.
 |[Code42](../vendors/f764fde6-a435-42cb-9407-15734a99d657.md)|[Code42](be11069a-30d6-4439-b9c8-9d4f47c13160.md)|
 |[Code42](../vendors/f764fde6-a435-42cb-9407-15734a99d657.md)|[Incydr](cc523ad6-7193-4de5-a254-d0243fca63f3.md)|
 |[CommScope](../vendors/e69bff14-6237-4997-a447-4fc02feaeeaf.md)|[CommScope](c8729aa1-2b08-4623-bfe5-3c02c49e8a55.md)|
+|[CommScope](../vendors/e69bff14-6237-4997-a447-4fc02feaeeaf.md)|[Ruckus SmartZone](530fe5cd-5a19-4c8a-b0d8-beef3af35600.md)|
 |[Corelight](../vendors/6b5528e6-3d06-460d-b730-b5fa4b18ce18.md)|[NSM](1eecf521-df5d-4fc5-83b4-69f128056fdb.md)|
 |[CrowdStrike](../vendors/79ade329-b6d4-43ae-8db1-2a9cc45c0fb0.md)|[FDR](569a3a44-c29f-492e-bcf4-5dc04e2ab0f3.md)|
 |[CrowdStrike](../vendors/79ade329-b6d4-43ae-8db1-2a9cc45c0fb0.md)|[Falcon](840c72e0-4e47-41e7-9b93-31f55d12f07d.md)|

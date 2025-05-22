@@ -20,6 +20,7 @@
 |Prototype|False|
 |Tags|_mitreAttackTactic:TA0010, _mitreAttackTechnique:T1567.002|
 ## Vendors and Products
+- [Amazon AWS - CloudTrail](../products/033624b0-218e-4dcb-b93f-0f1fb1806c56.md)
 
 
 ## Fields Used
