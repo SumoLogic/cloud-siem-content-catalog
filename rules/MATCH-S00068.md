@@ -10,7 +10,7 @@ This is usually routine administrative activity, but should be monitored in case
 |Category|Execution|
 |Apply Risk to Entities|device_hostname, device_ip, user_username, srcDevice_ip|
 |Signal Name|O365 - Users Password Changed|
-|Summary Expression|The account {{user_username}} had its password changed by the account {{fields['UserId']}}|
+|Summary Expression|The account {{targetUser_username}} had its password changed by the account {{user_username}}|
 |Score/Severity|Static: 1|
 |Enabled by Default|True|
 |Prototype|False|
@@ -30,6 +30,7 @@ This is usually routine administrative activity, but should be monitored in case
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|
 |Normalized Schema|srcDevice_ip|
+|Normalized Schema|targetUser_username|
 |Normalized Schema|user_username|
 
 

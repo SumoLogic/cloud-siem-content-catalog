@@ -20,6 +20,8 @@
 |MATCH-S00560|[SMTP Traffic from Non-SMTP Servers](../rules/MATCH-S00560.md)|
 |LEGACY-S00093|[Script/CLI UserAgent string](../rules/LEGACY-S00093.md)|
 |LEGACY-S00182|[Suspicious HTTP User-Agent](../rules/LEGACY-S00182.md)|
+|MATCH-S01026|[Threat Intel - Destination IP Address (Low Confidence)](../rules/MATCH-S01026.md)|
+|MATCH-S01028|[Threat Intel - Destination IP Address (Medium Confidence)](../rules/MATCH-S01028.md)|
 
 
 ## Log Mappers
