@@ -63,6 +63,7 @@ The `type` listed lets you know if you can directly apply the parser to a collec
 |Parser|/Parsers/System/Code42/Code42|
 |Parser|/Parsers/System/Code42/Code42 Incydr|
 |Parser|/Parsers/System/CommScope/CommScope|
+|Parser|/Parsers/System/CommScope/CommScope Ruckus SmartZone|
 |Parser|/Parsers/System/Corelight/Corelight NSM|
 |Parser|/Parsers/System/CrowdStrike/CrowdStrike FDR - JSON|
 |Parser|/Parsers/System/CrowdStrike/CrowdStrike Falcon Endpoint - CEF|
