@@ -8,7 +8,7 @@ This is usually routine administrative activity, but should be monitored in case
 |----|----|
 |Type|Templated Match|
 |Category|Execution|
-|Apply Risk to Entities|device_hostname, device_ip, user_username, srcDevice_ip|
+|Apply Risk to Entities|device_hostname, device_ip, targetUser_username, user_username, srcDevice_ip|
 |Signal Name|O365 - Users Password Changed|
 |Summary Expression|The account {{targetUser_username}} had its password changed by the account {{user_username}}|
 |Score/Severity|Static: 1|
