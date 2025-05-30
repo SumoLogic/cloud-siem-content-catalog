@@ -8,6 +8,7 @@ Below is a full list of products supported by Cloud SIEM.
 |[Abnormal Security](../vendors/9a831235-b5bc-4119-818b-99f76e9743c6.md)|[Abnormal Security](2b79254e-8017-4dbf-8e39-590132172a7d.md)|
 |[Adaxes](../vendors/87fd53e1-0bfd-4e53-9979-4fb6ec196cc2.md)|[Adaxes](4572a37e-bff1-44bd-9e55-3b67dad06bfe.md)|
 |[Airtable](../vendors/38db1e35-cb46-4a49-ae8c-b6f766ff5378.md)|[Airtable Audit](bee5bdb2-df30-4c71-9c13-fe207a101bb3.md)|
+|[Akamai](../vendors/47292522-c7f4-4c0e-9ab5-4426c0215be3.md)|[CPC](6802abc5-262a-4f1c-9d6f-45c847db5bc5.md)|
 |[Akamai](../vendors/47292522-c7f4-4c0e-9ab5-4426c0215be3.md)|[SIEM](9a28f2af-5526-414d-973b-c3fc7984b8a1.md)|
 |[Akamai](../vendors/47292522-c7f4-4c0e-9ab5-4426c0215be3.md)|[Web Application Firewall](ae07663e-2c2c-4932-be5d-c9f985e95276.md)|
 |[Alert Logic](../vendors/2d3caafe-6797-48fd-8b34-be92acd326ee.md)|[Alert Logic](03fee4d2-a777-47a6-94d6-55a00dc6ea16.md)|
@@ -78,6 +79,7 @@ Below is a full list of products supported by Cloud SIEM.
 |[Code42](../vendors/f764fde6-a435-42cb-9407-15734a99d657.md)|[Incydr](cc523ad6-7193-4de5-a254-d0243fca63f3.md)|
 |[CommScope](../vendors/e69bff14-6237-4997-a447-4fc02feaeeaf.md)|[CommScope](c8729aa1-2b08-4623-bfe5-3c02c49e8a55.md)|
 |[CommScope](../vendors/e69bff14-6237-4997-a447-4fc02feaeeaf.md)|[Ruckus SmartZone](530fe5cd-5a19-4c8a-b0d8-beef3af35600.md)|
+|[Contrast Security](../vendors/024b4302-9a57-4c60-9d0d-693b2d18225b.md)|[Contrast ADR](fa3c148a-4272-4a94-aea2-499ab90424c2.md)|
 |[Corelight](../vendors/6b5528e6-3d06-460d-b730-b5fa4b18ce18.md)|[NSM](1eecf521-df5d-4fc5-83b4-69f128056fdb.md)|
 |[CrowdStrike](../vendors/79ade329-b6d4-43ae-8db1-2a9cc45c0fb0.md)|[FDR](569a3a44-c29f-492e-bcf4-5dc04e2ab0f3.md)|
 |[CrowdStrike](../vendors/79ade329-b6d4-43ae-8db1-2a9cc45c0fb0.md)|[Falcon](840c72e0-4e47-41e7-9b93-31f55d12f07d.md)|

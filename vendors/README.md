@@ -8,7 +8,7 @@ Below is a full list of vendors for which there are supported products in Cloud 
 |[Abnormal Security](9a831235-b5bc-4119-818b-99f76e9743c6.md)|1|
 |[Adaxes](87fd53e1-0bfd-4e53-9979-4fb6ec196cc2.md)|1|
 |[Airtable](38db1e35-cb46-4a49-ae8c-b6f766ff5378.md)|1|
-|[Akamai](47292522-c7f4-4c0e-9ab5-4426c0215be3.md)|2|
+|[Akamai](47292522-c7f4-4c0e-9ab5-4426c0215be3.md)|3|
 |[Alert Logic](2d3caafe-6797-48fd-8b34-be92acd326ee.md)|1|
 |[Alibaba](d7de27e2-7680-48a0-96aa-1c26cf8d1ca4.md)|1|
 |[AlphaSOC](84ffd6de-c32b-49fe-88cb-d3e744df4141.md)|1|
@@ -35,6 +35,7 @@ Below is a full list of vendors for which there are supported products in Cloud 
 |[Cloudflare](4c1c0f12-5d0a-4f0c-918f-c83dca43c967.md)|2|
 |[Code42](f764fde6-a435-42cb-9407-15734a99d657.md)|2|
 |[CommScope](e69bff14-6237-4997-a447-4fc02feaeeaf.md)|2|
+|[Contrast Security](024b4302-9a57-4c60-9d0d-693b2d18225b.md)|1|
 |[Corelight](6b5528e6-3d06-460d-b730-b5fa4b18ce18.md)|1|
 |[CrowdStrike](79ade329-b6d4-43ae-8db1-2a9cc45c0fb0.md)|4|
 |[Cyber-Ark](8a3d333e-ffad-49ed-9edd-0cf1c797b24f.md)|4|
