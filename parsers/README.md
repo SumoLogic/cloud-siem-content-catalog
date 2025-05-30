@@ -26,6 +26,7 @@ The `type` listed lets you know if you can directly apply the parser to a collec
 |Parser|/Parsers/System/Abnormal Security/Abnormal Security|
 |Parser|/Parsers/System/Adaxes/Adaxes Syslog|
 |Parser|/Parsers/System/Airtable/Airtable Audit C2C|
+|Parser|/Parsers/System/Akamai/Akamai CPC|
 |Parser|/Parsers/System/Alert Logic/Alert Logic|
 |Parser|/Parsers/System/Apache/Apache HTTP Server|
 |Parser|/Parsers/System/Aqua/Aqua JSON|
@@ -64,6 +65,7 @@ The `type` listed lets you know if you can directly apply the parser to a collec
 |Parser|/Parsers/System/Code42/Code42 Incydr|
 |Parser|/Parsers/System/CommScope/CommScope|
 |Parser|/Parsers/System/CommScope/CommScope Ruckus SmartZone|
+|Parser|/Parsers/System/Contrast Security/Contrast ADR|
 |Parser|/Parsers/System/Corelight/Corelight NSM|
 |Parser|/Parsers/System/CrowdStrike/CrowdStrike FDR - JSON|
 |Parser|/Parsers/System/CrowdStrike/CrowdStrike Falcon Endpoint - CEF|
