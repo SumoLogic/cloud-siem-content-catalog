@@ -17,7 +17,6 @@ Detects productivity applications spawning regsvr32 or rundll32. This activity h
 |Tags|_mitreAttackTactic:TA0002, _mitreAttackTechnique:T1059, _mitreAttackTactic:TA0005, _mitreAttackTechnique:T1218, _mitreAttackTechnique:T1218.010, _mitreAttackTechnique:T1218.011, _mitreAttackTechnique:T1059.003|
 ## Vendors and Products
 - [CrowdStrike - FDR](../products/569a3a44-c29f-492e-bcf4-5dc04e2ab0f3.md)
-- [Digital Guardian - ARC](../products/975d678e-eb46-4155-9427-0fa307971fcd.md)
 - [Microsoft - Azure](../products/a1225af5-e778-4068-a9a2-47da93d1ff24.md)
 - [Microsoft - Defender Advanced Hunting](../products/3382523e-2072-41bd-b50b-6b148957d0b0.md)
 - [Microsoft - Office 365](../products/d3ed003d-5ddd-4c7a-bea5-63eae6311833.md)

@@ -30,6 +30,7 @@ The `type` listed lets you know if you can directly apply the parser to a collec
 |Parser|/Parsers/System/Alert Logic/Alert Logic|
 |Parser|/Parsers/System/Apache/Apache HTTP Server|
 |Parser|/Parsers/System/Aqua/Aqua JSON|
+|Parser|/Parsers/System/Atlassian/Atlassian Audit Events|
 |Parser|/Parsers/System/Atlassian/Atlassian Confluence Access Logs|
 |Parser|/Parsers/System/Atlassian/Atlassian Jira|
 |Parser|/Parsers/System/Auth0/Auth0|

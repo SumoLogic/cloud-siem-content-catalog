@@ -210,6 +210,7 @@
 |MATCH-S00209|[CVE-2021-44228 Log4j2 Java Library 0-Day Attempt](MATCH-S00209.md)|
 |CHAIN-S00017|[Change of Azure MFA Method followed by Risky SignIn](CHAIN-S00017.md)|
 |MATCH-S00821|[Chromium Browser History Access by Non-Browser Process](MATCH-S00821.md)|
+|MATCH-S00897|[Chromium Extension Installed](MATCH-S00897.md)|
 |MATCH-S00819|[Chromium Process Started With Debugging Port](MATCH-S00819.md)|
 |MATCH-S00074|[Cisco Stealthwatch Template Alerts](MATCH-S00074.md)|
 |LEGACY-S00190|[Cisco Umbrella - DNS Request Category: Adware](LEGACY-S00190.md)|
@@ -311,6 +312,7 @@
 |FIRST-S00020|[First Seen Azure OAUTH Application Consent from User](FIRST-S00020.md)|
 |FIRST-S00080|[First Seen Azure Portal access by User](FIRST-S00080.md)|
 |FIRST-S00021|[First Seen Azure Virtual Machine Run Command Issued by User](FIRST-S00021.md)|
+|FIRST-S00064|[First Seen Certificate Thumbprint in Successful Kerberos Authentication](FIRST-S00064.md)|
 |FIRST-S00046|[First Seen Client Generating MailItemsAccessed Event from User](FIRST-S00046.md)|
 |FIRST-S00028|[First Seen Common Windows Recon Commands From User](FIRST-S00028.md)|
 |FIRST-S00013|[First Seen Driver Load - Global](FIRST-S00013.md)|
@@ -425,6 +427,7 @@
 |MATCH-S00951|[GitHub - Secret Scanning Alert](MATCH-S00951.md)|
 |MATCH-S00965|[GitHub - Secret Scanning Potentially Disabled](MATCH-S00965.md)|
 |MATCH-S00966|[GitHub - Two-Factor Authentication Disabled for Organization](MATCH-S00966.md)|
+|MATCH-S00949|[GitHub - Vulnerability Alerts](MATCH-S00949.md)|
 |LEGACY-S00039|[GitHub Raw URL Resource Request](LEGACY-S00039.md)|
 |MATCH-S00098|[Global YARA Rule](MATCH-S00098.md)|
 |MATCH-S00535|[Golden SAML Indicator : Certificate Export](MATCH-S00535.md)|
@@ -587,6 +590,7 @@
 |MATCH-S00906|[Okta - Application Created](MATCH-S00906.md)|
 |MATCH-S00903|[Okta - Device Added To User](MATCH-S00903.md)|
 |MATCH-S00904|[Okta - Device Removed From User](MATCH-S00904.md)|
+|FIRST-S00070|[Okta - First Seen Application Accessed by User](FIRST-S00070.md)|
 |FIRST-S00067|[Okta - First Seen Client ID/ASN combo in successful OIDC token grant](FIRST-S00067.md)|
 |FIRST-S00068|[Okta - First Seen User Accessing Admin Application](FIRST-S00068.md)|
 |FIRST-S00066|[Okta - First Seen User Requesting Report](FIRST-S00066.md)|
@@ -598,6 +602,7 @@
 |MATCH-S00907|[Okta - Policy Rule Added](MATCH-S00907.md)|
 |MATCH-S00905|[Okta - Programmatic Access to Users API Endpoint](MATCH-S00905.md)|
 |AGGREGATION-S00008|[Okta - Session Anomaly (Multiple ASNs)](AGGREGATION-S00008.md)|
+|AGGREGATION-S00007|[Okta - Session Anomaly (Multiple Operating Systems)](AGGREGATION-S00007.md)|
 |AGGREGATION-S00009|[Okta - Session Anomaly (Multiple User Agents)](AGGREGATION-S00009.md)|
 |MATCH-S00635|[Okta API Token Created](MATCH-S00635.md)|
 |MATCH-S00433|[Okta Account Lockout](MATCH-S00433.md)|
@@ -876,6 +881,8 @@
 |MATCH-S01000|[Threat Intel - MD5 Match](MATCH-S01000.md)|
 |LEGACY-S00109|[Threat Intel - Matched Domain Name](LEGACY-S00109.md)|
 |LEGACY-S00108|[Threat Intel - Matched File Hash](LEGACY-S00108.md)|
+|MATCH-S01020|[Threat Intel - Matched Target Email](MATCH-S01020.md)|
+|MATCH-S01019|[Threat Intel - Matched User Email](MATCH-S01019.md)|
 |MATCH-S01001|[Threat Intel - PEHASH Match](MATCH-S01001.md)|
 |MATCH-S01003|[Threat Intel - SHA1 Match](MATCH-S01003.md)|
 |MATCH-S01004|[Threat Intel - SHA256 Match](MATCH-S01004.md)|
