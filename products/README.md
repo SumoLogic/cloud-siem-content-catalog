@@ -35,6 +35,7 @@ Below is a full list of products supported by Cloud SIEM.
 |[Amazon AWS](../vendors/210d6727-ac50-468e-ab00-1f7586845326.md)|[Web Application Firewall (WAF)](072b85a2-1765-45c2-911d-b0509880326e.md)|
 |[Apache](../vendors/c6fc7838-0007-4966-90aa-b7704fd70eac.md)|[Apache HTTP Server](6787d77a-1ee0-43d4-8ca0-96af8ee755bc.md)|
 |[Aqua](../vendors/0531e9df-c128-4c67-9a81-66ffcce41f9a.md)|[Aqua](4c2a186d-6aa5-47da-a6af-7fddfe16b528.md)|
+|[Atlassian](../vendors/4d40dc7a-b95e-476c-9fb0-7163ea7fd335.md)|[Atlassian Audit Events](23342262-740c-41b7-9b77-08267ae01612.md)|
 |[Atlassian](../vendors/4d40dc7a-b95e-476c-9fb0-7163ea7fd335.md)|[Confluence](4327decd-5345-4b81-b861-4cb2f06bd04e.md)|
 |[Atlassian](../vendors/4d40dc7a-b95e-476c-9fb0-7163ea7fd335.md)|[Jira](64088efc-3f28-448d-b386-000deebc7d89.md)|
 |[Auth0](../vendors/f002a19c-876e-4a33-8be0-ed3b922d19bc.md)|[Auth0](0b45ccba-20b4-41e4-973d-b50fd291944d.md)|
@@ -84,6 +85,7 @@ Below is a full list of products supported by Cloud SIEM.
 |[CrowdStrike](../vendors/79ade329-b6d4-43ae-8db1-2a9cc45c0fb0.md)|[FDR](569a3a44-c29f-492e-bcf4-5dc04e2ab0f3.md)|
 |[CrowdStrike](../vendors/79ade329-b6d4-43ae-8db1-2a9cc45c0fb0.md)|[Falcon](840c72e0-4e47-41e7-9b93-31f55d12f07d.md)|
 |[CrowdStrike](../vendors/79ade329-b6d4-43ae-8db1-2a9cc45c0fb0.md)|[Filevantage](a1f79987-b765-4f6f-bfe5-d657baa35144.md)|
+|[CrowdStrike](../vendors/79ade329-b6d4-43ae-8db1-2a9cc45c0fb0.md)|[NexGen SIEM](0ec72f5c-623b-411c-a740-526050983362.md)|
 |[CrowdStrike](../vendors/79ade329-b6d4-43ae-8db1-2a9cc45c0fb0.md)|[Spotlight](4c960ed9-3858-46ea-aa59-f81489d93deb.md)|
 |[Cyber-Ark](../vendors/8a3d333e-ffad-49ed-9edd-0cf1c797b24f.md)|[CyberArk Audit](54f01856-e973-4d7b-a3eb-95cc08ff44f5.md)|
 |[Cyber-Ark](../vendors/8a3d333e-ffad-49ed-9edd-0cf1c797b24f.md)|[Endpoint Privilege Manager](96d1bd4a-9285-439e-b81c-1a32f7688dac.md)|

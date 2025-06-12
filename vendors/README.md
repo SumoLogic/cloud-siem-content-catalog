@@ -15,7 +15,7 @@ Below is a full list of vendors for which there are supported products in Cloud 
 |[Amazon AWS](210d6727-ac50-468e-ab00-1f7586845326.md)|19|
 |[Apache](c6fc7838-0007-4966-90aa-b7704fd70eac.md)|1|
 |[Aqua](0531e9df-c128-4c67-9a81-66ffcce41f9a.md)|1|
-|[Atlassian](4d40dc7a-b95e-476c-9fb0-7163ea7fd335.md)|2|
+|[Atlassian](4d40dc7a-b95e-476c-9fb0-7163ea7fd335.md)|3|
 |[Auth0](f002a19c-876e-4a33-8be0-ed3b922d19bc.md)|1|
 |[Automox](2dcbfadf-26a8-4066-8e65-5bb5fd19df29.md)|1|
 |[Bandura](ec354a4c-a761-4e18-8ceb-194d6e8692e2.md)|1|
@@ -37,7 +37,7 @@ Below is a full list of vendors for which there are supported products in Cloud 
 |[CommScope](e69bff14-6237-4997-a447-4fc02feaeeaf.md)|2|
 |[Contrast Security](024b4302-9a57-4c60-9d0d-693b2d18225b.md)|1|
 |[Corelight](6b5528e6-3d06-460d-b730-b5fa4b18ce18.md)|1|
-|[CrowdStrike](79ade329-b6d4-43ae-8db1-2a9cc45c0fb0.md)|4|
+|[CrowdStrike](79ade329-b6d4-43ae-8db1-2a9cc45c0fb0.md)|5|
 |[Cyber-Ark](8a3d333e-ffad-49ed-9edd-0cf1c797b24f.md)|4|
 |[Cybereason](1a51cb88-ebc9-4655-bce4-3d788bf19e89.md)|1|
 |[Cylance](c57feda1-8da4-464d-b6cf-2c9982b71e57.md)|1|

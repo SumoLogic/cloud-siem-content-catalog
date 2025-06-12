@@ -10,7 +10,7 @@ A scheduled task was created in Windows or Azure. It is common for system admini
 |Category|Persistence|
 |Apply Risk to Entities|device_hostname, device_ip, user_username|
 |Signal Name|Windows - Scheduled Task Creation|
-|Summary Expression|Detected scheduled trask creation on host: {{device_hostname}}|
+|Summary Expression|Detected scheduled task creation on host: {{device_hostname}}|
 |Score/Severity|Static: 1|
 |Enabled by Default|False|
 |Prototype|False|
@@ -20,7 +20,6 @@ A scheduled task was created in Windows or Azure. It is common for system admini
 - [Cylance - Protect](../products/60829f4a-7acb-47d1-ad23-8424fcf83dcb.md)
 - [Microsoft - Azure](../products/a1225af5-e778-4068-a9a2-47da93d1ff24.md)
 - [Microsoft - Windows](../products/1ff7546c-cb36-4a24-87f7-89d2cecc5761.md)
-- [VMware - Carbon Black Cloud](../products/f9cea291-9030-4e41-9836-6dd9274d6df4.md)
 
 
 ## Fields Used
