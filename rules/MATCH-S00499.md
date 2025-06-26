@@ -16,7 +16,6 @@ Observes for e-mail attachments with file extensions commonly used by attackers 
 |Prototype|False|
 |Tags|_mitreAttackTactic:TA0001, _mitreAttackTactic:TA0009, _mitreAttackTactic:TA0043, _mitreAttackTechnique:T1566, _mitreAttackTechnique:T1566.001, _mitreAttackTechnique:T1566.002, _mitreAttackTechnique:T1598, _mitreAttackTechnique:T1598.002, _mitreAttackTechnique:T1598.003|
 ## Vendors and Products
-- [Digital Guardian - ARC](../products/975d678e-eb46-4155-9427-0fa307971fcd.md)
 - [Microsoft - Azure](../products/a1225af5-e778-4068-a9a2-47da93d1ff24.md)
 - [Microsoft - Office 365](../products/d3ed003d-5ddd-4c7a-bea5-63eae6311833.md)
 - [Proofpoint - Proofpoint on Demand](../products/332856e9-3111-446f-8df7-e64694e4b9a1.md)

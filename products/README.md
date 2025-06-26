@@ -31,6 +31,7 @@ Below is a full list of products supported by Cloud SIEM.
 |[Amazon AWS](../vendors/210d6727-ac50-468e-ab00-1f7586845326.md)|[Security Hub](d0aebc1c-db4d-440f-b69f-70dae24befff.md)|
 |[Amazon AWS](../vendors/210d6727-ac50-468e-ab00-1f7586845326.md)|[Trusted Advisor](99d21ed4-c3fb-452e-8e4a-a10ff4b94fe0.md)|
 |[Amazon AWS](../vendors/210d6727-ac50-468e-ab00-1f7586845326.md)|[VPC Transit Gateways Flow Logs](0e3d5c19-0a50-4ecf-b6f9-b1410d5dbb63.md)|
+|[Amazon AWS](../vendors/210d6727-ac50-468e-ab00-1f7586845326.md)|[VPN](c49882a3-1b3b-4c21-858a-9fd58b05f715.md)|
 |[Amazon AWS](../vendors/210d6727-ac50-468e-ab00-1f7586845326.md)|[VpcFlowLogs](021d1ded-1c82-4663-bf5d-d6ed5170efa3.md)|
 |[Amazon AWS](../vendors/210d6727-ac50-468e-ab00-1f7586845326.md)|[Web Application Firewall (WAF)](072b85a2-1765-45c2-911d-b0509880326e.md)|
 |[Apache](../vendors/c6fc7838-0007-4966-90aa-b7704fd70eac.md)|[Apache HTTP Server](6787d77a-1ee0-43d4-8ca0-96af8ee755bc.md)|
@@ -269,6 +270,7 @@ Below is a full list of products supported by Cloud SIEM.
 |[Trend Micro](../vendors/8af48b83-18bf-4233-ad51-db37baca0313.md)|[Vision One](72a5ddec-abb9-41ff-a2da-6a58beff980c.md)|
 |[Trust Login](../vendors/78eae2f3-199e-48ca-aaf6-53f6a19e854a.md)|[Trust Login](ca37057c-0d7b-452c-b5b4-948b699262ed.md)|
 |[Twistlock](../vendors/97C36046-B516-41F8-9751-4C788AA33785.md)|[Twistlock](581D3DD8-4DA7-4192-9E49-320D7AFB8B53.md)|
+|[VMware](../vendors/fbf25b91-89f1-45c4-903d-664b328bc6e0.md)|[Avi Load Balancer](c298e994-afae-4a4e-984d-e51e27be83ab.md)|
 |[VMware](../vendors/fbf25b91-89f1-45c4-903d-664b328bc6e0.md)|[Carbon Black Cloud](f9cea291-9030-4e41-9836-6dd9274d6df4.md)|
 |[VMware](../vendors/fbf25b91-89f1-45c4-903d-664b328bc6e0.md)|[ESXi](8151e52c-df0d-42d2-978f-2d17e24ae41c.md)|
 |[VMware](../vendors/fbf25b91-89f1-45c4-903d-664b328bc6e0.md)|[Horizon](30e76023-289c-40f2-a9a4-7ce4677a5e7d.md)|

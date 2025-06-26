@@ -21,6 +21,7 @@ Detects excessive failed login attempts for the same username based on a daily o
 |Tags|_mitreAttackTactic:TA0006, _mitreAttackTechnique:T1110|
 ## Vendors and Products
 - [Amazon AWS - CloudTrail](../products/033624b0-218e-4dcb-b93f-0f1fb1806c56.md)
+- [Amazon AWS - VPN](../products/c49882a3-1b3b-4c21-858a-9fd58b05f715.md)
 - [CheckPoint - Firewall and VPN](../products/c3c1a4fc-10cc-4155-8a30-a3bb14fc9f31.md)
 - [Cisco Systems - ASA](../products/be4f7473-fe69-4311-8859-3561900060bf.md)
 - [Cisco Systems - Identity Services Engine](../products/153794da-09e8-48fe-b511-1306fbb94d07.md)

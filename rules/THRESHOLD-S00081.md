@@ -18,6 +18,8 @@ This rule detects port scanning activity from one internal IP address to numerou
 |Prototype|False|
 |Tags|_mitreAttackTactic:TA0043, _mitreAttackTechnique:T1046, _mitreAttackTechnique:T1595, _mitreAttackTechnique:T1595.001|
 ## Vendors and Products
+- [Amazon AWS - GuardDuty](../products/2ca0adcf-7616-4474-8557-a3773515aa6d.md)
+- [Bro - Bro](../products/37C866BF-72E1-470A-9072-EDB908F56951.md)
 - [CheckPoint - Application Control](../products/1624169f-36c4-4309-8400-1409a171d00b.md)
 - [CheckPoint - Firewall and VPN](../products/c3c1a4fc-10cc-4155-8a30-a3bb14fc9f31.md)
 - [CheckPoint - SmartDefense](../products/2b82e665-bdde-474a-ae29-4f0f76598556.md)
@@ -29,7 +31,6 @@ This rule detects port scanning activity from one internal IP address to numerou
 - [Dell - Firewall](../products/b1639f7f-4c11-4d29-ab69-368cf0e05e25.md)
 - [Fortinet - Fortigate](../products/c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad.md)
 - [Google - Google Cloud Platform](../products/dcc85cfc-a698-4d09-87de-f2c723f3ad07.md)
-- [Linux - Linux OS Syslog](../products/0e20c932-d992-4bd4-b276-c15119ca5c0b.md)
 - [Microsoft - Azure](../products/a1225af5-e778-4068-a9a2-47da93d1ff24.md)
 - [Microsoft - Defender Advanced Hunting](../products/3382523e-2072-41bd-b50b-6b148957d0b0.md)
 - [Microsoft - Windows](../products/1ff7546c-cb36-4a24-87f7-89d2cecc5761.md)

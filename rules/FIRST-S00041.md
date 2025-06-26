@@ -19,6 +19,7 @@ A user has executed a networksetup command not seen since the baseline period. T
 |Prototype|False|
 |Tags|_mitreAttackTactic:TA0007, _mitreAttackTechnique:T1082|
 ## Vendors and Products
+- [CrowdStrike - FDR](../products/569a3a44-c29f-492e-bcf4-5dc04e2ab0f3.md)
 
 
 ## Fields Used

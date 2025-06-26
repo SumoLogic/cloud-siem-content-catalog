@@ -12,7 +12,7 @@ Below is a full list of vendors for which there are supported products in Cloud 
 |[Alert Logic](2d3caafe-6797-48fd-8b34-be92acd326ee.md)|1|
 |[Alibaba](d7de27e2-7680-48a0-96aa-1c26cf8d1ca4.md)|1|
 |[AlphaSOC](84ffd6de-c32b-49fe-88cb-d3e744df4141.md)|1|
-|[Amazon AWS](210d6727-ac50-468e-ab00-1f7586845326.md)|19|
+|[Amazon AWS](210d6727-ac50-468e-ab00-1f7586845326.md)|20|
 |[Apache](c6fc7838-0007-4966-90aa-b7704fd70eac.md)|1|
 |[Aqua](0531e9df-c128-4c67-9a81-66ffcce41f9a.md)|1|
 |[Atlassian](4d40dc7a-b95e-476c-9fb0-7163ea7fd335.md)|3|
@@ -146,7 +146,7 @@ Below is a full list of vendors for which there are supported products in Cloud 
 |[Trend Micro](8af48b83-18bf-4233-ad51-db37baca0313.md)|4|
 |[Trust Login](78eae2f3-199e-48ca-aaf6-53f6a19e854a.md)|1|
 |[Twistlock](97C36046-B516-41F8-9751-4C788AA33785.md)|1|
-|[VMware](fbf25b91-89f1-45c4-903d-664b328bc6e0.md)|5|
+|[VMware](fbf25b91-89f1-45c4-903d-664b328bc6e0.md)|6|
 |[Varonis](20270f89-127e-4055-96ec-56045e67e163.md)|2|
 |[Vectra](7a3d1a5c-ba67-4597-971f-7057e8f6c8bb.md)|1|
 |[WatchGuard](a6e8752b-5e5d-47b0-8f42-68cd438f5264.md)|2|

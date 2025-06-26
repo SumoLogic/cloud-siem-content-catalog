@@ -20,6 +20,7 @@ The `type` listed lets you know if you can directly apply the parser to a collec
 |Parser|/Parsers/System/AWS/AWS Security Hub|
 |Parser|/Parsers/System/AWS/AWS VPC Flow|
 |Parser|/Parsers/System/AWS/AWS VPC Transit Gateways Flow Logs|
+|Parser|/Parsers/System/AWS/AWS VPN|
 |Parser|/Parsers/System/AWS/AWS WAF|
 |Parser|/Parsers/System/AWS/CloudTrail|
 |Parser|/Parsers/System/AWS/GuardDuty|
@@ -247,6 +248,7 @@ The `type` listed lets you know if you can directly apply the parser to a collec
 |Parser|/Parsers/System/Trust Login/Trust Login|
 |Parser|/Parsers/System/Twistlock/Twistlock|
 |Parser|/Parsers/System/VMware/Carbon Black Cloud|
+|Parser|/Parsers/System/VMware/VMware Avi Load Balancer|
 |Parser|/Parsers/System/VMware/VMware ESXi|
 |Parser|/Parsers/System/VMware/VMware NSX|
 |Parser|/Parsers/System/Varonis/Varonis DatAlert Syslog|
