@@ -20,6 +20,7 @@ A larger than typical amount of data has been observed being sent outbound from 
 |Prototype|False|
 |Tags|_mitreAttackTechnique:T1030, _mitreAttackTechnique:T1071, _mitreAttackTechnique:T1567, _mitreAttackTactic:TA0010, _mitreAttackTactic:TA0011|
 ## Vendors and Products
+- [Bro - Bro](../products/37C866BF-72E1-470A-9072-EDB908F56951.md)
 - [CheckPoint - Application Control URL Filtering](../products/ec98f4a8-f961-4e5b-ad7c-dc3c64301f47.md)
 - [Cisco Systems - Firepower](../products/da9e05a5-3fd3-46a7-a107-ae03c01e3f5a.md)
 - [Dell - Firewall](../products/b1639f7f-4c11-4d29-ab69-368cf0e05e25.md)

@@ -17,6 +17,7 @@ This rule detects a SHA1 hash indicator match from a threat intelligence feed
 |Tags||
 ## Vendors and Products
 - [Bro - Bro](../products/37C866BF-72E1-470A-9072-EDB908F56951.md)
+- [Cisco Systems - Advanced Malware Protection (AMP)](../products/7eaa4c44-5b7f-4d9e-8c1c-c4105c2b7506.md)
 - [FireEye - Endpoint Security](../products/8c342fa0-4147-47c9-b574-965ad2eddafa.md)
 - [Fortinet - Fortigate](../products/c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad.md)
 - [Microsoft - Azure](../products/a1225af5-e778-4068-a9a2-47da93d1ff24.md)

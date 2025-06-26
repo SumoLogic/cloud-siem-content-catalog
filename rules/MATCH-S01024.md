@@ -18,6 +18,7 @@ This rule detects traffic to IP address with a high confidence rating from a thr
 ## Vendors and Products
 - [Amazon AWS - Network Firewall](../products/3a82061c-2ca3-4289-9c9b-78756001aa38.md)
 - [Amazon AWS - VpcFlowLogs](../products/021d1ded-1c82-4663-bf5d-d6ed5170efa3.md)
+- [Bro - Bro](../products/37C866BF-72E1-470A-9072-EDB908F56951.md)
 - [CheckPoint - Firewall and VPN](../products/c3c1a4fc-10cc-4155-8a30-a3bb14fc9f31.md)
 - [Cisco Systems - ASA](../products/be4f7473-fe69-4311-8859-3561900060bf.md)
 - [Cisco Systems - Firepower](../products/da9e05a5-3fd3-46a7-a107-ae03c01e3f5a.md)

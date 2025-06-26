@@ -16,6 +16,7 @@ Detects exploitation of DNS RCE bug reported in CVE-2020-1350 by the detection o
 |Prototype|False|
 |Tags|_mitreAttackTactic:TA0001, _mitreAttackTactic:TA0002, _mitreAttackTechnique:T1190, _mitreAttackTechnique:T1569, _mitreAttackTechnique:T1569.002|
 ## Vendors and Products
+- [Bitdefender - GravityZone](../products/046b3623-69fe-409f-9e80-fd3ebef0654f.md)
 - [Microsoft - Windows](../products/1ff7546c-cb36-4a24-87f7-89d2cecc5761.md)
 
 

@@ -17,7 +17,6 @@ Error code 520 is used as a catch-all status when the origin server returns some
 |Tags|_mitreAttackTactic:TA0001, _mitreAttackTechnique:T1190|
 ## Vendors and Products
 - [Akamai - SIEM](../products/9a28f2af-5526-414d-973b-c3fc7984b8a1.md)
-- [Amazon AWS - CloudFront](../products/44f07c08-c2ad-4a95-a058-1d0737ff90db.md)
 - [Bro - Bro](../products/37C866BF-72E1-470A-9072-EDB908F56951.md)
 - [Cisco Systems - Umbrella](../products/5ba50e74-3c05-4ea8-aeaf-5efde588c60f.md)
 - [Cloudflare - Logpush](../products/c2503fcc-ef30-4e40-bb32-0bf47151b140.md)

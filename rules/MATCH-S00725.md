@@ -19,6 +19,7 @@ Compiled HTML Files (.chm) are blocked by default on modern Windows operating sy
 - [Cloudflare - Logpush](../products/c2503fcc-ef30-4e40-bb32-0bf47151b140.md)
 - [Code42 - Incydr](../products/cc523ad6-7193-4de5-a254-d0243fca63f3.md)
 - [CrowdStrike - FDR](../products/569a3a44-c29f-492e-bcf4-5dc04e2ab0f3.md)
+- [CrowdStrike - Falcon](../products/840c72e0-4e47-41e7-9b93-31f55d12f07d.md)
 - [Egnyte - DLP](../products/114420df-d10c-4e88-92e9-0d95102c1a3d.md)
 - [FireEye - Endpoint Security](../products/8c342fa0-4147-47c9-b574-965ad2eddafa.md)
 - [Google - G Suite](../products/e73cd65a-7a4b-4ce9-9d73-e5d9c824c214.md)

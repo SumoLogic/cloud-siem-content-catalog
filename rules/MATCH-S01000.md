@@ -16,7 +16,9 @@ This rule detects an MD5 hash indicator match from a threat intelligence feed
 |Prototype|False|
 |Tags||
 ## Vendors and Products
+- [Bitdefender - GravityZone](../products/046b3623-69fe-409f-9e80-fd3ebef0654f.md)
 - [Bro - Bro](../products/37C866BF-72E1-470A-9072-EDB908F56951.md)
+- [Cisco Systems - Advanced Malware Protection (AMP)](../products/7eaa4c44-5b7f-4d9e-8c1c-c4105c2b7506.md)
 - [Cloudflare - Logpush](../products/c2503fcc-ef30-4e40-bb32-0bf47151b140.md)
 - [Code42 - Incydr](../products/cc523ad6-7193-4de5-a254-d0243fca63f3.md)
 - [CrowdStrike - FDR](../products/569a3a44-c29f-492e-bcf4-5dc04e2ab0f3.md)
