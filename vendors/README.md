@@ -69,7 +69,7 @@ Below is a full list of vendors for which there are supported products in Cloud 
 |[Gigamon](f575ffed-7b6d-406e-9a55-848b4b6a720f.md)|1|
 |[Github](193c791a-bb10-4742-a429-1256535f888b.md)|2|
 |[Google](45601247-66a5-4c9c-b3af-c422f5b4cbeb.md)|4|
-|[HP](8C78ABDA-69C2-480A-9D64-F906C68AE8EC.md)|4|
+|[HP](8C78ABDA-69C2-480A-9D64-F906C68AE8EC.md)|5|
 |[Honeywell](e7e04985-0828-4b29-ad06-e9d8569087d7.md)|1|
 |[IBM](24ace3b6-5dfa-4a4f-a3ed-1c99f3384b34.md)|3|
 |[ISC](1583cfd2-7ece-4060-991b-06dcf8567943.md)|1|
@@ -97,7 +97,7 @@ Below is a full list of vendors for which there are supported products in Cloud 
 |[Micro Focus](23850303-a1da-4c95-83f1-bd9d3b5104b8.md)|3|
 |[Microsoft](2b002817-fd14-49b3-a3fe-c9761275b931.md)|19|
 |[Mimecast](7BC43DFE-C5DD-4766-88E7-C163D82BBBF8.md)|1|
-|[Mindpoint Group](f438572b-ed7f-4048-bb30-4a30c1babd81.md)|1|
+|[Mindpoint Group](f438572b-ed7f-4048-bb30-4a30c1babd81.md)|2|
 |[Miro](9f149da1-2831-465f-8bb1-a5950ccaec0c.md)|1|
 |[Netskope](E9BF4F45-AB91-40F6-9EA0-21B48D69FF1F.md)|2|
 |[Nginx](d791c42f-e0dc-4e3b-a980-28166725805a.md)|1|
@@ -107,6 +107,7 @@ Below is a full list of vendors for which there are supported products in Cloud 
 |[OneLogin](e34a3430-613f-47c0-9ddd-a320bc3e5c4d.md)|1|
 |[OpenSSH](d0bf0b9f-162e-4d1e-9b89-38e8d526a434.md)|1|
 |[OpenVPN](8e5a85b3-a95e-47d9-adcf-bb543e6580c0.md)|1|
+|[Oracle](0e66d36a-e289-459a-9184-78885dd2223a.md)|1|
 |[Orca Security](ab5b4909-20f7-4cf7-b8de-24f4a5b2ba57.md)|1|
 |[Osquery](eca511e4-0daa-41f7-919e-ec4d0ac1558f.md)|1|
 |[Ossec](1eceb40f-85d7-45ea-b341-864a38ea0775.md)|1|

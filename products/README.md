@@ -132,6 +132,7 @@ Below is a full list of products supported by Cloud SIEM.
 |[Google](../vendors/45601247-66a5-4c9c-b3af-c422f5b4cbeb.md)|[Security Command Center](78a80406-d37b-4a17-a25e-dbf53289b647.md)|
 |[HP](../vendors/8C78ABDA-69C2-480A-9D64-F906C68AE8EC.md)|[Aruba ClearPass](12aba181-2b31-472c-a685-2be492f4778d.md)|
 |[HP](../vendors/8C78ABDA-69C2-480A-9D64-F906C68AE8EC.md)|[Aruba Mobility Master](c568879a-11ef-4566-bc20-71ce8136a469.md)|
+|[HP](../vendors/8C78ABDA-69C2-480A-9D64-F906C68AE8EC.md)|[Aruba WAP](099fd781-2ece-4b5b-b05c-85dbdbf77ffe.md)|
 |[HP](../vendors/8C78ABDA-69C2-480A-9D64-F906C68AE8EC.md)|[vSentry](fa6946f2-53a4-469b-8e0a-e6676af53175.md)|
 |[Honeywell](../vendors/e7e04985-0828-4b29-ad06-e9d8569087d7.md)|[Pro Watch](144fe7b4-26e5-47d4-8164-4ff5bd73d06f.md)|
 |[IBM](../vendors/24ace3b6-5dfa-4a4f-a3ed-1c99f3384b34.md)|[Guardium](dca03a0f-0053-4c34-b7b6-56060bbd110c.md)|
@@ -206,6 +207,7 @@ Below is a full list of products supported by Cloud SIEM.
 |[Microsoft](../vendors/2b002817-fd14-49b3-a3fe-c9761275b931.md)|[Windows Firewall Management](e91e068a-fe7e-45d4-98c6-1cc1e3d4d99f.md)|
 |[Mimecast](../vendors/7BC43DFE-C5DD-4766-88E7-C163D82BBBF8.md)|[Mimecast](54B36B3F-A63F-4BA4-9DE4-02DBF69A429F.md)|
 |[Mindpoint Group](../vendors/f438572b-ed7f-4048-bb30-4a30c1babd81.md)|[Keeper](3fac5918-eea5-4dc0-a5fe-6c94c1919482.md)|
+|[Mindpoint Group](../vendors/f438572b-ed7f-4048-bb30-4a30c1babd81.md)|[Surepass](86b28921-8ec0-4186-8e2c-c80344d3c07f.md)|
 |[Miro](../vendors/9f149da1-2831-465f-8bb1-a5950ccaec0c.md)|[Miro Audit](7888afe3-4f07-4f44-bc2f-5eccb59751f9.md)|
 |[Netskope](../vendors/E9BF4F45-AB91-40F6-9EA0-21B48D69FF1F.md)|[Security Cloud](B3582ED2-1A0C-452D-9802-97433D143486.md)|
 |[Netskope](../vendors/E9BF4F45-AB91-40F6-9EA0-21B48D69FF1F.md)|[WebTx](9e838f93-c9e7-4592-a980-cf9dfb704784.md)|
@@ -216,6 +218,7 @@ Below is a full list of products supported by Cloud SIEM.
 |[OneLogin](../vendors/e34a3430-613f-47c0-9ddd-a320bc3e5c4d.md)|[OneLogin Single Sign-On](e43ba0e4-1e3f-40c6-8bca-cb06a656a40b.md)|
 |[OpenSSH](../vendors/d0bf0b9f-162e-4d1e-9b89-38e8d526a434.md)|[sshd](940dba19-cb65-4768-bf97-75bf5433ddd4.md)|
 |[OpenVPN](../vendors/8e5a85b3-a95e-47d9-adcf-bb543e6580c0.md)|[OpenVPN](9f6d624f-6d8f-43c7-a4b0-51179061631c.md)|
+|[Oracle](../vendors/0e66d36a-e289-459a-9184-78885dd2223a.md)|[Oracle Cloud Infrastructure](37a906de-5e9c-475e-881a-65a1d984f377.md)|
 |[Orca Security](../vendors/ab5b4909-20f7-4cf7-b8de-24f4a5b2ba57.md)|[Orca Security](0117ac47-6f9e-46b8-8ab4-2eb69879dc2f.md)|
 |[Osquery](../vendors/eca511e4-0daa-41f7-919e-ec4d0ac1558f.md)|[Osquery](93e2d3d-fab1-4d61-845f-49bc1ae5bed9.md)|
 |[Ossec](../vendors/1eceb40f-85d7-45ea-b341-864a38ea0775.md)|[Ossec Server](4c2934cd-e2c5-411f-b430-68ca26770c41.md)|

@@ -30,7 +30,6 @@ Note that this rule requires the creation and population of a match list for kno
 - [Microsoft - Defender Advanced Hunting](../products/3382523e-2072-41bd-b50b-6b148957d0b0.md)
 - [Palo Alto Networks - Next Generation Firewall](../products/46f5fa2c-1a62-4692-82ad-ed87800a0adb.md)
 - [Symantec - Endpoint Protection](../products/eb2f69a8-8d13-447f-9859-1ad0979b4a24.md)
-- [Zscaler - ZPA Log Streaming Service](../products/4a75a995-0e10-45fc-8b4d-7fcfc0e98e25.md)
 
 
 ## Fields Used
