@@ -27,7 +27,7 @@ Black Energy is a botnet with HTTP based Command and Control communication
 |Normalized Schema|device_hostname|
 |Normalized Schema|device_ip|
 |Normalized Schema|http_method|
-|Normalized Schema|http_referrerDomain|
+|Normalized Schema|http_referer_rootDomain|
 |Normalized Schema|http_url|
 |Normalized Schema|srcDevice_ip|
 |Normalized Schema|user_username|

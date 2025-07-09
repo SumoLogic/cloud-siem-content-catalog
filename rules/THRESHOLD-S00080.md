@@ -18,6 +18,7 @@ This rule detects port scanning activity from one internal IP address to another
 |Prototype|False|
 |Tags|_mitreAttackTactic:TA0043, _mitreAttackTechnique:T1595, _mitreAttackTechnique:T1046, _mitreAttackTechnique:T1595.001|
 ## Vendors and Products
+- [Bro - Bro](../products/37C866BF-72E1-470A-9072-EDB908F56951.md)
 - [CheckPoint - Firewall and VPN](../products/c3c1a4fc-10cc-4155-8a30-a3bb14fc9f31.md)
 - [CheckPoint - SmartDefense](../products/2b82e665-bdde-474a-ae29-4f0f76598556.md)
 - [Cisco Systems - ASA](../products/be4f7473-fe69-4311-8859-3561900060bf.md)

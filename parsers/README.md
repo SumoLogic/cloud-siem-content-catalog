@@ -113,6 +113,7 @@ The `type` listed lets you know if you can directly apply the parser to a collec
 |Parser|/Parsers/System/Google/GCP BigQuery Gmail|
 |Parser|/Parsers/System/Google/Security Command Center|
 |Parser|/Parsers/System/HP/Aruba ClearPass - Syslog|
+|Parser|/Parsers/System/HP/Aruba WAP|
 |Parser|/Parsers/System/Honeywell/Honeywell Pro-Watch|
 |Parser|/Parsers/System/ISC/ISC BIND|
 |Parser|/Parsers/System/Imperva/Imperva Incapsula|
@@ -178,6 +179,7 @@ The `type` listed lets you know if you can directly apply the parser to a collec
 |Parser|/Parsers/System/Microsoft/Windows-XML|
 |Parser|/Parsers/System/Mimecast/Mimecast|
 |Parser|/Parsers/System/Mindpoint Group/Mindpoint Group Keeper|
+|Parser|/Parsers/System/Mindpoint Group/Mindpoint SurePass|
 |Parser|/Parsers/System/Miro/Miro Audit C2C|
 |Parser|/Parsers/System/Netskope/Netskope Security Cloud JSON|
 |Parser|/Parsers/System/Nginx/Nginx Syslog|
@@ -185,6 +187,7 @@ The `type` listed lets you know if you can directly apply the parser to a collec
 |Parser|/Parsers/System/Okta/Okta|
 |Parser|/Parsers/System/OneLogin/OneLogin SSO JSON|
 |Parser|/Parsers/System/OpenVPN/OpenVPN Syslog|
+|Parser|/Parsers/System/Oracle/Oracle Cloud Infrastructure|
 |Parser|/Parsers/System/Orca Security/Orca Security|
 |Parser|/Parsers/System/Osquery/Osquery JSON|
 |Parser|/Parsers/System/Palo Alto/PAN Firewall CEF|
