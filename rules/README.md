@@ -450,6 +450,7 @@
 |THRESHOLD-S00078|[High Volume of DNS 'Any' Queries](THRESHOLD-S00078.md)|
 |LEGACY-S00047|[High risk file extension download without hostname and referrer](LEGACY-S00047.md)|
 |LEGACY-S00048|[Houdini/Iniduoh/njRAT User-Agent](LEGACY-S00048.md)|
+|MATCH-S01050|[IIS - Executable File Added to Directory](MATCH-S01050.md)|
 |LEGACY-S00049|[IP Address Scan - External](LEGACY-S00049.md)|
 |LEGACY-S00050|[IP Address Scan - Internal](LEGACY-S00050.md)|
 |MATCH-S00367|[Impacket Lateralization Detection](MATCH-S00367.md)|
@@ -786,6 +787,8 @@
 |MATCH-S00471|[SharPersist A Utility](MATCH-S00471.md)|
 |MATCH-S00469|[SharPersist Utility](MATCH-S00469.md)|
 |MATCH-S00472|[SharPivot Utility](MATCH-S00472.md)|
+|MATCH-S01051|[SharePoint Server ToolShell Exploitation (CVE-2025-53770, CVE-2025-53771)](MATCH-S01051.md)|
+|MATCH-S01052|[SharePoint Server ToolShell Web Shell Interaction (CVE-2025-53771)](MATCH-S01052.md)|
 |THRESHOLD-S00111|[Sharepoint - Excessive Documents Accessed by External IP](THRESHOLD-S00111.md)|
 |THRESHOLD-S00101|[Sharepoint - Excessive Documents Accessed by User](THRESHOLD-S00101.md)|
 |THRESHOLD-S00100|[Sharepoint - Excessive Documents Downloaded](THRESHOLD-S00100.md)|

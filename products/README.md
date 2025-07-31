@@ -154,6 +154,8 @@ Below is a full list of products supported by Cloud SIEM.
 |[Kandji](../vendors/82cd909b-8f8d-4603-8fe7-5ed3f8382ba0.md)|[Kandji EDR](9017dd30-b64f-4bb0-ba0f-1cf17ad78fc5.md)|
 |[KasperskyLab](../vendors/8011e6fe-1e65-4603-aa2e-15c9b33cb0fd.md)|[Endpoint Security](3e98366a-4ed2-459f-8602-631a174f4e18.md)|
 |[KasperskyLab](../vendors/8011e6fe-1e65-4603-aa2e-15c9b33cb0fd.md)|[SecurityCenter](a29a5331-583b-4153-8b07-20b3126b0d33.md)|
+|[Keeper](../vendors/f438572b-ed7f-4048-bb30-4a30c1babd81.md)|[Keeper](3fac5918-eea5-4dc0-a5fe-6c94c1919482.md)|
+|[Keeper](../vendors/f438572b-ed7f-4048-bb30-4a30c1babd81.md)|[Surepass](86b28921-8ec0-4186-8e2c-c80344d3c07f.md)|
 |[Kemp](../vendors/fe56e139-6049-4d78-9665-df7d5f80d996.md)|[LoadMaster](e0763d80-29ce-43a0-b0ab-69c621abb3eb.md)|
 |[Kubernetes](../vendors/b19b9592-1616-4013-9ad4-f6d2a93da669.md)|[Kubernetes](74662794-d8de-42ec-b504-cc0bccfaddd9.md)|
 |[Lacework](../vendors/b5ad3497-214f-4952-9191-e98262709251.md)|[Lacework](72ad5cb2-9b51-4954-970c-f826d593ccc7.md)|
@@ -206,8 +208,6 @@ Below is a full list of products supported by Cloud SIEM.
 |[Microsoft](../vendors/2b002817-fd14-49b3-a3fe-c9761275b931.md)|[Windows](1ff7546c-cb36-4a24-87f7-89d2cecc5761.md)|
 |[Microsoft](../vendors/2b002817-fd14-49b3-a3fe-c9761275b931.md)|[Windows Firewall Management](e91e068a-fe7e-45d4-98c6-1cc1e3d4d99f.md)|
 |[Mimecast](../vendors/7BC43DFE-C5DD-4766-88E7-C163D82BBBF8.md)|[Mimecast](54B36B3F-A63F-4BA4-9DE4-02DBF69A429F.md)|
-|[Mindpoint Group](../vendors/f438572b-ed7f-4048-bb30-4a30c1babd81.md)|[Keeper](3fac5918-eea5-4dc0-a5fe-6c94c1919482.md)|
-|[Mindpoint Group](../vendors/f438572b-ed7f-4048-bb30-4a30c1babd81.md)|[Surepass](86b28921-8ec0-4186-8e2c-c80344d3c07f.md)|
 |[Miro](../vendors/9f149da1-2831-465f-8bb1-a5950ccaec0c.md)|[Miro Audit](7888afe3-4f07-4f44-bc2f-5eccb59751f9.md)|
 |[Netskope](../vendors/E9BF4F45-AB91-40F6-9EA0-21B48D69FF1F.md)|[Security Cloud](B3582ED2-1A0C-452D-9802-97433D143486.md)|
 |[Netskope](../vendors/E9BF4F45-AB91-40F6-9EA0-21B48D69FF1F.md)|[WebTx](9e838f93-c9e7-4592-a980-cf9dfb704784.md)|

@@ -127,6 +127,7 @@ The `type` listed lets you know if you can directly apply the parser to a collec
 |Parser|/Parsers/System/Kaltura/Kaltura|
 |Parser|/Parsers/System/Kandji/Kandji EDR|
 |Parser|/Parsers/System/Kaspersky/Kaspersky Endpoint Security|
+|Parser|/Parsers/System/Keeper/Keeper|
 |Parser|/Parsers/System/Kemp/Kemp LoadMaster Syslog|
 |Parser|/Parsers/System/KnowBe4/KnowBe4 KMSAT C2C|
 |Parser|/Parsers/System/Kubernetes/Kubernetes|
@@ -179,10 +180,10 @@ The `type` listed lets you know if you can directly apply the parser to a collec
 |Parser|/Parsers/System/Microsoft/Windows-XML|
 |Parser|/Parsers/System/Mimecast/Mimecast|
 |Parser|/Parsers/System/Mindpoint Group/Mindpoint Group Keeper|
-|Parser|/Parsers/System/Mindpoint Group/Mindpoint SurePass|
 |Parser|/Parsers/System/Miro/Miro Audit C2C|
 |Parser|/Parsers/System/Netskope/Netskope Security Cloud JSON|
 |Parser|/Parsers/System/Nginx/Nginx Syslog|
+|Parser|/Parsers/System/OCSF/OCSF|
 |Parser|/Parsers/System/OSSEC/OSSEC JSON|
 |Parser|/Parsers/System/Okta/Okta|
 |Parser|/Parsers/System/OneLogin/OneLogin SSO JSON|
@@ -233,6 +234,7 @@ The `type` listed lets you know if you can directly apply the parser to a collec
 |Parser|/Parsers/System/Sophos/Sophos UTM|
 |Parser|/Parsers/System/Squid/Squid Proxy Syslog|
 |Parser|/Parsers/System/Sucuri/Sucuri WAF|
+|Parser|/Parsers/System/SurePass/SurePass|
 |Parser|/Parsers/System/Suricata/Suricata Syslog|
 |Parser|/Parsers/System/Symantec/Data Loss Prevention/Symantec DLP|
 |Parser|/Parsers/System/Symantec/Symantec Endpoint Protection/Symantec Endpoint Protection-Syslog|
