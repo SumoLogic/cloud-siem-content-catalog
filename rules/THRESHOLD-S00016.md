@@ -34,6 +34,7 @@ HTTP web services provide response codes to client requests. The response code n
 - [JFrog - Artifactory](../products/abe4975e-de65-4f82-8b35-e6ce392e165c.md)
 - [McAfee - Web Gateway](../products/003d35b3-3ba8-4e93-8776-e5810b4e243e.md)
 - [Microsoft - Azure](../products/a1225af5-e778-4068-a9a2-47da93d1ff24.md)
+- [Microsoft - Exchange](../products/c8301344-a2be-4203-8081-776bec73221f.md)
 - [Microsoft - IIS](../products/fca8785d-4823-4442-86b2-8acbaa176da4.md)
 - [Sophos - UTM 9](../products/0fb003bc-8383-442f-8f3d-afcfbaefe617.md)
 - [Squid - Squid Proxy](../products/af61d8a8-3eba-42fb-9f17-87443924f3f4.md)

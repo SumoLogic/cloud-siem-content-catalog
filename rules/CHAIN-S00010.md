@@ -16,7 +16,6 @@ This rule looks for the installation of an application by a non-Sytem user quick
 |Prototype|False|
 |Tags|_mitreAttackTactic:TA0004, _mitreAttackTechnique:T1548, _mitreAttackTechnique:T1548.002|
 ## Vendors and Products
-- [Microsoft - Windows](../products/1ff7546c-cb36-4a24-87f7-89d2cecc5761.md)
 
 
 ## Fields Used

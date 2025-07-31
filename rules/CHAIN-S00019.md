@@ -16,7 +16,6 @@ This alert looks for two events in a particular order, the first event involves 
 |Prototype|False|
 |Tags|_mitreAttackTactic:TA0006, _mitreAttackTechnique:T1649|
 ## Vendors and Products
-- [Microsoft - Windows](../products/1ff7546c-cb36-4a24-87f7-89d2cecc5761.md)
 
 
 ## Fields Used

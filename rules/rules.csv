@@ -684,6 +684,17 @@ This rule utilizes indicators from Windows command line auditing, PowerShell aud
 "","","THRESHOLD-S00078","threshold","Execution","True","False","NetworkDNS","_mitreAttackTactic:TA0011, _mitreAttackTechnique:T1568, _mitreAttackTechnique:T1568.001, _mitreAttackTechnique:T1568.002, _mitreAttackTechnique:T1568.003","High Volume of DNS 'Any' Queries","Observes for a large number of DNS 'Any' queries which may be indicative of a Distributed Denial of Service Attack (DDoS)"
 "","","LEGACY-S00047","match","Persistence","True","False","","_mitreAttackTactic:TA0002, _mitreAttackTactic:TA0001, _mitreAttackTechnique:T1204, _mitreAttackTechnique:T1190, _mitreAttackTechnique:T1566, _mitreAttackTechnique:T1566.002, _mitreAttackTechnique:T1204.003, _mitreAttackTechnique:T1204.002, _mitreAttackTechnique:T1204.001","High risk file extension download without hostname and referrer","Although executable and dynamic-link libraries (.exe, .dll) are regularly downloaded from the Internet, benign ones are normally downloaded with the hostname and referrer fields populated. Thus, downloads from an IP address without referrer carry an elevated risk."
 "","","LEGACY-S00048","match","Command and Control","True","False","","_mitreAttackTactic:TA0011, _mitreAttackTechnique:T1071, _mitreAttackTechnique:T1071.001, _mitreAttackTactic:TA0009, _mitreAttackTechnique:T1213, _mitreAttackTechnique:T1213.001","Houdini/Iniduoh/njRAT User-Agent","User-Agent strings used by Houdini/Iniduoh/njRAT malware."
+"","","MATCH-S01050","templated_match","Persistence","True","False","","_mitreAttackTactic:TA0003, _mitreAttackTechnique:T1505.003, _mitreAttackTechnique:T1505","IIS - Executable File Added to Directory","Context:
+Executable files added to Microsoft Internet Information Server (IIS) directories can indicate the installation of a web shell by an attacker. For example, the ToolShell exploit (CVE-2025-53770, CVE-2025-53771) included the installation of spinstall10.aspx in an executable directory.
+
+Detection:
+This detection will trigger when files executable by IIS are added to directories that frequently have execute permissions.
+
+Recommended Actions:
+Determine whether the addition of the executable file was an expected action, and if not, consider disconnecting the IIS server from the network for forensic analysis. Review logs indicating  unusual network activity originating from the IIS server to other internal assets.
+
+Tuning Recommendations: 
+Add executable directories specific to your IIS installation(s) to the rule expression by duplicating the rule and modifying it. Add exclusions as necessary to processes expected to add IIS script files to IIS directories."
 "","Bro","LEGACY-S00049","match","Discovery","True","False","","_mitreAttackTactic:TA0043, _mitreAttackTechnique:T1046, _mitreAttackTechnique:T1595, _mitreAttackTechnique:T1595.001","IP Address Scan - External","A scan of IP addresses"
 "","Bro","LEGACY-S00050","match","Discovery","True","False","","_mitreAttackTactic:TA0043, _mitreAttackTechnique:T1046, _mitreAttackTechnique:T1595, _mitreAttackTechnique:T1595.001","IP Address Scan - Internal","A scan of IP addresses"
 "","","MATCH-S00367","templated_match","Lateral Movement","True","False","","_mitreAttackTactic:TA0002, _mitreAttackTactic:TA0008, _mitreAttackTechnique:T1021, _mitreAttackTechnique:T1021.002, _mitreAttackTechnique:T1021.003, _mitreAttackTechnique:T1021.006, _mitreAttackTechnique:T1047, _mitreAttackTechnique:T1559, _mitreAttackTechnique:T1559.001","Impacket Lateralization Detection","Detects wmiexec/dcomexec/atexec/smbexec from Impacket framework"
@@ -1041,6 +1052,22 @@ This IOC detects windows persistence activity performed by the Sharpersist utili
 This IOC detects a Windows Persistence Toolkit called SharPersist."
 "","","MATCH-S00472","templated_match","Execution","True","False","","_mitreAttackTactic:TA0002, _mitreAttackTactic:TA0008, _mitreAttackTechnique:T1021, _mitreAttackTechnique:T1021.006, _mitreAttackTechnique:T1059, _mitreAttackTechnique:T1059.003, _mitreAttackTechnique:T1559, _mitreAttackTechnique:T1559.001","SharPivot Utility","From FireEye Red Team Tool Countermeasures:
 SHARPIVOT is a .NET console application that can be used to perform command execution against a remote target for the purposes of lateral movement."
+"","","MATCH-S01051","templated_match","Initial Access","True","False","","_mitreAttackTactic:TA0001, _mitreAttackTechnique:T1190","SharePoint Server ToolShell Exploitation (CVE-2025-53770, CVE-2025-53771)","Context:
+Exploits against two vulnerabilities in Microsoft SharePoint server, CVE-2025-53770 and CVE-2025-53771, are combined to execute code on Microsoft SharePoint without authentication. This attack has been nicknamed ""ToolShell"".
+
+Detection:
+This detection will trigger on the inital access and uploading of a malicious payload to the vulnerable SharePoint server.
+
+Recommended Actions:
+Follow the Microsoft guidance for how to protect against and remediate this attack: https://msrc.microsoft.com/blog/2025/07/customer-guidance-for-sharepoint-vulnerability-cve-2025-53770/#how-to-protect-your-environment"
+"","","MATCH-S01052","templated_match","Persistence","True","False","","_mitreAttackTactic:TA0003, _mitreAttackTechnique:T1505.003","SharePoint Server ToolShell Web Shell Interaction (CVE-2025-53771)","Context:
+Exploits against two vulnerabilities in Microsoft SharePoint server, CVE-2025-53770 and CVE-2025-53771 are combined to execute code on Microsoft SharePoint without authentication. This attack has been nicknamed ""ToolShell"".
+
+Detection:
+This detection will trigger on GET requests occurring to the web shell post-exploitation .
+
+Recommended Actions:
+Follow the Microsoft guidance for how to protect against and remediate this attack: https://msrc.microsoft.com/blog/2025/07/customer-guidance-for-sharepoint-vulnerability-cve-2025-53770/#how-to-protect-your-environment"
 "Microsoft","Office 365","THRESHOLD-S00101","threshold","Collection","True","False","","_mitreAttackTactic:TA0009, _mitreAttackTechnique:T1213, _mitreAttackTechnique:T1213.002","Sharepoint - Excessive Documents Accessed by User","This rule detects when a large number of documents are accessed in a short timeframe. This behavior may be indicative of programmatic means being used to retrieve all data within the repository."
 "Microsoft","Office 365","THRESHOLD-S00111","threshold","Collection","True","False","","_mitreAttackTactic:TA0009, _mitreAttackTechnique:T1213, _mitreAttackTechnique:T1213.002","Sharepoint - Excessive Documents Accessed by External IP","This rule detects when a large number of documents are accessed in a short timeframe from an external IP. This behavior may be indicative of programmatic means being used to retrieve all data within the repository."
 "Microsoft","Office 365","THRESHOLD-S00110","threshold","Collection","True","False","","_mitreAttackTactic:TA0009, _mitreAttackTechnique:T1213, _mitreAttackTechnique:T1213.002","Sharepoint - External IP Downloaded Excessive Documents","This rule detects when a large number of documents are downloaded in a short timeframe. This behavior may be indicative of programmatic means being used to retrieve all data within the repository."

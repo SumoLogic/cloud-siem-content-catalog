@@ -16,6 +16,7 @@ This rule detects an indicator match from a threat intelligence feed
 |Prototype|False|
 |Tags||
 ## Vendors and Products
+- [Amazon AWS - Redshift](../products/74e6d624-f15b-430c-a173-67d6168085f5.md)
 - [Zscaler - Nanolog Streaming Service](../products/6299d728-14f7-455e-85c5-ea8ec65a654a.md)
 
 

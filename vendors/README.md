@@ -12,7 +12,7 @@ Below is a full list of vendors for which there are supported products in Cloud 
 |[Alert Logic](2d3caafe-6797-48fd-8b34-be92acd326ee.md)|1|
 |[Alibaba](d7de27e2-7680-48a0-96aa-1c26cf8d1ca4.md)|1|
 |[AlphaSOC](84ffd6de-c32b-49fe-88cb-d3e744df4141.md)|1|
-|[Amazon AWS](210d6727-ac50-468e-ab00-1f7586845326.md)|20|
+|[Amazon AWS](210d6727-ac50-468e-ab00-1f7586845326.md)|21|
 |[Apache](c6fc7838-0007-4966-90aa-b7704fd70eac.md)|1|
 |[Aqua](0531e9df-c128-4c67-9a81-66ffcce41f9a.md)|1|
 |[Atlassian](4d40dc7a-b95e-476c-9fb0-7163ea7fd335.md)|3|
@@ -84,6 +84,7 @@ Below is a full list of vendors for which there are supported products in Cloud 
 |[Kaltura](c65f8f5f-ea11-4b41-858b-99731d306f81.md)|1|
 |[Kandji](82cd909b-8f8d-4603-8fe7-5ed3f8382ba0.md)|1|
 |[KasperskyLab](8011e6fe-1e65-4603-aa2e-15c9b33cb0fd.md)|2|
+|[Keeper](f438572b-ed7f-4048-bb30-4a30c1babd81.md)|2|
 |[Kemp](fe56e139-6049-4d78-9665-df7d5f80d996.md)|1|
 |[Kubernetes](b19b9592-1616-4013-9ad4-f6d2a93da669.md)|1|
 |[Lacework](b5ad3497-214f-4952-9191-e98262709251.md)|1|
@@ -97,7 +98,6 @@ Below is a full list of vendors for which there are supported products in Cloud 
 |[Micro Focus](23850303-a1da-4c95-83f1-bd9d3b5104b8.md)|3|
 |[Microsoft](2b002817-fd14-49b3-a3fe-c9761275b931.md)|19|
 |[Mimecast](7BC43DFE-C5DD-4766-88E7-C163D82BBBF8.md)|1|
-|[Mindpoint Group](f438572b-ed7f-4048-bb30-4a30c1babd81.md)|2|
 |[Miro](9f149da1-2831-465f-8bb1-a5950ccaec0c.md)|1|
 |[Netskope](E9BF4F45-AB91-40F6-9EA0-21B48D69FF1F.md)|2|
 |[Nginx](d791c42f-e0dc-4e3b-a980-28166725805a.md)|1|

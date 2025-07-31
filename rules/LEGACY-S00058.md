@@ -17,7 +17,6 @@ Attackers will often host malicious code on pastebin.com and attempt to download
 |Tags|_mitreAttackTactic:TA0002, _mitreAttackTactic:TA0011, _mitreAttackTechnique:T1102, _mitreAttackTechnique:T1102.002, _mitreAttackTechnique:T1102.003|
 ## Vendors and Products
 - [Bro - Bro](../products/37C866BF-72E1-470A-9072-EDB908F56951.md)
-- [Fortinet - Fortigate](../products/c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad.md)
 
 
 ## Fields Used

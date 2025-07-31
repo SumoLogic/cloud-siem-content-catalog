@@ -10,7 +10,7 @@ Observes for a high risk event that was permitted by ZScaler
 |Category|Command and Control|
 |Apply Risk to Entities|device_hostname, device_ip, srcDevice_hostname, srcDevice_ip, user_username|
 |Signal Name|Zscaler - Allowed Elevated Risk Score Event|
-|Summary Expression|Zscaler generated a record with an elevated risk score of {{fields['riskscore']}} from the user {{user_username}} and IP address {{srcDevice_ip}}.|
+|Summary Expression|Zscaler generated a record with an elevated risk score of {{severity}} from the user {{user_username}} and IP address {{srcDevice_ip}}.|
 |Score/Severity|Dynamic: 1 or 2 or 3|
 |Enabled by Default|True|
 |Prototype|False|
@@ -25,21 +25,21 @@ The default score of `1` is used as a catch all if none of the translations are 
 
 |Schema Field|Field Value|Score/Severity|
 |------------|-----------|--------------|
-|fields['riskscore']|75|2|
-|fields['riskscore']|80|2|
-|fields['riskscore']|85|2|
-|fields['riskscore']|90|2|
-|fields['riskscore']|95|3|
-|fields['riskscore']|100|3|
+|severity|75|2|
+|severity|80|2|
+|severity|85|2|
+|severity|90|2|
+|severity|95|3|
+|severity|100|3|
 ## Fields Used
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|action|
 |Normalized Schema|device_hostname|
 |Normalized Schema|device_ip|
-|Direct from Record|fields['riskscore']|
 |Normalized Schema|metadata_vendor|
+|Normalized Schema|normalizedAction|
+|Normalized Schema|severity|
 |Normalized Schema|srcDevice_hostname|
 |Normalized Schema|srcDevice_ip|
 |Normalized Schema|user_username|
