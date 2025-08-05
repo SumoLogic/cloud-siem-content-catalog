@@ -8,9 +8,9 @@ Passes through an alert from an endpoint security product and adjusts the severi
 |----|----|
 |Type|Templated Match|
 |Category|Execution|
-|Apply Risk to Entities|device_hostname, srcDevice_hostname, device_ip, srcDevice_ip, user_username|
+|Apply Risk to Entities|device_hostname, srcDevice_hostname, device_ip, srcDevice_ip, user_username, resource|
 |Signal Name|{{metadata_vendor}} {{metadata_product}} - {{threat_signalName}}|
-|Summary Expression|Threat: {{threat_name}} detected on host: {{device_hostname}}|
+|Summary Expression|Threat: {{threat_name}} detected|
 |Score/Severity|None|
 |Enabled by Default|True|
 |Prototype|False|
@@ -30,7 +30,6 @@ Passes through an alert from an endpoint security product and adjusts the severi
 - [Cybereason - Endpoint Security](../products/12d00042-d90d-4055-a171-01a1f635a613.md)
 - [Cylance - Protect](../products/60829f4a-7acb-47d1-ad23-8424fcf83dcb.md)
 - [Egnyte - DLP](../products/114420df-d10c-4e88-92e9-0d95102c1a3d.md)
-- [FireEye - Central Management System](../products/a4b7d3df-ec31-4c94-bf09-2f790db91de1.md)
 - [Fortinet - Fortigate](../products/c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad.md)
 - [Google - G Suite](../products/e73cd65a-7a4b-4ce9-9d73-e5d9c824c214.md)
 - [Google - Google Cloud Platform](../products/dcc85cfc-a698-4d09-87de-f2c723f3ad07.md)
@@ -66,6 +65,7 @@ Passes through an alert from an endpoint security product and adjusts the severi
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|
 |Normalized Schema|normalizedSeverity|
+|Normalized Schema|resource|
 |Normalized Schema|srcDevice_hostname|
 |Normalized Schema|srcDevice_ip|
 |Normalized Schema|threat_ruleType|

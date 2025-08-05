@@ -4003,7 +4003,7 @@
         "description": "Generalized field to capture an object referenced within a log that does not have a more specific field currently specified in the mapping schema. (e.g. a file is a resource, however file_basename and file_path both exist to capture this value)",
         "enrichment_populated": false,
         "enrichment_type": null,
-        "entity_type": null,
+        "entity_type": "_resource",
         "mappable": true,
         "type": "string"
     },
