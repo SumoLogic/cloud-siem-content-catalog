@@ -155,7 +155,6 @@ Below is a full list of products supported by Cloud SIEM.
 |[KasperskyLab](../vendors/8011e6fe-1e65-4603-aa2e-15c9b33cb0fd.md)|[Endpoint Security](3e98366a-4ed2-459f-8602-631a174f4e18.md)|
 |[KasperskyLab](../vendors/8011e6fe-1e65-4603-aa2e-15c9b33cb0fd.md)|[SecurityCenter](a29a5331-583b-4153-8b07-20b3126b0d33.md)|
 |[Keeper](../vendors/f438572b-ed7f-4048-bb30-4a30c1babd81.md)|[Keeper](3fac5918-eea5-4dc0-a5fe-6c94c1919482.md)|
-|[Keeper](../vendors/f438572b-ed7f-4048-bb30-4a30c1babd81.md)|[Surepass](86b28921-8ec0-4186-8e2c-c80344d3c07f.md)|
 |[Kemp](../vendors/fe56e139-6049-4d78-9665-df7d5f80d996.md)|[LoadMaster](e0763d80-29ce-43a0-b0ab-69c621abb3eb.md)|
 |[Kubernetes](../vendors/b19b9592-1616-4013-9ad4-f6d2a93da669.md)|[Kubernetes](74662794-d8de-42ec-b504-cc0bccfaddd9.md)|
 |[Lacework](../vendors/b5ad3497-214f-4952-9191-e98262709251.md)|[Lacework](72ad5cb2-9b51-4954-970c-f826d593ccc7.md)|
@@ -254,6 +253,7 @@ Below is a full list of products supported by Cloud SIEM.
 |[Squid](../vendors/470cb4ad-ac19-442b-9b3a-28b979d47d8e.md)|[Squid Proxy](af61d8a8-3eba-42fb-9f17-87443924f3f4.md)|
 |[Sucuri](../vendors/cdfd2ba0-77eb-4e11-b071-6f4d01fda607.md)|[WAF](5595ffd4-04f9-418c-b9c4-2f913f39ff68.md)|
 |[Sumo Logic](../vendors/34A5019C-7BEC-4BF8-A3B7-C38D567126C6.md)|[Scheduled Searches](3BC43668-77AA-41E6-801E-447AE1291408.md)|
+|[Surepass](../vendors/243d714d-0e45-4a86-864d-a082d474ea04.md)|[Surepass](86b28921-8ec0-4186-8e2c-c80344d3c07f.md)|
 |[Symantec](../vendors/64c7f49c-f95a-4f4a-8540-56ec5fb1d96b.md)|[Data Loss Prevention](DFD96D65-65F6-413B-B4BE-F09D4870B377.md)|
 |[Symantec](../vendors/64c7f49c-f95a-4f4a-8540-56ec5fb1d96b.md)|[Endpoint Protection](eb2f69a8-8d13-447f-9859-1ad0979b4a24.md)|
 |[Symantec](../vendors/64c7f49c-f95a-4f4a-8540-56ec5fb1d96b.md)|[Endpoint Security](a6052aa3-1bb6-4e31-8f51-b32058928c67.md)|
@@ -281,6 +281,7 @@ Below is a full list of products supported by Cloud SIEM.
 |[Varonis](../vendors/20270f89-127e-4055-96ec-56045e67e163.md)|[DatAdvantage](4d6a3683-4edb-4330-9e9f-b8608cd63981.md)|
 |[Varonis](../vendors/20270f89-127e-4055-96ec-56045e67e163.md)|[DatAlert](bd98578e-3f97-4e5a-93ec-bbff28f90ccf.md)|
 |[Vectra](../vendors/7a3d1a5c-ba67-4597-971f-7057e8f6c8bb.md)|[Cognito](51afd72e-94b0-42f3-b65c-cf8edbacf7cf.md)|
+|[Vectra](../vendors/7a3d1a5c-ba67-4597-971f-7057e8f6c8bb.md)|[Vectra AI](d4a9e7ce-082e-4f41-891f-4c43e604c850.md)|
 |[WatchGuard](../vendors/a6e8752b-5e5d-47b0-8f42-68cd438f5264.md)|[Fireware](14aa46d3-0710-44b6-9ce3-0a6b8f36b076.md)|
 |[Wiz](../vendors/2cde0cac-102b-4756-9a56-81437fea1400.md)|[Wiz](52ac893d-bdf9-4e2c-be83-5f43842a179d.md)|
 |[Workday](../vendors/6e7ce4b2-569e-476d-b732-7b3a71b1e12a.md)|[Workday](0438df6b-16ba-4da7-a7a7-626316d0061f.md)|

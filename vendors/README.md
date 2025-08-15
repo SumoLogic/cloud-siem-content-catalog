@@ -84,7 +84,7 @@ Below is a full list of vendors for which there are supported products in Cloud 
 |[Kaltura](c65f8f5f-ea11-4b41-858b-99731d306f81.md)|1|
 |[Kandji](82cd909b-8f8d-4603-8fe7-5ed3f8382ba0.md)|1|
 |[KasperskyLab](8011e6fe-1e65-4603-aa2e-15c9b33cb0fd.md)|2|
-|[Keeper](f438572b-ed7f-4048-bb30-4a30c1babd81.md)|2|
+|[Keeper](f438572b-ed7f-4048-bb30-4a30c1babd81.md)|1|
 |[Kemp](fe56e139-6049-4d78-9665-df7d5f80d996.md)|1|
 |[Kubernetes](b19b9592-1616-4013-9ad4-f6d2a93da669.md)|1|
 |[Lacework](b5ad3497-214f-4952-9191-e98262709251.md)|1|
@@ -136,6 +136,7 @@ Below is a full list of vendors for which there are supported products in Cloud 
 |[Squid](470cb4ad-ac19-442b-9b3a-28b979d47d8e.md)|1|
 |[Sucuri](cdfd2ba0-77eb-4e11-b071-6f4d01fda607.md)|1|
 |[Sumo Logic](34A5019C-7BEC-4BF8-A3B7-C38D567126C6.md)|1|
+|[Surepass](243d714d-0e45-4a86-864d-a082d474ea04.md)|1|
 |[Symantec](64c7f49c-f95a-4f4a-8540-56ec5fb1d96b.md)|5|
 |[Sysdig](c4de0854-e718-45e1-a4c8-63623755aa43.md)|2|
 |[Tanium](c7a342e6-5621-401a-ac5c-80ea3f2db23c.md)|1|
@@ -149,7 +150,7 @@ Below is a full list of vendors for which there are supported products in Cloud 
 |[Twistlock](97C36046-B516-41F8-9751-4C788AA33785.md)|1|
 |[VMware](fbf25b91-89f1-45c4-903d-664b328bc6e0.md)|6|
 |[Varonis](20270f89-127e-4055-96ec-56045e67e163.md)|2|
-|[Vectra](7a3d1a5c-ba67-4597-971f-7057e8f6c8bb.md)|1|
+|[Vectra](7a3d1a5c-ba67-4597-971f-7057e8f6c8bb.md)|2|
 |[WatchGuard](a6e8752b-5e5d-47b0-8f42-68cd438f5264.md)|2|
 |[Wiz](2cde0cac-102b-4756-9a56-81437fea1400.md)|1|
 |[Workday](6e7ce4b2-569e-476d-b732-7b3a71b1e12a.md)|1|

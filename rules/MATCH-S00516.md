@@ -16,7 +16,6 @@ Malware detected that is determined to be ransomware based on the signature/viru
 |Prototype|False|
 |Tags|_mitreAttackTactic:TA0002, _mitreAttackTactic:TA0005, _mitreAttackTactic:TA0004, _mitreAttackTechnique:T1569, _mitreAttackTechnique:T1562, _mitreAttackTechnique:T1542, _mitreAttackTechnique:T1105, _mitreAttackTechnique:T1562.001, _mitreAttackTechnique:T1562.002, _mitreAttackTechnique:T1562.003, _mitreAttackTechnique:T1562.004, _mitreAttackTechnique:T1562.006, _mitreAttackTechnique:T1562.001, _mitreAttackTechnique:T1562.002, _mitreAttackTechnique:T1484.001|
 ## Vendors and Products
-- [Bitdefender - GravityZone](../products/046b3623-69fe-409f-9e80-fd3ebef0654f.md)
 - [Cisco Systems - Advanced Malware Protection (AMP)](../products/7eaa4c44-5b7f-4d9e-8c1c-c4105c2b7506.md)
 - [Cylance - Protect](../products/60829f4a-7acb-47d1-ad23-8424fcf83dcb.md)
 - [Fortinet - Fortigate](../products/c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad.md)
