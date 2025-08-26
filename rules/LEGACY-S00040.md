@@ -21,8 +21,6 @@ Error code 520 is used as a catch-all status when the origin server returns some
 - [Cisco Systems - Umbrella](../products/5ba50e74-3c05-4ea8-aeaf-5efde588c60f.md)
 - [Cloudflare - Logpush](../products/c2503fcc-ef30-4e40-bb32-0bf47151b140.md)
 - [McAfee - Web Gateway](../products/003d35b3-3ba8-4e93-8776-e5810b4e243e.md)
-- [Microsoft - Azure](../products/a1225af5-e778-4068-a9a2-47da93d1ff24.md)
-- [Sophos - UTM 9](../products/0fb003bc-8383-442f-8f3d-afcfbaefe617.md)
 
 
 ## Fields Used

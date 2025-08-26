@@ -6,8 +6,8 @@
 |----|----|
 |MATCH-S00209|[CVE-2021-44228 Log4j2 Java Library 0-Day Attempt](../rules/MATCH-S00209.md)|
 |MATCH-S00513|[Critical Severity Intrusion Signature](../rules/MATCH-S00513.md)|
-|MATCH-S00454|[Firewall Allowed SMB Traffic](../rules/MATCH-S00454.md)|
 |FIRST-S00030|[First Seen Outbound Connection to External IP Address on Port 445 from IP Address](../rules/FIRST-S00030.md)|
+|MATCH-S00203|[HTTP activity over port 53 - Possible SIGRED](../rules/MATCH-S00203.md)|
 |MATCH-S00666|[High Severity Intrusion Signature](../rules/MATCH-S00666.md)|
 |THRESHOLD-S00079|[Inbound Port Scan](../rules/THRESHOLD-S00079.md)|
 |THRESHOLD-S00080|[Internal Port Scan](../rules/THRESHOLD-S00080.md)|

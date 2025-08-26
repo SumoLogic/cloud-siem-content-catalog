@@ -48,6 +48,7 @@ Detects excessive failed login attempts for the same username based on a daily o
 - [PingIdentity - PingFederate](../products/b0a0ae6d-dd5b-450c-9d68-36d6c61c67b0.md)
 - [RSA - SecurID Runtime](../products/4809be0f-c6f3-4cbb-b1f6-ae9ae817712e.md)
 - [RSA - SecurID SinglePoint](../products/90bba037-f944-480e-89fa-a3b104451af3.md)
+- [Tenable - Cloud API](../products/1C384C22-411B-49C0-8029-A7F6C13424B1.md)
 - [WatchGuard - Fireware](../products/14aa46d3-0710-44b6-9ce3-0a6b8f36b076.md)
 
 

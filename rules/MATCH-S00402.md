@@ -16,13 +16,14 @@ Passes through an alert from an endpoint security product and adjusts the severi
 |Prototype|False|
 |Tags||
 ## Vendors and Products
+- [Akamai - CPC](../products/6802abc5-262a-4f1c-9d6f-45c847db5bc5.md)
 - [Amazon AWS - GuardDuty](../products/2ca0adcf-7616-4474-8557-a3773515aa6d.md)
+- [Amazon AWS - Inspector - OCSF](../products/13a22bad-dad0-4f63-8339-c3d79e81f4b0.md)
 - [Amazon AWS - Security Hub](../products/d0aebc1c-db4d-440f-b69f-70dae24befff.md)
 - [Bitdefender - GravityZone](../products/046b3623-69fe-409f-9e80-fd3ebef0654f.md)
 - [Carbon Black - Defense](../products/4448ca62-bb4f-4859-a6a2-d9262f9e48f0.md)
 - [CheckPoint - Avanan](../products/b8956e27-b893-4518-85ff-20835710c3cf.md)
 - [Cisco Systems - Advanced Malware Protection (AMP)](../products/7eaa4c44-5b7f-4d9e-8c1c-c4105c2b7506.md)
-- [Claroty - Claroty xDome](../products/8cdfb3fc-8700-4012-bf3d-7dfc147d291b.md)
 - [Code42 - Incydr](../products/cc523ad6-7193-4de5-a254-d0243fca63f3.md)
 - [Contrast Security - Contrast ADR](../products/fa3c148a-4272-4a94-aea2-499ab90424c2.md)
 - [CrowdStrike - FDR](../products/569a3a44-c29f-492e-bcf4-5dc04e2ab0f3.md)
@@ -33,7 +34,7 @@ Passes through an alert from an endpoint security product and adjusts the severi
 - [Fortinet - Fortigate](../products/c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad.md)
 - [Google - G Suite](../products/e73cd65a-7a4b-4ce9-9d73-e5d9c824c214.md)
 - [Google - Google Cloud Platform](../products/dcc85cfc-a698-4d09-87de-f2c723f3ad07.md)
-- [Microsoft - Advanced Threat Analytics](../products/ae48ad1f-04e5-47c6-9892-25555e5f728b.md)
+- [Google - Security Command Center](../products/78a80406-d37b-4a17-a25e-dbf53289b647.md)
 - [Microsoft - Azure](../products/a1225af5-e778-4068-a9a2-47da93d1ff24.md)
 - [Microsoft - Cloud App Security](../products/86e85e72-d3b1-4f1d-b195-5ca3d90e9461.md)
 - [Microsoft - Graph Identity Protection API](../products/4da7313c-5123-4eae-bb84-5d868fc55a74.md)
@@ -54,6 +55,7 @@ Passes through an alert from an endpoint security product and adjusts the severi
 - [Varonis - DatAdvantage](../products/4d6a3683-4edb-4330-9e9f-b8608cd63981.md)
 - [Varonis - DatAlert](../products/bd98578e-3f97-4e5a-93ec-bbff28f90ccf.md)
 - [Vectra - Cognito](../products/51afd72e-94b0-42f3-b65c-cf8edbacf7cf.md)
+- [Vectra - Vectra AI](../products/d4a9e7ce-082e-4f41-891f-4c43e604c850.md)
 
 
 ## Fields Used
