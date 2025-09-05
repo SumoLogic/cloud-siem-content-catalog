@@ -12,7 +12,7 @@ Below is a full list of vendors for which there are supported products in Cloud 
 |[Alert Logic](2d3caafe-6797-48fd-8b34-be92acd326ee.md)|1|
 |[Alibaba](d7de27e2-7680-48a0-96aa-1c26cf8d1ca4.md)|1|
 |[AlphaSOC](84ffd6de-c32b-49fe-88cb-d3e744df4141.md)|1|
-|[Amazon AWS](210d6727-ac50-468e-ab00-1f7586845326.md)|21|
+|[Amazon AWS](210d6727-ac50-468e-ab00-1f7586845326.md)|25|
 |[Apache](c6fc7838-0007-4966-90aa-b7704fd70eac.md)|1|
 |[Aqua](0531e9df-c128-4c67-9a81-66ffcce41f9a.md)|1|
 |[Atlassian](4d40dc7a-b95e-476c-9fb0-7163ea7fd335.md)|3|

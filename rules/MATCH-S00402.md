@@ -17,7 +17,10 @@ Passes through an alert from an endpoint security product and adjusts the severi
 |Tags||
 ## Vendors and Products
 - [Akamai - CPC](../products/6802abc5-262a-4f1c-9d6f-45c847db5bc5.md)
+- [Amazon AWS - GuardDuty - OCSF](../products/5bb8e745-453b-47c3-bda4-f690249a6333.md)
 - [Amazon AWS - GuardDuty](../products/2ca0adcf-7616-4474-8557-a3773515aa6d.md)
+- [Amazon AWS - Inspector - OCSF](../products/13a22bad-dad0-4f63-8339-c3d79e81f4b0.md)
+- [Amazon AWS - Security Hub Exposure Detection - OCSF](../products/65208a2a-2e20-4985-bb7f-f9b7cca8e2b0.md)
 - [Amazon AWS - Security Hub](../products/d0aebc1c-db4d-440f-b69f-70dae24befff.md)
 - [Bitdefender - GravityZone](../products/046b3623-69fe-409f-9e80-fd3ebef0654f.md)
 - [Carbon Black - Defense](../products/4448ca62-bb4f-4859-a6a2-d9262f9e48f0.md)
@@ -36,6 +39,7 @@ Passes through an alert from an endpoint security product and adjusts the severi
 - [Google - Security Command Center](../products/78a80406-d37b-4a17-a25e-dbf53289b647.md)
 - [Microsoft - Azure](../products/a1225af5-e778-4068-a9a2-47da93d1ff24.md)
 - [Microsoft - Cloud App Security](../products/86e85e72-d3b1-4f1d-b195-5ca3d90e9461.md)
+- [Microsoft - Defender Advanced Hunting](../products/3382523e-2072-41bd-b50b-6b148957d0b0.md)
 - [Microsoft - Graph Identity Protection API](../products/4da7313c-5123-4eae-bb84-5d868fc55a74.md)
 - [Microsoft - Graph Security API](../products/ef42eb74-7444-4fee-b231-b4eb1e7c9660.md)
 - [Microsoft - Office 365](../products/d3ed003d-5ddd-4c7a-bea5-63eae6311833.md)
