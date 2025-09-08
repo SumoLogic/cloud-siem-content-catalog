@@ -24,11 +24,15 @@ Below is a full list of products supported by Cloud SIEM.
 |[Amazon AWS](../vendors/210d6727-ac50-468e-ab00-1f7586845326.md)|[EKS](234ec2b5-4142-4837-bc78-95da8a2db81a.md)|
 |[Amazon AWS](../vendors/210d6727-ac50-468e-ab00-1f7586845326.md)|[Elastic Load Balancer](59a3cd41-b6d2-4ab7-a0ff-6d5abd14ac43.md)|
 |[Amazon AWS](../vendors/210d6727-ac50-468e-ab00-1f7586845326.md)|[GuardDuty](2ca0adcf-7616-4474-8557-a3773515aa6d.md)|
+|[Amazon AWS](../vendors/210d6727-ac50-468e-ab00-1f7586845326.md)|[GuardDuty - OCSF](5bb8e745-453b-47c3-bda4-f690249a6333.md)|
 |[Amazon AWS](../vendors/210d6727-ac50-468e-ab00-1f7586845326.md)|[Inspector](ab4056ab-305e-4362-add8-c15c1f7b8afc.md)|
+|[Amazon AWS](../vendors/210d6727-ac50-468e-ab00-1f7586845326.md)|[Inspector - OCSF](13a22bad-dad0-4f63-8339-c3d79e81f4b0.md)|
 |[Amazon AWS](../vendors/210d6727-ac50-468e-ab00-1f7586845326.md)|[Network Firewall](3a82061c-2ca3-4289-9c9b-78756001aa38.md)|
 |[Amazon AWS](../vendors/210d6727-ac50-468e-ab00-1f7586845326.md)|[Redshift](74e6d624-f15b-430c-a173-67d6168085f5.md)|
 |[Amazon AWS](../vendors/210d6727-ac50-468e-ab00-1f7586845326.md)|[Route53](e2393771-bda2-414a-8661-0a57069287ad.md)|
 |[Amazon AWS](../vendors/210d6727-ac50-468e-ab00-1f7586845326.md)|[Security Hub](d0aebc1c-db4d-440f-b69f-70dae24befff.md)|
+|[Amazon AWS](../vendors/210d6727-ac50-468e-ab00-1f7586845326.md)|[Security Hub Coverage - OCSF](f0b1b7b9-9ad0-4e19-bdc2-1e94885336d9.md)|
+|[Amazon AWS](../vendors/210d6727-ac50-468e-ab00-1f7586845326.md)|[Security Hub Exposure Detection - OCSF](65208a2a-2e20-4985-bb7f-f9b7cca8e2b0.md)|
 |[Amazon AWS](../vendors/210d6727-ac50-468e-ab00-1f7586845326.md)|[Trusted Advisor](99d21ed4-c3fb-452e-8e4a-a10ff4b94fe0.md)|
 |[Amazon AWS](../vendors/210d6727-ac50-468e-ab00-1f7586845326.md)|[VPC Transit Gateways Flow Logs](0e3d5c19-0a50-4ecf-b6f9-b1410d5dbb63.md)|
 |[Amazon AWS](../vendors/210d6727-ac50-468e-ab00-1f7586845326.md)|[VPN](c49882a3-1b3b-4c21-858a-9fd58b05f715.md)|

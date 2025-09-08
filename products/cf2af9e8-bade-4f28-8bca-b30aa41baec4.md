@@ -4,6 +4,8 @@
 
 |Rule ID|Rule Name|
 |----|----|
+|MATCH-S00554|[Outbound IRC Traffic](../rules/MATCH-S00554.md)|
+|MATCH-S01007|[Threat Intel - Destination Device Hostname](../rules/MATCH-S01007.md)|
 
 
 ## Log Mappers
