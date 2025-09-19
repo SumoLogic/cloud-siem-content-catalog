@@ -18,7 +18,6 @@ Observes for long URLs with possible SQL commands within them, an indication of 
 |Prototype|False|
 |Tags|_mitreAttackTactic:TA0002, _mitreAttackTactic:TA0004, _mitreAttackTactic:TA0001, _mitreAttackTechnique:T1068, _mitreAttackTechnique:T1190|
 ## Vendors and Products
-- [Amazon AWS - Application Load Balancer](../products/5bb9e0b3-8d57-4b10-8952-0b6ffe91b599.md)
 - [Cisco Systems - Umbrella](../products/5ba50e74-3c05-4ea8-aeaf-5efde588c60f.md)
 
 

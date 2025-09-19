@@ -36,14 +36,13 @@ This signal triggers when there are two failed logins from the same user with di
 - [OneLogin - OneLogin Single Sign-On](../products/e43ba0e4-1e3f-40c6-8bca-cb06a656a40b.md)
 - [Palo Alto Networks - GlobalProtect](../products/b0fe0dde-4e19-4712-957b-1ea7418c132e.md)
 - [Palo Alto Networks - Next Generation Firewall](../products/46f5fa2c-1a62-4692-82ad-ed87800a0adb.md)
-- [PingIdentity - PingFederate](../products/b0a0ae6d-dd5b-450c-9d68-36d6c61c67b0.md)
-- [WatchGuard - Fireware](../products/14aa46d3-0710-44b6-9ce3-0a6b8f36b076.md)
 
 
 ## Fields Used
 
 |Origin|Field|
 |----|----|
+|Normalized Schema|lower|
 |Normalized Schema|normalizedAction|
 |Normalized Schema|objectType|
 |Normalized Schema|success|
