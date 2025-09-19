@@ -144,6 +144,7 @@ Below is a full list of vendors for which there are supported products in Cloud 
 |[Teramind](98def8bd-ffc2-475c-9d77-f85bf7b7b727.md)|1|
 |[Thinkst Canary](0152e233-fce6-4cbf-9edc-721d7bef94f8.md)|1|
 |[Thycotic Software](260cf6fd-c701-4ace-b39a-ac4a84ee791c.md)|1|
+|[TippingPoint](a70248f5-5636-43fb-b548-7b84dd0e401e.md)|1|
 |[Trellix](9bec8407-4182-46ec-99dd-2adfade15652.md)|1|
 |[Trend Micro](8af48b83-18bf-4233-ad51-db37baca0313.md)|4|
 |[Trust Login](78eae2f3-199e-48ca-aaf6-53f6a19e854a.md)|1|

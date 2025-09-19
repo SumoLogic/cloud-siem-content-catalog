@@ -834,6 +834,21 @@ For this rule to work, Microsoft SysInternal Sysmon must be running on the endpo
 "Microsoft","Office 365","MATCH-S00455","templated_match","Credential Access","True","False","","_mitreAttackTactic:TA0001, _mitreAttackTactic:TA0003, _mitreAttackTactic:TA0004, _mitreAttackTactic:TA0005, _mitreAttackTactic:TA0006, _mitreAttackTechnique:T1078, _mitreAttackTechnique:T1078.004","O365 - Successful Authentication with PowerShell User Agent","Detects a successful authentication to Office 365 where the user agent string contains PowerShell. By default, PowerShell will appear in the user agent string when used in authentication attempts for 0365. This can be an indication of a PowerShell Exploitation framework being used to authenticate."
 "Microsoft","Office 365","MATCH-S00068","templated_match","Execution","True","False","","_mitreAttackTactic:TA0002, _mitreAttackTactic:TA0003, _mitreAttackTechnique:T1098, _mitreAttackTechnique:T1098.003, _mitreAttackTechnique:T1078, _mitreAttackTechnique:T1078.004","O365 - Users Password Changed","This is usually routine administrative activity, but should be monitored in case an administrative user has been compromised."
 "Microsoft","Office 365","MATCH-S00069","templated_match","Credential Access","True","False","","_mitreAttackTactic:TA0002, _mitreAttackTactic:TA0003, _mitreAttackTechnique:T1098, _mitreAttackTechnique:T1098.003, _mitreAttackTechnique:T1078, _mitreAttackTechnique:T1078.004","O365 - Users Password Reset","Detects typically routine administrative activity, but should be monitored in case an administrative user has been compromised."
+"","","MATCH-S01053","templated_match","Unknown/Other","True","False","","","OCSF Compliance Finding","Passes through compliance findings from OCSF sources.
+
+Compliance Control: {{fields['compliance.control']}} 
+Finding Info: {{fields['finding_info.desc']}} 
+Finding Origin: {{fields['metadata.product.name']}}"
+"","","MATCH-S01054","templated_match","Unknown/Other","True","False","","","OCSF Detection Finding","Passes through detection findings from OCSF sources.
+
+Remediation Info: {{fields['remediation.references.1']}} 
+Finding Info: {{fields['finding_info.desc']}} 
+Finding Origin: {{fields['metadata.product.name']}}"
+"","","MATCH-S01055","templated_match","Unknown/Other","True","False","","","OCSF Vulnerability Finding","Passes through vulnerability findings from OCSF sources.
+
+Remediation Info: {{fields['remediation.references.1']}} 
+Finding Info: {{fields['finding_info.desc']}} 
+Finding Origin: {{fields['metadata.product.name']}}"
 "","","MATCH-S00828","templated_match","Collection","True","False","","_mitreAttackTactic:TA0009, _mitreAttackTechnique:T1114.003","Office 365 Exchange Transport Rule Created","Threat actors may create, update or otherwise modify various Office 365 inbox rules to delete sensitive emails - such as those originating from security teams - or automatically forward emails to a mailbox in their control."
 "","","MATCH-S00829","templated_match","Collection","True","False","","_mitreAttackTactic:TA0009, _mitreAttackTechnique:T1114.003","Office 365 Exchange Transport Rule Enabled","Threat actors may create, update or otherwise modify various Office 365 inbox rules to delete sensitive emails - such as those originating from security teams - or automatically forward emails to a mailbox in their control."
 "","","MATCH-S00830","templated_match","Collection","True","False","","_mitreAttackTactic:TA0009, _mitreAttackTechnique:T1114.003","Office 365 Forwarding Rule Created","Threat actors may create, update or otherwise modify various Office 365 inbox rules to automatically forward emails to a mailbox in their control."

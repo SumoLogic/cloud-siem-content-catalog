@@ -16,7 +16,6 @@ Detects email addresses associated with known malicious actor(s) or campaign(s) 
 |Prototype|False|
 |Tags||
 ## Vendors and Products
-- [Microsoft - Azure](../products/a1225af5-e778-4068-a9a2-47da93d1ff24.md)
 
 
 ## Fields Used

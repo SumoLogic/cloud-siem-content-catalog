@@ -247,6 +247,7 @@ The `type` listed lets you know if you can directly apply the parser to a collec
 |Parser|/Parsers/System/Teramind/Teramind Teraserver|
 |Parser|/Parsers/System/Thinkst Canary/Thinkst Canary|
 |Parser|/Parsers/System/Thinkst Canary/Thinkst Canary JSON|
+|Parser|/Parsers/System/TippingPoint/TippingPoint TPS Cloud|
 |Parser|/Parsers/System/Trellix/Trellix MVision EPO|
 |Parser|/Parsers/System/Trend Micro/Trend Micro Deep Security - CEF|
 |Parser|/Parsers/System/Trend Micro/Trend Micro Vision One|

@@ -581,6 +581,9 @@
 |MATCH-S00455|[O365 - Successful Authentication with PowerShell User Agent](MATCH-S00455.md)|
 |MATCH-S00068|[O365 - Users Password Changed](MATCH-S00068.md)|
 |MATCH-S00069|[O365 - Users Password Reset](MATCH-S00069.md)|
+|MATCH-S01053|[OCSF Compliance Finding](MATCH-S01053.md)|
+|MATCH-S01054|[OCSF Detection Finding](MATCH-S01054.md)|
+|MATCH-S01055|[OCSF Vulnerability Finding](MATCH-S01055.md)|
 |MATCH-S00828|[Office 365 Exchange Transport Rule Created](MATCH-S00828.md)|
 |MATCH-S00829|[Office 365 Exchange Transport Rule Enabled](MATCH-S00829.md)|
 |MATCH-S00830|[Office 365 Forwarding Rule Created](MATCH-S00830.md)|

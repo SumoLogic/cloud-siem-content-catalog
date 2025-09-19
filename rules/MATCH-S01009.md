@@ -18,10 +18,6 @@ This rule detects an indicator match from a threat intelligence feed
 ## Vendors and Products
 - [Cisco Systems - Firepower](../products/da9e05a5-3fd3-46a7-a107-ae03c01e3f5a.md)
 - [Cisco Systems - Umbrella](../products/5ba50e74-3c05-4ea8-aeaf-5efde588c60f.md)
-- [Cloudflare - Logpush](../products/c2503fcc-ef30-4e40-bb32-0bf47151b140.md)
-- [Netskope - Security Cloud](../products/B3582ED2-1A0C-452D-9802-97433D143486.md)
-- [Netskope - WebTx](../products/9e838f93-c9e7-4592-a980-cf9dfb704784.md)
-- [Palo Alto Networks - Next Generation Firewall](../products/46f5fa2c-1a62-4692-82ad-ed87800a0adb.md)
 
 
 ## Fields Used

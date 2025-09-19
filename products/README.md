@@ -270,6 +270,7 @@ Below is a full list of products supported by Cloud SIEM.
 |[Teramind](../vendors/98def8bd-ffc2-475c-9d77-f85bf7b7b727.md)|[Teraserver](898d54b3-40b0-44ec-ac23-78ee03ee81f4.md)|
 |[Thinkst Canary](../vendors/0152e233-fce6-4cbf-9edc-721d7bef94f8.md)|[Thinkst Canary](bff00521-0a45-4237-b853-cf21860f88bd.md)|
 |[Thycotic Software](../vendors/260cf6fd-c701-4ace-b39a-ac4a84ee791c.md)|[Secret Server](7cd93e5f-5165-41a9-a14c-bf3b1e413b6f.md)|
+|[TippingPoint](../vendors/a70248f5-5636-43fb-b548-7b84dd0e401e.md)|[TPS Cloud](c9e31e8f-b806-44b0-9960-5bf85431c97b.md)|
 |[Trellix](../vendors/9bec8407-4182-46ec-99dd-2adfade15652.md)|[MVision EPO](cf037e61-5600-4595-8cdb-41716f264528.md)|
 |[Trend Micro](../vendors/8af48b83-18bf-4233-ad51-db37baca0313.md)|[Apex Central](F362EA03-9BBB-4701-B2DF-5460C4A289CF.md)|
 |[Trend Micro](../vendors/8af48b83-18bf-4233-ad51-db37baca0313.md)|[Control Manager](bb75c481-648d-4953-80cf-1c8cbde8fbb8.md)|
