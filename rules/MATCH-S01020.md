@@ -16,6 +16,8 @@ Detects email addresses associated with known malicious actor(s) or campaign(s) 
 |Prototype|False|
 |Tags||
 ## Vendors and Products
+- [Google - G Suite](../products/e73cd65a-7a4b-4ce9-9d73-e5d9c824c214.md)
+- [Microsoft - Azure](../products/a1225af5-e778-4068-a9a2-47da93d1ff24.md)
 - [Proofpoint - Proofpoint on Demand](../products/332856e9-3111-446f-8df7-e64694e4b9a1.md)
 
 

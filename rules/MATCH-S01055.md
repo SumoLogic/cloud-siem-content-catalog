@@ -20,6 +20,8 @@ Finding Origin: {{fields['metadata.product.name']}}
 |Prototype|False|
 |Tags||
 ## Vendors and Products
+- [Amazon AWS - Inspector - OCSF](../products/13a22bad-dad0-4f63-8339-c3d79e81f4b0.md)
+- [Amazon AWS - Security Hub](../products/d0aebc1c-db4d-440f-b69f-70dae24befff.md)
 
 
 ## Dynamic Signal Score/Severity Translation

@@ -20,6 +20,7 @@ Finding Origin: {{fields['metadata.product.name']}}
 |Prototype|False|
 |Tags||
 ## Vendors and Products
+- [Amazon AWS - Security Hub](../products/d0aebc1c-db4d-440f-b69f-70dae24befff.md)
 
 
 ## Dynamic Signal Score/Severity Translation

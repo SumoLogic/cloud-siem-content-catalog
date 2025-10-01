@@ -17,6 +17,7 @@ This rule detects an indicator match from a threat intelligence feed
 |Tags||
 ## Vendors and Products
 - [Proofpoint - Proofpoint on Demand](../products/332856e9-3111-446f-8df7-e64694e4b9a1.md)
+- [Squid - Squid Proxy](../products/af61d8a8-3eba-42fb-9f17-87443924f3f4.md)
 - [Zscaler - Nanolog Streaming Service](../products/6299d728-14f7-455e-85c5-ea8ec65a654a.md)
 - [Zscaler - ZPA Log Streaming Service](../products/4a75a995-0e10-45fc-8b4d-7fcfc0e98e25.md)
 

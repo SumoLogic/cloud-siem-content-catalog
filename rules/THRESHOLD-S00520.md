@@ -23,6 +23,7 @@ Single host with multiple malware infections with the same signature in a short 
 - [Cylance - Protect](../products/60829f4a-7acb-47d1-ad23-8424fcf83dcb.md)
 - [Fortinet - Fortigate](../products/c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad.md)
 - [McAfee - Endpoint Security](../products/c91067a3-e972-4a73-ac14-75df12d49cc8.md)
+- [Microsoft - Windows](../products/1ff7546c-cb36-4a24-87f7-89d2cecc5761.md)
 - [Sophos - Central](../products/e5a708c9-82be-4df9-8ea0-07cac95abf2a.md)
 - [Symantec - Endpoint Protection](../products/eb2f69a8-8d13-447f-9859-1ad0979b4a24.md)
 - [Trend Micro - Control Manager](../products/bb75c481-648d-4953-80cf-1c8cbde8fbb8.md)
