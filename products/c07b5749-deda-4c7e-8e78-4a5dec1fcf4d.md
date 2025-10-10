@@ -5,6 +5,7 @@
 |Rule ID|Rule Name|
 |----|----|
 |LEGACY-S00013|[Connection to High Entropy Domain](../rules/LEGACY-S00013.md)|
+|THRESHOLD-S00026|[Possible Credential Abuse](../rules/THRESHOLD-S00026.md)|
 |MATCH-S00835|[Possible Dynamic URL Domain](../rules/MATCH-S00835.md)|
 |OUTLIER-S00010|[Spike in URL Length from IP Address](../rules/OUTLIER-S00010.md)|
 |MATCH-S01014|[Threat Intel - HTTP URL FQDN](../rules/MATCH-S01014.md)|

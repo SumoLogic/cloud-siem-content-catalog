@@ -20,6 +20,9 @@ Finding Origin: {{fields['metadata.product.name']}}
 |Prototype|False|
 |Tags||
 ## Vendors and Products
+- [Amazon AWS - GuardDuty - OCSF](../products/5bb8e745-453b-47c3-bda4-f690249a6333.md)
+- [Amazon AWS - Security Hub Exposure Detection - OCSF](../products/65208a2a-2e20-4985-bb7f-f9b7cca8e2b0.md)
+- [Amazon AWS - Security Hub](../products/d0aebc1c-db4d-440f-b69f-70dae24befff.md)
 
 
 ## Dynamic Signal Score/Severity Translation
