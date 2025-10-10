@@ -4,6 +4,7 @@
 
 |Rule ID|Rule Name|
 |----|----|
+|MATCH-S00402|[Normalized Security Signal](../rules/MATCH-S00402.md)|
 
 
 ## Log Mappers

@@ -4,6 +4,7 @@
 
 |Rule ID|Rule Name|
 |----|----|
+|MATCH-S00729|[MacOS Gatekeeper Bypass](../rules/MATCH-S00729.md)|
 
 
 ## Log Mappers
