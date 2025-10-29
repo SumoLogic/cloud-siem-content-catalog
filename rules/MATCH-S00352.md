@@ -17,6 +17,7 @@ Detection for mshta.exe suspicious execution patterns sometimes involving file p
 |Tags|_mitreAttackTactic:TA0005, _mitreAttackTechnique:T1140, _mitreAttackTechnique:T1218, _mitreAttackTechnique:T1218.005|
 ## Vendors and Products
 - [CrowdStrike - FDR](../products/569a3a44-c29f-492e-bcf4-5dc04e2ab0f3.md)
+- [Cylance - Protect](../products/60829f4a-7acb-47d1-ad23-8424fcf83dcb.md)
 - [Microsoft - Azure](../products/a1225af5-e778-4068-a9a2-47da93d1ff24.md)
 - [Microsoft - Windows](../products/1ff7546c-cb36-4a24-87f7-89d2cecc5761.md)
 

@@ -28,7 +28,7 @@ This alert detects a Windows process spawned by a parent process that does not n
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|baseImage|
+|Normalized Schema|LOWER|
 |Normalized Schema|commandLine|
 |Normalized Schema|device_hostname|
 |Normalized Schema|device_ip|

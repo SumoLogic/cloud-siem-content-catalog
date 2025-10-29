@@ -98,6 +98,7 @@ Below is a full list of products supported by Cloud SIEM.
 |[Cybereason](../vendors/1a51cb88-ebc9-4655-bce4-3d788bf19e89.md)|[Endpoint Security](12d00042-d90d-4055-a171-01a1f635a613.md)|
 |[Cylance](../vendors/c57feda1-8da4-464d-b6cf-2c9982b71e57.md)|[Protect](60829f4a-7acb-47d1-ad23-8424fcf83dcb.md)|
 |[Darktrace](../vendors/91f4544f-6118-4bdc-8b30-01f045d20e4c.md)|[Darktrace](49f20733-9889-487c-bf21-8e1606517700.md)|
+|[Databricks](../vendors/054a5dcc-8896-46e3-b459-5324046e9a42.md)|[Databricks Audit](b32a58b9-8bfd-4b1d-8b68-91611fe5c37e.md)|
 |[Dataminr](../vendors/0019f757-3674-4688-9d6c-063366cfcfa9.md)|[Dataminr](52dd0d74-38cb-42cd-94e6-9e1bd975e18c.md)|
 |[Datto](../vendors/1E4721C4-DC98-456D-B0DF-80365924683A.md)|[SIRIS 3 Professional](7DD9A705-0F30-4FCF-A5AD-7284F11C6AEF.md)|
 |[Datto](../vendors/1E4721C4-DC98-456D-B0DF-80365924683A.md)|[SIRIS 4 Enterprise](c6a01f34-99ca-4562-bfd0-7638c15bebcb.md)|
@@ -285,6 +286,7 @@ Below is a full list of products supported by Cloud SIEM.
 |[VMware](../vendors/fbf25b91-89f1-45c4-903d-664b328bc6e0.md)|[NSX](acc19092-f1ce-4641-a4db-530a55418c1d.md)|
 |[Varonis](../vendors/20270f89-127e-4055-96ec-56045e67e163.md)|[DatAdvantage](4d6a3683-4edb-4330-9e9f-b8608cd63981.md)|
 |[Varonis](../vendors/20270f89-127e-4055-96ec-56045e67e163.md)|[DatAlert](bd98578e-3f97-4e5a-93ec-bbff28f90ccf.md)|
+|[Varonis](../vendors/20270f89-127e-4055-96ec-56045e67e163.md)|[Varonis Alert](16b8a51d-47b3-4f22-82d7-f48f197307ca.md)|
 |[Vectra](../vendors/7a3d1a5c-ba67-4597-971f-7057e8f6c8bb.md)|[Cognito](51afd72e-94b0-42f3-b65c-cf8edbacf7cf.md)|
 |[Vectra](../vendors/7a3d1a5c-ba67-4597-971f-7057e8f6c8bb.md)|[Vectra AI](d4a9e7ce-082e-4f41-891f-4c43e604c850.md)|
 |[WatchGuard](../vendors/a6e8752b-5e5d-47b0-8f42-68cd438f5264.md)|[Fireware](14aa46d3-0710-44b6-9ce3-0a6b8f36b076.md)|
