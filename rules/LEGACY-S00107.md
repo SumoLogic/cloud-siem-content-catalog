@@ -21,7 +21,6 @@ A record flagged an IP address from a threat intelligence match list
 - [Amazon AWS - Web Application Firewall (WAF)](../products/072b85a2-1765-45c2-911d-b0509880326e.md)
 - [Barracuda - CloudGen Firewall](../products/34dd9c1e-ceec-4cba-8f5d-4776f680d785.md)
 - [Bro - Bro](../products/37C866BF-72E1-470A-9072-EDB908F56951.md)
-- [CheckPoint - Application Control](../products/1624169f-36c4-4309-8400-1409a171d00b.md)
 - [CheckPoint - Firewall and VPN](../products/c3c1a4fc-10cc-4155-8a30-a3bb14fc9f31.md)
 - [CheckPoint - SmartDefense](../products/2b82e665-bdde-474a-ae29-4f0f76598556.md)
 - [CheckPoint - URL Filtering](../products/2a678bcd-898e-43cd-ab3f-91feb0602a18.md)
@@ -38,7 +37,6 @@ A record flagged an IP address from a threat intelligence match list
 - [Fortinet - Fortigate](../products/c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad.md)
 - [Google - Google Cloud Platform](../products/dcc85cfc-a698-4d09-87de-f2c723f3ad07.md)
 - [Juniper - SRX Series Firewall](../products/A17B3F3C-04F1-40C8-9497-3C499EB18A74.md)
-- [Linux - Linux OS Syslog](../products/0e20c932-d992-4bd4-b276-c15119ca5c0b.md)
 - [Malwarebytes - Malwarebytes Endpoint Protection](../products/e611250c-6b5f-4b40-b84b-329a1d5b391c.md)
 - [McAfee - Web Gateway](../products/003d35b3-3ba8-4e93-8776-e5810b4e243e.md)
 - [Microsoft - Azure](../products/a1225af5-e778-4068-a9a2-47da93d1ff24.md)
@@ -51,6 +49,7 @@ A record flagged an IP address from a threat intelligence match list
 - [Symantec - Data Loss Prevention](../products/DFD96D65-65F6-413B-B4BE-F09D4870B377.md)
 - [Symantec - Web Security Service](../products/bf865cb5-0b26-4010-8b3c-5ae2d1f716d8.md)
 - [WatchGuard - Fireware](../products/14aa46d3-0710-44b6-9ce3-0a6b8f36b076.md)
+- [Zero Networks - Segment](../products/cf2af9e8-bade-4f28-8bca-b30aa41baec4.md)
 - [Zscaler - Firewall](../products/9e0641a7-22ce-4ac8-8113-ee48b368ac3d.md)
 - [Zscaler - Nanolog Streaming Service](../products/6299d728-14f7-455e-85c5-ea8ec65a654a.md)
 

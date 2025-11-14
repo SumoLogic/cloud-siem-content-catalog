@@ -81,6 +81,7 @@ The `type` listed lets you know if you can directly apply the parser to a collec
 |Parser|/Parsers/System/Cylance/Cylance Threat JSON|
 |Parser|/Parsers/System/Darktrace/Darktrace JSON|
 |Parser|/Parsers/System/Darktrace/Darktrace Syslog|
+|Parser|/Parsers/System/Databricks/Databricks Audit|
 |Parser|/Parsers/System/Dataminr/Dataminr|
 |Parser|/Parsers/System/Dell/Dell SonicWall|
 |Parser|/Parsers/System/Digital Guardian/Digital Guardian ARC|
@@ -213,6 +214,7 @@ The `type` listed lets you know if you can directly apply the parser to a collec
 |Parser|/Parsers/System/Parser Templates/XML Template Commented|
 |Parser|/Parsers/System/Pfsense/Pfsense Firewall|
 |Parser|/Parsers/System/PingIdentity/PingFederate|
+|Parser|/Parsers/System/PingIdentity/PingIdentity MFA|
 |Parser|/Parsers/System/Pulse Secure/Pulse Secure Appliance|
 |Parser|/Parsers/System/Qualys/Qualys Vulnerability Data|
 |Parser|/Parsers/System/Qumulo/Qumulo Core|
@@ -257,6 +259,7 @@ The `type` listed lets you know if you can directly apply the parser to a collec
 |Parser|/Parsers/System/VMware/VMware Avi Load Balancer|
 |Parser|/Parsers/System/VMware/VMware ESXi|
 |Parser|/Parsers/System/VMware/VMware NSX|
+|Parser|/Parsers/System/Varonis/Varonis Alert JSON|
 |Parser|/Parsers/System/Varonis/Varonis DatAlert Syslog|
 |Parser|/Parsers/System/Vectra/Vectra AI|
 |Parser|/Parsers/System/WatchGuard/WatchGuard Fireware|

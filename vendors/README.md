@@ -42,6 +42,7 @@ Below is a full list of vendors for which there are supported products in Cloud 
 |[Cybereason](1a51cb88-ebc9-4655-bce4-3d788bf19e89.md)|1|
 |[Cylance](c57feda1-8da4-464d-b6cf-2c9982b71e57.md)|1|
 |[Darktrace](91f4544f-6118-4bdc-8b30-01f045d20e4c.md)|1|
+|[Databricks](054a5dcc-8896-46e3-b459-5324046e9a42.md)|1|
 |[Dataminr](0019f757-3674-4688-9d6c-063366cfcfa9.md)|1|
 |[Datto](1E4721C4-DC98-456D-B0DF-80365924683A.md)|2|
 |[Dell](e8044d20-923d-423e-8203-ddf6f05cbae6.md)|2|
@@ -114,7 +115,7 @@ Below is a full list of vendors for which there are supported products in Cloud 
 |[Palo Alto Networks](938210de-ab6c-46fb-89d7-8530682581c6.md)|5|
 |[PassiveDns](ab6459e5-53ac-4791-845f-0f7b861a8f4c.md)|1|
 |[Pfsense](6c0a6808-4153-4db0-81e4-430dd908c1a8.md)|1|
-|[PingIdentity](b65ae958-55ad-43d0-a2d9-ac04442e0a36.md)|1|
+|[PingIdentity](b65ae958-55ad-43d0-a2d9-ac04442e0a36.md)|2|
 |[PreemptSecurity](15c77a62-0fbb-4a60-9fae-ead49ec423f9.md)|1|
 |[Pritunl](598b6820-feff-4169-89da-77211493a91d.md)|1|
 |[Proofpoint](e0bbbae5-9a03-48f4-b138-9c3b49522f1a.md)|2|
@@ -150,7 +151,7 @@ Below is a full list of vendors for which there are supported products in Cloud 
 |[Trust Login](78eae2f3-199e-48ca-aaf6-53f6a19e854a.md)|1|
 |[Twistlock](97C36046-B516-41F8-9751-4C788AA33785.md)|1|
 |[VMware](fbf25b91-89f1-45c4-903d-664b328bc6e0.md)|6|
-|[Varonis](20270f89-127e-4055-96ec-56045e67e163.md)|2|
+|[Varonis](20270f89-127e-4055-96ec-56045e67e163.md)|3|
 |[Vectra](7a3d1a5c-ba67-4597-971f-7057e8f6c8bb.md)|2|
 |[WatchGuard](a6e8752b-5e5d-47b0-8f42-68cd438f5264.md)|2|
 |[Wiz](2cde0cac-102b-4756-9a56-81437fea1400.md)|1|

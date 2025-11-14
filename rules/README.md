@@ -87,6 +87,8 @@
 |MATCH-S00139|[Abnormal Parent-Child Process Combination](MATCH-S00139.md)|
 |MATCH-S00511|[Accessibility Executables Replaced](MATCH-S00511.md)|
 |THRESHOLD-S00062|[Active Directory Domain Enumeration](THRESHOLD-S00062.md)|
+|CHAIN-S00023|[Administrative Remote Interactive Brute Force Login](CHAIN-S00023.md)|
+|MATCH-S01056|[Administrative Remote Interactive Login](MATCH-S01056.md)|
 |LEGACY-S00067|[Administrator Login via RDP](LEGACY-S00067.md)|
 |MATCH-S00600|[Alibaba ActionTrail Access Key Action Detected](MATCH-S00600.md)|
 |MATCH-S00601|[Alibaba ActionTrail IAM CreateUser Observed](MATCH-S00601.md)|
@@ -705,6 +707,7 @@
 |MATCH-S00265|[QuarksPwDump Dump File Observed](MATCH-S00265.md)|
 |LEGACY-S00068|[RDP Brute Force - Success](LEGACY-S00068.md)|
 |THRESHOLD-S00031|[RDP Brute Force Attempt](THRESHOLD-S00031.md)|
+|CHAIN-S00024|[RDP Brute Force Login Attempt](CHAIN-S00024.md)|
 |LEGACY-S00069|[RDP Error Messages](LEGACY-S00069.md)|
 |MATCH-S00176|[RDP Login from Localhost](MATCH-S00176.md)|
 |MATCH-S00502|[RDP Traffic to Unexpected Host](MATCH-S00502.md)|

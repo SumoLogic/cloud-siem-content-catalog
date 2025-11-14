@@ -10,7 +10,7 @@ Detects a user being added to a group. This may be a routine activity, but could
 |Category|Privilege Escalation|
 |Apply Risk to Entities|device_hostname, device_ip, user_username, targetUser_username, srcDevice_ip|
 |Signal Name|Azure - Added a Member to Group|
-|Summary Expression|{{user_username}} added {{changeTarget}} to group {{fields['modified_property_Group.DisplayName']}}|
+|Summary Expression|{{user_username}} added {{targetUser_username}} to group {{changeTarget}}|
 |Score/Severity|Static: 1|
 |Enabled by Default|True|
 |Prototype|False|
