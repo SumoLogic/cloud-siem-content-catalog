@@ -11,7 +11,6 @@
 |MATCH-S00203|[HTTP activity over port 53 - Possible SIGRED](../rules/MATCH-S00203.md)|
 |MATCH-S00666|[High Severity Intrusion Signature](../rules/MATCH-S00666.md)|
 |THRESHOLD-S00079|[Inbound Port Scan](../rules/THRESHOLD-S00079.md)|
-|THRESHOLD-S00080|[Internal Port Scan](../rules/THRESHOLD-S00080.md)|
 |THRESHOLD-S00081|[Internal Port Sweep](../rules/THRESHOLD-S00081.md)|
 |THRESHOLD-S00514|[Intrusion Scan - Targeted](../rules/THRESHOLD-S00514.md)|
 |THRESHOLD-S00515|[Intrusion Sweep](../rules/THRESHOLD-S00515.md)|

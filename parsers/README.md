@@ -31,6 +31,7 @@ The `type` listed lets you know if you can directly apply the parser to a collec
 |Parser|/Parsers/System/Alert Logic/Alert Logic|
 |Parser|/Parsers/System/Apache/Apache HTTP Server|
 |Parser|/Parsers/System/Aqua/Aqua JSON|
+|Parser|/Parsers/System/Asana/Asana Audit|
 |Parser|/Parsers/System/Atlassian/Atlassian Audit Events|
 |Parser|/Parsers/System/Atlassian/Atlassian Confluence Access Logs|
 |Parser|/Parsers/System/Atlassian/Atlassian Jira|
@@ -112,6 +113,8 @@ The `type` listed lets you know if you can directly apply the parser to a collec
 |Parser|/Parsers/System/Google/G Suite Audit|
 |Parser|/Parsers/System/Google/GCP|
 |Parser|/Parsers/System/Google/GCP BigQuery Gmail|
+|Parser|/Parsers/System/Google/Google Workspace Alert Center|
+|Parser|/Parsers/System/Google/Google Workspace Audit|
 |Parser|/Parsers/System/Google/Security Command Center|
 |Parser|/Parsers/System/HP/Aruba ClearPass - Syslog|
 |Parser|/Parsers/System/HP/Aruba WAP|
@@ -232,6 +235,7 @@ The `type` listed lets you know if you can directly apply the parser to a collec
 |Parser|/Parsers/System/Slack/Slack Enterprise Audit|
 |Parser|/Parsers/System/Snort/Snort|
 |Parser|/Parsers/System/Snowflake/Snowflake|
+|Parser|/Parsers/System/SonicWall/SonicWall Firewall|
 |Parser|/Parsers/System/Sophos/Sophos Central C2C JSON|
 |Parser|/Parsers/System/Sophos/Sophos UTM|
 |Parser|/Parsers/System/Squid/Squid Proxy Syslog|

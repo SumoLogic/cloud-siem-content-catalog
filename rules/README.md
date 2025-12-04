@@ -363,16 +363,6 @@
 |FIRST-S00008|[First Seen whoami command From User](FIRST-S00008.md)|
 |LEGACY-S00037|[Fortinet Critical App-Risk](LEGACY-S00037.md)|
 |LEGACY-S00038|[Fortinet High App-Risk](LEGACY-S00038.md)|
-|MATCH-S00117|[G Suite - Access - Access Transparency](MATCH-S00117.md)|
-|MATCH-S00115|[G Suite - Admin - User Settings - Turn Off 2SV](MATCH-S00115.md)|
-|MATCH-S00133|[G Suite - Admin Activity](MATCH-S00133.md)|
-|MATCH-S00125|[G Suite - Drive - Drive Open To Public](MATCH-S00125.md)|
-|MATCH-S00301|[G Suite - Excessive OAuth Application Permissions Scope](MATCH-S00301.md)|
-|MATCH-S00128|[G Suite - Login - Account Warning](MATCH-S00128.md)|
-|MATCH-S00129|[G Suite - Login - Government Attack Warning](MATCH-S00129.md)|
-|MATCH-S00121|[G Suite - Mobile - Suspicious Activity](MATCH-S00121.md)|
-|MATCH-S00227|[G Suite - Unauthorized OAuth Application](MATCH-S00227.md)|
-|MATCH-S00120|[G Suite - User Accounts - 2SV Disabled](MATCH-S00120.md)|
 |MATCH-S00620|[GCP Audit Cloud SQL Database Modified](MATCH-S00620.md)|
 |MATCH-S00621|[GCP Audit GCE Firewall Rule Modified](MATCH-S00621.md)|
 |MATCH-S00622|[GCP Audit GCE Network Route Created or Modified](MATCH-S00622.md)|
@@ -433,6 +423,16 @@
 |LEGACY-S00039|[GitHub Raw URL Resource Request](LEGACY-S00039.md)|
 |MATCH-S00098|[Global YARA Rule](MATCH-S00098.md)|
 |MATCH-S00535|[Golden SAML Indicator : Certificate Export](MATCH-S00535.md)|
+|MATCH-S00117|[Google Workspace - Access - Access Transparency](MATCH-S00117.md)|
+|MATCH-S00115|[Google Workspace - Admin - User Settings - Turn Off 2SV](MATCH-S00115.md)|
+|MATCH-S00133|[Google Workspace - Admin Activity](MATCH-S00133.md)|
+|MATCH-S00125|[Google Workspace - Drive - Drive Open To Public](MATCH-S00125.md)|
+|MATCH-S00301|[Google Workspace - Excessive OAuth Application Permissions Scope](MATCH-S00301.md)|
+|MATCH-S00128|[Google Workspace - Login - Account Warning](MATCH-S00128.md)|
+|MATCH-S00129|[Google Workspace - Login - Government Attack Warning](MATCH-S00129.md)|
+|MATCH-S00121|[Google Workspace - Mobile - Suspicious Activity](MATCH-S00121.md)|
+|MATCH-S00227|[Google Workspace - Unauthorized OAuth Application](MATCH-S00227.md)|
+|MATCH-S00120|[Google Workspace - User Accounts - 2SV Disabled](MATCH-S00120.md)|
 |MATCH-S00414|[Grabbing Sensitive Hives via Reg Utility](MATCH-S00414.md)|
 |MATCH-S00325|[Greenbug Campaign Indicators](MATCH-S00325.md)|
 |MATCH-S00894|[HAR file creation observed on host](MATCH-S00894.md)|

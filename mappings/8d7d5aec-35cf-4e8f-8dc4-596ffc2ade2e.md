@@ -1,11 +1,11 @@
-# [Mappings](README.md): Google G Suite - logout
+# [Mappings](README.md): Google Workspace - logout
 
 ## Input Requirements
 
 |Input|Value|
 |-----|-----|
 |Vendor|Google|
-|Product|G Suite|
+|Product|Google Workspace|
 |Log Format|JSON|
 |Event ID Regex Pattern|`login.logout\|login-login-logout`|
 
@@ -14,7 +14,7 @@
 |Output|Value|
 |------|-----|
 |Vendor|Google|
-|Product|G Suite|
+|Product|Google Workspace|
 |Record Type|Authentication|
 
 ## Fields Mapped
