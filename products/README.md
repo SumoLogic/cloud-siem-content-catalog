@@ -40,6 +40,7 @@ Below is a full list of products supported by Cloud SIEM.
 |[Amazon AWS](../vendors/210d6727-ac50-468e-ab00-1f7586845326.md)|[Web Application Firewall (WAF)](072b85a2-1765-45c2-911d-b0509880326e.md)|
 |[Apache](../vendors/c6fc7838-0007-4966-90aa-b7704fd70eac.md)|[Apache HTTP Server](6787d77a-1ee0-43d4-8ca0-96af8ee755bc.md)|
 |[Aqua](../vendors/0531e9df-c128-4c67-9a81-66ffcce41f9a.md)|[Aqua](4c2a186d-6aa5-47da-a6af-7fddfe16b528.md)|
+|[Asana](../vendors/75e181b5-7296-4332-aed6-484f81d15284.md)|[Asana Audit](7465af5e-516d-40dc-9535-9b463de0660d.md)|
 |[Atlassian](../vendors/4d40dc7a-b95e-476c-9fb0-7163ea7fd335.md)|[Atlassian Audit Events](23342262-740c-41b7-9b77-08267ae01612.md)|
 |[Atlassian](../vendors/4d40dc7a-b95e-476c-9fb0-7163ea7fd335.md)|[Confluence](4327decd-5345-4b81-b861-4cb2f06bd04e.md)|
 |[Atlassian](../vendors/4d40dc7a-b95e-476c-9fb0-7163ea7fd335.md)|[Jira](64088efc-3f28-448d-b386-000deebc7d89.md)|
@@ -102,7 +103,6 @@ Below is a full list of products supported by Cloud SIEM.
 |[Dataminr](../vendors/0019f757-3674-4688-9d6c-063366cfcfa9.md)|[Dataminr](52dd0d74-38cb-42cd-94e6-9e1bd975e18c.md)|
 |[Datto](../vendors/1E4721C4-DC98-456D-B0DF-80365924683A.md)|[SIRIS 3 Professional](7DD9A705-0F30-4FCF-A5AD-7284F11C6AEF.md)|
 |[Datto](../vendors/1E4721C4-DC98-456D-B0DF-80365924683A.md)|[SIRIS 4 Enterprise](c6a01f34-99ca-4562-bfd0-7638c15bebcb.md)|
-|[Dell](../vendors/e8044d20-923d-423e-8203-ddf6f05cbae6.md)|[Firewall](b1639f7f-4c11-4d29-ab69-368cf0e05e25.md)|
 |[Demisto](../vendors/C279B799-AD59-4B49-9582-5F9FD106079F.md)|[Demisto Enterprise](E14F2619-529E-4D76-9EF3-6972260DD4A5.md)|
 |[Digital Guardian](../vendors/c10788a1-0da8-483c-b87a-e6351984fab5.md)|[ARC](975d678e-eb46-4155-9427-0fa307971fcd.md)|
 |[Digital Guardian](../vendors/c10788a1-0da8-483c-b87a-e6351984fab5.md)|[EDR](eef5aad0-1c6e-4c8a-bb83-03a04743ee18.md)|
@@ -132,8 +132,8 @@ Below is a full list of products supported by Cloud SIEM.
 |[Github](../vendors/193c791a-bb10-4742-a429-1256535f888b.md)|[GitHub Enterprise Audit](e3c8bd8b-6ed8-4332-944d-d0f5dfc462df.md)|
 |[Github](../vendors/193c791a-bb10-4742-a429-1256535f888b.md)|[Github](33410b0f-3ca6-46ee-b781-b54f1218dfea.md)|
 |[Google](../vendors/45601247-66a5-4c9c-b3af-c422f5b4cbeb.md)|[BigQuery](a67d97fe-6e68-4cfb-9500-cfc5492da565.md)|
-|[Google](../vendors/45601247-66a5-4c9c-b3af-c422f5b4cbeb.md)|[G Suite](e73cd65a-7a4b-4ce9-9d73-e5d9c824c214.md)|
 |[Google](../vendors/45601247-66a5-4c9c-b3af-c422f5b4cbeb.md)|[Google Cloud Platform](dcc85cfc-a698-4d09-87de-f2c723f3ad07.md)|
+|[Google](../vendors/45601247-66a5-4c9c-b3af-c422f5b4cbeb.md)|[Google Workspace](e73cd65a-7a4b-4ce9-9d73-e5d9c824c214.md)|
 |[Google](../vendors/45601247-66a5-4c9c-b3af-c422f5b4cbeb.md)|[Security Command Center](78a80406-d37b-4a17-a25e-dbf53289b647.md)|
 |[HP](../vendors/8C78ABDA-69C2-480A-9D64-F906C68AE8EC.md)|[Aruba ClearPass](12aba181-2b31-472c-a685-2be492f4778d.md)|
 |[HP](../vendors/8C78ABDA-69C2-480A-9D64-F906C68AE8EC.md)|[Aruba Mobility Master](c568879a-11ef-4566-bc20-71ce8136a469.md)|
@@ -253,6 +253,7 @@ Below is a full list of products supported by Cloud SIEM.
 |[Signal Sciences](../vendors/4a030ef0-8960-4200-9bb6-563f22ed5c54.md)|[Web Application Firewall](2f2fbe08-ab8b-4626-81fd-eaa41b563c49.md)|
 |[Slack](../vendors/c93d9bf6-0a88-49fc-aebb-ac7b2ea6792c.md)|[Slack](79da6240-7617-49c8-b130-96278579766e.md)|
 |[Snowflake](../vendors/5541f59d-e27d-48e6-a35c-34fb75e9cf13.md)|[Snowflake](8276b520-fdeb-4f79-9f5d-67865818562b.md)|
+|[SonicWall](../vendors/28b9ec28-da35-4428-b887-9fbc4ed283bf.md)|[Firewall](951a004d-54bf-441d-98e1-fcc6a032f475.md)|
 |[Sophos](../vendors/dc8564e3-6c44-463a-8bad-36618a688d57.md)|[Central](e5a708c9-82be-4df9-8ea0-07cac95abf2a.md)|
 |[Sophos](../vendors/dc8564e3-6c44-463a-8bad-36618a688d57.md)|[Endpoint](6c0a9bbd-3d2c-4120-83f8-aa5e147c8c6b.md)|
 |[Sophos](../vendors/dc8564e3-6c44-463a-8bad-36618a688d57.md)|[UTM 9](0fb003bc-8383-442f-8f3d-afcfbaefe617.md)|

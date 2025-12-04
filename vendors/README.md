@@ -15,6 +15,7 @@ Below is a full list of vendors for which there are supported products in Cloud 
 |[Amazon AWS](210d6727-ac50-468e-ab00-1f7586845326.md)|25|
 |[Apache](c6fc7838-0007-4966-90aa-b7704fd70eac.md)|1|
 |[Aqua](0531e9df-c128-4c67-9a81-66ffcce41f9a.md)|1|
+|[Asana](75e181b5-7296-4332-aed6-484f81d15284.md)|1|
 |[Atlassian](4d40dc7a-b95e-476c-9fb0-7163ea7fd335.md)|3|
 |[Auth0](f002a19c-876e-4a33-8be0-ed3b922d19bc.md)|1|
 |[Automox](2dcbfadf-26a8-4066-8e65-5bb5fd19df29.md)|1|
@@ -45,7 +46,6 @@ Below is a full list of vendors for which there are supported products in Cloud 
 |[Databricks](054a5dcc-8896-46e3-b459-5324046e9a42.md)|1|
 |[Dataminr](0019f757-3674-4688-9d6c-063366cfcfa9.md)|1|
 |[Datto](1E4721C4-DC98-456D-B0DF-80365924683A.md)|2|
-|[Dell](e8044d20-923d-423e-8203-ddf6f05cbae6.md)|2|
 |[Demisto](C279B799-AD59-4B49-9582-5F9FD106079F.md)|1|
 |[Digital Guardian](c10788a1-0da8-483c-b87a-e6351984fab5.md)|2|
 |[Docker](d8aec2d6-4a0d-4112-bb17-c26470eedb0c.md)|1|
@@ -133,6 +133,7 @@ Below is a full list of vendors for which there are supported products in Cloud 
 |[Signal Sciences](4a030ef0-8960-4200-9bb6-563f22ed5c54.md)|1|
 |[Slack](c93d9bf6-0a88-49fc-aebb-ac7b2ea6792c.md)|1|
 |[Snowflake](5541f59d-e27d-48e6-a35c-34fb75e9cf13.md)|1|
+|[SonicWall](28b9ec28-da35-4428-b887-9fbc4ed283bf.md)|1|
 |[Sophos](dc8564e3-6c44-463a-8bad-36618a688d57.md)|3|
 |[Squid](470cb4ad-ac19-442b-9b3a-28b979d47d8e.md)|1|
 |[Sucuri](cdfd2ba0-77eb-4e11-b071-6f4d01fda607.md)|1|
