@@ -10,7 +10,7 @@ Detects member additions to the Global Administrator role outside of Privileged 
 |Category|Privilege Escalation|
 |Apply Risk to Entities|device_hostname, device_ip, targetUser_username, user_username, srcDevice_ip|
 |Signal Name|Azure - Member Added to Global Administrator Role Outside of PIM|
-|Summary Expression|{{changeTarget}} added to Global Administrator role by IP {{device_ip}}|
+|Summary Expression|{{targetUser_username}} added to Global Administrator role by IP {{device_ip}}|
 |Score/Severity|Static: 5|
 |Enabled by Default|True|
 |Prototype|False|
@@ -24,10 +24,10 @@ Detects member additions to the Global Administrator role outside of Privileged 
 |Origin|Field|
 |----|----|
 |Normalized Schema|action|
+|Normalized Schema|changeTarget|
 |Normalized Schema|device_hostname|
 |Normalized Schema|device_ip|
 |Direct from Record|fields['identity']|
-|Direct from Record|fields['properties.targetResources.1.modifiedProperties.2.newValue']|
 |Normalized Schema|metadata_deviceEventId|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|

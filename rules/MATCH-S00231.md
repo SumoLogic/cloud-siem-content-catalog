@@ -10,7 +10,7 @@ Detects member additions to the Global Administrator role outside of Privileged 
 |Category|Privilege Escalation|
 |Apply Risk to Entities|device_hostname, device_ip, targetUser_username, user_username, srcDevice_ip|
 |Signal Name|Azure - Member Added to Global Administrator Role|
-|Summary Expression|{{changeTarget}} added to Global Administrator role by IP {{device_ip}}|
+|Summary Expression|{{targetUser_username}} added to Global Administrator role by IP {{device_ip}}|
 |Score/Severity|Static: 4|
 |Enabled by Default|True|
 |Prototype|False|

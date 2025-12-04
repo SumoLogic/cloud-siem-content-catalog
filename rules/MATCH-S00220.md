@@ -12,7 +12,7 @@ Adding a user to a role, especially one with administrative privileges, outside 
 |Category|Privilege Escalation|
 |Apply Risk to Entities|device_hostname, device_ip, user_username, targetUser_username, srcDevice_ip|
 |Signal Name|Azure -  Added to Role (Non-PIM)|
-|Summary Expression|{{device_ip}} added {{changeTarget}} to {{fields['properties.targetResources.1.modifiedProperties.2.newValue']}}|
+|Summary Expression|{{device_ip}} added {{targetUser_username}} to the {{changeTarget}} role|
 |Score/Severity|Static: 1|
 |Enabled by Default|True|
 |Prototype|False|

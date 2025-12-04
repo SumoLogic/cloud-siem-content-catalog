@@ -9,8 +9,8 @@ Detects member additions to a non-administrative role. This is a routine activit
 |Type|Templated Match|
 |Category|Persistence|
 |Apply Risk to Entities|device_hostname, device_ip, targetUser_username, user_username, srcDevice_ip|
-|Signal Name|Azure - Member Added to {{fields['properties.targetResources.1.modifiedProperties.2.newValue']}} Role|
-|Summary Expression|{{changeTarget}} added to {{fields['properties.targetResources.1.modifiedProperties.2.newValue']}} role by IP {{device_ip}}|
+|Signal Name|Azure - Member Added to {{changeTarget}} Role|
+|Summary Expression|{{targetUser_username}} added to {{changeTarget}} role by IP {{device_ip}}|
 |Score/Severity|Static: 3|
 |Enabled by Default|True|
 |Prototype|False|
@@ -24,9 +24,9 @@ Detects member additions to a non-administrative role. This is a routine activit
 |Origin|Field|
 |----|----|
 |Normalized Schema|action|
+|Normalized Schema|changeTarget|
 |Normalized Schema|device_hostname|
 |Normalized Schema|device_ip|
-|Direct from Record|fields['properties.targetResources.1.modifiedProperties.2.newValue']|
 |Normalized Schema|metadata_deviceEventId|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|

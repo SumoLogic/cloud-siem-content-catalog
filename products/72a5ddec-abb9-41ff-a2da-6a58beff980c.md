@@ -4,7 +4,8 @@
 
 |Rule ID|Rule Name|
 |----|----|
-|MATCH-S00729|[MacOS Gatekeeper Bypass](../rules/MATCH-S00729.md)|
+|MATCH-S00445|[Known Ransomware File Extensions](../rules/MATCH-S00445.md)|
+|MATCH-S00687|[Linux Security Tool Usage](../rules/MATCH-S00687.md)|
 
 
 ## Log Mappers
