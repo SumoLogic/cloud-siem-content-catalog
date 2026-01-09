@@ -16,6 +16,7 @@ Detect when a user is creating a service account in one of the Kubernetes defaul
 |Prototype|False|
 |Tags|_mitreAttackTactic:TA0003, _mitreAttackTechnique:T1136, _mitreAttackTechnique:T1136.003, _mitreAttackTechnique:T1136.001, _mitreAttackTechnique:T1136.002|
 ## Vendors and Products
+- [Kubernetes - Kubernetes](../products/74662794-d8de-42ec-b504-cc0bccfaddd9.md)
 
 
 ## Fields Used

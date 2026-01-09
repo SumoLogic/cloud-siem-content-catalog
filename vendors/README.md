@@ -29,10 +29,9 @@ Below is a full list of vendors for which there are supported products in Cloud 
 |[Bro](F64FF115-D5EE-40D0-ABAD-DAD7BA87F70D.md)|1|
 |[Carbon Black](c2ea2e5e-92f2-49e8-9812-64e60dba63a2.md)|4|
 |[Cato Networks](53e043b0-76e3-471a-84ec-0266a4f3b279.md)|1|
-|[CheckPoint](6ee43776-3c2c-49b9-a5cf-51309e815aa3.md)|7|
+|[CheckPoint](6ee43776-3c2c-49b9-a5cf-51309e815aa3.md)|9|
 |[Cisco Systems](e2d55f62-8ebb-4d00-b2f9-b55d1fa642bb.md)|13|
 |[Citrix](f3d0223a-78a7-42f6-93cc-3bcd15569a5b.md)|3|
-|[Claroty](7d7a8243-bd53-417a-93f7-b73f800b1925.md)|1|
 |[Cloudflare](4c1c0f12-5d0a-4f0c-918f-c83dca43c967.md)|2|
 |[Code42](f764fde6-a435-42cb-9407-15734a99d657.md)|2|
 |[CommScope](e69bff14-6237-4997-a447-4fc02feaeeaf.md)|2|
@@ -75,7 +74,6 @@ Below is a full list of vendors for which there are supported products in Cloud 
 |[IBM](24ace3b6-5dfa-4a4f-a3ed-1c99f3384b34.md)|3|
 |[ISC](1583cfd2-7ece-4060-991b-06dcf8567943.md)|1|
 |[Illumio](ca524eee-b1aa-4a59-8d5d-45c765ee9e08.md)|1|
-|[Imperva](50bd76b3-148f-4b03-9d2f-b70851bc6c2f.md)|3|
 |[Infoblox](fa08cfce-e611-42b7-8317-8b0beca298d5.md)|2|
 |[Intersect Alliance](005c835d-f067-4147-9da9-fe4d2691247e.md)|1|
 |[JFrog](ddbcc96c-f6b8-42b3-9456-8bc6ac5e8313.md)|1|
@@ -151,11 +149,10 @@ Below is a full list of vendors for which there are supported products in Cloud 
 |[Trend Micro](8af48b83-18bf-4233-ad51-db37baca0313.md)|4|
 |[Trust Login](78eae2f3-199e-48ca-aaf6-53f6a19e854a.md)|1|
 |[Twistlock](97C36046-B516-41F8-9751-4C788AA33785.md)|1|
-|[VMware](fbf25b91-89f1-45c4-903d-664b328bc6e0.md)|6|
+|[VMware](fbf25b91-89f1-45c4-903d-664b328bc6e0.md)|7|
 |[Varonis](20270f89-127e-4055-96ec-56045e67e163.md)|3|
 |[Vectra](7a3d1a5c-ba67-4597-971f-7057e8f6c8bb.md)|2|
 |[WatchGuard](a6e8752b-5e5d-47b0-8f42-68cd438f5264.md)|2|
-|[Wiz](2cde0cac-102b-4756-9a56-81437fea1400.md)|1|
 |[Workday](6e7ce4b2-569e-476d-b732-7b3a71b1e12a.md)|1|
 |[Zendesk](18db13d4-1574-465b-a203-1c76456e70b4.md)|1|
 |[Zero Networks](3e3c8813-9644-4fd6-9d6f-78bb8ffc5f44.md)|1|

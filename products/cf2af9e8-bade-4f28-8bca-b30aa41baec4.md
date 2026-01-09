@@ -8,6 +8,7 @@
 |FIRST-S00030|[First Seen Outbound Connection to External IP Address on Port 445 from IP Address](../rules/FIRST-S00030.md)|
 |THRESHOLD-S00081|[Internal Port Sweep](../rules/THRESHOLD-S00081.md)|
 |MATCH-S00554|[Outbound IRC Traffic](../rules/MATCH-S00554.md)|
+|CHAIN-S00024|[RDP Brute Force Login Attempt](../rules/CHAIN-S00024.md)|
 |MATCH-S01007|[Threat Intel - Destination Device Hostname](../rules/MATCH-S01007.md)|
 |MATCH-S00555|[Threat Intel - Inbound Traffic Context](../rules/MATCH-S00555.md)|
 |LEGACY-S00107|[Threat Intel Match - IP Address](../rules/LEGACY-S00107.md)|

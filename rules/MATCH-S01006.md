@@ -17,6 +17,8 @@ This rule detects an indicator match from a threat intelligence feed
 |Tags||
 ## Vendors and Products
 - [Amazon AWS - Redshift](../products/74e6d624-f15b-430c-a173-67d6168085f5.md)
+- [Cato Networks - Cato Networks](../products/168afd8d-2893-4c74-95b1-a975d576ea56.md)
+- [Jamf - Jamf](../products/5c2cc0de-ca31-4ef0-bcfa-133fc8b387ad.md)
 - [Zscaler - Nanolog Streaming Service](../products/6299d728-14f7-455e-85c5-ea8ec65a654a.md)
 
 

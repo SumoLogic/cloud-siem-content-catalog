@@ -16,6 +16,7 @@ A user account or TSP account has been deleted.
 |Prototype|False|
 |Tags|_mitreAttackTactic:TA0040, _mitreAttackTechnique:T1531|
 ## Vendors and Products
+- [Zoom - Zoom](../products/ad8d40a9-ee64-4615-bd92-aa964b4ae3b0.md)
 
 
 ## Fields Used

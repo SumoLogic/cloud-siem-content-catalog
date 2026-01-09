@@ -31,7 +31,6 @@ This rule is loosely based on the Azure Sentinel ADOAgentPoolCreatedDeleted.yaml
 |Prototype|False|
 |Tags|_mitreAttackTechnique:T1578, _mitreAttackTactic:TA0005|
 ## Vendors and Products
-- [Microsoft - Azure DevOps Auditing](../products/c3b61ddb-4d2d-497c-b873-28938036b67b.md)
 
 
 ## Fields Used

@@ -20,6 +20,7 @@ A user has executed a pbpaste command not seen since the baseline period. The pb
 |Tags|_mitreAttackTechnique:T1115, _mitreAttackTactic:TA0009|
 ## Vendors and Products
 - [CrowdStrike - FDR](../products/569a3a44-c29f-492e-bcf4-5dc04e2ab0f3.md)
+- [Jamf - Jamf](../products/5c2cc0de-ca31-4ef0-bcfa-133fc8b387ad.md)
 
 
 ## Fields Used

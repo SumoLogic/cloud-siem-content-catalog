@@ -16,6 +16,7 @@ Generates severity 0 signals for LoginAs Salesforce events. The purpose of this 
 |Prototype|False|
 |Tags|_mitreAttackTactic:TA0006, _mitreAttackTechnique:T1078.004, _mitreAttackTechnique:T1078|
 ## Vendors and Products
+- [Salesforce - Salesforce](../products/1b7798df-963b-4582-a82b-b8176c3a6a22.md)
 
 
 ## Fields Used

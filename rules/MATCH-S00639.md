@@ -16,6 +16,7 @@ Detect when an unauthenticated request user is permitted in Kubernetes.
 |Prototype|False|
 |Tags|_mitreAttackTactic:TA0006, _mitreAttackTactic:TA0001, _mitreAttackTechnique:T1078, _mitreAttackTechnique:T1078.004, _mitreAttackTechnique:T1552, _mitreAttackTechnique:T1552.007|
 ## Vendors and Products
+- [Kubernetes - Kubernetes](../products/74662794-d8de-42ec-b504-cc0bccfaddd9.md)
 
 
 ## Fields Used

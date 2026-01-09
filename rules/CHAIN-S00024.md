@@ -28,6 +28,7 @@ Note that this rule is more likely to trigger when the destination host is a mul
 |Tags|_mitreAttackTactic:TA0006, _mitreAttackTechnique:T1110.001, _mitreAttackTechnique:T1110|
 ## Vendors and Products
 - [Microsoft - Windows](../products/1ff7546c-cb36-4a24-87f7-89d2cecc5761.md)
+- [Zero Networks - Segment](../products/cf2af9e8-bade-4f28-8bca-b30aa41baec4.md)
 
 
 ## Fields Used

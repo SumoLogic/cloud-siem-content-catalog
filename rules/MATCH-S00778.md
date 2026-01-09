@@ -16,6 +16,7 @@ Detects permission set assignments. While this is a routine activity, permission
 |Prototype|False|
 |Tags|_mitreAttackTactic:TA0003, _mitreAttackTechnique:T1098|
 ## Vendors and Products
+- [Salesforce - Salesforce](../products/1b7798df-963b-4582-a82b-b8176c3a6a22.md)
 
 
 ## Dynamic Signal Score/Severity Translation

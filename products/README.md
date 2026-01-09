@@ -61,11 +61,13 @@ Below is a full list of products supported by Cloud SIEM.
 |[Carbon Black](../vendors/c2ea2e5e-92f2-49e8-9812-64e60dba63a2.md)|[Protect](ada54150-f29e-43a5-9d20-b98ee2d17430.md)|
 |[Carbon Black](../vendors/c2ea2e5e-92f2-49e8-9812-64e60dba63a2.md)|[Response](ca9373c1-d3cb-47f2-8dd9-c6580b4c60fe.md)|
 |[Cato Networks](../vendors/53e043b0-76e3-471a-84ec-0266a4f3b279.md)|[Cato Networks](168afd8d-2893-4c74-95b1-a975d576ea56.md)|
+|[CheckPoint](../vendors/6ee43776-3c2c-49b9-a5cf-51309e815aa3.md)|[Anti Malware](3b546abd-2f72-4ec6-9ca5-e4077b01b3d0.md)|
 |[CheckPoint](../vendors/6ee43776-3c2c-49b9-a5cf-51309e815aa3.md)|[Application Control](1624169f-36c4-4309-8400-1409a171d00b.md)|
 |[CheckPoint](../vendors/6ee43776-3c2c-49b9-a5cf-51309e815aa3.md)|[Application Control URL Filtering](ec98f4a8-f961-4e5b-ad7c-dc3c64301f47.md)|
 |[CheckPoint](../vendors/6ee43776-3c2c-49b9-a5cf-51309e815aa3.md)|[Avanan](b8956e27-b893-4518-85ff-20835710c3cf.md)|
 |[CheckPoint](../vendors/6ee43776-3c2c-49b9-a5cf-51309e815aa3.md)|[Firewall and VPN](c3c1a4fc-10cc-4155-8a30-a3bb14fc9f31.md)|
 |[CheckPoint](../vendors/6ee43776-3c2c-49b9-a5cf-51309e815aa3.md)|[IPS](18397be3-8078-4de3-96b1-860d22fd7bd6.md)|
+|[CheckPoint](../vendors/6ee43776-3c2c-49b9-a5cf-51309e815aa3.md)|[New Anti Virus](16adccbd-5988-42e4-931d-fa413dc7949e.md)|
 |[CheckPoint](../vendors/6ee43776-3c2c-49b9-a5cf-51309e815aa3.md)|[SmartDefense](2b82e665-bdde-474a-ae29-4f0f76598556.md)|
 |[CheckPoint](../vendors/6ee43776-3c2c-49b9-a5cf-51309e815aa3.md)|[URL Filtering](2a678bcd-898e-43cd-ab3f-91feb0602a18.md)|
 |[Cisco Systems](../vendors/e2d55f62-8ebb-4d00-b2f9-b55d1fa642bb.md)|[ASA](be4f7473-fe69-4311-8859-3561900060bf.md)|
@@ -80,7 +82,6 @@ Below is a full list of products supported by Cloud SIEM.
 |[Cisco Systems](../vendors/e2d55f62-8ebb-4d00-b2f9-b55d1fa642bb.md)|[Umbrella](5ba50e74-3c05-4ea8-aeaf-5efde588c60f.md)|
 |[Citrix](../vendors/f3d0223a-78a7-42f6-93cc-3bcd15569a5b.md)|[ADC](d3606245-76d3-4173-a2fe-832c0e71b0f9.md)|
 |[Citrix](../vendors/f3d0223a-78a7-42f6-93cc-3bcd15569a5b.md)|[Cloud](afb6e550-1dfd-4934-b369-e2587c447b09.md)|
-|[Claroty](../vendors/7d7a8243-bd53-417a-93f7-b73f800b1925.md)|[Claroty xDome](8cdfb3fc-8700-4012-bf3d-7dfc147d291b.md)|
 |[Cloudflare](../vendors/4c1c0f12-5d0a-4f0c-918f-c83dca43c967.md)|[Logpush](c2503fcc-ef30-4e40-bb32-0bf47151b140.md)|
 |[Code42](../vendors/f764fde6-a435-42cb-9407-15734a99d657.md)|[Code42](be11069a-30d6-4439-b9c8-9d4f47c13160.md)|
 |[Code42](../vendors/f764fde6-a435-42cb-9407-15734a99d657.md)|[Incydr](cc523ad6-7193-4de5-a254-d0243fca63f3.md)|
@@ -144,8 +145,6 @@ Below is a full list of products supported by Cloud SIEM.
 |[IBM](../vendors/24ace3b6-5dfa-4a4f-a3ed-1c99f3384b34.md)|[WebSEAL Reverse Proxy](58ebda18-c14a-472e-94f8-77a762a10aaa.md)|
 |[ISC](../vendors/1583cfd2-7ece-4060-991b-06dcf8567943.md)|[Bind](1768a42a-37e6-4a2b-aa42-314583f63e1b.md)|
 |[Illumio](../vendors/ca524eee-b1aa-4a59-8d5d-45c765ee9e08.md)|[Adaptive Security Platform](1afb4979-e858-43fe-8a55-87f444f0417b.md)|
-|[Imperva](../vendors/50bd76b3-148f-4b03-9d2f-b70851bc6c2f.md)|[Imperva Incapsula](2a236ab1-77d2-4867-a571-a1cfd64528e6.md)|
-|[Imperva](../vendors/50bd76b3-148f-4b03-9d2f-b70851bc6c2f.md)|[SecureSphere](b04bd88c-7eb5-46e2-8a82-0113add22ee5.md)|
 |[Infoblox](../vendors/fa08cfce-e611-42b7-8317-8b0beca298d5.md)|[DDI](ebf65636-e08d-4560-a692-d7ee9692b7db.md)|
 |[Infoblox](../vendors/fa08cfce-e611-42b7-8317-8b0beca298d5.md)|[Network Identity Operating System](43808f4c-15e9-480c-ab1a-38bdef3b6798.md)|
 |[Intersect Alliance](../vendors/005c835d-f067-4147-9da9-fe4d2691247e.md)|[Snare Enterprise Agent for Windows](d9af8a59-8835-467e-aeea-fd6fc2e210da.md)|
@@ -195,7 +194,6 @@ Below is a full list of products supported by Cloud SIEM.
 |[Micro Focus](../vendors/23850303-a1da-4c95-83f1-bd9d3b5104b8.md)|[Voltage SecureData Enterprise](1acddae8-dd0e-46f8-a324-9d9144cd8b3f.md)|
 |[Microsoft](../vendors/2b002817-fd14-49b3-a3fe-c9761275b931.md)|[Advanced Threat Analytics](ae48ad1f-04e5-47c6-9892-25555e5f728b.md)|
 |[Microsoft](../vendors/2b002817-fd14-49b3-a3fe-c9761275b931.md)|[Azure](a1225af5-e778-4068-a9a2-47da93d1ff24.md)|
-|[Microsoft](../vendors/2b002817-fd14-49b3-a3fe-c9761275b931.md)|[Azure DevOps Auditing](c3b61ddb-4d2d-497c-b873-28938036b67b.md)|
 |[Microsoft](../vendors/2b002817-fd14-49b3-a3fe-c9761275b931.md)|[Azure Storage Analytics](4411adbb-f3f4-4e6e-a174-694fef8d7a47.md)|
 |[Microsoft](../vendors/2b002817-fd14-49b3-a3fe-c9761275b931.md)|[Azure Virtual Network](20b56f37-5fc0-485a-b5da-4010f9025b93.md)|
 |[Microsoft](../vendors/2b002817-fd14-49b3-a3fe-c9761275b931.md)|[Cloud App Security](86e85e72-d3b1-4f1d-b195-5ca3d90e9461.md)|
@@ -286,13 +284,13 @@ Below is a full list of products supported by Cloud SIEM.
 |[VMware](../vendors/fbf25b91-89f1-45c4-903d-664b328bc6e0.md)|[ESXi](8151e52c-df0d-42d2-978f-2d17e24ae41c.md)|
 |[VMware](../vendors/fbf25b91-89f1-45c4-903d-664b328bc6e0.md)|[Horizon](30e76023-289c-40f2-a9a4-7ce4677a5e7d.md)|
 |[VMware](../vendors/fbf25b91-89f1-45c4-903d-664b328bc6e0.md)|[NSX](acc19092-f1ce-4641-a4db-530a55418c1d.md)|
+|[VMware](../vendors/fbf25b91-89f1-45c4-903d-664b328bc6e0.md)|[vSphere Web Services](d657879d-2bfd-4aaa-b182-a5102117bd35.md)|
 |[Varonis](../vendors/20270f89-127e-4055-96ec-56045e67e163.md)|[DatAdvantage](4d6a3683-4edb-4330-9e9f-b8608cd63981.md)|
 |[Varonis](../vendors/20270f89-127e-4055-96ec-56045e67e163.md)|[DatAlert](bd98578e-3f97-4e5a-93ec-bbff28f90ccf.md)|
 |[Varonis](../vendors/20270f89-127e-4055-96ec-56045e67e163.md)|[Varonis Alert](16b8a51d-47b3-4f22-82d7-f48f197307ca.md)|
 |[Vectra](../vendors/7a3d1a5c-ba67-4597-971f-7057e8f6c8bb.md)|[Cognito](51afd72e-94b0-42f3-b65c-cf8edbacf7cf.md)|
 |[Vectra](../vendors/7a3d1a5c-ba67-4597-971f-7057e8f6c8bb.md)|[Vectra AI](d4a9e7ce-082e-4f41-891f-4c43e604c850.md)|
 |[WatchGuard](../vendors/a6e8752b-5e5d-47b0-8f42-68cd438f5264.md)|[Fireware](14aa46d3-0710-44b6-9ce3-0a6b8f36b076.md)|
-|[Wiz](../vendors/2cde0cac-102b-4756-9a56-81437fea1400.md)|[Wiz](52ac893d-bdf9-4e2c-be83-5f43842a179d.md)|
 |[Workday](../vendors/6e7ce4b2-569e-476d-b732-7b3a71b1e12a.md)|[Workday](0438df6b-16ba-4da7-a7a7-626316d0061f.md)|
 |[Zendesk](../vendors/18db13d4-1574-465b-a203-1c76456e70b4.md)|[Zendesk](a301559a-8110-4dd0-a41d-35b9baa1c740.md)|
 |[Zero Networks](../vendors/3e3c8813-9644-4fd6-9d6f-78bb8ffc5f44.md)|[Segment](cf2af9e8-bade-4f28-8bca-b30aa41baec4.md)|

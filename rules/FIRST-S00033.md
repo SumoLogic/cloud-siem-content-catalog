@@ -20,6 +20,7 @@ A pod was deployed with an attached terminal (stdin=true,stdout=true,tty=true) f
 |Tags|_mitreAttackTactic:TA0002, _mitreAttackTechnique:T1610|
 ## Vendors and Products
 - [Amazon AWS - EKS](../products/234ec2b5-4142-4837-bc78-95da8a2db81a.md)
+- [Kubernetes - Kubernetes](../products/74662794-d8de-42ec-b504-cc0bccfaddd9.md)
 
 
 ## Fields Used

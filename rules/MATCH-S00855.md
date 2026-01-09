@@ -16,6 +16,7 @@ Detects Login events from LastPass
 |Prototype|False|
 |Tags|_mitreAttackTactic:TA0006|
 ## Vendors and Products
+- [LastPass - LastPass](../products/840331bd-05ec-4d57-8202-1662706e1621.md)
 
 
 ## Fields Used

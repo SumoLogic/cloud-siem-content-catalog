@@ -16,6 +16,7 @@ A sub account, user account, or TSP account has been created.
 |Prototype|False|
 |Tags|_mitreAttackTactic:TA0003, _mitreAttackTechnique:T1136|
 ## Vendors and Products
+- [Zoom - Zoom](../products/ad8d40a9-ee64-4615-bd92-aa964b4ae3b0.md)
 
 
 ## Fields Used

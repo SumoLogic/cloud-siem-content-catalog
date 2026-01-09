@@ -18,6 +18,7 @@ Detects the same sessionID used from a new IP for the same user in a short perio
 |Prototype|False|
 |Tags|_mitreAttackTactic:TA0006, _mitreAttackTechnique:T1539|
 ## Vendors and Products
+- [Slack - Slack](../products/79da6240-7617-49c8-b130-96278579766e.md)
 
 
 ## Fields Used

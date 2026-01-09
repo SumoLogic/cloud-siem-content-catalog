@@ -22,14 +22,16 @@
 |Cloud SIEM Schema Field|Original Record Key|Notes|
 |-----------------------|-------------------|-----|
 |action|action||
-|bytesIn|rcvdbyte||
-|bytesOut|sentbyte||
+|bytesIn|rcvddelta||
+|bytesOut|sentdelta||
 |description|msg||
 |device_ip|srcip||
 |dstDevice_ip|dstip||
 |dstPort|dstport||
 |http_hostname|hostname||
 |ipProtocol|proto||
+|packetsIn|rcvdpktdelta||
+|packetsOut|sentpktdelta||
 |severity|apprisk||
 |srcDevice_ip|srcip||
 |srcPort|srcport||

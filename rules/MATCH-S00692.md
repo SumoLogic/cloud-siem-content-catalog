@@ -16,6 +16,7 @@ Detects schtasks used to invoke a silent regsvr32 call. This activity has been a
 |Prototype|False|
 |Tags|_mitreAttackTactic:TA0002, _mitreAttackTactic:TA0003, _mitreAttackTechnique:T1059, _mitreAttackTechnique:T1059.003, _mitreAttackTechnique:T1053, _mitreAttackTechnique:T1053.005, _mitreAttackTactic:TA0005, _mitreAttackTechnique:T1218, _mitreAttackTechnique:T1218.010|
 ## Vendors and Products
+- [CrowdStrike - Falcon](../products/840c72e0-4e47-41e7-9b93-31f55d12f07d.md)
 - [Microsoft - Windows](../products/1ff7546c-cb36-4a24-87f7-89d2cecc5761.md)
 
 

@@ -17,6 +17,9 @@ Detects kubectl used to list Kubernetes secrets. A Kubernetes secret is an objec
 |Tags|_mitreAttackTactic:TA0002, _mitreAttackTechnique:T1552, _mitreAttackTechnique:T1552.007|
 ## Vendors and Products
 - [CrowdStrike - FDR](../products/569a3a44-c29f-492e-bcf4-5dc04e2ab0f3.md)
+- [Cyber-Ark - Enterprise Password Vault](../products/36f5ca33-0c1e-4223-8215-977ea04425ba.md)
+- [Falco - Falco](../products/d6cb76d3-939e-4e02-b399-b15e0278c877.md)
+- [Jamf - Jamf](../products/5c2cc0de-ca31-4ef0-bcfa-133fc8b387ad.md)
 - [Linux - Linux OS Syslog](../products/0e20c932-d992-4bd4-b276-c15119ca5c0b.md)
 - [Microsoft - Azure](../products/a1225af5-e778-4068-a9a2-47da93d1ff24.md)
 - [Microsoft - Defender Advanced Hunting](../products/3382523e-2072-41bd-b50b-6b148957d0b0.md)

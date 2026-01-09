@@ -263,6 +263,7 @@ The `type` listed lets you know if you can directly apply the parser to a collec
 |Parser|/Parsers/System/VMware/VMware Avi Load Balancer|
 |Parser|/Parsers/System/VMware/VMware ESXi|
 |Parser|/Parsers/System/VMware/VMware NSX|
+|Parser|/Parsers/System/VMware/vSphere Web Services|
 |Parser|/Parsers/System/Varonis/Varonis Alert JSON|
 |Parser|/Parsers/System/Varonis/Varonis DatAlert Syslog|
 |Parser|/Parsers/System/Vectra/Vectra AI|

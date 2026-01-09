@@ -16,6 +16,7 @@ Detects createLPaccount events from LastPass
 |Prototype|False|
 |Tags|_mitreAttackTactic:TA0004, _mitreAttackTechnique:T1136|
 ## Vendors and Products
+- [LastPass - LastPass](../products/840331bd-05ec-4d57-8202-1662706e1621.md)
 
 
 ## Fields Used

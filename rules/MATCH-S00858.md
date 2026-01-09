@@ -16,6 +16,7 @@ The Group admin added event is triggered every time one of your app users or acc
 |Prototype|False|
 |Tags|_mitreAttackTactic:TA0003, _mitreAttackTechnique:T1098|
 ## Vendors and Products
+- [Zoom - Zoom](../products/ad8d40a9-ee64-4615-bd92-aa964b4ae3b0.md)
 
 
 ## Fields Used

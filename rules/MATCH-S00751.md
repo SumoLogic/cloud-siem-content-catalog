@@ -17,6 +17,7 @@ Detects modifications to RC Script files. These scripts are executed on system s
 |Tags|_mitreAttackTactic:TA0003, _mitreAttackTechnique:T1037, _mitreAttackTechnique:T1037.004|
 ## Vendors and Products
 - [Linux - Sysmon for Linux](../products/b238758d-ade8-41d2-b32d-c99159e9fd74.md)
+- [Osquery - Osquery](../products/93e2d3d-fab1-4d61-845f-49bc1ae5bed9.md)
 
 
 ## Fields Used
