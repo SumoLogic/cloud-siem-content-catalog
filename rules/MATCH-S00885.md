@@ -16,6 +16,7 @@ This rule utilizes Jamf telemetry and looks for a successful screen sharing conn
 |Prototype|False|
 |Tags|_mitreAttackTactic:TA0008, _mitreAttackTechnique:T1021.005|
 ## Vendors and Products
+- [Jamf - Jamf](../products/5c2cc0de-ca31-4ef0-bcfa-133fc8b387ad.md)
 
 
 ## Fields Used

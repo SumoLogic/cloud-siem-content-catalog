@@ -16,6 +16,7 @@ Detects when a disabled account attempts to log into Salesforce
 |Prototype|False|
 |Tags|_mitreAttackTactic:TA0001, _mitreAttackTechnique:T1078.004, _mitreAttackTactic:TA0006, _mitreAttackTechnique:T1078|
 ## Vendors and Products
+- [Salesforce - Salesforce](../products/1b7798df-963b-4582-a82b-b8176c3a6a22.md)
 
 
 ## Fields Used

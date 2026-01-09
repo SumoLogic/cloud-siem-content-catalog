@@ -16,6 +16,7 @@ Observes for modifications to XSD Autostart entries which can be used to execute
 |Prototype|False|
 |Tags|_mitreAttackTactic:TA0003, _mitreAttackTechnique:T1547.013|
 ## Vendors and Products
+- [Osquery - Osquery](../products/93e2d3d-fab1-4d61-845f-49bc1ae5bed9.md)
 
 
 ## Fields Used

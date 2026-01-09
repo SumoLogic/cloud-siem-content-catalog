@@ -22,6 +22,7 @@ Attackers will often utilize The Managed Object Format (MOF) compiler to conceal
 - [Microsoft - Defender Advanced Hunting](../products/3382523e-2072-41bd-b50b-6b148957d0b0.md)
 - [Microsoft - Office 365](../products/d3ed003d-5ddd-4c7a-bea5-63eae6311833.md)
 - [Microsoft - Windows](../products/1ff7546c-cb36-4a24-87f7-89d2cecc5761.md)
+- [SentinelOne - SentinelOne](../products/8967aecc-ffb3-4cbe-a02e-258d1edca8d0.md)
 
 
 ## Fields Used

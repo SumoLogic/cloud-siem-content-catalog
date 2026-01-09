@@ -19,6 +19,7 @@ This rule monitors for various methods of deleting or otherwise tampering with .
 - [CrowdStrike - FDR](../products/569a3a44-c29f-492e-bcf4-5dc04e2ab0f3.md)
 - [CrowdStrike - Falcon](../products/840c72e0-4e47-41e7-9b93-31f55d12f07d.md)
 - [Linux - Linux OS Syslog](../products/0e20c932-d992-4bd4-b276-c15119ca5c0b.md)
+- [Twistlock - Twistlock](../products/581D3DD8-4DA7-4192-9E49-320D7AFB8B53.md)
 
 
 ## Fields Used

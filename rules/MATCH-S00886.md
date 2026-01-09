@@ -17,6 +17,7 @@ This alert looks for a "chmod" execution on a file that is found on the /tmp dir
 |Tags|_mitreAttackTactic:TA0005, _mitreAttackTechnique:T1222.002|
 ## Vendors and Products
 - [CrowdStrike - FDR](../products/569a3a44-c29f-492e-bcf4-5dc04e2ab0f3.md)
+- [Jamf - Jamf](../products/5c2cc0de-ca31-4ef0-bcfa-133fc8b387ad.md)
 - [Linux - Sysmon for Linux](../products/b238758d-ade8-41d2-b32d-c99159e9fd74.md)
 
 

@@ -16,6 +16,7 @@ Detects masterpasswordchanged events from LastPass
 |Prototype|False|
 |Tags|_mitreAttackTactic:TA0003, _mitreAttackTechnique:T1098|
 ## Vendors and Products
+- [LastPass - LastPass](../products/840331bd-05ec-4d57-8202-1662706e1621.md)
 
 
 ## Fields Used

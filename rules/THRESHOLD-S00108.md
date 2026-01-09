@@ -18,6 +18,7 @@ Detects when an entity downloads multiple documents or attachments in a short ti
 |Prototype|False|
 |Tags|_mitreAttackTactic:TA0009, _mitreAttackTechnique:T1213, _mitreAttackTechnique:T1530|
 ## Vendors and Products
+- [Salesforce - Salesforce](../products/1b7798df-963b-4582-a82b-b8176c3a6a22.md)
 
 
 ## Fields Used

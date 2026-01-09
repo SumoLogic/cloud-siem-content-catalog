@@ -16,6 +16,7 @@ Detect when a user is creating a Kubernetes namespace.
 |Prototype|False|
 |Tags|_mitreAttackTactic:TA0002, _mitreAttackTechnique:T1204, _mitreAttackTechnique:T1609, _mitreAttackTechnique:T1610, _mitreAttackTechnique:T1204.003|
 ## Vendors and Products
+- [Kubernetes - Kubernetes](../products/74662794-d8de-42ec-b504-cc0bccfaddd9.md)
 
 
 ## Fields Used

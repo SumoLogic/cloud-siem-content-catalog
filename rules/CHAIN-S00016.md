@@ -16,6 +16,7 @@ This rule utilizes Jamf telemetry and looks for osascript execution with a suspi
 |Prototype|False|
 |Tags|_mitreAttackTactic:TA0002, _mitreAttackTechnique:T1059.002|
 ## Vendors and Products
+- [Jamf - Jamf](../products/5c2cc0de-ca31-4ef0-bcfa-133fc8b387ad.md)
 
 
 ## Fields Used

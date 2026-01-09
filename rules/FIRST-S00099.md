@@ -29,7 +29,6 @@ Create a tuning expression with a list of admin user_username values that should
 |Prototype|False|
 |Tags|_mitreAttackTechnique:T1578.002, _mitreAttackTactic:TA0005|
 ## Vendors and Products
-- [Microsoft - Azure DevOps Auditing](../products/c3b61ddb-4d2d-497c-b873-28938036b67b.md)
 
 
 ## Fields Used

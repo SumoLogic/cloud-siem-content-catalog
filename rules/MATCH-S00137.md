@@ -17,6 +17,7 @@ This alert detects a shell launched by an office product or browser that should 
 |Tags|_mitreAttackTactic:TA0001, _mitreAttackTactic:TA0002, _mitreAttackTactic:TA0043, _mitreAttackTechnique:T1204, _mitreAttackTechnique:T1204.001, _mitreAttackTechnique:T1204.002, _mitreAttackTechnique:T1204.003, _mitreAttackTechnique:T1566, _mitreAttackTechnique:T1566.001, _mitreAttackTechnique:T1566.002, _mitreAttackTechnique:T1566.003, _mitreAttackTechnique:T1598.001, _mitreAttackTechnique:T1598.002, _mitreAttackTechnique:T1598.003, _mitreAttackTechnique:T1598|
 ## Vendors and Products
 - [Microsoft - Windows](../products/1ff7546c-cb36-4a24-87f7-89d2cecc5761.md)
+- [Osquery - Osquery](../products/93e2d3d-fab1-4d61-845f-49bc1ae5bed9.md)
 
 
 ## Fields Used

@@ -17,6 +17,7 @@ The csrutil binary should be rarely used by regular end-users and is designed to
 |Tags|_mitreAttackTechnique:T1082, _mitreAttackTactic:TA0007|
 ## Vendors and Products
 - [CrowdStrike - FDR](../products/569a3a44-c29f-492e-bcf4-5dc04e2ab0f3.md)
+- [Jamf - Jamf](../products/5c2cc0de-ca31-4ef0-bcfa-133fc8b387ad.md)
 
 
 ## Fields Used

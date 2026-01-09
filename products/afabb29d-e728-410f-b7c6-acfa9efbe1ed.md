@@ -19,7 +19,6 @@
 |THRESHOLD-S00048|[Outbound Traffic to Countries Outside the United States](../rules/THRESHOLD-S00048.md)|
 |LEGACY-S00093|[Script/CLI UserAgent string](../rules/LEGACY-S00093.md)|
 |LEGACY-S00182|[Suspicious HTTP User-Agent](../rules/LEGACY-S00182.md)|
-|MATCH-S01024|[Threat Intel - Destination IP Address (High Confidence)](../rules/MATCH-S01024.md)|
 |MATCH-S01026|[Threat Intel - Destination IP Address (Low Confidence)](../rules/MATCH-S01026.md)|
 |MATCH-S01028|[Threat Intel - Destination IP Address (Medium Confidence)](../rules/MATCH-S01028.md)|
 

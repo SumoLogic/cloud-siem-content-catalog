@@ -18,6 +18,7 @@ Adversaries may use an existing, legitimate external Web service to exfiltrate d
 |Prototype|False|
 |Tags|_mitreAttackTechnique:T1567, _mitreAttackTechnique:T1048, _mitreAttackTechnique:T1048.003, _mitreAttackTechnique:T1567.002, _mitreAttackTactic:TA0010|
 ## Vendors and Products
+- [Slack - Slack](../products/79da6240-7617-49c8-b130-96278579766e.md)
 
 
 ## Fields Used

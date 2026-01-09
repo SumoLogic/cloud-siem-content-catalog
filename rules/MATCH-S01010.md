@@ -17,6 +17,7 @@ This rule detects an indicator match from a threat intelligence feed
 |Tags||
 ## Vendors and Products
 - [Bro - Bro](../products/37C866BF-72E1-470A-9072-EDB908F56951.md)
+- [Cato Networks - Cato Networks](../products/168afd8d-2893-4c74-95b1-a975d576ea56.md)
 - [Cisco Systems - Umbrella](../products/5ba50e74-3c05-4ea8-aeaf-5efde588c60f.md)
 - [Cloudflare - Logpush](../products/c2503fcc-ef30-4e40-bb32-0bf47151b140.md)
 - [CrowdStrike - FDR](../products/569a3a44-c29f-492e-bcf4-5dc04e2ab0f3.md)
@@ -28,7 +29,6 @@ This rule detects an indicator match from a threat intelligence feed
 - [Netskope - WebTx](../products/9e838f93-c9e7-4592-a980-cf9dfb704784.md)
 - [Proofpoint - Proofpoint on Demand](../products/332856e9-3111-446f-8df7-e64694e4b9a1.md)
 - [WatchGuard - Fireware](../products/14aa46d3-0710-44b6-9ce3-0a6b8f36b076.md)
-- [Zscaler - Nanolog Streaming Service](../products/6299d728-14f7-455e-85c5-ea8ec65a654a.md)
 
 
 ## Fields Used

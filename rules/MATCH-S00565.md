@@ -16,7 +16,7 @@ This rule detects DNS traffic sent directly to an external server from an intern
 |Prototype|False|
 |Tags|_mitreAttackTactic:TA0011, _mitreAttackTechnique:T1071, _mitreAttackTechnique:T1071.004|
 ## Vendors and Products
-- [Fortinet - Fortigate](../products/c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad.md)
+- [Cato Networks - Cato Networks](../products/168afd8d-2893-4c74-95b1-a975d576ea56.md)
 - [Palo Alto Networks - Next Generation Firewall](../products/46f5fa2c-1a62-4692-82ad-ed87800a0adb.md)
 
 

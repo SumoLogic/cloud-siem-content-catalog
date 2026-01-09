@@ -16,6 +16,7 @@ The security macOS binary was used to enumerate system settings, ensure that thi
 |Prototype|False|
 |Tags|_mitreAttackTactic:TA0007, _mitreAttackTechnique:T1082|
 ## Vendors and Products
+- [Jamf - Jamf](../products/5c2cc0de-ca31-4ef0-bcfa-133fc8b387ad.md)
 
 
 ## Fields Used

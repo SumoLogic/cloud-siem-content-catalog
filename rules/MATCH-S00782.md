@@ -16,6 +16,7 @@ Detects permission set deletions in Salesforce. While these deletions can be rou
 |Prototype|False|
 |Tags|_mitreAttackTactic:TA0003, _mitreAttackTechnique:T1098, _mitreAttackTactic:TA0040, _mitreAttackTechnique:T1485, _mitreAttackTechnique:T1531|
 ## Vendors and Products
+- [Salesforce - Salesforce](../products/1b7798df-963b-4582-a82b-b8176c3a6a22.md)
 
 
 ## Fields Used

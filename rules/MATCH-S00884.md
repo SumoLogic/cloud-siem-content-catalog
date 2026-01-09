@@ -16,6 +16,7 @@ This alert utilizes Jamf telemetry and looks for suspicious osascript paramaters
 |Prototype|False|
 |Tags|_mitreAttackTactic:TA0002, _mitreAttackTechnique:T1059.006|
 ## Vendors and Products
+- [Jamf - Jamf](../products/5c2cc0de-ca31-4ef0-bcfa-133fc8b387ad.md)
 
 
 ## Fields Used

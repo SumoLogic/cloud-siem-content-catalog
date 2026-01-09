@@ -18,6 +18,7 @@ Observes for SMTP traffic on non-SMTP hosts. This may be indicative of spambot a
 ## Vendors and Products
 - [Amazon AWS - VpcFlowLogs](../products/021d1ded-1c82-4663-bf5d-d6ed5170efa3.md)
 - [Bro - Bro](../products/37C866BF-72E1-470A-9072-EDB908F56951.md)
+- [Cato Networks - Cato Networks](../products/168afd8d-2893-4c74-95b1-a975d576ea56.md)
 - [CheckPoint - Application Control](../products/1624169f-36c4-4309-8400-1409a171d00b.md)
 - [CheckPoint - Firewall and VPN](../products/c3c1a4fc-10cc-4155-8a30-a3bb14fc9f31.md)
 - [CheckPoint - SmartDefense](../products/2b82e665-bdde-474a-ae29-4f0f76598556.md)
@@ -33,6 +34,7 @@ Observes for SMTP traffic on non-SMTP hosts. This may be indicative of spambot a
 - [Microsoft - Office 365](../products/d3ed003d-5ddd-4c7a-bea5-63eae6311833.md)
 - [Microsoft - Windows](../products/1ff7546c-cb36-4a24-87f7-89d2cecc5761.md)
 - [Palo Alto Networks - Next Generation Firewall](../products/46f5fa2c-1a62-4692-82ad-ed87800a0adb.md)
+- [SonicWall - Firewall](../products/951a004d-54bf-441d-98e1-fcc6a032f475.md)
 - [Sophos - UTM 9](../products/0fb003bc-8383-442f-8f3d-afcfbaefe617.md)
 - [Zscaler - Nanolog Streaming Service](../products/6299d728-14f7-455e-85c5-ea8ec65a654a.md)
 

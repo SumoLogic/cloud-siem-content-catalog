@@ -33,7 +33,6 @@ This detection is based on the Azure Sentinel AzDOHistoricPrPolicyBypassing.yaml
 |Prototype|False|
 |Tags|_mitreAttackTechnique:T1098.001|
 ## Vendors and Products
-- [Microsoft - Azure DevOps Auditing](../products/c3b61ddb-4d2d-497c-b873-28938036b67b.md)
 
 
 ## Fields Used

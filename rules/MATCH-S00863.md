@@ -16,6 +16,7 @@ Detects one of your app users or account users permanently or temporarily delete
 |Prototype|False|
 |Tags|_mitreAttackTactic:TA0040, _mitreAttackTechnique:T1485|
 ## Vendors and Products
+- [Zoom - Zoom](../products/ad8d40a9-ee64-4615-bd92-aa964b4ae3b0.md)
 
 
 ## Fields Used
