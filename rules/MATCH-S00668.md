@@ -28,7 +28,6 @@ This rule looks for an intrusion product detecting a low severity intrusion sign
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|listMatches|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|
 |Normalized Schema|normalizedSeverity|

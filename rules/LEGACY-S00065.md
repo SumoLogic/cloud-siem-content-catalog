@@ -23,7 +23,6 @@ PowerShell being accessed via SMB should never occur in a Windows environment, a
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|bro_smb_file.action|
 |Normalized Schema|device_hostname|
 |Normalized Schema|device_ip|
 |Normalized Schema|file_basename|

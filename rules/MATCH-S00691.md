@@ -31,7 +31,6 @@ Detects productivity applications spawning regsvr32 or rundll32. This activity h
 |Normalized Schema|commandLine|
 |Normalized Schema|device_hostname|
 |Normalized Schema|device_ip|
-|Normalized Schema|lower|
 |Normalized Schema|parentBaseImage|
 |Normalized Schema|srcDevice_hostname|
 |Normalized Schema|srcDevice_ip|

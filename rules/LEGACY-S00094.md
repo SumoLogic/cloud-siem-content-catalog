@@ -26,7 +26,6 @@ A server responded on a SSL or TLS service using a self-signed certificate.
 |Normalized Schema|dstDevice_ip_isInternal|
 |Direct from Record|fields['issuer']|
 |Direct from Record|fields['subject']|
-|Normalized Schema|listMatches|
 |Normalized Schema|metadata_deviceEventId|
 |Normalized Schema|metadata_vendor|
 |Normalized Schema|srcDevice_ip|

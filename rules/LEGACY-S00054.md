@@ -23,12 +23,8 @@ Hosts infected with the Doublepulsar typically exhibit this type of SMB behavior
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|bro_smb_command.name|
-|Normalized Schema|bro_smb_command.status|
-|Normalized Schema|bro_smb_command.subCommand|
 |Normalized Schema|device_hostname|
 |Normalized Schema|device_ip|
-|Normalized Schema|listMatches|
 |Normalized Schema|metadata_product|
 |Normalized Schema|srcDevice_ip|
 |Normalized Schema|user_username|

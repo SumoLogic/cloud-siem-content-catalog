@@ -29,7 +29,6 @@ This rule detects when a large number of documents are downloaded in a short tim
 |Direct from Record|fields['Operation']|
 |Normalized Schema|file_basename|
 |Normalized Schema|http_userAgent|
-|Normalized Schema|lower|
 |Normalized Schema|metadata_deviceEventId|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|

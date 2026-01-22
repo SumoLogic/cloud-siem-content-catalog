@@ -50,12 +50,10 @@ Detects a series of failed logins followed by a successful login. This could ind
 |Origin|Field|
 |----|----|
 |Direct from Record|fields['resultType']|
-|Normalized Schema|listMatches|
 |Normalized Schema|metadata_deviceEventId|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|
 |Normalized Schema|normalizedAction|
-|Normalized Schema|objectType|
 |Normalized Schema|srcDevice_hostname|
 |Normalized Schema|srcDevice_ip|
 |Normalized Schema|success|

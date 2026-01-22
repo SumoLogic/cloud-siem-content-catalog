@@ -27,7 +27,6 @@ AWS EC2 launch templates allows cloud administrators to specify instance configu
 |Origin|Field|
 |----|----|
 |Normalized Schema|action|
-|Normalized Schema|application|
 |Normalized Schema|metadata_vendor|
 |Normalized Schema|user_username|
 

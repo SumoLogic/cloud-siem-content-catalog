@@ -24,7 +24,6 @@ Monitors Zoom information barrier policy creations, deletions, and updates. nfor
 |Origin|Field|
 |----|----|
 |Normalized Schema|action|
-|Normalized Schema|listMatches|
 |Normalized Schema|metadata_vendor|
 |Normalized Schema|user_username|
 

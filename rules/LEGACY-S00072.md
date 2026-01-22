@@ -23,7 +23,6 @@ DNS over HTTPS (RFC 8484, DoH) is a web based name resolution service that allow
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|bro_ssl_serverName|
 |Normalized Schema|device_hostname|
 |Normalized Schema|device_ip|
 |Normalized Schema|srcDevice_hostname|

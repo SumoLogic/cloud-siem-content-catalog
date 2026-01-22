@@ -23,7 +23,6 @@ While the product_id of the RDP client is not required, a missing one or one tha
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|bro_rdp_clientDigProductId|
 |Normalized Schema|device_hostname|
 |Normalized Schema|device_ip|
 |Normalized Schema|srcDevice_hostname|

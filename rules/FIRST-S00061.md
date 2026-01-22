@@ -29,7 +29,6 @@ This signal looks for a new removable USB device name being used by a host not s
 |Normalized Schema|device_hostname|
 |Direct from Record|fields["EventData.ClassName"]|
 |Direct from Record|fields["EventData.DeviceDescription"]|
-|Normalized Schema|matches|
 |Normalized Schema|metadata_deviceEventId|
 |Normalized Schema|metadata_vendor|
 

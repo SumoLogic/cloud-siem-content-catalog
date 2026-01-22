@@ -23,23 +23,8 @@ From FireEye Red Team Tool Countermeasures:
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|bro_http_response_headers['ACCEPT-RANGES']|
-|Normalized Schema|bro_http_response_headers['AGE']|
-|Normalized Schema|bro_http_response_headers['CACHE-CONTROL']|
-|Normalized Schema|bro_http_response_headers['CONTENT-ENCODING']|
-|Normalized Schema|bro_http_response_headers['CONTENT-LENGTH']|
-|Normalized Schema|bro_http_response_headers['CONTENT-TYPE']|
-|Normalized Schema|bro_http_response_headers['SERVER']|
-|Normalized Schema|bro_http_response_headers['VARY']|
-|Normalized Schema|bro_http_response_headers['X-API-VERSION']|
-|Normalized Schema|bro_http_response_headers['X-CACHE']|
-|Normalized Schema|bro_http_response_headers['X-FIREFOX-SPDY']|
-|Normalized Schema|bro_http_response_headers['X-NYT-ROUTE']|
-|Normalized Schema|bro_http_response_headers['X-SERVED-BY']|
-|Normalized Schema|bro_http_response_headers['X-TIMER']|
 |Normalized Schema|device_hostname|
 |Normalized Schema|device_ip|
-|Normalized Schema|objectType|
 |Normalized Schema|srcDevice_hostname|
 |Normalized Schema|srcDevice_ip|
 |Normalized Schema|user_username|

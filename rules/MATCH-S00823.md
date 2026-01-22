@@ -24,7 +24,6 @@ An AWS Simple Queue Service (SQS) can be created with a custom access policy, th
 |Origin|Field|
 |----|----|
 |Normalized Schema|action|
-|Normalized Schema|application|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|
 |Normalized Schema|user_username|

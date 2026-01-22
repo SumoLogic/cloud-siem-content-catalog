@@ -46,16 +46,12 @@ This rule detects traffic to IP address with a high confidence rating from a thr
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|OR|
-|Normalized Schema|confidence|
 |Normalized Schema|device_hostname|
 |Normalized Schema|device_ip|
 |Normalized Schema|dstDevice_hostname|
 |Normalized Schema|dstDevice_ip|
-|Normalized Schema|listMatches|
 |Normalized Schema|srcDevice_hostname|
 |Normalized Schema|srcDevice_ip|
-|Normalized Schema|type|
 |Normalized Schema|user_username|
 
 

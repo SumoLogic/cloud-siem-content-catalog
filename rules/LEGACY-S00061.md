@@ -39,8 +39,6 @@ Some families of malware use data nested within the subdomain portion of a DNS q
 |Normalized Schema|device_hostname|
 |Normalized Schema|device_ip|
 |Normalized Schema|dns_queryDomain|
-|Normalized Schema|dns_queryDomain_alexaRank|
-|Normalized Schema|listMatches|
 |Normalized Schema|srcDevice_hostname|
 |Normalized Schema|srcDevice_ip|
 |Normalized Schema|user_username|

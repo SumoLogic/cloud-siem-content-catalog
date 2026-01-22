@@ -24,7 +24,6 @@ Detect when a firewall route is created or modified.
 |Origin|Field|
 |----|----|
 |Normalized Schema|action|
-|Normalized Schema|listMatches|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|
 |Normalized Schema|srcDevice_ip|

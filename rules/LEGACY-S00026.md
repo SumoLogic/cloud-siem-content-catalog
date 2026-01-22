@@ -32,16 +32,12 @@ DNS lookup of a high entropy domain name, which may be indicative of a domain ge
 - [Proofpoint - Proofpoint on Demand](../products/332856e9-3111-446f-8df7-e64694e4b9a1.md)
 - [Sophos - UTM 9](../products/0fb003bc-8383-442f-8f3d-afcfbaefe617.md)
 - [WatchGuard - Fireware](../products/14aa46d3-0710-44b6-9ce3-0a6b8f36b076.md)
-- [Zscaler - Nanolog Streaming Service](../products/6299d728-14f7-455e-85c5-ea8ec65a654a.md)
 
 
 ## Fields Used
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|dns_queryDomain_alexaRank|
-|Normalized Schema|dns_queryDomain_entropyRootDomain|
-|Normalized Schema|listMatches|
 |Normalized Schema|srcDevice_ip|
 
 

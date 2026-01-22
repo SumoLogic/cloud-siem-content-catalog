@@ -23,10 +23,8 @@ HTTP requests typically have multiple headers. It is odd in some cases if the ev
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|bro_http_request_headers|
 |Normalized Schema|dstDevice_ip_isInternal|
 |Normalized Schema|http_response_statusCode|
-|Normalized Schema|listMatches|
 |Normalized Schema|srcDevice_ip|
 |Normalized Schema|srcDevice_ip_isInternal|
 

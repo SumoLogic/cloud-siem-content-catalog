@@ -29,12 +29,10 @@ A login was successful where the account did NOT use multi-factor authentication
 |----|----|
 |Normalized Schema|device_hostname|
 |Normalized Schema|device_ip|
-|Normalized Schema|isNull|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|
 |Normalized Schema|mfa|
 |Normalized Schema|normalizedAction|
-|Normalized Schema|objectType|
 |Normalized Schema|srcDevice_hostname|
 |Normalized Schema|srcDevice_ip|
 |Normalized Schema|success|

@@ -35,7 +35,6 @@ A typical ping packet will be very small. A large ICMP packet may indicate the p
 |Normalized Schema|device_ip|
 |Normalized Schema|dstDevice_ip_isInternal|
 |Normalized Schema|ipProtocol|
-|Normalized Schema|listMatches|
 |Normalized Schema|srcDevice_ip|
 |Normalized Schema|srcDevice_ip_isInternal|
 |Normalized Schema|user_username|

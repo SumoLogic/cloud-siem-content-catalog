@@ -47,7 +47,6 @@ A record flagged a file hash from a threat intelligence match list
 |Normalized Schema|device_mac|
 |Normalized Schema|device_natIp|
 |Normalized Schema|dns_replyIp|
-|Normalized Schema|listMatches|
 |Normalized Schema|srcDevice_hostname|
 |Normalized Schema|srcDevice_ip|
 |Normalized Schema|srcDevice_mac|

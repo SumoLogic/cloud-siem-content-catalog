@@ -25,8 +25,6 @@ The subject and issuer of the SSL certificate match the pattern for certificates
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|bro_ssl_issuer|
-|Normalized Schema|bro_ssl_subject|
 |Normalized Schema|device_hostname|
 |Normalized Schema|device_ip|
 |Normalized Schema|srcDevice_hostname|

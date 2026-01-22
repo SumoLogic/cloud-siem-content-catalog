@@ -19,6 +19,7 @@ This rule looks for DNS query/reply domains which appear to be associated with a
 - [Amazon AWS - Application Load Balancer](../products/5bb9e0b3-8d57-4b10-8952-0b6ffe91b599.md)
 - [Amazon AWS - Route53](../products/e2393771-bda2-414a-8661-0a57069287ad.md)
 - [Amazon AWS - Web Application Firewall (WAF)](../products/072b85a2-1765-45c2-911d-b0509880326e.md)
+- [Barracuda - CloudGen Firewall](../products/34dd9c1e-ceec-4cba-8f5d-4776f680d785.md)
 - [Bro - Bro](../products/37C866BF-72E1-470A-9072-EDB908F56951.md)
 - [Cato Networks - Cato Networks](../products/168afd8d-2893-4c74-95b1-a975d576ea56.md)
 - [Cisco Systems - Umbrella](../products/5ba50e74-3c05-4ea8-aeaf-5efde588c60f.md)
@@ -43,10 +44,6 @@ This rule looks for DNS query/reply domains which appear to be associated with a
 |----|----|
 |Normalized Schema|device_hostname|
 |Normalized Schema|device_ip|
-|Normalized Schema|dns_queryDomain_alexaRank|
-|Normalized Schema|dns_queryDomain_possibleDynDns|
-|Normalized Schema|dns_replyDomain_alexaRank|
-|Normalized Schema|dns_replyDomain_possibleDynDns|
 |Normalized Schema|srcDevice_hostname|
 |Normalized Schema|srcDevice_ip|
 |Normalized Schema|user_username|

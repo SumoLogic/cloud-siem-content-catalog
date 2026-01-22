@@ -26,7 +26,6 @@ Detects the use of getsystem Meterpreter/Cobalt Strike command by detecting a sp
 |Normalized Schema|commandLine|
 |Normalized Schema|device_hostname|
 |Normalized Schema|device_ip|
-|Normalized Schema|lower|
 |Normalized Schema|parentBaseImage|
 |Normalized Schema|user_username|
 

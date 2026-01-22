@@ -26,6 +26,5 @@ Detects the use of PowerShell for Applicaiton Window Discovery to identify open 
 |----|----|
 |Normalized Schema|commandLine|
 |Normalized Schema|device_hostname|
-|Normalized Schema|objectClassification|
 
 

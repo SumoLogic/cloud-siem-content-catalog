@@ -31,7 +31,6 @@ Observes for PowerShell command lines with excessive length found on a given sys
 |----|----|
 |Normalized Schema|baseImage|
 |Normalized Schema|device_hostname|
-|Normalized Schema|isEmpty|
 |Normalized Schema|metadata_deviceEventId|
 
 

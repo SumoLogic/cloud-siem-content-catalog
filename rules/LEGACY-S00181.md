@@ -23,8 +23,6 @@ Tools or malware may be configured to send communications over a network by usin
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|bro_flow_duration|
-|Normalized Schema|bro_flow_service|
 |Normalized Schema|bytesIn|
 |Normalized Schema|bytesOut|
 |Normalized Schema|device_hostname|
@@ -32,7 +30,6 @@ Tools or malware may be configured to send communications over a network by usin
 |Normalized Schema|dstDevice_ip_isInternal|
 |Normalized Schema|dstPort|
 |Normalized Schema|ipProtocol|
-|Normalized Schema|listMatches|
 |Normalized Schema|metadata_deviceEventId|
 |Normalized Schema|metadata_product|
 |Normalized Schema|srcDevice_ip|

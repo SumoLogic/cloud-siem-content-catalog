@@ -29,7 +29,6 @@ Threat actors will attempt to enumerate various system settings in order to expl
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|cmd_count|
 |Normalized Schema|device_hostname|
 
 

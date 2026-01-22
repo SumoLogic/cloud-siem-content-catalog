@@ -24,7 +24,6 @@ The Group admin added event is triggered every time one of your app users or acc
 |Origin|Field|
 |----|----|
 |Normalized Schema|action|
-|Normalized Schema|listMatches|
 |Normalized Schema|metadata_vendor|
 |Normalized Schema|user_username|
 

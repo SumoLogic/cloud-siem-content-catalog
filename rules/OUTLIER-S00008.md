@@ -30,7 +30,6 @@ Outlier in Failed Azure Sign In Attempts Due to Bad Password from IP Address due
 |Direct from Record|fields["properties.status.errorCode"]|
 |Normalized Schema|metadata_deviceEventId|
 |Normalized Schema|metadata_product|
-|Normalized Schema|objectType|
 |Normalized Schema|srcDevice_ip|
 |Normalized Schema|success|
 |Normalized Schema|user_username|

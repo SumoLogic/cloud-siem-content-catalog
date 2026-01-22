@@ -28,7 +28,6 @@ Suspicious Remote System Discovery Activity - T1018
 |Normalized Schema|baseImage|
 |Normalized Schema|device_hostname|
 |Normalized Schema|device_ip|
-|Normalized Schema|listMatches|
 |Normalized Schema|parentBaseImage|
 |Normalized Schema|user_username|
 

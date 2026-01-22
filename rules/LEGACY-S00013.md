@@ -52,7 +52,6 @@ An HTTP connection was made to a high entropy domain name. Entropy is a measure 
 |----|----|
 |Normalized Schema|http_url_alexaRank|
 |Normalized Schema|http_url_entropyRootDomain|
-|Normalized Schema|listMatches|
 |Normalized Schema|srcDevice_ip|
 
 

@@ -22,7 +22,6 @@ This rule detects an IMPHASH indicator match from a threat intelligence feed
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|confidence|
 |Normalized Schema|device_hostname|
 |Normalized Schema|device_ip|
 |Normalized Schema|device_mac|

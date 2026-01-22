@@ -23,8 +23,6 @@ The Browser Exploitation Framework (BeEF) is a penetration-testing tool focusing
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|bro_http_request_headers['COOKIE']|
-|Normalized Schema|bro_http_response_headers['SET-COOKIE']|
 |Normalized Schema|srcDevice_ip|
 
 

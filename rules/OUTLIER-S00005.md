@@ -28,8 +28,6 @@ This rule is designed to detect spikes of excessive API call events within AWS p
 |Origin|Field|
 |----|----|
 |Direct from Record|fields["userIdentity.type"]|
-|Normalized Schema|isEmpty|
-|Normalized Schema|listMatches|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|
 |Normalized Schema|user_username|

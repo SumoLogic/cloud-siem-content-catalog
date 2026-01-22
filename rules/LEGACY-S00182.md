@@ -65,8 +65,6 @@ Common administrative tools may be used by malware authors and attackers who use
 |Normalized Schema|dstDevice_ip|
 |Normalized Schema|http_url_path|
 |Normalized Schema|http_userAgent|
-|Normalized Schema|listMatches|
-|Normalized Schema|lower|
 |Normalized Schema|srcDevice_hostname|
 |Normalized Schema|srcDevice_ip|
 |Normalized Schema|user_username|

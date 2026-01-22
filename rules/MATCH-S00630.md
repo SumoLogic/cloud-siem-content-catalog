@@ -24,7 +24,6 @@ Identifies when a service account is deleted in Google Cloud Platform (GCP). A s
 |Origin|Field|
 |----|----|
 |Normalized Schema|action|
-|Normalized Schema|listMatches|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|
 |Normalized Schema|srcDevice_ip|

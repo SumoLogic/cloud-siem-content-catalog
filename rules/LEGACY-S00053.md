@@ -29,7 +29,6 @@ Many ports in the 0-1023 are unassigned by the IANA.  These can be used as commu
 |Normalized Schema|dstDevice_ip_isInternal|
 |Normalized Schema|dstPort|
 |Normalized Schema|ipProtocol|
-|Normalized Schema|listMatches|
 |Normalized Schema|metadata_product|
 |Normalized Schema|srcDevice_ip|
 |Normalized Schema|srcDevice_ip_isInternal|

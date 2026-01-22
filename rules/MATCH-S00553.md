@@ -37,7 +37,6 @@ Detects RDP Traffic to a public-facing asset.
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|application|
 |Normalized Schema|dstDevice_hostname|
 |Normalized Schema|dstDevice_ip|
 |Normalized Schema|dstPort|

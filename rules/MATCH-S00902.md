@@ -23,16 +23,10 @@ This alert looks for an Active Directory certificate being modified with an Enro
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|cepencryption|
-|Normalized Schema|certificate|
 |Normalized Schema|device_hostname|
-|Normalized Schema|enrollmentagent|
-|Normalized Schema|enrollmentagentoffline|
 |Direct from Record|fields["EventData.AttributeValue"]|
 |Direct from Record|fields["EventData.ObjectClass"]|
 |Direct from Record|fields["EventData.ObjectDN"]|
-|Normalized Schema|machineenrollmentagent|
-|Normalized Schema|matches|
 |Normalized Schema|metadata_deviceEventId|
 |Normalized Schema|metadata_vendor|
 |Normalized Schema|user_username|

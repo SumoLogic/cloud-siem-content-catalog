@@ -24,7 +24,6 @@ The Group admin deleted event is triggered every time one of your app users or a
 |Origin|Field|
 |----|----|
 |Normalized Schema|action|
-|Normalized Schema|listMatches|
 |Normalized Schema|metadata_vendor|
 |Normalized Schema|user_username|
 

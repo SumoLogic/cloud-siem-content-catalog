@@ -46,7 +46,6 @@ This rule detects port scanning activity from external actors against public fac
 |Normalized Schema|dstDevice_hostname|
 |Normalized Schema|dstDevice_ip|
 |Normalized Schema|dstPort|
-|Normalized Schema|objectType|
 |Normalized Schema|srcDevice_ip_isInternal|
 
 

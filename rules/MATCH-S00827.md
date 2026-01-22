@@ -24,7 +24,6 @@ An AWS Simple Notification Service (SNS ) topic was created allowing all users a
 |Origin|Field|
 |----|----|
 |Normalized Schema|action|
-|Normalized Schema|application|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|
 |Normalized Schema|user_username|

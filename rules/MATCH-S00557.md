@@ -35,7 +35,6 @@ This rule detects HTTP requests sent directly to IP addresses, bypassing DNS. Th
 |Normalized Schema|dstDevice_ip_isInternal|
 |Normalized Schema|http_method|
 |Normalized Schema|http_url|
-|Normalized Schema|listMatches|
 |Normalized Schema|srcDevice_hostname|
 |Normalized Schema|srcDevice_ip|
 |Normalized Schema|srcDevice_ip_isInternal|

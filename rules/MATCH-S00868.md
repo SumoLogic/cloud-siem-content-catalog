@@ -26,7 +26,6 @@ A  role binding grants a resource superuser or administrative access to a Kubern
 |Normalized Schema|action|
 |Normalized Schema|cloud_provider|
 |Normalized Schema|cloud_service|
-|Normalized Schema|decision"]|
 |Normalized Schema|srcDevice_ip|
 
 

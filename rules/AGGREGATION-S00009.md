@@ -24,7 +24,6 @@ This rule detects when a user has utilized multiple distinct User Agents when pe
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|distinct_userAgents|
 |Normalized Schema|metadata_deviceEventId|
 |Normalized Schema|metadata_vendor|
 |Normalized Schema|user_username|

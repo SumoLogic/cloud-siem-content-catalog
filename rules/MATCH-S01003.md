@@ -33,8 +33,6 @@ This rule detects a SHA1 hash indicator match from a threat intelligence feed
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|SHA-1|
-|Normalized Schema|confidence|
 |Normalized Schema|device_hostname|
 |Normalized Schema|device_ip|
 |Normalized Schema|device_mac|
@@ -44,7 +42,6 @@ This rule detects a SHA1 hash indicator match from a threat intelligence feed
 |Normalized Schema|srcDevice_ip|
 |Normalized Schema|srcDevice_mac|
 |Normalized Schema|srcDevice_natIp|
-|Normalized Schema|type|
 |Normalized Schema|user_username|
 
 

@@ -59,7 +59,6 @@ The default score of `1` is used as a catch all if none of the translations are 
 |Normalized Schema|dstDevice_ip|
 |Normalized Schema|http_response_statusCode|
 |Normalized Schema|http_url|
-|Normalized Schema|listMatches|
 |Normalized Schema|srcDevice_hostname|
 |Normalized Schema|srcDevice_ip|
 |Normalized Schema|user_username|

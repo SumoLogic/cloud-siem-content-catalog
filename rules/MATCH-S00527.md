@@ -37,7 +37,6 @@ The rule detects email files created outside the normal Outlook directory.
 |Normalized Schema|device_ip|
 |Normalized Schema|file_basename|
 |Normalized Schema|file_path|
-|Normalized Schema|lower|
 |Normalized Schema|user_username|
 
 

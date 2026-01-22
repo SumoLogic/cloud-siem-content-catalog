@@ -23,10 +23,8 @@ Attackers who have compromised Unix/Linux machines will sometimes download addit
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|bro_http_response_respMimeTypes[0]|
 |Normalized Schema|dstDevice_ip_isInternal|
 |Normalized Schema|http_url_path|
-|Normalized Schema|listMatches|
 |Normalized Schema|srcDevice_ip|
 
 

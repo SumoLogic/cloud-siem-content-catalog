@@ -37,7 +37,6 @@ Add the IP addresses of your vulnerability scanners to the "vuln_scanners" list.
 |Normalized Schema|logonType|
 |Normalized Schema|normalizedAction|
 |Normalized Schema|normalizedCause|
-|Normalized Schema|objectClassification|
 |Normalized Schema|srcDevice_ip|
 |Normalized Schema|success|
 |Normalized Schema|user_username|

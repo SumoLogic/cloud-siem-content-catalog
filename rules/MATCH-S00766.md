@@ -23,7 +23,6 @@ This rule detects multi-factor authentication (MFA) being disabled for a user. A
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|listMatches|
 |Normalized Schema|metadata_deviceEventId|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|

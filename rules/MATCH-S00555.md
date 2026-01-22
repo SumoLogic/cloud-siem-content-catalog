@@ -56,8 +56,6 @@ This rule detects allowed inbound traffic from an IP address associated with a k
 |Origin|Field|
 |----|----|
 |Normalized Schema|dstDevice_ip|
-|Normalized Schema|listMatches|
-|Normalized Schema|objectType|
 |Normalized Schema|srcDevice_ip|
 |Normalized Schema|srcDevice_ip_isInternal|
 |Normalized Schema|success|

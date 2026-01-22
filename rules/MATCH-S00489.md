@@ -24,14 +24,10 @@ Network detection rule that looks for specific HTTP header and URI values. These
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|bro_http_request_headers['ACCEPT']|
-|Normalized Schema|bro_http_request_headers['ACCEPT-ENCODING']|
-|Normalized Schema|bro_http_request_headers['ACCEPT-LANGUAGE']|
 |Normalized Schema|device_hostname|
 |Normalized Schema|device_ip|
 |Normalized Schema|http_method|
 |Normalized Schema|http_url|
-|Normalized Schema|objectType|
 |Normalized Schema|srcDevice_hostname|
 |Normalized Schema|srcDevice_ip|
 |Normalized Schema|user_username|

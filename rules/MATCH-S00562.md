@@ -26,8 +26,6 @@ Observes for traffic destined to an embargoed country. As embargoes vary from co
 |----|----|
 |Normalized Schema|dstDevice_ip|
 |Normalized Schema|dstDevice_ip_isInternal|
-|Normalized Schema|listMatches|
-|Normalized Schema|objectType|
 |Normalized Schema|success|
 
 

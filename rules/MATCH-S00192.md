@@ -29,8 +29,6 @@ Suspicious System Network Configuration Discovery Activity - T1016
 |Normalized Schema|commandLine|
 |Normalized Schema|device_hostname|
 |Normalized Schema|device_ip|
-|Normalized Schema|listMatches|
-|Normalized Schema|lower|
 |Normalized Schema|parentBaseImage|
 |Normalized Schema|user_username|
 

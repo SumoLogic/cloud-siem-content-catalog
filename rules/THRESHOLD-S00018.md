@@ -25,7 +25,6 @@ The MS-LSAT Remote Protocol provides a number of RPC calls that can be used to m
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|bro_dceRpc_operation|
 |Normalized Schema|device_hostname|
 |Normalized Schema|device_ip|
 |Normalized Schema|metadata_deviceEventId|

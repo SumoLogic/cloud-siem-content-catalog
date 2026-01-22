@@ -27,7 +27,6 @@ Office applications and Web Browsers connecting to Office services can potential
 |Direct from Record|fields["EventData.CallTrace"]|
 |Direct from Record|fields["EventData.GrantedAccess"]|
 |Direct from Record|fields["EventData.SourceImage"]|
-|Normalized Schema|matches|
 |Normalized Schema|metadata_deviceEventId|
 
 

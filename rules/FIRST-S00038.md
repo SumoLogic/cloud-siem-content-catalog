@@ -32,7 +32,6 @@ First Seen execution of Wget by a user from a device. The Wget tool is designed 
 |----|----|
 |Normalized Schema|baseImage|
 |Normalized Schema|device_hostname|
-|Normalized Schema|objectType|
 |Normalized Schema|user_username|
 
 

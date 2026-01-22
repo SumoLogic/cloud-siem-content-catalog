@@ -28,7 +28,6 @@ This rule utilizes an hourly baseline to detect an outlier in the number of deni
 |Origin|Field|
 |----|----|
 |Normalized Schema|action|
-|Normalized Schema|application|
 |Direct from Record|fields["errorCode"]|
 |Direct from Record|fields["errorMessage"]|
 |Normalized Schema|metadata_vendor|

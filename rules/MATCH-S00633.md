@@ -23,7 +23,6 @@ Detects access to the Okta admin app. This is where policies are set, users are 
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|listMatches|
 |Normalized Schema|metadata_deviceEventId|
 |Normalized Schema|metadata_vendor|
 |Normalized Schema|srcDevice_ip|

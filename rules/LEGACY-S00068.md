@@ -23,9 +23,6 @@ Hydra and Ncrack are popular tools for attempting brute force attacks to access 
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|bro_rdp_clientName|
-|Normalized Schema|bro_rdp_cookie|
-|Normalized Schema|bro_rdp_result|
 |Normalized Schema|device_hostname|
 |Normalized Schema|device_ip|
 |Normalized Schema|dstDevice_ip|

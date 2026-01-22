@@ -38,7 +38,6 @@ Note that this rule is more likely to trigger when the destination host is a mul
 |Normalized Schema|dstDevice_hostname|
 |Normalized Schema|dstDevice_ip_isInternal|
 |Normalized Schema|dstPort|
-|Normalized Schema|listMatches|
 |Normalized Schema|logonType|
 |Normalized Schema|normalizedAction|
 |Normalized Schema|normalizedCause|

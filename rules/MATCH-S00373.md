@@ -26,7 +26,6 @@ Detects a suspicious DLL loading from AppData Local path as described in BlueMas
 |Normalized Schema|commandLine|
 |Normalized Schema|device_hostname|
 |Normalized Schema|device_ip|
-|Normalized Schema|lower|
 |Normalized Schema|user_username|
 
 

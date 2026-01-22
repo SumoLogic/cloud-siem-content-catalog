@@ -27,7 +27,6 @@ This rule looks for a first seen AWS EKS API call from a user since the baseline
 |Origin|Field|
 |----|----|
 |Normalized Schema|action|
-|Normalized Schema|application|
 |Normalized Schema|cloud_provider|
 |Direct from Record|fields["errorCode"]|
 |Normalized Schema|metadata_product|

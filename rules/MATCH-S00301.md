@@ -23,7 +23,6 @@ Alert when an OAuth application has requested a high number of permissions to as
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|application|
 |Direct from Record|fields['event.parameters.scope.10']|
 |Normalized Schema|metadata_deviceEventId|
 |Normalized Schema|metadata_product|

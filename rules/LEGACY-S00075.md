@@ -23,7 +23,6 @@ Remote execution and/or persistence via scheduled task using ATSVC named pipe.
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|bro_smb_file.action|
 |Normalized Schema|device_hostname|
 |Normalized Schema|device_ip|
 |Normalized Schema|file_basename|

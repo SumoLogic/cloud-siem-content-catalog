@@ -36,7 +36,6 @@ Attackers will often download a PowerShell script from an external web server to
 |----|----|
 |Normalized Schema|dstDevice_ip_isInternal|
 |Normalized Schema|http_url_path|
-|Normalized Schema|listMatches|
 |Normalized Schema|srcDevice_ip|
 
 

@@ -24,7 +24,6 @@ An AWS request occurred to either create a new public bucket or to add a bucket 
 |Origin|Field|
 |----|----|
 |Normalized Schema|action|
-|Normalized Schema|application|
 |Normalized Schema|device_hostname|
 |Normalized Schema|device_ip|
 |Direct from Record|fields['requestParameters.AccessControlPolicy.AccessControlList.Grant.1.Grantee.URI']|

@@ -25,7 +25,6 @@ Detects the deletion of an instance in AWS.
 |----|----|
 |Normalized Schema|action|
 |Normalized Schema|device_ip|
-|Normalized Schema|listMatches|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|
 |Normalized Schema|srcDevice_ip|

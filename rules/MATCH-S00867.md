@@ -26,7 +26,6 @@ A cluster-admin role binding grants a resource superuser or administrative acces
 |Normalized Schema|action|
 |Normalized Schema|cloud_provider|
 |Normalized Schema|cloud_service|
-|Normalized Schema|decision"]|
 |Direct from Record|fields["message.responseObject.roleRef.name"]|
 |Normalized Schema|srcDevice_ip|
 

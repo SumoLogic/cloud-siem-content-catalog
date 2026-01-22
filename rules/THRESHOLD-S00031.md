@@ -25,12 +25,9 @@ An attacker is making a brute force attempt to gain access to an RDP server.
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|bro_rdp_cookie|
-|Normalized Schema|bro_rdp_result|
 |Normalized Schema|device_hostname|
 |Normalized Schema|device_ip|
 |Normalized Schema|dstDevice_ip|
-|Normalized Schema|listMatches|
 |Normalized Schema|metadata_deviceEventId|
 |Normalized Schema|srcDevice_hostname|
 |Normalized Schema|srcDevice_ip|

@@ -31,8 +31,6 @@ DNS resolution of a domain that is not under an ICANN-standard TLD. These TLDs a
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|dns_queryDomain_tld|
-|Normalized Schema|listMatches|
 |Normalized Schema|srcDevice_ip|
 
 

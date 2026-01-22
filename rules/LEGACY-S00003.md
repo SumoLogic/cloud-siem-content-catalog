@@ -31,9 +31,6 @@ By using base32, binary and text data can be encoded in a way that is fully comp
 |Origin|Field|
 |----|----|
 |Normalized Schema|dns_query|
-|Normalized Schema|dns_queryDomain_alexaRank|
-|Normalized Schema|dns_queryDomain_entropyFqdn|
-|Normalized Schema|listMatches|
 |Normalized Schema|srcDevice_ip|
 
 

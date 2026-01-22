@@ -37,8 +37,6 @@ Observes for a firewall blocking a large amount traffic from a single host in a 
 |----|----|
 |Normalized Schema|dstDevice_ip_isInternal|
 |Normalized Schema|dstPort|
-|Normalized Schema|listMatches|
-|Normalized Schema|objectType|
 |Normalized Schema|srcDevice_hostname|
 |Normalized Schema|srcDevice_ip|
 |Normalized Schema|srcDevice_ip_isInternal|

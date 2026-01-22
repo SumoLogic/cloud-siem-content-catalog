@@ -29,7 +29,6 @@ Attackers will often utilize The Managed Object Format (MOF) compiler to conceal
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|LOWER|
 |Normalized Schema|commandLine|
 |Normalized Schema|device_hostname|
 |Normalized Schema|device_ip|

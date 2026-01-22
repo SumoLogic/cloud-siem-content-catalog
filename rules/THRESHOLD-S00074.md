@@ -44,7 +44,6 @@ This rule is designed to detect excessive firewall blocks within a shortened tim
 |Origin|Field|
 |----|----|
 |Normalized Schema|action|
-|Normalized Schema|objectType|
 |Normalized Schema|srcDevice_ip|
 
 

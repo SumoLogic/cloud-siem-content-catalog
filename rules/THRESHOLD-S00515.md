@@ -32,7 +32,6 @@ This rule looks for an intrusion product detecting an internal IP sending the sa
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|listMatches|
 |Normalized Schema|normalizedSeverity|
 |Normalized Schema|srcDevice_hostname|
 |Normalized Schema|srcDevice_ip|

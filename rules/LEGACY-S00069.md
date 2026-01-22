@@ -23,10 +23,8 @@ When setting up an RDP connection, there are a number of  negotiation steps that
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|bro_rdp_result|
 |Normalized Schema|device_hostname|
 |Normalized Schema|device_ip|
-|Normalized Schema|listMatches|
 |Normalized Schema|srcDevice_hostname|
 |Normalized Schema|srcDevice_ip|
 |Normalized Schema|user_username|

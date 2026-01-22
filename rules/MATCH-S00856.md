@@ -24,7 +24,6 @@ A sub account, user account, or TSP account has been created.
 |Origin|Field|
 |----|----|
 |Normalized Schema|action|
-|Normalized Schema|listMatches|
 |Normalized Schema|metadata_vendor|
 |Normalized Schema|targetUser_username|
 |Normalized Schema|user_username|

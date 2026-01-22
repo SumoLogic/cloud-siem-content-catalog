@@ -23,11 +23,9 @@ SMB is primarily used for remote file access across a network.  SMB access to ad
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|bro_smb_file.action|
 |Normalized Schema|device_hostname|
 |Normalized Schema|device_ip|
 |Normalized Schema|file_path|
-|Normalized Schema|listMatches|
 |Normalized Schema|srcDevice_hostname|
 |Normalized Schema|srcDevice_ip|
 |Normalized Schema|user_username|

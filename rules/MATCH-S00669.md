@@ -29,7 +29,6 @@ This rule looks for an intrusion product detecting an informational severity int
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|listMatches|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|
 |Normalized Schema|normalizedSeverity|

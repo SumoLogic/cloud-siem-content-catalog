@@ -23,13 +23,11 @@ Identifies a suspicious windows logon of type 9 (NewCredentials).  This signal i
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|application|
 |Normalized Schema|device_hostname|
 |Normalized Schema|device_ip|
 |Direct from Record|fields['EventData.AuthenticationPackage']|
 |Direct from Record|fields['EventData.AuthenticationPackageName']|
 |Normalized Schema|logonType|
-|Normalized Schema|objectType|
 |Normalized Schema|user_username|
 
 

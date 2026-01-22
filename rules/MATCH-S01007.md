@@ -17,6 +17,7 @@ This rule detects an indicator match from a threat intelligence feed
 |Tags||
 ## Vendors and Products
 - [Amazon AWS - AWS S3 Server Access Logs](../products/41f70c6e-18a9-462c-a04d-4edc7baead7a.md)
+- [Amazon AWS - Route53](../products/e2393771-bda2-414a-8661-0a57069287ad.md)
 - [Amazon AWS - Web Application Firewall (WAF)](../products/072b85a2-1765-45c2-911d-b0509880326e.md)
 - [CheckPoint - Firewall and VPN](../products/c3c1a4fc-10cc-4155-8a30-a3bb14fc9f31.md)
 - [Forcepoint - Web Security](../products/e90edc67-68d4-4d67-82f6-4524f94b59bb.md)
@@ -33,15 +34,11 @@ This rule detects an indicator match from a threat intelligence feed
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|OR|
-|Normalized Schema|confidence|
 |Normalized Schema|dns_replyIp|
-|Normalized Schema|listMatches|
 |Normalized Schema|srcDevice_hostname|
 |Normalized Schema|srcDevice_ip|
 |Normalized Schema|srcDevice_mac|
 |Normalized Schema|srcDevice_natIp|
-|Normalized Schema|type|
 |Normalized Schema|user_username|
 
 

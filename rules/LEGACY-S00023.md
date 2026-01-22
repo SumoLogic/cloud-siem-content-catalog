@@ -23,8 +23,6 @@ Microsoft provides a protocol called SAMR which stands for Security Account Mana
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|bro_dceRpc_endpoint|
-|Normalized Schema|bro_dceRpc_operation|
 |Normalized Schema|srcDevice_ip|
 
 

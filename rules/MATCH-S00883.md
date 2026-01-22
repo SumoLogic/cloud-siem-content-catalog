@@ -26,7 +26,6 @@ Threat actors may be able to list or acquire credentials from keychains, this al
 |----|----|
 |Normalized Schema|baseImage|
 |Normalized Schema|device_hostname|
-|Normalized Schema|matches|
 |Normalized Schema|parentBaseImage|
 |Normalized Schema|user_username|
 

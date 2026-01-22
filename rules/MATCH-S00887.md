@@ -24,7 +24,6 @@ A local port has been forwarded and made available for external connectivity uti
 |Origin|Field|
 |----|----|
 |Normalized Schema|device_hostname|
-|Normalized Schema|objectClassification|
 |Normalized Schema|user_username|
 
 

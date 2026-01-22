@@ -25,7 +25,6 @@ This signal fires for all observances of the CreateServiceAccount action in the 
 |----|----|
 |Normalized Schema|action|
 |Normalized Schema|description|
-|Normalized Schema|listMatches|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|
 |Normalized Schema|srcDevice_ip|

@@ -585,6 +585,7 @@
 |MATCH-S00069|[O365 - Users Password Reset](MATCH-S00069.md)|
 |MATCH-S01053|[OCSF Compliance Finding](MATCH-S01053.md)|
 |MATCH-S01054|[OCSF Detection Finding](MATCH-S01054.md)|
+|MATCH-S01148|[OCSF IAM Analysis Finding](MATCH-S01148.md)|
 |MATCH-S01055|[OCSF Vulnerability Finding](MATCH-S01055.md)|
 |MATCH-S00828|[Office 365 Exchange Transport Rule Created](MATCH-S00828.md)|
 |MATCH-S00829|[Office 365 Exchange Transport Rule Enabled](MATCH-S00829.md)|

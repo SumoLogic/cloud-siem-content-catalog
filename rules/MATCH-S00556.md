@@ -31,10 +31,8 @@ This rule detects commonly used data transfer protocols being used over non-stan
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|application|
 |Normalized Schema|dstDevice_ip_isInternal|
 |Normalized Schema|dstPort|
-|Normalized Schema|listMatches|
 |Normalized Schema|srcDevice_hostname|
 |Normalized Schema|srcDevice_ip|
 |Normalized Schema|srcDevice_ip_isInternal|

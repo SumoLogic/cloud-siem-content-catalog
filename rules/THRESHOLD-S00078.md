@@ -31,7 +31,6 @@ Observes for a large number of DNS 'Any' queries which may be indicative of a Di
 |Normalized Schema|dns_queryType|
 |Normalized Schema|dstDevice_hostname|
 |Normalized Schema|dstDevice_ip|
-|Normalized Schema|objectType|
 |Normalized Schema|srcDevice_ip|
 
 

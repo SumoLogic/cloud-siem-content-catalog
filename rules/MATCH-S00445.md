@@ -15,7 +15,7 @@ https://techviral.net/ransomware-encrypted-file-extensions/
 |Category|Impact|
 |Apply Risk to Entities|device_hostname, device_ip, user_username|
 |Signal Name|Known Ransomware File Extensions|
-|Summary Expression|Known ransomware file extention for file: {{file_path}}|
+|Summary Expression|Known ransomware file extension for file: {{file_path}}|
 |Score/Severity|Static: 3|
 |Enabled by Default|True|
 |Prototype|False|

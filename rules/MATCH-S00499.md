@@ -30,7 +30,6 @@ Observes for e-mail attachments with file extensions commonly used by attackers 
 |----|----|
 |Normalized Schema|file_basename|
 |Normalized Schema|file_path|
-|Normalized Schema|objectType|
 |Normalized Schema|user_username|
 
 

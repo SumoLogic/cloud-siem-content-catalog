@@ -23,7 +23,6 @@ Custom Permissions in Salesforce are used to give access to users for certain ap
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|listMatches|
 |Normalized Schema|metadata_deviceEventId|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|

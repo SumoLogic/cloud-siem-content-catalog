@@ -35,7 +35,6 @@ HTTP request to a domain that is not under an ICANN-standard TLD. These TLDs are
 |Origin|Field|
 |----|----|
 |Normalized Schema|http_url_tld|
-|Normalized Schema|listMatches|
 |Normalized Schema|srcDevice_ip|
 
 

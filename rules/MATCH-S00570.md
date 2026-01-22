@@ -29,7 +29,6 @@ Observes for child processes spawned by WMIPRVSE
 |----|----|
 |Normalized Schema|device_hostname|
 |Direct from Record|fields['EventData.SubjectLogonId']|
-|Normalized Schema|isNull|
 |Normalized Schema|parentBaseImage|
 |Normalized Schema|user_userId|
 |Normalized Schema|user_username|
