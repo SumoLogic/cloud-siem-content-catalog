@@ -17,7 +17,6 @@ From FireEye Red Team Tool Countermeasures: This rule identifies URL requests mi
 |Tags|_mitreAttackTactic:TA0001, _mitreAttackTechnique:T1195, _mitreAttackTechnique:T1195.001, _mitreAttackTechnique:T1195.002|
 ## Vendors and Products
 - [Bro - Bro](../products/37C866BF-72E1-470A-9072-EDB908F56951.md)
-- [Fortinet - Fortigate](../products/c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad.md)
 
 
 ## Fields Used
@@ -29,7 +28,6 @@ From FireEye Red Team Tool Countermeasures: This rule identifies URL requests mi
 |Normalized Schema|http_hostname|
 |Normalized Schema|http_url|
 |Normalized Schema|http_url_rootDomain|
-|Normalized Schema|lower|
 |Normalized Schema|srcDevice_hostname|
 |Normalized Schema|srcDevice_ip|
 |Normalized Schema|user_username|

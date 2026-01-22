@@ -33,7 +33,6 @@ Adversaries may enumerate various Kubernetes secrets in order to escalate privil
 |Direct from Record|fields["message.stage"]|
 |Normalized Schema|http_response_statusCode|
 |Normalized Schema|http_userAgent|
-|Normalized Schema|matches|
 |Normalized Schema|srcDevice_ip|
 
 

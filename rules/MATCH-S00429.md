@@ -29,7 +29,6 @@ Detect creation of dump files containing the memory space of lsass.exe, which co
 |Normalized Schema|commandLine|
 |Normalized Schema|device_hostname|
 |Normalized Schema|device_ip|
-|Normalized Schema|lower|
 |Normalized Schema|user_username|
 
 

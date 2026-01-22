@@ -29,7 +29,6 @@ Extensible Stylesheet Language (XSL) files are commonly used to describe the pro
 |Normalized Schema|commandLine|
 |Normalized Schema|device_hostname|
 |Normalized Schema|device_ip|
-|Normalized Schema|lower|
 |Normalized Schema|user_username|
 
 

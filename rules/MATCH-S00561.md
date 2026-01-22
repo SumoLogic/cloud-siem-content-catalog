@@ -24,8 +24,6 @@ Observes for traffic originating from an embargoed country. As embargoes vary fr
 |Origin|Field|
 |----|----|
 |Normalized Schema|dstDevice_ip_isInternal|
-|Normalized Schema|listMatches|
-|Normalized Schema|objectType|
 |Normalized Schema|srcDevice_ip|
 |Normalized Schema|success|
 

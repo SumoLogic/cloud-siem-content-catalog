@@ -23,7 +23,6 @@ Observes for Windows Management Instrumentation (WMI) launching a shell
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|LOWER|
 |Normalized Schema|baseImage|
 |Normalized Schema|commandLine|
 |Normalized Schema|device_hostname|

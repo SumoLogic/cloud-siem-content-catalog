@@ -36,8 +36,6 @@ Observes for file uploads above 50MB in size. It is recommended to tune this rul
 |----|----|
 |Normalized Schema|bytesOut|
 |Normalized Schema|dstDevice_ip_isInternal|
-|Normalized Schema|listMatches|
-|Normalized Schema|objectType|
 |Normalized Schema|srcDevice_hostname|
 |Normalized Schema|srcDevice_ip|
 |Normalized Schema|user_username|

@@ -27,7 +27,6 @@ This rule looks for a first seen AWS Bedrock API call from a user since the base
 |Origin|Field|
 |----|----|
 |Normalized Schema|action|
-|Normalized Schema|application|
 |Normalized Schema|cloud_provider|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|

@@ -26,7 +26,6 @@ This rule utilizes Jamf telemetry and looks for osascript execution with a suspi
 |Normalized Schema|baseImage|
 |Normalized Schema|device_hostname|
 |Normalized Schema|dstDevice_ip_isInternal|
-|Normalized Schema|isNull|
 |Normalized Schema|metadata_deviceEventId|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|

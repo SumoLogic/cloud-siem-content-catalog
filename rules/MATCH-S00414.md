@@ -29,7 +29,6 @@ Dump sam, system or security hives using REG.exe utility.
 |Normalized Schema|commandLine|
 |Normalized Schema|device_hostname|
 |Normalized Schema|device_ip|
-|Normalized Schema|lower|
 |Normalized Schema|user_username|
 
 

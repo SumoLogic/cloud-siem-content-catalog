@@ -26,8 +26,6 @@ The secrets manager service is commonly used by cloud components to retrieve sec
 |Normalized Schema|device_hostname|
 |Normalized Schema|device_ip|
 |Normalized Schema|device_ip_asnOrg|
-|Normalized Schema|listMatches|
-|Normalized Schema|lower|
 |Normalized Schema|metadata_deviceEventId|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|

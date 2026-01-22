@@ -25,7 +25,6 @@ Detects when an entity downloads multiple documents or attachments in a short ti
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|listMatches|
 |Normalized Schema|metadata_deviceEventId|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|

@@ -23,11 +23,9 @@ Attackers often stage content during intrusions using external web infrastructur
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|bro_http_response_headers['SERVER']|
 |Normalized Schema|device_hostname|
 |Normalized Schema|device_ip|
 |Normalized Schema|dstDevice_ip_isInternal|
-|Normalized Schema|listMatches|
 |Normalized Schema|srcDevice_hostname|
 |Normalized Schema|srcDevice_ip|
 |Normalized Schema|user_username|

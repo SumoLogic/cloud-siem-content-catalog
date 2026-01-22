@@ -30,7 +30,6 @@ Requests to web applications containing SQL statement keywords may indicate atte
 |Normalized Schema|device_ip|
 |Normalized Schema|dstDevice_ip|
 |Normalized Schema|http_url_path|
-|Normalized Schema|listMatches|
 |Normalized Schema|srcDevice_hostname|
 |Normalized Schema|srcDevice_ip|
 |Normalized Schema|user_username|

@@ -26,10 +26,6 @@ From FireEye Red Team Tool Countermeasures: GORAT is the modular backdoor portio
 |Normalized Schema|device_hostname|
 |Normalized Schema|device_ip|
 |Normalized Schema|http_method|
-|Normalized Schema|http_requestHeaders['ACCEPT']|
-|Normalized Schema|http_requestHeaders['COOKIE']|
-|Normalized Schema|http_requestHeaders['REFERER']|
-|Normalized Schema|objectType|
 |Normalized Schema|srcDevice_hostname|
 |Normalized Schema|srcDevice_ip|
 |Normalized Schema|user_username|

@@ -26,7 +26,6 @@ SMB/CIFS is a workgroup protocol for file sharing intended to be used among trus
 |Normalized Schema|device_hostname|
 |Normalized Schema|device_ip|
 |Normalized Schema|dstDevice_ip_isInternal|
-|Normalized Schema|listMatches|
 |Normalized Schema|metadata_deviceEventId|
 |Normalized Schema|metadata_product|
 |Normalized Schema|srcDevice_hostname|

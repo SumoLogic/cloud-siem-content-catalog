@@ -40,7 +40,6 @@ Note that this rule requires the creation and population of a match list for kno
 |Normalized Schema|dstDevice_hostname|
 |Normalized Schema|dstDevice_ip_isInternal|
 |Normalized Schema|dstPort|
-|Normalized Schema|listMatches|
 |Normalized Schema|srcDevice_hostname|
 |Normalized Schema|srcDevice_ip|
 |Normalized Schema|success|

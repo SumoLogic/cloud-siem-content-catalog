@@ -51,9 +51,7 @@ This signal triggers when there are two successful logins from the same user wit
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|lower|
 |Normalized Schema|normalizedAction|
-|Normalized Schema|objectType|
 |Normalized Schema|success|
 |Normalized Schema|user_username|
 

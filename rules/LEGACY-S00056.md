@@ -34,7 +34,6 @@ TFTP is rarely used externally and has been observed as a means to deliver malic
 |Normalized Schema|dstDevice_ip_isInternal|
 |Normalized Schema|dstPort|
 |Normalized Schema|ipProtocol|
-|Normalized Schema|listMatches|
 |Normalized Schema|srcDevice_ip|
 |Normalized Schema|srcDevice_ip_isInternal|
 |Normalized Schema|user_username|

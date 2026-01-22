@@ -28,7 +28,6 @@ Observes for a user performing a specific API call for the first time. This may 
 |----|----|
 |Normalized Schema|action|
 |Direct from Record|fields["userIdentity.type"]|
-|Normalized Schema|isEmpty|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|
 |Normalized Schema|user_username|

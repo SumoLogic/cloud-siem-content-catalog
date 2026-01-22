@@ -29,7 +29,6 @@ Observes for Zoom creating child processes
 |----|----|
 |Normalized Schema|baseImage|
 |Normalized Schema|device_hostname|
-|Normalized Schema|lower|
 |Normalized Schema|parentBaseImage|
 |Normalized Schema|user_username|
 

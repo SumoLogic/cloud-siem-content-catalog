@@ -26,7 +26,6 @@ Harvesting of Wifi Credentials Using netsh.exe
 |Normalized Schema|commandLine|
 |Normalized Schema|device_hostname|
 |Normalized Schema|device_ip|
-|Normalized Schema|listMatches|
 |Normalized Schema|parentBaseImage|
 |Normalized Schema|user_username|
 

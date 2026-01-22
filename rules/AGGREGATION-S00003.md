@@ -24,11 +24,8 @@ Threat actors will attempt to enumerate various system settings in order to expl
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|application|
-|Normalized Schema|cmd_count|
 |Direct from Record|fields["requestParameters.roleSessionName"]|
 |Direct from Record|fields["userIdentity.type"]|
-|Normalized Schema|lower|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|
 |Normalized Schema|user_username|

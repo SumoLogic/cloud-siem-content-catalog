@@ -59,12 +59,10 @@ Detects multiple failed login attempts from a single source with unique username
 |----|----|
 |Normalized Schema|device_hostname|
 |Direct from Record|fields['resultType']|
-|Normalized Schema|listMatches|
 |Normalized Schema|metadata_deviceEventId|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|
 |Normalized Schema|normalizedAction|
-|Normalized Schema|objectType|
 |Normalized Schema|srcDevice_ip|
 |Normalized Schema|success|
 |Normalized Schema|user_username|

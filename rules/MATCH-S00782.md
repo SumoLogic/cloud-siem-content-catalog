@@ -23,7 +23,6 @@ Detects permission set deletions in Salesforce. While these deletions can be rou
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|listMatches|
 |Normalized Schema|metadata_deviceEventId|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|

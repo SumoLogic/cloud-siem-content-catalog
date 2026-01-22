@@ -27,7 +27,6 @@ Identifies use of various commands to query a system's time. This technique may 
 |Normalized Schema|baseImage|
 |Normalized Schema|commandLine|
 |Normalized Schema|device_hostname|
-|Normalized Schema|listMatches|
 |Normalized Schema|user_username|
 
 

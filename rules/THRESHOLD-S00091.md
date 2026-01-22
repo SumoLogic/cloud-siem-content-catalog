@@ -27,7 +27,6 @@ Attackers will often perform reconnaissance against customer environments to bet
 |----|----|
 |Normalized Schema|dstDevice_ip_isInternal|
 |Normalized Schema|dstPort|
-|Normalized Schema|listMatches|
 |Normalized Schema|metadata_deviceEventId|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|

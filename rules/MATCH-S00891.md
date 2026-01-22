@@ -27,7 +27,6 @@ Depending on configurations, Azure Active Directory users or administrators may 
 |Normalized Schema|application|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|
-|Normalized Schema|objectType|
 |Normalized Schema|user_username|
 
 

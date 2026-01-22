@@ -30,7 +30,6 @@ Detects if a sign in has been flagged as "at risk" by Azure Active Directory.
 |Direct from Record|fields['riskState']|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|
-|Normalized Schema|objectType|
 |Normalized Schema|srcDevice_ip|
 |Normalized Schema|success|
 |Normalized Schema|user_username|

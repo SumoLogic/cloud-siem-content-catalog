@@ -186,6 +186,7 @@ The `type` listed lets you know if you can directly apply the parser to a collec
 |Parser|/Parsers/System/Mindpoint Group/Mindpoint Group Keeper|
 |Parser|/Parsers/System/Miro/Miro Audit C2C|
 |Parser|/Parsers/System/Netskope/Netskope Security Cloud JSON|
+|Parser|/Parsers/System/Netskope/Netskope WebTx|
 |Parser|/Parsers/System/Nginx/Nginx Syslog|
 |Parser|/Parsers/System/OCSF/OCSF|
 |Parser|/Parsers/System/OSSEC/OSSEC JSON|

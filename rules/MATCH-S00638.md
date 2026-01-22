@@ -23,7 +23,6 @@ This rule triggers any time there is a Suspicious or Malicious McAfee Web Gatewa
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|http_category|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|
 |Normalized Schema|srcDevice_ip|

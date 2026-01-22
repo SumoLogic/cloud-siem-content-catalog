@@ -1,0 +1,60 @@
+# [Rules](README.md): OCSF IAM Analysis Finding
+
+## Description
+Passes through IAM analysis findings from OCSF sources.
+
+Permission Analysis: {{fields['permission_analysis_results.1.title']}} 
+Access Analysis: {{fields['access_analysis_result.title']}} 
+Finding Info: {{fields['finding_info.desc']}} 
+Finding Origin: {{fields['metadata.product.name']}}
+
+## Additional Details
+|Detail|Value|
+|----|----|
+|Type|Templated Match|
+|Category|Unknown/Other|
+|Apply Risk to Entities|resource, user_username|
+|Signal Name|OCSF IAM Analysis Finding: {{threat_signalName}}|
+|Summary Expression|Unresolved IAM Analysis Finding on {{resource}} ({{resourceType}}). {{threat_signalSummary}}|
+|Score/Severity|Dynamic: 0 or 1 or 3 or 5 or 6|
+|Enabled by Default|True|
+|Prototype|False|
+|Tags||
+## Vendors and Products
+- [Amazon AWS - GuardDuty - OCSF](../products/5bb8e745-453b-47c3-bda4-f690249a6333.md)
+
+
+## Dynamic Signal Score/Severity Translation
+
+The default score of `0` is used as a catch all if none of the translations are met.
+
+|Schema Field|Field Value|Score/Severity|
+|------------|-----------|--------------|
+|normalizedSeverity|0|0|
+|normalizedSeverity|1|1|
+|normalizedSeverity|3|3|
+|normalizedSeverity|5|5|
+|normalizedSeverity|6|6|
+## Fields Used
+
+|Origin|Field|
+|----|----|
+|Direct from Record|fields['access_analysis_result.title']|
+|Direct from Record|fields['activity_name']|
+|Direct from Record|fields['activity_uid']|
+|Direct from Record|fields['category_name']|
+|Direct from Record|fields['category_uid']|
+|Direct from Record|fields['class_name']|
+|Direct from Record|fields['class_uid']|
+|Direct from Record|fields['finding_info.desc']|
+|Direct from Record|fields['metadata.product.name']|
+|Direct from Record|fields['permission_analysis_results.1.title']|
+|Direct from Record|fields['status']|
+|Direct from Record|fields['status_id']|
+|Normalized Schema|normalizedSeverity|
+|Normalized Schema|resource|
+|Normalized Schema|threat_ruleType|
+|Normalized Schema|threat_signalName|
+|Normalized Schema|user_username|
+
+

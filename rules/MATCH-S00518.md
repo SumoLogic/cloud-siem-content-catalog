@@ -32,7 +32,6 @@ Detects malware that failed to be cleaned.
 |----|----|
 |Normalized Schema|device_hostname|
 |Normalized Schema|device_ip|
-|Normalized Schema|lower|
 |Normalized Schema|normalizedSeverity|
 |Normalized Schema|success|
 |Normalized Schema|threat_name|

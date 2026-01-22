@@ -30,7 +30,6 @@ Observes for Spoolsv launching unexpected child processes. This may be related t
 |----|----|
 |Normalized Schema|baseImage|
 |Normalized Schema|device_hostname|
-|Normalized Schema|lower|
 |Normalized Schema|parentBaseImage|
 |Normalized Schema|user_username|
 

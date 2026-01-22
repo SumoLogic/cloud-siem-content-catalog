@@ -24,7 +24,6 @@ Observes for outbound traffic to a proxy anonymizer. This rule requires a list p
 |Origin|Field|
 |----|----|
 |Normalized Schema|dstDevice_ip|
-|Normalized Schema|listMatches|
 |Normalized Schema|srcDevice_ip|
 |Normalized Schema|success|
 |Normalized Schema|user_username|

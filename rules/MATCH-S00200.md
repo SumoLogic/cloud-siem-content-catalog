@@ -23,14 +23,12 @@ The behavior discovered here loosely matches the behavior of known pass the hash
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|application|
 |Normalized Schema|device_hostname|
 |Normalized Schema|device_ip|
 |Direct from Record|fields['EventData.KeyLength']|
 |Normalized Schema|logonType|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|
-|Normalized Schema|objectType|
 |Normalized Schema|user_userId|
 |Normalized Schema|user_username|
 

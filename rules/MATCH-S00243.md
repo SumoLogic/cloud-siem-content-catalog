@@ -30,7 +30,6 @@ Detects Azure high aggregate risk for a user sign in. https://docs.microsoft.com
 |Direct from Record|fields['riskLevelAggregated']|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|
-|Normalized Schema|objectType|
 |Normalized Schema|srcDevice_ip|
 |Normalized Schema|success|
 |Normalized Schema|user_username|

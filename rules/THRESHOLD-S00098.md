@@ -50,9 +50,7 @@ This signal triggers when there are two failed logins from the same user with di
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|lower|
 |Normalized Schema|normalizedAction|
-|Normalized Schema|objectType|
 |Normalized Schema|success|
 |Normalized Schema|user_username|
 

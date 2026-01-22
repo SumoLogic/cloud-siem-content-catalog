@@ -25,7 +25,6 @@ Observes for unexpected local logins. This rule includes 2 match lists to be pop
 |----|----|
 |Normalized Schema|device_hostname|
 |Normalized Schema|errorCode|
-|Normalized Schema|listMatches|
 |Normalized Schema|logonType|
 |Normalized Schema|metadata_deviceEventId|
 |Normalized Schema|user_authDomain|

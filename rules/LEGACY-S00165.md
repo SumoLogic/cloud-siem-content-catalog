@@ -40,7 +40,6 @@ Although Visual Basic scripts (.vbs) are sometimes regularly downloaded from the
 |Normalized Schema|dstDevice_ip_isInternal|
 |Normalized Schema|http_url|
 |Normalized Schema|http_url_alexaRank|
-|Normalized Schema|listMatches|
 |Normalized Schema|srcDevice_hostname|
 |Normalized Schema|srcDevice_ip|
 |Normalized Schema|user_username|

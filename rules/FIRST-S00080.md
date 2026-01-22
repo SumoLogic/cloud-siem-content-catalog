@@ -26,11 +26,9 @@ First observance of a user logging on to the Microsoft Azure Portal. This could 
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|application|
 |Normalized Schema|metadata_deviceEventId|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|
-|Normalized Schema|objectType|
 |Normalized Schema|success|
 |Normalized Schema|user_username|
 

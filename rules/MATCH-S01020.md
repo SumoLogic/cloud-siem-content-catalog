@@ -25,10 +25,8 @@ Detects email addresses associated with known malicious actor(s) or campaign(s) 
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|confidence|
 |Normalized Schema|targetUser_email|
 |Normalized Schema|targetUser_username|
-|Normalized Schema|type|
 |Normalized Schema|user_email|
 |Normalized Schema|user_username|
 

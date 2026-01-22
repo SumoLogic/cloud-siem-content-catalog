@@ -25,7 +25,6 @@ This alert looks for osascript execution as the parent process indicating possib
 |Origin|Field|
 |----|----|
 |Normalized Schema|device_hostname|
-|Normalized Schema|lower|
 |Normalized Schema|parentBaseImage|
 |Normalized Schema|user_username|
 

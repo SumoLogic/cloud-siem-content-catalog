@@ -32,7 +32,6 @@ Detects malware that was cleaned.
 |----|----|
 |Normalized Schema|device_hostname|
 |Normalized Schema|device_ip|
-|Normalized Schema|lower|
 |Normalized Schema|success|
 |Normalized Schema|threat_name|
 |Normalized Schema|threat_ruleType|

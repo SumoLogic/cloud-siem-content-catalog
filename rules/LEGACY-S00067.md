@@ -23,8 +23,6 @@ This rule looks for successful logins over RDP for administrator accounts.
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|bro_rdp_cookie|
-|Normalized Schema|bro_rdp_result|
 |Normalized Schema|srcDevice_ip|
 |Normalized Schema|user_username|
 

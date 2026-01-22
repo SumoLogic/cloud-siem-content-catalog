@@ -24,7 +24,6 @@ Linux endpoints are often used to manage cloud resources. As a result, various k
 |Origin|Field|
 |----|----|
 |Normalized Schema|baseImage|
-|Normalized Schema|matches|
 |Normalized Schema|metadata_deviceEventId|
 |Normalized Schema|metadata_product|
 

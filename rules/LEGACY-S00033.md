@@ -23,11 +23,8 @@ This rule identifies scenarios where an attacker may have attempted to surreptit
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|bro_http_response_headers['CONTENT-TYPE']|
-|Normalized Schema|bro_http_response_respMimeTypes[0]|
 |Normalized Schema|dstDevice_ip_isInternal|
 |Normalized Schema|http_url_alexaRank|
-|Normalized Schema|listMatches|
 |Normalized Schema|srcDevice_ip|
 |Normalized Schema|srcDevice_ip_isInternal|
 

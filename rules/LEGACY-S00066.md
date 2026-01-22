@@ -27,7 +27,6 @@ Remote Administration from Powershell is logged by default in the admin$temp  fo
 |Normalized Schema|device_ip|
 |Normalized Schema|file_basename|
 |Normalized Schema|file_path|
-|Normalized Schema|listMatches|
 |Normalized Schema|metadata_deviceEventId|
 |Normalized Schema|metadata_product|
 |Normalized Schema|srcDevice_hostname|

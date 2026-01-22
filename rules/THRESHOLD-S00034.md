@@ -25,11 +25,9 @@ Many SSH authentication failures from the same source IP in a short period of ti
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|bro_ssh_authSuccess|
 |Normalized Schema|device_hostname|
 |Normalized Schema|device_ip|
 |Normalized Schema|dstDevice_ip_isInternal|
-|Normalized Schema|listMatches|
 |Normalized Schema|metadata_deviceEventId|
 |Normalized Schema|metadata_product|
 |Normalized Schema|srcDevice_hostname|

@@ -27,7 +27,6 @@ RDP login with a localhost source address may indicate a tunneled login and an a
 |Normalized Schema|device_hostname|
 |Normalized Schema|device_ip|
 |Normalized Schema|logonType|
-|Normalized Schema|objectType|
 |Normalized Schema|srcDevice_ip|
 |Normalized Schema|user_username|
 

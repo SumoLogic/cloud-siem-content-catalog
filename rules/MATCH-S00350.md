@@ -29,8 +29,6 @@ Detects programs that connect to typical malware back connect ports based on sta
 |Direct from Record|fields['EventData.Initiated']|
 |Direct from Record|fields['insertionstrings_f08']|
 |Normalized Schema|file_path|
-|Normalized Schema|listMatches|
-|Normalized Schema|lower|
 |Normalized Schema|metadata_deviceEventId|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|

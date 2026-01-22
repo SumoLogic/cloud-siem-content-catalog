@@ -24,7 +24,6 @@ Monitors Zoom group changes for additions, removals, or updates.
 |Origin|Field|
 |----|----|
 |Normalized Schema|action|
-|Normalized Schema|listMatches|
 |Normalized Schema|metadata_vendor|
 |Normalized Schema|user_username|
 

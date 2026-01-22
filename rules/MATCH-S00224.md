@@ -30,7 +30,6 @@ This rule detects that an administrator has flagged a sign-in in Identity Protec
 |Direct from Record|fields['riskDetail']|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|
-|Normalized Schema|objectType|
 |Normalized Schema|srcDevice_ip|
 |Normalized Schema|user_username|
 

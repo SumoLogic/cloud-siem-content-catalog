@@ -27,7 +27,6 @@ The rule looks for a Windows Security Account Manager (SAM) was stopped via comm
 |Normalized Schema|commandLine|
 |Normalized Schema|device_hostname|
 |Normalized Schema|device_ip|
-|Normalized Schema|samss|
 |Normalized Schema|user_username|
 
 

@@ -25,9 +25,7 @@ This alert looks for a number of search expressions that result in a suspicious 
 |----|----|
 |Normalized Schema|action|
 |Normalized Schema|changeTarget|
-|Normalized Schema|matches|
 |Normalized Schema|metadata_vendor|
-|Normalized Schema|objectType|
 |Normalized Schema|user_username|
 
 

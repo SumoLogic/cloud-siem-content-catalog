@@ -43,10 +43,7 @@ Encoding in hexadecimal is a way that attackers can bypass network security devi
 |----|----|
 |Normalized Schema|device_hostname|
 |Normalized Schema|device_ip|
-|Normalized Schema|dns_queryDomain_alexaRank|
-|Normalized Schema|dns_queryDomain_rootDomain|
 |Normalized Schema|dns_queryType|
-|Normalized Schema|listMatches|
 |Normalized Schema|srcDevice_ip|
 |Normalized Schema|user_username|
 

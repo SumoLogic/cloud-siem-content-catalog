@@ -23,8 +23,6 @@ Probing for the default SNMP write password is a way to bypass network security 
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|bro_snmp_community|
-|Normalized Schema|bro_snmp_setRequests|
 |Normalized Schema|device_hostname|
 |Normalized Schema|device_ip|
 |Normalized Schema|dstDevice_ip_isInternal|

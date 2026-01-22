@@ -23,7 +23,6 @@ Cisco Umbrella detected a DNS request to a domain categorized as Proxy/Anonymize
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|http_category|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|
 |Normalized Schema|srcDevice_hostname|

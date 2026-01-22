@@ -24,7 +24,6 @@ The AWS Key Management Service (KMS) can be used to generate key pairs for encry
 |Origin|Field|
 |----|----|
 |Normalized Schema|action|
-|Normalized Schema|application|
 |Normalized Schema|device_hostname|
 |Normalized Schema|device_ip|
 |Normalized Schema|metadata_product|

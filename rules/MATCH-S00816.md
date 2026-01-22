@@ -24,7 +24,6 @@ Detects an interactive login to a domain controller. Direct access in this manne
 |Origin|Field|
 |----|----|
 |Normalized Schema|dstDevice_hostname|
-|Normalized Schema|listMatches|
 |Normalized Schema|logonType|
 |Normalized Schema|metadata_deviceEventId|
 |Normalized Schema|metadata_product|

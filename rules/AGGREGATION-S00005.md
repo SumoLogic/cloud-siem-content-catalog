@@ -28,12 +28,9 @@ Threat actors will attempt to enuerate various system settings in order to explo
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|cmd_count|
 |Normalized Schema|commandLine|
 |Normalized Schema|device_hostname|
 |Normalized Schema|file_path|
-|Normalized Schema|listMatches|
-|Normalized Schema|lower|
 |Normalized Schema|parentBaseImage|
 
 

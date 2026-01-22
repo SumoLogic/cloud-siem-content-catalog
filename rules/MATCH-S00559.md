@@ -25,7 +25,6 @@ This rule monitors for traffic being sent to a honeypot, indicating an attacker 
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|listMatches|
 |Normalized Schema|srcDevice_hostname|
 |Normalized Schema|srcDevice_ip|
 |Normalized Schema|srcDevice_ip_isInternal|

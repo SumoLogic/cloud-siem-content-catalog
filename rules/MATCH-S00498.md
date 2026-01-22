@@ -27,7 +27,6 @@ Rubeus is a utility  that provides Kerberos abuse capabilities. This rule is loo
 |Normalized Schema|device_hostname|
 |Normalized Schema|device_ip|
 |Direct from Record|fields['EventData.LogonProcessName']|
-|Normalized Schema|objectType|
 |Normalized Schema|srcDevice_hostname|
 |Normalized Schema|srcDevice_ip|
 |Normalized Schema|user_username|

@@ -26,7 +26,6 @@ The csrutil binary should be rarely used by regular end-users and is designed to
 |----|----|
 |Normalized Schema|baseImage|
 |Normalized Schema|device_hostname|
-|Normalized Schema|matches|
 |Normalized Schema|parentBaseImage|
 |Normalized Schema|user_username|
 

@@ -42,11 +42,9 @@ Observes for SMB traffic allowed through the firewall.
 |Origin|Field|
 |----|----|
 |Normalized Schema|action|
-|Normalized Schema|application|
 |Normalized Schema|dstDevice_ip_isInternal|
 |Normalized Schema|dstPort|
 |Normalized Schema|ipProtocol|
-|Normalized Schema|objectType|
 |Normalized Schema|srcDevice_ip|
 |Normalized Schema|srcDevice_ip_isInternal|
 |Normalized Schema|tcpProtocol|

@@ -27,7 +27,6 @@ An AWS Bedrock Agent has been created in the environment by a Role seen for the 
 |Origin|Field|
 |----|----|
 |Normalized Schema|action|
-|Normalized Schema|application|
 |Normalized Schema|cloud_provider|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|

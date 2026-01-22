@@ -33,7 +33,6 @@ Detects the same malware signature on multiple hosts in a short timeframe. This 
 |----|----|
 |Normalized Schema|device_hostname|
 |Normalized Schema|device_ip|
-|Normalized Schema|lower|
 |Normalized Schema|threat_name|
 |Normalized Schema|threat_ruleType|
 |Normalized Schema|user_username|

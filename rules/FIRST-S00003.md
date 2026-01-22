@@ -27,7 +27,6 @@ Observes for a user performing a ListSecrets API call for the first time.
 |Origin|Field|
 |----|----|
 |Normalized Schema|action|
-|Normalized Schema|application|
 |Direct from Record|fields["userIdentity.type"]|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|

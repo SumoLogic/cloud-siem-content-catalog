@@ -31,7 +31,6 @@ Detects the use of various Get-Process PowerShell commands to discover informati
 |Normalized Schema|commandLine|
 |Normalized Schema|device_hostname|
 |Normalized Schema|device_ip|
-|Normalized Schema|lower|
 |Normalized Schema|user_username|
 
 

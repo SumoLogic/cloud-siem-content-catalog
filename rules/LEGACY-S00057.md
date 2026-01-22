@@ -23,11 +23,9 @@ Detects PSEXESVC.EXE being written to remote computer via SMB/CIFS. This is a se
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|bro_smb_file.action|
 |Normalized Schema|device_hostname|
 |Normalized Schema|device_ip|
 |Normalized Schema|file_basename|
-|Normalized Schema|listMatches|
 |Normalized Schema|srcDevice_hostname|
 |Normalized Schema|srcDevice_ip|
 |Normalized Schema|user_username|

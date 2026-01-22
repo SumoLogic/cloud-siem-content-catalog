@@ -48,15 +48,10 @@ This rule detects successful authentications from an IP address associated with 
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|OR|
-|Normalized Schema|confidence|
 |Normalized Schema|dstDevice_ip|
-|Normalized Schema|listMatches|
-|Normalized Schema|objectType|
 |Normalized Schema|srcDevice_ip|
 |Normalized Schema|srcDevice_ip_isInternal|
 |Normalized Schema|success|
-|Normalized Schema|type|
 |Normalized Schema|user_username|
 
 

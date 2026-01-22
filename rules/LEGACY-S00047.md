@@ -44,7 +44,6 @@ Although executable and dynamic-link libraries (.exe, .dll) are regularly downlo
 |Normalized Schema|http_url_fqdn|
 |Normalized Schema|http_url_path|
 |Normalized Schema|http_url_rootDomain|
-|Normalized Schema|listMatches|
 |Normalized Schema|srcDevice_ip|
 |Normalized Schema|user_username|
 
