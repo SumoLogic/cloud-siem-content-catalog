@@ -24,7 +24,6 @@ This rule detects when a user has utilized multiple distinct operating systems w
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|distinct_os|
 |Direct from Record|fields["client.userAgent.os"]|
 |Normalized Schema|metadata_deviceEventId|
 |Normalized Schema|metadata_vendor|

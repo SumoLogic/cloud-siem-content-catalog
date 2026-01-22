@@ -29,7 +29,6 @@ Adversaries may make use of Domain Generation Algorithms (DGAs) to dynamically i
 |----|----|
 |Normalized Schema|dns_queryType|
 |Normalized Schema|dns_returnCode|
-|Normalized Schema|listMatches|
 |Normalized Schema|srcDevice_ip|
 |Normalized Schema|srcDevice_ip_isInternal|
 

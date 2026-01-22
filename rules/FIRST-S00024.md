@@ -27,7 +27,6 @@ AWS SSM (Simple Systems Manager) can be used to manage systems and configuration
 |Origin|Field|
 |----|----|
 |Normalized Schema|action|
-|Normalized Schema|application|
 |Direct from Record|fields["requestParameters.documentName"]|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|

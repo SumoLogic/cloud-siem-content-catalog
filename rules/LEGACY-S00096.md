@@ -27,7 +27,6 @@ HTTP requests with headers indicating an attempt to exploit CVE-2014-6271 and re
 |Normalized Schema|device_ip|
 |Normalized Schema|dstDevice_ip|
 |Normalized Schema|dstDevice_ip_isInternal|
-|Normalized Schema|listMatches|
 |Normalized Schema|srcDevice_hostname|
 |Normalized Schema|srcDevice_ip|
 |Normalized Schema|user_username|

@@ -27,15 +27,16 @@ First Seen rule which triggers when there are at least two successful logins fro
 - [Box - Box](../products/0472f22e-e3fa-4c9f-a529-8355f671927e.md)
 - [Cisco Systems - ASA](../products/be4f7473-fe69-4311-8859-3561900060bf.md)
 - [Cisco Systems - Identity Services Engine](../products/153794da-09e8-48fe-b511-1306fbb94d07.md)
-- [Cisco Systems - Router and Switch IOS](../products/1abefd5b-ec3d-49c1-8a54-7e6363d52db0.md)
 - [Citrix - ADC](../products/d3606245-76d3-4173-a2fe-832c0e71b0f9.md)
 - [Cyber-Ark - CyberArk Audit](../products/54f01856-e973-4d7b-a3eb-95cc08ff44f5.md)
+- [Databricks - Databricks Audit](../products/b32a58b9-8bfd-4b1d-8b68-91611fe5c37e.md)
 - [Dropbox - Dropbox](../products/5bfda3d2-03e7-4d9a-8072-c59430a131d7.md)
 - [Duo Security - Multi-Factor Authentication (MFA)](../products/acb7e80e-2b66-496c-ba2e-1e7c3933a98e.md)
 - [Fortinet - Fortigate](../products/c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad.md)
 - [Google - Google Workspace](../products/e73cd65a-7a4b-4ce9-9d73-e5d9c824c214.md)
 - [HP - Aruba ClearPass](../products/12aba181-2b31-472c-a685-2be492f4778d.md)
 - [JFrog - Artifactory](../products/abe4975e-de65-4f82-8b35-e6ce392e165c.md)
+- [JumpCloud - Directory Insights](../products/05bfaf47-5e21-4d5f-b724-98960a6fca8a.md)
 - [JumpCloud - IdP](../products/1ed80351-d779-4f1f-9ddb-b3881f19d487.md)
 - [Linux - Linux OS Syslog](../products/0e20c932-d992-4bd4-b276-c15119ca5c0b.md)
 - [Linux - Systemd Journal](../products/5be5af82-c248-4c4c-a485-0571025f242c.md)
@@ -53,7 +54,6 @@ First Seen rule which triggers when there are at least two successful logins fro
 - [SailPoint - SailPoint](../products/c3954250-68a0-49c3-ab6a-ef0daa95ff90.md)
 - [Slack - Slack](../products/79da6240-7617-49c8-b130-96278579766e.md)
 - [Snowflake - Snowflake](../products/8276b520-fdeb-4f79-9f5d-67865818562b.md)
-- [VMware - ESXi](../products/8151e52c-df0d-42d2-978f-2d17e24ae41c.md)
 - [Workday - Workday](../products/0438df6b-16ba-4da7-a7a7-626316d0061f.md)
 - [Zendesk - Zendesk](../products/a301559a-8110-4dd0-a41d-35b9baa1c740.md)
 
@@ -63,7 +63,6 @@ First Seen rule which triggers when there are at least two successful logins fro
 |Origin|Field|
 |----|----|
 |Normalized Schema|normalizedAction|
-|Normalized Schema|objectType|
 |Normalized Schema|srcDevice_ip_countryCode|
 |Normalized Schema|srcDevice_ip_isInternal|
 |Normalized Schema|success|

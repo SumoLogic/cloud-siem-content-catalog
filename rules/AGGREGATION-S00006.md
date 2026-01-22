@@ -30,9 +30,7 @@ Threat actors will aim to enumerate various permissions and settings on hosts wi
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|cmd_count|
 |Normalized Schema|device_hostname|
-|Normalized Schema|matches|
 |Normalized Schema|metadata_deviceEventId|
 
 

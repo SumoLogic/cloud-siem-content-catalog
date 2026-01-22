@@ -23,7 +23,6 @@ This rule detects modifications to registry keys commonly targeted to achieve pe
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|LOWER|
 |Normalized Schema|device_hostname|
 |Normalized Schema|device_ip|
 |Normalized Schema|file_path|

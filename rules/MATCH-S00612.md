@@ -25,7 +25,6 @@ Administrative changes to the GCP Secrets Manager aren't overtly hostile, but ar
 |----|----|
 |Normalized Schema|action|
 |Normalized Schema|description|
-|Normalized Schema|listMatches|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|
 |Normalized Schema|srcDevice_ip|

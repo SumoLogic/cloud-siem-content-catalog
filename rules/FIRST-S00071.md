@@ -28,7 +28,6 @@ First observance of a user logging on to the Amazon AWS console. This could be i
 |----|----|
 |Normalized Schema|action|
 |Normalized Schema|metadata_vendor|
-|Normalized Schema|objectType|
 |Normalized Schema|success|
 |Normalized Schema|user_username|
 

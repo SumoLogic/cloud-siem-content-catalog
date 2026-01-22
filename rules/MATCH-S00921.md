@@ -24,7 +24,6 @@ An AWS Bedrock Model invocation logging configuration change was observed. Ensur
 |Origin|Field|
 |----|----|
 |Normalized Schema|action|
-|Normalized Schema|application|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|
 |Normalized Schema|user_username|

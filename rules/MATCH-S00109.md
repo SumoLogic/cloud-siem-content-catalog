@@ -24,7 +24,6 @@ A Permissions Boundary was lifted against an IAM User or Role. This unusual acti
 |Origin|Field|
 |----|----|
 |Normalized Schema|action|
-|Normalized Schema|application|
 |Normalized Schema|device_hostname|
 |Normalized Schema|device_ip|
 |Normalized Schema|metadata_product|

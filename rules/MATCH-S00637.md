@@ -31,7 +31,6 @@ This rule triggers any time there is potentially a download from a suspicious ca
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|http_category|
 |Normalized Schema|http_url_path|
 |Normalized Schema|srcDevice_ip|
 

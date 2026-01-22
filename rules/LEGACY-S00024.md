@@ -23,7 +23,6 @@ The Remote Procedure Call (RPC) protocol allows remote administrative commands t
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|bro_dceRpc_operation|
 |Normalized Schema|dstDevice_ip|
 |Normalized Schema|srcDevice_ip|
 

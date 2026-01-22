@@ -32,7 +32,6 @@ Many threats are served from websites using lazy single character based filename
 |----|----|
 |Normalized Schema|dstDevice_ip_isInternal|
 |Normalized Schema|http_url_path|
-|Normalized Schema|listMatches|
 |Normalized Schema|srcDevice_ip|
 |Normalized Schema|srcDevice_ip_isInternal|
 

@@ -23,7 +23,6 @@ Observes for command lines associated with Turla group
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|P|
 |Normalized Schema|commandLine|
 |Normalized Schema|device_hostname|
 |Normalized Schema|user_username|

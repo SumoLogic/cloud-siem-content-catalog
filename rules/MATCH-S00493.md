@@ -23,13 +23,10 @@ From FireEye Red Team Tool Countermeasures: Network detection rule that looks fo
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|bro_ssl_issuer|
-|Normalized Schema|bro_ssl_subject|
 |Normalized Schema|device_hostname|
 |Normalized Schema|device_ip|
 |Direct from Record|fields['issuer']|
 |Direct from Record|fields['subject']|
-|Normalized Schema|objectType|
 |Normalized Schema|srcDevice_hostname|
 |Normalized Schema|srcDevice_ip|
 |Normalized Schema|user_username|

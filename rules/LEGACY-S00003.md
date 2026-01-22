@@ -22,7 +22,6 @@ By using base32, binary and text data can be encoded in a way that is fully comp
 - [Cloudflare - Logpush](../products/c2503fcc-ef30-4e40-bb32-0bf47151b140.md)
 - [Fortinet - Fortigate](../products/c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad.md)
 - [ISC - Bind](../products/1768a42a-37e6-4a2b-aa42-314583f63e1b.md)
-- [Microsoft - DNS](../products/e362ae18-9af1-496d-9ace-efa05a8381c6.md)
 - [Netskope - WebTx](../products/9e838f93-c9e7-4592-a980-cf9dfb704784.md)
 
 
@@ -31,9 +30,6 @@ By using base32, binary and text data can be encoded in a way that is fully comp
 |Origin|Field|
 |----|----|
 |Normalized Schema|dns_query|
-|Normalized Schema|dns_queryDomain_alexaRank|
-|Normalized Schema|dns_queryDomain_entropyFqdn|
-|Normalized Schema|listMatches|
 |Normalized Schema|srcDevice_ip|
 
 

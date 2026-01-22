@@ -29,7 +29,6 @@ Some families of malware use data nested within the subdomain portion of a DNS q
 - [Microsoft - Windows](../products/1ff7546c-cb36-4a24-87f7-89d2cecc5761.md)
 - [Netskope - WebTx](../products/9e838f93-c9e7-4592-a980-cf9dfb704784.md)
 - [Palo Alto Networks - Prisma Cloud](../products/343b9323-d279-40d9-946f-809242e5cf98.md)
-- [Zscaler - Firewall](../products/9e0641a7-22ce-4ac8-8113-ee48b368ac3d.md)
 
 
 ## Fields Used
@@ -39,8 +38,6 @@ Some families of malware use data nested within the subdomain portion of a DNS q
 |Normalized Schema|device_hostname|
 |Normalized Schema|device_ip|
 |Normalized Schema|dns_queryDomain|
-|Normalized Schema|dns_queryDomain_alexaRank|
-|Normalized Schema|listMatches|
 |Normalized Schema|srcDevice_hostname|
 |Normalized Schema|srcDevice_ip|
 |Normalized Schema|user_username|

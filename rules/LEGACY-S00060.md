@@ -25,7 +25,6 @@ Internal port scan. A host on the monitored network was detected as showing beha
 |----|----|
 |Normalized Schema|device_hostname|
 |Normalized Schema|device_ip|
-|Normalized Schema|listMatches|
 |Normalized Schema|metadata_deviceEventId|
 |Normalized Schema|metadata_product|
 |Normalized Schema|srcDevice_ip|

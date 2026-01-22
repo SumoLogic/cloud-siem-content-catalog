@@ -31,8 +31,6 @@ Observes excessive amount of bytes out proxy traffic from a username based on a 
 |Origin|Field|
 |----|----|
 |Normalized Schema|bytesOut|
-|Normalized Schema|isNull|
-|Normalized Schema|objectType|
 |Normalized Schema|user_username|
 
 

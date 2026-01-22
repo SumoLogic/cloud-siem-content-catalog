@@ -16,7 +16,6 @@ A record flagged a file hash from a threat intelligence match list
 |Prototype|False|
 |Tags||
 ## Vendors and Products
-- [Bitdefender - GravityZone](../products/046b3623-69fe-409f-9e80-fd3ebef0654f.md)
 - [Cisco Systems - Advanced Malware Protection (AMP)](../products/7eaa4c44-5b7f-4d9e-8c1c-c4105c2b7506.md)
 - [Cloudflare - Logpush](../products/c2503fcc-ef30-4e40-bb32-0bf47151b140.md)
 - [CrowdStrike - FDR](../products/569a3a44-c29f-492e-bcf4-5dc04e2ab0f3.md)
@@ -47,7 +46,6 @@ A record flagged a file hash from a threat intelligence match list
 |Normalized Schema|device_mac|
 |Normalized Schema|device_natIp|
 |Normalized Schema|dns_replyIp|
-|Normalized Schema|listMatches|
 |Normalized Schema|srcDevice_hostname|
 |Normalized Schema|srcDevice_ip|
 |Normalized Schema|srcDevice_mac|

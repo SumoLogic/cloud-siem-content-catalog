@@ -59,7 +59,6 @@ A record flagged an IP address from a threat intelligence match list
 |Origin|Field|
 |----|----|
 |Normalized Schema|dns_replyIp|
-|Normalized Schema|listMatches|
 |Normalized Schema|srcDevice_hostname|
 |Normalized Schema|srcDevice_ip|
 |Normalized Schema|srcDevice_mac|

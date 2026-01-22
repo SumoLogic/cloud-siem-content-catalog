@@ -32,7 +32,6 @@ Github.com is the most popular code repo site on the internet. Typically users o
 |Normalized Schema|dstDevice_ip_isInternal|
 |Normalized Schema|http_hostname|
 |Normalized Schema|http_url_path|
-|Normalized Schema|listMatches|
 |Normalized Schema|srcDevice_ip|
 
 

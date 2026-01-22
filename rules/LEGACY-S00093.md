@@ -40,8 +40,6 @@ This pattern discovers HTTP communications from an internal source where a devel
 |Normalized Schema|dstDevice_ip|
 |Normalized Schema|dstDevice_ip_isInternal|
 |Normalized Schema|http_userAgent|
-|Normalized Schema|listMatches|
-|Normalized Schema|objectType|
 |Normalized Schema|srcDevice_hostname|
 |Normalized Schema|srcDevice_ip|
 |Normalized Schema|srcDevice_ip_isInternal|

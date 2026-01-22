@@ -24,8 +24,6 @@ Threat actors may create, update or otherwise modify various Office 365 inbox ru
 |Origin|Field|
 |----|----|
 |Normalized Schema|action|
-|Normalized Schema|application|
-|Normalized Schema|isBlank|
 |Normalized Schema|metadata_product|
 |Normalized Schema|success|
 |Normalized Schema|user_username|

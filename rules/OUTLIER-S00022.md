@@ -27,7 +27,6 @@ An outlier in the number of Foundation Model Enumeration API Calls from a user w
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|application|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|
 |Normalized Schema|user_username|

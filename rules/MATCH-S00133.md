@@ -25,7 +25,6 @@ The admin activity report returns information on the Admin console activities of
 |----|----|
 |Normalized Schema|action|
 |Normalized Schema|description|
-|Normalized Schema|listMatches|
 |Normalized Schema|metadata_deviceEventId|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|

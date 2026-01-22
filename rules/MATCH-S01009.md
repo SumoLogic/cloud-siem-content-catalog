@@ -16,7 +16,6 @@ This rule detects an indicator match from a threat intelligence feed
 |Prototype|False|
 |Tags||
 ## Vendors and Products
-- [Amazon AWS - Web Application Firewall (WAF)](../products/072b85a2-1765-45c2-911d-b0509880326e.md)
 - [Cisco Systems - Firepower](../products/da9e05a5-3fd3-46a7-a107-ae03c01e3f5a.md)
 - [Cisco Systems - Umbrella](../products/5ba50e74-3c05-4ea8-aeaf-5efde588c60f.md)
 - [Cloudflare - Logpush](../products/c2503fcc-ef30-4e40-bb32-0bf47151b140.md)
@@ -31,15 +30,11 @@ This rule detects an indicator match from a threat intelligence feed
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|OR|
-|Normalized Schema|confidence|
 |Normalized Schema|dns_replyIp|
-|Normalized Schema|listMatches|
 |Normalized Schema|srcDevice_hostname|
 |Normalized Schema|srcDevice_ip|
 |Normalized Schema|srcDevice_mac|
 |Normalized Schema|srcDevice_natIp|
-|Normalized Schema|type|
 |Normalized Schema|user_username|
 
 

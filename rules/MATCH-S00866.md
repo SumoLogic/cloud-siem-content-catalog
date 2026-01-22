@@ -24,11 +24,9 @@ Privileged containers have all capabilities of the host machine. These privilege
 |Origin|Field|
 |----|----|
 |Normalized Schema|action|
-|Normalized Schema|admit-policy"]|
 |Normalized Schema|cloud_provider|
 |Normalized Schema|cloud_service|
 |Direct from Record|fields["message.requestObject.spec.containers.1.securityContext.privileged"]|
 |Normalized Schema|srcDevice_ip|
-|Normalized Schema|validate-policy"]|
 
 

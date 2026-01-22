@@ -26,7 +26,6 @@ A user not seen since the baseline period has accessed the Okta admin applicatio
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|listMatches|
 |Normalized Schema|metadata_deviceEventId|
 |Normalized Schema|metadata_vendor|
 |Normalized Schema|success|

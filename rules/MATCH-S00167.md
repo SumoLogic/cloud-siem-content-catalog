@@ -33,8 +33,6 @@ Detects a set of commands often used in recon stages by different attack groups
 |Normalized Schema|commandLine|
 |Normalized Schema|device_hostname|
 |Normalized Schema|file_path|
-|Normalized Schema|listMatches|
-|Normalized Schema|lower|
 |Normalized Schema|parentBaseImage|
 |Normalized Schema|user_username|
 

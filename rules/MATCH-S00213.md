@@ -25,7 +25,6 @@ This signal identifies a small number of CloudTrail API actions that when observ
 |----|----|
 |Normalized Schema|device_hostname|
 |Normalized Schema|device_ip|
-|Normalized Schema|listMatches|
 |Normalized Schema|metadata_deviceEventId|
 |Normalized Schema|srcDevice_ip|
 |Normalized Schema|user_username|

@@ -23,14 +23,9 @@ From FireEye Red Team Tool Countermeasures: Network detection rule that looks fo
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|bro_http_request_headers['ACCEPT']|
-|Normalized Schema|bro_http_request_headers['ACCEPT-ENCODING']|
-|Normalized Schema|bro_http_request_headers['ACCEPT-LANGUAGE']|
-|Normalized Schema|bro_http_request_headers['COOKIE']|
 |Normalized Schema|device_hostname|
 |Normalized Schema|device_ip|
 |Normalized Schema|http_url_path|
-|Normalized Schema|objectType|
 |Normalized Schema|srcDevice_hostname|
 |Normalized Schema|srcDevice_ip|
 |Normalized Schema|user_username|

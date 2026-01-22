@@ -855,6 +855,12 @@ Finding Origin: {{fields['metadata.product.name']}}"
 Remediation Info: {{fields['remediation.references.1']}} 
 Finding Info: {{fields['finding_info.desc']}} 
 Finding Origin: {{fields['metadata.product.name']}}"
+"","","MATCH-S01148","templated_match","Unknown/Other","True","False","","","OCSF IAM Analysis Finding","Passes through IAM analysis findings from OCSF sources.
+
+Permission Analysis: {{fields['permission_analysis_results.1.title']}} 
+Access Analysis: {{fields['access_analysis_result.title']}} 
+Finding Info: {{fields['finding_info.desc']}} 
+Finding Origin: {{fields['metadata.product.name']}}"
 "","","MATCH-S01055","templated_match","Unknown/Other","True","False","","","OCSF Vulnerability Finding","Passes through vulnerability findings from OCSF sources.
 
 Remediation Info: {{fields['remediation.references.1']}} 

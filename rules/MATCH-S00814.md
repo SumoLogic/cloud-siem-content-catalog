@@ -31,7 +31,6 @@ Monitors for exploitation of CVE-2022-30190 as indicated by an abnormal child pr
 |Normalized Schema|commandLine|
 |Normalized Schema|device_hostname|
 |Normalized Schema|device_ip|
-|Normalized Schema|lower|
 |Normalized Schema|parentBaseImage|
 |Normalized Schema|user_username|
 

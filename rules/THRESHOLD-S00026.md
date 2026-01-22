@@ -28,8 +28,6 @@ This signal logic is designed to catch repetitive attempts to call (and presumab
 - [Cisco Systems - Ironport](../products/c07b5749-deda-4c7e-8e78-4a5dec1fcf4d.md)
 - [Cisco Systems - Meraki](../products/724c9add-8cd9-4013-b9e1-a907b96da426.md)
 - [Cloudflare - Logpush](../products/c2503fcc-ef30-4e40-bb32-0bf47151b140.md)
-- [F5 - F5](../products/ede052db-d472-408f-949c-be642237ef3f.md)
-- [Forcepoint - Web Security](../products/e90edc67-68d4-4d67-82f6-4524f94b59bb.md)
 - [Google - Google Cloud Platform](../products/dcc85cfc-a698-4d09-87de-f2c723f3ad07.md)
 - [Microsoft - Azure](../products/a1225af5-e778-4068-a9a2-47da93d1ff24.md)
 - [Microsoft - IIS](../products/fca8785d-4823-4442-86b2-8acbaa176da4.md)

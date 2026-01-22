@@ -28,7 +28,6 @@ Local system account - Suspicious System Owner/User Discovery Activity - T1033 -
 |Normalized Schema|baseImage|
 |Normalized Schema|device_hostname|
 |Normalized Schema|device_ip|
-|Normalized Schema|listMatches|
 |Normalized Schema|parentBaseImage|
 |Normalized Schema|user_username|
 

@@ -19,6 +19,7 @@ PowerShell can execute encoded Base64 strings with the Encoded Command cmdlet. A
 - [CrowdStrike - FDR](../products/569a3a44-c29f-492e-bcf4-5dc04e2ab0f3.md)
 - [Microsoft - Windows](../products/1ff7546c-cb36-4a24-87f7-89d2cecc5761.md)
 - [Osquery - Osquery](../products/93e2d3d-fab1-4d61-845f-49bc1ae5bed9.md)
+- [VMware - Carbon Black Cloud](../products/f9cea291-9030-4e41-9836-6dd9274d6df4.md)
 
 
 ## Fields Used
@@ -29,7 +30,6 @@ PowerShell can execute encoded Base64 strings with the Encoded Command cmdlet. A
 |Normalized Schema|commandLine|
 |Normalized Schema|device_hostname|
 |Normalized Schema|device_ip|
-|Normalized Schema|listMatches|
 |Normalized Schema|user_username|
 
 

@@ -25,7 +25,6 @@ Creating DB snapshots is an efficient way for an attacker to begin downloading a
 |----|----|
 |Normalized Schema|device_hostname|
 |Normalized Schema|device_ip|
-|Normalized Schema|listMatches|
 |Normalized Schema|metadata_deviceEventId|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|

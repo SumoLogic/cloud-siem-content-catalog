@@ -34,10 +34,8 @@ If appropriate, create a matchlist named RDP_admin_hosts and add names of hosts 
 |Origin|Field|
 |----|----|
 |Normalized Schema|dstDevice_hostname|
-|Normalized Schema|listMatches|
 |Normalized Schema|logonType|
 |Normalized Schema|normalizedAction|
-|Normalized Schema|objectClassification|
 |Normalized Schema|srcDevice_ip|
 |Normalized Schema|success|
 |Normalized Schema|user_role|

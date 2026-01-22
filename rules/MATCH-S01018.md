@@ -18,11 +18,9 @@ This rule detects successful authentications from an IP address associated with 
 ## Vendors and Products
 - [Amazon AWS - CloudTrail](../products/033624b0-218e-4dcb-b93f-0f1fb1806c56.md)
 - [Auth0 - Auth0](../products/0b45ccba-20b4-41e4-973d-b50fd291944d.md)
-- [Box - Box](../products/0472f22e-e3fa-4c9f-a529-8355f671927e.md)
 - [Cisco Systems - ASA](../products/be4f7473-fe69-4311-8859-3561900060bf.md)
 - [Cisco Systems - Identity Services Engine](../products/153794da-09e8-48fe-b511-1306fbb94d07.md)
 - [Citrix - ADC](../products/d3606245-76d3-4173-a2fe-832c0e71b0f9.md)
-- [CrowdStrike - Falcon](../products/840c72e0-4e47-41e7-9b93-31f55d12f07d.md)
 - [Duo Security - Multi-Factor Authentication (MFA)](../products/acb7e80e-2b66-496c-ba2e-1e7c3933a98e.md)
 - [Google - Google Workspace](../products/e73cd65a-7a4b-4ce9-9d73-e5d9c824c214.md)
 - [JFrog - Artifactory](../products/abe4975e-de65-4f82-8b35-e6ce392e165c.md)
@@ -48,15 +46,10 @@ This rule detects successful authentications from an IP address associated with 
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|OR|
-|Normalized Schema|confidence|
 |Normalized Schema|dstDevice_ip|
-|Normalized Schema|listMatches|
-|Normalized Schema|objectType|
 |Normalized Schema|srcDevice_ip|
 |Normalized Schema|srcDevice_ip_isInternal|
 |Normalized Schema|success|
-|Normalized Schema|type|
 |Normalized Schema|user_username|
 
 

@@ -24,11 +24,8 @@ Network detection rule that looks for specific HTTP header for either a POST or 
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|bro_http_request_headers['COOKIE']|
 |Normalized Schema|device_hostname|
 |Normalized Schema|device_ip|
-|Normalized Schema|http_requestHeaders['COOKIE']|
-|Normalized Schema|objectType|
 |Normalized Schema|srcDevice_hostname|
 |Normalized Schema|srcDevice_ip|
 |Normalized Schema|user_username|

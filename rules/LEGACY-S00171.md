@@ -27,7 +27,6 @@ Windows services launching from locations outside of their standard installation
 |Normalized Schema|baseImage|
 |Normalized Schema|device_hostname|
 |Normalized Schema|device_ip|
-|Normalized Schema|lower|
 |Normalized Schema|user_username|
 
 

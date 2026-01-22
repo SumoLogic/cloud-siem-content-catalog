@@ -25,8 +25,6 @@ This rule looks for failed SMB login attempts.
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|bro_smb_command.name|
-|Normalized Schema|bro_smb_command.status|
 |Normalized Schema|device_hostname|
 |Normalized Schema|device_ip|
 |Normalized Schema|srcDevice_hostname|

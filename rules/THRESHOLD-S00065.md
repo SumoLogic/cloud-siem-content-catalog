@@ -25,7 +25,6 @@ A user performed a significant number of Windows interactive logins to multiple 
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|listMatches|
 |Normalized Schema|logonType|
 |Normalized Schema|metadata_deviceEventId|
 |Normalized Schema|metadata_product|

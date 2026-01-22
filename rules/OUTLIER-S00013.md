@@ -33,8 +33,6 @@ A larger than typical amount of data has been observed being sent outbound from 
 |----|----|
 |Normalized Schema|bytesOut|
 |Normalized Schema|dstDevice_ip_isInternal|
-|Normalized Schema|listMatches|
-|Normalized Schema|objectClassification|
 |Normalized Schema|srcDevice_ip|
 |Normalized Schema|srcDevice_ip_isInternal|
 |Normalized Schema|user_username|

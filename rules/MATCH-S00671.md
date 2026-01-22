@@ -25,10 +25,8 @@ After the configuration recorder is deleted, AWS Config will not record resource
 |Origin|Field|
 |----|----|
 |Normalized Schema|action|
-|Normalized Schema|application|
 |Normalized Schema|device_hostname|
 |Normalized Schema|device_ip|
-|Normalized Schema|listMatches|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|
 |Normalized Schema|srcDevice_hostname|

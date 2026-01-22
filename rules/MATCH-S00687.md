@@ -36,7 +36,6 @@ This rule monitors for usage of the default command or script names associated w
 |Normalized Schema|commandLine|
 |Normalized Schema|device_hostname|
 |Normalized Schema|device_ip|
-|Normalized Schema|lower|
 |Normalized Schema|user_username|
 
 

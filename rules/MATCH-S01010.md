@@ -16,6 +16,7 @@ This rule detects an indicator match from a threat intelligence feed
 |Prototype|False|
 |Tags||
 ## Vendors and Products
+- [Amazon AWS - Route53](../products/e2393771-bda2-414a-8661-0a57069287ad.md)
 - [Bro - Bro](../products/37C866BF-72E1-470A-9072-EDB908F56951.md)
 - [Cato Networks - Cato Networks](../products/168afd8d-2893-4c74-95b1-a975d576ea56.md)
 - [Cisco Systems - Umbrella](../products/5ba50e74-3c05-4ea8-aeaf-5efde588c60f.md)
@@ -35,15 +36,11 @@ This rule detects an indicator match from a threat intelligence feed
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|OR|
-|Normalized Schema|confidence|
 |Normalized Schema|dns_replyIp|
-|Normalized Schema|listMatches|
 |Normalized Schema|srcDevice_hostname|
 |Normalized Schema|srcDevice_ip|
 |Normalized Schema|srcDevice_mac|
 |Normalized Schema|srcDevice_natIp|
-|Normalized Schema|type|
 |Normalized Schema|user_username|
 
 

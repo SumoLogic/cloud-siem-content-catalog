@@ -27,7 +27,6 @@ A first seen model id was observed in AWS Bedrock. The PutFoundationModelEntitle
 |Origin|Field|
 |----|----|
 |Normalized Schema|action|
-|Normalized Schema|application|
 |Direct from Record|fields["responseElements.status"]|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|

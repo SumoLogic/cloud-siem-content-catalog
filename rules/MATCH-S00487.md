@@ -23,18 +23,8 @@ From FireEye Red Team Tool Countermeasures: Network detection rule that looks fo
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|bro_http_response_headers['ACCEPT-RANGES']|
-|Normalized Schema|bro_http_response_headers['CACHE-CONTROL']|
-|Normalized Schema|bro_http_response_headers['CONNECTION']|
-|Normalized Schema|bro_http_response_headers['CONTENT-SECURITY-POLICY']|
-|Normalized Schema|bro_http_response_headers['CONTENT-TYPE']|
-|Normalized Schema|bro_http_response_headers['STRICT-TRANSPORT-SECURITY']|
-|Normalized Schema|bro_http_response_headers['VARY']|
-|Normalized Schema|bro_http_response_headers['X-CACHE']|
-|Normalized Schema|bro_http_response_headers['X-TIMER']|
 |Normalized Schema|device_hostname|
 |Normalized Schema|device_ip|
-|Normalized Schema|objectType|
 |Normalized Schema|srcDevice_hostname|
 |Normalized Schema|srcDevice_ip|
 |Normalized Schema|user_username|

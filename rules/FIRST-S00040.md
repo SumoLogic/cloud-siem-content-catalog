@@ -35,7 +35,6 @@ First Seen execution of cURL by a user from a device. The cURL tool is designed 
 |----|----|
 |Normalized Schema|baseImage|
 |Normalized Schema|device_hostname|
-|Normalized Schema|objectClassification|
 |Normalized Schema|user_username|
 
 

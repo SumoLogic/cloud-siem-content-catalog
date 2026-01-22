@@ -23,7 +23,6 @@ Detects role changes. While this is a routine activity, role changes could be us
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|listMatches|
 |Normalized Schema|metadata_deviceEventId|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|

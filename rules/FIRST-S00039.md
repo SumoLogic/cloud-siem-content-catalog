@@ -28,9 +28,7 @@ A user has executed a mdfind command not seen since the baseline period. The mdf
 |Origin|Field|
 |----|----|
 |Normalized Schema|baseImage|
-|Normalized Schema|com.grammarly.ProjectLlama|
 |Normalized Schema|commandLine|
-|Normalized Schema|matches|
 |Normalized Schema|parentBaseImage|
 |Normalized Schema|user_username|
 

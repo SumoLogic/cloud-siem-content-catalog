@@ -23,10 +23,6 @@ Doublepulsar scans to check if the host is already infected before attempting to
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|bro_smb_command.name|
-|Normalized Schema|bro_smb_command.status|
-|Normalized Schema|bro_smb_command.subCommand|
-|Normalized Schema|listMatches|
 |Normalized Schema|srcDevice_ip|
 
 

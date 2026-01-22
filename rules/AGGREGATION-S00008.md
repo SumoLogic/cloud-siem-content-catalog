@@ -24,7 +24,6 @@ This rule detects when a user has utilized multiple distinct ASNs when performin
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|distinct_asn|
 |Normalized Schema|metadata_deviceEventId|
 |Normalized Schema|metadata_vendor|
 |Normalized Schema|user_username|

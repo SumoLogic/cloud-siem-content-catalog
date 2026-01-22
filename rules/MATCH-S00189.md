@@ -29,7 +29,6 @@ Detects remote logins by Administrative users. Administrative users are identifi
 |Normalized Schema|logonType|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|
-|Normalized Schema|objectType|
 |Normalized Schema|user_username|
 
 

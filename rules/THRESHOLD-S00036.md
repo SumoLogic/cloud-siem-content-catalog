@@ -32,7 +32,6 @@ The DNS request/response was empty or refused. This may be an indication of DNS 
 |Normalized Schema|dns_query|
 |Normalized Schema|dns_returnCode|
 |Normalized Schema|dstDevice_ip|
-|Normalized Schema|listMatches|
 |Normalized Schema|srcDevice_hostname|
 |Normalized Schema|srcDevice_ip|
 |Normalized Schema|user_username|

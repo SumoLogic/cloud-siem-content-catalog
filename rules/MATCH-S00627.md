@@ -24,7 +24,6 @@ Detect when a change to a GCP Pub/Sub Subscription has been made. This could sto
 |Origin|Field|
 |----|----|
 |Normalized Schema|action|
-|Normalized Schema|listMatches|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|
 |Normalized Schema|srcDevice_ip|

@@ -23,7 +23,6 @@ Generates severity 0 signals for LoginAs Salesforce events. The purpose of this 
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|listMatches|
 |Normalized Schema|metadata_deviceEventId|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|

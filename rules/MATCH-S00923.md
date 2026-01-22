@@ -24,7 +24,6 @@ A user has attempted to invoke a model via AWS Bedrock for which access was deni
 |Origin|Field|
 |----|----|
 |Normalized Schema|action|
-|Normalized Schema|application|
 |Direct from Record|fields["errorCode"]|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|

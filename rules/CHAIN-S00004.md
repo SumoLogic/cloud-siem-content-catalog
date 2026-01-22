@@ -24,7 +24,6 @@ Detects pivoting to an internal host from another internal host. Attackers will 
 |Origin|Field|
 |----|----|
 |Normalized Schema|device_hostname|
-|Normalized Schema|listMatches|
 |Normalized Schema|metadata_deviceEventId|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|

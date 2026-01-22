@@ -46,8 +46,6 @@ This rule detects successful authentications from an IP address associated with 
 |Origin|Field|
 |----|----|
 |Normalized Schema|dstDevice_ip|
-|Normalized Schema|listMatches|
-|Normalized Schema|objectType|
 |Normalized Schema|srcDevice_ip|
 |Normalized Schema|srcDevice_ip_isInternal|
 |Normalized Schema|success|

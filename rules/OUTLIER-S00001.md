@@ -47,7 +47,6 @@ Detects excessive failed login attempts for the same username based on a daily o
 - [Okta - Single Sign-On](../products/51278354-d6b5-4c8e-a8fd-8197df334e67.md)
 - [OneLogin - OneLogin Single Sign-On](../products/e43ba0e4-1e3f-40c6-8bca-cb06a656a40b.md)
 - [OpenVPN - OpenVPN](../products/9f6d624f-6d8f-43c7-a4b0-51179061631c.md)
-- [Oracle - Oracle Cloud Infrastructure](../products/37a906de-5e9c-475e-881a-65a1d984f377.md)
 - [Palo Alto Networks - GlobalProtect](../products/b0fe0dde-4e19-4712-957b-1ea7418c132e.md)
 - [Palo Alto Networks - Next Generation Firewall](../products/46f5fa2c-1a62-4692-82ad-ed87800a0adb.md)
 - [PingIdentity - PingFederate](../products/b0a0ae6d-dd5b-450c-9d68-36d6c61c67b0.md)
@@ -67,12 +66,10 @@ Detects excessive failed login attempts for the same username based on a daily o
 |Origin|Field|
 |----|----|
 |Direct from Record|fields['resultType']|
-|Normalized Schema|listMatches|
 |Normalized Schema|metadata_deviceEventId|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|
 |Normalized Schema|normalizedAction|
-|Normalized Schema|objectType|
 |Normalized Schema|success|
 |Normalized Schema|user_username|
 

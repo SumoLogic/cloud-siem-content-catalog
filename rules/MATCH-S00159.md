@@ -28,7 +28,6 @@ Microsoft’s Net.exe can be used for multiple Discovery tactics, including Pass
 |Normalized Schema|commandLine|
 |Normalized Schema|device_hostname|
 |Normalized Schema|device_ip|
-|Normalized Schema|listMatches|
 |Normalized Schema|user_username|
 
 

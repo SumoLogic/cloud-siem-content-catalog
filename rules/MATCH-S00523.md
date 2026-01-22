@@ -23,7 +23,6 @@ This rule looks for the creation of WMI permanent event subscriptions.
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|SCM|
 |Normalized Schema|description|
 |Normalized Schema|device_hostname|
 |Normalized Schema|device_ip|

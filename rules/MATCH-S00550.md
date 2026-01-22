@@ -27,7 +27,6 @@ This rule detects writes to the recycle bin by a process other than explorer.exe
 |Normalized Schema|device_hostname|
 |Normalized Schema|device_ip|
 |Normalized Schema|file_path|
-|Normalized Schema|lower|
 |Normalized Schema|metadata_deviceEventId|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|

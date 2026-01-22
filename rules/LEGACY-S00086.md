@@ -26,7 +26,6 @@ A server responded on a SSL or TLS service using a certificate with a future-dat
 |Normalized Schema|device_hostname|
 |Normalized Schema|device_ip|
 |Normalized Schema|dstDevice_ip|
-|Normalized Schema|listMatches|
 |Normalized Schema|metadata_deviceEventId|
 |Normalized Schema|metadata_product|
 |Normalized Schema|srcDevice_hostname|

@@ -23,7 +23,6 @@ This signal identifies external sources connecting to file shares.  Do to the vu
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|bro_smb_file.action|
 |Normalized Schema|device_hostname|
 |Normalized Schema|device_ip|
 |Normalized Schema|dstDevice_ip_isInternal|

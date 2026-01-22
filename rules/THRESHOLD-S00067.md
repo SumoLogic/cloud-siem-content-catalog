@@ -25,8 +25,6 @@ An attack against CVE-2020-1472 may create thousands of NetrServerReqChallenge &
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|bro_dceRpc_endpoint|
-|Normalized Schema|bro_dceRpc_operation|
 |Normalized Schema|device_hostname|
 |Normalized Schema|device_ip|
 |Normalized Schema|dstDevice_ip|

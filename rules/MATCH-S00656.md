@@ -23,7 +23,6 @@ Monitors for unrecognized container images that may indicate an attempt to bypas
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|listMatches|
 |Normalized Schema|metadata_product|
 |Normalized Schema|resource|
 |Normalized Schema|user_username|

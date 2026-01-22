@@ -32,6 +32,7 @@ Detects multiple failed login attempts for the same username over a 24 hour time
 - [Fortinet - Fortigate](../products/c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad.md)
 - [Google - Google Workspace](../products/e73cd65a-7a4b-4ce9-9d73-e5d9c824c214.md)
 - [HP - Aruba ClearPass](../products/12aba181-2b31-472c-a685-2be492f4778d.md)
+- [JumpCloud - Directory Insights](../products/05bfaf47-5e21-4d5f-b724-98960a6fca8a.md)
 - [JumpCloud - IdP](../products/1ed80351-d779-4f1f-9ddb-b3881f19d487.md)
 - [Linux - Linux OS Syslog](../products/0e20c932-d992-4bd4-b276-c15119ca5c0b.md)
 - [Linux - Systemd Journal](../products/5be5af82-c248-4c4c-a485-0571025f242c.md)
@@ -62,12 +63,10 @@ Detects multiple failed login attempts for the same username over a 24 hour time
 |----|----|
 |Normalized Schema|device_hostname|
 |Direct from Record|fields['resultType']|
-|Normalized Schema|listMatches|
 |Normalized Schema|metadata_deviceEventId|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|
 |Normalized Schema|normalizedAction|
-|Normalized Schema|objectType|
 |Normalized Schema|srcDevice_hostname|
 |Normalized Schema|srcDevice_ip|
 |Normalized Schema|success|

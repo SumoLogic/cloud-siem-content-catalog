@@ -24,7 +24,6 @@ A policy was attached to a user, group, or role. By default, IAM denies all acce
 |Origin|Field|
 |----|----|
 |Normalized Schema|action|
-|Normalized Schema|application|
 |Normalized Schema|device_ip|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|

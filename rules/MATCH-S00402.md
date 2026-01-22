@@ -24,7 +24,6 @@ Passes through an alert from an endpoint security product and adjusts the severi
 - [Amazon AWS - Security Hub](../products/d0aebc1c-db4d-440f-b69f-70dae24befff.md)
 - [Bitdefender - GravityZone](../products/046b3623-69fe-409f-9e80-fd3ebef0654f.md)
 - [Box - Box](../products/0472f22e-e3fa-4c9f-a529-8355f671927e.md)
-- [Bro - Bro](../products/37C866BF-72E1-470A-9072-EDB908F56951.md)
 - [Carbon Black - Defense](../products/4448ca62-bb4f-4859-a6a2-d9262f9e48f0.md)
 - [CheckPoint - Avanan](../products/b8956e27-b893-4518-85ff-20835710c3cf.md)
 - [Cisco Systems - Advanced Malware Protection (AMP)](../products/7eaa4c44-5b7f-4d9e-8c1c-c4105c2b7506.md)

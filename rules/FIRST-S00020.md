@@ -30,7 +30,6 @@ A user has consented to application permissions for the first time since the bas
 |Normalized Schema|application|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|
-|Normalized Schema|objectType|
 |Normalized Schema|user_username|
 
 

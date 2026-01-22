@@ -50,9 +50,6 @@ Observes for an outlier in URL length sourcing from an IP Address based on a dai
 |----|----|
 |Normalized Schema|http_url|
 |Normalized Schema|http_userAgent|
-|Normalized Schema|isEmpty|
-|Normalized Schema|listMatches|
-|Normalized Schema|objectType|
 |Normalized Schema|srcDevice_ip|
 
 

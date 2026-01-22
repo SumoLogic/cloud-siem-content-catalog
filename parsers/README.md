@@ -186,6 +186,7 @@ The `type` listed lets you know if you can directly apply the parser to a collec
 |Parser|/Parsers/System/Mindpoint Group/Mindpoint Group Keeper|
 |Parser|/Parsers/System/Miro/Miro Audit C2C|
 |Parser|/Parsers/System/Netskope/Netskope Security Cloud JSON|
+|Parser|/Parsers/System/Netskope/Netskope WebTx|
 |Parser|/Parsers/System/Nginx/Nginx Syslog|
 |Parser|/Parsers/System/OCSF/OCSF|
 |Parser|/Parsers/System/OSSEC/OSSEC JSON|
@@ -259,6 +260,7 @@ The `type` listed lets you know if you can directly apply the parser to a collec
 |Parser|/Parsers/System/Trend Micro/Trend Micro Vision One|
 |Parser|/Parsers/System/Trust Login/Trust Login|
 |Parser|/Parsers/System/Twistlock/Twistlock|
+|Parser|/Parsers/System/Ubiquiti/Ubiquiti Unifi|
 |Parser|/Parsers/System/VMware/Carbon Black Cloud|
 |Parser|/Parsers/System/VMware/VMware Avi Load Balancer|
 |Parser|/Parsers/System/VMware/VMware ESXi|

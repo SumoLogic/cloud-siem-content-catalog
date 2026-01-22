@@ -24,7 +24,6 @@ Deleting cryptographic key material managed by KMS can be risky. The risk is tha
 |Origin|Field|
 |----|----|
 |Normalized Schema|action|
-|Normalized Schema|application|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|
 |Normalized Schema|srcDevice_ip|

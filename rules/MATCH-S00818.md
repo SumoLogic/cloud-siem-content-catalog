@@ -23,7 +23,6 @@ Azure Primary Refresh Tokens (PRT) can be used to authenticate  to Azure Active 
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|application|
 |Normalized Schema|errorCode|
 |Direct from Record|fields['properties.incomingTokenType']|
 |Direct from Record|fields['properties.userAgent']|

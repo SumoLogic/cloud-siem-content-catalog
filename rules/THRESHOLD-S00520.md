@@ -34,7 +34,6 @@ Single host with multiple malware infections with the same signature in a short 
 |----|----|
 |Normalized Schema|device_hostname|
 |Normalized Schema|device_ip|
-|Normalized Schema|lower|
 |Normalized Schema|threat_name|
 |Normalized Schema|threat_ruleType|
 |Normalized Schema|user_username|

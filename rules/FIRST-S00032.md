@@ -30,8 +30,6 @@ Kubectl can be used to administer Kubernetes clusters, this alert looks for a fi
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|isBlank|
-|Normalized Schema|objectType|
 |Normalized Schema|user_username|
 
 

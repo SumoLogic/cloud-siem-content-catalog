@@ -28,7 +28,6 @@ Attackers will often host malicious code on pastebin.com and attempt to download
 |Normalized Schema|dstDevice_ip_isInternal|
 |Normalized Schema|http_hostname|
 |Normalized Schema|http_url_path|
-|Normalized Schema|listMatches|
 |Normalized Schema|srcDevice_ip|
 |Normalized Schema|user_username|
 

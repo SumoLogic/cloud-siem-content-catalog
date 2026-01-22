@@ -25,7 +25,6 @@ Observes for a tool and export tied to the Equation Group
 |----|----|
 |Normalized Schema|baseImage|
 |Normalized Schema|commandLine|
-|Normalized Schema|commandline|
 |Normalized Schema|device_hostname|
 |Normalized Schema|user_username|
 

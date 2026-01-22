@@ -29,7 +29,6 @@ This rule will trigger when a new ASN value is associated with a successful Entr
 |Normalized Schema|errorCode|
 |Normalized Schema|metadata_deviceEventId|
 |Normalized Schema|metadata_product|
-|Normalized Schema|objectType|
 |Normalized Schema|success|
 |Normalized Schema|user_username|
 

@@ -31,7 +31,6 @@ Network sniffing refers to using the network interface on a system to monitor or
 |Normalized Schema|commandLine|
 |Normalized Schema|device_hostname|
 |Normalized Schema|device_ip|
-|Normalized Schema|listMatches|
 |Normalized Schema|user_username|
 
 

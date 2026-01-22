@@ -25,10 +25,8 @@ This rule looks for a host scanning other SMB hosts for specific commands simila
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|bro_smb_command.name|
 |Normalized Schema|device_hostname|
 |Normalized Schema|device_ip|
-|Normalized Schema|listMatches|
 |Normalized Schema|srcDevice_hostname|
 |Normalized Schema|srcDevice_ip|
 |Normalized Schema|user_username|

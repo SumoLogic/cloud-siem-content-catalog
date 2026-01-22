@@ -24,7 +24,6 @@ Shows RemoteInteractive logons, such as RDP sessions, to domain controllers. Req
 |Origin|Field|
 |----|----|
 |Normalized Schema|dstDevice_hostname|
-|Normalized Schema|listMatches|
 |Normalized Schema|logonType|
 |Normalized Schema|metadata_deviceEventId|
 |Normalized Schema|metadata_product|
