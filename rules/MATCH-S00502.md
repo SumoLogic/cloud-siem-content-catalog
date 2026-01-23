@@ -18,7 +18,6 @@ Note that this rule requires the creation and population of a match list for kno
 |Prototype|False|
 |Tags|_mitreAttackTactic:TA0008, _mitreAttackTactic:TA0011, _mitreAttackTechnique:T1219, _mitreAttackTechnique:T1021.001, _mitreAttackTechnique:T1021|
 ## Vendors and Products
-- [Amazon AWS - Network Firewall](../products/3a82061c-2ca3-4289-9c9b-78756001aa38.md)
 - [Amazon AWS - VpcFlowLogs](../products/021d1ded-1c82-4663-bf5d-d6ed5170efa3.md)
 - [CheckPoint - Firewall and VPN](../products/c3c1a4fc-10cc-4155-8a30-a3bb14fc9f31.md)
 - [Cisco Systems - ASA](../products/be4f7473-fe69-4311-8859-3561900060bf.md)
