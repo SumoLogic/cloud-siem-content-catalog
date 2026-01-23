@@ -279,6 +279,7 @@ Below is a full list of products supported by Cloud SIEM.
 |[Trend Micro](../vendors/8af48b83-18bf-4233-ad51-db37baca0313.md)|[Vision One](72a5ddec-abb9-41ff-a2da-6a58beff980c.md)|
 |[Trust Login](../vendors/78eae2f3-199e-48ca-aaf6-53f6a19e854a.md)|[Trust Login](ca37057c-0d7b-452c-b5b4-948b699262ed.md)|
 |[Twistlock](../vendors/97C36046-B516-41F8-9751-4C788AA33785.md)|[Twistlock](581D3DD8-4DA7-4192-9E49-320D7AFB8B53.md)|
+|[Ubiquiti](../vendors/db4186e3-ba81-4a46-9012-2d30db803eac.md)|[Unifi](f40bb096-5f28-45f0-89db-af1f633acdd5.md)|
 |[VMware](../vendors/fbf25b91-89f1-45c4-903d-664b328bc6e0.md)|[Avi Load Balancer](c298e994-afae-4a4e-984d-e51e27be83ab.md)|
 |[VMware](../vendors/fbf25b91-89f1-45c4-903d-664b328bc6e0.md)|[Carbon Black Cloud](f9cea291-9030-4e41-9836-6dd9274d6df4.md)|
 |[VMware](../vendors/fbf25b91-89f1-45c4-903d-664b328bc6e0.md)|[ESXi](8151e52c-df0d-42d2-978f-2d17e24ae41c.md)|
