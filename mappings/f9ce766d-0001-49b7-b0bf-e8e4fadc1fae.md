@@ -1,4 +1,4 @@
-# [Mappings](README.md): Unifi Http Request Logs
+# [Mappings](README.md): Unifi HTTP Request Logs
 
 ## Input Requirements
 

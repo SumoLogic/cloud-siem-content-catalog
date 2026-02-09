@@ -9,6 +9,7 @@ Below is a full list of products supported by Cloud SIEM.
 |[Adaxes](../vendors/87fd53e1-0bfd-4e53-9979-4fb6ec196cc2.md)|[Adaxes](4572a37e-bff1-44bd-9e55-3b67dad06bfe.md)|
 |[Airtable](../vendors/38db1e35-cb46-4a49-ae8c-b6f766ff5378.md)|[Airtable Audit](bee5bdb2-df30-4c71-9c13-fe207a101bb3.md)|
 |[Akamai](../vendors/47292522-c7f4-4c0e-9ab5-4426c0215be3.md)|[CPC](6802abc5-262a-4f1c-9d6f-45c847db5bc5.md)|
+|[Akamai](../vendors/47292522-c7f4-4c0e-9ab5-4426c0215be3.md)|[Noname API Security](f92126c2-e9fc-43d1-bd1a-be8273db2991.md)|
 |[Akamai](../vendors/47292522-c7f4-4c0e-9ab5-4426c0215be3.md)|[SIEM](9a28f2af-5526-414d-973b-c3fc7984b8a1.md)|
 |[Akamai](../vendors/47292522-c7f4-4c0e-9ab5-4426c0215be3.md)|[Web Application Firewall](ae07663e-2c2c-4932-be5d-c9f985e95276.md)|
 |[Alert Logic](../vendors/2d3caafe-6797-48fd-8b34-be92acd326ee.md)|[Alert Logic](03fee4d2-a777-47a6-94d6-55a00dc6ea16.md)|
@@ -38,6 +39,7 @@ Below is a full list of products supported by Cloud SIEM.
 |[Amazon AWS](../vendors/210d6727-ac50-468e-ab00-1f7586845326.md)|[VPN](c49882a3-1b3b-4c21-858a-9fd58b05f715.md)|
 |[Amazon AWS](../vendors/210d6727-ac50-468e-ab00-1f7586845326.md)|[VpcFlowLogs](021d1ded-1c82-4663-bf5d-d6ed5170efa3.md)|
 |[Amazon AWS](../vendors/210d6727-ac50-468e-ab00-1f7586845326.md)|[Web Application Firewall (WAF)](072b85a2-1765-45c2-911d-b0509880326e.md)|
+|[Anthropic](../vendors/2433b6be-1e45-4b8d-bebc-d8d3740a50f3.md)|[Claude Code](eabd9eed-b071-4773-ad07-706ea5b51b9c.md)|
 |[Apache](../vendors/c6fc7838-0007-4966-90aa-b7704fd70eac.md)|[Apache HTTP Server](6787d77a-1ee0-43d4-8ca0-96af8ee755bc.md)|
 |[Aqua](../vendors/0531e9df-c128-4c67-9a81-66ffcce41f9a.md)|[Aqua](4c2a186d-6aa5-47da-a6af-7fddfe16b528.md)|
 |[Asana](../vendors/75e181b5-7296-4332-aed6-484f81d15284.md)|[Asana Audit](7465af5e-516d-40dc-9535-9b463de0660d.md)|
@@ -218,6 +220,7 @@ Below is a full list of products supported by Cloud SIEM.
 |[ObserveIT](../vendors/BBBEB05C-6CFE-4BF8-8AA6-73CD73DF2464.md)|[ObserveIT](04C2FBF4-C741-4D08-8838-F4C0304314CB.md)|
 |[Okta](../vendors/d8d14556-180c-4463-90da-d8b8600f7362.md)|[Single Sign-On](51278354-d6b5-4c8e-a8fd-8197df334e67.md)|
 |[OneLogin](../vendors/e34a3430-613f-47c0-9ddd-a320bc3e5c4d.md)|[OneLogin Single Sign-On](e43ba0e4-1e3f-40c6-8bca-cb06a656a40b.md)|
+|[OpenAI](../vendors/a9b2c3d4-5e6f-7a8b-9c0d-1e2f3a4b5c6d.md)|[OpenAI Audit](7f8a9b0c-1d2e-3f4a-5b6c-7d8e9f0a1b2c.md)|
 |[OpenSSH](../vendors/d0bf0b9f-162e-4d1e-9b89-38e8d526a434.md)|[sshd](940dba19-cb65-4768-bf97-75bf5433ddd4.md)|
 |[OpenVPN](../vendors/8e5a85b3-a95e-47d9-adcf-bb543e6580c0.md)|[OpenVPN](9f6d624f-6d8f-43c7-a4b0-51179061631c.md)|
 |[Oracle](../vendors/0e66d36a-e289-459a-9184-78885dd2223a.md)|[Oracle Cloud Infrastructure](37a906de-5e9c-475e-881a-65a1d984f377.md)|

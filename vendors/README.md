@@ -8,11 +8,12 @@ Below is a full list of vendors for which there are supported products in Cloud 
 |[Abnormal Security](9a831235-b5bc-4119-818b-99f76e9743c6.md)|1|
 |[Adaxes](87fd53e1-0bfd-4e53-9979-4fb6ec196cc2.md)|1|
 |[Airtable](38db1e35-cb46-4a49-ae8c-b6f766ff5378.md)|1|
-|[Akamai](47292522-c7f4-4c0e-9ab5-4426c0215be3.md)|3|
+|[Akamai](47292522-c7f4-4c0e-9ab5-4426c0215be3.md)|4|
 |[Alert Logic](2d3caafe-6797-48fd-8b34-be92acd326ee.md)|1|
 |[Alibaba](d7de27e2-7680-48a0-96aa-1c26cf8d1ca4.md)|1|
 |[AlphaSOC](84ffd6de-c32b-49fe-88cb-d3e744df4141.md)|1|
 |[Amazon AWS](210d6727-ac50-468e-ab00-1f7586845326.md)|25|
+|[Anthropic](2433b6be-1e45-4b8d-bebc-d8d3740a50f3.md)|1|
 |[Apache](c6fc7838-0007-4966-90aa-b7704fd70eac.md)|1|
 |[Aqua](0531e9df-c128-4c67-9a81-66ffcce41f9a.md)|1|
 |[Asana](75e181b5-7296-4332-aed6-484f81d15284.md)|1|
@@ -104,6 +105,7 @@ Below is a full list of vendors for which there are supported products in Cloud 
 |[ObserveIT](BBBEB05C-6CFE-4BF8-8AA6-73CD73DF2464.md)|1|
 |[Okta](d8d14556-180c-4463-90da-d8b8600f7362.md)|1|
 |[OneLogin](e34a3430-613f-47c0-9ddd-a320bc3e5c4d.md)|1|
+|[OpenAI](a9b2c3d4-5e6f-7a8b-9c0d-1e2f3a4b5c6d.md)|1|
 |[OpenSSH](d0bf0b9f-162e-4d1e-9b89-38e8d526a434.md)|1|
 |[OpenVPN](8e5a85b3-a95e-47d9-adcf-bb543e6580c0.md)|1|
 |[Oracle](0e66d36a-e289-459a-9184-78885dd2223a.md)|1|

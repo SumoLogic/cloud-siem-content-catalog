@@ -23,6 +23,7 @@ Detects a critical Windows service, such as Microsoft Defender or Windows Firewa
 
 |Origin|Field|
 |----|----|
+|Normalized Schema|baseImage|
 |Normalized Schema|commandLine|
 |Normalized Schema|device_hostname|
 |Normalized Schema|device_ip|
