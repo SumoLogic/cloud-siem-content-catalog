@@ -10,8 +10,10 @@
 |MATCH-S00554|[Outbound IRC Traffic](../rules/MATCH-S00554.md)|
 |CHAIN-S00024|[RDP Brute Force Login Attempt](../rules/CHAIN-S00024.md)|
 |MATCH-S01007|[Threat Intel - Destination Device Hostname](../rules/MATCH-S01007.md)|
+|MATCH-S01026|[Threat Intel - Destination IP Address (Low Confidence)](../rules/MATCH-S01026.md)|
 |MATCH-S00555|[Threat Intel - Inbound Traffic Context](../rules/MATCH-S00555.md)|
 |LEGACY-S00107|[Threat Intel Match - IP Address](../rules/LEGACY-S00107.md)|
+|MATCH-S00559|[Traffic to Honeypot IP](../rules/MATCH-S00559.md)|
 
 
 ## Log Mappers

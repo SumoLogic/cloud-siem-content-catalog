@@ -24,6 +24,7 @@ This rule detects an indicator match from a threat intelligence feed
 - [CrowdStrike - FDR](../products/569a3a44-c29f-492e-bcf4-5dc04e2ab0f3.md)
 - [Extrahop - Reveal(x)](../products/78150d37-623d-471b-b7c9-fdefcadd21fa.md)
 - [Fortinet - Fortigate](../products/c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad.md)
+- [Infoblox - Network Identity Operating System](../products/43808f4c-15e9-480c-ab1a-38bdef3b6798.md)
 - [Microsoft - DNS](../products/e362ae18-9af1-496d-9ace-efa05a8381c6.md)
 - [Microsoft - Windows](../products/1ff7546c-cb36-4a24-87f7-89d2cecc5761.md)
 - [Netskope - Security Cloud](../products/B3582ED2-1A0C-452D-9802-97433D143486.md)

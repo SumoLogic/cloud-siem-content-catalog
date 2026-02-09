@@ -27,7 +27,6 @@ First Seen rule which triggers when there are at least two successful logins fro
 - [Box - Box](../products/0472f22e-e3fa-4c9f-a529-8355f671927e.md)
 - [Cisco Systems - ASA](../products/be4f7473-fe69-4311-8859-3561900060bf.md)
 - [Cisco Systems - Identity Services Engine](../products/153794da-09e8-48fe-b511-1306fbb94d07.md)
-- [Cisco Systems - Router and Switch IOS](../products/1abefd5b-ec3d-49c1-8a54-7e6363d52db0.md)
 - [Citrix - ADC](../products/d3606245-76d3-4173-a2fe-832c0e71b0f9.md)
 - [Cyber-Ark - CyberArk Audit](../products/54f01856-e973-4d7b-a3eb-95cc08ff44f5.md)
 - [Databricks - Databricks Audit](../products/b32a58b9-8bfd-4b1d-8b68-91611fe5c37e.md)
@@ -56,7 +55,6 @@ First Seen rule which triggers when there are at least two successful logins fro
 - [Slack - Slack](../products/79da6240-7617-49c8-b130-96278579766e.md)
 - [Snowflake - Snowflake](../products/8276b520-fdeb-4f79-9f5d-67865818562b.md)
 - [VMware - ESXi](../products/8151e52c-df0d-42d2-978f-2d17e24ae41c.md)
-- [Workday - Workday](../products/0438df6b-16ba-4da7-a7a7-626316d0061f.md)
 - [Zendesk - Zendesk](../products/a301559a-8110-4dd0-a41d-35b9baa1c740.md)
 
 

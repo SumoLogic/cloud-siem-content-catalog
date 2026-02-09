@@ -29,6 +29,7 @@
 |dns_returnCode|dnsReturnCode||
 |dstDevice_ip|dstdeviceIP||
 |http_category|categories||
+|http_url|https://%s||
 |normalizedAction|action|This is a lookup field. More info to come in the catalog later...|
 |srcDevice_hostname|Anyconnect Roaming Client||
 |srcDevice_ip|internal_ip||

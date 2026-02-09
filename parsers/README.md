@@ -28,7 +28,9 @@ The `type` listed lets you know if you can directly apply the parser to a collec
 |Parser|/Parsers/System/Adaxes/Adaxes Syslog|
 |Parser|/Parsers/System/Airtable/Airtable Audit C2C|
 |Parser|/Parsers/System/Akamai/Akamai CPC|
+|Parser|/Parsers/System/Akamai/Noname API Security|
 |Parser|/Parsers/System/Alert Logic/Alert Logic|
+|Parser|/Parsers/System/Anthropic/Claude Code|
 |Parser|/Parsers/System/Apache/Apache HTTP Server|
 |Parser|/Parsers/System/Aqua/Aqua JSON|
 |Parser|/Parsers/System/Asana/Asana Audit|
@@ -192,6 +194,7 @@ The `type` listed lets you know if you can directly apply the parser to a collec
 |Parser|/Parsers/System/OSSEC/OSSEC JSON|
 |Parser|/Parsers/System/Okta/Okta|
 |Parser|/Parsers/System/OneLogin/OneLogin SSO JSON|
+|Parser|/Parsers/System/OpenAI/OpenAI Audit|
 |Parser|/Parsers/System/OpenVPN/OpenVPN Syslog|
 |Parser|/Parsers/System/Oracle/Oracle Cloud Infrastructure|
 |Parser|/Parsers/System/Orca Security/Orca Security|
