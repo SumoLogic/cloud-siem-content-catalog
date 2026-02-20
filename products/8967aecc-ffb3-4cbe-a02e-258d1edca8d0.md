@@ -4,8 +4,6 @@
 
 |Rule ID|Rule Name|
 |----|----|
-|MATCH-S00686|[Base64 Decode in Command Line](../rules/MATCH-S00686.md)|
-|FIRST-S00040|[First Seen cURL execution from User](../rules/FIRST-S00040.md)|
 |MATCH-S00402|[Normalized Security Signal](../rules/MATCH-S00402.md)|
 |LEGACY-S00108|[Threat Intel - Matched File Hash](../rules/LEGACY-S00108.md)|
 |MATCH-S01003|[Threat Intel - SHA1 Match](../rules/MATCH-S01003.md)|
