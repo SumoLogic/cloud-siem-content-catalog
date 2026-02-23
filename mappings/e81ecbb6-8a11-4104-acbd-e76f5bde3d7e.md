@@ -20,7 +20,7 @@
 ## Fields Mapped
 
 |Cloud SIEM Schema Field|Original Record Key|Notes|
-|-----------------------|-------------------|-----|
+|----------------|-------------------|-----|
 |device_hostname|Hostname||
 |device_ip|IP||
 |normalizedSeverity|None|The static text `0` is populated in this schema field.|

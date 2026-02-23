@@ -20,7 +20,7 @@
 ## Fields Mapped
 
 |Cloud SIEM Schema Field|Original Record Key|Notes|
-|-----------------------|-------------------|-----|
+|----------------|-------------------|-----|
 |baseImage|syslog_process||
 |changeTarget|switched_user||
 |device_hostname|syslog_hostname||

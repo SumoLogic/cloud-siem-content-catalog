@@ -20,7 +20,7 @@
 ## Fields Mapped
 
 |Cloud SIEM Schema Field|Original Record Key|Notes|
-|-----------------------|-------------------|-----|
+|----------------|-------------------|-----|
 |baseImage|sourceProcessInfo.name||
 |commandLine|sourceProcessInfo.commandline||
 |description|ruleInfo.description||

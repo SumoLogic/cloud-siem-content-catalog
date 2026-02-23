@@ -20,7 +20,7 @@
 ## Fields Mapped
 
 |Cloud SIEM Schema Field|Original Record Key|Notes|
-|-----------------------|-------------------|-----|
+|----------------|-------------------|-----|
 |accountId|accountId||
 |description|title||
 |device_ip|service.action.awsApiCallAction.remoteIpDetails.ipAddressV4||

@@ -20,7 +20,7 @@
 ## Fields Mapped
 
 |Cloud SIEM Schema Field|Original Record Key|Notes|
-|-----------------------|-------------------|-----|
+|----------------|-------------------|-----|
 |baseImage|threat_indicators.process_name||
 |device_hostname|device_name||
 |file_hash_md5|threat_cause_actor_md5||

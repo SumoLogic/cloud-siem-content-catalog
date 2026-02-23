@@ -20,7 +20,7 @@
 ## Fields Mapped
 
 |Cloud SIEM Schema Field|Original Record Key|Notes|
-|-----------------------|-------------------|-----|
+|----------------|-------------------|-----|
 |action|params.events.main_action||
 |baseImage|params.events.file_path||
 |commandLine|params.events.process_command_line||

@@ -20,7 +20,7 @@
 ## Fields Mapped
 
 |Cloud SIEM Schema Field|Original Record Key|Notes|
-|-----------------------|-------------------|-----|
+|----------------|-------------------|-----|
 |action|None|The static text `Error in Delivery` is populated in this schema field.|
 |description|None|The static text `A temporary error occurred when Gmail tried to deliver the message, and the message has been scheduled for retry. This is usually caused by external or internal servers that are temporarily unavailable.` is populated in this schema field.|
 |email_messageId|message_info.rfc2822_message_id||

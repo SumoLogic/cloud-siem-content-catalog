@@ -20,7 +20,7 @@
 ## Fields Mapped
 
 |Cloud SIEM Schema Field|Original Record Key|Notes|
-|-----------------------|-------------------|-----|
+|----------------|-------------------|-----|
 |changeType|None|The static text `Permissions on an object were changed` is populated in this schema field.|
 |description|None|The static text `Permissions on an object were changed` is populated in this schema field.|
 |device_hostname|Computer||

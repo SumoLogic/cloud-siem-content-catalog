@@ -20,7 +20,7 @@
 ## Fields Mapped
 
 |Cloud SIEM Schema Field|Original Record Key|Notes|
-|-----------------------|-------------------|-----|
+|----------------|-------------------|-----|
 |description|event.IncidentDescription||
 |device_hostname|event.EndPointName||
 |device_ip|event.EndpointIp||

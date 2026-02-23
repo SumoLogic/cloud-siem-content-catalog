@@ -20,11 +20,11 @@
 ## Fields Mapped
 
 |Cloud SIEM Schema Field|Original Record Key|Notes|
-|-----------------------|-------------------|-----|
+|----------------|-------------------|-----|
 |description|msg||
 |device_hostname|syslog_hostname||
-|errorText|error||
-|http_method|request_type||
-|http_url|request_url||
-|pid|process_id||
+|errorText|failure_reason||
+|http_method|http_method||
+|http_url|url||
+|pid|pid||
 
