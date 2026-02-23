@@ -5,8 +5,8 @@
 |File|Description|
 |----|-----------|
 |[rules.csv](rules.csv)|The entire rule set in a CSV|
-|[threat_rules.csv](threat_rules.csv)|Each [normalized threat rule](https://help.sumologic.com/docs/cse/rules/normalized-threat-rules/) and its associated mappings using the `threat_ruleType` schema field.|
-|[auth_rules.csv](auth_rules.csv)|Each [normalized authentication rule](https://help.sumologic.com/docs/cse/rules/normalized-authentication-rules/) and its associated mappings using the `normalizedAction` schema field.|
+|[threat_rules.csv](threat_rules.csv)|Each [normalized threat rule](https://help.sumologic.com/Cloud_SIEM_Enterprise/CSE_Schema/Field_Mapping_for_Security_Event_Sources) and its assoicated mappings using the `threat_ruleType` schema field.|
+|[auth_rules.csv](auth_rules.csv)|Each [normalized authentication rule](https://help.sumologic.com/Cloud_SIEM_Enterprise/CSE_Rules/Normalized_Authentication_Rules) and its assoicated mappings using the `normalizedAction` schema field.|
 
 ## All Rules
 
@@ -210,6 +210,7 @@
 |MATCH-S00388|[COMPlus_ETWEnabled Command Line Arguments](MATCH-S00388.md)|
 |MATCH-S00727|[CPL File Executed from Temp Directory](MATCH-S00727.md)|
 |MATCH-S00209|[CVE-2021-44228 Log4j2 Java Library 0-Day Attempt](MATCH-S00209.md)|
+|MATCH-S01049|[CVE-2025-53770 Detection spinstall0.aspx](MATCH-S01049.md)|
 |CHAIN-S00017|[Change of Azure MFA Method followed by Risky SignIn](CHAIN-S00017.md)|
 |MATCH-S00821|[Chromium Browser History Access by Non-Browser Process](MATCH-S00821.md)|
 |MATCH-S00897|[Chromium Extension Installed](MATCH-S00897.md)|
@@ -304,6 +305,7 @@
 |FIRST-S00037|[First Seen AWS EKS Admission Controller Created by IP Address](FIRST-S00037.md)|
 |FIRST-S00035|[First Seen AWS EKS Secrets Enumeration from IP Address](FIRST-S00035.md)|
 |FIRST-S00024|[First Seen AWS SSM RunShellScript SendCommand From User](FIRST-S00024.md)|
+|FIRST-S00075|[First Seen AWS SSM activity by User](FIRST-S00075.md)|
 |FIRST-S00003|[First Seen AWS Secrets Manager API Call from User](FIRST-S00003.md)|
 |LEGACY-S00036|[First Seen Access - SMB Share](LEGACY-S00036.md)|
 |FIRST-S00001|[First Seen Administrative Privileges Granted for User](FIRST-S00001.md)|
@@ -1017,6 +1019,7 @@
 |MATCH-S00884|[macOS - Suspicious Python PIP Execution](MATCH-S00884.md)|
 |MATCH-S00882|[macOS - System Preference Enumeration via Security Binary](MATCH-S00882.md)|
 |MATCH-S00881|[macOS - csrutil status Usage Detected](MATCH-S00881.md)|
+|MATCH-S00916|[macOS - pwpolicy getaccountpolicies usage detected](MATCH-S00916.md)|
 |MATCH-S00726|[macOS Kernel Extension Load](MATCH-S00726.md)|
 |MATCH-S00748|[macOS Login Items Modification](MATCH-S00748.md)|
 |MATCH-S00752|[macOS Startup Items Modifications](MATCH-S00752.md)|

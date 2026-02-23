@@ -28,7 +28,6 @@ Malicious files are often encoded in an attempt to bypass security controls that
 - [Microsoft - Azure](../products/a1225af5-e778-4068-a9a2-47da93d1ff24.md)
 - [Microsoft - Defender Advanced Hunting](../products/3382523e-2072-41bd-b50b-6b148957d0b0.md)
 - [Microsoft - Windows](../products/1ff7546c-cb36-4a24-87f7-89d2cecc5761.md)
-- [SentinelOne - SentinelOne](../products/8967aecc-ffb3-4cbe-a02e-258d1edca8d0.md)
 - [Sysdig - Sysdig](../products/55ec1d4a-6985-4f04-8de5-f9812871fda2.md)
 
 

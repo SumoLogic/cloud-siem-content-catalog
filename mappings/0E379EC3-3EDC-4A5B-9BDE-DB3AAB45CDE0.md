@@ -20,7 +20,7 @@
 ## Fields Mapped
 
 |Cloud SIEM Schema Field|Original Record Key|Notes|
-|-----------------------|-------------------|-----|
+|----------------|-------------------|-----|
 |dstDevice_ip|destination_ip||
 |dstPort|destination_port||
 |srcDevice_hostname|Anyconnect Roaming Client||

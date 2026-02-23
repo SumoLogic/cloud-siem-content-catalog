@@ -20,7 +20,7 @@
 ## Fields Mapped
 
 |Cloud SIEM Schema Field|Original Record Key|Notes|
-|-----------------------|-------------------|-----|
+|----------------|-------------------|-----|
 |action|activity||
 |application|app||
 |device_hostname|hostname||

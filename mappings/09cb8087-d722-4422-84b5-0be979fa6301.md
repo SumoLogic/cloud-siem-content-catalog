@@ -20,7 +20,7 @@
 ## Fields Mapped
 
 |Cloud SIEM Schema Field|Original Record Key|Notes|
-|-----------------------|-------------------|-----|
+|----------------|-------------------|-----|
 |device_hostname|host_name||
 |device_ip|host_local_address||
 |normalizedAction|None|The static text `logon` is populated in this schema field.|

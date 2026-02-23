@@ -20,7 +20,7 @@
 ## Fields Mapped
 
 |Cloud SIEM Schema Field|Original Record Key|Notes|
-|-----------------------|-------------------|-----|
+|----------------|-------------------|-----|
 |action|Action||
 |description|None|The static text `An audit file was downloaded from the web gateway` is populated in this schema field.|
 |device_hostname|Appliance||

@@ -18,7 +18,6 @@ This rule monitors for usage of the default command or script names associated w
 ## Vendors and Products
 - [CrowdStrike - FDR](../products/569a3a44-c29f-492e-bcf4-5dc04e2ab0f3.md)
 - [CrowdStrike - Falcon](../products/840c72e0-4e47-41e7-9b93-31f55d12f07d.md)
-- [Cyber-Ark - Enterprise Password Vault](../products/36f5ca33-0c1e-4223-8215-977ea04425ba.md)
 - [Jamf - Jamf](../products/5c2cc0de-ca31-4ef0-bcfa-133fc8b387ad.md)
 - [Linux - Linux OS Syslog](../products/0e20c932-d992-4bd4-b276-c15119ca5c0b.md)
 - [Linux - Sysmon for Linux](../products/b238758d-ade8-41d2-b32d-c99159e9fd74.md)

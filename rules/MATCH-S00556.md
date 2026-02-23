@@ -20,7 +20,6 @@ This rule detects commonly used data transfer protocols being used over non-stan
 - [Fortinet - Fortigate](../products/c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad.md)
 - [Juniper - SRX Series Firewall](../products/A17B3F3C-04F1-40C8-9497-3C499EB18A74.md)
 - [McAfee - Network Security](../products/1ac6a4c6-c3b6-412b-bd34-bc9f0dd6abdc.md)
-- [Palo Alto Networks - Cortex XDR](../products/146522A1-DC9A-40A5-A909-2EB3B665B1D1.md)
 - [Palo Alto Networks - Next Generation Firewall](../products/46f5fa2c-1a62-4692-82ad-ed87800a0adb.md)
 - [Palo Alto Networks - Prisma Cloud](../products/343b9323-d279-40d9-946f-809242e5cf98.md)
 - [SonicWall - Firewall](../products/951a004d-54bf-441d-98e1-fcc6a032f475.md)

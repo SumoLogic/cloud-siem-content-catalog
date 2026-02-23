@@ -20,7 +20,7 @@
 ## Fields Mapped
 
 |Cloud SIEM Schema Field|Original Record Key|Notes|
-|-----------------------|-------------------|-----|
+|----------------|-------------------|-----|
 |commandLine|UserData.Operation_TemporaryEssStarted.Query||
 |description|RenderingInfo.Message||
 |device_hostname|Computer||

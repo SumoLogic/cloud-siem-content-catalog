@@ -35,6 +35,7 @@ Detects indicators found from SpringCore exploitation attempts.
 - [F5 - F5](../products/ede052db-d472-408f-949c-be642237ef3f.md)
 - [Fortinet - Fortigate](../products/c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad.md)
 - [Google - Google Cloud Platform](../products/dcc85cfc-a698-4d09-87de-f2c723f3ad07.md)
+- [Imperva - Imperva Incapsula](../products/2a236ab1-77d2-4867-a571-a1cfd64528e6.md)
 - [Microsoft - Azure](../products/a1225af5-e778-4068-a9a2-47da93d1ff24.md)
 - [Microsoft - IIS](../products/fca8785d-4823-4442-86b2-8acbaa176da4.md)
 - [Nginx - Nginx](../products/1ce88b4b-d90d-4d50-9a89-3abe83e8d5f8.md)

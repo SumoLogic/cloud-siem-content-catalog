@@ -20,7 +20,7 @@
 ## Fields Mapped
 
 |Cloud SIEM Schema Field|Original Record Key|Notes|
-|-----------------------|-------------------|-----|
+|----------------|-------------------|-----|
 |accountId|x-bluecoat-request-tenant-id||
 |action|s-action||
 |bytesIn|cs-bytes||

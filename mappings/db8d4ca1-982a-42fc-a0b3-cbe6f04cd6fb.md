@@ -20,7 +20,7 @@
 ## Fields Mapped
 
 |Cloud SIEM Schema Field|Original Record Key|Notes|
-|-----------------------|-------------------|-----|
+|----------------|-------------------|-----|
 |action|action||
 |cause|Details||
 |description|None|The static text `A user failed authentication to the web gateway` is populated in this schema field.|

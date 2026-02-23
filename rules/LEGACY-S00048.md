@@ -20,7 +20,6 @@ User-Agent strings used by Houdini/Iniduoh/njRAT malware.
 - [Amazon AWS - CloudFront](../products/44f07c08-c2ad-4a95-a058-1d0737ff90db.md)
 - [Amazon AWS - Web Application Firewall (WAF)](../products/072b85a2-1765-45c2-911d-b0509880326e.md)
 - [Forcepoint - Web Security](../products/e90edc67-68d4-4d67-82f6-4524f94b59bb.md)
-- [Microsoft - IIS](../products/fca8785d-4823-4442-86b2-8acbaa176da4.md)
 
 
 ## Fields Used

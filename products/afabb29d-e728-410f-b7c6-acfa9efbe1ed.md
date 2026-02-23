@@ -27,7 +27,5 @@
 |Log Mapper ID|Log Mapper Name|
 |----|----|
 |0e22eac6-b12e-44b8-95d8-4c984cdb0ab4|[Suricata - JSON](../mappings/0e22eac6-b12e-44b8-95d8-4c984cdb0ab4.md)|
-|8d53d23e-ca67-477d-9e9e-697194abe6c9|[Suricata IDS](../mappings/8d53d23e-ca67-477d-9e9e-697194abe6c9.md)|
-|55ad3632-1b1f-4326-a560-3c462835a38c|[Suricata alerts](../mappings/55ad3632-1b1f-4326-a560-3c462835a38c.md)|
 
 

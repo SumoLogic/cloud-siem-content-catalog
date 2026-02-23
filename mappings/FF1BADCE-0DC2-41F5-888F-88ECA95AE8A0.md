@@ -20,7 +20,7 @@
 ## Fields Mapped
 
 |Cloud SIEM Schema Field|Original Record Key|Notes|
-|-----------------------|-------------------|-----|
+|----------------|-------------------|-----|
 |description|alarm_name||
 |device_hostname|device_name||
 |severity|severity|This is a lookup field. More info to come in the catalog later...|

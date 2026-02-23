@@ -32,7 +32,6 @@ Attackers may use improper URL checking to inject code that is executed on a ser
 - [Microsoft - Azure](../products/a1225af5-e778-4068-a9a2-47da93d1ff24.md)
 - [Microsoft - IIS](../products/fca8785d-4823-4442-86b2-8acbaa176da4.md)
 - [Nginx - Nginx](../products/1ce88b4b-d90d-4d50-9a89-3abe83e8d5f8.md)
-- [Palo Alto Networks - Next Generation Firewall](../products/46f5fa2c-1a62-4692-82ad-ed87800a0adb.md)
 - [Zscaler - Nanolog Streaming Service](../products/6299d728-14f7-455e-85c5-ea8ec65a654a.md)
 
 

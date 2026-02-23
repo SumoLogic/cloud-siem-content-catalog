@@ -20,7 +20,7 @@
 ## Fields Mapped
 
 |Cloud SIEM Schema Field|Original Record Key|Notes|
-|-----------------------|-------------------|-----|
+|----------------|-------------------|-----|
 |cloud_provider|None|The static text `AWS` is populated in this schema field.|
 |cloud_service|None|The static text `Application Insights` is populated in this schema field.|
 |dstPort|listener_port||

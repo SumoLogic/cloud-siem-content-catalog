@@ -1,6 +1,6 @@
 # Products
 
-Below is a full list of products supported by Cloud SIEM.
+Below is a full list of Cloud SIEM products.
 
 |Vendor|Product|
 |------|-------|
@@ -84,6 +84,7 @@ Below is a full list of products supported by Cloud SIEM.
 |[Cisco Systems](../vendors/e2d55f62-8ebb-4d00-b2f9-b55d1fa642bb.md)|[Umbrella](5ba50e74-3c05-4ea8-aeaf-5efde588c60f.md)|
 |[Citrix](../vendors/f3d0223a-78a7-42f6-93cc-3bcd15569a5b.md)|[ADC](d3606245-76d3-4173-a2fe-832c0e71b0f9.md)|
 |[Citrix](../vendors/f3d0223a-78a7-42f6-93cc-3bcd15569a5b.md)|[Cloud](afb6e550-1dfd-4934-b369-e2587c447b09.md)|
+|[Claroty](../vendors/7d7a8243-bd53-417a-93f7-b73f800b1925.md)|[Claroty xDome](8cdfb3fc-8700-4012-bf3d-7dfc147d291b.md)|
 |[Cloudflare](../vendors/4c1c0f12-5d0a-4f0c-918f-c83dca43c967.md)|[Logpush](c2503fcc-ef30-4e40-bb32-0bf47151b140.md)|
 |[Code42](../vendors/f764fde6-a435-42cb-9407-15734a99d657.md)|[Code42](be11069a-30d6-4439-b9c8-9d4f47c13160.md)|
 |[Code42](../vendors/f764fde6-a435-42cb-9407-15734a99d657.md)|[Incydr](cc523ad6-7193-4de5-a254-d0243fca63f3.md)|
@@ -147,6 +148,8 @@ Below is a full list of products supported by Cloud SIEM.
 |[IBM](../vendors/24ace3b6-5dfa-4a4f-a3ed-1c99f3384b34.md)|[WebSEAL Reverse Proxy](58ebda18-c14a-472e-94f8-77a762a10aaa.md)|
 |[ISC](../vendors/1583cfd2-7ece-4060-991b-06dcf8567943.md)|[Bind](1768a42a-37e6-4a2b-aa42-314583f63e1b.md)|
 |[Illumio](../vendors/ca524eee-b1aa-4a59-8d5d-45c765ee9e08.md)|[Adaptive Security Platform](1afb4979-e858-43fe-8a55-87f444f0417b.md)|
+|[Imperva](../vendors/50bd76b3-148f-4b03-9d2f-b70851bc6c2f.md)|[Imperva Incapsula](2a236ab1-77d2-4867-a571-a1cfd64528e6.md)|
+|[Imperva](../vendors/50bd76b3-148f-4b03-9d2f-b70851bc6c2f.md)|[SecureSphere](b04bd88c-7eb5-46e2-8a82-0113add22ee5.md)|
 |[Infoblox](../vendors/fa08cfce-e611-42b7-8317-8b0beca298d5.md)|[DDI](ebf65636-e08d-4560-a692-d7ee9692b7db.md)|
 |[Infoblox](../vendors/fa08cfce-e611-42b7-8317-8b0beca298d5.md)|[Network Identity Operating System](43808f4c-15e9-480c-ab1a-38bdef3b6798.md)|
 |[Intersect Alliance](../vendors/005c835d-f067-4147-9da9-fe4d2691247e.md)|[Snare Enterprise Agent for Windows](d9af8a59-8835-467e-aeea-fd6fc2e210da.md)|
@@ -169,7 +172,6 @@ Below is a full list of products supported by Cloud SIEM.
 |[Libraesva](../vendors/e8ac6d6d-eb75-4e7a-84cd-7156212ec048.md)|[Email Security](ab7d0a45-671f-493e-ab43-4dbac9fba699.md)|
 |[Linux](../vendors/e5727c72-15dd-4cc8-ab4e-0b65ff196f10.md)|[Auditd](5e298fe7-088a-467a-b57f-d8558368621d.md)|
 |[Linux](../vendors/e5727c72-15dd-4cc8-ab4e-0b65ff196f10.md)|[Linux OS Syslog](0e20c932-d992-4bd4-b276-c15119ca5c0b.md)|
-|[Linux](../vendors/e5727c72-15dd-4cc8-ab4e-0b65ff196f10.md)|[Messages](2bc5f043-ed5b-4578-84c4-384244c9e36d.md)|
 |[Linux](../vendors/e5727c72-15dd-4cc8-ab4e-0b65ff196f10.md)|[Sysmon for Linux](b238758d-ade8-41d2-b32d-c99159e9fd74.md)|
 |[Linux](../vendors/e5727c72-15dd-4cc8-ab4e-0b65ff196f10.md)|[Systemd Journal](5be5af82-c248-4c4c-a485-0571025f242c.md)|
 |[Malwarebytes](../vendors/2e08dea2-4048-4f0f-9af8-aa85881151ad.md)|[Malwarebytes Endpoint Protection](e611250c-6b5f-4b40-b84b-329a1d5b391c.md)|
@@ -221,7 +223,6 @@ Below is a full list of products supported by Cloud SIEM.
 |[Okta](../vendors/d8d14556-180c-4463-90da-d8b8600f7362.md)|[Single Sign-On](51278354-d6b5-4c8e-a8fd-8197df334e67.md)|
 |[OneLogin](../vendors/e34a3430-613f-47c0-9ddd-a320bc3e5c4d.md)|[OneLogin Single Sign-On](e43ba0e4-1e3f-40c6-8bca-cb06a656a40b.md)|
 |[OpenAI](../vendors/a9b2c3d4-5e6f-7a8b-9c0d-1e2f3a4b5c6d.md)|[OpenAI Audit](7f8a9b0c-1d2e-3f4a-5b6c-7d8e9f0a1b2c.md)|
-|[OpenSSH](../vendors/d0bf0b9f-162e-4d1e-9b89-38e8d526a434.md)|[sshd](940dba19-cb65-4768-bf97-75bf5433ddd4.md)|
 |[OpenVPN](../vendors/8e5a85b3-a95e-47d9-adcf-bb543e6580c0.md)|[OpenVPN](9f6d624f-6d8f-43c7-a4b0-51179061631c.md)|
 |[Oracle](../vendors/0e66d36a-e289-459a-9184-78885dd2223a.md)|[Oracle Cloud Infrastructure](37a906de-5e9c-475e-881a-65a1d984f377.md)|
 |[Orca Security](../vendors/ab5b4909-20f7-4cf7-b8de-24f4a5b2ba57.md)|[Orca Security](0117ac47-6f9e-46b8-8ab4-2eb69879dc2f.md)|
@@ -295,6 +296,7 @@ Below is a full list of products supported by Cloud SIEM.
 |[Vectra](../vendors/7a3d1a5c-ba67-4597-971f-7057e8f6c8bb.md)|[Cognito](51afd72e-94b0-42f3-b65c-cf8edbacf7cf.md)|
 |[Vectra](../vendors/7a3d1a5c-ba67-4597-971f-7057e8f6c8bb.md)|[Vectra AI](d4a9e7ce-082e-4f41-891f-4c43e604c850.md)|
 |[WatchGuard](../vendors/a6e8752b-5e5d-47b0-8f42-68cd438f5264.md)|[Fireware](14aa46d3-0710-44b6-9ce3-0a6b8f36b076.md)|
+|[Wiz](../vendors/2cde0cac-102b-4756-9a56-81437fea1400.md)|[Wiz](52ac893d-bdf9-4e2c-be83-5f43842a179d.md)|
 |[Workday](../vendors/6e7ce4b2-569e-476d-b732-7b3a71b1e12a.md)|[Workday](0438df6b-16ba-4da7-a7a7-626316d0061f.md)|
 |[Zendesk](../vendors/18db13d4-1574-465b-a203-1c76456e70b4.md)|[Zendesk](a301559a-8110-4dd0-a41d-35b9baa1c740.md)|
 |[Zero Networks](../vendors/3e3c8813-9644-4fd6-9d6f-78bb8ffc5f44.md)|[Segment](cf2af9e8-bade-4f28-8bca-b30aa41baec4.md)|

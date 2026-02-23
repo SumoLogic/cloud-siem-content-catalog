@@ -20,7 +20,7 @@
 ## Fields Mapped
 
 |Cloud SIEM Schema Field|Original Record Key|Notes|
-|-----------------------|-------------------|-----|
+|----------------|-------------------|-----|
 |action|None|The static text `Process Access` is populated in this schema field.|
 |baseImage|EventData.Image||
 |description|None|The static text `Sysmon observed process access` is populated in this schema field.|

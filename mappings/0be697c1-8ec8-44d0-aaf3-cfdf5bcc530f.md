@@ -20,7 +20,7 @@
 ## Fields Mapped
 
 |Cloud SIEM Schema Field|Original Record Key|Notes|
-|-----------------------|-------------------|-----|
+|----------------|-------------------|-----|
 |action|None|The static text `PipeCreated` is populated in this schema field.|
 |baseImage|EventData.Image||
 |changeTarget|EventData.PipeName||
