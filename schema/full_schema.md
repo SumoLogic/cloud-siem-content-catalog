@@ -248,7 +248,6 @@ This is the complete list of schema fields.
 |cloud_zone|string|The cloud infrastucture isolated within a region on which a resource is located or is running.|
 |commandLine|string|The instruction or set of instructions inputted into a text interface such as the command prompt (cmd.exe) or PowerShell in Windows, or terminal on Unix based systems.|
 |cseSignal|map[string]string|Used for signals received via log path e.g. scheduled search alert from CIP.|
-|day|int|Day pulled from the timestamp.|
 |description|string|The summary conveying the high level meaning of a log message in a human readable form. In some circumstances no summary is provided in the log, this field is often manually defined in the mapping as a constant or as a lookup based on event IDs in the log message.|
 |device_container_id|string|The unique identifier provided to a discreet container which packages together the elements required to run software.|
 |device_container_name|string|The name provided to a discreet container which packages together the elements required to run software.|
@@ -408,15 +407,6 @@ In cases where the log data has a source or destination context, there are situa
 |file_uid|string|The data source specific unique identifier for the file, often a GUID.|
 |flowState|string|Value indicating the state (e.g. begin, end, or continue) of a network traffic flow as it enters or exits an interface.|
 |friendlyName|string|Name of the table the data is mapped to. Always Record for V3.|
-|fromUser_authDomain|string|The domain associated with this particular user. (e.g. sumologic.com, sumologic.local)|
-|fromUser_email|string|The associated email address assigned to this user.|
-|fromUser_phoneNumber|string|The telephone number associated with a user.|
-|fromUser_role|string|The role of the user account in question. Typically, this shows up in CloudTrail logs as an assumed role, but can be broadly applied to other logs.|
-|fromUser_userId|string|The source unique identifier for the user account.|
-|fromUser_username|string|The name commonly used to identify the user. May include the domain.  If name normalization occurs, this will be the normalized name.|
-|fromUser_username_raw|string|The raw (un-normalized) version of a username.|
-|fromUser_username_role|string|The role that is parsed out of the normalized username (usually from an AWS assumed role ARN).|
-|hour|int|Hour pulled from the timestamp.|
 |http_category|string|The high level category determined by a service based on the url or domain.|
 |http_contentLength|int|The number of bytes of data in the body of the request.|
 |http_hostname|string|Name of the host within an HTTP request|
@@ -482,7 +472,6 @@ In cases where the log data has a source or destination context, there are situa
 |metadata_vendor|string|The name of the company responsible for the data source.|
 |mfa|boolean|True or false showing whether or not an authentication event was performed with multi-factor authentication.|
 |moduleType|string|Attribute of a file loaded by a process to extend functionality which identifies its file type or otherwise indicating how it is to behave.|
-|month|int|Month pulled from the timestamp.|
 |normalizedAction|string|Complementary to the Action field, this field describes the initiation of an activity in a common way across records. normalizedAction is meant to describe the attempt of an action, using the success boolean as a modifier indicating whether or not the action was successful. Further, normalizedAction should be paired with normalizedResource to indicate where or upon what the initiated action was attempted against.|
 |normalizedCause|string|Complementary to Cause, this field describes the reason for any particular outcome in a record in a common way.|
 |normalizedResource|string|Complementary to Resource, this field describes the resource being acted upon or otherwise referenced within a record in a common way across records. Intended to be used to provide further normalized context to a record, particularly in tandem with normalizedAction.|
@@ -584,6 +573,5 @@ The logs using this field will all be a form of pass through content. Messages t
 |vuln_cvss|string|Common Vulnerability Scoring System (CVSS) score designed to help responders to prioritize their response and resources to a vulnerability.|
 |vuln_name|string|Name that briefly summarizes the nature of a vulnerability. |
 |vuln_reference|string|Additional information on a vulnerability in the form of a link, a specific vendor ID (e.g. MS14-068), or further description.|
-|year|int|Year pulled from the timestamp.|
 
 

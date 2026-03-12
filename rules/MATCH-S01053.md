@@ -20,6 +20,7 @@ Finding Origin: {{fields['metadata.product.name']}}
 |Prototype|False|
 |Tags||
 ## Vendors and Products
+- [Amazon AWS - Security Hub Coverage - OCSF](../products/f0b1b7b9-9ad0-4e19-bdc2-1e94885336d9.md)
 - [Amazon AWS - Security Hub](../products/d0aebc1c-db4d-440f-b69f-70dae24befff.md)
 
 

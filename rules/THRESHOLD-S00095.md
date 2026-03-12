@@ -26,7 +26,6 @@ Detects multiple failed login attempts from a single source with unique username
 - [Okta - Single Sign-On](../products/51278354-d6b5-4c8e-a8fd-8197df334e67.md)
 - [Palo Alto Networks - GlobalProtect](../products/b0fe0dde-4e19-4712-957b-1ea7418c132e.md)
 - [Pritunl - Pritunl](../products/70f80fa8-200a-449b-8100-f8d4b7687380.md)
-- [RSA - SecurID SinglePoint](../products/90bba037-f944-480e-89fa-a3b104451af3.md)
 
 
 ## Fields Used

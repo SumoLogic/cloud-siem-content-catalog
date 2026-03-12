@@ -20,6 +20,7 @@ The DNS request/response was empty or refused. This may be an indication of DNS 
 ## Vendors and Products
 - [Bro - Bro](../products/37C866BF-72E1-470A-9072-EDB908F56951.md)
 - [Microsoft - DNS](../products/e362ae18-9af1-496d-9ace-efa05a8381c6.md)
+- [Microsoft - Defender Advanced Hunting](../products/3382523e-2072-41bd-b50b-6b148957d0b0.md)
 - [Microsoft - Windows](../products/1ff7546c-cb36-4a24-87f7-89d2cecc5761.md)
 
 

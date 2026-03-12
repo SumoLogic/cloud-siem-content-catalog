@@ -29,5 +29,5 @@
 |file_path|filePath||
 |severity|cfp1||
 |threat_name|cat||
-|timestamp|rt|We expect the orginal record value of `rt` is in the format `epoch_ms`|
+|timestamp|rt|We expect the original record value of `rt` is in the format `epoch_ms`|
 

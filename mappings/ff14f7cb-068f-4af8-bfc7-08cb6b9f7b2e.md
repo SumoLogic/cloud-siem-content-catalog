@@ -27,6 +27,6 @@
 |srcDevice_hostname|host_name||
 |srcDevice_ip|host_local_address||
 |success|event|This is a lookup field. More info to come in the catalog later...|
-|timestamp|timestamp|We expect the orginal record value of `timestamp` is in the format `epoch_float`|
+|timestamp|timestamp|We expect the original record value of `timestamp` is in the format `epoch_float`|
 |user_username|user_name||
 

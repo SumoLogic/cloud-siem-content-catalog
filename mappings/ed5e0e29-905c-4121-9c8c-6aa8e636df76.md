@@ -34,7 +34,7 @@
 |threat_identifier|message_info.spam_info.disposition|This is a lookup field. More info to come in the catalog later...|
 |threat_name|message_info.spam_info.classification_reason|This is a lookup field. More info to come in the catalog later...|
 |threat_referenceUrl|message_info.link_domain||
-|timestamp|event_info.timestamp_usec|We expect the orginal record value of `event_info.timestamp_usec` is in the format `yyyy-MM-dd'T'HH:mm:ss.SSSZ`|
+|timestamp|event_info.timestamp_usec|We expect the original record value of `event_info.timestamp_usec` is in the format `yyyy-MM-dd'T'HH:mm:ss.SSSZ`|
 |user_email|message_info.destination.address||
 |user_username|message_info.destination.address||
 

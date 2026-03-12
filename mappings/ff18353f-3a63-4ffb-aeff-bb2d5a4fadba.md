@@ -24,7 +24,7 @@
 |commandLine|UserData.Operation_TemporaryEssStarted.Query||
 |description|RenderingInfo.Message||
 |device_hostname|Computer||
-|timestamp|TimeCreated.SystemTime|We expect the orginal record value of `TimeCreated.SystemTime` is in the format `yyyy-MM-dd'T'HH:mm:ss.SSSSSSSSSZ`|
+|timestamp|TimeCreated.SystemTime|We expect the original record value of `TimeCreated.SystemTime` is in the format `yyyy-MM-dd'T'HH:mm:ss.SSSSSSSSSZ`|
 |user_userId|Security.UserID||
 |user_username|UserData.Operation_TemporaryEssStarted.User||
 

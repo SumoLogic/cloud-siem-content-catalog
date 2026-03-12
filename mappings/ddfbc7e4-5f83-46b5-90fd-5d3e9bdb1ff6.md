@@ -33,5 +33,5 @@
 |srcPort|sport||
 |threat_name|message||
 |threat_ruleType|None|The static text `intrusion` is populated in this schema field.|
-|timestamp|syslog_timestamp|We expect the orginal record value of `syslog_timestamp` is in the format `epoch_float`|
+|timestamp|syslog_timestamp|We expect the original record value of `syslog_timestamp` is in the format `epoch_float`|
 

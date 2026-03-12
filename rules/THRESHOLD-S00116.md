@@ -47,9 +47,8 @@ Detects multiple failed login attempts from a single source with unique username
 - [PingIdentity - PingFederate](../products/b0a0ae6d-dd5b-450c-9d68-36d6c61c67b0.md)
 - [Pritunl - Pritunl](../products/70f80fa8-200a-449b-8100-f8d4b7687380.md)
 - [RSA - SecurID Runtime](../products/4809be0f-c6f3-4cbb-b1f6-ae9ae817712e.md)
-- [RSA - SecurID SinglePoint](../products/90bba037-f944-480e-89fa-a3b104451af3.md)
+- [Slack - Slack](../products/79da6240-7617-49c8-b130-96278579766e.md)
 - [Snowflake - Snowflake](../products/8276b520-fdeb-4f79-9f5d-67865818562b.md)
-- [WatchGuard - Fireware](../products/14aa46d3-0710-44b6-9ce3-0a6b8f36b076.md)
 
 
 ## Fields Used

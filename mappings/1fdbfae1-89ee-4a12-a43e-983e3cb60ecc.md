@@ -26,5 +26,5 @@
 |ipProtocol|proto||
 |srcDevice_ip|src||
 |srcDevice_natIp|xlatesrc||
-|timestamp|time|We expect the orginal record value of `time` is in the format `epoch`|
+|timestamp|time|We expect the original record value of `time` is in the format `epoch`|
 

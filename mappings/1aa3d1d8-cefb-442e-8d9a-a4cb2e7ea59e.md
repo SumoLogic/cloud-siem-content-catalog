@@ -38,7 +38,7 @@
 |processUid|Content.UniqueProcessID||
 |severity|severity|This is a lookup field. More info to come in the catalog later...|
 |threat_name|Threat Name||
-|timestamp|deviceCustomDate1|We expect the orginal record value of `deviceCustomDate1` is in the format `yyyy-MM-dd HH:mm:ss.SSS`|
+|timestamp|deviceCustomDate1|We expect the original record value of `deviceCustomDate1` is in the format `yyyy-MM-dd HH:mm:ss.SSS`|
 |user_authDomain|Content.UserDomainName||
 |user_userId|Content.UserSID||
 |user_username|suser||

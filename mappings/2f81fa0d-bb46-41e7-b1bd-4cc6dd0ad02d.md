@@ -27,5 +27,5 @@
 |http_userAgent|requestClientApplication||
 |srcDevice_ip|src||
 |srcPort|spt||
-|timestamp|start|We expect the orginal record value of `start` is in the format `epoch`|
+|timestamp|start|We expect the original record value of `start` is in the format `epoch`|
 

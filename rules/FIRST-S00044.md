@@ -13,7 +13,7 @@ This alert looks at a first seen application ID accessing an Office 365/Exchange
 |Summary Expression|A First Seen AppId was observed as accessing an Office 365 mail item since the baseline period.|
 |Retention Window|7776000000|
 |Baseline Window|1209600000|
-|Baseline Type|PER_ENTITY|
+|Baseline Type|GLOBAL|
 |Score/Severity|Static: 1|
 |Enabled by Default|True|
 |Prototype|False|

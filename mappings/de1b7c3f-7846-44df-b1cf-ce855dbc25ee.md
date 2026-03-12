@@ -37,6 +37,6 @@
 |srcDevice_natIp|nat-source-address||
 |srcPort|source-port||
 |success|event_name|This is a lookup field. More info to come in the catalog later...|
-|timestamp|reason|We expect the orginal record value of `reason` is in the format `yyyy-MM-dd'T'HH:mm:ss`|
+|timestamp|reason|We expect the original record value of `reason` is in the format `yyyy-MM-dd'T'HH:mm:ss`|
 |user_username|username||
 

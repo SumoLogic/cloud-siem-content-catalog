@@ -451,6 +451,7 @@ You will find our complete list of mappers for content here.
  - [CloudTrail - sso.amazonaws.com - Federate|ListProfilesForApplication](6e6d4334-69b1-11ea-bc55-0242ac130003.md)
  - [CloudTrail Batch get Partition](f19bb1e7-5efb-4960-a0e3-85f5e96571e6.md)
  - [CloudTrail Default Mapping](2c6a02e4-89b0-4d30-b03d-45756f074266.md)
+ - [Cloudflare - DNS Events](53cdf3e3-5fce-4525-abb1-7aff1b895be2.md)
  - [Cloudflare - Logpush](97d61ef4-9995-4b9c-952b-02fdf518270a.md)
  - [Code42 Custom Parser](249afa99-8efb-4ac2-a144-26acaeb77dd8.md)
  - [Code42 Incydr Alerts C2C](07e1fd9f-e4e3-4b15-b8f9-3715277d760b.md)

@@ -28,6 +28,6 @@
 |normalizedAction|None|The static text `logon` is populated in this schema field.|
 |srcDevice_ip|Source_ID||
 |success|None|The static text `false` is populated in this schema field.|
-|timestamp|Timestamp|We expect the orginal record value of `Timestamp` is in the format `dd/MMM/yyyy:HH:mm:ss.SSS`|
+|timestamp|Timestamp|We expect the original record value of `Timestamp` is in the format `dd/MMM/yyyy:HH:mm:ss.SSS`|
 |user_username|User||
 
