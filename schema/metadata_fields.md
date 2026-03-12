@@ -4,8 +4,6 @@ This lists all of the schema metadata fields automatically populated by Cloud SI
 
 |Field|Type|Description|
 |-----|----|-----------|
-|day|int|Day pulled from the timestamp.|
-|hour|int|Hour pulled from the timestamp.|
 |metadata_defaultTz|int|Default timezone for timestamp parsing|
 |metadata_deviceEventId|string|Vendor specific event identifier. Is provided in the parser output and determines which mapping will be used.|
 |metadata_mapperName|string|CSE mapper name which normalizes the record.|
@@ -27,7 +25,5 @@ This lists all of the schema metadata fields automatically populated by Cloud SI
 |metadata_sourceMessageId|string|The _messageID of the original source log message (from SumoLogic CIP).|
 |metadata_tenantId|string|(Deprecated) Unique identifier for the portal that data is being sent to.|
 |metadata_vendor|string|The name of the company responsible for the data source.|
-|month|int|Month pulled from the timestamp.|
-|year|int|Year pulled from the timestamp.|
 
 

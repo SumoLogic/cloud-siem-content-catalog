@@ -16,6 +16,7 @@ Setting a file's permissions to '777' with the chmod command allows all users to
 |Prototype|False|
 |Tags|_mitreAttackTactic:TA0005, _mitreAttackTactic:TA0004, _mitreAttackTechnique:T1222, _mitreAttackTechnique:T1222.002, _mitreAttackTechnique:T1548, _mitreAttackTechnique:T1548.001|
 ## Vendors and Products
+- [Amazon AWS - CloudTrail](../products/033624b0-218e-4dcb-b93f-0f1fb1806c56.md)
 - [CrowdStrike - FDR](../products/569a3a44-c29f-492e-bcf4-5dc04e2ab0f3.md)
 - [CrowdStrike - Falcon](../products/840c72e0-4e47-41e7-9b93-31f55d12f07d.md)
 - [Cyber-Ark - Enterprise Password Vault](../products/36f5ca33-0c1e-4223-8215-977ea04425ba.md)

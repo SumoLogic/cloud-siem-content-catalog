@@ -24,7 +24,7 @@
 |changeType|None|The static text `Permissions on an object were changed` is populated in this schema field.|
 |description|None|The static text `Permissions on an object were changed` is populated in this schema field.|
 |device_hostname|Computer||
-|timestamp|TimeCreated.SystemTime|We expect the orginal record value of `TimeCreated.SystemTime` is in the format `yyyy-MM-dd'T'HH:mm:ss.SSSSSSSSSZ`|
+|timestamp|TimeCreated.SystemTime|We expect the original record value of `TimeCreated.SystemTime` is in the format `yyyy-MM-dd'T'HH:mm:ss.SSSSSSSSSZ`|
 |user_authDomain|EventData.SubjectDomainName||
 |user_userId|EventData.SubjectUserSid||
 |user_username|EventData.SubjectUserName||

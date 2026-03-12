@@ -29,6 +29,6 @@
 |threat_referenceUrl|cs1||
 |threat_ruleType|None|The static text `direct` is populated in this schema field.|
 |threat_signalName|msg||
-|timestamp|rt|We expect the orginal record value of `rt` is in the format `epoch`|
+|timestamp|rt|We expect the original record value of `rt` is in the format `epoch`|
 |user_username|suser||
 

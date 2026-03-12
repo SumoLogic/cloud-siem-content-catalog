@@ -1,6 +1,6 @@
 # [Schema](README.md): Fields with Enrichment
 
-Here is a list of schema fields which Cloud SIEM has automatic enrichements for.
+Here is a list of schema fields which Cloud SIEM has automatic enrichments for.
 
 |Field|Enrichment Type|Populated|
 |-----|---------------|---------|

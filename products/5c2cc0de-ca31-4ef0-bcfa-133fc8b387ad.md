@@ -18,6 +18,7 @@
 |FIRST-S00043|[First Seen pbpaste Usage from User](../rules/FIRST-S00043.md)|
 |MATCH-S00702|[Keychain Credential Dumping](../rules/MATCH-S00702.md)|
 |MATCH-S00648|[Kubernetes ListSecrets](../rules/MATCH-S00648.md)|
+|MATCH-S00647|[Kubernetes Pod Deletion](../rules/MATCH-S00647.md)|
 |MATCH-S00837|[Kubernetes Secrets Enumeration via Kubectl](../rules/MATCH-S00837.md)|
 |MATCH-S00687|[Linux Security Tool Usage](../rules/MATCH-S00687.md)|
 |MATCH-S00534|[MacOS - Re-Opened Applications](../rules/MATCH-S00534.md)|

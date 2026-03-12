@@ -6,6 +6,11 @@
 |----|----|
 |MATCH-S00445|[Known Ransomware File Extensions](../rules/MATCH-S00445.md)|
 |MATCH-S00687|[Linux Security Tool Usage](../rules/MATCH-S00687.md)|
+|MATCH-S00729|[MacOS Gatekeeper Bypass](../rules/MATCH-S00729.md)|
+|MATCH-S01000|[Threat Intel - MD5 Match](../rules/MATCH-S01000.md)|
+|LEGACY-S00108|[Threat Intel - Matched File Hash](../rules/LEGACY-S00108.md)|
+|MATCH-S01003|[Threat Intel - SHA1 Match](../rules/MATCH-S01003.md)|
+|MATCH-S01004|[Threat Intel - SHA256 Match](../rules/MATCH-S01004.md)|
 
 
 ## Log Mappers

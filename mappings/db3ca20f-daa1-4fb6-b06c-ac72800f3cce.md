@@ -35,6 +35,6 @@
 |normalizedAction|eventName|This is a lookup field. More info to come in the catalog later...|
 |normalizedSeverity|eventName|This is a lookup field. More info to come in the catalog later...|
 |srcDevice_ip|sourceIPAddress||
-|timestamp|eventTime|We expect the orginal record value of `eventTime` is in the format `yyyy-MM-dd'T'HH:mm:ss'Z'`|
+|timestamp|eventTime|We expect the original record value of `eventTime` is in the format `yyyy-MM-dd'T'HH:mm:ss'Z'`|
 |user_username|userIdentity.sessionContext.sourceIdentity||
 

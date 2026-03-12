@@ -24,6 +24,6 @@
 |action|Action||
 |description|None|The static text `An audit file was downloaded from the web gateway` is populated in this schema field.|
 |device_hostname|Appliance||
-|timestamp|Timestamp|We expect the orginal record value of `Timestamp` is in the format `dd/MMM/yyyy:HH:mm:ss.SSS`|
+|timestamp|Timestamp|We expect the original record value of `Timestamp` is in the format `dd/MMM/yyyy:HH:mm:ss.SSS`|
 |user_username|User||
 

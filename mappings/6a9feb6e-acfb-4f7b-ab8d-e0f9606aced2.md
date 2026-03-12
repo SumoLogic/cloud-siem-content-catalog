@@ -29,6 +29,6 @@
 |srcDevice_ip|src||
 |srcDevice_natIp|xlatesrc||
 |srcPort|s_port||
-|timestamp|time|We expect the orginal record value of `time` is in the format `epoch`|
+|timestamp|time|We expect the original record value of `time` is in the format `epoch`|
 |user_username|user||
 

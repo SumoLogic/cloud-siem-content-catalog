@@ -179,14 +179,6 @@ In cases where the log data has a source or destination context, there are situa
 |file_uid|string|The data source specific unique identifier for the file, often a GUID.|
 |flowState|string|Value indicating the state (e.g. begin, end, or continue) of a network traffic flow as it enters or exits an interface.|
 |friendlyName|string|Name of the table the data is mapped to. Always Record for V3.|
-|fromUser_authDomain|string|The domain associated with this particular user. (e.g. sumologic.com, sumologic.local)|
-|fromUser_email|string|The associated email address assigned to this user.|
-|fromUser_phoneNumber|string|The telephone number associated with a user.|
-|fromUser_role|string|The role of the user account in question. Typically, this shows up in CloudTrail logs as an assumed role, but can be broadly applied to other logs.|
-|fromUser_userId|string|The source unique identifier for the user account.|
-|fromUser_username|string|The name commonly used to identify the user. May include the domain.  If name normalization occurs, this will be the normalized name.|
-|fromUser_username_raw|string|The raw (un-normalized) version of a username.|
-|fromUser_username_role|string|The role that is parsed out of the normalized username (usually from an AWS assumed role ARN).|
 |http_category|string|The high level category determined by a service based on the url or domain.|
 |http_contentLength|int|The number of bytes of data in the body of the request.|
 |http_hostname|string|Name of the host within an HTTP request|

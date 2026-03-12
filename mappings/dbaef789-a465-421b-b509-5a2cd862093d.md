@@ -24,5 +24,5 @@
 |action|act||
 |device_hostname|dvchost||
 |device_ip|dvc||
-|timestamp|start|We expect the orginal record value of `start` is in the format `epoch`|
+|timestamp|start|We expect the original record value of `start` is in the format `epoch`|
 

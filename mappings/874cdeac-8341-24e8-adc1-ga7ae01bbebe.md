@@ -31,6 +31,6 @@
 |success|act|This is a lookup field. More info to come in the catalog later...|
 |threat_name|name||
 |threat_ruleType|None|The static text `malware` is populated in this schema field.|
-|timestamp|rt|We expect the orginal record value of `rt` is in the format `MMM dd yyyy HH:mm:ss zzzZ`|
+|timestamp|rt|We expect the original record value of `rt` is in the format `MMM dd yyyy HH:mm:ss zzzZ`|
 |user_username|duser||
 

@@ -19,6 +19,7 @@ This rule detects an indicator match from a threat intelligence feed
 - [Abnormal Security - Abnormal Security](../products/2b79254e-8017-4dbf-8e39-590132172a7d.md)
 - [Infoblox - Network Identity Operating System](../products/43808f4c-15e9-480c-ab1a-38bdef3b6798.md)
 - [Proofpoint - Proofpoint on Demand](../products/332856e9-3111-446f-8df7-e64694e4b9a1.md)
+- [Squid - Squid Proxy](../products/af61d8a8-3eba-42fb-9f17-87443924f3f4.md)
 - [Zero Networks - Segment](../products/cf2af9e8-bade-4f28-8bca-b30aa41baec4.md)
 - [Zscaler - Nanolog Streaming Service](../products/6299d728-14f7-455e-85c5-ea8ec65a654a.md)
 - [Zscaler - ZPA Log Streaming Service](../products/4a75a995-0e10-45fc-8b4d-7fcfc0e98e25.md)

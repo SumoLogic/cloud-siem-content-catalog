@@ -29,6 +29,6 @@
 |file_size|File_Size||
 |normalizedAction|Action|This is a lookup field. More info to come in the catalog later...|
 |success|Action|This is a lookup field. More info to come in the catalog later...|
-|timestamp|Begin_Time|We expect the orginal record value of `Begin_Time` is in the format `yyyy-MM-dd HH:mm:ss`|
+|timestamp|Begin_Time|We expect the original record value of `Begin_Time` is in the format `yyyy-MM-dd HH:mm:ss`|
 |user_username|UserName||
 

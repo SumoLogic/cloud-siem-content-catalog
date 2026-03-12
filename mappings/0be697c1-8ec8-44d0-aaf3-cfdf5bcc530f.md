@@ -30,6 +30,6 @@
 |pid|EventData.ProcessId||
 |resource|EventData.PipeName||
 |sourceUid|EventRecordID||
-|timestamp|EventData.UtcTime|We expect the orginal record value of `EventData.UtcTime` is in the format `yyyy-MM-dd HH:mm:ss.SSS`|
+|timestamp|EventData.UtcTime|We expect the original record value of `EventData.UtcTime` is in the format `yyyy-MM-dd HH:mm:ss.SSS`|
 |user_userId|Security.UserID||
 

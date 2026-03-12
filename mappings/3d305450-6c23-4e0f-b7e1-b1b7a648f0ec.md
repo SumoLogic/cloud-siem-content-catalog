@@ -22,6 +22,6 @@
 |Cloud SIEM Schema Field|Original Record Key|Notes|
 |----------------|-------------------|-----|
 |device_ip|None|The static text `0.0.0.0` is populated in this schema field.|
-|timestamp|CreationTime|We expect the orginal record value of `CreationTime` is in the format `yyyy-MM-dd'T'HH:mm:ss`|
+|timestamp|CreationTime|We expect the original record value of `CreationTime` is in the format `yyyy-MM-dd'T'HH:mm:ss`|
 |user_username|UserId||
 

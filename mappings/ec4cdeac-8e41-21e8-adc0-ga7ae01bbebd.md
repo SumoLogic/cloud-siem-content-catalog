@@ -24,5 +24,5 @@
 |device_hostname|shost||
 |file_basename|fname||
 |severity|severity||
-|timestamp|rt|We expect the orginal record value of `rt` is in the format `MMM dd yyyy HH:mm:ss zzzZ`|
+|timestamp|rt|We expect the original record value of `rt` is in the format `MMM dd yyyy HH:mm:ss zzzZ`|
 

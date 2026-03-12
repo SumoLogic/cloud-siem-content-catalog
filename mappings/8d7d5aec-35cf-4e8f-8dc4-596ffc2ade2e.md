@@ -27,7 +27,7 @@
 |normalizedAction|None|The static text `logoff` is populated in this schema field.|
 |srcDevice_ip|ipAddress||
 |success|None|The static text `true` is populated in this schema field.|
-|timestamp|id.time|We expect the orginal record value of `id.time` is in the format `yyyy-MM-dd'T'HH:mm:ss.SSSZ`|
+|timestamp|id.time|We expect the original record value of `id.time` is in the format `yyyy-MM-dd'T'HH:mm:ss.SSSZ`|
 |user_authDomain|ownerDomain||
 |user_email|actor.email||
 |user_userId|actor.profileId||

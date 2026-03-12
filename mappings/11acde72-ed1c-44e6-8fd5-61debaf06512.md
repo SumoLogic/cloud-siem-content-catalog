@@ -31,6 +31,6 @@
 |threat_referenceUrl|event.FalconHostLink||
 |threat_ruleType|None|The static text `direct` is populated in this schema field.|
 |threat_signalName|event.IncidentType||
-|timestamp|metadata.eventCreationTime|We expect the orginal record value of `metadata.eventCreationTime` is in the format `epoch_ms`|
+|timestamp|metadata.eventCreationTime|We expect the original record value of `metadata.eventCreationTime` is in the format `epoch_ms`|
 |user_username|event.UserName||
 

@@ -43,6 +43,7 @@ Detects a series of failed logins followed by a successful login. This could ind
 - [PingIdentity - PingIdentity MFA](../products/93072f9e-3561-401e-980d-6b49f475c2fd.md)
 - [RSA - SecurID Runtime](../products/4809be0f-c6f3-4cbb-b1f6-ae9ae817712e.md)
 - [RSA - SecurID SinglePoint](../products/90bba037-f944-480e-89fa-a3b104451af3.md)
+- [Slack - Slack](../products/79da6240-7617-49c8-b130-96278579766e.md)
 - [Snowflake - Snowflake](../products/8276b520-fdeb-4f79-9f5d-67865818562b.md)
 
 

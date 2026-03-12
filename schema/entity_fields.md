@@ -1,6 +1,6 @@
 # [Schema](README.md): Entity Fields
 
-Here is a list of schema fields which Cloud SIEM considers entites and the type of entity. All Cloud SIEM mappers require you map at least one entity field.
+Here is a list of schema fields which Cloud SIEM considers entities and the type of entity. All Cloud SIEM mappers require you map at least one entity field.
 
 |Field|Entity Type|
 |-----|-----------|

@@ -37,7 +37,7 @@
 |srcDevice_hostname|srchost||
 |srcDevice_ip|srcip||
 |srcPort|srcport||
-|timestamp|timestamp|We expect the orginal record value of `timestamp` is in the format `epoch`|
+|timestamp|timestamp|We expect the original record value of `timestamp` is in the format `epoch`|
 |user_email|user||
 |user_username|user||
 

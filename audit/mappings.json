@@ -22952,8 +22952,8 @@
         "uid": "2e636284-dd97-4b5a-a789-35ffe9d2c14a"
     },
     "2e66cc69-ae68-4962-92c6-6640442dc193": {
-        "commit_message": "TLAB-2414:updated infoblox mapper (#5911)",
-        "commit_origin_hash": "b7bddd3e851fbf4ba15d22e327111d95a19280fe",
+        "commit_message": "TLAB-2494:update infoblox parser (#5927)",
+        "commit_origin_hash": "ef57bdd584ecc0daf7186816b0c8ae67353a2d54",
         "field_mappings": {
             "device_hostname": {
                 "value": "device_hostname"
@@ -31456,8 +31456,8 @@
         "uid": "41c336f4-b4b9-4cc4-b69c-5a8a1177881a"
     },
     "4219f2ac-0630-47a7-993e-bc51f37f5620": {
-        "commit_message": "TLAB-2414:updated infoblox mapper (#5911)",
-        "commit_origin_hash": "b7bddd3e851fbf4ba15d22e327111d95a19280fe",
+        "commit_message": "TLAB-2494:update infoblox parser (#5927)",
+        "commit_origin_hash": "ef57bdd584ecc0daf7186816b0c8ae67353a2d54",
         "field_mappings": {
             "device_hostname": {
                 "alternate_values": [
@@ -39110,6 +39110,82 @@
         "source": "jask",
         "uid": "53a82bf7-0d71-4b85-8c80-fba3a382bffe"
     },
+    "53cdf3e3-5fce-4525-abb1-7aff1b895be2": {
+        "commit_message": "TLAB-2499: created mapper for dns logs (#5931)",
+        "commit_origin_hash": "5e03d8b8bb6c3a0722f8a955dae7d676ad7b4497",
+        "field_mappings": {
+            "accountId": {
+                "value": "AccountID"
+            },
+            "application": {
+                "value": "ApplicationName"
+            },
+            "device_hostname": {
+                "value": "DeviceName"
+            },
+            "device_uniqueId": {
+                "value": "DeviceID"
+            },
+            "dns_query": {
+                "value": "QueryName"
+            },
+            "dns_queryType": {
+                "value": "QueryType"
+            },
+            "dns_returnCode": {
+                "value": "ClientResponseCode"
+            },
+            "dstDevice_ip": {
+                "value": "DstIP"
+            },
+            "dstPort": {
+                "value": "DstPort"
+            },
+            "ipProtocol": {
+                "value": "Protocol"
+            },
+            "srcDevice_ip": {
+                "alternate_values": [
+                    "SourceIP"
+                ],
+                "value": "SrcIP"
+            },
+            "srcPort": {
+                "value": "SrcPort"
+            },
+            "user_email": {
+                "value": "Email"
+            },
+            "user_userId": {
+                "value": "UserID"
+            },
+            "user_username": {
+                "split_delimiter": "@",
+                "split_index": 0,
+                "value": "Email",
+                "value_type": "split"
+            }
+        },
+        "file_path": "mappings_schemav3/cloudflare_custom_parser.yaml",
+        "input": {
+            "event_id_pattern": "dns_event",
+            "log_format": "JSON",
+            "product": "Logpush",
+            "vendor": "Cloudflare"
+        },
+        "name": "Cloudflare - DNS Events",
+        "output": {
+            "product_guid": "c2503fcc-ef30-4e40-bb32-0bf47151b140",
+            "record_type": "NetworkDNS"
+        },
+        "skipped_values": [
+            ",",
+            "-",
+            ""
+        ],
+        "source": "jask",
+        "uid": "53cdf3e3-5fce-4525-abb1-7aff1b895be2"
+    },
     "53d9bca1-44a8-4be5-905c-1c4d19ffddf6": {
         "commit_message": "TLAB-1899: added new mapper",
         "commit_origin_hash": "cce072478b86e59482f9df11c4527ffe6ca1f6ec",
@@ -43513,8 +43589,8 @@
         "uid": "5d43ba98-4859-4dbb-9590-5c0a22d51441"
     },
     "5d9cb97b-3aa0-400d-84d1-9d625059a7eb": {
-        "commit_message": "TLAB-2414:updated infoblox mapper (#5911)",
-        "commit_origin_hash": "b7bddd3e851fbf4ba15d22e327111d95a19280fe",
+        "commit_message": "TLAB-2494:update infoblox parser (#5927)",
+        "commit_origin_hash": "ef57bdd584ecc0daf7186816b0c8ae67353a2d54",
         "field_mappings": {
             "device_hostname": {
                 "value": "device_hostname"
@@ -55185,8 +55261,8 @@
         "uid": "7951eb42-89cd-11ea-bc55-0242ac130003"
     },
     "795382e9-de26-4bfe-b2c5-5fbf4e7951f1": {
-        "commit_message": "TLAB-2414:updated infoblox mapper (#5911)",
-        "commit_origin_hash": "b7bddd3e851fbf4ba15d22e327111d95a19280fe",
+        "commit_message": "TLAB-2494:update infoblox parser (#5927)",
+        "commit_origin_hash": "ef57bdd584ecc0daf7186816b0c8ae67353a2d54",
         "field_mappings": {
             "device_hostname": {
                 "value": "device_hostname"
@@ -69324,8 +69400,8 @@
         "uid": "97cfb388-e2d6-4765-a893-914500795cac"
     },
     "97d61ef4-9995-4b9c-952b-02fdf518270a": {
-        "commit_message": "TLAB-2135: Updated the mapping field",
-        "commit_origin_hash": "2bf5aac5fbca57f93e83f056bd2920e661a9b663",
+        "commit_message": "TLAB-2499: created mapper for dns logs (#5931)",
+        "commit_origin_hash": "5e03d8b8bb6c3a0722f8a955dae7d676ad7b4497",
         "field_mappings": {
             "accountId": {
                 "value": "AccountID"
@@ -69338,15 +69414,6 @@
             },
             "device_ip": {
                 "value": "ClientIP"
-            },
-            "dns_query": {
-                "value": "ClientRequestQuery"
-            },
-            "dns_queryDomain": {
-                "value": "QueryName"
-            },
-            "dns_queryType": {
-                "value": "QueryType"
             },
             "dstDevice_ip": {
                 "alternate_values": [
@@ -70393,8 +70460,8 @@
         "uid": "9ab57ba0-dcf0-44a0-9bba-55ca571ed530"
     },
     "9ab8dd52-8c8f-4015-8712-2d3a24bcdce6": {
-        "commit_message": "TLAB-2414:updated infoblox mapper (#5911)",
-        "commit_origin_hash": "b7bddd3e851fbf4ba15d22e327111d95a19280fe",
+        "commit_message": "TLAB-2494:update infoblox parser (#5927)",
+        "commit_origin_hash": "ef57bdd584ecc0daf7186816b0c8ae67353a2d54",
         "field_mappings": {
             "device_hostname": {
                 "value": "device_hostname"
@@ -105814,9 +105881,12 @@
         "uid": "f5bfd185-04bb-4054-9afe-d57194048cf6"
     },
     "f5eb4c7d-d1c2-444e-b67f-59768dc17bac": {
-        "commit_message": "TLAB-2414:updated infoblox mapper (#5911)",
-        "commit_origin_hash": "b7bddd3e851fbf4ba15d22e327111d95a19280fe",
+        "commit_message": "TLAB-2494:update infoblox parser (#5927)",
+        "commit_origin_hash": "ef57bdd584ecc0daf7186816b0c8ae67353a2d54",
         "field_mappings": {
+            "action": {
+                "value": "action"
+            },
             "device_hostname": {
                 "value": "device_hostname"
             },
@@ -105835,6 +105905,13 @@
             "dstDevice_mac": {
                 "value": "dst_mac"
             },
+            "normalizedAction": {
+                "lookup": {
+                    "receive": "receive"
+                },
+                "value": "action",
+                "value_type": "lookup"
+            },
             "srcDevice_hostname": {
                 "value": "src_hostname"
             },
@@ -105843,6 +105920,14 @@
             },
             "srcDevice_mac": {
                 "value": "src_mac"
+            },
+            "success": {
+                "default_value": "true",
+                "lookup": {
+                    "rejected": "false"
+                },
+                "value": "status",
+                "value_type": "lookup"
             }
         },
         "file_path": "mappings_schemav3/infoblox.yaml",

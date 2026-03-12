@@ -35,6 +35,6 @@
 |severity|apprisk||
 |srcDevice_ip|srcip||
 |srcPort|srcport||
-|timestamp|eventtime|We expect the orginal record value of `eventtime` is in the format `epoch`|
+|timestamp|eventtime|We expect the original record value of `eventtime` is in the format `epoch`|
 |user_username|user||
 
