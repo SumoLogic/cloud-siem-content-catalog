@@ -19,7 +19,6 @@ This rule detects successful authentications from an IP address associated with 
 - [1Password - 1Password](../products/3fe1afe0-c1c2-45d6-835e-0bdb1e4b703f.md)
 - [Amazon AWS - CloudTrail](../products/033624b0-218e-4dcb-b93f-0f1fb1806c56.md)
 - [Auth0 - Auth0](../products/0b45ccba-20b4-41e4-973d-b50fd291944d.md)
-- [Box - Box](../products/0472f22e-e3fa-4c9f-a529-8355f671927e.md)
 - [Cisco Systems - ASA](../products/be4f7473-fe69-4311-8859-3561900060bf.md)
 - [Cisco Systems - Identity Services Engine](../products/153794da-09e8-48fe-b511-1306fbb94d07.md)
 - [Citrix - ADC](../products/d3606245-76d3-4173-a2fe-832c0e71b0f9.md)
@@ -42,6 +41,7 @@ This rule detects successful authentications from an IP address associated with 
 - [PingIdentity - PingFederate](../products/b0a0ae6d-dd5b-450c-9d68-36d6c61c67b0.md)
 - [SailPoint - SailPoint](../products/c3954250-68a0-49c3-ab6a-ef0daa95ff90.md)
 - [Slack - Slack](../products/79da6240-7617-49c8-b130-96278579766e.md)
+- [Zendesk - Zendesk](../products/a301559a-8110-4dd0-a41d-35b9baa1c740.md)
 
 
 ## Fields Used

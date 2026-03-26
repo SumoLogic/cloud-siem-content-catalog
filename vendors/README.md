@@ -119,7 +119,7 @@ Below is a full list of Cloud SIEM vendors.
 |[PingIdentity](b65ae958-55ad-43d0-a2d9-ac04442e0a36.md)|2|
 |[PreemptSecurity](15c77a62-0fbb-4a60-9fae-ead49ec423f9.md)|1|
 |[Pritunl](598b6820-feff-4169-89da-77211493a91d.md)|1|
-|[Proofpoint](e0bbbae5-9a03-48f4-b138-9c3b49522f1a.md)|2|
+|[Proofpoint](e0bbbae5-9a03-48f4-b138-9c3b49522f1a.md)|3|
 |[Pulse](e5d4eae7-8ba6-46ed-9876-58d5763398ea.md)|1|
 |[Qualys](fb83d074-c6cf-4fc7-9020-5d3e364acd17.md)|1|
 |[Qumulo](24406280-8b09-4c4e-b327-e25a4186756e.md)|1|
@@ -143,6 +143,7 @@ Below is a full list of Cloud SIEM vendors.
 |[Symantec](64c7f49c-f95a-4f4a-8540-56ec5fb1d96b.md)|5|
 |[Sysdig](c4de0854-e718-45e1-a4c8-63623755aa43.md)|2|
 |[Tanium](c7a342e6-5621-401a-ac5c-80ea3f2db23c.md)|1|
+|[Teleport](e0804374-1f82-43d8-a0d0-19d9bd9ee11d.md)|1|
 |[Tenable](600BEF8F-BE81-4767-8322-72116C16DB20.md)|1|
 |[Teramind](98def8bd-ffc2-475c-9d77-f85bf7b7b727.md)|1|
 |[Thinkst Canary](0152e233-fce6-4cbf-9edc-721d7bef94f8.md)|1|

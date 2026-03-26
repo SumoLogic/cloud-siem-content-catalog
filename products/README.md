@@ -239,6 +239,7 @@ Below is a full list of Cloud SIEM products.
 |[PreemptSecurity](../vendors/15c77a62-0fbb-4a60-9fae-ead49ec423f9.md)|[PBF](134ee5df-403a-4b13-b0e7-7c8e0ebd3901.md)|
 |[Pritunl](../vendors/598b6820-feff-4169-89da-77211493a91d.md)|[Pritunl](70f80fa8-200a-449b-8100-f8d4b7687380.md)|
 |[Proofpoint](../vendors/e0bbbae5-9a03-48f4-b138-9c3b49522f1a.md)|[Proofpoint on Demand](332856e9-3111-446f-8df7-e64694e4b9a1.md)|
+|[Proofpoint](../vendors/e0bbbae5-9a03-48f4-b138-9c3b49522f1a.md)|[TRAP](16c76d97-46c9-43f6-ba96-77d63085a4cf.md)|
 |[Proofpoint](../vendors/e0bbbae5-9a03-48f4-b138-9c3b49522f1a.md)|[Targeted Attack Protection](de3d4b6b-36a3-4436-8bfc-0561ac95037e.md)|
 |[Pulse](../vendors/e5d4eae7-8ba6-46ed-9876-58d5763398ea.md)|[Secure Appliance](f964982c-a892-4bab-a216-42fad3dbabde.md)|
 |[Qualys](../vendors/fb83d074-c6cf-4fc7-9020-5d3e364acd17.md)|[VMScan](08d5e888-ae62-462a-80d9-c0df7d3643c1.md)|
@@ -271,6 +272,7 @@ Below is a full list of Cloud SIEM products.
 |[Sysdig](../vendors/c4de0854-e718-45e1-a4c8-63623755aa43.md)|[Sysdig](55ec1d4a-6985-4f04-8de5-f9812871fda2.md)|
 |[Sysdig](../vendors/c4de0854-e718-45e1-a4c8-63623755aa43.md)|[Sysdig Secure](6bbcec6d-3e8e-4796-97ba-4ea647e7ab2b.md)|
 |[Tanium](../vendors/c7a342e6-5621-401a-ac5c-80ea3f2db23c.md)|[Tanium Core](5b49e894-92e8-45ad-8575-fe78b4f2e31b.md)|
+|[Teleport](../vendors/e0804374-1f82-43d8-a0d0-19d9bd9ee11d.md)|[Teleport](46c71698-9c21-4273-9561-94ff5af52edd.md)|
 |[Tenable](../vendors/600BEF8F-BE81-4767-8322-72116C16DB20.md)|[Cloud API](1C384C22-411B-49C0-8029-A7F6C13424B1.md)|
 |[Teramind](../vendors/98def8bd-ffc2-475c-9d77-f85bf7b7b727.md)|[Teraserver](898d54b3-40b0-44ec-ac23-78ee03ee81f4.md)|
 |[Thinkst Canary](../vendors/0152e233-fce6-4cbf-9edc-721d7bef94f8.md)|[Thinkst Canary](bff00521-0a45-4237-b853-cf21860f88bd.md)|

@@ -31,7 +31,6 @@ Detects indicators found from SpringCore exploitation attempts.
 - [Cisco Systems - Meraki](../products/724c9add-8cd9-4013-b9e1-a907b96da426.md)
 - [Cloudflare - Logpush](../products/c2503fcc-ef30-4e40-bb32-0bf47151b140.md)
 - [Contrast Security - Contrast ADR](../products/fa3c148a-4272-4a94-aea2-499ab90424c2.md)
-- [Docker - Docker](../products/2f305793-ce37-44cb-84bc-1b89b4367d3c.md)
 - [F5 - F5](../products/ede052db-d472-408f-949c-be642237ef3f.md)
 - [Fortinet - Fortigate](../products/c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad.md)
 - [Google - Google Cloud Platform](../products/dcc85cfc-a698-4d09-87de-f2c723f3ad07.md)

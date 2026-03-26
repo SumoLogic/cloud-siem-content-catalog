@@ -17,6 +17,7 @@ The chage command on Linux allows for the changing of user password expiry infor
 |Tags|_mitreAttackTactic:TA0007, _mitreAttackTechnique:T1201|
 ## Vendors and Products
 - [CrowdStrike - FDR](../products/569a3a44-c29f-492e-bcf4-5dc04e2ab0f3.md)
+- [CrowdStrike - Falcon](../products/840c72e0-4e47-41e7-9b93-31f55d12f07d.md)
 - [CrowdStrike - Filevantage](../products/a1f79987-b765-4f6f-bfe5-d657baa35144.md)
 - [Cyber-Ark - Enterprise Password Vault](../products/36f5ca33-0c1e-4223-8215-977ea04425ba.md)
 - [Linux - Auditd](../products/5e298fe7-088a-467a-b57f-d8558368621d.md)

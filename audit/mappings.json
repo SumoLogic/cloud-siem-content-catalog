@@ -2690,8 +2690,8 @@
         "uid": "056fef7d-6b70-4163-be8b-373b43cd7225"
     },
     "058c85f4-1e48-44be-9624-99503c435705": {
-        "commit_message": "TLAB-2378 updated field mapping for fortinet mapper (#5897)",
-        "commit_origin_hash": "7def688c22de0f23a5480c0f849a5648d4400219",
+        "commit_message": "TLAB-2510: added alternate value for in and out bytes for fortinet (#5934)",
+        "commit_origin_hash": "b08875959c16d92e38df42c1d232933f2767fe7a",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -3927,8 +3927,8 @@
         "uid": "093f1178-2597-4a3b-8c6b-6b19f587781f"
     },
     "09680309-ab63-486a-b3b0-70c2e2f28459": {
-        "commit_message": "TLAB-2378 updated field mapping for fortinet mapper (#5897)",
-        "commit_origin_hash": "7def688c22de0f23a5480c0f849a5648d4400219",
+        "commit_message": "TLAB-2510: added alternate value for in and out bytes for fortinet (#5934)",
+        "commit_origin_hash": "b08875959c16d92e38df42c1d232933f2767fe7a",
         "field_mappings": {
             "action": {
                 "value": "act"
@@ -4124,8 +4124,8 @@
         "uid": "09a000f5-0586-4ce4-b5d2-c7e99ea14650"
     },
     "09b8843d-a2dc-4f1b-8562-7a3a8b3760b2": {
-        "commit_message": "TLAB-2079: updated the mapper",
-        "commit_origin_hash": "e296dab6b1a3d5f52472cde44e7a4d209a5b4396",
+        "commit_message": "TLAB-2531: Updated Mapping for normalizedAction and normalizedCause Fields for O365 (#5937)",
+        "commit_origin_hash": "ec76680691ade4c49d9fcf1e72d9369c866ecc80",
         "field_mappings": {
             "device_ip": {
                 "value": "0.0.0.0",
@@ -6385,8 +6385,8 @@
         "uid": "0d260099-d4a3-4448-83c5-2d3a05365823"
     },
     "0d31d680-6a82-11ea-bc55-0242ac130003": {
-        "commit_message": "TLAB-2079: updated the mapper",
-        "commit_origin_hash": "e296dab6b1a3d5f52472cde44e7a4d209a5b4396",
+        "commit_message": "TLAB-2531: Updated Mapping for normalizedAction and normalizedCause Fields for O365 (#5937)",
+        "commit_origin_hash": "ec76680691ade4c49d9fcf1e72d9369c866ecc80",
         "field_mappings": {
             "action": {
                 "value": "Operation"
@@ -7901,8 +7901,8 @@
         "uid": "104cdeac-1041-24e8-10c1-ga7ae01bceb8"
     },
     "10696f30-7c13-4000-94d0-6a5dd69b229e": {
-        "commit_message": "TLAB-2378 updated field mapping for fortinet mapper (#5897)",
-        "commit_origin_hash": "7def688c22de0f23a5480c0f849a5648d4400219",
+        "commit_message": "TLAB-2510: added alternate value for in and out bytes for fortinet (#5934)",
+        "commit_origin_hash": "b08875959c16d92e38df42c1d232933f2767fe7a",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -11232,8 +11232,8 @@
         "uid": "180e8a5a-8184-4a84-a8fa-93b914738a86"
     },
     "18615b96-a972-11ea-bb37-0242ac130002": {
-        "commit_message": "TLAB-2079: updated the mapper",
-        "commit_origin_hash": "e296dab6b1a3d5f52472cde44e7a4d209a5b4396",
+        "commit_message": "TLAB-2531: Updated Mapping for normalizedAction and normalizedCause Fields for O365 (#5937)",
+        "commit_origin_hash": "ec76680691ade4c49d9fcf1e72d9369c866ecc80",
         "field_mappings": {
             "device_ip": {
                 "value": "ClientIP"
@@ -16220,8 +16220,8 @@
         "uid": "2041eb1c-fdbf-46bd-aed9-b48047ae6962"
     },
     "20871df8-533d-4aff-8328-037a9462f279": {
-        "commit_message": "TLAB-2079: updated the mapper",
-        "commit_origin_hash": "e296dab6b1a3d5f52472cde44e7a4d209a5b4396",
+        "commit_message": "TLAB-2531: Updated Mapping for normalizedAction and normalizedCause Fields for O365 (#5937)",
+        "commit_origin_hash": "ec76680691ade4c49d9fcf1e72d9369c866ecc80",
         "field_mappings": {
             "action": {
                 "value": "Operation"
@@ -16240,9 +16240,30 @@
             },
             "normalizedAction": {
                 "lookup": {
-                    "logon": "logon"
+                    "UserLoggedIn": "logon",
+                    "UserLoginFailed": "logon"
                 },
-                "value": "action",
+                "value": "Operation",
+                "value_type": "lookup"
+            },
+            "normalizedCause": {
+                "lookup": {
+                    "AdminConsentRequiredRequestAccess": "system error",
+                    "CmsiInterrupt": "system error",
+                    "DelegationDoesNotExist": "system error",
+                    "DeviceAuthenticationRequired": "system error",
+                    "DeviceIsNotWorkplaceJoined": "system error",
+                    "EntitlementGrantsNotFound": "deny list",
+                    "IdsLocked": "deny list",
+                    "InvalidPasswordExpiredPassword": "incorrect credentials",
+                    "InvalidReplyTo": "system error",
+                    "InvalidUserNameOrPassword": "incorrect credentials",
+                    "UserDeclinedConsent": "system error",
+                    "UserStrongAuthClientAuthNRequired": "system error",
+                    "UserStrongAuthClientAuthNRequiredInterrupt": "system error",
+                    "UserStrongAuthEnrollmentRequiredInterrupt": "system error"
+                },
+                "value": "LogonError",
                 "value_type": "lookup"
             },
             "srcDevice_ip": {
@@ -19432,8 +19453,8 @@
         "uid": "27909e48-6b07-44c7-be5d-50a61bb58145"
     },
     "279fabe5-d3a3-468a-a908-d110099bb244": {
-        "commit_message": "TLAB-2079: updated the mapper",
-        "commit_origin_hash": "e296dab6b1a3d5f52472cde44e7a4d209a5b4396",
+        "commit_message": "TLAB-2531: Updated Mapping for normalizedAction and normalizedCause Fields for O365 (#5937)",
+        "commit_origin_hash": "ec76680691ade4c49d9fcf1e72d9369c866ecc80",
         "field_mappings": {
             "device_ip": {
                 "value": "0.0.0.0",
@@ -24468,21 +24489,23 @@
         "uid": "2fccc17b-4b0e-4507-9399-86b45d1014cd"
     },
     "3050a2a8-5225-4fb2-a758-377f835f010c": {
-        "commit_message": "TLAB-2378 updated field mapping for fortinet mapper (#5897)",
-        "commit_origin_hash": "7def688c22de0f23a5480c0f849a5648d4400219",
+        "commit_message": "TLAB-2510: added alternate value for in and out bytes for fortinet (#5934)",
+        "commit_origin_hash": "b08875959c16d92e38df42c1d232933f2767fe7a",
         "field_mappings": {
             "action": {
                 "value": "action"
             },
             "bytesIn": {
                 "alternate_values": [
-                    "rcvdbyte"
+                    "rcvdbyte",
+                    "in"
                 ],
                 "value": "rcvddelta"
             },
             "bytesOut": {
                 "alternate_values": [
-                    "sentbyte"
+                    "sentbyte",
+                    "out"
                 ],
                 "value": "sentdelta"
             },
@@ -29082,8 +29105,8 @@
         "uid": "3d258ba5-0e2d-4b15-a419-25ccf870c9cc"
     },
     "3d305450-6c23-4e0f-b7e1-b1b7a648f0ec": {
-        "commit_message": "TLAB-2079: updated the mapper",
-        "commit_origin_hash": "e296dab6b1a3d5f52472cde44e7a4d209a5b4396",
+        "commit_message": "TLAB-2531: Updated Mapping for normalizedAction and normalizedCause Fields for O365 (#5937)",
+        "commit_origin_hash": "ec76680691ade4c49d9fcf1e72d9369c866ecc80",
         "field_mappings": {
             "device_ip": {
                 "value": "0.0.0.0",
@@ -29209,8 +29232,8 @@
         "uid": "3d42cc1a-80d1-4da5-a6a4-022dabbaca77"
     },
     "3d830705-fc67-45e9-878a-443ed806cf32": {
-        "commit_message": "TLAB-2079: updated the mapper",
-        "commit_origin_hash": "e296dab6b1a3d5f52472cde44e7a4d209a5b4396",
+        "commit_message": "TLAB-2531: Updated Mapping for normalizedAction and normalizedCause Fields for O365 (#5937)",
+        "commit_origin_hash": "ec76680691ade4c49d9fcf1e72d9369c866ecc80",
         "field_mappings": {
             "action": {
                 "value": "Operation"
@@ -29841,6 +29864,67 @@
         "source": "jask",
         "uid": "3e425ff8-fd24-42ac-9542-e6c6bf84e76d"
     },
+    "3e65c104-0b59-400a-85ee-9f74003fa394": {
+        "commit_message": "TLAB-2525: Created New Mapper for The Teleport (#5935)",
+        "commit_origin_hash": "01e3196b019d30b8a5a47fc7d4692ec28b905c7d",
+        "field_mappings": {
+            "action": {
+                "value": "event_type"
+            },
+            "device_uniqueId": {
+                "value": "event_data.trusted_device.device_id"
+            },
+            "logonType": {
+                "value": "event_data.method"
+            },
+            "normalizedAction": {
+                "lookup": {
+                    "user.login": "logon"
+                },
+                "value": "event_type",
+                "value_type": "lookup"
+            },
+            "sessionId": {
+                "value": "session_id"
+            },
+            "srcDevice_ip": {
+                "value": "event_data.addr.remote"
+            },
+            "success": {
+                "value": "event_data.success"
+            },
+            "user_email": {
+                "value": "event_data.user_email"
+            },
+            "user_role": {
+                "value": "event_data.user_roles.1"
+            },
+            "user_userId": {
+                "value": "event_data.uid"
+            },
+            "user_username": {
+                "value": "event_data.user"
+            }
+        },
+        "file_path": "mappings_schemav3/teleport.yaml",
+        "input": {
+            "event_id_pattern": "user\\.login|device\\.authenticate",
+            "log_format": "JSON",
+            "product": "Teleport",
+            "vendor": "Teleport"
+        },
+        "name": "Teleport Authentication",
+        "output": {
+            "product_guid": "46c71698-9c21-4273-9561-94ff5af52edd",
+            "record_type": "Authentication"
+        },
+        "skipped_values": [
+            ",",
+            "-"
+        ],
+        "source": "jask",
+        "uid": "3e65c104-0b59-400a-85ee-9f74003fa394"
+    },
     "3e74ac72-2bf9-49d6-ba1e-f59f06437869": {
         "commit_message": "TLAB-2280: Remove Redundant Mapping and Add New Field Mapping (#5880)",
         "commit_origin_hash": "fd895e4ef6e5010b4d09f314c2f82cc91e0f2675",
@@ -30329,8 +30413,8 @@
         "uid": "3fe47187-8a81-4e1a-b80b-c0f2c4237ff6"
     },
     "3ff36059-f6f2-48aa-a88c-ef4485e7b151": {
-        "commit_message": "TLAB-2079: updated the mapper",
-        "commit_origin_hash": "e296dab6b1a3d5f52472cde44e7a4d209a5b4396",
+        "commit_message": "TLAB-2531: Updated Mapping for normalizedAction and normalizedCause Fields for O365 (#5937)",
+        "commit_origin_hash": "ec76680691ade4c49d9fcf1e72d9369c866ecc80",
         "field_mappings": {
             "action": {
                 "value": "Operation"
@@ -31511,8 +31595,8 @@
         "uid": "4219f2ac-0630-47a7-993e-bc51f37f5620"
     },
     "42220608-501e-4a74-ab9b-1b31d5a8a2a5": {
-        "commit_message": "TLAB-2079: updated the mapper",
-        "commit_origin_hash": "e296dab6b1a3d5f52472cde44e7a4d209a5b4396",
+        "commit_message": "TLAB-2531: Updated Mapping for normalizedAction and normalizedCause Fields for O365 (#5937)",
+        "commit_origin_hash": "ec76680691ade4c49d9fcf1e72d9369c866ecc80",
         "field_mappings": {
             "action": {
                 "value": "Operation"
@@ -32514,8 +32598,8 @@
         "uid": "45912489-975f-479d-8806-0ab51acbf168"
     },
     "459c7c66-b87e-48b9-a35b-9315204f9a6c": {
-        "commit_message": "TLAB-2079: updated the mapper",
-        "commit_origin_hash": "e296dab6b1a3d5f52472cde44e7a4d209a5b4396",
+        "commit_message": "TLAB-2531: Updated Mapping for normalizedAction and normalizedCause Fields for O365 (#5937)",
+        "commit_origin_hash": "ec76680691ade4c49d9fcf1e72d9369c866ecc80",
         "field_mappings": {
             "device_ip": {
                 "value": "ClientIP"
@@ -33035,8 +33119,8 @@
         "uid": "462b7940-6803-4387-8669-c1322cb424ca"
     },
     "46404344-3d7a-4fd8-a580-accf6180cceb": {
-        "commit_message": "TLAB-2079: updated the mapper",
-        "commit_origin_hash": "e296dab6b1a3d5f52472cde44e7a4d209a5b4396",
+        "commit_message": "TLAB-2531: Updated Mapping for normalizedAction and normalizedCause Fields for O365 (#5937)",
+        "commit_origin_hash": "ec76680691ade4c49d9fcf1e72d9369c866ecc80",
         "field_mappings": {
             "device_ip": {
                 "value": "0.0.0.0",
@@ -33432,8 +33516,8 @@
         "uid": "46b25ce8-b185-4e22-864d-80d97e26460f"
     },
     "46be6981-3d59-47cc-b358-a091280a0af5": {
-        "commit_message": "TLAB-2079: updated the mapper",
-        "commit_origin_hash": "e296dab6b1a3d5f52472cde44e7a4d209a5b4396",
+        "commit_message": "TLAB-2531: Updated Mapping for normalizedAction and normalizedCause Fields for O365 (#5937)",
+        "commit_origin_hash": "ec76680691ade4c49d9fcf1e72d9369c866ecc80",
         "field_mappings": {
             "description": {
                 "value": "Name"
@@ -33838,8 +33922,8 @@
         "uid": "47e77961-aaaf-4e85-94b6-8e3a4e17e442"
     },
     "480af86a-a973-11ea-bb37-0242ac130002": {
-        "commit_message": "TLAB-2079: updated the mapper",
-        "commit_origin_hash": "e296dab6b1a3d5f52472cde44e7a4d209a5b4396",
+        "commit_message": "TLAB-2531: Updated Mapping for normalizedAction and normalizedCause Fields for O365 (#5937)",
+        "commit_origin_hash": "ec76680691ade4c49d9fcf1e72d9369c866ecc80",
         "field_mappings": {
             "action": {
                 "value": "Operation"
@@ -34407,8 +34491,8 @@
         "uid": "497f325f-2dfe-4ac5-92ab-a0a209aba2f4"
     },
     "4986836c-1759-422b-b5c4-8a548f18616b": {
-        "commit_message": "TLAB-2378 updated field mapping for fortinet mapper (#5897)",
-        "commit_origin_hash": "7def688c22de0f23a5480c0f849a5648d4400219",
+        "commit_message": "TLAB-2510: added alternate value for in and out bytes for fortinet (#5934)",
+        "commit_origin_hash": "b08875959c16d92e38df42c1d232933f2767fe7a",
         "field_mappings": {
             "action": {
                 "value": "act"
@@ -37934,8 +38018,8 @@
         "uid": "50febf8f-5d62-46af-bc91-c4b04510a106"
     },
     "51c8831d-b344-4daf-b0ee-36e5914526e3": {
-        "commit_message": "TLAB-2378 updated field mapping for fortinet mapper (#5897)",
-        "commit_origin_hash": "7def688c22de0f23a5480c0f849a5648d4400219",
+        "commit_message": "TLAB-2510: added alternate value for in and out bytes for fortinet (#5934)",
+        "commit_origin_hash": "b08875959c16d92e38df42c1d232933f2767fe7a",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -39483,8 +39567,8 @@
         "uid": "5406ec15-2203-460b-bd6e-ea8facf33082"
     },
     "54198319-5c3b-4897-a857-be82962cfd00": {
-        "commit_message": "TLAB-2378 updated field mapping for fortinet mapper (#5897)",
-        "commit_origin_hash": "7def688c22de0f23a5480c0f849a5648d4400219",
+        "commit_message": "TLAB-2510: added alternate value for in and out bytes for fortinet (#5934)",
+        "commit_origin_hash": "b08875959c16d92e38df42c1d232933f2767fe7a",
         "field_mappings": {
             "description": {
                 "value": "logdesc"
@@ -41506,8 +41590,8 @@
         "uid": "57912336-4c06-4176-9e93-a4b75051552f"
     },
     "5792195e-5a2a-487c-a71f-63becfe8895f": {
-        "commit_message": "TLAB-2079: updated the mapper",
-        "commit_origin_hash": "e296dab6b1a3d5f52472cde44e7a4d209a5b4396",
+        "commit_message": "TLAB-2531: Updated Mapping for normalizedAction and normalizedCause Fields for O365 (#5937)",
+        "commit_origin_hash": "ec76680691ade4c49d9fcf1e72d9369c866ecc80",
         "field_mappings": {
             "description": {
                 "value": "PolicyDetails.1.Rules.1.RuleName"
@@ -41681,8 +41765,8 @@
         "uid": "57b9743d-249a-41d8-a216-32657adcc248"
     },
     "57d88cb7-d80d-4e02-b6ab-b4b722529bea": {
-        "commit_message": "TLAB-2079: updated the mapper",
-        "commit_origin_hash": "e296dab6b1a3d5f52472cde44e7a4d209a5b4396",
+        "commit_message": "TLAB-2531: Updated Mapping for normalizedAction and normalizedCause Fields for O365 (#5937)",
+        "commit_origin_hash": "ec76680691ade4c49d9fcf1e72d9369c866ecc80",
         "field_mappings": {
             "action": {
                 "value": "Operation"
@@ -43201,8 +43285,8 @@
         "uid": "5c2c9bfd-e09b-4a37-9e63-efd084fd4594"
     },
     "5c55809d-b468-4543-b4ed-4c310d4034e8": {
-        "commit_message": "TLAB-2079: updated the mapper",
-        "commit_origin_hash": "e296dab6b1a3d5f52472cde44e7a4d209a5b4396",
+        "commit_message": "TLAB-2531: Updated Mapping for normalizedAction and normalizedCause Fields for O365 (#5937)",
+        "commit_origin_hash": "ec76680691ade4c49d9fcf1e72d9369c866ecc80",
         "field_mappings": {
             "description": {
                 "value": "Name"
@@ -43769,8 +43853,8 @@
         "uid": "5e6f7a8b-9c0d-1e2f-3a4b-5c6d7e8f9a0b"
     },
     "5f2f0759-0e26-412a-b5d4-aeeb52a6b9ea": {
-        "commit_message": "TLAB-2079: updated the mapper",
-        "commit_origin_hash": "e296dab6b1a3d5f52472cde44e7a4d209a5b4396",
+        "commit_message": "TLAB-2531: Updated Mapping for normalizedAction and normalizedCause Fields for O365 (#5937)",
+        "commit_origin_hash": "ec76680691ade4c49d9fcf1e72d9369c866ecc80",
         "field_mappings": {
             "action": {
                 "value": "Operation"
@@ -45656,8 +45740,8 @@
         "uid": "6216f49a-14e7-4fc9-afc7-0a8163e4bde9"
     },
     "621c0480-bc2e-4086-8ef8-a74a3ae45c65": {
-        "commit_message": "TLAB-2378 updated field mapping for fortinet mapper (#5897)",
-        "commit_origin_hash": "7def688c22de0f23a5480c0f849a5648d4400219",
+        "commit_message": "TLAB-2510: added alternate value for in and out bytes for fortinet (#5934)",
+        "commit_origin_hash": "b08875959c16d92e38df42c1d232933f2767fe7a",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -45841,8 +45925,8 @@
         "uid": "6259f6a3-ddd8-41b6-8b02-ef16f6dbd174"
     },
     "625e3844-5ff4-4c3c-aab7-7c2dffcba260": {
-        "commit_message": "TLAB-2079: updated the mapper",
-        "commit_origin_hash": "e296dab6b1a3d5f52472cde44e7a4d209a5b4396",
+        "commit_message": "TLAB-2531: Updated Mapping for normalizedAction and normalizedCause Fields for O365 (#5937)",
+        "commit_origin_hash": "ec76680691ade4c49d9fcf1e72d9369c866ecc80",
         "field_mappings": {
             "description": {
                 "value": "RecordTypeString"
@@ -47179,8 +47263,8 @@
         "uid": "6631785C-901C-42CE-AC18-EDEA8D2829D1"
     },
     "665717e8-a975-11ea-bb37-0242ac130002": {
-        "commit_message": "TLAB-2079: updated the mapper",
-        "commit_origin_hash": "e296dab6b1a3d5f52472cde44e7a4d209a5b4396",
+        "commit_message": "TLAB-2531: Updated Mapping for normalizedAction and normalizedCause Fields for O365 (#5937)",
+        "commit_origin_hash": "ec76680691ade4c49d9fcf1e72d9369c866ecc80",
         "field_mappings": {
             "action": {
                 "value": "Operation"
@@ -47991,8 +48075,8 @@
         "uid": "6861570d-e513-46de-a60f-5c90b53e6c8b"
     },
     "68fb47a0-1dac-48d2-a8c0-d76997350793": {
-        "commit_message": "TLAB-2079: updated the mapper",
-        "commit_origin_hash": "e296dab6b1a3d5f52472cde44e7a4d209a5b4396",
+        "commit_message": "TLAB-2531: Updated Mapping for normalizedAction and normalizedCause Fields for O365 (#5937)",
+        "commit_origin_hash": "ec76680691ade4c49d9fcf1e72d9369c866ecc80",
         "field_mappings": {
             "action": {
                 "value": "Operation"
@@ -49795,8 +49879,8 @@
         "uid": "6b94825c-581c-47ff-ad57-156d24ca4c76"
     },
     "6b98c6bd-0d2b-45ee-8897-ad9e4f146e5f": {
-        "commit_message": "TLAB-2079: updated the mapper",
-        "commit_origin_hash": "e296dab6b1a3d5f52472cde44e7a4d209a5b4396",
+        "commit_message": "TLAB-2531: Updated Mapping for normalizedAction and normalizedCause Fields for O365 (#5937)",
+        "commit_origin_hash": "ec76680691ade4c49d9fcf1e72d9369c866ecc80",
         "field_mappings": {
             "timestamp": {
                 "format": "yyyy-MM-dd'T'HH:mm:ss",
@@ -52295,8 +52379,8 @@
         "uid": "72721bcc-a069-430b-add9-9afbd7e574cf"
     },
     "729bc327-a065-4fb8-81ed-5bb8f75d7fc2": {
-        "commit_message": "TLAB-2079: updated the mapper",
-        "commit_origin_hash": "e296dab6b1a3d5f52472cde44e7a4d209a5b4396",
+        "commit_message": "TLAB-2531: Updated Mapping for normalizedAction and normalizedCause Fields for O365 (#5937)",
+        "commit_origin_hash": "ec76680691ade4c49d9fcf1e72d9369c866ecc80",
         "field_mappings": {
             "timestamp": {
                 "format": "yyyy-MM-dd'T'HH:mm:ss",
@@ -53207,21 +53291,23 @@
         "uid": "74a1403a-a31d-41e3-9799-3f683c7a4243"
     },
     "74ea4bd5-67eb-4c82-97d7-0caf2e179a5e": {
-        "commit_message": "TLAB-2378 updated field mapping for fortinet mapper (#5897)",
-        "commit_origin_hash": "7def688c22de0f23a5480c0f849a5648d4400219",
+        "commit_message": "TLAB-2510: added alternate value for in and out bytes for fortinet (#5934)",
+        "commit_origin_hash": "b08875959c16d92e38df42c1d232933f2767fe7a",
         "field_mappings": {
             "action": {
                 "value": "action"
             },
             "bytesIn": {
                 "alternate_values": [
-                    "rcvdbyte"
+                    "rcvdbyte",
+                    "in"
                 ],
                 "value": "rcvddelta"
             },
             "bytesOut": {
                 "alternate_values": [
-                    "sentbyte"
+                    "sentbyte",
+                    "out"
                 ],
                 "value": "sentdelta"
             },
@@ -54085,8 +54171,8 @@
         "uid": "76893103-7434-4729-996d-e0cffc8b399e"
     },
     "76b2e178-ff09-40c9-9755-745661f30a22": {
-        "commit_message": "TLAB-2378 updated field mapping for fortinet mapper (#5897)",
-        "commit_origin_hash": "7def688c22de0f23a5480c0f849a5648d4400219",
+        "commit_message": "TLAB-2510: added alternate value for in and out bytes for fortinet (#5934)",
+        "commit_origin_hash": "b08875959c16d92e38df42c1d232933f2767fe7a",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -54819,8 +54905,8 @@
         "uid": "77c69a2d-90bc-437e-a9dc-93bc1fd6dcc4"
     },
     "77cf5d4a-8c57-4527-890c-9536e99345de": {
-        "commit_message": "TLAB-2079: updated the mapper",
-        "commit_origin_hash": "e296dab6b1a3d5f52472cde44e7a4d209a5b4396",
+        "commit_message": "TLAB-2531: Updated Mapping for normalizedAction and normalizedCause Fields for O365 (#5937)",
+        "commit_origin_hash": "ec76680691ade4c49d9fcf1e72d9369c866ecc80",
         "field_mappings": {
             "action": {
                 "value": "Operation"
@@ -57493,8 +57579,8 @@
         "uid": "80ac2dcc-a1d3-46a5-a9ae-bc4f9a1a2430"
     },
     "80f366f7-9fd9-4097-86d5-eb908a1b9912": {
-        "commit_message": "TLAB-2079: updated the mapper",
-        "commit_origin_hash": "e296dab6b1a3d5f52472cde44e7a4d209a5b4396",
+        "commit_message": "TLAB-2531: Updated Mapping for normalizedAction and normalizedCause Fields for O365 (#5937)",
+        "commit_origin_hash": "ec76680691ade4c49d9fcf1e72d9369c866ecc80",
         "field_mappings": {
             "description": {
                 "value": "RecordTypeString"
@@ -57682,8 +57768,8 @@
         "uid": "8103115b-d634-445c-bee6-8a80f30bbd56"
     },
     "810cafdb-8288-45a0-9ef7-d15cdc85307a": {
-        "commit_message": "TLAB-2378 updated field mapping for fortinet mapper (#5897)",
-        "commit_origin_hash": "7def688c22de0f23a5480c0f849a5648d4400219",
+        "commit_message": "TLAB-2510: added alternate value for in and out bytes for fortinet (#5934)",
+        "commit_origin_hash": "b08875959c16d92e38df42c1d232933f2767fe7a",
         "field_mappings": {
             "description": {
                 "alternate_values": [
@@ -61635,8 +61721,8 @@
         "uid": "88383f45-4b56-45e4-b0da-03be50c845e7"
     },
     "88466900-6cf8-4497-812e-a5ed70343885": {
-        "commit_message": "TLAB-2079: updated the mapper",
-        "commit_origin_hash": "e296dab6b1a3d5f52472cde44e7a4d209a5b4396",
+        "commit_message": "TLAB-2531: Updated Mapping for normalizedAction and normalizedCause Fields for O365 (#5937)",
+        "commit_origin_hash": "ec76680691ade4c49d9fcf1e72d9369c866ecc80",
         "field_mappings": {
             "action": {
                 "value": "Operation"
@@ -62053,8 +62139,8 @@
         "uid": "895b83e2-e169-4e3b-a768-46cf23670b24"
     },
     "89745f55-029f-482b-9f17-31c2a5bd9efd": {
-        "commit_message": "TLAB-2378 updated field mapping for fortinet mapper (#5897)",
-        "commit_origin_hash": "7def688c22de0f23a5480c0f849a5648d4400219",
+        "commit_message": "TLAB-2510: added alternate value for in and out bytes for fortinet (#5934)",
+        "commit_origin_hash": "b08875959c16d92e38df42c1d232933f2767fe7a",
         "field_mappings": {
             "action": {
                 "value": "act"
@@ -62644,8 +62730,8 @@
         "uid": "8a6aef8b-8983-4798-8539-bb86b4d7d271"
     },
     "8ab7c22e-a0a6-432c-b031-4dc3f325188c": {
-        "commit_message": "TLAB-2079: updated the mapper",
-        "commit_origin_hash": "e296dab6b1a3d5f52472cde44e7a4d209a5b4396",
+        "commit_message": "TLAB-2531: Updated Mapping for normalizedAction and normalizedCause Fields for O365 (#5937)",
+        "commit_origin_hash": "ec76680691ade4c49d9fcf1e72d9369c866ecc80",
         "field_mappings": {
             "device_ip": {
                 "value": "ClientIP"
@@ -64390,6 +64476,102 @@
         ],
         "source": "jask",
         "uid": "8e4e87b9-5647-4ed5-b70c-0b3dd673743d"
+    },
+    "8e7deb16-029d-4af5-97eb-b9cbe4d5ddb2": {
+        "commit_message": "TLAB-2528: Created a New Mapper for Proofpoint TRAP (#5936)",
+        "commit_origin_hash": "1376649e4509f7f723617f21456fd3b944a6f986",
+        "field_mappings": {
+            "accountId": {
+                "value": "tenant_id"
+            },
+            "description": {
+                "value": "incidents.1.title"
+            },
+            "email_messageId": {
+                "value": "message_id"
+            },
+            "email_sender": {
+                "value": "sender_address"
+            },
+            "email_subject": {
+                "value": "email_subject"
+            },
+            "flowState": {
+                "value": "remediation_status"
+            },
+            "normalizedSeverity": {
+                "lookup": {
+                    "high": "7",
+                    "low": "0",
+                    "medium": "4"
+                },
+                "value": "clear_confidence",
+                "value_type": "lookup"
+            },
+            "severity": {
+                "value": "clear_confidence"
+            },
+            "success": {
+                "value": "message_status.message_delivered"
+            },
+            "targetUser_email": {
+                "value": "recipient_address"
+            },
+            "targetUser_username": {
+                "split_delimiter": "@",
+                "split_index": 0,
+                "value": "recipient_address",
+                "value_type": "split"
+            },
+            "threat_category": {
+                "alternate_values": [
+                    "sources.1.type"
+                ],
+                "value": "tap_threat_types.1"
+            },
+            "threat_identifier": {
+                "value": "incidents.1.id"
+            },
+            "threat_name": {
+                "value": "incidents.1.title"
+            },
+            "threat_ruleType": {
+                "value": "direct",
+                "value_type": "constant"
+            },
+            "threat_signalName": {
+                "value": "incidents.1.title"
+            },
+            "user_email": {
+                "value": "sender_address"
+            },
+            "user_username": {
+                "split_delimiter": "@",
+                "split_index": 0,
+                "value": "sender_address",
+                "value_type": "split"
+            }
+        },
+        "file_path": "mappings_schemav3/proofpoint_trap.yaml",
+        "input": {
+            "event_id_pattern": "_default_",
+            "log_format": "JSON",
+            "product": "TRAP",
+            "vendor": "Proofpoint"
+        },
+        "name": "Proofpoint TRAP Default Mapping",
+        "output": {
+            "product_guid": "16c76d97-46c9-43f6-ba96-77d63085a4cf",
+            "record_type": "Email"
+        },
+        "skipped_values": [
+            ",",
+            "-",
+            "null",
+            "[]"
+        ],
+        "source": "jask",
+        "uid": "8e7deb16-029d-4af5-97eb-b9cbe4d5ddb2"
     },
     "8ed0317d-b4d2-4c7d-8088-ed237b9a0658": {
         "commit_message": "TLAB-2280: Remove Redundant Mapping and Add New Field Mapping (#5880)",
@@ -66163,21 +66345,23 @@
         "uid": "928fa5c2-ceeb-4c1b-b41e-c5ed6f18b24f"
     },
     "92ad9200-083c-4c89-a3c1-5e63d3e2801f": {
-        "commit_message": "TLAB-2378 updated field mapping for fortinet mapper (#5897)",
-        "commit_origin_hash": "7def688c22de0f23a5480c0f849a5648d4400219",
+        "commit_message": "TLAB-2510: added alternate value for in and out bytes for fortinet (#5934)",
+        "commit_origin_hash": "b08875959c16d92e38df42c1d232933f2767fe7a",
         "field_mappings": {
             "action": {
                 "value": "action"
             },
             "bytesIn": {
                 "alternate_values": [
-                    "rcvdbyte"
+                    "rcvdbyte",
+                    "in"
                 ],
                 "value": "rcvddelta"
             },
             "bytesOut": {
                 "alternate_values": [
-                    "sentbyte"
+                    "sentbyte",
+                    "out"
                 ],
                 "value": "sentdelta"
             },
@@ -70019,8 +70203,8 @@
         "uid": "99cd6835-a726-4032-9406-a3358beba9a9"
     },
     "99ef5972-d88b-4e04-bb1f-c20a43af5e44": {
-        "commit_message": "TLAB-2378 updated field mapping for fortinet mapper (#5897)",
-        "commit_origin_hash": "7def688c22de0f23a5480c0f849a5648d4400219",
+        "commit_message": "TLAB-2510: added alternate value for in and out bytes for fortinet (#5934)",
+        "commit_origin_hash": "b08875959c16d92e38df42c1d232933f2767fe7a",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -73564,8 +73748,8 @@
         "uid": "FF1BADCE-0DC2-41F5-888F-88ECA95AE8A0"
     },
     "a00c315a-8806-42f1-8deb-39a85f4d5b7e": {
-        "commit_message": "TLAB-2079: updated the mapper",
-        "commit_origin_hash": "e296dab6b1a3d5f52472cde44e7a4d209a5b4396",
+        "commit_message": "TLAB-2531: Updated Mapping for normalizedAction and normalizedCause Fields for O365 (#5937)",
+        "commit_origin_hash": "ec76680691ade4c49d9fcf1e72d9369c866ecc80",
         "field_mappings": {
             "timestamp": {
                 "format": "yyyy-MM-dd'T'HH:mm:ss",
@@ -74080,8 +74264,8 @@
         "uid": "a112519f-d29c-47cb-924e-a79c5207107b"
     },
     "a119686a-c0a6-44af-a36d-9d01d1aac496": {
-        "commit_message": "TLAB-2378 updated field mapping for fortinet mapper (#5897)",
-        "commit_origin_hash": "7def688c22de0f23a5480c0f849a5648d4400219",
+        "commit_message": "TLAB-2510: added alternate value for in and out bytes for fortinet (#5934)",
+        "commit_origin_hash": "b08875959c16d92e38df42c1d232933f2767fe7a",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -74666,8 +74850,8 @@
         "uid": "a2b8171c-c72c-11ea-87d0-0242ac130003"
     },
     "a2bdaf5f-92f8-45f3-be99-eb8fa34d26a7": {
-        "commit_message": "TLAB-2079: updated the mapper",
-        "commit_origin_hash": "e296dab6b1a3d5f52472cde44e7a4d209a5b4396",
+        "commit_message": "TLAB-2531: Updated Mapping for normalizedAction and normalizedCause Fields for O365 (#5937)",
+        "commit_origin_hash": "ec76680691ade4c49d9fcf1e72d9369c866ecc80",
         "field_mappings": {
             "action": {
                 "default_value": "Unknown",
@@ -74812,8 +74996,8 @@
         "uid": "a2bdaf5f-92f8-45f3-be99-eb8fa34d26a7"
     },
     "a334a0ca-b389-4f59-b34b-66b19becfbe2": {
-        "commit_message": "TLAB-2378 updated field mapping for fortinet mapper (#5897)",
-        "commit_origin_hash": "7def688c22de0f23a5480c0f849a5648d4400219",
+        "commit_message": "TLAB-2510: added alternate value for in and out bytes for fortinet (#5934)",
+        "commit_origin_hash": "b08875959c16d92e38df42c1d232933f2767fe7a",
         "field_mappings": {
             "bytesIn": {
                 "value": "ad.lanin"
@@ -75738,8 +75922,8 @@
         "uid": "a4967bae-89ca-11ea-bc55-0242ac130003"
     },
     "a4a85fa1-c67e-4dc5-8685-4c39a3a9e012": {
-        "commit_message": "TLAB-2378 updated field mapping for fortinet mapper (#5897)",
-        "commit_origin_hash": "7def688c22de0f23a5480c0f849a5648d4400219",
+        "commit_message": "TLAB-2510: added alternate value for in and out bytes for fortinet (#5934)",
+        "commit_origin_hash": "b08875959c16d92e38df42c1d232933f2767fe7a",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -77447,8 +77631,8 @@
         "uid": "a9352f93-c8b9-4652-812b-3673133307d1"
     },
     "aa0263c9-a102-492c-b614-67d9aaf98ac1": {
-        "commit_message": "TLAB-2079: updated the mapper",
-        "commit_origin_hash": "e296dab6b1a3d5f52472cde44e7a4d209a5b4396",
+        "commit_message": "TLAB-2531: Updated Mapping for normalizedAction and normalizedCause Fields for O365 (#5937)",
+        "commit_origin_hash": "ec76680691ade4c49d9fcf1e72d9369c866ecc80",
         "field_mappings": {
             "device_ip": {
                 "value": "0.0.0.0",
@@ -77692,8 +77876,8 @@
         "uid": "aaa2d5b5-0a1b-46d3-b467-bf6ff95aed94"
     },
     "aac55d27-898b-4bc4-9a20-19b8e3897f61": {
-        "commit_message": "TLAB-2378 updated field mapping for fortinet mapper (#5897)",
-        "commit_origin_hash": "7def688c22de0f23a5480c0f849a5648d4400219",
+        "commit_message": "TLAB-2510: added alternate value for in and out bytes for fortinet (#5934)",
+        "commit_origin_hash": "b08875959c16d92e38df42c1d232933f2767fe7a",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -77799,8 +77983,8 @@
         "uid": "ab08f1b4-499e-4231-a1e0-db2df762a80b"
     },
     "ab4d40ab-4286-4db5-b0ec-e26cd4172f19": {
-        "commit_message": "TLAB-2079: updated the mapper",
-        "commit_origin_hash": "e296dab6b1a3d5f52472cde44e7a4d209a5b4396",
+        "commit_message": "TLAB-2531: Updated Mapping for normalizedAction and normalizedCause Fields for O365 (#5937)",
+        "commit_origin_hash": "ec76680691ade4c49d9fcf1e72d9369c866ecc80",
         "field_mappings": {
             "description": {
                 "value": "RecordTypeString"
@@ -78058,8 +78242,8 @@
         "uid": "ac0149c5-b3d9-45c0-8ab3-b96a18cb1cdb"
     },
     "ac1d101a-1ac6-429a-930a-040d54931332": {
-        "commit_message": "TLAB-2378 updated field mapping for fortinet mapper (#5897)",
-        "commit_origin_hash": "7def688c22de0f23a5480c0f849a5648d4400219",
+        "commit_message": "TLAB-2510: added alternate value for in and out bytes for fortinet (#5934)",
+        "commit_origin_hash": "b08875959c16d92e38df42c1d232933f2767fe7a",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -78464,8 +78648,8 @@
         "uid": "ace70500-eed9-4628-a9a4-970e5e34e228"
     },
     "ad133542-26f6-45d4-a082-0118e80307aa": {
-        "commit_message": "TLAB-2378 updated field mapping for fortinet mapper (#5897)",
-        "commit_origin_hash": "7def688c22de0f23a5480c0f849a5648d4400219",
+        "commit_message": "TLAB-2510: added alternate value for in and out bytes for fortinet (#5934)",
+        "commit_origin_hash": "b08875959c16d92e38df42c1d232933f2767fe7a",
         "field_mappings": {
             "action": {
                 "value": "kind"
@@ -81069,8 +81253,8 @@
         "uid": "b3edeaee-6d9a-4192-9381-b79261bdefb2"
     },
     "b3ff45ad-e402-43c0-8406-f44441c226f2": {
-        "commit_message": "TLAB-2079: updated the mapper",
-        "commit_origin_hash": "e296dab6b1a3d5f52472cde44e7a4d209a5b4396",
+        "commit_message": "TLAB-2531: Updated Mapping for normalizedAction and normalizedCause Fields for O365 (#5937)",
+        "commit_origin_hash": "ec76680691ade4c49d9fcf1e72d9369c866ecc80",
         "field_mappings": {
             "action": {
                 "value": "Operation"
@@ -82249,8 +82433,8 @@
         "uid": "b6f6c7ab-88a7-420c-8800-8c029bfc9ac3"
     },
     "b722f175-2dd7-4509-b97f-63de578cbb59": {
-        "commit_message": "TLAB-2378 updated field mapping for fortinet mapper (#5897)",
-        "commit_origin_hash": "7def688c22de0f23a5480c0f849a5648d4400219",
+        "commit_message": "TLAB-2510: added alternate value for in and out bytes for fortinet (#5934)",
+        "commit_origin_hash": "b08875959c16d92e38df42c1d232933f2767fe7a",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -83357,8 +83541,8 @@
         "uid": "b99387f5-969d-49e8-9730-ebd952e6a37f"
     },
     "b993e0c4-67c9-4080-8339-1156bca5ef7e": {
-        "commit_message": "TLAB-2079: updated the mapper",
-        "commit_origin_hash": "e296dab6b1a3d5f52472cde44e7a4d209a5b4396",
+        "commit_message": "TLAB-2531: Updated Mapping for normalizedAction and normalizedCause Fields for O365 (#5937)",
+        "commit_origin_hash": "ec76680691ade4c49d9fcf1e72d9369c866ecc80",
         "field_mappings": {
             "action": {
                 "value": "Operation"
@@ -85601,8 +85785,8 @@
         "uid": "c11a6f1b-73fd-42a8-a55f-b8fc2742fa21"
     },
     "c17b35e5-dc9d-4fd8-94e4-f49b29589288": {
-        "commit_message": "TLAB-2378 updated field mapping for fortinet mapper (#5897)",
-        "commit_origin_hash": "7def688c22de0f23a5480c0f849a5648d4400219",
+        "commit_message": "TLAB-2510: added alternate value for in and out bytes for fortinet (#5934)",
+        "commit_origin_hash": "b08875959c16d92e38df42c1d232933f2767fe7a",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -86741,8 +86925,8 @@
         "uid": "c3eaf746-896b-11ea-bc55-0242ac130003"
     },
     "c3f3c9f3-90f5-4340-823f-7a133a278647": {
-        "commit_message": "TLAB-2079: updated the mapper",
-        "commit_origin_hash": "e296dab6b1a3d5f52472cde44e7a4d209a5b4396",
+        "commit_message": "TLAB-2531: Updated Mapping for normalizedAction and normalizedCause Fields for O365 (#5937)",
+        "commit_origin_hash": "ec76680691ade4c49d9fcf1e72d9369c866ecc80",
         "field_mappings": {
             "action": {
                 "value": "Operation"
@@ -87519,8 +87703,8 @@
         "uid": "c5b68c1d-1d67-417a-89c3-1a33266778f7"
     },
     "c5d57c30-5458-4895-91eb-40a2483e9008": {
-        "commit_message": "TLAB-2378 updated field mapping for fortinet mapper (#5897)",
-        "commit_origin_hash": "7def688c22de0f23a5480c0f849a5648d4400219",
+        "commit_message": "TLAB-2510: added alternate value for in and out bytes for fortinet (#5934)",
+        "commit_origin_hash": "b08875959c16d92e38df42c1d232933f2767fe7a",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -87897,8 +88081,8 @@
         "uid": "c6f40cdd-1908-4826-95d8-d4c52186c4c0"
     },
     "c708976b-a216-48a2-a492-d6a7a4fc2529": {
-        "commit_message": "TLAB-2079: updated the mapper",
-        "commit_origin_hash": "e296dab6b1a3d5f52472cde44e7a4d209a5b4396",
+        "commit_message": "TLAB-2531: Updated Mapping for normalizedAction and normalizedCause Fields for O365 (#5937)",
+        "commit_origin_hash": "ec76680691ade4c49d9fcf1e72d9369c866ecc80",
         "field_mappings": {
             "action": {
                 "value": "Operation"
@@ -88890,8 +89074,8 @@
         "uid": "ca60e048-c6dd-44ce-b606-5b49aa33deb9"
     },
     "ca8610b2-185e-4c44-885c-769329fbddc5": {
-        "commit_message": "TLAB-2079: updated the mapper",
-        "commit_origin_hash": "e296dab6b1a3d5f52472cde44e7a4d209a5b4396",
+        "commit_message": "TLAB-2531: Updated Mapping for normalizedAction and normalizedCause Fields for O365 (#5937)",
+        "commit_origin_hash": "ec76680691ade4c49d9fcf1e72d9369c866ecc80",
         "field_mappings": {
             "action": {
                 "value": "Operation"
@@ -89483,8 +89667,8 @@
         "uid": "cb107f45-2e4d-4c8b-ba9d-4805aee79fb7"
     },
     "cb996e17-3f10-477e-a9fb-1acbba2bd730": {
-        "commit_message": "TLAB-2079: updated the mapper",
-        "commit_origin_hash": "e296dab6b1a3d5f52472cde44e7a4d209a5b4396",
+        "commit_message": "TLAB-2531: Updated Mapping for normalizedAction and normalizedCause Fields for O365 (#5937)",
+        "commit_origin_hash": "ec76680691ade4c49d9fcf1e72d9369c866ecc80",
         "field_mappings": {
             "timestamp": {
                 "format": "yyyy-MM-dd'T'HH:mm:ss",
@@ -91052,8 +91236,8 @@
         "uid": "cf7c6c83-2b73-47c4-933d-aaf0bdae6450"
     },
     "cf87663f-bf57-49c2-b0a5-0e1c5e7f50fc": {
-        "commit_message": "TLAB-2079: updated the mapper",
-        "commit_origin_hash": "e296dab6b1a3d5f52472cde44e7a4d209a5b4396",
+        "commit_message": "TLAB-2531: Updated Mapping for normalizedAction and normalizedCause Fields for O365 (#5937)",
+        "commit_origin_hash": "ec76680691ade4c49d9fcf1e72d9369c866ecc80",
         "field_mappings": {
             "device_ip": {
                 "value": "ClientIP"
@@ -96006,8 +96190,8 @@
         "uid": "dbe1aefa-8b38-49f6-83d4-d60fd0c7f99c"
     },
     "dc596d84-47fe-4a4f-8132-dca3fe5920c9": {
-        "commit_message": "TLAB-2378 updated field mapping for fortinet mapper (#5897)",
-        "commit_origin_hash": "7def688c22de0f23a5480c0f849a5648d4400219",
+        "commit_message": "TLAB-2510: added alternate value for in and out bytes for fortinet (#5934)",
+        "commit_origin_hash": "b08875959c16d92e38df42c1d232933f2767fe7a",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -96213,21 +96397,23 @@
         "uid": "dc975eac-b121-408f-8688-48b80ce09d8b"
     },
     "dca6ce19-449e-468b-9bea-3db2cb87fa9c": {
-        "commit_message": "TLAB-2378 updated field mapping for fortinet mapper (#5897)",
-        "commit_origin_hash": "7def688c22de0f23a5480c0f849a5648d4400219",
+        "commit_message": "TLAB-2510: added alternate value for in and out bytes for fortinet (#5934)",
+        "commit_origin_hash": "b08875959c16d92e38df42c1d232933f2767fe7a",
         "field_mappings": {
             "action": {
                 "value": "action"
             },
             "bytesIn": {
                 "alternate_values": [
-                    "rcvdbyte"
+                    "rcvdbyte",
+                    "in"
                 ],
                 "value": "rcvddelta"
             },
             "bytesOut": {
                 "alternate_values": [
-                    "sentbyte"
+                    "sentbyte",
+                    "out"
                 ],
                 "value": "sentdelta"
             },
@@ -97278,8 +97464,8 @@
         "uid": "df17837b-a59a-492a-b8ca-890580dbb3c6"
     },
     "df5cf29a-4b96-4ce2-b6ce-9abbf882f86e": {
-        "commit_message": "TLAB-2079: updated the mapper",
-        "commit_origin_hash": "e296dab6b1a3d5f52472cde44e7a4d209a5b4396",
+        "commit_message": "TLAB-2531: Updated Mapping for normalizedAction and normalizedCause Fields for O365 (#5937)",
+        "commit_origin_hash": "ec76680691ade4c49d9fcf1e72d9369c866ecc80",
         "field_mappings": {
             "device_ip": {
                 "value": "0.0.0.0",
@@ -97368,9 +97554,238 @@
         "source": "jask",
         "uid": "df9365c8-edf6-46e3-a151-5e9819ce8776"
     },
+    "dffce69e-85d4-4894-9b32-a5ff9657b101": {
+        "commit_message": "TLAB-2525: Created New Mapper for The Teleport (#5935)",
+        "commit_origin_hash": "01e3196b019d30b8a5a47fc7d4692ec28b905c7d",
+        "field_mappings": {
+            "action": {
+                "value": "event_type"
+            },
+            "changeTarget": {
+                "lookup": {
+                    "access_list.member.create": "User",
+                    "access_list.member.delete": "User",
+                    "access_list.member.update": "User",
+                    "db.update": "Database",
+                    "device.token.create": "Token",
+                    "role.created": "Role"
+                },
+                "value": "event_type",
+                "value_type": "lookup"
+            },
+            "changeType": {
+                "lookup": {
+                    "access_list.member.create": "Created",
+                    "access_list.member.delete": "Deleted",
+                    "access_list.member.update": "Updated",
+                    "db.update": "Updated",
+                    "device.token.create": "Created",
+                    "role.created": "Created"
+                },
+                "value": "event_type",
+                "value_type": "lookup"
+            },
+            "cloud_region": {
+                "alternate_values": [
+                    "event_data.db_labels.region"
+                ],
+                "value": "event_data.db_aws_region"
+            },
+            "cloud_service": {
+                "value": "event_data.db_labels.teleport.dev/cloud"
+            },
+            "description": {
+                "alternate_values": [
+                    "event_data.reason",
+                    "event_data.connector.metadata.description"
+                ],
+                "value": "event_data.message"
+            },
+            "device_container_name": {
+                "value": "event_data.kubernetes_container_name"
+            },
+            "device_hostname": {
+                "value": "event_data.server_hostname"
+            },
+            "device_image": {
+                "value": "event_data.kubernetes_container_image"
+            },
+            "device_k8s_namespace": {
+                "alternate_values": [
+                    "event_data.kubernetes_pod_namespace"
+                ],
+                "value": "event_data.namespace"
+            },
+            "device_k8s_pod": {
+                "value": "event_data.kubernetes_pod_name"
+            },
+            "device_uniqueId": {
+                "alternate_values": [
+                    "event_data.device.device_id"
+                ],
+                "value": "event_data.trusted_device.device_id"
+            },
+            "dstDevice_hostname": {
+                "value": "event_data.kubernetes_node_name"
+            },
+            "flowState": {
+                "value": "event_data.state"
+            },
+            "http_method": {
+                "value": "event_data.verb"
+            },
+            "http_response_statusCode": {
+                "value": "event_data.response_code"
+            },
+            "http_url": {
+                "format_parameters": [
+                    "event_data.server_hostname",
+                    "event_data.request_path"
+                ],
+                "value": "http://%s%s",
+                "value_type": "format"
+            },
+            "http_userAgent": {
+                "value": "event_data.user_agent"
+            },
+            "normalizedAction": {
+                "lookup": {
+                    "access_list.member.create": "create",
+                    "access_list.member.delete": "delete",
+                    "access_list.member.update": "change",
+                    "access_list.update": "change",
+                    "access_request.create": "create",
+                    "access_request.expire": "disable",
+                    "access_request.review": "scan",
+                    "app.session.end": "stop",
+                    "app.session.start": "start",
+                    "auto_update_version.update": "change",
+                    "bot.join": "logon",
+                    "cert.create": "create",
+                    "db.session.end": "stop",
+                    "db.session.postgres.statements.bind": "execute",
+                    "db.session.postgres.statements.execute": "execute",
+                    "db.session.postgres.statements.parse": "execute",
+                    "db.session.query": "execute",
+                    "db.session.start": "start",
+                    "db.update": "change",
+                    "device.authenticate.confirm": "receive",
+                    "device.enroll": "create",
+                    "device.token.create": "create",
+                    "device.webtoken.create": "create",
+                    "exec": "execute",
+                    "kube.request": "execute",
+                    "mfa_auth_challenge.create": "create",
+                    "role.created": "create",
+                    "saml.created": "create",
+                    "secreports.report.run": "execute",
+                    "session.end": "stop",
+                    "session.join": "logon",
+                    "session.leave": "logoff",
+                    "session.start": "start",
+                    "session.upload": "send"
+                },
+                "value": "event_type",
+                "value_type": "lookup"
+            },
+            "normalizedResource": {
+                "lookup": {
+                    "app.session.end": "application",
+                    "app.session.start": "application",
+                    "bot.join": "account",
+                    "db.session.end": "database",
+                    "db.session.postgres.statements.bind": "database",
+                    "db.session.postgres.statements.execute": "database",
+                    "db.session.postgres.statements.parse": "database",
+                    "db.session.query": "database",
+                    "db.session.start": "database",
+                    "db.update": "database",
+                    "exec": "service",
+                    "kube.request": "service",
+                    "port": "network",
+                    "port.local": "network",
+                    "role.created": "role"
+                },
+                "value": "event_type",
+                "value_type": "lookup"
+            },
+            "resource": {
+                "alternate_values": [
+                    "event_data.name",
+                    "event_data.db_name",
+                    "event_data.app_name"
+                ],
+                "value": "event_data.kubernetes_cluster"
+            },
+            "resourceType": {
+                "alternate_values": [
+                    "event_data.db_type"
+                ],
+                "value": "event_data.resource_kind"
+            },
+            "sessionId": {
+                "value": "session_id"
+            },
+            "srcDevice_ip": {
+                "alternate_values": [
+                    "event_data.identity.client_ip"
+                ],
+                "value": "event_data.addr.remote"
+            },
+            "srcPort": {
+                "value": "event_data.port.remote"
+            },
+            "success": {
+                "value": "event_data.success"
+            },
+            "targetUser_email": {
+                "value": "target_user_email"
+            },
+            "targetUser_username": {
+                "alternate_values": [
+                    "target_user"
+                ],
+                "value": "event_data.db_user"
+            },
+            "user_email": {
+                "value": "event_data.user_email"
+            },
+            "user_role": {
+                "value": "event_data.user_roles.1"
+            },
+            "user_userId": {
+                "value": "event_data.uid"
+            },
+            "user_username": {
+                "alternate_values": [
+                    "event_data.identity.user",
+                    "event_data.user_name"
+                ],
+                "value": "event_data.user"
+            }
+        },
+        "file_path": "mappings_schemav3/teleport.yaml",
+        "input": {
+            "event_id_pattern": "_default_",
+            "log_format": "JSON",
+            "product": "Teleport",
+            "vendor": "Teleport"
+        },
+        "name": "Teleport Default",
+        "output": {
+            "product_guid": "46c71698-9c21-4273-9561-94ff5af52edd",
+            "record_type": "AuditChange"
+        },
+        "skipped_values": [
+            ",",
+            "-"
+        ],
+        "source": "jask",
+        "uid": "dffce69e-85d4-4894-9b32-a5ff9657b101"
+    },
     "e018g3c3-df8a-4722-8382-b8r4er0641ee": {
-        "commit_message": "TLAB-2378 updated field mapping for fortinet mapper (#5897)",
-        "commit_origin_hash": "7def688c22de0f23a5480c0f849a5648d4400219",
+        "commit_message": "TLAB-2510: added alternate value for in and out bytes for fortinet (#5934)",
+        "commit_origin_hash": "b08875959c16d92e38df42c1d232933f2767fe7a",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -97416,8 +97831,8 @@
         "uid": "e018g3c3-df8a-4722-8382-b8r4er0641ee"
     },
     "e018r3c3-da8a-4022-8382-b8r4er0641ee": {
-        "commit_message": "TLAB-2378 updated field mapping for fortinet mapper (#5897)",
-        "commit_origin_hash": "7def688c22de0f23a5480c0f849a5648d4400219",
+        "commit_message": "TLAB-2510: added alternate value for in and out bytes for fortinet (#5934)",
+        "commit_origin_hash": "b08875959c16d92e38df42c1d232933f2767fe7a",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -97471,8 +97886,8 @@
         "uid": "e018r3c3-da8a-4022-8382-b8r4er0641ee"
     },
     "e018v3c1-df0a-4712-8782-b8d4er0642ee": {
-        "commit_message": "TLAB-2378 updated field mapping for fortinet mapper (#5897)",
-        "commit_origin_hash": "7def688c22de0f23a5480c0f849a5648d4400219",
+        "commit_message": "TLAB-2510: added alternate value for in and out bytes for fortinet (#5934)",
+        "commit_origin_hash": "b08875959c16d92e38df42c1d232933f2767fe7a",
         "field_mappings": {
             "description": {
                 "value": "msg"
@@ -97540,8 +97955,8 @@
         "uid": "e018v3c1-df0a-4712-8782-b8d4er0642ee"
     },
     "e018v5c1-df0g-4712-8582-b8d4er0642ee": {
-        "commit_message": "TLAB-2378 updated field mapping for fortinet mapper (#5897)",
-        "commit_origin_hash": "7def688c22de0f23a5480c0f849a5648d4400219",
+        "commit_message": "TLAB-2510: added alternate value for in and out bytes for fortinet (#5934)",
+        "commit_origin_hash": "b08875959c16d92e38df42c1d232933f2767fe7a",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -99137,8 +99552,8 @@
         "uid": "e3f5b429-af48-4135-abf1-c3a32db01a14"
     },
     "e3f84313-4099-4c1f-97f1-700f73a76311": {
-        "commit_message": "TLAB-2378 updated field mapping for fortinet mapper (#5897)",
-        "commit_origin_hash": "7def688c22de0f23a5480c0f849a5648d4400219",
+        "commit_message": "TLAB-2510: added alternate value for in and out bytes for fortinet (#5934)",
+        "commit_origin_hash": "b08875959c16d92e38df42c1d232933f2767fe7a",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -99558,8 +99973,8 @@
         "uid": "e4883fa4-baaa-47bc-948d-17ca3ba7ac94"
     },
     "e4dd1018-6a82-11ea-bc55-0242ac130003": {
-        "commit_message": "TLAB-2079: updated the mapper",
-        "commit_origin_hash": "e296dab6b1a3d5f52472cde44e7a4d209a5b4396",
+        "commit_message": "TLAB-2531: Updated Mapping for normalizedAction and normalizedCause Fields for O365 (#5937)",
+        "commit_origin_hash": "ec76680691ade4c49d9fcf1e72d9369c866ecc80",
         "field_mappings": {
             "action": {
                 "value": "Operation"
@@ -100297,8 +100712,8 @@
         "uid": "e6da534c-057e-484b-9420-18b257745739"
     },
     "e70b51c6-7240-4b03-8c91-6c703feff198": {
-        "commit_message": "TLAB-2378 updated field mapping for fortinet mapper (#5897)",
-        "commit_origin_hash": "7def688c22de0f23a5480c0f849a5648d4400219",
+        "commit_message": "TLAB-2510: added alternate value for in and out bytes for fortinet (#5934)",
+        "commit_origin_hash": "b08875959c16d92e38df42c1d232933f2767fe7a",
         "field_mappings": {
             "description": {
                 "value": "msg"
@@ -101809,8 +102224,8 @@
         "uid": "eab0642b-862f-4328-af33-e3b29893c41f"
     },
     "eab4df6a-a268-4c9d-9de9-39306124c64d": {
-        "commit_message": "TLAB-2378 updated field mapping for fortinet mapper (#5897)",
-        "commit_origin_hash": "7def688c22de0f23a5480c0f849a5648d4400219",
+        "commit_message": "TLAB-2510: added alternate value for in and out bytes for fortinet (#5934)",
+        "commit_origin_hash": "b08875959c16d92e38df42c1d232933f2767fe7a",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -102189,8 +102604,8 @@
         "uid": "eb91afed-79e3-415e-a25a-f85e5688d73d"
     },
     "eba2f49f-b86e-4a55-913b-90dc8423f4a1": {
-        "commit_message": "TLAB-2079: updated the mapper",
-        "commit_origin_hash": "e296dab6b1a3d5f52472cde44e7a4d209a5b4396",
+        "commit_message": "TLAB-2531: Updated Mapping for normalizedAction and normalizedCause Fields for O365 (#5937)",
+        "commit_origin_hash": "ec76680691ade4c49d9fcf1e72d9369c866ecc80",
         "field_mappings": {
             "device_ip": {
                 "value": "0.0.0.0",
@@ -104039,8 +104454,8 @@
         "uid": "f029b8c4-f4a4-4b46-b528-4a22e66b6eaa"
     },
     "f096edb3-5d42-4834-bfd0-16ff99fae568": {
-        "commit_message": "TLAB-2079: updated the mapper",
-        "commit_origin_hash": "e296dab6b1a3d5f52472cde44e7a4d209a5b4396",
+        "commit_message": "TLAB-2531: Updated Mapping for normalizedAction and normalizedCause Fields for O365 (#5937)",
+        "commit_origin_hash": "ec76680691ade4c49d9fcf1e72d9369c866ecc80",
         "field_mappings": {
             "action": {
                 "value": "Operation"
@@ -104787,8 +105202,8 @@
         "uid": "f3076e8d-b3c3-4401-82a0-179742707511"
     },
     "f35c71f7-eb5e-472a-94a9-9e9965492f1c": {
-        "commit_message": "TLAB-2079: updated the mapper",
-        "commit_origin_hash": "e296dab6b1a3d5f52472cde44e7a4d209a5b4396",
+        "commit_message": "TLAB-2531: Updated Mapping for normalizedAction and normalizedCause Fields for O365 (#5937)",
+        "commit_origin_hash": "ec76680691ade4c49d9fcf1e72d9369c866ecc80",
         "field_mappings": {
             "action": {
                 "value": "Operation"
@@ -105618,8 +106033,8 @@
         "uid": "f50113e5-8a13-49a8-873e-6af7030f9b6d"
     },
     "f5471bd2-a961-4aad-bae4-0e182bdfd05e": {
-        "commit_message": "TLAB-2378 updated field mapping for fortinet mapper (#5897)",
-        "commit_origin_hash": "7def688c22de0f23a5480c0f849a5648d4400219",
+        "commit_message": "TLAB-2510: added alternate value for in and out bytes for fortinet (#5934)",
+        "commit_origin_hash": "b08875959c16d92e38df42c1d232933f2767fe7a",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -106943,8 +107358,8 @@
         "uid": "f8794970-48a2-409f-883a-89fbd566b379"
     },
     "f8aece90-2f37-4086-8193-0adb47056800": {
-        "commit_message": "TLAB-2378 updated field mapping for fortinet mapper (#5897)",
-        "commit_origin_hash": "7def688c22de0f23a5480c0f849a5648d4400219",
+        "commit_message": "TLAB-2510: added alternate value for in and out bytes for fortinet (#5934)",
+        "commit_origin_hash": "b08875959c16d92e38df42c1d232933f2767fe7a",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -107047,8 +107462,8 @@
         "uid": "f8d81468-a912-4bcd-8aa3-26df0d0c1e8d"
     },
     "f92aeb36-4690-47b7-ba7b-be1d0ec491ce": {
-        "commit_message": "TLAB-2079: updated the mapper",
-        "commit_origin_hash": "e296dab6b1a3d5f52472cde44e7a4d209a5b4396",
+        "commit_message": "TLAB-2531: Updated Mapping for normalizedAction and normalizedCause Fields for O365 (#5937)",
+        "commit_origin_hash": "ec76680691ade4c49d9fcf1e72d9369c866ecc80",
         "field_mappings": {
             "action": {
                 "value": "Operation"
@@ -107157,21 +107572,23 @@
         "uid": "f95d4f87-7e41-42ae-be1f-6d8890d93508"
     },
     "f9b6ec33-d0b5-468a-a92c-a8c62a4bcca9": {
-        "commit_message": "TLAB-2378 updated field mapping for fortinet mapper (#5897)",
-        "commit_origin_hash": "7def688c22de0f23a5480c0f849a5648d4400219",
+        "commit_message": "TLAB-2510: added alternate value for in and out bytes for fortinet (#5934)",
+        "commit_origin_hash": "b08875959c16d92e38df42c1d232933f2767fe7a",
         "field_mappings": {
             "action": {
                 "value": "action"
             },
             "bytesIn": {
                 "alternate_values": [
-                    "rcvdbyte"
+                    "rcvdbyte",
+                    "in"
                 ],
                 "value": "rcvddelta"
             },
             "bytesOut": {
                 "alternate_values": [
-                    "sentbyte"
+                    "sentbyte",
+                    "out"
                 ],
                 "value": "sentdelta"
             },
@@ -107877,8 +108294,8 @@
         "uid": "fa4028ba-0c1d-4fb3-a152-6e65e0b5200e"
     },
     "fa572950-571a-4570-9299-8cd3fa64fad2": {
-        "commit_message": "TLAB-2079: updated the mapper",
-        "commit_origin_hash": "e296dab6b1a3d5f52472cde44e7a4d209a5b4396",
+        "commit_message": "TLAB-2531: Updated Mapping for normalizedAction and normalizedCause Fields for O365 (#5937)",
+        "commit_origin_hash": "ec76680691ade4c49d9fcf1e72d9369c866ecc80",
         "field_mappings": {
             "action": {
                 "value": "Operation"
@@ -108989,8 +109406,8 @@
         "uid": "fc4bdead-7e41-11e8-adc1-fa7ae01bbede"
     },
     "fc8169ec-a972-11ea-bb37-0242ac130002": {
-        "commit_message": "TLAB-2079: updated the mapper",
-        "commit_origin_hash": "e296dab6b1a3d5f52472cde44e7a4d209a5b4396",
+        "commit_message": "TLAB-2531: Updated Mapping for normalizedAction and normalizedCause Fields for O365 (#5937)",
+        "commit_origin_hash": "ec76680691ade4c49d9fcf1e72d9369c866ecc80",
         "field_mappings": {
             "device_ip": {
                 "value": "ClientIP"

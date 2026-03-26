@@ -130,6 +130,7 @@
 "direct","MATCH-S00402","Normalized Security Signal","03a073b1-75da-404e-b221-a3fac810632a","Palo Alto Threat Scan - Custom Parser"
 "direct","MATCH-S00402","Normalized Security Signal","779cdb4d-382c-4f25-9c9d-0bc59721fd8c","Palo Alto Threat Spyware - Custom Parser"
 "direct","MATCH-S00402","Normalized Security Signal","ebdfc811-612b-48ed-ab66-abc2ca8b9c89","Palo Alto Threat Virus - Custom Parser"
+"direct","MATCH-S00402","Normalized Security Signal","8e7deb16-029d-4af5-97eb-b9cbe4d5ddb2","Proofpoint TRAP Default Mapping"
 "direct","MATCH-S00402","Normalized Security Signal","e81ecbb6-8a11-4104-acbd-e76f5bde3d7e","Qualys Vulnerability Data"
 "direct","MATCH-S00402","Normalized Security Signal","C58BDBCA-F07D-4832-BEB2-FFA79727370F","Recon_EC2_PortProbeUnprotectedPort (Sumo Logic)"
 "direct","MATCH-S00402","Normalized Security Signal","A62309CA-3CEE-4F2D-8646-5D88FE78755C","Recon_EC2_Portscan (Sumo Logic)"
