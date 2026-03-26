@@ -13,6 +13,7 @@
 |Endpoint|Use this record type for log sources based on endpoint behavior. Whenever possible, it is preferable to use one of these more specific endpoint record types: EndpointModuleLoad or EndpointProcess.|
 |EndpointModuleLoad|Use this record type for logs that indicate a process is loading one or more modules such as DLL files.|
 |EndpointProcess|Use this record type for logs that capture endpoint process auditing.|
+|FailedRecord|This is an Cloud SIEM record type automatically used when a log record does not match a mapping to generate a Cloud SIEM record. The record contains a reference back to the original log. This record type is a SYSTEM type and cannot be used for normalizing log records.|
 |Network|Use this record type for generic log sources that describe network events. Whenever possible, it is preferable to use one of these more specific network record types: NetworkDHCP, NetworkDNS, NetworkFlow, NetworkHTTP, NetworkProxy.|
 |NetworkDHCP|Use this record type for network logs generated from a DHCP service.|
 |NetworkDNS|Use this record type for network logs generated from a DNS service.|
@@ -21,4 +22,3 @@
 |NetworkProxy|Use this record type for network logs generated from Proxy services which contains a wide variety of proxy related information.|
 |Notification|Use this record type for log sources that report general notifications.|
 |NotificationVulnerability|Use this record type for log sources that report notifications about detected vulnerabilities.|
-|ParsingFailure|This is an Cloud SIEM record type automatically used when a log record does not match a mapping to generate a Cloud SIEM record. The record contains a reference back to the original log. This record type is a SYSTEM type and cannot be used for normalizing log records.|

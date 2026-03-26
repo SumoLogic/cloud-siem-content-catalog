@@ -215,6 +215,7 @@ The `type` listed lets you know if you can directly apply the parser to a collec
 |Parser|/Parsers/System/Pfsense/Pfsense Firewall|
 |Parser|/Parsers/System/PingIdentity/PingFederate|
 |Parser|/Parsers/System/PingIdentity/PingIdentity MFA|
+|Parser|/Parsers/System/Proofpoint/Proofpoint TRAP|
 |Parser|/Parsers/System/Pulse Secure/Pulse Secure Appliance|
 |Parser|/Parsers/System/Qualys/Qualys Vulnerability Data|
 |Parser|/Parsers/System/Qumulo/Qumulo Core|
@@ -244,6 +245,7 @@ The `type` listed lets you know if you can directly apply the parser to a collec
 |Parser|/Parsers/System/Tanium/Tanium CEF|
 |Parser|/Parsers/System/Tanium/Tanium JSON|
 |Parser|/Parsers/System/Tanium/Tanium Syslog|
+|Parser|/Parsers/System/Teleport/Teleport|
 |Parser|/Parsers/System/Teramind/Teramind Teraserver|
 |Parser|/Parsers/System/Thinkst Canary/Thinkst Canary|
 |Parser|/Parsers/System/Thinkst Canary/Thinkst Canary JSON|

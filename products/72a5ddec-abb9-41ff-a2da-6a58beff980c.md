@@ -4,6 +4,7 @@
 
 |Rule ID|Rule Name|
 |----|----|
+|MATCH-S00702|[Keychain Credential Dumping](../rules/MATCH-S00702.md)|
 |MATCH-S00445|[Known Ransomware File Extensions](../rules/MATCH-S00445.md)|
 |MATCH-S00687|[Linux Security Tool Usage](../rules/MATCH-S00687.md)|
 |MATCH-S00729|[MacOS Gatekeeper Bypass](../rules/MATCH-S00729.md)|
@@ -11,6 +12,9 @@
 |LEGACY-S00108|[Threat Intel - Matched File Hash](../rules/LEGACY-S00108.md)|
 |MATCH-S01003|[Threat Intel - SHA1 Match](../rules/MATCH-S01003.md)|
 |MATCH-S01004|[Threat Intel - SHA256 Match](../rules/MATCH-S01004.md)|
+|MATCH-S00281|[Windows - PowerShell Process Discovery](../rules/MATCH-S00281.md)|
+|MATCH-S00179|[Windows Network Sniffing](../rules/MATCH-S00179.md)|
+|MATCH-S00178|[Windows Query Registry](../rules/MATCH-S00178.md)|
 
 
 ## Log Mappers
