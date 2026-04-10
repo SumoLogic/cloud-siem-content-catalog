@@ -36,7 +36,10 @@
 |http_url|url||
 |http_userAgent|useragent||
 |srcDevice_ip|srcip||
+|threat_category|alert_type||
 |threat_name|alert_name||
+|threat_ruleType|alert|This is a lookup field. More info to come in the catalog later...|
+|threat_signalName|alert_name||
 |user_email|user||
-|user_username|user||
+|user_username|user|This is a split field. More info to come in the catalog later...|
 

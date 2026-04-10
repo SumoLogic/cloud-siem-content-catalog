@@ -4622,7 +4622,6 @@
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "5c2cc0de-ca31-4ef0-bcfa-133fc8b387ad",
             "60829f4a-7acb-47d1-ad23-8424fcf83dcb",
-            "8967aecc-ffb3-4cbe-a02e-258d1edca8d0",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "b238758d-ade8-41d2-b32d-c99159e9fd74"
         ],
@@ -8107,7 +8106,6 @@
             "54B36B3F-A63F-4BA4-9DE4-02DBF69A429F",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "5ba50e74-3c05-4ea8-aeaf-5efde588c60f",
-            "5bb9e0b3-8d57-4b10-8952-0b6ffe91b599",
             "6299d728-14f7-455e-85c5-ea8ec65a654a",
             "9e838f93-c9e7-4592-a980-cf9dfb704784",
             "a67d97fe-6e68-4cfb-9500-cfc5492da565",
@@ -9192,7 +9190,6 @@
         "pattern_type": "match",
         "product_direct_ref": [],
         "product_guids": [
-            "072b85a2-1765-45c2-911d-b0509880326e",
             "14aa46d3-0710-44b6-9ce3-0a6b8f36b076",
             "168afd8d-2893-4c74-95b1-a975d576ea56",
             "1768a42a-37e6-4a2b-aa42-314583f63e1b",
@@ -9202,7 +9199,6 @@
             "43808f4c-15e9-480c-ab1a-38bdef3b6798",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "5ba50e74-3c05-4ea8-aeaf-5efde588c60f",
-            "5bb9e0b3-8d57-4b10-8952-0b6ffe91b599",
             "6299d728-14f7-455e-85c5-ea8ec65a654a",
             "9e838f93-c9e7-4592-a980-cf9dfb704784",
             "B3582ED2-1A0C-452D-9802-97433D143486",
@@ -10060,8 +10056,7 @@
             "be4f7473-fe69-4311-8859-3561900060bf",
             "c2503fcc-ef30-4e40-bb32-0bf47151b140",
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
-            "da9e05a5-3fd3-46a7-a107-ae03c01e3f5a",
-            "fca8785d-4823-4442-86b2-8acbaa176da4"
+            "da9e05a5-3fd3-46a7-a107-ae03c01e3f5a"
         ],
         "record_type_direct_ref": [],
         "rule_source": "sumo",
@@ -10240,6 +10235,7 @@
             "6299d728-14f7-455e-85c5-ea8ec65a654a",
             "724c9add-8cd9-4013-b9e1-a907b96da426",
             "9e0641a7-22ce-4ac8-8113-ee48b368ac3d",
+            "c2503fcc-ef30-4e40-bb32-0bf47151b140",
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
             "da9e05a5-3fd3-46a7-a107-ae03c01e3f5a"
         ],
@@ -10324,6 +10320,7 @@
         "product_guids": [
             "37C866BF-72E1-470A-9072-EDB908F56951",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
+            "5bb9e0b3-8d57-4b10-8952-0b6ffe91b599",
             "9a28f2af-5526-414d-973b-c3fc7984b8a1",
             "c2503fcc-ef30-4e40-bb32-0bf47151b140"
         ],
@@ -11275,6 +11272,7 @@
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "5ba50e74-3c05-4ea8-aeaf-5efde588c60f",
             "5bb9e0b3-8d57-4b10-8952-0b6ffe91b599",
+            "9e0641a7-22ce-4ac8-8113-ee48b368ac3d",
             "c2503fcc-ef30-4e40-bb32-0bf47151b140",
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
             "e2393771-bda2-414a-8661-0a57069287ad",
@@ -20168,7 +20166,6 @@
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "93e2d3d-fab1-4d61-845f-49bc1ae5bed9",
-            "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "f9cea291-9030-4e41-9836-6dd9274d6df4"
         ],
         "record_type_direct_ref": [],
@@ -22233,6 +22230,7 @@
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
+            "5c2cc0de-ca31-4ef0-bcfa-133fc8b387ad",
             "72a5ddec-abb9-41ff-a2da-6a58beff980c",
             "840c72e0-4e47-41e7-9b93-31f55d12f07d",
             "a1225af5-e778-4068-a9a2-47da93d1ff24"
@@ -23414,7 +23412,6 @@
             "2a678bcd-898e-43cd-ab3f-91feb0602a18",
             "2f2fbe08-ab8b-4626-81fd-eaa41b563c49",
             "2f305793-ce37-44cb-84bc-1b89b4367d3c",
-            "3382523e-2072-41bd-b50b-6b148957d0b0",
             "37C866BF-72E1-470A-9072-EDB908F56951",
             "44f07c08-c2ad-4a95-a058-1d0737ff90db",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
@@ -26413,7 +26410,6 @@
         "product_direct_ref": [],
         "product_guids": [
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
-            "3382523e-2072-41bd-b50b-6b148957d0b0",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "840c72e0-4e47-41e7-9b93-31f55d12f07d"
         ],
@@ -29053,7 +29049,6 @@
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
-            "60829f4a-7acb-47d1-ad23-8424fcf83dcb",
             "a1225af5-e778-4068-a9a2-47da93d1ff24"
         ],
         "record_type_direct_ref": [],
@@ -30971,6 +30966,7 @@
         "product_direct_ref": [],
         "product_guids": [
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
+            "3382523e-2072-41bd-b50b-6b148957d0b0",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "840c72e0-4e47-41e7-9b93-31f55d12f07d",
             "93e2d3d-fab1-4d61-845f-49bc1ae5bed9",
@@ -31047,6 +31043,7 @@
         "product_direct_ref": [],
         "product_guids": [
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
+            "3382523e-2072-41bd-b50b-6b148957d0b0",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "7eaa4c44-5b7f-4d9e-8c1c-c4105c2b7506",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
@@ -31122,6 +31119,7 @@
         "product_direct_ref": [],
         "product_guids": [
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
+            "3382523e-2072-41bd-b50b-6b148957d0b0",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad"
         ],
@@ -31427,6 +31425,7 @@
         "product_direct_ref": [],
         "product_guids": [
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
+            "72a5ddec-abb9-41ff-a2da-6a58beff980c",
             "840c72e0-4e47-41e7-9b93-31f55d12f07d"
         ],
         "record_type_direct_ref": [],
@@ -36040,7 +36039,6 @@
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
-            "60829f4a-7acb-47d1-ad23-8424fcf83dcb",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "a1f79987-b765-4f6f-bfe5-d657baa35144"
         ],
@@ -36471,6 +36469,7 @@
         "pattern_type": "templated_match",
         "product_direct_ref": [],
         "product_guids": [
+            "12d00042-d90d-4055-a171-01a1f635a613",
             "5be5af82-c248-4c4c-a485-0571025f242c",
             "60829f4a-7acb-47d1-ad23-8424fcf83dcb",
             "7eaa4c44-5b7f-4d9e-8c1c-c4105c2b7506",
@@ -37575,7 +37574,6 @@
         "product_direct_ref": [],
         "product_guids": [
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
-            "3382523e-2072-41bd-b50b-6b148957d0b0",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "840c72e0-4e47-41e7-9b93-31f55d12f07d",
             "a1225af5-e778-4068-a9a2-47da93d1ff24"
@@ -37800,8 +37798,7 @@
         "product_direct_ref": [],
         "product_guids": [
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
-            "3382523e-2072-41bd-b50b-6b148957d0b0",
-            "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3"
+            "3382523e-2072-41bd-b50b-6b148957d0b0"
         ],
         "record_type_direct_ref": [],
         "rule_source": "sumo",
@@ -39102,7 +39099,6 @@
             "021d1ded-1c82-4663-bf5d-d6ed5170efa3",
             "0fb003bc-8383-442f-8f3d-afcfbaefe617",
             "2b82e665-bdde-474a-ae29-4f0f76598556",
-            "3382523e-2072-41bd-b50b-6b148957d0b0",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
             "6299d728-14f7-455e-85c5-ea8ec65a654a",
             "724c9add-8cd9-4013-b9e1-a907b96da426",
@@ -45758,7 +45754,6 @@
         "product_direct_ref": [],
         "product_guids": [
             "0e20c932-d992-4bd4-b276-c15119ca5c0b",
-            "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "36f5ca33-0c1e-4223-8215-977ea04425ba",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
@@ -47229,6 +47224,7 @@
         "pattern_type": "templated_match",
         "product_direct_ref": [],
         "product_guids": [
+            "3a82061c-2ca3-4289-9c9b-78756001aa38",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
             "724c9add-8cd9-4013-b9e1-a907b96da426",
             "afabb29d-e728-410f-b7c6-acfa9efbe1ed",
@@ -47389,6 +47385,7 @@
         "pattern_type": "templated_match",
         "product_direct_ref": [],
         "product_guids": [
+            "3a82061c-2ca3-4289-9c9b-78756001aa38",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
             "724c9add-8cd9-4013-b9e1-a907b96da426",
             "8e605871-e24c-4126-8fed-af8b13871595",
@@ -50260,7 +50257,8 @@
             "5c2cc0de-ca31-4ef0-bcfa-133fc8b387ad",
             "72a5ddec-abb9-41ff-a2da-6a58beff980c",
             "840c72e0-4e47-41e7-9b93-31f55d12f07d",
-            "a1225af5-e778-4068-a9a2-47da93d1ff24"
+            "a1225af5-e778-4068-a9a2-47da93d1ff24",
+            "ef42eb74-7444-4fee-b231-b4eb1e7c9660"
         ],
         "record_type_direct_ref": [],
         "rule_description": "",
@@ -51950,7 +51948,6 @@
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "5be5af82-c248-4c4c-a485-0571025f242c",
-            "6299d728-14f7-455e-85c5-ea8ec65a654a",
             "840c72e0-4e47-41e7-9b93-31f55d12f07d",
             "B3582ED2-1A0C-452D-9802-97433D143486",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
@@ -52332,6 +52329,7 @@
         "product_guids": [
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
+            "840c72e0-4e47-41e7-9b93-31f55d12f07d",
             "93e2d3d-fab1-4d61-845f-49bc1ae5bed9"
         ],
         "record_type_direct_ref": [],
@@ -62266,6 +62264,7 @@
             "6299d728-14f7-455e-85c5-ea8ec65a654a",
             "B3582ED2-1A0C-452D-9802-97433D143486",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
+            "c2503fcc-ef30-4e40-bb32-0bf47151b140",
             "e3c8bd8b-6ed8-4332-944d-d0f5dfc462df"
         ],
         "record_type_direct_ref": [],
@@ -62463,8 +62462,7 @@
         "pattern_type": "templated_match",
         "product_direct_ref": [],
         "product_guids": [
-            "5c2cc0de-ca31-4ef0-bcfa-133fc8b387ad",
-            "8967aecc-ffb3-4cbe-a02e-258d1edca8d0"
+            "5c2cc0de-ca31-4ef0-bcfa-133fc8b387ad"
         ],
         "record_type_direct_ref": [],
         "rule_description": "",
@@ -67495,6 +67493,7 @@
             "43808f4c-15e9-480c-ab1a-38bdef3b6798",
             "4a75a995-0e10-45fc-8b4d-7fcfc0e98e25",
             "6299d728-14f7-455e-85c5-ea8ec65a654a",
+            "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "af61d8a8-3eba-42fb-9f17-87443924f3f4",
             "cf2af9e8-bade-4f28-8bca-b30aa41baec4"
         ],
@@ -67763,12 +67762,14 @@
             "0fb003bc-8383-442f-8f3d-afcfbaefe617",
             "168afd8d-2893-4c74-95b1-a975d576ea56",
             "37C866BF-72E1-470A-9072-EDB908F56951",
+            "798f8da8-c85b-4e9a-b2f1-eae0b07532fb",
             "991a55cf-8c5a-49ba-ae72-6f64a002bacf",
             "9e838f93-c9e7-4592-a980-cf9dfb704784",
             "bf865cb5-0b26-4010-8b3c-5ae2d1f716d8",
             "c3c1a4fc-10cc-4155-8a30-a3bb14fc9f31",
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
-            "e90edc67-68d4-4d67-82f6-4524f94b59bb"
+            "e90edc67-68d4-4d67-82f6-4524f94b59bb",
+            "fca8785d-4823-4442-86b2-8acbaa176da4"
         ],
         "record_type_direct_ref": [],
         "rule_description": null,
@@ -67941,6 +67942,7 @@
         "pattern_type": "templated_match",
         "product_direct_ref": [],
         "product_guids": [
+            "072b85a2-1765-45c2-911d-b0509880326e",
             "0fb003bc-8383-442f-8f3d-afcfbaefe617",
             "14aa46d3-0710-44b6-9ce3-0a6b8f36b076",
             "168afd8d-2893-4c74-95b1-a975d576ea56",
@@ -68125,6 +68127,7 @@
         "product_guids": [
             "072b85a2-1765-45c2-911d-b0509880326e",
             "1ce88b4b-d90d-4d50-9a89-3abe83e8d5f8",
+            "44f07c08-c2ad-4a95-a058-1d0737ff90db",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
             "5ba50e74-3c05-4ea8-aeaf-5efde588c60f",
             "6299d728-14f7-455e-85c5-ea8ec65a654a",
@@ -68224,10 +68227,12 @@
             "343b9323-d279-40d9-946f-809242e5cf98",
             "37C866BF-72E1-470A-9072-EDB908F56951",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
+            "59a3cd41-b6d2-4ab7-a0ff-6d5abd14ac43",
             "5ba50e74-3c05-4ea8-aeaf-5efde588c60f",
             "5bb9e0b3-8d57-4b10-8952-0b6ffe91b599",
             "6299d728-14f7-455e-85c5-ea8ec65a654a",
             "724c9add-8cd9-4013-b9e1-a907b96da426",
+            "991a55cf-8c5a-49ba-ae72-6f64a002bacf",
             "9e0641a7-22ce-4ac8-8113-ee48b368ac3d",
             "9e838f93-c9e7-4592-a980-cf9dfb704784",
             "A17B3F3C-04F1-40C8-9497-3C499EB18A74",
@@ -68247,7 +68252,8 @@
             "de3d4b6b-36a3-4436-8bfc-0561ac95037e",
             "e3c8bd8b-6ed8-4332-944d-d0f5dfc462df",
             "e90edc67-68d4-4d67-82f6-4524f94b59bb",
-            "ef42eb74-7444-4fee-b231-b4eb1e7c9660"
+            "ef42eb74-7444-4fee-b231-b4eb1e7c9660",
+            "fca8785d-4823-4442-86b2-8acbaa176da4"
         ],
         "record_type_direct_ref": [],
         "rule_description": null,
@@ -68339,6 +68345,7 @@
             "343b9323-d279-40d9-946f-809242e5cf98",
             "37C866BF-72E1-470A-9072-EDB908F56951",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
+            "59a3cd41-b6d2-4ab7-a0ff-6d5abd14ac43",
             "5ba50e74-3c05-4ea8-aeaf-5efde588c60f",
             "5bb9e0b3-8d57-4b10-8952-0b6ffe91b599",
             "6299d728-14f7-455e-85c5-ea8ec65a654a",
@@ -68350,6 +68357,7 @@
             "B3582ED2-1A0C-452D-9802-97433D143486",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "af61d8a8-3eba-42fb-9f17-87443924f3f4",
+            "be4f7473-fe69-4311-8859-3561900060bf",
             "bf865cb5-0b26-4010-8b3c-5ae2d1f716d8",
             "c07b5749-deda-4c7e-8e78-4a5dec1fcf4d",
             "c2503fcc-ef30-4e40-bb32-0bf47151b140",
@@ -68361,7 +68369,8 @@
             "de3d4b6b-36a3-4436-8bfc-0561ac95037e",
             "e3c8bd8b-6ed8-4332-944d-d0f5dfc462df",
             "e90edc67-68d4-4d67-82f6-4524f94b59bb",
-            "ef42eb74-7444-4fee-b231-b4eb1e7c9660"
+            "ef42eb74-7444-4fee-b231-b4eb1e7c9660",
+            "fca8785d-4823-4442-86b2-8acbaa176da4"
         ],
         "record_type_direct_ref": [],
         "rule_description": null,
@@ -68478,7 +68487,6 @@
             "9e0641a7-22ce-4ac8-8113-ee48b368ac3d",
             "A17B3F3C-04F1-40C8-9497-3C499EB18A74",
             "B3582ED2-1A0C-452D-9802-97433D143486",
-            "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "af61d8a8-3eba-42fb-9f17-87443924f3f4",
             "bf865cb5-0b26-4010-8b3c-5ae2d1f716d8",
             "c2503fcc-ef30-4e40-bb32-0bf47151b140",
@@ -68739,7 +68747,8 @@
             "332856e9-3111-446f-8df7-e64694e4b9a1",
             "51278354-d6b5-4c8e-a8fd-8197df334e67",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
-            "ad8d40a9-ee64-4615-bd92-aa964b4ae3b0"
+            "ad8d40a9-ee64-4615-bd92-aa964b4ae3b0",
+            "e73cd65a-7a4b-4ce9-9d73-e5d9c824c214"
         ],
         "record_type_direct_ref": [],
         "rule_description": "",
@@ -68970,6 +68979,7 @@
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "343b9323-d279-40d9-946f-809242e5cf98",
             "37C866BF-72E1-470A-9072-EDB908F56951",
+            "3a82061c-2ca3-4289-9c9b-78756001aa38",
             "43808f4c-15e9-480c-ab1a-38bdef3b6798",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
@@ -69097,6 +69107,7 @@
             "51278354-d6b5-4c8e-a8fd-8197df334e67",
             "59a3cd41-b6d2-4ab7-a0ff-6d5abd14ac43",
             "5bb9e0b3-8d57-4b10-8952-0b6ffe91b599",
+            "6299d728-14f7-455e-85c5-ea8ec65a654a",
             "724c9add-8cd9-4013-b9e1-a907b96da426",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "a67d97fe-6e68-4cfb-9500-cfc5492da565",
@@ -69222,6 +69233,7 @@
             "b238758d-ade8-41d2-b32d-c99159e9fd74",
             "c3c1a4fc-10cc-4155-8a30-a3bb14fc9f31",
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
+            "cc523ad6-7193-4de5-a254-d0243fca63f3",
             "cf2af9e8-bade-4f28-8bca-b30aa41baec4"
         ],
         "record_type_direct_ref": [],
@@ -69458,6 +69470,7 @@
             "afabb29d-e728-410f-b7c6-acfa9efbe1ed",
             "c3c1a4fc-10cc-4155-8a30-a3bb14fc9f31",
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
+            "cc523ad6-7193-4de5-a254-d0243fca63f3",
             "cf2af9e8-bade-4f28-8bca-b30aa41baec4",
             "da9e05a5-3fd3-46a7-a107-ae03c01e3f5a"
         ],
@@ -69720,6 +69733,7 @@
         "pattern_type": "templated_match",
         "product_direct_ref": [],
         "product_guids": [
+            "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "fca8785d-4823-4442-86b2-8acbaa176da4"
         ],
         "record_type_direct_ref": [],
@@ -70336,7 +70350,6 @@
             "1ed80351-d779-4f1f-9ddb-b3881f19d487",
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
-            "37a906de-5e9c-475e-881a-65a1d984f377",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
             "4809be0f-c6f3-4cbb-b1f6-ae9ae817712e",
             "51278354-d6b5-4c8e-a8fd-8197df334e67",
@@ -70969,7 +70982,8 @@
         "product_direct_ref": [],
         "product_guids": [
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
-            "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3"
+            "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
+            "840c72e0-4e47-41e7-9b93-31f55d12f07d"
         ],
         "record_type_direct_ref": [],
         "retention_window_size": 7776000000,
@@ -73604,8 +73618,7 @@
             "37C866BF-72E1-470A-9072-EDB908F56951",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
             "724c9add-8cd9-4013-b9e1-a907b96da426",
-            "951a004d-54bf-441d-98e1-fcc6a032f475",
-            "da9e05a5-3fd3-46a7-a107-ae03c01e3f5a"
+            "951a004d-54bf-441d-98e1-fcc6a032f475"
         ],
         "record_type_direct_ref": [],
         "rule_source": "sumo",
@@ -75170,7 +75183,8 @@
             "A17B3F3C-04F1-40C8-9497-3C499EB18A74",
             "be4f7473-fe69-4311-8859-3561900060bf",
             "c3c1a4fc-10cc-4155-8a30-a3bb14fc9f31",
-            "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad"
+            "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
+            "dcc85cfc-a698-4d09-87de-f2c723f3ad07"
         ],
         "record_type_direct_ref": [],
         "rule_source": "sumo",
@@ -76056,6 +76070,7 @@
             "1ed80351-d779-4f1f-9ddb-b3881f19d487",
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "23342262-740c-41b7-9b77-08267ae01612",
+            "46c71698-9c21-4273-9561-94ff5af52edd",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
             "51278354-d6b5-4c8e-a8fd-8197df334e67",
             "54B36B3F-A63F-4BA4-9DE4-02DBF69A429F",
@@ -77560,6 +77575,7 @@
         "product_direct_ref": [],
         "product_guids": [
             "2b82e665-bdde-474a-ae29-4f0f76598556",
+            "3a82061c-2ca3-4289-9c9b-78756001aa38",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
             "724c9add-8cd9-4013-b9e1-a907b96da426",
             "afabb29d-e728-410f-b7c6-acfa9efbe1ed",

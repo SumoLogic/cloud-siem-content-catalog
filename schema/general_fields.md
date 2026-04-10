@@ -179,6 +179,9 @@ In cases where the log data has a source or destination context, there are situa
 |file_uid|string|The data source specific unique identifier for the file, often a GUID.|
 |flowState|string|Value indicating the state (e.g. begin, end, or continue) of a network traffic flow as it enters or exits an interface.|
 |friendlyName|string|Name of the table the data is mapped to. Always Record for V3.|
+|grandparentBaseImage|string|The name of an executable process which spawned the parent process. Often found in process auditing and malware detection events.|
+|grandparentCommandLine|string|The instruction or set of instructions inputted into a text interface such as the command prompt (cmd.exe) or PowerShell in Windows, or terminal on Unix based systems associated with a grandparent process.|
+|grandparentPid|int|The process id of the program that initiated the parent process (typically the grandparentBaseImage).|
 |http_category|string|The high level category determined by a service based on the url or domain.|
 |http_contentLength|int|The number of bytes of data in the body of the request.|
 |http_hostname|string|Name of the host within an HTTP request|

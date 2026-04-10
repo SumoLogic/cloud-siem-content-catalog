@@ -35,6 +35,7 @@
 |MATCH-S01006|[Threat Intel - Device Hostname](../rules/MATCH-S01006.md)|
 |MATCH-S00555|[Threat Intel - Inbound Traffic Context](../rules/MATCH-S00555.md)|
 |LEGACY-S00107|[Threat Intel Match - IP Address](../rules/LEGACY-S00107.md)|
+|MATCH-S00179|[Windows Network Sniffing](../rules/MATCH-S00179.md)|
 |MATCH-S00880|[macOS - Entitlement Enumeration via Xattr](../rules/MATCH-S00880.md)|
 |MATCH-S00883|[macOS - Keychain Enumeration](../rules/MATCH-S00883.md)|
 |MATCH-S00885|[macOS - Screen Sharing Session Established](../rules/MATCH-S00885.md)|

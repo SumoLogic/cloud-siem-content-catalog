@@ -8853,8 +8853,8 @@
         "uid": "11b22c7c-ab5f-4be4-8d92-fa3ca3fcce26"
     },
     "11e05ff0-cf14-47d4-9e5f-ec702a3fd53e": {
-        "commit_message": "TLAB-2475: updated the webtx mapping (#5924)",
-        "commit_origin_hash": "9c6c9b5ab1430734f68db71dc6e1aa4601a070c1",
+        "commit_message": "TLAB-2067: updated fields mappings (#5939)",
+        "commit_origin_hash": "ca238e9c16094d90ebd6786d3ac42b31babfee4e",
         "field_mappings": {
             "application": {
                 "value": "app"
@@ -8962,7 +8962,10 @@
                 "value": "user"
             },
             "user_username": {
-                "value": "user"
+                "split_delimiter": "@",
+                "split_index": 0,
+                "value": "user",
+                "value_type": "split"
             }
         },
         "file_path": "mappings_schemav3/netskope.yaml",
@@ -17215,8 +17218,8 @@
         "uid": "23c8887f-991b-4f7b-8285-e1082e4581bc"
     },
     "23fff586-11d2-4e64-af26-7d93dd575779": {
-        "commit_message": "TLAB-2475: updated the webtx mapping (#5924)",
-        "commit_origin_hash": "9c6c9b5ab1430734f68db71dc6e1aa4601a070c1",
+        "commit_message": "TLAB-2067: updated fields mappings (#5939)",
+        "commit_origin_hash": "ca238e9c16094d90ebd6786d3ac42b31babfee4e",
         "field_mappings": {
             "application": {
                 "value": "x-cs-app"
@@ -19489,8 +19492,8 @@
         "uid": "279fabe5-d3a3-468a-a908-d110099bb244"
     },
     "27a70508-29d3-4ff7-adb8-3e3759eb80b5": {
-        "commit_message": "TLAB-1940: updated the mapper",
-        "commit_origin_hash": "12250b8670f89ef4f5858414cc3083b8bbfeb4ec",
+        "commit_message": "TLAB-2553: add resource mapping to cloudtrail IAM policy (#5945)",
+        "commit_origin_hash": "bb4c146590e1c6cce9dd68bb214e34ff8121d1a7",
         "field_mappings": {
             "accountId": {
                 "value": "userIdentity.accountId"
@@ -19611,6 +19614,15 @@
             "normalizedSeverity": {
                 "value": "1",
                 "value_type": "constant"
+            },
+            "resource": {
+                "alternate_values": [
+                    "requestParameters.policyName"
+                ],
+                "split_delimiter": "/",
+                "split_index": -1,
+                "value": "requestParameters.policyArn",
+                "value_type": "split"
             },
             "srcDevice_ip": {
                 "value": "sourceIPAddress"
@@ -27288,8 +27300,8 @@
         "uid": "37eb382b-c790-47f1-ad90-011cf04ae821"
     },
     "381881fc8-bdc5-48fd-bd12-f01c893ad529": {
-        "commit_message": "TLAB-2475: updated the webtx mapping (#5924)",
-        "commit_origin_hash": "9c6c9b5ab1430734f68db71dc6e1aa4601a070c1",
+        "commit_message": "TLAB-2067: updated fields mappings (#5939)",
+        "commit_origin_hash": "ca238e9c16094d90ebd6786d3ac42b31babfee4e",
         "field_mappings": {
             "application": {
                 "value": "app"
@@ -27360,7 +27372,10 @@
                 "value": "user"
             },
             "user_username": {
-                "value": "user"
+                "split_delimiter": "@",
+                "split_index": 0,
+                "value": "user",
+                "value_type": "split"
             }
         },
         "file_path": "mappings_schemav3/netskope.yaml",
@@ -28029,8 +28044,8 @@
         "uid": "39e38e77-3027-4083-9eb8-c41c6415fe16"
     },
     "3E90EADD-5BA4-469A-8501-5FC0BE433B21": {
-        "commit_message": "TLAB-2475: updated the webtx mapping (#5924)",
-        "commit_origin_hash": "9c6c9b5ab1430734f68db71dc6e1aa4601a070c1",
+        "commit_message": "TLAB-2067: updated fields mappings (#5939)",
+        "commit_origin_hash": "ca238e9c16094d90ebd6786d3ac42b31babfee4e",
         "field_mappings": {
             "action": {
                 "alternate_values": [
@@ -28182,7 +28197,10 @@
                 "value": "user"
             },
             "user_username": {
-                "value": "user"
+                "split_delimiter": "@",
+                "split_index": 0,
+                "value": "user",
+                "value_type": "split"
             }
         },
         "file_path": "mappings_schemav3/netskope.yaml",
@@ -32401,6 +32419,89 @@
         "source": "jask",
         "uid": "4327be0d-8c60-4108-9a00-930ff3c4ad8f"
     },
+    "43c65978-aeee-4050-9dde-4796f910b7f0": {
+        "commit_message": "TLAB-2547: Added mapper for Bedrock  DeleteKnowledgeBase events (#5947)",
+        "commit_origin_hash": "74f01f1ee1f4f3a9d957be2eba017fc3c5954407",
+        "field_mappings": {
+            "accountId": {
+                "value": "userIdentity.accountId"
+            },
+            "action": {
+                "value": "eventName"
+            },
+            "application": {
+                "value": "eventSource"
+            },
+            "changeTarget": {
+                "value": "requestParameters.knowledgeBaseId"
+            },
+            "cloud_provider": {
+                "value": "AWS",
+                "value_type": "constant"
+            },
+            "cloud_region": {
+                "value": "awsRegion"
+            },
+            "cloud_service": {
+                "value": "Bedrock",
+                "value_type": "constant"
+            },
+            "description": {
+                "value": "A request to delete a knowledge base in Amazon Bedrock was made",
+                "value_type": "constant"
+            },
+            "device_ip": {
+                "value": "sourceIPAddress"
+            },
+            "http_userAgent": {
+                "value": "userAgent"
+            },
+            "normalizedAction": {
+                "value": "delete",
+                "value_type": "constant"
+            },
+            "normalizedSeverity": {
+                "value": "1",
+                "value_type": "constant"
+            },
+            "resource": {
+                "value": "requestParameters.knowledgeBaseId"
+            },
+            "srcDevice_ip": {
+                "value": "sourceIPAddress"
+            },
+            "success": {
+                "lookup": {
+                    "DELETING": "true",
+                    "FAILED": "false"
+                },
+                "value": "responseElements.status",
+                "value_type": "lookup"
+            },
+            "user_username": {
+                "alternative_value": "userIdentity.principalId",
+                "value": "userIdentity.arn"
+            }
+        },
+        "file_path": "mappings_schemav3/cloudtrail_bedrock_custom_parser.yaml",
+        "input": {
+            "event_id_pattern": "AwsApiCall-DeleteKnowledgeBase",
+            "log_format": "JSON",
+            "product": "CloudTrail",
+            "vendor": "AWS"
+        },
+        "name": "CloudTrail - bedrock.amazonaws.com - DeleteKnowledgeBase",
+        "output": {
+            "product_guid": "033624b0-218e-4dcb-b93f-0f1fb1806c56",
+            "record_type": "Audit"
+        },
+        "skipped_values": [
+            ",",
+            "-"
+        ],
+        "source": "jask",
+        "uid": "43c65978-aeee-4050-9dde-4796f910b7f0"
+    },
     "44c5a8d4-5c48-4c42-9a11-e13d2c150d31": {
         "commit_message": "TLAB-2280: Remove Redundant Mapping and Add New Field Mapping (#5880)",
         "commit_origin_hash": "fd895e4ef6e5010b4d09f314c2f82cc91e0f2675",
@@ -35550,8 +35651,8 @@
         "uid": "4bhd6341-1e3c-45a1-2145-5b5e7eb5250f"
     },
     "4c0bdae5-7127-4caf-b9be-bd5eed63a962": {
-        "commit_message": "TLAB-2475: updated the webtx mapping (#5924)",
-        "commit_origin_hash": "9c6c9b5ab1430734f68db71dc6e1aa4601a070c1",
+        "commit_message": "TLAB-2067: updated fields mappings (#5939)",
+        "commit_origin_hash": "ca238e9c16094d90ebd6786d3ac42b31babfee4e",
         "field_mappings": {
             "action": {
                 "value": "activity"
@@ -35615,7 +35716,10 @@
                 "value": "user"
             },
             "user_username": {
-                "value": "user"
+                "split_delimiter": "@",
+                "split_index": 0,
+                "value": "user",
+                "value_type": "split"
             }
         },
         "file_path": "mappings_schemav3/netskope.yaml",
@@ -42162,8 +42266,8 @@
         "uid": "592fd1db-91d1-4305-a1f9-fe8e2c7457bf"
     },
     "5973FCD7-7D5A-4BDF-BB58-4AB6868D428C": {
-        "commit_message": "TLAB-2475: updated the webtx mapping (#5924)",
-        "commit_origin_hash": "9c6c9b5ab1430734f68db71dc6e1aa4601a070c1",
+        "commit_message": "TLAB-2067: updated fields mappings (#5939)",
+        "commit_origin_hash": "ca238e9c16094d90ebd6786d3ac42b31babfee4e",
         "field_mappings": {
             "action": {
                 "value": "activity"
@@ -42230,7 +42334,10 @@
                 "value": "user"
             },
             "user_username": {
-                "value": "user"
+                "split_delimiter": "@",
+                "split_index": 0,
+                "value": "user",
+                "value_type": "split"
             }
         },
         "file_path": "mappings_schemav3/netskope.yaml",
@@ -47189,8 +47296,8 @@
         "uid": "66227412-64e9-4d71-9565-338bcde62ae0"
     },
     "6631785C-901C-42CE-AC18-EDEA8D2829D1": {
-        "commit_message": "TLAB-2475: updated the webtx mapping (#5924)",
-        "commit_origin_hash": "9c6c9b5ab1430734f68db71dc6e1aa4601a070c1",
+        "commit_message": "TLAB-2067: updated fields mappings (#5939)",
+        "commit_origin_hash": "ca238e9c16094d90ebd6786d3ac42b31babfee4e",
         "field_mappings": {
             "application": {
                 "value": "app"
@@ -47240,7 +47347,10 @@
                 "value": "user"
             },
             "user_username": {
-                "value": "user"
+                "split_delimiter": "@",
+                "split_index": 0,
+                "value": "user",
+                "value_type": "split"
             }
         },
         "file_path": "mappings_schemav3/netskope.yaml",
@@ -48796,8 +48906,8 @@
         "uid": "69d9ee44-29fc-497a-85d5-aed507a923db"
     },
     "6A93C9CD-5B9D-4056-A0DD-E98F87A1C272": {
-        "commit_message": "TLAB-2475: updated the webtx mapping (#5924)",
-        "commit_origin_hash": "9c6c9b5ab1430734f68db71dc6e1aa4601a070c1",
+        "commit_message": "TLAB-2067: updated fields mappings (#5939)",
+        "commit_origin_hash": "ca238e9c16094d90ebd6786d3ac42b31babfee4e",
         "field_mappings": {
             "severity": {
                 "lookup": {
@@ -48824,7 +48934,10 @@
                 "value": "user"
             },
             "user_username": {
-                "value": "user"
+                "split_delimiter": "@",
+                "split_index": 0,
+                "value": "user",
+                "value_type": "split"
             }
         },
         "file_path": "mappings_schemav3/netskope.yaml",
@@ -59928,8 +60041,8 @@
         "uid": "833d135d-6811-4bf8-a73e-633aaba65cbf"
     },
     "8345560d-add1-413c-9b93-ad3ada8ed1b0": {
-        "commit_message": "TLAB-2475: updated the webtx mapping (#5924)",
-        "commit_origin_hash": "9c6c9b5ab1430734f68db71dc6e1aa4601a070c1",
+        "commit_message": "TLAB-2067: updated fields mappings (#5939)",
+        "commit_origin_hash": "ca238e9c16094d90ebd6786d3ac42b31babfee4e",
         "field_mappings": {
             "action": {
                 "value": "audit_log_event"
@@ -72770,8 +72883,8 @@
         "uid": "A62309CA-3CEE-4F2D-8646-5D88FE78755C"
     },
     "AB8A5262-6A3A-499C-AACB-499C2686394E": {
-        "commit_message": "TLAB-2475: updated the webtx mapping (#5924)",
-        "commit_origin_hash": "9c6c9b5ab1430734f68db71dc6e1aa4601a070c1",
+        "commit_message": "TLAB-2067: updated fields mappings (#5939)",
+        "commit_origin_hash": "ca238e9c16094d90ebd6786d3ac42b31babfee4e",
         "field_mappings": {
             "action": {
                 "value": "audit_log_event"
@@ -72814,7 +72927,10 @@
                 "value": "user"
             },
             "user_username": {
-                "value": "user"
+                "split_delimiter": "@",
+                "split_index": 0,
+                "value": "user",
+                "value_type": "split"
             }
         },
         "file_path": "mappings_schemav3/netskope.yaml",
@@ -73694,8 +73810,8 @@
         "uid": "FDE55C18-7338-41E3-8DB2-3AD5EF6D8831"
     },
     "FF1BADCE-0DC2-41F5-888F-88ECA95AE8A0": {
-        "commit_message": "TLAB-2475: updated the webtx mapping (#5924)",
-        "commit_origin_hash": "9c6c9b5ab1430734f68db71dc6e1aa4601a070c1",
+        "commit_message": "TLAB-2067: updated fields mappings (#5939)",
+        "commit_origin_hash": "ca238e9c16094d90ebd6786d3ac42b31babfee4e",
         "field_mappings": {
             "description": {
                 "value": "alarm_name"
@@ -80258,8 +80374,8 @@
         "uid": "b2029a3c-fe26-4368-810f-e6164749dad1"
     },
     "b21dd6bd-d73f-4e9d-aca7-d95f5fd6c93d": {
-        "commit_message": "TLAB-2475: updated the webtx mapping (#5924)",
-        "commit_origin_hash": "9c6c9b5ab1430734f68db71dc6e1aa4601a070c1",
+        "commit_message": "TLAB-2067: updated fields mappings (#5939)",
+        "commit_origin_hash": "ca238e9c16094d90ebd6786d3ac42b31babfee4e",
         "field_mappings": {
             "action": {
                 "value": "activity"
@@ -80306,14 +80422,30 @@
             "srcDevice_ip": {
                 "value": "srcip"
             },
+            "threat_category": {
+                "value": "alert_type"
+            },
             "threat_name": {
+                "value": "alert_name"
+            },
+            "threat_ruleType": {
+                "lookup": {
+                    "yes": "direct"
+                },
+                "value": "alert",
+                "value_type": "lookup"
+            },
+            "threat_signalName": {
                 "value": "alert_name"
             },
             "user_email": {
                 "value": "user"
             },
             "user_username": {
-                "value": "user"
+                "split_delimiter": "@",
+                "split_index": 0,
+                "value": "user",
+                "value_type": "split"
             }
         },
         "file_path": "mappings_schemav3/netskope.yaml",
@@ -84473,28 +84605,102 @@
         "uid": "baf05dd7-9cd2-4a6d-bbba-72a904a52c83"
     },
     "bb41f15f-99b4-4f6b-aa69-83e1119d4810": {
-        "commit_message": "TLAB-2475: updated the webtx mapping (#5924)",
-        "commit_origin_hash": "9c6c9b5ab1430734f68db71dc6e1aa4601a070c1",
+        "commit_message": "TLAB-2067: updated fields mappings (#5939)",
+        "commit_origin_hash": "ca238e9c16094d90ebd6786d3ac42b31babfee4e",
         "field_mappings": {
             "action": {
                 "value": "activity"
             },
+            "device_hostname": {
+                "value": "hostname"
+            },
             "device_ip": {
                 "value": "userip"
             },
-            "device_natIp": {
+            "device_osName": {
+                "value": "os_version"
+            },
+            "dstDevice_ip": {
+                "value": "dstip"
+            },
+            "http_url": {
+                "value": "url"
+            },
+            "normalizedAction": {
+                "lookup": {
+                    "Create": "create",
+                    "Delete": "delete",
+                    "Delete All": "delete",
+                    "Download": "access",
+                    "Edit": "change",
+                    "Send": "send",
+                    "Share": "send",
+                    "Upload": "create",
+                    "View": "access"
+                },
+                "value": "activity",
+                "value_type": "lookup"
+            },
+            "normalizedSeverity": {
+                "lookup": {
+                    "Critical": "7",
+                    "High": "5",
+                    "Low": "1",
+                    "Medium": "3",
+                    "crit": "7",
+                    "critical": "7",
+                    "high": "5",
+                    "low": "1",
+                    "med": "3",
+                    "medium": "3"
+                },
+                "value": "risk_level",
+                "value_type": "lookup"
+            },
+            "severity": {
+                "value": "risk_level"
+            },
+            "srcDevice_ip": {
                 "value": "srcip"
+            },
+            "targetUser_email": {
+                "value": "shared_credential_user"
+            },
+            "targetUser_username": {
+                "split_delimiter": "@",
+                "split_index": 0,
+                "value": "shared_credential_user",
+                "value_type": "split"
+            },
+            "threat_category": {
+                "value": "alert_type"
             },
             "threat_name": {
                 "value": "alert_name"
             },
-            "user_username": {
+            "threat_ruleType": {
+                "lookup": {
+                    "yes": "direct"
+                },
+                "value": "alert",
+                "value_type": "lookup"
+            },
+            "threat_signalName": {
+                "value": "alert_name"
+            },
+            "user_email": {
                 "value": "user"
+            },
+            "user_username": {
+                "split_delimiter": "@",
+                "split_index": 0,
+                "value": "user",
+                "value_type": "split"
             }
         },
         "file_path": "mappings_schemav3/netskope.yaml",
         "input": {
-            "event_id_pattern": "(?i)(user_shared_creds|user shared creds)",
+            "event_id_pattern": "(?i)(user_shared_cred.*)",
             "log_format": "JSON",
             "product": "Security Cloud",
             "vendor": "Netskope"
@@ -90054,8 +90260,8 @@
         "uid": "cc421929-d647-4059-8ee5-916932ad4fe9"
     },
     "cc658a93-1225-44ff-b6fc-95acd14a7861": {
-        "commit_message": "TLAB-2475: updated the webtx mapping (#5924)",
-        "commit_origin_hash": "9c6c9b5ab1430734f68db71dc6e1aa4601a070c1",
+        "commit_message": "TLAB-2067: updated fields mappings (#5939)",
+        "commit_origin_hash": "ca238e9c16094d90ebd6786d3ac42b31babfee4e",
         "field_mappings": {
             "action": {
                 "value": "activity"
@@ -90187,7 +90393,10 @@
                 "value": "user"
             },
             "user_username": {
-                "value": "user"
+                "split_delimiter": "@",
+                "split_index": 0,
+                "value": "user",
+                "value_type": "split"
             }
         },
         "file_path": "mappings_schemav3/netskope.yaml",
@@ -94644,8 +94853,8 @@
         "uid": "d7b74a8a-4bbe-41d8-914b-8138c6b14150"
     },
     "d7cad270-f8fc-4d0d-982b-31fe9fb90334": {
-        "commit_message": "TLAB-2475: updated the webtx mapping (#5924)",
-        "commit_origin_hash": "9c6c9b5ab1430734f68db71dc6e1aa4601a070c1",
+        "commit_message": "TLAB-2067: updated fields mappings (#5939)",
+        "commit_origin_hash": "ca238e9c16094d90ebd6786d3ac42b31babfee4e",
         "field_mappings": {
             "action": {
                 "value": "activity"
@@ -94700,14 +94909,30 @@
             "srcDevice_ip": {
                 "value": "srcip"
             },
+            "threat_category": {
+                "value": "alert_type"
+            },
             "threat_name": {
+                "value": "alert_name"
+            },
+            "threat_ruleType": {
+                "lookup": {
+                    "yes": "direct"
+                },
+                "value": "alert",
+                "value_type": "lookup"
+            },
+            "threat_signalName": {
                 "value": "alert_name"
             },
             "user_email": {
                 "value": "user"
             },
             "user_username": {
-                "value": "user"
+                "split_delimiter": "@",
+                "split_index": 0,
+                "value": "user",
+                "value_type": "split"
             }
         },
         "file_path": "mappings_schemav3/netskope.yaml",
@@ -96846,40 +97071,109 @@
         "uid": "dd54ac26-28af-431e-b488-8c51ad764016"
     },
     "ddbefdf2-2f53-422f-92e9-5c050e756047": {
-        "commit_message": "Update microsoft_o365_exchange_trace.yaml",
-        "commit_origin_hash": "97ccedb48ecc4c1fa9990700b8897f00739661ac",
+        "commit_message": "TLAB-2549: Updated Mapper for Exchange Trace to Support Graph API Logs (#5940)",
+        "commit_origin_hash": "1e4f30a9f7295e1d04d9b57a63a04464fde87d81",
         "field_mappings": {
             "action": {
+                "alternate_values": [
+                    "status"
+                ],
                 "value": "Status"
             },
             "bytesIn": {
+                "alternate_values": [
+                    "size"
+                ],
                 "value": "Size"
             },
             "dstDevice_ip": {
+                "alternate_values": [
+                    "toIP"
+                ],
                 "value": "ToIP"
             },
             "email_messageId": {
+                "alternate_values": [
+                    "messageId"
+                ],
                 "value": "MessageId"
             },
             "email_recipient": {
+                "alternate_values": [
+                    "recipientAddress"
+                ],
                 "value": "RecipientAddress"
             },
             "email_sender": {
+                "alternate_values": [
+                    "senderAddress"
+                ],
                 "value": "SenderAddress"
             },
             "email_subject": {
+                "alternate_values": [
+                    "subject"
+                ],
                 "value": "Subject"
             },
-            "srcDevice_ip": {
-                "value": "FromIP"
-            },
-            "success": {
-                "default_value": "false",
+            "normalizedAction": {
+                "alternate_values": [
+                    "status"
+                ],
                 "lookup": {
-                    "Delivered": "true"
+                    "Delivered": "receive",
+                    "delivered": "receive"
                 },
                 "value": "Status",
                 "value_type": "lookup"
+            },
+            "srcDevice_ip": {
+                "alternate_values": [
+                    "fromIP"
+                ],
+                "value": "FromIP"
+            },
+            "success": {
+                "alternate_values": [
+                    "status"
+                ],
+                "default_value": "false",
+                "lookup": {
+                    "Delivered": "true",
+                    "delivered": "true"
+                },
+                "value": "Status",
+                "value_type": "lookup"
+            },
+            "targetUser_email": {
+                "alternate_values": [
+                    "recipientAddress"
+                ],
+                "value": "RecipientAddress"
+            },
+            "targetUser_username": {
+                "alternate_values": [
+                    "recipientAddress"
+                ],
+                "split_delimiter": "@",
+                "split_index": 0,
+                "value": "RecipientAddress",
+                "value_type": "split"
+            },
+            "user_email": {
+                "alternate_values": [
+                    "senderAddress"
+                ],
+                "value": "SenderAddress"
+            },
+            "user_username": {
+                "alternate_values": [
+                    "senderAddress"
+                ],
+                "split_delimiter": "@",
+                "split_index": 0,
+                "value": "SenderAddress",
+                "value_type": "split"
             }
         },
         "file_path": "mappings_schemav3/microsoft_o365_exchange_trace.yaml",
@@ -98337,8 +98631,8 @@
         "uid": "e0a19ce7-0934-4a8c-a714-0d8efab68bdf"
     },
     "e0c69b8a-2fde-4e4c-a535-51f95298ab24": {
-        "commit_message": "TLAB-2475: updated the webtx mapping (#5924)",
-        "commit_origin_hash": "9c6c9b5ab1430734f68db71dc6e1aa4601a070c1",
+        "commit_message": "TLAB-2067: updated fields mappings (#5939)",
+        "commit_origin_hash": "ca238e9c16094d90ebd6786d3ac42b31babfee4e",
         "field_mappings": {
             "action": {
                 "value": "audit_log_event"
@@ -98380,7 +98674,10 @@
                 "value": "user"
             },
             "user_username": {
-                "value": "user"
+                "split_delimiter": "@",
+                "split_index": 0,
+                "value": "user",
+                "value_type": "split"
             }
         },
         "file_path": "mappings_schemav3/netskope.yaml",
@@ -102876,8 +103173,8 @@
         "uid": "ebe12b29-1f36-435a-b9bb-95bef42c4af2"
     },
     "ebf71fee-dfb0-4c9e-908c-59938fccf201": {
-        "commit_message": "TRIDENT-14175 Rule Test Case Fix MATCH-S00653",
-        "commit_origin_hash": "ca8f2b019c436402ea6c308ed31d6d5db0fe8c0d",
+        "commit_message": "TLAB-2554: Cloudwatch map identity.arn to username (#5948)",
+        "commit_origin_hash": "9b77611c9a52aa3fd6fe8337a0ea5bf2bc431f45",
         "field_mappings": {
             "description": {
                 "value": "msg"
@@ -102909,7 +103206,10 @@
                 "value_type": "time"
             },
             "user_username": {
-                "value": "username"
+                "alternate_values": [
+                    "username"
+                ],
+                "value": "identity.arn"
             }
         },
         "file_path": "mappings_schemav3/aws_cloudwatch_custom_parser.yaml",
