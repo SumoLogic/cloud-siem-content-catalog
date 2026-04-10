@@ -31,6 +31,7 @@ Here is a list of schema fields which Cloud SIEM considers entities and the type
 |file_hash_sha256|_hash|
 |file_hash_ssdeep|_hash|
 |file_path|_file|
+|grandparentBaseImage|_process|
 |http_referer_fqdn|_domain|
 |http_url|_url|
 |http_url_fqdn|_domain|

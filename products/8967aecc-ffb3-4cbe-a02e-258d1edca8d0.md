@@ -4,13 +4,11 @@
 
 |Rule ID|Rule Name|
 |----|----|
-|FIRST-S00040|[First Seen cURL execution from User](../rules/FIRST-S00040.md)|
 |MATCH-S00402|[Normalized Security Signal](../rules/MATCH-S00402.md)|
 |LEGACY-S00108|[Threat Intel - Matched File Hash](../rules/LEGACY-S00108.md)|
 |MATCH-S01003|[Threat Intel - SHA1 Match](../rules/MATCH-S01003.md)|
 |MATCH-S01004|[Threat Intel - SHA256 Match](../rules/MATCH-S01004.md)|
 |MATCH-S00879|[macOS - Suspicious Osascript Execution](../rules/MATCH-S00879.md)|
-|MATCH-S00878|[macOS - Suspicious Osascript Parent Execution](../rules/MATCH-S00878.md)|
 
 
 ## Log Mappers

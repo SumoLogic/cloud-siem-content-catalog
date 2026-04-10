@@ -3761,6 +3761,33 @@
         "mappable": false,
         "type": "string"
     },
+    "grandparentBaseImage": {
+        "deprecated": false,
+        "description": "The name of an executable process which spawned the parent process. Often found in process auditing and malware detection events.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": "_process",
+        "mappable": true,
+        "type": "string"
+    },
+    "grandparentCommandLine": {
+        "deprecated": false,
+        "description": "The instruction or set of instructions inputted into a text interface such as the command prompt (cmd.exe) or PowerShell in Windows, or terminal on Unix based systems associated with a grandparent process.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "string"
+    },
+    "grandparentPid": {
+        "deprecated": false,
+        "description": "The process id of the program that initiated the parent process (typically the grandparentBaseImage).",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": true,
+        "type": "int"
+    },
     "hour": {
         "deprecated": true,
         "description": "Hour pulled from the timestamp.",

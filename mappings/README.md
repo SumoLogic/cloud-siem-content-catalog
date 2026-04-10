@@ -421,6 +421,7 @@ You will find our complete list of mappers for content here.
  - [Citrix NetScaler - SSLVPN-TCPCONNSTAT](dae628cd-6bed-42af-ba88-cddee5f577dc.md)
  - [Citrix NetScaler - TCP Connection](a82454bc-1ed8-471d-9e8c-973d7cbbb5c9.md)
  - [CloudTrail - application-insights.amazonaws.com - ListApplications](3f2bd88a-69b4-11ea-bc55-0242ac130003.md)
+ - [CloudTrail - bedrock.amazonaws.com - DeleteKnowledgeBase](43c65978-aeee-4050-9dde-4796f910b7f0.md)
  - [CloudTrail - cloudtrail.amazonaws.com - Trail Change|Logging](9df7db8f-46a3-488a-af25-b34236b5303a.md)
  - [CloudTrail - cognito-idp.amazonaws.com - CreateUserPoolClient](ff0ade7d-8a2f-42c2-8250-69562a9e8daf.md)
  - [CloudTrail - controltower.amazonaws.com - CreateManagedAccount](915b12a0-69b0-11ea-bc55-0242ac130003.md)
