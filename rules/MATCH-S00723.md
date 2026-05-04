@@ -26,6 +26,7 @@ Detects commands associated with modifications to loadable kernel modules. LKMs 
 - [Microsoft - Defender Advanced Hunting](../products/3382523e-2072-41bd-b50b-6b148957d0b0.md)
 - [Microsoft - Windows](../products/1ff7546c-cb36-4a24-87f7-89d2cecc5761.md)
 - [Sysdig - Sysdig](../products/55ec1d4a-6985-4f04-8de5-f9812871fda2.md)
+- [Trend Micro - Vision One](../products/72a5ddec-abb9-41ff-a2da-6a58beff980c.md)
 - [Twistlock - Twistlock](../products/581D3DD8-4DA7-4192-9E49-320D7AFB8B53.md)
 
 

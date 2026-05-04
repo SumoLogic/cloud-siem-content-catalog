@@ -16,7 +16,6 @@ This rule detects an indicator match from a threat intelligence feed
 |Prototype|False|
 |Tags||
 ## Vendors and Products
-- [Mimecast - Mimecast](../products/54B36B3F-A63F-4BA4-9DE4-02DBF69A429F.md)
 
 
 ## Fields Used

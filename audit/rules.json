@@ -2136,6 +2136,234 @@
         "window": "T05M",
         "window_size": 300000
     },
+    "CHAIN-S00025": {
+        "all_fields": [
+            "dns_query",
+            "srcDevice_ip"
+        ],
+        "category": "Unknown/Other",
+        "commit_message": "TLAB-2384: AI Campaign Rules and Test Cases (#5957)",
+        "commit_origin_hash": "c67d2aa214ed689494d36064e490c343c4ffe6f7",
+        "content_type": "RULE",
+        "description": "Detection:\nThis chain rule triggers when a device makes a high number of DNS queries for messaging platform domains (Telegram, Discord, Slack, Teams, etc.) and AI service domains (OpenAI, Anthropic, HuggingFace, etc.) within 24 hours. \n\nScenario:\nOpenClaw is an agentic AI framework which may either be unsanctioned or tightly controlled in your environment, and a user has installed OpenClaw without approval. The host on which OpenClaw is installed may not be under IT control. \n\nRecommended Actions:\nInvestigate srcDevice_ip to identify the user, then review endpoint logs for OpenClaw artifacts (file writes, port 18789 websockets, node shell processes). If unauthorized, remove the installation.\n\nTuning Recommendations:\nCreate match list 'authorized_openclaw_devices' for permitted systems, and adjust thresholds upward if legitimate Slack/Teams integrations generate false positives. Combine with other OpenClaw detections for comprehensive coverage.",
+        "enabled_by_default": true,
+        "entity_selectors": [
+            {
+                "entity_type": "_ip",
+                "expression": "srcDevice_ip"
+            }
+        ],
+        "expressions_and_limits": [
+            {
+                "expression": "dns_query IN (\"api.telegram.org\",\"graph.facebook.com\",\"discord.com\",\"chat.googleapis.com\",\"slack.com\",\"open.feishu.cn\",\"graph.microsoft.com\",\"api.mattermost.com\",\"matrix.org\",\"api.line.me\",\"openapi.zalo.me\")",
+                "index": 0,
+                "limit": 240
+            },
+            {
+                "expression": "dns_query IN (\"api.openai.com\",\"api.anthropic.com\",\"chutes.ai\",\"vllm.ai\",\"minimax.io\",\"moonshot.ai\",\"x.ai\",\"openrouter.ai\",\"qwen.ai\",\"z.ai\",\"vercel.com\",\"opencode.ai\",\"together.ai\",\"huggingface.co\",\"venice.ai\",\"litellm.ai\")",
+                "index": 1,
+                "limit": 120
+            }
+        ],
+        "file_path": "rules_v3/OpenClaw_Installation_Detected_via_DNS.json",
+        "group_by_fields": [
+            "srcDevice_ip"
+        ],
+        "id": 25,
+        "id_compiled": "CHAIN-S00025",
+        "is_prototype": false,
+        "name": "OpenClaw - Installation Detected via DNS",
+        "normalized_description": "Detection:\nThis chain rule triggers when a device makes a high number of DNS queries for messaging platform domains (Telegram, Discord, Slack, Teams, etc.) and AI service domains (OpenAI, Anthropic, HuggingFace, etc.) within 24 hours. \n\nScenario:\nOpenClaw is an agentic AI framework which may either be unsanctioned or tightly controlled in your environment, and a user has installed OpenClaw without approval. The host on which OpenClaw is installed may not be under IT control. \n\nRecommended Actions:\nInvestigate srcDevice_ip to identify the user, then review endpoint logs for OpenClaw artifacts (file writes, port 18789 websockets, node shell processes). If unauthorized, remove the installation.\n\nTuning Recommendations:\nCreate match list 'authorized_openclaw_devices' for permitted systems, and adjust thresholds upward if legitimate Slack/Teams integrations generate false positives. Combine with other OpenClaw detections for comprehensive coverage.",
+        "normalized_score_description": "Static: 1",
+        "normalized_score_possibilities": [
+            1
+        ],
+        "normalized_score_range": [
+            1,
+            1
+        ],
+        "normalized_score_type": "Static",
+        "normalized_signal_name": "OpenClaw - Installation Detected via DNS",
+        "normalized_summary": "Possible OpenClaw installation detected on host {{srcDevice_ip}}",
+        "ordered": false,
+        "pattern_type": "chain",
+        "product_direct_ref": [],
+        "product_guids": [
+            "37C866BF-72E1-470A-9072-EDB908F56951"
+        ],
+        "record_type_direct_ref": [],
+        "rule_description": "",
+        "rule_source": "sumo",
+        "score": 1,
+        "silent_mode": true,
+        "stream": "record",
+        "summary_expression": "Possible OpenClaw installation detected on host {{srcDevice_ip}}",
+        "tags": [
+            "_mitreAtlasTechnique:AML.T0103",
+            "_mitreAtlasTactic:AML.TA0005"
+        ],
+        "threat_ruleType": null,
+        "vendor_direct_ref": [],
+        "window": "T24H",
+        "window_size": 86400000
+    },
+    "CHAIN-S00026": {
+        "all_fields": [
+            "action",
+            "metadata_product",
+            "metadata_vendor",
+            "resource",
+            "user_username",
+            "user_username_role"
+        ],
+        "category": "Persistence",
+        "commit_message": "TLAB-2384: AI Campaign Rules and Test Cases (#5957)",
+        "commit_origin_hash": "c67d2aa214ed689494d36064e490c343c4ffe6f7",
+        "content_type": "RULE",
+        "description": "Detection:\nThis rule triggers when Bedrock IAM permissions are granted through the creation and attachment of an IAM policy with privileged Bedrock permissions including model invocation, AI agent creation, guardrail deletion, logging configuration changes, knowledge base creation, and provisioned throughput allocation.\n\nScenario:\nAn attacker with IAM permissions escalates privileges by granting Bedrock access to themselves or compromised roles, enabling model invocation, AI agent creation, guardrail bypass, logging deletion, data exfiltration via knowledge bases, or cryptomining through expensive compute resources. Legitimate Bedrock provisioning may require similar permissions, making this a potential indicator of either authorized activity or privilege escalation.\n\nRecommended Actions:\nVerify the permission grant aligns with authorized Bedrock provisioning by reviewing user_username, srcDevice_ip, and timing against normal business hours. For inline policies, review policyDocument for overly permissive actions (bedrock:* wildcards), then if unauthorized, detach the policy immediately, rotate credentials, and check CloudTrail for any Bedrock API calls using the newly granted permissions.\n\nTuning Recommendations:\nThe rule excludes AWS service-linked roles. Create match list 'authorized_bedrock_provisioning_accounts' for users or roles that regularly provision Bedrock permissions, and adjust monitored Bedrock actions based on your organization's risk tolerance.",
+        "enabled_by_default": true,
+        "entity_selectors": [
+            {
+                "entity_type": "_username",
+                "expression": "user_username"
+            },
+            {
+                "entity_type": "_resource",
+                "expression": "resource"
+            }
+        ],
+        "expressions_and_limits": [
+            {
+                "expression": "metadata_vendor = 'Amazon AWS'\nAND metadata_product = 'CloudTrail'\nAND application = 'iam.amazonaws.com'\nAND (\n        action IN ('CreatePolicy', 'CreatePolicyVersion')\n        AND fields['requestParameters.policyDocument'] MATCHES /(?i:)bedrock:(\\*|InvokeModel|CreateAgent|DeleteGuardrail|DeleteModelInvocationLoggingConfiguration|PutFoundationModelEntitlement|CreateCustomModel|CreateKnowledgeBase|StartIngestionJob|CreateProvisionedModelThroughput|PutResourcePolicy)/\n    )\nAND NOT user_username_role MATCHES /(?i:^awsservicerolefor)/",
+                "index": 0,
+                "limit": 1
+            },
+            {
+                "expression": "metadata_vendor = 'Amazon AWS'\nAND metadata_product = 'CloudTrail'\nAND application = 'iam.amazonaws.com'\nAND (\n        action IN ('AttachPolicy', 'AttachRolePolicy','AttachUserPolicy')\n    )\nAND NOT user_username_role MATCHES /(?i:^awsservicerolefor)/",
+                "index": 1,
+                "limit": 1
+            }
+        ],
+        "file_path": "rules_v3/AWS_Bedrock_Privileged_Policy_Created_and_Attached.json",
+        "group_by_fields": [
+            "resource"
+        ],
+        "id": 26,
+        "id_compiled": "CHAIN-S00026",
+        "is_prototype": false,
+        "name": "AWS Bedrock - Privileged Policy Created and Attached",
+        "normalized_description": "Detection:\nThis rule triggers when Bedrock IAM permissions are granted through the creation and attachment of an IAM policy with privileged Bedrock permissions including model invocation, AI agent creation, guardrail deletion, logging configuration changes, knowledge base creation, and provisioned throughput allocation.\n\nScenario:\nAn attacker with IAM permissions escalates privileges by granting Bedrock access to themselves or compromised roles, enabling model invocation, AI agent creation, guardrail bypass, logging deletion, data exfiltration via knowledge bases, or cryptomining through expensive compute resources. Legitimate Bedrock provisioning may require similar permissions, making this a potential indicator of either authorized activity or privilege escalation.\n\nRecommended Actions:\nVerify the permission grant aligns with authorized Bedrock provisioning by reviewing user_username, srcDevice_ip, and timing against normal business hours. For inline policies, review policyDocument for overly permissive actions (bedrock:* wildcards), then if unauthorized, detach the policy immediately, rotate credentials, and check CloudTrail for any Bedrock API calls using the newly granted permissions.\n\nTuning Recommendations:\nThe rule excludes AWS service-linked roles. Create match list 'authorized_bedrock_provisioning_accounts' for users or roles that regularly provision Bedrock permissions, and adjust monitored Bedrock actions based on your organization's risk tolerance.",
+        "normalized_score_description": "Static: 2",
+        "normalized_score_possibilities": [
+            2
+        ],
+        "normalized_score_range": [
+            2,
+            2
+        ],
+        "normalized_score_type": "Static",
+        "normalized_signal_name": "AWS Bedrock - Privileged Policy Created and Attached",
+        "normalized_summary": "{{user_username}} has created and attached AWS policy named  {{resource}} with privileged Bedrock permissions",
+        "ordered": true,
+        "pattern_type": "chain",
+        "product_direct_ref": [
+            "CloudTrail"
+        ],
+        "product_guids": [
+            "033624b0-218e-4dcb-b93f-0f1fb1806c56"
+        ],
+        "record_type_direct_ref": [],
+        "rule_description": "",
+        "rule_source": "sumo",
+        "score": 2,
+        "silent_mode": true,
+        "stream": "record",
+        "summary_expression": "{{user_username}} has created and attached AWS policy named  {{resource}} with privileged Bedrock permissions",
+        "tags": [
+            "_mitreAttackTactic:TA0003",
+            "_mitreAttackTechnique:T1098.003"
+        ],
+        "threat_ruleType": null,
+        "vendor_direct_ref": [
+            "Amazon AWS"
+        ],
+        "window": "T05M",
+        "window_size": 300000
+    },
+    "CHAIN-S00027": {
+        "all_fields": [
+            "commandLine",
+            "device_hostname",
+            "dstDevice_ip_isInternal",
+            "normalizedAction",
+            "normalizedResource"
+        ],
+        "category": "Exfiltration",
+        "commit_message": "TLAB-2384: AI Campaign Rules and Test Cases (#5957)",
+        "commit_origin_hash": "c67d2aa214ed689494d36064e490c343c4ffe6f7",
+        "content_type": "RULE",
+        "description": "Detection:\nThis ordered chain rule triggers when a child process of an openclaw-gateway node process is created on a host followed within 5 minutes by an outbound network connection to an external IP from the same process on the same host, grouped by process ID and hostname. Command lines associated with ip neighbor discovery are excluded as these can be a normal part of OpenClaw operation.\n\nScenario:\nOpenClaw's gateway process spawns child processes (shells, scripts) to execute system commands during code intelligence operations. When these child processes establish outbound connections to external IPs, it indicates potential data exfiltration \u2014 code, credentials, or other sensitive content being transmitted from the host via OpenClaw's execution capability.\n\nRecommended Actions:\nInvestigate device_hostname and baseImage to identify the child process and user, then review dstDevice_ip to determine the external destination. Correlate with DNS logs and firewall records to assess what data may have been transmitted, and inspect OpenClaw skill files for injected commands.\n\nTuning Recommendations:\nCreate match list 'authorized_openclaw_external_destinations' for known legitimate external IPs contacted by OpenClaw child processes. Adjust the 5-minute correlation window if legitimate use cases show longer delays between process creation and network activity.",
+        "enabled_by_default": true,
+        "entity_selectors": [
+            {
+                "entity_type": "_hostname",
+                "expression": "device_hostname"
+            }
+        ],
+        "expressions_and_limits": [
+            {
+                "expression": "lower(normalizedResource) = \"process\"\nAND lower(normalizedAction) = \"create\"\nAND parentBaseImage matches /(?i)node/\nAND parentCommandLine matches /(?i)openclaw/\nAND NOT commandLine MATCHES /(?i)(^.*(sh|cmd|powershell|pwsh|pwsh\\-preview)(\\.exe)?\\s+[-\\/]c\\s+)?(ip\\s+neigh(\\s+show)?|arp\\s+-a(n)?)$/",
+                "index": 0,
+                "limit": 1
+            },
+            {
+                "expression": "lower(normalizedResource) = \"network\"\nAND lower(normalizedAction) = \"start\"\nAND NOT dstDevice_ip_isInternal",
+                "index": 1,
+                "limit": 1
+            }
+        ],
+        "file_path": "rules_v3/OpenClaw_Outbound_Connection_from_Child_Process.json",
+        "group_by_fields": [
+            "pid"
+        ],
+        "id": 27,
+        "id_compiled": "CHAIN-S00027",
+        "is_prototype": false,
+        "name": "OpenClaw - Outbound Connection from Child Process",
+        "normalized_description": "Detection:\nThis ordered chain rule triggers when a child process of an openclaw-gateway node process is created on a host followed within 5 minutes by an outbound network connection to an external IP from the same process on the same host, grouped by process ID and hostname. Command lines associated with ip neighbor discovery are excluded as these can be a normal part of OpenClaw operation.\n\nScenario:\nOpenClaw's gateway process spawns child processes (shells, scripts) to execute system commands during code intelligence operations. When these child processes establish outbound connections to external IPs, it indicates potential data exfiltration \u2014 code, credentials, or other sensitive content being transmitted from the host via OpenClaw's execution capability.\n\nRecommended Actions:\nInvestigate device_hostname and baseImage to identify the child process and user, then review dstDevice_ip to determine the external destination. Correlate with DNS logs and firewall records to assess what data may have been transmitted, and inspect OpenClaw skill files for injected commands.\n\nTuning Recommendations:\nCreate match list 'authorized_openclaw_external_destinations' for known legitimate external IPs contacted by OpenClaw child processes. Adjust the 5-minute correlation window if legitimate use cases show longer delays between process creation and network activity.",
+        "normalized_score_description": "Static: 2",
+        "normalized_score_possibilities": [
+            2
+        ],
+        "normalized_score_range": [
+            2,
+            2
+        ],
+        "normalized_score_type": "Static",
+        "normalized_signal_name": "OpenClaw - Outbound Connection from Child Process",
+        "normalized_summary": "OpenClaw gateway child process  made an outbound network connection from host {{device_hostname}}",
+        "ordered": true,
+        "pattern_type": "chain",
+        "product_direct_ref": [],
+        "product_guids": [
+            "b238758d-ade8-41d2-b32d-c99159e9fd74"
+        ],
+        "record_type_direct_ref": [],
+        "rule_description": "",
+        "rule_source": "sumo",
+        "score": 2,
+        "silent_mode": true,
+        "stream": "record",
+        "summary_expression": "OpenClaw gateway child process  made an outbound network connection from host {{device_hostname}}",
+        "tags": [
+            "_mitreAttackTactic:TA0010",
+            "_mitreAttackTechnique:T1041"
+        ],
+        "threat_ruleType": null,
+        "vendor_direct_ref": [],
+        "window": "T05M",
+        "window_size": 300000
+    },
     "FIRST-S00001": {
         "all_fields": [
             "metadata_deviceEventId",
@@ -5590,6 +5818,7 @@
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "23342262-740c-41b7-9b77-08267ae01612",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
+            "46c71698-9c21-4273-9561-94ff5af52edd",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
             "51278354-d6b5-4c8e-a8fd-8197df334e67",
             "54B36B3F-A63F-4BA4-9DE4-02DBF69A429F",
@@ -7649,6 +7878,82 @@
         ],
         "vendor_direct_ref": []
     },
+    "FIRST-S00101": {
+        "all_fields": [
+            "action",
+            "fields['responseElements.dataSource.dataSourceConfiguration.s3Configuration.bucketOwnerAccountId']",
+            "metadata_product",
+            "metadata_vendor",
+            "srcDevice_ip",
+            "user_username"
+        ],
+        "baseline_status": "COMPLETED",
+        "baseline_type": "GLOBAL",
+        "baseline_window_size": 0,
+        "category": "Unknown/Other",
+        "commit_message": "TLAB-2384: AI Campaign Rules and Test Cases (#5957)",
+        "commit_origin_hash": "c67d2aa214ed689494d36064e490c343c4ffe6f7",
+        "content_type": "ANOMALY",
+        "description_expression": "Detection:\nThis rule triggers when an S3 bucket from an external AWS account is added to a Bedrock Knowledge Base via UpdateDataSource or CreateDataSource API calls in which the external AWS account hasn't been observed in the last 90 days.\n\nScenario:\nAn attacker with Bedrock permissions may poison a RAG system by adding data sources from an external AWS account they control, injecting malicious content into the knowledge base without compromising the organization's S3 buckets. This RAG poisoning technique enables data manipulation, misinformation injection, or credential harvesting through malicious AI responses.\n\nRecommended Actions:\nVerify the cross-account bucket addition is authorized by reviewing user_username and checking if bucketOwnerAccountId belongs to your organization or a trusted partner. If unauthorized, remove the external data source immediately, revoke IAM permissions, and audit all Knowledge Base configurations for additional modifications.\n\nTuning Recommendations:\nCreate a match list named 'authorized_bedrock_external_accounts' containing trusted AWS account IDs for cross-account data sharing. For organizations that never use cross-account S3 buckets with Bedrock, this rule can run without exclusions.",
+        "enabled_by_default": true,
+        "entity_selectors": [
+            {
+                "entity_type": "_username",
+                "expression": "user_username"
+            },
+            {
+                "entity_type": "_ip",
+                "expression": "srcDevice_ip"
+            }
+        ],
+        "file_path": "rules_v3/AWS_Bedrock_KB_Data_Source_from_External_S3_Bucket.json",
+        "filter_expression": "metadata_vendor = 'Amazon AWS'\nAND metadata_product = 'CloudTrail'\nAND application = 'bedrock.amazonaws.com'\nAND action IN ('UpdateDataSource', 'CreateDataSource')\nAND fields['responseElements.dataSource.dataSourceConfiguration.s3Configuration.bucketOwnerAccountId'] IS NOT NULL",
+        "group_by_fields": [],
+        "id": 101,
+        "id_compiled": "FIRST-S00101",
+        "is_prototype": false,
+        "name": "AWS Bedrock - KB Data Source from External S3 Bucket",
+        "name_expression": "AWS Bedrock Knowledge Base external data source added by {{user_username}}",
+        "normalized_description": "Detection:\nThis rule triggers when an S3 bucket from an external AWS account is added to a Bedrock Knowledge Base via UpdateDataSource or CreateDataSource API calls in which the external AWS account hasn't been observed in the last 90 days.\n\nScenario:\nAn attacker with Bedrock permissions may poison a RAG system by adding data sources from an external AWS account they control, injecting malicious content into the knowledge base without compromising the organization's S3 buckets. This RAG poisoning technique enables data manipulation, misinformation injection, or credential harvesting through malicious AI responses.\n\nRecommended Actions:\nVerify the cross-account bucket addition is authorized by reviewing user_username and checking if bucketOwnerAccountId belongs to your organization or a trusted partner. If unauthorized, remove the external data source immediately, revoke IAM permissions, and audit all Knowledge Base configurations for additional modifications.\n\nTuning Recommendations:\nCreate a match list named 'authorized_bedrock_external_accounts' containing trusted AWS account IDs for cross-account data sharing. For organizations that never use cross-account S3 buckets with Bedrock, this rule can run without exclusions.",
+        "normalized_score_description": "Static: 2",
+        "normalized_score_possibilities": [
+            2
+        ],
+        "normalized_score_range": [
+            2,
+            2
+        ],
+        "normalized_score_type": "Static",
+        "normalized_signal_name": "AWS Bedrock Knowledge Base external data source added by {{user_username}}",
+        "normalized_summary": "{{user_username}} added external data source from account {{fields['responseElements.dataSource.dataSourceConfiguration.s3Configuration.bucketOwnerAccountId']}} to Bedrock Knowledge Base from IP {{srcDevice_ip}}",
+        "pattern_type": "first_seen",
+        "product_direct_ref": [
+            "CloudTrail"
+        ],
+        "product_guids": [
+            "033624b0-218e-4dcb-b93f-0f1fb1806c56"
+        ],
+        "record_type_direct_ref": [],
+        "retention_window_size": 7776000000,
+        "rule_description": "",
+        "rule_source": "sumo",
+        "score": 2,
+        "silent_mode": true,
+        "stream": "record",
+        "summary_expression": "{{user_username}} added external data source from account {{fields['responseElements.dataSource.dataSourceConfiguration.s3Configuration.bucketOwnerAccountId']}} to Bedrock Knowledge Base from IP {{srcDevice_ip}}",
+        "tags": [
+            "_mitreAtlasTechnique:AML.T0070",
+            "_mitreAtlasTactic:AML.TA0006"
+        ],
+        "threat_ruleType": null,
+        "value_expression": null,
+        "value_fields": [
+            "fields['responseElements.dataSource.dataSourceConfiguration.s3Configuration.bucketOwnerAccountId']"
+        ],
+        "vendor_direct_ref": [
+            "Amazon AWS"
+        ]
+    },
     "LEGACY-S00001": {
         "all_fields": [
             "device_hostname",
@@ -7761,9 +8066,9 @@
         "product_direct_ref": [],
         "product_guids": [
             "1768a42a-37e6-4a2b-aa42-314583f63e1b",
+            "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "37C866BF-72E1-470A-9072-EDB908F56951",
             "5ba50e74-3c05-4ea8-aeaf-5efde588c60f",
-            "9e838f93-c9e7-4592-a980-cf9dfb704784",
             "c2503fcc-ef30-4e40-bb32-0bf47151b140",
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
             "e2393771-bda2-414a-8661-0a57069287ad",
@@ -8103,11 +8408,9 @@
             "34dd9c1e-ceec-4cba-8f5d-4776f680d785",
             "37C866BF-72E1-470A-9072-EDB908F56951",
             "43808f4c-15e9-480c-ab1a-38bdef3b6798",
-            "54B36B3F-A63F-4BA4-9DE4-02DBF69A429F",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "5ba50e74-3c05-4ea8-aeaf-5efde588c60f",
             "6299d728-14f7-455e-85c5-ea8ec65a654a",
-            "9e838f93-c9e7-4592-a980-cf9dfb704784",
             "a67d97fe-6e68-4cfb-9500-cfc5492da565",
             "c2503fcc-ef30-4e40-bb32-0bf47151b140",
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
@@ -8305,7 +8608,6 @@
             "724c9add-8cd9-4013-b9e1-a907b96da426",
             "991a55cf-8c5a-49ba-ae72-6f64a002bacf",
             "9e0641a7-22ce-4ac8-8113-ee48b368ac3d",
-            "9e838f93-c9e7-4592-a980-cf9dfb704784",
             "A17B3F3C-04F1-40C8-9497-3C499EB18A74",
             "B3582ED2-1A0C-452D-9802-97433D143486",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
@@ -9108,13 +9410,13 @@
             "168afd8d-2893-4c74-95b1-a975d576ea56",
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "332856e9-3111-446f-8df7-e64694e4b9a1",
+            "34dd9c1e-ceec-4cba-8f5d-4776f680d785",
             "37C866BF-72E1-470A-9072-EDB908F56951",
             "43808f4c-15e9-480c-ab1a-38bdef3b6798",
             "54B36B3F-A63F-4BA4-9DE4-02DBF69A429F",
             "5ba50e74-3c05-4ea8-aeaf-5efde588c60f",
             "5bb9e0b3-8d57-4b10-8952-0b6ffe91b599",
             "6299d728-14f7-455e-85c5-ea8ec65a654a",
-            "9e838f93-c9e7-4592-a980-cf9dfb704784",
             "c2503fcc-ef30-4e40-bb32-0bf47151b140",
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
             "dcc85cfc-a698-4d09-87de-f2c723f3ad07",
@@ -9200,7 +9502,6 @@
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "5ba50e74-3c05-4ea8-aeaf-5efde588c60f",
             "6299d728-14f7-455e-85c5-ea8ec65a654a",
-            "9e838f93-c9e7-4592-a980-cf9dfb704784",
             "B3582ED2-1A0C-452D-9802-97433D143486",
             "c2503fcc-ef30-4e40-bb32-0bf47151b140",
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
@@ -9646,17 +9947,17 @@
     "LEGACY-S00037": {
         "all_fields": [
             "device_hostname",
-            "device_ip",
+            "fields['apprisk']",
             "metadata_deviceEventId",
             "metadata_product",
             "metadata_vendor",
-            "severity",
+            "srcDevice_ip",
             "user_username"
         ],
-        "asset_field": "device_ip",
+        "asset_field": "srcDevice_ip",
         "category": "Execution",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "Fix Fortinet Apprisk rules (#5962)",
+        "commit_origin_hash": "0b099ca4820f453a7cac65cc697bd651c8a805bc",
         "content_type": "RULE",
         "converted": true,
         "description": "This signal fires when Fortinet identifies a critical risk application in use within the network. ",
@@ -9664,7 +9965,7 @@
         "entity_selectors": [
             {
                 "entity_type": "_ip",
-                "expression": "device_ip"
+                "expression": "srcDevice_ip"
             },
             {
                 "entity_type": "_username",
@@ -9675,7 +9976,7 @@
                 "expression": "device_hostname"
             }
         ],
-        "expression": "metadata_vendor = 'Fortinet'\nand metadata_product = 'Fortigate'\nand metadata_deviceEventId = 'app-ctrl'\nand severity = 'critical'",
+        "expression": "metadata_vendor = 'Fortinet'\nand metadata_product = 'Fortigate'\nand metadata_deviceEventId = 'app-ctrl'\nand fields['apprisk'] = 'critical'",
         "file_path": "rules_v3/Fortinet_Critical_App-Risk.json",
         "id": 37,
         "id_compiled": "LEGACY-S00037",
@@ -9716,17 +10017,17 @@
     "LEGACY-S00038": {
         "all_fields": [
             "device_hostname",
-            "device_ip",
+            "fields['apprisk']",
             "metadata_deviceEventId",
             "metadata_product",
             "metadata_vendor",
-            "severity",
+            "srcDevice_ip",
             "user_username"
         ],
-        "asset_field": "device_ip",
+        "asset_field": "srcDevice_ip",
         "category": "Execution",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "Fix Fortinet Apprisk rules (#5962)",
+        "commit_origin_hash": "0b099ca4820f453a7cac65cc697bd651c8a805bc",
         "content_type": "RULE",
         "converted": true,
         "description": "This signal fires when Fortinet detects a high risk application within the environment",
@@ -9734,7 +10035,7 @@
         "entity_selectors": [
             {
                 "entity_type": "_ip",
-                "expression": "device_ip"
+                "expression": "srcDevice_ip"
             },
             {
                 "entity_type": "_username",
@@ -9745,7 +10046,7 @@
                 "expression": "device_hostname"
             }
         ],
-        "expression": "metadata_vendor = 'Fortinet'\nand metadata_product = 'Fortigate'\nand metadata_deviceEventId = 'app-ctrl'\nand severity = 'high'",
+        "expression": "metadata_vendor = 'Fortinet'\nand metadata_product = 'Fortigate'\nand metadata_deviceEventId = 'app-ctrl'\nand fields['apprisk'] = 'high'",
         "file_path": "rules_v3/Fortinet_High_App-Risk.json",
         "id": 38,
         "id_compiled": "LEGACY-S00038",
@@ -11264,14 +11565,13 @@
         "pattern_type": "match",
         "product_direct_ref": [],
         "product_guids": [
-            "072b85a2-1765-45c2-911d-b0509880326e",
             "1768a42a-37e6-4a2b-aa42-314583f63e1b",
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
+            "3382523e-2072-41bd-b50b-6b148957d0b0",
             "343b9323-d279-40d9-946f-809242e5cf98",
             "37C866BF-72E1-470A-9072-EDB908F56951",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "5ba50e74-3c05-4ea8-aeaf-5efde588c60f",
-            "5bb9e0b3-8d57-4b10-8952-0b6ffe91b599",
             "9e0641a7-22ce-4ac8-8113-ee48b368ac3d",
             "c2503fcc-ef30-4e40-bb32-0bf47151b140",
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
@@ -12639,8 +12939,8 @@
         ],
         "asset_field": "srcDevice_ip",
         "category": "Lateral Movement",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "TLAB-2574 unify MITRE scripts and add rule validation (#5956)",
+        "commit_origin_hash": "8933d90c67f6f2e47e13f867cb2a458d89b1d9a3",
         "content_type": "RULE",
         "converted": true,
         "description": "\"Interesting hostname\" in this context include those that start with dns, ns, smtp, mail, pop, imap, www, and ftp.  Using SSH to hosts that appear to be purposed as servers corresponding to one of these hostnames is considered suspicious.",
@@ -12708,7 +13008,6 @@
             "_mitreAttackTechnique:T1078.001",
             "_mitreAttackTechnique:T1078.002",
             "_mitreAttackTechnique:T1078.003",
-            "_mitreAttackTactic:TA0008",
             "_mitreAttackTechnique:T1021",
             "_mitreAttackTechnique:T1021.004"
         ],
@@ -13588,7 +13887,6 @@
             "9a28f2af-5526-414d-973b-c3fc7984b8a1",
             "9f76f1fd-fbb0-42d2-9bf5-0f4fd2c1ab82",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
-            "af61d8a8-3eba-42fb-9f17-87443924f3f4",
             "c2503fcc-ef30-4e40-bb32-0bf47151b140",
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
             "da9e05a5-3fd3-46a7-a107-ae03c01e3f5a",
@@ -13937,7 +14235,6 @@
             "5c2cc0de-ca31-4ef0-bcfa-133fc8b387ad",
             "6299d728-14f7-455e-85c5-ea8ec65a654a",
             "724c9add-8cd9-4013-b9e1-a907b96da426",
-            "78150d37-623d-471b-b7c9-fdefcadd21fa",
             "951a004d-54bf-441d-98e1-fcc6a032f475",
             "9e0641a7-22ce-4ac8-8113-ee48b368ac3d",
             "A17B3F3C-04F1-40C8-9497-3C499EB18A74",
@@ -14170,15 +14467,16 @@
             "332856e9-3111-446f-8df7-e64694e4b9a1",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "37C866BF-72E1-470A-9072-EDB908F56951",
+            "43808f4c-15e9-480c-ab1a-38bdef3b6798",
             "44f07c08-c2ad-4a95-a058-1d0737ff90db",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
-            "54B36B3F-A63F-4BA4-9DE4-02DBF69A429F",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "59a3cd41-b6d2-4ab7-a0ff-6d5abd14ac43",
             "5ba50e74-3c05-4ea8-aeaf-5efde588c60f",
             "5bb9e0b3-8d57-4b10-8952-0b6ffe91b599",
             "6299d728-14f7-455e-85c5-ea8ec65a654a",
             "724c9add-8cd9-4013-b9e1-a907b96da426",
+            "9a28f2af-5526-414d-973b-c3fc7984b8a1",
             "9e0641a7-22ce-4ac8-8113-ee48b368ac3d",
             "9f76f1fd-fbb0-42d2-9bf5-0f4fd2c1ab82",
             "A17B3F3C-04F1-40C8-9497-3C499EB18A74",
@@ -14748,8 +15046,8 @@
         ],
         "asset_field": "user_username",
         "category": "Defense Evasion",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "TLAB-2574 unify MITRE scripts and add rule validation (#5956)",
+        "commit_origin_hash": "8933d90c67f6f2e47e13f867cb2a458d89b1d9a3",
         "content_type": "RULE",
         "converted": true,
         "description": "Attackers may attempt to clear the Windows Security Event Log in an effort to hide records of their activity during an intrusion. This rule detects that action.",
@@ -14801,7 +15099,7 @@
         "tags": [
             "_mitreAttackTactic:TA0005",
             "_mitreAttackTechnique:T1070",
-            "_mitreAttackTechnique:T1070.001",
+            "_mitreAttackTechnique:T1685.005",
             "_mitreAttackTechnique:T1070.003"
         ],
         "threat_ruleType": null,
@@ -15209,16 +15507,15 @@
             "6299d728-14f7-455e-85c5-ea8ec65a654a",
             "6787d77a-1ee0-43d4-8ca0-96af8ee755bc",
             "724c9add-8cd9-4013-b9e1-a907b96da426",
+            "74662794-d8de-42ec-b504-cc0bccfaddd9",
             "798f8da8-c85b-4e9a-b2f1-eae0b07532fb",
             "79da6240-7617-49c8-b130-96278579766e",
             "991a55cf-8c5a-49ba-ae72-6f64a002bacf",
             "9a28f2af-5526-414d-973b-c3fc7984b8a1",
             "9e0641a7-22ce-4ac8-8113-ee48b368ac3d",
-            "9e838f93-c9e7-4592-a980-cf9dfb704784",
             "9f76f1fd-fbb0-42d2-9bf5-0f4fd2c1ab82",
             "B3582ED2-1A0C-452D-9802-97433D143486",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
-            "abe4975e-de65-4f82-8b35-e6ce392e165c",
             "af61d8a8-3eba-42fb-9f17-87443924f3f4",
             "afabb29d-e728-410f-b7c6-acfa9efbe1ed",
             "b8e88b31-2f07-45d9-9dda-6af362c63003",
@@ -19036,8 +19333,8 @@
         ],
         "asset_field": "device_ip",
         "category": "Execution",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "TLAB-2574 unify MITRE scripts and add rule validation (#5956)",
+        "commit_origin_hash": "8933d90c67f6f2e47e13f867cb2a458d89b1d9a3",
         "content_type": "RULE",
         "description_expression": "Changing the configuration of logging to any mission-critical service or platform should be closely monitored.  This signal identifies when AWS logging configurations have been changed.  The severity of signals increases depending on the type of action observed.  For instance disabling/deleting logs is a higher severity than enabling logs.",
         "enabled_by_default": true,
@@ -19144,9 +19441,9 @@
             "_mitreAttackTactic:TA0005",
             "_mitreAttackTechnique:T1489",
             "_mitreAttackTechnique:T1578",
-            "_mitreAttackTechnique:T1562",
+            "_mitreAttackTechnique:T1685",
             "_mitreAttackTechnique:T1578.004",
-            "_mitreAttackTechnique:T1562.008"
+            "_mitreAttackTechnique:T1685.002"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": [
@@ -22453,8 +22750,7 @@
         "product_direct_ref": [],
         "product_guids": [
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
-            "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
-            "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad"
+            "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3"
         ],
         "record_type_direct_ref": [],
         "rule_source": "sumo",
@@ -22608,7 +22904,8 @@
         "pattern_type": "templated_match",
         "product_direct_ref": [],
         "product_guids": [
-            "1ff7546c-cb36-4a24-87f7-89d2cecc5761"
+            "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
+            "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3"
         ],
         "record_type_direct_ref": [],
         "rule_source": "sumo",
@@ -23411,7 +23708,6 @@
             "2a236ab1-77d2-4867-a571-a1cfd64528e6",
             "2a678bcd-898e-43cd-ab3f-91feb0602a18",
             "2f2fbe08-ab8b-4626-81fd-eaa41b563c49",
-            "2f305793-ce37-44cb-84bc-1b89b4367d3c",
             "37C866BF-72E1-470A-9072-EDB908F56951",
             "44f07c08-c2ad-4a95-a058-1d0737ff90db",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
@@ -23424,6 +23720,7 @@
             "64088efc-3f28-448d-b386-000deebc7d89",
             "6787d77a-1ee0-43d4-8ca0-96af8ee755bc",
             "724c9add-8cd9-4013-b9e1-a907b96da426",
+            "798f8da8-c85b-4e9a-b2f1-eae0b07532fb",
             "991a55cf-8c5a-49ba-ae72-6f64a002bacf",
             "9a28f2af-5526-414d-973b-c3fc7984b8a1",
             "9f76f1fd-fbb0-42d2-9bf5-0f4fd2c1ab82",
@@ -26513,8 +26810,8 @@
         ],
         "asset_field": "device_hostname",
         "category": "Execution",
-        "commit_message": "TLAB-1429 Update summary of MATCH-S00288",
-        "commit_origin_hash": "4ceb1a3094715bc280872367b7925694ba520eef",
+        "commit_message": "TLAB-2574 unify MITRE scripts and add rule validation (#5956)",
+        "commit_origin_hash": "8933d90c67f6f2e47e13f867cb2a458d89b1d9a3",
         "content_type": "RULE",
         "description_expression": "Detects NotPetya ransomware activity by identifying one of these occurring: the extracted passwords are passed back to the main module via named pipe, the file system journal of drive C is deleted or windows eventlogs are cleared using wevtutil.",
         "enabled_by_default": true,
@@ -26575,7 +26872,7 @@
             "_mitreAttackTechnique:T1210",
             "_mitreAttackTechnique:T1083",
             "_mitreAttackTechnique:T1070",
-            "_mitreAttackTechnique:T1070.001",
+            "_mitreAttackTechnique:T1685.005",
             "_mitreAttackTechnique:T1036",
             "_mitreAttackTechnique:T1036.004",
             "_mitreAttackTechnique:T1036.005",
@@ -27579,7 +27876,9 @@
         "pattern_type": "templated_match",
         "product_direct_ref": [],
         "product_guids": [
-            "1ff7546c-cb36-4a24-87f7-89d2cecc5761"
+            "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
+            "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
+            "72a5ddec-abb9-41ff-a2da-6a58beff980c"
         ],
         "record_type_direct_ref": [],
         "rule_source": "sumo",
@@ -27972,6 +28271,7 @@
         "product_guids": [
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
+            "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "840c72e0-4e47-41e7-9b93-31f55d12f07d"
         ],
         "record_type_direct_ref": [],
@@ -28675,9 +28975,7 @@
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
-            "60829f4a-7acb-47d1-ad23-8424fcf83dcb",
-            "a1225af5-e778-4068-a9a2-47da93d1ff24",
-            "a6052aa3-1bb6-4e31-8f51-b32058928c67"
+            "a1225af5-e778-4068-a9a2-47da93d1ff24"
         ],
         "record_type_direct_ref": [],
         "rule_source": "sumo",
@@ -28828,6 +29126,7 @@
         "product_guids": [
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
+            "5c2cc0de-ca31-4ef0-bcfa-133fc8b387ad",
             "840c72e0-4e47-41e7-9b93-31f55d12f07d",
             "a1225af5-e778-4068-a9a2-47da93d1ff24"
         ],
@@ -29303,8 +29602,8 @@
         ],
         "asset_field": "device_hostname",
         "category": "Execution",
-        "commit_message": "tweaking of mtire tags",
-        "commit_origin_hash": "15afa8c4f4b3c3b38643884732994db5df8db443",
+        "commit_message": "TLAB-2574 unify MITRE scripts and add rule validation (#5956)",
+        "commit_origin_hash": "8933d90c67f6f2e47e13f867cb2a458d89b1d9a3",
         "content_type": "RULE",
         "description_expression": "Detects a suspicious DLL loading from AppData Local path as described in BlueMashroom report",
         "enabled_by_default": true,
@@ -29362,7 +29661,6 @@
             "_mitreAttackTactic:TA0004",
             "_mitreAttackTactic:TA0005",
             "_mitreAttackTechnique:T1574",
-            "_mitreAttackTechnique:T1574.002",
             "_mitreAttackTechnique:T1055",
             "_mitreAttackTechnique:T1055.001",
             "_mitreAttackTechnique:T1129"
@@ -29674,8 +29972,8 @@
         ],
         "asset_field": "device_hostname",
         "category": "Execution",
-        "commit_message": "TLABS-1446 Update summary of MATCH-S00388",
-        "commit_origin_hash": "b4450314cbd649d7f9813c7aa691f3d3428fd042",
+        "commit_message": "TLAB-2574 unify MITRE scripts and add rule validation (#5956)",
+        "commit_origin_hash": "8933d90c67f6f2e47e13f867cb2a458d89b1d9a3",
         "content_type": "RULE",
         "description_expression": "Potential adversaries stopping ETW providers recording loaded .NET assemblies.",
         "enabled_by_default": true,
@@ -29731,8 +30029,8 @@
         "tags": [
             "_mitreAttackTactic:TA0002",
             "_mitreAttackTactic:TA0005",
-            "_mitreAttackTechnique:T1562",
-            "_mitreAttackTechnique:T1562.002"
+            "_mitreAttackTechnique:T1685",
+            "_mitreAttackTechnique:T1685.001"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": []
@@ -29871,6 +30169,7 @@
         "product_direct_ref": [],
         "product_guids": [
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
+            "3382523e-2072-41bd-b50b-6b148957d0b0",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "a1225af5-e778-4068-a9a2-47da93d1ff24"
         ],
@@ -30381,7 +30680,6 @@
             "146522A1-DC9A-40A5-A909-2EB3B665B1D1",
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "2ca0adcf-7616-4474-8557-a3773515aa6d",
-            "3382523e-2072-41bd-b50b-6b148957d0b0",
             "343b9323-d279-40d9-946f-809242e5cf98",
             "4448ca62-bb4f-4859-a6a2-d9262f9e48f0",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
@@ -30392,7 +30690,6 @@
             "51afd72e-94b0-42f3-b65c-cf8edbacf7cf",
             "52ac893d-bdf9-4e2c-be83-5f43842a179d",
             "54B36B3F-A63F-4BA4-9DE4-02DBF69A429F",
-            "55ec1d4a-6985-4f04-8de5-f9812871fda2",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "57cec26c-f94e-4403-add4-dae2382b5c16",
             "5c2cc0de-ca31-4ef0-bcfa-133fc8b387ad",
@@ -30420,6 +30717,7 @@
             "e611250c-6b5f-4b40-b84b-329a1d5b391c",
             "e73cd65a-7a4b-4ce9-9d73-e5d9c824c214",
             "ef42eb74-7444-4fee-b231-b4eb1e7c9660",
+            "f9cea291-9030-4e41-9836-6dd9274d6df4",
             "fa3c148a-4272-4a94-aea2-499ab90424c2"
         ],
         "record_type_direct_ref": [],
@@ -30848,8 +31146,8 @@
         ],
         "asset_field": "device_hostname",
         "category": "Defense Evasion",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "TLAB-2574 unify MITRE scripts and add rule validation (#5956)",
+        "commit_origin_hash": "8933d90c67f6f2e47e13f867cb2a458d89b1d9a3",
         "content_type": "RULE",
         "description_expression": "Observes for attempts to clear Windows event logs using wevtutil.\n\nCommand line auditing is necessary for this rule to function.",
         "enabled_by_default": true,
@@ -30907,7 +31205,7 @@
         "tags": [
             "_mitreAttackTactic:TA0005",
             "_mitreAttackTechnique:T1070",
-            "_mitreAttackTechnique:T1070.001"
+            "_mitreAttackTechnique:T1685.005"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": [
@@ -31425,6 +31723,7 @@
         "product_direct_ref": [],
         "product_guids": [
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
+            "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "72a5ddec-abb9-41ff-a2da-6a58beff980c",
             "840c72e0-4e47-41e7-9b93-31f55d12f07d"
         ],
@@ -32120,8 +32419,7 @@
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "60829f4a-7acb-47d1-ad23-8424fcf83dcb",
-            "93e2d3d-fab1-4d61-845f-49bc1ae5bed9",
-            "a1225af5-e778-4068-a9a2-47da93d1ff24"
+            "93e2d3d-fab1-4d61-845f-49bc1ae5bed9"
         ],
         "record_type_direct_ref": [],
         "rule_source": "sumo",
@@ -32266,6 +32564,7 @@
         "product_guids": [
             "021d1ded-1c82-4663-bf5d-d6ed5170efa3",
             "0fb003bc-8383-442f-8f3d-afcfbaefe617",
+            "14aa46d3-0710-44b6-9ce3-0a6b8f36b076",
             "1624169f-36c4-4309-8400-1409a171d00b",
             "343b9323-d279-40d9-946f-809242e5cf98",
             "34dd9c1e-ceec-4cba-8f5d-4776f680d785",
@@ -32274,7 +32573,6 @@
             "724c9add-8cd9-4013-b9e1-a907b96da426",
             "9e0641a7-22ce-4ac8-8113-ee48b368ac3d",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
-            "afabb29d-e728-410f-b7c6-acfa9efbe1ed",
             "b2f99a76-0771-49bf-9a89-d3e69370806e",
             "c2503fcc-ef30-4e40-bb32-0bf47151b140",
             "c3c1a4fc-10cc-4155-8a30-a3bb14fc9f31",
@@ -36428,8 +36726,8 @@
         ],
         "asset_field": "device_hostname",
         "category": "Execution",
-        "commit_message": "TLAB-816 Remove/Update MITRE techniques",
-        "commit_origin_hash": "9eb0cd4f3988407b6e57b611b302eaf4dca8c2f9",
+        "commit_message": "TLAB-2574 unify MITRE scripts and add rule validation (#5956)",
+        "commit_origin_hash": "8933d90c67f6f2e47e13f867cb2a458d89b1d9a3",
         "content_type": "RULE",
         "description_expression": "Malware detected that is determined to be ransomware based on the signature/virus name.",
         "enabled_by_default": true,
@@ -36495,16 +36793,12 @@
             "_mitreAttackTactic:TA0005",
             "_mitreAttackTactic:TA0004",
             "_mitreAttackTechnique:T1569",
-            "_mitreAttackTechnique:T1562",
+            "_mitreAttackTechnique:T1685",
             "_mitreAttackTechnique:T1542",
             "_mitreAttackTechnique:T1105",
-            "_mitreAttackTechnique:T1562.001",
-            "_mitreAttackTechnique:T1562.002",
-            "_mitreAttackTechnique:T1562.003",
-            "_mitreAttackTechnique:T1562.004",
-            "_mitreAttackTechnique:T1562.006",
-            "_mitreAttackTechnique:T1562.001",
-            "_mitreAttackTechnique:T1562.002",
+            "_mitreAttackTechnique:T1685.001",
+            "_mitreAttackTechnique:T1690",
+            "_mitreAttackTechnique:T1686",
             "_mitreAttackTechnique:T1484.001"
         ],
         "threat_ruleType": "malware",
@@ -36683,8 +36977,8 @@
         ],
         "asset_field": "device_hostname",
         "category": "Defense Evasion",
-        "commit_message": "TLAB-2481: tune regex for rule expression (#5928)",
-        "commit_origin_hash": "abee51ba9598e016bd6cc4df82e0cff716936396",
+        "commit_message": "TLAB-2574 unify MITRE scripts and add rule validation (#5956)",
+        "commit_origin_hash": "8933d90c67f6f2e47e13f867cb2a458d89b1d9a3",
         "content_type": "RULE",
         "description_expression": "Detects a critical Windows service, such as Microsoft Defender or Windows Firewall, being stopped via the command line utilities sc.exe or net.exe. This could indicate an attacker attempting to bypass defenses on the target system to conduct further post-exploitation activity.",
         "enabled_by_default": true,
@@ -36740,11 +37034,9 @@
         "summary_expression": "Critical Windows service stopped on host: {{device_hostname}} via command: {{commandline}}",
         "tags": [
             "_mitreAttackTactic:TA0005",
-            "_mitreAttackTechnique:T1562",
-            "_mitreAttackTechnique:T1562.001",
-            "_mitreAttackTechnique:T1562.002",
-            "_mitreAttackTechnique:T1562.004",
-            "_mitreAttackTechnique:T1562.006"
+            "_mitreAttackTechnique:T1685",
+            "_mitreAttackTechnique:T1685.001",
+            "_mitreAttackTechnique:T1686"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": []
@@ -37181,7 +37473,6 @@
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "332856e9-3111-446f-8df7-e64694e4b9a1",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
-            "5bfda3d2-03e7-4d9a-8072-c59430a131d7",
             "6299d728-14f7-455e-85c5-ea8ec65a654a",
             "79da6240-7617-49c8-b130-96278579766e",
             "B3582ED2-1A0C-452D-9802-97433D143486",
@@ -37458,8 +37749,8 @@
         ],
         "asset_field": "user_username",
         "category": "Defense Evasion",
-        "commit_message": "TLAB-1472 Update summary of MATCH-S00531",
-        "commit_origin_hash": "49ef52003b15a5fa1659b3b387ee23195a5d1a99",
+        "commit_message": "TLAB-2574 unify MITRE scripts and add rule validation (#5956)",
+        "commit_origin_hash": "8933d90c67f6f2e47e13f867cb2a458d89b1d9a3",
         "content_type": "RULE",
         "description_expression": "Attackers often disable security tools to avoid detection. This rule looks for the usage of process fltMC.exe to unload a Sysmon Driver that will stop sysmon from collecting the data.",
         "enabled_by_default": true,
@@ -37514,11 +37805,9 @@
         "summary_expression": "Attempt to unload Sysmon filter driver on host: {{device_hostname}}",
         "tags": [
             "_mitreAttackTactic:TA0005",
-            "_mitreAttackTechnique:T1562",
-            "_mitreAttackTechnique:T1562.001",
-            "_mitreAttackTechnique:T1562.002",
-            "_mitreAttackTechnique:T1562.003",
-            "_mitreAttackTechnique:T1562.006"
+            "_mitreAttackTechnique:T1685",
+            "_mitreAttackTechnique:T1685.001",
+            "_mitreAttackTechnique:T1690"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": []
@@ -37606,8 +37895,8 @@
         ],
         "asset_field": "device_hostname",
         "category": "Defense Evasion",
-        "commit_message": "TLAB-1474 Update summary of MATCH-S00533",
-        "commit_origin_hash": "d4ab8b020e53b846614c38e0795b7230187568b8",
+        "commit_message": "TLAB-2574 unify MITRE scripts and add rule validation (#5956)",
+        "commit_origin_hash": "8933d90c67f6f2e47e13f867cb2a458d89b1d9a3",
         "content_type": "RULE",
         "description_expression": "The rule looks for a Windows Security Account Manager (SAM) was stopped via command-line. This is consistent with Ryuk infections across a fleet of endpoints.",
         "enabled_by_default": true,
@@ -37662,9 +37951,7 @@
         "summary_expression": "Detected Windows Security Account Manager being stopped on host: {{device_hostname}}",
         "tags": [
             "_mitreAttackTactic:TA0005",
-            "_mitreAttackTechnique:T1562",
-            "_mitreAttackTechnique:T1562.001",
-            "_mitreAttackTechnique:T1562.006"
+            "_mitreAttackTechnique:T1685"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": []
@@ -37829,8 +38116,8 @@
         ],
         "asset_field": "device_hostname",
         "category": "Defense Evasion",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "TLAB-2574 unify MITRE scripts and add rule validation (#5956)",
+        "commit_origin_hash": "8933d90c67f6f2e47e13f867cb2a458d89b1d9a3",
         "content_type": "RULE",
         "description_expression": "Observes for modifications to Windows Firewall rules. An attacker may modify firewall rules to obfuscate activities via blocks, or to allow certain activity through the firewall.",
         "enabled_by_default": true,
@@ -37882,9 +38169,8 @@
         "summary_expression": "Windows Firewall rule modified on host: {{device_hostname}}",
         "tags": [
             "_mitreAttackTactic:TA0005",
-            "_mitreAttackTechnique:T1562",
-            "_mitreAttackTechnique:T1562.001",
-            "_mitreAttackTechnique:T1562.004"
+            "_mitreAttackTechnique:T1685",
+            "_mitreAttackTechnique:T1686"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": []
@@ -37897,8 +38183,8 @@
         ],
         "asset_field": "device_hostname",
         "category": "Defense Evasion",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "TLAB-2574 unify MITRE scripts and add rule validation (#5956)",
+        "commit_origin_hash": "8933d90c67f6f2e47e13f867cb2a458d89b1d9a3",
         "content_type": "RULE",
         "description_expression": "Observes for deletions of Windows Firewall rules. An attacker may delete firewall rules to obfuscate activities via blocks, or to allow certain activity through the firewall.",
         "enabled_by_default": true,
@@ -37950,9 +38236,8 @@
         "summary_expression": "Windows Firewall rule deleted on host: {{device_hostname}}",
         "tags": [
             "_mitreAttackTactic:TA0005",
-            "_mitreAttackTechnique:T1562",
-            "_mitreAttackTechnique:T1562.001",
-            "_mitreAttackTechnique:T1562.004"
+            "_mitreAttackTechnique:T1685",
+            "_mitreAttackTechnique:T1686"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": []
@@ -37965,8 +38250,8 @@
         ],
         "asset_field": "device_hostname",
         "category": "Defense Evasion",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "TLAB-2574 unify MITRE scripts and add rule validation (#5956)",
+        "commit_origin_hash": "8933d90c67f6f2e47e13f867cb2a458d89b1d9a3",
         "content_type": "RULE",
         "description_expression": "Observes for creation of new Windows Firewall Rule. An attacker may create new firewall rules to obfuscate activities via blocks, or to allow certain activity through the firewall.",
         "enabled_by_default": true,
@@ -38018,9 +38303,8 @@
         "summary_expression": "Windows Firewall rule created on host: {{device_hostname}}",
         "tags": [
             "_mitreAttackTactic:TA0005",
-            "_mitreAttackTechnique:T1562",
-            "_mitreAttackTechnique:T1562.001",
-            "_mitreAttackTechnique:T1562.004"
+            "_mitreAttackTechnique:T1685",
+            "_mitreAttackTechnique:T1686"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": []
@@ -38111,8 +38395,8 @@
         ],
         "asset_field": "device_ip",
         "category": "Defense Evasion",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "TLAB-2574 unify MITRE scripts and add rule validation (#5956)",
+        "commit_origin_hash": "8933d90c67f6f2e47e13f867cb2a458d89b1d9a3",
         "content_type": "RULE",
         "description_expression": "Enforcing network-access controls is one of the defensive mechanisms used by cloud administrators to restrict access to a cloud instance. After the attacker has gained control of the console by compromising an admin account, they can delete a network ACL and gain access to the instance from anywhere.",
         "enabled_by_default": true,
@@ -38177,8 +38461,8 @@
         "summary_expression": "{{action}} performed by user: {{user_username}}",
         "tags": [
             "_mitreAttackTactic:TA0005",
-            "_mitreAttackTechnique:T1562",
-            "_mitreAttackTechnique:T1562.007"
+            "_mitreAttackTechnique:T1685",
+            "_mitreAttackTechnique:T1686.001"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": [
@@ -38397,6 +38681,7 @@
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
+            "72a5ddec-abb9-41ff-a2da-6a58beff980c",
             "840c72e0-4e47-41e7-9b93-31f55d12f07d",
             "a1225af5-e778-4068-a9a2-47da93d1ff24"
         ],
@@ -38593,8 +38878,8 @@
         ],
         "asset_field": "device_hostname",
         "category": "Defense Evasion",
-        "commit_message": "Spelling-Corrections-Across-Content",
-        "commit_origin_hash": "a0980e690918542102bfb7a09491d13044d2beca",
+        "commit_message": "TLAB-2574 unify MITRE scripts and add rule validation (#5956)",
+        "commit_origin_hash": "8933d90c67f6f2e47e13f867cb2a458d89b1d9a3",
         "content_type": "RULE",
         "description_expression": "From Solorigate TTPs: Firewall rules were added via command line to reduce noise from subsequent reconnaissance using NSLOOKUP and ADFIND.",
         "enabled_by_default": true,
@@ -38645,10 +38930,9 @@
         "summary_expression": "Potential reconnaissance obfuscation activity on host: {{device_hostname}}",
         "tags": [
             "_mitreAttackTactic:TA0005",
-            "_mitreAttackTechnique:T1562.001",
-            "_mitreAttackTechnique:T1562.002",
-            "_mitreAttackTechnique:T1562.004",
-            "_mitreAttackTechnique:T1562.006"
+            "_mitreAttackTechnique:T1685",
+            "_mitreAttackTechnique:T1685.001",
+            "_mitreAttackTechnique:T1686"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": []
@@ -38742,8 +39026,8 @@
         ],
         "asset_field": "device_hostname",
         "category": "Defense Evasion",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "TLAB-2574 unify MITRE scripts and add rule validation (#5956)",
+        "commit_origin_hash": "8933d90c67f6f2e47e13f867cb2a458d89b1d9a3",
         "content_type": "RULE",
         "description_expression": "The rule looks for the Registry Key DisableAntiSpyware set to disable. This is consistent with Ryuk infections across a fleet of endpoints.",
         "enabled_by_default": true,
@@ -38800,9 +39084,7 @@
         "summary_expression": "Ryuk ransomware indicator detected on host: {{device_hostname}}",
         "tags": [
             "_mitreAttackTactic:TA0005",
-            "_mitreAttackTechnique:T1562",
-            "_mitreAttackTechnique:T1562.001",
-            "_mitreAttackTechnique:T1562.006"
+            "_mitreAttackTechnique:T1685"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": [
@@ -39202,6 +39484,7 @@
             "3a82061c-2ca3-4289-9c9b-78756001aa38",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
+            "57cec26c-f94e-4403-add4-dae2382b5c16",
             "5c2cc0de-ca31-4ef0-bcfa-133fc8b387ad",
             "6299d728-14f7-455e-85c5-ea8ec65a654a",
             "724c9add-8cd9-4013-b9e1-a907b96da426",
@@ -39213,7 +39496,6 @@
             "afabb29d-e728-410f-b7c6-acfa9efbe1ed",
             "b2f99a76-0771-49bf-9a89-d3e69370806e",
             "be4f7473-fe69-4311-8859-3561900060bf",
-            "c2503fcc-ef30-4e40-bb32-0bf47151b140",
             "c3c1a4fc-10cc-4155-8a30-a3bb14fc9f31",
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
             "cf2af9e8-bade-4f28-8bca-b30aa41baec4",
@@ -39547,7 +39829,6 @@
         "product_guids": [
             "021d1ded-1c82-4663-bf5d-d6ed5170efa3",
             "0fb003bc-8383-442f-8f3d-afcfbaefe617",
-            "1624169f-36c4-4309-8400-1409a171d00b",
             "2b82e665-bdde-474a-ae29-4f0f76598556",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
             "6299d728-14f7-455e-85c5-ea8ec65a654a",
@@ -39702,6 +39983,7 @@
             "724c9add-8cd9-4013-b9e1-a907b96da426",
             "951a004d-54bf-441d-98e1-fcc6a032f475",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
+            "afabb29d-e728-410f-b7c6-acfa9efbe1ed",
             "be4f7473-fe69-4311-8859-3561900060bf",
             "c3c1a4fc-10cc-4155-8a30-a3bb14fc9f31",
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
@@ -41637,8 +41919,8 @@
         ],
         "asset_field": "srcDevice_ip",
         "category": "Unknown/Other",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "TLAB-2574 unify MITRE scripts and add rule validation (#5956)",
+        "commit_origin_hash": "8933d90c67f6f2e47e13f867cb2a458d89b1d9a3",
         "content_type": "RULE",
         "description_expression": "Enforcing network-access controls is one of the defensive mechanisms used by cloud administrators to restrict access to a cloud instance. After the attacker has gained control of the console by compromising an admin account, they can delete a network ACL and gain access to the instance from anywhere.",
         "enabled_by_default": true,
@@ -41691,8 +41973,8 @@
         "summary_expression": "User: {{user_username}} from source IP: {{srcDevice_ip}} deleted a Network ACL",
         "tags": [
             "_mitreAttackTactic:TA0005",
-            "_mitreAttackTechnique:T1562",
-            "_mitreAttackTechnique:T1562.007"
+            "_mitreAttackTechnique:T1685",
+            "_mitreAttackTechnique:T1686.001"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": [
@@ -42137,7 +42419,6 @@
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "5ba50e74-3c05-4ea8-aeaf-5efde588c60f",
             "6299d728-14f7-455e-85c5-ea8ec65a654a",
-            "9e838f93-c9e7-4592-a980-cf9dfb704784",
             "c2503fcc-ef30-4e40-bb32-0bf47151b140",
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
             "e2393771-bda2-414a-8661-0a57069287ad",
@@ -42323,8 +42604,8 @@
         ],
         "asset_field": "srcDevice_ip",
         "category": "Unknown/Other",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "TLAB-2574 unify MITRE scripts and add rule validation (#5956)",
+        "commit_origin_hash": "8933d90c67f6f2e47e13f867cb2a458d89b1d9a3",
         "content_type": "RULE",
         "description_expression": "Changing the configuration of logging to any mission-critical service or platform should be closely monitored.  This signal identifies when Alibaba logging configurations have been changed.  The severity of signals increases depending on the type of action observed.  For instance disabling/deleting logs is a higher severity than enabling logs.",
         "enabled_by_default": true,
@@ -42408,9 +42689,9 @@
             "_mitreAttackTactic:TA0005",
             "_mitreAttackTechnique:T1489",
             "_mitreAttackTechnique:T1578",
-            "_mitreAttackTechnique:T1562",
+            "_mitreAttackTechnique:T1685",
             "_mitreAttackTechnique:T1578.004",
-            "_mitreAttackTechnique:T1562.008"
+            "_mitreAttackTechnique:T1685.002"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": [
@@ -43537,8 +43818,8 @@
         ],
         "asset_field": "user_username",
         "category": "Defense Evasion",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "TLAB-2574 unify MITRE scripts and add rule validation (#5956)",
+        "commit_origin_hash": "8933d90c67f6f2e47e13f867cb2a458d89b1d9a3",
         "content_type": "RULE",
         "description_expression": "Detect when a Cloud SQL DB has been modified.",
         "enabled_by_default": true,
@@ -43591,8 +43872,7 @@
         "summary_expression": "User: {{user_username}} performed action: {{action}}",
         "tags": [
             "_mitreAttackTactic:TA0005",
-            "_mitreAttackTechnique:T1562",
-            "_mitreAttackTechnique:T1562.001"
+            "_mitreAttackTechnique:T1685"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": [
@@ -43609,8 +43889,8 @@
         ],
         "asset_field": "user_username",
         "category": "Defense Evasion",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "TLAB-2574 unify MITRE scripts and add rule validation (#5956)",
+        "commit_origin_hash": "8933d90c67f6f2e47e13f867cb2a458d89b1d9a3",
         "content_type": "RULE",
         "description_expression": "Detect when a firewall rule is created, modified or deleted.",
         "enabled_by_default": true,
@@ -43663,8 +43943,8 @@
         "summary_expression": "User: {{user_username}} performed action: {{action}}",
         "tags": [
             "_mitreAttackTactic:TA0005",
-            "_mitreAttackTechnique:T1562",
-            "_mitreAttackTechnique:T1562.007"
+            "_mitreAttackTechnique:T1685",
+            "_mitreAttackTechnique:T1686.001"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": [
@@ -43681,8 +43961,8 @@
         ],
         "asset_field": "user_username",
         "category": "Defense Evasion",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "TLAB-2574 unify MITRE scripts and add rule validation (#5956)",
+        "commit_origin_hash": "8933d90c67f6f2e47e13f867cb2a458d89b1d9a3",
         "content_type": "RULE",
         "description_expression": "Detect when a firewall route is created or modified.",
         "enabled_by_default": true,
@@ -43735,8 +44015,8 @@
         "summary_expression": "User: {{user_username}} performed action: {{action}}",
         "tags": [
             "_mitreAttackTactic:TA0005",
-            "_mitreAttackTechnique:T1562",
-            "_mitreAttackTechnique:T1562.007"
+            "_mitreAttackTechnique:T1685",
+            "_mitreAttackTechnique:T1686.001"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": [
@@ -43753,8 +44033,8 @@
         ],
         "asset_field": "user_username",
         "category": "Defense Evasion",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "TLAB-2574 unify MITRE scripts and add rule validation (#5956)",
+        "commit_origin_hash": "8933d90c67f6f2e47e13f867cb2a458d89b1d9a3",
         "content_type": "RULE",
         "description_expression": "Detect when a VPC network is created.",
         "enabled_by_default": true,
@@ -43807,8 +44087,8 @@
         "summary_expression": "User: {{user_username}} performed action: {{action}}",
         "tags": [
             "_mitreAttackTactic:TA0005",
-            "_mitreAttackTechnique:T1562",
-            "_mitreAttackTechnique:T1562.007"
+            "_mitreAttackTechnique:T1685",
+            "_mitreAttackTechnique:T1686.001"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": [
@@ -43970,8 +44250,8 @@
         ],
         "asset_field": "user_username",
         "category": "Defense Evasion",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "TLAB-2574 unify MITRE scripts and add rule validation (#5956)",
+        "commit_origin_hash": "8933d90c67f6f2e47e13f867cb2a458d89b1d9a3",
         "content_type": "RULE",
         "description_expression": "Detect when a change to a GCP logging sink has been made. This could stop audit logs from being sent.",
         "enabled_by_default": true,
@@ -44026,10 +44306,9 @@
             "_mitreAttackTactic:TA0006",
             "_mitreAttackTechnique:T1552",
             "_mitreAttackTechnique:T1552.005",
-            "_mitreAttackTechnique:T1562",
+            "_mitreAttackTechnique:T1685",
             "_mitreAttackTactic:TA0005",
-            "_mitreAttackTechnique:T1562.008",
-            "_mitreAttackTechnique:T1562.001"
+            "_mitreAttackTechnique:T1685.002"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": [
@@ -44046,8 +44325,8 @@
         ],
         "asset_field": "user_username",
         "category": "Defense Evasion",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "TLAB-2574 unify MITRE scripts and add rule validation (#5956)",
+        "commit_origin_hash": "8933d90c67f6f2e47e13f867cb2a458d89b1d9a3",
         "content_type": "RULE",
         "description_expression": "Detect when a change to a GCP Pub/Sub Subscription has been made. This could stop audit logs from being sent.",
         "enabled_by_default": true,
@@ -44102,10 +44381,9 @@
             "_mitreAttackTactic:TA0006",
             "_mitreAttackTechnique:T1552",
             "_mitreAttackTechnique:T1552.005",
-            "_mitreAttackTechnique:T1562",
+            "_mitreAttackTechnique:T1685",
             "_mitreAttackTactic:TA0005",
-            "_mitreAttackTechnique:T1562.008",
-            "_mitreAttackTechnique:T1562.001"
+            "_mitreAttackTechnique:T1685.002"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": [
@@ -44122,8 +44400,8 @@
         ],
         "asset_field": "user_username",
         "category": "Defense Evasion",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "TLAB-2574 unify MITRE scripts and add rule validation (#5956)",
+        "commit_origin_hash": "8933d90c67f6f2e47e13f867cb2a458d89b1d9a3",
         "content_type": "RULE",
         "description_expression": "Detect when a GCP Pub/Sub Subscribtion has been deleted. This could stop audit logs from being sent.",
         "enabled_by_default": true,
@@ -44178,10 +44456,9 @@
             "_mitreAttackTactic:TA0006",
             "_mitreAttackTechnique:T1552",
             "_mitreAttackTechnique:T1552.005",
-            "_mitreAttackTechnique:T1562",
+            "_mitreAttackTechnique:T1685",
             "_mitreAttackTactic:TA0005",
-            "_mitreAttackTechnique:T1562.008",
-            "_mitreAttackTechnique:T1562.001"
+            "_mitreAttackTechnique:T1685.002"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": [
@@ -46743,8 +47020,8 @@
         ],
         "asset_field": "device_ip",
         "category": "Impact",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "TLAB-2574 unify MITRE scripts and add rule validation (#5956)",
+        "commit_origin_hash": "8933d90c67f6f2e47e13f867cb2a458d89b1d9a3",
         "content_type": "RULE",
         "description_expression": "Detects the AWS CloudWatch DeleteLogStream API action. DeleteLogStream deletes the specified log stream and permanently deletes all the archived log events associated with the log stream.",
         "enabled_by_default": true,
@@ -46808,10 +47085,9 @@
         "stream": "record",
         "summary_expression": "{{action}} performed by user: {{user_username}}",
         "tags": [
-            "_mitreAttackTechnique:T1562",
+            "_mitreAttackTechnique:T1685",
             "_mitreAttackTactic:TA0005",
-            "_mitreAttackTechnique:T1562.008",
-            "_mitreAttackTechnique:T1562.001"
+            "_mitreAttackTechnique:T1685.002"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": [
@@ -46831,8 +47107,8 @@
         ],
         "asset_field": "device_ip",
         "category": "Impact",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "TLAB-2574 unify MITRE scripts and add rule validation (#5956)",
+        "commit_origin_hash": "8933d90c67f6f2e47e13f867cb2a458d89b1d9a3",
         "content_type": "RULE",
         "description_expression": "Detects the AWS CloudWatch DeleteAnomalyDetector API action. DeleteAnomalyDetector deletes the specified anomaly detection model from your account.",
         "enabled_by_default": true,
@@ -46896,10 +47172,9 @@
         "stream": "record",
         "summary_expression": "{{action}} performed by user: {{user_username}}",
         "tags": [
-            "_mitreAttackTechnique:T1562",
+            "_mitreAttackTechnique:T1685",
             "_mitreAttackTactic:TA0005",
-            "_mitreAttackTechnique:T1562.008",
-            "_mitreAttackTechnique:T1562.001"
+            "_mitreAttackTechnique:T1685.002"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": [
@@ -46919,8 +47194,8 @@
         ],
         "asset_field": "device_ip",
         "category": "Impact",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "TLAB-2574 unify MITRE scripts and add rule validation (#5956)",
+        "commit_origin_hash": "8933d90c67f6f2e47e13f867cb2a458d89b1d9a3",
         "content_type": "RULE",
         "description_expression": "Detects the AWS CloudWatch DeleteAlarms API action. DeleteAlarms deletes the specified alarms. You can delete up to 100 alarms in one operation. However, this total can include no more than one composite alarm. For example, you could delete 99 metric alarms and one composite alarms with one operation, but you can't delete two composite alarms with one operation.",
         "enabled_by_default": true,
@@ -46984,10 +47259,9 @@
         "stream": "record",
         "summary_expression": "{{action}} performed by user: {{user_username}}",
         "tags": [
-            "_mitreAttackTechnique:T1562",
+            "_mitreAttackTechnique:T1685",
             "_mitreAttackTactic:TA0005",
-            "_mitreAttackTechnique:T1562.008",
-            "_mitreAttackTechnique:T1562.001"
+            "_mitreAttackTechnique:T1685.002"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": [
@@ -47007,8 +47281,8 @@
         ],
         "asset_field": "device_ip",
         "category": "Defense Evasion",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "TLAB-2574 unify MITRE scripts and add rule validation (#5956)",
+        "commit_origin_hash": "8933d90c67f6f2e47e13f867cb2a458d89b1d9a3",
         "content_type": "RULE",
         "description_expression": "Detects the AWS CloudWatch DisableAlarmActions API action. DisableAlarmActions disables the actions for the specified alarms. When an alarm's actions are disabled, the alarm actions do not execute when the alarm state changes.",
         "enabled_by_default": true,
@@ -47072,10 +47346,9 @@
         "stream": "record",
         "summary_expression": "{{action}} performed by user: {{user_username}}",
         "tags": [
-            "_mitreAttackTechnique:T1562",
+            "_mitreAttackTechnique:T1685",
             "_mitreAttackTactic:TA0005",
-            "_mitreAttackTechnique:T1562.008",
-            "_mitreAttackTechnique:T1562.001"
+            "_mitreAttackTechnique:T1685.002"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": [
@@ -47095,8 +47368,8 @@
         ],
         "asset_field": "device_ip",
         "category": "Defense Evasion",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "TLAB-2574 unify MITRE scripts and add rule validation (#5956)",
+        "commit_origin_hash": "8933d90c67f6f2e47e13f867cb2a458d89b1d9a3",
         "content_type": "RULE",
         "description_expression": "Detects the AWS CloudWatch DeleteLogGroup API action. DeleteLogGroup deletes the specified log group and permanently deletes all the archived log events associated with the log group.",
         "enabled_by_default": true,
@@ -47160,10 +47433,9 @@
         "stream": "record",
         "summary_expression": "{{action}} performed by user: {{user_username}}",
         "tags": [
-            "_mitreAttackTechnique:T1562",
+            "_mitreAttackTechnique:T1685",
             "_mitreAttackTactic:TA0005",
-            "_mitreAttackTechnique:T1562.008",
-            "_mitreAttackTechnique:T1562.001"
+            "_mitreAttackTechnique:T1685.002"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": [
@@ -47505,8 +47777,8 @@
         ],
         "asset_field": "device_ip",
         "category": "Defense Evasion",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "TLAB-2574 unify MITRE scripts and add rule validation (#5956)",
+        "commit_origin_hash": "8933d90c67f6f2e47e13f867cb2a458d89b1d9a3",
         "content_type": "RULE",
         "description_expression": "Detects various AWS Config API actions that involve the alternation of a Config service.",
         "enabled_by_default": true,
@@ -47570,10 +47842,9 @@
         "stream": "record",
         "summary_expression": "{{action}} performed by user: {{user_username}}",
         "tags": [
-            "_mitreAttackTechnique:T1562",
+            "_mitreAttackTechnique:T1685",
             "_mitreAttackTactic:TA0005",
-            "_mitreAttackTechnique:T1562.008",
-            "_mitreAttackTechnique:T1562.001"
+            "_mitreAttackTechnique:T1685.002"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": [
@@ -47593,8 +47864,8 @@
         ],
         "asset_field": "device_ip",
         "category": "Defense Evasion",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "TLAB-2574 unify MITRE scripts and add rule validation (#5956)",
+        "commit_origin_hash": "8933d90c67f6f2e47e13f867cb2a458d89b1d9a3",
         "content_type": "RULE",
         "description_expression": "Detects the AWS Config DeleteConfigurationRecorder API action. DeleteConfigurationRecorder deletes the configuration recorder.\nAfter the configuration recorder is deleted, AWS Config will not record resource configuration changes until you create a new configuration recorder.",
         "enabled_by_default": true,
@@ -47658,10 +47929,9 @@
         "stream": "record",
         "summary_expression": "{{action}} performed by user: {{user_username}}",
         "tags": [
-            "_mitreAttackTechnique:T1562",
+            "_mitreAttackTechnique:T1685",
             "_mitreAttackTactic:TA0005",
-            "_mitreAttackTechnique:T1562.008",
-            "_mitreAttackTechnique:T1562.001"
+            "_mitreAttackTechnique:T1685.002"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": [
@@ -47681,8 +47951,8 @@
         ],
         "asset_field": "device_ip",
         "category": "Defense Evasion",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "TLAB-2574 unify MITRE scripts and add rule validation (#5956)",
+        "commit_origin_hash": "8933d90c67f6f2e47e13f867cb2a458d89b1d9a3",
         "content_type": "RULE",
         "description_expression": "Detects the AWS Config StopConfigurationRecorder API action. StopConfigurationRecorder stops recording configurations of the AWS resources you have selected to record in your AWS account.",
         "enabled_by_default": true,
@@ -47746,10 +48016,9 @@
         "stream": "record",
         "summary_expression": "{{action}} performed by user: {{user_username}}",
         "tags": [
-            "_mitreAttackTechnique:T1562",
+            "_mitreAttackTechnique:T1685",
             "_mitreAttackTactic:TA0005",
-            "_mitreAttackTechnique:T1562.008",
-            "_mitreAttackTechnique:T1562.001"
+            "_mitreAttackTechnique:T1685.002"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": [
@@ -47769,8 +48038,8 @@
         ],
         "asset_field": "device_ip",
         "category": "Defense Evasion",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "TLAB-2574 unify MITRE scripts and add rule validation (#5956)",
+        "commit_origin_hash": "8933d90c67f6f2e47e13f867cb2a458d89b1d9a3",
         "content_type": "RULE",
         "description_expression": "Detects various AWS WAF API actions that involve the deletion of a WAF service.",
         "enabled_by_default": true,
@@ -47867,10 +48136,9 @@
         "stream": "record",
         "summary_expression": "{{action}} performed by user: {{user_username}}",
         "tags": [
-            "_mitreAttackTechnique:T1562",
+            "_mitreAttackTechnique:T1685",
             "_mitreAttackTactic:TA0005",
-            "_mitreAttackTechnique:T1562.008",
-            "_mitreAttackTechnique:T1562.001"
+            "_mitreAttackTechnique:T1685.002"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": [
@@ -47890,8 +48158,8 @@
         ],
         "asset_field": "device_ip",
         "category": "Defense Evasion",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "TLAB-2574 unify MITRE scripts and add rule validation (#5956)",
+        "commit_origin_hash": "8933d90c67f6f2e47e13f867cb2a458d89b1d9a3",
         "content_type": "RULE",
         "description_expression": "Detects the AWS WAF UpdateWebACL API action. UpdateWebACL updates the specified WebACL. A web ACL defines a collection of rules to use to inspect and control web requests. Each rule has an action defined (allow, block, or count) for requests that match the statement of the rule. In the web ACL, you assign a default action to take (allow, block) for any request that does not match any of the rules. The rules in a web ACL can be a combination of the types Rule, RuleGroup, and managed rule group. You can associate a web ACL with one or more AWS resources to protect. The resources can be an Amazon CloudFront distribution, an Amazon API Gateway REST API, an Application Load Balancer, or an AWS AppSync GraphQL API.",
         "enabled_by_default": true,
@@ -47956,8 +48224,8 @@
         "summary_expression": "{{action}} performed by user: {{user_username}}",
         "tags": [
             "_mitreAttackTactic:TA0005",
-            "_mitreAttackTechnique:T1562",
-            "_mitreAttackTechnique:T1562.007"
+            "_mitreAttackTechnique:T1685",
+            "_mitreAttackTechnique:T1686.001"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": [
@@ -47977,8 +48245,8 @@
         ],
         "asset_field": "device_ip",
         "category": "Defense Evasion",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "TLAB-2574 unify MITRE scripts and add rule validation (#5956)",
+        "commit_origin_hash": "8933d90c67f6f2e47e13f867cb2a458d89b1d9a3",
         "content_type": "RULE",
         "description_expression": "Detects the AWS WAF UpdateRule API action. UpdateRule inserts or deletes Predicate objects in a rule. Each Predicate object identifies a predicate, such as a ByteMatchSet or an IPSet, that specifies the web requests that you want to allow, block, or count.",
         "enabled_by_default": true,
@@ -48043,8 +48311,8 @@
         "summary_expression": "{{action}} performed by user: {{user_username}}",
         "tags": [
             "_mitreAttackTactic:TA0005",
-            "_mitreAttackTechnique:T1562",
-            "_mitreAttackTechnique:T1562.007"
+            "_mitreAttackTechnique:T1685",
+            "_mitreAttackTechnique:T1686.001"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": [
@@ -48064,8 +48332,8 @@
         ],
         "asset_field": "device_ip",
         "category": "Defense Evasion",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "TLAB-2574 unify MITRE scripts and add rule validation (#5956)",
+        "commit_origin_hash": "8933d90c67f6f2e47e13f867cb2a458d89b1d9a3",
         "content_type": "RULE",
         "description_expression": "Detects the AWS WAF UpdateRuleGroup API action. UpdateRuleGroup updates the specified RuleGroup. A rule group defines a collection of rules to inspect and control web requests that you can use in a WebACL. When you create a rule group, you define an immutable capacity limit. If you update a rule group, you must stay within the capacity. This allows others to reuse the rule group with confidence in its capacity requirements.",
         "enabled_by_default": true,
@@ -48130,8 +48398,8 @@
         "summary_expression": "{{action}} performed by user: {{user_username}}",
         "tags": [
             "_mitreAttackTactic:TA0005",
-            "_mitreAttackTechnique:T1562",
-            "_mitreAttackTechnique:T1562.007"
+            "_mitreAttackTechnique:T1685",
+            "_mitreAttackTechnique:T1686.001"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": [
@@ -48151,8 +48419,8 @@
         ],
         "asset_field": "device_ip",
         "category": "Defense Evasion",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "TLAB-2574 unify MITRE scripts and add rule validation (#5956)",
+        "commit_origin_hash": "8933d90c67f6f2e47e13f867cb2a458d89b1d9a3",
         "content_type": "RULE",
         "description_expression": "Detects various AWS Route 53 API actions that involve the alteration of a Route 53 service.",
         "enabled_by_default": true,
@@ -48258,10 +48526,9 @@
         "stream": "record",
         "summary_expression": "{{action}} performed by user: {{user_username}}",
         "tags": [
-            "_mitreAttackTechnique:T1562",
+            "_mitreAttackTechnique:T1685",
             "_mitreAttackTactic:TA0005",
-            "_mitreAttackTechnique:T1562.008",
-            "_mitreAttackTechnique:T1562.001"
+            "_mitreAttackTechnique:T1685.002"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": [
@@ -48651,7 +48918,6 @@
             "0e20c932-d992-4bd4-b276-c15119ca5c0b",
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "5be5af82-c248-4c4c-a485-0571025f242c",
-            "5e298fe7-088a-467a-b57f-d8558368621d",
             "b238758d-ade8-41d2-b32d-c99159e9fd74"
         ],
         "record_type_direct_ref": [],
@@ -48726,6 +48992,7 @@
         "pattern_type": "templated_match",
         "product_direct_ref": [],
         "product_guids": [
+            "033624b0-218e-4dcb-b93f-0f1fb1806c56",
             "0e20c932-d992-4bd4-b276-c15119ca5c0b",
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
@@ -48997,7 +49264,8 @@
             "840c72e0-4e47-41e7-9b93-31f55d12f07d",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "a1f79987-b765-4f6f-bfe5-d657baa35144",
-            "d6cb76d3-939e-4e02-b399-b15e0278c877"
+            "d6cb76d3-939e-4e02-b399-b15e0278c877",
+            "eabd9eed-b071-4773-ad07-706ea5b51b9c"
         ],
         "record_type_direct_ref": [],
         "rule_source": "sumo",
@@ -49074,7 +49342,6 @@
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "36f5ca33-0c1e-4223-8215-977ea04425ba",
-            "55ec1d4a-6985-4f04-8de5-f9812871fda2",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "5be5af82-c248-4c4c-a485-0571025f242c",
             "5c2cc0de-ca31-4ef0-bcfa-133fc8b387ad",
@@ -49154,7 +49421,8 @@
             "0e20c932-d992-4bd4-b276-c15119ca5c0b",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "581D3DD8-4DA7-4192-9E49-320D7AFB8B53",
-            "840c72e0-4e47-41e7-9b93-31f55d12f07d"
+            "840c72e0-4e47-41e7-9b93-31f55d12f07d",
+            "a1225af5-e778-4068-a9a2-47da93d1ff24"
         ],
         "record_type_direct_ref": [],
         "rule_source": "sumo",
@@ -51796,6 +52064,7 @@
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "581D3DD8-4DA7-4192-9E49-320D7AFB8B53",
             "5be5af82-c248-4c4c-a485-0571025f242c",
+            "72a5ddec-abb9-41ff-a2da-6a58beff980c",
             "840c72e0-4e47-41e7-9b93-31f55d12f07d",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "b238758d-ade8-41d2-b32d-c99159e9fd74",
@@ -51944,7 +52213,6 @@
         "product_guids": [
             "146522A1-DC9A-40A5-A909-2EB3B665B1D1",
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
-            "332856e9-3111-446f-8df7-e64694e4b9a1",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "5be5af82-c248-4c4c-a485-0571025f242c",
@@ -51953,7 +52221,6 @@
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "bb75c481-648d-4953-80cf-1c8cbde8fbb8",
             "c2503fcc-ef30-4e40-bb32-0bf47151b140",
-            "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
             "cc523ad6-7193-4de5-a254-d0243fca63f3",
             "d3ed003d-5ddd-4c7a-bea5-63eae6311833",
             "de3d4b6b-36a3-4436-8bfc-0561ac95037e"
@@ -53330,6 +53597,7 @@
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "36f5ca33-0c1e-4223-8215-977ea04425ba",
+            "55ec1d4a-6985-4f04-8de5-f9812871fda2",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "5be5af82-c248-4c4c-a485-0571025f242c",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
@@ -53712,8 +53980,7 @@
         "pattern_type": "templated_match",
         "product_direct_ref": [],
         "product_guids": [
-            "93e2d3d-fab1-4d61-845f-49bc1ae5bed9",
-            "b238758d-ade8-41d2-b32d-c99159e9fd74"
+            "93e2d3d-fab1-4d61-845f-49bc1ae5bed9"
         ],
         "record_type_direct_ref": [],
         "rule_description": "",
@@ -54373,7 +54640,6 @@
         "product_direct_ref": [],
         "product_guids": [
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
-            "3382523e-2072-41bd-b50b-6b148957d0b0",
             "a1225af5-e778-4068-a9a2-47da93d1ff24"
         ],
         "record_type_direct_ref": [],
@@ -55939,6 +56205,7 @@
             "9a28f2af-5526-414d-973b-c3fc7984b8a1",
             "9f76f1fd-fbb0-42d2-9bf5-0f4fd2c1ab82",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
+            "af61d8a8-3eba-42fb-9f17-87443924f3f4",
             "b8e88b31-2f07-45d9-9dda-6af362c63003",
             "be4f7473-fe69-4311-8859-3561900060bf",
             "c2503fcc-ef30-4e40-bb32-0bf47151b140",
@@ -56738,8 +57005,8 @@
         ],
         "asset_field": "device_ip",
         "category": "Defense Evasion",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "TLAB-2574 unify MITRE scripts and add rule validation (#5956)",
+        "commit_origin_hash": "8933d90c67f6f2e47e13f867cb2a458d89b1d9a3",
         "content_type": "RULE",
         "description_expression": "Detects diagnostic setting deletions, which may represent an adversary disabling logging.",
         "enabled_by_default": true,
@@ -56793,9 +57060,8 @@
         "summary_expression": "Azure diagnostic setting deleted by user: {{user_username}} resource: {{resource}}",
         "tags": [
             "_mitreAttackTactic:TA0005",
-            "_mitreAttackTechnique:T1562",
-            "_mitreAttackTechnique:T1562.008",
-            "_mitreAttackTechnique:T1562.001"
+            "_mitreAttackTechnique:T1685",
+            "_mitreAttackTechnique:T1685.002"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": [
@@ -56813,8 +57079,8 @@
         ],
         "asset_field": "device_ip",
         "category": "Defense Evasion",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "TLAB-2574 unify MITRE scripts and add rule validation (#5956)",
+        "commit_origin_hash": "8933d90c67f6f2e47e13f867cb2a458d89b1d9a3",
         "content_type": "RULE",
         "description_expression": "Detects diagnostic setting modifications, which include disabling certain logging, enabling certain logging, altering the destination of logs, or creating a diagnostic setting.",
         "enabled_by_default": true,
@@ -56868,9 +57134,8 @@
         "summary_expression": "Azure diagnostic setting modified by user: {{user_username}} resource: {{resource}}",
         "tags": [
             "_mitreAttackTactic:TA0005",
-            "_mitreAttackTechnique:T1562",
-            "_mitreAttackTechnique:T1562.008",
-            "_mitreAttackTechnique:T1562.001"
+            "_mitreAttackTechnique:T1685",
+            "_mitreAttackTechnique:T1685.002"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": [
@@ -56888,8 +57153,8 @@
         ],
         "asset_field": "device_ip",
         "category": "Defense Evasion",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "TLAB-2574 unify MITRE scripts and add rule validation (#5956)",
+        "commit_origin_hash": "8933d90c67f6f2e47e13f867cb2a458d89b1d9a3",
         "content_type": "RULE",
         "description_expression": "Detects Azure Event Hub deletions. Event Hubs are the primary method for logs to be forwarded to a destination outside of Azure (such as a SIEM) and as such, deleting an Event Hub may compromise monitoring.",
         "enabled_by_default": true,
@@ -56943,9 +57208,8 @@
         "summary_expression": "An Azure Event Hub was deleted by user: {{user_username}} resource: {{resource}}",
         "tags": [
             "_mitreAttackTactic:TA0005",
-            "_mitreAttackTechnique:T1562",
-            "_mitreAttackTechnique:T1562.008",
-            "_mitreAttackTechnique:T1562.001"
+            "_mitreAttackTechnique:T1685",
+            "_mitreAttackTechnique:T1685.002"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": [
@@ -59344,8 +59608,8 @@
         ],
         "asset_field": "user_username",
         "category": "Defense Evasion",
-        "commit_message": "Update Office_365_Unified_Audit_Log_Tampering.json",
-        "commit_origin_hash": "9d2841045c01970cffc71b087f61aae1a37b1567",
+        "commit_message": "TLAB-2574 unify MITRE scripts and add rule validation (#5956)",
+        "commit_origin_hash": "8933d90c67f6f2e47e13f867cb2a458d89b1d9a3",
         "content_type": "RULE",
         "description_expression": "Cloud environments such as Office 365 and Azure allow for collection and analysis of audit telemetry that provides insight into what activities a user does within the Office 365 environment. If a threat actor has sufficient permissions, they can disable logging to avoid detection of their potentially malicious activities.",
         "enabled_by_default": true,
@@ -59393,7 +59657,7 @@
         "summary_expression": "The Office 365 Unified Audit Log logs Office 365 and Azure Active Directory activites including sign ins, Teams activity, SharePoint activity and OneDrive activity. Unplanned and unexpected occurances of this event should be investigated.",
         "tags": [
             "_mitreAttackTactic:TA0005",
-            "_mitreAttackTechnique:T1562.008"
+            "_mitreAttackTechnique:T1685.002"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": []
@@ -59666,7 +59930,6 @@
             "724c9add-8cd9-4013-b9e1-a907b96da426",
             "991a55cf-8c5a-49ba-ae72-6f64a002bacf",
             "9a28f2af-5526-414d-973b-c3fc7984b8a1",
-            "9e838f93-c9e7-4592-a980-cf9dfb704784",
             "A17B3F3C-04F1-40C8-9497-3C499EB18A74",
             "B3582ED2-1A0C-452D-9802-97433D143486",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
@@ -61568,8 +61831,8 @@
         ],
         "asset_field": "user_username",
         "category": "Defense Evasion",
-        "commit_message": "Azure and Test Case Corrections",
-        "commit_origin_hash": "85d2cded6a967521e4d744ccf77a2ee299fb6f6c",
+        "commit_message": "TLAB-2574 unify MITRE scripts and add rule validation (#5956)",
+        "commit_origin_hash": "8933d90c67f6f2e47e13f867cb2a458d89b1d9a3",
         "content_type": "RULE",
         "description_expression": "The Azure Firewall may provide egress and ingress controls for a variety of Azure services, unexpected or unplanned firewall modifications should be investigated.",
         "enabled_by_default": true,
@@ -61617,7 +61880,7 @@
         "summary_expression": "Azure Firewall Rule Modified or Created or Created by {{user_username}}",
         "tags": [
             "_mitreAttackTactic:TA0005",
-            "_mitreAttackTechnique:T1562.007"
+            "_mitreAttackTechnique:T1686.001"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": []
@@ -63324,8 +63587,8 @@
             "user_username"
         ],
         "category": "Defense Evasion",
-        "commit_message": "Add Stream Field Back to Rules",
-        "commit_origin_hash": "ae36a185f57d397c6a2aa0dd9b8ea3a2bf946501",
+        "commit_message": "TLAB-2574 unify MITRE scripts and add rule validation (#5956)",
+        "commit_origin_hash": "8933d90c67f6f2e47e13f867cb2a458d89b1d9a3",
         "content_type": "RULE",
         "description_expression": "This alert looks for a value being added to an Azure Network Security Group (NSG) successfully. Depending on the environment, other Azure services such as Azure FIrewall may provide egress and ingress controls. Ensure this activity is authorized and expected. The raw data for the event contains the exact values being modified.",
         "enabled_by_default": true,
@@ -63372,7 +63635,7 @@
         "summary_expression": "An Azure Network Security Group (NSG) has been modified with a value being added",
         "tags": [
             "_mitreAttackTactic:TA0005",
-            "_mitreAttackTechnique:T1562.007"
+            "_mitreAttackTechnique:T1686.001"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": []
@@ -64767,8 +65030,8 @@
             "user_username"
         ],
         "category": "Defense Evasion",
-        "commit_message": "Clean up rules",
-        "commit_origin_hash": "5fd899ef16f077a0da4049c262275a7bfcc06e30",
+        "commit_message": "TLAB-2574 unify MITRE scripts and add rule validation (#5956)",
+        "commit_origin_hash": "8933d90c67f6f2e47e13f867cb2a458d89b1d9a3",
         "content_type": "RULE",
         "description_expression": "An AWS Bedrock Model invocation logging configuration change was observed. Ensure that this activity is expected and authorized. Take a look at the full event details, particularly the requestParameters.loggingConfig* fields in order to see what specific configuration values were changed. Telemetry and logging configuration changes should be a relatively rare occurrence in the environment.",
         "enabled_by_default": true,
@@ -64816,7 +65079,7 @@
         "summary_expression": "AWS Bedrock Model Invocation Logging Configuration Change Observed by {{user_username}} from IP {{device_ip}}",
         "tags": [
             "_mitreAttackTactic:TA0005",
-            "_mitreAttackTechnique:T1562.008"
+            "_mitreAttackTechnique:T1685.002"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": []
@@ -64955,8 +65218,8 @@
             "user_username"
         ],
         "category": "Defense Evasion",
-        "commit_message": "Clean up rules",
-        "commit_origin_hash": "5fd899ef16f077a0da4049c262275a7bfcc06e30",
+        "commit_message": "TLAB-2574 unify MITRE scripts and add rule validation (#5956)",
+        "commit_origin_hash": "8933d90c67f6f2e47e13f867cb2a458d89b1d9a3",
         "content_type": "RULE",
         "description_expression": "AWS Bedrock Guardrails provide users with the ability to configure options like filtering out harmful content or defining denied topics for models. Guardrails also allow the blocking of sensitive information such as PII. Ensure that this deletion was performed by an authorized user during an expected change. Look at other activity from this user account, focusing on the Bedrock service and pivoting from there if the event is deemed suspicious.",
         "enabled_by_default": true,
@@ -65004,7 +65267,7 @@
         "summary_expression": "AWS Bedrock Guardrail Deleted by {{user_username}}",
         "tags": [
             "_mitreAttackTactic:TA0005",
-            "_mitreAttackTechnique:T1562"
+            "_mitreAttackTechnique:T1685"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": []
@@ -65347,8 +65610,8 @@
             "user_username"
         ],
         "category": "Defense Evasion",
-        "commit_message": "Added logging requirements of GitHub Enterprise to the description of GitHub rules released 6 Dec 2024",
-        "commit_origin_hash": "9d613e54cabebd266e0b93a05cbccfc0dbc5581e",
+        "commit_message": "TLAB-2574 unify MITRE scripts and add rule validation (#5956)",
+        "commit_origin_hash": "8933d90c67f6f2e47e13f867cb2a458d89b1d9a3",
         "content_type": "RULE",
         "description_expression": "Detects modifications to the GitHub Enterprise Audit Log. Modifications and deletions have the potential to reduce visibility of malicious activity. This detection was developed utilizing GitHub Enterprise Audit logging. Refer to https://help.sumologic.com/docs/integrations/app-development/github/#collecting-logs-for-github for instructions on ingesting GitHub Enterprise Audit logs.",
         "enabled_by_default": true,
@@ -65417,8 +65680,8 @@
         "summary_expression": "{{user_username}} performed a {{normalizedAction}} activity on the {{fields['business']}} business audit log",
         "tags": [
             "_mitreAttackTactic:TA0005",
-            "_mitreAttackTechnique:T1562",
-            "_mitreAttackTechnique:T1562.008"
+            "_mitreAttackTechnique:T1685",
+            "_mitreAttackTechnique:T1685.002"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": []
@@ -66044,8 +66307,8 @@
             "user_username"
         ],
         "category": "Privilege Escalation",
-        "commit_message": "Added logging requirements of GitHub Enterprise to the description of GitHub rules released 6 Dec 2024",
-        "commit_origin_hash": "9d613e54cabebd266e0b93a05cbccfc0dbc5581e",
+        "commit_message": "TLAB-2574 unify MITRE scripts and add rule validation (#5956)",
+        "commit_origin_hash": "8933d90c67f6f2e47e13f867cb2a458d89b1d9a3",
         "content_type": "RULE",
         "description_expression": "Detects repository visibility permissions being changed to allow members of an organization to change the visibility of repositories. This activity introduces the potential for data leakage if a private or internal repository is changed to public and should be monitored to ensure no inadvertent or malicious publication of a repository. This detection was developed utilizing GitHub Enterprise Audit logging. Refer to https://help.sumologic.com/docs/integrations/app-development/github/#collecting-logs-for-github for instructions on ingesting GitHub Enterprise Audit logs.",
         "enabled_by_default": true,
@@ -66097,7 +66360,7 @@
             "_mitreAttackTactic:TA0004",
             "_mitreAttackTactic:TA0010",
             "_mitreAttackTactic:TA0005",
-            "_mitreAttackTechnique:T1562",
+            "_mitreAttackTechnique:T1685",
             "_mitreAttackTechnique:T1222"
         ],
         "threat_ruleType": null,
@@ -67383,7 +67646,6 @@
         "pattern_type": "templated_match",
         "product_direct_ref": [],
         "product_guids": [
-            "046b3623-69fe-409f-9e80-fd3ebef0654f",
             "146522A1-DC9A-40A5-A909-2EB3B665B1D1",
             "332856e9-3111-446f-8df7-e64694e4b9a1",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
@@ -67667,6 +67929,7 @@
             "003d35b3-3ba8-4e93-8776-e5810b4e243e",
             "072b85a2-1765-45c2-911d-b0509880326e",
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
+            "3382523e-2072-41bd-b50b-6b148957d0b0",
             "41f70c6e-18a9-462c-a04d-4edc7baead7a",
             "5c2cc0de-ca31-4ef0-bcfa-133fc8b387ad",
             "6299d728-14f7-455e-85c5-ea8ec65a654a",
@@ -67764,7 +68027,6 @@
             "37C866BF-72E1-470A-9072-EDB908F56951",
             "798f8da8-c85b-4e9a-b2f1-eae0b07532fb",
             "991a55cf-8c5a-49ba-ae72-6f64a002bacf",
-            "9e838f93-c9e7-4592-a980-cf9dfb704784",
             "bf865cb5-0b26-4010-8b3c-5ae2d1f716d8",
             "c3c1a4fc-10cc-4155-8a30-a3bb14fc9f31",
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
@@ -67954,7 +68216,6 @@
             "5ba50e74-3c05-4ea8-aeaf-5efde588c60f",
             "5bb9e0b3-8d57-4b10-8952-0b6ffe91b599",
             "6299d728-14f7-455e-85c5-ea8ec65a654a",
-            "9e838f93-c9e7-4592-a980-cf9dfb704784",
             "B3582ED2-1A0C-452D-9802-97433D143486",
             "c2503fcc-ef30-4e40-bb32-0bf47151b140",
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
@@ -68041,9 +68302,7 @@
         "normalized_summary": "Threat Intel - DNS Reply Domain detected for: {{dns_replyDomain}}",
         "pattern_type": "templated_match",
         "product_direct_ref": [],
-        "product_guids": [
-            "54B36B3F-A63F-4BA4-9DE4-02DBF69A429F"
-        ],
+        "product_guids": [],
         "record_type_direct_ref": [],
         "rule_description": null,
         "rule_source": "sumo",
@@ -68224,6 +68483,7 @@
             "0fb003bc-8383-442f-8f3d-afcfbaefe617",
             "2a678bcd-898e-43cd-ab3f-91feb0602a18",
             "332856e9-3111-446f-8df7-e64694e4b9a1",
+            "3382523e-2072-41bd-b50b-6b148957d0b0",
             "343b9323-d279-40d9-946f-809242e5cf98",
             "37C866BF-72E1-470A-9072-EDB908F56951",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
@@ -68234,7 +68494,6 @@
             "724c9add-8cd9-4013-b9e1-a907b96da426",
             "991a55cf-8c5a-49ba-ae72-6f64a002bacf",
             "9e0641a7-22ce-4ac8-8113-ee48b368ac3d",
-            "9e838f93-c9e7-4592-a980-cf9dfb704784",
             "A17B3F3C-04F1-40C8-9497-3C499EB18A74",
             "B3582ED2-1A0C-452D-9802-97433D143486",
             "F362EA03-9BBB-4701-B2DF-5460C4A289CF",
@@ -68349,10 +68608,10 @@
             "5ba50e74-3c05-4ea8-aeaf-5efde588c60f",
             "5bb9e0b3-8d57-4b10-8952-0b6ffe91b599",
             "6299d728-14f7-455e-85c5-ea8ec65a654a",
+            "6787d77a-1ee0-43d4-8ca0-96af8ee755bc",
             "724c9add-8cd9-4013-b9e1-a907b96da426",
             "991a55cf-8c5a-49ba-ae72-6f64a002bacf",
             "9e0641a7-22ce-4ac8-8113-ee48b368ac3d",
-            "9e838f93-c9e7-4592-a980-cf9dfb704784",
             "A17B3F3C-04F1-40C8-9497-3C499EB18A74",
             "B3582ED2-1A0C-452D-9802-97433D143486",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
@@ -68568,7 +68827,6 @@
         "product_direct_ref": [],
         "product_guids": [
             "033624b0-218e-4dcb-b93f-0f1fb1806c56",
-            "05bfaf47-5e21-4d5f-b724-98960a6fca8a",
             "0b45ccba-20b4-41e4-973d-b50fd291944d",
             "0e20c932-d992-4bd4-b276-c15119ca5c0b",
             "153794da-09e8-48fe-b511-1306fbb94d07",
@@ -68743,7 +69001,6 @@
         "pattern_type": "templated_match",
         "product_direct_ref": [],
         "product_guids": [
-            "2b79254e-8017-4dbf-8e39-590132172a7d",
             "332856e9-3111-446f-8df7-e64694e4b9a1",
             "51278354-d6b5-4c8e-a8fd-8197df334e67",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
@@ -68780,8 +69037,8 @@
         ],
         "asset_field": "srcDevice_ip",
         "category": "Threat Intelligence",
-        "commit_message": "TLAB-2253: add list exclusions to hasThreatMatch rules (#5864)",
-        "commit_origin_hash": "862331f815ea8a6b74799c9a7a6e2ee65b99e929",
+        "commit_message": "Add back device_ip entity selector to TI IP rules (#5965)",
+        "commit_origin_hash": "9169bb05f7f662bec79456d931ea9c756d5d5a9b",
         "content_type": "THREAT_INTEL",
         "description_expression": "This rule detects traffic to IP address with a high confidence rating from a threat intelligence feed.",
         "enabled_by_default": true,
@@ -68849,6 +69106,7 @@
             "033624b0-218e-4dcb-b93f-0f1fb1806c56",
             "072b85a2-1765-45c2-911d-b0509880326e",
             "14aa46d3-0710-44b6-9ce3-0a6b8f36b076",
+            "183c5127-6594-4d45-9bab-ce5f2df9e38b",
             "2a678bcd-898e-43cd-ab3f-91feb0602a18",
             "2b82e665-bdde-474a-ae29-4f0f76598556",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
@@ -68905,8 +69163,8 @@
         ],
         "asset_field": "dstDevice_ip",
         "category": "Threat Intelligence",
-        "commit_message": "TLAB-2253: add list exclusions to hasThreatMatch rules (#5864)",
-        "commit_origin_hash": "862331f815ea8a6b74799c9a7a6e2ee65b99e929",
+        "commit_message": "Add back device_ip entity selector to TI IP rules (#5965)",
+        "commit_origin_hash": "9169bb05f7f662bec79456d931ea9c756d5d5a9b",
         "content_type": "THREAT_INTEL",
         "description_expression": "This rule detects traffic to IP address with a high confidence rating from a threat intelligence feed.",
         "enabled_by_default": true,
@@ -68972,10 +69230,14 @@
         "product_guids": [
             "021d1ded-1c82-4663-bf5d-d6ed5170efa3",
             "072b85a2-1765-45c2-911d-b0509880326e",
+            "0e3d5c19-0a50-4ecf-b6f9-b1410d5dbb63",
+            "0fb003bc-8383-442f-8f3d-afcfbaefe617",
+            "146522A1-DC9A-40A5-A909-2EB3B665B1D1",
             "14aa46d3-0710-44b6-9ce3-0a6b8f36b076",
             "168afd8d-2893-4c74-95b1-a975d576ea56",
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "2a678bcd-898e-43cd-ab3f-91feb0602a18",
+            "2ca0adcf-7616-4474-8557-a3773515aa6d",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "343b9323-d279-40d9-946f-809242e5cf98",
             "37C866BF-72E1-470A-9072-EDB908F56951",
@@ -68993,6 +69255,7 @@
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "afabb29d-e728-410f-b7c6-acfa9efbe1ed",
             "be4f7473-fe69-4311-8859-3561900060bf",
+            "c2503fcc-ef30-4e40-bb32-0bf47151b140",
             "c3c1a4fc-10cc-4155-8a30-a3bb14fc9f31",
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
             "cc523ad6-7193-4de5-a254-d0243fca63f3",
@@ -69031,8 +69294,8 @@
         ],
         "asset_field": "srcDevice_ip",
         "category": "Threat Intelligence",
-        "commit_message": "TLAB-2253: add list exclusions to hasThreatMatch rules (#5864)",
-        "commit_origin_hash": "862331f815ea8a6b74799c9a7a6e2ee65b99e929",
+        "commit_message": "Add back device_ip entity selector to TI IP rules (#5965)",
+        "commit_origin_hash": "9169bb05f7f662bec79456d931ea9c756d5d5a9b",
         "content_type": "THREAT_INTEL",
         "description_expression": "This rule detects allowed inbound traffic from an IP address with a low confidence rating from a threat intelligence feed.\nNote that this rule is disabled by default due to a high likelihood of excessive signal volume and risk assignment to entities triggering this rule as-is. Tuning to reduce signal volume and potential false positives is highly recommended before activating this rule.",
         "enabled_by_default": false,
@@ -69100,7 +69363,6 @@
             "033624b0-218e-4dcb-b93f-0f1fb1806c56",
             "072b85a2-1765-45c2-911d-b0509880326e",
             "0fb003bc-8383-442f-8f3d-afcfbaefe617",
-            "1ed80351-d779-4f1f-9ddb-b3881f19d487",
             "2b82e665-bdde-474a-ae29-4f0f76598556",
             "41f70c6e-18a9-462c-a04d-4edc7baead7a",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
@@ -69151,8 +69413,8 @@
         ],
         "asset_field": "dstDevice_ip",
         "category": "Threat Intelligence",
-        "commit_message": "TLAB-2253: add list exclusions to hasThreatMatch rules (#5864)",
-        "commit_origin_hash": "862331f815ea8a6b74799c9a7a6e2ee65b99e929",
+        "commit_message": "Add back device_ip entity selector to TI IP rules (#5965)",
+        "commit_origin_hash": "9169bb05f7f662bec79456d931ea9c756d5d5a9b",
         "content_type": "THREAT_INTEL",
         "description_expression": "This rule detects traffic to IP address with a low confidence rating from a threat intelligence feed.\nNote that this rule is disabled by default due to a high likelihood of excessive signal volume and risk assignment to entities triggering this rule as-is. Tuning to reduce signal volume and potential false positives is highly recommended before activating this rule.",
         "enabled_by_default": false,
@@ -69230,7 +69492,7 @@
             "B3582ED2-1A0C-452D-9802-97433D143486",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "afabb29d-e728-410f-b7c6-acfa9efbe1ed",
-            "b238758d-ade8-41d2-b32d-c99159e9fd74",
+            "c2503fcc-ef30-4e40-bb32-0bf47151b140",
             "c3c1a4fc-10cc-4155-8a30-a3bb14fc9f31",
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
             "cc523ad6-7193-4de5-a254-d0243fca63f3",
@@ -69266,8 +69528,8 @@
         ],
         "asset_field": "srcDevice_ip",
         "category": "Threat Intelligence",
-        "commit_message": "TLAB-2253: add list exclusions to hasThreatMatch rules (#5864)",
-        "commit_origin_hash": "862331f815ea8a6b74799c9a7a6e2ee65b99e929",
+        "commit_message": "Add back device_ip entity selector to TI IP rules (#5965)",
+        "commit_origin_hash": "9169bb05f7f662bec79456d931ea9c756d5d5a9b",
         "content_type": "THREAT_INTEL",
         "description_expression": "This rule detects traffic to IP address with a medium confidence rating from a threat intelligence feed.\nNote that this rule is disabled by default due to a high likelihood of excessive signal volume and risk assignment to entities triggering this rule as-is. Tuning to reduce signal volume and potential false positives is highly recommended before activating this rule.",
         "enabled_by_default": false,
@@ -69388,8 +69650,8 @@
         ],
         "asset_field": "dstDevice_ip",
         "category": "Threat Intelligence",
-        "commit_message": "TLAB-2253: add list exclusions to hasThreatMatch rules (#5864)",
-        "commit_origin_hash": "862331f815ea8a6b74799c9a7a6e2ee65b99e929",
+        "commit_message": "Add back device_ip entity selector to TI IP rules (#5965)",
+        "commit_origin_hash": "9169bb05f7f662bec79456d931ea9c756d5d5a9b",
         "content_type": "THREAT_INTEL",
         "description_expression": "This rule detects traffic to IP address with a medium confidence rating from a threat intelligence feed.\nNote that this rule is disabled by default due to a high likelihood of excessive signal volume and risk assignment to entities triggering this rule as-is. Tuning to reduce signal volume and potential false positives is highly recommended before activating this rule.",
         "enabled_by_default": false,
@@ -69458,16 +69720,17 @@
             "0fb003bc-8383-442f-8f3d-afcfbaefe617",
             "168afd8d-2893-4c74-95b1-a975d576ea56",
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
-            "37C866BF-72E1-470A-9072-EDB908F56951",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
+            "5ba50e74-3c05-4ea8-aeaf-5efde588c60f",
             "6299d728-14f7-455e-85c5-ea8ec65a654a",
             "724c9add-8cd9-4013-b9e1-a907b96da426",
             "951a004d-54bf-441d-98e1-fcc6a032f475",
             "9e0641a7-22ce-4ac8-8113-ee48b368ac3d",
-            "B3582ED2-1A0C-452D-9802-97433D143486",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "afabb29d-e728-410f-b7c6-acfa9efbe1ed",
+            "b238758d-ade8-41d2-b32d-c99159e9fd74",
+            "c2503fcc-ef30-4e40-bb32-0bf47151b140",
             "c3c1a4fc-10cc-4155-8a30-a3bb14fc9f31",
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
             "cc523ad6-7193-4de5-a254-d0243fca63f3",
@@ -70279,6 +70542,265 @@
         "threat_ruleType": "ocsf",
         "vendor_direct_ref": []
     },
+    "MATCH-S01149": {
+        "all_fields": [
+            "commandLine",
+            "device_hostname",
+            "user_username"
+        ],
+        "category": "Execution",
+        "commit_message": "TLAB-2384: AI Campaign Rules and Test Cases (#5957)",
+        "commit_origin_hash": "c67d2aa214ed689494d36064e490c343c4ffe6f7",
+        "content_type": "RULE",
+        "description_expression": "Detection:\nThis rule triggers when a Node.js process with 'openclaw' in its command line spawns shell interpreters such bash, zsh, sh, PowerShell or python. It monitors process creation events to identify when OpenClaw's shell integration features actively execute system commands. Command lines associated with ip neighbor discovery are excluded as these can be a normal part of OpenClaw operation.\n\nScenario:\nOpenClaw's shell integration allows executing system commands, creating elevated risk compared to passive code generation. Shell spawning indicates active execution features being used, potentially exfiltrating source code, accessing sensitive files, or modifying configurations. Best practice configuration suggests all agent processes run in a  sandbox.\n\nRecommended Actions:\nReview device_hostname to identify the user, check parentCommandLine to understand the OpenClaw command, and examine baseImage for the shell type. Check endpoint logs for executed commands (file access, network connections, scripts), then if unauthorized, terminate OpenClaw and review what commands were executed. Review whether OpenClaw is configured such that agent processes are run in a sandbox: https://docs.openclaw.ai/gateway/sandboxing\n\nTuning Recommendations:\nExclude command lines for legitimate shell use by the OpenClaw gateway process.",
+        "enabled_by_default": true,
+        "entity_selectors": [
+            {
+                "entity_type": "_hostname",
+                "expression": "device_hostname"
+            },
+            {
+                "entity_type": "_username",
+                "expression": "user_username"
+            }
+        ],
+        "expression": "parentBaseImage matches /(?i)node/\nAND parentCommandLine matches /(?i)openclaw/\nAND baseImage matches /(?i)(dash|bash|zsh|sh|powershell\\.exe|pwsh|pwsh\\-preview|python.*?)$/\nAND NOT commandLine MATCHES /(?i)(^.*(sh|cmd|powershell|pwsh|pwsh\\-preview)(\\.exe)?\\s+[-\\/]c\\s+)?(ip\\s+neigh(\\s+show)?|arp\\s+-a(n)?)$/",
+        "file_path": "rules_v3/OpenClaw_Shell_Launch_by_Gateway.json",
+        "id": 1149,
+        "id_compiled": "MATCH-S01149",
+        "is_prototype": false,
+        "name": "OpenClaw - Shell Launch by Gateway",
+        "name_expression": "OpenClaw Gateway process on {{device_hostname}} launched a shell",
+        "normalized_description": "Detection:\nThis rule triggers when a Node.js process with 'openclaw' in its command line spawns shell interpreters such bash, zsh, sh, PowerShell or python. It monitors process creation events to identify when OpenClaw's shell integration features actively execute system commands. Command lines associated with ip neighbor discovery are excluded as these can be a normal part of OpenClaw operation.\n\nScenario:\nOpenClaw's shell integration allows executing system commands, creating elevated risk compared to passive code generation. Shell spawning indicates active execution features being used, potentially exfiltrating source code, accessing sensitive files, or modifying configurations. Best practice configuration suggests all agent processes run in a  sandbox.\n\nRecommended Actions:\nReview device_hostname to identify the user, check parentCommandLine to understand the OpenClaw command, and examine baseImage for the shell type. Check endpoint logs for executed commands (file access, network connections, scripts), then if unauthorized, terminate OpenClaw and review what commands were executed. Review whether OpenClaw is configured such that agent processes are run in a sandbox: https://docs.openclaw.ai/gateway/sandboxing\n\nTuning Recommendations:\nExclude command lines for legitimate shell use by the OpenClaw gateway process.",
+        "normalized_score_description": "Static: 2",
+        "normalized_score_possibilities": [
+            2
+        ],
+        "normalized_score_range": [
+            2,
+            2
+        ],
+        "normalized_score_type": "Static",
+        "normalized_signal_name": "OpenClaw Gateway process on {{device_hostname}} launched a shell",
+        "normalized_summary": "OpenClaw process on {{device_hostname}} launched shell {{baseImage}}",
+        "pattern_type": "templated_match",
+        "product_direct_ref": [],
+        "product_guids": [
+            "b238758d-ade8-41d2-b32d-c99159e9fd74"
+        ],
+        "record_type_direct_ref": [],
+        "rule_description": "",
+        "rule_source": "sumo",
+        "score_mapping": {
+            "default": 2,
+            "field": null,
+            "mapping": [],
+            "type": "constant"
+        },
+        "silent_mode": true,
+        "stream": "record",
+        "summary_expression": "OpenClaw process on {{device_hostname}} launched shell {{baseImage}}",
+        "tags": [
+            "_mitreAttackTactic:TA0002"
+        ],
+        "threat_ruleType": null,
+        "vendor_direct_ref": []
+    },
+    "MATCH-S01150": {
+        "all_fields": [
+            "dstDevice_ip",
+            "dstPort",
+            "http_response_statusText"
+        ],
+        "category": "Unknown/Other",
+        "commit_message": "TLAB-2384: AI Campaign Rules and Test Cases (#5957)",
+        "commit_origin_hash": "c67d2aa214ed689494d36064e490c343c4ffe6f7",
+        "content_type": "RULE",
+        "description_expression": "Detection:\nThis rule triggers when a websocket connection to TCP port 18789 returns HTTP status 'Switching Protocols', indicating websocket handshake. Port 18789 is OpenClaw's default local server port, providing detection of active OpenClaw usage.\n\nScenario:\nOpenClaw may be disallowed or tightly controlled in the organization. If a user installs OpenClaw on a device outside of IT control there may not be any telemetry on the device and network telemetry will be needed to detect unsanctioned installations. \n\nRecommended Actions:\nConfirm OpenClaw is running on dstDevice_ip by checking for node processes on port 18789, then review network logs for external service communications (OpenAI, Anthropic). If unauthorized, terminate the process, remove the installation, block port 18789 at the firewall, and assess what code was processed.\n\nTuning Recommendations:\nCreate match list 'authorized_openclaw_devices' for permitted systems or other known services using port 18789.",
+        "enabled_by_default": true,
+        "entity_selectors": [
+            {
+                "entity_type": "_ip",
+                "expression": "dstDevice_ip"
+            }
+        ],
+        "expression": "dstPort = 18789\nAND lower(http_response_statusText)=\"switching protocols\"",
+        "file_path": "rules_v3/Openclaw_Activity_on_Default_Port.json",
+        "id": 1150,
+        "id_compiled": "MATCH-S01150",
+        "is_prototype": false,
+        "name": "Openclaw - Activity on Default Port",
+        "name_expression": "OpenClaw websocket detected on {{dstDevice_ip}}",
+        "normalized_description": "Detection:\nThis rule triggers when a websocket connection to TCP port 18789 returns HTTP status 'Switching Protocols', indicating websocket handshake. Port 18789 is OpenClaw's default local server port, providing detection of active OpenClaw usage.\n\nScenario:\nOpenClaw may be disallowed or tightly controlled in the organization. If a user installs OpenClaw on a device outside of IT control there may not be any telemetry on the device and network telemetry will be needed to detect unsanctioned installations. \n\nRecommended Actions:\nConfirm OpenClaw is running on dstDevice_ip by checking for node processes on port 18789, then review network logs for external service communications (OpenAI, Anthropic). If unauthorized, terminate the process, remove the installation, block port 18789 at the firewall, and assess what code was processed.\n\nTuning Recommendations:\nCreate match list 'authorized_openclaw_devices' for permitted systems or other known services using port 18789.",
+        "normalized_score_description": "Static: 2",
+        "normalized_score_possibilities": [
+            2
+        ],
+        "normalized_score_range": [
+            2,
+            2
+        ],
+        "normalized_score_type": "Static",
+        "normalized_signal_name": "OpenClaw websocket detected on {{dstDevice_ip}}",
+        "normalized_summary": "OpenClaw websocket connection detected on port 18789 to {{dstDevice_ip}}",
+        "pattern_type": "templated_match",
+        "product_direct_ref": [],
+        "product_guids": [
+            "37C866BF-72E1-470A-9072-EDB908F56951"
+        ],
+        "record_type_direct_ref": [],
+        "rule_description": "",
+        "rule_source": "sumo",
+        "score_mapping": {
+            "default": 2,
+            "field": null,
+            "mapping": [],
+            "type": "constant"
+        },
+        "silent_mode": true,
+        "stream": "record",
+        "summary_expression": "OpenClaw websocket connection detected on port 18789 to {{dstDevice_ip}}",
+        "tags": [
+            "_mitreAtlasTechnique:AML.T0103",
+            "_mitreAtlasTactic:AML.TA0005"
+        ],
+        "threat_ruleType": null,
+        "vendor_direct_ref": []
+    },
+    "MATCH-S01151": {
+        "all_fields": [
+            "action",
+            "fields['requestParameters.policyArn']",
+            "metadata_product",
+            "metadata_vendor",
+            "user_username",
+            "user_username_role"
+        ],
+        "category": "Persistence",
+        "commit_message": "TLAB-2384: AI Campaign Rules and Test Cases (#5957)",
+        "commit_origin_hash": "c67d2aa214ed689494d36064e490c343c4ffe6f7",
+        "content_type": "RULE",
+        "description_expression": "Detection:\nThis rule triggers when Bedrock IAM permissions are granted through: (1) attachment of managed policies (AmazonBedrockFullAccess, AmazonBedrockStudioFullAccess), (2) creation of policies containing Bedrock actions, or (3) inline policy assignments. It monitors high-risk actions including model invocation, AI agent creation, guardrail deletion, logging configuration changes, knowledge base creation, and provisioned throughput allocation.\n\nScenario:\nAn attacker with IAM permissions escalates privileges by granting Bedrock access to themselves or compromised roles, enabling model invocation, AI agent creation, guardrail bypass, logging deletion, data exfiltration via knowledge bases, or cryptomining through expensive compute resources. Legitimate Bedrock provisioning may require similar permissions, making this a potential indicator of either authorized activity or privilege escalation.\n\nRecommended Actions:\nVerify the permission grant aligns with authorized Bedrock provisioning by reviewing user_username, srcDevice_ip, and timing against normal business hours. For inline policies, review policyDocument for overly permissive actions (bedrock:* wildcards), then if unauthorized, detach the policy immediately, rotate credentials, and check CloudTrail for any Bedrock API calls using the newly granted permissions.\n\nTuning Recommendations:\nThe rule excludes AWS service-linked roles. Create match list 'authorized_bedrock_provisioning_accounts' for users or roles that regularly provision Bedrock permissions, and adjust monitored Bedrock actions based on your organization's risk tolerance.",
+        "enabled_by_default": true,
+        "entity_selectors": [
+            {
+                "entity_type": "_username",
+                "expression": "user_username"
+            }
+        ],
+        "expression": "metadata_vendor = 'Amazon AWS'\nAND metadata_product = 'CloudTrail'\nAND application = 'iam.amazonaws.com'\nAND (\n    (\n        action IN ('AttachRolePolicy', 'AttachUserPolicy', 'AttachGroupPolicy')\n        AND fields['requestParameters.policyArn'] IN (\n            'arn:aws:iam::aws:policy/AmazonBedrockFullAccess',\n            'arn:aws:iam::aws:policy/AmazonBedrockStudioFullAccess'\n        )\n    )\n    OR (\n        action IN ('PutRolePolicy', 'PutUserPolicy', 'PutGroupPolicy')\n        AND fields['requestParameters.policyDocument'] MATCHES /(?i:)bedrock:(\\*|InvokeModel|CreateAgent|DeleteGuardrail|DeleteModelInvocationLoggingConfiguration|PutFoundationModelEntitlement|CreateCustomModel|CreateKnowledgeBase|StartIngestionJob|CreateProvisionedModelThroughput|PutResourcePolicy)/\n    )\n)\nAND NOT user_username_role MATCHES /(?i:^awsservicerolefor)/",
+        "file_path": "rules_v3/AWS_Bedrock_Privileged_Permissions_Granted.json",
+        "id": 1151,
+        "id_compiled": "MATCH-S01151",
+        "is_prototype": false,
+        "name": "AWS Bedrock - Privileged Permissions Granted",
+        "name_expression": "AWS - Privileged Bedrock Permissions Granted via {{action}} by {{user_username}}",
+        "normalized_description": "Detection:\nThis rule triggers when Bedrock IAM permissions are granted through: (1) attachment of managed policies (AmazonBedrockFullAccess, AmazonBedrockStudioFullAccess), (2) creation of policies containing Bedrock actions, or (3) inline policy assignments. It monitors high-risk actions including model invocation, AI agent creation, guardrail deletion, logging configuration changes, knowledge base creation, and provisioned throughput allocation.\n\nScenario:\nAn attacker with IAM permissions escalates privileges by granting Bedrock access to themselves or compromised roles, enabling model invocation, AI agent creation, guardrail bypass, logging deletion, data exfiltration via knowledge bases, or cryptomining through expensive compute resources. Legitimate Bedrock provisioning may require similar permissions, making this a potential indicator of either authorized activity or privilege escalation.\n\nRecommended Actions:\nVerify the permission grant aligns with authorized Bedrock provisioning by reviewing user_username, srcDevice_ip, and timing against normal business hours. For inline policies, review policyDocument for overly permissive actions (bedrock:* wildcards), then if unauthorized, detach the policy immediately, rotate credentials, and check CloudTrail for any Bedrock API calls using the newly granted permissions.\n\nTuning Recommendations:\nThe rule excludes AWS service-linked roles. Create match list 'authorized_bedrock_provisioning_accounts' for users or roles that regularly provision Bedrock permissions, and adjust monitored Bedrock actions based on your organization's risk tolerance.",
+        "normalized_score_description": "Static: 2",
+        "normalized_score_possibilities": [
+            2
+        ],
+        "normalized_score_range": [
+            2,
+            2
+        ],
+        "normalized_score_type": "Static",
+        "normalized_signal_name": "AWS - Privileged Bedrock Permissions Granted via {{action}} by {{user_username}}",
+        "normalized_summary": "Privileged AWS Bedrock permissions granted: {{action}} performed by {{user_username}}",
+        "pattern_type": "templated_match",
+        "product_direct_ref": [
+            "CloudTrail"
+        ],
+        "product_guids": [
+            "033624b0-218e-4dcb-b93f-0f1fb1806c56"
+        ],
+        "record_type_direct_ref": [],
+        "rule_description": "",
+        "rule_source": "sumo",
+        "score_mapping": {
+            "default": 2,
+            "field": null,
+            "mapping": [],
+            "type": "constant"
+        },
+        "silent_mode": true,
+        "stream": "record",
+        "summary_expression": "Privileged AWS Bedrock permissions granted: {{action}} performed by {{user_username}}",
+        "tags": [
+            "_mitreAttackTechnique:T1098.003",
+            "_mitreAttackTactic:TA0003"
+        ],
+        "threat_ruleType": null,
+        "vendor_direct_ref": [
+            "Amazon AWS"
+        ]
+    },
+    "MATCH-S01152": {
+        "all_fields": [
+            "device_hostname",
+            "normalizedAction",
+            "normalizedResource",
+            "user_username"
+        ],
+        "category": "Persistence",
+        "commit_message": "TLAB-2384: AI Campaign Rules and Test Cases (#5957)",
+        "commit_origin_hash": "c67d2aa214ed689494d36064e490c343c4ffe6f7",
+        "content_type": "RULE",
+        "description_expression": "Detection:\nThis rule triggers when a file matching *.openclaw*skills*.md is created by a process whose base image is not \"node\" (the standard OpenClaw runtime). It monitors Sysmon FileCreate events and flags skill file writes that occur outside the official openclaw or clawhub installer processes.\n\nScenario:\nOpenClaw loads skill configuration files from its skills directory to extend its capabilities. An adversary with filesystem access could plant malicious skill files out-of-band \u2014 using any process other than node \u2014 to establish persistence, having OpenClaw execute attacker-controlled logic whenever a matching query is processed without triggering standard installation monitoring.\n\nRecommended Actions:\nInvestigate device_hostname and baseImage to identify what process created the skill file, then inspect changeTarget to determine which skill was installed and review its contents for malicious instructions. Verify whether the write was authorized by the system owner.\n\nTuning Recommendations:\nCreate match list 'authorized_openclaw_skill_writers' for any legitimate processes that write skill files outside of node (e.g., configuration management or backup agents).",
+        "enabled_by_default": true,
+        "entity_selectors": [
+            {
+                "entity_type": "_hostname",
+                "expression": "device_hostname"
+            },
+            {
+                "entity_type": "_username",
+                "expression": "user_username"
+            }
+        ],
+        "expression": "lower(normalizedResource) = \"file\"\nAND lower(normalizedAction) = \"create\"\nAND baseImage NOT matches /(?i)node$/\nAND changeTarget matches /.*\\.openclaw.*skills.*\\.md$/",
+        "file_path": "rules_v3/OpenClaw_Skill_Installed_Out_of_Band.json",
+        "id": 1152,
+        "id_compiled": "MATCH-S01152",
+        "is_prototype": false,
+        "name": "OpenClaw - Skill Installed Out-of-Band",
+        "name_expression": "OpenClaw skill installed out-of-band on {{device_hostname}}",
+        "normalized_description": "Detection:\nThis rule triggers when a file matching *.openclaw*skills*.md is created by a process whose base image is not \"node\" (the standard OpenClaw runtime). It monitors Sysmon FileCreate events and flags skill file writes that occur outside the official openclaw or clawhub installer processes.\n\nScenario:\nOpenClaw loads skill configuration files from its skills directory to extend its capabilities. An adversary with filesystem access could plant malicious skill files out-of-band \u2014 using any process other than node \u2014 to establish persistence, having OpenClaw execute attacker-controlled logic whenever a matching query is processed without triggering standard installation monitoring.\n\nRecommended Actions:\nInvestigate device_hostname and baseImage to identify what process created the skill file, then inspect changeTarget to determine which skill was installed and review its contents for malicious instructions. Verify whether the write was authorized by the system owner.\n\nTuning Recommendations:\nCreate match list 'authorized_openclaw_skill_writers' for any legitimate processes that write skill files outside of node (e.g., configuration management or backup agents).",
+        "normalized_score_description": "Static: 2",
+        "normalized_score_possibilities": [
+            2
+        ],
+        "normalized_score_range": [
+            2,
+            2
+        ],
+        "normalized_score_type": "Static",
+        "normalized_signal_name": "OpenClaw skill installed out-of-band on {{device_hostname}}",
+        "normalized_summary": "Out-of-band OpenClaw skill installation detected on {{device_hostname}} by user {{user_username}}  via process {{baseImage}}",
+        "pattern_type": "templated_match",
+        "product_direct_ref": [],
+        "product_guids": [
+            "b238758d-ade8-41d2-b32d-c99159e9fd74"
+        ],
+        "record_type_direct_ref": [],
+        "rule_description": "",
+        "rule_source": "sumo",
+        "score_mapping": {
+            "default": 2,
+            "field": null,
+            "mapping": [],
+            "type": "constant"
+        },
+        "silent_mode": true,
+        "stream": "record",
+        "summary_expression": "Out-of-band OpenClaw skill installation detected on {{device_hostname}} by user {{user_username}}  via process {{baseImage}}",
+        "tags": [
+            "_mitreAttackTactic:TA0003",
+            "_mitreAttackTechnique:T1546"
+        ],
+        "threat_ruleType": null,
+        "vendor_direct_ref": []
+    },
     "OUTLIER-S00001": {
         "aggregation_functions": [
             {
@@ -71072,7 +71594,6 @@
             "991a55cf-8c5a-49ba-ae72-6f64a002bacf",
             "9a28f2af-5526-414d-973b-c3fc7984b8a1",
             "9e0641a7-22ce-4ac8-8113-ee48b368ac3d",
-            "9f76f1fd-fbb0-42d2-9bf5-0f4fd2c1ab82",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "af61d8a8-3eba-42fb-9f17-87443924f3f4",
             "bf865cb5-0b26-4010-8b3c-5ae2d1f716d8",
@@ -72613,8 +73134,7 @@
             "be4f7473-fe69-4311-8859-3561900060bf",
             "c2503fcc-ef30-4e40-bb32-0bf47151b140",
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
-            "da9e05a5-3fd3-46a7-a107-ae03c01e3f5a",
-            "fca8785d-4823-4442-86b2-8acbaa176da4"
+            "da9e05a5-3fd3-46a7-a107-ae03c01e3f5a"
         ],
         "record_type_direct_ref": [],
         "rule_source": "sumo",
@@ -72808,6 +73328,7 @@
             "234ec2b5-4142-4837-bc78-95da8a2db81a",
             "36f5ca33-0c1e-4223-8215-977ea04425ba",
             "37C866BF-72E1-470A-9072-EDB908F56951",
+            "37a906de-5e9c-475e-881a-65a1d984f377",
             "41f70c6e-18a9-462c-a04d-4edc7baead7a",
             "5ba50e74-3c05-4ea8-aeaf-5efde588c60f",
             "5bb9e0b3-8d57-4b10-8952-0b6ffe91b599",
@@ -72997,7 +73518,6 @@
             "724c9add-8cd9-4013-b9e1-a907b96da426",
             "9a28f2af-5526-414d-973b-c3fc7984b8a1",
             "9e0641a7-22ce-4ac8-8113-ee48b368ac3d",
-            "9e838f93-c9e7-4592-a980-cf9dfb704784",
             "9f76f1fd-fbb0-42d2-9bf5-0f4fd2c1ab82",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "af61d8a8-3eba-42fb-9f17-87443924f3f4",
@@ -73781,7 +74301,6 @@
     "THRESHOLD-S00048": {
         "all_fields": [
             "device_hostname",
-            "device_ip",
             "dstDevice_ip_countryCode",
             "dstDevice_ip_isInternal",
             "srcDevice_ip",
@@ -73790,18 +74309,14 @@
         ],
         "asset_field": "srcDevice_ip",
         "category": "Unknown/Other",
-        "commit_message": "Remove old group_field from rules",
-        "commit_origin_hash": "227e0b047e96bc3d9b2fb46750aa0262c48e2dcb",
+        "commit_message": "TLAB-2550: Removed Redundant Mapping for Fortinet (#5959)",
+        "commit_origin_hash": "28133809e6740b04a16f36503c62c7f025da976d",
         "content_type": "RULE",
         "count_distinct": true,
         "count_field": "dstDevice_ip_countryCode",
         "description": "Traffic was observed leaving your network destined to some countries outside the United States within a time frame. This rule is shipped disabled by default as is intended for environments based in the United States with very tight network restriction policies. ",
         "enabled_by_default": false,
         "entity_selectors": [
-            {
-                "entity_type": "_ip",
-                "expression": "device_ip"
-            },
             {
                 "entity_type": "_username",
                 "expression": "user_username"
@@ -73854,11 +74369,11 @@
             "A17B3F3C-04F1-40C8-9497-3C499EB18A74",
             "B3582ED2-1A0C-452D-9802-97433D143486",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
-            "afabb29d-e728-410f-b7c6-acfa9efbe1ed",
             "b238758d-ade8-41d2-b32d-c99159e9fd74",
             "be4f7473-fe69-4311-8859-3561900060bf",
             "c3c1a4fc-10cc-4155-8a30-a3bb14fc9f31",
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
+            "dcc85cfc-a698-4d09-87de-f2c723f3ad07",
             "e2393771-bda2-414a-8661-0a57069287ad"
         ],
         "record_type_direct_ref": [],
@@ -75002,7 +75517,7 @@
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "724c9add-8cd9-4013-b9e1-a907b96da426",
-            "a1225af5-e778-4068-a9a2-47da93d1ff24",
+            "afabb29d-e728-410f-b7c6-acfa9efbe1ed",
             "be4f7473-fe69-4311-8859-3561900060bf",
             "c3c1a4fc-10cc-4155-8a30-a3bb14fc9f31",
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
@@ -75967,6 +76482,7 @@
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "37a906de-5e9c-475e-881a-65a1d984f377",
+            "46c71698-9c21-4273-9561-94ff5af52edd",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
             "4809be0f-c6f3-4cbb-b1f6-ae9ae817712e",
             "51278354-d6b5-4c8e-a8fd-8197df334e67",
@@ -77468,7 +77984,6 @@
             "5be5af82-c248-4c4c-a485-0571025f242c",
             "70f80fa8-200a-449b-8100-f8d4b7687380",
             "7205db83-88e8-4074-8288-136a6c493d69",
-            "79da6240-7617-49c8-b130-96278579766e",
             "8276b520-fdeb-4f79-9f5d-67865818562b",
             "9f6d624f-6d8f-43c7-a4b0-51179061631c",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
@@ -77514,6 +78029,137 @@
             "Microsoft"
         ],
         "window": "24h"
+    },
+    "THRESHOLD-S00124": {
+        "all_fields": [
+            "fields[\"output.outputBodyJson.stopReason\"]",
+            "metadata_product",
+            "metadata_vendor",
+            "user_username"
+        ],
+        "category": "Unknown/Other",
+        "commit_message": "TLAB-2384: AI Campaign Rules and Test Cases (#5957)",
+        "commit_origin_hash": "c67d2aa214ed689494d36064e490c343c4ffe6f7",
+        "content_type": "RULE",
+        "count_distinct": false,
+        "count_field": null,
+        "description": "Detection:\nThis rule triggers when 10 or more Bedrock Guardrail interventions occur within 60 seconds for a user. It monitors CloudWatch logs where stopReason equals 'guardrail_intervened', indicating the guardrail blocked model responses that violated content policies.\n\nScenario:\nAn attacker or unauthorized user may attempt to jailbreak Bedrock models by rapidly probing guardrail boundaries to find policy bypass techniques. High intervention rates indicate potential jailbreak attempts, unsanctioned model use, or automated attacks testing content filtering limits.\n\nRecommended Actions:\nReview user_username to identify the account generating interventions and verify their authorization to use Bedrock. Examine the CloudWatch logs to determine the nature of blocked prompts and assess whether this represents malicious jailbreak attempts or legitimate boundary testing.\n\nTuning Recommendations:\nAdjust the threshold from 10 to a higher value if legitimate users frequently test guardrail boundaries during development or QA activities. Exclude known test accounts performing authorized red team exercises or model evaluation testing.",
+        "enabled_by_default": true,
+        "entity_selectors": [
+            {
+                "entity_type": "_username",
+                "expression": "user_username"
+            }
+        ],
+        "expression": "metadata_vendor = \"Amazon AWS\"\nAND metadata_product = \"CloudWatch\"\nAND fields[\"output.outputBodyJson.stopReason\"] = \"guardrail_intervened\"",
+        "file_path": "rules_v3/AWS_Bedrock_Rapid_Guardrail_Interventions.json",
+        "group_by_fields": [],
+        "id": 124,
+        "id_compiled": "THRESHOLD-S00124",
+        "is_prototype": false,
+        "limit": 10,
+        "name": "AWS Bedrock - Rapid Guardrail Interventions",
+        "normalized_description": "Detection:\nThis rule triggers when 10 or more Bedrock Guardrail interventions occur within 60 seconds for a user. It monitors CloudWatch logs where stopReason equals 'guardrail_intervened', indicating the guardrail blocked model responses that violated content policies.\n\nScenario:\nAn attacker or unauthorized user may attempt to jailbreak Bedrock models by rapidly probing guardrail boundaries to find policy bypass techniques. High intervention rates indicate potential jailbreak attempts, unsanctioned model use, or automated attacks testing content filtering limits.\n\nRecommended Actions:\nReview user_username to identify the account generating interventions and verify their authorization to use Bedrock. Examine the CloudWatch logs to determine the nature of blocked prompts and assess whether this represents malicious jailbreak attempts or legitimate boundary testing.\n\nTuning Recommendations:\nAdjust the threshold from 10 to a higher value if legitimate users frequently test guardrail boundaries during development or QA activities. Exclude known test accounts performing authorized red team exercises or model evaluation testing.",
+        "normalized_score_description": "Static: 3",
+        "normalized_score_possibilities": [
+            3
+        ],
+        "normalized_score_range": [
+            3,
+            3
+        ],
+        "normalized_score_type": "Static",
+        "normalized_signal_name": "AWS Bedrock - Rapid Guardrail Interventions",
+        "normalized_summary": "Rapid AWS Bedrock Guardrail interventions have been triggered  for {{user_username}}",
+        "pattern_type": "threshold",
+        "product_direct_ref": [],
+        "product_guids": [
+            "b57c366d-e6a5-4e61-b950-5686a902bc24"
+        ],
+        "record_type_direct_ref": [],
+        "rule_description": "",
+        "rule_source": "sumo",
+        "score": 3,
+        "silent_mode": true,
+        "stream": "record",
+        "summary_expression": "Rapid AWS Bedrock Guardrail interventions have been triggered  for {{user_username}}",
+        "tags": [
+            "_mitreAtlasTactic:AML.TA0012",
+            "_mitreAtlasTechnique:AML.T0054"
+        ],
+        "threat_ruleType": null,
+        "vendor_direct_ref": [],
+        "window": "CUSTOM",
+        "window_size": 60000
+    },
+    "THRESHOLD-S00125": {
+        "all_fields": [
+            "action",
+            "metadata_vendor",
+            "srcDevice_ip",
+            "user_username",
+            "user_username_role"
+        ],
+        "category": "Impact",
+        "commit_message": "TLAB-2384: AI Campaign Rules and Test Cases (#5957)",
+        "commit_origin_hash": "c67d2aa214ed689494d36064e490c343c4ffe6f7",
+        "content_type": "RULE",
+        "count_distinct": true,
+        "count_field": "resource",
+        "description": "Detection:\nThis rule triggers when a user deletes multiple AWS Bedrock Knowledge Bases within a short time period from the same source IP address. It monitors CloudTrail logs for successful DeleteKnowledgeBase API calls and excludes AWS service-linked roles,\n\nScenario:\nAn attacker who has gained access to an AWS account may attempt to disrupt AI/ML operations by mass-deleting Bedrock Knowledge Bases containing critical business data and embeddings. This destructive action causes immediate service disruption and potential data loss, requiring time-consuming restoration from backups or complete re-indexing of knowledge bases.\n\nRecommended Actions:\nVerify deletions were authorized by reviewing user_username and srcDevice_ip against known administrative activity, then check requestParameters.knowledgeBaseId to assess the scope. If unauthorized, contact the account owner to confirm and assess whether backups are needed for restoration.\n\nTuning Recommendations:\nCreate a match list named 'authorized_automation_accounts' for legitimate automation accounts performing bulk knowledge base management. Adjust the threshold from 3 to a higher value if your environment regularly performs legitimate bulk deletions during maintenance windows.",
+        "enabled_by_default": true,
+        "entity_selectors": [
+            {
+                "entity_type": "_username",
+                "expression": "user_username"
+            },
+            {
+                "entity_type": "_ip",
+                "expression": "srcDevice_ip"
+            }
+        ],
+        "expression": "metadata_vendor = 'Amazon AWS'\nAND application = 'bedrock.amazonaws.com'\nAND action = 'DeleteKnowledgeBase'\nAND NOT user_username_role MATCHES /(?i:^awsservicerolefor)/",
+        "file_path": "rules_v3/AWS_Bedrock_Knowledge_Base_Mass_Deletion.json",
+        "group_by_fields": [],
+        "id": 125,
+        "id_compiled": "THRESHOLD-S00125",
+        "is_prototype": false,
+        "limit": 3,
+        "name": "AWS Bedrock - Knowledge Base Mass Deletion",
+        "normalized_description": "Detection:\nThis rule triggers when a user deletes multiple AWS Bedrock Knowledge Bases within a short time period from the same source IP address. It monitors CloudTrail logs for successful DeleteKnowledgeBase API calls and excludes AWS service-linked roles,\n\nScenario:\nAn attacker who has gained access to an AWS account may attempt to disrupt AI/ML operations by mass-deleting Bedrock Knowledge Bases containing critical business data and embeddings. This destructive action causes immediate service disruption and potential data loss, requiring time-consuming restoration from backups or complete re-indexing of knowledge bases.\n\nRecommended Actions:\nVerify deletions were authorized by reviewing user_username and srcDevice_ip against known administrative activity, then check requestParameters.knowledgeBaseId to assess the scope. If unauthorized, contact the account owner to confirm and assess whether backups are needed for restoration.\n\nTuning Recommendations:\nCreate a match list named 'authorized_automation_accounts' for legitimate automation accounts performing bulk knowledge base management. Adjust the threshold from 3 to a higher value if your environment regularly performs legitimate bulk deletions during maintenance windows.",
+        "normalized_score_description": "Static: 2",
+        "normalized_score_possibilities": [
+            2
+        ],
+        "normalized_score_range": [
+            2,
+            2
+        ],
+        "normalized_score_type": "Static",
+        "normalized_signal_name": "AWS Bedrock - Knowledge Base Mass Deletion",
+        "normalized_summary": "User {{user_username}} from IP {{srcDevice_ip}} deleted multiple AWS Bedrock Knowledge Bases rapidly",
+        "pattern_type": "threshold",
+        "product_direct_ref": [],
+        "product_guids": [
+            "033624b0-218e-4dcb-b93f-0f1fb1806c56"
+        ],
+        "record_type_direct_ref": [],
+        "rule_description": "",
+        "rule_source": "sumo",
+        "score": 2,
+        "silent_mode": true,
+        "stream": "record",
+        "summary_expression": "User {{user_username}} from IP {{srcDevice_ip}} deleted multiple AWS Bedrock Knowledge Bases rapidly",
+        "tags": [
+            "_mitreAttackTechnique:T1485",
+            "_mitreAttackTactic:TA0040"
+        ],
+        "threat_ruleType": null,
+        "vendor_direct_ref": [
+            "Amazon AWS"
+        ],
+        "window": "T60M",
+        "window_size": 3600000
     },
     "THRESHOLD-S00514": {
         "all_fields": [
@@ -77738,8 +78384,7 @@
             "60829f4a-7acb-47d1-ad23-8424fcf83dcb",
             "7eaa4c44-5b7f-4d9e-8c1c-c4105c2b7506",
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
-            "c91067a3-e972-4a73-ac14-75df12d49cc8",
-            "eb2f69a8-8d13-447f-9859-1ad0979b4a24"
+            "c91067a3-e972-4a73-ac14-75df12d49cc8"
         ],
         "record_type_direct_ref": [],
         "rule_source": "sumo",

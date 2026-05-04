@@ -14,7 +14,7 @@ Detects repository visibility permissions being changed to allow members of an o
 |Score/Severity|Static: 3|
 |Enabled by Default|True|
 |Prototype|False|
-|Tags|_mitreAttackTactic:TA0004, _mitreAttackTactic:TA0010, _mitreAttackTactic:TA0005, _mitreAttackTechnique:T1562, _mitreAttackTechnique:T1222|
+|Tags|_mitreAttackTactic:TA0004, _mitreAttackTactic:TA0010, _mitreAttackTactic:TA0005, _mitreAttackTechnique:T1685, _mitreAttackTechnique:T1222|
 ## Vendors and Products
 - [Github - GitHub Enterprise Audit](../products/e3c8bd8b-6ed8-4332-944d-d0f5dfc462df.md)
 

@@ -14,7 +14,7 @@ Enforcing network-access controls is one of the defensive mechanisms used by clo
 |Score/Severity|Static: 3|
 |Enabled by Default|True|
 |Prototype|False|
-|Tags|_mitreAttackTactic:TA0005, _mitreAttackTechnique:T1562, _mitreAttackTechnique:T1562.007|
+|Tags|_mitreAttackTactic:TA0005, _mitreAttackTechnique:T1685, _mitreAttackTechnique:T1686.001|
 ## Vendors and Products
 - [Alibaba - ActionTrail](../products/79055042-52c8-4998-b201-bd2cd2dbca1f.md)
 

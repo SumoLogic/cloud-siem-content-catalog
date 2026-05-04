@@ -14,7 +14,7 @@ Detects diagnostic setting modifications, which include disabling certain loggin
 |Score/Severity|Static: 1|
 |Enabled by Default|True|
 |Prototype|False|
-|Tags|_mitreAttackTactic:TA0005, _mitreAttackTechnique:T1562, _mitreAttackTechnique:T1562.008, _mitreAttackTechnique:T1562.001|
+|Tags|_mitreAttackTactic:TA0005, _mitreAttackTechnique:T1685, _mitreAttackTechnique:T1685.002|
 ## Vendors and Products
 - [Microsoft - Azure](../products/a1225af5-e778-4068-a9a2-47da93d1ff24.md)
 

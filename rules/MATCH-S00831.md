@@ -14,7 +14,7 @@ Cloud environments such as Office 365 and Azure allow for collection and analysi
 |Score/Severity|Static: 6|
 |Enabled by Default|True|
 |Prototype|False|
-|Tags|_mitreAttackTactic:TA0005, _mitreAttackTechnique:T1562.008|
+|Tags|_mitreAttackTactic:TA0005, _mitreAttackTechnique:T1685.002|
 ## Vendors and Products
 - [Microsoft - Office 365](../products/d3ed003d-5ddd-4c7a-bea5-63eae6311833.md)
 

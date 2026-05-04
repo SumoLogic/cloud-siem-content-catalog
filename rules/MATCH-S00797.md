@@ -14,7 +14,7 @@ Detects Azure Event Hub deletions. Event Hubs are the primary method for logs to
 |Score/Severity|Static: 4|
 |Enabled by Default|True|
 |Prototype|False|
-|Tags|_mitreAttackTactic:TA0005, _mitreAttackTechnique:T1562, _mitreAttackTechnique:T1562.008, _mitreAttackTechnique:T1562.001|
+|Tags|_mitreAttackTactic:TA0005, _mitreAttackTechnique:T1685, _mitreAttackTechnique:T1685.002|
 ## Vendors and Products
 - [Microsoft - Azure](../products/a1225af5-e778-4068-a9a2-47da93d1ff24.md)
 

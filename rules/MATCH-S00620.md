@@ -14,7 +14,7 @@ Detect when a Cloud SQL DB has been modified.
 |Score/Severity|Static: 1|
 |Enabled by Default|True|
 |Prototype|False|
-|Tags|_mitreAttackTactic:TA0005, _mitreAttackTechnique:T1562, _mitreAttackTechnique:T1562.001|
+|Tags|_mitreAttackTactic:TA0005, _mitreAttackTechnique:T1685|
 ## Vendors and Products
 - [Google - Google Cloud Platform](../products/dcc85cfc-a698-4d09-87de-f2c723f3ad07.md)
 

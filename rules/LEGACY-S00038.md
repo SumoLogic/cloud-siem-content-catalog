@@ -8,7 +8,7 @@ This signal fires when Fortinet detects a high risk application within the envir
 |----|----|
 |Type|Match|
 |Category|Execution|
-|Apply Risk to Entities|device_ip, user_username, device_hostname|
+|Apply Risk to Entities|srcDevice_ip, user_username, device_hostname|
 |Signal Name|Fortinet High App-Risk|
 |Summary Expression|High risk application {{action}} from {{srcDevice_ip}}|
 |Score/Severity|Static: 3|
@@ -24,11 +24,11 @@ This signal fires when Fortinet detects a high risk application within the envir
 |Origin|Field|
 |----|----|
 |Normalized Schema|device_hostname|
-|Normalized Schema|device_ip|
+|Direct from Record|fields['apprisk']|
 |Normalized Schema|metadata_deviceEventId|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|
-|Normalized Schema|severity|
+|Normalized Schema|srcDevice_ip|
 |Normalized Schema|user_username|
 
 

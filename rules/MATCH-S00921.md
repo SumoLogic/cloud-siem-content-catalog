@@ -14,7 +14,7 @@ An AWS Bedrock Model invocation logging configuration change was observed. Ensur
 |Score/Severity|Static: 3|
 |Enabled by Default|True|
 |Prototype|False|
-|Tags|_mitreAttackTactic:TA0005, _mitreAttackTechnique:T1562.008|
+|Tags|_mitreAttackTactic:TA0005, _mitreAttackTechnique:T1685.002|
 ## Vendors and Products
 - [Amazon AWS - CloudTrail](../products/033624b0-218e-4dcb-b93f-0f1fb1806c56.md)
 

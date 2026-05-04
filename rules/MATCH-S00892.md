@@ -14,7 +14,7 @@ This alert looks for a value being added to an Azure Network Security Group (NSG
 |Score/Severity|Static: 2|
 |Enabled by Default|True|
 |Prototype|False|
-|Tags|_mitreAttackTactic:TA0005, _mitreAttackTechnique:T1562.007|
+|Tags|_mitreAttackTactic:TA0005, _mitreAttackTechnique:T1686.001|
 ## Vendors and Products
 - [Microsoft - Azure](../products/a1225af5-e778-4068-a9a2-47da93d1ff24.md)
 

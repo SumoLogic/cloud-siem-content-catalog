@@ -26,6 +26,8 @@
 |description|None|The static text `Sysmon observed a process changed a file creation time` is populated in this schema field.|
 |device_hostname|System.Computer||
 |file_path|TargetFilename||
+|normalizedAction|None|The static text `change` is populated in this schema field.|
+|normalizedResource|None|The static text `file` is populated in this schema field.|
 |sourceUid|System.EventRecordID||
 |timestamp|UtcTime|We expect the original record value of `UtcTime` is in the format `yyyy-MM-dd HH:mm:ss.SSS`|
 |user_userId|System.Security.UserId||

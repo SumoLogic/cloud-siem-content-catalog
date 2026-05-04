@@ -14,7 +14,7 @@ Changing the configuration of logging to any mission-critical service or platfor
 |Score/Severity|Dynamic: 1 or 2 or 4|
 |Enabled by Default|True|
 |Prototype|False|
-|Tags|_mitreAttackTactic:TA0002, _mitreAttackTactic:TA0005, _mitreAttackTechnique:T1489, _mitreAttackTechnique:T1578, _mitreAttackTechnique:T1562, _mitreAttackTechnique:T1578.004, _mitreAttackTechnique:T1562.008|
+|Tags|_mitreAttackTactic:TA0002, _mitreAttackTactic:TA0005, _mitreAttackTechnique:T1489, _mitreAttackTechnique:T1578, _mitreAttackTechnique:T1685, _mitreAttackTechnique:T1578.004, _mitreAttackTechnique:T1685.002|
 ## Vendors and Products
 - [Alibaba - ActionTrail](../products/79055042-52c8-4998-b201-bd2cd2dbca1f.md)
 

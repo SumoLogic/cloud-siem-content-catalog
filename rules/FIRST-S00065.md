@@ -55,6 +55,7 @@ First Seen rule which triggers when there are at least two successful logins fro
 - [SailPoint - SailPoint](../products/c3954250-68a0-49c3-ab6a-ef0daa95ff90.md)
 - [Slack - Slack](../products/79da6240-7617-49c8-b130-96278579766e.md)
 - [Snowflake - Snowflake](../products/8276b520-fdeb-4f79-9f5d-67865818562b.md)
+- [Teleport - Teleport](../products/46c71698-9c21-4273-9561-94ff5af52edd.md)
 - [Zendesk - Zendesk](../products/a301559a-8110-4dd0-a41d-35b9baa1c740.md)
 
 

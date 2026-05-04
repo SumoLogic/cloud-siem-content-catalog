@@ -27,6 +27,7 @@
 |MATCH-S00554|[Outbound IRC Traffic](../rules/MATCH-S00554.md)|
 |MATCH-S00683|[Overly Permissive Chmod Command](../rules/MATCH-S00683.md)|
 |MATCH-S00698|[PATH Set to Current Directory](../rules/MATCH-S00698.md)|
+|MATCH-S00356|[Suspicious Compression Tool Parameters](../rules/MATCH-S00356.md)|
 |AGGREGATION-S00004|[Suspicious K8s Enumeration](../rules/AGGREGATION-S00004.md)|
 |AGGREGATION-S00005|[Suspicious System Enumeration Occurring in Quick Succession](../rules/AGGREGATION-S00005.md)|
 |MATCH-S00886|[Suspicious chmod Execution](../rules/MATCH-S00886.md)|
