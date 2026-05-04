@@ -14,7 +14,7 @@ Observes for creation of new Windows Firewall Rule. An attacker may create new f
 |Score/Severity|Static: 1|
 |Enabled by Default|True|
 |Prototype|False|
-|Tags|_mitreAttackTactic:TA0005, _mitreAttackTechnique:T1562, _mitreAttackTechnique:T1562.001, _mitreAttackTechnique:T1562.004|
+|Tags|_mitreAttackTactic:TA0005, _mitreAttackTechnique:T1685, _mitreAttackTechnique:T1686|
 ## Vendors and Products
 - [Microsoft - Windows Firewall Management](../products/e91e068a-fe7e-45d4-98c6-1cc1e3d4d99f.md)
 - [Microsoft - Windows](../products/1ff7546c-cb36-4a24-87f7-89d2cecc5761.md)

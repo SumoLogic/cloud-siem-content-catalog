@@ -14,7 +14,7 @@ Attackers may attempt to clear the Windows Security Event Log in an effort to hi
 |Score/Severity|Static: 10|
 |Enabled by Default|True|
 |Prototype|False|
-|Tags|_mitreAttackTactic:TA0005, _mitreAttackTechnique:T1070, _mitreAttackTechnique:T1070.001, _mitreAttackTechnique:T1070.003|
+|Tags|_mitreAttackTactic:TA0005, _mitreAttackTechnique:T1070, _mitreAttackTechnique:T1685.005, _mitreAttackTechnique:T1070.003|
 ## Vendors and Products
 - [Microsoft - Windows](../products/1ff7546c-cb36-4a24-87f7-89d2cecc5761.md)
 

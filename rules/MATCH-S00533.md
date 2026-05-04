@@ -14,7 +14,7 @@ The rule looks for a Windows Security Account Manager (SAM) was stopped via comm
 |Score/Severity|Static: 4|
 |Enabled by Default|True|
 |Prototype|False|
-|Tags|_mitreAttackTactic:TA0005, _mitreAttackTechnique:T1562, _mitreAttackTechnique:T1562.001, _mitreAttackTechnique:T1562.006|
+|Tags|_mitreAttackTactic:TA0005, _mitreAttackTechnique:T1685|
 ## Vendors and Products
 - [Microsoft - Windows](../products/1ff7546c-cb36-4a24-87f7-89d2cecc5761.md)
 

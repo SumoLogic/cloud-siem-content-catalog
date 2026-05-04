@@ -14,7 +14,7 @@ Detects modifications to the GitHub Enterprise Audit Log. Modifications and dele
 |Score/Severity|Dynamic: 0 or 3 or 5|
 |Enabled by Default|True|
 |Prototype|False|
-|Tags|_mitreAttackTactic:TA0005, _mitreAttackTechnique:T1562, _mitreAttackTechnique:T1562.008|
+|Tags|_mitreAttackTactic:TA0005, _mitreAttackTechnique:T1685, _mitreAttackTechnique:T1685.002|
 ## Vendors and Products
 - [Github - GitHub Enterprise Audit](../products/e3c8bd8b-6ed8-4332-944d-d0f5dfc462df.md)
 

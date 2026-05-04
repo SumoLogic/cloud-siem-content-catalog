@@ -14,7 +14,7 @@ AWS Bedrock Guardrails provide users with the ability to configure options like 
 |Score/Severity|Static: 1|
 |Enabled by Default|True|
 |Prototype|False|
-|Tags|_mitreAttackTactic:TA0005, _mitreAttackTechnique:T1562|
+|Tags|_mitreAttackTactic:TA0005, _mitreAttackTechnique:T1685|
 ## Vendors and Products
 - [Amazon AWS - CloudTrail](../products/033624b0-218e-4dcb-b93f-0f1fb1806c56.md)
 

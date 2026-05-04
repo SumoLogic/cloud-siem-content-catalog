@@ -16,6 +16,11 @@
 |MATCH-S00458|[ADPassHunt Tool](MATCH-S00458.md)|
 |MATCH-S00307|[AWS - Excessive OAuth Application Permissions Scope](MATCH-S00307.md)|
 |MATCH-S00306|[AWS - New UserPoolClient Created](MATCH-S00306.md)|
+|FIRST-S00101|[AWS Bedrock - KB Data Source from External S3 Bucket](FIRST-S00101.md)|
+|THRESHOLD-S00125|[AWS Bedrock - Knowledge Base Mass Deletion](THRESHOLD-S00125.md)|
+|MATCH-S01151|[AWS Bedrock - Privileged Permissions Granted](MATCH-S01151.md)|
+|CHAIN-S00026|[AWS Bedrock - Privileged Policy Created and Attached](CHAIN-S00026.md)|
+|THRESHOLD-S00124|[AWS Bedrock - Rapid Guardrail Interventions](THRESHOLD-S00124.md)|
 |MATCH-S00922|[AWS Bedrock Agent Created](MATCH-S00922.md)|
 |MATCH-S00924|[AWS Bedrock Guardrail Deleted](MATCH-S00924.md)|
 |MATCH-S00923|[AWS Bedrock Model Invocation Denied for User](MATCH-S00923.md)|
@@ -626,6 +631,11 @@
 |MATCH-S00636|[Okta User Attempted to Access Unauthorized App](MATCH-S00636.md)|
 |MATCH-S00605|[OneLogin - API Credentials - New Key Created](MATCH-S00605.md)|
 |MATCH-S00609|[OneLogin - Login Failed - MFA Unsuccessful](MATCH-S00609.md)|
+|CHAIN-S00025|[OpenClaw - Installation Detected via DNS](CHAIN-S00025.md)|
+|CHAIN-S00027|[OpenClaw - Outbound Connection from Child Process](CHAIN-S00027.md)|
+|MATCH-S01149|[OpenClaw - Shell Launch by Gateway](MATCH-S01149.md)|
+|MATCH-S01152|[OpenClaw - Skill Installed Out-of-Band](MATCH-S01152.md)|
+|MATCH-S01150|[Openclaw - Activity on Default Port](MATCH-S01150.md)|
 |MATCH-S00556|[Outbound Data Transfer Protocol Over Non-standard Port](MATCH-S00556.md)|
 |MATCH-S00554|[Outbound IRC Traffic](MATCH-S00554.md)|
 |LEGACY-S00056|[Outbound TFTP Traffic](LEGACY-S00056.md)|

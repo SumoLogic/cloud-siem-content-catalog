@@ -791,8 +791,8 @@
         "uid": "01f2e102-e6d5-477c-abcb-71cc5c936442"
     },
     "02081dfa-0f4c-4047-97b2-0ece2974edb3": {
-        "commit_message": "TLAB-2162 Add more normalized fields for Sysmon/Azure (#5826)",
-        "commit_origin_hash": "5a60733cc998e883cd4e9336310e2b69aba64805",
+        "commit_message": "TLAB-2571: ensure normalizedAction and normalizedResource fields populated in Linux/Windows Sysmon parsers (#5953)",
+        "commit_origin_hash": "093990e5f19609a4c1dd4cc1c8b374fc11ddba92",
         "field_mappings": {
             "action": {
                 "value": "ClipboardChange",
@@ -822,6 +822,10 @@
             },
             "normalizedAction": {
                 "value": "change",
+                "value_type": "constant"
+            },
+            "normalizedResource": {
+                "value": "operating system",
                 "value_type": "constant"
             },
             "pid": {
@@ -2690,26 +2694,60 @@
         "uid": "056fef7d-6b70-4163-be8b-373b43cd7225"
     },
     "058c85f4-1e48-44be-9624-99503c435705": {
-        "commit_message": "TLAB-2510: added alternate value for in and out bytes for fortinet (#5934)",
-        "commit_origin_hash": "b08875959c16d92e38df42c1d232933f2767fe7a",
+        "commit_message": "TLAB-2550: Removed Redundant Mapping for Fortinet (#5959)",
+        "commit_origin_hash": "28133809e6740b04a16f36503c62c7f025da976d",
         "field_mappings": {
             "action": {
                 "value": "action"
             },
             "description": {
-                "value": "logdesc"
+                "value": "msg"
             },
-            "device_ip": {
-                "value": "srcip"
+            "device_hostname": {
+                "value": "devname"
+            },
+            "device_uniqueId": {
+                "value": "devid"
             },
             "dstDevice_ip": {
                 "value": "dstip"
             },
             "dstPort": {
-                "value": "dst_nat_port"
+                "value": "dstport"
+            },
+            "normalizedAction": {
+                "lookup": {
+                    "receive": "receive"
+                },
+                "value": "action",
+                "value_type": "lookup"
+            },
+            "normalizedSeverity": {
+                "alternate_values": [
+                    "level"
+                ],
+                "lookup": {
+                    "alert": "9",
+                    "critical": "10",
+                    "error": "7",
+                    "high": "8",
+                    "information": "0",
+                    "low": "1",
+                    "medium": "5",
+                    "notice": "2",
+                    "warning": "6"
+                },
+                "value": "severity",
+                "value_type": "lookup"
+            },
+            "sessionId": {
+                "value": "session_id"
             },
             "severity": {
-                "value": "alert"
+                "alternate_values": [
+                    "level"
+                ],
+                "value": "severity"
             },
             "srcDevice_ip": {
                 "value": "srcip"
@@ -3927,8 +3965,8 @@
         "uid": "093f1178-2597-4a3b-8c6b-6b19f587781f"
     },
     "09680309-ab63-486a-b3b0-70c2e2f28459": {
-        "commit_message": "TLAB-2510: added alternate value for in and out bytes for fortinet (#5934)",
-        "commit_origin_hash": "b08875959c16d92e38df42c1d232933f2767fe7a",
+        "commit_message": "TLAB-2550: Removed Redundant Mapping for Fortinet (#5959)",
+        "commit_origin_hash": "28133809e6740b04a16f36503c62c7f025da976d",
         "field_mappings": {
             "action": {
                 "value": "act"
@@ -3936,11 +3974,32 @@
             "description": {
                 "value": "msg"
             },
-            "device_ip": {
-                "value": "src"
+            "normalizedSeverity": {
+                "alternate_values": [
+                    "level"
+                ],
+                "lookup": {
+                    "alert": "9",
+                    "critical": "10",
+                    "error": "7",
+                    "high": "8",
+                    "information": "0",
+                    "low": "1",
+                    "medium": "5",
+                    "notice": "2",
+                    "warning": "6"
+                },
+                "value": "severity",
+                "value_type": "lookup"
             },
             "severity": {
+                "alternate_values": [
+                    "level"
+                ],
                 "value": "severity"
+            },
+            "srcDevice_ip": {
+                "value": "src"
             },
             "timestamp": {
                 "format": "MM dd yyyy HH:mm:ss",
@@ -5233,9 +5292,13 @@
         "uid": "0b02715e-e7c2-43c5-ab11-c02f51b5d63c"
     },
     "0b27b51c-7656-4812-b9c6-4d565c244eaa": {
-        "commit_message": "TLAB-2162 Add more normalized fields for Sysmon/Azure (#5826)",
-        "commit_origin_hash": "5a60733cc998e883cd4e9336310e2b69aba64805",
+        "commit_message": "TLAB-2578: add device_hostname map to EVID 3 for sysmon linux (#5964)",
+        "commit_origin_hash": "8685e737f76b07583ffd5e5d99388ada6792e767",
         "field_mappings": {
+            "action": {
+                "value": "DriverLoad",
+                "value_type": "constant"
+            },
             "description": {
                 "value": "Sysmon observed driver load",
                 "value_type": "constant"
@@ -5248,6 +5311,14 @@
             },
             "file_path": {
                 "value": "ImageLoaded"
+            },
+            "normalizedAction": {
+                "value": "load",
+                "value_type": "constant"
+            },
+            "normalizedResource": {
+                "value": "operating system",
+                "value_type": "constant"
             },
             "sourceUid": {
                 "value": "System.EventRecordID"
@@ -5767,8 +5838,8 @@
         "uid": "0be30e98-4e72-4439-b2ee-254130962693"
     },
     "0be697c1-8ec8-44d0-aaf3-cfdf5bcc530f": {
-        "commit_message": "TLAB-2162 Add more normalized fields for Sysmon/Azure (#5826)",
-        "commit_origin_hash": "5a60733cc998e883cd4e9336310e2b69aba64805",
+        "commit_message": "TLAB-2571: ensure normalizedAction and normalizedResource fields populated in Linux/Windows Sysmon parsers (#5953)",
+        "commit_origin_hash": "093990e5f19609a4c1dd4cc1c8b374fc11ddba92",
         "field_mappings": {
             "action": {
                 "value": "PipeCreated",
@@ -5789,6 +5860,10 @@
             },
             "normalizedAction": {
                 "value": "create",
+                "value_type": "constant"
+            },
+            "normalizedResource": {
+                "value": "operating system",
                 "value_type": "constant"
             },
             "pid": {
@@ -7901,8 +7976,8 @@
         "uid": "104cdeac-1041-24e8-10c1-ga7ae01bceb8"
     },
     "10696f30-7c13-4000-94d0-6a5dd69b229e": {
-        "commit_message": "TLAB-2510: added alternate value for in and out bytes for fortinet (#5934)",
-        "commit_origin_hash": "b08875959c16d92e38df42c1d232933f2767fe7a",
+        "commit_message": "Fortigate Minor fix (#5968)",
+        "commit_origin_hash": "b424ebe7fa6c777f4182f2057baa0f62a1c3e28e",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -8794,8 +8869,8 @@
         "uid": "11acde72-ed1c-44e6-8fd5-61debaf06512"
     },
     "11b22c7c-ab5f-4be4-8d92-fa3ca3fcce26": {
-        "commit_message": "TLAB-2162 Add more normalized fields for Sysmon/Azure (#5826)",
-        "commit_origin_hash": "5a60733cc998e883cd4e9336310e2b69aba64805",
+        "commit_message": "TLAB-2571: ensure normalizedAction and normalizedResource fields populated in Linux/Windows Sysmon parsers (#5953)",
+        "commit_origin_hash": "093990e5f19609a4c1dd4cc1c8b374fc11ddba92",
         "field_mappings": {
             "action": {
                 "value": "Process Access",
@@ -8816,6 +8891,10 @@
             },
             "normalizedAction": {
                 "value": "access",
+                "value_type": "constant"
+            },
+            "normalizedResource": {
+                "value": "process",
                 "value_type": "constant"
             },
             "sourceUid": {
@@ -9249,8 +9328,8 @@
         "uid": "133693bc-6568-4d76-a807-caf45cf3419e"
     },
     "14bbc391-9cb4-40df-aa8e-a37b73b2a15a": {
-        "commit_message": "TLAB-2162 Add more normalized fields for Sysmon/Azure (#5826)",
-        "commit_origin_hash": "5a60733cc998e883cd4e9336310e2b69aba64805",
+        "commit_message": "TLAB-2571: ensure normalizedAction and normalizedResource fields populated in Linux/Windows Sysmon parsers (#5953)",
+        "commit_origin_hash": "093990e5f19609a4c1dd4cc1c8b374fc11ddba92",
         "field_mappings": {
             "action": {
                 "value": "NetworkConnect",
@@ -9276,8 +9355,15 @@
                 "value": "EventData.Image"
             },
             "normalizedAction": {
-                "value": "create",
-                "value_type": "lookup"
+                "value": "start",
+                "value_type": "constant"
+            },
+            "normalizedResource": {
+                "value": "network",
+                "value_type": "constant"
+            },
+            "pid": {
+                "value": "EventData.ProcessId"
             },
             "srcDevice_hostname": {
                 "value": "EventData.SourceHostname"
@@ -10328,8 +10414,8 @@
         "uid": "172b6f9d-b1ec-4a90-9a36-02cb395b9147"
     },
     "1747f54c-cbbc-492b-a7b6-1396c343f5ef": {
-        "commit_message": "TLAB-2162 Add more normalized fields for Sysmon/Azure (#5826)",
-        "commit_origin_hash": "5a60733cc998e883cd4e9336310e2b69aba64805",
+        "commit_message": "TLAB-2571: ensure normalizedAction and normalizedResource fields populated in Linux/Windows Sysmon parsers (#5953)",
+        "commit_origin_hash": "093990e5f19609a4c1dd4cc1c8b374fc11ddba92",
         "field_mappings": {
             "action": {
                 "value": "CreateRemoteThread",
@@ -10350,6 +10436,10 @@
             },
             "normalizedAction": {
                 "value": "create",
+                "value_type": "constant"
+            },
+            "normalizedResource": {
+                "value": "process",
                 "value_type": "constant"
             },
             "pid": {
@@ -11270,14 +11360,18 @@
         "uid": "18615b96-a972-11ea-bb37-0242ac130002"
     },
     "186bcb86-9ac2-43ae-8e26-0bed2367d737": {
-        "commit_message": "TLAB-2162 Add more normalized fields for Sysmon/Azure (#5826)",
-        "commit_origin_hash": "5a60733cc998e883cd4e9336310e2b69aba64805",
+        "commit_message": "TLAB-2578: add device_hostname map to EVID 3 for sysmon linux (#5964)",
+        "commit_origin_hash": "8685e737f76b07583ffd5e5d99388ada6792e767",
         "field_mappings": {
+            "action": {
+                "value": "ServiceConfigurationChange",
+                "value_type": "constant"
+            },
             "changeTarget": {
                 "value": "ConfigurationFileHash"
             },
             "description": {
-                "value": "FileDelete (File Delete archived)",
+                "value": "ServiceConfigurationChange (Sysmon Confguration Change)",
                 "value_type": "constant"
             },
             "device_hostname": {
@@ -11285,6 +11379,14 @@
             },
             "file_hash_sha256": {
                 "value": "Hashes"
+            },
+            "normalizedAction": {
+                "value": "change",
+                "value_type": "constant"
+            },
+            "normalizedResource": {
+                "value": "service",
+                "value_type": "constant"
             },
             "pid": {
                 "value": "System.Execution.ProcessID"
@@ -11843,8 +11945,8 @@
         "uid": "1929a11a-b312-4bd3-9f80-a152c1c7182b"
     },
     "19410c41-18a3-4aa5-96c3-d6cd18110a72": {
-        "commit_message": "TLAB-2162 Add more normalized fields for Sysmon/Azure (#5826)",
-        "commit_origin_hash": "5a60733cc998e883cd4e9336310e2b69aba64805",
+        "commit_message": "TLAB-2578: add device_hostname map to EVID 3 for sysmon linux (#5964)",
+        "commit_origin_hash": "8685e737f76b07583ffd5e5d99388ada6792e767",
         "field_mappings": {
             "action": {
                 "value": "FileCreateStreamHash",
@@ -11865,6 +11967,14 @@
             },
             "file_path": {
                 "value": "TargetFilename"
+            },
+            "normalizedAction": {
+                "value": "create",
+                "value_type": "constant"
+            },
+            "normalizedResource": {
+                "value": "file",
+                "value_type": "constant"
             },
             "sourceUid": {
                 "value": "System.EventRecordID"
@@ -15406,8 +15516,8 @@
         "uid": "1ee636b5-3f41-4d0e-8923-d371a4c72adb"
     },
     "1ee83b22-2ec5-4bc8-8a1f-dd6d951cd6b1": {
-        "commit_message": "TLAB-2162 Add more normalized fields for Sysmon/Azure (#5826)",
-        "commit_origin_hash": "5a60733cc998e883cd4e9336310e2b69aba64805",
+        "commit_message": "TLAB-2571: ensure normalizedAction and normalizedResource fields populated in Linux/Windows Sysmon parsers (#5953)",
+        "commit_origin_hash": "093990e5f19609a4c1dd4cc1c8b374fc11ddba92",
         "field_mappings": {
             "action": {
                 "value": "Process Termination",
@@ -15425,6 +15535,10 @@
             },
             "normalizedAction": {
                 "value": "stop",
+                "value_type": "constant"
+            },
+            "normalizedResource": {
+                "value": "process",
                 "value_type": "constant"
             },
             "pid": {
@@ -20350,8 +20464,8 @@
         "uid": "28e0fc3f-fe14-4f41-9c9a-1603f9eef9bd"
     },
     "2978cae1-75f9-4117-b8d8-30e757ca7867": {
-        "commit_message": "TLAB-2162 Add more normalized fields for Sysmon/Azure (#5826)",
-        "commit_origin_hash": "5a60733cc998e883cd4e9336310e2b69aba64805",
+        "commit_message": "TLAB-2571: ensure normalizedAction and normalizedResource fields populated in Linux/Windows Sysmon parsers (#5953)",
+        "commit_origin_hash": "093990e5f19609a4c1dd4cc1c8b374fc11ddba92",
         "field_mappings": {
             "action": {
                 "value": "FileCreateStreamHash",
@@ -20384,6 +20498,10 @@
             },
             "normalizedAction": {
                 "value": "create",
+                "value_type": "constant"
+            },
+            "normalizedResource": {
+                "value": "file",
                 "value_type": "constant"
             },
             "normalizedSeverity": {
@@ -22710,9 +22828,13 @@
         "uid": "2d51b1e4-02fd-471c-a423-9cda9eb3cda5"
     },
     "2d8a8585-9f03-4668-9e97-fa7b6853accc": {
-        "commit_message": "TLAB-2162 Add more normalized fields for Sysmon/Azure (#5826)",
-        "commit_origin_hash": "5a60733cc998e883cd4e9336310e2b69aba64805",
+        "commit_message": "TLAB-2578: add device_hostname map to EVID 3 for sysmon linux (#5964)",
+        "commit_origin_hash": "8685e737f76b07583ffd5e5d99388ada6792e767",
         "field_mappings": {
+            "action": {
+                "value": "FileDelete",
+                "value_type": "constant"
+            },
             "changeTarget": {
                 "value": "TargetFilename"
             },
@@ -22725,6 +22847,14 @@
             },
             "file_path": {
                 "value": "TargetFilename"
+            },
+            "normalizedAction": {
+                "value": "delete",
+                "value_type": "constant"
+            },
+            "normalizedResource": {
+                "value": "file",
+                "value_type": "constant"
             },
             "pid": {
                 "value": "ProcessId"
@@ -24500,102 +24630,6 @@
         "source": "jask",
         "uid": "2fccc17b-4b0e-4507-9399-86b45d1014cd"
     },
-    "3050a2a8-5225-4fb2-a758-377f835f010c": {
-        "commit_message": "TLAB-2510: added alternate value for in and out bytes for fortinet (#5934)",
-        "commit_origin_hash": "b08875959c16d92e38df42c1d232933f2767fe7a",
-        "field_mappings": {
-            "action": {
-                "value": "action"
-            },
-            "bytesIn": {
-                "alternate_values": [
-                    "rcvdbyte",
-                    "in"
-                ],
-                "value": "rcvddelta"
-            },
-            "bytesOut": {
-                "alternate_values": [
-                    "sentbyte",
-                    "out"
-                ],
-                "value": "sentdelta"
-            },
-            "dstDevice_ip": {
-                "value": "dstip"
-            },
-            "dstPort": {
-                "value": "dstport"
-            },
-            "flowState": {
-                "value": "action"
-            },
-            "ipProtocol": {
-                "default_value": "Unknown",
-                "lookup": {
-                    "1": "ICMP",
-                    "17": "UDP",
-                    "2": "IGMP",
-                    "4": "IPv4",
-                    "41": "IPv6",
-                    "6": "TCP"
-                },
-                "value": "proto",
-                "value_type": "lookup"
-            },
-            "packetsIn": {
-                "alternate_values": [
-                    "rcvdpkt"
-                ],
-                "value": "rcvdpktdelta"
-            },
-            "packetsOut": {
-                "alternate_values": [
-                    "sentpkt"
-                ],
-                "value": "sentpktdelta"
-            },
-            "srcDevice_ip": {
-                "value": "srcip"
-            },
-            "srcPort": {
-                "value": "srcport"
-            },
-            "success": {
-                "default_value": "true",
-                "lookup": {
-                    "allow": "true",
-                    "deny": "false",
-                    "start": "true"
-                },
-                "value": "action",
-                "value_type": "lookup"
-            },
-            "timestamp": {
-                "format": "epoch",
-                "value": "eventtime",
-                "value_type": "time"
-            }
-        },
-        "file_path": "mappings_schemav3/fortinet.yaml",
-        "input": {
-            "event_id_pattern": "forward",
-            "log_format": "JSON",
-            "product": "fortinet",
-            "vendor": "fortinet"
-        },
-        "name": "Fortinet Traffic2",
-        "output": {
-            "product_guid": "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
-            "record_type": "NetworkFlow"
-        },
-        "skipped_values": [
-            ",",
-            "-"
-        ],
-        "source": "jask",
-        "uid": "3050a2a8-5225-4fb2-a758-377f835f010c"
-    },
     "3059a962-1a71-4daa-a7b7-47b2d7e321e0": {
         "commit_message": "TRIDENT-16561 AWS Mapper Normalization",
         "commit_origin_hash": "99630529c7e32b193cb7add5590bcf9dd5e5e727",
@@ -24741,8 +24775,8 @@
         "uid": "30ad6036-4470-46cb-96d8-db4cc457672d"
     },
     "30db4a1f-857e-48e2-a91f-97c0fbf3edd4": {
-        "commit_message": "TLAB-2162 Add more normalized fields for Sysmon/Azure (#5826)",
-        "commit_origin_hash": "5a60733cc998e883cd4e9336310e2b69aba64805",
+        "commit_message": "TLAB-2571: ensure normalizedAction and normalizedResource fields populated in Linux/Windows Sysmon parsers (#5953)",
+        "commit_origin_hash": "093990e5f19609a4c1dd4cc1c8b374fc11ddba92",
         "field_mappings": {
             "action": {
                 "value": "ProcessTampering",
@@ -24763,6 +24797,14 @@
             },
             "device_hostname": {
                 "value": "Computer"
+            },
+            "normalizedAction": {
+                "value": "change",
+                "value_type": "constant"
+            },
+            "normalizedResource": {
+                "value": "process",
+                "value_type": "constant"
             },
             "pid": {
                 "value": "EventData.ProcessId"
@@ -25805,8 +25847,8 @@
         "uid": "32325f4b-d00f-4823-aee1-9b79dd5aa10c"
     },
     "3260e43c-8339-4240-a840-ed34fc253071": {
-        "commit_message": "TLAB-2162 Add more normalized fields for Sysmon/Azure (#5826)",
-        "commit_origin_hash": "5a60733cc998e883cd4e9336310e2b69aba64805",
+        "commit_message": "TLAB-2571: ensure normalizedAction and normalizedResource fields populated in Linux/Windows Sysmon parsers (#5953)",
+        "commit_origin_hash": "093990e5f19609a4c1dd4cc1c8b374fc11ddba92",
         "field_mappings": {
             "action": {
                 "value": "EventData.State"
@@ -25820,6 +25862,10 @@
             },
             "normalizedAction": {
                 "value": "change",
+                "value_type": "constant"
+            },
+            "normalizedResource": {
+                "value": "service",
                 "value_type": "constant"
             },
             "sourceUid": {
@@ -27810,8 +27856,8 @@
         "uid": "3952b643-4001-483e-bc06-8f8faf264262"
     },
     "395cd159-b7f7-490e-a3e6-5cec43c26739": {
-        "commit_message": "TLAB-2162 Add more normalized fields for Sysmon/Azure (#5826)",
-        "commit_origin_hash": "5a60733cc998e883cd4e9336310e2b69aba64805",
+        "commit_message": "TLAB-2571: ensure normalizedAction and normalizedResource fields populated in Linux/Windows Sysmon parsers (#5953)",
+        "commit_origin_hash": "093990e5f19609a4c1dd4cc1c8b374fc11ddba92",
         "field_mappings": {
             "action": {
                 "value": "FileDeleteDetected",
@@ -27847,6 +27893,10 @@
             },
             "normalizedAction": {
                 "value": "delete",
+                "value_type": "constant"
+            },
+            "normalizedResource": {
+                "value": "file",
                 "value_type": "constant"
             },
             "pid": {
@@ -31390,8 +31440,8 @@
         "uid": "413ab068-bb63-4da9-9a11-3907d0d76375"
     },
     "4149aadf-b757-44fd-8a28-9ecc1dc39a78": {
-        "commit_message": "TLAB-2162 Add more normalized fields for Sysmon/Azure (#5826)",
-        "commit_origin_hash": "5a60733cc998e883cd4e9336310e2b69aba64805",
+        "commit_message": "TLAB-2571: ensure normalizedAction and normalizedResource fields populated in Linux/Windows Sysmon parsers (#5953)",
+        "commit_origin_hash": "093990e5f19609a4c1dd4cc1c8b374fc11ddba92",
         "field_mappings": {
             "action": {
                 "value": "FileCreate",
@@ -31726,8 +31776,8 @@
         "uid": "4253e8d2-515f-475c-9831-3fba07c3d3dc"
     },
     "42656056-8445-4313-ba3e-56913a21cd3f": {
-        "commit_message": "TLAB-2162 Add more normalized fields for Sysmon/Azure (#5826)",
-        "commit_origin_hash": "5a60733cc998e883cd4e9336310e2b69aba64805",
+        "commit_message": "TLAB-2571: ensure normalizedAction and normalizedResource fields populated in Linux/Windows Sysmon parsers (#5953)",
+        "commit_origin_hash": "093990e5f19609a4c1dd4cc1c8b374fc11ddba92",
         "field_mappings": {
             "action": {
                 "value": "RawAccessRead",
@@ -31745,6 +31795,10 @@
             },
             "normalizedAction": {
                 "value": "access",
+                "value_type": "constant"
+            },
+            "normalizedResource": {
+                "value": "file",
                 "value_type": "constant"
             },
             "pid": {
@@ -31904,8 +31958,8 @@
         "uid": "42710bf7-5cb5-4964-b063-b00e7b2f3048"
     },
     "427c3ec5-0320-41f2-b069-e15cd08eefd0": {
-        "commit_message": "TLAB-2162 Add more normalized fields for Sysmon/Azure (#5826)",
-        "commit_origin_hash": "5a60733cc998e883cd4e9336310e2b69aba64805",
+        "commit_message": "TLAB-2578: add device_hostname map to EVID 3 for sysmon linux (#5964)",
+        "commit_origin_hash": "8685e737f76b07583ffd5e5d99388ada6792e767",
         "field_mappings": {
             "action": {
                 "value": "FileCreate",
@@ -32420,8 +32474,8 @@
         "uid": "4327be0d-8c60-4108-9a00-930ff3c4ad8f"
     },
     "43c65978-aeee-4050-9dde-4796f910b7f0": {
-        "commit_message": "TLAB-2547: Added mapper for Bedrock  DeleteKnowledgeBase events (#5947)",
-        "commit_origin_hash": "74f01f1ee1f4f3a9d957be2eba017fc3c5954407",
+        "commit_message": "TLAB-2572: Remove device_ip mapping from CloudTrail - bedrock.amazonaws.com - DeleteKnowledgeBase mapper (#5954)",
+        "commit_origin_hash": "7b12d2953b4543e29a4ccd77028527010dec65bb",
         "field_mappings": {
             "accountId": {
                 "value": "userIdentity.accountId"
@@ -32449,9 +32503,6 @@
             "description": {
                 "value": "A request to delete a knowledge base in Amazon Bedrock was made",
                 "value_type": "constant"
-            },
-            "device_ip": {
-                "value": "sourceIPAddress"
             },
             "http_userAgent": {
                 "value": "userAgent"
@@ -34150,9 +34201,13 @@
         "uid": "4814f428-4f9b-4b25-b1f2-b14c124aa2b7"
     },
     "4844d90e-5bea-4473-b9d5-39bba4b0d829": {
-        "commit_message": "TLAB-2162 Add more normalized fields for Sysmon/Azure (#5826)",
-        "commit_origin_hash": "5a60733cc998e883cd4e9336310e2b69aba64805",
+        "commit_message": "TLAB-2578: add device_hostname map to EVID 3 for sysmon linux (#5964)",
+        "commit_origin_hash": "8685e737f76b07583ffd5e5d99388ada6792e767",
         "field_mappings": {
+            "action": {
+                "value": "ProcessCreate",
+                "value_type": "constant"
+            },
             "baseImage": {
                 "value": "Image"
             },
@@ -34168,6 +34223,14 @@
             },
             "file_hash_sha256": {
                 "value": "Hashes"
+            },
+            "normalizedAction": {
+                "value": "create",
+                "value_type": "constant"
+            },
+            "normalizedResource": {
+                "value": "process",
+                "value_type": "constant"
             },
             "parentBaseImage": {
                 "value": "ParentImage"
@@ -34592,8 +34655,8 @@
         "uid": "497f325f-2dfe-4ac5-92ab-a0a209aba2f4"
     },
     "4986836c-1759-422b-b5c4-8a548f18616b": {
-        "commit_message": "TLAB-2510: added alternate value for in and out bytes for fortinet (#5934)",
-        "commit_origin_hash": "b08875959c16d92e38df42c1d232933f2767fe7a",
+        "commit_message": "TLAB-2550: Removed Redundant Mapping for Fortinet (#5959)",
+        "commit_origin_hash": "28133809e6740b04a16f36503c62c7f025da976d",
         "field_mappings": {
             "action": {
                 "value": "act"
@@ -34607,14 +34670,35 @@
             "device_hostname": {
                 "value": "dvchost"
             },
-            "device_ip": {
+            "dstDevice_ip": {
                 "value": "dst"
             },
             "normalizedAction": {
                 "value": "logon",
                 "value_type": "constant"
             },
+            "normalizedSeverity": {
+                "alternate_values": [
+                    "level"
+                ],
+                "lookup": {
+                    "alert": "9",
+                    "critical": "10",
+                    "error": "7",
+                    "high": "8",
+                    "information": "0",
+                    "low": "1",
+                    "medium": "5",
+                    "notice": "2",
+                    "warning": "6"
+                },
+                "value": "severity",
+                "value_type": "lookup"
+            },
             "severity": {
+                "alternate_values": [
+                    "level"
+                ],
                 "value": "severity"
             },
             "srcDevice_ip": {
@@ -35564,8 +35648,8 @@
         "uid": "4b26f2f7-58d0-4e03-b098-af90bde8958b"
     },
     "4bdfea94-414c-4c6b-88ff-a3e8bce8c46c": {
-        "commit_message": "TLAB-666: Removed Session Logs of Citrix Cloud",
-        "commit_origin_hash": "e92a6fc1fecdc960be1a044c942b9e9e5fcda919",
+        "commit_message": "TLAB-2509: added mapping for session logs (#5952)",
+        "commit_origin_hash": "f7b9a0e91c73f4682158729390715dc68ac500a8",
         "field_mappings": {
             "action": {
                 "value": "OperationType"
@@ -38121,81 +38205,6 @@
         "source": "jask",
         "uid": "50febf8f-5d62-46af-bc91-c4b04510a106"
     },
-    "51c8831d-b344-4daf-b0ee-36e5914526e3": {
-        "commit_message": "TLAB-2510: added alternate value for in and out bytes for fortinet (#5934)",
-        "commit_origin_hash": "b08875959c16d92e38df42c1d232933f2767fe7a",
-        "field_mappings": {
-            "action": {
-                "value": "action"
-            },
-            "description": {
-                "value": "msg"
-            },
-            "device_hostname": {
-                "value": "devname"
-            },
-            "dns_query": {
-                "value": "qname"
-            },
-            "dns_queryType": {
-                "value": "qtype"
-            },
-            "dstDevice_ip": {
-                "value": "dstip"
-            },
-            "dstPort": {
-                "value": "dstport"
-            },
-            "ipProtocol": {
-                "default_value": "Unknown",
-                "lookup": {
-                    "1": "ICMP",
-                    "17": "UDP",
-                    "2": "IGMP",
-                    "4": "IPv4",
-                    "41": "IPv6",
-                    "6": "TCP"
-                },
-                "value": "proto",
-                "value_type": "lookup"
-            },
-            "severity": {
-                "value": "level"
-            },
-            "srcDevice_ip": {
-                "value": "srcip"
-            },
-            "srcDevice_mac": {
-                "value": "srcmac"
-            },
-            "srcPort": {
-                "value": "srcip"
-            },
-            "timestamp": {
-                "format": "epoch",
-                "value": "eventtime",
-                "value_type": "time"
-            }
-        },
-        "file_path": "mappings_schemav3/fortinet.yaml",
-        "input": {
-            "event_id_pattern": "dns",
-            "log_format": "JSON",
-            "product": "fortinet",
-            "vendor": "fortinet"
-        },
-        "name": "Fortinet dns Logs",
-        "output": {
-            "product_guid": "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
-            "record_type": "NetworkDNS"
-        },
-        "skipped_values": [
-            ",",
-            "-"
-        ],
-        "source": "jask",
-        "uid": "51c8831d-b344-4daf-b0ee-36e5914526e3"
-    },
     "51fc547b-95b6-432f-bf2a-0ddec766cad2": {
         "commit_message": "TLAB-2421 OpenAI and Claude Code mappers (#5915)",
         "commit_origin_hash": "0dc7d128b4b7a05c44c0423fe2cd8df3184ba7bc",
@@ -39671,8 +39680,8 @@
         "uid": "5406ec15-2203-460b-bd6e-ea8facf33082"
     },
     "54198319-5c3b-4897-a857-be82962cfd00": {
-        "commit_message": "TLAB-2510: added alternate value for in and out bytes for fortinet (#5934)",
-        "commit_origin_hash": "b08875959c16d92e38df42c1d232933f2767fe7a",
+        "commit_message": "TLAB-2550: Removed Redundant Mapping for Fortinet (#5959)",
+        "commit_origin_hash": "28133809e6740b04a16f36503c62c7f025da976d",
         "field_mappings": {
             "description": {
                 "value": "logdesc"
@@ -39680,8 +39689,32 @@
             "device_hostname": {
                 "value": "devname"
             },
+            "device_uniqueId": {
+                "value": "devid"
+            },
+            "normalizedSeverity": {
+                "alternate_values": [
+                    "level"
+                ],
+                "lookup": {
+                    "alert": "9",
+                    "critical": "10",
+                    "error": "7",
+                    "high": "8",
+                    "information": "0",
+                    "low": "1",
+                    "medium": "5",
+                    "notice": "2",
+                    "warning": "6"
+                },
+                "value": "severity",
+                "value_type": "lookup"
+            },
             "severity": {
-                "value": "level"
+                "alternate_values": [
+                    "level"
+                ],
+                "value": "severity"
             },
             "timestamp": {
                 "format": "epoch",
@@ -42048,8 +42081,8 @@
         "uid": "5867c69d-aa70-49b3-a9dd-9247c1408074"
     },
     "58804909-751c-4398-8d10-7c0a1de5714c": {
-        "commit_message": "TLAB-2162 Add more normalized fields for Sysmon/Azure (#5826)",
-        "commit_origin_hash": "5a60733cc998e883cd4e9336310e2b69aba64805",
+        "commit_message": "TLAB-2571: ensure normalizedAction and normalizedResource fields populated in Linux/Windows Sysmon parsers (#5953)",
+        "commit_origin_hash": "093990e5f19609a4c1dd4cc1c8b374fc11ddba92",
         "field_mappings": {
             "action": {
                 "value": "DriverLoad",
@@ -42079,6 +42112,10 @@
             },
             "normalizedAction": {
                 "value": "load",
+                "value_type": "constant"
+            },
+            "normalizedResource": {
+                "value": "operating system",
                 "value_type": "constant"
             },
             "sourceUid": {
@@ -42116,8 +42153,8 @@
         "uid": "58804909-751c-4398-8d10-7c0a1de5714c"
     },
     "589ba074-03f8-49e1-91f2-812e8037f02c": {
-        "commit_message": "TLAB-2162 Add more normalized fields for Sysmon/Azure (#5826)",
-        "commit_origin_hash": "5a60733cc998e883cd4e9336310e2b69aba64805",
+        "commit_message": "TLAB-2571: ensure normalizedAction and normalizedResource fields populated in Linux/Windows Sysmon parsers (#5953)",
+        "commit_origin_hash": "093990e5f19609a4c1dd4cc1c8b374fc11ddba92",
         "field_mappings": {
             "action": {
                 "value": "FileBlockExecutable",
@@ -42141,6 +42178,10 @@
             },
             "normalizedAction": {
                 "value": "disable",
+                "value_type": "constant"
+            },
+            "normalizedResource": {
+                "value": "file",
                 "value_type": "constant"
             },
             "pid": {
@@ -45847,8 +45888,8 @@
         "uid": "6216f49a-14e7-4fc9-afc7-0a8163e4bde9"
     },
     "621c0480-bc2e-4086-8ef8-a74a3ae45c65": {
-        "commit_message": "TLAB-2510: added alternate value for in and out bytes for fortinet (#5934)",
-        "commit_origin_hash": "b08875959c16d92e38df42c1d232933f2767fe7a",
+        "commit_message": "Fortigate Minor fix (#5968)",
+        "commit_origin_hash": "b424ebe7fa6c777f4182f2057baa0f62a1c3e28e",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -46884,8 +46925,8 @@
         "uid": "6411d15f-13c6-41eb-88a9-e565563943e6"
     },
     "6425b13a-0242-4dba-ab72-002747e1aa05": {
-        "commit_message": "TLAB-2162 Add more normalized fields for Sysmon/Azure (#5826)",
-        "commit_origin_hash": "5a60733cc998e883cd4e9336310e2b69aba64805",
+        "commit_message": "TLAB-2578: add device_hostname map to EVID 3 for sysmon linux (#5964)",
+        "commit_origin_hash": "8685e737f76b07583ffd5e5d99388ada6792e767",
         "field_mappings": {
             "action": {
                 "value": "CreateRemoteThread",
@@ -46903,6 +46944,14 @@
             },
             "file_path": {
                 "value": "TargetImage"
+            },
+            "normalizedAction": {
+                "value": "create",
+                "value_type": "constant"
+            },
+            "normalizedResource": {
+                "value": "process",
+                "value_type": "constant"
             },
             "pid": {
                 "value": "System.Execution.ProcessID"
@@ -51427,8 +51476,8 @@
         "uid": "701febb4-9985-4cfa-b07e-174b5610ade3"
     },
     "703f7d62-a28f-4f57-8df7-684d6af19a1c": {
-        "commit_message": "TLAB-2162 Add more normalized fields for Sysmon/Azure (#5826)",
-        "commit_origin_hash": "5a60733cc998e883cd4e9336310e2b69aba64805",
+        "commit_message": "TLAB-2578: add device_hostname map to EVID 3 for sysmon linux (#5964)",
+        "commit_origin_hash": "8685e737f76b07583ffd5e5d99388ada6792e767",
         "field_mappings": {
             "action": {
                 "value": "PipeConnected",
@@ -51443,6 +51492,14 @@
             },
             "device_hostname": {
                 "value": "System.Computer"
+            },
+            "normalizedAction": {
+                "value": "create",
+                "value_type": "constant"
+            },
+            "normalizedResource": {
+                "value": "operating system",
+                "value_type": "constant"
             },
             "pid": {
                 "value": "ProcessId"
@@ -53404,11 +53461,14 @@
         "uid": "74a1403a-a31d-41e3-9799-3f683c7a4243"
     },
     "74ea4bd5-67eb-4c82-97d7-0caf2e179a5e": {
-        "commit_message": "TLAB-2510: added alternate value for in and out bytes for fortinet (#5934)",
-        "commit_origin_hash": "b08875959c16d92e38df42c1d232933f2767fe7a",
+        "commit_message": "TLAB-2550: Removed Redundant Mapping for Fortinet (#5959)",
+        "commit_origin_hash": "28133809e6740b04a16f36503c62c7f025da976d",
         "field_mappings": {
             "action": {
                 "value": "action"
+            },
+            "application": {
+                "value": "app"
             },
             "bytesIn": {
                 "alternate_values": [
@@ -53423,6 +53483,12 @@
                     "out"
                 ],
                 "value": "sentdelta"
+            },
+            "device_hostname": {
+                "value": "devname"
+            },
+            "device_uniqueId": {
+                "value": "devid"
             },
             "dstDevice_ip": {
                 "value": "dstip"
@@ -53446,6 +53512,24 @@
                 "value": "proto",
                 "value_type": "lookup"
             },
+            "normalizedSeverity": {
+                "alternate_values": [
+                    "level"
+                ],
+                "lookup": {
+                    "alert": "9",
+                    "critical": "10",
+                    "error": "7",
+                    "high": "8",
+                    "information": "0",
+                    "low": "1",
+                    "medium": "5",
+                    "notice": "2",
+                    "warning": "6"
+                },
+                "value": "severity",
+                "value_type": "lookup"
+            },
             "packetsIn": {
                 "alternate_values": [
                     "rcvdpkt"
@@ -53457,6 +53541,15 @@
                     "sentpkt"
                 ],
                 "value": "sentpktdelta"
+            },
+            "sessionId": {
+                "value": "sessionid"
+            },
+            "severity": {
+                "alternate_values": [
+                    "level"
+                ],
+                "value": "severity"
             },
             "srcDevice_ip": {
                 "value": "srcip"
@@ -53482,12 +53575,12 @@
         },
         "file_path": "mappings_schemav3/fortinet.yaml",
         "input": {
-            "event_id_pattern": "local",
+            "event_id_pattern": "local|forward",
             "log_format": "JSON",
             "product": "fortinet",
             "vendor": "fortinet"
         },
-        "name": "Fortinet Traffic1",
+        "name": "Fortinet Traffic",
         "output": {
             "product_guid": "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
             "record_type": "NetworkFlow"
@@ -53631,8 +53724,8 @@
         "uid": "7511ac97-2330-4571-93e1-a3196aaa5023"
     },
     "75293d40-af14-4356-a264-549ba5ed30c1": {
-        "commit_message": "TLAB-2162 Add more normalized fields for Sysmon/Azure (#5826)",
-        "commit_origin_hash": "5a60733cc998e883cd4e9336310e2b69aba64805",
+        "commit_message": "TLAB-2571: ensure normalizedAction and normalizedResource fields populated in Linux/Windows Sysmon parsers (#5953)",
+        "commit_origin_hash": "093990e5f19609a4c1dd4cc1c8b374fc11ddba92",
         "field_mappings": {
             "action": {
                 "value": "FileExecutableDetected",
@@ -53661,6 +53754,10 @@
             },
             "normalizedAction": {
                 "value": "create",
+                "value_type": "constant"
+            },
+            "normalizedResource": {
+                "value": "file",
                 "value_type": "constant"
             },
             "normalizedSeverity": {
@@ -53808,8 +53905,8 @@
         "uid": "75b47d92-0c42-41c0-9cb5-a028592f22ef"
     },
     "75cb24d1-5364-43b5-8aed-baca1586225c": {
-        "commit_message": "TLAB-2162 Add more normalized fields for Sysmon/Azure (#5826)",
-        "commit_origin_hash": "5a60733cc998e883cd4e9336310e2b69aba64805",
+        "commit_message": "TLAB-2571: ensure normalizedAction and normalizedResource fields populated in Linux/Windows Sysmon parsers (#5953)",
+        "commit_origin_hash": "093990e5f19609a4c1dd4cc1c8b374fc11ddba92",
         "field_mappings": {
             "action": {
                 "value": "EventData.EventType"
@@ -53832,6 +53929,14 @@
             },
             "file_path": {
                 "value": "EventData.TargetObject"
+            },
+            "normalizedAction": {
+                "value": "change",
+                "value_type": "constant"
+            },
+            "normalizedResource": {
+                "value": "operating system",
+                "value_type": "constant"
             },
             "resource": {
                 "value": "EventData.Details"
@@ -54284,8 +54389,8 @@
         "uid": "76893103-7434-4729-996d-e0cffc8b399e"
     },
     "76b2e178-ff09-40c9-9755-745661f30a22": {
-        "commit_message": "TLAB-2510: added alternate value for in and out bytes for fortinet (#5934)",
-        "commit_origin_hash": "b08875959c16d92e38df42c1d232933f2767fe7a",
+        "commit_message": "TLAB-2550: Removed Redundant Mapping for Fortinet (#5959)",
+        "commit_origin_hash": "28133809e6740b04a16f36503c62c7f025da976d",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -54295,6 +54400,9 @@
             },
             "device_hostname": {
                 "value": "devname"
+            },
+            "device_uniqueId": {
+                "value": "devid"
             },
             "dstDevice_ip": {
                 "value": "dstip"
@@ -54315,14 +54423,38 @@
                 "value": "proto",
                 "value_type": "lookup"
             },
+            "normalizedSeverity": {
+                "alternate_values": [
+                    "level"
+                ],
+                "lookup": {
+                    "alert": "9",
+                    "critical": "10",
+                    "error": "7",
+                    "high": "8",
+                    "information": "0",
+                    "low": "1",
+                    "medium": "5",
+                    "notice": "2",
+                    "warning": "6"
+                },
+                "value": "severity",
+                "value_type": "lookup"
+            },
+            "sessionId": {
+                "value": "sessionid"
+            },
             "severity": {
-                "value": "level"
+                "alternate_values": [
+                    "level"
+                ],
+                "value": "severity"
             },
             "srcDevice_ip": {
                 "value": "srcip"
             },
             "srcPort": {
-                "value": "srcip"
+                "value": "srcport"
             },
             "timestamp": {
                 "format": "epoch",
@@ -54430,8 +54562,8 @@
         "uid": "76dd85d1-d634-4fcd-9af8-d2face9181ad"
     },
     "770ca3b8-d91c-4646-a2b9-323817e2f0e4": {
-        "commit_message": "TLAB-2162 Add more normalized fields for Sysmon/Azure (#5826)",
-        "commit_origin_hash": "5a60733cc998e883cd4e9336310e2b69aba64805",
+        "commit_message": "TLAB-2578: add device_hostname map to EVID 3 for sysmon linux (#5964)",
+        "commit_origin_hash": "8685e737f76b07583ffd5e5d99388ada6792e767",
         "field_mappings": {
             "action": {
                 "value": "Process Termination",
@@ -54446,6 +54578,14 @@
             },
             "device_hostname": {
                 "value": "System.Computer"
+            },
+            "normalizedAction": {
+                "value": "stop",
+                "value_type": "constant"
+            },
+            "normalizedResource": {
+                "value": "process",
+                "value_type": "constant"
             },
             "pid": {
                 "value": "ProcessId"
@@ -57649,6 +57789,71 @@
         "source": "jask",
         "uid": "7fd14383-3ecc-4aec-9d6c-53ae588e7289"
     },
+    "8085710b-1333-4be1-a117-c15132bb95d6": {
+        "commit_message": "TLAB-2509: added mapping for session logs (#5952)",
+        "commit_origin_hash": "f7b9a0e91c73f4682158729390715dc68ac500a8",
+        "field_mappings": {
+            "application": {
+                "value": "PublishedDesktopName.PublishedName"
+            },
+            "device_hostname": {
+                "value": "Machine.Name"
+            },
+            "device_ip": {
+                "value": "Machine.IPAddress"
+            },
+            "device_uniqueId": {
+                "value": "MachineId"
+            },
+            "flowState": {
+                "value": "ConnectionState"
+            },
+            "sessionId": {
+                "value": "SessionKey"
+            },
+            "srcDevice_hostname": {
+                "value": "CurrentConnection.ClientName"
+            },
+            "srcDevice_ip": {
+                "value": "CurrentConnection.ClientAddress"
+            },
+            "success": {
+                "lookup": {
+                    "0": "false",
+                    "1": "true"
+                },
+                "value": "ExitCode",
+                "value_type": "lookup"
+            },
+            "user_email": {
+                "value": "User.Upn"
+            },
+            "user_userId": {
+                "value": "UserId"
+            },
+            "user_username": {
+                "value": "User.UserName"
+            }
+        },
+        "file_path": "mappings_schemav3/Citrix_Cloud_C2C.yaml",
+        "input": {
+            "event_id_pattern": "Session Logs",
+            "log_format": "JSON",
+            "product": "Cloud",
+            "vendor": "Citrix"
+        },
+        "name": "Citrix Cloud Session Logs",
+        "output": {
+            "product_guid": "afb6e550-1dfd-4934-b369-e2587c447b09",
+            "record_type": "Network"
+        },
+        "skipped_values": [
+            ",",
+            "-"
+        ],
+        "source": "jask",
+        "uid": "8085710b-1333-4be1-a117-c15132bb95d6"
+    },
     "80ac2dcc-a1d3-46a5-a9ae-bc4f9a1a2430": {
         "commit_message": "TRIDENT-19339: updated the mapper",
         "commit_origin_hash": "423aa6c1beb66cd89d45e18be2c0f05ad7b3229c",
@@ -57881,8 +58086,8 @@
         "uid": "8103115b-d634-445c-bee6-8a80f30bbd56"
     },
     "810cafdb-8288-45a0-9ef7-d15cdc85307a": {
-        "commit_message": "TLAB-2510: added alternate value for in and out bytes for fortinet (#5934)",
-        "commit_origin_hash": "b08875959c16d92e38df42c1d232933f2767fe7a",
+        "commit_message": "Fortigate Minor fix (#5968)",
+        "commit_origin_hash": "b424ebe7fa6c777f4182f2057baa0f62a1c3e28e",
         "field_mappings": {
             "description": {
                 "alternate_values": [
@@ -57915,21 +58120,26 @@
                 "value": "http_url"
             },
             "normalizedSeverity": {
+                "default_value": "0",
                 "lookup": {
                     "critical": "10",
-                    "error": "8",
                     "high": "9",
-                    "information": "0",
                     "low": "1",
-                    "medium": "3",
-                    "notice": "2",
-                    "warning": "4"
+                    "medium": "2"
                 },
-                "value": "level",
+                "value": "severity",
                 "value_type": "lookup"
             },
             "severity": {
-                "value": "level"
+                "default_value": "0",
+                "lookup": {
+                    "critical": "10",
+                    "high": "9",
+                    "low": "1",
+                    "medium": "2"
+                },
+                "value": "severity",
+                "value_type": "lookup"
             },
             "srcDevice_ip": {
                 "alternate_values": [
@@ -57945,6 +58155,10 @@
             },
             "success": {
                 "value": "status"
+            },
+            "threat_ruleType": {
+                "value": "intrusion",
+                "value_type": "constant"
             },
             "timestamp": {
                 "format": "epoch_ms",
@@ -62252,17 +62466,14 @@
         "uid": "895b83e2-e169-4e3b-a768-46cf23670b24"
     },
     "89745f55-029f-482b-9f17-31c2a5bd9efd": {
-        "commit_message": "TLAB-2510: added alternate value for in and out bytes for fortinet (#5934)",
-        "commit_origin_hash": "b08875959c16d92e38df42c1d232933f2767fe7a",
+        "commit_message": "TLAB-2550: Removed Redundant Mapping for Fortinet (#5959)",
+        "commit_origin_hash": "28133809e6740b04a16f36503c62c7f025da976d",
         "field_mappings": {
             "action": {
                 "value": "act"
             },
             "description": {
                 "value": "name"
-            },
-            "device_ip": {
-                "value": "src"
             },
             "dstDevice_hostname": {
                 "value": "dhost"
@@ -63823,8 +64034,8 @@
         "uid": "8ce86919-71f7-4166-b3c5-21a7b1f17fb9"
     },
     "8d3f540b-66d6-4af3-8f5f-7fa4c533efad": {
-        "commit_message": "TLAB-2162 Add more normalized fields for Sysmon/Azure (#5826)",
-        "commit_origin_hash": "5a60733cc998e883cd4e9336310e2b69aba64805",
+        "commit_message": "TLAB-2571: ensure normalizedAction and normalizedResource fields populated in Linux/Windows Sysmon parsers (#5953)",
+        "commit_origin_hash": "093990e5f19609a4c1dd4cc1c8b374fc11ddba92",
         "field_mappings": {
             "action": {
                 "value": "FileDelete",
@@ -63860,6 +64071,10 @@
             },
             "normalizedAction": {
                 "value": "delete",
+                "value_type": "constant"
+            },
+            "normalizedResource": {
+                "value": "file",
                 "value_type": "constant"
             },
             "pid": {
@@ -66403,8 +66618,8 @@
         "uid": "927bc9a6-d62a-4c17-bc0e-f6ff601f51ed"
     },
     "928fa5c2-ceeb-4c1b-b41e-c5ed6f18b24f": {
-        "commit_message": "TLAB-2162 Add more normalized fields for Sysmon/Azure (#5826)",
-        "commit_origin_hash": "5a60733cc998e883cd4e9336310e2b69aba64805",
+        "commit_message": "TLAB-2578: add device_hostname map to EVID 3 for sysmon linux (#5964)",
+        "commit_origin_hash": "8685e737f76b07583ffd5e5d99388ada6792e767",
         "field_mappings": {
             "action": {
                 "value": "A process changed a file creation time",
@@ -66422,6 +66637,14 @@
             },
             "file_path": {
                 "value": "TargetFilename"
+            },
+            "normalizedAction": {
+                "value": "change",
+                "value_type": "constant"
+            },
+            "normalizedResource": {
+                "value": "file",
+                "value_type": "constant"
             },
             "sourceUid": {
                 "value": "System.EventRecordID"
@@ -66458,8 +66681,8 @@
         "uid": "928fa5c2-ceeb-4c1b-b41e-c5ed6f18b24f"
     },
     "92ad9200-083c-4c89-a3c1-5e63d3e2801f": {
-        "commit_message": "TLAB-2510: added alternate value for in and out bytes for fortinet (#5934)",
-        "commit_origin_hash": "b08875959c16d92e38df42c1d232933f2767fe7a",
+        "commit_message": "Fortigate Minor fix (#5968)",
+        "commit_origin_hash": "b424ebe7fa6c777f4182f2057baa0f62a1c3e28e",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -66483,9 +66706,6 @@
             },
             "device_hostname": {
                 "value": "devname"
-            },
-            "device_ip": {
-                "value": "src"
             },
             "dstDevice_hostname": {
                 "value": "dhost"
@@ -70316,8 +70536,8 @@
         "uid": "99cd6835-a726-4032-9406-a3358beba9a9"
     },
     "99ef5972-d88b-4e04-bb1f-c20a43af5e44": {
-        "commit_message": "TLAB-2510: added alternate value for in and out bytes for fortinet (#5934)",
-        "commit_origin_hash": "b08875959c16d92e38df42c1d232933f2767fe7a",
+        "commit_message": "Fortigate Minor fix (#5968)",
+        "commit_origin_hash": "b424ebe7fa6c777f4182f2057baa0f62a1c3e28e",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -70818,8 +71038,8 @@
         "uid": "9ab8dd52-8c8f-4015-8712-2d3a24bcdce6"
     },
     "9adaac5a-5ac6-46f6-a5be-3e98167ba5f0": {
-        "commit_message": "TLAB-2162 Add more normalized fields for Sysmon/Azure (#5826)",
-        "commit_origin_hash": "5a60733cc998e883cd4e9336310e2b69aba64805",
+        "commit_message": "TLAB-2571: ensure normalizedAction and normalizedResource fields populated in Linux/Windows Sysmon parsers (#5953)",
+        "commit_origin_hash": "093990e5f19609a4c1dd4cc1c8b374fc11ddba92",
         "field_mappings": {
             "action": {
                 "value": "PipeConnected",
@@ -70837,6 +71057,10 @@
             },
             "normalizedAction": {
                 "value": "create",
+                "value_type": "constant"
+            },
+            "normalizedResource": {
+                "value": "operating system",
                 "value_type": "constant"
             },
             "pid": {
@@ -74380,8 +74604,8 @@
         "uid": "a112519f-d29c-47cb-924e-a79c5207107b"
     },
     "a119686a-c0a6-44af-a36d-9d01d1aac496": {
-        "commit_message": "TLAB-2510: added alternate value for in and out bytes for fortinet (#5934)",
-        "commit_origin_hash": "b08875959c16d92e38df42c1d232933f2767fe7a",
+        "commit_message": "Fortigate Minor fix (#5968)",
+        "commit_origin_hash": "b424ebe7fa6c777f4182f2057baa0f62a1c3e28e",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -75112,8 +75336,8 @@
         "uid": "a2bdaf5f-92f8-45f3-be99-eb8fa34d26a7"
     },
     "a334a0ca-b389-4f59-b34b-66b19becfbe2": {
-        "commit_message": "TLAB-2510: added alternate value for in and out bytes for fortinet (#5934)",
-        "commit_origin_hash": "b08875959c16d92e38df42c1d232933f2767fe7a",
+        "commit_message": "TLAB-2550: Removed Redundant Mapping for Fortinet (#5959)",
+        "commit_origin_hash": "28133809e6740b04a16f36503c62c7f025da976d",
         "field_mappings": {
             "bytesIn": {
                 "value": "ad.lanin"
@@ -75137,6 +75361,24 @@
             "ipProtocol": {
                 "value": "proto"
             },
+            "normalizedSeverity": {
+                "alternate_values": [
+                    "level"
+                ],
+                "lookup": {
+                    "alert": "9",
+                    "critical": "10",
+                    "error": "7",
+                    "high": "8",
+                    "information": "0",
+                    "low": "1",
+                    "medium": "5",
+                    "notice": "2",
+                    "warning": "6"
+                },
+                "value": "severity",
+                "value_type": "lookup"
+            },
             "packetsIn": {
                 "value": "in"
             },
@@ -75144,6 +75386,9 @@
                 "value": "out"
             },
             "severity": {
+                "alternate_values": [
+                    "level"
+                ],
                 "value": "severity"
             },
             "srcDevice_ip": {
@@ -76038,17 +76283,23 @@
         "uid": "a4967bae-89ca-11ea-bc55-0242ac130003"
     },
     "a4a85fa1-c67e-4dc5-8685-4c39a3a9e012": {
-        "commit_message": "TLAB-2510: added alternate value for in and out bytes for fortinet (#5934)",
-        "commit_origin_hash": "b08875959c16d92e38df42c1d232933f2767fe7a",
+        "commit_message": "TLAB-2550: Removed Redundant Mapping for Fortinet (#5959)",
+        "commit_origin_hash": "28133809e6740b04a16f36503c62c7f025da976d",
         "field_mappings": {
             "action": {
                 "value": "action"
             },
+            "cause": {
+                "value": "reason"
+            },
             "description": {
                 "value": "msg"
             },
-            "device_ip": {
-                "value": "srcip"
+            "device_hostname": {
+                "value": "devname"
+            },
+            "device_uniqueId": {
+                "value": "devid"
             },
             "dstDevice_ip": {
                 "value": "dstip"
@@ -76056,8 +76307,29 @@
             "dstPort": {
                 "value": "dst_nat_port"
             },
+            "normalizedSeverity": {
+                "alternate_values": [
+                    "level"
+                ],
+                "lookup": {
+                    "alert": "9",
+                    "critical": "10",
+                    "error": "7",
+                    "high": "8",
+                    "information": "0",
+                    "low": "1",
+                    "medium": "5",
+                    "notice": "2",
+                    "warning": "6"
+                },
+                "value": "severity",
+                "value_type": "lookup"
+            },
             "severity": {
-                "value": "alert"
+                "alternate_values": [
+                    "level"
+                ],
+                "value": "severity"
             },
             "srcDevice_ip": {
                 "alternate_values": [
@@ -76068,13 +76340,18 @@
             "srcPort": {
                 "value": "srcport"
             },
+            "success": {
+                "default_value": "true",
+                "lookup": {
+                    "ap-fail": "false"
+                },
+                "value": "action",
+                "value_type": "lookup"
+            },
             "timestamp": {
                 "format": "epoch",
                 "value": "eventtime",
                 "value_type": "time"
-            },
-            "user_username": {
-                "value": "user"
             }
         },
         "file_path": "mappings_schemav3/fortinet.yaml",
@@ -76557,8 +76834,8 @@
         "uid": "a509a0b7-d91a-405a-ab6c-9ff4285041a5"
     },
     "a50cb8d9-b50c-4ee0-a61f-47488560ab98": {
-        "commit_message": "TLAB-2162 Add more normalized fields for Sysmon/Azure (#5826)",
-        "commit_origin_hash": "5a60733cc998e883cd4e9336310e2b69aba64805",
+        "commit_message": "TLAB-2571: ensure normalizedAction and normalizedResource fields populated in Linux/Windows Sysmon parsers (#5953)",
+        "commit_origin_hash": "093990e5f19609a4c1dd4cc1c8b374fc11ddba92",
         "field_mappings": {
             "description": {
                 "value": "WmiEventConsumerToFilter activity detected",
@@ -76566,6 +76843,14 @@
             },
             "device_hostname": {
                 "value": "Computer"
+            },
+            "normalizedAction": {
+                "value": "create",
+                "value_type": "constant"
+            },
+            "normalizedResource": {
+                "value": "operating system",
+                "value_type": "constant"
             },
             "timestamp": {
                 "format": "yyyy-MM-dd HH:mm:ss.SSS",
@@ -77834,8 +78119,8 @@
         "uid": "aa5386ab-8afd-4778-971d-88426f6c4099"
     },
     "aa8f5337-c7e1-4b88-8f28-9c937552daa7": {
-        "commit_message": "TLAB-2162 Add more normalized fields for Sysmon/Azure (#5826)",
-        "commit_origin_hash": "5a60733cc998e883cd4e9336310e2b69aba64805",
+        "commit_message": "TLAB-2571: ensure normalizedAction and normalizedResource fields populated in Linux/Windows Sysmon parsers (#5953)",
+        "commit_origin_hash": "093990e5f19609a4c1dd4cc1c8b374fc11ddba92",
         "field_mappings": {
             "action": {
                 "value": "DNSEvent",
@@ -77859,6 +78144,14 @@
             },
             "dns_replyIp": {
                 "value": "EventData.QueryResults"
+            },
+            "normalizedAction": {
+                "value": "start",
+                "value_type": "constant"
+            },
+            "normalizedResource": {
+                "value": "network",
+                "value_type": "constant"
             },
             "pid": {
                 "alternate_values": [
@@ -77910,8 +78203,8 @@
         "uid": "aa8f5337-c7e1-4b88-8f28-9c937552daa7"
     },
     "aaa2d5b5-0a1b-46d3-b467-bf6ff95aed94": {
-        "commit_message": "TLAB-2162 Add more normalized fields for Sysmon/Azure (#5826)",
-        "commit_origin_hash": "5a60733cc998e883cd4e9336310e2b69aba64805",
+        "commit_message": "TLAB-2571: ensure normalizedAction and normalizedResource fields populated in Linux/Windows Sysmon parsers (#5953)",
+        "commit_origin_hash": "093990e5f19609a4c1dd4cc1c8b374fc11ddba92",
         "field_mappings": {
             "action": {
                 "value": "ServiceConfigurationChange",
@@ -77943,6 +78236,10 @@
             },
             "normalizedAction": {
                 "value": "change",
+                "value_type": "constant"
+            },
+            "normalizedResource": {
+                "value": "service",
                 "value_type": "constant"
             },
             "normalizedSeverity": {
@@ -77992,18 +78289,20 @@
         "uid": "aaa2d5b5-0a1b-46d3-b467-bf6ff95aed94"
     },
     "aac55d27-898b-4bc4-9a20-19b8e3897f61": {
-        "commit_message": "TLAB-2510: added alternate value for in and out bytes for fortinet (#5934)",
-        "commit_origin_hash": "b08875959c16d92e38df42c1d232933f2767fe7a",
+        "commit_message": "TLAB-2550: Removed Redundant Mapping for Fortinet (#5959)",
+        "commit_origin_hash": "28133809e6740b04a16f36503c62c7f025da976d",
         "field_mappings": {
             "action": {
                 "value": "action"
             },
             "description": {
-                "value": "UTM Firewall Virus Alert",
-                "value_type": "constant"
+                "value": "msg"
             },
-            "device_ip": {
-                "value": "srcip"
+            "device_hostname": {
+                "value": "devname"
+            },
+            "device_uniqueId": {
+                "value": "devid"
             },
             "dstDevice_ip": {
                 "value": "dstip"
@@ -78011,16 +78310,91 @@
             "dstPort": {
                 "value": "dstport"
             },
+            "file_basename": {
+                "value": "filename"
+            },
+            "http_url": {
+                "value": "url"
+            },
+            "http_userAgent": {
+                "value": "agent"
+            },
+            "ipProtocol": {
+                "default_value": "Unknown",
+                "lookup": {
+                    "1": "ICMP",
+                    "17": "UDP",
+                    "2": "IGMP",
+                    "4": "IPv4",
+                    "41": "IPv6",
+                    "6": "TCP"
+                },
+                "value": "proto",
+                "value_type": "lookup"
+            },
+            "normalizedAction": {
+                "lookup": {
+                    "blocked": "deny"
+                },
+                "value": "action",
+                "value_type": "lookup"
+            },
+            "normalizedSeverity": {
+                "alternate_values": [
+                    "level"
+                ],
+                "lookup": {
+                    "alert": "9",
+                    "critical": "10",
+                    "error": "7",
+                    "high": "8",
+                    "information": "0",
+                    "low": "1",
+                    "medium": "5",
+                    "notice": "2",
+                    "warning": "6"
+                },
+                "value": "severity",
+                "value_type": "lookup"
+            },
+            "sessionId": {
+                "value": "sessionid"
+            },
+            "severity": {
+                "alternate_values": [
+                    "level"
+                ],
+                "value": "severity"
+            },
             "srcDevice_ip": {
                 "value": "srcip"
             },
             "srcPort": {
                 "value": "srcport"
             },
+            "threat_identifier": {
+                "value": "virusid"
+            },
+            "threat_name": {
+                "value": "virus"
+            },
+            "threat_referenceUrl": {
+                "value": "ref"
+            },
+            "threat_ruleType": {
+                "value": "direct",
+                "value_type": "constant"
+            },
+            "threat_signalName": {
+                "value": "virus"
+            },
             "timestamp": {
                 "format": "epoch",
                 "value": "eventtime",
                 "value_type": "time"
+            },
+            "user_username": {
+                "value": "user"
             }
         },
         "file_path": "mappings_schemav3/fortinet.yaml",
@@ -78358,37 +78732,67 @@
         "uid": "ac0149c5-b3d9-45c0-8ab3-b96a18cb1cdb"
     },
     "ac1d101a-1ac6-429a-930a-040d54931332": {
-        "commit_message": "TLAB-2510: added alternate value for in and out bytes for fortinet (#5934)",
-        "commit_origin_hash": "b08875959c16d92e38df42c1d232933f2767fe7a",
+        "commit_message": "TLAB-2550: Removed Redundant Mapping for Fortinet (#5959)",
+        "commit_origin_hash": "28133809e6740b04a16f36503c62c7f025da976d",
         "field_mappings": {
             "action": {
                 "value": "action"
             },
-            "application": {
-                "value": "tunneltype"
-            },
             "description": {
-                "value": "logdesc"
+                "value": "msg"
             },
-            "device_ip": {
-                "value": "locip"
+            "device_hostname": {
+                "value": "devname"
+            },
+            "device_uniqueId": {
+                "value": "devid"
             },
             "dstDevice_ip": {
                 "value": "locip"
+            },
+            "dstPort": {
+                "value": "locport"
             },
             "normalizedAction": {
                 "value": "logon",
                 "value_type": "constant"
             },
+            "normalizedSeverity": {
+                "alternate_values": [
+                    "level"
+                ],
+                "lookup": {
+                    "alert": "9",
+                    "critical": "10",
+                    "error": "7",
+                    "high": "8",
+                    "information": "0",
+                    "low": "1",
+                    "medium": "5",
+                    "notice": "2",
+                    "warning": "6"
+                },
+                "value": "severity",
+                "value_type": "lookup"
+            },
+            "severity": {
+                "alternate_values": [
+                    "level"
+                ],
+                "value": "severity"
+            },
             "srcDevice_ip": {
                 "value": "remip"
+            },
+            "srcPort": {
+                "value": "remport"
             },
             "success": {
                 "default_value": "false",
                 "lookup": {
-                    "tunnel-up": "true"
+                    "success": "true"
                 },
-                "value": "action",
+                "value": "status",
                 "value_type": "lookup"
             },
             "timestamp": {
@@ -78764,11 +79168,11 @@
         "uid": "ace70500-eed9-4628-a9a4-970e5e34e228"
     },
     "ad133542-26f6-45d4-a082-0118e80307aa": {
-        "commit_message": "TLAB-2510: added alternate value for in and out bytes for fortinet (#5934)",
-        "commit_origin_hash": "b08875959c16d92e38df42c1d232933f2767fe7a",
+        "commit_message": "TLAB-2550: Removed Redundant Mapping for Fortinet (#5959)",
+        "commit_origin_hash": "28133809e6740b04a16f36503c62c7f025da976d",
         "field_mappings": {
             "action": {
-                "value": "kind"
+                "value": "action"
             },
             "description": {
                 "value": "The firewall logged VOIP connection session information",
@@ -78776,6 +79180,9 @@
             },
             "device_hostname": {
                 "value": "devname"
+            },
+            "device_uniqueId": {
+                "value": "devid"
             },
             "dstDevice_ip": {
                 "value": "dstip"
@@ -78796,14 +79203,46 @@
                 "value": "proto",
                 "value_type": "lookup"
             },
+            "normalizedSeverity": {
+                "alternate_values": [
+                    "level"
+                ],
+                "lookup": {
+                    "alert": "9",
+                    "critical": "10",
+                    "error": "7",
+                    "high": "8",
+                    "information": "0",
+                    "low": "1",
+                    "medium": "5",
+                    "notice": "2",
+                    "warning": "6"
+                },
+                "value": "severity",
+                "value_type": "lookup"
+            },
+            "sessionId": {
+                "value": "sessionid"
+            },
             "severity": {
-                "value": "level"
+                "alternate_values": [
+                    "level"
+                ],
+                "value": "severity"
             },
             "srcDevice_ip": {
                 "value": "srcip"
             },
             "srcPort": {
-                "value": "srcip"
+                "value": "srcport"
+            },
+            "success": {
+                "default_value": "false",
+                "lookup": {
+                    "succeeded": "true"
+                },
+                "value": "status",
+                "value_type": "lookup"
             },
             "timestamp": {
                 "format": "epoch",
@@ -82565,14 +83004,23 @@
         "uid": "b6f6c7ab-88a7-420c-8800-8c029bfc9ac3"
     },
     "b722f175-2dd7-4509-b97f-63de578cbb59": {
-        "commit_message": "TLAB-2510: added alternate value for in and out bytes for fortinet (#5934)",
-        "commit_origin_hash": "b08875959c16d92e38df42c1d232933f2767fe7a",
+        "commit_message": "TLAB-2550: Removed Redundant Mapping for Fortinet (#5959)",
+        "commit_origin_hash": "28133809e6740b04a16f36503c62c7f025da976d",
         "field_mappings": {
             "action": {
                 "value": "action"
             },
-            "device_ip": {
-                "value": "srcip"
+            "application": {
+                "value": "app"
+            },
+            "description": {
+                "value": "msg"
+            },
+            "device_hostname": {
+                "value": "devname"
+            },
+            "device_uniqueId": {
+                "value": "devid"
             },
             "dstDevice_ip": {
                 "value": "dstip"
@@ -82584,13 +83032,44 @@
                 "value": "hostname"
             },
             "ipProtocol": {
-                "value": "proto"
+                "default_value": "Unknown",
+                "lookup": {
+                    "1": "ICMP",
+                    "17": "UDP",
+                    "2": "IGMP",
+                    "4": "IPv4",
+                    "41": "IPv6",
+                    "6": "TCP"
+                },
+                "value": "proto",
+                "value_type": "lookup"
+            },
+            "normalizedSeverity": {
+                "alternate_values": [
+                    "level"
+                ],
+                "lookup": {
+                    "alert": "9",
+                    "critical": "10",
+                    "error": "7",
+                    "high": "8",
+                    "information": "0",
+                    "low": "1",
+                    "medium": "5",
+                    "notice": "2",
+                    "warning": "6"
+                },
+                "value": "severity",
+                "value_type": "lookup"
+            },
+            "sessionId": {
+                "value": "sessionid"
             },
             "severity": {
                 "alternate_values": [
                     "level"
                 ],
-                "value": "apprisk"
+                "value": "severity"
             },
             "srcDevice_ip": {
                 "value": "srcip"
@@ -84130,15 +84609,22 @@
         "uid": "ba51a7ca-ff8e-4905-aaf3-1c04f658ba7b"
     },
     "ba65552f-d9d8-4d03-8814-7610121a6759": {
-        "commit_message": "TLAB-2162 Add more normalized fields for Sysmon/Azure (#5826)",
-        "commit_origin_hash": "5a60733cc998e883cd4e9336310e2b69aba64805",
+        "commit_message": "TLAB-2578: add device_hostname map to EVID 3 for sysmon linux (#5964)",
+        "commit_origin_hash": "8685e737f76b07583ffd5e5d99388ada6792e767",
         "field_mappings": {
+            "action": {
+                "value": "NetworkConnect",
+                "value_type": "constant"
+            },
             "baseImage": {
                 "value": "Image"
             },
             "description": {
                 "value": "Sysmon observed network connection",
                 "value_type": "constant"
+            },
+            "device_hostname": {
+                "value": "System.Computer"
             },
             "dstDevice_hostname": {
                 "value": "DestinationHostname"
@@ -84151,6 +84637,17 @@
             },
             "file_path": {
                 "value": "Image"
+            },
+            "normalizedAction": {
+                "value": "start",
+                "value_type": "constant"
+            },
+            "normalizedResource": {
+                "value": "network",
+                "value_type": "constant"
+            },
+            "pid": {
+                "value": "ProcessId"
             },
             "srcDevice_hostname": {
                 "value": "SourceHostname"
@@ -85991,8 +86488,8 @@
         "uid": "c11a6f1b-73fd-42a8-a55f-b8fc2742fa21"
     },
     "c17b35e5-dc9d-4fd8-94e4-f49b29589288": {
-        "commit_message": "TLAB-2510: added alternate value for in and out bytes for fortinet (#5934)",
-        "commit_origin_hash": "b08875959c16d92e38df42c1d232933f2767fe7a",
+        "commit_message": "Fortigate Minor fix (#5968)",
+        "commit_origin_hash": "b424ebe7fa6c777f4182f2057baa0f62a1c3e28e",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -87909,8 +88406,8 @@
         "uid": "c5b68c1d-1d67-417a-89c3-1a33266778f7"
     },
     "c5d57c30-5458-4895-91eb-40a2483e9008": {
-        "commit_message": "TLAB-2510: added alternate value for in and out bytes for fortinet (#5934)",
-        "commit_origin_hash": "b08875959c16d92e38df42c1d232933f2767fe7a",
+        "commit_message": "TLAB-2550: Removed Redundant Mapping for Fortinet (#5959)",
+        "commit_origin_hash": "28133809e6740b04a16f36503c62c7f025da976d",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -87921,8 +88418,8 @@
             "device_hostname": {
                 "value": "devname"
             },
-            "device_ip": {
-                "value": "srcip"
+            "device_uniqueId": {
+                "value": "devid"
             },
             "dstDevice_ip": {
                 "value": "dstip"
@@ -87930,19 +88427,54 @@
             "dstPort": {
                 "value": "dstport"
             },
-            "normalizedSeverity": {
-                "default_value": "0",
+            "http_hostname": {
+                "value": "hostname"
+            },
+            "ipProtocol": {
+                "default_value": "Unknown",
                 "lookup": {
+                    "1": "ICMP",
+                    "17": "UDP",
+                    "2": "IGMP",
+                    "4": "IPv4",
+                    "41": "IPv6",
+                    "6": "TCP"
+                },
+                "value": "proto",
+                "value_type": "lookup"
+            },
+            "normalizedAction": {
+                "lookup": {
+                    "dropped": "abort"
+                },
+                "value": "action",
+                "value_type": "lookup"
+            },
+            "normalizedSeverity": {
+                "alternate_values": [
+                    "level"
+                ],
+                "lookup": {
+                    "alert": "9",
                     "critical": "10",
-                    "high": "9",
-                    "info": "0",
+                    "error": "7",
+                    "high": "8",
+                    "information": "0",
                     "low": "1",
-                    "medium": "2"
+                    "medium": "5",
+                    "notice": "2",
+                    "warning": "6"
                 },
                 "value": "severity",
                 "value_type": "lookup"
             },
+            "sessionId": {
+                "value": "sessionid"
+            },
             "severity": {
+                "alternate_values": [
+                    "level"
+                ],
                 "value": "severity"
             },
             "srcDevice_ip": {
@@ -87950,6 +88482,9 @@
             },
             "srcPort": {
                 "value": "srcport"
+            },
+            "threat_identifier": {
+                "value": "attackid"
             },
             "threat_name": {
                 "value": "attack"
@@ -87960,6 +88495,9 @@
             "threat_ruleType": {
                 "value": "intrusion",
                 "value_type": "constant"
+            },
+            "threat_signalName": {
+                "value": "attack"
             },
             "timestamp": {
                 "format": "epoch",
@@ -87990,8 +88528,8 @@
         "uid": "c5d57c30-5458-4895-91eb-40a2483e9008"
     },
     "c5e25324-fac2-48be-b76c-517882f87f07": {
-        "commit_message": "TLAB-666: Removed Session Logs of Citrix Cloud",
-        "commit_origin_hash": "e92a6fc1fecdc960be1a044c942b9e9e5fcda919",
+        "commit_message": "TLAB-2509: added mapping for session logs (#5952)",
+        "commit_origin_hash": "f7b9a0e91c73f4682158729390715dc68ac500a8",
         "field_mappings": {
             "action": {
                 "value": "eventType"
@@ -89132,8 +89670,8 @@
         "uid": "c9ac816a-c1ca-4659-b768-0c4d53e06c28"
     },
     "c9b36f1b-b624-4a9d-a564-91afaa277fe3": {
-        "commit_message": "TLAB-2162 Add more normalized fields for Sysmon/Azure (#5826)",
-        "commit_origin_hash": "5a60733cc998e883cd4e9336310e2b69aba64805",
+        "commit_message": "TLAB-2578: add device_hostname map to EVID 3 for sysmon linux (#5964)",
+        "commit_origin_hash": "8685e737f76b07583ffd5e5d99388ada6792e767",
         "field_mappings": {
             "action": {
                 "value": "PipeCreated",
@@ -89151,6 +89689,14 @@
             },
             "device_hostname": {
                 "value": "System.Computer"
+            },
+            "normalizedAction": {
+                "value": "create",
+                "value_type": "constant"
+            },
+            "normalizedResource": {
+                "value": "operating system",
+                "value_type": "constant"
             },
             "pid": {
                 "value": "ProcessId"
@@ -89580,8 +90126,8 @@
         "uid": "cab40213-e98e-47ae-bde5-2d859e590887"
     },
     "cad70236-2cd3-4fac-b010-09d9df3077a8": {
-        "commit_message": "TLAB-2162 Add more normalized fields for Sysmon/Azure (#5826)",
-        "commit_origin_hash": "5a60733cc998e883cd4e9336310e2b69aba64805",
+        "commit_message": "TLAB-2571: ensure normalizedAction and normalizedResource fields populated in Linux/Windows Sysmon parsers (#5953)",
+        "commit_origin_hash": "093990e5f19609a4c1dd4cc1c8b374fc11ddba92",
         "field_mappings": {
             "action": {
                 "value": "WmiEvent",
@@ -89596,6 +90142,14 @@
             },
             "device_hostname": {
                 "value": "Computer"
+            },
+            "normalizedAction": {
+                "value": "create",
+                "value_type": "constant"
+            },
+            "normalizedResource": {
+                "value": "operating system",
+                "value_type": "constant"
             },
             "pid": {
                 "value": "EventData.ProcessId"
@@ -93895,9 +94449,13 @@
         "uid": "d52b178b-4919-49c4-8e59-64865fa225e0"
     },
     "d5920e42-6d98-41d1-833c-7d1e15e0a542": {
-        "commit_message": "TLAB-2162 Add more normalized fields for Sysmon/Azure (#5826)",
-        "commit_origin_hash": "5a60733cc998e883cd4e9336310e2b69aba64805",
+        "commit_message": "TLAB-2578: add device_hostname map to EVID 3 for sysmon linux (#5964)",
+        "commit_origin_hash": "8685e737f76b07583ffd5e5d99388ada6792e767",
         "field_mappings": {
+            "action": {
+                "value": "ImageLoad",
+                "value_type": "constant"
+            },
             "baseImage": {
                 "value": "ImageLoaded"
             },
@@ -93910,6 +94468,14 @@
             },
             "file_hash_sha256": {
                 "value": "Hashes"
+            },
+            "normalizedAction": {
+                "value": "load",
+                "value_type": "constant"
+            },
+            "normalizedResource": {
+                "value": "file",
+                "value_type": "constant"
             },
             "parentBaseImage": {
                 "value": "Image"
@@ -96415,28 +96981,81 @@
         "uid": "dbe1aefa-8b38-49f6-83d4-d60fd0c7f99c"
     },
     "dc596d84-47fe-4a4f-8132-dca3fe5920c9": {
-        "commit_message": "TLAB-2510: added alternate value for in and out bytes for fortinet (#5934)",
-        "commit_origin_hash": "b08875959c16d92e38df42c1d232933f2767fe7a",
+        "commit_message": "TLAB-2550: Removed Redundant Mapping for Fortinet (#5959)",
+        "commit_origin_hash": "28133809e6740b04a16f36503c62c7f025da976d",
         "field_mappings": {
             "action": {
                 "value": "action"
             },
-            "device_ip": {
-                "value": "srcip"
+            "description": {
+                "value": "msg"
+            },
+            "device_hostname": {
+                "value": "devname"
+            },
+            "device_uniqueId": {
+                "value": "devid"
             },
             "dstDevice_ip": {
                 "value": "dstip"
             },
             "ipProtocol": {
-                "value": "proto"
+                "default_value": "Unknown",
+                "lookup": {
+                    "1": "ICMP",
+                    "17": "UDP",
+                    "2": "IGMP",
+                    "4": "IPv4",
+                    "41": "IPv6",
+                    "6": "TCP"
+                },
+                "value": "proto",
+                "value_type": "lookup"
+            },
+            "normalizedSeverity": {
+                "alternate_values": [
+                    "level"
+                ],
+                "lookup": {
+                    "alert": "9",
+                    "critical": "10",
+                    "error": "7",
+                    "high": "8",
+                    "information": "0",
+                    "low": "1",
+                    "medium": "5",
+                    "notice": "2",
+                    "warning": "6"
+                },
+                "value": "severity",
+                "value_type": "lookup"
+            },
+            "sessionId": {
+                "value": "sessionid"
             },
             "severity": {
+                "alternate_values": [
+                    "level"
+                ],
                 "value": "severity"
             },
             "srcDevice_ip": {
                 "value": "srcip"
             },
+            "threat_identifier": {
+                "value": "attackid"
+            },
             "threat_name": {
+                "value": "attack"
+            },
+            "threat_referenceUrl": {
+                "value": "ref"
+            },
+            "threat_ruleType": {
+                "value": "direct",
+                "value_type": "constant"
+            },
+            "threat_signalName": {
                 "value": "attack"
             },
             "timestamp": {
@@ -96622,11 +97241,14 @@
         "uid": "dc975eac-b121-408f-8688-48b80ce09d8b"
     },
     "dca6ce19-449e-468b-9bea-3db2cb87fa9c": {
-        "commit_message": "TLAB-2510: added alternate value for in and out bytes for fortinet (#5934)",
-        "commit_origin_hash": "b08875959c16d92e38df42c1d232933f2767fe7a",
+        "commit_message": "TLAB-2550: Removed Redundant Mapping for Fortinet (#5959)",
+        "commit_origin_hash": "28133809e6740b04a16f36503c62c7f025da976d",
         "field_mappings": {
             "action": {
                 "value": "action"
+            },
+            "application": {
+                "value": "app"
             },
             "bytesIn": {
                 "alternate_values": [
@@ -96645,8 +97267,11 @@
             "description": {
                 "value": "msg"
             },
-            "device_ip": {
-                "value": "srcip"
+            "device_hostname": {
+                "value": "devname"
+            },
+            "device_uniqueId": {
+                "value": "devid"
             },
             "dstDevice_ip": {
                 "value": "dstip"
@@ -96658,7 +97283,35 @@
                 "value": "hostname"
             },
             "ipProtocol": {
-                "value": "proto"
+                "default_value": "Unknown",
+                "lookup": {
+                    "1": "ICMP",
+                    "17": "UDP",
+                    "2": "IGMP",
+                    "4": "IPv4",
+                    "41": "IPv6",
+                    "6": "TCP"
+                },
+                "value": "proto",
+                "value_type": "lookup"
+            },
+            "normalizedSeverity": {
+                "alternate_values": [
+                    "level"
+                ],
+                "lookup": {
+                    "alert": "9",
+                    "critical": "10",
+                    "error": "7",
+                    "high": "8",
+                    "information": "0",
+                    "low": "1",
+                    "medium": "5",
+                    "notice": "2",
+                    "warning": "6"
+                },
+                "value": "severity",
+                "value_type": "lookup"
             },
             "packetsIn": {
                 "alternate_values": [
@@ -96672,11 +97325,14 @@
                 ],
                 "value": "sentpktdelta"
             },
+            "sessionId": {
+                "value": "sessionid"
+            },
             "severity": {
                 "alternate_values": [
                     "level"
                 ],
-                "value": "apprisk"
+                "value": "severity"
             },
             "srcDevice_ip": {
                 "value": "srcip"
@@ -97794,8 +98450,8 @@
         "uid": "df5cf29a-4b96-4ce2-b6ce-9abbf882f86e"
     },
     "df9365c8-edf6-46e3-a151-5e9819ce8776": {
-        "commit_message": "TLAB-2162 Add more normalized fields for Sysmon/Azure (#5826)",
-        "commit_origin_hash": "5a60733cc998e883cd4e9336310e2b69aba64805",
+        "commit_message": "TLAB-2578: add device_hostname map to EVID 3 for sysmon linux (#5964)",
+        "commit_origin_hash": "8685e737f76b07583ffd5e5d99388ada6792e767",
         "field_mappings": {
             "action": {
                 "value": "RawAccessRead",
@@ -97810,6 +98466,14 @@
             },
             "file_path": {
                 "value": "Image"
+            },
+            "normalizedAction": {
+                "value": "access",
+                "value_type": "constant"
+            },
+            "normalizedResource": {
+                "value": "file",
+                "value_type": "constant"
             },
             "pid": {
                 "value": "ProcessId"
@@ -98078,23 +98742,55 @@
         "uid": "dffce69e-85d4-4894-9b32-a5ff9657b101"
     },
     "e018g3c3-df8a-4722-8382-b8r4er0641ee": {
-        "commit_message": "TLAB-2510: added alternate value for in and out bytes for fortinet (#5934)",
-        "commit_origin_hash": "b08875959c16d92e38df42c1d232933f2767fe7a",
+        "commit_message": "TLAB-2550: Removed Redundant Mapping for Fortinet (#5959)",
+        "commit_origin_hash": "28133809e6740b04a16f36503c62c7f025da976d",
         "field_mappings": {
             "action": {
                 "value": "action"
             },
             "description": {
-                "value": "logdesc"
+                "value": "msg"
             },
             "device_hostname": {
-                "value": "name"
+                "value": "devname"
             },
-            "device_ip": {
+            "device_uniqueId": {
+                "value": "devid"
+            },
+            "dstDevice_ip": {
                 "value": "ip"
             },
+            "normalizedSeverity": {
+                "alternate_values": [
+                    "level"
+                ],
+                "lookup": {
+                    "alert": "9",
+                    "critical": "10",
+                    "error": "7",
+                    "high": "8",
+                    "information": "0",
+                    "low": "1",
+                    "medium": "5",
+                    "notice": "2",
+                    "warning": "6"
+                },
+                "value": "severity",
+                "value_type": "lookup"
+            },
             "severity": {
-                "value": "level"
+                "alternate_values": [
+                    "level"
+                ],
+                "value": "severity"
+            },
+            "success": {
+                "default_value": "false",
+                "lookup": {
+                    "success": "true"
+                },
+                "value": "status",
+                "value_type": "lookup"
             },
             "timestamp": {
                 "format": "epoch",
@@ -98125,8 +98821,8 @@
         "uid": "e018g3c3-df8a-4722-8382-b8r4er0641ee"
     },
     "e018r3c3-da8a-4022-8382-b8r4er0641ee": {
-        "commit_message": "TLAB-2510: added alternate value for in and out bytes for fortinet (#5934)",
-        "commit_origin_hash": "b08875959c16d92e38df42c1d232933f2767fe7a",
+        "commit_message": "TLAB-2550: Removed Redundant Mapping for Fortinet (#5959)",
+        "commit_origin_hash": "28133809e6740b04a16f36503c62c7f025da976d",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -98134,12 +98830,43 @@
             "description": {
                 "value": "msg"
             },
-            "device_ip": {
-                "value": "srcip"
+            "device_hostname": {
+                "value": "devname"
+            },
+            "device_uniqueId": {
+                "value": "devid"
             },
             "normalizedAction": {
-                "value": "logon",
-                "value_type": "constant"
+                "default_value": "logon",
+                "lookup": {
+                    "FSSO-logoff": "logoff"
+                },
+                "value": "action",
+                "value_type": "lookup"
+            },
+            "normalizedSeverity": {
+                "alternate_values": [
+                    "level"
+                ],
+                "lookup": {
+                    "alert": "9",
+                    "critical": "10",
+                    "error": "7",
+                    "high": "8",
+                    "information": "0",
+                    "low": "1",
+                    "medium": "5",
+                    "notice": "2",
+                    "warning": "6"
+                },
+                "value": "severity",
+                "value_type": "lookup"
+            },
+            "severity": {
+                "alternate_values": [
+                    "level"
+                ],
+                "value": "severity"
             },
             "srcDevice_ip": {
                 "value": "srcip"
@@ -98179,84 +98906,21 @@
         "source": "jask",
         "uid": "e018r3c3-da8a-4022-8382-b8r4er0641ee"
     },
-    "e018v3c1-df0a-4712-8782-b8d4er0642ee": {
-        "commit_message": "TLAB-2510: added alternate value for in and out bytes for fortinet (#5934)",
-        "commit_origin_hash": "b08875959c16d92e38df42c1d232933f2767fe7a",
-        "field_mappings": {
-            "description": {
-                "value": "msg"
-            },
-            "dns_query": {
-                "value": "qname"
-            },
-            "dns_queryType": {
-                "value": "qtype"
-            },
-            "dstDevice_ip": {
-                "value": "dstip"
-            },
-            "dstPort": {
-                "value": "dstport"
-            },
-            "ipProtocol": {
-                "default_value": "Unknown",
-                "lookup": {
-                    "1": "ICMP",
-                    "17": "UDP",
-                    "2": "IGMP",
-                    "4": "IPv4",
-                    "41": "IPv6",
-                    "6": "TCP"
-                },
-                "value": "proto",
-                "value_type": "lookup"
-            },
-            "severity": {
-                "value": "level"
-            },
-            "srcDevice_ip": {
-                "value": "srcip"
-            },
-            "srcDevice_mac": {
-                "value": "srcmac"
-            },
-            "srcPort": {
-                "value": "srcport"
-            },
-            "timestamp": {
-                "format": "epoch",
-                "value": "eventtime",
-                "value_type": "time"
-            }
-        },
-        "file_path": "mappings_schemav3/fortinet.yaml",
-        "input": {
-            "event_id_pattern": "dns-query",
-            "log_format": "JSON",
-            "product": "fortinet",
-            "vendor": "fortinet"
-        },
-        "name": "Fortinet DNS Query",
-        "output": {
-            "product_guid": "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
-            "record_type": "NetworkDNS"
-        },
-        "skipped_values": [
-            ",",
-            "-"
-        ],
-        "source": "jask",
-        "uid": "e018v3c1-df0a-4712-8782-b8d4er0642ee"
-    },
     "e018v5c1-df0g-4712-8582-b8d4er0642ee": {
-        "commit_message": "TLAB-2510: added alternate value for in and out bytes for fortinet (#5934)",
-        "commit_origin_hash": "b08875959c16d92e38df42c1d232933f2767fe7a",
+        "commit_message": "TLAB-2550: Removed Redundant Mapping for Fortinet (#5959)",
+        "commit_origin_hash": "28133809e6740b04a16f36503c62c7f025da976d",
         "field_mappings": {
             "action": {
                 "value": "action"
             },
             "description": {
                 "value": "msg"
+            },
+            "device_hostname": {
+                "value": "devname"
+            },
+            "device_uniqueId": {
+                "value": "devid"
             },
             "dns_query": {
                 "value": "qname"
@@ -98279,6 +98943,9 @@
             "dstPort": {
                 "value": "dstport"
             },
+            "errorText": {
+                "value": "error"
+            },
             "ipProtocol": {
                 "default_value": "Unknown",
                 "lookup": {
@@ -98291,6 +98958,33 @@
                 },
                 "value": "proto",
                 "value_type": "lookup"
+            },
+            "normalizedSeverity": {
+                "alternate_values": [
+                    "level"
+                ],
+                "lookup": {
+                    "alert": "9",
+                    "critical": "10",
+                    "error": "7",
+                    "high": "8",
+                    "information": "0",
+                    "low": "1",
+                    "medium": "5",
+                    "notice": "2",
+                    "warning": "6"
+                },
+                "value": "severity",
+                "value_type": "lookup"
+            },
+            "sessionId": {
+                "value": "sessionid"
+            },
+            "severity": {
+                "alternate_values": [
+                    "level"
+                ],
+                "value": "severity"
             },
             "srcDevice_ip": {
                 "value": "srcip"
@@ -98305,16 +98999,19 @@
                 "format": "epoch",
                 "value": "eventtime",
                 "value_type": "time"
+            },
+            "user_username": {
+                "value": "user"
             }
         },
         "file_path": "mappings_schemav3/fortinet.yaml",
         "input": {
-            "event_id_pattern": "dns-response",
+            "event_id_pattern": "dns-response|dns-query|dns",
             "log_format": "JSON",
             "product": "fortinet",
             "vendor": "fortinet"
         },
-        "name": "Fortinet DNS Response",
+        "name": "Fortinet DNS",
         "output": {
             "product_guid": "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
             "record_type": "NetworkDNS"
@@ -99849,8 +100546,8 @@
         "uid": "e3f5b429-af48-4135-abf1-c3a32db01a14"
     },
     "e3f84313-4099-4c1f-97f1-700f73a76311": {
-        "commit_message": "TLAB-2510: added alternate value for in and out bytes for fortinet (#5934)",
-        "commit_origin_hash": "b08875959c16d92e38df42c1d232933f2767fe7a",
+        "commit_message": "Fortigate Minor fix (#5968)",
+        "commit_origin_hash": "b424ebe7fa6c777f4182f2057baa0f62a1c3e28e",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -99910,8 +100607,7 @@
                     "low": "1",
                     "medium": "2"
                 },
-                "value": "severity",
-                "value_type": "lookup"
+                "value": "severity"
             },
             "srcDevice_ip": {
                 "value": "srcip"
@@ -100018,8 +100714,8 @@
         "uid": "e407808f-9ddb-4a02-856d-33ba781213f4"
     },
     "e4159ea5-4e24-4fae-ae41-a3f35f8b97f9": {
-        "commit_message": "TLAB-2162 Add more normalized fields for Sysmon/Azure (#5826)",
-        "commit_origin_hash": "5a60733cc998e883cd4e9336310e2b69aba64805",
+        "commit_message": "TLAB-2571: ensure normalizedAction and normalizedResource fields populated in Linux/Windows Sysmon parsers (#5953)",
+        "commit_origin_hash": "093990e5f19609a4c1dd4cc1c8b374fc11ddba92",
         "field_mappings": {
             "action": {
                 "value": "ImageLoad",
@@ -100049,6 +100745,10 @@
             },
             "normalizedAction": {
                 "value": "load",
+                "value_type": "constant"
+            },
+            "normalizedResource": {
+                "value": "file",
                 "value_type": "constant"
             },
             "parentBaseImage": {
@@ -101009,8 +101709,8 @@
         "uid": "e6da534c-057e-484b-9420-18b257745739"
     },
     "e70b51c6-7240-4b03-8c91-6c703feff198": {
-        "commit_message": "TLAB-2510: added alternate value for in and out bytes for fortinet (#5934)",
-        "commit_origin_hash": "b08875959c16d92e38df42c1d232933f2767fe7a",
+        "commit_message": "TLAB-2550: Removed Redundant Mapping for Fortinet (#5959)",
+        "commit_origin_hash": "28133809e6740b04a16f36503c62c7f025da976d",
         "field_mappings": {
             "description": {
                 "value": "msg"
@@ -101018,8 +101718,32 @@
             "device_hostname": {
                 "value": "devname"
             },
+            "device_uniqueId": {
+                "value": "devid"
+            },
+            "normalizedSeverity": {
+                "alternate_values": [
+                    "level"
+                ],
+                "lookup": {
+                    "alert": "9",
+                    "critical": "10",
+                    "error": "7",
+                    "high": "8",
+                    "information": "0",
+                    "low": "1",
+                    "medium": "5",
+                    "notice": "2",
+                    "warning": "6"
+                },
+                "value": "severity",
+                "value_type": "lookup"
+            },
             "severity": {
-                "value": "level"
+                "alternate_values": [
+                    "level"
+                ],
+                "value": "severity"
             },
             "timestamp": {
                 "format": "epoch",
@@ -102521,8 +103245,8 @@
         "uid": "eab0642b-862f-4328-af33-e3b29893c41f"
     },
     "eab4df6a-a268-4c9d-9de9-39306124c64d": {
-        "commit_message": "TLAB-2510: added alternate value for in and out bytes for fortinet (#5934)",
-        "commit_origin_hash": "b08875959c16d92e38df42c1d232933f2767fe7a",
+        "commit_message": "Fortigate Minor fix (#5968)",
+        "commit_origin_hash": "b424ebe7fa6c777f4182f2057baa0f62a1c3e28e",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -105209,8 +105933,8 @@
         "uid": "f1e9c838-1b92-43df-80fc-3f3571759322"
     },
     "f1ea6ca2-ca75-492e-a18f-51aa3a94c783": {
-        "commit_message": "TLAB-2162 Add more normalized fields for Sysmon/Azure (#5826)",
-        "commit_origin_hash": "5a60733cc998e883cd4e9336310e2b69aba64805",
+        "commit_message": "TLAB-2571: ensure normalizedAction and normalizedResource fields populated in Linux/Windows Sysmon parsers (#5953)",
+        "commit_origin_hash": "093990e5f19609a4c1dd4cc1c8b374fc11ddba92",
         "field_mappings": {
             "action": {
                 "value": "ProcessCreate",
@@ -105246,6 +105970,10 @@
             },
             "normalizedAction": {
                 "value": "create",
+                "value_type": "constant"
+            },
+            "normalizedResource": {
+                "value": "process",
                 "value_type": "constant"
             },
             "normalizedSeverity": {
@@ -106333,14 +107061,44 @@
         "uid": "f50113e5-8a13-49a8-873e-6af7030f9b6d"
     },
     "f5471bd2-a961-4aad-bae4-0e182bdfd05e": {
-        "commit_message": "TLAB-2510: added alternate value for in and out bytes for fortinet (#5934)",
-        "commit_origin_hash": "b08875959c16d92e38df42c1d232933f2767fe7a",
+        "commit_message": "TLAB-2550: Removed Redundant Mapping for Fortinet (#5959)",
+        "commit_origin_hash": "28133809e6740b04a16f36503c62c7f025da976d",
         "field_mappings": {
             "action": {
                 "value": "action"
             },
+            "description": {
+                "value": "msg"
+            },
             "device_hostname": {
                 "value": "devname"
+            },
+            "device_uniqueId": {
+                "value": "devid"
+            },
+            "normalizedSeverity": {
+                "alternate_values": [
+                    "level"
+                ],
+                "lookup": {
+                    "alert": "9",
+                    "critical": "10",
+                    "error": "7",
+                    "high": "8",
+                    "information": "0",
+                    "low": "1",
+                    "medium": "5",
+                    "notice": "2",
+                    "warning": "6"
+                },
+                "value": "severity",
+                "value_type": "lookup"
+            },
+            "severity": {
+                "alternate_values": [
+                    "level"
+                ],
+                "value": "severity"
             },
             "timestamp": {
                 "format": "epoch",
@@ -107658,23 +108416,72 @@
         "uid": "f8794970-48a2-409f-883a-89fbd566b379"
     },
     "f8aece90-2f37-4086-8193-0adb47056800": {
-        "commit_message": "TLAB-2510: added alternate value for in and out bytes for fortinet (#5934)",
-        "commit_origin_hash": "b08875959c16d92e38df42c1d232933f2767fe7a",
+        "commit_message": "TLAB-2550: Removed Redundant Mapping for Fortinet (#5959)",
+        "commit_origin_hash": "28133809e6740b04a16f36503c62c7f025da976d",
         "field_mappings": {
             "action": {
                 "value": "action"
             },
-            "device_ip": {
-                "value": "srcip"
+            "description": {
+                "value": "msg"
+            },
+            "device_hostname": {
+                "value": "devname"
+            },
+            "device_uniqueId": {
+                "value": "devid"
             },
             "dstDevice_ip": {
                 "value": "dstip"
             },
             "dstPort": {
-                "value": "dst_nat_port"
+                "value": "dstport"
+            },
+            "http_url": {
+                "value": "url"
+            },
+            "http_userAgent": {
+                "value": "agent"
+            },
+            "ipProtocol": {
+                "default_value": "Unknown",
+                "lookup": {
+                    "1": "ICMP",
+                    "17": "UDP",
+                    "2": "IGMP",
+                    "4": "IPv4",
+                    "41": "IPv6",
+                    "6": "TCP"
+                },
+                "value": "proto",
+                "value_type": "lookup"
+            },
+            "normalizedSeverity": {
+                "alternate_values": [
+                    "level"
+                ],
+                "lookup": {
+                    "alert": "9",
+                    "critical": "10",
+                    "error": "7",
+                    "high": "8",
+                    "information": "0",
+                    "low": "1",
+                    "medium": "5",
+                    "notice": "2",
+                    "warning": "6"
+                },
+                "value": "severity",
+                "value_type": "lookup"
+            },
+            "sessionId": {
+                "value": "sessionid"
             },
             "severity": {
-                "value": "alert"
+                "alternate_values": [
+                    "level"
+                ],
+                "value": "severity"
             },
             "srcDevice_ip": {
                 "value": "srcip"
@@ -107872,8 +108679,8 @@
         "uid": "f95d4f87-7e41-42ae-be1f-6d8890d93508"
     },
     "f9b6ec33-d0b5-468a-a92c-a8c62a4bcca9": {
-        "commit_message": "TLAB-2510: added alternate value for in and out bytes for fortinet (#5934)",
-        "commit_origin_hash": "b08875959c16d92e38df42c1d232933f2767fe7a",
+        "commit_message": "Fortigate Minor fix (#5968)",
+        "commit_origin_hash": "b424ebe7fa6c777f4182f2057baa0f62a1c3e28e",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -107969,8 +108776,8 @@
         "uid": "f9b6ec33-d0b5-468a-a92c-a8c62a4bcca9"
     },
     "f9b6f13e-8499-4c1e-a9fa-3a48bf172e30": {
-        "commit_message": "TLAB-2162 Add more normalized fields for Sysmon/Azure (#5826)",
-        "commit_origin_hash": "5a60733cc998e883cd4e9336310e2b69aba64805",
+        "commit_message": "TLAB-2571: ensure normalizedAction and normalizedResource fields populated in Linux/Windows Sysmon parsers (#5953)",
+        "commit_origin_hash": "093990e5f19609a4c1dd4cc1c8b374fc11ddba92",
         "field_mappings": {
             "action": {
                 "value": "change file creation time",
@@ -107991,6 +108798,10 @@
             },
             "normalizedAction": {
                 "value": "change",
+                "value_type": "constant"
+            },
+            "normalizedResource": {
+                "value": "file",
                 "value_type": "constant"
             },
             "sourceUid": {
@@ -108028,8 +108839,8 @@
         "uid": "f9b6f13e-8499-4c1e-a9fa-3a48bf172e30"
     },
     "f9c340b9-7b87-4040-be6e-b54bbb7afb67": {
-        "commit_message": "TLAB-2162 Add more normalized fields for Sysmon/Azure (#5826)",
-        "commit_origin_hash": "5a60733cc998e883cd4e9336310e2b69aba64805",
+        "commit_message": "TLAB-2578: add device_hostname map to EVID 3 for sysmon linux (#5964)",
+        "commit_origin_hash": "8685e737f76b07583ffd5e5d99388ada6792e767",
         "field_mappings": {
             "action": {
                 "value": "Process Access",
@@ -108047,6 +108858,14 @@
             },
             "file_path": {
                 "value": "TargetFilename"
+            },
+            "normalizedAction": {
+                "value": "access",
+                "value_type": "constant"
+            },
+            "normalizedResource": {
+                "value": "process",
+                "value_type": "constant"
             },
             "sourceUid": {
                 "value": "System.EventRecordID"
@@ -108702,8 +109521,8 @@
         "uid": "fa7a7c72-d746-43d2-976c-64066fc2381d"
     },
     "fa7ae50a-2cfe-411d-ba6d-8dd12468dd45": {
-        "commit_message": "TLAB-2162 Add more normalized fields for Sysmon/Azure (#5826)",
-        "commit_origin_hash": "5a60733cc998e883cd4e9336310e2b69aba64805",
+        "commit_message": "TLAB-2571: ensure normalizedAction and normalizedResource fields populated in Linux/Windows Sysmon parsers (#5953)",
+        "commit_origin_hash": "093990e5f19609a4c1dd4cc1c8b374fc11ddba92",
         "field_mappings": {
             "action": {
                 "value": "FileBlockShredding",
@@ -108724,6 +109543,14 @@
             },
             "file_path": {
                 "value": "EventData.TargetFilename"
+            },
+            "normalizedAction": {
+                "value": "deny",
+                "value_type": "constant"
+            },
+            "normalizedResource": {
+                "value": "file",
+                "value_type": "constant"
             },
             "pid": {
                 "value": "EventData.ProcessId"
@@ -109827,8 +110654,8 @@
         "uid": "fcf61539-91d2-4302-9c3a-442fb3353334"
     },
     "fd0e13bb-ad85-45f2-adc2-aa76151bb2c2": {
-        "commit_message": "TLAB-2162 Add more normalized fields for Sysmon/Azure (#5826)",
-        "commit_origin_hash": "5a60733cc998e883cd4e9336310e2b69aba64805",
+        "commit_message": "TLAB-2578: add device_hostname map to EVID 3 for sysmon linux (#5964)",
+        "commit_origin_hash": "8685e737f76b07583ffd5e5d99388ada6792e767",
         "field_mappings": {
             "action": {
                 "value": "State"
@@ -109839,6 +110666,14 @@
             },
             "device_hostname": {
                 "value": "System.Computer"
+            },
+            "normalizedAction": {
+                "value": "change",
+                "value_type": "constant"
+            },
+            "normalizedResource": {
+                "value": "service",
+                "value_type": "constant"
             },
             "sourceUid": {
                 "value": "System.EventRecordID"

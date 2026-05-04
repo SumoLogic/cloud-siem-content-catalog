@@ -22,17 +22,21 @@
 |Cloud SIEM Schema Field|Original Record Key|Notes|
 |----------------|-------------------|-----|
 |action|action||
+|application|app||
 |bytesIn|rcvddelta||
 |bytesOut|sentdelta||
 |description|msg||
-|device_ip|srcip||
+|device_hostname|devname||
+|device_uniqueId|devid||
 |dstDevice_ip|dstip||
 |dstPort|dstport||
 |http_hostname|hostname||
-|ipProtocol|proto||
+|ipProtocol|proto|This is a lookup field. More info to come in the catalog later...|
+|normalizedSeverity|severity|This is a lookup field. More info to come in the catalog later...|
 |packetsIn|rcvdpktdelta||
 |packetsOut|sentpktdelta||
-|severity|apprisk||
+|sessionId|sessionid||
+|severity|severity||
 |srcDevice_ip|srcip||
 |srcPort|srcport||
 |timestamp|eventtime|We expect the original record value of `eventtime` is in the format `epoch`|

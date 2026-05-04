@@ -15,7 +15,7 @@ After the configuration recorder is deleted, AWS Config will not record resource
 |Score/Severity|Static: 6|
 |Enabled by Default|True|
 |Prototype|False|
-|Tags|_mitreAttackTechnique:T1562, _mitreAttackTactic:TA0005, _mitreAttackTechnique:T1562.008, _mitreAttackTechnique:T1562.001|
+|Tags|_mitreAttackTechnique:T1685, _mitreAttackTactic:TA0005, _mitreAttackTechnique:T1685.002|
 ## Vendors and Products
 - [Amazon AWS - CloudTrail](../products/033624b0-218e-4dcb-b93f-0f1fb1806c56.md)
 
