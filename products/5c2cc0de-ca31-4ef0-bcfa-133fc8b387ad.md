@@ -46,7 +46,6 @@
 |MATCH-S00884|[macOS - Suspicious Python PIP Execution](../rules/MATCH-S00884.md)|
 |MATCH-S00882|[macOS - System Preference Enumeration via Security Binary](../rules/MATCH-S00882.md)|
 |MATCH-S00881|[macOS - csrutil status Usage Detected](../rules/MATCH-S00881.md)|
-|MATCH-S00916|[macOS - pwpolicy getaccountpolicies usage detected](../rules/MATCH-S00916.md)|
 |MATCH-S00726|[macOS Kernel Extension Load](../rules/MATCH-S00726.md)|
 
 

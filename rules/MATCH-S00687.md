@@ -16,6 +16,7 @@ This rule monitors for usage of the default command or script names associated w
 |Prototype|False|
 |Tags|_mitreAttackTactic:TA0004|
 ## Vendors and Products
+- [Amazon AWS - CloudTrail](../products/033624b0-218e-4dcb-b93f-0f1fb1806c56.md)
 - [CrowdStrike - FDR](../products/569a3a44-c29f-492e-bcf4-5dc04e2ab0f3.md)
 - [CrowdStrike - Falcon](../products/840c72e0-4e47-41e7-9b93-31f55d12f07d.md)
 - [Cyber-Ark - Enterprise Password Vault](../products/36f5ca33-0c1e-4223-8215-977ea04425ba.md)
@@ -27,6 +28,7 @@ This rule monitors for usage of the default command or script names associated w
 - [Microsoft - Defender Advanced Hunting](../products/3382523e-2072-41bd-b50b-6b148957d0b0.md)
 - [Microsoft - Graph Security API](../products/ef42eb74-7444-4fee-b231-b4eb1e7c9660.md)
 - [Microsoft - Windows](../products/1ff7546c-cb36-4a24-87f7-89d2cecc5761.md)
+- [Sysdig - Sysdig](../products/55ec1d4a-6985-4f04-8de5-f9812871fda2.md)
 - [Trend Micro - Vision One](../products/72a5ddec-abb9-41ff-a2da-6a58beff980c.md)
 
 

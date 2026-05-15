@@ -8,7 +8,7 @@ Observes for long URLs with possible SQL commands within them, an indication of 
 |----|----|
 |Type|Threshold|
 |Category|Execution|
-|Apply Risk to Entities|device_hostname, srcDevice_hostname, dstDevice_hostname, dstDevice_ip, srcDevice_ip, device_ip|
+|Apply Risk to Entities|device_hostname, srcDevice_hostname, dstDevice_hostname, dstDevice_ip, srcDevice_ip|
 |Signal Name|Long URL Containing SQL Commands|
 |Summary Expression|SQL commands found in long URL visited from IP: {{srcDevice_ip}}|
 |Threshold Count|2|
@@ -27,7 +27,6 @@ Observes for long URLs with possible SQL commands within them, an indication of 
 |Origin|Field|
 |----|----|
 |Normalized Schema|device_hostname|
-|Normalized Schema|device_ip|
 |Normalized Schema|dstDevice_hostname|
 |Normalized Schema|dstDevice_ip|
 |Normalized Schema|http_method|

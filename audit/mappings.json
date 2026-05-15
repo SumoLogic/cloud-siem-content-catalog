@@ -2694,8 +2694,8 @@
         "uid": "056fef7d-6b70-4163-be8b-373b43cd7225"
     },
     "058c85f4-1e48-44be-9624-99503c435705": {
-        "commit_message": "TLAB-2550: Removed Redundant Mapping for Fortinet (#5959)",
-        "commit_origin_hash": "28133809e6740b04a16f36503c62c7f025da976d",
+        "commit_message": "TLAB-2590 Fortigate Test Fixes (#5971)",
+        "commit_origin_hash": "90bce1b19a116cb5b64837d10ece2cbad27144cc",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -3965,8 +3965,8 @@
         "uid": "093f1178-2597-4a3b-8c6b-6b19f587781f"
     },
     "09680309-ab63-486a-b3b0-70c2e2f28459": {
-        "commit_message": "TLAB-2550: Removed Redundant Mapping for Fortinet (#5959)",
-        "commit_origin_hash": "28133809e6740b04a16f36503c62c7f025da976d",
+        "commit_message": "TLAB-2590 Fortigate Test Fixes (#5971)",
+        "commit_origin_hash": "90bce1b19a116cb5b64837d10ece2cbad27144cc",
         "field_mappings": {
             "action": {
                 "value": "act"
@@ -4778,8 +4778,8 @@
         "uid": "09ed1bbd-bea6-46b0-b4a0-f830bf73ca8c"
     },
     "0E379EC3-3EDC-4A5B-9BDE-DB3AAB45CDE0": {
-        "commit_message": "TLAB-2416: added http_url mapping for dns log (#5913)",
-        "commit_origin_hash": "b2ec8a288ba4998595b0f4d853f92395d8fa5e94",
+        "commit_message": "TLAB-2543: Removed Redundant Mapping for Cisco Umbrella (#5961)",
+        "commit_origin_hash": "b88c53541d2e7f4bee40957ceb10b8e8a62d2d04",
         "field_mappings": {
             "dstDevice_ip": {
                 "alternate_values": [
@@ -6719,6 +6719,81 @@
         ],
         "source": "jask",
         "uid": "0e0a1920-52d1-4541-965e-49a508df77b4"
+    },
+    "0e195da8-5093-4863-94f5-0c1a11146765": {
+        "commit_message": "TLAB-2589: new copyfail rules and laurel mapper updates (#5973)",
+        "commit_origin_hash": "69ed844f2269e9e4c262049e04cd6b0f81f88417",
+        "field_mappings": {
+            "baseImage": {
+                "value": "SYSCALL.exe"
+            },
+            "commandLine": {
+                "value": "commandLine"
+            },
+            "description": {
+                "value": "Process execution",
+                "value_type": "constant"
+            },
+            "device_hostname": {
+                "value": "NODE"
+            },
+            "normalizedAction": {
+                "value": "create",
+                "value_type": "constant"
+            },
+            "normalizedResource": {
+                "value": "process",
+                "value_type": "constant"
+            },
+            "parentBaseImage": {
+                "alternate_values": [
+                    "SYSCALL.PPID.exe"
+                ],
+                "value": "PARENT_INFO.exe"
+            },
+            "success": {
+                "lookup": {
+                    "no": "false",
+                    "yes": "true"
+                },
+                "value": "SYSCALL.success",
+                "value_type": "lookup"
+            },
+            "targetUser_userId": {
+                "value": "SYSCALL.uid"
+            },
+            "timestamp": {
+                "format": "epoch",
+                "value": "timestamp",
+                "value_type": "time"
+            },
+            "user_userId": {
+                "value": "SYSCALL.auid"
+            },
+            "user_username": {
+                "value": "SYSCALL.AUID"
+            }
+        },
+        "file_path": "mappings_schemav3/laurel_linux_audit.yaml",
+        "input": {
+            "event_id_pattern": "System Call-59",
+            "log_format": "JSON",
+            "product": "Laurel Linux Audit",
+            "vendor": "Laurel"
+        },
+        "name": "Laurel Linux Audit - Process Start",
+        "output": {
+            "product_guid": "f3803323-e4d1-4098-96c6-12e5bf2ab1f5",
+            "record_type": "Endpoint"
+        },
+        "skipped_values": [
+            ",",
+            "-",
+            "?",
+            " "
+        ],
+        "source": "jask",
+        "uid": "0e195da8-5093-4863-94f5-0c1a11146765"
     },
     "0e22eac6-b12e-44b8-95d8-4c984cdb0ab4": {
         "commit_message": "TRIDENT-15204 Remove Unused Groks and Mappings",
@@ -19822,26 +19897,14 @@
         "uid": "281ffe53-aeb7-43d4-be54-ff8fd6f017ab"
     },
     "28246ca3-8eba-4fc7-8049-273a83af890e": {
-        "commit_message": "TLAB-2485:update okata mapper (#5926)",
-        "commit_origin_hash": "5d9f31b29a21fc5eeadead6d21c3900d5376605d",
+        "commit_message": "TLAB-2541-Redundancy remediation: Okta device/srcDevice mappings (#5949)",
+        "commit_origin_hash": "b1a97642ec7e39fbd329668ddb4241427f4e8f20",
         "field_mappings": {
             "cause": {
                 "value": "outcome.reason"
             },
             "description": {
                 "value": "displayMessage"
-            },
-            "device_hostname": {
-                "alternate_values": [
-                    "device.name"
-                ],
-                "value": "detail.device.name"
-            },
-            "device_ip": {
-                "alternate_values": [
-                    "detail.client.ipAddress"
-                ],
-                "value": "client.ipAddress"
             },
             "device_osName": {
                 "alternate_values": [
@@ -19880,6 +19943,12 @@
                     "detail.severity"
                 ],
                 "value": "severity"
+            },
+            "srcDevice_hostname": {
+                "alternate_values": [
+                    "device.name"
+                ],
+                "value": "detail.device.name"
             },
             "srcDevice_ip": {
                 "alternate_values": [
@@ -20016,26 +20085,14 @@
         "uid": "282c781a-90a8-49f6-bb3b-47b1836f69d0"
     },
     "286d0aab-0efe-4f8f-922b-1151cc661c9b": {
-        "commit_message": "TLAB-2485:update okata mapper (#5926)",
-        "commit_origin_hash": "5d9f31b29a21fc5eeadead6d21c3900d5376605d",
+        "commit_message": "TLAB-2541-Redundancy remediation: Okta device/srcDevice mappings (#5949)",
+        "commit_origin_hash": "b1a97642ec7e39fbd329668ddb4241427f4e8f20",
         "field_mappings": {
             "cause": {
                 "value": "outcome.reason"
             },
             "description": {
                 "value": "displayMessage"
-            },
-            "device_hostname": {
-                "alternate_values": [
-                    "device.name"
-                ],
-                "value": "detail.device.name"
-            },
-            "device_ip": {
-                "alternate_values": [
-                    "detail.client.ipAddress"
-                ],
-                "value": "client.ipAddress"
             },
             "device_osName": {
                 "alternate_values": [
@@ -20094,6 +20151,12 @@
                     "detail.severity"
                 ],
                 "value": "severity"
+            },
+            "srcDevice_hostname": {
+                "alternate_values": [
+                    "device.name"
+                ],
+                "value": "detail.device.name"
             },
             "srcDevice_ip": {
                 "alternate_values": [
@@ -30811,8 +30874,8 @@
         "uid": "401e8cd6-0b15-4f1e-8695-a94b3453ec85"
     },
     "402fc87e-2abc-4f24-ae5d-8978f793fb92": {
-        "commit_message": "Update laurel_linux_audit.yaml",
-        "commit_origin_hash": "31b51e6eaa51e3e1af5d19e8c641c61e124dfca5",
+        "commit_message": "TLAB-2589: new copyfail rules and laurel mapper updates (#5973)",
+        "commit_origin_hash": "69ed844f2269e9e4c262049e04cd6b0f81f88417",
         "field_mappings": {
             "baseImage": {
                 "value": "SYSCALL.exe"
@@ -30963,6 +31026,9 @@
                 "value_type": "constant"
             },
             "parentBaseImage": {
+                "alternate_values": [
+                    "SYSCALL.PPID.exe"
+                ],
                 "value": "PARENT_INFO.exe"
             },
             "success": {
@@ -30980,6 +31046,9 @@
             },
             "user_userId": {
                 "value": "SYSCALL.auid"
+            },
+            "user_username": {
+                "value": "SYSCALL.AUID"
             }
         },
         "file_path": "mappings_schemav3/laurel_linux_audit.yaml",
@@ -34655,8 +34724,8 @@
         "uid": "497f325f-2dfe-4ac5-92ab-a0a209aba2f4"
     },
     "4986836c-1759-422b-b5c4-8a548f18616b": {
-        "commit_message": "TLAB-2550: Removed Redundant Mapping for Fortinet (#5959)",
-        "commit_origin_hash": "28133809e6740b04a16f36503c62c7f025da976d",
+        "commit_message": "TLAB-2590 Fortigate Test Fixes (#5971)",
+        "commit_origin_hash": "90bce1b19a116cb5b64837d10ece2cbad27144cc",
         "field_mappings": {
             "action": {
                 "value": "act"
@@ -39680,8 +39749,8 @@
         "uid": "5406ec15-2203-460b-bd6e-ea8facf33082"
     },
     "54198319-5c3b-4897-a857-be82962cfd00": {
-        "commit_message": "TLAB-2550: Removed Redundant Mapping for Fortinet (#5959)",
-        "commit_origin_hash": "28133809e6740b04a16f36503c62c7f025da976d",
+        "commit_message": "TLAB-2590 Fortigate Test Fixes (#5971)",
+        "commit_origin_hash": "90bce1b19a116cb5b64837d10ece2cbad27144cc",
         "field_mappings": {
             "description": {
                 "value": "logdesc"
@@ -44206,8 +44275,8 @@
         "uid": "5f842838-583c-4f45-b54a-e6a1f885e27b"
     },
     "5f9fd200-dfdc-4b22-8709-81c5a2ef92f5": {
-        "commit_message": "TLAB-2485:update okata mapper (#5926)",
-        "commit_origin_hash": "5d9f31b29a21fc5eeadead6d21c3900d5376605d",
+        "commit_message": "TLAB-2541-Redundancy remediation: Okta device/srcDevice mappings (#5949)",
+        "commit_origin_hash": "b1a97642ec7e39fbd329668ddb4241427f4e8f20",
         "field_mappings": {
             "application": {
                 "alternate_values": [
@@ -44220,18 +44289,6 @@
             },
             "description": {
                 "value": "displayMessage"
-            },
-            "device_hostname": {
-                "alternate_values": [
-                    "device.name"
-                ],
-                "value": "detail.device.name"
-            },
-            "device_ip": {
-                "alternate_values": [
-                    "detail.client.ipAddress"
-                ],
-                "value": "client.ipAddress"
             },
             "device_osName": {
                 "alternate_values": [
@@ -44270,6 +44327,12 @@
                     "detail.severity"
                 ],
                 "value": "severity"
+            },
+            "srcDevice_hostname": {
+                "alternate_values": [
+                    "device.name"
+                ],
+                "value": "detail.device.name"
             },
             "srcDevice_ip": {
                 "alternate_values": [
@@ -49672,26 +49735,14 @@
         "uid": "6aba82d7-0aad-4a97-a626-a3ddff6d7dc3"
     },
     "6ac3a0a7-d1be-48dc-a0f7-cf5bf6678d6a": {
-        "commit_message": "TLAB-2485:update okata mapper (#5926)",
-        "commit_origin_hash": "5d9f31b29a21fc5eeadead6d21c3900d5376605d",
+        "commit_message": "TLAB-2541-Redundancy remediation: Okta device/srcDevice mappings (#5949)",
+        "commit_origin_hash": "b1a97642ec7e39fbd329668ddb4241427f4e8f20",
         "field_mappings": {
             "cause": {
                 "value": "outcome.reason"
             },
             "description": {
                 "value": "displayMessage"
-            },
-            "device_hostname": {
-                "alternate_values": [
-                    "device.name"
-                ],
-                "value": "detail.device.name"
-            },
-            "device_ip": {
-                "alternate_values": [
-                    "detail.client.ipAddress"
-                ],
-                "value": "client.ipAddress"
             },
             "device_osName": {
                 "alternate_values": [
@@ -49730,6 +49781,12 @@
                     "detail.severity"
                 ],
                 "value": "severity"
+            },
+            "srcDevice_hostname": {
+                "alternate_values": [
+                    "device.name"
+                ],
+                "value": "detail.device.name"
             },
             "srcDevice_ip": {
                 "alternate_values": [
@@ -53461,8 +53518,8 @@
         "uid": "74a1403a-a31d-41e3-9799-3f683c7a4243"
     },
     "74ea4bd5-67eb-4c82-97d7-0caf2e179a5e": {
-        "commit_message": "TLAB-2550: Removed Redundant Mapping for Fortinet (#5959)",
-        "commit_origin_hash": "28133809e6740b04a16f36503c62c7f025da976d",
+        "commit_message": "TLAB-2590 Fortigate Test Fixes (#5971)",
+        "commit_origin_hash": "90bce1b19a116cb5b64837d10ece2cbad27144cc",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -54389,8 +54446,8 @@
         "uid": "76893103-7434-4729-996d-e0cffc8b399e"
     },
     "76b2e178-ff09-40c9-9755-745661f30a22": {
-        "commit_message": "TLAB-2550: Removed Redundant Mapping for Fortinet (#5959)",
-        "commit_origin_hash": "28133809e6740b04a16f36503c62c7f025da976d",
+        "commit_message": "TLAB-2590 Fortigate Test Fixes (#5971)",
+        "commit_origin_hash": "90bce1b19a116cb5b64837d10ece2cbad27144cc",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -62466,8 +62523,8 @@
         "uid": "895b83e2-e169-4e3b-a768-46cf23670b24"
     },
     "89745f55-029f-482b-9f17-31c2a5bd9efd": {
-        "commit_message": "TLAB-2550: Removed Redundant Mapping for Fortinet (#5959)",
-        "commit_origin_hash": "28133809e6740b04a16f36503c62c7f025da976d",
+        "commit_message": "TLAB-2590 Fortigate Test Fixes (#5971)",
+        "commit_origin_hash": "90bce1b19a116cb5b64837d10ece2cbad27144cc",
         "field_mappings": {
             "action": {
                 "value": "act"
@@ -69028,26 +69085,14 @@
         "uid": "95a7361d-8f95-4abd-a7e5-57306bb2c3a8"
     },
     "95cc6b62-1052-43a0-8aa7-586d64007614": {
-        "commit_message": "TLAB-2485:update okata mapper (#5926)",
-        "commit_origin_hash": "5d9f31b29a21fc5eeadead6d21c3900d5376605d",
+        "commit_message": "TLAB-2541-Redundancy remediation: Okta device/srcDevice mappings (#5949)",
+        "commit_origin_hash": "b1a97642ec7e39fbd329668ddb4241427f4e8f20",
         "field_mappings": {
             "cause": {
                 "value": "outcome.reason"
             },
             "description": {
                 "value": "displayMessage"
-            },
-            "device_hostname": {
-                "alternate_values": [
-                    "device.name"
-                ],
-                "value": "detail.device.name"
-            },
-            "device_ip": {
-                "alternate_values": [
-                    "detail.client.ipAddress"
-                ],
-                "value": "client.ipAddress"
             },
             "device_osName": {
                 "alternate_values": [
@@ -69092,6 +69137,12 @@
                     "detail.severity"
                 ],
                 "value": "severity"
+            },
+            "srcDevice_hostname": {
+                "alternate_values": [
+                    "device.name"
+                ],
+                "value": "detail.device.name"
             },
             "srcDevice_ip": {
                 "alternate_values": [
@@ -73222,14 +73273,11 @@
         "uid": "ACF84F40-209E-445D-84C8-EE43BB8AF3C3"
     },
     "AEF70553-7ADC-49DF-A4EF-F17225D3BE11": {
-        "commit_message": "TLAB-2416: added http_url mapping for dns log (#5913)",
-        "commit_origin_hash": "b2ec8a288ba4998595b0f4d853f92395d8fa5e94",
+        "commit_message": "TLAB-2543: Removed Redundant Mapping for Cisco Umbrella (#5961)",
+        "commit_origin_hash": "b88c53541d2e7f4bee40957ceb10b8e8a62d2d04",
         "field_mappings": {
             "action": {
                 "value": "verdict"
-            },
-            "device_ip": {
-                "value": "internal_ip"
             },
             "dstDevice_natIp": {
                 "value": "destination_ip"
@@ -73888,8 +73936,8 @@
         "uid": "F5B00BE8-0714-4378-810C-F1712BDCC21E"
     },
     "F772A05B-7F8B-45B1-AFCE-A2EA9DC0FCBC": {
-        "commit_message": "TLAB-2416: added http_url mapping for dns log (#5913)",
-        "commit_origin_hash": "b2ec8a288ba4998595b0f4d853f92395d8fa5e94",
+        "commit_message": "TLAB-2543: Removed Redundant Mapping for Cisco Umbrella (#5961)",
+        "commit_origin_hash": "b88c53541d2e7f4bee40957ceb10b8e8a62d2d04",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -75336,8 +75384,8 @@
         "uid": "a2bdaf5f-92f8-45f3-be99-eb8fa34d26a7"
     },
     "a334a0ca-b389-4f59-b34b-66b19becfbe2": {
-        "commit_message": "TLAB-2550: Removed Redundant Mapping for Fortinet (#5959)",
-        "commit_origin_hash": "28133809e6740b04a16f36503c62c7f025da976d",
+        "commit_message": "TLAB-2590 Fortigate Test Fixes (#5971)",
+        "commit_origin_hash": "90bce1b19a116cb5b64837d10ece2cbad27144cc",
         "field_mappings": {
             "bytesIn": {
                 "value": "ad.lanin"
@@ -76283,8 +76331,8 @@
         "uid": "a4967bae-89ca-11ea-bc55-0242ac130003"
     },
     "a4a85fa1-c67e-4dc5-8685-4c39a3a9e012": {
-        "commit_message": "TLAB-2550: Removed Redundant Mapping for Fortinet (#5959)",
-        "commit_origin_hash": "28133809e6740b04a16f36503c62c7f025da976d",
+        "commit_message": "TLAB-2590 Fortigate Test Fixes (#5971)",
+        "commit_origin_hash": "90bce1b19a116cb5b64837d10ece2cbad27144cc",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -78289,8 +78337,8 @@
         "uid": "aaa2d5b5-0a1b-46d3-b467-bf6ff95aed94"
     },
     "aac55d27-898b-4bc4-9a20-19b8e3897f61": {
-        "commit_message": "TLAB-2550: Removed Redundant Mapping for Fortinet (#5959)",
-        "commit_origin_hash": "28133809e6740b04a16f36503c62c7f025da976d",
+        "commit_message": "TLAB-2590 Fortigate Test Fixes (#5971)",
+        "commit_origin_hash": "90bce1b19a116cb5b64837d10ece2cbad27144cc",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -78732,8 +78780,8 @@
         "uid": "ac0149c5-b3d9-45c0-8ab3-b96a18cb1cdb"
     },
     "ac1d101a-1ac6-429a-930a-040d54931332": {
-        "commit_message": "TLAB-2550: Removed Redundant Mapping for Fortinet (#5959)",
-        "commit_origin_hash": "28133809e6740b04a16f36503c62c7f025da976d",
+        "commit_message": "TLAB-2590 Fortigate Test Fixes (#5971)",
+        "commit_origin_hash": "90bce1b19a116cb5b64837d10ece2cbad27144cc",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -79168,8 +79216,8 @@
         "uid": "ace70500-eed9-4628-a9a4-970e5e34e228"
     },
     "ad133542-26f6-45d4-a082-0118e80307aa": {
-        "commit_message": "TLAB-2550: Removed Redundant Mapping for Fortinet (#5959)",
-        "commit_origin_hash": "28133809e6740b04a16f36503c62c7f025da976d",
+        "commit_message": "TLAB-2590 Fortigate Test Fixes (#5971)",
+        "commit_origin_hash": "90bce1b19a116cb5b64837d10ece2cbad27144cc",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -80325,8 +80373,8 @@
         "uid": "b0b5ccde-70c6-4b03-ad2b-da4a57ae39c7"
     },
     "b0dca67a-1761-4570-b44b-cc83be28887b": {
-        "commit_message": "Update laurel_linux_audit.yaml",
-        "commit_origin_hash": "31b51e6eaa51e3e1af5d19e8c641c61e124dfca5",
+        "commit_message": "TLAB-2589: new copyfail rules and laurel mapper updates (#5973)",
+        "commit_origin_hash": "69ed844f2269e9e4c262049e04cd6b0f81f88417",
         "field_mappings": {
             "action": {
                 "value": "op"
@@ -80563,8 +80611,8 @@
         "uid": "b189f43b-1084-45b4-8898-454fd4664147"
     },
     "b1a5df95-3108-40d4-acc3-3322b0bc7688": {
-        "commit_message": "Update laurel_linux_audit.yaml",
-        "commit_origin_hash": "31b51e6eaa51e3e1af5d19e8c641c61e124dfca5",
+        "commit_message": "TLAB-2589: new copyfail rules and laurel mapper updates (#5973)",
+        "commit_origin_hash": "69ed844f2269e9e4c262049e04cd6b0f81f88417",
         "field_mappings": {
             "action": {
                 "value": "op"
@@ -83004,8 +83052,8 @@
         "uid": "b6f6c7ab-88a7-420c-8800-8c029bfc9ac3"
     },
     "b722f175-2dd7-4509-b97f-63de578cbb59": {
-        "commit_message": "TLAB-2550: Removed Redundant Mapping for Fortinet (#5959)",
-        "commit_origin_hash": "28133809e6740b04a16f36503c62c7f025da976d",
+        "commit_message": "TLAB-2590 Fortigate Test Fixes (#5971)",
+        "commit_origin_hash": "90bce1b19a116cb5b64837d10ece2cbad27144cc",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -83377,26 +83425,14 @@
         "uid": "b774a4f1-b58f-44b2-b962-8bec88f30976"
     },
     "b7de0d84-93e2-4dec-87e8-5bd77e74dbe9": {
-        "commit_message": "TLAB-2485:update okata mapper (#5926)",
-        "commit_origin_hash": "5d9f31b29a21fc5eeadead6d21c3900d5376605d",
+        "commit_message": "TLAB-2541-Redundancy remediation: Okta device/srcDevice mappings (#5949)",
+        "commit_origin_hash": "b1a97642ec7e39fbd329668ddb4241427f4e8f20",
         "field_mappings": {
             "cause": {
                 "value": "outcome.reason"
             },
             "description": {
                 "value": "displayMessage"
-            },
-            "device_hostname": {
-                "alternate_values": [
-                    "device.name"
-                ],
-                "value": "detail.device.name"
-            },
-            "device_ip": {
-                "alternate_values": [
-                    "detail.client.ipAddress"
-                ],
-                "value": "client.ipAddress"
             },
             "device_osName": {
                 "alternate_values": [
@@ -83449,6 +83485,12 @@
                     "detail.severity"
                 ],
                 "value": "severity"
+            },
+            "srcDevice_hostname": {
+                "alternate_values": [
+                    "device.name"
+                ],
+                "value": "detail.device.name"
             },
             "srcDevice_ip": {
                 "alternate_values": [
@@ -88406,8 +88448,8 @@
         "uid": "c5b68c1d-1d67-417a-89c3-1a33266778f7"
     },
     "c5d57c30-5458-4895-91eb-40a2483e9008": {
-        "commit_message": "TLAB-2550: Removed Redundant Mapping for Fortinet (#5959)",
-        "commit_origin_hash": "28133809e6740b04a16f36503c62c7f025da976d",
+        "commit_message": "TLAB-2590 Fortigate Test Fixes (#5971)",
+        "commit_origin_hash": "90bce1b19a116cb5b64837d10ece2cbad27144cc",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -88458,10 +88500,11 @@
                     "alert": "9",
                     "critical": "10",
                     "error": "7",
-                    "high": "8",
+                    "high": "9",
+                    "info": "0",
                     "information": "0",
                     "low": "1",
-                    "medium": "5",
+                    "medium": "2",
                     "notice": "2",
                     "warning": "6"
                 },
@@ -92466,26 +92509,14 @@
         "uid": "d01f4ea7-2a17-4a03-a67c-da572df33b9c"
     },
     "d02667f4-783f-4db9-a08c-0e107882cab9": {
-        "commit_message": "TLAB-2485:update okata mapper (#5926)",
-        "commit_origin_hash": "5d9f31b29a21fc5eeadead6d21c3900d5376605d",
+        "commit_message": "TLAB-2541-Redundancy remediation: Okta device/srcDevice mappings (#5949)",
+        "commit_origin_hash": "b1a97642ec7e39fbd329668ddb4241427f4e8f20",
         "field_mappings": {
             "cause": {
                 "value": "outcome.reason"
             },
             "description": {
                 "value": "displayMessage"
-            },
-            "device_hostname": {
-                "alternate_values": [
-                    "device.name"
-                ],
-                "value": "detail.device.name"
-            },
-            "device_ip": {
-                "alternate_values": [
-                    "detail.client.ipAddress"
-                ],
-                "value": "client.ipAddress"
             },
             "device_osName": {
                 "alternate_values": [
@@ -92530,6 +92561,12 @@
                     "detail.severity"
                 ],
                 "value": "severity"
+            },
+            "srcDevice_hostname": {
+                "alternate_values": [
+                    "device.name"
+                ],
+                "value": "detail.device.name"
             },
             "srcDevice_ip": {
                 "alternate_values": [
@@ -96981,8 +97018,8 @@
         "uid": "dbe1aefa-8b38-49f6-83d4-d60fd0c7f99c"
     },
     "dc596d84-47fe-4a4f-8132-dca3fe5920c9": {
-        "commit_message": "TLAB-2550: Removed Redundant Mapping for Fortinet (#5959)",
-        "commit_origin_hash": "28133809e6740b04a16f36503c62c7f025da976d",
+        "commit_message": "TLAB-2590 Fortigate Test Fixes (#5971)",
+        "commit_origin_hash": "90bce1b19a116cb5b64837d10ece2cbad27144cc",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -97241,8 +97278,8 @@
         "uid": "dc975eac-b121-408f-8688-48b80ce09d8b"
     },
     "dca6ce19-449e-468b-9bea-3db2cb87fa9c": {
-        "commit_message": "TLAB-2550: Removed Redundant Mapping for Fortinet (#5959)",
-        "commit_origin_hash": "28133809e6740b04a16f36503c62c7f025da976d",
+        "commit_message": "TLAB-2590 Fortigate Test Fixes (#5971)",
+        "commit_origin_hash": "90bce1b19a116cb5b64837d10ece2cbad27144cc",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -98742,8 +98779,8 @@
         "uid": "dffce69e-85d4-4894-9b32-a5ff9657b101"
     },
     "e018g3c3-df8a-4722-8382-b8r4er0641ee": {
-        "commit_message": "TLAB-2550: Removed Redundant Mapping for Fortinet (#5959)",
-        "commit_origin_hash": "28133809e6740b04a16f36503c62c7f025da976d",
+        "commit_message": "TLAB-2590 Fortigate Test Fixes (#5971)",
+        "commit_origin_hash": "90bce1b19a116cb5b64837d10ece2cbad27144cc",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -98821,8 +98858,8 @@
         "uid": "e018g3c3-df8a-4722-8382-b8r4er0641ee"
     },
     "e018r3c3-da8a-4022-8382-b8r4er0641ee": {
-        "commit_message": "TLAB-2550: Removed Redundant Mapping for Fortinet (#5959)",
-        "commit_origin_hash": "28133809e6740b04a16f36503c62c7f025da976d",
+        "commit_message": "TLAB-2590 Fortigate Test Fixes (#5971)",
+        "commit_origin_hash": "90bce1b19a116cb5b64837d10ece2cbad27144cc",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -98907,8 +98944,8 @@
         "uid": "e018r3c3-da8a-4022-8382-b8r4er0641ee"
     },
     "e018v5c1-df0g-4712-8582-b8d4er0642ee": {
-        "commit_message": "TLAB-2550: Removed Redundant Mapping for Fortinet (#5959)",
-        "commit_origin_hash": "28133809e6740b04a16f36503c62c7f025da976d",
+        "commit_message": "TLAB-2590 Fortigate Test Fixes (#5971)",
+        "commit_origin_hash": "90bce1b19a116cb5b64837d10ece2cbad27144cc",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -101709,8 +101746,8 @@
         "uid": "e6da534c-057e-484b-9420-18b257745739"
     },
     "e70b51c6-7240-4b03-8c91-6c703feff198": {
-        "commit_message": "TLAB-2550: Removed Redundant Mapping for Fortinet (#5959)",
-        "commit_origin_hash": "28133809e6740b04a16f36503c62c7f025da976d",
+        "commit_message": "TLAB-2590 Fortigate Test Fixes (#5971)",
+        "commit_origin_hash": "90bce1b19a116cb5b64837d10ece2cbad27144cc",
         "field_mappings": {
             "description": {
                 "value": "msg"
@@ -107061,8 +107098,8 @@
         "uid": "f50113e5-8a13-49a8-873e-6af7030f9b6d"
     },
     "f5471bd2-a961-4aad-bae4-0e182bdfd05e": {
-        "commit_message": "TLAB-2550: Removed Redundant Mapping for Fortinet (#5959)",
-        "commit_origin_hash": "28133809e6740b04a16f36503c62c7f025da976d",
+        "commit_message": "TLAB-2590 Fortigate Test Fixes (#5971)",
+        "commit_origin_hash": "90bce1b19a116cb5b64837d10ece2cbad27144cc",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -108416,8 +108453,8 @@
         "uid": "f8794970-48a2-409f-883a-89fbd566b379"
     },
     "f8aece90-2f37-4086-8193-0adb47056800": {
-        "commit_message": "TLAB-2550: Removed Redundant Mapping for Fortinet (#5959)",
-        "commit_origin_hash": "28133809e6740b04a16f36503c62c7f025da976d",
+        "commit_message": "TLAB-2590 Fortigate Test Fixes (#5971)",
+        "commit_origin_hash": "90bce1b19a116cb5b64837d10ece2cbad27144cc",
         "field_mappings": {
             "action": {
                 "value": "action"

@@ -8,7 +8,7 @@ This rule detects a URL indicator match from a threat intelligence feed
 |----|----|
 |Type|Templated Match|
 |Category|Threat Intelligence|
-|Apply Risk to Entities|device_hostname, srcDevice_hostname, device_ip, device_natIp, srcDevice_ip, srcDevice_natIp, device_mac, srcDevice_mac, user_username, dns_replyIp|
+|Apply Risk to Entities|device_hostname, srcDevice_hostname, device_natIp, device_ip, srcDevice_ip, srcDevice_natIp, device_mac, srcDevice_mac, user_username, dns_replyIp|
 |Signal Name|Threat Intel - HTTP URL|
 |Summary Expression|Threat Intel - HTTP URL detected for: {{http_url}}|
 |Score/Severity|Static: 2|
@@ -27,6 +27,7 @@ This rule detects a URL indicator match from a threat intelligence feed
 - [Fortinet - Fortigate](../products/c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad.md)
 - [Google - Google Cloud Platform](../products/dcc85cfc-a698-4d09-87de-f2c723f3ad07.md)
 - [Juniper - SRX Series Firewall](../products/A17B3F3C-04F1-40C8-9497-3C499EB18A74.md)
+- [Microsoft - Azure](../products/a1225af5-e778-4068-a9a2-47da93d1ff24.md)
 - [Microsoft - Defender Advanced Hunting](../products/3382523e-2072-41bd-b50b-6b148957d0b0.md)
 - [Microsoft - Graph Security API](../products/ef42eb74-7444-4fee-b231-b4eb1e7c9660.md)
 - [Microsoft - Office 365](../products/d3ed003d-5ddd-4c7a-bea5-63eae6311833.md)

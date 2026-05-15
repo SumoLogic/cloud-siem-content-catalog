@@ -8,7 +8,7 @@ Common administrative tools may be used by malware authors and attackers who use
 |----|----|
 |Type|Match|
 |Category|Execution|
-|Apply Risk to Entities|device_ip, srcDevice_ip, dstDevice_ip, device_hostname, srcDevice_hostname, dstDevice_hostname, user_username, dstDevice_hostname, dstDevice_ip|
+|Apply Risk to Entities|srcDevice_ip, dstDevice_ip, device_hostname, srcDevice_hostname, dstDevice_hostname, user_username, dstDevice_hostname, dstDevice_ip|
 |Signal Name|Suspicious HTTP User-Agent|
 |Summary Expression|Suspicious user agent from IP: {{srcDevice_ip}} user agent: {{http_userAgent}}|
 |Score/Severity|Static: 1|
@@ -62,7 +62,6 @@ Common administrative tools may be used by malware authors and attackers who use
 |Origin|Field|
 |----|----|
 |Normalized Schema|device_hostname|
-|Normalized Schema|device_ip|
 |Normalized Schema|dstDevice_hostname|
 |Normalized Schema|dstDevice_ip|
 |Normalized Schema|http_url_path|

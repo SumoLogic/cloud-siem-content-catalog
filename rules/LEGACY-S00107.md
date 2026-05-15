@@ -8,7 +8,7 @@ A record flagged an IP address from a threat intelligence match list
 |----|----|
 |Type|Match|
 |Category|Threat Intelligence|
-|Apply Risk to Entities|srcDevice_hostname, srcDevice_ip, srcDevice_natIp, srcDevice_mac, user_username, dns_replyIp|
+|Apply Risk to Entities|srcDevice_hostname, srcDevice_ip, srcDevice_natIp, device_ip, srcDevice_mac, user_username, dns_replyIp|
 |Signal Name|Threat Intel Match - IP Address|
 |Summary Expression|None|
 |Score/Severity|Static: 1|
@@ -61,6 +61,7 @@ A record flagged an IP address from a threat intelligence match list
 
 |Origin|Field|
 |----|----|
+|Normalized Schema|device_ip|
 |Normalized Schema|dns_replyIp|
 |Normalized Schema|srcDevice_hostname|
 |Normalized Schema|srcDevice_ip|

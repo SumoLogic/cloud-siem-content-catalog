@@ -8,9 +8,9 @@ This signal looks for an outlier in the number of OpenID Connect (OIDC) token re
 |----|----|
 |Type|Outlier|
 |Category|Lateral Movement|
-|Apply Risk to Entities|device_ip|
+|Apply Risk to Entities|srcDevice_ip|
 |Signal Name|Okta - Outlier in OIDC token request failures|
-|Summary Expression|Okta - Outlier in OIDC token request failures from {{device_ip}} for the Client ID:  {{user_username}}|
+|Summary Expression|Okta - Outlier in OIDC token request failures from {{srcDevice_ip}} for the Client ID:  {{user_username}}|
 |Retention Window|5184000000|
 |Baseline Window|2592000000|
 |Standard Deviation Threshold|1|
@@ -27,9 +27,9 @@ This signal looks for an outlier in the number of OpenID Connect (OIDC) token re
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|device_ip|
 |Normalized Schema|metadata_deviceEventId|
 |Normalized Schema|metadata_vendor|
+|Normalized Schema|srcDevice_ip|
 |Normalized Schema|success|
 
 

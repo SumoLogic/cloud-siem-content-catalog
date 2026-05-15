@@ -8,7 +8,7 @@ HTTP web services provide response codes to client requests. The response code n
 |----|----|
 |Type|Threshold|
 |Category|Discovery|
-|Apply Risk to Entities|device_ip, srcDevice_ip, dstDevice_ip, device_hostname, srcDevice_hostname, dstDevice_hostname|
+|Apply Risk to Entities|srcDevice_ip, dstDevice_ip, device_hostname, srcDevice_hostname, dstDevice_hostname|
 |Signal Name|HTTP Response Error Spike - Internal|
 |Summary Expression|High number of internal HTTP response errors from IP: {{srcDevice_ip}} to {{dstDevice_ip}}|
 |Threshold Count|350|
@@ -47,7 +47,6 @@ HTTP web services provide response codes to client requests. The response code n
 |Origin|Field|
 |----|----|
 |Normalized Schema|device_hostname|
-|Normalized Schema|device_ip|
 |Normalized Schema|dstDevice_hostname|
 |Normalized Schema|dstDevice_ip|
 |Normalized Schema|http_response_statusCode|

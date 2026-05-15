@@ -16,11 +16,6 @@
 |MATCH-S00458|[ADPassHunt Tool](MATCH-S00458.md)|
 |MATCH-S00307|[AWS - Excessive OAuth Application Permissions Scope](MATCH-S00307.md)|
 |MATCH-S00306|[AWS - New UserPoolClient Created](MATCH-S00306.md)|
-|FIRST-S00101|[AWS Bedrock - KB Data Source from External S3 Bucket](FIRST-S00101.md)|
-|THRESHOLD-S00125|[AWS Bedrock - Knowledge Base Mass Deletion](THRESHOLD-S00125.md)|
-|MATCH-S01151|[AWS Bedrock - Privileged Permissions Granted](MATCH-S01151.md)|
-|CHAIN-S00026|[AWS Bedrock - Privileged Policy Created and Attached](CHAIN-S00026.md)|
-|THRESHOLD-S00124|[AWS Bedrock - Rapid Guardrail Interventions](THRESHOLD-S00124.md)|
 |MATCH-S00922|[AWS Bedrock Agent Created](MATCH-S00922.md)|
 |MATCH-S00924|[AWS Bedrock Guardrail Deleted](MATCH-S00924.md)|
 |MATCH-S00923|[AWS Bedrock Model Invocation Denied for User](MATCH-S00923.md)|
@@ -215,7 +210,6 @@
 |MATCH-S00388|[COMPlus_ETWEnabled Command Line Arguments](MATCH-S00388.md)|
 |MATCH-S00727|[CPL File Executed from Temp Directory](MATCH-S00727.md)|
 |MATCH-S00209|[CVE-2021-44228 Log4j2 Java Library 0-Day Attempt](MATCH-S00209.md)|
-|MATCH-S01049|[CVE-2025-53770 Detection spinstall0.aspx](MATCH-S01049.md)|
 |CHAIN-S00017|[Change of Azure MFA Method followed by Risky SignIn](CHAIN-S00017.md)|
 |MATCH-S00821|[Chromium Browser History Access by Non-Browser Process](MATCH-S00821.md)|
 |MATCH-S00897|[Chromium Extension Installed](MATCH-S00897.md)|
@@ -310,7 +304,6 @@
 |FIRST-S00037|[First Seen AWS EKS Admission Controller Created by IP Address](FIRST-S00037.md)|
 |FIRST-S00035|[First Seen AWS EKS Secrets Enumeration from IP Address](FIRST-S00035.md)|
 |FIRST-S00024|[First Seen AWS SSM RunShellScript SendCommand From User](FIRST-S00024.md)|
-|FIRST-S00075|[First Seen AWS SSM activity by User](FIRST-S00075.md)|
 |FIRST-S00003|[First Seen AWS Secrets Manager API Call from User](FIRST-S00003.md)|
 |LEGACY-S00036|[First Seen Access - SMB Share](LEGACY-S00036.md)|
 |FIRST-S00001|[First Seen Administrative Privileges Granted for User](FIRST-S00001.md)|
@@ -631,11 +624,6 @@
 |MATCH-S00636|[Okta User Attempted to Access Unauthorized App](MATCH-S00636.md)|
 |MATCH-S00605|[OneLogin - API Credentials - New Key Created](MATCH-S00605.md)|
 |MATCH-S00609|[OneLogin - Login Failed - MFA Unsuccessful](MATCH-S00609.md)|
-|CHAIN-S00025|[OpenClaw - Installation Detected via DNS](CHAIN-S00025.md)|
-|CHAIN-S00027|[OpenClaw - Outbound Connection from Child Process](CHAIN-S00027.md)|
-|MATCH-S01149|[OpenClaw - Shell Launch by Gateway](MATCH-S01149.md)|
-|MATCH-S01152|[OpenClaw - Skill Installed Out-of-Band](MATCH-S01152.md)|
-|MATCH-S01150|[Openclaw - Activity on Default Port](MATCH-S01150.md)|
 |MATCH-S00556|[Outbound Data Transfer Protocol Over Non-standard Port](MATCH-S00556.md)|
 |MATCH-S00554|[Outbound IRC Traffic](MATCH-S00554.md)|
 |LEGACY-S00056|[Outbound TFTP Traffic](LEGACY-S00056.md)|
@@ -1029,7 +1017,6 @@
 |MATCH-S00884|[macOS - Suspicious Python PIP Execution](MATCH-S00884.md)|
 |MATCH-S00882|[macOS - System Preference Enumeration via Security Binary](MATCH-S00882.md)|
 |MATCH-S00881|[macOS - csrutil status Usage Detected](MATCH-S00881.md)|
-|MATCH-S00916|[macOS - pwpolicy getaccountpolicies usage detected](MATCH-S00916.md)|
 |MATCH-S00726|[macOS Kernel Extension Load](MATCH-S00726.md)|
 |MATCH-S00748|[macOS Login Items Modification](MATCH-S00748.md)|
 |MATCH-S00752|[macOS Startup Items Modifications](MATCH-S00752.md)|
