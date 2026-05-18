@@ -119,11 +119,11 @@
         "parser_text": "[parser]\nFORMAT = JSON\n\n#Handle time\nSTART_TIME_FIELD = connection-last-update-time\nTIME_PARSER = yyyy-MM-dd HH:mm:ss\n\n#Set mapper information\nMAPPER:vendor = Amazon AWS\nMAPPER:product = VPN\nMAPPER:event_id = {{connection-log-type}}"
     },
     "/Parsers/System/AWS/AWS WAF": {
-        "commit_message": "TLAB-937 remove the hardcoded http",
-        "commit_origin_hash": "ebea46060b7ccb2b906895405b7f6a74dab4feda",
+        "commit_message": "corrected parser to include logic from original parser + additions to resolve TLAB-2555",
+        "commit_origin_hash": "35c0dd285fa9c74c97335e8fc23fa6741e9d79ea",
         "description": "",
         "name": "AWS WAF",
-        "parser_text": "[parser]\nFORMAT = JSON\n\n#Handle time\nSTART_TIME_FIELD = timestamp\nTIME_PARSER = X1000\n\n#Set mapper information\nMAPPER:vendor = AWS\nMAPPER:product = WAF\nMAPPER:event_id = {{action}}\n\n#Join request header values to key-value pairs based on index number where applicable\nZIP:r|^httpRequest\\.headers\\.(?P<_$INDEX>\\d+).name:r|httpRequest\\.headers\\.(?P<_$INDEX>\\d+)\\.value = httpRequest.headers.\nSET:httpRequest.headers.{{httpRequest.headers.name}} = {{httpRequest.headers.value}}\nRENAME_FIELD:httpRequest.headers.host = httpRequest.headers.Host\nDROP:r|httpRequest.headers.(?:name|value|$) = true\n\nSET:http_url = {{httpRequest.headers.host}}{{httpRequest.uri}}"
+        "parser_text": "[parser]\nFORMAT = JSON\n\n#Handle time\nSTART_TIME_FIELD = timestamp\nTIME_PARSER = X1000\n\n#Set mapper information\nMAPPER:vendor = AWS\nMAPPER:product = WAF\nMAPPER:event_id = {{action}}\n\n#Join request header values to key-value pairs based on index number where applicable\nZIP:r|^httpRequest\\.headers\\.(?P<_$INDEX>\\d+).name:r|^httpRequest\\.headers\\.(?P<_$INDEX>\\d+)\\.value = httpRequest.headers.\nZIP:r|^ruleGroupList\\.\\d+\\.customerConfig\\.(?P<_$INDEX>\\d+)\\.name:r|^ruleGroupList\\.\\d+\\.customerConfig\\.(?P<_$INDEX>\\d+)\\.value = ruleGroupList.customerConfig.\n\nSET:httpRequest.headers.{{httpRequest.headers.name}} = {{httpRequest.headers.value}}\nADD_VALUES = TRUE\n\nRENAME_FIELD:httpRequest.headers.host = httpRequest.headers.Host\nDROP:r|httpRequest.headers.(?:name|value|$) = true\n\nSET:http_url = {{httpRequest.headers.host}}{{httpRequest.uri}}\n\nTRANSFORM_IF_PRESENT:httpRequest.headers.cookie = normalize_cookie_fields\n\n[transform:normalize_cookie_fields]\nJOIN_LIST:httpRequest.headers.cookie = ;\nTRANSFORM:httpRequest.headers.cookie = parse_cookie\nDROP:httpRequest.headers.cookie = TRUE\n\n[transform:parse_cookie]\nREGEX = \\s*(?P<_$FIELD_1>[^=]+)=(?P<_$VAL_1>[^;]+)\\s*;?\nREPEAT_MATCH = TRUE"
     },
     "/Parsers/System/AWS/CloudTrail": {
         "commit_message": "TLAB-2103 updated cloudtrail parser adding normalizedSuccess",
@@ -700,11 +700,11 @@
         "parser_text": "[parser]\nFORMAT = REGEX\n\nTRANSFORM:_$log_entry = parse_header\n\n#Set mapper information\nMAPPER:vendor = Forescout\nMAPPER:product = CounterACT\nMAPPER:event_id = {{event_name}}\n\n#Handle time\nSTART_TIME_FIELD = _messagetime\nTIME_PARSER = X1000\n\nVARIABLE_TRANSFORM_INDEX:syslog_message = event_name\n\nVARIABLE_TRANSFORM:NAC Policy Log = nac_policy_log\nDROP:syslog_message = true\n\n[transform:parse_header]\nREGEX = <(?<severity>\\d+)>(?<syslog_timestamp>[a-zA-Z0-9:\\s]{14,15})\\s+(?<syslog_hostname>\\S+)\\sCounterACT\\[(?<syslog_process_id>\\d+)\\]:\\s+(?<event_name>[^:]+):\\s+(?<syslog_message>.*)\n\n[transform:nac_policy_log]\nREGEX = Source:\\s+(?<source_ip>[^,]+),\\s+Rule:\\s+(?<rule>[^,]+),\\s+Match:\\s+(?<match>[^,]+),\\s+Category:\\s+(?<category>[^,]+),\\s+Details:\\s+(?<details>.*)"
     },
     "/Parsers/System/Fortinet/Fortigate/Fortigate-CEF": {
-        "commit_message": "TRIDENT-14409 FailedRecords in testlogs/fortigate_cef_records.json",
-        "commit_origin_hash": "1dd3f12927a873b88acc04c7cccafc176b3e9bbe",
+        "commit_message": "Remove space for Fortinet Parse",
+        "commit_origin_hash": "4622e2dde3f6bca49e37bfca7194042bd57104c8",
         "description": "Sample parser",
         "name": "Fortigate-CEF",
-        "parser_text": "[dependencies]\nINCLUDE:/Parsers/Sumo/Shared/Syslog Headers=true\n\n[parser]\nTRANSFORM=Possible_Syslog_Header\nFORMAT=CEF\nDROP:syslog_message=true\n\n#Renaming this field to ensure lookup of mapper covers this field\nRENAME_FIELD: action = act\n\nFIND_REPLACE:cat:- = :\n\n#Setting mapping footprints\nMAPPER:vendor = Fortinet\nMAPPER:product = Fortigate\nMAPPER:event_id = {{cat}}\n\nTRANSFORM-Time =Handle Time\n\n\n#Handling Time\n[transform:Handle Time]\nTRANSFORM_FIELD_IF_PRESENT:eventtime = align_time\nRENAME_FIELD:FTNTFGTeventtime = time\nSTART_TIME_FIELD=FTNTFGTeventtime\nTIME_PARSER = X1\n\n[transform:align_time]\nREGEX = (?P<time>\\d{10})"
+        "parser_text": "[dependencies]\nINCLUDE:/Parsers/Sumo/Shared/Syslog Headers=true\n\n[parser]\nTRANSFORM=Possible_Syslog_Header\nFORMAT=CEF\nDROP:syslog_message=true\n\n#Renaming this field to ensure lookup of mapper covers this field\nRENAME_FIELD:action = act\n\nFIND_REPLACE:cat:- = :\n\n#Setting mapping footprints\nMAPPER:vendor = Fortinet\nMAPPER:product = Fortigate\nMAPPER:event_id = {{cat}}\n\nTRANSFORM-Time =Handle Time\n\n\n#Handling Time\n[transform:Handle Time]\nTRANSFORM_FIELD_IF_PRESENT:eventtime = align_time\nRENAME_FIELD:FTNTFGTeventtime = time\nSTART_TIME_FIELD=FTNTFGTeventtime\nTIME_PARSER = X1\n\n[transform:align_time]\nREGEX = (?P<time>\\d{10})"
     },
     "/Parsers/System/Fortinet/Fortigate/Fortigate-JSON": {
         "commit_message": "TLAB-2378:update fortigate parser",

@@ -8,7 +8,7 @@ This rule detects an indicator match from a threat intelligence feed
 |----|----|
 |Type|Templated Match|
 |Category|Threat Intelligence|
-|Apply Risk to Entities|srcDevice_hostname, srcDevice_ip, srcDevice_natIp, srcDevice_mac, user_username, dns_replyIp|
+|Apply Risk to Entities|srcDevice_hostname, device_hostname, srcDevice_ip, srcDevice_natIp, device_ip, srcDevice_mac, user_username, dns_replyIp|
 |Signal Name|Threat Intel - Source Hostname|
 |Summary Expression|Threat Intel - Source Device Hostname detected for: {{srcDevice_hostname}}|
 |Score/Severity|Static: 2|
@@ -30,6 +30,8 @@ This rule detects an indicator match from a threat intelligence feed
 
 |Origin|Field|
 |----|----|
+|Normalized Schema|device_hostname|
+|Normalized Schema|device_ip|
 |Normalized Schema|dns_replyIp|
 |Normalized Schema|srcDevice_hostname|
 |Normalized Schema|srcDevice_ip|

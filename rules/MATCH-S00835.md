@@ -8,7 +8,7 @@ This rule looks for URL/refferer domains which appear to be associated with a dy
 |----|----|
 |Type|Templated Match|
 |Category|Command and Control|
-|Apply Risk to Entities|device_hostname, device_ip, srcDevice_hostname, srcDevice_ip, user_username|
+|Apply Risk to Entities|device_hostname, srcDevice_hostname, srcDevice_ip, user_username|
 |Signal Name|Possible Dynamic URL Domain|
 |Summary Expression|Possible dynamic DNS domain for URL: {{http_url_fqdn}}|
 |Score/Severity|Static: 1|
@@ -53,7 +53,6 @@ This rule looks for URL/refferer domains which appear to be associated with a dy
 |Origin|Field|
 |----|----|
 |Normalized Schema|device_hostname|
-|Normalized Schema|device_ip|
 |Normalized Schema|http_referer_alexaRank|
 |Normalized Schema|http_url_alexaRank|
 |Normalized Schema|srcDevice_hostname|

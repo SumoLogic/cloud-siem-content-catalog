@@ -8,7 +8,7 @@ A record flagged a hostname or domain from a threat intelligence match list
 |----|----|
 |Type|Match|
 |Category|Threat Intelligence|
-|Apply Risk to Entities|device_hostname, srcDevice_hostname, device_ip, device_natIp, srcDevice_ip, srcDevice_natIp, device_mac, srcDevice_mac, user_username, dns_replyIp|
+|Apply Risk to Entities|device_hostname, srcDevice_hostname, device_natIp, srcDevice_ip, srcDevice_natIp, device_mac, srcDevice_mac, user_username, dns_replyIp|
 |Signal Name|Threat Intel - Matched Domain Name|
 |Summary Expression|None|
 |Score/Severity|Static: 2|
@@ -61,7 +61,6 @@ A record flagged a hostname or domain from a threat intelligence match list
 |Origin|Field|
 |----|----|
 |Normalized Schema|device_hostname|
-|Normalized Schema|device_ip|
 |Normalized Schema|device_mac|
 |Normalized Schema|device_natIp|
 |Normalized Schema|dns_replyIp|

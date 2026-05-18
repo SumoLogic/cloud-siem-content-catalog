@@ -8,7 +8,7 @@ This rule detects allowed inbound traffic from an IP address associated with a k
 |----|----|
 |Type|Templated Match|
 |Category|Threat Intelligence|
-|Apply Risk to Entities|srcDevice_ip|
+|Apply Risk to Entities|srcDevice_ip, device_ip|
 |Signal Name|Threat Intel - Inbound Traffic Context|
 |Summary Expression|This rule detects inbound traffic from an IP address associated with a known malicious campaign as designated by threat intelligence.|
 |Score/Severity|Static: 0|
@@ -57,6 +57,7 @@ This rule detects allowed inbound traffic from an IP address associated with a k
 
 |Origin|Field|
 |----|----|
+|Normalized Schema|device_ip|
 |Normalized Schema|dstDevice_ip|
 |Normalized Schema|srcDevice_ip|
 |Normalized Schema|srcDevice_ip_isInternal|
