@@ -30,6 +30,7 @@ The `type` listed lets you know if you can directly apply the parser to a collec
 |Parser|/Parsers/System/Akamai/Akamai CPC|
 |Parser|/Parsers/System/Akamai/Noname API Security|
 |Parser|/Parsers/System/Alert Logic/Alert Logic|
+|Parser|/Parsers/System/Anthropic/Claude Activity Logs|
 |Parser|/Parsers/System/Anthropic/Claude Code|
 |Parser|/Parsers/System/Apache/Apache HTTP Server|
 |Parser|/Parsers/System/Aqua/Aqua JSON|

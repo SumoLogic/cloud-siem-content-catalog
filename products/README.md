@@ -39,6 +39,7 @@ Below is a full list of Cloud SIEM products.
 |[Amazon AWS](../vendors/210d6727-ac50-468e-ab00-1f7586845326.md)|[VPN](c49882a3-1b3b-4c21-858a-9fd58b05f715.md)|
 |[Amazon AWS](../vendors/210d6727-ac50-468e-ab00-1f7586845326.md)|[VpcFlowLogs](021d1ded-1c82-4663-bf5d-d6ed5170efa3.md)|
 |[Amazon AWS](../vendors/210d6727-ac50-468e-ab00-1f7586845326.md)|[Web Application Firewall (WAF)](072b85a2-1765-45c2-911d-b0509880326e.md)|
+|[Anthropic](../vendors/2433b6be-1e45-4b8d-bebc-d8d3740a50f3.md)|[Claude Activity Logs](8ad9c55c-1271-4e8a-a8ca-f1663051f4d1.md)|
 |[Anthropic](../vendors/2433b6be-1e45-4b8d-bebc-d8d3740a50f3.md)|[Claude Code](eabd9eed-b071-4773-ad07-706ea5b51b9c.md)|
 |[Apache](../vendors/c6fc7838-0007-4966-90aa-b7704fd70eac.md)|[Apache HTTP Server](6787d77a-1ee0-43d4-8ca0-96af8ee755bc.md)|
 |[Aqua](../vendors/0531e9df-c128-4c67-9a81-66ffcce41f9a.md)|[Aqua](4c2a186d-6aa5-47da-a6af-7fddfe16b528.md)|

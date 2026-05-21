@@ -229,6 +229,9 @@
 |LEGACY-S00201|[Cisco Umbrella - DNS Request Category: Potentially Harmful](LEGACY-S00201.md)|
 |LEGACY-S00202|[Cisco Umbrella - DNS Request Category: Proxy/Anonymizer](LEGACY-S00202.md)|
 |LEGACY-S00203|[Cisco Umbrella - Proxy Logs with Cisco AMP Detections](LEGACY-S00203.md)|
+|MATCH-S01156|[Claude Admin or Platform API Key Created](MATCH-S01156.md)|
+|MATCH-S01155|[Claude Compliance API Logging Disabled](MATCH-S01155.md)|
+|MATCH-S01157|[Claude Organization IP Restriction Deleted](MATCH-S01157.md)|
 |MATCH-S00269|[Clipboard Copied](MATCH-S00269.md)|
 |MATCH-S00820|[Cloud Credential File Accessed](MATCH-S00820.md)|
 |MATCH-S00412|[Command Line Execution with Suspicious URL and AppData Strings](MATCH-S00412.md)|
@@ -349,6 +352,7 @@
 |FIRST-S00005|[First Seen User Creation From User](FIRST-S00005.md)|
 |FIRST-S00082|[First Seen User Enumerating AWS Bedrock Models](FIRST-S00082.md)|
 |FIRST-S00100|[First Seen User Enumerating Custom AWS Bedrock Models](FIRST-S00100.md)|
+|FIRST-S00102|[First Seen User Initiating Claude Data Export](FIRST-S00102.md)|
 |FIRST-S00006|[First Seen Weak Kerberos Encryption from User](FIRST-S00006.md)|
 |FIRST-S00038|[First Seen Wget Usage from User](FIRST-S00038.md)|
 |FIRST-S00040|[First Seen cURL execution from User](FIRST-S00040.md)|
@@ -630,6 +634,8 @@
 |THRESHOLD-S00048|[Outbound Traffic to Countries Outside the United States](THRESHOLD-S00048.md)|
 |OUTLIER-S00019|[Outlier in AWS Bedrock API Calls from User](OUTLIER-S00019.md)|
 |OUTLIER-S00022|[Outlier in AWS Bedrock Foundation Model Enumeration Calls from User ](OUTLIER-S00022.md)|
+|OUTLIER-S00034|[Outlier in Claude Compliance API Calls from User](OUTLIER-S00034.md)|
+|OUTLIER-S00035|[Outlier in Claude Resource Deletions from User](OUTLIER-S00035.md)|
 |OUTLIER-S00013|[Outlier in Data Outbound Per Day by Admin or Sensitive Device](OUTLIER-S00013.md)|
 |OUTLIER-S00015|[Outlier in Data Outbound Per Hour by Admin or Sensitive Device](OUTLIER-S00015.md)|
 |OUTLIER-S00032|[Outlier in Data Transferred from an S3 Bucket by User](OUTLIER-S00032.md)|
