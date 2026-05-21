@@ -23,6 +23,7 @@
 |----------------|-------------------|-----|
 |action|act||
 |http_method|requestMethod||
+|http_response_statusCode|cn1||
 |http_url|request||
 |http_userAgent|requestClientApplication||
 |srcDevice_ip|src||

@@ -5,7 +5,6 @@
 |Rule ID|Rule Name|
 |----|----|
 |MATCH-S00669|[Informational Severity Intrusion Signature](../rules/MATCH-S00669.md)|
-|MATCH-S00556|[Outbound Data Transfer Protocol Over Non-standard Port](../rules/MATCH-S00556.md)|
 
 
 ## Log Mappers
