@@ -7,6 +7,7 @@
 |MATCH-S00402|[Normalized Security Signal](../rules/MATCH-S00402.md)|
 |MATCH-S01053|[OCSF Compliance Finding](../rules/MATCH-S01053.md)|
 |MATCH-S01054|[OCSF Detection Finding](../rules/MATCH-S01054.md)|
+|MATCH-S01148|[OCSF IAM Analysis Finding](../rules/MATCH-S01148.md)|
 |MATCH-S01055|[OCSF Vulnerability Finding](../rules/MATCH-S01055.md)|
 
 

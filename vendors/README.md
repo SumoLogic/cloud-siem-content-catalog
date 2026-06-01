@@ -13,7 +13,7 @@ Below is a full list of Cloud SIEM vendors.
 |[Alibaba](d7de27e2-7680-48a0-96aa-1c26cf8d1ca4.md)|1|
 |[AlphaSOC](84ffd6de-c32b-49fe-88cb-d3e744df4141.md)|1|
 |[Amazon AWS](210d6727-ac50-468e-ab00-1f7586845326.md)|25|
-|[Anthropic](2433b6be-1e45-4b8d-bebc-d8d3740a50f3.md)|1|
+|[Anthropic](2433b6be-1e45-4b8d-bebc-d8d3740a50f3.md)|2|
 |[Apache](c6fc7838-0007-4966-90aa-b7704fd70eac.md)|1|
 |[Aqua](0531e9df-c128-4c67-9a81-66ffcce41f9a.md)|1|
 |[Asana](75e181b5-7296-4332-aed6-484f81d15284.md)|1|

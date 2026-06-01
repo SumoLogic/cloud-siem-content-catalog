@@ -181,6 +181,13 @@
         "name": "Alert Logic",
         "parser_text": "[parser]\nFORMAT = JSON\n\n# Set CSE Metadata\nMAPPER:vendor = Alert Logic\nMAPPER:product = Alert Logic\nMAPPER:event_id = Alert\n\n#Handle time\nSTART_TIME_FIELD = _messagetime\nTIME_PARSER = X1000\n\nFIND_REPLACE:description: = (\\s+\\n+\\*) | (\\n) | (\\s+\\n+)\nSET:formatted_description = {{description}}\nFIND_REPLACE:formatted_description: = `\n\nTRANSFORM_FIELD_IF_PRESENT:formatted_description = kv_pair\nTRANSFORM_FIELD_IF_PRESENT:recommendations = kv_pair\nTRANSFORM_IF:Attack Detail:.*\\{[\\s\\S]+} = parse_attack_details\n\n# Parse Attack Details \nTRANSFORM_FIELD_IF_PRESENT:json_data = update_data\nTRANSFORM_IF_PRESENT:formatted_data = format_data\nTRANSFORM_IF_PRESENT:json_data = update_data\nTRANSFORM_IF:formatted_data:.*\\{\"data\":[\\s\\S]+} = parse_data\nTRANSFORM_FIELD_IF_PRESENT:Error Code = parse_error_message\n\n# Drop unneccessary field\nDROP:description = true \nDROP:recommendations = true\nDROP:json_data = true\nDROP:formatted_data = true\nDROP:formatted_description = true\nDROP:Error Code = true\n\n[transform:kv_pair]\nREGEX = \\*+(?<_$FIELD_1>[^\\*^:]+)(\\*+:|:\\*+)\\s*(`)?(?<_$VAL_1>[^\\*]+)\nREPEAT_MATCH = TRUE\n\n[transform:parse_attack_details]\nREGEX = .*?(?<json_data>\\{.*\\})\n\n[transform:update_data]\nSET:formatted_data = {\"data\":[{{json_data}}]}\nFIND_REPLACE:formatted_data:\": = \\s+\":\n\n[transform:format_data]\nFIND_REPLACE:json_data: \" = '\n\n[transform:parse_data]\nFORMAT = JSON\n\n[transform:parse_error_message]\nREGEX = (?<error_message>[^#]+)"
     },
+    "/Parsers/System/Anthropic/Claude Activity Logs": {
+        "commit_message": "TLAB-2576 Claude Activity Log parser",
+        "commit_origin_hash": "b9d7cd6ba005b06fece85f7272f0c6f94201e647",
+        "description": "Activity logs collected via the Claude Compliance API",
+        "name": "Claude Activity Logs",
+        "parser_text": "[parser]\nFORMAT = JSON\n\nMAPPER:vendor = Anthropic\nMAPPER:product = Claude Activity Logs\nMAPPER:event_id = {{type}}\n\nSTART_TIME_FIELD = _messagetime\nTIME_PARSER = X1000"
+    },
     "/Parsers/System/Anthropic/Claude Code": {
         "commit_message": "TLAB-2421 OpenAI and Claude Code Parsers",
         "commit_origin_hash": "777cbd99fe2cb9fd36bfd467aac36fc355c1caf0",
