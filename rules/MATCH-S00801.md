@@ -14,7 +14,7 @@ Detects a virtual machine starting in Azure. This is most likely routine activit
 |Score/Severity|Static: 1|
 |Enabled by Default|True|
 |Prototype|False|
-|Tags|_mitreAttackTactic:TA0003, _mitreAttackTechnique:T1578, _mitreAttackTechnique:T1204, _mitreAttackTechnique:T1204.003|
+|Tags|_mitreAttackTactic:TA0003, _mitreAttackTechnique:T1578, _mitreAttackTechnique:T1204, _mitreAttackTechnique:T1204.003, _mitreAttackTactic:TA0112|
 ## Vendors and Products
 - [Microsoft - Azure](../products/a1225af5-e778-4068-a9a2-47da93d1ff24.md)
 

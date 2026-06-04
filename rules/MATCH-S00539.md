@@ -17,6 +17,7 @@ This rule looks for suspicious processes on all systems labeled as web servers. 
 |Tags|_mitreAttackTactic:TA0003, _mitreAttackTechnique:T1505, _mitreAttackTechnique:T1505.003|
 ## Vendors and Products
 - [Microsoft - Defender Advanced Hunting](../products/3382523e-2072-41bd-b50b-6b148957d0b0.md)
+- [Microsoft - Graph Security API](../products/ef42eb74-7444-4fee-b231-b4eb1e7c9660.md)
 - [Microsoft - Windows](../products/1ff7546c-cb36-4a24-87f7-89d2cecc5761.md)
 
 

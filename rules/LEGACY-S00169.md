@@ -14,7 +14,7 @@ This signal alerts on the elevation of privileges assigned to a domain user acco
 |Score/Severity|Static: 3|
 |Enabled by Default|False|
 |Prototype|False|
-|Tags|_mitreAttackTactic:TA0005, _mitreAttackTactic:TA0004, _mitreAttackTechnique:T1484, _mitreAttackTechnique:T1484.001|
+|Tags|_mitreAttackTactic:TA0004, _mitreAttackTechnique:T1484, _mitreAttackTechnique:T1484.001, _mitreAttackTactic:TA0112|
 ## Vendors and Products
 - [Microsoft - Windows](../products/1ff7546c-cb36-4a24-87f7-89d2cecc5761.md)
 

@@ -14,7 +14,7 @@ This rule looks for an Okta application being created. Ensure that this activity
 |Score/Severity|Static: 2|
 |Enabled by Default|True|
 |Prototype|False|
-|Tags|_mitreAttackTactic:TA0005, _mitreAttackTactic:TA0008, _mitreAttackTechnique:T1550.001|
+|Tags|_mitreAttackTactic:TA0008, _mitreAttackTechnique:T1550.001|
 ## Vendors and Products
 - [Okta - Single Sign-On](../products/51278354-d6b5-4c8e-a8fd-8197df334e67.md)
 

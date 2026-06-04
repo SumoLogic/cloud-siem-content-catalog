@@ -14,7 +14,7 @@ Observes for attempts to add a certificate to the untrusted store
 |Score/Severity|Static: 0|
 |Enabled by Default|True|
 |Prototype|False|
-|Tags|_mitreAttackTactic:TA0005, _mitreAttackTechnique:T1553, _mitreAttackTechnique:T1553.002, _mitreAttackTechnique:T1553.004|
+|Tags|_mitreAttackTechnique:T1553, _mitreAttackTechnique:T1553.002, _mitreAttackTechnique:T1553.004, _mitreAttackTactic:TA0112|
 ## Vendors and Products
 - [CrowdStrike - FDR](../products/569a3a44-c29f-492e-bcf4-5dc04e2ab0f3.md)
 - [Microsoft - Azure](../products/a1225af5-e778-4068-a9a2-47da93d1ff24.md)

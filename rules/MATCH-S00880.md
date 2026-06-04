@@ -14,7 +14,7 @@ Threat actors may list attributes for certain files on a macOS host in order to 
 |Score/Severity|Static: 2|
 |Enabled by Default|True|
 |Prototype|False|
-|Tags|_mitreAttackTactic:TA0005, _mitreAttackTechnique:T1553.001|
+|Tags|_mitreAttackTechnique:T1553.001, _mitreAttackTactic:TA0112|
 ## Vendors and Products
 - [CrowdStrike - FDR](../products/569a3a44-c29f-492e-bcf4-5dc04e2ab0f3.md)
 - [Jamf - Jamf](../products/5c2cc0de-ca31-4ef0-bcfa-133fc8b387ad.md)

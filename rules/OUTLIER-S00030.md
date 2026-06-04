@@ -29,7 +29,7 @@ If the detection is proving to be too sensitive to the number of pools deleted, 
 |Score/Severity|Static: 3|
 |Enabled by Default|True|
 |Prototype|False|
-|Tags|_mitreAttackTechnique:T1578.002, _mitreAttackTactic:TA0005|
+|Tags|_mitreAttackTechnique:T1578.002, _mitreAttackTactic:TA0112|
 ## Vendors and Products
 
 

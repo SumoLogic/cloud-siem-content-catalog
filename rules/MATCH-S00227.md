@@ -14,7 +14,7 @@ Alert when a non-approved OAuth Application has been identified on Google Worksp
 |Score/Severity|Static: 2|
 |Enabled by Default|False|
 |Prototype|False|
-|Tags|_mitreAttackTactic:TA0002, _mitreAttackTactic:TA0005, _mitreAttackTactic:TA0008, _mitreAttackTechnique:T1550, _mitreAttackTechnique:T1550.001|
+|Tags|_mitreAttackTactic:TA0002, _mitreAttackTactic:TA0008, _mitreAttackTechnique:T1550, _mitreAttackTechnique:T1550.001|
 ## Vendors and Products
 - [Google - Google Workspace](../products/e73cd65a-7a4b-4ce9-9d73-e5d9c824c214.md)
 

@@ -14,7 +14,7 @@ Detects Azure container starts. An adversary may use containers for malicious ac
 |Score/Severity|Static: 1|
 |Enabled by Default|True|
 |Prototype|False|
-|Tags|_mitreAttackTactic:TA0002, _mitreAttackTactic:TA0005, _mitreAttackTechnique:T1610, _mitreAttackTechnique:T1204, _mitreAttackTechnique:T1204.003|
+|Tags|_mitreAttackTactic:TA0002, _mitreAttackTechnique:T1610, _mitreAttackTechnique:T1204, _mitreAttackTechnique:T1204.003|
 ## Vendors and Products
 - [Microsoft - Azure](../products/a1225af5-e778-4068-a9a2-47da93d1ff24.md)
 

@@ -17,7 +17,7 @@ This signal looks for a new Client ID value ( mapped to the user_username field 
 |Score/Severity|Static: 3|
 |Enabled by Default|True|
 |Prototype|False|
-|Tags|_mitreAttackTactic:TA0005, _mitreAttackTactic:TA0008, _mitreAttackTechnique:T1550.001|
+|Tags|_mitreAttackTactic:TA0008, _mitreAttackTechnique:T1550.001|
 ## Vendors and Products
 - [Okta - Single Sign-On](../products/51278354-d6b5-4c8e-a8fd-8197df334e67.md)
 

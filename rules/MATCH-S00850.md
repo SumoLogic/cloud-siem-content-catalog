@@ -14,7 +14,7 @@ Detects addpolicy events from LastPass
 |Score/Severity|Static: 1|
 |Enabled by Default|True|
 |Prototype|False|
-|Tags|_mitreAttackTechnique:T1484, _mitreAttackTactic:TA0005, _mitreAttackTactic:TA0004|
+|Tags|_mitreAttackTechnique:T1484, _mitreAttackTactic:TA0004, _mitreAttackTactic:TA0112|
 ## Vendors and Products
 - [LastPass - LastPass](../products/840331bd-05ec-4d57-8202-1662706e1621.md)
 

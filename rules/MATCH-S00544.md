@@ -14,7 +14,7 @@ The rule looks for modifications to registry keys that control the enforcement o
 |Score/Severity|Static: 1|
 |Enabled by Default|True|
 |Prototype|False|
-|Tags|_mitreAttackTactic:TA0004, _mitreAttackTactic:TA0005, _mitreAttackTechnique:T1548, _mitreAttackTechnique:T1548.002|
+|Tags|_mitreAttackTactic:TA0004, _mitreAttackTechnique:T1548, _mitreAttackTechnique:T1548.002|
 ## Vendors and Products
 - [Microsoft - Windows](../products/1ff7546c-cb36-4a24-87f7-89d2cecc5761.md)
 

@@ -17,6 +17,7 @@
 |FIRST-S00041|[First Seen networksetup Usage from User](../rules/FIRST-S00041.md)|
 |FIRST-S00043|[First Seen pbpaste Usage from User](../rules/FIRST-S00043.md)|
 |MATCH-S00702|[Keychain Credential Dumping](../rules/MATCH-S00702.md)|
+|MATCH-S00651|[Kubernetes CreateCronjob](../rules/MATCH-S00651.md)|
 |MATCH-S00648|[Kubernetes ListSecrets](../rules/MATCH-S00648.md)|
 |MATCH-S00647|[Kubernetes Pod Deletion](../rules/MATCH-S00647.md)|
 |MATCH-S00837|[Kubernetes Secrets Enumeration via Kubectl](../rules/MATCH-S00837.md)|
@@ -34,7 +35,6 @@
 |MATCH-S01007|[Threat Intel - Destination Device Hostname](../rules/MATCH-S01007.md)|
 |MATCH-S01024|[Threat Intel - Destination IP Address (High Confidence)](../rules/MATCH-S01024.md)|
 |MATCH-S01006|[Threat Intel - Device Hostname](../rules/MATCH-S01006.md)|
-|MATCH-S00555|[Threat Intel - Inbound Traffic Context](../rules/MATCH-S00555.md)|
 |LEGACY-S00107|[Threat Intel Match - IP Address](../rules/LEGACY-S00107.md)|
 |MATCH-S00179|[Windows Network Sniffing](../rules/MATCH-S00179.md)|
 |MATCH-S00880|[macOS - Entitlement Enumeration via Xattr](../rules/MATCH-S00880.md)|

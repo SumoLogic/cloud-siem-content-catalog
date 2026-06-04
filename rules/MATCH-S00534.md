@@ -14,7 +14,7 @@ This rule looks for processes referencing the plist files that determine which a
 |Score/Severity|Static: 1|
 |Enabled by Default|True|
 |Prototype|False|
-|Tags|_mitreAttackTactic:TA0003, _mitreAttackTactic:TA0004, _mitreAttackTechnique:T1547, _mitreAttackTechnique:T1647, _mitreAttackTechnique:T1547.007, _mitreAttackTechnique:T1543.004, _mitreAttackTechnique:T1543.001, _mitreAttackTechnique:T1543, _mitreAttackTechnique:T1037.002, _mitreAttackTechnique:T1037|
+|Tags|_mitreAttackTactic:TA0003, _mitreAttackTactic:TA0004, _mitreAttackTechnique:T1547, _mitreAttackTechnique:T1647, _mitreAttackTechnique:T1547.007, _mitreAttackTechnique:T1543.004, _mitreAttackTechnique:T1543.001, _mitreAttackTechnique:T1543, _mitreAttackTechnique:T1037.002, _mitreAttackTechnique:T1037, _mitreAttackTactic:TA0112|
 ## Vendors and Products
 - [Carbon Black - Defense](../products/4448ca62-bb4f-4859-a6a2-d9262f9e48f0.md)
 - [CrowdStrike - FDR](../products/569a3a44-c29f-492e-bcf4-5dc04e2ab0f3.md)

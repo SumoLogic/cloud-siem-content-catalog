@@ -8437,8 +8437,8 @@
         "uid": "10539af5-6147-406c-a8bf-fbdc5c1d5894"
     },
     "10696f30-7c13-4000-94d0-6a5dd69b229e": {
-        "commit_message": "Fortigate Minor fix (#5968)",
-        "commit_origin_hash": "b424ebe7fa6c777f4182f2057baa0f62a1c3e28e",
+        "commit_message": "removed threat rule type mapping and normalized severity fields for Fortinet Event Logs mapper(#5979)",
+        "commit_origin_hash": "59f5dfc52d9bbcf2fc23cb140ff829b2f48362c6",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -48476,8 +48476,8 @@
         "uid": "6216f49a-14e7-4fc9-afc7-0a8163e4bde9"
     },
     "621c0480-bc2e-4086-8ef8-a74a3ae45c65": {
-        "commit_message": "Fortigate Minor fix (#5968)",
-        "commit_origin_hash": "b424ebe7fa6c777f4182f2057baa0f62a1c3e28e",
+        "commit_message": "removed threat rule type mapping and normalized severity fields for Fortinet Event Logs mapper(#5979)",
+        "commit_origin_hash": "59f5dfc52d9bbcf2fc23cb140ff829b2f48362c6",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -61210,8 +61210,8 @@
         "uid": "8103115b-d634-445c-bee6-8a80f30bbd56"
     },
     "810cafdb-8288-45a0-9ef7-d15cdc85307a": {
-        "commit_message": "Fortigate Minor fix (#5968)",
-        "commit_origin_hash": "b424ebe7fa6c777f4182f2057baa0f62a1c3e28e",
+        "commit_message": "removed threat rule type mapping and normalized severity fields for Fortinet Event Logs mapper(#5979)",
+        "commit_origin_hash": "59f5dfc52d9bbcf2fc23cb140ff829b2f48362c6",
         "field_mappings": {
             "description": {
                 "alternate_values": [
@@ -61243,17 +61243,6 @@
                 ],
                 "value": "http_url"
             },
-            "normalizedSeverity": {
-                "default_value": "0",
-                "lookup": {
-                    "critical": "10",
-                    "high": "9",
-                    "low": "1",
-                    "medium": "2"
-                },
-                "value": "severity",
-                "value_type": "lookup"
-            },
             "severity": {
                 "default_value": "0",
                 "lookup": {
@@ -61279,10 +61268,6 @@
             },
             "success": {
                 "value": "status"
-            },
-            "threat_ruleType": {
-                "value": "intrusion",
-                "value_type": "constant"
             },
             "timestamp": {
                 "format": "epoch_ms",
@@ -70125,8 +70110,8 @@
         "uid": "928fa5c2-ceeb-4c1b-b41e-c5ed6f18b24f"
     },
     "92ad9200-083c-4c89-a3c1-5e63d3e2801f": {
-        "commit_message": "Fortigate Minor fix (#5968)",
-        "commit_origin_hash": "b424ebe7fa6c777f4182f2057baa0f62a1c3e28e",
+        "commit_message": "removed threat rule type mapping and normalized severity fields for Fortinet Event Logs mapper(#5979)",
+        "commit_origin_hash": "59f5dfc52d9bbcf2fc23cb140ff829b2f48362c6",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -74055,8 +74040,8 @@
         "uid": "99cd6835-a726-4032-9406-a3358beba9a9"
     },
     "99ef5972-d88b-4e04-bb1f-c20a43af5e44": {
-        "commit_message": "Fortigate Minor fix (#5968)",
-        "commit_origin_hash": "b424ebe7fa6c777f4182f2057baa0f62a1c3e28e",
+        "commit_message": "removed threat rule type mapping and normalized severity fields for Fortinet Event Logs mapper(#5979)",
+        "commit_origin_hash": "59f5dfc52d9bbcf2fc23cb140ff829b2f48362c6",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -78280,8 +78265,8 @@
         "uid": "a112519f-d29c-47cb-924e-a79c5207107b"
     },
     "a119686a-c0a6-44af-a36d-9d01d1aac496": {
-        "commit_message": "Fortigate Minor fix (#5968)",
-        "commit_origin_hash": "b424ebe7fa6c777f4182f2057baa0f62a1c3e28e",
+        "commit_message": "removed threat rule type mapping and normalized severity fields for Fortinet Event Logs mapper(#5979)",
+        "commit_origin_hash": "59f5dfc52d9bbcf2fc23cb140ff829b2f48362c6",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -91172,8 +91157,8 @@
         "uid": "c11a6f1b-73fd-42a8-a55f-b8fc2742fa21"
     },
     "c17b35e5-dc9d-4fd8-94e4-f49b29589288": {
-        "commit_message": "Fortigate Minor fix (#5968)",
-        "commit_origin_hash": "b424ebe7fa6c777f4182f2057baa0f62a1c3e28e",
+        "commit_message": "removed threat rule type mapping and normalized severity fields for Fortinet Event Logs mapper(#5979)",
+        "commit_origin_hash": "59f5dfc52d9bbcf2fc23cb140ff829b2f48362c6",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -105883,8 +105868,8 @@
         "uid": "e3f5b429-af48-4135-abf1-c3a32db01a14"
     },
     "e3f84313-4099-4c1f-97f1-700f73a76311": {
-        "commit_message": "Fortigate Minor fix (#5968)",
-        "commit_origin_hash": "b424ebe7fa6c777f4182f2057baa0f62a1c3e28e",
+        "commit_message": "removed threat rule type mapping and normalized severity fields for Fortinet Event Logs mapper(#5979)",
+        "commit_origin_hash": "59f5dfc52d9bbcf2fc23cb140ff829b2f48362c6",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -108664,8 +108649,8 @@
         "uid": "eab0642b-862f-4328-af33-e3b29893c41f"
     },
     "eab4df6a-a268-4c9d-9de9-39306124c64d": {
-        "commit_message": "Fortigate Minor fix (#5968)",
-        "commit_origin_hash": "b424ebe7fa6c777f4182f2057baa0f62a1c3e28e",
+        "commit_message": "removed threat rule type mapping and normalized severity fields for Fortinet Event Logs mapper(#5979)",
+        "commit_origin_hash": "59f5dfc52d9bbcf2fc23cb140ff829b2f48362c6",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -114345,8 +114330,8 @@
         "uid": "f95d4f87-7e41-42ae-be1f-6d8890d93508"
     },
     "f9b6ec33-d0b5-468a-a92c-a8c62a4bcca9": {
-        "commit_message": "Fortigate Minor fix (#5968)",
-        "commit_origin_hash": "b424ebe7fa6c777f4182f2057baa0f62a1c3e28e",
+        "commit_message": "removed threat rule type mapping and normalized severity fields for Fortinet Event Logs mapper(#5979)",
+        "commit_origin_hash": "59f5dfc52d9bbcf2fc23cb140ff829b2f48362c6",
         "field_mappings": {
             "action": {
                 "value": "action"

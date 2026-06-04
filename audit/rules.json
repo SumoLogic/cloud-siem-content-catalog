@@ -1901,8 +1901,8 @@
             "user_username"
         ],
         "category": "Defense Evasion",
-        "commit_message": "TLAB-1789 Unsilence ADO Rules",
-        "commit_origin_hash": "de1f73ec580091c1bda38e9d7b55df4c51129197",
+        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
+        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
         "content_type": "RULE",
         "description": "Context:\nAn attacker may create Azure DevOps Agent Pools for malicious activity that are separate from an organization\u2019s pools.\n\nDetection:\nThis detection monitors for the creation and deletion of Agent Pools within 5 days by the same user, with the intent of finding Agent Pools active for short durations.\n\nRecommended Actions:\nIf an alert occurs, investigate the actions taken by the account to determine if this is normal operation of deleting pools or if this suspicious activity. \n\nTuning Recommendations: \nIf necessary, add a tuning expression for users who frequently create and delete agent pools within the time period specified.\nIf necessary, adjust the \"within\" time period to better represent what is considered a short time period in your organization. Note that 5 days is the maximum time period you can specify for a chain rules.\n\nCredits: \nThis rule is loosely based on the Azure Sentinel ADOAgentPoolCreatedDeleted.yaml detection.\n",
         "enabled_by_default": true,
@@ -1959,7 +1959,7 @@
         "summary_expression": "User: {{user_username}}  has created and deleted an agent pool in a short period of time",
         "tags": [
             "_mitreAttackTechnique:T1578",
-            "_mitreAttackTactic:TA0005"
+            "_mitreAttackTactic:TA0112"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": [],
@@ -2298,8 +2298,8 @@
             "normalizedResource"
         ],
         "category": "Exfiltration",
-        "commit_message": "TLAB-2384: AI Campaign Rules and Test Cases (#5957)",
-        "commit_origin_hash": "c67d2aa214ed689494d36064e490c343c4ffe6f7",
+        "commit_message": "TLAB-2601: CHAIN-S00027 - add NOT isNull(pid) criteria to 2nd rule expression (#5980)",
+        "commit_origin_hash": "6d996823c41807f2c0874b6ff3fa3c14968de0d0",
         "content_type": "RULE",
         "description": "Detection:\nThis ordered chain rule triggers when a child process of an openclaw-gateway node process is created on a host followed within 5 minutes by an outbound network connection to an external IP from the same process on the same host, grouped by process ID and hostname. Command lines associated with ip neighbor discovery are excluded as these can be a normal part of OpenClaw operation.\n\nScenario:\nOpenClaw's gateway process spawns child processes (shells, scripts) to execute system commands during code intelligence operations. When these child processes establish outbound connections to external IPs, it indicates potential data exfiltration \u2014 code, credentials, or other sensitive content being transmitted from the host via OpenClaw's execution capability.\n\nRecommended Actions:\nInvestigate device_hostname and baseImage to identify the child process and user, then review dstDevice_ip to determine the external destination. Correlate with DNS logs and firewall records to assess what data may have been transmitted, and inspect OpenClaw skill files for injected commands.\n\nTuning Recommendations:\nCreate match list 'authorized_openclaw_external_destinations' for known legitimate external IPs contacted by OpenClaw child processes. Adjust the 5-minute correlation window if legitimate use cases show longer delays between process creation and network activity.",
         "enabled_by_default": true,
@@ -2316,7 +2316,7 @@
                 "limit": 1
             },
             {
-                "expression": "lower(normalizedResource) = \"network\"\nAND lower(normalizedAction) = \"start\"\nAND NOT dstDevice_ip_isInternal",
+                "expression": "lower(normalizedResource) = \"network\"\nAND lower(normalizedAction) = \"start\"\nAND NOT dstDevice_ip_isInternal\nAND NOT isNull(pid)",
                 "index": 1,
                 "limit": 1
             }
@@ -3527,8 +3527,8 @@
         "baseline_type": "PER_ENTITY",
         "baseline_window_size": 1209600000,
         "category": "Defense Evasion",
-        "commit_message": "Update Global Rule script and clean up existing rules",
-        "commit_origin_hash": "7099164568893dd7df7b5bd0e3f56d043b3123a3",
+        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
+        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
         "content_type": "ANOMALY",
         "description_expression": "A user has consented to application permissions for the first time since the baseline period occurred.",
         "enabled_by_default": true,
@@ -3573,7 +3573,6 @@
         "stream": "record",
         "summary_expression": "Depending on configurations, Azure Active Directory users or administrators may be able to consent to API permissions for various Azure AD applications, these permissions can grant adversaries access to various Azure resources, depending on the type of permissions being granted.",
         "tags": [
-            "_mitreAttackTactic:TA0005",
             "_mitreAttackTactic:TA0008",
             "_mitreAttackTechnique:T1550.001"
         ],
@@ -4158,8 +4157,8 @@
         "baseline_type": "GLOBAL",
         "baseline_window_size": 1209600000,
         "category": "Defense Evasion",
-        "commit_message": "tweaking of mtire tags",
-        "commit_origin_hash": "15afa8c4f4b3c3b38643884732994db5df8db443",
+        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
+        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
         "content_type": "ANOMALY",
         "description_expression": "External connections over the internet to port 445 could be indictative of hash leak attempts, including exploitation attempts for vulnerabilities such as CVE-2023-2397. This alert looks at a source IP address making a connection to a new external destination IP address since the baseline period.",
         "enabled_by_default": true,
@@ -4232,7 +4231,6 @@
         "stream": "record",
         "summary_expression": "First Seen Outbound Connection to External IP Address: {{dstDevice_ip}} on port 445 from Source IP Address: {{srcDevice_ip}} could be indictative of hash leak attempts.",
         "tags": [
-            "_mitreAttackTactic:TA0005",
             "_mitreAttackTactic:TA0008",
             "_mitreAttackTechnique:T1550.002",
             "_mitreAttackTechnique:T1187"
@@ -4386,8 +4384,8 @@
         "baseline_type": "PER_ENTITY",
         "baseline_window_size": 1814400000,
         "category": "Defense Evasion",
-        "commit_message": "Updated summary and descriptions for clarity",
-        "commit_origin_hash": "43df247c10151dd95a2536f922909a7423b7812a",
+        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
+        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
         "content_type": "ANOMALY",
         "description_expression": "Session tokens return a temporary set of credentials that cosnist of an access key ID, a secret and a session token. This alert triggers when a session token is issued for the first time since the baseline period.",
         "enabled_by_default": true,
@@ -4434,7 +4432,6 @@
         "stream": "record",
         "summary_expression": "An AWS Session token was issued for the first time since the baseline period to {{user_username}} using the IP address of {{srcDevice_ip}}",
         "tags": [
-            "_mitreAttackTactic:TA0005",
             "_mitreAttackTechnique:T1550.001"
         ],
         "threat_ruleType": null,
@@ -4598,8 +4595,8 @@
         "baseline_type": "GLOBAL",
         "baseline_window_size": 1814400000,
         "category": "Defense Evasion",
-        "commit_message": "Remove baseline_last_started from anchor rules",
-        "commit_origin_hash": "6d52dc9f2d9b8de7a5f4eef4d74f45d5b808873b",
+        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
+        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
         "content_type": "ANOMALY",
         "description_expression": "First Seen Admission Controllers (Submit a new MutatingWebhookConfiguration or ValidatingWebhookConfiguration object via the Kubernetes API, or update an existing one.)",
         "enabled_by_default": true,
@@ -4643,7 +4640,6 @@
         "summary_expression": "An AWS EKS admission controller was created by an IP address: {{srcDevice_ip}} not seen since the baseline period.",
         "tags": [
             "_mitreAttackTechnique:T1550",
-            "_mitreAttackTactic:TA0005",
             "_mitreAttackTactic:TA0008"
         ],
         "threat_ruleType": null,
@@ -5947,8 +5943,8 @@
         "baseline_type": "GLOBAL",
         "baseline_window_size": 2592000000,
         "category": "Defense Evasion",
-        "commit_message": "TLAB-2373: change mappings to srcDevice_ip for Okta logs. Exclude NULL srcDevice_ip from FIRST-S00067 rule expression (#5898)",
-        "commit_origin_hash": "b6ba1d2b358d2ecbc7cce8e2a55a0ab27df4dc12",
+        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
+        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
         "content_type": "ANOMALY",
         "description_expression": "This signal looks for a new Client ID value ( mapped to the user_username field ) and ASN combination being issued an OIDC token, excluding the Okta Browser Plugin and Okta Dashboard. Use the Okta admin portal and look at the \"Applications\" section to cross-reference the Client ID value - ensure that the IP address that is requesting the token is known and that this operation is expected and authorized.",
         "enabled_by_default": true,
@@ -5992,7 +5988,6 @@
         "stream": "record",
         "summary_expression": "Okta - First Seen Client ID in successful OIDC token grant for Client ID:{{user_username}} from {{device_ip}}",
         "tags": [
-            "_mitreAttackTactic:TA0005",
             "_mitreAttackTactic:TA0008",
             "_mitreAttackTechnique:T1550.001"
         ],
@@ -7080,8 +7075,8 @@
         "baseline_type": "GLOBAL",
         "baseline_window_size": 2592000000,
         "category": "Defense Evasion",
-        "commit_message": "Clean up rules",
-        "commit_origin_hash": "5fd899ef16f077a0da4049c262275a7bfcc06e30",
+        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
+        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
         "content_type": "ANOMALY",
         "description_expression": "AWS EC2 launch templates allows cloud administrators to specify instance configuration information in a templated format. Granting permissions to modify or create launch templates within EC2 in certain circumstances grants the user PassRole permissions, potentially opening privilege escalation avenues via IAM. The following AWS documentation outlines this behavior: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/permissions-for-launch-templates.html. Look at other events the user in question is performing in order to investigate this signal. Consider excluding authorized users via a match list if this signal is triggering too many false positives.",
         "enabled_by_default": true,
@@ -7125,10 +7120,10 @@
         "stream": "record",
         "summary_expression": "First Seen User: {{user_username}}  Creating or Modifying EC2 Launch Template",
         "tags": [
-            "_mitreAttackTactic:TA0005",
             "_mitreAttackTactic:TA0004",
             "_mitreAttackTechnique:T1578.002",
-            "_mitreAttackTechnique:T1578"
+            "_mitreAttackTechnique:T1578",
+            "_mitreAttackTactic:TA0112"
         ],
         "threat_ruleType": null,
         "value_expression": null,
@@ -7362,8 +7357,8 @@
         "baseline_type": "GLOBAL",
         "baseline_window_size": 2592000000,
         "category": "Unknown/Other",
-        "commit_message": "TLAB-1789 Unsilence ADO Rules",
-        "commit_origin_hash": "de1f73ec580091c1bda38e9d7b55df4c51129197",
+        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
+        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
         "content_type": "ANOMALY",
         "description_expression": "Context:\nCreation or modification of release pipelines provide opportunities for the attacker to introduce malicious code into the release process.\nDetection:\nThis detection monitors for users creating a release pipeline for the first time after the baseline period (by default, 90 days).\nRecommended Actions:\nInvestigate the pipeline that has been created for malicious content and the user account activity for signs of account compromise or insider threat activity.\nTuning Recommendations:\nMaintain a match list of users known and approved to create Azure DevOps pipeline and add it as a tuning expression for the rule.\nCredits:\nThis detection is based on the Azure Sentinel ADOPipelineModifiedbyNewUser.yaml rule.",
         "enabled_by_default": true,
@@ -7407,7 +7402,8 @@
         "stream": "record",
         "summary_expression": "First observance of user: {{user_username}} creating a Azure DevOps Release Pipeline",
         "tags": [
-            "_mitreAttackTechnique:T1578.005"
+            "_mitreAttackTechnique:T1578.005",
+            "_mitreAttackTactic:TA0112"
         ],
         "threat_ruleType": null,
         "value_expression": null,
@@ -7559,8 +7555,8 @@
         "baseline_type": "GLOBAL",
         "baseline_window_size": 2592000000,
         "category": "Unknown/Other",
-        "commit_message": "TLAB-1789 Unsilence ADO Rules",
-        "commit_origin_hash": "de1f73ec580091c1bda38e9d7b55df4c51129197",
+        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
+        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
         "content_type": "ANOMALY",
         "description_expression": "Context:\nCreation or modification of release pipelines provide opportunities for the attacker to introduce malicious code into the release process.\n\nDetection:\nThis detection monitors for users modifying a release pipeline for the first time after the baseline period (by default, 90 days).\n\nRecommended Actions:\nInvestigate the pipeline that has been created for malicious content and the user account activity for signs of account compromise or insider threat activity.\n\nTuning Recommendations:\nMaintain a match list of users known and approved to create Azure DevOps pipeline and add it as a tuning expression for the rule.\n\nCredits:\nThis detection is based on the Azure Sentinel ADOPipelineModifiedbyNewUser.yaml rule.",
         "enabled_by_default": true,
@@ -7604,7 +7600,8 @@
         "stream": "record",
         "summary_expression": "First observation of User: {{user_username}} modifying an Azure DevOps Release Pipeline",
         "tags": [
-            "_mitreAttackTechnique:T1578.005"
+            "_mitreAttackTechnique:T1578.005",
+            "_mitreAttackTactic:TA0112"
         ],
         "threat_ruleType": null,
         "value_expression": null,
@@ -7624,8 +7621,8 @@
         "baseline_type": "GLOBAL",
         "baseline_window_size": 2592000000,
         "category": "Unknown/Other",
-        "commit_message": "TLAB-1789 Unsilence ADO Rules",
-        "commit_origin_hash": "de1f73ec580091c1bda38e9d7b55df4c51129197",
+        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
+        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
         "content_type": "ANOMALY",
         "description_expression": "Context:\nAn attacker can modify a variable group to alter the execution of the build pipeline for malicious results.\n\nDetection:\nThis detection monitors for a user modifying a variable group for the first time.\n\nRecommended Actions:\nDetermine whether the variable group modification was a known change.\nInvestigate the user who reduced the retention setting for indications of account compromise or other insider threat activity.\n\nTuning Recommendations:\nMaintain a match list of users known and approved to modify variable groups and add it as a tuning expression for the rule.\n\nCredits:\nThis detection is based on the Azure Sentinel ADOVariableModifiedByNewUser.yaml rule.",
         "enabled_by_default": true,
@@ -7669,7 +7666,8 @@
         "stream": "record",
         "summary_expression": "User: {{user_username}} has been observed modifying a Variable group",
         "tags": [
-            "_mitreAttackTechnique:T1578.005"
+            "_mitreAttackTechnique:T1578.005",
+            "_mitreAttackTactic:TA0112"
         ],
         "threat_ruleType": null,
         "value_expression": null,
@@ -7755,8 +7753,8 @@
         "baseline_type": "GLOBAL",
         "baseline_window_size": 2592000000,
         "category": "Defense Evasion",
-        "commit_message": "TLAB-1789 Unsilence ADO Rules",
-        "commit_origin_hash": "de1f73ec580091c1bda38e9d7b55df4c51129197",
+        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
+        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
         "content_type": "ANOMALY",
         "description_expression": "Context:\nAzure DevOps (ADO) Agent Pools are a key resource. Hosted or self-hosted pools can be created for use in the DevOps pipeline. An attacker with ADO access allowing for pool creation, may create agent pools for malicious use.\n\nDetection:\nThis detection monitors for new users creating an agent pool. This user has not been observed creating agent pools during the baseline period and may be a new admin or involved in suspicious account activity.\n\nRecommended Actions:\nInvestigate the account observed creating the new agent pool for signs of account compromise or insider threat activity.\n\nTuning Recommendations:\nCreate a tuning expression with a list of admin user_username values that should be excluded from detection if they were not in the baseline.",
         "enabled_by_default": true,
@@ -7801,7 +7799,7 @@
         "summary_expression": "User: {{user_username}}  has been observed creating a new Azure DevOps Agent Pool",
         "tags": [
             "_mitreAttackTechnique:T1578.002",
-            "_mitreAttackTactic:TA0005"
+            "_mitreAttackTactic:TA0112"
         ],
         "threat_ruleType": null,
         "value_expression": null,
@@ -7995,7 +7993,9 @@
         "normalized_summary": "User {{user_username}} initiated Claude data export for the first time since baseline",
         "pattern_type": "first_seen",
         "product_direct_ref": [],
-        "product_guids": [],
+        "product_guids": [
+            "8ad9c55c-1271-4e8a-a8ca-f1663051f4d1"
+        ],
         "record_type_direct_ref": [],
         "retention_window_size": 7776000000,
         "rule_description": "",
@@ -9470,6 +9470,7 @@
         "product_direct_ref": [],
         "product_guids": [
             "072b85a2-1765-45c2-911d-b0509880326e",
+            "0fb003bc-8383-442f-8f3d-afcfbaefe617",
             "14aa46d3-0710-44b6-9ce3-0a6b8f36b076",
             "168afd8d-2893-4c74-95b1-a975d576ea56",
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
@@ -9557,7 +9558,6 @@
         "product_guids": [
             "14aa46d3-0710-44b6-9ce3-0a6b8f36b076",
             "168afd8d-2893-4c74-95b1-a975d576ea56",
-            "1768a42a-37e6-4a2b-aa42-314583f63e1b",
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "332856e9-3111-446f-8df7-e64694e4b9a1",
             "37C866BF-72E1-470A-9072-EDB908F56951",
@@ -10415,9 +10415,11 @@
             "9a28f2af-5526-414d-973b-c3fc7984b8a1",
             "B3582ED2-1A0C-452D-9802-97433D143486",
             "F362EA03-9BBB-4701-B2DF-5460C4A289CF",
+            "bf865cb5-0b26-4010-8b3c-5ae2d1f716d8",
             "c2503fcc-ef30-4e40-bb32-0bf47151b140",
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
-            "da9e05a5-3fd3-46a7-a107-ae03c01e3f5a"
+            "da9e05a5-3fd3-46a7-a107-ae03c01e3f5a",
+            "dcc85cfc-a698-4d09-87de-f2c723f3ad07"
         ],
         "record_type_direct_ref": [],
         "rule_source": "sumo",
@@ -10861,7 +10863,6 @@
         "product_direct_ref": [],
         "product_guids": [
             "072b85a2-1765-45c2-911d-b0509880326e",
-            "2a236ab1-77d2-4867-a571-a1cfd64528e6",
             "41f70c6e-18a9-462c-a04d-4edc7baead7a",
             "c2503fcc-ef30-4e40-bb32-0bf47151b140",
             "e90edc67-68d4-4d67-82f6-4524f94b59bb",
@@ -13794,6 +13795,7 @@
             "5ba50e74-3c05-4ea8-aeaf-5efde588c60f",
             "6299d728-14f7-455e-85c5-ea8ec65a654a",
             "724c9add-8cd9-4013-b9e1-a907b96da426",
+            "B3582ED2-1A0C-452D-9802-97433D143486",
             "af61d8a8-3eba-42fb-9f17-87443924f3f4",
             "afabb29d-e728-410f-b7c6-acfa9efbe1ed",
             "c2503fcc-ef30-4e40-bb32-0bf47151b140",
@@ -13826,8 +13828,8 @@
         ],
         "asset_field": "srcDevice_ip",
         "category": "Exfiltration",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
+        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
         "content_type": "RULE",
         "converted": true,
         "description": "A server responded on a SSL or TLS service using a self-signed certificate.",
@@ -13867,10 +13869,10 @@
         "stream": "record",
         "summary_expression": "Server IP: {{srcDevice_ip}} with SSL or TLS service responded with self-signed certificate",
         "tags": [
-            "_mitreAttackTactic:TA0005",
             "_mitreAttackTactic:TA0010",
             "_mitreAttackTechnique:T1553",
-            "_mitreAttackTechnique:T1553.002"
+            "_mitreAttackTechnique:T1553.002",
+            "_mitreAttackTactic:TA0112"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": [
@@ -13950,7 +13952,6 @@
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "c2503fcc-ef30-4e40-bb32-0bf47151b140",
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
-            "da9e05a5-3fd3-46a7-a107-ae03c01e3f5a",
             "dcc85cfc-a698-4d09-87de-f2c723f3ad07",
             "ede052db-d472-408f-949c-be642237ef3f",
             "fa3c148a-4272-4a94-aea2-499ab90424c2",
@@ -14426,7 +14427,6 @@
             "96d1bd4a-9285-439e-b81c-1a32f7688dac",
             "B3582ED2-1A0C-452D-9802-97433D143486",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
-            "c2503fcc-ef30-4e40-bb32-0bf47151b140",
             "da9e05a5-3fd3-46a7-a107-ae03c01e3f5a",
             "de3d4b6b-36a3-4436-8bfc-0561ac95037e",
             "ef42eb74-7444-4fee-b231-b4eb1e7c9660"
@@ -14525,6 +14525,7 @@
             "1ce88b4b-d90d-4d50-9a89-3abe83e8d5f8",
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "2a678bcd-898e-43cd-ab3f-91feb0602a18",
+            "2ca0adcf-7616-4474-8557-a3773515aa6d",
             "332856e9-3111-446f-8df7-e64694e4b9a1",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "37C866BF-72E1-470A-9072-EDB908F56951",
@@ -15033,8 +15034,8 @@
         ],
         "asset_field": "user_username",
         "category": "Privilege Escalation",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
+        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
         "content_type": "RULE",
         "converted": true,
         "description": "This signal alerts on the elevation of privileges assigned to a domain user account according to Windows Event ID 4728, 4732, and/or 4756.",
@@ -15084,10 +15085,10 @@
         "stream": "record",
         "summary_expression": "User: {{user_username}} added user: {{targetUser_username}} to privileged security group",
         "tags": [
-            "_mitreAttackTactic:TA0005",
             "_mitreAttackTactic:TA0004",
             "_mitreAttackTechnique:T1484",
-            "_mitreAttackTechnique:T1484.001"
+            "_mitreAttackTechnique:T1484.001",
+            "_mitreAttackTactic:TA0112"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": [
@@ -15483,8 +15484,8 @@
         ],
         "asset_field": "srcDevice_ip",
         "category": "Execution",
-        "commit_message": "TLAB-2543: Removed Redundant Mapping for Cisco Umbrella (#5961)",
-        "commit_origin_hash": "b88c53541d2e7f4bee40957ceb10b8e8a62d2d04",
+        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
+        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
         "content_type": "RULE",
         "converted": true,
         "description": "Common administrative tools may be used by malware authors and attackers who use live-off-the-land methods to operate on victim networks.",
@@ -15593,7 +15594,6 @@
         "tags": [
             "_mitreAttackTactic:TA0002",
             "_mitreAttackTactic:TA0004",
-            "_mitreAttackTactic:TA0005",
             "_mitreAttackTactic:TA0007",
             "_mitreAttackTactic:TA0011",
             "_mitreAttackTechnique:T1059",
@@ -19144,8 +19144,8 @@
         ],
         "asset_field": "user_username",
         "category": "Privilege Escalation",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
+        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
         "content_type": "RULE",
         "description_expression": "A user adding themselves to a security group may indicate the attempt to escalate their privileges",
         "enabled_by_default": true,
@@ -19201,10 +19201,10 @@
         "stream": "record",
         "summary_expression": "The user account {{user_username}} has added themselves to the Windows security group {{changeTarget}}",
         "tags": [
-            "_mitreAttackTactic:TA0005",
             "_mitreAttackTactic:TA0004",
             "_mitreAttackTechnique:T1484",
-            "_mitreAttackTechnique:T1484.001"
+            "_mitreAttackTechnique:T1484.001",
+            "_mitreAttackTactic:TA0112"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": [
@@ -19388,8 +19388,8 @@
         ],
         "asset_field": "device_ip",
         "category": "Execution",
-        "commit_message": "Rule script cleanup (#5974)",
-        "commit_origin_hash": "ccec442dadce7ea8c1dd9423e04f93eceb57d499",
+        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
+        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
         "content_type": "RULE",
         "description_expression": "Changing the configuration of logging to any mission-critical service or platform should be closely monitored.  This signal identifies when AWS logging configurations have been changed.  The severity of signals increases depending on the type of action observed.  For instance disabling/deleting logs is a higher severity than enabling logs.",
         "enabled_by_default": true,
@@ -19493,12 +19493,12 @@
         "summary_expression": "{{action}} performed by user: {{user_username}}",
         "tags": [
             "_mitreAttackTactic:TA0002",
-            "_mitreAttackTactic:TA0005",
             "_mitreAttackTechnique:T1489",
             "_mitreAttackTechnique:T1578",
             "_mitreAttackTechnique:T1685",
             "_mitreAttackTechnique:T1578.004",
-            "_mitreAttackTechnique:T1685.002"
+            "_mitreAttackTechnique:T1685.002",
+            "_mitreAttackTactic:TA0112"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": [
@@ -20142,8 +20142,8 @@
         ],
         "asset_field": "device_hostname",
         "category": "Persistence",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
+        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
         "content_type": "RULE",
         "description_expression": "This rule detects modifications to registry keys commonly targeted to achieve persistence.",
         "enabled_by_default": true,
@@ -20201,10 +20201,10 @@
         "tags": [
             "_mitreAttackTactic:TA0003",
             "_mitreAttackTactic:TA0004",
-            "_mitreAttackTactic:TA0005",
             "_mitreAttackTechnique:T1112",
             "_mitreAttackTechnique:T1547",
-            "_mitreAttackTechnique:T1547.001"
+            "_mitreAttackTechnique:T1547.001",
+            "_mitreAttackTactic:TA0112"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": [
@@ -20986,6 +20986,7 @@
         "pattern_type": "templated_match",
         "product_direct_ref": [],
         "product_guids": [
+            "046b3623-69fe-409f-9e80-fd3ebef0654f",
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "840c72e0-4e47-41e7-9b93-31f55d12f07d",
@@ -23235,8 +23236,8 @@
         ],
         "asset_field": "device_ip",
         "category": "Lateral Movement",
-        "commit_message": "TLAB-380 Fix Overpass the Hash",
-        "commit_origin_hash": "ee5820a4adae503c872f53ae5791ee36ea64b94c",
+        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
+        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
         "content_type": "RULE",
         "description_expression": "Identifies a suspicious windows logon of type 9 (NewCredentials).  This signal is suspicious due to its similarity to the behavior observed when using Mimikatz's sekurlsa::pth tool.",
         "enabled_by_default": true,
@@ -23292,7 +23293,6 @@
         "stream": "record",
         "summary_expression": "Successful Overpass the Hash attempted on host: {{device_hostname}}",
         "tags": [
-            "_mitreAttackTactic:TA0005",
             "_mitreAttackTactic:TA0008",
             "_mitreAttackTechnique:T1550",
             "_mitreAttackTechnique:T1550.002"
@@ -23398,8 +23398,8 @@
         ],
         "asset_field": "device_ip",
         "category": "Lateral Movement",
-        "commit_message": "Spelling-Corrections-Across-Content",
-        "commit_origin_hash": "a0980e690918542102bfb7a09491d13044d2beca",
+        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
+        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
         "content_type": "RULE",
         "description_expression": "The behavior discovered here loosely matches the behavior of known pass the hash tools.  A Pass the Hash (PtH) attack is a way for an attacker to move laterally through a type of credential theft.  Because this behavior is known to occur in some environments during normal activity, tuning is recommended and attention paid to a possible spike in signals after enabling this rule.",
         "enabled_by_default": false,
@@ -23457,7 +23457,6 @@
         "stream": "record",
         "summary_expression": "Potential pass the hash activity detected on host: {{device_hostname}}",
         "tags": [
-            "_mitreAttackTactic:TA0005",
             "_mitreAttackTactic:TA0008",
             "_mitreAttackTechnique:T1550",
             "_mitreAttackTechnique:T1550.002"
@@ -24571,8 +24570,8 @@
         ],
         "asset_field": "user_username",
         "category": "Execution",
-        "commit_message": "Add alias for Google Workspace to (hopefully) support G Suite as a valid Product name (#5890)",
-        "commit_origin_hash": "20901ece1fb1543ffd9c2e15213f315e1d42553f",
+        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
+        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
         "content_type": "RULE",
         "description_expression": "Alert when a non-approved OAuth Application has been identified on Google Workspace. This rule is disabled by default as a list of approved OAuth applications is required to be enabled. The approved applications should be added to the rule logic under the 'application not in' condition.",
         "enabled_by_default": false,
@@ -24615,7 +24614,6 @@
         "summary_expression": "Unauthorized OAuth Application: {{application}} on user: {{user_username}}",
         "tags": [
             "_mitreAttackTactic:TA0002",
-            "_mitreAttackTactic:TA0005",
             "_mitreAttackTactic:TA0008",
             "_mitreAttackTechnique:T1550",
             "_mitreAttackTechnique:T1550.001"
@@ -25961,8 +25959,8 @@
         ],
         "asset_field": "device_ip",
         "category": "Exfiltration",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
+        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
         "content_type": "RULE",
         "description_expression": "Creating DB snapshots is an efficient way for an attacker to begin downloading a targets database.  These signals should be considered around the context of other signals that may indicate data theft is in progress.",
         "enabled_by_default": true,
@@ -26022,9 +26020,9 @@
         "stream": "record",
         "summary_expression": "{{metadata_deviceEventId}} performed by user: {{user_username}} with role: {{user_username_role}}",
         "tags": [
-            "_mitreAttackTactic:TA0005",
             "_mitreAttackTechnique:T1578",
-            "_mitreAttackTechnique:T1578.001"
+            "_mitreAttackTechnique:T1578.001",
+            "_mitreAttackTactic:TA0112"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": [
@@ -26352,8 +26350,8 @@
         ],
         "asset_field": "device_hostname",
         "category": "Defense Evasion",
-        "commit_message": "TLAB-1424 Update summary of MATCH-S00272",
-        "commit_origin_hash": "b0ba1333aa7ec90ab249517f640db082a9732d4d",
+        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
+        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
         "content_type": "RULE",
         "description_expression": "Mimikatzs LSADUMP::DCShadow module can be used to make AD updates by temporarily setting a computer to be a DC.",
         "enabled_by_default": true,
@@ -26407,8 +26405,8 @@
         "stream": "record",
         "summary_expression": "Detected dcshadow rogue domain controller activity on host: {{device_hostname}}",
         "tags": [
-            "_mitreAttackTactic:TA0005",
-            "_mitreAttackTechnique:T1207"
+            "_mitreAttackTechnique:T1207",
+            "_mitreAttackTactic:TA0112"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": []
@@ -26423,8 +26421,8 @@
         ],
         "asset_field": "device_hostname",
         "category": "Privilege Escalation",
-        "commit_message": "TLAB-1358 Remove MITRE Sub-Technique from rules",
-        "commit_origin_hash": "4ccb9b07f0e7ecdde597e6c0110e710771421579",
+        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
+        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
         "content_type": "RULE",
         "description_expression": "This signal inciates that an indicator in the windows registry was found that indicates the Windows Credential Editor (WCE) tool may be in use.  This tool use is highly suspicious and can indicate lateral movement attempts (pass-the-hash etc.)  REF: https://www.ampliasecurity.com/research/windows-credentials-editor/",
         "enabled_by_default": true,
@@ -26480,7 +26478,6 @@
         "tags": [
             "_mitreAttackTactic:TA0004",
             "_mitreAttackTactic:TA0006",
-            "_mitreAttackTactic:TA0005",
             "_mitreAttackTactic:TA0008",
             "_mitreAttackTechnique:T1003",
             "_mitreAttackTechnique:T1550",
@@ -27269,8 +27266,8 @@
         ],
         "asset_field": "user_username",
         "category": "Execution",
-        "commit_message": "Add alias for Google Workspace to (hopefully) support G Suite as a valid Product name (#5890)",
-        "commit_origin_hash": "20901ece1fb1543ffd9c2e15213f315e1d42553f",
+        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
+        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
         "content_type": "RULE",
         "description_expression": "Alert when an OAuth application has requested a high number of permissions to aspects of Google Workspace.",
         "enabled_by_default": true,
@@ -27310,7 +27307,6 @@
         "summary_expression": "User: {{user_username}} set excessive OAuth permission scope on application: {{application}}",
         "tags": [
             "_mitreAttackTactic:TA0002",
-            "_mitreAttackTactic:TA0005",
             "_mitreAttackTactic:TA0008",
             "_mitreAttackTechnique:T1550",
             "_mitreAttackTechnique:T1550.001"
@@ -27333,8 +27329,8 @@
         ],
         "asset_field": "user_username",
         "category": "Execution",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
+        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
         "content_type": "RULE",
         "description_expression": "Alert when a non-approved OAuth Application has been identified on Azure. This rule is disabled by default as a list of approved OAuth applications is required to be enabled. The approved applications should be added to the rule logic under the 'application not in' condition.",
         "enabled_by_default": false,
@@ -27388,7 +27384,6 @@
         "summary_expression": "{{application}} is not an authorized OAuth application.",
         "tags": [
             "_mitreAttackTactic:TA0002",
-            "_mitreAttackTactic:TA0005",
             "_mitreAttackTactic:TA0008",
             "_mitreAttackTechnique:T1550",
             "_mitreAttackTechnique:T1550.001"
@@ -27491,8 +27486,8 @@
         ],
         "asset_field": "user_username",
         "category": "Execution",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
+        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
         "content_type": "RULE",
         "description_expression": "A UserPoolClient is an entity that has permission to call unauthenticated API operations (operations that do not have an authenticated user).",
         "enabled_by_default": true,
@@ -27550,7 +27545,6 @@
         "summary_expression": "{{action}}: {{application}} performed by user: {{user_username}}",
         "tags": [
             "_mitreAttackTactic:TA0002",
-            "_mitreAttackTactic:TA0005",
             "_mitreAttackTactic:TA0008",
             "_mitreAttackTechnique:T1550",
             "_mitreAttackTechnique:T1550.001"
@@ -27575,8 +27569,8 @@
         ],
         "asset_field": "user_username",
         "category": "Execution",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
+        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
         "content_type": "RULE",
         "description_expression": "Alert when an OAuth application has requested a high number of permissions to aspects of AWS.",
         "enabled_by_default": true,
@@ -27634,7 +27628,6 @@
         "summary_expression": "{{action}} performed by user: {{user_username}} on {{application}}",
         "tags": [
             "_mitreAttackTactic:TA0002",
-            "_mitreAttackTactic:TA0005",
             "_mitreAttackTactic:TA0008",
             "_mitreAttackTechnique:T1550",
             "_mitreAttackTechnique:T1550.001"
@@ -27892,8 +27885,8 @@
         ],
         "asset_field": "device_hostname",
         "category": "Execution",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
+        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
         "content_type": "RULE",
         "description_expression": "Uses data from process creation events to detect indicators of the WannaCry Ransomware.",
         "enabled_by_default": true,
@@ -27950,7 +27943,6 @@
         "summary_expression": "WannaCry ransomware indicator detected on host: {{device_hostname}}",
         "tags": [
             "_mitreAttackTactic:TA0002",
-            "_mitreAttackTactic:TA0005",
             "_mitreAttackTactic:TA0007",
             "_mitreAttackTactic:TA0008",
             "_mitreAttackTactic:TA0040",
@@ -27959,7 +27951,8 @@
             "_mitreAttackTechnique:T1222",
             "_mitreAttackTechnique:T1222.001",
             "_mitreAttackTechnique:T1486",
-            "_mitreAttackTechnique:T1490"
+            "_mitreAttackTechnique:T1490",
+            "_mitreAttackTactic:TA0112"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": []
@@ -27974,8 +27967,8 @@
         ],
         "asset_field": "device_hostname",
         "category": "Execution",
-        "commit_message": "TLABS-1430 Update summary of MATCH-S00319",
-        "commit_origin_hash": "08815d351e830759d8325d1b8be27db85c1c2357",
+        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
+        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
         "content_type": "RULE",
         "description_expression": "Detects typical Dridex process patterns",
         "enabled_by_default": true,
@@ -28030,14 +28023,14 @@
         "summary_expression": "A suspicious command execution was observed on host: {{device_hostname}}",
         "tags": [
             "_mitreAttackTactic:TA0002",
-            "_mitreAttackTactic:TA0005",
             "_mitreAttackTactic:TA0007",
             "_mitreAttackTactic:TA0040",
             "_mitreAttackTechnique:T1083",
             "_mitreAttackTechnique:T1222",
             "_mitreAttackTechnique:T1222.001",
             "_mitreAttackTechnique:T1486",
-            "_mitreAttackTechnique:T1490"
+            "_mitreAttackTechnique:T1490",
+            "_mitreAttackTactic:TA0112"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": []
@@ -28167,9 +28160,12 @@
         "pattern_type": "templated_match",
         "product_direct_ref": [],
         "product_guids": [
+            "033624b0-218e-4dcb-b93f-0f1fb1806c56",
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
+            "840c72e0-4e47-41e7-9b93-31f55d12f07d",
+            "8967aecc-ffb3-4cbe-a02e-258d1edca8d0",
             "a1225af5-e778-4068-a9a2-47da93d1ff24"
         ],
         "record_type_direct_ref": [],
@@ -28207,8 +28203,8 @@
         ],
         "asset_field": "device_hostname",
         "category": "Privilege Escalation",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
+        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
         "content_type": "RULE",
         "description_expression": "Detects command line parameters associated with use of the Rubeus hack tool",
         "enabled_by_default": true,
@@ -28265,7 +28261,6 @@
         "summary_expression": "Rubeus hack tool indicator detected on host: {{device_hostname}}",
         "tags": [
             "_mitreAttackTactic:TA0004",
-            "_mitreAttackTactic:TA0005",
             "_mitreAttackTactic:TA0006",
             "_mitreAttackTactic:TA0008",
             "_mitreAttackTechnique:T1550",
@@ -28798,7 +28793,6 @@
         "product_direct_ref": [],
         "product_guids": [
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
-            "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "840c72e0-4e47-41e7-9b93-31f55d12f07d"
         ],
         "record_type_direct_ref": [],
@@ -29660,8 +29654,8 @@
         ],
         "asset_field": "device_hostname",
         "category": "Execution",
-        "commit_message": "Rule script cleanup (#5974)",
-        "commit_origin_hash": "ccec442dadce7ea8c1dd9423e04f93eceb57d499",
+        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
+        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
         "content_type": "RULE",
         "description_expression": "Detects a suspicious DLL loading from AppData Local path as described in BlueMashroom report",
         "enabled_by_default": true,
@@ -29715,7 +29709,6 @@
         "stream": "record",
         "summary_expression": "Suspicious DLL load detected on host: {{device_hostname}}",
         "tags": [
-            "_mitreAttackTactic:TA0003",
             "_mitreAttackTactic:TA0004",
             "_mitreAttackTactic:TA0005",
             "_mitreAttackTechnique:T1574",
@@ -30106,8 +30099,8 @@
         ],
         "asset_field": "device_hostname",
         "category": "Credential Access",
-        "commit_message": "Clean up rules",
-        "commit_origin_hash": "5fd899ef16f077a0da4049c262275a7bfcc06e30",
+        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
+        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
         "content_type": "RULE",
         "description_expression": "Monitors for use of reg.exe with parameters indicating the attempted export of hashed credentials.\n\nAudit Object Access (success & failure) must be enabled for this rule to function.\n\nMonitoring of the following registry keys is necessary:\nHKLM\\Security\nHKLM\\Security\\Cache\nHKLM\\System\nHKLM\\Security\\Policy\\Secrets\nHKLM\\Sam",
         "enabled_by_default": true,
@@ -30163,7 +30156,6 @@
         "stream": "record",
         "summary_expression": "Attempt to export credentials detected on host: {{device_hostname}} by user: {{user_username}}",
         "tags": [
-            "_mitreAttackTactic:TA0005",
             "_mitreAttackTactic:TA0008",
             "_mitreAttackTactic:TA0006",
             "_mitreAttackTechnique:T1550",
@@ -30185,8 +30177,8 @@
         ],
         "asset_field": "device_hostname",
         "category": "Defense Evasion",
-        "commit_message": "TLAB-1447 Update summary of MATCH-S00392",
-        "commit_origin_hash": "730766d0866fba28e59648780c9b9cfbb385c14a",
+        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
+        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
         "content_type": "RULE",
         "description_expression": "Detects a file or folder permissions modifications.",
         "enabled_by_default": true,
@@ -30244,9 +30236,9 @@
         "stream": "record",
         "summary_expression": "User: {{user_username}} executed file or folder modification on host: {{device_hostname}}",
         "tags": [
-            "_mitreAttackTactic:TA0005",
             "_mitreAttackTechnique:T1222",
-            "_mitreAttackTechnique:T1222.001"
+            "_mitreAttackTechnique:T1222.001",
+            "_mitreAttackTactic:TA0112"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": []
@@ -30384,6 +30376,7 @@
             "0fb003bc-8383-442f-8f3d-afcfbaefe617",
             "2b82e665-bdde-474a-ae29-4f0f76598556",
             "9e0641a7-22ce-4ac8-8113-ee48b368ac3d",
+            "B3582ED2-1A0C-452D-9802-97433D143486",
             "be4f7473-fe69-4311-8859-3561900060bf",
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
             "dcc85cfc-a698-4d09-87de-f2c723f3ad07"
@@ -30418,8 +30411,8 @@
         ],
         "asset_field": "device_hostname",
         "category": "Credential Access",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
+        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
         "content_type": "RULE",
         "description_expression": "Observes for image accesses of images used for credential dumping via Mimikatz",
         "enabled_by_default": true,
@@ -30499,7 +30492,8 @@
             "_mitreAttackTechnique:T1552.004",
             "_mitreAttackTechnique:T1550",
             "_mitreAttackTechnique:T1550.002",
-            "_mitreAttackTechnique:T1550.003"
+            "_mitreAttackTechnique:T1550.003",
+            "_mitreAttackTactic:TA0112"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": [
@@ -30736,6 +30730,7 @@
             "08d5e888-ae62-462a-80d9-c0df7d3643c1",
             "114420df-d10c-4e88-92e9-0d95102c1a3d",
             "146522A1-DC9A-40A5-A909-2EB3B665B1D1",
+            "1b7798df-963b-4582-a82b-b8176c3a6a22",
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "2ca0adcf-7616-4474-8557-a3773515aa6d",
             "343b9323-d279-40d9-946f-809242e5cf98",
@@ -30806,8 +30801,8 @@
         ],
         "asset_field": "device_hostname",
         "category": "Credential Access",
-        "commit_message": "TLAB-1204 Remove erroneous ATT&CK tags",
-        "commit_origin_hash": "065dad564db81e01c90d542034cca1a8262bc069",
+        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
+        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
         "content_type": "RULE",
         "description_expression": "Observes for eventID 4703 with SeDebugPrivileges added by powershell. May indicate the presence of Mimikatz credential dumping.",
         "enabled_by_default": true,
@@ -30886,7 +30881,8 @@
             "_mitreAttackTechnique:T1552.004",
             "_mitreAttackTechnique:T1550",
             "_mitreAttackTechnique:T1550.002",
-            "_mitreAttackTechnique:T1550.003"
+            "_mitreAttackTechnique:T1550.003",
+            "_mitreAttackTactic:TA0112"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": [
@@ -31709,7 +31705,6 @@
         "product_direct_ref": [],
         "product_guids": [
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
-            "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "840c72e0-4e47-41e7-9b93-31f55d12f07d"
         ],
         "record_type_direct_ref": [],
@@ -35734,8 +35729,8 @@
         ],
         "asset_field": "device_ip",
         "category": "Privilege Escalation",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
+        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
         "content_type": "RULE",
         "description_expression": "From FireEye Red Team Tool Countermeasures:\nRubeus is a utility  that provides Kerberos abuse capabilities. This rule is looking for the  hardcoded LogonProcessName value, \"User32LogonProcesss\".",
         "enabled_by_default": true,
@@ -35800,7 +35795,6 @@
         "summary_expression": "Rubeus hack tool indicator detected on host: {{device_hostname}}",
         "tags": [
             "_mitreAttackTactic:TA0004",
-            "_mitreAttackTactic:TA0005",
             "_mitreAttackTactic:TA0006",
             "_mitreAttackTactic:TA0008",
             "_mitreAttackTechnique:T1550",
@@ -36564,8 +36558,8 @@
         ],
         "asset_field": "device_hostname",
         "category": "Defense Evasion",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
+        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
         "content_type": "RULE",
         "description_expression": "Observes for attempts to add a certificate to the untrusted store",
         "enabled_by_default": true,
@@ -36619,10 +36613,10 @@
         "stream": "record",
         "summary_expression": "Attempt to add certificate to store on host: {{device_hostname}} by user: {{user_username}}",
         "tags": [
-            "_mitreAttackTactic:TA0005",
             "_mitreAttackTechnique:T1553",
             "_mitreAttackTechnique:T1553.002",
-            "_mitreAttackTechnique:T1553.004"
+            "_mitreAttackTechnique:T1553.004",
+            "_mitreAttackTactic:TA0112"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": []
@@ -36786,8 +36780,8 @@
         ],
         "asset_field": "device_hostname",
         "category": "Execution",
-        "commit_message": "Rule script cleanup (#5974)",
-        "commit_origin_hash": "ccec442dadce7ea8c1dd9423e04f93eceb57d499",
+        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
+        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
         "content_type": "RULE",
         "description_expression": "Malware detected that is determined to be ransomware based on the signature/virus name.",
         "enabled_by_default": true,
@@ -36859,7 +36853,8 @@
             "_mitreAttackTechnique:T1685.001",
             "_mitreAttackTechnique:T1690",
             "_mitreAttackTechnique:T1686",
-            "_mitreAttackTechnique:T1484.001"
+            "_mitreAttackTechnique:T1484.001",
+            "_mitreAttackTactic:TA0112"
         ],
         "threat_ruleType": "malware",
         "vendor_direct_ref": []
@@ -37531,7 +37526,6 @@
         "product_guids": [
             "146522A1-DC9A-40A5-A909-2EB3B665B1D1",
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
-            "332856e9-3111-446f-8df7-e64694e4b9a1",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "6299d728-14f7-455e-85c5-ea8ec65a654a",
             "79da6240-7617-49c8-b130-96278579766e",
@@ -38025,8 +38019,8 @@
         ],
         "asset_field": "device_hostname",
         "category": "Persistence",
-        "commit_message": "TLAB-1475 Update summary of MATCH-S00534",
-        "commit_origin_hash": "c6327a3b72eed1aeea6babf269b01d6d33c5952d",
+        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
+        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
         "content_type": "RULE",
         "description_expression": "This rule looks for processes referencing the plist files that determine which applications are re-opened when a user reboots their machine. This may also detect commands associated with login hooks being executed.",
         "enabled_by_default": true,
@@ -38093,7 +38087,8 @@
             "_mitreAttackTechnique:T1543.001",
             "_mitreAttackTechnique:T1543",
             "_mitreAttackTechnique:T1037.002",
-            "_mitreAttackTechnique:T1037"
+            "_mitreAttackTechnique:T1037",
+            "_mitreAttackTactic:TA0112"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": []
@@ -38145,8 +38140,8 @@
         "product_direct_ref": [],
         "product_guids": [
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
-            "3382523e-2072-41bd-b50b-6b148957d0b0",
-            "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3"
+            "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
+            "a1225af5-e778-4068-a9a2-47da93d1ff24"
         ],
         "record_type_direct_ref": [],
         "rule_source": "sumo",
@@ -38421,7 +38416,8 @@
         "product_direct_ref": [],
         "product_guids": [
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
-            "3382523e-2072-41bd-b50b-6b148957d0b0"
+            "3382523e-2072-41bd-b50b-6b148957d0b0",
+            "ef42eb74-7444-4fee-b231-b4eb1e7c9660"
         ],
         "record_type_direct_ref": [],
         "rule_source": "sumo",
@@ -38745,6 +38741,7 @@
             "72a5ddec-abb9-41ff-a2da-6a58beff980c",
             "840c72e0-4e47-41e7-9b93-31f55d12f07d",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
+            "ef42eb74-7444-4fee-b231-b4eb1e7c9660",
             "f9cea291-9030-4e41-9836-6dd9274d6df4"
         ],
         "record_type_direct_ref": [],
@@ -38783,8 +38780,8 @@
         ],
         "asset_field": "device_hostname",
         "category": "Privilege Escalation",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
+        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
         "content_type": "RULE",
         "description_expression": "The rule looks for modifications to registry keys that control the enforcement of Windows User Account Control (UAC).",
         "enabled_by_default": true,
@@ -38841,7 +38838,6 @@
         "summary_expression": "UAC registry modification on host: {{device_hostname}} by user: {{user_username}}",
         "tags": [
             "_mitreAttackTactic:TA0004",
-            "_mitreAttackTactic:TA0005",
             "_mitreAttackTechnique:T1548",
             "_mitreAttackTechnique:T1548.002"
         ],
@@ -38863,8 +38859,8 @@
         ],
         "asset_field": "device_hostname",
         "category": "Defense Evasion",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
+        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
         "content_type": "RULE",
         "description_expression": "This rule looks for registry activity associated with application compatibility shims, which can be leveraged by attackers for various nefarious purposes.",
         "enabled_by_default": true,
@@ -38920,12 +38916,12 @@
         "stream": "record",
         "summary_expression": "Shim database registry activity detected on host: {{device_hostname}}",
         "tags": [
-            "_mitreAttackTactic:TA0005",
             "_mitreAttackTactic:TA0003",
             "_mitreAttackTactic:TA0004",
             "_mitreAttackTechnique:T1112",
             "_mitreAttackTechnique:T1546",
-            "_mitreAttackTechnique:T1546.011"
+            "_mitreAttackTechnique:T1546.011",
+            "_mitreAttackTactic:TA0112"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": [
@@ -39640,7 +39636,6 @@
         "product_direct_ref": [],
         "product_guids": [
             "021d1ded-1c82-4663-bf5d-d6ed5170efa3",
-            "033624b0-218e-4dcb-b93f-0f1fb1806c56",
             "05bfaf47-5e21-4d5f-b724-98960a6fca8a",
             "072b85a2-1765-45c2-911d-b0509880326e",
             "0fb003bc-8383-442f-8f3d-afcfbaefe617",
@@ -39655,7 +39650,6 @@
             "54B36B3F-A63F-4BA4-9DE4-02DBF69A429F",
             "5ba50e74-3c05-4ea8-aeaf-5efde588c60f",
             "5be5af82-c248-4c4c-a485-0571025f242c",
-            "5c2cc0de-ca31-4ef0-bcfa-133fc8b387ad",
             "6299d728-14f7-455e-85c5-ea8ec65a654a",
             "724c9add-8cd9-4013-b9e1-a907b96da426",
             "A17B3F3C-04F1-40C8-9497-3C499EB18A74",
@@ -39746,8 +39740,7 @@
             "951a004d-54bf-441d-98e1-fcc6a032f475",
             "9e0641a7-22ce-4ac8-8113-ee48b368ac3d",
             "A17B3F3C-04F1-40C8-9497-3C499EB18A74",
-            "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
-            "da9e05a5-3fd3-46a7-a107-ae03c01e3f5a"
+            "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad"
         ],
         "record_type_direct_ref": [],
         "rule_source": "sumo",
@@ -40040,7 +40033,6 @@
             "1624169f-36c4-4309-8400-1409a171d00b",
             "168afd8d-2893-4c74-95b1-a975d576ea56",
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
-            "2a678bcd-898e-43cd-ab3f-91feb0602a18",
             "2b82e665-bdde-474a-ae29-4f0f76598556",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "37C866BF-72E1-470A-9072-EDB908F56951",
@@ -40479,8 +40471,8 @@
         ],
         "asset_field": "device_hostname",
         "category": "Unknown/Other",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
+        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
         "content_type": "RULE",
         "description_expression": "Observes for the creation of a registry key associated with Ursnif malware",
         "enabled_by_default": true,
@@ -40532,10 +40524,10 @@
         "tags": [
             "_mitreAttackTactic:TA0003",
             "_mitreAttackTactic:TA0004",
-            "_mitreAttackTactic:TA0005",
             "_mitreAttackTechnique:T1112",
             "_mitreAttackTechnique:T1547",
-            "_mitreAttackTechnique:T1547.001"
+            "_mitreAttackTechnique:T1547.001",
+            "_mitreAttackTactic:TA0112"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": []
@@ -40622,8 +40614,8 @@
         ],
         "asset_field": "device_hostname",
         "category": "Unknown/Other",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
+        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
         "content_type": "RULE",
         "description_expression": "Observes for registry keys associated with persistence activity",
         "enabled_by_default": true,
@@ -40672,7 +40664,8 @@
         "summary_expression": "A registry key associated with threat persistence has been detected on {{device_hostname}}",
         "tags": [
             "_mitreAttackTactic:TA0003",
-            "_mitreAttackTechnique:T1112"
+            "_mitreAttackTechnique:T1112",
+            "_mitreAttackTactic:TA0112"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": [
@@ -41244,8 +41237,8 @@
         ],
         "asset_field": "device_hostname",
         "category": "Unknown/Other",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
+        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
         "content_type": "RULE",
         "description_expression": "This rule monitors for changes to lsass.exe-related registry keys that are often edited to enable or obfuscate activity related to dumping the process.",
         "enabled_by_default": true,
@@ -41298,10 +41291,10 @@
         "summary_expression": "User {{user_username}} changed the registry key {{file_path}} on host {{device_hostname}}",
         "tags": [
             "_mitreAttackTactic:TA0006",
-            "_mitreAttackTactic:TA0005",
             "_mitreAttackTechnique:T1003",
             "_mitreAttackTechnique:T1003.001",
-            "_mitreAttackTechnique:T1112"
+            "_mitreAttackTechnique:T1112",
+            "_mitreAttackTactic:TA0112"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": [
@@ -42674,8 +42667,8 @@
         ],
         "asset_field": "srcDevice_ip",
         "category": "Unknown/Other",
-        "commit_message": "Rule script cleanup (#5974)",
-        "commit_origin_hash": "ccec442dadce7ea8c1dd9423e04f93eceb57d499",
+        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
+        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
         "content_type": "RULE",
         "description_expression": "Changing the configuration of logging to any mission-critical service or platform should be closely monitored.  This signal identifies when Alibaba logging configurations have been changed.  The severity of signals increases depending on the type of action observed.  For instance disabling/deleting logs is a higher severity than enabling logs.",
         "enabled_by_default": true,
@@ -42756,12 +42749,12 @@
         "summary_expression": "User: {{user_username}} from source IP: {{srcDevice_ip}} performed a {{action}} action",
         "tags": [
             "_mitreAttackTactic:TA0002",
-            "_mitreAttackTactic:TA0005",
             "_mitreAttackTechnique:T1489",
             "_mitreAttackTechnique:T1578",
             "_mitreAttackTechnique:T1685",
             "_mitreAttackTechnique:T1578.004",
-            "_mitreAttackTechnique:T1685.002"
+            "_mitreAttackTechnique:T1685.002",
+            "_mitreAttackTactic:TA0112"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": [
@@ -46196,8 +46189,7 @@
         "pattern_type": "templated_match",
         "product_direct_ref": [],
         "product_guids": [
-            "0e20c932-d992-4bd4-b276-c15119ca5c0b",
-            "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3"
+            "0e20c932-d992-4bd4-b276-c15119ca5c0b"
         ],
         "record_type_direct_ref": [],
         "rule_source": "sumo",
@@ -46386,7 +46378,7 @@
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
-            "840c72e0-4e47-41e7-9b93-31f55d12f07d",
+            "5c2cc0de-ca31-4ef0-bcfa-133fc8b387ad",
             "a1225af5-e778-4068-a9a2-47da93d1ff24"
         ],
         "record_type_direct_ref": [],
@@ -46587,8 +46579,8 @@
         ],
         "asset_field": "device_hostname",
         "category": "Impact",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
+        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
         "content_type": "RULE",
         "description_expression": "Monitors for execution of the API call 'DeleteCluster' which may indicate that an attacker is attempting to disrupt operations.",
         "enabled_by_default": true,
@@ -46648,9 +46640,9 @@
         "stream": "record",
         "summary_expression": "{{action}} performed by user: {{user_username}}",
         "tags": [
-            "_mitreAttackTactic:TA0005",
             "_mitreAttackTechnique:T1578",
-            "_mitreAttackTechnique:T1578.003"
+            "_mitreAttackTechnique:T1578.003",
+            "_mitreAttackTactic:TA0112"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": [
@@ -46671,8 +46663,8 @@
         ],
         "asset_field": "device_hostname",
         "category": "Defense Evasion",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
+        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
         "content_type": "RULE",
         "description_expression": "New Container Uploaded to AWS ECR",
         "enabled_by_default": true,
@@ -46735,7 +46727,7 @@
             "_mitreAttackTechnique:T1578",
             "_mitreAttackTechnique:T1610",
             "_mitreAttackTechnique:T1578.002",
-            "_mitreAttackTactic:TA0005"
+            "_mitreAttackTactic:TA0112"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": [
@@ -49021,8 +49013,8 @@
         ],
         "asset_field": "device_hostname",
         "category": "Defense Evasion",
-        "commit_message": "TRIDENT-15819 Tighten expression for MATCH-S00683",
-        "commit_origin_hash": "5398b785eaf60ab7e6748c046bb72a42972132a5",
+        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
+        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
         "content_type": "RULE",
         "description_expression": "Setting a file's permissions to '777' with the chmod command allows all users to read, write, and execute said file, presenting an avenue for exploitation and privilege escalation on the host.",
         "enabled_by_default": true,
@@ -49064,7 +49056,6 @@
         "product_guids": [
             "033624b0-218e-4dcb-b93f-0f1fb1806c56",
             "0e20c932-d992-4bd4-b276-c15119ca5c0b",
-            "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "36f5ca33-0c1e-4223-8215-977ea04425ba",
             "55ec1d4a-6985-4f04-8de5-f9812871fda2",
@@ -49088,12 +49079,12 @@
         "stream": "record",
         "summary_expression": "A chmod command with 777 permissions was run on host {{device_hostname}} by user {{user_username}}",
         "tags": [
-            "_mitreAttackTactic:TA0005",
             "_mitreAttackTactic:TA0004",
             "_mitreAttackTechnique:T1222",
             "_mitreAttackTechnique:T1222.002",
             "_mitreAttackTechnique:T1548",
-            "_mitreAttackTechnique:T1548.001"
+            "_mitreAttackTechnique:T1548.001",
+            "_mitreAttackTactic:TA0112"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": []
@@ -49151,6 +49142,7 @@
             "033624b0-218e-4dcb-b93f-0f1fb1806c56",
             "0e20c932-d992-4bd4-b276-c15119ca5c0b",
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
+            "3382523e-2072-41bd-b50b-6b148957d0b0",
             "55ec1d4a-6985-4f04-8de5-f9812871fda2",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "840c72e0-4e47-41e7-9b93-31f55d12f07d"
@@ -49332,6 +49324,7 @@
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "5be5af82-c248-4c4c-a485-0571025f242c",
             "5c2cc0de-ca31-4ef0-bcfa-133fc8b387ad",
+            "72a5ddec-abb9-41ff-a2da-6a58beff980c",
             "840c72e0-4e47-41e7-9b93-31f55d12f07d",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "a1f79987-b765-4f6f-bfe5-d657baa35144",
@@ -50256,8 +50249,8 @@
         ],
         "asset_field": "device_hostname",
         "category": "Privilege Escalation",
-        "commit_message": "TLAB-1490 Update summary of MATCH-S00698",
-        "commit_origin_hash": "1a45121e72a107b57bb92eaee6a47d67b5f2d53f",
+        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
+        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
         "content_type": "RULE",
         "description_expression": "The PATH environment variable should always be set to an absolute directory pathing. Referencing the current directory is considered bad practice as it can lead to unintentional file execution or malicious abuse, as with CVE-2021-4034 (pkexec privilege escalation).",
         "enabled_by_default": true,
@@ -50294,7 +50287,6 @@
         "product_direct_ref": [],
         "product_guids": [
             "0e20c932-d992-4bd4-b276-c15119ca5c0b",
-            "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "5c2cc0de-ca31-4ef0-bcfa-133fc8b387ad",
@@ -50314,7 +50306,6 @@
         "stream": "record",
         "summary_expression": "User: {{user_username}} executed a command on host {{device_hostname}} to set the PATH variable",
         "tags": [
-            "_mitreAttackTactic:TA0004",
             "_mitreAttackTechnique:T1574",
             "_mitreAttackTechnique:T1574.007"
         ],
@@ -50708,8 +50699,8 @@
         ],
         "asset_field": "device_hostname",
         "category": "Persistence",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
+        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
         "content_type": "RULE",
         "description_expression": "This rule detects modifications to registry keys commonly targeted to achieve persistence.",
         "enabled_by_default": true,
@@ -50767,10 +50758,10 @@
         "tags": [
             "_mitreAttackTactic:TA0003",
             "_mitreAttackTactic:TA0004",
-            "_mitreAttackTactic:TA0005",
             "_mitreAttackTechnique:T1112",
             "_mitreAttackTechnique:T1547",
-            "_mitreAttackTechnique:T1547.001"
+            "_mitreAttackTechnique:T1547.001",
+            "_mitreAttackTactic:TA0112"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": [
@@ -50784,8 +50775,8 @@
         ],
         "asset_field": "device_hostname",
         "category": "Persistence",
-        "commit_message": "tweaking of mtire tags",
-        "commit_origin_hash": "15afa8c4f4b3c3b38643884732994db5df8db443",
+        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
+        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
         "content_type": "RULE",
         "description_expression": "Malicious authentication packages can be added via the Windows Registry. This rule requires registry monitoring to be setup on the endpoint.",
         "enabled_by_default": true,
@@ -50835,7 +50826,8 @@
             "_mitreAttackTechnique:T1547.002",
             "_mitreAttackTactic:TA0003",
             "_mitreAttackTechnique:T1547",
-            "_mitreAttackTechnique:T1556.002"
+            "_mitreAttackTechnique:T1556.002",
+            "_mitreAttackTactic:TA0112"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": []
@@ -51267,8 +51259,8 @@
         ],
         "asset_field": "srcDevice_ip",
         "category": "Defense Evasion",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
+        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
         "content_type": "RULE",
         "description_expression": "Detects the creation of an instance in GCP.",
         "enabled_by_default": true,
@@ -51321,9 +51313,9 @@
         "stream": "record",
         "summary_expression": "GCP Instance Creation Detected: {{action}} with IP: {{srcDevice_ip}} and User: {{user_username}}",
         "tags": [
-            "_mitreAttackTactic:TA0005",
             "_mitreAttackTechnique:T1578",
-            "_mitreAttackTechnique:T1578.002"
+            "_mitreAttackTechnique:T1578.002",
+            "_mitreAttackTactic:TA0112"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": [
@@ -51340,8 +51332,8 @@
         ],
         "asset_field": "srcDevice_ip",
         "category": "Defense Evasion",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
+        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
         "content_type": "RULE",
         "description_expression": "Detects the deletion of an instance in GCP.",
         "enabled_by_default": true,
@@ -51394,9 +51386,9 @@
         "stream": "record",
         "summary_expression": "GCP Instance Deletion Detected: {{action}} with IP: {{srcDevice_ip}} and User: {{user_username}}",
         "tags": [
-            "_mitreAttackTactic:TA0005",
             "_mitreAttackTechnique:T1578",
-            "_mitreAttackTechnique:T1578.003"
+            "_mitreAttackTechnique:T1578.003",
+            "_mitreAttackTactic:TA0112"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": [
@@ -51413,8 +51405,8 @@
         ],
         "asset_field": "srcDevice_ip",
         "category": "Defense Evasion",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
+        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
         "content_type": "RULE",
         "description_expression": "Detects the modification of an instance in GCP.",
         "enabled_by_default": true,
@@ -51467,8 +51459,8 @@
         "stream": "record",
         "summary_expression": "GCP Instance Modification Detected: {{action}}  with IP: {{srcDevice_ip}} and User: {{user_username}}",
         "tags": [
-            "_mitreAttackTactic:TA0005",
-            "_mitreAttackTechnique:T1578"
+            "_mitreAttackTechnique:T1578",
+            "_mitreAttackTactic:TA0112"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": [
@@ -51794,8 +51786,8 @@
         ],
         "asset_field": "srcDevice_ip",
         "category": "Defense Evasion",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
+        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
         "content_type": "RULE",
         "description_expression": "Detects the creation of an instance in AWS.",
         "enabled_by_default": true,
@@ -51854,7 +51846,7 @@
         "tags": [
             "_mitreAttackTechnique:T1578",
             "_mitreAttackTechnique:T1578.002",
-            "_mitreAttackTactic:TA0005"
+            "_mitreAttackTactic:TA0112"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": [
@@ -51872,8 +51864,8 @@
         ],
         "asset_field": "srcDevice_ip",
         "category": "Defense Evasion",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
+        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
         "content_type": "RULE",
         "description_expression": "Detects the deletion of an instance in AWS.",
         "enabled_by_default": true,
@@ -51931,8 +51923,8 @@
         "summary_expression": "AWS Instance Deletion Detected with IP: {{srcDevice_ip}} and User: {{user_username}}",
         "tags": [
             "_mitreAttackTechnique:T1578",
-            "_mitreAttackTactic:TA0005",
-            "_mitreAttackTechnique:T1578.003"
+            "_mitreAttackTechnique:T1578.003",
+            "_mitreAttackTactic:TA0112"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": [
@@ -51950,8 +51942,8 @@
         ],
         "asset_field": "srcDevice_ip",
         "category": "Defense Evasion",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
+        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
         "content_type": "RULE",
         "description_expression": "Detects the modification of an instance in AWS.",
         "enabled_by_default": true,
@@ -52009,7 +52001,7 @@
         "summary_expression": "AWS Instance Modification Detected with IP: {{srcDevice_ip}} and User: {{user_username}}",
         "tags": [
             "_mitreAttackTechnique:T1578",
-            "_mitreAttackTactic:TA0005"
+            "_mitreAttackTactic:TA0112"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": [
@@ -52139,7 +52131,8 @@
             "840c72e0-4e47-41e7-9b93-31f55d12f07d",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "b238758d-ade8-41d2-b32d-c99159e9fd74",
-            "d6cb76d3-939e-4e02-b399-b15e0278c877"
+            "d6cb76d3-939e-4e02-b399-b15e0278c877",
+            "f3803323-e4d1-4098-96c6-12e5bf2ab1f5"
         ],
         "record_type_direct_ref": [],
         "rule_description": "",
@@ -52469,8 +52462,8 @@
         ],
         "asset_field": "device_hostname",
         "category": "Defense Evasion",
-        "commit_message": "TLAB-1495 Update summary of MATCH-S00729",
-        "commit_origin_hash": "948c604cd1f88156b16bdf62d695dc26da3955e7",
+        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
+        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
         "content_type": "RULE",
         "description_expression": "The com.apple.quarantine flag is usually automatically set for downloaded files and invokes Apple's Gatekeeper program for file analysis. As such, attackers may attempt to remove this flag from malware payloads using the xattr command. Note that files downloaded via curl, external media, or from shared drives on the local network do not set the com.apple.quarantine flag.",
         "enabled_by_default": true,
@@ -52532,7 +52525,7 @@
         "summary_expression": "A macOS Gatekeeper bypass has been observed on host {{device_hostname}}",
         "tags": [
             "_mitreAttackTechnique:T1553.001",
-            "_mitreAttackTactic:TA0005"
+            "_mitreAttackTactic:TA0112"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": []
@@ -52549,8 +52542,8 @@
         ],
         "asset_field": "device_hostname",
         "category": "Defense Evasion",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
+        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
         "content_type": "RULE",
         "description_expression": "The Driver Signature Enforcement functionality in Windows ensures that only approved, unaltered programs are able to run on a system. Modifications to this policy can indicate an attempt to bypass these built-in protections. Tuning for this rule may be required for developer machines as code signing protections often interfere with the software development process.",
         "enabled_by_default": true,
@@ -52607,8 +52600,8 @@
         "stream": "record",
         "summary_expression": "User {{user_username}} modified registry key {{changeTarget}} on host {{device_hostname}}",
         "tags": [
-            "_mitreAttackTactic:TA0005",
-            "_mitreAttackTechnique:T1553.006"
+            "_mitreAttackTechnique:T1553.006",
+            "_mitreAttackTactic:TA0112"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": [
@@ -52624,8 +52617,8 @@
         ],
         "asset_field": "device_hostname",
         "category": "Defense Evasion",
-        "commit_message": "TLAB-1496 Update summary of MATCH-S00731",
-        "commit_origin_hash": "276c04eefdd15f8e2853a8a0a3394015766b2507",
+        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
+        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
         "content_type": "RULE",
         "description_expression": "The System Integrity Protection (SIP) feature of MacOS helps to prevent the execution of unauthorized code and disabling this feature can be an indicator of a malicious actor attempting to bypass default security features. Tuning for this rule may be necessary if software developers in the organization use MacOS and need to disable SIP to run their code.",
         "enabled_by_default": true,
@@ -52682,8 +52675,8 @@
         "stream": "record",
         "summary_expression": "User: {{user_username}} disabled System Integrity Protecion on host: {{device_hostname}}",
         "tags": [
-            "_mitreAttackTactic:TA0005",
-            "_mitreAttackTechnique:T1553.006"
+            "_mitreAttackTechnique:T1553.006",
+            "_mitreAttackTactic:TA0112"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": []
@@ -52885,8 +52878,8 @@
         ],
         "asset_field": "device_hostname",
         "category": "Defense Evasion",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
+        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
         "content_type": "RULE",
         "description_expression": "Trust Providers and Subject Interface Packages (SIPs) can be modified via the Windows Registry to allow attackers to execute malicious code with heightened permissions and less oversight. This rule monitors for changes to several Registry keys containing values that modify these settings.",
         "enabled_by_default": true,
@@ -52939,8 +52932,8 @@
         "stream": "record",
         "summary_expression": "User {{user_username}} modified registry key {{changeTarget}} on host {{device_hostname}}",
         "tags": [
-            "_mitreAttackTactic:TA0005",
-            "_mitreAttackTechnique:T1553.003"
+            "_mitreAttackTechnique:T1553.003",
+            "_mitreAttackTactic:TA0112"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": [
@@ -53673,7 +53666,8 @@
             "840c72e0-4e47-41e7-9b93-31f55d12f07d",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "b238758d-ade8-41d2-b32d-c99159e9fd74",
-            "d6cb76d3-939e-4e02-b399-b15e0278c877"
+            "d6cb76d3-939e-4e02-b399-b15e0278c877",
+            "f3803323-e4d1-4098-96c6-12e5bf2ab1f5"
         ],
         "record_type_direct_ref": [],
         "rule_description": "",
@@ -54454,8 +54448,8 @@
         ],
         "asset_field": "device_hostname",
         "category": "Defense Evasion",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
+        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
         "content_type": "RULE",
         "description_expression": "Detects changes to the CrashControl registry key, this can be used to disable crash dumps as an anti-forensic technique.",
         "enabled_by_default": true,
@@ -54506,8 +54500,8 @@
         "stream": "record",
         "summary_expression": "User {{user_username}} modified registry key {{changeTarget}} on host {{device_hostname}}",
         "tags": [
-            "_mitreAttackTactic:TA0005",
-            "_mitreAttackTechnique:T1112"
+            "_mitreAttackTechnique:T1112",
+            "_mitreAttackTactic:TA0112"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": []
@@ -56478,8 +56472,8 @@
         ],
         "asset_field": "device_ip",
         "category": "Exfiltration",
-        "commit_message": "Spelling-Corrections-Across-Content",
-        "commit_origin_hash": "a0980e690918542102bfb7a09491d13044d2beca",
+        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
+        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
         "content_type": "RULE",
         "description_expression": "A database export, especially to a public blob container, may indicate data exfiltration in progress.",
         "enabled_by_default": true,
@@ -56534,7 +56528,8 @@
         "tags": [
             "_mitreAttackTactic:TA0010",
             "_mitreAttackTechnique:T1578.001",
-            "_mitreAttackTechnique:T1578"
+            "_mitreAttackTechnique:T1578",
+            "_mitreAttackTactic:TA0112"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": [
@@ -57513,8 +57508,8 @@
         ],
         "asset_field": "device_ip",
         "category": "Persistence",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
+        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
         "content_type": "RULE",
         "description_expression": "Detects a virtual machine starting in Azure. This is most likely routine activity, however virtual machines may also be used for malicious activity.",
         "enabled_by_default": true,
@@ -57570,7 +57565,8 @@
             "_mitreAttackTactic:TA0003",
             "_mitreAttackTechnique:T1578",
             "_mitreAttackTechnique:T1204",
-            "_mitreAttackTechnique:T1204.003"
+            "_mitreAttackTechnique:T1204.003",
+            "_mitreAttackTactic:TA0112"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": [
@@ -57588,8 +57584,8 @@
         ],
         "asset_field": "device_ip",
         "category": "Impact",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
+        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
         "content_type": "RULE",
         "description_expression": "Detects a virtual machine starting in Azure. This is most likely routine activity, however virtual machines may also be used for malicious activity.",
         "enabled_by_default": true,
@@ -57644,7 +57640,8 @@
         "tags": [
             "_mitreAttackTechnique:T1578",
             "_mitreAttackTechnique:T1578.004",
-            "_mitreAttackTactic:TA0040"
+            "_mitreAttackTactic:TA0040",
+            "_mitreAttackTactic:TA0112"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": [
@@ -57662,8 +57659,8 @@
         ],
         "asset_field": "device_ip",
         "category": "Defense Evasion",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
+        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
         "content_type": "RULE",
         "description_expression": "Detects Azure virtual machine creations or modifications (Azure records a write operation for either). A new virtual machine may be used by an adversary to perform malicious activity.",
         "enabled_by_default": true,
@@ -57716,9 +57713,9 @@
         "stream": "record",
         "summary_expression": "An Azure Virtual machine was created or modified by user {{user_username}} resource: {{resource}}",
         "tags": [
-            "_mitreAttackTactic:TA0005",
             "_mitreAttackTechnique:T1578",
-            "_mitreAttackTechnique:T1578.002"
+            "_mitreAttackTechnique:T1578.002",
+            "_mitreAttackTactic:TA0112"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": [
@@ -57736,8 +57733,8 @@
         ],
         "asset_field": "device_ip",
         "category": "Defense Evasion",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
+        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
         "content_type": "RULE",
         "description_expression": "Detects deletions of Azure virtual machines. Virtual machines may be deleted by an adversary to cover their tracks. Additionally, virtual machines might be deleted purely to cause damage.",
         "enabled_by_default": true,
@@ -57790,11 +57787,11 @@
         "stream": "record",
         "summary_expression": "Azure Virtual Machine deleted by user: {{user_username}}  resource: {{resource}}",
         "tags": [
-            "_mitreAttackTactic:TA0005",
             "_mitreAttackTactic:TA0040",
             "_mitreAttackTechnique:T1578",
             "_mitreAttackTechnique:T1578.003",
-            "_mitreAttackTechnique:T1485"
+            "_mitreAttackTechnique:T1485",
+            "_mitreAttackTactic:TA0112"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": [
@@ -57812,8 +57809,8 @@
         ],
         "asset_field": "device_ip",
         "category": "Defense Evasion",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
+        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
         "content_type": "RULE",
         "description_expression": "Detects Azure bastion host creations or modifications (Azure records a write operation for either). A new bastion host may be used by an adversary to gain persistence to Azure resources. Modifications of existing bastion hosts may indicate a compromise of these sensitive hosts.",
         "enabled_by_default": true,
@@ -57866,9 +57863,9 @@
         "stream": "record",
         "summary_expression": "An Azure Bastion Host was created or modified by user {{user_username}} resource: {{resource}}",
         "tags": [
-            "_mitreAttackTactic:TA0005",
             "_mitreAttackTechnique:T1578",
-            "_mitreAttackTechnique:T1578.002"
+            "_mitreAttackTechnique:T1578.002",
+            "_mitreAttackTactic:TA0112"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": [
@@ -57886,8 +57883,8 @@
         ],
         "asset_field": "device_ip",
         "category": "Defense Evasion",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
+        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
         "content_type": "RULE",
         "description_expression": "Detects Azure bastion host deletions. An adversary might delete a bastion host to deny access to Azure resources.",
         "enabled_by_default": true,
@@ -57940,10 +57937,10 @@
         "stream": "record",
         "summary_expression": "An Azure Bastion Host was deleted by user {{user_username}} resource: {{resource}}",
         "tags": [
-            "_mitreAttackTactic:TA0005",
             "_mitreAttackTechnique:T1578",
             "_mitreAttackTechnique:T1578.003",
-            "_mitreAttackTechnique:T1485"
+            "_mitreAttackTechnique:T1485",
+            "_mitreAttackTactic:TA0112"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": [
@@ -58038,8 +58035,8 @@
         ],
         "asset_field": "device_ip",
         "category": "Persistence",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
+        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
         "content_type": "RULE",
         "description_expression": "Detects creations or modifications of Azure containers (Azure logs creations or modifications as write operations). An adversary might create a container for use in malicious activity or to evade detection.",
         "enabled_by_default": true,
@@ -58093,7 +58090,6 @@
         "summary_expression": "An Azure container was created or modified by user: {{user_username}} resource: {{resource}}",
         "tags": [
             "_mitreAttackTactic:TA0003",
-            "_mitreAttackTactic:TA0005",
             "_mitreAttackTechnique:T1610",
             "_mitreAttackTechnique:T1204",
             "_mitreAttackTechnique:T1204.003"
@@ -58114,8 +58110,8 @@
         ],
         "asset_field": "device_ip",
         "category": "Execution",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
+        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
         "content_type": "RULE",
         "description_expression": "Detects Azure container starts. An adversary may use containers for malicious activity or to evade detection.",
         "enabled_by_default": true,
@@ -58169,7 +58165,6 @@
         "summary_expression": "An Azure Container was started by user: {{user_username}} resource: {{resource}}",
         "tags": [
             "_mitreAttackTactic:TA0002",
-            "_mitreAttackTactic:TA0005",
             "_mitreAttackTechnique:T1610",
             "_mitreAttackTechnique:T1204",
             "_mitreAttackTechnique:T1204.003"
@@ -59867,8 +59862,8 @@
         ],
         "asset_field": "device_hostname",
         "category": "Defense Evasion",
-        "commit_message": "TRIDENT-16826 Sensitive Registery Key Edit",
-        "commit_origin_hash": "1bafabc4c39f0e392ed0308b0f95333953c2b4af",
+        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
+        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
         "content_type": "RULE",
         "description_expression": "Enabling of Wdigest authentication may enable the storage of plain text credential material on Windows systems. WDigest is disabled by default on newer versions of Windows systems, manual enablement of this registry key may indicate suspicious activity and attempts at credential theft.",
         "enabled_by_default": true,
@@ -59915,10 +59910,10 @@
         "stream": "record",
         "summary_expression": "The {{changeTarget}} registry key has been enabled on {{device_hostname}}",
         "tags": [
-            "_mitreAttackTactic:TA0005",
             "_mitreAttackTechnique:T1112",
             "_mitreAttackTactic:TA0006",
-            "_mitreAttackTechnique:T1003.001"
+            "_mitreAttackTechnique:T1003.001",
+            "_mitreAttackTactic:TA0112"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": []
@@ -59992,6 +59987,7 @@
             "5ba50e74-3c05-4ea8-aeaf-5efde588c60f",
             "5bb9e0b3-8d57-4b10-8952-0b6ffe91b599",
             "6299d728-14f7-455e-85c5-ea8ec65a654a",
+            "6787d77a-1ee0-43d4-8ca0-96af8ee755bc",
             "724c9add-8cd9-4013-b9e1-a907b96da426",
             "991a55cf-8c5a-49ba-ae72-6f64a002bacf",
             "9a28f2af-5526-414d-973b-c3fc7984b8a1",
@@ -60007,6 +60003,7 @@
             "d3ed003d-5ddd-4c7a-bea5-63eae6311833",
             "da9e05a5-3fd3-46a7-a107-ae03c01e3f5a",
             "de3d4b6b-36a3-4436-8bfc-0561ac95037e",
+            "e2393771-bda2-414a-8661-0a57069287ad",
             "e90edc67-68d4-4d67-82f6-4524f94b59bb",
             "fca8785d-4823-4442-86b2-8acbaa176da4"
         ],
@@ -60934,8 +60931,8 @@
         ],
         "asset_field": "user_username",
         "category": "Defense Evasion",
-        "commit_message": "Updated 2 LastPass Rules",
-        "commit_origin_hash": "983aa6ec3ea53e10a52b64170e7aaf4d5b7e3753",
+        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
+        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
         "content_type": "RULE",
         "description_expression": "Detects addpolicy events from LastPass",
         "enabled_by_default": true,
@@ -60989,8 +60986,8 @@
         "summary_expression": "LastPass policy added: {{description}}  by user: {{user_username}} from source IP: {{srcDevice_ip}}",
         "tags": [
             "_mitreAttackTechnique:T1484",
-            "_mitreAttackTactic:TA0005",
-            "_mitreAttackTactic:TA0004"
+            "_mitreAttackTactic:TA0004",
+            "_mitreAttackTactic:TA0112"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": [
@@ -61007,8 +61004,8 @@
         ],
         "asset_field": "user_username",
         "category": "Defense Evasion",
-        "commit_message": "Updated 2 LastPass Rules",
-        "commit_origin_hash": "983aa6ec3ea53e10a52b64170e7aaf4d5b7e3753",
+        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
+        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
         "content_type": "RULE",
         "description_expression": "Detects deletepolicy events from LastPass",
         "enabled_by_default": true,
@@ -61062,8 +61059,8 @@
         "summary_expression": "LastPass policy deleted: {{description}}  by user: {{user_username}} from source IP: {{srcDevice_ip}}",
         "tags": [
             "_mitreAttackTechnique:T1484",
-            "_mitreAttackTactic:TA0005",
-            "_mitreAttackTactic:TA0004"
+            "_mitreAttackTactic:TA0004",
+            "_mitreAttackTactic:TA0112"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": [
@@ -61080,8 +61077,8 @@
         ],
         "asset_field": "user_username",
         "category": "Defense Evasion",
-        "commit_message": "Updated 2 LastPass Rules",
-        "commit_origin_hash": "983aa6ec3ea53e10a52b64170e7aaf4d5b7e3753",
+        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
+        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
         "content_type": "RULE",
         "description_expression": "Detects createdsharedfolder events from LastPass",
         "enabled_by_default": true,
@@ -61135,8 +61132,8 @@
         "summary_expression": "LastPass shared folder created: {{description}}  by user: {{user_username}} from source IP: {{srcDevice_ip}}",
         "tags": [
             "_mitreAttackTechnique:T1484",
-            "_mitreAttackTactic:TA0005",
-            "_mitreAttackTactic:TA0004"
+            "_mitreAttackTactic:TA0004",
+            "_mitreAttackTactic:TA0112"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": [
@@ -62852,8 +62849,7 @@
         "pattern_type": "templated_match",
         "product_direct_ref": [],
         "product_guids": [
-            "5c2cc0de-ca31-4ef0-bcfa-133fc8b387ad",
-            "8967aecc-ffb3-4cbe-a02e-258d1edca8d0"
+            "5c2cc0de-ca31-4ef0-bcfa-133fc8b387ad"
         ],
         "record_type_direct_ref": [],
         "rule_description": "",
@@ -62881,8 +62877,8 @@
         ],
         "asset_field": "user_username",
         "category": "Defense Evasion",
-        "commit_message": "TLAB-741 macOS - Entitlement Enumeration via Xattr",
-        "commit_origin_hash": "42bc39bc40a604bf5922f6d444e172567f5443a3",
+        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
+        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
         "content_type": "RULE",
         "description_expression": "Threat actors may list attributes for certain files on a macOS host in order to potentially remove user prompts and execute untrusted code. This alert looks for a entitlement enumeration via the xattr binary.",
         "enabled_by_default": true,
@@ -62930,8 +62926,8 @@
         "stream": "record",
         "summary_expression": "macOS - Entitlement Enumeration via Xattr on {{device_hostname}} by {{user_username}}",
         "tags": [
-            "_mitreAttackTactic:TA0005",
-            "_mitreAttackTechnique:T1553.001"
+            "_mitreAttackTechnique:T1553.001",
+            "_mitreAttackTactic:TA0112"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": []
@@ -63269,8 +63265,8 @@
         ],
         "asset_field": "user_username",
         "category": "Defense Evasion",
-        "commit_message": "Update test cases and chmod rule",
-        "commit_origin_hash": "9e0be47447ae330d69db195260a0783d54b27efb",
+        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
+        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
         "content_type": "RULE",
         "description_expression": "This alert looks for a \"chmod\" execution on a file that is found on the /tmp directory of a Linux or macOS host. Threat actors may download and copy files to this directory and add execution bits or change permissions on these files.",
         "enabled_by_default": true,
@@ -63323,8 +63319,8 @@
         "stream": "record",
         "summary_expression": "Suspicious chmod Execution on {{device_hostname}} by {{user_username}}",
         "tags": [
-            "_mitreAttackTactic:TA0005",
-            "_mitreAttackTechnique:T1222.002"
+            "_mitreAttackTechnique:T1222.002",
+            "_mitreAttackTactic:TA0112"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": []
@@ -63588,8 +63584,8 @@
             "user_username"
         ],
         "category": "Defense Evasion",
-        "commit_message": "Correct summary/description fields for MATCH-S00891",
-        "commit_origin_hash": "4b06d61188f935cf7b4e15623d17728253a2a4c6",
+        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
+        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
         "content_type": "RULE",
         "description_expression": "Depending on configurations, Azure Active Directory users or administrators may be able to consent to API permissions for various Azure AD applications, these permissions can grant adversaries access to various Azure resources, depending on the type of permissions being granted.",
         "enabled_by_default": true,
@@ -63635,7 +63631,6 @@
         "stream": "record",
         "summary_expression": "{{user_username}} has consented to application permissions",
         "tags": [
-            "_mitreAttackTactic:TA0005",
             "_mitreAttackTactic:TA0008",
             "_mitreAttackTechnique:T1550.001"
         ],
@@ -63776,8 +63771,8 @@
             "device_hostname"
         ],
         "category": "Collection",
-        "commit_message": "TLAB-876-HAR File creation rule (#5180)",
-        "commit_origin_hash": "471fe06bf51e30b76452e7a139eac507b2bcdaf4",
+        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
+        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
         "content_type": "RULE",
         "description_expression": "HAR files contain session telemetry and network traffic. These file types are typically generated using the \"developer tools\" options on modern browsers like Chrome, Edge or Firefox. These files may contain various sensitive data such as session keys, tokens or cookies which may be extracted by a threat actor in order to access systems  which the keys, tokens or cookies in the HAR files have access to. Ensure that this operation is expected and ensure to sanitize the HAR file of any sensitive credential material.",
         "enabled_by_default": true,
@@ -63827,7 +63822,6 @@
             "_mitreAttackTechnique:T1185",
             "_mitreAttackTactic:TA0006",
             "_mitreAttackTechnique:T1539",
-            "_mitreAttackTactic:TA0005",
             "_mitreAttackTechnique:T1550.004"
         ],
         "threat_ruleType": null,
@@ -63902,8 +63896,8 @@
             "user_username"
         ],
         "category": "Defense Evasion",
-        "commit_message": "Clean up rules",
-        "commit_origin_hash": "5fd899ef16f077a0da4049c262275a7bfcc06e30",
+        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
+        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
         "content_type": "RULE",
         "description_expression": "Various authentication related policy configurations exist within Azure - these are tenant-wide policy changes that affect aspects such as enabling of number matching, changing of which authentication methods users are allowed to use, or the exclusion of certain groups from various authentication methods.",
         "enabled_by_default": true,
@@ -63952,8 +63946,8 @@
         "stream": "record",
         "summary_expression": "{{user_username}} has changed an Azure Authentication Policy",
         "tags": [
-            "_mitreAttackTactic:TA0005",
-            "_mitreAttackTechnique:T1556"
+            "_mitreAttackTechnique:T1556",
+            "_mitreAttackTactic:TA0112"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": [
@@ -64555,8 +64549,8 @@
             "user_username"
         ],
         "category": "Defense Evasion",
-        "commit_message": "Clean up rules",
-        "commit_origin_hash": "5fd899ef16f077a0da4049c262275a7bfcc06e30",
+        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
+        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
         "content_type": "RULE",
         "description_expression": "This rule looks for an Okta application being created. Ensure that this activity is expected and authorized. Only Okta administrators should be creating applications. Check the Okta administrator portal for more details regarding the application in question such as scopes and access levels. The field \"fields[\"target.1.alternateId\"]\" contains the name of the application that was created",
         "enabled_by_default": true,
@@ -64603,7 +64597,6 @@
         "stream": "record",
         "summary_expression": "An Okta application has been created by {{user_username}} from the IP address of {{device_ip}}",
         "tags": [
-            "_mitreAttackTactic:TA0005",
             "_mitreAttackTactic:TA0008",
             "_mitreAttackTechnique:T1550.001"
         ],
@@ -64923,7 +64916,6 @@
         "product_direct_ref": [],
         "product_guids": [
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
-            "3382523e-2072-41bd-b50b-6b148957d0b0",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "b238758d-ade8-41d2-b32d-c99159e9fd74"
@@ -65002,6 +64994,7 @@
             "36f5ca33-0c1e-4223-8215-977ea04425ba",
             "55ec1d4a-6985-4f04-8de5-f9812871fda2",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
+            "5be5af82-c248-4c4c-a485-0571025f242c",
             "5e298fe7-088a-467a-b57f-d8558368621d",
             "840c72e0-4e47-41e7-9b93-31f55d12f07d",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
@@ -66103,8 +66096,8 @@
             "user_username"
         ],
         "category": "Defense Evasion",
-        "commit_message": "Added logging requirements of GitHub Enterprise to the description of GitHub rules released 6 Dec 2024",
-        "commit_origin_hash": "9d613e54cabebd266e0b93a05cbccfc0dbc5581e",
+        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
+        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
         "content_type": "RULE",
         "description_expression": "Detects GitHub pull request review requirements being removed from a repository either via branch protection rule or ruleset. This detection was developed utilizing GitHub Enterprise Audit logging. Refer to https://help.sumologic.com/docs/integrations/app-development/github/#collecting-logs-for-github for instructions on ingesting GitHub Enterprise Audit logs.",
         "enabled_by_default": true,
@@ -66157,9 +66150,9 @@
         "stream": "record",
         "summary_expression": "User {{user_username}}  removed pull request review requirements on the {{repository}} repository",
         "tags": [
-            "_mitreAttackTactic:TA0005",
             "_mitreAttackTechnique:T1553",
-            "_mitreAttackTechnique:T1553.006"
+            "_mitreAttackTechnique:T1553.006",
+            "_mitreAttackTactic:TA0112"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": []
@@ -66373,8 +66366,8 @@
             "user_username"
         ],
         "category": "Privilege Escalation",
-        "commit_message": "Rule script cleanup (#5974)",
-        "commit_origin_hash": "ccec442dadce7ea8c1dd9423e04f93eceb57d499",
+        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
+        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
         "content_type": "RULE",
         "description_expression": "Detects repository visibility permissions being changed to allow members of an organization to change the visibility of repositories. This activity introduces the potential for data leakage if a private or internal repository is changed to public and should be monitored to ensure no inadvertent or malicious publication of a repository. This detection was developed utilizing GitHub Enterprise Audit logging. Refer to https://help.sumologic.com/docs/integrations/app-development/github/#collecting-logs-for-github for instructions on ingesting GitHub Enterprise Audit logs.",
         "enabled_by_default": true,
@@ -66425,9 +66418,9 @@
         "tags": [
             "_mitreAttackTactic:TA0004",
             "_mitreAttackTactic:TA0010",
-            "_mitreAttackTactic:TA0005",
             "_mitreAttackTechnique:T1685",
-            "_mitreAttackTechnique:T1222"
+            "_mitreAttackTechnique:T1222",
+            "_mitreAttackTactic:TA0112"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": []
@@ -66505,8 +66498,8 @@
             "user_username"
         ],
         "category": "Initial Access",
-        "commit_message": "Added logging requirements of GitHub Enterprise to the description of GitHub rules released 6 Dec 2024",
-        "commit_origin_hash": "9d613e54cabebd266e0b93a05cbccfc0dbc5581e",
+        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
+        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
         "content_type": "RULE",
         "description_expression": "Detects activities accessing SSO recovery codes. SSO recovery codes can enable a user to bypass normal more stringent authentication routes. This detection was developed utilizing GitHub Enterprise Audit logging. Refer to https://help.sumologic.com/docs/integrations/app-development/github/#collecting-logs-for-github for instructions on ingesting GitHub Enterprise Audit logs.",
         "enabled_by_default": true,
@@ -66557,7 +66550,6 @@
         "tags": [
             "_mitreAttackTactic:TA0001",
             "_mitreAttackTactic:TA0006",
-            "_mitreAttackTactic:TA0005",
             "_mitreAttackTechnique:T1548.002",
             "_mitreAttackTechnique:T1548"
         ],
@@ -66655,8 +66647,8 @@
             "user_username"
         ],
         "category": "Credential Access",
-        "commit_message": "Added logging requirements of GitHub Enterprise to the description of GitHub rules released 6 Dec 2024",
-        "commit_origin_hash": "9d613e54cabebd266e0b93a05cbccfc0dbc5581e",
+        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
+        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
         "content_type": "RULE",
         "description_expression": "Observes for two-factor authentication being disabled for a GitHub organization. Removing two-factor authentication requirements significantly degrades the security of the GitHub organization by permitting password only authentication. This detection was developed utilizing GitHub Enterprise Audit logging. Refer to https://help.sumologic.com/docs/integrations/app-development/github/#collecting-logs-for-github for instructions on ingesting GitHub Enterprise Audit logs.",
         "enabled_by_default": true,
@@ -66707,7 +66699,8 @@
         "tags": [
             "_mitreAttackTactic:TA0006",
             "_mitreAttackTechnique:T1556",
-            "_mitreAttackTechnique:T1556.006"
+            "_mitreAttackTechnique:T1556.006",
+            "_mitreAttackTactic:TA0112"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": []
@@ -67712,6 +67705,7 @@
         "pattern_type": "templated_match",
         "product_direct_ref": [],
         "product_guids": [
+            "046b3623-69fe-409f-9e80-fd3ebef0654f",
             "146522A1-DC9A-40A5-A909-2EB3B665B1D1",
             "332856e9-3111-446f-8df7-e64694e4b9a1",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
@@ -68102,6 +68096,7 @@
             "37C866BF-72E1-470A-9072-EDB908F56951",
             "798f8da8-c85b-4e9a-b2f1-eae0b07532fb",
             "991a55cf-8c5a-49ba-ae72-6f64a002bacf",
+            "af61d8a8-3eba-42fb-9f17-87443924f3f4",
             "bf865cb5-0b26-4010-8b3c-5ae2d1f716d8",
             "c3c1a4fc-10cc-4155-8a30-a3bb14fc9f31",
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
@@ -68459,6 +68454,7 @@
         "product_direct_ref": [],
         "product_guids": [
             "072b85a2-1765-45c2-911d-b0509880326e",
+            "0fb003bc-8383-442f-8f3d-afcfbaefe617",
             "1ce88b4b-d90d-4d50-9a89-3abe83e8d5f8",
             "44f07c08-c2ad-4a95-a058-1d0737ff90db",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
@@ -68567,6 +68563,7 @@
             "6299d728-14f7-455e-85c5-ea8ec65a654a",
             "6787d77a-1ee0-43d4-8ca0-96af8ee755bc",
             "724c9add-8cd9-4013-b9e1-a907b96da426",
+            "840c72e0-4e47-41e7-9b93-31f55d12f07d",
             "991a55cf-8c5a-49ba-ae72-6f64a002bacf",
             "9e0641a7-22ce-4ac8-8113-ee48b368ac3d",
             "A17B3F3C-04F1-40C8-9497-3C499EB18A74",
@@ -69001,8 +68998,8 @@
         "pattern_type": "templated_match",
         "product_direct_ref": [],
         "product_guids": [
+            "183c5127-6594-4d45-9bab-ce5f2df9e38b",
             "2b79254e-8017-4dbf-8e39-590132172a7d",
-            "3382523e-2072-41bd-b50b-6b148957d0b0",
             "51278354-d6b5-4c8e-a8fd-8197df334e67",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "a67d97fe-6e68-4cfb-9500-cfc5492da565",
@@ -69078,6 +69075,7 @@
         "pattern_type": "templated_match",
         "product_direct_ref": [],
         "product_guids": [
+            "183c5127-6594-4d45-9bab-ce5f2df9e38b",
             "332856e9-3111-446f-8df7-e64694e4b9a1",
             "51278354-d6b5-4c8e-a8fd-8197df334e67",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
@@ -69322,8 +69320,8 @@
             "3a82061c-2ca3-4289-9c9b-78756001aa38",
             "43808f4c-15e9-480c-ab1a-38bdef3b6798",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
+            "51afd72e-94b0-42f3-b65c-cf8edbacf7cf",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
-            "5ba50e74-3c05-4ea8-aeaf-5efde588c60f",
             "5c2cc0de-ca31-4ef0-bcfa-133fc8b387ad",
             "6299d728-14f7-455e-85c5-ea8ec65a654a",
             "724c9add-8cd9-4013-b9e1-a907b96da426",
@@ -69332,6 +69330,7 @@
             "B3582ED2-1A0C-452D-9802-97433D143486",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "afabb29d-e728-410f-b7c6-acfa9efbe1ed",
+            "b2f99a76-0771-49bf-9a89-d3e69370806e",
             "be4f7473-fe69-4311-8859-3561900060bf",
             "c2503fcc-ef30-4e40-bb32-0bf47151b140",
             "c3c1a4fc-10cc-4155-8a30-a3bb14fc9f31",
@@ -69806,6 +69805,7 @@
             "724c9add-8cd9-4013-b9e1-a907b96da426",
             "951a004d-54bf-441d-98e1-fcc6a032f475",
             "9e0641a7-22ce-4ac8-8113-ee48b368ac3d",
+            "B3582ED2-1A0C-452D-9802-97433D143486",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "afabb29d-e728-410f-b7c6-acfa9efbe1ed",
             "b238758d-ade8-41d2-b32d-c99159e9fd74",
@@ -69814,7 +69814,8 @@
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
             "cc523ad6-7193-4de5-a254-d0243fca63f3",
             "cf2af9e8-bade-4f28-8bca-b30aa41baec4",
-            "da9e05a5-3fd3-46a7-a107-ae03c01e3f5a"
+            "da9e05a5-3fd3-46a7-a107-ae03c01e3f5a",
+            "dcc85cfc-a698-4d09-87de-f2c723f3ad07"
         ],
         "record_type_direct_ref": [],
         "rule_source": "sumo",
@@ -71017,8 +71018,8 @@
             "user_username"
         ],
         "category": "Defense Evasion",
-        "commit_message": "TLAB-2576 Claude Activity Log Mappings and Rules (#5978)",
-        "commit_origin_hash": "7dcf4af3a82fa7cee50d6a375e66ee8e597fa5ef",
+        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
+        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
         "content_type": "RULE",
         "description_expression": "Detection:\nThis rule triggers when an administrator disables Compliance API activity logging for the organization.\n\nScenario:\nAn attacker with administrative access may disable Compliance API logging to cover their tracks before performing data exfiltration or other malicious activities. Disabling this logging removes the organization's ability to monitor API access patterns via the Activity Feed, creating a blind spot in security monitoring. The Compliance API provides access to organizational chats, files, and projects, making unmonitored access a significant data loss risk.\n\nRecommended Actions:\nVerify with the organization's security team whether this change was authorized and re-enable compliance API logging if not. Review recent activity from user_username for signs of compromise and audit any Compliance API activity that occurred while logging was disabled.\n\nTuning Recommendations:\nThis rule should have a low false positive rate as disabling compliance logging is a rare and significant security control change. Consider creating a match list of authorized administrators who manage compliance settings during scheduled maintenance windows.",
         "enabled_by_default": true,
@@ -71049,7 +71050,9 @@
         "normalized_summary": "Claude Compliance API Logging Disabled by {{user_username}} from IP {{device_ip}}",
         "pattern_type": "templated_match",
         "product_direct_ref": [],
-        "product_guids": [],
+        "product_guids": [
+            "8ad9c55c-1271-4e8a-a8ca-f1663051f4d1"
+        ],
         "record_type_direct_ref": [],
         "rule_description": "",
         "rule_source": "sumo",
@@ -71063,8 +71066,8 @@
         "stream": "record",
         "summary_expression": "Claude Compliance API Logging Disabled by {{user_username}} from IP {{device_ip}}",
         "tags": [
-            "_mitreAttackTactic:TA0005",
-            "_mitreAttackTechnique:T1562.008",
+            "_mitreAttackTactic:TA0112",
+            "_mitreAttackTechnique:T1685.002",
             "_mitreAtlasTactic:AML.TA0007"
         ],
         "threat_ruleType": null,
@@ -71110,7 +71113,9 @@
         "normalized_summary": "Claude {{action}} by {{user_username}} from IP {{device_ip}}",
         "pattern_type": "templated_match",
         "product_direct_ref": [],
-        "product_guids": [],
+        "product_guids": [
+            "8ad9c55c-1271-4e8a-a8ca-f1663051f4d1"
+        ],
         "record_type_direct_ref": [],
         "rule_description": "",
         "rule_source": "sumo",
@@ -71141,8 +71146,8 @@
             "user_username"
         ],
         "category": "Defense Evasion",
-        "commit_message": "TLAB-2576 Claude Activity Log Mappings and Rules (#5978)",
-        "commit_origin_hash": "7dcf4af3a82fa7cee50d6a375e66ee8e597fa5ef",
+        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
+        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
         "content_type": "RULE",
         "description_expression": "Detection:\nThis rule triggers when an IP restriction is deleted from a Claude organization, removing a network access control.\n\nScenario:\nAn attacker with administrative access may delete IP restrictions to allow access from unauthorized networks, expanding the attack surface. This could be a preparatory step before accessing the organization from an external network or enabling access for compromised credentials from outside the corporate network. IP restrictions are a critical perimeter control that limits which networks can interact with the Claude organization.\n\nRecommended Actions:\nVerify the IP restriction deletion was authorized by reviewing user_username and checking if it aligns with approved network access changes. If unauthorized, recreate the IP restriction immediately and investigate the acting user's account for signs of compromise.\n\nTuning Recommendations:\nCreate a match list of authorized administrators who manage network access policies. For organizations with frequent legitimate IP restriction changes due to dynamic network environments, consider correlating with other indicators before escalation.",
         "enabled_by_default": true,
@@ -71173,7 +71178,9 @@
         "normalized_summary": "Claude Organization IP Restriction Deleted by {{user_username}} from IP {{device_ip}}",
         "pattern_type": "templated_match",
         "product_direct_ref": [],
-        "product_guids": [],
+        "product_guids": [
+            "8ad9c55c-1271-4e8a-a8ca-f1663051f4d1"
+        ],
         "record_type_direct_ref": [],
         "rule_description": "",
         "rule_source": "sumo",
@@ -71187,8 +71194,8 @@
         "stream": "record",
         "summary_expression": "Claude Organization IP Restriction Deleted by {{user_username}} from IP {{device_ip}}",
         "tags": [
-            "_mitreAttackTactic:TA0005",
-            "_mitreAttackTechnique:T1562",
+            "_mitreAttackTactic:TA0112",
+            "_mitreAttackTechnique:T1685",
             "_mitreAtlasTactic:AML.TA0007",
             "_mitreAtlasTechnique:AML.T0107"
         ],
@@ -71255,7 +71262,6 @@
         "product_direct_ref": [],
         "product_guids": [
             "033624b0-218e-4dcb-b93f-0f1fb1806c56",
-            "0472f22e-e3fa-4c9f-a529-8355f671927e",
             "05bfaf47-5e21-4d5f-b724-98960a6fca8a",
             "0b45ccba-20b4-41e4-973d-b50fd291944d",
             "0e20c932-d992-4bd4-b276-c15119ca5c0b",
@@ -71972,7 +71978,6 @@
         "pattern_type": "outlier",
         "product_direct_ref": [],
         "product_guids": [
-            "003d35b3-3ba8-4e93-8776-e5810b4e243e",
             "072b85a2-1765-45c2-911d-b0509880326e",
             "0fb003bc-8383-442f-8f3d-afcfbaefe617",
             "1ce88b4b-d90d-4d50-9a89-3abe83e8d5f8",
@@ -71988,6 +71993,7 @@
             "991a55cf-8c5a-49ba-ae72-6f64a002bacf",
             "9a28f2af-5526-414d-973b-c3fc7984b8a1",
             "9e0641a7-22ce-4ac8-8113-ee48b368ac3d",
+            "B3582ED2-1A0C-452D-9802-97433D143486",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "af61d8a8-3eba-42fb-9f17-87443924f3f4",
             "bf865cb5-0b26-4010-8b3c-5ae2d1f716d8",
@@ -72148,7 +72154,6 @@
         "pattern_type": "outlier",
         "product_direct_ref": [],
         "product_guids": [
-            "37C866BF-72E1-470A-9072-EDB908F56951",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
             "d4a9e7ce-082e-4f41-891f-4c43e604c850"
@@ -73025,8 +73030,8 @@
         ],
         "baseline_window_size": 2592000000,
         "category": "Defense Evasion",
-        "commit_message": "TLAB-1789 Unsilence ADO Rules",
-        "commit_origin_hash": "de1f73ec580091c1bda38e9d7b55df4c51129197",
+        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
+        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
         "content_type": "ANOMALY",
         "description_expression": "Context:\nAn Attacker with sufficient administrative access to Azure DevOps (ADO) may abuse this access to destroy existing resources by deleting pools. \n\nDetection:\nThis detection identifies statistical outliers in user behavior for the number of pools deleted in an hourly window. \n\nRecommended Actions: \nIf an alert occurs, investigate the actions taken by the account to determine if this is normal operation of deleting pools or if this suspicious activity. \n\nTuning Recommendations:\nDetermine if the baseline basis should be hourly or daily based on normal activity in your organization. \nIf the detection is proving to be too sensitive to the number of pools deleted, adjust the floor value (currently 3) to a number that is less sensitive but within reason. Use Sumo Search using a count and the _timeslice function to aggregate on the number of pools deleted within the hourly (or daily) periods to find what is an acceptable level of activity to not alert on.",
         "deviation_threshold": 3,
@@ -73076,7 +73081,7 @@
         "summary_expression": "User: {{user_username}} has deleted an abnormal amount of Agent Pools within an hour",
         "tags": [
             "_mitreAttackTechnique:T1578.002",
-            "_mitreAttackTactic:TA0005"
+            "_mitreAttackTactic:TA0112"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": [],
@@ -73364,7 +73369,9 @@
         "normalized_summary": "User {{user_username}} generated an unusual number of Compliance API calls in a one-hour window, exceeding the 30-day baseline by more than 2 standard deviations",
         "pattern_type": "outlier",
         "product_direct_ref": [],
-        "product_guids": [],
+        "product_guids": [
+            "8ad9c55c-1271-4e8a-a8ca-f1663051f4d1"
+        ],
         "record_type_direct_ref": [],
         "retention_window_size": 7776000000,
         "rule_description": "",
@@ -73440,7 +73447,9 @@
         "normalized_summary": "User {{user_username}} performed an unusual number of Claude resource deletions (chats, projects, or files) in a one-hour window, exceeding the 30-day baseline by more than 2 standard deviations",
         "pattern_type": "outlier",
         "product_direct_ref": [],
-        "product_guids": [],
+        "product_guids": [
+            "8ad9c55c-1271-4e8a-a8ca-f1663051f4d1"
+        ],
         "record_type_direct_ref": [],
         "retention_window_size": 7776000000,
         "rule_description": "",
@@ -73865,6 +73874,7 @@
             "0fb003bc-8383-442f-8f3d-afcfbaefe617",
             "1ce88b4b-d90d-4d50-9a89-3abe83e8d5f8",
             "234ec2b5-4142-4837-bc78-95da8a2db81a",
+            "2a236ab1-77d2-4867-a571-a1cfd64528e6",
             "36f5ca33-0c1e-4223-8215-977ea04425ba",
             "37C866BF-72E1-470A-9072-EDB908F56951",
             "37a906de-5e9c-475e-881a-65a1d984f377",
@@ -74056,6 +74066,7 @@
             "6299d728-14f7-455e-85c5-ea8ec65a654a",
             "6787d77a-1ee0-43d4-8ca0-96af8ee755bc",
             "724c9add-8cd9-4013-b9e1-a907b96da426",
+            "991a55cf-8c5a-49ba-ae72-6f64a002bacf",
             "9a28f2af-5526-414d-973b-c3fc7984b8a1",
             "9e0641a7-22ce-4ac8-8113-ee48b368ac3d",
             "9f76f1fd-fbb0-42d2-9bf5-0f4fd2c1ab82",
@@ -74893,10 +74904,10 @@
         "product_direct_ref": [],
         "product_guids": [
             "021d1ded-1c82-4663-bf5d-d6ed5170efa3",
-            "072b85a2-1765-45c2-911d-b0509880326e",
             "0fb003bc-8383-442f-8f3d-afcfbaefe617",
             "146522A1-DC9A-40A5-A909-2EB3B665B1D1",
             "1624169f-36c4-4309-8400-1409a171d00b",
+            "183c5127-6594-4d45-9bab-ce5f2df9e38b",
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "2a678bcd-898e-43cd-ab3f-91feb0602a18",
             "2b82e665-bdde-474a-ae29-4f0f76598556",
@@ -74906,7 +74917,6 @@
             "55ec1d4a-6985-4f04-8de5-f9812871fda2",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "724c9add-8cd9-4013-b9e1-a907b96da426",
-            "A17B3F3C-04F1-40C8-9497-3C499EB18A74",
             "B3582ED2-1A0C-452D-9802-97433D143486",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "b238758d-ade8-41d2-b32d-c99159e9fd74",
@@ -76143,7 +76153,6 @@
             "2a678bcd-898e-43cd-ab3f-91feb0602a18",
             "2b82e665-bdde-474a-ae29-4f0f76598556",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
-            "37C866BF-72E1-470A-9072-EDB908F56951",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "724c9add-8cd9-4013-b9e1-a907b96da426",
@@ -77024,7 +77033,6 @@
             "51278354-d6b5-4c8e-a8fd-8197df334e67",
             "54B36B3F-A63F-4BA4-9DE4-02DBF69A429F",
             "5be5af82-c248-4c4c-a485-0571025f242c",
-            "5bfda3d2-03e7-4d9a-8072-c59430a131d7",
             "70f80fa8-200a-449b-8100-f8d4b7687380",
             "79da6240-7617-49c8-b130-96278579766e",
             "8276b520-fdeb-4f79-9f5d-67865818562b",
@@ -77119,6 +77127,7 @@
             "05bfaf47-5e21-4d5f-b724-98960a6fca8a",
             "0b45ccba-20b4-41e4-973d-b50fd291944d",
             "0e20c932-d992-4bd4-b276-c15119ca5c0b",
+            "1b7798df-963b-4582-a82b-b8176c3a6a22",
             "1ed80351-d779-4f1f-9ddb-b3881f19d487",
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "23342262-740c-41b7-9b77-08267ae01612",
@@ -77220,6 +77229,7 @@
             "05bfaf47-5e21-4d5f-b724-98960a6fca8a",
             "0b45ccba-20b4-41e4-973d-b50fd291944d",
             "0e20c932-d992-4bd4-b276-c15119ca5c0b",
+            "153794da-09e8-48fe-b511-1306fbb94d07",
             "1ed80351-d779-4f1f-9ddb-b3881f19d487",
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
@@ -78519,7 +78529,6 @@
             "8276b520-fdeb-4f79-9f5d-67865818562b",
             "9f6d624f-6d8f-43c7-a4b0-51179061631c",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
-            "abe4975e-de65-4f82-8b35-e6ce392e165c",
             "acb7e80e-2b66-496c-ba2e-1e7c3933a98e",
             "b0a0ae6d-dd5b-450c-9d68-36d6c61c67b0",
             "b0fe0dde-4e19-4712-957b-1ea7418c132e",

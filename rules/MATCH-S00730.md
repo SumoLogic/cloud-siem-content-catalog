@@ -14,7 +14,7 @@ The Driver Signature Enforcement functionality in Windows ensures that only appr
 |Score/Severity|Static: 2|
 |Enabled by Default|True|
 |Prototype|False|
-|Tags|_mitreAttackTactic:TA0005, _mitreAttackTechnique:T1553.006|
+|Tags|_mitreAttackTechnique:T1553.006, _mitreAttackTactic:TA0112|
 ## Vendors and Products
 - [Microsoft - Windows](../products/1ff7546c-cb36-4a24-87f7-89d2cecc5761.md)
 

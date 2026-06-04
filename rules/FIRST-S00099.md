@@ -27,7 +27,7 @@ Create a tuning expression with a list of admin user_username values that should
 |Score/Severity|Static: 2|
 |Enabled by Default|True|
 |Prototype|False|
-|Tags|_mitreAttackTechnique:T1578.002, _mitreAttackTactic:TA0005|
+|Tags|_mitreAttackTechnique:T1578.002, _mitreAttackTactic:TA0112|
 ## Vendors and Products
 
 

@@ -14,7 +14,7 @@ Detects the deletion of an instance in AWS.
 |Score/Severity|Static: 2|
 |Enabled by Default|True|
 |Prototype|False|
-|Tags|_mitreAttackTechnique:T1578, _mitreAttackTactic:TA0005, _mitreAttackTechnique:T1578.003|
+|Tags|_mitreAttackTechnique:T1578, _mitreAttackTechnique:T1578.003, _mitreAttackTactic:TA0112|
 ## Vendors and Products
 - [Amazon AWS - CloudTrail](../products/033624b0-218e-4dcb-b93f-0f1fb1806c56.md)
 

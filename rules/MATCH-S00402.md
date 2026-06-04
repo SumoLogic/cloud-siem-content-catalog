@@ -52,6 +52,7 @@ Passes through an alert from an endpoint security product and adjusts the severi
 - [Palo Alto Networks - Next Generation Firewall](../products/46f5fa2c-1a62-4692-82ad-ed87800a0adb.md)
 - [Palo Alto Networks - Prisma Cloud](../products/343b9323-d279-40d9-946f-809242e5cf98.md)
 - [Qualys - VMScan](../products/08d5e888-ae62-462a-80d9-c0df7d3643c1.md)
+- [Salesforce - Salesforce](../products/1b7798df-963b-4582-a82b-b8176c3a6a22.md)
 - [SentinelOne - SentinelOne](../products/8967aecc-ffb3-4cbe-a02e-258d1edca8d0.md)
 - [Slack - Slack](../products/79da6240-7617-49c8-b130-96278579766e.md)
 - [Sophos - Central](../products/e5a708c9-82be-4df9-8ea0-07cac95abf2a.md)

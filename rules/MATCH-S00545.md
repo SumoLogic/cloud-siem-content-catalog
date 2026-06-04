@@ -14,7 +14,7 @@ This rule looks for registry activity associated with application compatibility 
 |Score/Severity|Static: 3|
 |Enabled by Default|True|
 |Prototype|False|
-|Tags|_mitreAttackTactic:TA0005, _mitreAttackTactic:TA0003, _mitreAttackTactic:TA0004, _mitreAttackTechnique:T1112, _mitreAttackTechnique:T1546, _mitreAttackTechnique:T1546.011|
+|Tags|_mitreAttackTactic:TA0003, _mitreAttackTactic:TA0004, _mitreAttackTechnique:T1112, _mitreAttackTechnique:T1546, _mitreAttackTechnique:T1546.011, _mitreAttackTactic:TA0112|
 ## Vendors and Products
 - [Microsoft - Windows](../products/1ff7546c-cb36-4a24-87f7-89d2cecc5761.md)
 

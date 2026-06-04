@@ -14,7 +14,7 @@ Detects deletions of Azure virtual machines. Virtual machines may be deleted by 
 |Score/Severity|Static: 2|
 |Enabled by Default|True|
 |Prototype|False|
-|Tags|_mitreAttackTactic:TA0005, _mitreAttackTactic:TA0040, _mitreAttackTechnique:T1578, _mitreAttackTechnique:T1578.003, _mitreAttackTechnique:T1485|
+|Tags|_mitreAttackTactic:TA0040, _mitreAttackTechnique:T1578, _mitreAttackTechnique:T1578.003, _mitreAttackTechnique:T1485, _mitreAttackTactic:TA0112|
 ## Vendors and Products
 - [Microsoft - Azure](../products/a1225af5-e778-4068-a9a2-47da93d1ff24.md)
 

@@ -17,7 +17,7 @@ First Seen Admission Controllers (Submit a new MutatingWebhookConfiguration or V
 |Score/Severity|Static: 3|
 |Enabled by Default|True|
 |Prototype|False|
-|Tags|_mitreAttackTechnique:T1550, _mitreAttackTactic:TA0005, _mitreAttackTactic:TA0008|
+|Tags|_mitreAttackTechnique:T1550, _mitreAttackTactic:TA0008|
 ## Vendors and Products
 - [Amazon AWS - EKS](../products/234ec2b5-4142-4837-bc78-95da8a2db81a.md)
 

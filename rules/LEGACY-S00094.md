@@ -14,7 +14,7 @@ A server responded on a SSL or TLS service using a self-signed certificate.
 |Score/Severity|Static: 1|
 |Enabled by Default|True|
 |Prototype|False|
-|Tags|_mitreAttackTactic:TA0005, _mitreAttackTactic:TA0010, _mitreAttackTechnique:T1553, _mitreAttackTechnique:T1553.002|
+|Tags|_mitreAttackTactic:TA0010, _mitreAttackTechnique:T1553, _mitreAttackTechnique:T1553.002, _mitreAttackTactic:TA0112|
 ## Vendors and Products
 - [Bro - Bro](../products/37C866BF-72E1-470A-9072-EDB908F56951.md)
 

@@ -17,7 +17,7 @@ A user has consented to application permissions for the first time since the bas
 |Score/Severity|Static: 3|
 |Enabled by Default|True|
 |Prototype|False|
-|Tags|_mitreAttackTactic:TA0005, _mitreAttackTactic:TA0008, _mitreAttackTechnique:T1550.001|
+|Tags|_mitreAttackTactic:TA0008, _mitreAttackTechnique:T1550.001|
 ## Vendors and Products
 - [Microsoft - Azure](../products/a1225af5-e778-4068-a9a2-47da93d1ff24.md)
 

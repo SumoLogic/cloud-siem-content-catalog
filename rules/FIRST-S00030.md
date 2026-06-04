@@ -17,7 +17,7 @@ External connections over the internet to port 445 could be indictative of hash 
 |Score/Severity|Static: 2|
 |Enabled by Default|True|
 |Prototype|False|
-|Tags|_mitreAttackTactic:TA0005, _mitreAttackTactic:TA0008, _mitreAttackTechnique:T1550.002, _mitreAttackTechnique:T1187|
+|Tags|_mitreAttackTactic:TA0008, _mitreAttackTechnique:T1550.002, _mitreAttackTechnique:T1187|
 ## Vendors and Products
 - [Amazon AWS - Network Firewall](../products/3a82061c-2ca3-4289-9c9b-78756001aa38.md)
 - [Amazon AWS - VpcFlowLogs](../products/021d1ded-1c82-4663-bf5d-d6ed5170efa3.md)
