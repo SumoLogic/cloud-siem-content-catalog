@@ -44,6 +44,7 @@ This signal triggers when there are two successful logins from the same user wit
 - [Palo Alto Networks - Next Generation Firewall](../products/46f5fa2c-1a62-4692-82ad-ed87800a0adb.md)
 - [PingIdentity - PingFederate](../products/b0a0ae6d-dd5b-450c-9d68-36d6c61c67b0.md)
 - [SailPoint - SailPoint](../products/c3954250-68a0-49c3-ab6a-ef0daa95ff90.md)
+- [Salesforce - Salesforce](../products/1b7798df-963b-4582-a82b-b8176c3a6a22.md)
 - [Slack - Slack](../products/79da6240-7617-49c8-b130-96278579766e.md)
 - [Snowflake - Snowflake](../products/8276b520-fdeb-4f79-9f5d-67865818562b.md)
 - [Teleport - Teleport](../products/46c71698-9c21-4273-9561-94ff5af52edd.md)

@@ -15,7 +15,7 @@ Rubeus is a utility  that provides Kerberos abuse capabilities. This rule is loo
 |Score/Severity|Static: 5|
 |Enabled by Default|True|
 |Prototype|False|
-|Tags|_mitreAttackTactic:TA0004, _mitreAttackTactic:TA0005, _mitreAttackTactic:TA0006, _mitreAttackTactic:TA0008, _mitreAttackTechnique:T1550, _mitreAttackTechnique:T1550.003, _mitreAttackTechnique:T1558, _mitreAttackTechnique:T1558.003|
+|Tags|_mitreAttackTactic:TA0004, _mitreAttackTactic:TA0006, _mitreAttackTactic:TA0008, _mitreAttackTechnique:T1550, _mitreAttackTechnique:T1550.003, _mitreAttackTechnique:T1558, _mitreAttackTechnique:T1558.003|
 ## Vendors and Products
 - [Microsoft - Windows](../products/1ff7546c-cb36-4a24-87f7-89d2cecc5761.md)
 

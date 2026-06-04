@@ -29,7 +29,7 @@ This rule is loosely based on the Azure Sentinel ADOAgentPoolCreatedDeleted.yaml
 |Score/Severity|Static: 3|
 |Enabled by Default|True|
 |Prototype|False|
-|Tags|_mitreAttackTechnique:T1578, _mitreAttackTactic:TA0005|
+|Tags|_mitreAttackTechnique:T1578, _mitreAttackTactic:TA0112|
 ## Vendors and Products
 
 

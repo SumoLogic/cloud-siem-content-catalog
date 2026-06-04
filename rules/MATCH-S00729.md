@@ -14,7 +14,7 @@ The com.apple.quarantine flag is usually automatically set for downloaded files 
 |Score/Severity|Static: 3|
 |Enabled by Default|True|
 |Prototype|False|
-|Tags|_mitreAttackTechnique:T1553.001, _mitreAttackTactic:TA0005|
+|Tags|_mitreAttackTechnique:T1553.001, _mitreAttackTactic:TA0112|
 ## Vendors and Products
 - [CrowdStrike - FDR](../products/569a3a44-c29f-492e-bcf4-5dc04e2ab0f3.md)
 - [CrowdStrike - Falcon](../products/840c72e0-4e47-41e7-9b93-31f55d12f07d.md)

@@ -30,7 +30,7 @@ This detection is based on the Azure Sentinel ADOPipelineModifiedbyNewUser.yaml 
 |Score/Severity|Static: 2|
 |Enabled by Default|True|
 |Prototype|False|
-|Tags|_mitreAttackTechnique:T1578.005|
+|Tags|_mitreAttackTechnique:T1578.005, _mitreAttackTactic:TA0112|
 ## Vendors and Products
 
 

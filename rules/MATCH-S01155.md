@@ -24,8 +24,9 @@ This rule should have a low false positive rate as disabling compliance logging 
 |Score/Severity|Static: 3|
 |Enabled by Default|True|
 |Prototype|False|
-|Tags|_mitreAttackTactic:TA0005, _mitreAttackTechnique:T1562.008, _mitreAtlasTactic:AML.TA0007|
+|Tags|_mitreAttackTactic:TA0112, _mitreAttackTechnique:T1685.002, _mitreAtlasTactic:AML.TA0007|
 ## Vendors and Products
+- [Anthropic - Claude Activity Logs](../products/8ad9c55c-1271-4e8a-a8ca-f1663051f4d1.md)
 
 
 ## Fields Used

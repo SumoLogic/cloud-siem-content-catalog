@@ -14,7 +14,7 @@ This rule detects modifications to registry keys commonly targeted to achieve pe
 |Score/Severity|Static: 1|
 |Enabled by Default|True|
 |Prototype|False|
-|Tags|_mitreAttackTactic:TA0003, _mitreAttackTactic:TA0004, _mitreAttackTactic:TA0005, _mitreAttackTechnique:T1112, _mitreAttackTechnique:T1547, _mitreAttackTechnique:T1547.001|
+|Tags|_mitreAttackTactic:TA0003, _mitreAttackTactic:TA0004, _mitreAttackTechnique:T1112, _mitreAttackTechnique:T1547, _mitreAttackTechnique:T1547.001, _mitreAttackTactic:TA0112|
 ## Vendors and Products
 - [Microsoft - Windows](../products/1ff7546c-cb36-4a24-87f7-89d2cecc5761.md)
 

@@ -14,7 +14,7 @@ New Container Uploaded to AWS ECR
 |Score/Severity|Static: 2|
 |Enabled by Default|True|
 |Prototype|False|
-|Tags|_mitreAttackTechnique:T1578, _mitreAttackTechnique:T1610, _mitreAttackTechnique:T1578.002, _mitreAttackTactic:TA0005|
+|Tags|_mitreAttackTechnique:T1578, _mitreAttackTechnique:T1610, _mitreAttackTechnique:T1578.002, _mitreAttackTactic:TA0112|
 ## Vendors and Products
 - [Amazon AWS - CloudTrail](../products/033624b0-218e-4dcb-b93f-0f1fb1806c56.md)
 

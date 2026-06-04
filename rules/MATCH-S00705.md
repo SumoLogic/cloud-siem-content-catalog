@@ -14,7 +14,7 @@ Malicious authentication packages can be added via the Windows Registry. This ru
 |Score/Severity|Static: 5|
 |Enabled by Default|True|
 |Prototype|False|
-|Tags|_mitreAttackTechnique:T1547.002, _mitreAttackTactic:TA0003, _mitreAttackTechnique:T1547, _mitreAttackTechnique:T1556.002|
+|Tags|_mitreAttackTechnique:T1547.002, _mitreAttackTactic:TA0003, _mitreAttackTechnique:T1547, _mitreAttackTechnique:T1556.002, _mitreAttackTactic:TA0112|
 ## Vendors and Products
 - [Microsoft - Windows](../products/1ff7546c-cb36-4a24-87f7-89d2cecc5761.md)
 

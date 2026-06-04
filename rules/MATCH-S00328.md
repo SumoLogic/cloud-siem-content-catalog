@@ -14,7 +14,7 @@ Detects command line parameters associated with use of the Rubeus hack tool
 |Score/Severity|Static: 3|
 |Enabled by Default|True|
 |Prototype|False|
-|Tags|_mitreAttackTactic:TA0004, _mitreAttackTactic:TA0005, _mitreAttackTactic:TA0006, _mitreAttackTactic:TA0008, _mitreAttackTechnique:T1550, _mitreAttackTechnique:T1550.003, _mitreAttackTechnique:T1558, _mitreAttackTechnique:T1558.003|
+|Tags|_mitreAttackTactic:TA0004, _mitreAttackTactic:TA0006, _mitreAttackTactic:TA0008, _mitreAttackTechnique:T1550, _mitreAttackTechnique:T1550.003, _mitreAttackTechnique:T1558, _mitreAttackTechnique:T1558.003|
 ## Vendors and Products
 - [CrowdStrike - FDR](../products/569a3a44-c29f-492e-bcf4-5dc04e2ab0f3.md)
 - [CrowdStrike - Falcon](../products/840c72e0-4e47-41e7-9b93-31f55d12f07d.md)

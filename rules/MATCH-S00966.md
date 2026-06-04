@@ -14,7 +14,7 @@ Observes for two-factor authentication being disabled for a GitHub organization.
 |Score/Severity|Static: 6|
 |Enabled by Default|True|
 |Prototype|False|
-|Tags|_mitreAttackTactic:TA0006, _mitreAttackTechnique:T1556, _mitreAttackTechnique:T1556.006|
+|Tags|_mitreAttackTactic:TA0006, _mitreAttackTechnique:T1556, _mitreAttackTechnique:T1556.006, _mitreAttackTactic:TA0112|
 ## Vendors and Products
 - [Github - GitHub Enterprise Audit](../products/e3c8bd8b-6ed8-4332-944d-d0f5dfc462df.md)
 

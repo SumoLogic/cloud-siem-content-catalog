@@ -14,7 +14,7 @@ Detects Azure bastion host deletions. An adversary might delete a bastion host t
 |Score/Severity|Static: 3|
 |Enabled by Default|True|
 |Prototype|False|
-|Tags|_mitreAttackTactic:TA0005, _mitreAttackTechnique:T1578, _mitreAttackTechnique:T1578.003, _mitreAttackTechnique:T1485|
+|Tags|_mitreAttackTechnique:T1578, _mitreAttackTechnique:T1578.003, _mitreAttackTechnique:T1485, _mitreAttackTactic:TA0112|
 ## Vendors and Products
 - [Microsoft - Azure](../products/a1225af5-e778-4068-a9a2-47da93d1ff24.md)
 

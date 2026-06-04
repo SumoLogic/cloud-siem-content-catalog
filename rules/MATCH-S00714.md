@@ -14,7 +14,7 @@ Detects the modification of an instance in GCP.
 |Score/Severity|Static: 1|
 |Enabled by Default|True|
 |Prototype|False|
-|Tags|_mitreAttackTactic:TA0005, _mitreAttackTechnique:T1578|
+|Tags|_mitreAttackTechnique:T1578, _mitreAttackTactic:TA0112|
 ## Vendors and Products
 - [Google - Google Cloud Platform](../products/dcc85cfc-a698-4d09-87de-f2c723f3ad07.md)
 

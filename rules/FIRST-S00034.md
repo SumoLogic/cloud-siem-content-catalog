@@ -17,7 +17,7 @@ Session tokens return a temporary set of credentials that cosnist of an access k
 |Score/Severity|Static: 4|
 |Enabled by Default|True|
 |Prototype|False|
-|Tags|_mitreAttackTactic:TA0005, _mitreAttackTechnique:T1550.001|
+|Tags|_mitreAttackTechnique:T1550.001|
 ## Vendors and Products
 - [Amazon AWS - CloudTrail](../products/033624b0-218e-4dcb-b93f-0f1fb1806c56.md)
 

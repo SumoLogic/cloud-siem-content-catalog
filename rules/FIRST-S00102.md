@@ -29,6 +29,7 @@ Organizations that perform regular scheduled exports for compliance purposes sho
 |Prototype|False|
 |Tags|_mitreAttackTactic:TA0009, _mitreAttackTechnique:T1567, _mitreAtlasTactic:AML.TA0010, _mitreAtlasTechnique:AML.T0025, _mitreAtlasTechnique:AML.T0048.004|
 ## Vendors and Products
+- [Anthropic - Claude Activity Logs](../products/8ad9c55c-1271-4e8a-a8ca-f1663051f4d1.md)
 
 
 ## Fields Used

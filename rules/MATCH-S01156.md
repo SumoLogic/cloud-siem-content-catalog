@@ -26,6 +26,7 @@ If specific service accounts are authorized to routinely create API keys (e.g., 
 |Prototype|False|
 |Tags|_mitreAttackTactic:TA0003, _mitreAttackTechnique:T1098.001, _mitreAtlasTactic:AML.TA0006, _mitreAtlasTechnique:AML.T0012, _mitreAtlasTechnique:AML.T0091.000|
 ## Vendors and Products
+- [Anthropic - Claude Activity Logs](../products/8ad9c55c-1271-4e8a-a8ca-f1663051f4d1.md)
 
 
 ## Fields Used

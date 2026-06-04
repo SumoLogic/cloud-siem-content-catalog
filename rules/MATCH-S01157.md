@@ -24,8 +24,9 @@ Create a match list of authorized administrators who manage network access polic
 |Score/Severity|Static: 3|
 |Enabled by Default|True|
 |Prototype|False|
-|Tags|_mitreAttackTactic:TA0005, _mitreAttackTechnique:T1562, _mitreAtlasTactic:AML.TA0007, _mitreAtlasTechnique:AML.T0107|
+|Tags|_mitreAttackTactic:TA0112, _mitreAttackTechnique:T1685, _mitreAtlasTactic:AML.TA0007, _mitreAtlasTechnique:AML.T0107|
 ## Vendors and Products
+- [Anthropic - Claude Activity Logs](../products/8ad9c55c-1271-4e8a-a8ca-f1663051f4d1.md)
 
 
 ## Fields Used

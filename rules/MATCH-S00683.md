@@ -14,7 +14,7 @@ Setting a file's permissions to '777' with the chmod command allows all users to
 |Score/Severity|Static: 3|
 |Enabled by Default|True|
 |Prototype|False|
-|Tags|_mitreAttackTactic:TA0005, _mitreAttackTactic:TA0004, _mitreAttackTechnique:T1222, _mitreAttackTechnique:T1222.002, _mitreAttackTechnique:T1548, _mitreAttackTechnique:T1548.001|
+|Tags|_mitreAttackTactic:TA0004, _mitreAttackTechnique:T1222, _mitreAttackTechnique:T1222.002, _mitreAttackTechnique:T1548, _mitreAttackTechnique:T1548.001, _mitreAttackTactic:TA0112|
 ## Vendors and Products
 - [Amazon AWS - CloudTrail](../products/033624b0-218e-4dcb-b93f-0f1fb1806c56.md)
 - [CrowdStrike - FDR](../products/569a3a44-c29f-492e-bcf4-5dc04e2ab0f3.md)
@@ -26,7 +26,6 @@ Setting a file's permissions to '777' with the chmod command allows all users to
 - [Linux - Sysmon for Linux](../products/b238758d-ade8-41d2-b32d-c99159e9fd74.md)
 - [Microsoft - Azure](../products/a1225af5-e778-4068-a9a2-47da93d1ff24.md)
 - [Microsoft - Defender Advanced Hunting](../products/3382523e-2072-41bd-b50b-6b148957d0b0.md)
-- [Microsoft - Windows](../products/1ff7546c-cb36-4a24-87f7-89d2cecc5761.md)
 - [Sysdig - Sysdig](../products/55ec1d4a-6985-4f04-8de5-f9812871fda2.md)
 - [Twistlock - Twistlock](../products/581D3DD8-4DA7-4192-9E49-320D7AFB8B53.md)
 

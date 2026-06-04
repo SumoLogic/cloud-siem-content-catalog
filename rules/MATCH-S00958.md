@@ -14,7 +14,7 @@ Detects GitHub pull request review requirements being removed from a repository 
 |Score/Severity|Static: 2|
 |Enabled by Default|True|
 |Prototype|False|
-|Tags|_mitreAttackTactic:TA0005, _mitreAttackTechnique:T1553, _mitreAttackTechnique:T1553.006|
+|Tags|_mitreAttackTechnique:T1553, _mitreAttackTechnique:T1553.006, _mitreAttackTactic:TA0112|
 ## Vendors and Products
 - [Github - GitHub Enterprise Audit](../products/e3c8bd8b-6ed8-4332-944d-d0f5dfc462df.md)
 

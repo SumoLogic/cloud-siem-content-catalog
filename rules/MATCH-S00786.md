@@ -14,7 +14,7 @@ A database export, especially to a public blob container, may indicate data exfi
 |Score/Severity|Static: 2|
 |Enabled by Default|True|
 |Prototype|False|
-|Tags|_mitreAttackTactic:TA0010, _mitreAttackTechnique:T1578.001, _mitreAttackTechnique:T1578|
+|Tags|_mitreAttackTactic:TA0010, _mitreAttackTechnique:T1578.001, _mitreAttackTechnique:T1578, _mitreAttackTactic:TA0112|
 ## Vendors and Products
 - [Microsoft - Azure](../products/a1225af5-e778-4068-a9a2-47da93d1ff24.md)
 
