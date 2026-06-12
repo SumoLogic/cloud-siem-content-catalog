@@ -8,7 +8,7 @@ Detects a variety of AWS Route 53 API actions that when observed together could 
 |----|----|
 |Type|Threshold|
 |Category|Discovery|
-|Apply Risk to Entities|device_hostname, device_ip, srcDevice_ip, srcDevice_hostname, user_username|
+|Apply Risk to Entities|device_hostname, srcDevice_ip, srcDevice_hostname, user_username|
 |Signal Name|AWS Route 53 Reconnaissance|
 |Summary Expression|AWS Route 53 actions performed by user: {{user_username}}|
 |Threshold Count|3|
@@ -27,7 +27,6 @@ Detects a variety of AWS Route 53 API actions that when observed together could 
 |----|----|
 |Normalized Schema|action|
 |Normalized Schema|device_hostname|
-|Normalized Schema|device_ip|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|
 |Normalized Schema|srcDevice_hostname|

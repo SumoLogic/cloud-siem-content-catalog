@@ -8,7 +8,7 @@ An AWS request occurred to either create a new public bucket or to add a bucket 
 |----|----|
 |Type|Templated Match|
 |Category|Exfiltration|
-|Apply Risk to Entities|device_hostname, device_ip, user_username, srcDevice_ip|
+|Apply Risk to Entities|device_hostname, user_username, srcDevice_ip|
 |Signal Name|AWS CloudTrail - Public S3 Bucket Exposed|
 |Summary Expression|S3 Bucket {{changeTarget}} has been placed in an ACL allowing it to be publicly exposed|
 |Score/Severity|Static: 5|
@@ -25,7 +25,6 @@ An AWS request occurred to either create a new public bucket or to add a bucket 
 |----|----|
 |Normalized Schema|action|
 |Normalized Schema|device_hostname|
-|Normalized Schema|device_ip|
 |Direct from Record|fields['requestParameters.AccessControlPolicy.AccessControlList.Grant.1.Grantee.URI']|
 |Direct from Record|fields['requestParameters.AccessControlPolicy.AccessControlList.Grant.2.Grantee.URI']|
 |Direct from Record|fields['requestParameters.AccessControlPolicy.AccessControlList.Grant.3.Grantee.URI']|

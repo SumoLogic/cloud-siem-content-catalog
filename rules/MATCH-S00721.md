@@ -8,7 +8,7 @@ Detects the modification of an instance in AWS.
 |----|----|
 |Type|Templated Match|
 |Category|Defense Evasion|
-|Apply Risk to Entities|srcDevice_ip, device_ip, user_username|
+|Apply Risk to Entities|srcDevice_ip, user_username|
 |Signal Name|AWS Instance Modification|
 |Summary Expression|AWS Instance Modification Detected with IP: {{srcDevice_ip}} and User: {{user_username}}|
 |Score/Severity|Static: 1|
@@ -24,7 +24,6 @@ Detects the modification of an instance in AWS.
 |Origin|Field|
 |----|----|
 |Normalized Schema|action|
-|Normalized Schema|device_ip|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|
 |Normalized Schema|srcDevice_ip|

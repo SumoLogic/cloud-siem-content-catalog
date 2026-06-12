@@ -10,7 +10,7 @@ An AWS Bedrock Agent has been created in the environment by a Role seen for the 
 |Category|Discovery|
 |Apply Risk to Entities|user_username|
 |Signal Name|First Seen Role Creating AWS Bedrock Agent: {{user_role}}|
-|Summary Expression|{{user_username}} has created a Bedrock Agent with a role not seen since the baseline period: {{user_role}} from IP: {{device_ip}}|
+|Summary Expression|{{user_username}} has created a Bedrock Agent with a role not seen since the baseline period: {{user_role}} from IP: {{srcDevice_ip}}|
 |Retention Window|7776000000|
 |Baseline Window|3024000000|
 |Baseline Type|GLOBAL|

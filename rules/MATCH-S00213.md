@@ -8,7 +8,7 @@ This signal identifies a small number of CloudTrail API actions that when observ
 |----|----|
 |Type|Templated Match|
 |Category|Discovery|
-|Apply Risk to Entities|device_hostname, device_ip, user_username, srcDevice_ip|
+|Apply Risk to Entities|device_hostname, user_username, srcDevice_ip|
 |Signal Name|AWS CloudTrail - Reconnaissance related event|
 |Summary Expression|{{action}} performed by user: {{user_username}}|
 |Score/Severity|Static: 1|
@@ -24,7 +24,6 @@ This signal identifies a small number of CloudTrail API actions that when observ
 |Origin|Field|
 |----|----|
 |Normalized Schema|device_hostname|
-|Normalized Schema|device_ip|
 |Normalized Schema|metadata_deviceEventId|
 |Normalized Schema|srcDevice_ip|
 |Normalized Schema|user_username|

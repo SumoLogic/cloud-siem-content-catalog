@@ -8,7 +8,7 @@ The AWS Key Management Service (KMS) can be used to generate key pairs for encry
 |----|----|
 |Type|Match|
 |Category|Defense Evasion|
-|Apply Risk to Entities|device_hostname, device_ip, user_username, srcDevice_ip|
+|Apply Risk to Entities|device_hostname, user_username, srcDevice_ip|
 |Signal Name|AWS CloudTrail - Customer Master Key Disabled or Scheduled for Deletion|
 |Summary Expression|{{action}} performed on Customer Master Key by user: {{user_username}}|
 |Score/Severity|Static: 1|
@@ -25,7 +25,6 @@ The AWS Key Management Service (KMS) can be used to generate key pairs for encry
 |----|----|
 |Normalized Schema|action|
 |Normalized Schema|device_hostname|
-|Normalized Schema|device_ip|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|
 |Normalized Schema|srcDevice_ip|

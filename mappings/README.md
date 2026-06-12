@@ -675,6 +675,7 @@ You will find our complete list of mappers for content here.
  - [Fortinet Appctrl1](dca6ce19-449e-468b-9bea-3db2cb87fa9c.md)
  - [Fortinet Appctrl2](b722f175-2dd7-4509-b97f-63de578cbb59.md)
  - [Fortinet Authentication](e018r3c3-da8a-4022-8382-b8r4er0641ee.md)
+ - [Fortinet Authentication Logs](239e413b-5cd1-40fa-b775-e35b444856b5.md)
  - [Fortinet DLP Logs](e3f84313-4099-4c1f-97f1-700f73a76311.md)
  - [Fortinet DNS](e018v5c1-df0g-4712-8582-b8d4er0642ee.md)
  - [Fortinet DNS Logs](eab4df6a-a268-4c9d-9de9-39306124c64d.md)

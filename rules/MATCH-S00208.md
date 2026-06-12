@@ -8,7 +8,7 @@ Actions observed that create, import and delete access keys to EC2 could indicat
 |----|----|
 |Type|Templated Match|
 |Category|Execution|
-|Apply Risk to Entities|device_ip, user_username|
+|Apply Risk to Entities|srcDevice_ip, user_username|
 |Signal Name|AWS CloudTrail - EC2 Access Key Action Detected {{action}}|
 |Summary Expression|{{action}} performed by user: {{user_username}} with role: {{user_username_role}} on target: {{changeTarget}}|
 |Score/Severity|Static: 2|
@@ -24,9 +24,9 @@ Actions observed that create, import and delete access keys to EC2 could indicat
 |Origin|Field|
 |----|----|
 |Normalized Schema|action|
-|Normalized Schema|device_ip|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|
+|Normalized Schema|srcDevice_ip|
 |Normalized Schema|user_username|
 
 

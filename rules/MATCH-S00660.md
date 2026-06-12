@@ -8,7 +8,7 @@ In general, commands run within a container should be automated via service acco
 |----|----|
 |Type|Templated Match|
 |Category|Execution|
-|Apply Risk to Entities|device_hostname, device_ip, user_username, srcDevice_ip|
+|Apply Risk to Entities|device_hostname, user_username, srcDevice_ip|
 |Signal Name|Anomalous AWS User Executed a Command on ECS Container|
 |Summary Expression|An anomalous user: {{user_username}} executed a command on an ECS container|
 |Score/Severity|Static: 1|
@@ -24,7 +24,6 @@ In general, commands run within a container should be automated via service acco
 |Origin|Field|
 |----|----|
 |Normalized Schema|device_hostname|
-|Normalized Schema|device_ip|
 |Normalized Schema|metadata_deviceEventId|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|

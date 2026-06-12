@@ -8,7 +8,7 @@ Detects various AWS WAF API actions that involve the deletion of a WAF service.
 |----|----|
 |Type|Templated Match|
 |Category|Defense Evasion|
-|Apply Risk to Entities|device_ip, user_username, srcDevice_ip, device_hostname, srcDevice_hostname|
+|Apply Risk to Entities|user_username, srcDevice_ip, device_hostname, srcDevice_hostname|
 |Signal Name|AWS WAF Service Tampering - {{action}}|
 |Summary Expression|{{action}} performed by user: {{user_username}}|
 |Score/Severity|Dynamic: 2 or 3 or 5|
@@ -37,7 +37,6 @@ The default score of `2` is used as a catch all if none of the translations are 
 |----|----|
 |Normalized Schema|action|
 |Normalized Schema|device_hostname|
-|Normalized Schema|device_ip|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|
 |Normalized Schema|srcDevice_hostname|

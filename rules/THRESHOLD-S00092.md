@@ -8,7 +8,7 @@ Detects a variety of AWS WAF API actions that when observed together could indic
 |----|----|
 |Type|Threshold|
 |Category|Discovery|
-|Apply Risk to Entities|device_hostname, device_ip, srcDevice_ip, srcDevice_hostname, user_username|
+|Apply Risk to Entities|device_hostname, srcDevice_ip, srcDevice_hostname, user_username|
 |Signal Name|AWS WAF Reconnaissance|
 |Summary Expression|AWS WAF actions performed by user: {{user_username}}|
 |Threshold Count|3|
@@ -27,7 +27,6 @@ Detects a variety of AWS WAF API actions that when observed together could indic
 |----|----|
 |Normalized Schema|action|
 |Normalized Schema|device_hostname|
-|Normalized Schema|device_ip|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|
 |Normalized Schema|srcDevice_hostname|

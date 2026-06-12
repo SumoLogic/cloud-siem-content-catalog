@@ -8,7 +8,7 @@ The secrets manager service is commonly used by cloud components to retrieve sec
 |----|----|
 |Type|Templated Match|
 |Category|Execution|
-|Apply Risk to Entities|device_hostname, device_ip, user_username, srcDevice_ip|
+|Apply Risk to Entities|device_hostname, user_username, srcDevice_ip|
 |Signal Name|AWS CloudTrail - GetSecretValue from non Amazon IP|
 |Summary Expression|{{action}} performed by user: {{user_username}}|
 |Score/Severity|Static: 1|
@@ -24,12 +24,11 @@ The secrets manager service is commonly used by cloud components to retrieve sec
 |Origin|Field|
 |----|----|
 |Normalized Schema|device_hostname|
-|Normalized Schema|device_ip|
-|Normalized Schema|device_ip_asnOrg|
 |Normalized Schema|metadata_deviceEventId|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|
 |Normalized Schema|srcDevice_ip|
+|Normalized Schema|srcDevice_ip_asnOrg|
 |Normalized Schema|srcDevice_ip_location|
 |Normalized Schema|user_username|
 

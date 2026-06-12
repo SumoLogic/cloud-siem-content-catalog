@@ -8,7 +8,7 @@ AWS KMS is an encryption and key management web service.  Besides encrypting and
 |----|----|
 |Type|Templated Match|
 |Category|Execution|
-|Apply Risk to Entities|device_hostname, device_ip, user_username, srcDevice_ip|
+|Apply Risk to Entities|device_hostname, user_username, srcDevice_ip|
 |Signal Name|AWS CloudTrail - Sensitive activity in KMS {{metadata_deviceEventId}}|
 |Summary Expression|{{action}} performed by user: {{user_username}}|
 |Score/Severity|Static: 1|
@@ -24,7 +24,6 @@ AWS KMS is an encryption and key management web service.  Besides encrypting and
 |Origin|Field|
 |----|----|
 |Normalized Schema|device_hostname|
-|Normalized Schema|device_ip|
 |Normalized Schema|metadata_deviceEventId|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|

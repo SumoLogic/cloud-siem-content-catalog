@@ -8,7 +8,7 @@ This rule identifies both 'attach' and 'put' actions with this privileged policy
 |----|----|
 |Type|Templated Match|
 |Category|Privilege Escalation|
-|Apply Risk to Entities|device_hostname, device_ip, user_username, srcDevice_ip|
+|Apply Risk to Entities|device_hostname, user_username, srcDevice_ip|
 |Signal Name|AWS CloudTrail - IAM Privileged Policy Applied to User {{fields['requestParameters.userName']}}|
 |Summary Expression|Privileged Policy: [{{fields['requestParameters.policyArn']}}] an Amazon default policy that carries a high level of access was noticed being applied to user {{fields['requestParameters.userName']}}|
 |Score/Severity|Dynamic: 2 or 3|
@@ -33,7 +33,6 @@ The default score of `2` is used as a catch all if none of the translations are 
 |----|----|
 |Normalized Schema|action|
 |Normalized Schema|device_hostname|
-|Normalized Schema|device_ip|
 |Direct from Record|fields['requestParameters.policyArn']|
 |Direct from Record|fields['requestParameters.userName']|
 |Normalized Schema|metadata_product|

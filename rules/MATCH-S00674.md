@@ -8,7 +8,7 @@ Detects the AWS WAF UpdateWebACL API action. UpdateWebACL updates the specified 
 |----|----|
 |Type|Templated Match|
 |Category|Defense Evasion|
-|Apply Risk to Entities|device_ip, user_username, srcDevice_ip, device_hostname, srcDevice_hostname|
+|Apply Risk to Entities|user_username, srcDevice_ip, device_hostname, srcDevice_hostname|
 |Signal Name|AWS WAF Access Control List Updated|
 |Summary Expression|{{action}} performed by user: {{user_username}}|
 |Score/Severity|Static: 2|
@@ -25,7 +25,6 @@ Detects the AWS WAF UpdateWebACL API action. UpdateWebACL updates the specified 
 |----|----|
 |Normalized Schema|action|
 |Normalized Schema|device_hostname|
-|Normalized Schema|device_ip|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|
 |Normalized Schema|srcDevice_hostname|

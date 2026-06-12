@@ -8,7 +8,7 @@ This signal detects when a successful root account login occurred within an AWS 
 |----|----|
 |Type|Templated Match|
 |Category|Initial Access|
-|Apply Risk to Entities|device_hostname, device_ip, user_username, srcDevice_ip|
+|Apply Risk to Entities|device_hostname, user_username, srcDevice_ip|
 |Signal Name|AWS CloudTrail - Root Console Successful Login Observed from {{srcDevice_ip}}|
 |Summary Expression|User: {{user_username}} successfully logged on a root|
 |Score/Severity|Static: 5|
@@ -25,7 +25,6 @@ This signal detects when a successful root account login occurred within an AWS 
 |----|----|
 |Normalized Schema|action|
 |Normalized Schema|device_hostname|
-|Normalized Schema|device_ip|
 |Direct from Record|fields['userIdentity.type']|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|

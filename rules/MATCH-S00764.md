@@ -8,7 +8,7 @@ Detects when GetPublicAccessBlock returns NoSuchPublicAccessBlockConfiguration, 
 |----|----|
 |Type|Templated Match|
 |Category|Collection|
-|Apply Risk to Entities|srcDevice_ip, device_ip, user_username|
+|Apply Risk to Entities|srcDevice_ip, user_username|
 |Signal Name|AWS CloudTrail - An S3 Bucket Public Access Block is Disabled|
 |Summary Expression|An S3 Bucket Public Access Block is Disabled. {{action}} command run by User: {{user_username}} with IP: {{srcDevice_ip}} User: {{user_username}}|
 |Score/Severity|Static: 2|
@@ -24,7 +24,6 @@ Detects when GetPublicAccessBlock returns NoSuchPublicAccessBlockConfiguration, 
 |Origin|Field|
 |----|----|
 |Normalized Schema|action|
-|Normalized Schema|device_ip|
 |Direct from Record|fields['errorCode']|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|

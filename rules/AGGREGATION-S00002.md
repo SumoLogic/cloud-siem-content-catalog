@@ -8,7 +8,7 @@ This signal identifies when a large variety of different AWS CloudTrail event id
 |----|----|
 |Type|Aggregation|
 |Category|Discovery|
-|Apply Risk to Entities|device_hostname, device_ip, user_username, srcDevice_ip|
+|Apply Risk to Entities|device_hostname, user_username, srcDevice_ip|
 |Signal Name|AWS CloudTrail - Aggressive Reconnaissance|
 |Summary Expression|AWS CloudTrail reconnaissance activity detected by user: {{user_username}} from source IP: {{srcDevice_ip}}|
 |Aggregation Window|30m|
@@ -25,7 +25,6 @@ This signal identifies when a large variety of different AWS CloudTrail event id
 |Origin|Field|
 |----|----|
 |Normalized Schema|device_hostname|
-|Normalized Schema|device_ip|
 |Normalized Schema|metadata_deviceEventId|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|

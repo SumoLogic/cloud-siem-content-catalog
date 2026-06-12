@@ -8,7 +8,7 @@ A policy was attached to a user, group, or role. By default, IAM denies all acce
 |----|----|
 |Type|Match|
 |Category|Privilege Escalation|
-|Apply Risk to Entities|device_ip, user_username|
+|Apply Risk to Entities|srcDevice_ip, user_username|
 |Signal Name|AWS CloudTrail - IAM Policy Applied|
 |Summary Expression|{{action}} performed by user: {{user_username}}|
 |Score/Severity|Static: 1|
@@ -24,9 +24,9 @@ A policy was attached to a user, group, or role. By default, IAM denies all acce
 |Origin|Field|
 |----|----|
 |Normalized Schema|action|
-|Normalized Schema|device_ip|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|
+|Normalized Schema|srcDevice_ip|
 |Normalized Schema|user_username|
 
 

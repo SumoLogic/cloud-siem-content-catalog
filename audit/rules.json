@@ -11,17 +11,16 @@
         ],
         "all_fields": [
             "device_hostname",
-            "device_ip",
             "metadata_deviceEventId",
             "metadata_product",
             "metadata_vendor",
             "srcDevice_ip",
             "user_username"
         ],
-        "asset_field": "device_ip",
+        "asset_field": "srcDevice_ip",
         "category": "Discovery",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
+        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
         "content_type": "RULE",
         "description_expression": "This signal identifies when a large variety of different AWS CloudTrail event ids are observed in a short period of time.  The event id's are generally related to reconnaissance.  This signal can indicate that an aggressive scan of AWS resources is underway.",
         "enabled_by_default": true,
@@ -29,10 +28,6 @@
             {
                 "entity_type": "_hostname",
                 "expression": "device_hostname"
-            },
-            {
-                "entity_type": "_ip",
-                "expression": "device_ip"
             },
             {
                 "entity_type": "_username",
@@ -2216,8 +2211,8 @@
             "user_username_role"
         ],
         "category": "Persistence",
-        "commit_message": "TLAB-2384: AI Campaign Rules and Test Cases (#5957)",
-        "commit_origin_hash": "c67d2aa214ed689494d36064e490c343c4ffe6f7",
+        "commit_message": "TLAB-2625: Disable silent_mode for 11 rules (#5984)",
+        "commit_origin_hash": "ff8fc4be386672c8c4167e835508d09929962595",
         "content_type": "RULE",
         "description": "Detection:\nThis rule triggers when Bedrock IAM permissions are granted through the creation and attachment of an IAM policy with privileged Bedrock permissions including model invocation, AI agent creation, guardrail deletion, logging configuration changes, knowledge base creation, and provisioned throughput allocation.\n\nScenario:\nAn attacker with IAM permissions escalates privileges by granting Bedrock access to themselves or compromised roles, enabling model invocation, AI agent creation, guardrail bypass, logging deletion, data exfiltration via knowledge bases, or cryptomining through expensive compute resources. Legitimate Bedrock provisioning may require similar permissions, making this a potential indicator of either authorized activity or privilege escalation.\n\nRecommended Actions:\nVerify the permission grant aligns with authorized Bedrock provisioning by reviewing user_username, srcDevice_ip, and timing against normal business hours. For inline policies, review policyDocument for overly permissive actions (bedrock:* wildcards), then if unauthorized, detach the policy immediately, rotate credentials, and check CloudTrail for any Bedrock API calls using the newly granted permissions.\n\nTuning Recommendations:\nThe rule excludes AWS service-linked roles. Create match list 'authorized_bedrock_provisioning_accounts' for users or roles that regularly provision Bedrock permissions, and adjust monitored Bedrock actions based on your organization's risk tolerance.",
         "enabled_by_default": true,
@@ -2275,7 +2270,7 @@
         "rule_description": "",
         "rule_source": "sumo",
         "score": 2,
-        "silent_mode": true,
+        "silent_mode": false,
         "stream": "record",
         "summary_expression": "{{user_username}} has created and attached AWS policy named  {{resource}} with privileged Bedrock permissions",
         "tags": [
@@ -2298,8 +2293,8 @@
             "normalizedResource"
         ],
         "category": "Exfiltration",
-        "commit_message": "TLAB-2601: CHAIN-S00027 - add NOT isNull(pid) criteria to 2nd rule expression (#5980)",
-        "commit_origin_hash": "6d996823c41807f2c0874b6ff3fa3c14968de0d0",
+        "commit_message": "TLAB-2625: Disable silent_mode for 11 rules (#5984)",
+        "commit_origin_hash": "ff8fc4be386672c8c4167e835508d09929962595",
         "content_type": "RULE",
         "description": "Detection:\nThis ordered chain rule triggers when a child process of an openclaw-gateway node process is created on a host followed within 5 minutes by an outbound network connection to an external IP from the same process on the same host, grouped by process ID and hostname. Command lines associated with ip neighbor discovery are excluded as these can be a normal part of OpenClaw operation.\n\nScenario:\nOpenClaw's gateway process spawns child processes (shells, scripts) to execute system commands during code intelligence operations. When these child processes establish outbound connections to external IPs, it indicates potential data exfiltration \u2014 code, credentials, or other sensitive content being transmitted from the host via OpenClaw's execution capability.\n\nRecommended Actions:\nInvestigate device_hostname and baseImage to identify the child process and user, then review dstDevice_ip to determine the external destination. Correlate with DNS logs and firewall records to assess what data may have been transmitted, and inspect OpenClaw skill files for injected commands.\n\nTuning Recommendations:\nCreate match list 'authorized_openclaw_external_destinations' for known legitimate external IPs contacted by OpenClaw child processes. Adjust the 5-minute correlation window if legitimate use cases show longer delays between process creation and network activity.",
         "enabled_by_default": true,
@@ -2351,7 +2346,7 @@
         "rule_description": "",
         "rule_source": "sumo",
         "score": 2,
-        "silent_mode": true,
+        "silent_mode": false,
         "stream": "record",
         "summary_expression": "OpenClaw gateway child process  made an outbound network connection from host {{device_hostname}}",
         "tags": [
@@ -5824,7 +5819,6 @@
             "8276b520-fdeb-4f79-9f5d-67865818562b",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "a301559a-8110-4dd0-a41d-35b9baa1c740",
-            "abe4975e-de65-4f82-8b35-e6ce392e165c",
             "acb7e80e-2b66-496c-ba2e-1e7c3933a98e",
             "b0a0ae6d-dd5b-450c-9d68-36d6c61c67b0",
             "b0fe0dde-4e19-4712-957b-1ea7418c132e",
@@ -6943,8 +6937,8 @@
         "baseline_type": "GLOBAL",
         "baseline_window_size": 3024000000,
         "category": "Discovery",
-        "commit_message": "Clean up rules",
-        "commit_origin_hash": "5fd899ef16f077a0da4049c262275a7bfcc06e30",
+        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
+        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
         "content_type": "ANOMALY",
         "description_expression": "An AWS Bedrock Agent has been created in the environment by a Role seen for the first time since the baseline period. If this role is not expected in the environment and was not originally assigned IAM rights to Bedrock, this activity could be indicative of privilege escalation. Bedrock Agents can be configured with various parameters to build AI applications. Take a look at the \"responseElements.agent.agentName\" field to see the name of the agent being created. Ensure that the user creating the agent is authorized to develop AI applications within the environment.",
         "enabled_by_default": true,
@@ -6973,7 +6967,7 @@
         ],
         "normalized_score_type": "Static",
         "normalized_signal_name": "First Seen Role Creating AWS Bedrock Agent: {{user_role}}",
-        "normalized_summary": "{{user_username}} has created a Bedrock Agent with a role not seen since the baseline period: {{user_role}} from IP: {{device_ip}}",
+        "normalized_summary": "{{user_username}} has created a Bedrock Agent with a role not seen since the baseline period: {{user_role}} from IP: {{srcDevice_ip}}",
         "pattern_type": "first_seen",
         "product_direct_ref": [
             "CloudTrail"
@@ -6988,7 +6982,7 @@
         "score": 1,
         "silent_mode": false,
         "stream": "record",
-        "summary_expression": "{{user_username}} has created a Bedrock Agent with a role not seen since the baseline period: {{user_role}} from IP: {{device_ip}}",
+        "summary_expression": "{{user_username}} has created a Bedrock Agent with a role not seen since the baseline period: {{user_role}} from IP: {{srcDevice_ip}}",
         "tags": [
             "_mitreAttackTactic:TA0007",
             "_mitreAttackTechnique:T1526"
@@ -7886,8 +7880,8 @@
         "baseline_type": "GLOBAL",
         "baseline_window_size": 0,
         "category": "Unknown/Other",
-        "commit_message": "TLAB-2384: AI Campaign Rules and Test Cases (#5957)",
-        "commit_origin_hash": "c67d2aa214ed689494d36064e490c343c4ffe6f7",
+        "commit_message": "TLAB-2625: Disable silent_mode for 11 rules (#5984)",
+        "commit_origin_hash": "ff8fc4be386672c8c4167e835508d09929962595",
         "content_type": "ANOMALY",
         "description_expression": "Detection:\nThis rule triggers when an S3 bucket from an external AWS account is added to a Bedrock Knowledge Base via UpdateDataSource or CreateDataSource API calls in which the external AWS account hasn't been observed in the last 90 days.\n\nScenario:\nAn attacker with Bedrock permissions may poison a RAG system by adding data sources from an external AWS account they control, injecting malicious content into the knowledge base without compromising the organization's S3 buckets. This RAG poisoning technique enables data manipulation, misinformation injection, or credential harvesting through malicious AI responses.\n\nRecommended Actions:\nVerify the cross-account bucket addition is authorized by reviewing user_username and checking if bucketOwnerAccountId belongs to your organization or a trusted partner. If unauthorized, remove the external data source immediately, revoke IAM permissions, and audit all Knowledge Base configurations for additional modifications.\n\nTuning Recommendations:\nCreate a match list named 'authorized_bedrock_external_accounts' containing trusted AWS account IDs for cross-account data sharing. For organizations that never use cross-account S3 buckets with Bedrock, this rule can run without exclusions.",
         "enabled_by_default": true,
@@ -7933,7 +7927,7 @@
         "rule_description": "",
         "rule_source": "sumo",
         "score": 2,
-        "silent_mode": true,
+        "silent_mode": false,
         "stream": "record",
         "summary_expression": "{{user_username}} added external data source from account {{fields['responseElements.dataSource.dataSourceConfiguration.s3Configuration.bucketOwnerAccountId']}} to Bedrock Knowledge Base from IP {{srcDevice_ip}}",
         "tags": [
@@ -9556,6 +9550,7 @@
         "pattern_type": "match",
         "product_direct_ref": [],
         "product_guids": [
+            "072b85a2-1765-45c2-911d-b0509880326e",
             "14aa46d3-0710-44b6-9ce3-0a6b8f36b076",
             "168afd8d-2893-4c74-95b1-a975d576ea56",
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
@@ -10592,7 +10587,6 @@
         "pattern_type": "match",
         "product_direct_ref": [],
         "product_guids": [
-            "2a678bcd-898e-43cd-ab3f-91feb0602a18",
             "37C866BF-72E1-470A-9072-EDB908F56951",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
             "6299d728-14f7-455e-85c5-ea8ec65a654a",
@@ -14289,7 +14283,6 @@
             "168afd8d-2893-4c74-95b1-a975d576ea56",
             "183c5127-6594-4d45-9bab-ce5f2df9e38b",
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
-            "2a678bcd-898e-43cd-ab3f-91feb0602a18",
             "2ca0adcf-7616-4474-8557-a3773515aa6d",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "34dd9c1e-ceec-4cba-8f5d-4776f680d785",
@@ -14747,7 +14740,6 @@
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
             "5ba50e74-3c05-4ea8-aeaf-5efde588c60f",
             "724c9add-8cd9-4013-b9e1-a907b96da426",
-            "B3582ED2-1A0C-452D-9802-97433D143486",
             "af61d8a8-3eba-42fb-9f17-87443924f3f4",
             "bf865cb5-0b26-4010-8b3c-5ae2d1f716d8",
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
@@ -17040,15 +17032,15 @@
     "LEGACY-S00206": {
         "all_fields": [
             "action",
-            "device_ip",
             "metadata_product",
             "metadata_vendor",
+            "srcDevice_ip",
             "user_username"
         ],
-        "asset_field": "device_ip",
+        "asset_field": "srcDevice_ip",
         "category": "Privilege Escalation",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
+        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
         "content_type": "RULE",
         "converted": true,
         "description": "A policy was attached to a user, group, or role. By default, IAM denies all access to all services for users, and policies must be applied to grant access to AWS services and resources. This signal could indicate a policy is granting additional access within your cloud environment.",
@@ -17056,7 +17048,7 @@
         "entity_selectors": [
             {
                 "entity_type": "_ip",
-                "expression": "device_ip"
+                "expression": "srcDevice_ip"
             },
             {
                 "entity_type": "_username",
@@ -17108,16 +17100,15 @@
         "all_fields": [
             "action",
             "device_hostname",
-            "device_ip",
             "metadata_product",
             "metadata_vendor",
             "srcDevice_ip",
             "user_username"
         ],
-        "asset_field": "device_ip",
+        "asset_field": "srcDevice_ip",
         "category": "Defense Evasion",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
+        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
         "content_type": "RULE",
         "converted": true,
         "description": "The AWS Key Management Service (KMS) can be used to generate key pairs for encrypting and decrypting your data. Disabling or deleting keys can come with heavy destructive consequences as data encrypted with those keys cannot be decrypted. AWS forces users to either disable keys allowing them to be re-enabled at a later time or users must schedule a key deletion at a later time if the keys absolutely must be removed. The default time for scheduling a key deletion is 30 days.",
@@ -17126,10 +17117,6 @@
             {
                 "entity_type": "_hostname",
                 "expression": "device_hostname"
-            },
-            {
-                "entity_type": "_ip",
-                "expression": "device_ip"
             },
             {
                 "entity_type": "_username",
@@ -18529,7 +18516,6 @@
         "all_fields": [
             "action",
             "device_hostname",
-            "device_ip",
             "fields['userIdentity.type']",
             "metadata_product",
             "metadata_vendor",
@@ -18539,8 +18525,8 @@
         ],
         "asset_field": "srcDevice_ip",
         "category": "Initial Access",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
+        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
         "content_type": "RULE",
         "description_expression": "This signal detects when a successful root account login occurred within an AWS account. This privileged account should seldomly be used within an AWS cloud environment. Amazon's best practices state you should only use the root account to create the initial local IAM users and assigned one of the accounts administrative privileges or to perform rare tasks only available to the root user. The security operations center should be aware when the AWS root account is accessed.",
         "enabled_by_default": true,
@@ -18548,10 +18534,6 @@
             {
                 "entity_type": "_hostname",
                 "expression": "device_hostname"
-            },
-            {
-                "entity_type": "_ip",
-                "expression": "device_ip"
             },
             {
                 "entity_type": "_username",
@@ -18677,7 +18659,6 @@
         "all_fields": [
             "action",
             "device_hostname",
-            "device_ip",
             "fields['requestParameters.policyArn']",
             "fields['requestParameters.userName']",
             "metadata_product",
@@ -18685,10 +18666,10 @@
             "srcDevice_ip",
             "user_username"
         ],
-        "asset_field": "device_ip",
+        "asset_field": "srcDevice_ip",
         "category": "Privilege Escalation",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
+        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
         "content_type": "RULE",
         "description_expression": "This rule identifies both 'attach' and 'put' actions with this privileged policy.  The difference between 'attach' and 'put' is that 'attach' actions apply a managed policy to an item, where a 'put' action indicates the policy is defined in-line and is part of the items definition. Applying privileged policies to items could indicate hostile action that attempts to increase the privilege level of a user or set of users.  There are legitimate times when this will occur, consider this signal in context of other activities that may indicate suspicious behavior.",
         "enabled_by_default": true,
@@ -18696,10 +18677,6 @@
             {
                 "entity_type": "_hostname",
                 "expression": "device_hostname"
-            },
-            {
-                "entity_type": "_ip",
-                "expression": "device_ip"
             },
             {
                 "entity_type": "_username",
@@ -18774,7 +18751,6 @@
         "all_fields": [
             "action",
             "device_hostname",
-            "device_ip",
             "fields['requestParameters.groupName']",
             "fields['requestParameters.policyArn']",
             "metadata_product",
@@ -18782,10 +18758,10 @@
             "srcDevice_ip",
             "user_username"
         ],
-        "asset_field": "device_ip",
+        "asset_field": "srcDevice_ip",
         "category": "Privilege Escalation",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
+        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
         "content_type": "RULE",
         "description_expression": "This rule identifies both 'attach' and 'put' actions with this privileged policy.  The difference between 'attach' and 'put' is that 'attach' actions apply a managed policy to an item, where a 'put' action indicates the policy is defined in-line and is part of the items definition. Applying privileged policies to items could indicate hostile action that attempts to increase the privilege level of a user or set of users.  There are legitimate times when this will occur, consider this signal in context of other activities that may indicate suspicious behavior.",
         "enabled_by_default": true,
@@ -18793,10 +18769,6 @@
             {
                 "entity_type": "_hostname",
                 "expression": "device_hostname"
-            },
-            {
-                "entity_type": "_ip",
-                "expression": "device_ip"
             },
             {
                 "entity_type": "_username",
@@ -18947,7 +18919,6 @@
         "all_fields": [
             "action",
             "device_hostname",
-            "device_ip",
             "fields['requestParameters.policyArn']",
             "fields['requestParameters.roleName']",
             "metadata_product",
@@ -18957,8 +18928,8 @@
         ],
         "asset_field": "user_username",
         "category": "Privilege Escalation",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
+        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
         "content_type": "RULE",
         "description_expression": "This rule identifies both 'attach' and 'put' actions with this privileged policy.  The difference between 'attach' and 'put' is that 'attach' actions apply a managed policy to an item, where a 'put' action indicates the policy is defined in-line and is part of the items definition. Applying privileged policies to items could indicate hostile action that attempts to increase the privilege level of a user or set of users.  There are legitimate times when this will occur, consider this signal in context of other activities that may indicate suspicious behavior.",
         "enabled_by_default": true,
@@ -18966,10 +18937,6 @@
             {
                 "entity_type": "_hostname",
                 "expression": "device_hostname"
-            },
-            {
-                "entity_type": "_ip",
-                "expression": "device_ip"
             },
             {
                 "entity_type": "_username",
@@ -19044,7 +19011,6 @@
         "all_fields": [
             "action",
             "device_hostname",
-            "device_ip",
             "fields['requestParameters.AccessControlPolicy.AccessControlList.Grant.1.Grantee.URI']",
             "fields['requestParameters.AccessControlPolicy.AccessControlList.Grant.2.Grantee.URI']",
             "fields['requestParameters.AccessControlPolicy.AccessControlList.Grant.3.Grantee.URI']",
@@ -19062,8 +19028,8 @@
         ],
         "asset_field": "user_username",
         "category": "Exfiltration",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
+        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
         "content_type": "RULE",
         "description_expression": "An AWS request occurred to either create a new public bucket or to add a bucket access control list (ACL) to an existing bucket to make it public. While there are some use cases for AWS S3 public buckets, most are generally private. The security operations center should have a strong understanding of which buckets are allowed to be public.",
         "enabled_by_default": true,
@@ -19071,10 +19037,6 @@
             {
                 "entity_type": "_hostname",
                 "expression": "device_hostname"
-            },
-            {
-                "entity_type": "_ip",
-                "expression": "device_ip"
             },
             {
                 "entity_type": "_username",
@@ -19215,16 +19177,15 @@
         "all_fields": [
             "action",
             "device_hostname",
-            "device_ip",
             "metadata_product",
             "metadata_vendor",
             "srcDevice_ip",
             "user_username"
         ],
-        "asset_field": "device_ip",
+        "asset_field": "srcDevice_ip",
         "category": "Privilege Escalation",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
+        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
         "content_type": "RULE",
         "description_expression": "A Permissions Boundary was lifted against an IAM User or Role. This unusual action may increase the effect permissions to the asset by allowing all the actions granted in its permissions policies.",
         "enabled_by_default": true,
@@ -19232,10 +19193,6 @@
             {
                 "entity_type": "_hostname",
                 "expression": "device_hostname"
-            },
-            {
-                "entity_type": "_ip",
-                "expression": "device_ip"
             },
             {
                 "entity_type": "_username",
@@ -19298,16 +19255,15 @@
         "all_fields": [
             "action",
             "device_hostname",
-            "device_ip",
             "metadata_product",
             "metadata_vendor",
             "srcDevice_ip",
             "user_username"
         ],
-        "asset_field": "device_ip",
+        "asset_field": "srcDevice_ip",
         "category": "Persistence",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
+        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
         "content_type": "RULE",
         "description_expression": "This signal fires for all observances of the CreateUser action in the IAM event source.  Creating AWS users is likely a benign, infrequent activity.  Hostile actors will create users to persist access.  Use this signal in context of other activity to determine intent.",
         "enabled_by_default": true,
@@ -19315,10 +19271,6 @@
             {
                 "entity_type": "_hostname",
                 "expression": "device_hostname"
-            },
-            {
-                "entity_type": "_ip",
-                "expression": "device_ip"
             },
             {
                 "entity_type": "_username",
@@ -19379,17 +19331,16 @@
     "MATCH-S00113": {
         "all_fields": [
             "device_hostname",
-            "device_ip",
             "metadata_deviceEventId",
             "metadata_product",
             "metadata_vendor",
             "srcDevice_ip",
             "user_username"
         ],
-        "asset_field": "device_ip",
+        "asset_field": "srcDevice_ip",
         "category": "Execution",
-        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
-        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
+        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
+        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
         "content_type": "RULE",
         "description_expression": "Changing the configuration of logging to any mission-critical service or platform should be closely monitored.  This signal identifies when AWS logging configurations have been changed.  The severity of signals increases depending on the type of action observed.  For instance disabling/deleting logs is a higher severity than enabling logs.",
         "enabled_by_default": true,
@@ -19397,10 +19348,6 @@
             {
                 "entity_type": "_hostname",
                 "expression": "device_hostname"
-            },
-            {
-                "entity_type": "_ip",
-                "expression": "device_ip"
             },
             {
                 "entity_type": "_username",
@@ -22658,7 +22605,6 @@
         "pattern_type": "templated_match",
         "product_direct_ref": [],
         "product_guids": [
-            "0e20c932-d992-4bd4-b276-c15119ca5c0b",
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
@@ -23625,22 +23571,22 @@
     "MATCH-S00208": {
         "all_fields": [
             "action",
-            "device_ip",
             "metadata_product",
             "metadata_vendor",
+            "srcDevice_ip",
             "user_username"
         ],
-        "asset_field": "device_ip",
+        "asset_field": "srcDevice_ip",
         "category": "Execution",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
+        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
         "content_type": "RULE",
         "description_expression": "Actions observed that create, import and delete access keys to EC2 could indicate an advisary is taking action on their objective to extend or otherwise manipulate access to EC2 instance(s).",
         "enabled_by_default": true,
         "entity_selectors": [
             {
                 "entity_type": "_ip",
-                "expression": "device_ip"
+                "expression": "srcDevice_ip"
             },
             {
                 "entity_type": "_username",
@@ -23822,16 +23768,15 @@
         "all_fields": [
             "action",
             "device_hostname",
-            "device_ip",
             "metadata_product",
             "metadata_vendor",
             "srcDevice_ip",
             "user_username"
         ],
-        "asset_field": "device_ip",
+        "asset_field": "srcDevice_ip",
         "category": "Discovery",
-        "commit_message": "Spelling-Corrections-Across-Content",
-        "commit_origin_hash": "a0980e690918542102bfb7a09491d13044d2beca",
+        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
+        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
         "content_type": "RULE",
         "description_expression": "This event sourced from AWS SQS occurs rarely.  It could indicate that an adversary is attempting to collect information for later attack.  When successful, the List Queues event returns all SQS queues that may be valid targets for further probing/attack.",
         "enabled_by_default": true,
@@ -23839,10 +23784,6 @@
             {
                 "entity_type": "_hostname",
                 "expression": "device_hostname"
-            },
-            {
-                "entity_type": "_ip",
-                "expression": "device_ip"
             },
             {
                 "entity_type": "_username",
@@ -23978,15 +23919,14 @@
     "MATCH-S00213": {
         "all_fields": [
             "device_hostname",
-            "device_ip",
             "metadata_deviceEventId",
             "srcDevice_ip",
             "user_username"
         ],
-        "asset_field": "device_ip",
+        "asset_field": "srcDevice_ip",
         "category": "Discovery",
-        "commit_message": "TRIDENT-18592 AWS CloudTrail - Reconnaissance related event dynamic name causing insights",
-        "commit_origin_hash": "1cdce8c858099bc4c6188db5e2d52b61b6fea743",
+        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
+        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
         "content_type": "RULE",
         "description_expression": "This signal identifies a small number of CloudTrail API actions that when observed could indicate an actors intent to enumerate the environment.  These events are generally benign, and occur during normal operations.  Use this signal as context around an unfolding security story.",
         "enabled_by_default": true,
@@ -23994,10 +23934,6 @@
             {
                 "entity_type": "_hostname",
                 "expression": "device_hostname"
-            },
-            {
-                "entity_type": "_ip",
-                "expression": "device_ip"
             },
             {
                 "entity_type": "_username",
@@ -24990,17 +24926,16 @@
     "MATCH-S00238": {
         "all_fields": [
             "device_hostname",
-            "device_ip",
             "metadata_deviceEventId",
             "metadata_product",
             "metadata_vendor",
             "srcDevice_ip",
             "user_username"
         ],
-        "asset_field": "device_ip",
+        "asset_field": "srcDevice_ip",
         "category": "Execution",
-        "commit_message": "Spelling-Corrections-Across-Content",
-        "commit_origin_hash": "a0980e690918542102bfb7a09491d13044d2beca",
+        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
+        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
         "content_type": "RULE",
         "description_expression": "AWS KMS is an encryption and key management web service.  Besides encrypting and decrypting data, users and administrators can use this service to create keys, manage keys etc.  This signal indicates activity that enables and disables keys explicitly.  This activity has been surveyed to be a low volume event and could be considered suspicious given other activity involving the entity.  Additionally, monitoring for these events is required to achieve certain industry audit compliance.",
         "enabled_by_default": true,
@@ -25008,10 +24943,6 @@
             {
                 "entity_type": "_hostname",
                 "expression": "device_hostname"
-            },
-            {
-                "entity_type": "_ip",
-                "expression": "device_ip"
             },
             {
                 "entity_type": "_username",
@@ -25073,16 +25004,15 @@
     "MATCH-S00240": {
         "all_fields": [
             "device_hostname",
-            "device_ip",
             "metadata_product",
             "metadata_vendor",
             "srcDevice_ip",
             "user_username"
         ],
-        "asset_field": "device_ip",
+        "asset_field": "srcDevice_ip",
         "category": "Execution",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
+        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
         "content_type": "RULE",
         "description_expression": "Deleting cryptographic key material managed by KMS can be risky. The risk is that after key material is deleted, cypher text may remain that is now indecipherable. Because of this risk, AWS enforces a minimum 7 day waiting period. A key cannot be deleted, it must first be scheduled for deletion by the system. This signal indicates that a key has been scheduled or canceled for deletion. This signal in context of other signals around this entity may describe a hostile pattern of attack.",
         "enabled_by_default": true,
@@ -25090,10 +25020,6 @@
             {
                 "entity_type": "_hostname",
                 "expression": "device_hostname"
-            },
-            {
-                "entity_type": "_ip",
-                "expression": "device_ip"
             },
             {
                 "entity_type": "_username",
@@ -25339,19 +25265,18 @@
     "MATCH-S00246": {
         "all_fields": [
             "device_hostname",
-            "device_ip",
-            "device_ip_asnOrg",
             "metadata_deviceEventId",
             "metadata_product",
             "metadata_vendor",
             "srcDevice_ip",
+            "srcDevice_ip_asnOrg",
             "srcDevice_ip_location",
             "user_username"
         ],
         "asset_field": "user_username",
         "category": "Execution",
-        "commit_message": "TRIDENT-15899 Update Amazon ASNs for MATCH-S00246",
-        "commit_origin_hash": "3daea3f5b14b1e7e86a4585173229d1d2fd2992e",
+        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
+        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
         "content_type": "RULE",
         "description_expression": "The secrets manager service is commonly used by cloud components to retrieve secrets (connection strings etc) while performing routine functions.  This signal identifies when secret values are retrieved via the GetSecretValue API call and the source host does not belong in an Amazon instance IP space.",
         "enabled_by_default": true,
@@ -25359,10 +25284,6 @@
             {
                 "entity_type": "_hostname",
                 "expression": "device_hostname"
-            },
-            {
-                "entity_type": "_ip",
-                "expression": "device_ip"
             },
             {
                 "entity_type": "_username",
@@ -25373,7 +25294,7 @@
                 "expression": "srcDevice_ip"
             }
         ],
-        "expression": "metadata_vendor = 'Amazon AWS'\nAND metadata_product = 'CloudTrail'\nAND NOT lower(device_ip_asnOrg) IN ('amazon.com', 'amazon','amazon.co','amazon.com  inc.','amazon.com inc.','amazon.com inc')\nand device_ip is not null\nand metadata_deviceEventId = 'AwsApiCall-GetSecretValue'\nand NOT array_contains(listMatches, 'AWS_admin_ips')\nAND NOT srcDevice_ip_location LIKE 'AWS%'",
+        "expression": "metadata_vendor = 'Amazon AWS'\nAND metadata_product = 'CloudTrail'\nAND NOT lower(srcDevice_ip_asnOrg) IN ('amazon.com', 'amazon','amazon.co','amazon.com  inc.','amazon.com inc.','amazon.com inc')\nand srcDevice_ip is not null\nand metadata_deviceEventId = 'AwsApiCall-GetSecretValue'\nand NOT array_contains(listMatches, 'AWS_admin_ips')\nAND NOT srcDevice_ip_location LIKE 'AWS%'",
         "file_path": "rules_v3/AWS_CloudTrail_GetSecretValue_from_non_Amazon_IP.json",
         "id": 246,
         "id_compiled": "MATCH-S00246",
@@ -25424,17 +25345,16 @@
     "MATCH-S00247": {
         "all_fields": [
             "device_hostname",
-            "device_ip",
             "metadata_deviceEventId",
             "metadata_product",
             "metadata_vendor",
             "srcDevice_ip",
             "user_username"
         ],
-        "asset_field": "device_ip",
+        "asset_field": "srcDevice_ip",
         "category": "Execution",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
+        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
         "content_type": "RULE",
         "description_expression": "Administrative changes to the AWS Secrets Manager aren't overtly hostile, but are generally low volume and can be considered sensitive.  These signals highlight when these actions occur and can be used in context of other suspicious activity to raise the risk of a hostile entity.  Several Secrets Manager API actions are included and assessed as sensitive.",
         "enabled_by_default": true,
@@ -25442,10 +25362,6 @@
             {
                 "entity_type": "_hostname",
                 "expression": "device_hostname"
-            },
-            {
-                "entity_type": "_ip",
-                "expression": "device_ip"
             },
             {
                 "entity_type": "_username",
@@ -25950,17 +25866,16 @@
     "MATCH-S00261": {
         "all_fields": [
             "device_hostname",
-            "device_ip",
             "metadata_deviceEventId",
             "metadata_product",
             "metadata_vendor",
             "srcDevice_ip",
             "user_username"
         ],
-        "asset_field": "device_ip",
+        "asset_field": "srcDevice_ip",
         "category": "Exfiltration",
-        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
-        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
+        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
+        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
         "content_type": "RULE",
         "description_expression": "Creating DB snapshots is an efficient way for an attacker to begin downloading a targets database.  These signals should be considered around the context of other signals that may indicate data theft is in progress.",
         "enabled_by_default": true,
@@ -25968,10 +25883,6 @@
             {
                 "entity_type": "_hostname",
                 "expression": "device_hostname"
-            },
-            {
-                "entity_type": "_ip",
-                "expression": "device_ip"
             },
             {
                 "entity_type": "_username",
@@ -26639,12 +26550,13 @@
             "commandLine",
             "device_hostname",
             "device_ip",
+            "srcDevice_ip",
             "user_username"
         ],
         "asset_field": "device_hostname",
         "category": "Discovery",
-        "commit_message": "TLABS-1427 Update summary of MATCH-S00281",
-        "commit_origin_hash": "e2df4192c741d112225ed95d65478aa9f168481c",
+        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
+        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
         "content_type": "RULE",
         "description_expression": "Detects the use of various Get-Process PowerShell commands to discover information about running processes.",
         "enabled_by_default": true,
@@ -26656,6 +26568,10 @@
             {
                 "entity_type": "_ip",
                 "expression": "device_ip"
+            },
+            {
+                "entity_type": "_ip",
+                "expression": "srcDevice_ip"
             },
             {
                 "entity_type": "_username",
@@ -27477,7 +27393,6 @@
     "MATCH-S00306": {
         "all_fields": [
             "device_hostname",
-            "device_ip",
             "metadata_deviceEventId",
             "metadata_product",
             "metadata_vendor",
@@ -27486,8 +27401,8 @@
         ],
         "asset_field": "user_username",
         "category": "Execution",
-        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
-        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
+        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
+        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
         "content_type": "RULE",
         "description_expression": "A UserPoolClient is an entity that has permission to call unauthenticated API operations (operations that do not have an authenticated user).",
         "enabled_by_default": true,
@@ -27495,10 +27410,6 @@
             {
                 "entity_type": "_hostname",
                 "expression": "device_hostname"
-            },
-            {
-                "entity_type": "_ip",
-                "expression": "device_ip"
             },
             {
                 "entity_type": "_username",
@@ -27558,7 +27469,6 @@
         "all_fields": [
             "application",
             "device_hostname",
-            "device_ip",
             "fields['requestParameters.readAttributes.10']",
             "fields['requestParameters.writeAttributes.10']",
             "metadata_deviceEventId",
@@ -27569,8 +27479,8 @@
         ],
         "asset_field": "user_username",
         "category": "Execution",
-        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
-        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
+        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
+        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
         "content_type": "RULE",
         "description_expression": "Alert when an OAuth application has requested a high number of permissions to aspects of AWS.",
         "enabled_by_default": true,
@@ -27578,10 +27488,6 @@
             {
                 "entity_type": "_hostname",
                 "expression": "device_hostname"
-            },
-            {
-                "entity_type": "_ip",
-                "expression": "device_ip"
             },
             {
                 "entity_type": "_username",
@@ -27641,16 +27547,15 @@
         "all_fields": [
             "action",
             "device_hostname",
-            "device_ip",
             "metadata_product",
             "metadata_vendor",
             "srcDevice_ip",
             "user_username"
         ],
-        "asset_field": "device_ip",
+        "asset_field": "srcDevice_ip",
         "category": "Discovery",
-        "commit_message": "Spelling-Corrections-Across-Content",
-        "commit_origin_hash": "a0980e690918542102bfb7a09491d13044d2beca",
+        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
+        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
         "content_type": "RULE",
         "description_expression": "This event sourced from AWS OpsWorks occurs rarely.  It could indicate that an adversary is attempting to collect information for later attack.  When successful, the Describe Permissions event returns information regarding a specified stack's permissions for access.",
         "enabled_by_default": true,
@@ -27658,10 +27563,6 @@
             {
                 "entity_type": "_hostname",
                 "expression": "device_hostname"
-            },
-            {
-                "entity_type": "_ip",
-                "expression": "device_ip"
             },
             {
                 "entity_type": "_username",
@@ -31705,6 +31606,7 @@
         "product_direct_ref": [],
         "product_guids": [
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
+            "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "840c72e0-4e47-41e7-9b93-31f55d12f07d"
         ],
         "record_type_direct_ref": [],
@@ -36095,6 +35997,7 @@
         "product_guids": [
             "021d1ded-1c82-4663-bf5d-d6ed5170efa3",
             "0fb003bc-8383-442f-8f3d-afcfbaefe617",
+            "2a678bcd-898e-43cd-ab3f-91feb0602a18",
             "2b82e665-bdde-474a-ae29-4f0f76598556",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
@@ -36391,6 +36294,7 @@
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
+            "840c72e0-4e47-41e7-9b93-31f55d12f07d",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "a1f79987-b765-4f6f-bfe5-d657baa35144"
         ],
@@ -38442,7 +38346,6 @@
         "all_fields": [
             "action",
             "device_hostname",
-            "device_ip",
             "metadata_deviceEventId",
             "metadata_product",
             "metadata_vendor",
@@ -38450,18 +38353,14 @@
             "srcDevice_ip",
             "user_username"
         ],
-        "asset_field": "device_ip",
+        "asset_field": "srcDevice_ip",
         "category": "Defense Evasion",
-        "commit_message": "Rule script cleanup (#5974)",
-        "commit_origin_hash": "ccec442dadce7ea8c1dd9423e04f93eceb57d499",
+        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
+        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
         "content_type": "RULE",
         "description_expression": "Enforcing network-access controls is one of the defensive mechanisms used by cloud administrators to restrict access to a cloud instance. After the attacker has gained control of the console by compromising an admin account, they can delete a network ACL and gain access to the instance from anywhere.",
         "enabled_by_default": true,
         "entity_selectors": [
-            {
-                "entity_type": "_ip",
-                "expression": "device_ip"
-            },
             {
                 "entity_type": "_hostname",
                 "expression": "srcDevice_hostname"
@@ -39363,7 +39262,8 @@
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
-            "60829f4a-7acb-47d1-ad23-8424fcf83dcb"
+            "60829f4a-7acb-47d1-ad23-8424fcf83dcb",
+            "840c72e0-4e47-41e7-9b93-31f55d12f07d"
         ],
         "record_type_direct_ref": [],
         "rule_source": "sumo",
@@ -39655,7 +39555,6 @@
             "A17B3F3C-04F1-40C8-9497-3C499EB18A74",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "a67d97fe-6e68-4cfb-9500-cfc5492da565",
-            "abe4975e-de65-4f82-8b35-e6ce392e165c",
             "b0a0ae6d-dd5b-450c-9d68-36d6c61c67b0",
             "be4f7473-fe69-4311-8859-3561900060bf",
             "c3c1a4fc-10cc-4155-8a30-a3bb14fc9f31",
@@ -46570,7 +46469,6 @@
     "MATCH-S00654": {
         "all_fields": [
             "device_hostname",
-            "device_ip",
             "metadata_deviceEventId",
             "metadata_product",
             "metadata_vendor",
@@ -46579,8 +46477,8 @@
         ],
         "asset_field": "device_hostname",
         "category": "Impact",
-        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
-        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
+        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
+        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
         "content_type": "RULE",
         "description_expression": "Monitors for execution of the API call 'DeleteCluster' which may indicate that an attacker is attempting to disrupt operations.",
         "enabled_by_default": true,
@@ -46588,10 +46486,6 @@
             {
                 "entity_type": "_hostname",
                 "expression": "device_hostname"
-            },
-            {
-                "entity_type": "_ip",
-                "expression": "device_ip"
             },
             {
                 "entity_type": "_username",
@@ -46652,7 +46546,6 @@
     "MATCH-S00655": {
         "all_fields": [
             "device_hostname",
-            "device_ip",
             "fields['userIdentity.type']",
             "http_userAgent",
             "metadata_deviceEventId",
@@ -46663,8 +46556,8 @@
         ],
         "asset_field": "device_hostname",
         "category": "Defense Evasion",
-        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
-        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
+        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
+        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
         "content_type": "RULE",
         "description_expression": "New Container Uploaded to AWS ECR",
         "enabled_by_default": true,
@@ -46672,10 +46565,6 @@
             {
                 "entity_type": "_hostname",
                 "expression": "device_hostname"
-            },
-            {
-                "entity_type": "_ip",
-                "expression": "device_ip"
             },
             {
                 "entity_type": "_username",
@@ -46991,7 +46880,6 @@
     "MATCH-S00660": {
         "all_fields": [
             "device_hostname",
-            "device_ip",
             "metadata_deviceEventId",
             "metadata_product",
             "metadata_vendor",
@@ -47000,8 +46888,8 @@
         ],
         "asset_field": "device_hostname",
         "category": "Execution",
-        "commit_message": "TLAB-1488 Update summary of MATCH-S00660",
-        "commit_origin_hash": "49cb1e2b52b74a16cc253a08283cf25e6eece0b5",
+        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
+        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
         "content_type": "RULE",
         "description_expression": "In general, commands run within a container should be automated via service accounts or conducted by known administrators. Regular users executing commands presents risk and could indicate an attacker attempting to escalate privileges or abuse container resources.",
         "enabled_by_default": true,
@@ -47009,10 +46897,6 @@
             {
                 "entity_type": "_hostname",
                 "expression": "device_hostname"
-            },
-            {
-                "entity_type": "_ip",
-                "expression": "device_ip"
             },
             {
                 "entity_type": "_username",
@@ -47073,25 +46957,20 @@
         "all_fields": [
             "action",
             "device_hostname",
-            "device_ip",
             "metadata_product",
             "metadata_vendor",
             "srcDevice_hostname",
             "srcDevice_ip",
             "user_username"
         ],
-        "asset_field": "device_ip",
+        "asset_field": "srcDevice_ip",
         "category": "Impact",
-        "commit_message": "Rule script cleanup (#5974)",
-        "commit_origin_hash": "ccec442dadce7ea8c1dd9423e04f93eceb57d499",
+        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
+        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
         "content_type": "RULE",
         "description_expression": "Detects the AWS CloudWatch DeleteLogStream API action. DeleteLogStream deletes the specified log stream and permanently deletes all the archived log events associated with the log stream.",
         "enabled_by_default": true,
         "entity_selectors": [
-            {
-                "entity_type": "_ip",
-                "expression": "device_ip"
-            },
             {
                 "entity_type": "_username",
                 "expression": "user_username"
@@ -47160,25 +47039,20 @@
         "all_fields": [
             "action",
             "device_hostname",
-            "device_ip",
             "metadata_product",
             "metadata_vendor",
             "srcDevice_hostname",
             "srcDevice_ip",
             "user_username"
         ],
-        "asset_field": "device_ip",
+        "asset_field": "srcDevice_ip",
         "category": "Impact",
-        "commit_message": "Rule script cleanup (#5974)",
-        "commit_origin_hash": "ccec442dadce7ea8c1dd9423e04f93eceb57d499",
+        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
+        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
         "content_type": "RULE",
         "description_expression": "Detects the AWS CloudWatch DeleteAnomalyDetector API action. DeleteAnomalyDetector deletes the specified anomaly detection model from your account.",
         "enabled_by_default": true,
         "entity_selectors": [
-            {
-                "entity_type": "_ip",
-                "expression": "device_ip"
-            },
             {
                 "entity_type": "_username",
                 "expression": "user_username"
@@ -47247,25 +47121,20 @@
         "all_fields": [
             "action",
             "device_hostname",
-            "device_ip",
             "metadata_product",
             "metadata_vendor",
             "srcDevice_hostname",
             "srcDevice_ip",
             "user_username"
         ],
-        "asset_field": "device_ip",
+        "asset_field": "srcDevice_ip",
         "category": "Impact",
-        "commit_message": "Rule script cleanup (#5974)",
-        "commit_origin_hash": "ccec442dadce7ea8c1dd9423e04f93eceb57d499",
+        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
+        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
         "content_type": "RULE",
         "description_expression": "Detects the AWS CloudWatch DeleteAlarms API action. DeleteAlarms deletes the specified alarms. You can delete up to 100 alarms in one operation. However, this total can include no more than one composite alarm. For example, you could delete 99 metric alarms and one composite alarms with one operation, but you can't delete two composite alarms with one operation.",
         "enabled_by_default": true,
         "entity_selectors": [
-            {
-                "entity_type": "_ip",
-                "expression": "device_ip"
-            },
             {
                 "entity_type": "_username",
                 "expression": "user_username"
@@ -47334,25 +47203,20 @@
         "all_fields": [
             "action",
             "device_hostname",
-            "device_ip",
             "metadata_product",
             "metadata_vendor",
             "srcDevice_hostname",
             "srcDevice_ip",
             "user_username"
         ],
-        "asset_field": "device_ip",
+        "asset_field": "srcDevice_ip",
         "category": "Defense Evasion",
-        "commit_message": "Rule script cleanup (#5974)",
-        "commit_origin_hash": "ccec442dadce7ea8c1dd9423e04f93eceb57d499",
+        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
+        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
         "content_type": "RULE",
         "description_expression": "Detects the AWS CloudWatch DisableAlarmActions API action. DisableAlarmActions disables the actions for the specified alarms. When an alarm's actions are disabled, the alarm actions do not execute when the alarm state changes.",
         "enabled_by_default": true,
         "entity_selectors": [
-            {
-                "entity_type": "_ip",
-                "expression": "device_ip"
-            },
             {
                 "entity_type": "_username",
                 "expression": "user_username"
@@ -47421,25 +47285,20 @@
         "all_fields": [
             "action",
             "device_hostname",
-            "device_ip",
             "metadata_product",
             "metadata_vendor",
             "srcDevice_hostname",
             "srcDevice_ip",
             "user_username"
         ],
-        "asset_field": "device_ip",
+        "asset_field": "srcDevice_ip",
         "category": "Defense Evasion",
-        "commit_message": "Rule script cleanup (#5974)",
-        "commit_origin_hash": "ccec442dadce7ea8c1dd9423e04f93eceb57d499",
+        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
+        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
         "content_type": "RULE",
         "description_expression": "Detects the AWS CloudWatch DeleteLogGroup API action. DeleteLogGroup deletes the specified log group and permanently deletes all the archived log events associated with the log group.",
         "enabled_by_default": true,
         "entity_selectors": [
-            {
-                "entity_type": "_ip",
-                "expression": "device_ip"
-            },
             {
                 "entity_type": "_username",
                 "expression": "user_username"
@@ -47830,25 +47689,20 @@
         "all_fields": [
             "action",
             "device_hostname",
-            "device_ip",
             "metadata_product",
             "metadata_vendor",
             "srcDevice_hostname",
             "srcDevice_ip",
             "user_username"
         ],
-        "asset_field": "device_ip",
+        "asset_field": "srcDevice_ip",
         "category": "Defense Evasion",
-        "commit_message": "Rule script cleanup (#5974)",
-        "commit_origin_hash": "ccec442dadce7ea8c1dd9423e04f93eceb57d499",
+        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
+        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
         "content_type": "RULE",
         "description_expression": "Detects various AWS Config API actions that involve the alternation of a Config service.",
         "enabled_by_default": true,
         "entity_selectors": [
-            {
-                "entity_type": "_ip",
-                "expression": "device_ip"
-            },
             {
                 "entity_type": "_username",
                 "expression": "user_username"
@@ -47917,25 +47771,20 @@
         "all_fields": [
             "action",
             "device_hostname",
-            "device_ip",
             "metadata_product",
             "metadata_vendor",
             "srcDevice_hostname",
             "srcDevice_ip",
             "user_username"
         ],
-        "asset_field": "device_ip",
+        "asset_field": "srcDevice_ip",
         "category": "Defense Evasion",
-        "commit_message": "Rule script cleanup (#5974)",
-        "commit_origin_hash": "ccec442dadce7ea8c1dd9423e04f93eceb57d499",
+        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
+        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
         "content_type": "RULE",
         "description_expression": "Detects the AWS Config DeleteConfigurationRecorder API action. DeleteConfigurationRecorder deletes the configuration recorder.\nAfter the configuration recorder is deleted, AWS Config will not record resource configuration changes until you create a new configuration recorder.",
         "enabled_by_default": true,
         "entity_selectors": [
-            {
-                "entity_type": "_ip",
-                "expression": "device_ip"
-            },
             {
                 "entity_type": "_username",
                 "expression": "user_username"
@@ -48004,25 +47853,20 @@
         "all_fields": [
             "action",
             "device_hostname",
-            "device_ip",
             "metadata_product",
             "metadata_vendor",
             "srcDevice_hostname",
             "srcDevice_ip",
             "user_username"
         ],
-        "asset_field": "device_ip",
+        "asset_field": "srcDevice_ip",
         "category": "Defense Evasion",
-        "commit_message": "Rule script cleanup (#5974)",
-        "commit_origin_hash": "ccec442dadce7ea8c1dd9423e04f93eceb57d499",
+        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
+        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
         "content_type": "RULE",
         "description_expression": "Detects the AWS Config StopConfigurationRecorder API action. StopConfigurationRecorder stops recording configurations of the AWS resources you have selected to record in your AWS account.",
         "enabled_by_default": true,
         "entity_selectors": [
-            {
-                "entity_type": "_ip",
-                "expression": "device_ip"
-            },
             {
                 "entity_type": "_username",
                 "expression": "user_username"
@@ -48091,25 +47935,20 @@
         "all_fields": [
             "action",
             "device_hostname",
-            "device_ip",
             "metadata_product",
             "metadata_vendor",
             "srcDevice_hostname",
             "srcDevice_ip",
             "user_username"
         ],
-        "asset_field": "device_ip",
+        "asset_field": "srcDevice_ip",
         "category": "Defense Evasion",
-        "commit_message": "Rule script cleanup (#5974)",
-        "commit_origin_hash": "ccec442dadce7ea8c1dd9423e04f93eceb57d499",
+        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
+        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
         "content_type": "RULE",
         "description_expression": "Detects various AWS WAF API actions that involve the deletion of a WAF service.",
         "enabled_by_default": true,
         "entity_selectors": [
-            {
-                "entity_type": "_ip",
-                "expression": "device_ip"
-            },
             {
                 "entity_type": "_username",
                 "expression": "user_username"
@@ -48211,25 +48050,20 @@
         "all_fields": [
             "action",
             "device_hostname",
-            "device_ip",
             "metadata_product",
             "metadata_vendor",
             "srcDevice_hostname",
             "srcDevice_ip",
             "user_username"
         ],
-        "asset_field": "device_ip",
+        "asset_field": "srcDevice_ip",
         "category": "Defense Evasion",
-        "commit_message": "Rule script cleanup (#5974)",
-        "commit_origin_hash": "ccec442dadce7ea8c1dd9423e04f93eceb57d499",
+        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
+        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
         "content_type": "RULE",
         "description_expression": "Detects the AWS WAF UpdateWebACL API action. UpdateWebACL updates the specified WebACL. A web ACL defines a collection of rules to use to inspect and control web requests. Each rule has an action defined (allow, block, or count) for requests that match the statement of the rule. In the web ACL, you assign a default action to take (allow, block) for any request that does not match any of the rules. The rules in a web ACL can be a combination of the types Rule, RuleGroup, and managed rule group. You can associate a web ACL with one or more AWS resources to protect. The resources can be an Amazon CloudFront distribution, an Amazon API Gateway REST API, an Application Load Balancer, or an AWS AppSync GraphQL API.",
         "enabled_by_default": true,
         "entity_selectors": [
-            {
-                "entity_type": "_ip",
-                "expression": "device_ip"
-            },
             {
                 "entity_type": "_username",
                 "expression": "user_username"
@@ -48298,25 +48132,20 @@
         "all_fields": [
             "action",
             "device_hostname",
-            "device_ip",
             "metadata_product",
             "metadata_vendor",
             "srcDevice_hostname",
             "srcDevice_ip",
             "user_username"
         ],
-        "asset_field": "device_ip",
+        "asset_field": "srcDevice_ip",
         "category": "Defense Evasion",
-        "commit_message": "Rule script cleanup (#5974)",
-        "commit_origin_hash": "ccec442dadce7ea8c1dd9423e04f93eceb57d499",
+        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
+        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
         "content_type": "RULE",
         "description_expression": "Detects the AWS WAF UpdateRule API action. UpdateRule inserts or deletes Predicate objects in a rule. Each Predicate object identifies a predicate, such as a ByteMatchSet or an IPSet, that specifies the web requests that you want to allow, block, or count.",
         "enabled_by_default": true,
         "entity_selectors": [
-            {
-                "entity_type": "_ip",
-                "expression": "device_ip"
-            },
             {
                 "entity_type": "_username",
                 "expression": "user_username"
@@ -48385,25 +48214,20 @@
         "all_fields": [
             "action",
             "device_hostname",
-            "device_ip",
             "metadata_product",
             "metadata_vendor",
             "srcDevice_hostname",
             "srcDevice_ip",
             "user_username"
         ],
-        "asset_field": "device_ip",
+        "asset_field": "srcDevice_ip",
         "category": "Defense Evasion",
-        "commit_message": "Rule script cleanup (#5974)",
-        "commit_origin_hash": "ccec442dadce7ea8c1dd9423e04f93eceb57d499",
+        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
+        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
         "content_type": "RULE",
         "description_expression": "Detects the AWS WAF UpdateRuleGroup API action. UpdateRuleGroup updates the specified RuleGroup. A rule group defines a collection of rules to inspect and control web requests that you can use in a WebACL. When you create a rule group, you define an immutable capacity limit. If you update a rule group, you must stay within the capacity. This allows others to reuse the rule group with confidence in its capacity requirements.",
         "enabled_by_default": true,
         "entity_selectors": [
-            {
-                "entity_type": "_ip",
-                "expression": "device_ip"
-            },
             {
                 "entity_type": "_username",
                 "expression": "user_username"
@@ -48472,25 +48296,20 @@
         "all_fields": [
             "action",
             "device_hostname",
-            "device_ip",
             "metadata_product",
             "metadata_vendor",
             "srcDevice_hostname",
             "srcDevice_ip",
             "user_username"
         ],
-        "asset_field": "device_ip",
+        "asset_field": "srcDevice_ip",
         "category": "Defense Evasion",
-        "commit_message": "Rule script cleanup (#5974)",
-        "commit_origin_hash": "ccec442dadce7ea8c1dd9423e04f93eceb57d499",
+        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
+        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
         "content_type": "RULE",
         "description_expression": "Detects various AWS Route 53 API actions that involve the alteration of a Route 53 service.",
         "enabled_by_default": true,
         "entity_selectors": [
-            {
-                "entity_type": "_ip",
-                "expression": "device_ip"
-            },
             {
                 "entity_type": "_username",
                 "expression": "user_username"
@@ -48601,25 +48420,20 @@
         "all_fields": [
             "action",
             "device_hostname",
-            "device_ip",
             "metadata_product",
             "metadata_vendor",
             "srcDevice_hostname",
             "srcDevice_ip",
             "user_username"
         ],
-        "asset_field": "device_ip",
+        "asset_field": "srcDevice_ip",
         "category": "Defense Evasion",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
+        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
         "content_type": "RULE",
         "description_expression": "Detects the AWS Route 53 CreateTrafficPolicy and CreateTrafficPolicyInstance API actions. These actions are used to create DNS resource record sets for domain or subdomain names.",
         "enabled_by_default": true,
         "entity_selectors": [
-            {
-                "entity_type": "_ip",
-                "expression": "device_ip"
-            },
             {
                 "entity_type": "_username",
                 "expression": "user_username"
@@ -48688,25 +48502,20 @@
         "all_fields": [
             "action",
             "device_hostname",
-            "device_ip",
             "metadata_product",
             "metadata_vendor",
             "srcDevice_hostname",
             "srcDevice_ip",
             "user_username"
         ],
-        "asset_field": "device_ip",
+        "asset_field": "srcDevice_ip",
         "category": "Defense Evasion",
-        "commit_message": "TLAB-750 Undetectable MITRE TTPs and rule pruning",
-        "commit_origin_hash": "95b052f9bb9a2855d1f68107e2dd47808ff0b039",
+        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
+        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
         "content_type": "RULE",
         "description_expression": "Detects the AWS Route 53 RegisterDomain API action. Domains are registered either by Amazon Registrar (for .com, .net, and .org domains) or by Gandi (for all other domains). An adversary could use this API action to register a domain for malicious activity.",
         "enabled_by_default": true,
         "entity_selectors": [
-            {
-                "entity_type": "_ip",
-                "expression": "device_ip"
-            },
             {
                 "entity_type": "_username",
                 "expression": "user_username"
@@ -48773,25 +48582,20 @@
         "all_fields": [
             "action",
             "device_hostname",
-            "device_ip",
             "metadata_product",
             "metadata_vendor",
             "srcDevice_hostname",
             "srcDevice_ip",
             "user_username"
         ],
-        "asset_field": "device_ip",
+        "asset_field": "srcDevice_ip",
         "category": "Discovery",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
+        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
         "content_type": "RULE",
         "description_expression": "Detects the AWS Route 53 TestDNSAnswer API action. TestDNSAnswer gets the value that Amazon Route 53 returns in response to a DNS request for a specified record name and type. You can optionally specify the IP address of a DNS resolver, an EDNS0 client subnet IP address, and a subnet mask. An adversary could use this API action for testing if various DNS types and domains are allowed.",
         "enabled_by_default": true,
         "entity_selectors": [
-            {
-                "entity_type": "_ip",
-                "expression": "device_ip"
-            },
             {
                 "entity_type": "_username",
                 "expression": "user_username"
@@ -49144,8 +48948,7 @@
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "55ec1d4a-6985-4f04-8de5-f9812871fda2",
-            "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
-            "840c72e0-4e47-41e7-9b93-31f55d12f07d"
+            "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3"
         ],
         "record_type_direct_ref": [],
         "rule_source": "sumo",
@@ -49270,12 +49073,13 @@
             "commandLine",
             "device_hostname",
             "device_ip",
+            "srcDevice_ip",
             "user_username"
         ],
         "asset_field": "device_hostname",
         "category": "Defense Evasion",
-        "commit_message": "updated rule and test case for mac and jamf",
-        "commit_origin_hash": "14474d3d7ce1ef8c7b0624798399c4ea292f827f",
+        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
+        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
         "content_type": "RULE",
         "description_expression": "Malicious files are often encoded in an attempt to bypass security controls that would otherwise inspect the contents of said file. An attacker would then need to decode the malicious file for use on the victim machine using a utility such as certutil or the base64 command. This rule supports detection for standard decoding utilities on Unix, Windows cmd, Windows PowerShell, and MacOS.",
         "enabled_by_default": true,
@@ -49287,6 +49091,10 @@
             {
                 "entity_type": "_ip",
                 "expression": "device_ip"
+            },
+            {
+                "entity_type": "_ip",
+                "expression": "srcDevice_ip"
             },
             {
                 "entity_type": "_username",
@@ -50509,7 +50317,6 @@
         "product_direct_ref": [],
         "product_guids": [
             "0e20c932-d992-4bd4-b276-c15119ca5c0b",
-            "3382523e-2072-41bd-b50b-6b148957d0b0",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3"
         ],
         "record_type_direct_ref": [],
@@ -51470,7 +51277,6 @@
     "MATCH-S00715": {
         "all_fields": [
             "action",
-            "device_ip",
             "metadata_product",
             "metadata_vendor",
             "srcDevice_ip",
@@ -51478,8 +51284,8 @@
         ],
         "asset_field": "srcDevice_ip",
         "category": "Impact",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
+        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
         "content_type": "RULE",
         "description_expression": "Detects the removal of cloud storage infrastructure in AWS.",
         "enabled_by_default": true,
@@ -51487,10 +51293,6 @@
             {
                 "entity_type": "_ip",
                 "expression": "srcDevice_ip"
-            },
-            {
-                "entity_type": "_ip",
-                "expression": "device_ip"
             },
             {
                 "entity_type": "_username",
@@ -51547,7 +51349,6 @@
     "MATCH-S00716": {
         "all_fields": [
             "action",
-            "device_ip",
             "metadata_product",
             "metadata_vendor",
             "srcDevice_ip",
@@ -51555,8 +51356,8 @@
         ],
         "asset_field": "srcDevice_ip",
         "category": "Defense Evasion",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
+        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
         "content_type": "RULE",
         "description_expression": "Detects the creation of an image in AWS.",
         "enabled_by_default": true,
@@ -51564,10 +51365,6 @@
             {
                 "entity_type": "_ip",
                 "expression": "srcDevice_ip"
-            },
-            {
-                "entity_type": "_ip",
-                "expression": "device_ip"
             },
             {
                 "entity_type": "_username",
@@ -51624,7 +51421,6 @@
     "MATCH-S00717": {
         "all_fields": [
             "action",
-            "device_ip",
             "metadata_product",
             "metadata_vendor",
             "srcDevice_ip",
@@ -51632,8 +51428,8 @@
         ],
         "asset_field": "srcDevice_ip",
         "category": "Impact",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
+        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
         "content_type": "RULE",
         "description_expression": "Detects the deletion of an image in AWS.",
         "enabled_by_default": true,
@@ -51641,10 +51437,6 @@
             {
                 "entity_type": "_ip",
                 "expression": "srcDevice_ip"
-            },
-            {
-                "entity_type": "_ip",
-                "expression": "device_ip"
             },
             {
                 "entity_type": "_username",
@@ -51701,7 +51493,6 @@
     "MATCH-S00718": {
         "all_fields": [
             "action",
-            "device_ip",
             "metadata_product",
             "metadata_vendor",
             "srcDevice_ip",
@@ -51709,8 +51500,8 @@
         ],
         "asset_field": "srcDevice_ip",
         "category": "Persistence",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
+        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
         "content_type": "RULE",
         "description_expression": "Detects the modification of an image in AWS.",
         "enabled_by_default": true,
@@ -51718,10 +51509,6 @@
             {
                 "entity_type": "_ip",
                 "expression": "srcDevice_ip"
-            },
-            {
-                "entity_type": "_ip",
-                "expression": "device_ip"
             },
             {
                 "entity_type": "_username",
@@ -51778,7 +51565,6 @@
     "MATCH-S00719": {
         "all_fields": [
             "action",
-            "device_ip",
             "metadata_product",
             "metadata_vendor",
             "srcDevice_ip",
@@ -51786,8 +51572,8 @@
         ],
         "asset_field": "srcDevice_ip",
         "category": "Defense Evasion",
-        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
-        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
+        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
+        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
         "content_type": "RULE",
         "description_expression": "Detects the creation of an instance in AWS.",
         "enabled_by_default": true,
@@ -51795,10 +51581,6 @@
             {
                 "entity_type": "_ip",
                 "expression": "srcDevice_ip"
-            },
-            {
-                "entity_type": "_ip",
-                "expression": "device_ip"
             },
             {
                 "entity_type": "_username",
@@ -51856,7 +51638,6 @@
     "MATCH-S00720": {
         "all_fields": [
             "action",
-            "device_ip",
             "metadata_product",
             "metadata_vendor",
             "srcDevice_ip",
@@ -51864,8 +51645,8 @@
         ],
         "asset_field": "srcDevice_ip",
         "category": "Defense Evasion",
-        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
-        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
+        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
+        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
         "content_type": "RULE",
         "description_expression": "Detects the deletion of an instance in AWS.",
         "enabled_by_default": true,
@@ -51873,10 +51654,6 @@
             {
                 "entity_type": "_ip",
                 "expression": "srcDevice_ip"
-            },
-            {
-                "entity_type": "_ip",
-                "expression": "device_ip"
             },
             {
                 "entity_type": "_username",
@@ -51934,7 +51711,6 @@
     "MATCH-S00721": {
         "all_fields": [
             "action",
-            "device_ip",
             "metadata_product",
             "metadata_vendor",
             "srcDevice_ip",
@@ -51942,8 +51718,8 @@
         ],
         "asset_field": "srcDevice_ip",
         "category": "Defense Evasion",
-        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
-        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
+        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
+        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
         "content_type": "RULE",
         "description_expression": "Detects the modification of an instance in AWS.",
         "enabled_by_default": true,
@@ -51951,10 +51727,6 @@
             {
                 "entity_type": "_ip",
                 "expression": "srcDevice_ip"
-            },
-            {
-                "entity_type": "_ip",
-                "expression": "device_ip"
             },
             {
                 "entity_type": "_username",
@@ -54704,8 +54476,7 @@
         "pattern_type": "templated_match",
         "product_direct_ref": [],
         "product_guids": [
-            "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
-            "a1225af5-e778-4068-a9a2-47da93d1ff24"
+            "1ff7546c-cb36-4a24-87f7-89d2cecc5761"
         ],
         "record_type_direct_ref": [],
         "rule_description": "",
@@ -54792,7 +54563,6 @@
     "MATCH-S00764": {
         "all_fields": [
             "action",
-            "device_ip",
             "fields['errorCode']",
             "metadata_product",
             "metadata_vendor",
@@ -54801,8 +54571,8 @@
         ],
         "asset_field": "srcDevice_ip",
         "category": "Collection",
-        "commit_message": "TRIDENT-15913 Clarify S3 bucket misconfiguration rule name and summary",
-        "commit_origin_hash": "95ccc7bba65d17a5a2d118f9f0485907759b211b",
+        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
+        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
         "content_type": "RULE",
         "description_expression": "Detects when GetPublicAccessBlock returns NoSuchPublicAccessBlockConfiguration, indicating the public access block has all values are set to false or the feature is disabled.",
         "enabled_by_default": true,
@@ -54810,10 +54580,6 @@
             {
                 "entity_type": "_ip",
                 "expression": "srcDevice_ip"
-            },
-            {
-                "entity_type": "_ip",
-                "expression": "device_ip"
             },
             {
                 "entity_type": "_username",
@@ -58598,7 +58364,6 @@
             "5be5af82-c248-4c4c-a485-0571025f242c",
             "79da6240-7617-49c8-b130-96278579766e",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
-            "abe4975e-de65-4f82-8b35-e6ce392e165c",
             "acb7e80e-2b66-496c-ba2e-1e7c3933a98e",
             "b0a0ae6d-dd5b-450c-9d68-36d6c61c67b0",
             "b0fe0dde-4e19-4712-957b-1ea7418c132e",
@@ -59355,8 +59120,8 @@
         ],
         "asset_field": "user_username",
         "category": "Persistence",
-        "commit_message": "TRIDENT-16826 SSH Keys Added to EC2 Instance",
-        "commit_origin_hash": "6c85e09e375192c4cca89b821a9854a38df661d0",
+        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
+        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
         "content_type": "RULE",
         "description_expression": "A set of SSH keys has been added to an AWS EC2 instance.",
         "enabled_by_default": true,
@@ -59384,7 +59149,7 @@
         ],
         "normalized_score_type": "Static",
         "normalized_signal_name": "SSH Keys Added to EC2 Instance",
-        "normalized_summary": "{{user_username}} using the IP address {{device_ip}} has added an SSH key to an EC2 Instance.",
+        "normalized_summary": "{{user_username}} using the IP address {{srcDevice_ip}} has added an SSH key to an EC2 Instance.",
         "pattern_type": "templated_match",
         "product_direct_ref": [],
         "product_guids": [
@@ -59401,7 +59166,7 @@
             "type": "constant"
         },
         "stream": "record",
-        "summary_expression": "{{user_username}} using the IP address {{device_ip}} has added an SSH key to an EC2 Instance.",
+        "summary_expression": "{{user_username}} using the IP address {{srcDevice_ip}} has added an SSH key to an EC2 Instance.",
         "tags": [
             "_mitreAttackTactic:TA0003",
             "_mitreAttackTechnique:T1098.004",
@@ -65089,8 +64854,8 @@
             "user_username"
         ],
         "category": "Defense Evasion",
-        "commit_message": "Rule script cleanup (#5974)",
-        "commit_origin_hash": "ccec442dadce7ea8c1dd9423e04f93eceb57d499",
+        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
+        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
         "content_type": "RULE",
         "description_expression": "An AWS Bedrock Model invocation logging configuration change was observed. Ensure that this activity is expected and authorized. Take a look at the full event details, particularly the requestParameters.loggingConfig* fields in order to see what specific configuration values were changed. Telemetry and logging configuration changes should be a relatively rare occurrence in the environment.",
         "enabled_by_default": true,
@@ -65118,7 +64883,7 @@
         ],
         "normalized_score_type": "Static",
         "normalized_signal_name": "AWS Bedrock Model Invocation Logging Configuration Change Observed by {{user_username}}",
-        "normalized_summary": "AWS Bedrock Model Invocation Logging Configuration Change Observed by {{user_username}} from IP {{device_ip}}",
+        "normalized_summary": "AWS Bedrock Model Invocation Logging Configuration Change Observed by {{user_username}} from IP {{srcDevice_ip}}",
         "pattern_type": "templated_match",
         "product_direct_ref": [],
         "product_guids": [
@@ -65135,7 +64900,7 @@
         },
         "silent_mode": false,
         "stream": "record",
-        "summary_expression": "AWS Bedrock Model Invocation Logging Configuration Change Observed by {{user_username}} from IP {{device_ip}}",
+        "summary_expression": "AWS Bedrock Model Invocation Logging Configuration Change Observed by {{user_username}} from IP {{srcDevice_ip}}",
         "tags": [
             "_mitreAttackTactic:TA0005",
             "_mitreAttackTechnique:T1685.002"
@@ -68900,6 +68665,7 @@
         "product_direct_ref": [],
         "product_guids": [
             "033624b0-218e-4dcb-b93f-0f1fb1806c56",
+            "05bfaf47-5e21-4d5f-b724-98960a6fca8a",
             "0b45ccba-20b4-41e4-973d-b50fd291944d",
             "0e20c932-d992-4bd4-b276-c15119ca5c0b",
             "153794da-09e8-48fe-b511-1306fbb94d07",
@@ -69798,6 +69564,7 @@
             "0fb003bc-8383-442f-8f3d-afcfbaefe617",
             "168afd8d-2893-4c74-95b1-a975d576ea56",
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
+            "37C866BF-72E1-470A-9072-EDB908F56951",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "5ba50e74-3c05-4ea8-aeaf-5efde588c60f",
@@ -70158,8 +69925,7 @@
         "pattern_type": "templated_match",
         "product_direct_ref": [],
         "product_guids": [
-            "d0aebc1c-db4d-440f-b69f-70dae24befff",
-            "f0b1b7b9-9ad0-4e19-bdc2-1e94885336d9"
+            "d0aebc1c-db4d-440f-b69f-70dae24befff"
         ],
         "record_type_direct_ref": [],
         "rule_description": "",
@@ -70270,8 +70036,7 @@
         "product_guids": [
             "5bb8e745-453b-47c3-bda4-f690249a6333",
             "65208a2a-2e20-4985-bb7f-f9b7cca8e2b0",
-            "d0aebc1c-db4d-440f-b69f-70dae24befff",
-            "f0b1b7b9-9ad0-4e19-bdc2-1e94885336d9"
+            "d0aebc1c-db4d-440f-b69f-70dae24befff"
         ],
         "record_type_direct_ref": [],
         "rule_description": "",
@@ -70381,8 +70146,7 @@
         "product_direct_ref": [],
         "product_guids": [
             "13a22bad-dad0-4f63-8339-c3d79e81f4b0",
-            "d0aebc1c-db4d-440f-b69f-70dae24befff",
-            "f0b1b7b9-9ad0-4e19-bdc2-1e94885336d9"
+            "d0aebc1c-db4d-440f-b69f-70dae24befff"
         ],
         "record_type_direct_ref": [],
         "rule_description": "",
@@ -70630,8 +70394,8 @@
             "user_username"
         ],
         "category": "Execution",
-        "commit_message": "TLAB-2384: AI Campaign Rules and Test Cases (#5957)",
-        "commit_origin_hash": "c67d2aa214ed689494d36064e490c343c4ffe6f7",
+        "commit_message": "TLAB-2625: Disable silent_mode for 11 rules (#5984)",
+        "commit_origin_hash": "ff8fc4be386672c8c4167e835508d09929962595",
         "content_type": "RULE",
         "description_expression": "Detection:\nThis rule triggers when a Node.js process with 'openclaw' in its command line spawns shell interpreters such bash, zsh, sh, PowerShell or python. It monitors process creation events to identify when OpenClaw's shell integration features actively execute system commands. Command lines associated with ip neighbor discovery are excluded as these can be a normal part of OpenClaw operation.\n\nScenario:\nOpenClaw's shell integration allows executing system commands, creating elevated risk compared to passive code generation. Shell spawning indicates active execution features being used, potentially exfiltrating source code, accessing sensitive files, or modifying configurations. Best practice configuration suggests all agent processes run in a  sandbox.\n\nRecommended Actions:\nReview device_hostname to identify the user, check parentCommandLine to understand the OpenClaw command, and examine baseImage for the shell type. Check endpoint logs for executed commands (file access, network connections, scripts), then if unauthorized, terminate OpenClaw and review what commands were executed. Review whether OpenClaw is configured such that agent processes are run in a sandbox: https://docs.openclaw.ai/gateway/sandboxing\n\nTuning Recommendations:\nExclude command lines for legitimate shell use by the OpenClaw gateway process.",
         "enabled_by_default": true,
@@ -70678,7 +70442,7 @@
             "mapping": [],
             "type": "constant"
         },
-        "silent_mode": true,
+        "silent_mode": false,
         "stream": "record",
         "summary_expression": "OpenClaw process on {{device_hostname}} launched shell {{baseImage}}",
         "tags": [
@@ -70694,8 +70458,8 @@
             "http_response_statusText"
         ],
         "category": "Unknown/Other",
-        "commit_message": "TLAB-2384: AI Campaign Rules and Test Cases (#5957)",
-        "commit_origin_hash": "c67d2aa214ed689494d36064e490c343c4ffe6f7",
+        "commit_message": "TLAB-2625: Disable silent_mode for 11 rules (#5984)",
+        "commit_origin_hash": "ff8fc4be386672c8c4167e835508d09929962595",
         "content_type": "RULE",
         "description_expression": "Detection:\nThis rule triggers when a websocket connection to TCP port 18789 returns HTTP status 'Switching Protocols', indicating websocket handshake. Port 18789 is OpenClaw's default local server port, providing detection of active OpenClaw usage.\n\nScenario:\nOpenClaw may be disallowed or tightly controlled in the organization. If a user installs OpenClaw on a device outside of IT control there may not be any telemetry on the device and network telemetry will be needed to detect unsanctioned installations. \n\nRecommended Actions:\nConfirm OpenClaw is running on dstDevice_ip by checking for node processes on port 18789, then review network logs for external service communications (OpenAI, Anthropic). If unauthorized, terminate the process, remove the installation, block port 18789 at the firewall, and assess what code was processed.\n\nTuning Recommendations:\nCreate match list 'authorized_openclaw_devices' for permitted systems or other known services using port 18789.",
         "enabled_by_default": true,
@@ -70738,7 +70502,7 @@
             "mapping": [],
             "type": "constant"
         },
-        "silent_mode": true,
+        "silent_mode": false,
         "stream": "record",
         "summary_expression": "OpenClaw websocket connection detected on port 18789 to {{dstDevice_ip}}",
         "tags": [
@@ -70758,8 +70522,8 @@
             "user_username_role"
         ],
         "category": "Persistence",
-        "commit_message": "TLAB-2384: AI Campaign Rules and Test Cases (#5957)",
-        "commit_origin_hash": "c67d2aa214ed689494d36064e490c343c4ffe6f7",
+        "commit_message": "TLAB-2625: Disable silent_mode for 11 rules (#5984)",
+        "commit_origin_hash": "ff8fc4be386672c8c4167e835508d09929962595",
         "content_type": "RULE",
         "description_expression": "Detection:\nThis rule triggers when Bedrock IAM permissions are granted through: (1) attachment of managed policies (AmazonBedrockFullAccess, AmazonBedrockStudioFullAccess), (2) creation of policies containing Bedrock actions, or (3) inline policy assignments. It monitors high-risk actions including model invocation, AI agent creation, guardrail deletion, logging configuration changes, knowledge base creation, and provisioned throughput allocation.\n\nScenario:\nAn attacker with IAM permissions escalates privileges by granting Bedrock access to themselves or compromised roles, enabling model invocation, AI agent creation, guardrail bypass, logging deletion, data exfiltration via knowledge bases, or cryptomining through expensive compute resources. Legitimate Bedrock provisioning may require similar permissions, making this a potential indicator of either authorized activity or privilege escalation.\n\nRecommended Actions:\nVerify the permission grant aligns with authorized Bedrock provisioning by reviewing user_username, srcDevice_ip, and timing against normal business hours. For inline policies, review policyDocument for overly permissive actions (bedrock:* wildcards), then if unauthorized, detach the policy immediately, rotate credentials, and check CloudTrail for any Bedrock API calls using the newly granted permissions.\n\nTuning Recommendations:\nThe rule excludes AWS service-linked roles. Create match list 'authorized_bedrock_provisioning_accounts' for users or roles that regularly provision Bedrock permissions, and adjust monitored Bedrock actions based on your organization's risk tolerance.",
         "enabled_by_default": true,
@@ -70804,7 +70568,7 @@
             "mapping": [],
             "type": "constant"
         },
-        "silent_mode": true,
+        "silent_mode": false,
         "stream": "record",
         "summary_expression": "Privileged AWS Bedrock permissions granted: {{action}} performed by {{user_username}}",
         "tags": [
@@ -70824,8 +70588,8 @@
             "user_username"
         ],
         "category": "Persistence",
-        "commit_message": "TLAB-2384: AI Campaign Rules and Test Cases (#5957)",
-        "commit_origin_hash": "c67d2aa214ed689494d36064e490c343c4ffe6f7",
+        "commit_message": "TLAB-2625: Disable silent_mode for 11 rules (#5984)",
+        "commit_origin_hash": "ff8fc4be386672c8c4167e835508d09929962595",
         "content_type": "RULE",
         "description_expression": "Detection:\nThis rule triggers when a file matching *.openclaw*skills*.md is created by a process whose base image is not \"node\" (the standard OpenClaw runtime). It monitors Sysmon FileCreate events and flags skill file writes that occur outside the official openclaw or clawhub installer processes.\n\nScenario:\nOpenClaw loads skill configuration files from its skills directory to extend its capabilities. An adversary with filesystem access could plant malicious skill files out-of-band \u2014 using any process other than node \u2014 to establish persistence, having OpenClaw execute attacker-controlled logic whenever a matching query is processed without triggering standard installation monitoring.\n\nRecommended Actions:\nInvestigate device_hostname and baseImage to identify what process created the skill file, then inspect changeTarget to determine which skill was installed and review its contents for malicious instructions. Verify whether the write was authorized by the system owner.\n\nTuning Recommendations:\nCreate match list 'authorized_openclaw_skill_writers' for any legitimate processes that write skill files outside of node (e.g., configuration management or backup agents).",
         "enabled_by_default": true,
@@ -70872,7 +70636,7 @@
             "mapping": [],
             "type": "constant"
         },
-        "silent_mode": true,
+        "silent_mode": false,
         "stream": "record",
         "summary_expression": "Out-of-band OpenClaw skill installation detected on {{device_hostname}} by user {{user_username}}  via process {{baseImage}}",
         "tags": [
@@ -70892,8 +70656,8 @@
             "user_username"
         ],
         "category": "Unknown/Other",
-        "commit_message": "TLAB-2589: new copyfail rules and laurel mapper updates (#5973)",
-        "commit_origin_hash": "69ed844f2269e9e4c262049e04cd6b0f81f88417",
+        "commit_message": "TLAB-2625: Disable silent_mode for 11 rules (#5984)",
+        "commit_origin_hash": "ff8fc4be386672c8c4167e835508d09929962595",
         "content_type": "RULE",
         "description_expression": "Detection:\nA unprivileged process on a Linux host opened a socket using the kernel cryptographic API subsystem, \n\nScenario:\nAn unprivileged local user may be attempting to exploit CVE-2026-31431 (CopyFail), a high-severity Linux kernel vulnerability in the cryptographic subsystem that enables root access on affected systems.\n\nRequirements:\nThis rule is specific to Laurel Linux Audit logs.\n\nRecommended Actions:\nReview the process and user to determine whether this activity is a legitimate use of the kernel cryptographic API. if not, investigate any follow-on commands or processes that may indicate successful privilege escalation.\n\nTuning Recommendations:\nIf known-legitimate applications in your environment use the kernel cryptographic API, add their process paths to a match list and exclude them using the baseImage field.",
         "enabled_by_default": true,
@@ -70938,7 +70702,7 @@
             "mapping": [],
             "type": "constant"
         },
-        "silent_mode": true,
+        "silent_mode": false,
         "stream": "record",
         "summary_expression": "User {{user_username}}  opened an AF_ALG socket via process {{baseImage}}",
         "tags": [],
@@ -70958,8 +70722,8 @@
             "user_username"
         ],
         "category": "Unknown/Other",
-        "commit_message": "TLAB-2589: new copyfail rules and laurel mapper updates (#5973)",
-        "commit_origin_hash": "69ed844f2269e9e4c262049e04cd6b0f81f88417",
+        "commit_message": "TLAB-2625: Disable silent_mode for 11 rules (#5984)",
+        "commit_origin_hash": "ff8fc4be386672c8c4167e835508d09929962595",
         "content_type": "RULE",
         "description_expression": "Detection:\nA user executed a program as root on a Linux host while the originating login session belongs to an unprivileged user, which is inconsistent with legitimate privilege escalation workflows.\n\nScenario:\nAn attacker who has obtained local code execution may have exploited a privilege escalation vulnerability such as CVE-2026-31431 (CopyFail) to gain root access, then launched a privileged shell or command to establish a foothold.\n\nRequirements:\nProcess monitoring must be logged on Linux endpoints for this rule to function.\n\nRecommended Actions:\nInvestigate the process identified in baseImage and the parent process in parentBaseImage. Review the originating login session  for signs of compromise and check for follow-on persistence mechanisms such as new cron jobs, SSH keys, or modified service definitions.\n\nTuning Recommendations:\nIf additional setuid binaries in your environment legitimately produce root processes from unprivileged sessions, add their paths to the exclusion list in the rule expression using the baseImage or parentBaseImage fields.",
         "enabled_by_default": true,
@@ -71002,7 +70766,7 @@
             "mapping": [],
             "type": "constant"
         },
-        "silent_mode": true,
+        "silent_mode": false,
         "stream": "record",
         "summary_expression": "Process {{baseImage}} executed as root from unprivileged user {{user_username}}",
         "tags": [],
@@ -72001,6 +71765,7 @@
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
             "dcc85cfc-a698-4d09-87de-f2c723f3ad07",
             "e90edc67-68d4-4d67-82f6-4524f94b59bb",
+            "ede052db-d472-408f-949c-be642237ef3f",
             "fca8785d-4823-4442-86b2-8acbaa176da4"
         ],
         "record_type_direct_ref": [],
@@ -74943,17 +74708,16 @@
     "THRESHOLD-S00051": {
         "all_fields": [
             "device_hostname",
-            "device_ip",
             "fields['errorCode']",
             "metadata_product",
             "metadata_vendor",
             "srcDevice_ip",
             "user_username"
         ],
-        "asset_field": "device_ip",
+        "asset_field": "srcDevice_ip",
         "category": "Initial Access",
-        "commit_message": "Remove old group_field from rules",
-        "commit_origin_hash": "227e0b047e96bc3d9b2fb46750aa0262c48e2dcb",
+        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
+        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
         "content_type": "RULE",
         "count_distinct": true,
         "count_field": "action",
@@ -74965,10 +74729,6 @@
                 "expression": "device_hostname"
             },
             {
-                "entity_type": "_ip",
-                "expression": "device_ip"
-            },
-            {
                 "entity_type": "_username",
                 "expression": "user_username"
             },
@@ -74977,7 +74737,7 @@
                 "expression": "srcDevice_ip"
             }
         ],
-        "expression": "metadata_vendor = 'Amazon AWS'\nAND metadata_product = 'CloudTrail'\nAND fields['errorCode'] = 'AccessDenied'\nAND fields['userIdentity.arn']  like '%:iam:%'\nAND device_ip != 'AWS Internal'\nAND device_ip not like '%.amazonaws.com'",
+        "expression": "metadata_vendor = 'Amazon AWS'\nAND metadata_product = 'CloudTrail'\nAND fields['errorCode'] = 'AccessDenied'\nAND fields['userIdentity.arn']  like '%:iam:%'\nAND srcDevice_ip != 'AWS Internal'\nAND srcDevice_ip not like '%.amazonaws.com'",
         "file_path": "rules_v3/AWS_CloudTrail_Unauthorized_API_calls.json",
         "group_by_fields": [],
         "id": 51,
@@ -75983,6 +75743,7 @@
             "be4f7473-fe69-4311-8859-3561900060bf",
             "c3c1a4fc-10cc-4155-8a30-a3bb14fc9f31",
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
+            "cf2af9e8-bade-4f28-8bca-b30aa41baec4",
             "da9e05a5-3fd3-46a7-a107-ae03c01e3f5a"
         ],
         "record_type_direct_ref": [],
@@ -76686,7 +76447,6 @@
         "all_fields": [
             "action",
             "device_hostname",
-            "device_ip",
             "metadata_product",
             "metadata_vendor",
             "srcDevice_hostname",
@@ -76695,8 +76455,8 @@
         ],
         "asset_field": "device_hostname",
         "category": "Discovery",
-        "commit_message": "Remove old group_field from rules",
-        "commit_origin_hash": "227e0b047e96bc3d9b2fb46750aa0262c48e2dcb",
+        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
+        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
         "content_type": "RULE",
         "count_distinct": true,
         "count_field": "action",
@@ -76706,10 +76466,6 @@
             {
                 "entity_type": "_hostname",
                 "expression": "device_hostname"
-            },
-            {
-                "entity_type": "_ip",
-                "expression": "device_ip"
             },
             {
                 "entity_type": "_ip",
@@ -76772,7 +76528,6 @@
         "all_fields": [
             "action",
             "device_hostname",
-            "device_ip",
             "metadata_product",
             "metadata_vendor",
             "srcDevice_hostname",
@@ -76781,8 +76536,8 @@
         ],
         "asset_field": "device_hostname",
         "category": "Discovery",
-        "commit_message": "Remove old group_field from rules",
-        "commit_origin_hash": "227e0b047e96bc3d9b2fb46750aa0262c48e2dcb",
+        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
+        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
         "content_type": "RULE",
         "count_distinct": true,
         "count_field": "action",
@@ -76792,10 +76547,6 @@
             {
                 "entity_type": "_hostname",
                 "expression": "device_hostname"
-            },
-            {
-                "entity_type": "_ip",
-                "expression": "device_ip"
             },
             {
                 "entity_type": "_ip",
@@ -77145,6 +76896,7 @@
             "acb7e80e-2b66-496c-ba2e-1e7c3933a98e",
             "b0a0ae6d-dd5b-450c-9d68-36d6c61c67b0",
             "b0fe0dde-4e19-4712-957b-1ea7418c132e",
+            "b32a58b9-8bfd-4b1d-8b68-91611fe5c37e",
             "be4f7473-fe69-4311-8859-3561900060bf",
             "c3954250-68a0-49c3-ab6a-ef0daa95ff90",
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
@@ -77826,7 +77578,6 @@
     "THRESHOLD-S00106": {
         "all_fields": [
             "action",
-            "device_ip",
             "metadata_product",
             "metadata_vendor",
             "srcDevice_ip",
@@ -77834,8 +77585,8 @@
         ],
         "asset_field": "srcDevice_ip",
         "category": "Discovery",
-        "commit_message": "Remove old group_field from rules",
-        "commit_origin_hash": "227e0b047e96bc3d9b2fb46750aa0262c48e2dcb",
+        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
+        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
         "content_type": "RULE",
         "count_distinct": true,
         "count_field": "action",
@@ -77845,10 +77596,6 @@
             {
                 "entity_type": "_ip",
                 "expression": "srcDevice_ip"
-            },
-            {
-                "entity_type": "_ip",
-                "expression": "device_ip"
             },
             {
                 "entity_type": "_username",
@@ -77901,7 +77648,6 @@
     "THRESHOLD-S00107": {
         "all_fields": [
             "action",
-            "device_ip",
             "metadata_product",
             "metadata_vendor",
             "srcDevice_ip",
@@ -77909,8 +77655,8 @@
         ],
         "asset_field": "srcDevice_ip",
         "category": "Discovery",
-        "commit_message": "Remove old group_field from rules",
-        "commit_origin_hash": "227e0b047e96bc3d9b2fb46750aa0262c48e2dcb",
+        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
+        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
         "content_type": "RULE",
         "count_distinct": true,
         "count_field": "action",
@@ -77920,10 +77666,6 @@
             {
                 "entity_type": "_ip",
                 "expression": "srcDevice_ip"
-            },
-            {
-                "entity_type": "_ip",
-                "expression": "device_ip"
             },
             {
                 "entity_type": "_username",
@@ -78579,8 +78321,8 @@
             "user_username"
         ],
         "category": "Unknown/Other",
-        "commit_message": "TLAB-2384: AI Campaign Rules and Test Cases (#5957)",
-        "commit_origin_hash": "c67d2aa214ed689494d36064e490c343c4ffe6f7",
+        "commit_message": "TLAB-2625: Disable silent_mode for 11 rules (#5984)",
+        "commit_origin_hash": "ff8fc4be386672c8c4167e835508d09929962595",
         "content_type": "RULE",
         "count_distinct": false,
         "count_field": null,
@@ -78621,7 +78363,7 @@
         "rule_description": "",
         "rule_source": "sumo",
         "score": 3,
-        "silent_mode": true,
+        "silent_mode": false,
         "stream": "record",
         "summary_expression": "Rapid AWS Bedrock Guardrail interventions have been triggered  for {{user_username}}",
         "tags": [
@@ -78642,8 +78384,8 @@
             "user_username_role"
         ],
         "category": "Impact",
-        "commit_message": "TLAB-2384: AI Campaign Rules and Test Cases (#5957)",
-        "commit_origin_hash": "c67d2aa214ed689494d36064e490c343c4ffe6f7",
+        "commit_message": "TLAB-2625: Disable silent_mode for 11 rules (#5984)",
+        "commit_origin_hash": "ff8fc4be386672c8c4167e835508d09929962595",
         "content_type": "RULE",
         "count_distinct": true,
         "count_field": "resource",
@@ -78688,7 +78430,7 @@
         "rule_description": "",
         "rule_source": "sumo",
         "score": 2,
-        "silent_mode": true,
+        "silent_mode": false,
         "stream": "record",
         "summary_expression": "User {{user_username}} from IP {{srcDevice_ip}} deleted multiple AWS Bedrock Knowledge Bases rapidly",
         "tags": [

@@ -8,7 +8,7 @@ This event sourced from AWS OpsWorks occurs rarely.  It could indicate that an a
 |----|----|
 |Type|Templated Match|
 |Category|Discovery|
-|Apply Risk to Entities|device_hostname, device_ip, user_username, srcDevice_ip|
+|Apply Risk to Entities|device_hostname, user_username, srcDevice_ip|
 |Signal Name|AWS CloudTrail - OpsWorks Describe Permissions Event|
 |Summary Expression|{{action}} performed by user: {{user_username}}|
 |Score/Severity|Static: 2|
@@ -25,7 +25,6 @@ This event sourced from AWS OpsWorks occurs rarely.  It could indicate that an a
 |----|----|
 |Normalized Schema|action|
 |Normalized Schema|device_hostname|
-|Normalized Schema|device_ip|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|
 |Normalized Schema|srcDevice_ip|

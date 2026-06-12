@@ -8,7 +8,7 @@ This signal fires for all observances of the CreateUser action in the IAM event 
 |----|----|
 |Type|Templated Match|
 |Category|Persistence|
-|Apply Risk to Entities|device_hostname, device_ip, user_username, srcDevice_ip|
+|Apply Risk to Entities|device_hostname, user_username, srcDevice_ip|
 |Signal Name|AWS CloudTrail - IAM CreateUser Action Observed|
 |Summary Expression|User {{changeTarget}} created by user: {{user_username}}|
 |Score/Severity|Static: 2|
@@ -25,7 +25,6 @@ This signal fires for all observances of the CreateUser action in the IAM event 
 |----|----|
 |Normalized Schema|action|
 |Normalized Schema|device_hostname|
-|Normalized Schema|device_ip|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|
 |Normalized Schema|srcDevice_ip|

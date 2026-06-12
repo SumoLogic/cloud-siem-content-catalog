@@ -8,7 +8,7 @@ Detects various describe and/or list commands used for an image in AWS.
 |----|----|
 |Type|Threshold|
 |Category|Discovery|
-|Apply Risk to Entities|srcDevice_ip, device_ip, user_username|
+|Apply Risk to Entities|srcDevice_ip, user_username|
 |Signal Name|AWS Image Discovery|
 |Summary Expression|AWS Image Discovery Detected with IP: {{srcDevice_ip}} and User: {{user_username}}|
 |Threshold Count|3|
@@ -26,7 +26,6 @@ Detects various describe and/or list commands used for an image in AWS.
 |Origin|Field|
 |----|----|
 |Normalized Schema|action|
-|Normalized Schema|device_ip|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|
 |Normalized Schema|srcDevice_ip|

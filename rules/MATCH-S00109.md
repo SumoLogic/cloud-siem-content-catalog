@@ -8,7 +8,7 @@ A Permissions Boundary was lifted against an IAM User or Role. This unusual acti
 |----|----|
 |Type|Templated Match|
 |Category|Privilege Escalation|
-|Apply Risk to Entities|device_hostname, device_ip, user_username, srcDevice_ip|
+|Apply Risk to Entities|device_hostname, user_username, srcDevice_ip|
 |Signal Name|AWS CloudTrail - Permissions Boundary Lifted|
 |Summary Expression|{{action}} performed by user: {{user_username}} on user: {{changeTarget}}|
 |Score/Severity|Static: 3|
@@ -25,7 +25,6 @@ A Permissions Boundary was lifted against an IAM User or Role. This unusual acti
 |----|----|
 |Normalized Schema|action|
 |Normalized Schema|device_hostname|
-|Normalized Schema|device_ip|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|
 |Normalized Schema|srcDevice_ip|
