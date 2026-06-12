@@ -8,7 +8,7 @@ New Container Uploaded to AWS ECR
 |----|----|
 |Type|Templated Match|
 |Category|Defense Evasion|
-|Apply Risk to Entities|device_hostname, device_ip, user_username, srcDevice_ip|
+|Apply Risk to Entities|device_hostname, user_username, srcDevice_ip|
 |Signal Name|New Container Uploaded to AWS ECR|
 |Summary Expression|Action: {{action}} performed by user: {{user_username}} from IP: {{srcDevice_ip}}|
 |Score/Severity|Static: 2|
@@ -24,7 +24,6 @@ New Container Uploaded to AWS ECR
 |Origin|Field|
 |----|----|
 |Normalized Schema|device_hostname|
-|Normalized Schema|device_ip|
 |Direct from Record|fields['userIdentity.type']|
 |Normalized Schema|http_userAgent|
 |Normalized Schema|metadata_deviceEventId|

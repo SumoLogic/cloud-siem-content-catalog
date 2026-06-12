@@ -8,7 +8,7 @@ Changing the configuration of logging to any mission-critical service or platfor
 |----|----|
 |Type|Templated Match|
 |Category|Execution|
-|Apply Risk to Entities|device_hostname, device_ip, user_username, srcDevice_ip|
+|Apply Risk to Entities|device_hostname, user_username, srcDevice_ip|
 |Signal Name|AWS CloudTrail - Logging Configuration Change Observed|
 |Summary Expression|{{action}} performed by user: {{user_username}}|
 |Score/Severity|Dynamic: 1 or 2 or 4|
@@ -38,7 +38,6 @@ The default score of `1` is used as a catch all if none of the translations are 
 |Origin|Field|
 |----|----|
 |Normalized Schema|device_hostname|
-|Normalized Schema|device_ip|
 |Normalized Schema|metadata_deviceEventId|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|

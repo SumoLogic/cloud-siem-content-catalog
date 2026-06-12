@@ -1,10 +1,79 @@
 "vendor_direct_ref","product_direct_ref","rule_id","type","category","enabled_by_default","prototype_enabled","record_type_direct_ref","tags","name","description"
 "","","MATCH-S00458","templated_match","Credential Access","True","False","","_mitreAttackTactic:TA0006, _mitreAttackTechnique:T1003, _mitreAttackTechnique:T1552, _mitreAttackTechnique:T1552.006, _mitreAttackTechnique:T1003.005","ADPassHunt Tool","From FireEye Red Team Tool Countermeasures:
 This IOC detects indicators associated with the ADPassHunt Tool. This tool is used to hunt for AD credentials and used via execute-assembly that looks for passwords in GPP, Autoruns and AD objects"
+"Laurel","Laurel Linux Audit","MATCH-S01153","templated_match","Unknown/Other","True","False","","","AF_ALG Socket Opened by Unprivileged Process","Detection:
+A unprivileged process on a Linux host opened a socket using the kernel cryptographic API subsystem, 
+
+Scenario:
+An unprivileged local user may be attempting to exploit CVE-2026-31431 (CopyFail), a high-severity Linux kernel vulnerability in the cryptographic subsystem that enables root access on affected systems.
+
+Requirements:
+This rule is specific to Laurel Linux Audit logs.
+
+Recommended Actions:
+Review the process and user to determine whether this activity is a legitimate use of the kernel cryptographic API. if not, investigate any follow-on commands or processes that may indicate successful privilege escalation.
+
+Tuning Recommendations:
+If known-legitimate applications in your environment use the kernel cryptographic API, add their process paths to a match list and exclude them using the baseImage field."
 "","","MATCH-S00922","templated_match","Discovery","True","False","","_mitreAttackTactic:TA0007, _mitreAttackTechnique:T1526","AWS Bedrock Agent Created","This rule detects when an AWS Bedrock Agent has been created in the environment. Bedrock Agents can be configured with various parameters to build AI applications. Take a look at the ""responseElements.agent.agentName"" field to see the name of the agent being created. Ensure that the user creating the agent is authorized to develop AI applications within the environment."
 "","","MATCH-S00924","templated_match","Defense Evasion","True","False","","_mitreAttackTactic:TA0005, _mitreAttackTechnique:T1685","AWS Bedrock Guardrail Deleted","AWS Bedrock Guardrails provide users with the ability to configure options like filtering out harmful content or defining denied topics for models. Guardrails also allow the blocking of sensitive information such as PII. Ensure that this deletion was performed by an authorized user during an expected change. Look at other activity from this user account, focusing on the Bedrock service and pivoting from there if the event is deemed suspicious."
+"Amazon AWS","CloudTrail","FIRST-S00101","first_seen","Unknown/Other","True","False","","_mitreAtlasTechnique:AML.T0070, _mitreAtlasTactic:AML.TA0006","AWS Bedrock - KB Data Source from External S3 Bucket","Detection:
+This rule triggers when an S3 bucket from an external AWS account is added to a Bedrock Knowledge Base via UpdateDataSource or CreateDataSource API calls in which the external AWS account hasn't been observed in the last 90 days.
+
+Scenario:
+An attacker with Bedrock permissions may poison a RAG system by adding data sources from an external AWS account they control, injecting malicious content into the knowledge base without compromising the organization's S3 buckets. This RAG poisoning technique enables data manipulation, misinformation injection, or credential harvesting through malicious AI responses.
+
+Recommended Actions:
+Verify the cross-account bucket addition is authorized by reviewing user_username and checking if bucketOwnerAccountId belongs to your organization or a trusted partner. If unauthorized, remove the external data source immediately, revoke IAM permissions, and audit all Knowledge Base configurations for additional modifications.
+
+Tuning Recommendations:
+Create a match list named 'authorized_bedrock_external_accounts' containing trusted AWS account IDs for cross-account data sharing. For organizations that never use cross-account S3 buckets with Bedrock, this rule can run without exclusions."
+"Amazon AWS","","THRESHOLD-S00125","threshold","Impact","True","False","","_mitreAttackTechnique:T1485, _mitreAttackTactic:TA0040","AWS Bedrock - Knowledge Base Mass Deletion","Detection:
+This rule triggers when a user deletes multiple AWS Bedrock Knowledge Bases within a short time period from the same source IP address. It monitors CloudTrail logs for successful DeleteKnowledgeBase API calls and excludes AWS service-linked roles,
+
+Scenario:
+An attacker who has gained access to an AWS account may attempt to disrupt AI/ML operations by mass-deleting Bedrock Knowledge Bases containing critical business data and embeddings. This destructive action causes immediate service disruption and potential data loss, requiring time-consuming restoration from backups or complete re-indexing of knowledge bases.
+
+Recommended Actions:
+Verify deletions were authorized by reviewing user_username and srcDevice_ip against known administrative activity, then check requestParameters.knowledgeBaseId to assess the scope. If unauthorized, contact the account owner to confirm and assess whether backups are needed for restoration.
+
+Tuning Recommendations:
+Create a match list named 'authorized_automation_accounts' for legitimate automation accounts performing bulk knowledge base management. Adjust the threshold from 3 to a higher value if your environment regularly performs legitimate bulk deletions during maintenance windows."
 "","","MATCH-S00923","templated_match","Discovery","True","False","","_mitreAttackTactic:TA0007, _mitreAttackTechnique:T1526","AWS Bedrock Model Invocation Denied for User","A user has attempted to invoke a model via AWS Bedrock for which access was denied due to a permission issue. This event can be a normal occurrence for a user who has not been provisioned the proper IAM resources for AWS Bedrock. However, it could also be a malicious attempt at running a particular model via AWS Bedrock. Take a look at the username, IP address, role type, role and model via the fields[""requestParameters.modelId""] field."
 "","","MATCH-S00921","templated_match","Defense Evasion","True","False","","_mitreAttackTactic:TA0005, _mitreAttackTechnique:T1685.002","AWS Bedrock Model Invocation Logging Configuration Change Observed","An AWS Bedrock Model invocation logging configuration change was observed. Ensure that this activity is expected and authorized. Take a look at the full event details, particularly the requestParameters.loggingConfig* fields in order to see what specific configuration values were changed. Telemetry and logging configuration changes should be a relatively rare occurrence in the environment."
+"Amazon AWS","CloudTrail","MATCH-S01151","templated_match","Persistence","True","False","","_mitreAttackTechnique:T1098.003, _mitreAttackTactic:TA0003","AWS Bedrock - Privileged Permissions Granted","Detection:
+This rule triggers when Bedrock IAM permissions are granted through: (1) attachment of managed policies (AmazonBedrockFullAccess, AmazonBedrockStudioFullAccess), (2) creation of policies containing Bedrock actions, or (3) inline policy assignments. It monitors high-risk actions including model invocation, AI agent creation, guardrail deletion, logging configuration changes, knowledge base creation, and provisioned throughput allocation.
+
+Scenario:
+An attacker with IAM permissions escalates privileges by granting Bedrock access to themselves or compromised roles, enabling model invocation, AI agent creation, guardrail bypass, logging deletion, data exfiltration via knowledge bases, or cryptomining through expensive compute resources. Legitimate Bedrock provisioning may require similar permissions, making this a potential indicator of either authorized activity or privilege escalation.
+
+Recommended Actions:
+Verify the permission grant aligns with authorized Bedrock provisioning by reviewing user_username, srcDevice_ip, and timing against normal business hours. For inline policies, review policyDocument for overly permissive actions (bedrock:* wildcards), then if unauthorized, detach the policy immediately, rotate credentials, and check CloudTrail for any Bedrock API calls using the newly granted permissions.
+
+Tuning Recommendations:
+The rule excludes AWS service-linked roles. Create match list 'authorized_bedrock_provisioning_accounts' for users or roles that regularly provision Bedrock permissions, and adjust monitored Bedrock actions based on your organization's risk tolerance."
+"Amazon AWS","CloudTrail","CHAIN-S00026","chain","Persistence","True","False","","_mitreAttackTactic:TA0003, _mitreAttackTechnique:T1098.003","AWS Bedrock - Privileged Policy Created and Attached","Detection:
+This rule triggers when Bedrock IAM permissions are granted through the creation and attachment of an IAM policy with privileged Bedrock permissions including model invocation, AI agent creation, guardrail deletion, logging configuration changes, knowledge base creation, and provisioned throughput allocation.
+
+Scenario:
+An attacker with IAM permissions escalates privileges by granting Bedrock access to themselves or compromised roles, enabling model invocation, AI agent creation, guardrail bypass, logging deletion, data exfiltration via knowledge bases, or cryptomining through expensive compute resources. Legitimate Bedrock provisioning may require similar permissions, making this a potential indicator of either authorized activity or privilege escalation.
+
+Recommended Actions:
+Verify the permission grant aligns with authorized Bedrock provisioning by reviewing user_username, srcDevice_ip, and timing against normal business hours. For inline policies, review policyDocument for overly permissive actions (bedrock:* wildcards), then if unauthorized, detach the policy immediately, rotate credentials, and check CloudTrail for any Bedrock API calls using the newly granted permissions.
+
+Tuning Recommendations:
+The rule excludes AWS service-linked roles. Create match list 'authorized_bedrock_provisioning_accounts' for users or roles that regularly provision Bedrock permissions, and adjust monitored Bedrock actions based on your organization's risk tolerance."
+"","","THRESHOLD-S00124","threshold","Unknown/Other","True","False","","_mitreAtlasTactic:AML.TA0012, _mitreAtlasTechnique:AML.T0054","AWS Bedrock - Rapid Guardrail Interventions","Detection:
+This rule triggers when 10 or more Bedrock Guardrail interventions occur within 60 seconds for a user. It monitors CloudWatch logs where stopReason equals 'guardrail_intervened', indicating the guardrail blocked model responses that violated content policies.
+
+Scenario:
+An attacker or unauthorized user may attempt to jailbreak Bedrock models by rapidly probing guardrail boundaries to find policy bypass techniques. High intervention rates indicate potential jailbreak attempts, unsanctioned model use, or automated attacks testing content filtering limits.
+
+Recommended Actions:
+Review user_username to identify the account generating interventions and verify their authorization to use Bedrock. Examine the CloudWatch logs to determine the nature of blocked prompts and assess whether this represents malicious jailbreak attempts or legitimate boundary testing.
+
+Tuning Recommendations:
+Adjust the threshold from 10 to a higher value if legitimate users frequently test guardrail boundaries during development or QA activities. Exclude known test accounts performing authorized red team exercises or model evaluation testing."
 "","","AGGREGATION-S00002","aggregation","Discovery","True","True","","_mitreAttackTactic:TA0007, _mitreAttackTechnique:T1069, _mitreAttackTechnique:T1087, _mitreAttackTechnique:T1069.003, _mitreAttackTechnique:T1087.004","AWS CloudTrail - Aggressive Reconnaissance","This signal identifies when a large variety of different AWS CloudTrail event ids are observed in a short period of time.  The event id's are generally related to reconnaissance.  This signal can indicate that an aggressive scan of AWS resources is underway."
 "Amazon AWS","CloudTrail","MATCH-S00261","templated_match","Exfiltration","True","False","","_mitreAttackTechnique:T1578, _mitreAttackTechnique:T1578.001, _mitreAttackTactic:TA0112","AWS CloudTrail - Database Snapshot Created","Creating DB snapshots is an efficient way for an attacker to begin downloading a targets database.  These signals should be considered around the context of other signals that may indicate data theft is in progress."
 "Amazon AWS","CloudTrail","MATCH-S00208","templated_match","Execution","True","False","","_mitreAttackTactic:TA0006, _mitreAttackTechnique:T1552, _mitreAttackTechnique:T1552.004, _mitreAttackTechnique:T1552.005","AWS CloudTrail - EC2 Access Key Action Detected","Actions observed that create, import and delete access keys to EC2 could indicate an advisary is taking action on their objective to extend or otherwise manipulate access to EC2 instance(s)."
@@ -947,6 +1016,50 @@ Finding Origin: {{fields['metadata.product.name']}}"
 "Okta","","MATCH-S00636","templated_match","Privilege Escalation","True","False","","_mitreAttackTactic:TA0004, _mitreAttackTechnique:T1078, _mitreAttackTechnique:T1078.004, _mitreAttackTechnique:T1552.005, _mitreAttackTechnique:T1552","Okta User Attempted to Access Unauthorized App","Detect when an Okta user is denied access to an app."
 "OneLogin","","MATCH-S00605","templated_match","Unknown/Other","True","False","","_mitreAttackTactic:TA0002, _mitreAttackTechnique:T1106, _mitreAttackTechnique:T1552.005, _mitreAttackTechnique:T1552","OneLogin - API Credentials - New Key Created","Detects creation of API Keys. API Keys should be closely monitored to prevent unauthorized access."
 "OneLogin","","MATCH-S00609","templated_match","Credential Access","True","False","","_mitreAttackTactic:TA0006, _mitreAttackTechnique:T1111","OneLogin - Login Failed - MFA Unsuccessful","Detects the failure to authenticate due to a bad one time passcode (OTP)."
+"","","CHAIN-S00027","chain","Exfiltration","True","False","","_mitreAttackTactic:TA0010, _mitreAttackTechnique:T1041","OpenClaw - Outbound Connection from Child Process","Detection:
+This ordered chain rule triggers when a child process of an openclaw-gateway node process is created on a host followed within 5 minutes by an outbound network connection to an external IP from the same process on the same host, grouped by process ID and hostname. Command lines associated with ip neighbor discovery are excluded as these can be a normal part of OpenClaw operation.
+
+Scenario:
+OpenClaw's gateway process spawns child processes (shells, scripts) to execute system commands during code intelligence operations. When these child processes establish outbound connections to external IPs, it indicates potential data exfiltration — code, credentials, or other sensitive content being transmitted from the host via OpenClaw's execution capability.
+
+Recommended Actions:
+Investigate device_hostname and baseImage to identify the child process and user, then review dstDevice_ip to determine the external destination. Correlate with DNS logs and firewall records to assess what data may have been transmitted, and inspect OpenClaw skill files for injected commands.
+
+Tuning Recommendations:
+Create match list 'authorized_openclaw_external_destinations' for known legitimate external IPs contacted by OpenClaw child processes. Adjust the 5-minute correlation window if legitimate use cases show longer delays between process creation and network activity."
+"","","MATCH-S01149","templated_match","Execution","True","False","","_mitreAttackTactic:TA0002","OpenClaw - Shell Launch by Gateway","Detection:
+This rule triggers when a Node.js process with 'openclaw' in its command line spawns shell interpreters such bash, zsh, sh, PowerShell or python. It monitors process creation events to identify when OpenClaw's shell integration features actively execute system commands. Command lines associated with ip neighbor discovery are excluded as these can be a normal part of OpenClaw operation.
+
+Scenario:
+OpenClaw's shell integration allows executing system commands, creating elevated risk compared to passive code generation. Shell spawning indicates active execution features being used, potentially exfiltrating source code, accessing sensitive files, or modifying configurations. Best practice configuration suggests all agent processes run in a  sandbox.
+
+Recommended Actions:
+Review device_hostname to identify the user, check parentCommandLine to understand the OpenClaw command, and examine baseImage for the shell type. Check endpoint logs for executed commands (file access, network connections, scripts), then if unauthorized, terminate OpenClaw and review what commands were executed. Review whether OpenClaw is configured such that agent processes are run in a sandbox: https://docs.openclaw.ai/gateway/sandboxing
+
+Tuning Recommendations:
+Exclude command lines for legitimate shell use by the OpenClaw gateway process."
+"","","MATCH-S01152","templated_match","Persistence","True","False","","_mitreAttackTactic:TA0003, _mitreAttackTechnique:T1546","OpenClaw - Skill Installed Out-of-Band","Detection:
+This rule triggers when a file matching *.openclaw*skills*.md is created by a process whose base image is not ""node"" (the standard OpenClaw runtime). It monitors Sysmon FileCreate events and flags skill file writes that occur outside the official openclaw or clawhub installer processes.
+
+Scenario:
+OpenClaw loads skill configuration files from its skills directory to extend its capabilities. An adversary with filesystem access could plant malicious skill files out-of-band — using any process other than node — to establish persistence, having OpenClaw execute attacker-controlled logic whenever a matching query is processed without triggering standard installation monitoring.
+
+Recommended Actions:
+Investigate device_hostname and baseImage to identify what process created the skill file, then inspect changeTarget to determine which skill was installed and review its contents for malicious instructions. Verify whether the write was authorized by the system owner.
+
+Tuning Recommendations:
+Create match list 'authorized_openclaw_skill_writers' for any legitimate processes that write skill files outside of node (e.g., configuration management or backup agents)."
+"","","MATCH-S01150","templated_match","Unknown/Other","True","False","","_mitreAtlasTechnique:AML.T0103, _mitreAtlasTactic:AML.TA0005","Openclaw - Activity on Default Port","Detection:
+This rule triggers when a websocket connection to TCP port 18789 returns HTTP status 'Switching Protocols', indicating websocket handshake. Port 18789 is OpenClaw's default local server port, providing detection of active OpenClaw usage.
+
+Scenario:
+OpenClaw may be disallowed or tightly controlled in the organization. If a user installs OpenClaw on a device outside of IT control there may not be any telemetry on the device and network telemetry will be needed to detect unsanctioned installations. 
+
+Recommended Actions:
+Confirm OpenClaw is running on dstDevice_ip by checking for node processes on port 18789, then review network logs for external service communications (OpenAI, Anthropic). If unauthorized, terminate the process, remove the installation, block port 18789 at the firewall, and assess what code was processed.
+
+Tuning Recommendations:
+Create match list 'authorized_openclaw_devices' for permitted systems or other known services using port 18789."
 "","","MATCH-S00556","templated_match","Exfiltration","True","False","","_mitreAttackTactic:TA0010, _mitreAttackTactic:TA0011, _mitreAttackTechnique:T1571","Outbound Data Transfer Protocol Over Non-standard Port","This rule detects commonly used data transfer protocols being used over non-standard ports, which could indicate an attempt to obfuscate exfiltration or command and control activity."
 "","","MATCH-S00554","templated_match","Command and Control","True","False","","_mitreAttackTactic:TA0011, _mitreAttackTechnique:T1071, _mitreAttackTechnique:T1071.001","Outbound IRC Traffic","This rule detects outbound traffic over IRC, which could indicate a compromised host being used for command and control or exfiltration operations."
 "","","LEGACY-S00056","match","Execution","True","False","","_mitreAttackTactic:TA0002, _mitreAttackTactic:TA0011, _mitreAttackTechnique:T1071, _mitreAttackTechnique:T1071.002","Outbound TFTP Traffic","TFTP is rarely used externally and has been observed as a means to deliver malicious code from the outside."
@@ -1281,6 +1394,20 @@ This alert looks for evidence of the native signed Windows binary InstallUtil.ex
 "","","MATCH-S00925","templated_match","Credential Access","True","False","","_mitreAttackTactic:TA0006, _mitreAttackTechnique:T1552","Trufflehog AWS Credential Verification Detected","Trufflehog is a tool that can be utilized to find and verify secrets. When Trufflehog locates AWS credentials, it attempts to validate them using the GetCallerIdentity API call. This signal looks for the default Trufflehog User Agent within CloudTrail telemetry, combined with the GetCallerIdentity API call. Within this telemetry, the user_username field will contain the value of the username associated with the secret or credential that Trufflehog is attempting to verify. Look at the events surrounding the source IP address of this event. Look for any potential areas that may have contained keys or secrets for the user_username value."
 "","","MATCH-S00577","templated_match","Unknown/Other","True","False","","_mitreAttackTactic:TA0002, _mitreAttackTechnique:T1059, _mitreAttackTechnique:T1059.003","Turla Group Commands","Observes for command lines associated with Turla group"
 "Microsoft","Windows","MATCH-S00313","templated_match","Exfiltration","False","False","","_mitreAttackTactic:TA0009, _mitreAttackTactic:TA0010, _mitreAttackTactic:TA0011, _mitreAttackTechnique:T1025, _mitreAttackTechnique:T1052, _mitreAttackTechnique:T1052.001, _mitreAttackTechnique:T1092","Unauthorized External Device Installation","Detects a removable media device attached to a host. External media can be used to exfiltrate sensitive data and is also a common source of infections, so some organizations block their use. Attempts to use these devices could indicate the intent for malicious activity. Customer should populate a list of devices that should not have external media installed on them."
+"","","MATCH-S01154","templated_match","Unknown/Other","True","False","","","Unexpected Root Process from Unprivileged Login Session","Detection:
+A user executed a program as root on a Linux host while the originating login session belongs to an unprivileged user, which is inconsistent with legitimate privilege escalation workflows.
+
+Scenario:
+An attacker who has obtained local code execution may have exploited a privilege escalation vulnerability such as CVE-2026-31431 (CopyFail) to gain root access, then launched a privileged shell or command to establish a foothold.
+
+Requirements:
+Process monitoring must be logged on Linux endpoints for this rule to function.
+
+Recommended Actions:
+Investigate the process identified in baseImage and the parent process in parentBaseImage. Review the originating login session  for signs of compromise and check for follow-on persistence mechanisms such as new cron jobs, SSH keys, or modified service definitions.
+
+Tuning Recommendations:
+If additional setuid binaries in your environment legitimately produce root processes from unprivileged sessions, add their paths to the exclusion list in the rule expression using the baseImage or parentBaseImage fields."
 "","","MATCH-S00531","templated_match","Defense Evasion","True","False","","_mitreAttackTactic:TA0005, _mitreAttackTechnique:T1685, _mitreAttackTechnique:T1685.001, _mitreAttackTechnique:T1690","Unload Sysmon Filter Driver","Attackers often disable security tools to avoid detection. This rule looks for the usage of process fltMC.exe to unload a Sysmon Driver that will stop sysmon from collecting the data."
 "","Docker","MATCH-S00656","templated_match","Defense Evasion","False","False","","_mitreAttackTactic:TA0005, _mitreAttackTechnique:T1525","Unrecognized Container Image","Monitors for unrecognized container images that may indicate an attempt to bypass security controls on existing images or escalate privileges. This rule is disabled by default to allow for proper configuration of the match lists used to determine recognized images."
 "","","MATCH-S00757","templated_match","Persistence","True","False","","_mitreAttackTactic:TA0003, _mitreAttackTechnique:T1137, _mitreAttackTechnique:T1137.005","Unsafe Outlook Rule Creation Enabled","Detects a registry modification that enables the creation of Outlook mail rules that can run scripts. This functionality is disabled by default. The addition of the EnableUnsafeClientMailRules registry entry is highly suspicious. This feature can be used by an adversary to establish persistence."

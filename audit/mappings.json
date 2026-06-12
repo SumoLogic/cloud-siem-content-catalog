@@ -4409,8 +4409,8 @@
         "uid": "09a000f5-0586-4ce4-b5d2-c7e99ea14650"
     },
     "09b8843d-a2dc-4f1b-8562-7a3a8b3760b2": {
-        "commit_message": "TLAB-2531: Updated Mapping for normalizedAction and normalizedCause Fields for O365 (#5937)",
-        "commit_origin_hash": "ec76680691ade4c49d9fcf1e72d9369c866ecc80",
+        "commit_message": "feat(mapper): add http_userAgent mapping from ExtendedProperties_UserAgent for O365 Authentication Events (#5983)",
+        "commit_origin_hash": "89274c72ab701d8dee00c5a19a0e8f5b95dc4dbd",
         "field_mappings": {
             "device_ip": {
                 "value": "0.0.0.0",
@@ -6686,8 +6686,8 @@
         "uid": "0d260099-d4a3-4448-83c5-2d3a05365823"
     },
     "0d31d680-6a82-11ea-bc55-0242ac130003": {
-        "commit_message": "TLAB-2531: Updated Mapping for normalizedAction and normalizedCause Fields for O365 (#5937)",
-        "commit_origin_hash": "ec76680691ade4c49d9fcf1e72d9369c866ecc80",
+        "commit_message": "feat(mapper): add http_userAgent mapping from ExtendedProperties_UserAgent for O365 Authentication Events (#5983)",
+        "commit_origin_hash": "89274c72ab701d8dee00c5a19a0e8f5b95dc4dbd",
         "field_mappings": {
             "action": {
                 "value": "Operation"
@@ -8437,8 +8437,8 @@
         "uid": "10539af5-6147-406c-a8bf-fbdc5c1d5894"
     },
     "10696f30-7c13-4000-94d0-6a5dd69b229e": {
-        "commit_message": "removed threat rule type mapping and normalized severity fields for Fortinet Event Logs mapper(#5979)",
-        "commit_origin_hash": "59f5dfc52d9bbcf2fc23cb140ff829b2f48362c6",
+        "commit_message": "Updated fortinet authentication mapper event_id_pattern (#5981)",
+        "commit_origin_hash": "c53a1eeba4374751c753356236ebf0410f4fe05b",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -8535,8 +8535,8 @@
         "uid": "109d3a8f-bea4-4901-a3b7-a9ed7c9a90bf"
     },
     "10cc2415-7909-4610-a417-7e755696a0a5": {
-        "commit_message": "Update cloudtrail_elastic_container_service.yaml",
-        "commit_origin_hash": "2fb96a62aceada5adbd42aad3222febd78bf241d",
+        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
+        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
         "field_mappings": {
             "accountId": {
                 "alternate_values": [
@@ -8567,9 +8567,6 @@
             },
             "device_container_name": {
                 "value": "requestParameters.container"
-            },
-            "device_ip": {
-                "value": "sourceIPAddress"
             },
             "errorCode": {
                 "value": "errorCode"
@@ -11013,8 +11010,8 @@
         "uid": "1747f54c-cbbc-492b-a7b6-1396c343f5ef"
     },
     "1758b47a-933f-40f5-ae40-a591ecfd95ba": {
-        "commit_message": "TLAB-1067 merged the similar mappers",
-        "commit_origin_hash": "80d579ce6cc872dad03ee5587044c7417ecc0970",
+        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
+        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
         "field_mappings": {
             "accountId": {
                 "value": "userIdentity.accountId"
@@ -11052,9 +11049,6 @@
                 },
                 "value": "eventName",
                 "value_type": "lookup"
-            },
-            "device_ip": {
-                "value": "sourceIPAddress"
             },
             "http_userAgent": {
                 "value": "userAgent"
@@ -11305,8 +11299,8 @@
         "uid": "17913bcb-05be-4ed1-aa97-a350e62c0a06"
     },
     "17dd4d8c-1b54-4556-b9d8-4124cb897c60": {
-        "commit_message": "TLAB-1067 merged the similar mappers",
-        "commit_origin_hash": "80d579ce6cc872dad03ee5587044c7417ecc0970",
+        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
+        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
         "field_mappings": {
             "accountId": {
                 "value": "userIdentity.accountId"
@@ -11337,9 +11331,6 @@
             "description": {
                 "value": "Returns the permission policy for a version of an AWS Lambda layer.",
                 "value_type": "constant"
-            },
-            "device_ip": {
-                "value": "sourceIPAddress"
             },
             "http_userAgent": {
                 "value": "userAgent"
@@ -11858,8 +11849,8 @@
         "uid": "180e8a5a-8184-4a84-a8fa-93b914738a86"
     },
     "18615b96-a972-11ea-bb37-0242ac130002": {
-        "commit_message": "TLAB-2531: Updated Mapping for normalizedAction and normalizedCause Fields for O365 (#5937)",
-        "commit_origin_hash": "ec76680691ade4c49d9fcf1e72d9369c866ecc80",
+        "commit_message": "feat(mapper): add http_userAgent mapping from ExtendedProperties_UserAgent for O365 Authentication Events (#5983)",
+        "commit_origin_hash": "89274c72ab701d8dee00c5a19a0e8f5b95dc4dbd",
         "field_mappings": {
             "device_ip": {
                 "value": "ClientIP"
@@ -14508,8 +14499,8 @@
         "uid": "1c8c9030-a393-47a5-8ebe-57d7d4c5e89c"
     },
     "1c8fe1c9-f66f-439d-af45-37840a4f781e": {
-        "commit_message": "TRIDENT-16561 AWS Mapper Normalization",
-        "commit_origin_hash": "99630529c7e32b193cb7add5590bcf9dd5e5e727",
+        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
+        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
         "field_mappings": {
             "accountId": {
                 "value": "userIdentity.accountId"
@@ -14534,9 +14525,6 @@
             "description": {
                 "value": "A policy took an automatic execution action to enforce the policy.",
                 "value_type": "constant"
-            },
-            "device_ip": {
-                "value": "sourceIPAddress"
             },
             "http_userAgent": {
                 "value": "userAgent"
@@ -15098,8 +15086,8 @@
         "uid": "1d877f9d-cdcb-4891-93e3-1f47a99890ea"
     },
     "1d8b8a41-b782-49f1-b12a-273caf8eb092": {
-        "commit_message": "TLAB-2103 updated cloudtrail mapper adding normalizedSuccess, ipProtocol, errorCode and errorText",
-        "commit_origin_hash": "41c71296e31c8fe9aaa4f0c48fc485e345b87c0c",
+        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
+        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
         "field_mappings": {
             "accountId": {
                 "value": "userIdentity.accountId"
@@ -15175,9 +15163,6 @@
                 },
                 "value": "eventName",
                 "value_type": "lookup"
-            },
-            "device_ip": {
-                "value": "sourceIPAddress"
             },
             "errorCode": {
                 "value": "errorCode"
@@ -16031,8 +16016,8 @@
         "uid": "1ee00a7c-3767-4288-b361-1a611cc9bf21"
     },
     "1ee636b5-3f41-4d0e-8923-d371a4c72adb": {
-        "commit_message": "TLAB-1067 merged the similar mappers",
-        "commit_origin_hash": "80d579ce6cc872dad03ee5587044c7417ecc0970",
+        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
+        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
         "field_mappings": {
             "accountId": {
                 "value": "userIdentity.accountId"
@@ -16073,9 +16058,6 @@
                 },
                 "value": "eventName",
                 "value_type": "lookup"
-            },
-            "device_ip": {
-                "value": "sourceIPAddress"
             },
             "http_userAgent": {
                 "value": "userAgent"
@@ -16946,8 +16928,8 @@
         "uid": "2041eb1c-fdbf-46bd-aed9-b48047ae6962"
     },
     "20871df8-533d-4aff-8328-037a9462f279": {
-        "commit_message": "TLAB-2531: Updated Mapping for normalizedAction and normalizedCause Fields for O365 (#5937)",
-        "commit_origin_hash": "ec76680691ade4c49d9fcf1e72d9369c866ecc80",
+        "commit_message": "feat(mapper): add http_userAgent mapping from ExtendedProperties_UserAgent for O365 Authentication Events (#5983)",
+        "commit_origin_hash": "89274c72ab701d8dee00c5a19a0e8f5b95dc4dbd",
         "field_mappings": {
             "action": {
                 "value": "Operation"
@@ -16960,6 +16942,9 @@
             },
             "device_ip": {
                 "value": "ActorIpAddress"
+            },
+            "http_userAgent": {
+                "value": "ExtendedProperties_UserAgent"
             },
             "logonType": {
                 "value": "RecordTypeString"
@@ -17822,6 +17807,101 @@
         },
         "source": "jask",
         "uid": "2325f6db-aa0e-4435-8543-d8dbf4ab45a3"
+    },
+    "239e413b-5cd1-40fa-b775-e35b444856b5": {
+        "commit_message": "Updated fortinet authentication mapper event_id_pattern (#5981)",
+        "commit_origin_hash": "c53a1eeba4374751c753356236ebf0410f4fe05b",
+        "field_mappings": {
+            "description": {
+                "alternate_values": [
+                    "msg"
+                ],
+                "value": "logdesc"
+            },
+            "device_hostname": {
+                "value": "devname"
+            },
+            "dstDevice_ip": {
+                "alternate_values": [
+                    "dstip"
+                ],
+                "value": "locip"
+            },
+            "dstPort": {
+                "alternate_values": [
+                    "dstport"
+                ],
+                "value": "locport"
+            },
+            "flowState": {
+                "value": "action"
+            },
+            "http_url": {
+                "alternate_values": [
+                    "url"
+                ],
+                "value": "http_url"
+            },
+            "severity": {
+                "default_value": "0",
+                "lookup": {
+                    "critical": "10",
+                    "high": "9",
+                    "low": "1",
+                    "medium": "2"
+                },
+                "value": "severity",
+                "value_type": "lookup"
+            },
+            "srcDevice_ip": {
+                "alternate_values": [
+                    "srcip"
+                ],
+                "value": "remip"
+            },
+            "srcPort": {
+                "alternate_values": [
+                    "srcport"
+                ],
+                "value": "remport"
+            },
+            "success": {
+                "default_value": "true",
+                "lookup": {
+                    "failure": "false",
+                    "logon": "true",
+                    "success": "true"
+                },
+                "value": "status",
+                "value_type": "lookup"
+            },
+            "timestamp": {
+                "format": "epoch_ms",
+                "value": "_starttime",
+                "value_type": "time"
+            },
+            "user_username": {
+                "value": "user"
+            }
+        },
+        "file_path": "mappings_schemav3/fortinet_custom_parser.yaml",
+        "input": {
+            "event_id_pattern": "authentication|auth-logon|auth-failed|FSSO-logon|FSSO-logoff|NTLM-auth",
+            "log_format": "JSON",
+            "product": "Fortigate",
+            "vendor": "Fortinet"
+        },
+        "name": "Fortinet Authentication Logs",
+        "output": {
+            "product_guid": "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
+            "record_type": "Authentication"
+        },
+        "skipped_values": [
+            ",",
+            "-"
+        ],
+        "source": "jask",
+        "uid": "239e413b-5cd1-40fa-b775-e35b444856b5"
     },
     "23c8887f-991b-4f7b-8285-e1082e4581bc": {
         "commit_message": "updated cisco asa mapper (#5916)",
@@ -20264,8 +20344,8 @@
         "uid": "27909e48-6b07-44c7-be5d-50a61bb58145"
     },
     "279fabe5-d3a3-468a-a908-d110099bb244": {
-        "commit_message": "TLAB-2531: Updated Mapping for normalizedAction and normalizedCause Fields for O365 (#5937)",
-        "commit_origin_hash": "ec76680691ade4c49d9fcf1e72d9369c866ecc80",
+        "commit_message": "feat(mapper): add http_userAgent mapping from ExtendedProperties_UserAgent for O365 Authentication Events (#5983)",
+        "commit_origin_hash": "89274c72ab701d8dee00c5a19a0e8f5b95dc4dbd",
         "field_mappings": {
             "device_ip": {
                 "value": "0.0.0.0",
@@ -20300,8 +20380,8 @@
         "uid": "279fabe5-d3a3-468a-a908-d110099bb244"
     },
     "27a70508-29d3-4ff7-adb8-3e3759eb80b5": {
-        "commit_message": "TLAB-2553: add resource mapping to cloudtrail IAM policy (#5945)",
-        "commit_origin_hash": "bb4c146590e1c6cce9dd68bb214e34ff8121d1a7",
+        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
+        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
         "field_mappings": {
             "accountId": {
                 "value": "userIdentity.accountId"
@@ -20385,9 +20465,6 @@
                 },
                 "value": "eventName",
                 "value_type": "lookup"
-            },
-            "device_ip": {
-                "value": "sourceIPAddress"
             },
             "http_userAgent": {
                 "value": "userAgent"
@@ -21206,8 +21283,8 @@
         "uid": "2876b2f3-6e68-48bd-82e5-24f142e3c749"
     },
     "28e0fc3f-fe14-4f41-9c9a-1603f9eef9bd": {
-        "commit_message": "TLAB-1067 merged the similar mappers",
-        "commit_origin_hash": "80d579ce6cc872dad03ee5587044c7417ecc0970",
+        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
+        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
         "field_mappings": {
             "accountId": {
                 "value": "userIdentity.accountId"
@@ -21236,9 +21313,6 @@
                 },
                 "value": "eventName",
                 "value_type": "lookup"
-            },
-            "device_ip": {
-                "value": "sourceIPAddress"
             },
             "http_userAgent": {
                 "value": "userAgent"
@@ -22205,8 +22279,8 @@
         "uid": "2a9bd898-e717-453e-b3e2-81d5278d652a"
     },
     "2aa066b7-cb03-4827-96e5-6f37af056599": {
-        "commit_message": "TLAB-1067 merged the similar mappers",
-        "commit_origin_hash": "80d579ce6cc872dad03ee5587044c7417ecc0970",
+        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
+        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
         "field_mappings": {
             "accountId": {
                 "value": "userIdentity.accountId"
@@ -22246,9 +22320,6 @@
                 },
                 "value": "eventName",
                 "value_type": "lookup"
-            },
-            "device_ip": {
-                "value": "sourceIPAddress"
             },
             "http_userAgent": {
                 "value": "userAgent"
@@ -22984,8 +23055,8 @@
         "uid": "2c59deb0-bcb2-44b4-bf4c-9a88429e32eb"
     },
     "2c6a02e4-89b0-4d30-b03d-45756f074266": {
-        "commit_message": "Revert username mapping",
-        "commit_origin_hash": "16bc1f492e78f8444c839d04a8540c07fab4befc",
+        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
+        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
         "field_mappings": {
             "accountId": {
                 "alternate_values": [
@@ -23012,9 +23083,6 @@
             },
             "cloud_region": {
                 "value": "awsRegion"
-            },
-            "device_ip": {
-                "value": "sourceIPAddress"
             },
             "http_userAgent": {
                 "value": "userAgent"
@@ -23460,8 +23528,8 @@
         "uid": "2d0a91f0-8416-4fd6-b67d-ca86a9d27e83"
     },
     "2d163beb-e486-405f-a2a4-7134e25493aa": {
-        "commit_message": "TRIDENT-16561 AWS Mapper Normalization",
-        "commit_origin_hash": "99630529c7e32b193cb7add5590bcf9dd5e5e727",
+        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
+        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
         "field_mappings": {
             "accountId": {
                 "value": "userIdentity.accountId"
@@ -23486,9 +23554,6 @@
             "description": {
                 "value": "This event is emitted from the Elastic File System when a connection is authorized immediately after an initial connection, and immediately after a reconnection",
                 "value_type": "constant"
-            },
-            "device_ip": {
-                "value": "sourceIPAddress"
             },
             "http_userAgent": {
                 "value": "userAgent"
@@ -30423,8 +30488,8 @@
         "uid": "3d258ba5-0e2d-4b15-a419-25ccf870c9cc"
     },
     "3d305450-6c23-4e0f-b7e1-b1b7a648f0ec": {
-        "commit_message": "TLAB-2531: Updated Mapping for normalizedAction and normalizedCause Fields for O365 (#5937)",
-        "commit_origin_hash": "ec76680691ade4c49d9fcf1e72d9369c866ecc80",
+        "commit_message": "feat(mapper): add http_userAgent mapping from ExtendedProperties_UserAgent for O365 Authentication Events (#5983)",
+        "commit_origin_hash": "89274c72ab701d8dee00c5a19a0e8f5b95dc4dbd",
         "field_mappings": {
             "device_ip": {
                 "value": "0.0.0.0",
@@ -30550,8 +30615,8 @@
         "uid": "3d42cc1a-80d1-4da5-a6a4-022dabbaca77"
     },
     "3d830705-fc67-45e9-878a-443ed806cf32": {
-        "commit_message": "TLAB-2531: Updated Mapping for normalizedAction and normalizedCause Fields for O365 (#5937)",
-        "commit_origin_hash": "ec76680691ade4c49d9fcf1e72d9369c866ecc80",
+        "commit_message": "feat(mapper): add http_userAgent mapping from ExtendedProperties_UserAgent for O365 Authentication Events (#5983)",
+        "commit_origin_hash": "89274c72ab701d8dee00c5a19a0e8f5b95dc4dbd",
         "field_mappings": {
             "action": {
                 "value": "Operation"
@@ -31379,8 +31444,8 @@
         "uid": "3ea5de14-81e4-49cd-860b-98f4e93cb315"
     },
     "3f2bd88a-69b4-11ea-bc55-0242ac130003": {
-        "commit_message": "Revert username mapping",
-        "commit_origin_hash": "16bc1f492e78f8444c839d04a8540c07fab4befc",
+        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
+        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
         "field_mappings": {
             "accountId": {
                 "value": "userIdentity.accountId"
@@ -31405,9 +31470,6 @@
             "description": {
                 "value": "This lists the IDs of the applications that you are monitoring in Application Insights.",
                 "value_type": "constant"
-            },
-            "device_ip": {
-                "value": "sourceIPAddress"
             },
             "http_userAgent": {
                 "value": "userAgent"
@@ -31731,8 +31793,8 @@
         "uid": "3fe47187-8a81-4e1a-b80b-c0f2c4237ff6"
     },
     "3ff36059-f6f2-48aa-a88c-ef4485e7b151": {
-        "commit_message": "TLAB-2531: Updated Mapping for normalizedAction and normalizedCause Fields for O365 (#5937)",
-        "commit_origin_hash": "ec76680691ade4c49d9fcf1e72d9369c866ecc80",
+        "commit_message": "feat(mapper): add http_userAgent mapping from ExtendedProperties_UserAgent for O365 Authentication Events (#5983)",
+        "commit_origin_hash": "89274c72ab701d8dee00c5a19a0e8f5b95dc4dbd",
         "field_mappings": {
             "action": {
                 "value": "Operation"
@@ -33001,8 +33063,8 @@
         "uid": "4219f2ac-0630-47a7-993e-bc51f37f5620"
     },
     "42220608-501e-4a74-ab9b-1b31d5a8a2a5": {
-        "commit_message": "TLAB-2531: Updated Mapping for normalizedAction and normalizedCause Fields for O365 (#5937)",
-        "commit_origin_hash": "ec76680691ade4c49d9fcf1e72d9369c866ecc80",
+        "commit_message": "feat(mapper): add http_userAgent mapping from ExtendedProperties_UserAgent for O365 Authentication Events (#5983)",
+        "commit_origin_hash": "89274c72ab701d8dee00c5a19a0e8f5b95dc4dbd",
         "field_mappings": {
             "action": {
                 "value": "Operation"
@@ -34251,8 +34313,8 @@
         "uid": "45912489-975f-479d-8806-0ab51acbf168"
     },
     "459c7c66-b87e-48b9-a35b-9315204f9a6c": {
-        "commit_message": "TLAB-2531: Updated Mapping for normalizedAction and normalizedCause Fields for O365 (#5937)",
-        "commit_origin_hash": "ec76680691ade4c49d9fcf1e72d9369c866ecc80",
+        "commit_message": "feat(mapper): add http_userAgent mapping from ExtendedProperties_UserAgent for O365 Authentication Events (#5983)",
+        "commit_origin_hash": "89274c72ab701d8dee00c5a19a0e8f5b95dc4dbd",
         "field_mappings": {
             "device_ip": {
                 "value": "ClientIP"
@@ -34772,8 +34834,8 @@
         "uid": "462b7940-6803-4387-8669-c1322cb424ca"
     },
     "46404344-3d7a-4fd8-a580-accf6180cceb": {
-        "commit_message": "TLAB-2531: Updated Mapping for normalizedAction and normalizedCause Fields for O365 (#5937)",
-        "commit_origin_hash": "ec76680691ade4c49d9fcf1e72d9369c866ecc80",
+        "commit_message": "feat(mapper): add http_userAgent mapping from ExtendedProperties_UserAgent for O365 Authentication Events (#5983)",
+        "commit_origin_hash": "89274c72ab701d8dee00c5a19a0e8f5b95dc4dbd",
         "field_mappings": {
             "device_ip": {
                 "value": "0.0.0.0",
@@ -35255,8 +35317,8 @@
         "uid": "46b25ce8-b185-4e22-864d-80d97e26460f"
     },
     "46be6981-3d59-47cc-b358-a091280a0af5": {
-        "commit_message": "TLAB-2531: Updated Mapping for normalizedAction and normalizedCause Fields for O365 (#5937)",
-        "commit_origin_hash": "ec76680691ade4c49d9fcf1e72d9369c866ecc80",
+        "commit_message": "feat(mapper): add http_userAgent mapping from ExtendedProperties_UserAgent for O365 Authentication Events (#5983)",
+        "commit_origin_hash": "89274c72ab701d8dee00c5a19a0e8f5b95dc4dbd",
         "field_mappings": {
             "description": {
                 "value": "Name"
@@ -35583,8 +35645,8 @@
         "uid": "470ac404-c4d7-4bfb-955b-632a6ec0282a"
     },
     "47b7d4bc-c062-460e-b39a-e28d171523e9": {
-        "commit_message": "Update cloudtrail_signin_custom_parser.yaml",
-        "commit_origin_hash": "50793ea5b7608cc48091a4f0d9b67e3b599a0752",
+        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
+        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
         "field_mappings": {
             "accountId": {
                 "value": "userIdentity.accountId"
@@ -35622,9 +35684,6 @@
                 },
                 "value": "eventName",
                 "value_type": "lookup"
-            },
-            "device_ip": {
-                "value": "sourceIPAddress"
             },
             "http_userAgent": {
                 "value": "userAgent"
@@ -35904,8 +35963,8 @@
         "uid": "47e77961-aaaf-4e85-94b6-8e3a4e17e442"
     },
     "480af86a-a973-11ea-bb37-0242ac130002": {
-        "commit_message": "TLAB-2531: Updated Mapping for normalizedAction and normalizedCause Fields for O365 (#5937)",
-        "commit_origin_hash": "ec76680691ade4c49d9fcf1e72d9369c866ecc80",
+        "commit_message": "feat(mapper): add http_userAgent mapping from ExtendedProperties_UserAgent for O365 Authentication Events (#5983)",
+        "commit_origin_hash": "89274c72ab701d8dee00c5a19a0e8f5b95dc4dbd",
         "field_mappings": {
             "action": {
                 "value": "Operation"
@@ -41846,8 +41905,8 @@
         "uid": "53d9bca1-44a8-4be5-905c-1c4d19ffddf6"
     },
     "5406ec15-2203-460b-bd6e-ea8facf33082": {
-        "commit_message": "TLAB-1067 merged the similar mappers",
-        "commit_origin_hash": "80d579ce6cc872dad03ee5587044c7417ecc0970",
+        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
+        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
         "field_mappings": {
             "accountId": {
                 "value": "userIdentity.accountId"
@@ -41872,9 +41931,6 @@
             "description": {
                 "value": "A request to delete a version of a secret in Secret Manager issued.",
                 "value_type": "constant"
-            },
-            "device_ip": {
-                "value": "sourceIPAddress"
             },
             "http_userAgent": {
                 "value": "userAgent"
@@ -44138,8 +44194,8 @@
         "uid": "57912336-4c06-4176-9e93-a4b75051552f"
     },
     "5792195e-5a2a-487c-a71f-63becfe8895f": {
-        "commit_message": "TLAB-2531: Updated Mapping for normalizedAction and normalizedCause Fields for O365 (#5937)",
-        "commit_origin_hash": "ec76680691ade4c49d9fcf1e72d9369c866ecc80",
+        "commit_message": "feat(mapper): add http_userAgent mapping from ExtendedProperties_UserAgent for O365 Authentication Events (#5983)",
+        "commit_origin_hash": "89274c72ab701d8dee00c5a19a0e8f5b95dc4dbd",
         "field_mappings": {
             "description": {
                 "value": "PolicyDetails.1.Rules.1.RuleName"
@@ -44313,8 +44369,8 @@
         "uid": "57b9743d-249a-41d8-a216-32657adcc248"
     },
     "57d88cb7-d80d-4e02-b6ab-b4b722529bea": {
-        "commit_message": "TLAB-2531: Updated Mapping for normalizedAction and normalizedCause Fields for O365 (#5937)",
-        "commit_origin_hash": "ec76680691ade4c49d9fcf1e72d9369c866ecc80",
+        "commit_message": "feat(mapper): add http_userAgent mapping from ExtendedProperties_UserAgent for O365 Authentication Events (#5983)",
+        "commit_origin_hash": "89274c72ab701d8dee00c5a19a0e8f5b95dc4dbd",
         "field_mappings": {
             "action": {
                 "value": "Operation"
@@ -44633,8 +44689,8 @@
         "uid": "589ba074-03f8-49e1-91f2-812e8037f02c"
     },
     "592fd1db-91d1-4305-a1f9-fe8e2c7457bf": {
-        "commit_message": "TLAB-1067 merged the similar mappers",
-        "commit_origin_hash": "80d579ce6cc872dad03ee5587044c7417ecc0970",
+        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
+        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
         "field_mappings": {
             "accountId": {
                 "value": "userIdentity.accountId"
@@ -44666,9 +44722,6 @@
             "description": {
                 "value": "Returns a list of Lambda functions, with the version-specific configuration of each.",
                 "value_type": "constant"
-            },
-            "device_ip": {
-                "value": "sourceIPAddress"
             },
             "http_userAgent": {
                 "value": "userAgent"
@@ -45949,8 +46002,8 @@
         "uid": "5c2c9bfd-e09b-4a37-9e63-efd084fd4594"
     },
     "5c55809d-b468-4543-b4ed-4c310d4034e8": {
-        "commit_message": "TLAB-2531: Updated Mapping for normalizedAction and normalizedCause Fields for O365 (#5937)",
-        "commit_origin_hash": "ec76680691ade4c49d9fcf1e72d9369c866ecc80",
+        "commit_message": "feat(mapper): add http_userAgent mapping from ExtendedProperties_UserAgent for O365 Authentication Events (#5983)",
+        "commit_origin_hash": "89274c72ab701d8dee00c5a19a0e8f5b95dc4dbd",
         "field_mappings": {
             "description": {
                 "value": "Name"
@@ -46517,8 +46570,8 @@
         "uid": "5e6f7a8b-9c0d-1e2f-3a4b-5c6d7e8f9a0b"
     },
     "5f2f0759-0e26-412a-b5d4-aeeb52a6b9ea": {
-        "commit_message": "TLAB-2531: Updated Mapping for normalizedAction and normalizedCause Fields for O365 (#5937)",
-        "commit_origin_hash": "ec76680691ade4c49d9fcf1e72d9369c866ecc80",
+        "commit_message": "feat(mapper): add http_userAgent mapping from ExtendedProperties_UserAgent for O365 Authentication Events (#5983)",
+        "commit_origin_hash": "89274c72ab701d8dee00c5a19a0e8f5b95dc4dbd",
         "field_mappings": {
             "action": {
                 "value": "Operation"
@@ -48476,8 +48529,8 @@
         "uid": "6216f49a-14e7-4fc9-afc7-0a8163e4bde9"
     },
     "621c0480-bc2e-4086-8ef8-a74a3ae45c65": {
-        "commit_message": "removed threat rule type mapping and normalized severity fields for Fortinet Event Logs mapper(#5979)",
-        "commit_origin_hash": "59f5dfc52d9bbcf2fc23cb140ff829b2f48362c6",
+        "commit_message": "Updated fortinet authentication mapper event_id_pattern (#5981)",
+        "commit_origin_hash": "c53a1eeba4374751c753356236ebf0410f4fe05b",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -48661,8 +48714,8 @@
         "uid": "6259f6a3-ddd8-41b6-8b02-ef16f6dbd174"
     },
     "625e3844-5ff4-4c3c-aab7-7c2dffcba260": {
-        "commit_message": "TLAB-2531: Updated Mapping for normalizedAction and normalizedCause Fields for O365 (#5937)",
-        "commit_origin_hash": "ec76680691ade4c49d9fcf1e72d9369c866ecc80",
+        "commit_message": "feat(mapper): add http_userAgent mapping from ExtendedProperties_UserAgent for O365 Authentication Events (#5983)",
+        "commit_origin_hash": "89274c72ab701d8dee00c5a19a0e8f5b95dc4dbd",
         "field_mappings": {
             "description": {
                 "value": "RecordTypeString"
@@ -50010,8 +50063,8 @@
         "uid": "6631785C-901C-42CE-AC18-EDEA8D2829D1"
     },
     "665717e8-a975-11ea-bb37-0242ac130002": {
-        "commit_message": "TLAB-2531: Updated Mapping for normalizedAction and normalizedCause Fields for O365 (#5937)",
-        "commit_origin_hash": "ec76680691ade4c49d9fcf1e72d9369c866ecc80",
+        "commit_message": "feat(mapper): add http_userAgent mapping from ExtendedProperties_UserAgent for O365 Authentication Events (#5983)",
+        "commit_origin_hash": "89274c72ab701d8dee00c5a19a0e8f5b95dc4dbd",
         "field_mappings": {
             "action": {
                 "value": "Operation"
@@ -50903,8 +50956,8 @@
         "uid": "6861570d-e513-46de-a60f-5c90b53e6c8b"
     },
     "68fb47a0-1dac-48d2-a8c0-d76997350793": {
-        "commit_message": "TLAB-2531: Updated Mapping for normalizedAction and normalizedCause Fields for O365 (#5937)",
-        "commit_origin_hash": "ec76680691ade4c49d9fcf1e72d9369c866ecc80",
+        "commit_message": "feat(mapper): add http_userAgent mapping from ExtendedProperties_UserAgent for O365 Authentication Events (#5983)",
+        "commit_origin_hash": "89274c72ab701d8dee00c5a19a0e8f5b95dc4dbd",
         "field_mappings": {
             "action": {
                 "value": "Operation"
@@ -52704,8 +52757,8 @@
         "uid": "6b94825c-581c-47ff-ad57-156d24ca4c76"
     },
     "6b98c6bd-0d2b-45ee-8897-ad9e4f146e5f": {
-        "commit_message": "TLAB-2531: Updated Mapping for normalizedAction and normalizedCause Fields for O365 (#5937)",
-        "commit_origin_hash": "ec76680691ade4c49d9fcf1e72d9369c866ecc80",
+        "commit_message": "feat(mapper): add http_userAgent mapping from ExtendedProperties_UserAgent for O365 Authentication Events (#5983)",
+        "commit_origin_hash": "89274c72ab701d8dee00c5a19a0e8f5b95dc4dbd",
         "field_mappings": {
             "timestamp": {
                 "format": "yyyy-MM-dd'T'HH:mm:ss",
@@ -53158,8 +53211,8 @@
         "uid": "6c494243-337c-482e-9989-48584733fbd9"
     },
     "6c9a5532-df91-47df-856c-c3b78b5a8fe3": {
-        "commit_message": "TLAB-1067 merged the similar mappers",
-        "commit_origin_hash": "80d579ce6cc872dad03ee5587044c7417ecc0970",
+        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
+        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
         "field_mappings": {
             "accountId": {
                 "value": "userIdentity.accountId"
@@ -53190,9 +53243,6 @@
             "description": {
                 "value": "Deletes a Lambda function URL.",
                 "value_type": "constant"
-            },
-            "device_ip": {
-                "value": "sourceIPAddress"
             },
             "http_userAgent": {
                 "value": "userAgent"
@@ -53242,8 +53292,8 @@
         "uid": "6c9a5532-df91-47df-856c-c3b78b5a8fe3"
     },
     "6ca55368-0d59-4c92-b312-4b5940147be5": {
-        "commit_message": "TLAB-2103 updated cloudtrail mapper adding normalizedSuccess, ipProtocol, errorCode and errorText",
-        "commit_origin_hash": "41c71296e31c8fe9aaa4f0c48fc485e345b87c0c",
+        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
+        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
         "field_mappings": {
             "accountId": {
                 "value": "userIdentity.accountId"
@@ -53268,9 +53318,6 @@
             "description": {
                 "value": "The EC2 Spot Instance was terminated when the Spot price exceeded your bid price",
                 "value_type": "constant"
-            },
-            "device_ip": {
-                "value": "sourceIPAddress"
             },
             "http_userAgent": {
                 "value": "userAgent"
@@ -53504,8 +53551,8 @@
         "uid": "6db945b3-d05d-4922-9e8b-aa1218863f86"
     },
     "6e6d4334-69b1-11ea-bc55-0242ac130003": {
-        "commit_message": "Update cloudtrail_sso_custom_parser.yaml",
-        "commit_origin_hash": "8f31a77b47cb7dd32d7cfce1e8b71165e754a6f6",
+        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
+        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
         "field_mappings": {
             "accountId": {
                 "value": "userIdentity.accountId"
@@ -53534,9 +53581,6 @@
                 },
                 "value": "eventName",
                 "value_type": "lookup"
-            },
-            "device_ip": {
-                "value": "sourceIPAddress"
             },
             "http_userAgent": {
                 "value": "userAgent"
@@ -54905,8 +54949,8 @@
         "uid": "71bd96c4-f642-4639-97bb-ee72a5152f86"
     },
     "71cd9b06-7b50-4f3f-9434-06eb6242dc32": {
-        "commit_message": "TLAB-1067 merged the similar mappers",
-        "commit_origin_hash": "80d579ce6cc872dad03ee5587044c7417ecc0970",
+        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
+        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
         "field_mappings": {
             "accountId": {
                 "value": "userIdentity.accountId"
@@ -54937,9 +54981,6 @@
             "description": {
                 "value": "Returns information about the function or function version, with a link to download the deployment package that's valid for 10 minutes.",
                 "value_type": "constant"
-            },
-            "device_ip": {
-                "value": "sourceIPAddress"
             },
             "http_userAgent": {
                 "value": "userAgent"
@@ -55297,8 +55338,8 @@
         "uid": "72721bcc-a069-430b-add9-9afbd7e574cf"
     },
     "729bc327-a065-4fb8-81ed-5bb8f75d7fc2": {
-        "commit_message": "TLAB-2531: Updated Mapping for normalizedAction and normalizedCause Fields for O365 (#5937)",
-        "commit_origin_hash": "ec76680691ade4c49d9fcf1e72d9369c866ecc80",
+        "commit_message": "feat(mapper): add http_userAgent mapping from ExtendedProperties_UserAgent for O365 Authentication Events (#5983)",
+        "commit_origin_hash": "89274c72ab701d8dee00c5a19a0e8f5b95dc4dbd",
         "field_mappings": {
             "timestamp": {
                 "format": "yyyy-MM-dd'T'HH:mm:ss",
@@ -57987,8 +58028,8 @@
         "uid": "77c69a2d-90bc-437e-a9dc-93bc1fd6dcc4"
     },
     "77cf5d4a-8c57-4527-890c-9536e99345de": {
-        "commit_message": "TLAB-2531: Updated Mapping for normalizedAction and normalizedCause Fields for O365 (#5937)",
-        "commit_origin_hash": "ec76680691ade4c49d9fcf1e72d9369c866ecc80",
+        "commit_message": "feat(mapper): add http_userAgent mapping from ExtendedProperties_UserAgent for O365 Authentication Events (#5983)",
+        "commit_origin_hash": "89274c72ab701d8dee00c5a19a0e8f5b95dc4dbd",
         "field_mappings": {
             "action": {
                 "value": "Operation"
@@ -61021,8 +61062,8 @@
         "uid": "80ac2dcc-a1d3-46a5-a9ae-bc4f9a1a2430"
     },
     "80f366f7-9fd9-4097-86d5-eb908a1b9912": {
-        "commit_message": "TLAB-2531: Updated Mapping for normalizedAction and normalizedCause Fields for O365 (#5937)",
-        "commit_origin_hash": "ec76680691ade4c49d9fcf1e72d9369c866ecc80",
+        "commit_message": "feat(mapper): add http_userAgent mapping from ExtendedProperties_UserAgent for O365 Authentication Events (#5983)",
+        "commit_origin_hash": "89274c72ab701d8dee00c5a19a0e8f5b95dc4dbd",
         "field_mappings": {
             "description": {
                 "value": "RecordTypeString"
@@ -61210,8 +61251,8 @@
         "uid": "8103115b-d634-445c-bee6-8a80f30bbd56"
     },
     "810cafdb-8288-45a0-9ef7-d15cdc85307a": {
-        "commit_message": "removed threat rule type mapping and normalized severity fields for Fortinet Event Logs mapper(#5979)",
-        "commit_origin_hash": "59f5dfc52d9bbcf2fc23cb140ff829b2f48362c6",
+        "commit_message": "Updated fortinet authentication mapper event_id_pattern (#5981)",
+        "commit_origin_hash": "c53a1eeba4374751c753356236ebf0410f4fe05b",
         "field_mappings": {
             "description": {
                 "alternate_values": [
@@ -65157,8 +65198,8 @@
         "uid": "88383f45-4b56-45e4-b0da-03be50c845e7"
     },
     "88466900-6cf8-4497-812e-a5ed70343885": {
-        "commit_message": "TLAB-2531: Updated Mapping for normalizedAction and normalizedCause Fields for O365 (#5937)",
-        "commit_origin_hash": "ec76680691ade4c49d9fcf1e72d9369c866ecc80",
+        "commit_message": "feat(mapper): add http_userAgent mapping from ExtendedProperties_UserAgent for O365 Authentication Events (#5983)",
+        "commit_origin_hash": "89274c72ab701d8dee00c5a19a0e8f5b95dc4dbd",
         "field_mappings": {
             "action": {
                 "value": "Operation"
@@ -66163,8 +66204,8 @@
         "uid": "8a6aef8b-8983-4798-8539-bb86b4d7d271"
     },
     "8ab7c22e-a0a6-432c-b031-4dc3f325188c": {
-        "commit_message": "TLAB-2531: Updated Mapping for normalizedAction and normalizedCause Fields for O365 (#5937)",
-        "commit_origin_hash": "ec76680691ade4c49d9fcf1e72d9369c866ecc80",
+        "commit_message": "feat(mapper): add http_userAgent mapping from ExtendedProperties_UserAgent for O365 Authentication Events (#5983)",
+        "commit_origin_hash": "89274c72ab701d8dee00c5a19a0e8f5b95dc4dbd",
         "field_mappings": {
             "device_ip": {
                 "value": "ClientIP"
@@ -69424,8 +69465,8 @@
         "uid": "911005b2-a055-42df-a3fa-f327745905a1"
     },
     "915b12a0-69b0-11ea-bc55-0242ac130003": {
-        "commit_message": "TRIDENT-16561 AWS Mapper Normalization",
-        "commit_origin_hash": "99630529c7e32b193cb7add5590bcf9dd5e5e727",
+        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
+        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
         "field_mappings": {
             "accountId": {
                 "value": "userIdentity.accountId"
@@ -69453,9 +69494,6 @@
             "description": {
                 "value": "Reports if AWS Control Tower successfully completed every action to create and provision a new account using account factory",
                 "value_type": "constant"
-            },
-            "device_ip": {
-                "value": "sourceIPAddress"
             },
             "http_userAgent": {
                 "value": "userAgent"
@@ -70110,8 +70148,8 @@
         "uid": "928fa5c2-ceeb-4c1b-b41e-c5ed6f18b24f"
     },
     "92ad9200-083c-4c89-a3c1-5e63d3e2801f": {
-        "commit_message": "removed threat rule type mapping and normalized severity fields for Fortinet Event Logs mapper(#5979)",
-        "commit_origin_hash": "59f5dfc52d9bbcf2fc23cb140ff829b2f48362c6",
+        "commit_message": "Updated fortinet authentication mapper event_id_pattern (#5981)",
+        "commit_origin_hash": "c53a1eeba4374751c753356236ebf0410f4fe05b",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -72776,8 +72814,8 @@
         "uid": "96e00c6a-c9e1-4c75-adfc-c9f183a54a64"
     },
     "970738c0-68fa-11ea-bc55-0242ac130003": {
-        "commit_message": "TRIDENT-16561 AWS Mapper Normalization",
-        "commit_origin_hash": "99630529c7e32b193cb7add5590bcf9dd5e5e727",
+        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
+        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
         "field_mappings": {
             "accountId": {
                 "value": "userIdentity.accountId"
@@ -72808,9 +72846,6 @@
             "description": {
                 "value": "A request to create an AWS account that is automatically a member of the organization whose credentials made the request.",
                 "value_type": "constant"
-            },
-            "device_ip": {
-                "value": "sourceIPAddress"
             },
             "http_userAgent": {
                 "value": "userAgent"
@@ -73039,8 +73074,8 @@
         "uid": "9738d732-ccae-4ca3-8170-7f75ad24c44e"
     },
     "974823f1-6cd9-4b4b-ad05-e09e94fdc92d": {
-        "commit_message": "TLAB-1067 merged the similar mappers",
-        "commit_origin_hash": "80d579ce6cc872dad03ee5587044c7417ecc0970",
+        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
+        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
         "field_mappings": {
             "accountId": {
                 "value": "userIdentity.accountId"
@@ -73094,9 +73129,6 @@
                 },
                 "value": "eventName",
                 "value_type": "lookup"
-            },
-            "device_ip": {
-                "value": "sourceIPAddress"
             },
             "http_userAgent": {
                 "value": "userAgent"
@@ -74040,8 +74072,8 @@
         "uid": "99cd6835-a726-4032-9406-a3358beba9a9"
     },
     "99ef5972-d88b-4e04-bb1f-c20a43af5e44": {
-        "commit_message": "removed threat rule type mapping and normalized severity fields for Fortinet Event Logs mapper(#5979)",
-        "commit_origin_hash": "59f5dfc52d9bbcf2fc23cb140ff829b2f48362c6",
+        "commit_message": "Updated fortinet authentication mapper event_id_pattern (#5981)",
+        "commit_origin_hash": "c53a1eeba4374751c753356236ebf0410f4fe05b",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -75931,8 +75963,8 @@
         "uid": "9de58711-cc79-48f0-922e-daff37be4b4c"
     },
     "9df7db8f-46a3-488a-af25-b34236b5303a": {
-        "commit_message": "TRIDENT-19341: added new mapper",
-        "commit_origin_hash": "c4e82d0cafebb03fac6d4c72ccdc1b42f8ed125a",
+        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
+        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
         "field_mappings": {
             "accountId": {
                 "value": "userIdentity.accountId"
@@ -75967,9 +75999,6 @@
                 },
                 "value": "eventName",
                 "value_type": "lookup"
-            },
-            "device_ip": {
-                "value": "sourceIPAddress"
             },
             "http_userAgent": {
                 "value": "userAgent"
@@ -76151,8 +76180,8 @@
         "uid": "9e618daa-32fc-46ae-af20-78b7c368fe48"
     },
     "9ee2abd3-a781-4d7f-b1d1-c77a76b2c2a8": {
-        "commit_message": "TLAB-1067 merged the similar mappers",
-        "commit_origin_hash": "80d579ce6cc872dad03ee5587044c7417ecc0970",
+        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
+        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
         "field_mappings": {
             "accountId": {
                 "value": "userIdentity.accountId"
@@ -76181,9 +76210,6 @@
                 },
                 "value": "eventName",
                 "value_type": "lookup"
-            },
-            "device_ip": {
-                "value": "sourceIPAddress"
             },
             "http_userAgent": {
                 "value": "userAgent"
@@ -77671,8 +77697,8 @@
         "uid": "FF1BADCE-0DC2-41F5-888F-88ECA95AE8A0"
     },
     "a00c315a-8806-42f1-8deb-39a85f4d5b7e": {
-        "commit_message": "TLAB-2531: Updated Mapping for normalizedAction and normalizedCause Fields for O365 (#5937)",
-        "commit_origin_hash": "ec76680691ade4c49d9fcf1e72d9369c866ecc80",
+        "commit_message": "feat(mapper): add http_userAgent mapping from ExtendedProperties_UserAgent for O365 Authentication Events (#5983)",
+        "commit_origin_hash": "89274c72ab701d8dee00c5a19a0e8f5b95dc4dbd",
         "field_mappings": {
             "timestamp": {
                 "format": "yyyy-MM-dd'T'HH:mm:ss",
@@ -78265,8 +78291,8 @@
         "uid": "a112519f-d29c-47cb-924e-a79c5207107b"
     },
     "a119686a-c0a6-44af-a36d-9d01d1aac496": {
-        "commit_message": "removed threat rule type mapping and normalized severity fields for Fortinet Event Logs mapper(#5979)",
-        "commit_origin_hash": "59f5dfc52d9bbcf2fc23cb140ff829b2f48362c6",
+        "commit_message": "Updated fortinet authentication mapper event_id_pattern (#5981)",
+        "commit_origin_hash": "c53a1eeba4374751c753356236ebf0410f4fe05b",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -79014,8 +79040,8 @@
         "uid": "a2b8171c-c72c-11ea-87d0-0242ac130003"
     },
     "a2bdaf5f-92f8-45f3-be99-eb8fa34d26a7": {
-        "commit_message": "TLAB-2531: Updated Mapping for normalizedAction and normalizedCause Fields for O365 (#5937)",
-        "commit_origin_hash": "ec76680691ade4c49d9fcf1e72d9369c866ecc80",
+        "commit_message": "feat(mapper): add http_userAgent mapping from ExtendedProperties_UserAgent for O365 Authentication Events (#5983)",
+        "commit_origin_hash": "89274c72ab701d8dee00c5a19a0e8f5b95dc4dbd",
         "field_mappings": {
             "action": {
                 "default_value": "Unknown",
@@ -82057,8 +82083,8 @@
         "uid": "a9352f93-c8b9-4652-812b-3673133307d1"
     },
     "aa0263c9-a102-492c-b614-67d9aaf98ac1": {
-        "commit_message": "TLAB-2531: Updated Mapping for normalizedAction and normalizedCause Fields for O365 (#5937)",
-        "commit_origin_hash": "ec76680691ade4c49d9fcf1e72d9369c866ecc80",
+        "commit_message": "feat(mapper): add http_userAgent mapping from ExtendedProperties_UserAgent for O365 Authentication Events (#5983)",
+        "commit_origin_hash": "89274c72ab701d8dee00c5a19a0e8f5b95dc4dbd",
         "field_mappings": {
             "device_ip": {
                 "value": "0.0.0.0",
@@ -82574,8 +82600,8 @@
         "uid": "ab4b8e31-3e11-43c5-ad3b-0d235d26da9f"
     },
     "ab4d40ab-4286-4db5-b0ec-e26cd4172f19": {
-        "commit_message": "TLAB-2531: Updated Mapping for normalizedAction and normalizedCause Fields for O365 (#5937)",
-        "commit_origin_hash": "ec76680691ade4c49d9fcf1e72d9369c866ecc80",
+        "commit_message": "feat(mapper): add http_userAgent mapping from ExtendedProperties_UserAgent for O365 Authentication Events (#5983)",
+        "commit_origin_hash": "89274c72ab701d8dee00c5a19a0e8f5b95dc4dbd",
         "field_mappings": {
             "description": {
                 "value": "RecordTypeString"
@@ -86088,8 +86114,8 @@
         "uid": "b3edeaee-6d9a-4192-9381-b79261bdefb2"
     },
     "b3ff45ad-e402-43c0-8406-f44441c226f2": {
-        "commit_message": "TLAB-2531: Updated Mapping for normalizedAction and normalizedCause Fields for O365 (#5937)",
-        "commit_origin_hash": "ec76680691ade4c49d9fcf1e72d9369c866ecc80",
+        "commit_message": "feat(mapper): add http_userAgent mapping from ExtendedProperties_UserAgent for O365 Authentication Events (#5983)",
+        "commit_origin_hash": "89274c72ab701d8dee00c5a19a0e8f5b95dc4dbd",
         "field_mappings": {
             "action": {
                 "value": "Operation"
@@ -88736,8 +88762,8 @@
         "uid": "b99387f5-969d-49e8-9730-ebd952e6a37f"
     },
     "b993e0c4-67c9-4080-8339-1156bca5ef7e": {
-        "commit_message": "TLAB-2531: Updated Mapping for normalizedAction and normalizedCause Fields for O365 (#5937)",
-        "commit_origin_hash": "ec76680691ade4c49d9fcf1e72d9369c866ecc80",
+        "commit_message": "feat(mapper): add http_userAgent mapping from ExtendedProperties_UserAgent for O365 Authentication Events (#5983)",
+        "commit_origin_hash": "89274c72ab701d8dee00c5a19a0e8f5b95dc4dbd",
         "field_mappings": {
             "action": {
                 "value": "Operation"
@@ -91157,8 +91183,8 @@
         "uid": "c11a6f1b-73fd-42a8-a55f-b8fc2742fa21"
     },
     "c17b35e5-dc9d-4fd8-94e4-f49b29589288": {
-        "commit_message": "removed threat rule type mapping and normalized severity fields for Fortinet Event Logs mapper(#5979)",
-        "commit_origin_hash": "59f5dfc52d9bbcf2fc23cb140ff829b2f48362c6",
+        "commit_message": "Updated fortinet authentication mapper event_id_pattern (#5981)",
+        "commit_origin_hash": "c53a1eeba4374751c753356236ebf0410f4fe05b",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -92297,8 +92323,8 @@
         "uid": "c3eaf746-896b-11ea-bc55-0242ac130003"
     },
     "c3f3c9f3-90f5-4340-823f-7a133a278647": {
-        "commit_message": "TLAB-2531: Updated Mapping for normalizedAction and normalizedCause Fields for O365 (#5937)",
-        "commit_origin_hash": "ec76680691ade4c49d9fcf1e72d9369c866ecc80",
+        "commit_message": "feat(mapper): add http_userAgent mapping from ExtendedProperties_UserAgent for O365 Authentication Events (#5983)",
+        "commit_origin_hash": "89274c72ab701d8dee00c5a19a0e8f5b95dc4dbd",
         "field_mappings": {
             "action": {
                 "value": "Operation"
@@ -92628,8 +92654,8 @@
         "uid": "c49e15bc-0570-44a5-9e23-b67861fda202"
     },
     "c4caf910-d72e-47b6-9315-d17636c04ca2": {
-        "commit_message": "TLAB-1067 merged the similar mappers",
-        "commit_origin_hash": "80d579ce6cc872dad03ee5587044c7417ecc0970",
+        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
+        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
         "field_mappings": {
             "accountId": {
                 "value": "userIdentity.accountId"
@@ -92661,9 +92687,6 @@
             "description": {
                 "value": "A request was made to access the access control list of an S3 bucket",
                 "value_type": "constant"
-            },
-            "device_ip": {
-                "value": "sourceIPAddress"
             },
             "http_userAgent": {
                 "value": "userAgent"
@@ -93495,8 +93518,8 @@
         "uid": "c6f40cdd-1908-4826-95d8-d4c52186c4c0"
     },
     "c708976b-a216-48a2-a492-d6a7a4fc2529": {
-        "commit_message": "TLAB-2531: Updated Mapping for normalizedAction and normalizedCause Fields for O365 (#5937)",
-        "commit_origin_hash": "ec76680691ade4c49d9fcf1e72d9369c866ecc80",
+        "commit_message": "feat(mapper): add http_userAgent mapping from ExtendedProperties_UserAgent for O365 Authentication Events (#5983)",
+        "commit_origin_hash": "89274c72ab701d8dee00c5a19a0e8f5b95dc4dbd",
         "field_mappings": {
             "action": {
                 "value": "Operation"
@@ -94496,8 +94519,8 @@
         "uid": "ca60e048-c6dd-44ce-b606-5b49aa33deb9"
     },
     "ca8610b2-185e-4c44-885c-769329fbddc5": {
-        "commit_message": "TLAB-2531: Updated Mapping for normalizedAction and normalizedCause Fields for O365 (#5937)",
-        "commit_origin_hash": "ec76680691ade4c49d9fcf1e72d9369c866ecc80",
+        "commit_message": "feat(mapper): add http_userAgent mapping from ExtendedProperties_UserAgent for O365 Authentication Events (#5983)",
+        "commit_origin_hash": "89274c72ab701d8dee00c5a19a0e8f5b95dc4dbd",
         "field_mappings": {
             "action": {
                 "value": "Operation"
@@ -95178,8 +95201,8 @@
         "uid": "cb107f45-2e4d-4c8b-ba9d-4805aee79fb7"
     },
     "cb996e17-3f10-477e-a9fb-1acbba2bd730": {
-        "commit_message": "TLAB-2531: Updated Mapping for normalizedAction and normalizedCause Fields for O365 (#5937)",
-        "commit_origin_hash": "ec76680691ade4c49d9fcf1e72d9369c866ecc80",
+        "commit_message": "feat(mapper): add http_userAgent mapping from ExtendedProperties_UserAgent for O365 Authentication Events (#5983)",
+        "commit_origin_hash": "89274c72ab701d8dee00c5a19a0e8f5b95dc4dbd",
         "field_mappings": {
             "timestamp": {
                 "format": "yyyy-MM-dd'T'HH:mm:ss",
@@ -96832,8 +96855,8 @@
         "uid": "cf7c6c83-2b73-47c4-933d-aaf0bdae6450"
     },
     "cf87663f-bf57-49c2-b0a5-0e1c5e7f50fc": {
-        "commit_message": "TLAB-2531: Updated Mapping for normalizedAction and normalizedCause Fields for O365 (#5937)",
-        "commit_origin_hash": "ec76680691ade4c49d9fcf1e72d9369c866ecc80",
+        "commit_message": "feat(mapper): add http_userAgent mapping from ExtendedProperties_UserAgent for O365 Authentication Events (#5983)",
+        "commit_origin_hash": "89274c72ab701d8dee00c5a19a0e8f5b95dc4dbd",
         "field_mappings": {
             "device_ip": {
                 "value": "ClientIP"
@@ -98459,8 +98482,8 @@
         "uid": "d2b07d5d-46fd-43eb-b073-c52cde1d9ada"
     },
     "d36c55c3-0ad0-4b7b-a4aa-779f0f9e1b8b": {
-        "commit_message": "TLAB-1067 merged the similar mappers",
-        "commit_origin_hash": "80d579ce6cc872dad03ee5587044c7417ecc0970",
+        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
+        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
         "field_mappings": {
             "accountId": {
                 "value": "userIdentity.accountId"
@@ -98492,9 +98515,6 @@
             "description": {
                 "value": "Lists event source mappings.",
                 "value_type": "constant"
-            },
-            "device_ip": {
-                "value": "sourceIPAddress"
             },
             "http_userAgent": {
                 "value": "userAgent"
@@ -101652,8 +101672,8 @@
         "uid": "db25fd08-e994-4f29-8c94-c2ef9ffd68e2"
     },
     "db3ca20f-daa1-4fb6-b06c-ac72800f3cce": {
-        "commit_message": "TLAB-1067 merged the similar mappers",
-        "commit_origin_hash": "80d579ce6cc872dad03ee5587044c7417ecc0970",
+        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
+        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
         "field_mappings": {
             "accountId": {
                 "value": "userIdentity.accountId"
@@ -101699,9 +101719,6 @@
                 },
                 "value": "eventName",
                 "value_type": "lookup"
-            },
-            "device_ip": {
-                "value": "sourceIPAddress"
             },
             "http_userAgent": {
                 "value": "userAgent"
@@ -103658,8 +103675,8 @@
         "uid": "df17837b-a59a-492a-b8ca-890580dbb3c6"
     },
     "df5cf29a-4b96-4ce2-b6ce-9abbf882f86e": {
-        "commit_message": "TLAB-2531: Updated Mapping for normalizedAction and normalizedCause Fields for O365 (#5937)",
-        "commit_origin_hash": "ec76680691ade4c49d9fcf1e72d9369c866ecc80",
+        "commit_message": "feat(mapper): add http_userAgent mapping from ExtendedProperties_UserAgent for O365 Authentication Events (#5983)",
+        "commit_origin_hash": "89274c72ab701d8dee00c5a19a0e8f5b95dc4dbd",
         "field_mappings": {
             "device_ip": {
                 "value": "0.0.0.0",
@@ -104268,8 +104285,8 @@
         "uid": "e018v5c1-df0g-4712-8582-b8d4er0642ee"
     },
     "e0456134-e8b3-4b45-97f1-99d01a461d73": {
-        "commit_message": "TLAB-1067 merged the similar mappers",
-        "commit_origin_hash": "80d579ce6cc872dad03ee5587044c7417ecc0970",
+        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
+        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
         "field_mappings": {
             "accountId": {
                 "value": "userIdentity.accountId"
@@ -104329,9 +104346,6 @@
                 },
                 "value": "eventName",
                 "value_type": "lookup"
-            },
-            "device_ip": {
-                "value": "sourceIPAddress"
             },
             "http_userAgent": {
                 "value": "userAgent"
@@ -105868,8 +105882,8 @@
         "uid": "e3f5b429-af48-4135-abf1-c3a32db01a14"
     },
     "e3f84313-4099-4c1f-97f1-700f73a76311": {
-        "commit_message": "removed threat rule type mapping and normalized severity fields for Fortinet Event Logs mapper(#5979)",
-        "commit_origin_hash": "59f5dfc52d9bbcf2fc23cb140ff829b2f48362c6",
+        "commit_message": "Updated fortinet authentication mapper event_id_pattern (#5981)",
+        "commit_origin_hash": "c53a1eeba4374751c753356236ebf0410f4fe05b",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -106292,8 +106306,8 @@
         "uid": "e4883fa4-baaa-47bc-948d-17ca3ba7ac94"
     },
     "e4dd1018-6a82-11ea-bc55-0242ac130003": {
-        "commit_message": "TLAB-2531: Updated Mapping for normalizedAction and normalizedCause Fields for O365 (#5937)",
-        "commit_origin_hash": "ec76680691ade4c49d9fcf1e72d9369c866ecc80",
+        "commit_message": "feat(mapper): add http_userAgent mapping from ExtendedProperties_UserAgent for O365 Authentication Events (#5983)",
+        "commit_origin_hash": "89274c72ab701d8dee00c5a19a0e8f5b95dc4dbd",
         "field_mappings": {
             "action": {
                 "value": "Operation"
@@ -108649,8 +108663,8 @@
         "uid": "eab0642b-862f-4328-af33-e3b29893c41f"
     },
     "eab4df6a-a268-4c9d-9de9-39306124c64d": {
-        "commit_message": "removed threat rule type mapping and normalized severity fields for Fortinet Event Logs mapper(#5979)",
-        "commit_origin_hash": "59f5dfc52d9bbcf2fc23cb140ff829b2f48362c6",
+        "commit_message": "Updated fortinet authentication mapper event_id_pattern (#5981)",
+        "commit_origin_hash": "c53a1eeba4374751c753356236ebf0410f4fe05b",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -109029,8 +109043,8 @@
         "uid": "eb91afed-79e3-415e-a25a-f85e5688d73d"
     },
     "eba2f49f-b86e-4a55-913b-90dc8423f4a1": {
-        "commit_message": "TLAB-2531: Updated Mapping for normalizedAction and normalizedCause Fields for O365 (#5937)",
-        "commit_origin_hash": "ec76680691ade4c49d9fcf1e72d9369c866ecc80",
+        "commit_message": "feat(mapper): add http_userAgent mapping from ExtendedProperties_UserAgent for O365 Authentication Events (#5983)",
+        "commit_origin_hash": "89274c72ab701d8dee00c5a19a0e8f5b95dc4dbd",
         "field_mappings": {
             "device_ip": {
                 "value": "0.0.0.0",
@@ -111051,8 +111065,8 @@
         "uid": "f06b0da6-4e71-40ff-9c7f-4719d73f008e"
     },
     "f096edb3-5d42-4834-bfd0-16ff99fae568": {
-        "commit_message": "TLAB-2531: Updated Mapping for normalizedAction and normalizedCause Fields for O365 (#5937)",
-        "commit_origin_hash": "ec76680691ade4c49d9fcf1e72d9369c866ecc80",
+        "commit_message": "feat(mapper): add http_userAgent mapping from ExtendedProperties_UserAgent for O365 Authentication Events (#5983)",
+        "commit_origin_hash": "89274c72ab701d8dee00c5a19a0e8f5b95dc4dbd",
         "field_mappings": {
             "action": {
                 "value": "Operation"
@@ -111362,8 +111376,8 @@
         "uid": "f172f153-a795-4616-9359-843884b95cd3"
     },
     "f19bb1e7-5efb-4960-a0e3-85f5e96571e6": {
-        "commit_message": "TRIDENT-19341: added new mapper",
-        "commit_origin_hash": "c4e82d0cafebb03fac6d4c72ccdc1b42f8ed125a",
+        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
+        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
         "field_mappings": {
             "accountId": {
                 "alternate_values": [
@@ -111398,9 +111412,6 @@
             "description": {
                 "value": "An attempt to retrieve multiple partitions from a table",
                 "value_type": "constant"
-            },
-            "device_ip": {
-                "value": "sourceIPAddress"
             },
             "http_userAgent": {
                 "value": "userAgent"
@@ -111803,8 +111814,8 @@
         "uid": "f3076e8d-b3c3-4401-82a0-179742707511"
     },
     "f35c71f7-eb5e-472a-94a9-9e9965492f1c": {
-        "commit_message": "TLAB-2531: Updated Mapping for normalizedAction and normalizedCause Fields for O365 (#5937)",
-        "commit_origin_hash": "ec76680691ade4c49d9fcf1e72d9369c866ecc80",
+        "commit_message": "feat(mapper): add http_userAgent mapping from ExtendedProperties_UserAgent for O365 Authentication Events (#5983)",
+        "commit_origin_hash": "89274c72ab701d8dee00c5a19a0e8f5b95dc4dbd",
         "field_mappings": {
             "action": {
                 "value": "Operation"
@@ -114220,8 +114231,8 @@
         "uid": "f8d81468-a912-4bcd-8aa3-26df0d0c1e8d"
     },
     "f92aeb36-4690-47b7-ba7b-be1d0ec491ce": {
-        "commit_message": "TLAB-2531: Updated Mapping for normalizedAction and normalizedCause Fields for O365 (#5937)",
-        "commit_origin_hash": "ec76680691ade4c49d9fcf1e72d9369c866ecc80",
+        "commit_message": "feat(mapper): add http_userAgent mapping from ExtendedProperties_UserAgent for O365 Authentication Events (#5983)",
+        "commit_origin_hash": "89274c72ab701d8dee00c5a19a0e8f5b95dc4dbd",
         "field_mappings": {
             "action": {
                 "value": "Operation"
@@ -114330,8 +114341,8 @@
         "uid": "f95d4f87-7e41-42ae-be1f-6d8890d93508"
     },
     "f9b6ec33-d0b5-468a-a92c-a8c62a4bcca9": {
-        "commit_message": "removed threat rule type mapping and normalized severity fields for Fortinet Event Logs mapper(#5979)",
-        "commit_origin_hash": "59f5dfc52d9bbcf2fc23cb140ff829b2f48362c6",
+        "commit_message": "Updated fortinet authentication mapper event_id_pattern (#5981)",
+        "commit_origin_hash": "c53a1eeba4374751c753356236ebf0410f4fe05b",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -115146,8 +115157,8 @@
         "uid": "fa4028ba-0c1d-4fb3-a152-6e65e0b5200e"
     },
     "fa572950-571a-4570-9299-8cd3fa64fad2": {
-        "commit_message": "TLAB-2531: Updated Mapping for normalizedAction and normalizedCause Fields for O365 (#5937)",
-        "commit_origin_hash": "ec76680691ade4c49d9fcf1e72d9369c866ecc80",
+        "commit_message": "feat(mapper): add http_userAgent mapping from ExtendedProperties_UserAgent for O365 Authentication Events (#5983)",
+        "commit_origin_hash": "89274c72ab701d8dee00c5a19a0e8f5b95dc4dbd",
         "field_mappings": {
             "action": {
                 "value": "Operation"
@@ -115593,8 +115604,8 @@
         "uid": "facdde2e-f0aa-4d08-97c7-a9486c33cfed"
     },
     "fae41f89-52be-48fd-b061-19c11d743648": {
-        "commit_message": "TLAB-1067 merged the similar mappers",
-        "commit_origin_hash": "80d579ce6cc872dad03ee5587044c7417ecc0970",
+        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
+        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
         "field_mappings": {
             "accountId": {
                 "value": "userIdentity.accountId"
@@ -115619,9 +115630,6 @@
             "description": {
                 "value": "A request to rotate a customer managed key (CMK) in AWS KMS was issued.",
                 "value_type": "constant"
-            },
-            "device_ip": {
-                "value": "sourceIPAddress"
             },
             "http_userAgent": {
                 "value": "userAgent"
@@ -116266,8 +116274,8 @@
         "uid": "fc4bdead-7e41-11e8-adc1-fa7ae01bbede"
     },
     "fc8169ec-a972-11ea-bb37-0242ac130002": {
-        "commit_message": "TLAB-2531: Updated Mapping for normalizedAction and normalizedCause Fields for O365 (#5937)",
-        "commit_origin_hash": "ec76680691ade4c49d9fcf1e72d9369c866ecc80",
+        "commit_message": "feat(mapper): add http_userAgent mapping from ExtendedProperties_UserAgent for O365 Authentication Events (#5983)",
+        "commit_origin_hash": "89274c72ab701d8dee00c5a19a0e8f5b95dc4dbd",
         "field_mappings": {
             "device_ip": {
                 "value": "ClientIP"
@@ -117070,8 +117078,8 @@
         "uid": "fef99d8e-98aa-41eb-a051-3e9cb9ab32cc"
     },
     "ff0ade7d-8a2f-42c2-8250-69562a9e8daf": {
-        "commit_message": "TRIDENT-16561 AWS Mapper Normalization",
-        "commit_origin_hash": "99630529c7e32b193cb7add5590bcf9dd5e5e727",
+        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
+        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
         "field_mappings": {
             "accountId": {
                 "value": "userIdentity.accountId"
@@ -117095,9 +117103,6 @@
             },
             "device_hostname": {
                 "value": "eventSource"
-            },
-            "device_ip": {
-                "value": "sourceIPAddress"
             },
             "http_userAgent": {
                 "value": "userAgent"

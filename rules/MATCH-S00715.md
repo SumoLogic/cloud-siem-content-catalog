@@ -8,7 +8,7 @@ Detects the removal of cloud storage infrastructure in AWS.
 |----|----|
 |Type|Templated Match|
 |Category|Impact|
-|Apply Risk to Entities|srcDevice_ip, device_ip, user_username|
+|Apply Risk to Entities|srcDevice_ip, user_username|
 |Signal Name|AWS Cloud Storage Deletion|
 |Summary Expression|AWS Cloud Storage Deletion Detected with IP: {{srcDevice_ip}} and User: {{user_username}}|
 |Score/Severity|Static: 1|
@@ -24,7 +24,6 @@ Detects the removal of cloud storage infrastructure in AWS.
 |Origin|Field|
 |----|----|
 |Normalized Schema|action|
-|Normalized Schema|device_ip|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|
 |Normalized Schema|srcDevice_ip|

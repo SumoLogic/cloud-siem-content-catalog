@@ -8,7 +8,7 @@ An IAM account sent multiple requests to perform a wide distinct number of AWS a
 |----|----|
 |Type|Threshold|
 |Category|Initial Access|
-|Apply Risk to Entities|device_hostname, device_ip, user_username, srcDevice_ip|
+|Apply Risk to Entities|device_hostname, user_username, srcDevice_ip|
 |Signal Name|AWS CloudTrail - IAM User Generating AccessDenied Errors Across Multiple Actions|
 |Summary Expression|AWS API Call attempts denied by user: {{user_username}} 10+ times|
 |Threshold Count|10|
@@ -26,7 +26,6 @@ An IAM account sent multiple requests to perform a wide distinct number of AWS a
 |Origin|Field|
 |----|----|
 |Normalized Schema|device_hostname|
-|Normalized Schema|device_ip|
 |Direct from Record|fields['errorCode']|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|

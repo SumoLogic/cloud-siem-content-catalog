@@ -10,7 +10,7 @@ An AWS Bedrock Model invocation logging configuration change was observed. Ensur
 |Category|Defense Evasion|
 |Apply Risk to Entities|user_username|
 |Signal Name|AWS Bedrock Model Invocation Logging Configuration Change Observed by {{user_username}}|
-|Summary Expression|AWS Bedrock Model Invocation Logging Configuration Change Observed by {{user_username}} from IP {{device_ip}}|
+|Summary Expression|AWS Bedrock Model Invocation Logging Configuration Change Observed by {{user_username}} from IP {{srcDevice_ip}}|
 |Score/Severity|Static: 3|
 |Enabled by Default|True|
 |Prototype|False|

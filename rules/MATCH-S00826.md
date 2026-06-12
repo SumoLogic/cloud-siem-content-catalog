@@ -10,7 +10,7 @@ A set of SSH keys has been added to an AWS EC2 instance.
 |Category|Persistence|
 |Apply Risk to Entities|user_username|
 |Signal Name|SSH Keys Added to EC2 Instance|
-|Summary Expression|{{user_username}} using the IP address {{device_ip}} has added an SSH key to an EC2 Instance.|
+|Summary Expression|{{user_username}} using the IP address {{srcDevice_ip}} has added an SSH key to an EC2 Instance.|
 |Score/Severity|Static: 3|
 |Enabled by Default|True|
 |Prototype|False|

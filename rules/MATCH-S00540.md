@@ -8,7 +8,7 @@ Enforcing network-access controls is one of the defensive mechanisms used by clo
 |----|----|
 |Type|Templated Match|
 |Category|Defense Evasion|
-|Apply Risk to Entities|device_ip, srcDevice_hostname, srcDevice_ip, device_hostname, user_username|
+|Apply Risk to Entities|srcDevice_hostname, srcDevice_ip, device_hostname, user_username|
 |Signal Name|AWS CloudTrail Network Access Control List Deleted|
 |Summary Expression|{{action}} performed by user: {{user_username}}|
 |Score/Severity|Static: 3|
@@ -25,7 +25,6 @@ Enforcing network-access controls is one of the defensive mechanisms used by clo
 |----|----|
 |Normalized Schema|action|
 |Normalized Schema|device_hostname|
-|Normalized Schema|device_ip|
 |Normalized Schema|metadata_deviceEventId|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|

@@ -8,7 +8,7 @@ Administrative changes to the AWS Secrets Manager aren't overtly hostile, but ar
 |----|----|
 |Type|Templated Match|
 |Category|Execution|
-|Apply Risk to Entities|device_hostname, device_ip, user_username, srcDevice_ip|
+|Apply Risk to Entities|device_hostname, user_username, srcDevice_ip|
 |Signal Name|AWS CloudTrail - Secrets Manager sensitive admin action observed|
 |Summary Expression|{{action}} performed by user: {{user_username}}|
 |Score/Severity|Static: 1|
@@ -24,7 +24,6 @@ Administrative changes to the AWS Secrets Manager aren't overtly hostile, but ar
 |Origin|Field|
 |----|----|
 |Normalized Schema|device_hostname|
-|Normalized Schema|device_ip|
 |Normalized Schema|metadata_deviceEventId|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|

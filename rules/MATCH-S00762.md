@@ -16,7 +16,6 @@ Detects executable file extension written to the PolicyDefinitions directory. Th
 |Prototype|False|
 |Tags|_mitreAttackTactic:TA0009, _mitreAttackTechnique:T1074, _mitreAttackTechnique:T1074.001|
 ## Vendors and Products
-- [Microsoft - Azure](../products/a1225af5-e778-4068-a9a2-47da93d1ff24.md)
 - [Microsoft - Windows](../products/1ff7546c-cb36-4a24-87f7-89d2cecc5761.md)
 
 

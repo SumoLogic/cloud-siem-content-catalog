@@ -8,7 +8,7 @@ Creating DB snapshots is an efficient way for an attacker to begin downloading a
 |----|----|
 |Type|Templated Match|
 |Category|Exfiltration|
-|Apply Risk to Entities|device_hostname, device_ip, user_username, srcDevice_ip|
+|Apply Risk to Entities|device_hostname, user_username, srcDevice_ip|
 |Signal Name|AWS CloudTrail - Database Snapshot Created|
 |Summary Expression|{{metadata_deviceEventId}} performed by user: {{user_username}} with role: {{user_username_role}}|
 |Score/Severity|Static: 2|
@@ -24,7 +24,6 @@ Creating DB snapshots is an efficient way for an attacker to begin downloading a
 |Origin|Field|
 |----|----|
 |Normalized Schema|device_hostname|
-|Normalized Schema|device_ip|
 |Normalized Schema|metadata_deviceEventId|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|

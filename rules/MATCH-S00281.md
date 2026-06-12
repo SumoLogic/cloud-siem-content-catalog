@@ -8,7 +8,7 @@ Detects the use of various Get-Process PowerShell commands to discover informati
 |----|----|
 |Type|Templated Match|
 |Category|Discovery|
-|Apply Risk to Entities|device_hostname, device_ip, user_username|
+|Apply Risk to Entities|device_hostname, device_ip, srcDevice_ip, user_username|
 |Signal Name|Windows - PowerShell Process Discovery|
 |Summary Expression|Detected PowerShell process discovery on host: {{device_hostname}}|
 |Score/Severity|Static: 2|
@@ -32,6 +32,7 @@ Detects the use of various Get-Process PowerShell commands to discover informati
 |Normalized Schema|commandLine|
 |Normalized Schema|device_hostname|
 |Normalized Schema|device_ip|
+|Normalized Schema|srcDevice_ip|
 |Normalized Schema|user_username|
 
 

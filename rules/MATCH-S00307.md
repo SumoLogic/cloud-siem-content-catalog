@@ -8,7 +8,7 @@ Alert when an OAuth application has requested a high number of permissions to as
 |----|----|
 |Type|Templated Match|
 |Category|Execution|
-|Apply Risk to Entities|device_hostname, device_ip, user_username, srcDevice_ip|
+|Apply Risk to Entities|device_hostname, user_username, srcDevice_ip|
 |Signal Name|AWS - Excessive OAuth Application Permissions Scope - "{{application}}"|
 |Summary Expression|{{action}} performed by user: {{user_username}} on {{application}}|
 |Score/Severity|Static: 4|
@@ -25,7 +25,6 @@ Alert when an OAuth application has requested a high number of permissions to as
 |----|----|
 |Normalized Schema|application|
 |Normalized Schema|device_hostname|
-|Normalized Schema|device_ip|
 |Direct from Record|fields['requestParameters.readAttributes.10']|
 |Direct from Record|fields['requestParameters.writeAttributes.10']|
 |Normalized Schema|metadata_deviceEventId|

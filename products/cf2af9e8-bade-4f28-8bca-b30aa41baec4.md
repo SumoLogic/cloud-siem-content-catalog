@@ -6,6 +6,7 @@
 |----|----|
 |MATCH-S00553|[Allowed Inbound RDP Traffic](../rules/MATCH-S00553.md)|
 |FIRST-S00030|[First Seen Outbound Connection to External IP Address on Port 445 from IP Address](../rules/FIRST-S00030.md)|
+|THRESHOLD-S00079|[Inbound Port Scan](../rules/THRESHOLD-S00079.md)|
 |THRESHOLD-S00080|[Internal Port Scan](../rules/THRESHOLD-S00080.md)|
 |THRESHOLD-S00081|[Internal Port Sweep](../rules/THRESHOLD-S00081.md)|
 |MATCH-S00554|[Outbound IRC Traffic](../rules/MATCH-S00554.md)|

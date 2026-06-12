@@ -8,7 +8,7 @@ A UserPoolClient is an entity that has permission to call unauthenticated API op
 |----|----|
 |Type|Templated Match|
 |Category|Execution|
-|Apply Risk to Entities|device_hostname, device_ip, user_username, srcDevice_ip|
+|Apply Risk to Entities|device_hostname, user_username, srcDevice_ip|
 |Signal Name|AWS - New UserPoolClient Created|
 |Summary Expression|{{action}}: {{application}} performed by user: {{user_username}}|
 |Score/Severity|Static: 1|
@@ -24,7 +24,6 @@ A UserPoolClient is an entity that has permission to call unauthenticated API op
 |Origin|Field|
 |----|----|
 |Normalized Schema|device_hostname|
-|Normalized Schema|device_ip|
 |Normalized Schema|metadata_deviceEventId|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|

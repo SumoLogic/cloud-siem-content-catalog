@@ -8,7 +8,7 @@ Malicious files are often encoded in an attempt to bypass security controls that
 |----|----|
 |Type|Templated Match|
 |Category|Defense Evasion|
-|Apply Risk to Entities|device_hostname, device_ip, user_username|
+|Apply Risk to Entities|device_hostname, device_ip, srcDevice_ip, user_username|
 |Signal Name|Base64 Decode in Command Line|
 |Summary Expression|A base64-encoded file was decoded on host {{device_hostname}} by user {{user_username}}|
 |Score/Severity|Static: 4|
@@ -41,6 +41,7 @@ Malicious files are often encoded in an attempt to bypass security controls that
 |Normalized Schema|commandLine|
 |Normalized Schema|device_hostname|
 |Normalized Schema|device_ip|
+|Normalized Schema|srcDevice_ip|
 |Normalized Schema|user_username|
 
 

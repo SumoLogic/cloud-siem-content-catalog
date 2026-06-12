@@ -8,7 +8,7 @@ Detects the AWS CloudWatch DeleteAnomalyDetector API action. DeleteAnomalyDetect
 |----|----|
 |Type|Templated Match|
 |Category|Impact|
-|Apply Risk to Entities|device_ip, user_username, srcDevice_ip, device_hostname, srcDevice_hostname|
+|Apply Risk to Entities|user_username, srcDevice_ip, device_hostname, srcDevice_hostname|
 |Signal Name|AWS CloudWatch Anomaly Detector Deletion|
 |Summary Expression|{{action}} performed by user: {{user_username}}|
 |Score/Severity|Static: 5|
@@ -25,7 +25,6 @@ Detects the AWS CloudWatch DeleteAnomalyDetector API action. DeleteAnomalyDetect
 |----|----|
 |Normalized Schema|action|
 |Normalized Schema|device_hostname|
-|Normalized Schema|device_ip|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|
 |Normalized Schema|srcDevice_hostname|
