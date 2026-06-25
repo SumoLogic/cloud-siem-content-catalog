@@ -52,6 +52,7 @@ Detects multiple failed login attempts for the same username over a 24 hour time
 - [Slack - Slack](../products/79da6240-7617-49c8-b130-96278579766e.md)
 - [Snowflake - Snowflake](../products/8276b520-fdeb-4f79-9f5d-67865818562b.md)
 - [Teleport - Teleport](../products/46c71698-9c21-4273-9561-94ff5af52edd.md)
+- [Tenable - Cloud API](../products/1C384C22-411B-49C0-8029-A7F6C13424B1.md)
 
 
 ## Fields Used

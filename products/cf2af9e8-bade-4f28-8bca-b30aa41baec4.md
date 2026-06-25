@@ -10,7 +10,6 @@
 |THRESHOLD-S00080|[Internal Port Scan](../rules/THRESHOLD-S00080.md)|
 |THRESHOLD-S00081|[Internal Port Sweep](../rules/THRESHOLD-S00081.md)|
 |MATCH-S00554|[Outbound IRC Traffic](../rules/MATCH-S00554.md)|
-|CHAIN-S00024|[RDP Brute Force Login Attempt](../rules/CHAIN-S00024.md)|
 |MATCH-S01007|[Threat Intel - Destination Device Hostname](../rules/MATCH-S01007.md)|
 |MATCH-S01026|[Threat Intel - Destination IP Address (Low Confidence)](../rules/MATCH-S01026.md)|
 |MATCH-S01028|[Threat Intel - Destination IP Address (Medium Confidence)](../rules/MATCH-S01028.md)|
