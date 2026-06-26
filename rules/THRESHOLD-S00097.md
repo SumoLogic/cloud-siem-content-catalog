@@ -28,7 +28,6 @@ This signal triggers when there are two successful logins from the same user wit
 - [Databricks - Databricks Audit](../products/b32a58b9-8bfd-4b1d-8b68-91611fe5c37e.md)
 - [Dropbox - Dropbox](../products/5bfda3d2-03e7-4d9a-8072-c59430a131d7.md)
 - [Duo Security - Multi-Factor Authentication (MFA)](../products/acb7e80e-2b66-496c-ba2e-1e7c3933a98e.md)
-- [Fortinet - Fortigate](../products/c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad.md)
 - [Google - Google Workspace](../products/e73cd65a-7a4b-4ce9-9d73-e5d9c824c214.md)
 - [JumpCloud - Directory Insights](../products/05bfaf47-5e21-4d5f-b724-98960a6fca8a.md)
 - [JumpCloud - IdP](../products/1ed80351-d779-4f1f-9ddb-b3881f19d487.md)

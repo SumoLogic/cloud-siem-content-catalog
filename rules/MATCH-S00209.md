@@ -48,7 +48,6 @@ Apache Log4j2 <=2.14.1 using JNDI features has an exploit allowing attackers to 
 - [Palo Alto Networks - Next Generation Firewall](../products/46f5fa2c-1a62-4692-82ad-ed87800a0adb.md)
 - [Signal Sciences - Web Application Firewall](../products/2f2fbe08-ab8b-4626-81fd-eaa41b563c49.md)
 - [Squid - Squid Proxy](../products/af61d8a8-3eba-42fb-9f17-87443924f3f4.md)
-- [Symantec - Proxy Secure Gateway](../products/991a55cf-8c5a-49ba-ae72-6f64a002bacf.md)
 - [Trend Micro - Deep Security](../products/57cec26c-f94e-4403-add4-dae2382b5c16.md)
 - [Zscaler - Nanolog Streaming Service](../products/6299d728-14f7-455e-85c5-ea8ec65a654a.md)
 

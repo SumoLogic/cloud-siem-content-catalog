@@ -3756,8 +3756,8 @@
         "uid": "07e1fd9f-e4e3-4b15-b8f9-3715277d760b"
     },
     "0876c09e-5b57-4387-be5c-8334e2bb6bd4": {
-        "commit_message": "TLAB-2170: Slack anomaly mapping - add mapping to threat_name (#5867)",
-        "commit_origin_hash": "7049e8185a548a447e16c5a95b8320d74df3b0c7",
+        "commit_message": "TLAB-2641 Add null to skipped mapping values (#5986)",
+        "commit_origin_hash": "1519c7ea5e3b081ed3e000aa3e6a177d0432f4e0",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -3812,7 +3812,8 @@
         },
         "skipped_values": [
             ",",
-            "-"
+            "-",
+            "null"
         ],
         "source": "jask",
         "uid": "0876c09e-5b57-4387-be5c-8334e2bb6bd4"
@@ -9388,6 +9389,55 @@
         ],
         "source": "jask",
         "uid": "11b22c7c-ab5f-4be4-8d92-fa3ca3fcce26"
+    },
+    "11bdca6a-3201-4331-a871-4a9e24d2a343": {
+        "commit_message": "Azure Defender for cloud mapping coverage (#5988)",
+        "commit_origin_hash": "49b67e6022f5481351210f99f45e4b5c1b1c1862",
+        "field_mappings": {
+            "accountId": {
+                "value": "tenantId"
+            },
+            "action": {
+                "value": "properties.state"
+            },
+            "description": {
+                "alternate_values": [
+                    "properties.description"
+                ],
+                "value": "properties.displayName"
+            },
+            "device_uniqueId": {
+                "value": "id"
+            },
+            "resource": {
+                "value": "id"
+            },
+            "resourceType": {
+                "value": "type"
+            },
+            "threat_referenceUrl": {
+                "value": "properties.assessmentDetailsLink"
+            }
+        },
+        "file_path": "mappings_schemav3/Azure_Defender_For_Cloud.yaml",
+        "input": {
+            "event_id_pattern": "Microsoft.Security/secureScores|Microsoft.Security/regulatoryComplianceStandards/regulatoryComplianceControls/regulatoryComplianceAssessments",
+            "log_format": "JSON",
+            "product": "Azure Defender for Cloud",
+            "vendor": "Microsoft"
+        },
+        "name": "Microsoft Azure Defender for Cloud - Posture",
+        "output": {
+            "product_guid": "ca718855-210e-430a-b13c-aec4f3c2885a",
+            "record_type": "Notification"
+        },
+        "skipped_values": [
+            ",",
+            "-",
+            "null"
+        ],
+        "source": "jask",
+        "uid": "11bdca6a-3201-4331-a871-4a9e24d2a343"
     },
     "11e05ff0-cf14-47d4-9e5f-ec702a3fd53e": {
         "commit_message": "TLAB-2067: updated fields mappings (#5939)",
@@ -36310,8 +36360,8 @@
         "uid": "4886477c-cc07-4944-9847-ea9380192cf1"
     },
     "4895b867-a65d-4a57-8b06-230ecdda9d03": {
-        "commit_message": "TLAB-2170: Slack anomaly mapping - add mapping to threat_name (#5867)",
-        "commit_origin_hash": "7049e8185a548a447e16c5a95b8320d74df3b0c7",
+        "commit_message": "TLAB-2641 Add null to skipped mapping values (#5986)",
+        "commit_origin_hash": "1519c7ea5e3b081ed3e000aa3e6a177d0432f4e0",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -36363,7 +36413,8 @@
         },
         "skipped_values": [
             ",",
-            "-"
+            "-",
+            "null"
         ],
         "source": "jask",
         "uid": "4895b867-a65d-4a57-8b06-230ecdda9d03"
@@ -37173,6 +37224,80 @@
         ],
         "source": "jask",
         "uid": "4a12abfb-0f08-4758-8257-a8b6b8805625"
+    },
+    "4a4d71e2-16c2-481e-89bd-edea4fa30d80": {
+        "commit_message": "Azure Defender for cloud mapping coverage (#5988)",
+        "commit_origin_hash": "49b67e6022f5481351210f99f45e4b5c1b1c1862",
+        "field_mappings": {
+            "accountId": {
+                "value": "tenantId"
+            },
+            "action": {
+                "value": "properties.status.code"
+            },
+            "description": {
+                "value": "properties.description"
+            },
+            "device_hostname": {
+                "value": "properties.additionalData.artifactDetails.registryHost"
+            },
+            "device_uniqueId": {
+                "value": "properties.resourceDetails.nativeResourceId"
+            },
+            "normalizedSeverity": {
+                "default_value": "0",
+                "lookup": {
+                    "High": "5",
+                    "Informational": "0",
+                    "Low": "1",
+                    "Medium": "3",
+                    "None": "0",
+                    "high": "5",
+                    "informational": "0",
+                    "low": "1",
+                    "medium": "3"
+                },
+                "value": "properties.status.severity",
+                "value_type": "lookup"
+            },
+            "resourceType": {
+                "value": "properties.resourceDetails.resourceType"
+            },
+            "severity": {
+                "value": "properties.status.severity"
+            },
+            "threat_referenceUrl": {
+                "value": "properties.additionalData.vulnerabilityDetails.references.1.link"
+            },
+            "vuln_cve": {
+                "value": "properties.id"
+            },
+            "vuln_cvss": {
+                "value": "properties.additionalData.cvssV30Score"
+            },
+            "vuln_name": {
+                "value": "properties.displayName"
+            }
+        },
+        "file_path": "mappings_schemav3/Azure_Defender_For_Cloud.yaml",
+        "input": {
+            "event_id_pattern": "Microsoft.Security/assessments/subAssessments",
+            "log_format": "JSON",
+            "product": "Azure Defender for Cloud",
+            "vendor": "Microsoft"
+        },
+        "name": "Microsoft Azure Defender for Cloud - Sub-Assessments",
+        "output": {
+            "product_guid": "ca718855-210e-430a-b13c-aec4f3c2885a",
+            "record_type": "NotificationVulnerability"
+        },
+        "skipped_values": [
+            ",",
+            "-",
+            "null"
+        ],
+        "source": "jask",
+        "uid": "4a4d71e2-16c2-481e-89bd-edea4fa30d80"
     },
     "4a8ba764-bf4c-4c63-857b-8bc3f8b2f7aa": {
         "commit_message": "updated cisco asa mapper (#5916)",
@@ -46241,6 +46366,130 @@
         "source": "jask",
         "uid": "5cc56c64-7375-4a99-9b72-70cf1f9cc3a2"
     },
+    "5d1817c4-13e4-4fed-aa95-a6ee3cbd5fd8": {
+        "commit_message": "Azure Defender for cloud mapping coverage (#5988)",
+        "commit_origin_hash": "49b67e6022f5481351210f99f45e4b5c1b1c1862",
+        "field_mappings": {
+            "action": {
+                "value": "Status"
+            },
+            "application": {
+                "alternate_values": [
+                    "ExtendedProperties.Operation name"
+                ],
+                "value": "ExtendedProperties.Application"
+            },
+            "cause": {
+                "value": "ExtendedProperties.Potential causes"
+            },
+            "description": {
+                "value": "Description"
+            },
+            "device_hostname": {
+                "alternate_values": [
+                    "Entities.1.HostName",
+                    "Entities.2.ResourceName",
+                    "Entities.1.ResourceName"
+                ],
+                "value": "CompromisedEntity"
+            },
+            "device_uniqueId": {
+                "value": "AzureResourceId"
+            },
+            "http_userAgent": {
+                "alternate_values": [
+                    "ExtendedProperties.Sample User Agents"
+                ],
+                "value": "ExtendedProperties.User Agent"
+            },
+            "normalizedResource": {
+                "lookup": {
+                    "App Service": "service",
+                    "Cognitive Service": "service",
+                    "Container Registry": "service",
+                    "Key Vault": "key",
+                    "SQL Database": "database",
+                    "SQL Managed Instance": "instance",
+                    "SQL Server": "instance",
+                    "Storage Account": "service",
+                    "Subscription": "service",
+                    "Virtual Machine": "instance"
+                },
+                "value": "ExtendedProperties.resourceType",
+                "value_type": "lookup"
+            },
+            "normalizedSeverity": {
+                "default_value": "0",
+                "lookup": {
+                    "High": "5",
+                    "Informational": "0",
+                    "Low": "1",
+                    "Medium": "3",
+                    "high": "5",
+                    "informational": "0",
+                    "low": "1",
+                    "medium": "3"
+                },
+                "value": "Severity",
+                "value_type": "lookup"
+            },
+            "resourceType": {
+                "value": "ExtendedProperties.resourceType"
+            },
+            "severity": {
+                "value": "Severity"
+            },
+            "srcDevice_ip": {
+                "alternate_values": [
+                    "ExtendedProperties.Sample Source IP Addresses",
+                    "Entities.2.Address",
+                    "Entities.1.Address"
+                ],
+                "value": "ExtendedProperties.IP address"
+            },
+            "threat_category": {
+                "value": "Intent"
+            },
+            "threat_identifier": {
+                "value": "SystemAlertId"
+            },
+            "threat_name": {
+                "value": "AlertDisplayName"
+            },
+            "threat_referenceUrl": {
+                "value": "AlertUri"
+            },
+            "threat_ruleType": {
+                "value": "direct",
+                "value_type": "constant"
+            },
+            "threat_signalName": {
+                "value": "AlertType"
+            },
+            "user_username": {
+                "value": "ExtendedProperties.Principal name"
+            }
+        },
+        "file_path": "mappings_schemav3/Azure_Defender_For_Cloud.yaml",
+        "input": {
+            "event_id_pattern": "security_alert",
+            "log_format": "JSON",
+            "product": "Azure Defender for Cloud",
+            "vendor": "Microsoft"
+        },
+        "name": "Microsoft Azure Defender for Cloud - Security Alerts",
+        "output": {
+            "product_guid": "ca718855-210e-430a-b13c-aec4f3c2885a",
+            "record_type": "Endpoint"
+        },
+        "skipped_values": [
+            ",",
+            "-",
+            "null"
+        ],
+        "source": "jask",
+        "uid": "5d1817c4-13e4-4fed-aa95-a6ee3cbd5fd8"
+    },
     "5d21e0be-a121-4c29-92e9-d18a52e97299": {
         "commit_message": "TLAB-2280: Remove Redundant Mapping and Add New Field Mapping (#5880)",
         "commit_origin_hash": "fd895e4ef6e5010b4d09f314c2f82cc91e0f2675",
@@ -50528,8 +50777,8 @@
         "uid": "674d9351-450f-4f61-83b5-e2b8957781ed"
     },
     "6798c977-09ca-4c33-8848-4158732fe83b": {
-        "commit_message": "TLAB-2170: Slack anomaly mapping - add mapping to threat_name (#5867)",
-        "commit_origin_hash": "7049e8185a548a447e16c5a95b8320d74df3b0c7",
+        "commit_message": "TLAB-2641 Add null to skipped mapping values (#5986)",
+        "commit_origin_hash": "1519c7ea5e3b081ed3e000aa3e6a177d0432f4e0",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -50598,6 +50847,11 @@
             "product_guid": "79da6240-7617-49c8-b130-96278579766e",
             "record_type": "Notification"
         },
+        "skipped_values": [
+            ",",
+            "-",
+            "null"
+        ],
         "source": "jask",
         "uid": "6798c977-09ca-4c33-8848-4158732fe83b"
     },
@@ -63680,6 +63934,70 @@
         ],
         "source": "jask",
         "uid": "83ecd496-9783-4309-80ca-ee18f0ee92ef"
+    },
+    "8448c092-6b55-430d-a53e-3b91aa141518": {
+        "commit_message": "Azure Defender for cloud mapping coverage (#5988)",
+        "commit_origin_hash": "49b67e6022f5481351210f99f45e4b5c1b1c1862",
+        "field_mappings": {
+            "accountId": {
+                "value": "tenantId"
+            },
+            "action": {
+                "value": "properties.status.code"
+            },
+            "description": {
+                "value": "properties.displayName"
+            },
+            "device_hostname": {
+                "value": "properties.resourceDetails.resourceName"
+            },
+            "device_uniqueId": {
+                "value": "properties.resourceDetails.id"
+            },
+            "normalizedSeverity": {
+                "default_value": "0",
+                "lookup": {
+                    "High": "5",
+                    "Informational": "0",
+                    "Low": "1",
+                    "Medium": "3",
+                    "high": "5",
+                    "informational": "0",
+                    "low": "1",
+                    "medium": "3"
+                },
+                "value": "properties.metadata.severity",
+                "value_type": "lookup"
+            },
+            "resourceType": {
+                "value": "properties.resourceDetails.resourceType"
+            },
+            "severity": {
+                "value": "properties.metadata.severity"
+            },
+            "threat_referenceUrl": {
+                "value": "properties.links.azurePortal"
+            }
+        },
+        "file_path": "mappings_schemav3/Azure_Defender_For_Cloud.yaml",
+        "input": {
+            "event_id_pattern": "Microsoft.Security/assessments",
+            "log_format": "JSON",
+            "product": "Azure Defender for Cloud",
+            "vendor": "Microsoft"
+        },
+        "name": "Microsoft Azure Defender for Cloud - Assessments",
+        "output": {
+            "product_guid": "ca718855-210e-430a-b13c-aec4f3c2885a",
+            "record_type": "Notification"
+        },
+        "skipped_values": [
+            ",",
+            "-",
+            "null"
+        ],
+        "source": "jask",
+        "uid": "8448c092-6b55-430d-a53e-3b91aa141518"
     },
     "849f7254-1a95-4af3-a2ed-1cf71d6fb64a": {
         "commit_message": "TLAB-2280: Remove Redundant Mapping and Add New Field Mapping (#5880)",

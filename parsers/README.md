@@ -150,6 +150,7 @@ The `type` listed lets you know if you can directly apply the parser to a collec
 |Parser|/Parsers/System/McAfee/McAfee Mvision ENS|
 |Parser|/Parsers/System/McAfee/McAfee Network Security|
 |Parser|/Parsers/System/McAfee/McAfee Web Gateway CSV|
+|Parser|/Parsers/System/Microsoft/Azure Defender For Cloud|
 |Parser|/Parsers/System/Microsoft/Azure Storage Analytics|
 |Parser|/Parsers/System/Microsoft/Azure Virtual Network|
 |Parser|/Parsers/System/Microsoft/Exchange|

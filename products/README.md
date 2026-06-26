@@ -199,6 +199,7 @@ Below is a full list of Cloud SIEM products.
 |[Micro Focus](../vendors/23850303-a1da-4c95-83f1-bd9d3b5104b8.md)|[Voltage SecureData Enterprise](1acddae8-dd0e-46f8-a324-9d9144cd8b3f.md)|
 |[Microsoft](../vendors/2b002817-fd14-49b3-a3fe-c9761275b931.md)|[Advanced Threat Analytics](ae48ad1f-04e5-47c6-9892-25555e5f728b.md)|
 |[Microsoft](../vendors/2b002817-fd14-49b3-a3fe-c9761275b931.md)|[Azure](a1225af5-e778-4068-a9a2-47da93d1ff24.md)|
+|[Microsoft](../vendors/2b002817-fd14-49b3-a3fe-c9761275b931.md)|[Azure Defender For Cloud](ca718855-210e-430a-b13c-aec4f3c2885a.md)|
 |[Microsoft](../vendors/2b002817-fd14-49b3-a3fe-c9761275b931.md)|[Azure Storage Analytics](4411adbb-f3f4-4e6e-a174-694fef8d7a47.md)|
 |[Microsoft](../vendors/2b002817-fd14-49b3-a3fe-c9761275b931.md)|[Azure Virtual Network](20b56f37-5fc0-485a-b5da-4010f9025b93.md)|
 |[Microsoft](../vendors/2b002817-fd14-49b3-a3fe-c9761275b931.md)|[Cloud App Security](86e85e72-d3b1-4f1d-b195-5ca3d90e9461.md)|

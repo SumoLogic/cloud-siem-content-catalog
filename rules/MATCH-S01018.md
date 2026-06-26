@@ -42,6 +42,7 @@ This rule detects successful authentications from an IP address associated with 
 - [PingIdentity - PingFederate](../products/b0a0ae6d-dd5b-450c-9d68-36d6c61c67b0.md)
 - [SailPoint - SailPoint](../products/c3954250-68a0-49c3-ab6a-ef0daa95ff90.md)
 - [Slack - Slack](../products/79da6240-7617-49c8-b130-96278579766e.md)
+- [Snowflake - Snowflake](../products/8276b520-fdeb-4f79-9f5d-67865818562b.md)
 - [Zendesk - Zendesk](../products/a301559a-8110-4dd0-a41d-35b9baa1c740.md)
 
 

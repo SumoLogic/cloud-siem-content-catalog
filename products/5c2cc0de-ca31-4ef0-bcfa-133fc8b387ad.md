@@ -10,7 +10,6 @@
 |FIRST-S00028|[First Seen Common Windows Recon Commands From User](../rules/FIRST-S00028.md)|
 |FIRST-S00042|[First Seen Ioreg Usage from User](../rules/FIRST-S00042.md)|
 |FIRST-S00032|[First Seen Kubectl Command From User](../rules/FIRST-S00032.md)|
-|FIRST-S00030|[First Seen Outbound Connection to External IP Address on Port 445 from IP Address](../rules/FIRST-S00030.md)|
 |FIRST-S00038|[First Seen Wget Usage from User](../rules/FIRST-S00038.md)|
 |FIRST-S00040|[First Seen cURL execution from User](../rules/FIRST-S00040.md)|
 |FIRST-S00039|[First Seen mdfind Usage from User](../rules/FIRST-S00039.md)|
