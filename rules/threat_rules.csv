@@ -1,6 +1,7 @@
 "threat_ruleType","rule_id","rule_name","mapping_id","mapping_name"
 "direct","MATCH-S00402","Normalized Security Signal","2876b2f3-6e68-48bd-82e5-24f142e3c749","AWS GuardDuty Alerts from Sumo CIP"
 "direct","MATCH-S00402","Normalized Security Signal","ef75d78a-0113-4855-a5c7-cf7075f13da7","AWS Security Hub"
+"direct","MATCH-S00402","Normalized Security Signal","54ed912b-0a61-45ee-8677-f1df0aa7d765","AWSGuardDuty - AttackSequence"
 "direct","MATCH-S00402","Normalized Security Signal","42710bf7-5cb5-4964-b063-b00e7b2f3048","AWSGuardDuty - Audit Events"
 "direct","MATCH-S00402","Normalized Security Signal","499c828d-ee7e-420c-8369-d46ed029a074","AWSGuardDuty - Reconnaissance and malicious activity detection"
 "direct","MATCH-S00402","Normalized Security Signal","71a4e74c-d8b7-4148-b755-5298f5e1b49e","AWSGuardDuty - Tor Client and Relay"

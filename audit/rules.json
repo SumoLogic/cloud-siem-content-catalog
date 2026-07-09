@@ -975,7 +975,6 @@
             "5be5af82-c248-4c4c-a485-0571025f242c",
             "79da6240-7617-49c8-b130-96278579766e",
             "8276b520-fdeb-4f79-9f5d-67865818562b",
-            "90bba037-f944-480e-89fa-a3b104451af3",
             "93072f9e-3561-401e-980d-6b49f475c2fd",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "abe4975e-de65-4f82-8b35-e6ce392e165c",
@@ -983,7 +982,6 @@
             "b0a0ae6d-dd5b-450c-9d68-36d6c61c67b0",
             "b0fe0dde-4e19-4712-957b-1ea7418c132e",
             "be4f7473-fe69-4311-8859-3561900060bf",
-            "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
             "d3606245-76d3-4173-a2fe-832c0e71b0f9",
             "d3ed003d-5ddd-4c7a-bea5-63eae6311833",
             "e43ba0e4-1e3f-40c6-8bca-cb06a656a40b",
@@ -5813,7 +5811,6 @@
             "5be5af82-c248-4c4c-a485-0571025f242c",
             "5bfda3d2-03e7-4d9a-8072-c59430a131d7",
             "7465af5e-516d-40dc-9535-9b463de0660d",
-            "79055042-52c8-4998-b201-bd2cd2dbca1f",
             "79da6240-7617-49c8-b130-96278579766e",
             "8276b520-fdeb-4f79-9f5d-67865818562b",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
@@ -10856,6 +10853,7 @@
         "product_direct_ref": [],
         "product_guids": [
             "072b85a2-1765-45c2-911d-b0509880326e",
+            "1ce88b4b-d90d-4d50-9a89-3abe83e8d5f8",
             "41f70c6e-18a9-462c-a04d-4edc7baead7a",
             "c2503fcc-ef30-4e40-bb32-0bf47151b140",
             "e90edc67-68d4-4d67-82f6-4524f94b59bb",
@@ -13785,7 +13783,6 @@
             "0fb003bc-8383-442f-8f3d-afcfbaefe617",
             "37C866BF-72E1-470A-9072-EDB908F56951",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
-            "5ba50e74-3c05-4ea8-aeaf-5efde588c60f",
             "6299d728-14f7-455e-85c5-ea8ec65a654a",
             "724c9add-8cd9-4013-b9e1-a907b96da426",
             "B3582ED2-1A0C-452D-9802-97433D143486",
@@ -14405,7 +14402,6 @@
         "pattern_type": "match",
         "product_direct_ref": [],
         "product_guids": [
-            "146522A1-DC9A-40A5-A909-2EB3B665B1D1",
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "332856e9-3111-446f-8df7-e64694e4b9a1",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
@@ -15998,6 +15994,7 @@
             "033624b0-218e-4dcb-b93f-0f1fb1806c56",
             "072b85a2-1765-45c2-911d-b0509880326e",
             "44f07c08-c2ad-4a95-a058-1d0737ff90db",
+            "51278354-d6b5-4c8e-a8fd-8197df334e67",
             "c2503fcc-ef30-4e40-bb32-0bf47151b140",
             "d3ed003d-5ddd-4c7a-bea5-63eae6311833",
             "e90edc67-68d4-4d67-82f6-4524f94b59bb"
@@ -21845,6 +21842,7 @@
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
+            "5c2cc0de-ca31-4ef0-bcfa-133fc8b387ad",
             "60829f4a-7acb-47d1-ad23-8424fcf83dcb",
             "840c72e0-4e47-41e7-9b93-31f55d12f07d",
             "a1225af5-e778-4068-a9a2-47da93d1ff24"
@@ -23702,7 +23700,9 @@
         "product_guids": [
             "033624b0-218e-4dcb-b93f-0f1fb1806c56",
             "072b85a2-1765-45c2-911d-b0509880326e",
+            "0fb003bc-8383-442f-8f3d-afcfbaefe617",
             "1ce88b4b-d90d-4d50-9a89-3abe83e8d5f8",
+            "234ec2b5-4142-4837-bc78-95da8a2db81a",
             "2a236ab1-77d2-4867-a571-a1cfd64528e6",
             "2f2fbe08-ab8b-4626-81fd-eaa41b563c49",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
@@ -23730,7 +23730,6 @@
             "d3606245-76d3-4173-a2fe-832c0e71b0f9",
             "da9e05a5-3fd3-46a7-a107-ae03c01e3f5a",
             "dcc85cfc-a698-4d09-87de-f2c723f3ad07",
-            "e90edc67-68d4-4d67-82f6-4524f94b59bb",
             "ede052db-d472-408f-949c-be642237ef3f",
             "fa3c148a-4272-4a94-aea2-499ab90424c2",
             "fca8785d-4823-4442-86b2-8acbaa176da4"
@@ -38045,6 +38044,7 @@
         "product_direct_ref": [],
         "product_guids": [
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
+            "3382523e-2072-41bd-b50b-6b148957d0b0",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "a1225af5-e778-4068-a9a2-47da93d1ff24"
         ],
@@ -39542,7 +39542,6 @@
             "183c5127-6594-4d45-9bab-ce5f2df9e38b",
             "2a678bcd-898e-43cd-ab3f-91feb0602a18",
             "2b82e665-bdde-474a-ae29-4f0f76598556",
-            "3382523e-2072-41bd-b50b-6b148957d0b0",
             "3fe1afe0-c1c2-45d6-835e-0bdb1e4b703f",
             "41f70c6e-18a9-462c-a04d-4edc7baead7a",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
@@ -39550,7 +39549,6 @@
             "54B36B3F-A63F-4BA4-9DE4-02DBF69A429F",
             "5ba50e74-3c05-4ea8-aeaf-5efde588c60f",
             "5be5af82-c248-4c4c-a485-0571025f242c",
-            "6299d728-14f7-455e-85c5-ea8ec65a654a",
             "724c9add-8cd9-4013-b9e1-a907b96da426",
             "A17B3F3C-04F1-40C8-9497-3C499EB18A74",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
@@ -39927,7 +39925,6 @@
         "product_direct_ref": [],
         "product_guids": [
             "021d1ded-1c82-4663-bf5d-d6ed5170efa3",
-            "0e20c932-d992-4bd4-b276-c15119ca5c0b",
             "0fb003bc-8383-442f-8f3d-afcfbaefe617",
             "168afd8d-2893-4c74-95b1-a975d576ea56",
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
@@ -42143,6 +42140,7 @@
             "033624b0-218e-4dcb-b93f-0f1fb1806c56",
             "072b85a2-1765-45c2-911d-b0509880326e",
             "44f07c08-c2ad-4a95-a058-1d0737ff90db",
+            "51278354-d6b5-4c8e-a8fd-8197df334e67",
             "c2503fcc-ef30-4e40-bb32-0bf47151b140",
             "d3ed003d-5ddd-4c7a-bea5-63eae6311833",
             "e90edc67-68d4-4d67-82f6-4524f94b59bb"
@@ -45893,7 +45891,6 @@
         "product_direct_ref": [],
         "product_guids": [
             "0e20c932-d992-4bd4-b276-c15119ca5c0b",
-            "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "36f5ca33-0c1e-4223-8215-977ea04425ba",
             "55ec1d4a-6985-4f04-8de5-f9812871fda2",
@@ -45993,10 +45990,10 @@
         "product_guids": [
             "0e20c932-d992-4bd4-b276-c15119ca5c0b",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
-            "36f5ca33-0c1e-4223-8215-977ea04425ba",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "5c2cc0de-ca31-4ef0-bcfa-133fc8b387ad",
-            "a1225af5-e778-4068-a9a2-47da93d1ff24"
+            "a1225af5-e778-4068-a9a2-47da93d1ff24",
+            "d6cb76d3-939e-4e02-b399-b15e0278c877"
         ],
         "record_type_direct_ref": [],
         "rule_source": "sumo",
@@ -46274,7 +46271,6 @@
         "product_direct_ref": [],
         "product_guids": [
             "0e20c932-d992-4bd4-b276-c15119ca5c0b",
-            "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "5c2cc0de-ca31-4ef0-bcfa-133fc8b387ad",
@@ -46372,6 +46368,7 @@
             "0e20c932-d992-4bd4-b276-c15119ca5c0b",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
+            "5c2cc0de-ca31-4ef0-bcfa-133fc8b387ad",
             "a1225af5-e778-4068-a9a2-47da93d1ff24"
         ],
         "record_type_direct_ref": [],
@@ -48861,6 +48858,7 @@
         "product_guids": [
             "033624b0-218e-4dcb-b93f-0f1fb1806c56",
             "0e20c932-d992-4bd4-b276-c15119ca5c0b",
+            "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "36f5ca33-0c1e-4223-8215-977ea04425ba",
             "55ec1d4a-6985-4f04-8de5-f9812871fda2",
@@ -49139,6 +49137,7 @@
             "840c72e0-4e47-41e7-9b93-31f55d12f07d",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "a1f79987-b765-4f6f-bfe5-d657baa35144",
+            "b238758d-ade8-41d2-b32d-c99159e9fd74",
             "d6cb76d3-939e-4e02-b399-b15e0278c877",
             "eabd9eed-b071-4773-ad07-706ea5b51b9c",
             "f9cea291-9030-4e41-9836-6dd9274d6df4"
@@ -49218,7 +49217,6 @@
             "0e20c932-d992-4bd4-b276-c15119ca5c0b",
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
-            "36f5ca33-0c1e-4223-8215-977ea04425ba",
             "55ec1d4a-6985-4f04-8de5-f9812871fda2",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "5be5af82-c248-4c4c-a485-0571025f242c",
@@ -49227,6 +49225,7 @@
             "840c72e0-4e47-41e7-9b93-31f55d12f07d",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "b238758d-ade8-41d2-b32d-c99159e9fd74",
+            "d6cb76d3-939e-4e02-b399-b15e0278c877",
             "ef42eb74-7444-4fee-b231-b4eb1e7c9660"
         ],
         "record_type_direct_ref": [],
@@ -49299,7 +49298,8 @@
             "0e20c932-d992-4bd4-b276-c15119ca5c0b",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "840c72e0-4e47-41e7-9b93-31f55d12f07d",
-            "a1225af5-e778-4068-a9a2-47da93d1ff24"
+            "a1225af5-e778-4068-a9a2-47da93d1ff24",
+            "b238758d-ade8-41d2-b32d-c99159e9fd74"
         ],
         "record_type_direct_ref": [],
         "rule_source": "sumo",
@@ -58360,7 +58360,6 @@
             "0e20c932-d992-4bd4-b276-c15119ca5c0b",
             "153794da-09e8-48fe-b511-1306fbb94d07",
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
-            "3382523e-2072-41bd-b50b-6b148957d0b0",
             "3fe1afe0-c1c2-45d6-835e-0bdb1e4b703f",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
             "4a75a995-0e10-45fc-8b4d-7fcfc0e98e25",
@@ -59912,7 +59911,8 @@
             "5c2cc0de-ca31-4ef0-bcfa-133fc8b387ad",
             "840c72e0-4e47-41e7-9b93-31f55d12f07d",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
-            "b238758d-ade8-41d2-b32d-c99159e9fd74"
+            "b238758d-ade8-41d2-b32d-c99159e9fd74",
+            "d6cb76d3-939e-4e02-b399-b15e0278c877"
         ],
         "record_type_direct_ref": [],
         "rule_description": "",
@@ -64687,7 +64687,6 @@
         "product_guids": [
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
-            "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "b238758d-ade8-41d2-b32d-c99159e9fd74"
         ],
         "record_type_direct_ref": [],
@@ -68673,7 +68672,6 @@
             "0b45ccba-20b4-41e4-973d-b50fd291944d",
             "0e20c932-d992-4bd4-b276-c15119ca5c0b",
             "153794da-09e8-48fe-b511-1306fbb94d07",
-            "1ed80351-d779-4f1f-9ddb-b3881f19d487",
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "3fe1afe0-c1c2-45d6-835e-0bdb1e4b703f",
@@ -68772,6 +68770,7 @@
             "183c5127-6594-4d45-9bab-ce5f2df9e38b",
             "2b79254e-8017-4dbf-8e39-590132172a7d",
             "51278354-d6b5-4c8e-a8fd-8197df334e67",
+            "54B36B3F-A63F-4BA4-9DE4-02DBF69A429F",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "a67d97fe-6e68-4cfb-9500-cfc5492da565",
             "ad8d40a9-ee64-4615-bd92-aa964b4ae3b0",
@@ -69343,6 +69342,7 @@
             "B3582ED2-1A0C-452D-9802-97433D143486",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "afabb29d-e728-410f-b7c6-acfa9efbe1ed",
+            "be4f7473-fe69-4311-8859-3561900060bf",
             "c2503fcc-ef30-4e40-bb32-0bf47151b140",
             "c3c1a4fc-10cc-4155-8a30-a3bb14fc9f31",
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
@@ -69576,7 +69576,6 @@
             "5ba50e74-3c05-4ea8-aeaf-5efde588c60f",
             "6299d728-14f7-455e-85c5-ea8ec65a654a",
             "724c9add-8cd9-4013-b9e1-a907b96da426",
-            "951a004d-54bf-441d-98e1-fcc6a032f475",
             "9e0641a7-22ce-4ac8-8113-ee48b368ac3d",
             "B3582ED2-1A0C-452D-9802-97433D143486",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
@@ -70973,6 +70972,465 @@
         "threat_ruleType": null,
         "vendor_direct_ref": []
     },
+    "MATCH-S01158": {
+        "all_fields": [
+            "baseImage",
+            "device_hostname",
+            "device_ip",
+            "file_hash_sha256",
+            "metadata_product",
+            "metadata_vendor",
+            "normalizedSeverity",
+            "srcDevice_hostname",
+            "srcDevice_ip",
+            "threat_ruleType",
+            "threat_signalName",
+            "user_username"
+        ],
+        "asset_field": "device_hostname",
+        "category": "Execution",
+        "commit_message": "Passthrough Rules - Phase 1 (#5995)",
+        "commit_origin_hash": "20fd71082ffb3a57e4e588f8aa7096e9f812ae89",
+        "content_type": "RULE",
+        "description_expression": "Passes through an endpoint/EDR behavioral detection from a security product and adjusts the severity accordingly based on the severity provided in the log.",
+        "enabled_by_default": true,
+        "entity_selectors": [
+            {
+                "entity_type": "_hostname",
+                "expression": "device_hostname"
+            },
+            {
+                "entity_type": "_hostname",
+                "expression": "srcDevice_hostname"
+            },
+            {
+                "entity_type": "_ip",
+                "expression": "device_ip"
+            },
+            {
+                "entity_type": "_ip",
+                "expression": "srcDevice_ip"
+            },
+            {
+                "entity_type": "_username",
+                "expression": "user_username"
+            },
+            {
+                "entity_type": "_process",
+                "expression": "baseImage"
+            },
+            {
+                "entity_type": "_hash",
+                "expression": "file_hash_sha256"
+            }
+        ],
+        "expression": "threat_ruleType = 'endpoint'",
+        "file_path": "rules_v3/Normalized_Endpoint_Detection.json",
+        "id": 1158,
+        "id_compiled": "MATCH-S01158",
+        "is_prototype": false,
+        "name": "Normalized Endpoint Detection",
+        "name_expression": "{{metadata_vendor}} {{metadata_product}} - {{threat_signalName}}",
+        "normalized_description": "Passes through an endpoint/EDR behavioral detection from a security product and adjusts the severity accordingly based on the severity provided in the log.",
+        "normalized_score_description": null,
+        "normalized_score_possibilities": null,
+        "normalized_score_range": null,
+        "normalized_score_type": null,
+        "normalized_signal_name": "{{metadata_vendor}} {{metadata_product}} - {{threat_signalName}}",
+        "normalized_summary": "Endpoint detection: {{threat_signalName}} on {{device_hostname}}",
+        "pattern_type": "templated_match",
+        "product_direct_ref": [],
+        "product_guids": [],
+        "record_type_direct_ref": [],
+        "rule_source": "sumo",
+        "score_expression": null,
+        "score_mapping": {
+            "default": 0,
+            "field": "normalizedSeverity",
+            "mapping": [],
+            "type": "fieldValue"
+        },
+        "stream": "record",
+        "summary_expression": "Endpoint detection: {{threat_signalName}} on {{device_hostname}}",
+        "tags": [],
+        "threat_ruleType": "endpoint",
+        "vendor_direct_ref": []
+    },
+    "MATCH-S01159": {
+        "all_fields": [
+            "baseImage",
+            "device_hostname",
+            "device_k8s_normalizedDeploymentName",
+            "device_k8s_normalizedPodName",
+            "device_k8s_normalizedReplicaSetName",
+            "metadata_product",
+            "metadata_vendor",
+            "normalizedSeverity",
+            "threat_ruleType",
+            "threat_signalName",
+            "user_username"
+        ],
+        "asset_field": "device_hostname",
+        "category": "Execution",
+        "commit_message": "Passthrough Rules - Phase 1 (#5995)",
+        "commit_origin_hash": "20fd71082ffb3a57e4e588f8aa7096e9f812ae89",
+        "content_type": "RULE",
+        "description_expression": "Passes through a container or cloud-native runtime detection (e.g. Falco, Sysdig, Twistlock, Aqua) and adjusts the severity accordingly based on the severity provided in the log.",
+        "enabled_by_default": true,
+        "entity_selectors": [
+            {
+                "entity_type": "_hostname",
+                "expression": "device_hostname"
+            },
+            {
+                "entity_type": "_pod",
+                "expression": "device_k8s_normalizedPodName"
+            },
+            {
+                "entity_type": "_deployment",
+                "expression": "device_k8s_normalizedDeploymentName"
+            },
+            {
+                "entity_type": "_replicaset",
+                "expression": "device_k8s_normalizedReplicaSetName"
+            },
+            {
+                "entity_type": "_process",
+                "expression": "baseImage"
+            },
+            {
+                "entity_type": "_username",
+                "expression": "user_username"
+            }
+        ],
+        "expression": "threat_ruleType = 'runtime'",
+        "file_path": "rules_v3/Normalized_Runtime_Detection.json",
+        "id": 1159,
+        "id_compiled": "MATCH-S01159",
+        "is_prototype": false,
+        "name": "Normalized Runtime Detection",
+        "name_expression": "{{metadata_vendor}} {{metadata_product}} - {{threat_signalName}}",
+        "normalized_description": "Passes through a container or cloud-native runtime detection (e.g. Falco, Sysdig, Twistlock, Aqua) and adjusts the severity accordingly based on the severity provided in the log.",
+        "normalized_score_description": null,
+        "normalized_score_possibilities": null,
+        "normalized_score_range": null,
+        "normalized_score_type": null,
+        "normalized_signal_name": "{{metadata_vendor}} {{metadata_product}} - {{threat_signalName}}",
+        "normalized_summary": "Runtime detection: {{threat_signalName}} on {{device_hostname}}",
+        "pattern_type": "templated_match",
+        "product_direct_ref": [],
+        "product_guids": [],
+        "record_type_direct_ref": [],
+        "rule_source": "sumo",
+        "score_expression": null,
+        "score_mapping": {
+            "default": 0,
+            "field": "normalizedSeverity",
+            "mapping": [],
+            "type": "fieldValue"
+        },
+        "stream": "record",
+        "summary_expression": "Runtime detection: {{threat_signalName}} on {{device_hostname}}",
+        "tags": [],
+        "threat_ruleType": "runtime",
+        "vendor_direct_ref": []
+    },
+    "MATCH-S01160": {
+        "all_fields": [
+            "device_hostname",
+            "metadata_product",
+            "metadata_vendor",
+            "normalizedSeverity",
+            "resource",
+            "srcDevice_ip",
+            "threat_ruleType",
+            "threat_signalName",
+            "user_username"
+        ],
+        "asset_field": "resource",
+        "category": "Discovery",
+        "commit_message": "Passthrough Rules - Phase 1 (#5995)",
+        "commit_origin_hash": "20fd71082ffb3a57e4e588f8aa7096e9f812ae89",
+        "content_type": "RULE",
+        "description_expression": "Passes through a cloud posture or cloud-threat finding (e.g. AWS GuardDuty, Security Hub, Orca, Wiz, Prisma Cloud) and adjusts the severity accordingly based on the severity provided in the log.",
+        "enabled_by_default": true,
+        "entity_selectors": [
+            {
+                "entity_type": "_resource",
+                "expression": "resource"
+            },
+            {
+                "entity_type": "_username",
+                "expression": "user_username"
+            },
+            {
+                "entity_type": "_ip",
+                "expression": "srcDevice_ip"
+            },
+            {
+                "entity_type": "_hostname",
+                "expression": "device_hostname"
+            }
+        ],
+        "expression": "threat_ruleType = 'cloud'",
+        "file_path": "rules_v3/Normalized_Cloud_Detection.json",
+        "id": 1160,
+        "id_compiled": "MATCH-S01160",
+        "is_prototype": false,
+        "name": "Normalized Cloud Detection",
+        "name_expression": "{{metadata_vendor}} {{metadata_product}} - {{threat_signalName}}",
+        "normalized_description": "Passes through a cloud posture or cloud-threat finding (e.g. AWS GuardDuty, Security Hub, Orca, Wiz, Prisma Cloud) and adjusts the severity accordingly based on the severity provided in the log.",
+        "normalized_score_description": null,
+        "normalized_score_possibilities": null,
+        "normalized_score_range": null,
+        "normalized_score_type": null,
+        "normalized_signal_name": "{{metadata_vendor}} {{metadata_product}} - {{threat_signalName}}",
+        "normalized_summary": "Cloud detection: {{threat_signalName}} on {{resource}}",
+        "pattern_type": "templated_match",
+        "product_direct_ref": [],
+        "product_guids": [],
+        "record_type_direct_ref": [],
+        "rule_source": "sumo",
+        "score_expression": null,
+        "score_mapping": {
+            "default": 0,
+            "field": "normalizedSeverity",
+            "mapping": [],
+            "type": "fieldValue"
+        },
+        "stream": "record",
+        "summary_expression": "Cloud detection: {{threat_signalName}} on {{resource}}",
+        "tags": [],
+        "threat_ruleType": "cloud",
+        "vendor_direct_ref": []
+    },
+    "MATCH-S01161": {
+        "all_fields": [
+            "http_userAgent",
+            "metadata_product",
+            "metadata_vendor",
+            "normalizedSeverity",
+            "srcDevice_ip",
+            "targetUser_username",
+            "threat_ruleType",
+            "threat_signalName",
+            "user_email",
+            "user_username"
+        ],
+        "asset_field": "user_username",
+        "category": "Initial Access",
+        "commit_message": "Passthrough Rules - Phase 1 (#5995)",
+        "commit_origin_hash": "20fd71082ffb3a57e4e588f8aa7096e9f812ae89",
+        "content_type": "RULE",
+        "description_expression": "Passes through an identity or access anomaly detection (e.g. Azure risky user, Google Workspace, Slack, Okta) and adjusts the severity accordingly based on the severity provided in the log.",
+        "enabled_by_default": true,
+        "entity_selectors": [
+            {
+                "entity_type": "_username",
+                "expression": "user_username"
+            },
+            {
+                "entity_type": "_username",
+                "expression": "targetUser_username"
+            },
+            {
+                "entity_type": "_email",
+                "expression": "user_email"
+            },
+            {
+                "entity_type": "_ip",
+                "expression": "srcDevice_ip"
+            },
+            {
+                "entity_type": "_useragent",
+                "expression": "http_userAgent"
+            }
+        ],
+        "expression": "threat_ruleType = 'identity'",
+        "file_path": "rules_v3/Normalized_Identity_Detection.json",
+        "id": 1161,
+        "id_compiled": "MATCH-S01161",
+        "is_prototype": false,
+        "name": "Normalized Identity Detection",
+        "name_expression": "{{metadata_vendor}} {{metadata_product}} - {{threat_signalName}}",
+        "normalized_description": "Passes through an identity or access anomaly detection (e.g. Azure risky user, Google Workspace, Slack, Okta) and adjusts the severity accordingly based on the severity provided in the log.",
+        "normalized_score_description": null,
+        "normalized_score_possibilities": null,
+        "normalized_score_range": null,
+        "normalized_score_type": null,
+        "normalized_signal_name": "{{metadata_vendor}} {{metadata_product}} - {{threat_signalName}}",
+        "normalized_summary": "Identity risk: {{threat_signalName}} for {{user_username}}",
+        "pattern_type": "templated_match",
+        "product_direct_ref": [],
+        "product_guids": [],
+        "record_type_direct_ref": [],
+        "rule_source": "sumo",
+        "score_expression": null,
+        "score_mapping": {
+            "default": 0,
+            "field": "normalizedSeverity",
+            "mapping": [],
+            "type": "fieldValue"
+        },
+        "stream": "record",
+        "summary_expression": "Identity risk: {{threat_signalName}} for {{user_username}}",
+        "tags": [],
+        "threat_ruleType": "identity",
+        "vendor_direct_ref": []
+    },
+    "MATCH-S01162": {
+        "all_fields": [
+            "dstDevice_hostname",
+            "dstDevice_ip",
+            "http_url",
+            "http_url_fqdn",
+            "metadata_product",
+            "metadata_vendor",
+            "normalizedSeverity",
+            "srcDevice_hostname",
+            "srcDevice_ip",
+            "threat_ruleType",
+            "threat_signalName"
+        ],
+        "asset_field": "srcDevice_hostname",
+        "category": "Command and Control",
+        "commit_message": "Passthrough Rules - Phase 1 (#5995)",
+        "commit_origin_hash": "20fd71082ffb3a57e4e588f8aa7096e9f812ae89",
+        "content_type": "RULE",
+        "description_expression": "Passes through a network, NDR, or WAF detection (e.g. Kemp, Palo Alto, FortiGate, FireEye, Vectra, Claroty) and adjusts the severity accordingly based on the severity provided in the log.",
+        "enabled_by_default": true,
+        "entity_selectors": [
+            {
+                "entity_type": "_ip",
+                "expression": "srcDevice_ip"
+            },
+            {
+                "entity_type": "_ip",
+                "expression": "dstDevice_ip"
+            },
+            {
+                "entity_type": "_hostname",
+                "expression": "srcDevice_hostname"
+            },
+            {
+                "entity_type": "_hostname",
+                "expression": "dstDevice_hostname"
+            },
+            {
+                "entity_type": "_domain",
+                "expression": "http_url_fqdn"
+            },
+            {
+                "entity_type": "_url",
+                "expression": "http_url"
+            }
+        ],
+        "expression": "threat_ruleType = 'network'",
+        "file_path": "rules_v3/Normalized_Network_Detection.json",
+        "id": 1162,
+        "id_compiled": "MATCH-S01162",
+        "is_prototype": false,
+        "name": "Normalized Network Detection",
+        "name_expression": "{{metadata_vendor}} {{metadata_product}} - {{threat_signalName}}",
+        "normalized_description": "Passes through a network, NDR, or WAF detection (e.g. Kemp, Palo Alto, FortiGate, FireEye, Vectra, Claroty) and adjusts the severity accordingly based on the severity provided in the log.",
+        "normalized_score_description": null,
+        "normalized_score_possibilities": null,
+        "normalized_score_range": null,
+        "normalized_score_type": null,
+        "normalized_signal_name": "{{metadata_vendor}} {{metadata_product}} - {{threat_signalName}}",
+        "normalized_summary": "Network detection: {{threat_signalName}} from {{srcDevice_ip}}",
+        "pattern_type": "templated_match",
+        "product_direct_ref": [],
+        "product_guids": [],
+        "record_type_direct_ref": [],
+        "rule_source": "sumo",
+        "score_expression": null,
+        "score_mapping": {
+            "default": 0,
+            "field": "normalizedSeverity",
+            "mapping": [],
+            "type": "fieldValue"
+        },
+        "stream": "record",
+        "summary_expression": "Network detection: {{threat_signalName}} from {{srcDevice_ip}}",
+        "tags": [],
+        "threat_ruleType": "network",
+        "vendor_direct_ref": []
+    },
+    "MATCH-S01163": {
+        "all_fields": [
+            "file_path",
+            "metadata_product",
+            "metadata_vendor",
+            "normalizedSeverity",
+            "resource",
+            "srcDevice_ip",
+            "threat_ruleType",
+            "threat_signalName",
+            "user_email",
+            "user_username"
+        ],
+        "asset_field": "resource",
+        "category": "Exfiltration",
+        "commit_message": "Passthrough Rules - Phase 1 (#5995)",
+        "commit_origin_hash": "20fd71082ffb3a57e4e588f8aa7096e9f812ae89",
+        "content_type": "RULE",
+        "description_expression": "Passes through a data-protection, email, deception, or application security detection (e.g. DLP, Proofpoint, Thinkst Canary, Contrast) and adjusts the severity accordingly based on the severity provided in the log.",
+        "enabled_by_default": true,
+        "entity_selectors": [
+            {
+                "entity_type": "_resource",
+                "expression": "resource"
+            },
+            {
+                "entity_type": "_file",
+                "expression": "file_path"
+            },
+            {
+                "entity_type": "_email",
+                "expression": "user_email"
+            },
+            {
+                "entity_type": "_username",
+                "expression": "user_username"
+            },
+            {
+                "entity_type": "_ip",
+                "expression": "srcDevice_ip"
+            }
+        ],
+        "expression": "threat_ruleType = 'data_protection'",
+        "file_path": "rules_v3/Normalized_Data_Protection_Detection.json",
+        "id": 1163,
+        "id_compiled": "MATCH-S01163",
+        "is_prototype": false,
+        "name": "Normalized Data Protection Detection",
+        "name_expression": "{{metadata_vendor}} {{metadata_product}} - {{threat_signalName}}",
+        "normalized_description": "Passes through a data-protection, email, deception, or application security detection (e.g. DLP, Proofpoint, Thinkst Canary, Contrast) and adjusts the severity accordingly based on the severity provided in the log.",
+        "normalized_score_description": null,
+        "normalized_score_possibilities": null,
+        "normalized_score_range": null,
+        "normalized_score_type": null,
+        "normalized_signal_name": "{{metadata_vendor}} {{metadata_product}} - {{threat_signalName}}",
+        "normalized_summary": "Data protection detection: {{threat_signalName}} on {{resource}}",
+        "pattern_type": "templated_match",
+        "product_direct_ref": [],
+        "product_guids": [],
+        "record_type_direct_ref": [],
+        "rule_source": "sumo",
+        "score_expression": null,
+        "score_mapping": {
+            "default": 0,
+            "field": "normalizedSeverity",
+            "mapping": [],
+            "type": "fieldValue"
+        },
+        "stream": "record",
+        "summary_expression": "Data protection detection: {{threat_signalName}} on {{resource}}",
+        "tags": [],
+        "threat_ruleType": "data_protection",
+        "vendor_direct_ref": []
+    },
     "OUTLIER-S00001": {
         "aggregation_functions": [
             {
@@ -71044,15 +71502,12 @@
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
-            "4809be0f-c6f3-4cbb-b1f6-ae9ae817712e",
             "51278354-d6b5-4c8e-a8fd-8197df334e67",
             "54B36B3F-A63F-4BA4-9DE4-02DBF69A429F",
             "5be5af82-c248-4c4c-a485-0571025f242c",
-            "70f80fa8-200a-449b-8100-f8d4b7687380",
             "7205db83-88e8-4074-8288-136a6c493d69",
             "79da6240-7617-49c8-b130-96278579766e",
             "8276b520-fdeb-4f79-9f5d-67865818562b",
-            "90bba037-f944-480e-89fa-a3b104451af3",
             "93072f9e-3561-401e-980d-6b49f475c2fd",
             "9f6d624f-6d8f-43c7-a4b0-51179061631c",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
@@ -71447,6 +71902,7 @@
         "product_guids": [
             "991a55cf-8c5a-49ba-ae72-6f64a002bacf",
             "af61d8a8-3eba-42fb-9f17-87443924f3f4",
+            "bf865cb5-0b26-4010-8b3c-5ae2d1f716d8",
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad"
         ],
         "record_type_direct_ref": [],
@@ -71927,8 +72383,7 @@
         "product_direct_ref": [],
         "product_guids": [
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
-            "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
-            "d4a9e7ce-082e-4f41-891f-4c43e604c850"
+            "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad"
         ],
         "record_type_direct_ref": [],
         "retention_window_size": 7776000000,
@@ -73446,6 +73901,7 @@
         "product_direct_ref": [],
         "product_guids": [
             "072b85a2-1765-45c2-911d-b0509880326e",
+            "0fb003bc-8383-442f-8f3d-afcfbaefe617",
             "2a678bcd-898e-43cd-ab3f-91feb0602a18",
             "37C866BF-72E1-470A-9072-EDB908F56951",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
@@ -75753,6 +76209,7 @@
             "c3c1a4fc-10cc-4155-8a30-a3bb14fc9f31",
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
             "cf2af9e8-bade-4f28-8bca-b30aa41baec4",
+            "d0aebc1c-db4d-440f-b69f-70dae24befff",
             "da9e05a5-3fd3-46a7-a107-ae03c01e3f5a"
         ],
         "record_type_direct_ref": [],
@@ -75932,7 +76389,6 @@
             "c3c1a4fc-10cc-4155-8a30-a3bb14fc9f31",
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
             "cf2af9e8-bade-4f28-8bca-b30aa41baec4",
-            "d4a9e7ce-082e-4f41-891f-4c43e604c850",
             "da9e05a5-3fd3-46a7-a107-ae03c01e3f5a",
             "dcc85cfc-a698-4d09-87de-f2c723f3ad07",
             "ef11c9cd-df72-42c6-81f5-70b91fd0f38a"
@@ -76797,7 +77253,6 @@
             "70f80fa8-200a-449b-8100-f8d4b7687380",
             "79da6240-7617-49c8-b130-96278579766e",
             "8276b520-fdeb-4f79-9f5d-67865818562b",
-            "90bba037-f944-480e-89fa-a3b104451af3",
             "9f6d624f-6d8f-43c7-a4b0-51179061631c",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "acb7e80e-2b66-496c-ba2e-1e7c3933a98e",
@@ -78271,12 +78726,12 @@
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "37a906de-5e9c-475e-881a-65a1d984f377",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
-            "4809be0f-c6f3-4cbb-b1f6-ae9ae817712e",
             "51278354-d6b5-4c8e-a8fd-8197df334e67",
             "54B36B3F-A63F-4BA4-9DE4-02DBF69A429F",
             "5be5af82-c248-4c4c-a485-0571025f242c",
             "70f80fa8-200a-449b-8100-f8d4b7687380",
             "7205db83-88e8-4074-8288-136a6c493d69",
+            "79da6240-7617-49c8-b130-96278579766e",
             "8276b520-fdeb-4f79-9f5d-67865818562b",
             "9f6d624f-6d8f-43c7-a4b0-51179061631c",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",

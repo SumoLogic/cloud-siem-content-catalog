@@ -588,6 +588,12 @@
 |MATCH-S00152|[New or Renamed Windows User Account Mimicking a Machine Account](MATCH-S00152.md)|
 |MATCH-S00895|[NinjaCopy Usage Detected](MATCH-S00895.md)|
 |LEGACY-S00181|[Noncompliant Protocol Tunnel Over Common Service Port](LEGACY-S00181.md)|
+|MATCH-S01160|[Normalized Cloud Detection](MATCH-S01160.md)|
+|MATCH-S01163|[Normalized Data Protection Detection](MATCH-S01163.md)|
+|MATCH-S01158|[Normalized Endpoint Detection](MATCH-S01158.md)|
+|MATCH-S01161|[Normalized Identity Detection](MATCH-S01161.md)|
+|MATCH-S01162|[Normalized Network Detection](MATCH-S01162.md)|
+|MATCH-S01159|[Normalized Runtime Detection](MATCH-S01159.md)|
 |MATCH-S00402|[Normalized Security Signal](MATCH-S00402.md)|
 |MATCH-S00288|[NotPetya Ransomware Activity](MATCH-S00288.md)|
 |MATCH-S00455|[O365 - Successful Authentication with PowerShell User Agent](MATCH-S00455.md)|

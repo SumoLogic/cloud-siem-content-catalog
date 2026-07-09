@@ -20719,8 +20719,8 @@
         "uid": "281ffe53-aeb7-43d4-be54-ff8fd6f017ab"
     },
     "28246ca3-8eba-4fc7-8049-273a83af890e": {
-        "commit_message": "TLAB-2541-Redundancy remediation: Okta device/srcDevice mappings (#5949)",
-        "commit_origin_hash": "b1a97642ec7e39fbd329668ddb4241427f4e8f20",
+        "commit_message": "TLAB-1172 Remove logon normAct from mfa mapper (#5994)",
+        "commit_origin_hash": "cb8a2c3b435af7d35a5c6752fbde7c54e889d660",
         "field_mappings": {
             "cause": {
                 "value": "outcome.reason"
@@ -20983,8 +20983,8 @@
         "uid": "2857281b-91ae-4dad-9b47-2ae4471738be"
     },
     "286d0aab-0efe-4f8f-922b-1151cc661c9b": {
-        "commit_message": "TLAB-2541-Redundancy remediation: Okta device/srcDevice mappings (#5949)",
-        "commit_origin_hash": "b1a97642ec7e39fbd329668ddb4241427f4e8f20",
+        "commit_message": "TLAB-1172 Remove logon normAct from mfa mapper (#5994)",
+        "commit_origin_hash": "cb8a2c3b435af7d35a5c6752fbde7c54e889d660",
         "field_mappings": {
             "cause": {
                 "value": "outcome.reason"
@@ -21239,8 +21239,8 @@
         "uid": "286e19bd-2207-4a0f-b27e-efccd7a98b96"
     },
     "2876b2f3-6e68-48bd-82e5-24f142e3c749": {
-        "commit_message": "TLAB-1352 addes resource and normalizedResource",
-        "commit_origin_hash": "2be97c8a1e3cdb10058e26811ad16813e5675467",
+        "commit_message": "TLAB-2654_New mapper for AWS Guardduty attackSequence events (#5992)",
+        "commit_origin_hash": "3c055b13ca42d32596b0c922d49ed27d8bdaadfa",
         "field_mappings": {
             "accountId": {
                 "alternate_values": [
@@ -31570,8 +31570,8 @@
         "uid": "3f2bd88a-69b4-11ea-bc55-0242ac130003"
     },
     "3f3c35bf-e896-4c34-961e-6868224c0f69": {
-        "commit_message": "TLAB-1352 addes resource and normalizedResource",
-        "commit_origin_hash": "2be97c8a1e3cdb10058e26811ad16813e5675467",
+        "commit_message": "TLAB-2654_New mapper for AWS Guardduty attackSequence events (#5992)",
+        "commit_origin_hash": "3c055b13ca42d32596b0c922d49ed27d8bdaadfa",
         "field_mappings": {
             "accountId": {
                 "value": "detail.accountId"
@@ -33289,8 +33289,8 @@
         "uid": "42656056-8445-4313-ba3e-56913a21cd3f"
     },
     "42710bf7-5cb5-4964-b063-b00e7b2f3048": {
-        "commit_message": "TLAB-1352 addes resource and normalizedResource",
-        "commit_origin_hash": "2be97c8a1e3cdb10058e26811ad16813e5675467",
+        "commit_message": "TLAB-2654_New mapper for AWS Guardduty attackSequence events (#5992)",
+        "commit_origin_hash": "3c055b13ca42d32596b0c922d49ed27d8bdaadfa",
         "field_mappings": {
             "accountId": {
                 "alternate_values": [
@@ -36681,8 +36681,8 @@
         "uid": "4986836c-1759-422b-b5c4-8a548f18616b"
     },
     "499c828d-ee7e-420c-8369-d46ed029a074": {
-        "commit_message": "TLAB-1352 addes resource and normalizedResource",
-        "commit_origin_hash": "2be97c8a1e3cdb10058e26811ad16813e5675467",
+        "commit_message": "TLAB-2654_New mapper for AWS Guardduty attackSequence events (#5992)",
+        "commit_origin_hash": "3c055b13ca42d32596b0c922d49ed27d8bdaadfa",
         "field_mappings": {
             "accountId": {
                 "alternate_values": [
@@ -41627,8 +41627,8 @@
         "uid": "530701a5-359e-482f-af68-1ae8405e4f69"
     },
     "53564119-22d2-4b25-bc56-8a29ea15eb8d": {
-        "commit_message": "TLAB-1593 removed locatoin fields",
-        "commit_origin_hash": "95ede5eec53678187a907bace510a88e8f353801",
+        "commit_message": "TLAB-2643_Watchguard Firewall logs mapping (#5991)",
+        "commit_origin_hash": "3e3b12d6fc08d215796220779ad99e1a6a32920a",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -41640,6 +41640,9 @@
                 "value": "sent_bytes"
             },
             "device_hostname": {
+                "alternate_values": [
+                    "member"
+                ],
                 "value": "hostname"
             },
             "dns_queryDomain": {
@@ -42366,6 +42369,93 @@
         ],
         "source": "jask",
         "uid": "54b3f101-a8da-4eb4-b1eb-a48efb095365"
+    },
+    "54ed912b-0a61-45ee-8677-f1df0aa7d765": {
+        "commit_message": "TLAB-2654_New mapper for AWS Guardduty attackSequence events (#5992)",
+        "commit_origin_hash": "3c055b13ca42d32596b0c922d49ed27d8bdaadfa",
+        "field_mappings": {
+            "accountId": {
+                "value": "accountId"
+            },
+            "cloud_provider": {
+                "value": "AWS",
+                "value_type": "constant"
+            },
+            "cloud_region": {
+                "value": "region"
+            },
+            "cloud_service": {
+                "value": "GuardDuty",
+                "value_type": "constant"
+            },
+            "description": {
+                "alternate_values": [
+                    "detail.title"
+                ],
+                "value": "detail.description"
+            },
+            "device_uniqueId": {
+                "value": "id"
+            },
+            "normalizedSeverity": {
+                "value": "detail.severity"
+            },
+            "resource": {
+                "alternate_values": [
+                    "service.detection.sequence.actors.1.user.credentialUid"
+                ],
+                "value": "service.detection.sequence.resources.1.uid"
+            },
+            "resourceType": {
+                "value": "resource.resourceType"
+            },
+            "severity": {
+                "value": "detail.severity"
+            },
+            "srcDevice_ip": {
+                "value": "service.detection.sequence.endpoints.1.ip"
+            },
+            "threat_identifier": {
+                "value": "service.detectorId"
+            },
+            "threat_name": {
+                "value": "detail.type"
+            },
+            "threat_ruleType": {
+                "value": "direct",
+                "value_type": "constant"
+            },
+            "threat_signalName": {
+                "value": "detail.type"
+            },
+            "threat_signalSummary": {
+                "value": "detail.description"
+            },
+            "user_username": {
+                "alternate_values": [
+                    "service.detection.sequence.actors.1.user.uid"
+                ],
+                "value": "service.detection.sequence.actors.1.user.name"
+            }
+        },
+        "file_path": "mappings_schemav3/aws_guardduty_custom_parser.yaml",
+        "input": {
+            "event_id_pattern": "AttackSequence.*",
+            "log_format": "JSON",
+            "product": "GuardDuty",
+            "vendor": "AWS"
+        },
+        "name": "AWSGuardDuty - AttackSequence",
+        "output": {
+            "product_guid": "2ca0adcf-7616-4474-8557-a3773515aa6d",
+            "record_type": "Audit"
+        },
+        "skipped_values": [
+            ",",
+            "-"
+        ],
+        "source": "jask",
+        "uid": "54ed912b-0a61-45ee-8677-f1df0aa7d765"
     },
     "54f4227f-e3ec-4aea-b065-068257bd077a": {
         "commit_message": "TLAB-1353 added resource and normalizedResource fields",
@@ -45912,8 +46002,8 @@
         "uid": "5bb5aea6-a1eb-41df-b86a-0e8a4ab9aab4"
     },
     "5bd1cc78-2155-4203-978b-955ac2a62665": {
-        "commit_message": "TLAB-1593 removed locatoin fields",
-        "commit_origin_hash": "95ede5eec53678187a907bace510a88e8f353801",
+        "commit_message": "TLAB-2643_Watchguard Firewall logs mapping (#5991)",
+        "commit_origin_hash": "3e3b12d6fc08d215796220779ad99e1a6a32920a",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -47024,8 +47114,8 @@
         "uid": "5f842838-583c-4f45-b54a-e6a1f885e27b"
     },
     "5f9fd200-dfdc-4b22-8709-81c5a2ef92f5": {
-        "commit_message": "TLAB-2541-Redundancy remediation: Okta device/srcDevice mappings (#5949)",
-        "commit_origin_hash": "b1a97642ec7e39fbd329668ddb4241427f4e8f20",
+        "commit_message": "TLAB-1172 Remove logon normAct from mfa mapper (#5994)",
+        "commit_origin_hash": "cb8a2c3b435af7d35a5c6752fbde7c54e889d660",
         "field_mappings": {
             "application": {
                 "alternate_values": [
@@ -52648,8 +52738,8 @@
         "uid": "6aba82d7-0aad-4a97-a626-a3ddff6d7dc3"
     },
     "6ac3a0a7-d1be-48dc-a0f7-cf5bf6678d6a": {
-        "commit_message": "TLAB-2541-Redundancy remediation: Okta device/srcDevice mappings (#5949)",
-        "commit_origin_hash": "b1a97642ec7e39fbd329668ddb4241427f4e8f20",
+        "commit_message": "TLAB-1172 Remove logon normAct from mfa mapper (#5994)",
+        "commit_origin_hash": "cb8a2c3b435af7d35a5c6752fbde7c54e889d660",
         "field_mappings": {
             "cause": {
                 "value": "outcome.reason"
@@ -54464,8 +54554,8 @@
         "uid": "701835ed-8f1f-4c3f-8a1d-48cb7d30aa57"
     },
     "701febb4-9985-4cfa-b07e-174b5610ade3": {
-        "commit_message": "TLAB-1352 addes resource and normalizedResource",
-        "commit_origin_hash": "2be97c8a1e3cdb10058e26811ad16813e5675467",
+        "commit_message": "TLAB-2654_New mapper for AWS Guardduty attackSequence events (#5992)",
+        "commit_origin_hash": "3c055b13ca42d32596b0c922d49ed27d8bdaadfa",
         "field_mappings": {
             "accountId": {
                 "alternate_values": [
@@ -54918,8 +55008,8 @@
         "uid": "71958300-7D31-4909-9448-4DF68E80B706"
     },
     "71a4e74c-d8b7-4148-b755-5298f5e1b49e": {
-        "commit_message": "TLAB-1352 addes resource and normalizedResource",
-        "commit_origin_hash": "2be97c8a1e3cdb10058e26811ad16813e5675467",
+        "commit_message": "TLAB-2654_New mapper for AWS Guardduty attackSequence events (#5992)",
+        "commit_origin_hash": "3c055b13ca42d32596b0c922d49ed27d8bdaadfa",
         "field_mappings": {
             "accountId": {
                 "alternate_values": [
@@ -72813,8 +72903,8 @@
         "uid": "95a7361d-8f95-4abd-a7e5-57306bb2c3a8"
     },
     "95cc6b62-1052-43a0-8aa7-586d64007614": {
-        "commit_message": "TLAB-2541-Redundancy remediation: Okta device/srcDevice mappings (#5949)",
-        "commit_origin_hash": "b1a97642ec7e39fbd329668ddb4241427f4e8f20",
+        "commit_message": "TLAB-1172 Remove logon normAct from mfa mapper (#5994)",
+        "commit_origin_hash": "cb8a2c3b435af7d35a5c6752fbde7c54e889d660",
         "field_mappings": {
             "cause": {
                 "value": "outcome.reason"
@@ -72849,10 +72939,6 @@
                     "detail.client.userAgent.rawUserAgent"
                 ],
                 "value": "client.userAgent.rawUserAgent"
-            },
-            "normalizedAction": {
-                "value": "logon",
-                "value_type": "constant"
             },
             "sessionId": {
                 "alternate_values": [
@@ -88063,8 +88149,8 @@
         "uid": "b774a4f1-b58f-44b2-b962-8bec88f30976"
     },
     "b7de0d84-93e2-4dec-87e8-5bd77e74dbe9": {
-        "commit_message": "TLAB-2541-Redundancy remediation: Okta device/srcDevice mappings (#5949)",
-        "commit_origin_hash": "b1a97642ec7e39fbd329668ddb4241427f4e8f20",
+        "commit_message": "TLAB-1172 Remove logon normAct from mfa mapper (#5994)",
+        "commit_origin_hash": "cb8a2c3b435af7d35a5c6752fbde7c54e889d660",
         "field_mappings": {
             "cause": {
                 "value": "outcome.reason"
@@ -97640,8 +97726,8 @@
         "uid": "d01f4ea7-2a17-4a03-a67c-da572df33b9c"
     },
     "d02667f4-783f-4db9-a08c-0e107882cab9": {
-        "commit_message": "TLAB-2541-Redundancy remediation: Okta device/srcDevice mappings (#5949)",
-        "commit_origin_hash": "b1a97642ec7e39fbd329668ddb4241427f4e8f20",
+        "commit_message": "TLAB-1172 Remove logon normAct from mfa mapper (#5994)",
+        "commit_origin_hash": "cb8a2c3b435af7d35a5c6752fbde7c54e889d660",
         "field_mappings": {
             "cause": {
                 "value": "outcome.reason"
@@ -104762,8 +104848,8 @@
         "uid": "e0497f50-c29c-42c5-a996-31be6e02b909"
     },
     "e0a19ce7-0934-4a8c-a714-0d8efab68bdf": {
-        "commit_message": "TLAB-1352 addes resource and normalizedResource",
-        "commit_origin_hash": "2be97c8a1e3cdb10058e26811ad16813e5675467",
+        "commit_message": "TLAB-2654_New mapper for AWS Guardduty attackSequence events (#5992)",
+        "commit_origin_hash": "3c055b13ca42d32596b0c922d49ed27d8bdaadfa",
         "field_mappings": {
             "accountId": {
                 "alternate_values": [
@@ -106485,8 +106571,8 @@
         "uid": "e4177d7b-56ec-45d3-8572-780c93a30087"
     },
     "e4883fa4-baaa-47bc-948d-17ca3ba7ac94": {
-        "commit_message": "TLAB-1352 addes resource and normalizedResource",
-        "commit_origin_hash": "2be97c8a1e3cdb10058e26811ad16813e5675467",
+        "commit_message": "TLAB-2654_New mapper for AWS Guardduty attackSequence events (#5992)",
+        "commit_origin_hash": "3c055b13ca42d32596b0c922d49ed27d8bdaadfa",
         "field_mappings": {
             "accountId": {
                 "alternate_values": [
