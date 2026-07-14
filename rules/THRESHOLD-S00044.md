@@ -20,7 +20,6 @@ Adversaries may make use of Domain Generation Algorithms (DGAs) to dynamically i
 ## Vendors and Products
 - [Amazon AWS - Route53](../products/e2393771-bda2-414a-8661-0a57069287ad.md)
 - [Cisco Systems - Umbrella](../products/5ba50e74-3c05-4ea8-aeaf-5efde588c60f.md)
-- [Microsoft - Windows](../products/1ff7546c-cb36-4a24-87f7-89d2cecc5761.md)
 
 
 ## Fields Used
