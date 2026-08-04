@@ -24,7 +24,7 @@ The rule excludes AWS service-linked roles. Create match list 'authorized_bedroc
 |Score/Severity|Static: 2|
 |Enabled by Default|True|
 |Prototype|False|
-|Tags|_mitreAttackTactic:TA0003, _mitreAttackTechnique:T1098.003|
+|Tags|_mitreAttackTactic:TA0003, _mitreAttackTechnique:T1098.003, _mitreAtlasTactic:AML.TA0004, _mitreAtlasTechnique:AML.T0012|
 ## Vendors and Products
 - [Amazon AWS - CloudTrail](../products/033624b0-218e-4dcb-b93f-0f1fb1806c56.md)
 

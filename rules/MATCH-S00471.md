@@ -17,6 +17,7 @@ This IOC detects windows persistence activity performed by the Sharpersist utili
 |Prototype|False|
 |Tags|_mitreAttackTactic:TA0002, _mitreAttackTactic:TA0003, _mitreAttackTactic:TA0004, _mitreAttackTechnique:T1047, _mitreAttackTechnique:T1053, _mitreAttackTechnique:T1053.005, _mitreAttackTechnique:T1547, _mitreAttackTechnique:T1547.001|
 ## Vendors and Products
+- [Microsoft - Defender Advanced Hunting](../products/3382523e-2072-41bd-b50b-6b148957d0b0.md)
 - [Microsoft - Windows](../products/1ff7546c-cb36-4a24-87f7-89d2cecc5761.md)
 
 

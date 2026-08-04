@@ -17,7 +17,7 @@ A first seen user was observed enumerating AWS Bedrock models via the ListFounda
 |Score/Severity|Static: 1|
 |Enabled by Default|True|
 |Prototype|False|
-|Tags|_mitreAttackTactic:TA0007, _mitreAttackTechnique:T1526|
+|Tags|_mitreAttackTactic:TA0007, _mitreAttackTechnique:T1526, _mitreAtlasTactic:AML.TA0008, _mitreAtlasTechnique:AML.T0007|
 ## Vendors and Products
 - [Amazon AWS - CloudTrail](../products/033624b0-218e-4dcb-b93f-0f1fb1806c56.md)
 

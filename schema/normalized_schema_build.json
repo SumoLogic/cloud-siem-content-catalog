@@ -5113,7 +5113,7 @@
     },
     "threat_ruleType": {
         "deprecated": false,
-        "description": "This field should be used with logs that indicate detection of a security event has already occurred. These logs are produced by a security product's own detection capabilities like signatures or rule sets. \nAs an example, if a log has a severity, risk, or impact in the message, it should have threat_ruleType included and populated in its mapper. \nThe logs using this field will all be a form of pass through content. Messages that do not include security event detection must leave this field out of the mapper or leave it blank.",
+        "description": "This field should be used with logs that indicate detection of a security event has already occurred. These logs are produced by a security product's own detection capabilities like signatures or rule sets.\nAs an example, if a log has a severity, risk, or impact in the message, it should have threat_ruleType included and populated in its mapper.\nThe logs using this field will all be a form of pass through content. Messages that do not include security event detection must leave this field out of the mapper or leave it blank.\nThe value determines which normalized rule set the record participates in.",
         "enrichment_populated": false,
         "enrichment_type": null,
         "entity_type": null,

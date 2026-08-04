@@ -62,6 +62,7 @@ You will find our complete list of mappers for content here.
  - [AWS VPN](9ab57ba0-dcf0-44a0-9bba-55ca571ed530.md)
  - [AWS WAF Allow Logs](3c171e72-3b04-4280-a9c2-119b7f370768.md)
  - [AWS WAF Block Logs](e7ef97a5-3d97-46f8-bee8-89085f2d3ba6.md)
+ - [AWSGuardDuty - AttackSequence](54ed912b-0a61-45ee-8677-f1df0aa7d765.md)
  - [AWSGuardDuty - Audit Events](42710bf7-5cb5-4964-b063-b00e7b2f3048.md)
  - [AWSGuardDuty - AwsServiceEvent-AWS API Call via CloudTrail](701febb4-9985-4cfa-b07e-174b5610ade3.md)
  - [AWSGuardDuty - Reconnaissance and malicious activity detection](499c828d-ee7e-420c-8369-d46ed029a074.md)

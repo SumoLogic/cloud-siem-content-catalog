@@ -1,7 +1,7 @@
-# [Rules](README.md): Threat Intel - Matched File Hash
+# [Rules](README.md): Legacy Threat Intel - Matched File Hash
 
 ## Description
-A record flagged a file hash from a threat intelligence match list
+Legacy Threat Intelligence is being deprecated. This rule and rules using `array_contains(listMatches, 'threat')` will be removed and will cease to work upon deprecation. New rules using the hasThreatMatch operator have been introduced and should be used going forward. A record flagged a file hash from a threat intelligence match list
 
 ## Additional Details
 |Detail|Value|
@@ -9,7 +9,7 @@ A record flagged a file hash from a threat intelligence match list
 |Type|Match|
 |Category|Threat Intelligence|
 |Apply Risk to Entities|device_hostname, srcDevice_hostname, device_ip, device_natIp, srcDevice_ip, srcDevice_natIp, device_mac, srcDevice_mac, user_username, dns_replyIp|
-|Signal Name|Threat Intel - Matched File Hash|
+|Signal Name|Legacy Threat Intel - Matched File Hash|
 |Summary Expression|None|
 |Score/Severity|Static: 3|
 |Enabled by Default|True|
@@ -27,7 +27,6 @@ A record flagged a file hash from a threat intelligence match list
 - [Microsoft - Windows](../products/1ff7546c-cb36-4a24-87f7-89d2cecc5761.md)
 - [Mimecast - Mimecast](../products/54B36B3F-A63F-4BA4-9DE4-02DBF69A429F.md)
 - [Netskope - Security Cloud](../products/B3582ED2-1A0C-452D-9802-97433D143486.md)
-- [Palo Alto Networks - Cortex XDR](../products/146522A1-DC9A-40A5-A909-2EB3B665B1D1.md)
 - [Proofpoint - Proofpoint on Demand](../products/332856e9-3111-446f-8df7-e64694e4b9a1.md)
 - [Proofpoint - Targeted Attack Protection](../products/de3d4b6b-36a3-4436-8bfc-0561ac95037e.md)
 - [SentinelOne - SentinelOne](../products/8967aecc-ffb3-4cbe-a02e-258d1edca8d0.md)

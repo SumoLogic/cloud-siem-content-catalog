@@ -1,7 +1,7 @@
-# [Rules](README.md): Threat Intel - Matched Domain Name
+# [Rules](README.md): Legacy Threat Intel - Matched Domain Name
 
 ## Description
-A record flagged a hostname or domain from a threat intelligence match list
+Legacy Threat Intelligence is being deprecated. This rule and rules using `array_contains(listMatches, 'threat')` will be removed and will cease to work upon deprecation. New rules using the hasThreatMatch operator have been introduced and should be used going forward. A record flagged a hostname or domain from a threat intelligence match list
 
 ## Additional Details
 |Detail|Value|
@@ -9,7 +9,7 @@ A record flagged a hostname or domain from a threat intelligence match list
 |Type|Match|
 |Category|Threat Intelligence|
 |Apply Risk to Entities|device_hostname, srcDevice_hostname, device_natIp, srcDevice_ip, srcDevice_natIp, device_mac, srcDevice_mac, user_username, dns_replyIp|
-|Signal Name|Threat Intel - Matched Domain Name|
+|Signal Name|Legacy Threat Intel - Matched Domain Name|
 |Summary Expression|None|
 |Score/Severity|Static: 2|
 |Enabled by Default|True|
@@ -17,10 +17,8 @@ A record flagged a hostname or domain from a threat intelligence match list
 |Tags||
 ## Vendors and Products
 - [Akamai - SIEM](../products/9a28f2af-5526-414d-973b-c3fc7984b8a1.md)
-- [Amazon AWS - API Gateway](../products/9f76f1fd-fbb0-42d2-9bf5-0f4fd2c1ab82.md)
 - [Amazon AWS - Application Load Balancer](../products/5bb9e0b3-8d57-4b10-8952-0b6ffe91b599.md)
 - [Amazon AWS - CloudFront](../products/44f07c08-c2ad-4a95-a058-1d0737ff90db.md)
-- [Amazon AWS - Elastic Load Balancer](../products/59a3cd41-b6d2-4ab7-a0ff-6d5abd14ac43.md)
 - [Amazon AWS - GuardDuty](../products/2ca0adcf-7616-4474-8557-a3773515aa6d.md)
 - [Amazon AWS - Route53](../products/e2393771-bda2-414a-8661-0a57069287ad.md)
 - [Amazon AWS - Web Application Firewall (WAF)](../products/072b85a2-1765-45c2-911d-b0509880326e.md)
@@ -47,7 +45,6 @@ A record flagged a hostname or domain from a threat intelligence match list
 - [Netskope - Security Cloud](../products/B3582ED2-1A0C-452D-9802-97433D143486.md)
 - [Nginx - Nginx](../products/1ce88b4b-d90d-4d50-9a89-3abe83e8d5f8.md)
 - [Palo Alto Networks - Next Generation Firewall](../products/46f5fa2c-1a62-4692-82ad-ed87800a0adb.md)
-- [Proofpoint - Proofpoint on Demand](../products/332856e9-3111-446f-8df7-e64694e4b9a1.md)
 - [Proofpoint - Targeted Attack Protection](../products/de3d4b6b-36a3-4436-8bfc-0561ac95037e.md)
 - [Sophos - UTM 9](../products/0fb003bc-8383-442f-8f3d-afcfbaefe617.md)
 - [Squid - Squid Proxy](../products/af61d8a8-3eba-42fb-9f17-87443924f3f4.md)

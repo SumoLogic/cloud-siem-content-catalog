@@ -23,6 +23,7 @@
 |----------------|-------------------|-----|
 |action|action||
 |application|application||
+|cause|SessionEndReason||
 |device_hostname|firewall_name||
 |dstDevice_ip|dest_ip||
 |dstPort|dest_port||
@@ -33,7 +34,6 @@
 |http_url|http_url||
 |http_userAgent|http_user_agent||
 |ipProtocol|protocol||
-|resource|flags||
 |severity|pan_severity||
 |srcDevice_ip|source_ip||
 |srcPort|source_port||

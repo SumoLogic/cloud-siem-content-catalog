@@ -1,7 +1,7 @@
-# [Rules](README.md): Threat Intel - Device IP Matched Threat Intel URL
+# [Rules](README.md): Legacy Threat Intel - Device IP Matched Threat Intel URL
 
 ## Description
-A record flagged a URL from a threat intelligence match list
+Legacy Threat Intelligence is being deprecated. This rule and rules using `array_contains(listMatches, 'threat')` will be removed and will cease to work upon deprecation. New rules using the hasThreatMatch operator have been introduced and should be used going forward. A record flagged a URL from a threat intelligence match list
 
 ## Additional Details
 |Detail|Value|
@@ -9,7 +9,7 @@ A record flagged a URL from a threat intelligence match list
 |Type|Match|
 |Category|Threat Intelligence|
 |Apply Risk to Entities|device_hostname, srcDevice_hostname, device_ip, device_natIp, srcDevice_ip, srcDevice_natIp, device_mac, srcDevice_mac, user_username, dns_replyIp|
-|Signal Name|Threat Intel - Device IP Matched Threat Intel URL|
+|Signal Name|Legacy Threat Intel - Device IP Matched Threat Intel URL|
 |Summary Expression|None|
 |Score/Severity|Static: 4|
 |Enabled by Default|True|
@@ -25,7 +25,6 @@ A record flagged a URL from a threat intelligence match list
 - [Palo Alto Networks - Next Generation Firewall](../products/46f5fa2c-1a62-4692-82ad-ed87800a0adb.md)
 - [Proofpoint - Targeted Attack Protection](../products/de3d4b6b-36a3-4436-8bfc-0561ac95037e.md)
 - [Sophos - UTM 9](../products/0fb003bc-8383-442f-8f3d-afcfbaefe617.md)
-- [Squid - Squid Proxy](../products/af61d8a8-3eba-42fb-9f17-87443924f3f4.md)
 - [Symantec - Web Security Service](../products/bf865cb5-0b26-4010-8b3c-5ae2d1f716d8.md)
 
 

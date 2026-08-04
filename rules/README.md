@@ -519,6 +519,13 @@
 |MATCH-S00852|[LastPass - Shared Folder Created](MATCH-S00852.md)|
 |MATCH-S00853|[LastPass - Super Admin Password Reset](MATCH-S00853.md)|
 |CHAIN-S00004|[Lateral Movement Using the Windows Hidden Admin Share](CHAIN-S00004.md)|
+|LEGACY-S00110|[Legacy Threat Intel - Device IP Matched Threat Intel Domain Name](LEGACY-S00110.md)|
+|LEGACY-S00111|[Legacy Threat Intel - Device IP Matched Threat Intel URL](LEGACY-S00111.md)|
+|MATCH-S00555|[Legacy Threat Intel - Inbound Traffic Context](MATCH-S00555.md)|
+|LEGACY-S00109|[Legacy Threat Intel - Matched Domain Name](LEGACY-S00109.md)|
+|LEGACY-S00108|[Legacy Threat Intel - Matched File Hash](LEGACY-S00108.md)|
+|MATCH-S00815|[Legacy Threat Intel - Successful Authentication from Threat IP](MATCH-S00815.md)|
+|LEGACY-S00107|[Legacy Threat Intel Match - IP Address](LEGACY-S00107.md)|
 |LEGACY-S00054|[Likely doublepulsar Infected](LEGACY-S00054.md)|
 |MATCH-S00784|[Linux Host Entered Promiscuous Mode](MATCH-S00784.md)|
 |MATCH-S00687|[Linux Security Tool Usage](MATCH-S00687.md)|
@@ -588,6 +595,12 @@
 |MATCH-S00152|[New or Renamed Windows User Account Mimicking a Machine Account](MATCH-S00152.md)|
 |MATCH-S00895|[NinjaCopy Usage Detected](MATCH-S00895.md)|
 |LEGACY-S00181|[Noncompliant Protocol Tunnel Over Common Service Port](LEGACY-S00181.md)|
+|MATCH-S01160|[Normalized Cloud Detection](MATCH-S01160.md)|
+|MATCH-S01163|[Normalized Data Protection Detection](MATCH-S01163.md)|
+|MATCH-S01158|[Normalized Endpoint Detection](MATCH-S01158.md)|
+|MATCH-S01161|[Normalized Identity Detection](MATCH-S01161.md)|
+|MATCH-S01162|[Normalized Network Detection](MATCH-S01162.md)|
+|MATCH-S01159|[Normalized Runtime Detection](MATCH-S01159.md)|
 |MATCH-S00402|[Normalized Security Signal](MATCH-S00402.md)|
 |MATCH-S00288|[NotPetya Ransomware Activity](MATCH-S00288.md)|
 |MATCH-S00455|[O365 - Successful Authentication with PowerShell User Agent](MATCH-S00455.md)|
@@ -891,8 +904,6 @@
 |MATCH-S01026|[Threat Intel - Destination IP Address (Low Confidence)](MATCH-S01026.md)|
 |MATCH-S01028|[Threat Intel - Destination IP Address (Medium Confidence)](MATCH-S01028.md)|
 |MATCH-S01006|[Threat Intel - Device Hostname](MATCH-S01006.md)|
-|LEGACY-S00110|[Threat Intel - Device IP Matched Threat Intel Domain Name](LEGACY-S00110.md)|
-|LEGACY-S00111|[Threat Intel - Device IP Matched Threat Intel URL](LEGACY-S00111.md)|
 |MATCH-S01008|[Threat Intel - HTTP Hostname](MATCH-S01008.md)|
 |MATCH-S01009|[Threat Intel - HTTP Referer](MATCH-S01009.md)|
 |MATCH-S01012|[Threat Intel - HTTP Referer Root Domain](MATCH-S01012.md)|
@@ -900,13 +911,10 @@
 |MATCH-S01014|[Threat Intel - HTTP URL FQDN](MATCH-S01014.md)|
 |MATCH-S01013|[Threat Intel - HTTP URL Root Domain](MATCH-S01013.md)|
 |MATCH-S00999|[Threat Intel - IMPHASH Match](MATCH-S00999.md)|
-|MATCH-S00555|[Threat Intel - Inbound Traffic Context](MATCH-S00555.md)|
 |MATCH-S01023|[Threat Intel - Inbound Traffic from Threat Feed IP (High Confidence)](MATCH-S01023.md)|
 |MATCH-S01025|[Threat Intel - Inbound Traffic from Threat Feed IP (Low Confidence)](MATCH-S01025.md)|
 |MATCH-S01027|[Threat Intel - Inbound Traffic from Threat Feed IP (Medium Confidence)](MATCH-S01027.md)|
 |MATCH-S01000|[Threat Intel - MD5 Match](MATCH-S01000.md)|
-|LEGACY-S00109|[Threat Intel - Matched Domain Name](LEGACY-S00109.md)|
-|LEGACY-S00108|[Threat Intel - Matched File Hash](LEGACY-S00108.md)|
 |MATCH-S01020|[Threat Intel - Matched Target Email](MATCH-S01020.md)|
 |MATCH-S01019|[Threat Intel - Matched User Email](MATCH-S01019.md)|
 |MATCH-S01001|[Threat Intel - PEHASH Match](MATCH-S01001.md)|
@@ -915,8 +923,6 @@
 |MATCH-S01002|[Threat Intel - SSDEEP Match](MATCH-S01002.md)|
 |MATCH-S01005|[Threat Intel - Source Hostname](MATCH-S01005.md)|
 |MATCH-S01018|[Threat Intel - Successful Authentication from Threat Feed IP](MATCH-S01018.md)|
-|MATCH-S00815|[Threat Intel - Successful Authentication from Threat IP](MATCH-S00815.md)|
-|LEGACY-S00107|[Threat Intel Match - IP Address](LEGACY-S00107.md)|
 |THRESHOLD-S00075|[Too Many Kerberos Encryption Downgrade SPNs (Kerberoasting)](THRESHOLD-S00075.md)|
 |THRESHOLD-S00036|[Too many empty/refused DNS queries](THRESHOLD-S00036.md)|
 |MATCH-S00561|[Traffic From Embargoed Countries](MATCH-S00561.md)|

@@ -1646,8 +1646,8 @@
         "uid": "035baac3-1d87-4d5e-a3e5-ef77bed84f5a"
     },
     "03717690-868e-48e2-be0d-e381a053972e": {
-        "commit_message": "TLAB-2062:updated vendor name from gsuit to google workspace (#5884)",
-        "commit_origin_hash": "f151e65ea1e1c08bf4109e0030129ac553ccfe8a",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "description": {
                 "value": "type"
@@ -1754,8 +1754,8 @@
         "uid": "037a5242-77de-443f-b212-e16051c6e7db"
     },
     "03a073b1-75da-404e-b221-a3fac810632a": {
-        "commit_message": "TLAB-2119: Updated the Mapper for the Palo Alto to support new logs (#5802)",
-        "commit_origin_hash": "5836cafc0c113fe6a045e9d5a7a3c02a7785c539",
+        "commit_message": "TLAB-2664 PAN session and flag remapping (#5996)",
+        "commit_origin_hash": "a4191240523ce753371bb67c19d7c8b8855860c9",
         "field_mappings": {
             "action": {
                 "alternate_values": [
@@ -1769,6 +1769,9 @@
                     "app"
                 ],
                 "value": "application"
+            },
+            "cause": {
+                "value": "SessionEndReason"
             },
             "dstDevice_ip": {
                 "alternate_values": [
@@ -1821,13 +1824,6 @@
                 },
                 "value": "pan_severity",
                 "value_type": "lookup"
-            },
-            "resource": {
-                "alternate_values": [
-                    "Flags",
-                    "SessionEndReason"
-                ],
-                "value": "flags"
             },
             "severity": {
                 "alternate_values": [
@@ -3756,8 +3752,8 @@
         "uid": "07e1fd9f-e4e3-4b15-b8f9-3715277d760b"
     },
     "0876c09e-5b57-4387-be5c-8334e2bb6bd4": {
-        "commit_message": "TLAB-2641 Add null to skipped mapping values (#5986)",
-        "commit_origin_hash": "1519c7ea5e3b081ed3e000aa3e6a177d0432f4e0",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -4306,8 +4302,8 @@
         "uid": "0973f1a0-7b57-4083-ad42-4f553c5c210d"
     },
     "09a000f5-0586-4ce4-b5d2-c7e99ea14650": {
-        "commit_message": "TLAB-2209: Added Mapping for Crowdstrike Falcon Endpoint Protection Alert Log (#5919)",
-        "commit_origin_hash": "4d4d6aa44d0c960d0d05947538852175ca43be8b",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "commandLine": {
                 "value": "CommandLine"
@@ -4846,8 +4842,8 @@
         "uid": "09d8aecf-be24-441b-827a-a5ad6aa9c8d6"
     },
     "09ed1bbd-bea6-46b0-b4a0-f830bf73ca8c": {
-        "commit_message": "TLAB-2119: Updated the Mapper for the Palo Alto to support new logs (#5802)",
-        "commit_origin_hash": "5836cafc0c113fe6a045e9d5a7a3c02a7785c539",
+        "commit_message": "TLAB-2664 PAN session and flag remapping (#5996)",
+        "commit_origin_hash": "a4191240523ce753371bb67c19d7c8b8855860c9",
         "field_mappings": {
             "action": {
                 "alternate_values": [
@@ -4861,6 +4857,9 @@
                     "app"
                 ],
                 "value": "application"
+            },
+            "cause": {
+                "value": "SessionEndReason"
             },
             "device_hostname": {
                 "alternate_values": [
@@ -4924,13 +4923,6 @@
                     "proto"
                 ],
                 "value": "protocol"
-            },
-            "resource": {
-                "alternate_values": [
-                    "Flags",
-                    "SessionEndReason"
-                ],
-                "value": "flags"
             },
             "severity": {
                 "alternate_values": [
@@ -5917,8 +5909,8 @@
         "uid": "0bb3b0d8-af2c-4ea9-8eed-836a9a88a3b5"
     },
     "0bd07b98-d543-4b2f-b1ea-ffef3b81dcc6": {
-        "commit_message": "TLAB-2356: remove user_username and targetuser_username split at @ (#5891)",
-        "commit_origin_hash": "a6698b94f8479030615cfaf5edb902a8dbda6dbe",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "accountId": {
                 "value": "tenantId"
@@ -6406,8 +6398,8 @@
         "uid": "0c7120d1-0adc-48c0-a824-526eac5c10e3"
     },
     "0c72a484-087d-4927-8700-efed8f6cd450": {
-        "commit_message": "TLAB-2209: Added Mapping for Crowdstrike Falcon Endpoint Protection Alert Log (#5919)",
-        "commit_origin_hash": "4d4d6aa44d0c960d0d05947538852175ca43be8b",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "commandLine": {
                 "value": "event.CommandLine"
@@ -7755,8 +7747,8 @@
         "uid": "0efb88b1-a2b5-46e6-bb3c-18c3cbf352b7"
     },
     "0f089ffd-5e40-44a3-8b2d-14a160197bcc": {
-        "commit_message": "TLAB-715 MS Graph Sec Alert API 1.0 Mapper",
-        "commit_origin_hash": "56ebb06b951a2dda6adf29f43b8698de427b43f2",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "accountId": {
                 "value": "userStates.1.aadUserId"
@@ -7794,7 +7786,7 @@
                 "value": "title"
             },
             "threat_ruleType": {
-                "value": "direct",
+                "value": "identity",
                 "value_type": "constant"
             },
             "threat_signalName": {
@@ -8212,8 +8204,8 @@
         "uid": "0ff9bf08-24c1-4f7f-b2f0-d522b1681035"
     },
     "1027748c-f2ac-427f-a1eb-8835160a3b38": {
-        "commit_message": "TRIDENT-13961 Add normalizedAction logon into Authentication Mappings for net new coverage",
-        "commit_origin_hash": "e0243c07db2da7f19a316aa5799cbf802306fe37",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "action": {
                 "value": "event_type"
@@ -9255,8 +9247,8 @@
         "uid": "11a504e8-085d-489a-8792-2d36a63e0877"
     },
     "11acde72-ed1c-44e6-8fd5-61debaf06512": {
-        "commit_message": "TLAB-2209: Added Mapping for Crowdstrike Falcon Endpoint Protection Alert Log (#5919)",
-        "commit_origin_hash": "4d4d6aa44d0c960d0d05947538852175ca43be8b",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "description": {
                 "value": "event.IncidentDescription"
@@ -9291,7 +9283,7 @@
                 "value": "event.FalconHostLink"
             },
             "threat_ruleType": {
-                "value": "direct",
+                "value": "identity",
                 "value_type": "constant"
             },
             "threat_signalName": {
@@ -9771,8 +9763,8 @@
         "uid": "12996e2b-9330-4984-9992-424e9942e617"
     },
     "12b6bde9-4919-446c-8794-cad266a53df4": {
-        "commit_message": "TLAB-2209: Added Mapping for Crowdstrike Falcon Endpoint Protection Alert Log (#5919)",
-        "commit_origin_hash": "4d4d6aa44d0c960d0d05947538852175ca43be8b",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "description": {
                 "value": "cat"
@@ -10034,8 +10026,8 @@
         "uid": "14d66ca4-56d5-4c4b-8951-96c0239a468e"
     },
     "14dd00c2-3b72-4269-a7a0-8f698834a867": {
-        "commit_message": "TLAB-2356: remove user_username and targetuser_username split at @ (#5891)",
-        "commit_origin_hash": "a6698b94f8479030615cfaf5edb902a8dbda6dbe",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "accountId": {
                 "value": "tenantId"
@@ -10097,7 +10089,7 @@
                 "value": "operationName"
             },
             "threat_ruleType": {
-                "value": "direct",
+                "value": "identity",
                 "value_type": "constant"
             },
             "threat_signalName": {
@@ -11464,8 +11456,8 @@
         "uid": "17e4bad6-e477-43fc-9d31-3d72ac9e5970"
     },
     "17f6e54b-5afb-4654-923b-daa2ba6601cd": {
-        "commit_message": "TLAB-2119: Updated the Mapper for the Palo Alto to support new logs (#5802)",
-        "commit_origin_hash": "5836cafc0c113fe6a045e9d5a7a3c02a7785c539",
+        "commit_message": "TLAB-2664 PAN session and flag remapping (#5996)",
+        "commit_origin_hash": "a4191240523ce753371bb67c19d7c8b8855860c9",
         "field_mappings": {
             "action": {
                 "alternate_values": [
@@ -11686,8 +11678,8 @@
         "uid": "180cb713-6e29-482c-959e-cf4bc0e5dd62"
     },
     "180e8a5a-8184-4a84-a8fa-93b914738a86": {
-        "commit_message": "TLAB-1899: added new mapper",
-        "commit_origin_hash": "cce072478b86e59482f9df11c4527ffe6ca1f6ec",
+        "commit_message": "TLAB-2668 Remove Windows Defender SCCM Db Grok parser and mapper (#5999)",
+        "commit_origin_hash": "da92ad8a49358388ffa235e86fdabd1a8b71b877",
         "field_mappings": {
             "accountId": {
                 "value": "tenantId"
@@ -12105,8 +12097,8 @@
         "uid": "1887d1cc-3fdc-481d-8da0-1ee18d6ce863"
     },
     "18a1a332-3053-4c1c-8476-2851305db333": {
-        "commit_message": "TLAB-2209: Added Mapping for Crowdstrike Falcon Endpoint Protection Alert Log (#5919)",
-        "commit_origin_hash": "4d4d6aa44d0c960d0d05947538852175ca43be8b",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "description": {
                 "value": "event.DetectDescription"
@@ -12240,7 +12232,7 @@
                 "value": "event.FalconHostLink"
             },
             "threat_ruleType": {
-                "value": "direct",
+                "value": "identity",
                 "value_type": "constant"
             },
             "threat_signalName": {
@@ -13284,8 +13276,8 @@
         "uid": "1a66c79f-0454-4c94-84fc-344b47727e8f"
     },
     "1a9bebd4-1bae-431d-a718-59e6f7b99db9": {
-        "commit_message": "TLAB-2356: remove user_username and targetuser_username split at @ (#5891)",
-        "commit_origin_hash": "a6698b94f8479030615cfaf5edb902a8dbda6dbe",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "accountId": {
                 "value": "tenantId"
@@ -13628,8 +13620,8 @@
         "uid": "1ab2a0df-124e-40fa-99e9-321c714e5b49"
     },
     "1ad53d6b-ae53-4650-be9d-eb9a7000c3d8": {
-        "commit_message": "TLAB-2356: remove user_username and targetuser_username split at @ (#5891)",
-        "commit_origin_hash": "a6698b94f8479030615cfaf5edb902a8dbda6dbe",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "accountId": {
                 "value": "tenantId"
@@ -13852,8 +13844,8 @@
         "uid": "1add6fe1-8aff-4b55-817e-0ccd569f99d6"
     },
     "1b0609f0-44bd-4333-bf67-dcbfe20cf855": {
-        "commit_message": "TLAB-2119: Updated the Mapper for the Palo Alto to support new logs (#5802)",
-        "commit_origin_hash": "5836cafc0c113fe6a045e9d5a7a3c02a7785c539",
+        "commit_message": "TLAB-2664 PAN session and flag remapping (#5996)",
+        "commit_origin_hash": "a4191240523ce753371bb67c19d7c8b8855860c9",
         "field_mappings": {
             "action": {
                 "alternate_values": [
@@ -13929,8 +13921,8 @@
         "uid": "1b0609f0-44bd-4333-bf67-dcbfe20cf855"
     },
     "1b23141e-b15d-4b26-b792-6b0ca3a0b63a": {
-        "commit_message": "TLAB-2356: remove user_username and targetuser_username split at @ (#5891)",
-        "commit_origin_hash": "a6698b94f8479030615cfaf5edb902a8dbda6dbe",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "accountId": {
                 "value": "tenantId"
@@ -14807,8 +14799,8 @@
         "uid": "1d1d8a94-fd27-42fd-9927-1397623aea32"
     },
     "1d4327aa-d984-43d1-8ea8-179dcd5779fc": {
-        "commit_message": "TLAB-2356: remove user_username and targetuser_username split at @ (#5891)",
-        "commit_origin_hash": "a6698b94f8479030615cfaf5edb902a8dbda6dbe",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "accountId": {
                 "value": "tenantId"
@@ -15563,8 +15555,8 @@
         "uid": "1e2f3a4b-5c6d-7e8f-9a0b-1c2d3e4f5a6b"
     },
     "1e4f0404-fa49-4570-83fb-2933611941d0": {
-        "commit_message": "TLAB-2062:updated vendor name from gsuit to google workspace (#5884)",
-        "commit_origin_hash": "f151e65ea1e1c08bf4109e0030129ac553ccfe8a",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "action": {
                 "value": "data.systemActionType"
@@ -15868,8 +15860,8 @@
         "uid": "1e9a6865-7208-460d-8bc9-a292117a27d4"
     },
     "1ec83af5-25f8-4b0e-891e-28008e03f6d4": {
-        "commit_message": "TLAB-2356: remove user_username and targetuser_username split at @ (#5891)",
-        "commit_origin_hash": "a6698b94f8479030615cfaf5edb902a8dbda6dbe",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "action": {
                 "value": "operationName"
@@ -15923,8 +15915,8 @@
         "uid": "1ec83af5-25f8-4b0e-891e-28008e03f6d4"
     },
     "1ed1f22f-9151-41ab-a019-b81410b40f37": {
-        "commit_message": "TRIDENT-13961 Add normalizedAction logon into Authentication Mappings for net new coverage",
-        "commit_origin_hash": "e0243c07db2da7f19a316aa5799cbf802306fe37",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "action": {
                 "value": "event_type"
@@ -16536,8 +16528,8 @@
         "uid": "1fdbfae1-89ee-4a12-a43e-983e3cb60ecc"
     },
     "1fe1e307-3010-43dc-8be6-9855d74f07cd": {
-        "commit_message": "TLAB-2062:updated vendor name from gsuit to google workspace (#5884)",
-        "commit_origin_hash": "f151e65ea1e1c08bf4109e0030129ac553ccfe8a",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "description": {
                 "value": "type"
@@ -16565,7 +16557,7 @@
                 "value": "type"
             },
             "threat_ruleType": {
-                "value": "direct",
+                "value": "identity",
                 "value_type": "constant"
             },
             "threat_signalName": {
@@ -17604,8 +17596,8 @@
         "uid": "22c60a0b-b222-49b2-9ce0-59be7147694b"
     },
     "22fd3764-dd3a-403f-833b-be8a1fa12df7": {
-        "commit_message": "TLAB-2356: remove user_username and targetuser_username split at @ (#5891)",
-        "commit_origin_hash": "a6698b94f8479030615cfaf5edb902a8dbda6dbe",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "action": {
                 "value": "operationName"
@@ -19505,8 +19497,8 @@
         "uid": "2609ee7a-13fb-428f-b443-3e8fd0e0c916"
     },
     "262182dd-88f6-4818-9b6e-0e54b17339cb": {
-        "commit_message": "TLAB-2356: remove user_username and targetuser_username split at @ (#5891)",
-        "commit_origin_hash": "a6698b94f8479030615cfaf5edb902a8dbda6dbe",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "action": {
                 "value": "properties.type"
@@ -20157,8 +20149,8 @@
         "uid": "27479c62-d71d-4ba4-9589-95860301ad0d"
     },
     "2771d5de-5a61-41fd-8b8e-b305f74a156b": {
-        "commit_message": "TLAB-2209: Added Mapping for Crowdstrike Falcon Endpoint Protection Alert Log (#5919)",
-        "commit_origin_hash": "4d4d6aa44d0c960d0d05947538852175ca43be8b",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "description": {
                 "alternate_values": [
@@ -20295,7 +20287,7 @@
                 "value": "event.FalconHostLink"
             },
             "threat_ruleType": {
-                "value": "direct",
+                "value": "identity",
                 "value_type": "constant"
             },
             "threat_signalName": {
@@ -20719,8 +20711,8 @@
         "uid": "281ffe53-aeb7-43d4-be54-ff8fd6f017ab"
     },
     "28246ca3-8eba-4fc7-8049-273a83af890e": {
-        "commit_message": "TLAB-2541-Redundancy remediation: Okta device/srcDevice mappings (#5949)",
-        "commit_origin_hash": "b1a97642ec7e39fbd329668ddb4241427f4e8f20",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "cause": {
                 "value": "outcome.reason"
@@ -20983,8 +20975,8 @@
         "uid": "2857281b-91ae-4dad-9b47-2ae4471738be"
     },
     "286d0aab-0efe-4f8f-922b-1151cc661c9b": {
-        "commit_message": "TLAB-2541-Redundancy remediation: Okta device/srcDevice mappings (#5949)",
-        "commit_origin_hash": "b1a97642ec7e39fbd329668ddb4241427f4e8f20",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "cause": {
                 "value": "outcome.reason"
@@ -21239,8 +21231,8 @@
         "uid": "286e19bd-2207-4a0f-b27e-efccd7a98b96"
     },
     "2876b2f3-6e68-48bd-82e5-24f142e3c749": {
-        "commit_message": "TLAB-1352 addes resource and normalizedResource",
-        "commit_origin_hash": "2be97c8a1e3cdb10058e26811ad16813e5675467",
+        "commit_message": "TLAB-2654_New mapper for AWS Guardduty attackSequence events (#5992)",
+        "commit_origin_hash": "3c055b13ca42d32596b0c922d49ed27d8bdaadfa",
         "field_mappings": {
             "accountId": {
                 "alternate_values": [
@@ -21589,8 +21581,8 @@
         "uid": "298ed30f-e7dc-422f-881b-7a556dc07eb0"
     },
     "298f3884-a74a-4c65-a4e1-72d4c54bd13b": {
-        "commit_message": "TLAB-2356: remove user_username and targetuser_username split at @ (#5891)",
-        "commit_origin_hash": "a6698b94f8479030615cfaf5edb902a8dbda6dbe",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "accountId": {
                 "value": "tenantId"
@@ -22164,8 +22156,8 @@
         "uid": "2a1e94cc-ddf7-4e76-b3e0-bb6c0b7c4388"
     },
     "2a709311-ca87-47b7-bfcc-0642210fc30b": {
-        "commit_message": "TLAB-2356: remove user_username and targetuser_username split at @ (#5891)",
-        "commit_origin_hash": "a6698b94f8479030615cfaf5edb902a8dbda6dbe",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "action": {
                 "value": "operationName"
@@ -23182,8 +23174,8 @@
         "uid": "2c6a02e4-89b0-4d30-b03d-45756f074266"
     },
     "2c7bf143-bd3e-4b3f-ac0c-19ba568922fc": {
-        "commit_message": "TLAB-2356: remove user_username and targetuser_username split at @ (#5891)",
-        "commit_origin_hash": "a6698b94f8479030615cfaf5edb902a8dbda6dbe",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "action": {
                 "value": "operationName"
@@ -23925,8 +23917,8 @@
         "uid": "2d8a8585-9f03-4668-9e97-fa7b6853accc"
     },
     "2dcf62db-d79f-4a03-9a3a-24bf67bdbe67": {
-        "commit_message": "TLAB-2119: Updated the Mapper for the Palo Alto to support new logs (#5802)",
-        "commit_origin_hash": "5836cafc0c113fe6a045e9d5a7a3c02a7785c539",
+        "commit_message": "TLAB-2664 PAN session and flag remapping (#5996)",
+        "commit_origin_hash": "a4191240523ce753371bb67c19d7c8b8855860c9",
         "field_mappings": {
             "action": {
                 "value": "stage"
@@ -25473,8 +25465,8 @@
         "uid": "2f81fa0d-bb46-41e7-b1bd-4cc6dd0ad02d"
     },
     "2f879e2d-56b8-4253-a257-a35c13b0e83f": {
-        "commit_message": "TLAB-2209: Added Mapping for Crowdstrike Falcon Endpoint Protection Alert Log (#5919)",
-        "commit_origin_hash": "4d4d6aa44d0c960d0d05947538852175ca43be8b",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "action": {
                 "value": "metadata.eventType"
@@ -26221,8 +26213,8 @@
         "uid": "3132e5c1-7516-4f1a-9764-3befa028c15e"
     },
     "31438aa6-0940-4d60-83ec-01cdeaee75e6": {
-        "commit_message": "Fix Sysdig passthrough signalname (#5843)",
-        "commit_origin_hash": "b3d71246324c0885dcbab01e69c2ef254a217765",
+        "commit_message": "TLAB-2660 Runtime passthrough mappers (#6007)",
+        "commit_origin_hash": "bed6cfa442621657fbb13573d729884506c7eab3",
         "field_mappings": {
             "action": {
                 "value": "name"
@@ -26499,8 +26491,8 @@
         "uid": "314ea562-303f-48ad-b612-39e42545331a"
     },
     "3152d898-4618-4b29-9ebf-7f107a1e814e": {
-        "commit_message": "TLAB-2356: remove user_username and targetuser_username split at @ (#5891)",
-        "commit_origin_hash": "a6698b94f8479030615cfaf5edb902a8dbda6dbe",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "bytesIn": {
                 "value": "properties.receivedBytes"
@@ -26560,8 +26552,8 @@
         "uid": "3152d898-4618-4b29-9ebf-7f107a1e814e"
     },
     "31886ca5-59da-45e2-b2a2-3b1381c0f06e": {
-        "commit_message": "TLAB-715 MS Graph Sec Alert API 1.0 Mapper",
-        "commit_origin_hash": "56ebb06b951a2dda6adf29f43b8698de427b43f2",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "accountId": {
                 "value": "userStates.1.aadUserId"
@@ -26599,7 +26591,7 @@
                 "value": "title"
             },
             "threat_ruleType": {
-                "value": "direct",
+                "value": "identity",
                 "value_type": "constant"
             },
             "threat_signalName": {
@@ -27915,8 +27907,8 @@
         "uid": "350a22fe-dd0e-4cbc-985e-a62e6ddea383"
     },
     "354f3ec7-3c0a-470b-94b3-04a706cdf428": {
-        "commit_message": "TLAB-715 MS Graph Sec Alert API 1.0 Mapper",
-        "commit_origin_hash": "56ebb06b951a2dda6adf29f43b8698de427b43f2",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "accountId": {
                 "value": "userStates.1.aadUserId"
@@ -28259,8 +28251,8 @@
         "uid": "3755f978-b036-49fc-bfec-7634a59b32e4"
     },
     "37921347-8294-44b5-b0a4-06cd744c6bed": {
-        "commit_message": "TRIDENT-15575 Salesforce adjust LoginAs Mapping",
-        "commit_origin_hash": "24a66b74ffd5b9641fbaf39ffba5b6f63dc4caeb",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "action": {
                 "value": "API_TYPE"
@@ -28430,8 +28422,8 @@
         "uid": "37921347-8294-44b5-b0a4-06cd744c6bed"
     },
     "379364a9-1ef1-4546-bbf6-4065b2d781e8": {
-        "commit_message": "TLAB-2356: remove user_username and targetuser_username split at @ (#5891)",
-        "commit_origin_hash": "a6698b94f8479030615cfaf5edb902a8dbda6dbe",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "accountId": {
                 "value": "tenantId"
@@ -28501,7 +28493,7 @@
                 "value": "operationName"
             },
             "threat_ruleType": {
-                "value": "direct",
+                "value": "identity",
                 "value_type": "constant"
             },
             "threat_signalName": {
@@ -28812,8 +28804,8 @@
         "uid": "3859c1da-3644-410b-931e-2ee949d1917a"
     },
     "38a062b1-1308-4b5d-851e-e0f93e27c1c9": {
-        "commit_message": "TLAB-2209: Added Mapping for Crowdstrike Falcon Endpoint Protection Alert Log (#5919)",
-        "commit_origin_hash": "4d4d6aa44d0c960d0d05947538852175ca43be8b",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "description": {
                 "value": "cat"
@@ -29045,8 +29037,8 @@
         "uid": "38eab1f4-619f-40c4-b64d-0f43a311d6ff"
     },
     "3952b643-4001-483e-bc06-8f8faf264262": {
-        "commit_message": "TLAB-2209: Added Mapping for Crowdstrike Falcon Endpoint Protection Alert Log (#5919)",
-        "commit_origin_hash": "4d4d6aa44d0c960d0d05947538852175ca43be8b",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "commandLine": {
                 "value": "event.CommandLine"
@@ -31570,8 +31562,8 @@
         "uid": "3f2bd88a-69b4-11ea-bc55-0242ac130003"
     },
     "3f3c35bf-e896-4c34-961e-6868224c0f69": {
-        "commit_message": "TLAB-1352 addes resource and normalizedResource",
-        "commit_origin_hash": "2be97c8a1e3cdb10058e26811ad16813e5675467",
+        "commit_message": "TLAB-2654_New mapper for AWS Guardduty attackSequence events (#5992)",
+        "commit_origin_hash": "3c055b13ca42d32596b0c922d49ed27d8bdaadfa",
         "field_mappings": {
             "accountId": {
                 "value": "detail.accountId"
@@ -32615,8 +32607,8 @@
         "uid": "4059c1da-4644-510b-931e-7ee949d1918b"
     },
     "409d74ba-3084-4a5b-a840-50e3bd428867": {
-        "commit_message": "TLAB-2209: Added Mapping for Crowdstrike Falcon Endpoint Protection Alert Log (#5919)",
-        "commit_origin_hash": "4d4d6aa44d0c960d0d05947538852175ca43be8b",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "device_ip": {
                 "value": "event.UserIp"
@@ -33289,8 +33281,8 @@
         "uid": "42656056-8445-4313-ba3e-56913a21cd3f"
     },
     "42710bf7-5cb5-4964-b063-b00e7b2f3048": {
-        "commit_message": "TLAB-1352 addes resource and normalizedResource",
-        "commit_origin_hash": "2be97c8a1e3cdb10058e26811ad16813e5675467",
+        "commit_message": "TLAB-2654_New mapper for AWS Guardduty attackSequence events (#5992)",
+        "commit_origin_hash": "3c055b13ca42d32596b0c922d49ed27d8bdaadfa",
         "field_mappings": {
             "accountId": {
                 "alternate_values": [
@@ -36360,8 +36352,8 @@
         "uid": "4886477c-cc07-4944-9847-ea9380192cf1"
     },
     "4895b867-a65d-4a57-8b06-230ecdda9d03": {
-        "commit_message": "TLAB-2641 Add null to skipped mapping values (#5986)",
-        "commit_origin_hash": "1519c7ea5e3b081ed3e000aa3e6a177d0432f4e0",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -36681,8 +36673,8 @@
         "uid": "4986836c-1759-422b-b5c4-8a548f18616b"
     },
     "499c828d-ee7e-420c-8369-d46ed029a074": {
-        "commit_message": "TLAB-1352 addes resource and normalizedResource",
-        "commit_origin_hash": "2be97c8a1e3cdb10058e26811ad16813e5675467",
+        "commit_message": "TLAB-2654_New mapper for AWS Guardduty attackSequence events (#5992)",
+        "commit_origin_hash": "3c055b13ca42d32596b0c922d49ed27d8bdaadfa",
         "field_mappings": {
             "accountId": {
                 "alternate_values": [
@@ -38247,8 +38239,8 @@
         "uid": "4d290a08-89cb-45b8-8504-954817ac4b9e"
     },
     "4d3cad22-db35-4aa0-83ae-025d728e8a22": {
-        "commit_message": "TLAB-2062:updated vendor name from gsuit to google workspace (#5884)",
-        "commit_origin_hash": "f151e65ea1e1c08bf4109e0030129ac553ccfe8a",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "action": {
                 "value": "metadata.status"
@@ -40516,8 +40508,8 @@
         "uid": "50ee5df8-20ae-4183-a282-b96369005935"
     },
     "50febf8f-5d62-46af-bc91-c4b04510a106": {
-        "commit_message": "TLAB-2356: remove user_username and targetuser_username split at @ (#5891)",
-        "commit_origin_hash": "a6698b94f8479030615cfaf5edb902a8dbda6dbe",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "device_hostname": {
                 "value": "DeploymentUnit"
@@ -40781,8 +40773,8 @@
         "uid": "5230380b-14fd-447e-8a0f-c652769e95b0"
     },
     "52351529-dfdd-4f70-8d0f-1321cf55a61f": {
-        "commit_message": "TLAB-2119: Updated the Mapper for the Palo Alto to support new logs (#5802)",
-        "commit_origin_hash": "5836cafc0c113fe6a045e9d5a7a3c02a7785c539",
+        "commit_message": "TLAB-2664 PAN session and flag remapping (#5996)",
+        "commit_origin_hash": "a4191240523ce753371bb67c19d7c8b8855860c9",
         "field_mappings": {
             "action": {
                 "alternate_values": [
@@ -40796,6 +40788,9 @@
                     "app"
                 ],
                 "value": "application"
+            },
+            "cause": {
+                "value": "SessionEndReason"
             },
             "device_hostname": {
                 "alternate_values": [
@@ -40854,13 +40849,6 @@
                 },
                 "value": "pan_severity",
                 "value_type": "lookup"
-            },
-            "resource": {
-                "alternate_values": [
-                    "Flags",
-                    "SessionEndReason"
-                ],
-                "value": "flags"
             },
             "severity": {
                 "alternate_values": [
@@ -41525,8 +41513,8 @@
         "uid": "52e8cc4d-62af-46c9-b216-7c5178fad0a4"
     },
     "52e9a9ef-c9b7-4e07-941a-c4011f705301": {
-        "commit_message": "TLAB-2356: remove user_username and targetuser_username split at @ (#5891)",
-        "commit_origin_hash": "a6698b94f8479030615cfaf5edb902a8dbda6dbe",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "bytesIn": {
                 "value": "properties.requestBytes"
@@ -41627,8 +41615,8 @@
         "uid": "530701a5-359e-482f-af68-1ae8405e4f69"
     },
     "53564119-22d2-4b25-bc56-8a29ea15eb8d": {
-        "commit_message": "TLAB-1593 removed locatoin fields",
-        "commit_origin_hash": "95ede5eec53678187a907bace510a88e8f353801",
+        "commit_message": "TLAB-2643_Watchguard Firewall logs mapping (#5991)",
+        "commit_origin_hash": "3e3b12d6fc08d215796220779ad99e1a6a32920a",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -41640,6 +41628,9 @@
                 "value": "sent_bytes"
             },
             "device_hostname": {
+                "alternate_values": [
+                    "member"
+                ],
                 "value": "hostname"
             },
             "dns_queryDomain": {
@@ -41741,8 +41732,8 @@
         "uid": "53a82bf7-0d71-4b85-8c80-fba3a382bffe"
     },
     "53cdf3e3-5fce-4525-abb1-7aff1b895be2": {
-        "commit_message": "TLAB-2499: created mapper for dns logs (#5931)",
-        "commit_origin_hash": "5e03d8b8bb6c3a0722f8a955dae7d676ad7b4497",
+        "commit_message": "TLAB-2539 Redundancy remediation: Cloudflare device_ip/srcDevice_ip mappings (#6001)",
+        "commit_origin_hash": "7b670e76ada2a9a78019c24304965b798e856ea2",
         "field_mappings": {
             "accountId": {
                 "value": "AccountID"
@@ -41817,8 +41808,8 @@
         "uid": "53cdf3e3-5fce-4525-abb1-7aff1b895be2"
     },
     "53d9bca1-44a8-4be5-905c-1c4d19ffddf6": {
-        "commit_message": "TLAB-1899: added new mapper",
-        "commit_origin_hash": "cce072478b86e59482f9df11c4527ffe6ca1f6ec",
+        "commit_message": "TLAB-2668 Remove Windows Defender SCCM Db Grok parser and mapper (#5999)",
+        "commit_origin_hash": "da92ad8a49358388ffa235e86fdabd1a8b71b877",
         "field_mappings": {
             "accountId": {
                 "value": "tenantId"
@@ -42367,6 +42358,93 @@
         "source": "jask",
         "uid": "54b3f101-a8da-4eb4-b1eb-a48efb095365"
     },
+    "54ed912b-0a61-45ee-8677-f1df0aa7d765": {
+        "commit_message": "TLAB-2654_New mapper for AWS Guardduty attackSequence events (#5992)",
+        "commit_origin_hash": "3c055b13ca42d32596b0c922d49ed27d8bdaadfa",
+        "field_mappings": {
+            "accountId": {
+                "value": "accountId"
+            },
+            "cloud_provider": {
+                "value": "AWS",
+                "value_type": "constant"
+            },
+            "cloud_region": {
+                "value": "region"
+            },
+            "cloud_service": {
+                "value": "GuardDuty",
+                "value_type": "constant"
+            },
+            "description": {
+                "alternate_values": [
+                    "detail.title"
+                ],
+                "value": "detail.description"
+            },
+            "device_uniqueId": {
+                "value": "id"
+            },
+            "normalizedSeverity": {
+                "value": "detail.severity"
+            },
+            "resource": {
+                "alternate_values": [
+                    "service.detection.sequence.actors.1.user.credentialUid"
+                ],
+                "value": "service.detection.sequence.resources.1.uid"
+            },
+            "resourceType": {
+                "value": "resource.resourceType"
+            },
+            "severity": {
+                "value": "detail.severity"
+            },
+            "srcDevice_ip": {
+                "value": "service.detection.sequence.endpoints.1.ip"
+            },
+            "threat_identifier": {
+                "value": "service.detectorId"
+            },
+            "threat_name": {
+                "value": "detail.type"
+            },
+            "threat_ruleType": {
+                "value": "direct",
+                "value_type": "constant"
+            },
+            "threat_signalName": {
+                "value": "detail.type"
+            },
+            "threat_signalSummary": {
+                "value": "detail.description"
+            },
+            "user_username": {
+                "alternate_values": [
+                    "service.detection.sequence.actors.1.user.uid"
+                ],
+                "value": "service.detection.sequence.actors.1.user.name"
+            }
+        },
+        "file_path": "mappings_schemav3/aws_guardduty_custom_parser.yaml",
+        "input": {
+            "event_id_pattern": "AttackSequence.*",
+            "log_format": "JSON",
+            "product": "GuardDuty",
+            "vendor": "AWS"
+        },
+        "name": "AWSGuardDuty - AttackSequence",
+        "output": {
+            "product_guid": "2ca0adcf-7616-4474-8557-a3773515aa6d",
+            "record_type": "Audit"
+        },
+        "skipped_values": [
+            ",",
+            "-"
+        ],
+        "source": "jask",
+        "uid": "54ed912b-0a61-45ee-8677-f1df0aa7d765"
+    },
     "54f4227f-e3ec-4aea-b065-068257bd077a": {
         "commit_message": "TLAB-1353 added resource and normalizedResource fields",
         "commit_origin_hash": "ef481177a074d5542fe92d6dce6dc5a077367cb8",
@@ -42528,8 +42606,8 @@
         "uid": "556dc316-280b-45cc-a457-d9a4e24f8741"
     },
     "559ba38b-e281-4c1c-9cea-24715c1cc4ca": {
-        "commit_message": "TLAB-2356: remove user_username and targetuser_username split at @ (#5891)",
-        "commit_origin_hash": "a6698b94f8479030615cfaf5edb902a8dbda6dbe",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "accountId": {
                 "value": "tenantId"
@@ -42825,8 +42903,8 @@
         "uid": "55d8ec38-d5ca-4ca9-b6e7-2cca16384235"
     },
     "562de066-eaab-4d04-a7d7-86cc3c8fa79e": {
-        "commit_message": "TLAB-2356: remove user_username and targetuser_username split at @ (#5891)",
-        "commit_origin_hash": "a6698b94f8479030615cfaf5edb902a8dbda6dbe",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "action": {
                 "value": "operationName"
@@ -42882,8 +42960,8 @@
         "uid": "562de066-eaab-4d04-a7d7-86cc3c8fa79e"
     },
     "56394cfe-207b-474c-86bc-c1b658646a4b": {
-        "commit_message": "TRIDENT_13274 Add passthrough settings to Twistlock mapper",
-        "commit_origin_hash": "21180aec33b616854b2a9311f0e183670e6954fa",
+        "commit_message": "TLAB-2660 Runtime passthrough mappers (#6007)",
+        "commit_origin_hash": "bed6cfa442621657fbb13573d729884506c7eab3",
         "field_mappings": {
             "action": {
                 "value": "effect"
@@ -42903,7 +42981,7 @@
                 "value": "msg"
             },
             "threat_ruleType": {
-                "value": "direct",
+                "value": "runtime",
                 "value_type": "constant"
             },
             "threat_signalName": {
@@ -45295,8 +45373,8 @@
         "uid": "5F7A6C70-9613-494A-AA69-E8CBC4EC6C42"
     },
     "5a47e54c-a8cc-4f38-af4d-842acd85d2ac": {
-        "commit_message": "TLAB-2356: remove user_username and targetuser_username split at @ (#5891)",
-        "commit_origin_hash": "a6698b94f8479030615cfaf5edb902a8dbda6dbe",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "accountId": {
                 "value": "tenantId"
@@ -45552,8 +45630,8 @@
         "uid": "5a914e06-8972-11ea-bc55-0242ac130003"
     },
     "5ac00bf7-2a94-4c2f-a56a-da56c2fd0f3c": {
-        "commit_message": "TLAB-2209: Added Mapping for Crowdstrike Falcon Endpoint Protection Alert Log (#5919)",
-        "commit_origin_hash": "4d4d6aa44d0c960d0d05947538852175ca43be8b",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "description": {
                 "value": "cat"
@@ -45635,8 +45713,8 @@
         "uid": "5ac00bf7-2a94-4c2f-a56a-da56c2fd0f3c"
     },
     "5b143610-ad79-41d2-b9c2-a79dfff9b21e": {
-        "commit_message": "TLAB-2356: remove user_username and targetuser_username split at @ (#5891)",
-        "commit_origin_hash": "a6698b94f8479030615cfaf5edb902a8dbda6dbe",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "accountId": {
                 "value": "properties.servicePrincipalId"
@@ -45912,8 +45990,8 @@
         "uid": "5bb5aea6-a1eb-41df-b86a-0e8a4ab9aab4"
     },
     "5bd1cc78-2155-4203-978b-955ac2a62665": {
-        "commit_message": "TLAB-1593 removed locatoin fields",
-        "commit_origin_hash": "95ede5eec53678187a907bace510a88e8f353801",
+        "commit_message": "TLAB-2643_Watchguard Firewall logs mapping (#5991)",
+        "commit_origin_hash": "3e3b12d6fc08d215796220779ad99e1a6a32920a",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -47024,8 +47102,8 @@
         "uid": "5f842838-583c-4f45-b54a-e6a1f885e27b"
     },
     "5f9fd200-dfdc-4b22-8709-81c5a2ef92f5": {
-        "commit_message": "TLAB-2541-Redundancy remediation: Okta device/srcDevice mappings (#5949)",
-        "commit_origin_hash": "b1a97642ec7e39fbd329668ddb4241427f4e8f20",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "application": {
                 "alternate_values": [
@@ -47457,8 +47535,8 @@
         "uid": "5fbf4e22-07f6-4496-bcf3-1e76b4d37951"
     },
     "5fddf764-7126-4d88-a8fd-63934d92a4e0": {
-        "commit_message": "TLAB-1010 Azure Graph API ID Protect Mapper Updates",
-        "commit_origin_hash": "82558486b4baaf21ff43fbc986131fee8f4bece7",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "description": {
                 "value": "riskDetail"
@@ -47493,7 +47571,7 @@
                 "value": "riskEventType"
             },
             "threat_ruleType": {
-                "value": "direct",
+                "value": "identity",
                 "value_type": "constant"
             },
             "threat_signalName": {
@@ -47632,8 +47710,8 @@
         "uid": "5ffc7e47-55d8-48bf-9ead-b00358251f96"
     },
     "6014dc76-0147-421a-af0a-5b88a0c1b4a5": {
-        "commit_message": "TLAB-2356: remove user_username and targetuser_username split at @ (#5891)",
-        "commit_origin_hash": "a6698b94f8479030615cfaf5edb902a8dbda6dbe",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "action": {
                 "value": "properties.action"
@@ -47935,8 +48013,8 @@
         "uid": "60cf3214-eef8-4101-9221-29c14b2e82e4"
     },
     "60eb70e7-50fb-479a-b60a-097e52be7628": {
-        "commit_message": "TRIDENT-13961 Add normalizedAction logon into Authentication Mappings for net new coverage",
-        "commit_origin_hash": "e0243c07db2da7f19a316aa5799cbf802306fe37",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "action": {
                 "value": "event_type"
@@ -49745,8 +49823,8 @@
         "uid": "640b4eb0-669a-46f4-9229-48c30c50e5ef"
     },
     "6411d15f-13c6-41eb-88a9-e565563943e6": {
-        "commit_message": "TLAB-2356: remove user_username and targetuser_username split at @ (#5891)",
-        "commit_origin_hash": "a6698b94f8479030615cfaf5edb902a8dbda6dbe",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "bytesIn": {
                 "value": "request_bytes"
@@ -50777,8 +50855,8 @@
         "uid": "674d9351-450f-4f61-83b5-e2b8957781ed"
     },
     "6798c977-09ca-4c33-8848-4158732fe83b": {
-        "commit_message": "TLAB-2641 Add null to skipped mapping values (#5986)",
-        "commit_origin_hash": "1519c7ea5e3b081ed3e000aa3e6a177d0432f4e0",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -50814,7 +50892,7 @@
                 "value": "anomaly_reason"
             },
             "threat_ruleType": {
-                "value": "direct",
+                "value": "identity",
                 "value_type": "constant"
             },
             "threat_signalName": {
@@ -50856,8 +50934,8 @@
         "uid": "6798c977-09ca-4c33-8848-4158732fe83b"
     },
     "6807aa3d-bd9f-4715-b9ba-4851f8f881d6": {
-        "commit_message": "TLAB-2356: remove user_username and targetuser_username split at @ (#5891)",
-        "commit_origin_hash": "a6698b94f8479030615cfaf5edb902a8dbda6dbe",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "action": {
                 "value": "operationName"
@@ -51047,8 +51125,8 @@
         "uid": "685259c2-dbb1-434c-8172-6dd9d253ef6d"
     },
     "6861570d-e513-46de-a60f-5c90b53e6c8b": {
-        "commit_message": "TLAB-2119: Updated the Mapper for the Palo Alto to support new logs (#5802)",
-        "commit_origin_hash": "5836cafc0c113fe6a045e9d5a7a3c02a7785c539",
+        "commit_message": "TLAB-2664 PAN session and flag remapping (#5996)",
+        "commit_origin_hash": "a4191240523ce753371bb67c19d7c8b8855860c9",
         "field_mappings": {
             "action": {
                 "alternate_values": [
@@ -51062,6 +51140,9 @@
                     "app"
                 ],
                 "value": "application"
+            },
+            "cause": {
+                "value": "SessionEndReason"
             },
             "device_hostname": {
                 "alternate_values": [
@@ -51120,13 +51201,6 @@
                 },
                 "value": "pan_severity",
                 "value_type": "lookup"
-            },
-            "resource": {
-                "alternate_values": [
-                    "Flags",
-                    "SessionEndReason"
-                ],
-                "value": "flags"
             },
             "severity": {
                 "alternate_values": [
@@ -52648,8 +52722,8 @@
         "uid": "6aba82d7-0aad-4a97-a626-a3ddff6d7dc3"
     },
     "6ac3a0a7-d1be-48dc-a0f7-cf5bf6678d6a": {
-        "commit_message": "TLAB-2541-Redundancy remediation: Okta device/srcDevice mappings (#5949)",
-        "commit_origin_hash": "b1a97642ec7e39fbd329668ddb4241427f4e8f20",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "cause": {
                 "value": "outcome.reason"
@@ -52874,8 +52948,8 @@
         "uid": "6b027e35-6ea1-42df-abce-a5696db220c9"
     },
     "6b8a3219-575f-4b34-b38b-751e75d26988": {
-        "commit_message": "TLAB-2209: Added Mapping for Crowdstrike Falcon Endpoint Protection Alert Log (#5919)",
-        "commit_origin_hash": "4d4d6aa44d0c960d0d05947538852175ca43be8b",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "description": {
                 "value": "event.Description"
@@ -52953,8 +53027,8 @@
         "uid": "6b8a3219-575f-4b34-b38b-751e75d26988"
     },
     "6b94825c-581c-47ff-ad57-156d24ca4c76": {
-        "commit_message": "TRIDENT-15575 Salesforce adjust LoginAs Mapping",
-        "commit_origin_hash": "24a66b74ffd5b9641fbaf39ffba5b6f63dc4caeb",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "action": {
                 "value": "EVENT_TYPE"
@@ -53620,8 +53694,8 @@
         "uid": "6ca55368-0d59-4c92-b312-4b5940147be5"
     },
     "6d496433-7cd5-463f-adb8-1c02a22": {
-        "commit_message": "TLAB-2356: remove user_username and targetuser_username split at @ (#5891)",
-        "commit_origin_hash": "a6698b94f8479030615cfaf5edb902a8dbda6dbe",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "action": {
                 "value": "properties.message"
@@ -54157,8 +54231,8 @@
         "uid": "6eec80f5-0c08-4e10-9077-f05f8f6c5a7e"
     },
     "6f1ac81b-7e70-444e-8abb-62f8ef39e9a1": {
-        "commit_message": "TLAB-2356: remove user_username and targetuser_username split at @ (#5891)",
-        "commit_origin_hash": "a6698b94f8479030615cfaf5edb902a8dbda6dbe",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "device_hostname": {
                 "value": "LogicalServerName"
@@ -54464,8 +54538,8 @@
         "uid": "701835ed-8f1f-4c3f-8a1d-48cb7d30aa57"
     },
     "701febb4-9985-4cfa-b07e-174b5610ade3": {
-        "commit_message": "TLAB-1352 addes resource and normalizedResource",
-        "commit_origin_hash": "2be97c8a1e3cdb10058e26811ad16813e5675467",
+        "commit_message": "TLAB-2654_New mapper for AWS Guardduty attackSequence events (#5992)",
+        "commit_origin_hash": "3c055b13ca42d32596b0c922d49ed27d8bdaadfa",
         "field_mappings": {
             "accountId": {
                 "alternate_values": [
@@ -54585,8 +54659,8 @@
         "uid": "703f7d62-a28f-4f57-8df7-684d6af19a1c"
     },
     "7043aa13-df3d-46fd-b76a-dd702f703782": {
-        "commit_message": "TLAB-2209: Added Mapping for Crowdstrike Falcon Endpoint Protection Alert Log (#5919)",
-        "commit_origin_hash": "4d4d6aa44d0c960d0d05947538852175ca43be8b",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "description": {
                 "value": "cat"
@@ -54701,8 +54775,8 @@
         "uid": "7090dfcd-5b24-4947-a610-42d3dcce2b55"
     },
     "70d1f8dc-fc03-4bff-8b50-45ba64d08c9f": {
-        "commit_message": "TLAB-2356: remove user_username and targetuser_username split at @ (#5891)",
-        "commit_origin_hash": "a6698b94f8479030615cfaf5edb902a8dbda6dbe",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "action": {
                 "value": "operationName"
@@ -54918,8 +54992,8 @@
         "uid": "71958300-7D31-4909-9448-4DF68E80B706"
     },
     "71a4e74c-d8b7-4148-b755-5298f5e1b49e": {
-        "commit_message": "TLAB-1352 addes resource and normalizedResource",
-        "commit_origin_hash": "2be97c8a1e3cdb10058e26811ad16813e5675467",
+        "commit_message": "TLAB-2654_New mapper for AWS Guardduty attackSequence events (#5992)",
+        "commit_origin_hash": "3c055b13ca42d32596b0c922d49ed27d8bdaadfa",
         "field_mappings": {
             "accountId": {
                 "alternate_values": [
@@ -57083,8 +57157,8 @@
         "uid": "75fb9fb0-abbe-4aca-9c89-9652a5f5ace0"
     },
     "76081f53-a146-4a95-9049-799d0cdd9385": {
-        "commit_message": "TLAB-2119: Updated the Mapper for the Palo Alto to support new logs (#5802)",
-        "commit_origin_hash": "5836cafc0c113fe6a045e9d5a7a3c02a7785c539",
+        "commit_message": "TLAB-2664 PAN session and flag remapping (#5996)",
+        "commit_origin_hash": "a4191240523ce753371bb67c19d7c8b8855860c9",
         "field_mappings": {
             "description": {
                 "alternate_values": [
@@ -58026,8 +58100,8 @@
         "uid": "778d4ea8-5df1-4f96-9cae-31780e9d1bb7"
     },
     "7797ac55-b4ca-484c-be19-4624f96ac4f7": {
-        "commit_message": "TLAB-2356: remove user_username and targetuser_username split at @ (#5891)",
-        "commit_origin_hash": "a6698b94f8479030615cfaf5edb902a8dbda6dbe",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "action": {
                 "value": "properties.type"
@@ -58061,8 +58135,8 @@
         "uid": "7797ac55-b4ca-484c-be19-4624f96ac4f7"
     },
     "779cdb4d-382c-4f25-9c9d-0bc59721fd8c": {
-        "commit_message": "TLAB-2119: Updated the Mapper for the Palo Alto to support new logs (#5802)",
-        "commit_origin_hash": "5836cafc0c113fe6a045e9d5a7a3c02a7785c539",
+        "commit_message": "TLAB-2664 PAN session and flag remapping (#5996)",
+        "commit_origin_hash": "a4191240523ce753371bb67c19d7c8b8855860c9",
         "field_mappings": {
             "action": {
                 "alternate_values": [
@@ -58078,6 +58152,9 @@
                     "out"
                 ],
                 "value": "application"
+            },
+            "cause": {
+                "value": "SessionEndReason"
             },
             "dstDevice_ip": {
                 "alternate_values": [
@@ -58130,13 +58207,6 @@
                 },
                 "value": "pan_severity",
                 "value_type": "lookup"
-            },
-            "resource": {
-                "alternate_values": [
-                    "Flags",
-                    "SessionEndReason"
-                ],
-                "value": "flags"
             },
             "severity": {
                 "alternate_values": [
@@ -58502,8 +58572,8 @@
         "uid": "78495bef-4079-4d64-b80d-d8be1e8faf8a"
     },
     "78922a8d-e50c-4f4c-9129-bfdb70ba6d6d": {
-        "commit_message": "TLAB-2062:updated vendor name from gsuit to google workspace (#5884)",
-        "commit_origin_hash": "f151e65ea1e1c08bf4109e0030129ac553ccfe8a",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "description": {
                 "value": "type"
@@ -60926,8 +60996,8 @@
         "uid": "7f4daf7f-f391-44be-908a-f36e6f1b360f"
     },
     "7f58d5e0-3efe-4b92-be17-9e8760e3ee4e": {
-        "commit_message": "TLAB-2119: Updated the Mapper for the Palo Alto to support new logs (#5802)",
-        "commit_origin_hash": "5836cafc0c113fe6a045e9d5a7a3c02a7785c539",
+        "commit_message": "TLAB-2664 PAN session and flag remapping (#5996)",
+        "commit_origin_hash": "a4191240523ce753371bb67c19d7c8b8855860c9",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -60938,6 +61008,9 @@
                     "app"
                 ],
                 "value": "application"
+            },
+            "cause": {
+                "value": "SessionEndReason"
             },
             "device_hostname": {
                 "alternate_values": [
@@ -60970,13 +61043,6 @@
                     "proto"
                 ],
                 "value": "protocol"
-            },
-            "resource": {
-                "alternate_values": [
-                    "Flags",
-                    "SessionEndReason"
-                ],
-                "value": "flags"
             },
             "severity": {
                 "alternate_values": [
@@ -61060,8 +61126,8 @@
         "uid": "7f58d5e0-3efe-4b92-be17-9e8760e3ee4e"
     },
     "7fa52b16-621e-4970-bbdc-e61f76864a58": {
-        "commit_message": "TLAB-2062:updated vendor name from gsuit to google workspace (#5884)",
-        "commit_origin_hash": "f151e65ea1e1c08bf4109e0030129ac553ccfe8a",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "description": {
                 "value": "data.title"
@@ -61089,7 +61155,7 @@
                 "value": "type"
             },
             "threat_ruleType": {
-                "value": "direct",
+                "value": "identity",
                 "value_type": "constant"
             },
             "threat_signalName": {
@@ -61130,8 +61196,8 @@
         "uid": "7fa52b16-621e-4970-bbdc-e61f76864a58"
     },
     "7fb377e0-a51a-4bc8-af3e-eec40dda35ac": {
-        "commit_message": "TLAB-431 DocuSign Monitor Mappers",
-        "commit_origin_hash": "debd80b8297a2826158d0766178454a55300d953",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "accountId": {
                 "value": "accountId"
@@ -62113,8 +62179,8 @@
         "uid": "818d5001-4366-4c38-99b8-699b1ee5faab"
     },
     "81eb64d9-5278-4e64-bf9c-8d5b887bd39e": {
-        "commit_message": "TRIDENT-13961 Add normalizedAction logon into Authentication Mappings for net new coverage",
-        "commit_origin_hash": "e0243c07db2da7f19a316aa5799cbf802306fe37",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "action": {
                 "value": "event_type"
@@ -62267,8 +62333,8 @@
         "uid": "821e00a8-8bd7-42ce-8414-4e04db6a5e37"
     },
     "8239516f-728b-4b6b-bb57-9df7b7f6e233": {
-        "commit_message": "TLAB-1899: added new mapper",
-        "commit_origin_hash": "cce072478b86e59482f9df11c4527ffe6ca1f6ec",
+        "commit_message": "TLAB-2668 Remove Windows Defender SCCM Db Grok parser and mapper (#5999)",
+        "commit_origin_hash": "da92ad8a49358388ffa235e86fdabd1a8b71b877",
         "field_mappings": {
             "action": {
                 "value": "RemediationType"
@@ -62779,8 +62845,8 @@
         "uid": "825599bd-22ed-47a5-9a88-792cda9f4d56"
     },
     "826cd3ba-46c5-4703-a343-3211cdd809fd": {
-        "commit_message": "TLAB-2062:updated vendor name from gsuit to google workspace (#5884)",
-        "commit_origin_hash": "f151e65ea1e1c08bf4109e0030129ac553ccfe8a",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "application": {
                 "value": "data.triggerSource"
@@ -62811,7 +62877,7 @@
                 "value": "type"
             },
             "threat_ruleType": {
-                "value": "direct",
+                "value": "identity",
                 "value_type": "constant"
             },
             "threat_signalName": {
@@ -62954,8 +63020,8 @@
         "uid": "82792c8e-dbec-4e10-ae42-b6a0944dec23"
     },
     "8299b68c-ac5f-40fd-b107-bd3a3705a5e7": {
-        "commit_message": "TLAB-2356: remove user_username and targetuser_username split at @ (#5891)",
-        "commit_origin_hash": "a6698b94f8479030615cfaf5edb902a8dbda6dbe",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "action": {
                 "alternate_values": [
@@ -64319,8 +64385,8 @@
         "uid": "85ef051a-6f4e-44ea-b341-c3bdf8735768"
     },
     "8617a5b9-a0c0-489a-a26b-55807e0fc03e": {
-        "commit_message": "TRIDENT-13961 Add normalizedAction logon into Authentication Mappings for net new coverage",
-        "commit_origin_hash": "e0243c07db2da7f19a316aa5799cbf802306fe37",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "action": {
                 "value": "event_type"
@@ -65867,8 +65933,8 @@
         "uid": "8931a3da-a072-4cc0-82ed-d29c309858a2"
     },
     "895b83e2-e169-4e3b-a768-46cf23670b24": {
-        "commit_message": "Fix Sysdig passthrough signalname (#5843)",
-        "commit_origin_hash": "b3d71246324c0885dcbab01e69c2ef254a217765",
+        "commit_message": "TLAB-2660 Runtime passthrough mappers (#6007)",
+        "commit_origin_hash": "bed6cfa442621657fbb13573d729884506c7eab3",
         "field_mappings": {
             "action": {
                 "value": "type"
@@ -67488,8 +67554,8 @@
         "uid": "8c80d8b8-7879-42cc-99ed-44ee11c1bcff"
     },
     "8cd5ce67-c75c-4935-bc03-c626fe50eaf7": {
-        "commit_message": "TLAB-2209: Added Mapping for Crowdstrike Falcon Endpoint Protection Alert Log (#5919)",
-        "commit_origin_hash": "4d4d6aa44d0c960d0d05947538852175ca43be8b",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "action": {
                 "value": "event.OperationName"
@@ -67895,8 +67961,8 @@
         "uid": "8d98a4d6-6cbb-473f-bf16-a0dee8cb4b84"
     },
     "8d9e112e-167d-4cad-ba6f-12cd9918c10e": {
-        "commit_message": "TLAB-715 MS Graph Sec Alert API 1.0 Mapper",
-        "commit_origin_hash": "56ebb06b951a2dda6adf29f43b8698de427b43f2",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "accountId": {
                 "alternate_values": [
@@ -69360,8 +69426,8 @@
         "uid": "906eaf0c-2055-4b66-9ea0-9e8c18a1b7f7"
     },
     "907231cf-972e-4793-aee9-b4e90301ac59": {
-        "commit_message": "TRIDENT-16259 Falco Mapper Updates",
-        "commit_origin_hash": "1eb5cf83cd7301278050e99f74e128de4a8dc5e0",
+        "commit_message": "TLAB-2660 Runtime passthrough mappers (#6007)",
+        "commit_origin_hash": "bed6cfa442621657fbb13573d729884506c7eab3",
         "field_mappings": {
             "action": {
                 "alternate_values": [
@@ -69449,7 +69515,7 @@
                 "value": "rule"
             },
             "threat_ruleType": {
-                "value": "direct",
+                "value": "runtime",
                 "value_type": "constant"
             },
             "threat_signalName": {
@@ -69566,8 +69632,8 @@
         "uid": "907c0c2d-fbff-4e6d-a8ee-b062075e4996"
     },
     "909795be-9f91-4846-9ec6-1fb61efbce10": {
-        "commit_message": "TRIDENT-13961 Add normalizedAction logon into Authentication Mappings for net new coverage",
-        "commit_origin_hash": "e0243c07db2da7f19a316aa5799cbf802306fe37",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "action": {
                 "value": "event_type"
@@ -69608,7 +69674,7 @@
                 "value": "additional_details.shield_alert.link"
             },
             "threat_ruleType": {
-                "value": "direct",
+                "value": "identity",
                 "value_type": "constant"
             },
             "threat_signalName": {
@@ -70724,8 +70790,8 @@
         "uid": "9348e69b-b769-48a6-9f31-c43748cb5125"
     },
     "93539fd8-02ce-485d-aa64-a242e0d97ead": {
-        "commit_message": "TLAB-2356: remove user_username and targetuser_username split at @ (#5891)",
-        "commit_origin_hash": "a6698b94f8479030615cfaf5edb902a8dbda6dbe",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -72396,8 +72462,8 @@
         "uid": "947e669d-6a76-4265-a30f-de54b02b6893"
     },
     "949e6e12-ddd6-49e5-bdbe-cc63e1c9c5ed": {
-        "commit_message": "TRIDENT-15575 Salesforce adjust LoginAs Mapping",
-        "commit_origin_hash": "24a66b74ffd5b9641fbaf39ffba5b6f63dc4caeb",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "action": {
                 "alternate_values": [
@@ -72439,7 +72505,7 @@
                 "value": "source_ip"
             },
             "threat_ruleType": {
-                "value": "direct",
+                "value": "identity",
                 "value_type": "constant"
             },
             "threat_signalName": {
@@ -72483,8 +72549,8 @@
         "uid": "949e6e12-ddd6-49e5-bdbe-cc63e1c9c5ed"
     },
     "94F238FF-AC1F-45CD-B6D2-9BAC76EB9717": {
-        "commit_message": "TLAB-2209: Added Mapping for Crowdstrike Falcon Endpoint Protection Alert Log (#5919)",
-        "commit_origin_hash": "4d4d6aa44d0c960d0d05947538852175ca43be8b",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "application": {
                 "value": "deviceProcessName"
@@ -72813,8 +72879,8 @@
         "uid": "95a7361d-8f95-4abd-a7e5-57306bb2c3a8"
     },
     "95cc6b62-1052-43a0-8aa7-586d64007614": {
-        "commit_message": "TLAB-2541-Redundancy remediation: Okta device/srcDevice mappings (#5949)",
-        "commit_origin_hash": "b1a97642ec7e39fbd329668ddb4241427f4e8f20",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "cause": {
                 "value": "outcome.reason"
@@ -72849,10 +72915,6 @@
                     "detail.client.userAgent.rawUserAgent"
                 ],
                 "value": "client.userAgent.rawUserAgent"
-            },
-            "normalizedAction": {
-                "value": "logon",
-                "value_type": "constant"
             },
             "sessionId": {
                 "alternate_values": [
@@ -73227,8 +73289,8 @@
         "uid": "970738c0-68fa-11ea-bc55-0242ac130003"
     },
     "97279d4b-fcae-4f95-a9d1-f04887420675": {
-        "commit_message": "TLAB-1010 Azure Graph API ID Protect Mapper Updates",
-        "commit_origin_hash": "82558486b4baaf21ff43fbc986131fee8f4bece7",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "description": {
                 "value": "riskDetail"
@@ -73257,7 +73319,7 @@
                 "value": "riskState"
             },
             "threat_ruleType": {
-                "value": "direct",
+                "value": "identity",
                 "value_type": "constant"
             },
             "threat_signalName": {
@@ -73690,8 +73752,8 @@
         "uid": "97cfb388-e2d6-4765-a893-914500795cac"
     },
     "97d61ef4-9995-4b9c-952b-02fdf518270a": {
-        "commit_message": "TLAB-2499: created mapper for dns logs (#5931)",
-        "commit_origin_hash": "5e03d8b8bb6c3a0722f8a955dae7d676ad7b4497",
+        "commit_message": "TLAB-2539 Redundancy remediation: Cloudflare device_ip/srcDevice_ip mappings (#6001)",
+        "commit_origin_hash": "7b670e76ada2a9a78019c24304965b798e856ea2",
         "field_mappings": {
             "accountId": {
                 "value": "AccountID"
@@ -73701,9 +73763,6 @@
                     "SecurityAction"
                 ],
                 "value": "Action"
-            },
-            "device_ip": {
-                "value": "ClientIP"
             },
             "dstDevice_ip": {
                 "alternate_values": [
@@ -74473,8 +74532,8 @@
         "uid": "99ef5972-d88b-4e04-bb1f-c20a43af5e44"
     },
     "9a0acbf2-a236-4ff1-8252-43ae90d8b549": {
-        "commit_message": "TLAB-431 DocuSign Monitor Mappers",
-        "commit_origin_hash": "debd80b8297a2826158d0766178454a55300d953",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "accountId": {
                 "value": "accountId"
@@ -74499,7 +74558,7 @@
                 "value": "ipAddress"
             },
             "threat_ruleType": {
-                "value": "direct",
+                "value": "identity",
                 "value_type": "constant"
             },
             "threat_signalName": {
@@ -74705,8 +74764,8 @@
         "uid": "9a51e2c5-29cc-4e5c-b8ba-f9ff6b26f59f"
     },
     "9a633133-6efa-40f3-a304-4f4d5fc00497": {
-        "commit_message": "TLAB-2119: Updated the Mapper for the Palo Alto to support new logs (#5802)",
-        "commit_origin_hash": "5836cafc0c113fe6a045e9d5a7a3c02a7785c539",
+        "commit_message": "TLAB-2664 PAN session and flag remapping (#5996)",
+        "commit_origin_hash": "a4191240523ce753371bb67c19d7c8b8855860c9",
         "field_mappings": {
             "action": {
                 "value": "op"
@@ -75532,8 +75591,8 @@
         "uid": "9bde738e-d6b5-4397-abad-67d12a9db015"
     },
     "9bfcc455-e896-4dbf-a5db-ddac607ac67d": {
-        "commit_message": "MCAS Changes",
-        "commit_origin_hash": "292f5a5de2abb4bef3e0938d24b9eedc2769baaf",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "description": {
                 "value": "msg"
@@ -75571,7 +75630,7 @@
                 "value": "cs1"
             },
             "threat_ruleType": {
-                "value": "direct",
+                "value": "identity",
                 "value_type": "constant"
             },
             "threat_signalName": {
@@ -76019,8 +76078,8 @@
         "uid": "9d5a9da6-718a-4f65-8f7a-04f3d5b5b369"
     },
     "9d8d9a8e-93e4-4afd-b28d-8374723a51a7": {
-        "commit_message": "MCAS Changes",
-        "commit_origin_hash": "292f5a5de2abb4bef3e0938d24b9eedc2769baaf",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "description": {
                 "value": "msg"
@@ -76438,8 +76497,8 @@
         "uid": "9e60ce78-7255-48cd-be83-fbcc211d98e3"
     },
     "9e618daa-32fc-46ae-af20-78b7c368fe48": {
-        "commit_message": "Fix Sysdig passthrough signalname (#5843)",
-        "commit_origin_hash": "b3d71246324c0885dcbab01e69c2ef254a217765",
+        "commit_message": "TLAB-2660 Runtime passthrough mappers (#6007)",
+        "commit_origin_hash": "bed6cfa442621657fbb13573d729884506c7eab3",
         "field_mappings": {
             "action": {
                 "value": "name"
@@ -76788,8 +76847,8 @@
         "uid": "9f520b1d-3ecf-4371-b227-129e2c362b12"
     },
     "9fd65404-2524-4859-8877-e44c97538415": {
-        "commit_message": "TLAB-2119: Updated the Mapper for the Palo Alto to support new logs (#5802)",
-        "commit_origin_hash": "5836cafc0c113fe6a045e9d5a7a3c02a7785c539",
+        "commit_message": "TLAB-2664 PAN session and flag remapping (#5996)",
+        "commit_origin_hash": "a4191240523ce753371bb67c19d7c8b8855860c9",
         "field_mappings": {
             "action": {
                 "alternate_values": [
@@ -77461,8 +77520,8 @@
         "uid": "C58BDBCA-F07D-4832-BEB2-FFA79727370F"
     },
     "D6ED923F-2647-4094-92E1-CCF66B3C0048": {
-        "commit_message": "TLAB-2209: Added Mapping for Crowdstrike Falcon Endpoint Protection Alert Log (#5919)",
-        "commit_origin_hash": "4d4d6aa44d0c960d0d05947538852175ca43be8b",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "application": {
                 "value": "deviceProcessName"
@@ -77653,8 +77712,8 @@
         "uid": "E1B8B90C-1A2A-4502-AB0D-E65B122DE9EE"
     },
     "EA2F7884-292C-4377-B575-7C2DDCA00B05": {
-        "commit_message": "TRIDENT-15575 Salesforce adjust LoginAs Mapping",
-        "commit_origin_hash": "24a66b74ffd5b9641fbaf39ffba5b6f63dc4caeb",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "action": {
                 "value": "api_type"
@@ -78099,8 +78158,8 @@
         "uid": "a0388783-0a9b-4473-ba83-d9c8b2013170"
     },
     "a09cb576-bab2-4b0d-a9c9-7a7c46c48870": {
-        "commit_message": "TLAB-2209: Added Mapping for Crowdstrike Falcon Endpoint Protection Alert Log (#5919)",
-        "commit_origin_hash": "4d4d6aa44d0c960d0d05947538852175ca43be8b",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "description": {
                 "alternate_values": [
@@ -78979,8 +79038,8 @@
         "uid": "a19223a3-568d-422c-94ec-c10b3c0fa112"
     },
     "a1c34f6a-62e0-45fc-80c8-7c8cbc97edb1": {
-        "commit_message": "TLAB-2209: Added Mapping for Crowdstrike Falcon Endpoint Protection Alert Log (#5919)",
-        "commit_origin_hash": "4d4d6aa44d0c960d0d05947538852175ca43be8b",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "application": {
                 "value": "deviceProcessName"
@@ -79069,8 +79128,8 @@
         "uid": "a1eeb6c8-feec-4593-9cae-7858b56e12b7"
     },
     "a20fdb3d-2294-43b0-b10c-18fc9921b1d1": {
-        "commit_message": "TLAB-2209: Added Mapping for Crowdstrike Falcon Endpoint Protection Alert Log (#5919)",
-        "commit_origin_hash": "4d4d6aa44d0c960d0d05947538852175ca43be8b",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "commandLine": {
                 "value": "event.CommandLine"
@@ -80102,8 +80161,8 @@
         "uid": "a3b09850-2be8-4cdd-adb2-183989b122be"
     },
     "a3ddb240-92db-40fd-9f32-2277b52ac061": {
-        "commit_message": "Fix Sysdig passthrough signalname (#5843)",
-        "commit_origin_hash": "b3d71246324c0885dcbab01e69c2ef254a217765",
+        "commit_message": "TLAB-2660 Runtime passthrough mappers (#6007)",
+        "commit_origin_hash": "bed6cfa442621657fbb13573d729884506c7eab3",
         "field_mappings": {
             "action": {
                 "value": "type"
@@ -80265,8 +80324,8 @@
         "uid": "a43e92e8-1166-4378-a910-b1e102ca15e6"
     },
     "a4937e9a-8a77-4390-9a68-63fecfdcb592": {
-        "commit_message": "TRIDENT-13961 Add normalizedAction logon into Authentication Mappings for net new coverage",
-        "commit_origin_hash": "e0243c07db2da7f19a316aa5799cbf802306fe37",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "action": {
                 "value": "event_type"
@@ -80866,8 +80925,8 @@
         "uid": "a4eb5c4d-15fa-4a06-8c7a-27fe3978834d"
     },
     "a4fbc8a4-ef01-4c01-b336-67923aa94e1a": {
-        "commit_message": "TLAB-1352 addes resource and normalizedResource",
-        "commit_origin_hash": "2be97c8a1e3cdb10058e26811ad16813e5675467",
+        "commit_message": "TLAB-2660 Runtime passthrough mappers (#6007)",
+        "commit_origin_hash": "bed6cfa442621657fbb13573d729884506c7eab3",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -80898,7 +80957,7 @@
                 "value": "reason"
             },
             "threat_ruleType": {
-                "value": "direct",
+                "value": "runtime",
                 "value_type": "constant"
             },
             "threat_signalName": {
@@ -80928,8 +80987,8 @@
         "uid": "a4fbc8a4-ef01-4c01-b336-67923aa94e1a"
     },
     "a509a0b7-d91a-405a-ab6c-9ff4285041a5": {
-        "commit_message": "TLAB-2119: Updated the Mapper for the Palo Alto to support new logs (#5802)",
-        "commit_origin_hash": "5836cafc0c113fe6a045e9d5a7a3c02a7785c539",
+        "commit_message": "TLAB-2664 PAN session and flag remapping (#5996)",
+        "commit_origin_hash": "a4191240523ce753371bb67c19d7c8b8855860c9",
         "field_mappings": {
             "action": {
                 "alternate_values": [
@@ -81202,8 +81261,8 @@
         "uid": "a5c692ba-49e1-4cd6-810c-f0ccd3174c75"
     },
     "a5ef3b4e-9ea4-4429-a736-65bf15da78d9": {
-        "commit_message": "TLAB-2356: remove user_username and targetuser_username split at @ (#5891)",
-        "commit_origin_hash": "a6698b94f8479030615cfaf5edb902a8dbda6dbe",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "timestamp": {
                 "format": "yyyy-MM-dd'T'HH:mm:ss.SSSSSSSZ",
@@ -81325,8 +81384,8 @@
         "uid": "a66d5268-50f9-477e-86db-e490a7e40a31"
     },
     "a69a97f7-5dd3-438e-814d-2eb0ed589a0f": {
-        "commit_message": "TLAB-2062:updated vendor name from gsuit to google workspace (#5884)",
-        "commit_origin_hash": "f151e65ea1e1c08bf4109e0030129ac553ccfe8a",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "action": {
                 "value": "data.ruleViolationInfo.triggeredActionTypes"
@@ -82437,8 +82496,8 @@
         "uid": "aa0263c9-a102-492c-b614-67d9aaf98ac1"
     },
     "aa5386ab-8afd-4778-971d-88426f6c4099": {
-        "commit_message": "TLAB-2209: Added Mapping for Crowdstrike Falcon Endpoint Protection Alert Log (#5919)",
-        "commit_origin_hash": "4d4d6aa44d0c960d0d05947538852175ca43be8b",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "application": {
                 "value": "event.ServiceName"
@@ -83573,8 +83632,8 @@
         "uid": "ac79718b-60a0-4b47-a45a-39379f8142f1"
     },
     "ac8586c6-9954-4c70-860e-99a6dbcb3fc8": {
-        "commit_message": "TLAB-715 MS Graph Sec Alert API 1.0 Mapper",
-        "commit_origin_hash": "56ebb06b951a2dda6adf29f43b8698de427b43f2",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "accountId": {
                 "value": "userStates.1.aadUserId"
@@ -85625,8 +85684,8 @@
         "uid": "b28d2c05-12a8-4678-921f-a8a277f370e3"
     },
     "b28e6ee8-063a-4a97-975f-aba5a6161c98": {
-        "commit_message": "TLAB-2119: Updated the Mapper for the Palo Alto to support new logs (#5802)",
-        "commit_origin_hash": "5836cafc0c113fe6a045e9d5a7a3c02a7785c539",
+        "commit_message": "TLAB-2664 PAN session and flag remapping (#5996)",
+        "commit_origin_hash": "a4191240523ce753371bb67c19d7c8b8855860c9",
         "field_mappings": {
             "device_hostname": {
                 "alternate_values": [
@@ -85896,8 +85955,8 @@
         "uid": "b2de8aea-eaf5-44af-a730-d1e24cd017a9"
     },
     "b2f5958-9e00-4e4c-bc8c-de811ddb883b": {
-        "commit_message": "TLAB-2209: Added Mapping for Crowdstrike Falcon Endpoint Protection Alert Log (#5919)",
-        "commit_origin_hash": "4d4d6aa44d0c960d0d05947538852175ca43be8b",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "commandLine": {
                 "value": "event.CommandLine"
@@ -87229,8 +87288,8 @@
         "uid": "b58475cc-681c-479e-ae94-656eaafd333c"
     },
     "b593dc79-fab8-4a4d-82a9-3539980e98c1": {
-        "commit_message": "TLAB-2209: Added Mapping for Crowdstrike Falcon Endpoint Protection Alert Log (#5919)",
-        "commit_origin_hash": "4d4d6aa44d0c960d0d05947538852175ca43be8b",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "accountId": {
                 "value": "event.CustomerId"
@@ -87535,8 +87594,8 @@
         "uid": "b6abd358-d7de-4210-9680-700970725f8a"
     },
     "b6c01dc5-a74b-435d-a22a-96b4f9f3168e": {
-        "commit_message": "TLAB-715 MS Graph Sec Alert API 1.0 Mapper",
-        "commit_origin_hash": "56ebb06b951a2dda6adf29f43b8698de427b43f2",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "accountId": {
                 "value": "userStates.1.aadUserId"
@@ -88063,8 +88122,8 @@
         "uid": "b774a4f1-b58f-44b2-b962-8bec88f30976"
     },
     "b7de0d84-93e2-4dec-87e8-5bd77e74dbe9": {
-        "commit_message": "TLAB-2541-Redundancy remediation: Okta device/srcDevice mappings (#5949)",
-        "commit_origin_hash": "b1a97642ec7e39fbd329668ddb4241427f4e8f20",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "cause": {
                 "value": "outcome.reason"
@@ -88172,7 +88231,7 @@
                 "value": "displayMessage"
             },
             "threat_ruleType": {
-                "value": "direct",
+                "value": "identity",
                 "value_type": "constant"
             },
             "threat_signalName": {
@@ -88834,8 +88893,8 @@
         "uid": "b95829e9-41fc-4b5a-a499-bb9fc9e8720b"
     },
     "b95a059a-ec11-4b27-8c83-f1c1617fa862": {
-        "commit_message": "TLAB-2356: remove user_username and targetuser_username split at @ (#5891)",
-        "commit_origin_hash": "a6698b94f8479030615cfaf5edb902a8dbda6dbe",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "accountId": {
                 "value": "tenantId"
@@ -91275,8 +91334,8 @@
         "uid": "c088e78a-ff9d-45c5-87c2-fd48f6248b9d"
     },
     "c0c6268a-28f8-4ae7-987a-4112b3b1d8f7": {
-        "commit_message": "TLAB-2209: Added Mapping for Crowdstrike Falcon Endpoint Protection Alert Log (#5919)",
-        "commit_origin_hash": "4d4d6aa44d0c960d0d05947538852175ca43be8b",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "application": {
                 "value": "ServiceName"
@@ -91848,8 +91907,8 @@
         "uid": "c1f966d9-4a30-4e67-a5ba-9630545f757f"
     },
     "c26eb2a4-4b11-45a2-b3cf-173c1a12f5ab": {
-        "commit_message": "TLAB-2209: Added Mapping for Crowdstrike Falcon Endpoint Protection Alert Log (#5919)",
-        "commit_origin_hash": "4d4d6aa44d0c960d0d05947538852175ca43be8b",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "application": {
                 "value": "deviceProcessName"
@@ -92165,8 +92224,8 @@
         "uid": "c2bdf6be-f124-4e2f-8406-c5301be476d3"
     },
     "c3089ac5-982a-4bcf-919f-19bd7c58eb6d": {
-        "commit_message": "TLAB-2356: remove user_username and targetuser_username split at @ (#5891)",
-        "commit_origin_hash": "a6698b94f8479030615cfaf5edb902a8dbda6dbe",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "accountId": {
                 "value": "tenantId"
@@ -92760,8 +92819,8 @@
         "uid": "c42bfa1c-9ead-4797-abc8-629df562bb61"
     },
     "c459d102-6709-424a-b9a0-69932ea9f5e5": {
-        "commit_message": "TLAB-2119: Updated the Mapper for the Palo Alto to support new logs (#5802)",
-        "commit_origin_hash": "5836cafc0c113fe6a045e9d5a7a3c02a7785c539",
+        "commit_message": "TLAB-2664 PAN session and flag remapping (#5996)",
+        "commit_origin_hash": "a4191240523ce753371bb67c19d7c8b8855860c9",
         "field_mappings": {
             "action": {
                 "alternate_values": [
@@ -92775,6 +92834,9 @@
                     "app"
                 ],
                 "value": "application"
+            },
+            "cause": {
+                "value": "SessionEndReason"
             },
             "device_hostname": {
                 "alternate_values": [
@@ -92807,13 +92869,6 @@
                     "proto"
                 ],
                 "value": "protocol"
-            },
-            "resource": {
-                "alternate_values": [
-                    "Flags",
-                    "SessionEndReason"
-                ],
-                "value": "flags"
             },
             "severity": {
                 "alternate_values": [
@@ -94121,8 +94176,8 @@
         "uid": "c7abbbdf-8fb0-486a-93b0-fddf5396be38"
     },
     "c7d1f7ef-5ef8-464d-b483-d4539c1db75a": {
-        "commit_message": "TLAB-2119: Updated the Mapper for the Palo Alto to support new logs (#5802)",
-        "commit_origin_hash": "5836cafc0c113fe6a045e9d5a7a3c02a7785c539",
+        "commit_message": "TLAB-2664 PAN session and flag remapping (#5996)",
+        "commit_origin_hash": "a4191240523ce753371bb67c19d7c8b8855860c9",
         "field_mappings": {
             "action": {
                 "alternate_values": [
@@ -94136,6 +94191,9 @@
                     "app"
                 ],
                 "value": "application"
+            },
+            "cause": {
+                "value": "SessionEndReason"
             },
             "device_hostname": {
                 "alternate_values": [
@@ -94168,13 +94226,6 @@
                     "proto"
                 ],
                 "value": "protocol"
-            },
-            "resource": {
-                "alternate_values": [
-                    "Flags",
-                    "SessionEndReason"
-                ],
-                "value": "flags"
             },
             "severity": {
                 "alternate_values": [
@@ -94872,8 +94923,8 @@
         "uid": "ca8610b2-185e-4c44-885c-769329fbddc5"
     },
     "ca8cd943-e73e-40ac-8a00-3a949b2228dc": {
-        "commit_message": "TLAB-2356: remove user_username and targetuser_username split at @ (#5891)",
-        "commit_origin_hash": "a6698b94f8479030615cfaf5edb902a8dbda6dbe",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "action": {
                 "alternate_values": [
@@ -94926,8 +94977,8 @@
         "uid": "ca8cd943-e73e-40ac-8a00-3a949b2228dc"
     },
     "ca8fb6f2-cace-4118-9a8c-da63ad06e420": {
-        "commit_message": "TRIDENT_13274 Add passthrough settings to Twistlock mapper",
-        "commit_origin_hash": "21180aec33b616854b2a9311f0e183670e6954fa",
+        "commit_message": "TLAB-2660 Runtime passthrough mappers (#6007)",
+        "commit_origin_hash": "bed6cfa442621657fbb13573d729884506c7eab3",
         "field_mappings": {
             "action": {
                 "value": "effect"
@@ -95598,8 +95649,8 @@
         "uid": "cb9dcfbd-d443-4111-ad08-7e7050518838"
     },
     "cbd41736-9ba9-4442-bbd4-525a38dadb49": {
-        "commit_message": "TLAB-2119: Updated the Mapper for the Palo Alto to support new logs (#5802)",
-        "commit_origin_hash": "5836cafc0c113fe6a045e9d5a7a3c02a7785c539",
+        "commit_message": "TLAB-2664 PAN session and flag remapping (#5996)",
+        "commit_origin_hash": "a4191240523ce753371bb67c19d7c8b8855860c9",
         "field_mappings": {
             "action": {
                 "alternate_values": [
@@ -95613,6 +95664,9 @@
                     "app"
                 ],
                 "value": "application"
+            },
+            "cause": {
+                "value": "SessionEndReason"
             },
             "device_hostname": {
                 "alternate_values": [
@@ -95645,13 +95699,6 @@
                     "proto"
                 ],
                 "value": "protocol"
-            },
-            "resource": {
-                "alternate_values": [
-                    "Flags",
-                    "SessionEndReason"
-                ],
-                "value": "flags"
             },
             "severity": {
                 "alternate_values": [
@@ -96817,8 +96864,8 @@
         "uid": "cf257adf-46af-4f8e-9356-c32758574114"
     },
     "cf269dd7-e15a-4531-b9c2-6b938d3a88a6": {
-        "commit_message": "Fix Sysdig passthrough signalname (#5843)",
-        "commit_origin_hash": "b3d71246324c0885dcbab01e69c2ef254a217765",
+        "commit_message": "TLAB-2660 Runtime passthrough mappers (#6007)",
+        "commit_origin_hash": "bed6cfa442621657fbb13573d729884506c7eab3",
         "field_mappings": {
             "action": {
                 "value": "content.requestMethod"
@@ -97089,8 +97136,8 @@
         "uid": "cf6d35ed-79bc-4316-b8ab-62e7a606818b"
     },
     "cf7c6c83-2b73-47c4-933d-aaf0bdae6450": {
-        "commit_message": "TLAB-2062:updated vendor name from gsuit to google workspace (#5884)",
-        "commit_origin_hash": "f151e65ea1e1c08bf4109e0030129ac553ccfe8a",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "action": {
                 "value": "metadata.status"
@@ -97456,8 +97503,8 @@
         "uid": "cfca5441-a462-4f81-a40f-6b4d993a6608"
     },
     "cfdf78af-0324-432e-aa50-1ee7933e36be": {
-        "commit_message": "Fix Sysdig passthrough signalname (#5843)",
-        "commit_origin_hash": "b3d71246324c0885dcbab01e69c2ef254a217765",
+        "commit_message": "TLAB-2660 Runtime passthrough mappers (#6007)",
+        "commit_origin_hash": "bed6cfa442621657fbb13573d729884506c7eab3",
         "field_mappings": {
             "action": {
                 "value": "permissions"
@@ -97640,8 +97687,8 @@
         "uid": "d01f4ea7-2a17-4a03-a67c-da572df33b9c"
     },
     "d02667f4-783f-4db9-a08c-0e107882cab9": {
-        "commit_message": "TLAB-2541-Redundancy remediation: Okta device/srcDevice mappings (#5949)",
-        "commit_origin_hash": "b1a97642ec7e39fbd329668ddb4241427f4e8f20",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "cause": {
                 "value": "outcome.reason"
@@ -98631,8 +98678,8 @@
         "uid": "d290f61e-3572-495d-bca4-8e4cd06ef412"
     },
     "d299881e-c45d-46ea-8249-281d2c395e1e": {
-        "commit_message": "TRIDENT-15575 Salesforce adjust LoginAs Mapping",
-        "commit_origin_hash": "24a66b74ffd5b9641fbaf39ffba5b6f63dc4caeb",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "action": {
                 "alternate_values": [
@@ -99617,8 +99664,8 @@
         "uid": "d4c5da9c-c753-4c91-b749-c98a0ac24c53"
     },
     "d4d12cbf-66cd-4e9b-a42a-d0bc7c3a26b3": {
-        "commit_message": "TLAB-2209: Added Mapping for Crowdstrike Falcon Endpoint Protection Alert Log (#5919)",
-        "commit_origin_hash": "4d4d6aa44d0c960d0d05947538852175ca43be8b",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "description": {
                 "value": "event.IncidentDescription"
@@ -99653,7 +99700,7 @@
                 "value": "event.FalconHostLink"
             },
             "threat_ruleType": {
-                "value": "direct",
+                "value": "identity",
                 "value_type": "constant"
             },
             "threat_signalName": {
@@ -100107,8 +100154,8 @@
         "uid": "d65a4b67-4089-4e69-8bc6-8d5a3f1f4685"
     },
     "d6a16750-c9c5-4c31-bc14-2fa583172e3f": {
-        "commit_message": "TLAB-715 MS Graph Sec Alert API 1.0 Mapper",
-        "commit_origin_hash": "56ebb06b951a2dda6adf29f43b8698de427b43f2",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "accountId": {
                 "value": "userStates.1.aadUserId"
@@ -100186,8 +100233,8 @@
         "uid": "d6a16750-c9c5-4c31-bc14-2fa583172e3f"
     },
     "d6a48aaf-c3e2-4f10-98ce-3821eec55002": {
-        "commit_message": "TLAB-2119: Updated the Mapper for the Palo Alto to support new logs (#5802)",
-        "commit_origin_hash": "5836cafc0c113fe6a045e9d5a7a3c02a7785c539",
+        "commit_message": "TLAB-2664 PAN session and flag remapping (#5996)",
+        "commit_origin_hash": "a4191240523ce753371bb67c19d7c8b8855860c9",
         "field_mappings": {
             "action": {
                 "alternate_values": [
@@ -100201,6 +100248,9 @@
                     "app"
                 ],
                 "value": "application"
+            },
+            "cause": {
+                "value": "SessionEndReason"
             },
             "device_hostname": {
                 "alternate_values": [
@@ -100233,13 +100283,6 @@
                     "proto"
                 ],
                 "value": "protocol"
-            },
-            "resource": {
-                "alternate_values": [
-                    "Flags",
-                    "SessionEndReason"
-                ],
-                "value": "flags"
             },
             "severity": {
                 "alternate_values": [
@@ -100593,8 +100636,8 @@
         "uid": "d76fff10-f948-43ce-a51a-31a99ddd09d0"
     },
     "d770ed94-4151-4eee-97a0-361178905de7": {
-        "commit_message": "TLAB-2062:updated vendor name from gsuit to google workspace (#5884)",
-        "commit_origin_hash": "f151e65ea1e1c08bf4109e0030129ac553ccfe8a",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "description": {
                 "value": "type"
@@ -101100,8 +101143,8 @@
         "uid": "d8808195-8e30-4645-af3f-41acf296a25b"
     },
     "d8f45e63-1455-4f00-812e-838f22f0df9f": {
-        "commit_message": "Fix Sysdig passthrough signalname (#5843)",
-        "commit_origin_hash": "b3d71246324c0885dcbab01e69c2ef254a217765",
+        "commit_message": "TLAB-2660 Runtime passthrough mappers (#6007)",
+        "commit_origin_hash": "bed6cfa442621657fbb13573d729884506c7eab3",
         "field_mappings": {
             "action": {
                 "value": "name"
@@ -101199,7 +101242,7 @@
                 "value": "content.ruleName"
             },
             "threat_ruleType": {
-                "value": "direct",
+                "value": "runtime",
                 "value_type": "constant"
             },
             "threat_signalName": {
@@ -101915,8 +101958,8 @@
         "uid": "db1d6e12-03b6-415f-bb6b-3cd2a299ff70"
     },
     "db25fd08-e994-4f29-8c94-c2ef9ffd68e2": {
-        "commit_message": "TLAB-2356: remove user_username and targetuser_username split at @ (#5891)",
-        "commit_origin_hash": "a6698b94f8479030615cfaf5edb902a8dbda6dbe",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -102663,8 +102706,8 @@
         "uid": "dc596d84-47fe-4a4f-8132-dca3fe5920c9"
     },
     "dc8d2b86-b165-433c-85ce-092c389d0d79": {
-        "commit_message": "TLAB-2356: remove user_username and targetuser_username split at @ (#5891)",
-        "commit_origin_hash": "a6698b94f8479030615cfaf5edb902a8dbda6dbe",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "accountId": {
                 "value": "tenantId"
@@ -103835,8 +103878,8 @@
         "uid": "deb1083f-6ea2-4ae8-b92a-d961035ed38b"
     },
     "df04fa8e-8cf7-4ae1-9ea3-03f503ce6cf1": {
-        "commit_message": "TLAB-2356: remove user_username and targetuser_username split at @ (#5891)",
-        "commit_origin_hash": "a6698b94f8479030615cfaf5edb902a8dbda6dbe",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "action": {
                 "value": "resultType"
@@ -104762,8 +104805,8 @@
         "uid": "e0497f50-c29c-42c5-a996-31be6e02b909"
     },
     "e0a19ce7-0934-4a8c-a714-0d8efab68bdf": {
-        "commit_message": "TLAB-1352 addes resource and normalizedResource",
-        "commit_origin_hash": "2be97c8a1e3cdb10058e26811ad16813e5675467",
+        "commit_message": "TLAB-2654_New mapper for AWS Guardduty attackSequence events (#5992)",
+        "commit_origin_hash": "3c055b13ca42d32596b0c922d49ed27d8bdaadfa",
         "field_mappings": {
             "accountId": {
                 "alternate_values": [
@@ -105301,8 +105344,8 @@
         "uid": "e1602c99-2d92-4ce3-8a74-e73a5400f914"
     },
     "e1757d10-b520-4bb9-8a74-cc83d4c3271f": {
-        "commit_message": "TLAB-2080: created a mapper for the contrast adr",
-        "commit_origin_hash": "c191e9a343540047ebadfc53a548b22dbf8810c2",
+        "commit_message": "TLAB-2660 Runtime passthrough mappers (#6007)",
+        "commit_origin_hash": "bed6cfa442621657fbb13573d729884506c7eab3",
         "field_mappings": {
             "action": {
                 "value": "result"
@@ -105383,11 +105426,11 @@
                 "value": "uiUrl"
             },
             "threat_ruleType": {
-                "value": "direct",
+                "value": "runtime",
                 "value_type": "constant"
             },
             "threat_signalName": {
-                "value": "ruleUuid"
+                "value": "rule"
             }
         },
         "file_path": "mappings_schemav3/contrast_adr.yaml",
@@ -105606,8 +105649,8 @@
         "uid": "e32f5591-3a43-47b6-82a1-a6556b03d74e"
     },
     "e364663b-43c0-4be0-af90-b085fa0d5be8": {
-        "commit_message": "TLAB-2356: remove user_username and targetuser_username split at @ (#5891)",
-        "commit_origin_hash": "a6698b94f8479030615cfaf5edb902a8dbda6dbe",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "action": {
                 "value": "category"
@@ -106485,8 +106528,8 @@
         "uid": "e4177d7b-56ec-45d3-8572-780c93a30087"
     },
     "e4883fa4-baaa-47bc-948d-17ca3ba7ac94": {
-        "commit_message": "TLAB-1352 addes resource and normalizedResource",
-        "commit_origin_hash": "2be97c8a1e3cdb10058e26811ad16813e5675467",
+        "commit_message": "TLAB-2654_New mapper for AWS Guardduty attackSequence events (#5992)",
+        "commit_origin_hash": "3c055b13ca42d32596b0c922d49ed27d8bdaadfa",
         "field_mappings": {
             "accountId": {
                 "alternate_values": [
@@ -106659,8 +106702,8 @@
         "uid": "e4dd1018-6a82-11ea-bc55-0242ac130003"
     },
     "e4e783d6-9d89-44e1-ae23-4f622dca74a9": {
-        "commit_message": "TLAB-2062:updated vendor name from gsuit to google workspace (#5884)",
-        "commit_origin_hash": "f151e65ea1e1c08bf4109e0030129ac553ccfe8a",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "description": {
                 "value": "type"
@@ -106685,13 +106728,6 @@
                 "value": "source"
             },
             "threat_name": {
-                "value": "type"
-            },
-            "threat_ruleType": {
-                "value": "direct",
-                "value_type": "constant"
-            },
-            "threat_signalName": {
                 "value": "type"
             },
             "timestamp": {
@@ -106848,8 +106884,8 @@
         "uid": "e540cecc-4d91-4a9b-8eab-cf3757d16399"
     },
     "e58c8bce-3ea6-478e-ae72-4782bff6992a": {
-        "commit_message": "TLAB-1899: added new mapper",
-        "commit_origin_hash": "cce072478b86e59482f9df11c4527ffe6ca1f6ec",
+        "commit_message": "TLAB-2668 Remove Windows Defender SCCM Db Grok parser and mapper (#5999)",
+        "commit_origin_hash": "da92ad8a49358388ffa235e86fdabd1a8b71b877",
         "field_mappings": {
             "action": {
                 "value": "EventData.Action Name"
@@ -106984,8 +107020,8 @@
         "uid": "e5a1ef69-b11f-4ccd-81a7-fdf322543e64"
     },
     "e69b5d13-5862-430a-a47d-5e9afd51b957": {
-        "commit_message": "TLAB-2119: Updated the Mapper for the Palo Alto to support new logs (#5802)",
-        "commit_origin_hash": "5836cafc0c113fe6a045e9d5a7a3c02a7785c539",
+        "commit_message": "TLAB-2664 PAN session and flag remapping (#5996)",
+        "commit_origin_hash": "a4191240523ce753371bb67c19d7c8b8855860c9",
         "field_mappings": {
             "action": {
                 "alternate_values": [
@@ -106999,6 +107035,9 @@
                     "app"
                 ],
                 "value": "application"
+            },
+            "cause": {
+                "value": "SessionEndReason"
             },
             "device_hostname": {
                 "alternate_values": [
@@ -107031,13 +107070,6 @@
                     "proto"
                 ],
                 "value": "protocol"
-            },
-            "resource": {
-                "alternate_values": [
-                    "Flags",
-                    "SessionEndReason"
-                ],
-                "value": "flags"
             },
             "severity": {
                 "alternate_values": [
@@ -107545,8 +107577,8 @@
         "uid": "e77c575d-8d97-4fa3-ae9f-df9cc7e38fd8"
     },
     "e78a34a9-2db5-456b-92c7-d95689f1638f": {
-        "commit_message": "TLAB-2119: Updated the Mapper for the Palo Alto to support new logs (#5802)",
-        "commit_origin_hash": "5836cafc0c113fe6a045e9d5a7a3c02a7785c539",
+        "commit_message": "TLAB-2664 PAN session and flag remapping (#5996)",
+        "commit_origin_hash": "a4191240523ce753371bb67c19d7c8b8855860c9",
         "field_mappings": {
             "action": {
                 "alternate_values": [
@@ -108274,8 +108306,8 @@
         "uid": "e881a967-4945-4e64-b1bb-ef2f270598a4"
     },
     "e950f317-cca3-4b1c-88a2-e3d111e9bbd0": {
-        "commit_message": "TLAB-2062:updated vendor name from gsuit to google workspace (#5884)",
-        "commit_origin_hash": "f151e65ea1e1c08bf4109e0030129ac553ccfe8a",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "description": {
                 "value": "type"
@@ -108306,7 +108338,7 @@
                 "value": "type"
             },
             "threat_ruleType": {
-                "value": "direct",
+                "value": "identity",
                 "value_type": "constant"
             },
             "threat_signalName": {
@@ -108347,8 +108379,8 @@
         "uid": "e950f317-cca3-4b1c-88a2-e3d111e9bbd0"
     },
     "e959ce4b-b812-4407-9112-5d94f57864f4": {
-        "commit_message": "TLAB-2356: remove user_username and targetuser_username split at @ (#5891)",
-        "commit_origin_hash": "a6698b94f8479030615cfaf5edb902a8dbda6dbe",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "action": {
                 "value": "operationName"
@@ -109397,8 +109429,8 @@
         "uid": "eba2f49f-b86e-4a55-913b-90dc8423f4a1"
     },
     "ebdfc811-612b-48ed-ab66-abc2ca8b9c89": {
-        "commit_message": "TLAB-2119: Updated the Mapper for the Palo Alto to support new logs (#5802)",
-        "commit_origin_hash": "5836cafc0c113fe6a045e9d5a7a3c02a7785c539",
+        "commit_message": "TLAB-2664 PAN session and flag remapping (#5996)",
+        "commit_origin_hash": "a4191240523ce753371bb67c19d7c8b8855860c9",
         "field_mappings": {
             "action": {
                 "alternate_values": [
@@ -109412,6 +109444,9 @@
                     "app"
                 ],
                 "value": "application"
+            },
+            "cause": {
+                "value": "SessionEndReason"
             },
             "dstDevice_ip": {
                 "alternate_values": [
@@ -109464,13 +109499,6 @@
                 },
                 "value": "pan_severity",
                 "value_type": "lookup"
-            },
-            "resource": {
-                "alternate_values": [
-                    "Flags",
-                    "SessionEndReason"
-                ],
-                "value": "flags"
             },
             "severity": {
                 "alternate_values": [
@@ -109559,8 +109587,8 @@
         "uid": "ebdfc811-612b-48ed-ab66-abc2ca8b9c89"
     },
     "ebe12b29-1f36-435a-b9bb-95bef42c4af2": {
-        "commit_message": "TLAB-2209: Added Mapping for Crowdstrike Falcon Endpoint Protection Alert Log (#5919)",
-        "commit_origin_hash": "4d4d6aa44d0c960d0d05947538852175ca43be8b",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "description": {
                 "value": "message"
@@ -110147,8 +110175,8 @@
         "uid": "ecfe179c-e851-4e98-93eb-7ce843710ad5"
     },
     "ed20b603-08bd-4567-a52b-bee31acb8327": {
-        "commit_message": "TLAB-1352 addes resource and normalizedResource",
-        "commit_origin_hash": "2be97c8a1e3cdb10058e26811ad16813e5675467",
+        "commit_message": "TLAB-2660 Runtime passthrough mappers (#6007)",
+        "commit_origin_hash": "bed6cfa442621657fbb13573d729884506c7eab3",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -110183,8 +110211,8 @@
         "uid": "ed20b603-08bd-4567-a52b-bee31acb8327"
     },
     "ed3eda48-9b64-41f2-8793-4b9776d3e377": {
-        "commit_message": "TLAB-2356: remove user_username and targetuser_username split at @ (#5891)",
-        "commit_origin_hash": "a6698b94f8479030615cfaf5edb902a8dbda6dbe",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "action": {
                 "value": "properties.ActionType"
@@ -110547,8 +110575,8 @@
         "uid": "edc80da0-7594-413c-9b55-3f1c1bad3acf"
     },
     "edcfa819-4c92-4691-b612-600852bd48d6": {
-        "commit_message": "TLAB-2119: Updated the Mapper for the Palo Alto to support new logs (#5802)",
-        "commit_origin_hash": "5836cafc0c113fe6a045e9d5a7a3c02a7785c539",
+        "commit_message": "TLAB-2664 PAN session and flag remapping (#5996)",
+        "commit_origin_hash": "a4191240523ce753371bb67c19d7c8b8855860c9",
         "field_mappings": {
             "action": {
                 "value": "success"
@@ -111222,8 +111250,8 @@
         "uid": "efe701f8-0515-48b7-a45d-8abf46cce9a3"
     },
     "f029b8c4-f4a4-4b46-b528-4a22e66b6eaa": {
-        "commit_message": "Fix Sysdig passthrough signalname (#5843)",
-        "commit_origin_hash": "b3d71246324c0885dcbab01e69c2ef254a217765",
+        "commit_message": "TLAB-2660 Runtime passthrough mappers (#6007)",
+        "commit_origin_hash": "bed6cfa442621657fbb13573d729884506c7eab3",
         "field_mappings": {
             "action": {
                 "value": "subResource"
@@ -112094,8 +112122,8 @@
         "uid": "f3010711-dcc4-48d2-8982-06061925d900"
     },
     "f3076e8d-b3c3-4401-82a0-179742707511": {
-        "commit_message": "TLAB-2356: remove user_username and targetuser_username split at @ (#5891)",
-        "commit_origin_hash": "a6698b94f8479030615cfaf5edb902a8dbda6dbe",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "action": {
                 "value": "properties.action"
@@ -112467,8 +112495,8 @@
         "uid": "f3c88519-7172-480d-9311-8a82b1c47a93"
     },
     "f418724b-a188-4848-80e6-1a46b6c2c98a": {
-        "commit_message": "TLAB-2209: Added Mapping for Crowdstrike Falcon Endpoint Protection Alert Log (#5919)",
-        "commit_origin_hash": "4d4d6aa44d0c960d0d05947538852175ca43be8b",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "accountId": {
                 "value": "cid"
@@ -112847,8 +112875,8 @@
         "uid": "f437d4e7-7b09-4f58-924e-606eb49a2418"
     },
     "f4ccf8eb-1cf4-4427-9b06-3d79271a4d83": {
-        "commit_message": "TLAB-2119: Updated the Mapper for the Palo Alto to support new logs (#5802)",
-        "commit_origin_hash": "5836cafc0c113fe6a045e9d5a7a3c02a7785c539",
+        "commit_message": "TLAB-2664 PAN session and flag remapping (#5996)",
+        "commit_origin_hash": "a4191240523ce753371bb67c19d7c8b8855860c9",
         "field_mappings": {
             "action": {
                 "alternate_values": [
@@ -112876,6 +112904,9 @@
                     "out"
                 ],
                 "value": "bytes_sent"
+            },
+            "cause": {
+                "value": "SessionEndReason"
             },
             "device_hostname": {
                 "alternate_values": [
@@ -112921,13 +112952,6 @@
                     "PanOSPacketsSent"
                 ],
                 "value": "packets_sent"
-            },
-            "resource": {
-                "alternate_values": [
-                    "Flags",
-                    "SessionEndReason"
-                ],
-                "value": "flags"
             },
             "severity": {
                 "alternate_values": [
@@ -113141,8 +113165,8 @@
         "uid": "f5800ba9-3b7a-4d54-8cc2-380b61e1ba63"
     },
     "f5929aaf-fa42-450d-b10b-30b48a9f8461": {
-        "commit_message": "TLAB-2062:updated vendor name from gsuit to google workspace (#5884)",
-        "commit_origin_hash": "f151e65ea1e1c08bf4109e0030129ac553ccfe8a",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "description": {
                 "value": "type"
@@ -115354,8 +115378,8 @@
         "uid": "fa1d880c-919b-4548-b03c-01e37c3f1a45"
     },
     "fa4028ba-0c1d-4fb3-a152-6e65e0b5200e": {
-        "commit_message": "TLAB-2119: Updated the Mapper for the Palo Alto to support new logs (#5802)",
-        "commit_origin_hash": "5836cafc0c113fe6a045e9d5a7a3c02a7785c539",
+        "commit_message": "TLAB-2664 PAN session and flag remapping (#5996)",
+        "commit_origin_hash": "a4191240523ce753371bb67c19d7c8b8855860c9",
         "field_mappings": {
             "action": {
                 "alternate_values": [
@@ -115530,8 +115554,8 @@
         "uid": "fa572950-571a-4570-9299-8cd3fa64fad2"
     },
     "fa7a7c72-d746-43d2-976c-64066fc2381d": {
-        "commit_message": "TLAB-1352 addes resource and normalizedResource",
-        "commit_origin_hash": "2be97c8a1e3cdb10058e26811ad16813e5675467",
+        "commit_message": "TLAB-2660 Runtime passthrough mappers (#6007)",
+        "commit_origin_hash": "bed6cfa442621657fbb13573d729884506c7eab3",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -115553,7 +115577,7 @@
                 "value": "reason"
             },
             "threat_ruleType": {
-                "value": "direct",
+                "value": "runtime",
                 "value_type": "constant"
             },
             "threat_signalName": {
@@ -117143,8 +117167,8 @@
         "uid": "fe0b7371-9739-407f-bb06-cad44b6583e4"
     },
     "fe178309-4823-4043-8694-086b942438dc": {
-        "commit_message": "TLAB-2356: remove user_username and targetuser_username split at @ (#5891)",
-        "commit_origin_hash": "a6698b94f8479030615cfaf5edb902a8dbda6dbe",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "accountId": {
                 "value": "tenantId"
@@ -117605,8 +117629,8 @@
         "uid": "ff18353f-3a63-4ffb-aeff-bb2d5a4fadba"
     },
     "ff1e86b2-347d-4a94-9f33-c6e8250b7003": {
-        "commit_message": "TLAB-2119: Updated the Mapper for the Palo Alto to support new logs (#5802)",
-        "commit_origin_hash": "5836cafc0c113fe6a045e9d5a7a3c02a7785c539",
+        "commit_message": "TLAB-2664 PAN session and flag remapping (#5996)",
+        "commit_origin_hash": "a4191240523ce753371bb67c19d7c8b8855860c9",
         "field_mappings": {
             "action": {
                 "value": "op"
@@ -117656,8 +117680,8 @@
         "uid": "ff1e86b2-347d-4a94-9f33-c6e8250b7003"
     },
     "ff569da2-93bf-4445-b8b4-9fc42be14ab5": {
-        "commit_message": "TRIDENT-13961 Add normalizedAction logon into Authentication Mappings for net new coverage",
-        "commit_origin_hash": "e0243c07db2da7f19a316aa5799cbf802306fe37",
+        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
+        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
         "field_mappings": {
             "action": {
                 "value": "event_type"

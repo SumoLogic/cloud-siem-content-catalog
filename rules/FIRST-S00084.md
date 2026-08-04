@@ -17,7 +17,7 @@ This rule looks for a first seen AWS Bedrock API call from a user since the base
 |Score/Severity|Static: 1|
 |Enabled by Default|True|
 |Prototype|False|
-|Tags|_mitreAttackTactic:TA0007, _mitreAttackTechnique:T1580|
+|Tags|_mitreAttackTactic:TA0007, _mitreAttackTechnique:T1580, _mitreAtlasTactic:AML.TA0008, _mitreAtlasTechnique:AML.T0007|
 ## Vendors and Products
 - [Amazon AWS - CloudTrail](../products/033624b0-218e-4dcb-b93f-0f1fb1806c56.md)
 

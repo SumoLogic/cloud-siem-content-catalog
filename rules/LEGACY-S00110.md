@@ -1,7 +1,7 @@
-# [Rules](README.md): Threat Intel - Device IP Matched Threat Intel Domain Name
+# [Rules](README.md): Legacy Threat Intel - Device IP Matched Threat Intel Domain Name
 
 ## Description
-A record flagged a hostname or domain from a threat intelligence match list
+Legacy Threat Intelligence is being deprecated. This rule and rules using `array_contains(listMatches, 'threat')` will be removed and will cease to work upon deprecation. New rules using the hasThreatMatch operator have been introduced and should be used going forward. A record flagged a hostname or domain from a threat intelligence match list
 
 ## Additional Details
 |Detail|Value|
@@ -9,7 +9,7 @@ A record flagged a hostname or domain from a threat intelligence match list
 |Type|Match|
 |Category|Threat Intelligence|
 |Apply Risk to Entities|device_hostname, srcDevice_hostname, device_ip, device_natIp, srcDevice_ip, srcDevice_natIp, device_mac, srcDevice_mac, user_username, dns_replyIp|
-|Signal Name|Threat Intel - Device IP Matched Threat Intel Domain Name|
+|Signal Name|Legacy Threat Intel - Device IP Matched Threat Intel Domain Name|
 |Summary Expression|None|
 |Score/Severity|Static: 2|
 |Enabled by Default|True|

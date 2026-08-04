@@ -25,8 +25,7 @@ Microsoft Teams Guest Access has been enabled globally, this settings allows any
 |----|----|
 |Normalized Schema|action|
 |Normalized Schema|device_ip|
-|Direct from Record|fields["ModifiedProperties.1.Name"]|
-|Direct from Record|fields["ModifiedProperties.1.NewValue"]|
+|Direct from Record|fields["ModifiedProperties_AllowGuestUser_New"]|
 |Normalized Schema|metadata_product|
 |Normalized Schema|user_userId|
 

@@ -14,7 +14,7 @@ This rule detects when an AWS Bedrock Agent has been created in the environment.
 |Score/Severity|Static: 1|
 |Enabled by Default|True|
 |Prototype|False|
-|Tags|_mitreAttackTactic:TA0007, _mitreAttackTechnique:T1526|
+|Tags|_mitreAttackTactic:TA0007, _mitreAttackTechnique:T1526, _mitreAtlasTactic:AML.TA0005, _mitreAtlasTechnique:AML.T0103|
 ## Vendors and Products
 - [Amazon AWS - CloudTrail](../products/033624b0-218e-4dcb-b93f-0f1fb1806c56.md)
 
