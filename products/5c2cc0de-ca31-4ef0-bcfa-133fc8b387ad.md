@@ -7,6 +7,7 @@
 |MATCH-S00686|[Base64 Decode in Command Line](../rules/MATCH-S00686.md)|
 |MATCH-S00269|[Clipboard Copied](../rules/MATCH-S00269.md)|
 |MATCH-S00348|[Curl Start Combination](../rules/MATCH-S00348.md)|
+|LEGACY-S00026|[DNS Lookup of High Entropy Domain](../rules/LEGACY-S00026.md)|
 |FIRST-S00028|[First Seen Common Windows Recon Commands From User](../rules/FIRST-S00028.md)|
 |FIRST-S00042|[First Seen Ioreg Usage from User](../rules/FIRST-S00042.md)|
 |FIRST-S00032|[First Seen Kubectl Command From User](../rules/FIRST-S00032.md)|
@@ -17,9 +18,11 @@
 |FIRST-S00043|[First Seen pbpaste Usage from User](../rules/FIRST-S00043.md)|
 |MATCH-S00702|[Keychain Credential Dumping](../rules/MATCH-S00702.md)|
 |MATCH-S00651|[Kubernetes CreateCronjob](../rules/MATCH-S00651.md)|
+|MATCH-S00652|[Kubernetes DeleteCronjob](../rules/MATCH-S00652.md)|
 |MATCH-S00648|[Kubernetes ListSecrets](../rules/MATCH-S00648.md)|
 |MATCH-S00647|[Kubernetes Pod Deletion](../rules/MATCH-S00647.md)|
 |MATCH-S00837|[Kubernetes Secrets Enumeration via Kubectl](../rules/MATCH-S00837.md)|
+|LEGACY-S00107|[Legacy Threat Intel Match - IP Address](../rules/LEGACY-S00107.md)|
 |MATCH-S00687|[Linux Security Tool Usage](../rules/MATCH-S00687.md)|
 |MATCH-S00534|[MacOS - Re-Opened Applications](../rules/MATCH-S00534.md)|
 |MATCH-S00729|[MacOS Gatekeeper Bypass](../rules/MATCH-S00729.md)|
@@ -27,6 +30,7 @@
 |MATCH-S00554|[Outbound IRC Traffic](../rules/MATCH-S00554.md)|
 |MATCH-S00683|[Overly Permissive Chmod Command](../rules/MATCH-S00683.md)|
 |MATCH-S00698|[PATH Set to Current Directory](../rules/MATCH-S00698.md)|
+|MATCH-S00167|[Recon Using Common Windows Commands](../rules/MATCH-S00167.md)|
 |MATCH-S00356|[Suspicious Compression Tool Parameters](../rules/MATCH-S00356.md)|
 |AGGREGATION-S00004|[Suspicious K8s Enumeration](../rules/AGGREGATION-S00004.md)|
 |AGGREGATION-S00005|[Suspicious System Enumeration Occurring in Quick Succession](../rules/AGGREGATION-S00005.md)|
@@ -34,7 +38,6 @@
 |MATCH-S01007|[Threat Intel - Destination Device Hostname](../rules/MATCH-S01007.md)|
 |MATCH-S01024|[Threat Intel - Destination IP Address (High Confidence)](../rules/MATCH-S01024.md)|
 |MATCH-S01006|[Threat Intel - Device Hostname](../rules/MATCH-S01006.md)|
-|LEGACY-S00107|[Threat Intel Match - IP Address](../rules/LEGACY-S00107.md)|
 |MATCH-S00179|[Windows Network Sniffing](../rules/MATCH-S00179.md)|
 |MATCH-S00880|[macOS - Entitlement Enumeration via Xattr](../rules/MATCH-S00880.md)|
 |MATCH-S00883|[macOS - Keychain Enumeration](../rules/MATCH-S00883.md)|

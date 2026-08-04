@@ -555,9 +555,10 @@ In cases where the log data has a source or destination context, there are situa
 |threat_identifier|string|The identifier or indicator specific to a threat (not a vulnerability). Generally speaking this should be populated with an indicator value.|
 |threat_name|string|Name of a specific threat (not a vulnerability), such as malware or an exploit. Often a threat signature.|
 |threat_referenceUrl|string|An external URL that can provide more information about the threat. This should NOT be the URL that represents an observed HTTP request.|
-|threat_ruleType|string|This field should be used with logs that indicate detection of a security event has already occurred. These logs are produced by a security product's own detection capabilities like signatures or rule sets. 
-As an example, if a log has a severity, risk, or impact in the message, it should have threat_ruleType included and populated in its mapper. 
-The logs using this field will all be a form of pass through content. Messages that do not include security event detection must leave this field out of the mapper or leave it blank.|
+|threat_ruleType|string|This field should be used with logs that indicate detection of a security event has already occurred. These logs are produced by a security product's own detection capabilities like signatures or rule sets.
+As an example, if a log has a severity, risk, or impact in the message, it should have threat_ruleType included and populated in its mapper.
+The logs using this field will all be a form of pass through content. Messages that do not include security event detection must leave this field out of the mapper or leave it blank.
+The value determines which normalized rule set the record participates in.|
 |threat_signalName|string|This field is used in conjunction with normalized rules designed to directly pass through security alerts from other security products, appliances, and services. Those rules will use the text populated in this field as an element of the signal name, allowing different signal names for different products while retaining the normalized rule logic.|
 |threat_signalSummary|string|This field is used in conjunction with normalized rules. Those rules will use the text populated in this field as an element of the signal summary, allowing different signal summaries for different products while retaining the normalized rule logic.|
 |timestamp|long|The timestamp of the event stored as milliseconds since epoch. Time can be directly mapped if the log contains epoch time, however other time formats can be mapped if the format is provided. If no timestamp is defined in the mapping, ingest time will be used by default.|

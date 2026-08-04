@@ -26,7 +26,7 @@ Create a match list named 'authorized_automation_accounts' for legitimate automa
 |Score/Severity|Static: 2|
 |Enabled by Default|True|
 |Prototype|False|
-|Tags|_mitreAttackTechnique:T1485, _mitreAttackTactic:TA0040|
+|Tags|_mitreAttackTechnique:T1485, _mitreAttackTactic:TA0040, _mitreAtlasTactic:AML.TA0011, _mitreAtlasTechnique:AML.T0031|
 ## Vendors and Products
 - [Amazon AWS - CloudTrail](../products/033624b0-218e-4dcb-b93f-0f1fb1806c56.md)
 

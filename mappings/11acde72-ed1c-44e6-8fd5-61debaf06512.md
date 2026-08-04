@@ -29,7 +29,7 @@
 |threat_category|event.Category||
 |threat_name|event.IncidentType||
 |threat_referenceUrl|event.FalconHostLink||
-|threat_ruleType|None|The static text `direct` is populated in this schema field.|
+|threat_ruleType|None|The static text `identity` is populated in this schema field.|
 |threat_signalName|event.IncidentType||
 |timestamp|metadata.eventCreationTime|We expect the original record value of `metadata.eventCreationTime` is in the format `epoch_ms`|
 |user_username|event.UserName||

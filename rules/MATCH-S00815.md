@@ -1,7 +1,7 @@
-# [Rules](README.md): Threat Intel - Successful Authentication from Threat IP
+# [Rules](README.md): Legacy Threat Intel - Successful Authentication from Threat IP
 
 ## Description
-This rule detects successful authentications from an IP address associated with a known malicious campaign as designated by threat intelligence.
+Legacy Threat Intelligence is being deprecated. This rule and rules using `array_contains(listMatches, 'threat')` will be removed and will cease to work upon deprecation. New rules using the hasThreatMatch operator have been introduced and should be used going forward. This rule detects successful authentications from an IP address associated with a known malicious campaign as designated by threat intelligence.
 
 ## Additional Details
 |Detail|Value|
@@ -9,7 +9,7 @@ This rule detects successful authentications from an IP address associated with 
 |Type|Templated Match|
 |Category|Unknown/Other|
 |Apply Risk to Entities|srcDevice_ip, user_username, dstDevice_ip|
-|Signal Name|Threat Intel - Successful Authentication from Threat IP|
+|Signal Name|Legacy Threat Intel - Successful Authentication from Threat IP|
 |Summary Expression|Successful Authentication from Threat IP: {{srcDevice_ip}}|
 |Score/Severity|Static: 3|
 |Enabled by Default|True|
@@ -28,7 +28,6 @@ This rule detects successful authentications from an IP address associated with 
 - [Linux - Linux OS Syslog](../products/0e20c932-d992-4bd4-b276-c15119ca5c0b.md)
 - [Linux - Systemd Journal](../products/5be5af82-c248-4c4c-a485-0571025f242c.md)
 - [Microsoft - Azure](../products/a1225af5-e778-4068-a9a2-47da93d1ff24.md)
-- [Microsoft - Defender Advanced Hunting](../products/3382523e-2072-41bd-b50b-6b148957d0b0.md)
 - [Microsoft - Graph AD Reporting API](../products/fe5a3e8b-8b6e-44c7-92a8-adfb20df5c75.md)
 - [Microsoft - Office 365](../products/d3ed003d-5ddd-4c7a-bea5-63eae6311833.md)
 - [Microsoft - Windows](../products/1ff7546c-cb36-4a24-87f7-89d2cecc5761.md)

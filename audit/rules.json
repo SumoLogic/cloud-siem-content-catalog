@@ -217,7 +217,6 @@
         "product_guids": [
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
-            "36f5ca33-0c1e-4223-8215-977ea04425ba",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "5c2cc0de-ca31-4ef0-bcfa-133fc8b387ad",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
@@ -378,7 +377,6 @@
             "0e20c932-d992-4bd4-b276-c15119ca5c0b",
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
-            "36f5ca33-0c1e-4223-8215-977ea04425ba",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "b238758d-ade8-41d2-b32d-c99159e9fd74"
@@ -966,6 +964,7 @@
             "0e20c932-d992-4bd4-b276-c15119ca5c0b",
             "12aba181-2b31-472c-a685-2be492f4778d",
             "153794da-09e8-48fe-b511-1306fbb94d07",
+            "1b7798df-963b-4582-a82b-b8176c3a6a22",
             "1ed80351-d779-4f1f-9ddb-b3881f19d487",
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
@@ -975,15 +974,11 @@
             "5be5af82-c248-4c4c-a485-0571025f242c",
             "79da6240-7617-49c8-b130-96278579766e",
             "8276b520-fdeb-4f79-9f5d-67865818562b",
-            "90bba037-f944-480e-89fa-a3b104451af3",
             "93072f9e-3561-401e-980d-6b49f475c2fd",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
-            "abe4975e-de65-4f82-8b35-e6ce392e165c",
             "acb7e80e-2b66-496c-ba2e-1e7c3933a98e",
-            "b0a0ae6d-dd5b-450c-9d68-36d6c61c67b0",
             "b0fe0dde-4e19-4712-957b-1ea7418c132e",
             "be4f7473-fe69-4311-8859-3561900060bf",
-            "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
             "d3606245-76d3-4173-a2fe-832c0e71b0f9",
             "d3ed003d-5ddd-4c7a-bea5-63eae6311833",
             "e43ba0e4-1e3f-40c6-8bca-cb06a656a40b",
@@ -2110,6 +2105,7 @@
         "pattern_type": "chain",
         "product_direct_ref": [],
         "product_guids": [
+            "1afb4979-e858-43fe-8a55-87f444f0417b",
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761"
         ],
         "record_type_direct_ref": [],
@@ -2210,8 +2206,8 @@
             "user_username_role"
         ],
         "category": "Persistence",
-        "commit_message": "TLAB-2625: Disable silent_mode for 11 rules (#5984)",
-        "commit_origin_hash": "ff8fc4be386672c8c4167e835508d09929962595",
+        "commit_message": "TLAB-2492 ATLAS tags for existing AI rules (#5998)",
+        "commit_origin_hash": "f21adab45c2f57909754005a8f82b7fc0e07dbdb",
         "content_type": "RULE",
         "description": "Detection:\nThis rule triggers when Bedrock IAM permissions are granted through the creation and attachment of an IAM policy with privileged Bedrock permissions including model invocation, AI agent creation, guardrail deletion, logging configuration changes, knowledge base creation, and provisioned throughput allocation.\n\nScenario:\nAn attacker with IAM permissions escalates privileges by granting Bedrock access to themselves or compromised roles, enabling model invocation, AI agent creation, guardrail bypass, logging deletion, data exfiltration via knowledge bases, or cryptomining through expensive compute resources. Legitimate Bedrock provisioning may require similar permissions, making this a potential indicator of either authorized activity or privilege escalation.\n\nRecommended Actions:\nVerify the permission grant aligns with authorized Bedrock provisioning by reviewing user_username, srcDevice_ip, and timing against normal business hours. For inline policies, review policyDocument for overly permissive actions (bedrock:* wildcards), then if unauthorized, detach the policy immediately, rotate credentials, and check CloudTrail for any Bedrock API calls using the newly granted permissions.\n\nTuning Recommendations:\nThe rule excludes AWS service-linked roles. Create match list 'authorized_bedrock_provisioning_accounts' for users or roles that regularly provision Bedrock permissions, and adjust monitored Bedrock actions based on your organization's risk tolerance.",
         "enabled_by_default": true,
@@ -2274,7 +2270,9 @@
         "summary_expression": "{{user_username}} has created and attached AWS policy named  {{resource}} with privileged Bedrock permissions",
         "tags": [
             "_mitreAttackTactic:TA0003",
-            "_mitreAttackTechnique:T1098.003"
+            "_mitreAttackTechnique:T1098.003",
+            "_mitreAtlasTactic:AML.TA0004",
+            "_mitreAtlasTechnique:AML.T0012"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": [
@@ -5813,7 +5811,6 @@
             "5be5af82-c248-4c4c-a485-0571025f242c",
             "5bfda3d2-03e7-4d9a-8072-c59430a131d7",
             "7465af5e-516d-40dc-9535-9b463de0660d",
-            "79055042-52c8-4998-b201-bd2cd2dbca1f",
             "79da6240-7617-49c8-b130-96278579766e",
             "8276b520-fdeb-4f79-9f5d-67865818562b",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
@@ -5824,7 +5821,6 @@
             "b32a58b9-8bfd-4b1d-8b68-91611fe5c37e",
             "be4f7473-fe69-4311-8859-3561900060bf",
             "c3954250-68a0-49c3-ab6a-ef0daa95ff90",
-            "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
             "d3606245-76d3-4173-a2fe-832c0e71b0f9",
             "d3ed003d-5ddd-4c7a-bea5-63eae6311833",
             "e43ba0e4-1e3f-40c6-8bca-cb06a656a40b",
@@ -6730,8 +6726,8 @@
         "baseline_type": "PER_ENTITY",
         "baseline_window_size": 2592000000,
         "category": "Persistence",
-        "commit_message": "Clean up rules",
-        "commit_origin_hash": "5fd899ef16f077a0da4049c262275a7bfcc06e30",
+        "commit_message": "TLAB-2492 ATLAS tags for existing AI rules (#5998)",
+        "commit_origin_hash": "f21adab45c2f57909754005a8f82b7fc0e07dbdb",
         "content_type": "ANOMALY",
         "description_expression": "A first seen model id was observed in AWS Bedrock. The PutFoundationModelEntitlement API call grants permission to put entitlement to access a foundational model. Ensure this model is authorized to be utilized in the environment and that the user requesting access to the model is authorized to perform these actions.",
         "enabled_by_default": true,
@@ -6778,7 +6774,9 @@
         "summary_expression": "First Seen Model ID in AWS Bedrock Put Entitlement from {{user_username}}",
         "tags": [
             "_mitreAttackTechnique:T1583",
-            "_mitreAttackTactic:TA0040"
+            "_mitreAttackTactic:TA0040",
+            "_mitreAtlasTactic:AML.TA0000",
+            "_mitreAtlasTechnique:AML.T0040"
         ],
         "threat_ruleType": null,
         "value_expression": null,
@@ -6797,8 +6795,8 @@
         "baseline_type": "GLOBAL",
         "baseline_window_size": 2592000000,
         "category": "Discovery",
-        "commit_message": "Clean up rules",
-        "commit_origin_hash": "5fd899ef16f077a0da4049c262275a7bfcc06e30",
+        "commit_message": "TLAB-2492 ATLAS tags for existing AI rules (#5998)",
+        "commit_origin_hash": "f21adab45c2f57909754005a8f82b7fc0e07dbdb",
         "content_type": "ANOMALY",
         "description_expression": "A first seen user was observed enumerating AWS Bedrock models via the ListFoundationModels API call. Ensure that the user performing the enumeration is authorized to work within AWS Bedrock. The http_userAgent field will contain the user agent used to perform this enumeration and will help determine whether a browser or CLI tool was used to perform this type of enumeration. Consider excluding service accounts and authorized users from this rule via a rule tuning expression if excessive signal activity is observed.",
         "enabled_by_default": true,
@@ -6843,7 +6841,9 @@
         "summary_expression": "First Seen User: {{user_username}} observed as enumerating AWS Bedrock models since the baseline period.",
         "tags": [
             "_mitreAttackTactic:TA0007",
-            "_mitreAttackTechnique:T1526"
+            "_mitreAttackTechnique:T1526",
+            "_mitreAtlasTactic:AML.TA0008",
+            "_mitreAtlasTechnique:AML.T0007"
         ],
         "threat_ruleType": null,
         "value_expression": null,
@@ -6863,8 +6863,8 @@
         "baseline_type": "PER_ENTITY",
         "baseline_window_size": 3024000000,
         "category": "Discovery",
-        "commit_message": "Clean up rules",
-        "commit_origin_hash": "5fd899ef16f077a0da4049c262275a7bfcc06e30",
+        "commit_message": "TLAB-2492 ATLAS tags for existing AI rules (#5998)",
+        "commit_origin_hash": "f21adab45c2f57909754005a8f82b7fc0e07dbdb",
         "content_type": "ANOMALY",
         "description_expression": "This rule looks for a first seen AWS Bedrock API call from a user since the baseline period. Ensure the user in question is authorized to utilize AWS Bedrock services. Take a look at the \"action\" field to determine what API calls are being made and whether this activity is expected.",
         "enabled_by_default": true,
@@ -6913,7 +6913,9 @@
         "summary_expression": "The user {{user_username}} has performed an operation within AWS Bedrock: {{action}}  for the first time since the baseline period.",
         "tags": [
             "_mitreAttackTactic:TA0007",
-            "_mitreAttackTechnique:T1580"
+            "_mitreAttackTechnique:T1580",
+            "_mitreAtlasTactic:AML.TA0008",
+            "_mitreAtlasTechnique:AML.T0007"
         ],
         "threat_ruleType": null,
         "value_expression": null,
@@ -6936,8 +6938,8 @@
         "baseline_type": "GLOBAL",
         "baseline_window_size": 3024000000,
         "category": "Discovery",
-        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
-        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
+        "commit_message": "TLAB-2492 ATLAS tags for existing AI rules (#5998)",
+        "commit_origin_hash": "f21adab45c2f57909754005a8f82b7fc0e07dbdb",
         "content_type": "ANOMALY",
         "description_expression": "An AWS Bedrock Agent has been created in the environment by a Role seen for the first time since the baseline period. If this role is not expected in the environment and was not originally assigned IAM rights to Bedrock, this activity could be indicative of privilege escalation. Bedrock Agents can be configured with various parameters to build AI applications. Take a look at the \"responseElements.agent.agentName\" field to see the name of the agent being created. Ensure that the user creating the agent is authorized to develop AI applications within the environment.",
         "enabled_by_default": true,
@@ -6984,7 +6986,9 @@
         "summary_expression": "{{user_username}} has created a Bedrock Agent with a role not seen since the baseline period: {{user_role}} from IP: {{srcDevice_ip}}",
         "tags": [
             "_mitreAttackTactic:TA0007",
-            "_mitreAttackTechnique:T1526"
+            "_mitreAttackTechnique:T1526",
+            "_mitreAtlasTactic:AML.TA0005",
+            "_mitreAtlasTechnique:AML.T0103"
         ],
         "threat_ruleType": null,
         "value_expression": null,
@@ -7811,8 +7815,8 @@
         "baseline_type": "GLOBAL",
         "baseline_window_size": 2592000000,
         "category": "Discovery",
-        "commit_message": "TLAB-2058 Fix Rule IDs",
-        "commit_origin_hash": "c666fcd97ef85953ba3496f1639bb8aee4d3945f",
+        "commit_message": "TLAB-2492 ATLAS tags for existing AI rules (#5998)",
+        "commit_origin_hash": "f21adab45c2f57909754005a8f82b7fc0e07dbdb",
         "content_type": "ANOMALY",
         "description_expression": "[Disabled by Default] Detection of a user account's first enumeration of custom AWS Bedrock models via ListCustomModels API. Verify the user is authorized for AWS Bedrock access. The http_userAgent field indicates whether a browser or CLI tool was used. This rule is disabled by default due to potential high volume of alerts, particularly from service accounts. Before enabling, consider excluding authorized users and service accounts (such as CNAPP monitoring accounts with timestamp-based usernames) through rule tuning expressions.",
         "enabled_by_default": false,
@@ -7857,7 +7861,9 @@
         "summary_expression": "First Seen User: {{user_username}} observed as enumerating AWS custom Bedrock models since the baseline period.",
         "tags": [
             "_mitreAttackTactic:TA0007",
-            "_mitreAttackTechnique:T1526"
+            "_mitreAttackTechnique:T1526",
+            "_mitreAtlasTactic:AML.TA0008",
+            "_mitreAtlasTechnique:AML.T0007"
         ],
         "threat_ruleType": null,
         "value_expression": null,
@@ -8182,7 +8188,6 @@
         "product_direct_ref": [],
         "product_guids": [
             "0fb003bc-8383-442f-8f3d-afcfbaefe617",
-            "343b9323-d279-40d9-946f-809242e5cf98",
             "37C866BF-72E1-470A-9072-EDB908F56951",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
             "6299d728-14f7-455e-85c5-ea8ec65a654a",
@@ -8460,8 +8465,6 @@
             "168afd8d-2893-4c74-95b1-a975d576ea56",
             "1768a42a-37e6-4a2b-aa42-314583f63e1b",
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
-            "332856e9-3111-446f-8df7-e64694e4b9a1",
-            "34dd9c1e-ceec-4cba-8f5d-4776f680d785",
             "37C866BF-72E1-470A-9072-EDB908F56951",
             "43808f4c-15e9-480c-ab1a-38bdef3b6798",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
@@ -8653,12 +8656,10 @@
             "072b85a2-1765-45c2-911d-b0509880326e",
             "0fb003bc-8383-442f-8f3d-afcfbaefe617",
             "2a678bcd-898e-43cd-ab3f-91feb0602a18",
-            "332856e9-3111-446f-8df7-e64694e4b9a1",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "343b9323-d279-40d9-946f-809242e5cf98",
             "37C866BF-72E1-470A-9072-EDB908F56951",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
-            "59a3cd41-b6d2-4ab7-a0ff-6d5abd14ac43",
             "5ba50e74-3c05-4ea8-aeaf-5efde588c60f",
             "5bb9e0b3-8d57-4b10-8952-0b6ffe91b599",
             "6299d728-14f7-455e-85c5-ea8ec65a654a",
@@ -9467,13 +9468,13 @@
             "14aa46d3-0710-44b6-9ce3-0a6b8f36b076",
             "168afd8d-2893-4c74-95b1-a975d576ea56",
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
-            "332856e9-3111-446f-8df7-e64694e4b9a1",
             "34dd9c1e-ceec-4cba-8f5d-4776f680d785",
             "37C866BF-72E1-470A-9072-EDB908F56951",
             "43808f4c-15e9-480c-ab1a-38bdef3b6798",
             "54B36B3F-A63F-4BA4-9DE4-02DBF69A429F",
             "5ba50e74-3c05-4ea8-aeaf-5efde588c60f",
             "5bb9e0b3-8d57-4b10-8952-0b6ffe91b599",
+            "5c2cc0de-ca31-4ef0-bcfa-133fc8b387ad",
             "6299d728-14f7-455e-85c5-ea8ec65a654a",
             "c2503fcc-ef30-4e40-bb32-0bf47151b140",
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
@@ -9553,7 +9554,6 @@
             "14aa46d3-0710-44b6-9ce3-0a6b8f36b076",
             "168afd8d-2893-4c74-95b1-a975d576ea56",
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
-            "332856e9-3111-446f-8df7-e64694e4b9a1",
             "37C866BF-72E1-470A-9072-EDB908F56951",
             "43808f4c-15e9-480c-ab1a-38bdef3b6798",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
@@ -9786,6 +9786,7 @@
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "37C866BF-72E1-470A-9072-EDB908F56951",
             "43808f4c-15e9-480c-ab1a-38bdef3b6798",
+            "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "5ba50e74-3c05-4ea8-aeaf-5efde588c60f",
             "6299d728-14f7-455e-85c5-ea8ec65a654a",
             "c2503fcc-ef30-4e40-bb32-0bf47151b140",
@@ -10186,8 +10187,7 @@
             "37C866BF-72E1-470A-9072-EDB908F56951",
             "c2503fcc-ef30-4e40-bb32-0bf47151b140",
             "c3c1a4fc-10cc-4155-8a30-a3bb14fc9f31",
-            "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
-            "e90edc67-68d4-4d67-82f6-4524f94b59bb"
+            "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad"
         ],
         "record_type_direct_ref": [],
         "rule_source": "sumo",
@@ -10332,7 +10332,6 @@
         "product_guids": [
             "072b85a2-1765-45c2-911d-b0509880326e",
             "0fb003bc-8383-442f-8f3d-afcfbaefe617",
-            "2a236ab1-77d2-4867-a571-a1cfd64528e6",
             "2a678bcd-898e-43cd-ab3f-91feb0602a18",
             "37C866BF-72E1-470A-9072-EDB908F56951",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
@@ -10410,7 +10409,6 @@
             "B3582ED2-1A0C-452D-9802-97433D143486",
             "F362EA03-9BBB-4701-B2DF-5460C4A289CF",
             "bf865cb5-0b26-4010-8b3c-5ae2d1f716d8",
-            "c2503fcc-ef30-4e40-bb32-0bf47151b140",
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
             "da9e05a5-3fd3-46a7-a107-ae03c01e3f5a",
             "dcc85cfc-a698-4d09-87de-f2c723f3ad07"
@@ -10762,6 +10760,7 @@
             "724c9add-8cd9-4013-b9e1-a907b96da426",
             "A17B3F3C-04F1-40C8-9497-3C499EB18A74",
             "B3582ED2-1A0C-452D-9802-97433D143486",
+            "af61d8a8-3eba-42fb-9f17-87443924f3f4",
             "be4f7473-fe69-4311-8859-3561900060bf",
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
             "da9e05a5-3fd3-46a7-a107-ae03c01e3f5a"
@@ -10856,6 +10855,7 @@
         "product_direct_ref": [],
         "product_guids": [
             "072b85a2-1765-45c2-911d-b0509880326e",
+            "1ce88b4b-d90d-4d50-9a89-3abe83e8d5f8",
             "41f70c6e-18a9-462c-a04d-4edc7baead7a",
             "c2503fcc-ef30-4e40-bb32-0bf47151b140",
             "e90edc67-68d4-4d67-82f6-4524f94b59bb",
@@ -12967,7 +12967,6 @@
             "37C866BF-72E1-470A-9072-EDB908F56951",
             "44f07c08-c2ad-4a95-a058-1d0737ff90db",
             "5bb9e0b3-8d57-4b10-8952-0b6ffe91b599",
-            "6787d77a-1ee0-43d4-8ca0-96af8ee755bc",
             "c2503fcc-ef30-4e40-bb32-0bf47151b140"
         ],
         "record_type_direct_ref": [],
@@ -13785,7 +13784,6 @@
             "0fb003bc-8383-442f-8f3d-afcfbaefe617",
             "37C866BF-72E1-470A-9072-EDB908F56951",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
-            "5ba50e74-3c05-4ea8-aeaf-5efde588c60f",
             "6299d728-14f7-455e-85c5-ea8ec65a654a",
             "724c9add-8cd9-4013-b9e1-a907b96da426",
             "B3582ED2-1A0C-452D-9802-97433D143486",
@@ -13937,6 +13935,7 @@
             "37C866BF-72E1-470A-9072-EDB908F56951",
             "44f07c08-c2ad-4a95-a058-1d0737ff90db",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
+            "5ba50e74-3c05-4ea8-aeaf-5efde588c60f",
             "5bb9e0b3-8d57-4b10-8952-0b6ffe91b599",
             "6299d728-14f7-455e-85c5-ea8ec65a654a",
             "6787d77a-1ee0-43d4-8ca0-96af8ee755bc",
@@ -14217,11 +14216,11 @@
         ],
         "asset_field": "srcDevice_ip",
         "category": "Threat Intelligence",
-        "commit_message": "Add back entities (#5975)",
-        "commit_origin_hash": "14991180224e5e3139d408f5a2d674e7b5428ae4",
+        "commit_message": "TLAB-2698 Add Legacy+Deprecation language to Old Threat Intel rules (#6003)",
+        "commit_origin_hash": "01755f8ef0178f29507ded1daa648523f5fc0f34",
         "content_type": "THREAT_INTEL",
         "converted": true,
-        "description": "A record flagged an IP address from a threat intelligence match list",
+        "description": "Legacy Threat Intelligence is being deprecated. This rule and rules using `array_contains(listMatches, 'threat')` will be removed and will cease to work upon deprecation. New rules using the hasThreatMatch operator have been introduced and should be used going forward. A record flagged an IP address from a threat intelligence match list",
         "enabled_by_default": true,
         "entity_selectors": [
             {
@@ -14258,8 +14257,8 @@
         "id": 107,
         "id_compiled": "LEGACY-S00107",
         "is_prototype": false,
-        "name": "Threat Intel Match - IP Address",
-        "normalized_description": "A record flagged an IP address from a threat intelligence match list",
+        "name": "Legacy Threat Intel Match - IP Address",
+        "normalized_description": "Legacy Threat Intelligence is being deprecated. This rule and rules using `array_contains(listMatches, 'threat')` will be removed and will cease to work upon deprecation. New rules using the hasThreatMatch operator have been introduced and should be used going forward. A record flagged an IP address from a threat intelligence match list",
         "normalized_score_description": "Static: 1",
         "normalized_score_possibilities": [
             1
@@ -14269,7 +14268,7 @@
             1
         ],
         "normalized_score_type": "Static",
-        "normalized_signal_name": "Threat Intel Match - IP Address",
+        "normalized_signal_name": "Legacy Threat Intel Match - IP Address",
         "normalized_summary": null,
         "pattern_type": "match",
         "product_direct_ref": [],
@@ -14277,6 +14276,7 @@
             "021d1ded-1c82-4663-bf5d-d6ed5170efa3",
             "072b85a2-1765-45c2-911d-b0509880326e",
             "0fb003bc-8383-442f-8f3d-afcfbaefe617",
+            "146522A1-DC9A-40A5-A909-2EB3B665B1D1",
             "14aa46d3-0710-44b6-9ce3-0a6b8f36b076",
             "168afd8d-2893-4c74-95b1-a975d576ea56",
             "183c5127-6594-4d45-9bab-ce5f2df9e38b",
@@ -14288,7 +14288,6 @@
             "3a82061c-2ca3-4289-9c9b-78756001aa38",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
-            "57cec26c-f94e-4403-add4-dae2382b5c16",
             "5ba50e74-3c05-4ea8-aeaf-5efde588c60f",
             "5c2cc0de-ca31-4ef0-bcfa-133fc8b387ad",
             "6299d728-14f7-455e-85c5-ea8ec65a654a",
@@ -14336,11 +14335,11 @@
         ],
         "asset_field": "device_ip",
         "category": "Threat Intelligence",
-        "commit_message": "Add back entities (#5975)",
-        "commit_origin_hash": "14991180224e5e3139d408f5a2d674e7b5428ae4",
+        "commit_message": "TLAB-2698 Add Legacy+Deprecation language to Old Threat Intel rules (#6003)",
+        "commit_origin_hash": "01755f8ef0178f29507ded1daa648523f5fc0f34",
         "content_type": "THREAT_INTEL",
         "converted": true,
-        "description": "A record flagged a file hash from a threat intelligence match list",
+        "description": "Legacy Threat Intelligence is being deprecated. This rule and rules using `array_contains(listMatches, 'threat')` will be removed and will cease to work upon deprecation. New rules using the hasThreatMatch operator have been introduced and should be used going forward. A record flagged a file hash from a threat intelligence match list",
         "enabled_by_default": true,
         "entity_selectors": [
             {
@@ -14389,8 +14388,8 @@
         "id": 108,
         "id_compiled": "LEGACY-S00108",
         "is_prototype": false,
-        "name": "Threat Intel - Matched File Hash",
-        "normalized_description": "A record flagged a file hash from a threat intelligence match list",
+        "name": "Legacy Threat Intel - Matched File Hash",
+        "normalized_description": "Legacy Threat Intelligence is being deprecated. This rule and rules using `array_contains(listMatches, 'threat')` will be removed and will cease to work upon deprecation. New rules using the hasThreatMatch operator have been introduced and should be used going forward. A record flagged a file hash from a threat intelligence match list",
         "normalized_score_description": "Static: 3",
         "normalized_score_possibilities": [
             3
@@ -14400,12 +14399,11 @@
             3
         ],
         "normalized_score_type": "Static",
-        "normalized_signal_name": "Threat Intel - Matched File Hash",
+        "normalized_signal_name": "Legacy Threat Intel - Matched File Hash",
         "normalized_summary": null,
         "pattern_type": "match",
         "product_direct_ref": [],
         "product_guids": [
-            "146522A1-DC9A-40A5-A909-2EB3B665B1D1",
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "332856e9-3111-446f-8df7-e64694e4b9a1",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
@@ -14444,11 +14442,11 @@
         ],
         "asset_field": "srcDevice_ip",
         "category": "Threat Intelligence",
-        "commit_message": "Add back entities (#5975)",
-        "commit_origin_hash": "14991180224e5e3139d408f5a2d674e7b5428ae4",
+        "commit_message": "TLAB-2698 Add Legacy+Deprecation language to Old Threat Intel rules (#6003)",
+        "commit_origin_hash": "01755f8ef0178f29507ded1daa648523f5fc0f34",
         "content_type": "THREAT_INTEL",
         "converted": true,
-        "description": "A record flagged a hostname or domain from a threat intelligence match list",
+        "description": "Legacy Threat Intelligence is being deprecated. This rule and rules using `array_contains(listMatches, 'threat')` will be removed and will cease to work upon deprecation. New rules using the hasThreatMatch operator have been introduced and should be used going forward. A record flagged a hostname or domain from a threat intelligence match list",
         "enabled_by_default": true,
         "entity_selectors": [
             {
@@ -14493,8 +14491,8 @@
         "id": 109,
         "id_compiled": "LEGACY-S00109",
         "is_prototype": false,
-        "name": "Threat Intel - Matched Domain Name",
-        "normalized_description": "A record flagged a hostname or domain from a threat intelligence match list",
+        "name": "Legacy Threat Intel - Matched Domain Name",
+        "normalized_description": "Legacy Threat Intelligence is being deprecated. This rule and rules using `array_contains(listMatches, 'threat')` will be removed and will cease to work upon deprecation. New rules using the hasThreatMatch operator have been introduced and should be used going forward. A record flagged a hostname or domain from a threat intelligence match list",
         "normalized_score_description": "Static: 2",
         "normalized_score_possibilities": [
             2
@@ -14504,7 +14502,7 @@
             2
         ],
         "normalized_score_type": "Static",
-        "normalized_signal_name": "Threat Intel - Matched Domain Name",
+        "normalized_signal_name": "Legacy Threat Intel - Matched Domain Name",
         "normalized_summary": null,
         "pattern_type": "match",
         "product_direct_ref": [],
@@ -14517,21 +14515,18 @@
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "2a678bcd-898e-43cd-ab3f-91feb0602a18",
             "2ca0adcf-7616-4474-8557-a3773515aa6d",
-            "332856e9-3111-446f-8df7-e64694e4b9a1",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "37C866BF-72E1-470A-9072-EDB908F56951",
             "43808f4c-15e9-480c-ab1a-38bdef3b6798",
             "44f07c08-c2ad-4a95-a058-1d0737ff90db",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
-            "59a3cd41-b6d2-4ab7-a0ff-6d5abd14ac43",
             "5ba50e74-3c05-4ea8-aeaf-5efde588c60f",
             "5bb9e0b3-8d57-4b10-8952-0b6ffe91b599",
             "6299d728-14f7-455e-85c5-ea8ec65a654a",
             "724c9add-8cd9-4013-b9e1-a907b96da426",
             "9a28f2af-5526-414d-973b-c3fc7984b8a1",
             "9e0641a7-22ce-4ac8-8113-ee48b368ac3d",
-            "9f76f1fd-fbb0-42d2-9bf5-0f4fd2c1ab82",
             "A17B3F3C-04F1-40C8-9497-3C499EB18A74",
             "B3582ED2-1A0C-452D-9802-97433D143486",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
@@ -14572,11 +14567,11 @@
         ],
         "asset_field": "device_ip",
         "category": "Threat Intelligence",
-        "commit_message": "Add back entities (#5975)",
-        "commit_origin_hash": "14991180224e5e3139d408f5a2d674e7b5428ae4",
+        "commit_message": "TLAB-2698 Add Legacy+Deprecation language to Old Threat Intel rules (#6003)",
+        "commit_origin_hash": "01755f8ef0178f29507ded1daa648523f5fc0f34",
         "content_type": "THREAT_INTEL",
         "converted": true,
-        "description": "A record flagged a hostname or domain from a threat intelligence match list",
+        "description": "Legacy Threat Intelligence is being deprecated. This rule and rules using `array_contains(listMatches, 'threat')` will be removed and will cease to work upon deprecation. New rules using the hasThreatMatch operator have been introduced and should be used going forward. A record flagged a hostname or domain from a threat intelligence match list",
         "enabled_by_default": true,
         "entity_selectors": [
             {
@@ -14625,8 +14620,8 @@
         "id": 110,
         "id_compiled": "LEGACY-S00110",
         "is_prototype": false,
-        "name": "Threat Intel - Device IP Matched Threat Intel Domain Name",
-        "normalized_description": "A record flagged a hostname or domain from a threat intelligence match list",
+        "name": "Legacy Threat Intel - Device IP Matched Threat Intel Domain Name",
+        "normalized_description": "Legacy Threat Intelligence is being deprecated. This rule and rules using `array_contains(listMatches, 'threat')` will be removed and will cease to work upon deprecation. New rules using the hasThreatMatch operator have been introduced and should be used going forward. A record flagged a hostname or domain from a threat intelligence match list",
         "normalized_score_description": "Static: 2",
         "normalized_score_possibilities": [
             2
@@ -14636,7 +14631,7 @@
             2
         ],
         "normalized_score_type": "Static",
-        "normalized_signal_name": "Threat Intel - Device IP Matched Threat Intel Domain Name",
+        "normalized_signal_name": "Legacy Threat Intel - Device IP Matched Threat Intel Domain Name",
         "normalized_summary": null,
         "pattern_type": "match",
         "product_direct_ref": [],
@@ -14664,11 +14659,11 @@
         ],
         "asset_field": "device_ip",
         "category": "Threat Intelligence",
-        "commit_message": "Add back entities (#5975)",
-        "commit_origin_hash": "14991180224e5e3139d408f5a2d674e7b5428ae4",
+        "commit_message": "TLAB-2698 Add Legacy+Deprecation language to Old Threat Intel rules (#6003)",
+        "commit_origin_hash": "01755f8ef0178f29507ded1daa648523f5fc0f34",
         "content_type": "THREAT_INTEL",
         "converted": true,
-        "description": "A record flagged a URL from a threat intelligence match list",
+        "description": "Legacy Threat Intelligence is being deprecated. This rule and rules using `array_contains(listMatches, 'threat')` will be removed and will cease to work upon deprecation. New rules using the hasThreatMatch operator have been introduced and should be used going forward. A record flagged a URL from a threat intelligence match list",
         "enabled_by_default": true,
         "entity_selectors": [
             {
@@ -14717,8 +14712,8 @@
         "id": 111,
         "id_compiled": "LEGACY-S00111",
         "is_prototype": false,
-        "name": "Threat Intel - Device IP Matched Threat Intel URL",
-        "normalized_description": "A record flagged a URL from a threat intelligence match list",
+        "name": "Legacy Threat Intel - Device IP Matched Threat Intel URL",
+        "normalized_description": "Legacy Threat Intelligence is being deprecated. This rule and rules using `array_contains(listMatches, 'threat')` will be removed and will cease to work upon deprecation. New rules using the hasThreatMatch operator have been introduced and should be used going forward. A record flagged a URL from a threat intelligence match list",
         "normalized_score_description": "Static: 4",
         "normalized_score_possibilities": [
             4
@@ -14728,7 +14723,7 @@
             4
         ],
         "normalized_score_type": "Static",
-        "normalized_signal_name": "Threat Intel - Device IP Matched Threat Intel URL",
+        "normalized_signal_name": "Legacy Threat Intel - Device IP Matched Threat Intel URL",
         "normalized_summary": null,
         "pattern_type": "match",
         "product_direct_ref": [],
@@ -14738,7 +14733,6 @@
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
             "5ba50e74-3c05-4ea8-aeaf-5efde588c60f",
             "724c9add-8cd9-4013-b9e1-a907b96da426",
-            "af61d8a8-3eba-42fb-9f17-87443924f3f4",
             "bf865cb5-0b26-4010-8b3c-5ae2d1f716d8",
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
             "da9e05a5-3fd3-46a7-a107-ae03c01e3f5a",
@@ -14817,7 +14811,6 @@
         "product_guids": [
             "003d35b3-3ba8-4e93-8776-e5810b4e243e",
             "0fb003bc-8383-442f-8f3d-afcfbaefe617",
-            "2a678bcd-898e-43cd-ab3f-91feb0602a18",
             "37C866BF-72E1-470A-9072-EDB908F56951",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
             "6299d728-14f7-455e-85c5-ea8ec65a654a",
@@ -15553,7 +15546,6 @@
             "74662794-d8de-42ec-b504-cc0bccfaddd9",
             "798f8da8-c85b-4e9a-b2f1-eae0b07532fb",
             "79da6240-7617-49c8-b130-96278579766e",
-            "991a55cf-8c5a-49ba-ae72-6f64a002bacf",
             "9a28f2af-5526-414d-973b-c3fc7984b8a1",
             "9e0641a7-22ce-4ac8-8113-ee48b368ac3d",
             "9f76f1fd-fbb0-42d2-9bf5-0f4fd2c1ab82",
@@ -15998,6 +15990,7 @@
             "033624b0-218e-4dcb-b93f-0f1fb1806c56",
             "072b85a2-1765-45c2-911d-b0509880326e",
             "44f07c08-c2ad-4a95-a058-1d0737ff90db",
+            "51278354-d6b5-4c8e-a8fd-8197df334e67",
             "c2503fcc-ef30-4e40-bb32-0bf47151b140",
             "d3ed003d-5ddd-4c7a-bea5-63eae6311833",
             "e90edc67-68d4-4d67-82f6-4524f94b59bb"
@@ -20206,8 +20199,7 @@
         "product_guids": [
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
-            "93e2d3d-fab1-4d61-845f-49bc1ae5bed9",
-            "f9cea291-9030-4e41-9836-6dd9274d6df4"
+            "93e2d3d-fab1-4d61-845f-49bc1ae5bed9"
         ],
         "record_type_direct_ref": [],
         "rule_source": "sumo",
@@ -21845,6 +21837,7 @@
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
+            "5c2cc0de-ca31-4ef0-bcfa-133fc8b387ad",
             "60829f4a-7acb-47d1-ad23-8424fcf83dcb",
             "840c72e0-4e47-41e7-9b93-31f55d12f07d",
             "a1225af5-e778-4068-a9a2-47da93d1ff24"
@@ -23073,7 +23066,6 @@
         "product_guids": [
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
-            "36f5ca33-0c1e-4223-8215-977ea04425ba",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "840c72e0-4e47-41e7-9b93-31f55d12f07d",
             "a1225af5-e778-4068-a9a2-47da93d1ff24"
@@ -23542,7 +23534,8 @@
             "37C866BF-72E1-470A-9072-EDB908F56951",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
             "6299d728-14f7-455e-85c5-ea8ec65a654a",
-            "724c9add-8cd9-4013-b9e1-a907b96da426"
+            "724c9add-8cd9-4013-b9e1-a907b96da426",
+            "afabb29d-e728-410f-b7c6-acfa9efbe1ed"
         ],
         "record_type_direct_ref": [],
         "rule_source": "sumo",
@@ -23702,7 +23695,9 @@
         "product_guids": [
             "033624b0-218e-4dcb-b93f-0f1fb1806c56",
             "072b85a2-1765-45c2-911d-b0509880326e",
+            "0fb003bc-8383-442f-8f3d-afcfbaefe617",
             "1ce88b4b-d90d-4d50-9a89-3abe83e8d5f8",
+            "234ec2b5-4142-4837-bc78-95da8a2db81a",
             "2a236ab1-77d2-4867-a571-a1cfd64528e6",
             "2f2fbe08-ab8b-4626-81fd-eaa41b563c49",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
@@ -23730,7 +23725,6 @@
             "d3606245-76d3-4173-a2fe-832c0e71b0f9",
             "da9e05a5-3fd3-46a7-a107-ae03c01e3f5a",
             "dcc85cfc-a698-4d09-87de-f2c723f3ad07",
-            "e90edc67-68d4-4d67-82f6-4524f94b59bb",
             "ede052db-d472-408f-949c-be642237ef3f",
             "fa3c148a-4272-4a94-aea2-499ab90424c2",
             "fca8785d-4823-4442-86b2-8acbaa176da4"
@@ -28219,7 +28213,6 @@
         "product_direct_ref": [],
         "product_guids": [
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
-            "3382523e-2072-41bd-b50b-6b148957d0b0",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "840c72e0-4e47-41e7-9b93-31f55d12f07d"
         ],
@@ -29077,7 +29070,6 @@
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "5c2cc0de-ca31-4ef0-bcfa-133fc8b387ad",
-            "840c72e0-4e47-41e7-9b93-31f55d12f07d",
             "a1225af5-e778-4068-a9a2-47da93d1ff24"
         ],
         "record_type_direct_ref": [],
@@ -29152,7 +29144,6 @@
         "product_guids": [
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
-            "60829f4a-7acb-47d1-ad23-8424fcf83dcb",
             "a1225af5-e778-4068-a9a2-47da93d1ff24"
         ],
         "record_type_direct_ref": [],
@@ -30271,9 +30262,9 @@
         "product_direct_ref": [],
         "product_guids": [
             "021d1ded-1c82-4663-bf5d-d6ed5170efa3",
-            "0fb003bc-8383-442f-8f3d-afcfbaefe617",
             "2b82e665-bdde-474a-ae29-4f0f76598556",
             "9e0641a7-22ce-4ac8-8113-ee48b368ac3d",
+            "A17B3F3C-04F1-40C8-9497-3C499EB18A74",
             "B3582ED2-1A0C-452D-9802-97433D143486",
             "be4f7473-fe69-4311-8859-3561900060bf",
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
@@ -30637,14 +30628,17 @@
             "4448ca62-bb4f-4859-a6a2-d9262f9e48f0",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
             "49f20733-9889-487c-bf21-8e1606517700",
+            "4c2a186d-6aa5-47da-a6af-7fddfe16b528",
             "4d6a3683-4edb-4330-9e9f-b8608cd63981",
             "4da7313c-5123-4eae-bb84-5d868fc55a74",
             "51278354-d6b5-4c8e-a8fd-8197df334e67",
             "51afd72e-94b0-42f3-b65c-cf8edbacf7cf",
             "52ac893d-bdf9-4e2c-be83-5f43842a179d",
             "54B36B3F-A63F-4BA4-9DE4-02DBF69A429F",
+            "55ec1d4a-6985-4f04-8de5-f9812871fda2",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "57cec26c-f94e-4403-add4-dae2382b5c16",
+            "581D3DD8-4DA7-4192-9E49-320D7AFB8B53",
             "5c2cc0de-ca31-4ef0-bcfa-133fc8b387ad",
             "60829f4a-7acb-47d1-ad23-8424fcf83dcb",
             "72ad5cb2-9b51-4954-970c-f826d593ccc7",
@@ -30662,12 +30656,14 @@
             "bd98578e-3f97-4e5a-93ec-bbff28f90ccf",
             "bff00521-0a45-4237-b853-cf21860f88bd",
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
+            "ca718855-210e-430a-b13c-aec4f3c2885a",
             "d0aebc1c-db4d-440f-b69f-70dae24befff",
             "d3ed003d-5ddd-4c7a-bea5-63eae6311833",
             "d4a9e7ce-082e-4f41-891f-4c43e604c850",
             "d6cb76d3-939e-4e02-b399-b15e0278c877",
             "dca03a0f-0053-4c34-b7b6-56060bbd110c",
             "dcc85cfc-a698-4d09-87de-f2c723f3ad07",
+            "e0763d80-29ce-43a0-b0ab-69c621abb3eb",
             "e5a708c9-82be-4df9-8ea0-07cac95abf2a",
             "e611250c-6b5f-4b40-b84b-329a1d5b391c",
             "e73cd65a-7a4b-4ce9-9d73-e5d9c824c214",
@@ -30918,7 +30914,6 @@
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
-            "60829f4a-7acb-47d1-ad23-8424fcf83dcb",
             "840c72e0-4e47-41e7-9b93-31f55d12f07d",
             "a1225af5-e778-4068-a9a2-47da93d1ff24"
         ],
@@ -32064,8 +32059,7 @@
         "product_guids": [
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
-            "93e2d3d-fab1-4d61-845f-49bc1ae5bed9",
-            "a1225af5-e778-4068-a9a2-47da93d1ff24"
+            "93e2d3d-fab1-4d61-845f-49bc1ae5bed9"
         ],
         "record_type_direct_ref": [],
         "rule_source": "sumo",
@@ -32216,6 +32210,7 @@
         "pattern_type": "templated_match",
         "product_direct_ref": [],
         "product_guids": [
+            "046b3623-69fe-409f-9e80-fd3ebef0654f",
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "4d6a3683-4edb-4330-9e9f-b8608cd63981",
@@ -33489,7 +33484,8 @@
         "pattern_type": "templated_match",
         "product_direct_ref": [],
         "product_guids": [
-            "1ff7546c-cb36-4a24-87f7-89d2cecc5761"
+            "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
+            "3382523e-2072-41bd-b50b-6b148957d0b0"
         ],
         "record_type_direct_ref": [],
         "rule_source": "sumo",
@@ -37438,8 +37434,7 @@
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "bb75c481-648d-4953-80cf-1c8cbde8fbb8",
             "be4f7473-fe69-4311-8859-3561900060bf",
-            "d3ed003d-5ddd-4c7a-bea5-63eae6311833",
-            "de3d4b6b-36a3-4436-8bfc-0561ac95037e"
+            "d3ed003d-5ddd-4c7a-bea5-63eae6311833"
         ],
         "record_type_direct_ref": [],
         "rule_source": "sumo",
@@ -37594,8 +37589,7 @@
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
-            "840c72e0-4e47-41e7-9b93-31f55d12f07d",
-            "a1225af5-e778-4068-a9a2-47da93d1ff24"
+            "840c72e0-4e47-41e7-9b93-31f55d12f07d"
         ],
         "record_type_direct_ref": [],
         "rule_source": "sumo",
@@ -38045,6 +38039,7 @@
         "product_direct_ref": [],
         "product_guids": [
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
+            "3382523e-2072-41bd-b50b-6b148957d0b0",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "a1225af5-e778-4068-a9a2-47da93d1ff24"
         ],
@@ -38946,6 +38941,7 @@
         "product_direct_ref": [],
         "product_guids": [
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
+            "3382523e-2072-41bd-b50b-6b148957d0b0",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "f9cea291-9030-4e41-9836-6dd9274d6df4"
         ],
@@ -39498,10 +39494,10 @@
         ],
         "asset_field": "dstDevice_ip",
         "category": "Threat Intelligence",
-        "commit_message": "Add back entities (#5975)",
-        "commit_origin_hash": "14991180224e5e3139d408f5a2d674e7b5428ae4",
+        "commit_message": "TLAB-2698 Add Legacy+Deprecation language to Old Threat Intel rules (#6003)",
+        "commit_origin_hash": "01755f8ef0178f29507ded1daa648523f5fc0f34",
         "content_type": "THREAT_INTEL",
-        "description_expression": "This rule detects allowed inbound traffic from an IP address associated with a known malicious campaign as designated by threat intelligence.",
+        "description_expression": "Legacy Threat Intelligence is being deprecated. This rule and rules using `array_contains(listMatches, 'threat')` will be removed and will cease to work upon deprecation. New rules using the hasThreatMatch operator have been introduced and should be used going forward. This rule detects allowed inbound traffic from an IP address associated with a known malicious campaign as designated by threat intelligence.",
         "enabled_by_default": true,
         "entity_selectors": [
             {
@@ -39518,9 +39514,9 @@
         "id": 555,
         "id_compiled": "MATCH-S00555",
         "is_prototype": false,
-        "name": "Threat Intel - Inbound Traffic Context",
-        "name_expression": "Threat Intel - Inbound Traffic Context",
-        "normalized_description": "This rule detects allowed inbound traffic from an IP address associated with a known malicious campaign as designated by threat intelligence.",
+        "name": "Legacy Threat Intel - Inbound Traffic Context",
+        "name_expression": "Legacy Threat Intel - Inbound Traffic Context",
+        "normalized_description": "Legacy Threat Intelligence is being deprecated. This rule and rules using `array_contains(listMatches, 'threat')` will be removed and will cease to work upon deprecation. New rules using the hasThreatMatch operator have been introduced and should be used going forward. This rule detects allowed inbound traffic from an IP address associated with a known malicious campaign as designated by threat intelligence.",
         "normalized_score_description": "Static: 0",
         "normalized_score_possibilities": [
             0
@@ -39530,7 +39526,7 @@
             0
         ],
         "normalized_score_type": "Static",
-        "normalized_signal_name": "Threat Intel - Inbound Traffic Context",
+        "normalized_signal_name": "Legacy Threat Intel - Inbound Traffic Context",
         "normalized_summary": "This rule detects inbound traffic from an IP address associated with a known malicious campaign as designated by threat intelligence.",
         "pattern_type": "templated_match",
         "product_direct_ref": [],
@@ -39542,7 +39538,6 @@
             "183c5127-6594-4d45-9bab-ce5f2df9e38b",
             "2a678bcd-898e-43cd-ab3f-91feb0602a18",
             "2b82e665-bdde-474a-ae29-4f0f76598556",
-            "3382523e-2072-41bd-b50b-6b148957d0b0",
             "3fe1afe0-c1c2-45d6-835e-0bdb1e4b703f",
             "41f70c6e-18a9-462c-a04d-4edc7baead7a",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
@@ -39550,7 +39545,6 @@
             "54B36B3F-A63F-4BA4-9DE4-02DBF69A429F",
             "5ba50e74-3c05-4ea8-aeaf-5efde588c60f",
             "5be5af82-c248-4c4c-a485-0571025f242c",
-            "6299d728-14f7-455e-85c5-ea8ec65a654a",
             "724c9add-8cd9-4013-b9e1-a907b96da426",
             "A17B3F3C-04F1-40C8-9497-3C499EB18A74",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
@@ -39715,6 +39709,7 @@
             "6299d728-14f7-455e-85c5-ea8ec65a654a",
             "724c9add-8cd9-4013-b9e1-a907b96da426",
             "991a55cf-8c5a-49ba-ae72-6f64a002bacf",
+            "af61d8a8-3eba-42fb-9f17-87443924f3f4",
             "bf865cb5-0b26-4010-8b3c-5ae2d1f716d8",
             "c2503fcc-ef30-4e40-bb32-0bf47151b140",
             "e90edc67-68d4-4d67-82f6-4524f94b59bb"
@@ -39934,6 +39929,7 @@
             "2b82e665-bdde-474a-ae29-4f0f76598556",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "37C866BF-72E1-470A-9072-EDB908F56951",
+            "3a82061c-2ca3-4289-9c9b-78756001aa38",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "6299d728-14f7-455e-85c5-ea8ec65a654a",
@@ -41779,7 +41775,6 @@
         "product_direct_ref": [],
         "product_guids": [
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
-            "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "840c72e0-4e47-41e7-9b93-31f55d12f07d"
         ],
         "record_type_direct_ref": [],
@@ -42143,6 +42138,7 @@
             "033624b0-218e-4dcb-b93f-0f1fb1806c56",
             "072b85a2-1765-45c2-911d-b0509880326e",
             "44f07c08-c2ad-4a95-a058-1d0737ff90db",
+            "51278354-d6b5-4c8e-a8fd-8197df334e67",
             "c2503fcc-ef30-4e40-bb32-0bf47151b140",
             "d3ed003d-5ddd-4c7a-bea5-63eae6311833",
             "e90edc67-68d4-4d67-82f6-4524f94b59bb"
@@ -45893,10 +45889,7 @@
         "product_direct_ref": [],
         "product_guids": [
             "0e20c932-d992-4bd4-b276-c15119ca5c0b",
-            "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
-            "36f5ca33-0c1e-4223-8215-977ea04425ba",
-            "55ec1d4a-6985-4f04-8de5-f9812871fda2",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "5c2cc0de-ca31-4ef0-bcfa-133fc8b387ad",
             "840c72e0-4e47-41e7-9b93-31f55d12f07d",
@@ -45993,10 +45986,10 @@
         "product_guids": [
             "0e20c932-d992-4bd4-b276-c15119ca5c0b",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
-            "36f5ca33-0c1e-4223-8215-977ea04425ba",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "5c2cc0de-ca31-4ef0-bcfa-133fc8b387ad",
-            "a1225af5-e778-4068-a9a2-47da93d1ff24"
+            "a1225af5-e778-4068-a9a2-47da93d1ff24",
+            "d6cb76d3-939e-4e02-b399-b15e0278c877"
         ],
         "record_type_direct_ref": [],
         "rule_source": "sumo",
@@ -46275,7 +46268,6 @@
         "product_guids": [
             "0e20c932-d992-4bd4-b276-c15119ca5c0b",
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
-            "3382523e-2072-41bd-b50b-6b148957d0b0",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "5c2cc0de-ca31-4ef0-bcfa-133fc8b387ad",
             "a1225af5-e778-4068-a9a2-47da93d1ff24"
@@ -46372,6 +46364,7 @@
             "0e20c932-d992-4bd4-b276-c15119ca5c0b",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
+            "5c2cc0de-ca31-4ef0-bcfa-133fc8b387ad",
             "a1225af5-e778-4068-a9a2-47da93d1ff24"
         ],
         "record_type_direct_ref": [],
@@ -48861,8 +48854,8 @@
         "product_guids": [
             "033624b0-218e-4dcb-b93f-0f1fb1806c56",
             "0e20c932-d992-4bd4-b276-c15119ca5c0b",
+            "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
-            "36f5ca33-0c1e-4223-8215-977ea04425ba",
             "55ec1d4a-6985-4f04-8de5-f9812871fda2",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "581D3DD8-4DA7-4192-9E49-320D7AFB8B53",
@@ -48949,7 +48942,6 @@
             "0e20c932-d992-4bd4-b276-c15119ca5c0b",
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
-            "55ec1d4a-6985-4f04-8de5-f9812871fda2",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "840c72e0-4e47-41e7-9b93-31f55d12f07d"
         ],
@@ -49130,7 +49122,6 @@
             "0e20c932-d992-4bd4-b276-c15119ca5c0b",
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
-            "36f5ca33-0c1e-4223-8215-977ea04425ba",
             "55ec1d4a-6985-4f04-8de5-f9812871fda2",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "5be5af82-c248-4c4c-a485-0571025f242c",
@@ -49139,7 +49130,7 @@
             "840c72e0-4e47-41e7-9b93-31f55d12f07d",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "a1f79987-b765-4f6f-bfe5-d657baa35144",
-            "d6cb76d3-939e-4e02-b399-b15e0278c877",
+            "b238758d-ade8-41d2-b32d-c99159e9fd74",
             "eabd9eed-b071-4773-ad07-706ea5b51b9c",
             "f9cea291-9030-4e41-9836-6dd9274d6df4"
         ],
@@ -49218,7 +49209,6 @@
             "0e20c932-d992-4bd4-b276-c15119ca5c0b",
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
-            "36f5ca33-0c1e-4223-8215-977ea04425ba",
             "55ec1d4a-6985-4f04-8de5-f9812871fda2",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "5be5af82-c248-4c4c-a485-0571025f242c",
@@ -49227,6 +49217,7 @@
             "840c72e0-4e47-41e7-9b93-31f55d12f07d",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "b238758d-ade8-41d2-b32d-c99159e9fd74",
+            "d6cb76d3-939e-4e02-b399-b15e0278c877",
             "ef42eb74-7444-4fee-b231-b4eb1e7c9660"
         ],
         "record_type_direct_ref": [],
@@ -49299,7 +49290,8 @@
             "0e20c932-d992-4bd4-b276-c15119ca5c0b",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "840c72e0-4e47-41e7-9b93-31f55d12f07d",
-            "a1225af5-e778-4068-a9a2-47da93d1ff24"
+            "a1225af5-e778-4068-a9a2-47da93d1ff24",
+            "b238758d-ade8-41d2-b32d-c99159e9fd74"
         ],
         "record_type_direct_ref": [],
         "rule_source": "sumo",
@@ -50098,6 +50090,7 @@
         "product_direct_ref": [],
         "product_guids": [
             "0e20c932-d992-4bd4-b276-c15119ca5c0b",
+            "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "5c2cc0de-ca31-4ef0-bcfa-133fc8b387ad",
@@ -52281,7 +52274,6 @@
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "5c2cc0de-ca31-4ef0-bcfa-133fc8b387ad",
-            "72a5ddec-abb9-41ff-a2da-6a58beff980c",
             "840c72e0-4e47-41e7-9b93-31f55d12f07d",
             "93e2d3d-fab1-4d61-845f-49bc1ae5bed9",
             "a1225af5-e778-4068-a9a2-47da93d1ff24"
@@ -53434,7 +53426,6 @@
             "0e20c932-d992-4bd4-b276-c15119ca5c0b",
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
-            "36f5ca33-0c1e-4223-8215-977ea04425ba",
             "55ec1d4a-6985-4f04-8de5-f9812871fda2",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "5be5af82-c248-4c4c-a485-0571025f242c",
@@ -56036,9 +56027,7 @@
             "5bb9e0b3-8d57-4b10-8952-0b6ffe91b599",
             "6299d728-14f7-455e-85c5-ea8ec65a654a",
             "6787d77a-1ee0-43d4-8ca0-96af8ee755bc",
-            "724c9add-8cd9-4013-b9e1-a907b96da426",
             "9a28f2af-5526-414d-973b-c3fc7984b8a1",
-            "9f76f1fd-fbb0-42d2-9bf5-0f4fd2c1ab82",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "af61d8a8-3eba-42fb-9f17-87443924f3f4",
             "be4f7473-fe69-4311-8859-3561900060bf",
@@ -58314,10 +58303,10 @@
         ],
         "asset_field": "srcDevice_ip",
         "category": "Unknown/Other",
-        "commit_message": "Update Global Rule script and clean up existing rules",
-        "commit_origin_hash": "7099164568893dd7df7b5bd0e3f56d043b3123a3",
+        "commit_message": "TLAB-2698 Add Legacy+Deprecation language to Old Threat Intel rules (#6003)",
+        "commit_origin_hash": "01755f8ef0178f29507ded1daa648523f5fc0f34",
         "content_type": "RULE",
-        "description_expression": "This rule detects successful authentications from an IP address associated with a known malicious campaign as designated by threat intelligence.",
+        "description_expression": "Legacy Threat Intelligence is being deprecated. This rule and rules using `array_contains(listMatches, 'threat')` will be removed and will cease to work upon deprecation. New rules using the hasThreatMatch operator have been introduced and should be used going forward. This rule detects successful authentications from an IP address associated with a known malicious campaign as designated by threat intelligence.",
         "enabled_by_default": true,
         "entity_selectors": [
             {
@@ -58338,9 +58327,9 @@
         "id": 815,
         "id_compiled": "MATCH-S00815",
         "is_prototype": false,
-        "name": "Threat Intel - Successful Authentication from Threat IP",
-        "name_expression": "Threat Intel - Successful Authentication from Threat IP",
-        "normalized_description": "This rule detects successful authentications from an IP address associated with a known malicious campaign as designated by threat intelligence.",
+        "name": "Legacy Threat Intel - Successful Authentication from Threat IP",
+        "name_expression": "Legacy Threat Intel - Successful Authentication from Threat IP",
+        "normalized_description": "Legacy Threat Intelligence is being deprecated. This rule and rules using `array_contains(listMatches, 'threat')` will be removed and will cease to work upon deprecation. New rules using the hasThreatMatch operator have been introduced and should be used going forward. This rule detects successful authentications from an IP address associated with a known malicious campaign as designated by threat intelligence.",
         "normalized_score_description": "Static: 3",
         "normalized_score_possibilities": [
             3
@@ -58350,7 +58339,7 @@
             3
         ],
         "normalized_score_type": "Static",
-        "normalized_signal_name": "Threat Intel - Successful Authentication from Threat IP",
+        "normalized_signal_name": "Legacy Threat Intel - Successful Authentication from Threat IP",
         "normalized_summary": "Successful Authentication from Threat IP: {{srcDevice_ip}}",
         "pattern_type": "templated_match",
         "product_direct_ref": [],
@@ -58360,7 +58349,6 @@
             "0e20c932-d992-4bd4-b276-c15119ca5c0b",
             "153794da-09e8-48fe-b511-1306fbb94d07",
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
-            "3382523e-2072-41bd-b50b-6b148957d0b0",
             "3fe1afe0-c1c2-45d6-835e-0bdb1e4b703f",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
             "4a75a995-0e10-45fc-8b4d-7fcfc0e98e25",
@@ -59748,7 +59736,6 @@
             "0fb003bc-8383-442f-8f3d-afcfbaefe617",
             "1ce88b4b-d90d-4d50-9a89-3abe83e8d5f8",
             "2a678bcd-898e-43cd-ab3f-91feb0602a18",
-            "332856e9-3111-446f-8df7-e64694e4b9a1",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "343b9323-d279-40d9-946f-809242e5cf98",
             "37C866BF-72E1-470A-9072-EDB908F56951",
@@ -59765,13 +59752,13 @@
             "B3582ED2-1A0C-452D-9802-97433D143486",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "af61d8a8-3eba-42fb-9f17-87443924f3f4",
-            "be4f7473-fe69-4311-8859-3561900060bf",
             "bf865cb5-0b26-4010-8b3c-5ae2d1f716d8",
             "c07b5749-deda-4c7e-8e78-4a5dec1fcf4d",
             "c2503fcc-ef30-4e40-bb32-0bf47151b140",
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
             "d3ed003d-5ddd-4c7a-bea5-63eae6311833",
             "da9e05a5-3fd3-46a7-a107-ae03c01e3f5a",
+            "dcc85cfc-a698-4d09-87de-f2c723f3ad07",
             "de3d4b6b-36a3-4436-8bfc-0561ac95037e",
             "e2393771-bda2-414a-8661-0a57069287ad",
             "e90edc67-68d4-4d67-82f6-4524f94b59bb",
@@ -59912,7 +59899,8 @@
             "5c2cc0de-ca31-4ef0-bcfa-133fc8b387ad",
             "840c72e0-4e47-41e7-9b93-31f55d12f07d",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
-            "b238758d-ade8-41d2-b32d-c99159e9fd74"
+            "b238758d-ade8-41d2-b32d-c99159e9fd74",
+            "d6cb76d3-939e-4e02-b399-b15e0278c877"
         ],
         "record_type_direct_ref": [],
         "rule_description": "",
@@ -63160,14 +63148,13 @@
         "all_fields": [
             "action",
             "device_ip",
-            "fields[\"ModifiedProperties.1.Name\"]",
-            "fields[\"ModifiedProperties.1.NewValue\"]",
+            "fields[\"ModifiedProperties_AllowFederatedUsers_New\"]",
             "metadata_product",
             "user_UserId"
         ],
         "category": "Initial Access",
-        "commit_message": "Add Stream Field Back to Rules",
-        "commit_origin_hash": "ae36a185f57d397c6a2aa0dd9b8ea3a2bf946501",
+        "commit_message": "TLAB-2665 MATCH-S00888/889 rule updates (#5997)",
+        "commit_origin_hash": "874d5b878d13cbd22ffea84a08ede792e933ee21",
         "content_type": "RULE",
         "description_expression": "Microsoft Teams External Access has been enabled, this settings allows any users that are external to your Teams/Office organization to message users that are within your Teams/Office organization. If this setting change is unplanned or unexpected it is recommended that this activity be reviewed.  MIcrosoft Teams provides administrators the ability to allow only specific external domains to message users within the organization. Look for Office 365 events with the \"MessageSent\" or \"MemberAdded\" event names in order to gain more detail as to what users were invited to which Teams channels - if any.",
         "enabled_by_default": true,
@@ -63177,7 +63164,7 @@
                 "expression": "device_ip"
             }
         ],
-        "expression": "metadata_product = \"Office 365\"\nand action = \"TeamsAdminAction\"\nand lower(commandLine) matches /(tenantfederationsettings\\/configuration\\/global)/\nand fields[\"ModifiedProperties.1.Name\"] = \"AllowFederatedUsers\"\nand fields[\"ModifiedProperties.1.NewValue\"] = true\n",
+        "expression": "metadata_product = \"Office 365\"\nand action = \"TeamsAdminAction\"\nand lower(commandLine) matches /(tenantfederationsettings\\/configuration\\/global)/\nand fields[\"ModifiedProperties_AllowFederatedUsers_New\"] = \"True\"\n",
         "file_path": "rules_v3/Microsoft_Teams_External_Access_Enabled.json",
         "id": 888,
         "id_compiled": "MATCH-S00888",
@@ -63223,14 +63210,13 @@
         "all_fields": [
             "action",
             "device_ip",
-            "fields[\"ModifiedProperties.1.Name\"]",
-            "fields[\"ModifiedProperties.1.NewValue\"]",
+            "fields[\"ModifiedProperties_AllowGuestUser_New\"]",
             "metadata_product",
             "user_userId"
         ],
         "category": "Initial Access",
-        "commit_message": "Add Stream Field Back to Rules",
-        "commit_origin_hash": "ae36a185f57d397c6a2aa0dd9b8ea3a2bf946501",
+        "commit_message": "TLAB-2665 MATCH-S00888/889 rule updates (#5997)",
+        "commit_origin_hash": "874d5b878d13cbd22ffea84a08ede792e933ee21",
         "content_type": "RULE",
         "description_expression": "Microsoft Teams Guest Access has been enabled globally, this settings allows any users that are external to your Teams/Office organization to be invited into your Teams/Office organization. If this setting change is unplanned or unexpected it is recommended that this activity be reviewed. MIcrosoft Teams provides administrators the ability to allow only specific guest actions to take place within the Teams/Office organization.",
         "enabled_by_default": true,
@@ -63240,7 +63226,7 @@
                 "expression": "device_ip"
             }
         ],
-        "expression": "metadata_product = \"Office 365\"\nand action = \"TeamsAdminAction\"\nand fields[\"ModifiedProperties.1.Name\"] = \"AllowGuestUser\"\nand fields[\"ModifiedProperties.1.NewValue\"] = true",
+        "expression": "metadata_product = \"Office 365\"\nand action = \"TeamsAdminAction\"\nand fields[\"ModifiedProperties_AllowGuestUser_New\"] = \"True\"",
         "file_path": "rules_v3/Microsoft_Teams_Guest_Access_Enabled.json",
         "id": 889,
         "id_compiled": "MATCH-S00889",
@@ -64687,7 +64673,6 @@
         "product_guids": [
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
-            "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "b238758d-ade8-41d2-b32d-c99159e9fd74"
         ],
         "record_type_direct_ref": [],
@@ -64761,11 +64746,9 @@
             "0e20c932-d992-4bd4-b276-c15119ca5c0b",
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
-            "36f5ca33-0c1e-4223-8215-977ea04425ba",
             "55ec1d4a-6985-4f04-8de5-f9812871fda2",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "5be5af82-c248-4c4c-a485-0571025f242c",
-            "5e298fe7-088a-467a-b57f-d8558368621d",
             "840c72e0-4e47-41e7-9b93-31f55d12f07d",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "a1f79987-b765-4f6f-bfe5-d657baa35144",
@@ -64830,7 +64813,8 @@
         "product_direct_ref": [],
         "product_guids": [
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
-            "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3"
+            "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
+            "a1225af5-e778-4068-a9a2-47da93d1ff24"
         ],
         "record_type_direct_ref": [],
         "rule_description": "",
@@ -64859,8 +64843,8 @@
             "user_username"
         ],
         "category": "Defense Evasion",
-        "commit_message": "Redundancy remediation: AWS CloudTrail device/srcDevice mappings (#5985)",
-        "commit_origin_hash": "65fd6a31cc73975312ee70c8db9c328a9089158c",
+        "commit_message": "TLAB-2492 ATLAS tags for existing AI rules (#5998)",
+        "commit_origin_hash": "f21adab45c2f57909754005a8f82b7fc0e07dbdb",
         "content_type": "RULE",
         "description_expression": "An AWS Bedrock Model invocation logging configuration change was observed. Ensure that this activity is expected and authorized. Take a look at the full event details, particularly the requestParameters.loggingConfig* fields in order to see what specific configuration values were changed. Telemetry and logging configuration changes should be a relatively rare occurrence in the environment.",
         "enabled_by_default": true,
@@ -64908,7 +64892,9 @@
         "summary_expression": "AWS Bedrock Model Invocation Logging Configuration Change Observed by {{user_username}} from IP {{srcDevice_ip}}",
         "tags": [
             "_mitreAttackTactic:TA0005",
-            "_mitreAttackTechnique:T1685.002"
+            "_mitreAttackTechnique:T1685.002",
+            "_mitreAtlasTactic:AML.TA0007",
+            "_mitreAtlasTechnique:AML.T0081"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": []
@@ -64922,8 +64908,8 @@
             "user_username"
         ],
         "category": "Discovery",
-        "commit_message": "Clean up rules",
-        "commit_origin_hash": "5fd899ef16f077a0da4049c262275a7bfcc06e30",
+        "commit_message": "TLAB-2492 ATLAS tags for existing AI rules (#5998)",
+        "commit_origin_hash": "f21adab45c2f57909754005a8f82b7fc0e07dbdb",
         "content_type": "RULE",
         "description_expression": "This rule detects when an AWS Bedrock Agent has been created in the environment. Bedrock Agents can be configured with various parameters to build AI applications. Take a look at the \"responseElements.agent.agentName\" field to see the name of the agent being created. Ensure that the user creating the agent is authorized to develop AI applications within the environment.",
         "enabled_by_default": true,
@@ -64971,7 +64957,9 @@
         "summary_expression": "AWS Bedrock Agent Created by {{user_username}} with the role {{user_username_role}}",
         "tags": [
             "_mitreAttackTactic:TA0007",
-            "_mitreAttackTechnique:T1526"
+            "_mitreAttackTechnique:T1526",
+            "_mitreAtlasTactic:AML.TA0005",
+            "_mitreAtlasTechnique:AML.T0103"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": []
@@ -64985,8 +64973,8 @@
             "user_username"
         ],
         "category": "Discovery",
-        "commit_message": "Clean up rules",
-        "commit_origin_hash": "5fd899ef16f077a0da4049c262275a7bfcc06e30",
+        "commit_message": "TLAB-2492 ATLAS tags for existing AI rules (#5998)",
+        "commit_origin_hash": "f21adab45c2f57909754005a8f82b7fc0e07dbdb",
         "content_type": "RULE",
         "description_expression": "A user has attempted to invoke a model via AWS Bedrock for which access was denied due to a permission issue. This event can be a normal occurrence for a user who has not been provisioned the proper IAM resources for AWS Bedrock. However, it could also be a malicious attempt at running a particular model via AWS Bedrock. Take a look at the username, IP address, role type, role and model via the fields[\"requestParameters.modelId\"] field.",
         "enabled_by_default": true,
@@ -65034,7 +65022,9 @@
         "summary_expression": "AWS Bedrock Model Invocation Denied for {{user_username}}",
         "tags": [
             "_mitreAttackTactic:TA0007",
-            "_mitreAttackTechnique:T1526"
+            "_mitreAttackTechnique:T1526",
+            "_mitreAtlasTactic:AML.TA0002",
+            "_mitreAtlasTechnique:AML.T0006"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": []
@@ -65047,8 +65037,8 @@
             "user_username"
         ],
         "category": "Defense Evasion",
-        "commit_message": "Rule script cleanup (#5974)",
-        "commit_origin_hash": "ccec442dadce7ea8c1dd9423e04f93eceb57d499",
+        "commit_message": "TLAB-2492 ATLAS tags for existing AI rules (#5998)",
+        "commit_origin_hash": "f21adab45c2f57909754005a8f82b7fc0e07dbdb",
         "content_type": "RULE",
         "description_expression": "AWS Bedrock Guardrails provide users with the ability to configure options like filtering out harmful content or defining denied topics for models. Guardrails also allow the blocking of sensitive information such as PII. Ensure that this deletion was performed by an authorized user during an expected change. Look at other activity from this user account, focusing on the Bedrock service and pivoting from there if the event is deemed suspicious.",
         "enabled_by_default": true,
@@ -65096,7 +65086,9 @@
         "summary_expression": "AWS Bedrock Guardrail Deleted by {{user_username}}",
         "tags": [
             "_mitreAttackTactic:TA0005",
-            "_mitreAttackTechnique:T1685"
+            "_mitreAttackTechnique:T1685",
+            "_mitreAtlasTactic:AML.TA0007",
+            "_mitreAtlasTechnique:AML.T0081"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": []
@@ -65522,8 +65514,8 @@
             "targetUser_username"
         ],
         "category": "Impact",
-        "commit_message": "Added logging requirements of GitHub Enterprise to the description of GitHub rules released 6 Dec 2024",
-        "commit_origin_hash": "9d613e54cabebd266e0b93a05cbccfc0dbc5581e",
+        "commit_message": "TLAB-2492 ATLAS tags for existing AI rules (#5998)",
+        "commit_origin_hash": "f21adab45c2f57909754005a8f82b7fc0e07dbdb",
         "content_type": "RULE",
         "description_expression": "Observes for GitHub staff manually revoking copilot access for a user. This action is likely to be rare and may be indicative of a user violating the [acceptable use policy for GitHub](https://docs.github.com/en/site-policy/acceptable-use-policies). This detection was developed utilizing GitHub Enterprise Audit logging. Refer to https://help.sumologic.com/docs/integrations/app-development/github/#collecting-logs-for-github for instructions on ingesting GitHub Enterprise Audit logs.",
         "enabled_by_default": true,
@@ -65572,7 +65564,9 @@
         "stream": "record",
         "summary_expression": "{{targetUser_username}} Copilot Seat Cancelled By GitHub Staff for possible misuse.",
         "tags": [
-            "_mitreAttackTactic:TA0040"
+            "_mitreAttackTactic:TA0040",
+            "_mitreAtlasTactic:AML.TA0000",
+            "_mitreAtlasTechnique:AML.T0047"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": []
@@ -67361,6 +67355,7 @@
         "pattern_type": "templated_match",
         "product_direct_ref": [],
         "product_guids": [
+            "0472f22e-e3fa-4c9f-a529-8355f671927e",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "37C866BF-72E1-470A-9072-EDB908F56951",
             "54B36B3F-A63F-4BA4-9DE4-02DBF69A429F",
@@ -67476,7 +67471,6 @@
         "product_direct_ref": [],
         "product_guids": [
             "046b3623-69fe-409f-9e80-fd3ebef0654f",
-            "146522A1-DC9A-40A5-A909-2EB3B665B1D1",
             "332856e9-3111-446f-8df7-e64694e4b9a1",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "37C866BF-72E1-470A-9072-EDB908F56951",
@@ -68049,7 +68043,6 @@
             "14aa46d3-0710-44b6-9ce3-0a6b8f36b076",
             "168afd8d-2893-4c74-95b1-a975d576ea56",
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
-            "332856e9-3111-446f-8df7-e64694e4b9a1",
             "37C866BF-72E1-470A-9072-EDB908F56951",
             "43808f4c-15e9-480c-ab1a-38bdef3b6798",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
@@ -68322,7 +68315,6 @@
             "072b85a2-1765-45c2-911d-b0509880326e",
             "0fb003bc-8383-442f-8f3d-afcfbaefe617",
             "2a678bcd-898e-43cd-ab3f-91feb0602a18",
-            "332856e9-3111-446f-8df7-e64694e4b9a1",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "343b9323-d279-40d9-946f-809242e5cf98",
             "37C866BF-72E1-470A-9072-EDB908F56951",
@@ -68338,7 +68330,6 @@
             "9e0641a7-22ce-4ac8-8113-ee48b368ac3d",
             "A17B3F3C-04F1-40C8-9497-3C499EB18A74",
             "B3582ED2-1A0C-452D-9802-97433D143486",
-            "F362EA03-9BBB-4701-B2DF-5460C4A289CF",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "af61d8a8-3eba-42fb-9f17-87443924f3f4",
             "be4f7473-fe69-4311-8859-3561900060bf",
@@ -68441,7 +68432,6 @@
             "0fb003bc-8383-442f-8f3d-afcfbaefe617",
             "2a236ab1-77d2-4867-a571-a1cfd64528e6",
             "2a678bcd-898e-43cd-ab3f-91feb0602a18",
-            "332856e9-3111-446f-8df7-e64694e4b9a1",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "343b9323-d279-40d9-946f-809242e5cf98",
             "37C866BF-72E1-470A-9072-EDB908F56951",
@@ -68576,12 +68566,12 @@
         "product_guids": [
             "0fb003bc-8383-442f-8f3d-afcfbaefe617",
             "2a678bcd-898e-43cd-ab3f-91feb0602a18",
-            "332856e9-3111-446f-8df7-e64694e4b9a1",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "343b9323-d279-40d9-946f-809242e5cf98",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "5ba50e74-3c05-4ea8-aeaf-5efde588c60f",
+            "5bb9e0b3-8d57-4b10-8952-0b6ffe91b599",
             "6299d728-14f7-455e-85c5-ea8ec65a654a",
             "724c9add-8cd9-4013-b9e1-a907b96da426",
             "991a55cf-8c5a-49ba-ae72-6f64a002bacf",
@@ -68591,7 +68581,6 @@
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "af61d8a8-3eba-42fb-9f17-87443924f3f4",
             "bf865cb5-0b26-4010-8b3c-5ae2d1f716d8",
-            "c2503fcc-ef30-4e40-bb32-0bf47151b140",
             "c3c1a4fc-10cc-4155-8a30-a3bb14fc9f31",
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
             "d3ed003d-5ddd-4c7a-bea5-63eae6311833",
@@ -68669,18 +68658,18 @@
         "product_direct_ref": [],
         "product_guids": [
             "033624b0-218e-4dcb-b93f-0f1fb1806c56",
+            "0438df6b-16ba-4da7-a7a7-626316d0061f",
             "05bfaf47-5e21-4d5f-b724-98960a6fca8a",
             "0b45ccba-20b4-41e4-973d-b50fd291944d",
             "0e20c932-d992-4bd4-b276-c15119ca5c0b",
             "153794da-09e8-48fe-b511-1306fbb94d07",
-            "1ed80351-d779-4f1f-9ddb-b3881f19d487",
+            "1b7798df-963b-4582-a82b-b8176c3a6a22",
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "3fe1afe0-c1c2-45d6-835e-0bdb1e4b703f",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
             "51278354-d6b5-4c8e-a8fd-8197df334e67",
             "54B36B3F-A63F-4BA4-9DE4-02DBF69A429F",
-            "5be5af82-c248-4c4c-a485-0571025f242c",
             "79da6240-7617-49c8-b130-96278579766e",
             "8276b520-fdeb-4f79-9f5d-67865818562b",
             "9f6d624f-6d8f-43c7-a4b0-51179061631c",
@@ -68772,6 +68761,7 @@
             "183c5127-6594-4d45-9bab-ce5f2df9e38b",
             "2b79254e-8017-4dbf-8e39-590132172a7d",
             "51278354-d6b5-4c8e-a8fd-8197df334e67",
+            "54B36B3F-A63F-4BA4-9DE4-02DBF69A429F",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "a67d97fe-6e68-4cfb-9500-cfc5492da565",
             "ad8d40a9-ee64-4615-bd92-aa964b4ae3b0",
@@ -68952,6 +68942,7 @@
             "033624b0-218e-4dcb-b93f-0f1fb1806c56",
             "072b85a2-1765-45c2-911d-b0509880326e",
             "14aa46d3-0710-44b6-9ce3-0a6b8f36b076",
+            "1624169f-36c4-4309-8400-1409a171d00b",
             "183c5127-6594-4d45-9bab-ce5f2df9e38b",
             "2a678bcd-898e-43cd-ab3f-91feb0602a18",
             "2b82e665-bdde-474a-ae29-4f0f76598556",
@@ -68962,7 +68953,6 @@
             "51278354-d6b5-4c8e-a8fd-8197df334e67",
             "5bb9e0b3-8d57-4b10-8952-0b6ffe91b599",
             "5be5af82-c248-4c4c-a485-0571025f242c",
-            "6299d728-14f7-455e-85c5-ea8ec65a654a",
             "724c9add-8cd9-4013-b9e1-a907b96da426",
             "A17B3F3C-04F1-40C8-9497-3C499EB18A74",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
@@ -69084,6 +69074,7 @@
             "168afd8d-2893-4c74-95b1-a975d576ea56",
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "2a678bcd-898e-43cd-ab3f-91feb0602a18",
+            "2b82e665-bdde-474a-ae29-4f0f76598556",
             "2ca0adcf-7616-4474-8557-a3773515aa6d",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "343b9323-d279-40d9-946f-809242e5cf98",
@@ -69104,6 +69095,7 @@
             "afabb29d-e728-410f-b7c6-acfa9efbe1ed",
             "b2f99a76-0771-49bf-9a89-d3e69370806e",
             "be4f7473-fe69-4311-8859-3561900060bf",
+            "bf865cb5-0b26-4010-8b3c-5ae2d1f716d8",
             "c2503fcc-ef30-4e40-bb32-0bf47151b140",
             "c3c1a4fc-10cc-4155-8a30-a3bb14fc9f31",
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
@@ -69218,6 +69210,7 @@
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
             "51278354-d6b5-4c8e-a8fd-8197df334e67",
             "59a3cd41-b6d2-4ab7-a0ff-6d5abd14ac43",
+            "5ba50e74-3c05-4ea8-aeaf-5efde588c60f",
             "5bb9e0b3-8d57-4b10-8952-0b6ffe91b599",
             "6299d728-14f7-455e-85c5-ea8ec65a654a",
             "724c9add-8cd9-4013-b9e1-a907b96da426",
@@ -69335,6 +69328,7 @@
             "168afd8d-2893-4c74-95b1-a975d576ea56",
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "37C866BF-72E1-470A-9072-EDB908F56951",
+            "3a82061c-2ca3-4289-9c9b-78756001aa38",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "6299d728-14f7-455e-85c5-ea8ec65a654a",
@@ -69343,6 +69337,7 @@
             "B3582ED2-1A0C-452D-9802-97433D143486",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "afabb29d-e728-410f-b7c6-acfa9efbe1ed",
+            "be4f7473-fe69-4311-8859-3561900060bf",
             "c2503fcc-ef30-4e40-bb32-0bf47151b140",
             "c3c1a4fc-10cc-4155-8a30-a3bb14fc9f31",
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
@@ -69456,6 +69451,7 @@
             "5bb9e0b3-8d57-4b10-8952-0b6ffe91b599",
             "6299d728-14f7-455e-85c5-ea8ec65a654a",
             "724c9add-8cd9-4013-b9e1-a907b96da426",
+            "79da6240-7617-49c8-b130-96278579766e",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "a67d97fe-6e68-4cfb-9500-cfc5492da565",
             "b0a0ae6d-dd5b-450c-9d68-36d6c61c67b0",
@@ -69571,12 +69567,12 @@
             "168afd8d-2893-4c74-95b1-a975d576ea56",
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "37C866BF-72E1-470A-9072-EDB908F56951",
+            "3a82061c-2ca3-4289-9c9b-78756001aa38",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "5ba50e74-3c05-4ea8-aeaf-5efde588c60f",
             "6299d728-14f7-455e-85c5-ea8ec65a654a",
             "724c9add-8cd9-4013-b9e1-a907b96da426",
-            "951a004d-54bf-441d-98e1-fcc6a032f475",
             "9e0641a7-22ce-4ac8-8113-ee48b368ac3d",
             "B3582ED2-1A0C-452D-9802-97433D143486",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
@@ -70529,8 +70525,8 @@
             "user_username_role"
         ],
         "category": "Persistence",
-        "commit_message": "TLAB-2625: Disable silent_mode for 11 rules (#5984)",
-        "commit_origin_hash": "ff8fc4be386672c8c4167e835508d09929962595",
+        "commit_message": "TLAB-2492 ATLAS tags for existing AI rules (#5998)",
+        "commit_origin_hash": "f21adab45c2f57909754005a8f82b7fc0e07dbdb",
         "content_type": "RULE",
         "description_expression": "Detection:\nThis rule triggers when Bedrock IAM permissions are granted through: (1) attachment of managed policies (AmazonBedrockFullAccess, AmazonBedrockStudioFullAccess), (2) creation of policies containing Bedrock actions, or (3) inline policy assignments. It monitors high-risk actions including model invocation, AI agent creation, guardrail deletion, logging configuration changes, knowledge base creation, and provisioned throughput allocation.\n\nScenario:\nAn attacker with IAM permissions escalates privileges by granting Bedrock access to themselves or compromised roles, enabling model invocation, AI agent creation, guardrail bypass, logging deletion, data exfiltration via knowledge bases, or cryptomining through expensive compute resources. Legitimate Bedrock provisioning may require similar permissions, making this a potential indicator of either authorized activity or privilege escalation.\n\nRecommended Actions:\nVerify the permission grant aligns with authorized Bedrock provisioning by reviewing user_username, srcDevice_ip, and timing against normal business hours. For inline policies, review policyDocument for overly permissive actions (bedrock:* wildcards), then if unauthorized, detach the policy immediately, rotate credentials, and check CloudTrail for any Bedrock API calls using the newly granted permissions.\n\nTuning Recommendations:\nThe rule excludes AWS service-linked roles. Create match list 'authorized_bedrock_provisioning_accounts' for users or roles that regularly provision Bedrock permissions, and adjust monitored Bedrock actions based on your organization's risk tolerance.",
         "enabled_by_default": true,
@@ -70580,7 +70576,9 @@
         "summary_expression": "Privileged AWS Bedrock permissions granted: {{action}} performed by {{user_username}}",
         "tags": [
             "_mitreAttackTechnique:T1098.003",
-            "_mitreAttackTactic:TA0003"
+            "_mitreAttackTactic:TA0003",
+            "_mitreAtlasTactic:AML.TA0004",
+            "_mitreAtlasTechnique:AML.T0012"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": [
@@ -70789,8 +70787,8 @@
             "user_username"
         ],
         "category": "Defense Evasion",
-        "commit_message": "TLAB-2621 Update rule MITRE ATT&CK tags for v19 Defense Evasion split (#5982)",
-        "commit_origin_hash": "768c2565268d71c53db8c5cf49f1f7c57a6193b4",
+        "commit_message": "TLAB-2492 ATLAS tags for existing AI rules (#5998)",
+        "commit_origin_hash": "f21adab45c2f57909754005a8f82b7fc0e07dbdb",
         "content_type": "RULE",
         "description_expression": "Detection:\nThis rule triggers when an administrator disables Compliance API activity logging for the organization.\n\nScenario:\nAn attacker with administrative access may disable Compliance API logging to cover their tracks before performing data exfiltration or other malicious activities. Disabling this logging removes the organization's ability to monitor API access patterns via the Activity Feed, creating a blind spot in security monitoring. The Compliance API provides access to organizational chats, files, and projects, making unmonitored access a significant data loss risk.\n\nRecommended Actions:\nVerify with the organization's security team whether this change was authorized and re-enable compliance API logging if not. Review recent activity from user_username for signs of compromise and audit any Compliance API activity that occurred while logging was disabled.\n\nTuning Recommendations:\nThis rule should have a low false positive rate as disabling compliance logging is a rare and significant security control change. Consider creating a match list of authorized administrators who manage compliance settings during scheduled maintenance windows.",
         "enabled_by_default": true,
@@ -70839,7 +70837,8 @@
         "tags": [
             "_mitreAttackTactic:TA0112",
             "_mitreAttackTechnique:T1685.002",
-            "_mitreAtlasTactic:AML.TA0007"
+            "_mitreAtlasTactic:AML.TA0007",
+            "_mitreAtlasTechnique:AML.T0081"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": []
@@ -70973,6 +70972,494 @@
         "threat_ruleType": null,
         "vendor_direct_ref": []
     },
+    "MATCH-S01158": {
+        "all_fields": [
+            "baseImage",
+            "device_hostname",
+            "device_ip",
+            "file_hash_sha256",
+            "metadata_product",
+            "metadata_vendor",
+            "normalizedSeverity",
+            "srcDevice_hostname",
+            "srcDevice_ip",
+            "threat_ruleType",
+            "threat_signalName",
+            "user_username"
+        ],
+        "asset_field": "device_hostname",
+        "category": "Execution",
+        "commit_message": "Passthrough Rules - Phase 1 (#5995)",
+        "commit_origin_hash": "20fd71082ffb3a57e4e588f8aa7096e9f812ae89",
+        "content_type": "RULE",
+        "description_expression": "Passes through an endpoint/EDR behavioral detection from a security product and adjusts the severity accordingly based on the severity provided in the log.",
+        "enabled_by_default": true,
+        "entity_selectors": [
+            {
+                "entity_type": "_hostname",
+                "expression": "device_hostname"
+            },
+            {
+                "entity_type": "_hostname",
+                "expression": "srcDevice_hostname"
+            },
+            {
+                "entity_type": "_ip",
+                "expression": "device_ip"
+            },
+            {
+                "entity_type": "_ip",
+                "expression": "srcDevice_ip"
+            },
+            {
+                "entity_type": "_username",
+                "expression": "user_username"
+            },
+            {
+                "entity_type": "_process",
+                "expression": "baseImage"
+            },
+            {
+                "entity_type": "_hash",
+                "expression": "file_hash_sha256"
+            }
+        ],
+        "expression": "threat_ruleType = 'endpoint'",
+        "file_path": "rules_v3/Normalized_Endpoint_Detection.json",
+        "id": 1158,
+        "id_compiled": "MATCH-S01158",
+        "is_prototype": false,
+        "name": "Normalized Endpoint Detection",
+        "name_expression": "{{metadata_vendor}} {{metadata_product}} - {{threat_signalName}}",
+        "normalized_description": "Passes through an endpoint/EDR behavioral detection from a security product and adjusts the severity accordingly based on the severity provided in the log.",
+        "normalized_score_description": null,
+        "normalized_score_possibilities": null,
+        "normalized_score_range": null,
+        "normalized_score_type": null,
+        "normalized_signal_name": "{{metadata_vendor}} {{metadata_product}} - {{threat_signalName}}",
+        "normalized_summary": "Endpoint detection: {{threat_signalName}} on {{device_hostname}}",
+        "pattern_type": "templated_match",
+        "product_direct_ref": [],
+        "product_guids": [],
+        "record_type_direct_ref": [],
+        "rule_source": "sumo",
+        "score_expression": null,
+        "score_mapping": {
+            "default": 0,
+            "field": "normalizedSeverity",
+            "mapping": [],
+            "type": "fieldValue"
+        },
+        "stream": "record",
+        "summary_expression": "Endpoint detection: {{threat_signalName}} on {{device_hostname}}",
+        "tags": [],
+        "threat_ruleType": "endpoint",
+        "vendor_direct_ref": []
+    },
+    "MATCH-S01159": {
+        "all_fields": [
+            "application",
+            "baseImage",
+            "device_hostname",
+            "device_ip",
+            "device_k8s_normalizedDeploymentName",
+            "device_k8s_normalizedPodName",
+            "device_k8s_normalizedReplicaSetName",
+            "http_url",
+            "metadata_product",
+            "metadata_vendor",
+            "normalizedSeverity",
+            "srcDevice_ip",
+            "threat_ruleType",
+            "threat_signalName",
+            "user_username"
+        ],
+        "asset_field": "device_hostname",
+        "category": "Execution",
+        "commit_message": "TLAB-2660 Runtime passthrough mappers (#6007)",
+        "commit_origin_hash": "bed6cfa442621657fbb13573d729884506c7eab3",
+        "content_type": "RULE",
+        "description_expression": "Passes through a container, cloud-native, or application runtime detection (e.g. Falco, Sysdig, Twistlock, Aqua, Contrast ADR) and adjusts the severity accordingly based on the severity provided in the log.",
+        "enabled_by_default": true,
+        "entity_selectors": [
+            {
+                "entity_type": "_hostname",
+                "expression": "device_hostname"
+            },
+            {
+                "entity_type": "_pod",
+                "expression": "device_k8s_normalizedPodName"
+            },
+            {
+                "entity_type": "_deployment",
+                "expression": "device_k8s_normalizedDeploymentName"
+            },
+            {
+                "entity_type": "_replicaset",
+                "expression": "device_k8s_normalizedReplicaSetName"
+            },
+            {
+                "entity_type": "_process",
+                "expression": "baseImage"
+            },
+            {
+                "entity_type": "_username",
+                "expression": "user_username"
+            },
+            {
+                "entity_type": "_ip",
+                "expression": "srcDevice_ip"
+            },
+            {
+                "entity_type": "_ip",
+                "expression": "device_ip"
+            },
+            {
+                "entity_type": "_url",
+                "expression": "http_url"
+            },
+            {
+                "entity_type": "_resource",
+                "expression": "application"
+            }
+        ],
+        "expression": "threat_ruleType = 'runtime'",
+        "file_path": "rules_v3/Normalized_Runtime_Detection.json",
+        "id": 1159,
+        "id_compiled": "MATCH-S01159",
+        "is_prototype": false,
+        "name": "Normalized Runtime Detection",
+        "name_expression": "{{metadata_vendor}} {{metadata_product}} - {{threat_signalName}}",
+        "normalized_description": "Passes through a container, cloud-native, or application runtime detection (e.g. Falco, Sysdig, Twistlock, Aqua, Contrast ADR) and adjusts the severity accordingly based on the severity provided in the log.",
+        "normalized_score_description": null,
+        "normalized_score_possibilities": null,
+        "normalized_score_range": null,
+        "normalized_score_type": null,
+        "normalized_signal_name": "{{metadata_vendor}} {{metadata_product}} - {{threat_signalName}}",
+        "normalized_summary": "Runtime detection: {{threat_signalName}} on {{device_hostname}}",
+        "pattern_type": "templated_match",
+        "product_direct_ref": [],
+        "product_guids": [
+            "4c2a186d-6aa5-47da-a6af-7fddfe16b528",
+            "55ec1d4a-6985-4f04-8de5-f9812871fda2",
+            "581D3DD8-4DA7-4192-9E49-320D7AFB8B53",
+            "d6cb76d3-939e-4e02-b399-b15e0278c877",
+            "fa3c148a-4272-4a94-aea2-499ab90424c2"
+        ],
+        "record_type_direct_ref": [],
+        "rule_source": "sumo",
+        "score_expression": null,
+        "score_mapping": {
+            "default": 0,
+            "field": "normalizedSeverity",
+            "mapping": [],
+            "type": "fieldValue"
+        },
+        "stream": "record",
+        "summary_expression": "Runtime detection: {{threat_signalName}} on {{device_hostname}}",
+        "tags": [],
+        "threat_ruleType": "runtime",
+        "vendor_direct_ref": []
+    },
+    "MATCH-S01160": {
+        "all_fields": [
+            "device_hostname",
+            "metadata_product",
+            "metadata_vendor",
+            "normalizedSeverity",
+            "resource",
+            "srcDevice_ip",
+            "threat_ruleType",
+            "threat_signalName",
+            "user_username"
+        ],
+        "asset_field": "resource",
+        "category": "Discovery",
+        "commit_message": "Passthrough Rules - Phase 1 (#5995)",
+        "commit_origin_hash": "20fd71082ffb3a57e4e588f8aa7096e9f812ae89",
+        "content_type": "RULE",
+        "description_expression": "Passes through a cloud posture or cloud-threat finding (e.g. AWS GuardDuty, Security Hub, Orca, Wiz, Prisma Cloud) and adjusts the severity accordingly based on the severity provided in the log.",
+        "enabled_by_default": true,
+        "entity_selectors": [
+            {
+                "entity_type": "_resource",
+                "expression": "resource"
+            },
+            {
+                "entity_type": "_username",
+                "expression": "user_username"
+            },
+            {
+                "entity_type": "_ip",
+                "expression": "srcDevice_ip"
+            },
+            {
+                "entity_type": "_hostname",
+                "expression": "device_hostname"
+            }
+        ],
+        "expression": "threat_ruleType = 'cloud'",
+        "file_path": "rules_v3/Normalized_Cloud_Detection.json",
+        "id": 1160,
+        "id_compiled": "MATCH-S01160",
+        "is_prototype": false,
+        "name": "Normalized Cloud Detection",
+        "name_expression": "{{metadata_vendor}} {{metadata_product}} - {{threat_signalName}}",
+        "normalized_description": "Passes through a cloud posture or cloud-threat finding (e.g. AWS GuardDuty, Security Hub, Orca, Wiz, Prisma Cloud) and adjusts the severity accordingly based on the severity provided in the log.",
+        "normalized_score_description": null,
+        "normalized_score_possibilities": null,
+        "normalized_score_range": null,
+        "normalized_score_type": null,
+        "normalized_signal_name": "{{metadata_vendor}} {{metadata_product}} - {{threat_signalName}}",
+        "normalized_summary": "Cloud detection: {{threat_signalName}} on {{resource}}",
+        "pattern_type": "templated_match",
+        "product_direct_ref": [],
+        "product_guids": [],
+        "record_type_direct_ref": [],
+        "rule_source": "sumo",
+        "score_expression": null,
+        "score_mapping": {
+            "default": 0,
+            "field": "normalizedSeverity",
+            "mapping": [],
+            "type": "fieldValue"
+        },
+        "stream": "record",
+        "summary_expression": "Cloud detection: {{threat_signalName}} on {{resource}}",
+        "tags": [],
+        "threat_ruleType": "cloud",
+        "vendor_direct_ref": []
+    },
+    "MATCH-S01161": {
+        "all_fields": [
+            "http_userAgent",
+            "metadata_product",
+            "metadata_vendor",
+            "normalizedSeverity",
+            "srcDevice_ip",
+            "targetUser_username",
+            "threat_ruleType",
+            "threat_signalName",
+            "user_email",
+            "user_username"
+        ],
+        "asset_field": "user_username",
+        "category": "Initial Access",
+        "commit_message": "Passthrough Rules - Phase 1 (#5995)",
+        "commit_origin_hash": "20fd71082ffb3a57e4e588f8aa7096e9f812ae89",
+        "content_type": "RULE",
+        "description_expression": "Passes through an identity or access anomaly detection (e.g. Azure risky user, Google Workspace, Slack, Okta) and adjusts the severity accordingly based on the severity provided in the log.",
+        "enabled_by_default": true,
+        "entity_selectors": [
+            {
+                "entity_type": "_username",
+                "expression": "user_username"
+            },
+            {
+                "entity_type": "_username",
+                "expression": "targetUser_username"
+            },
+            {
+                "entity_type": "_email",
+                "expression": "user_email"
+            },
+            {
+                "entity_type": "_ip",
+                "expression": "srcDevice_ip"
+            },
+            {
+                "entity_type": "_useragent",
+                "expression": "http_userAgent"
+            }
+        ],
+        "expression": "threat_ruleType = 'identity'",
+        "file_path": "rules_v3/Normalized_Identity_Detection.json",
+        "id": 1161,
+        "id_compiled": "MATCH-S01161",
+        "is_prototype": false,
+        "name": "Normalized Identity Detection",
+        "name_expression": "{{metadata_vendor}} {{metadata_product}} - {{threat_signalName}}",
+        "normalized_description": "Passes through an identity or access anomaly detection (e.g. Azure risky user, Google Workspace, Slack, Okta) and adjusts the severity accordingly based on the severity provided in the log.",
+        "normalized_score_description": null,
+        "normalized_score_possibilities": null,
+        "normalized_score_range": null,
+        "normalized_score_type": null,
+        "normalized_signal_name": "{{metadata_vendor}} {{metadata_product}} - {{threat_signalName}}",
+        "normalized_summary": "Identity risk: {{threat_signalName}} for {{user_username}}",
+        "pattern_type": "templated_match",
+        "product_direct_ref": [],
+        "product_guids": [
+            "79da6240-7617-49c8-b130-96278579766e",
+            "a1225af5-e778-4068-a9a2-47da93d1ff24"
+        ],
+        "record_type_direct_ref": [],
+        "rule_source": "sumo",
+        "score_expression": null,
+        "score_mapping": {
+            "default": 0,
+            "field": "normalizedSeverity",
+            "mapping": [],
+            "type": "fieldValue"
+        },
+        "stream": "record",
+        "summary_expression": "Identity risk: {{threat_signalName}} for {{user_username}}",
+        "tags": [],
+        "threat_ruleType": "identity",
+        "vendor_direct_ref": []
+    },
+    "MATCH-S01162": {
+        "all_fields": [
+            "dstDevice_hostname",
+            "dstDevice_ip",
+            "http_url",
+            "http_url_fqdn",
+            "metadata_product",
+            "metadata_vendor",
+            "normalizedSeverity",
+            "srcDevice_hostname",
+            "srcDevice_ip",
+            "threat_ruleType",
+            "threat_signalName"
+        ],
+        "asset_field": "srcDevice_hostname",
+        "category": "Command and Control",
+        "commit_message": "Passthrough Rules - Phase 1 (#5995)",
+        "commit_origin_hash": "20fd71082ffb3a57e4e588f8aa7096e9f812ae89",
+        "content_type": "RULE",
+        "description_expression": "Passes through a network, NDR, or WAF detection (e.g. Kemp, Palo Alto, FortiGate, FireEye, Vectra, Claroty) and adjusts the severity accordingly based on the severity provided in the log.",
+        "enabled_by_default": true,
+        "entity_selectors": [
+            {
+                "entity_type": "_ip",
+                "expression": "srcDevice_ip"
+            },
+            {
+                "entity_type": "_ip",
+                "expression": "dstDevice_ip"
+            },
+            {
+                "entity_type": "_hostname",
+                "expression": "srcDevice_hostname"
+            },
+            {
+                "entity_type": "_hostname",
+                "expression": "dstDevice_hostname"
+            },
+            {
+                "entity_type": "_domain",
+                "expression": "http_url_fqdn"
+            },
+            {
+                "entity_type": "_url",
+                "expression": "http_url"
+            }
+        ],
+        "expression": "threat_ruleType = 'network'",
+        "file_path": "rules_v3/Normalized_Network_Detection.json",
+        "id": 1162,
+        "id_compiled": "MATCH-S01162",
+        "is_prototype": false,
+        "name": "Normalized Network Detection",
+        "name_expression": "{{metadata_vendor}} {{metadata_product}} - {{threat_signalName}}",
+        "normalized_description": "Passes through a network, NDR, or WAF detection (e.g. Kemp, Palo Alto, FortiGate, FireEye, Vectra, Claroty) and adjusts the severity accordingly based on the severity provided in the log.",
+        "normalized_score_description": null,
+        "normalized_score_possibilities": null,
+        "normalized_score_range": null,
+        "normalized_score_type": null,
+        "normalized_signal_name": "{{metadata_vendor}} {{metadata_product}} - {{threat_signalName}}",
+        "normalized_summary": "Network detection: {{threat_signalName}} from {{srcDevice_ip}}",
+        "pattern_type": "templated_match",
+        "product_direct_ref": [],
+        "product_guids": [],
+        "record_type_direct_ref": [],
+        "rule_source": "sumo",
+        "score_expression": null,
+        "score_mapping": {
+            "default": 0,
+            "field": "normalizedSeverity",
+            "mapping": [],
+            "type": "fieldValue"
+        },
+        "stream": "record",
+        "summary_expression": "Network detection: {{threat_signalName}} from {{srcDevice_ip}}",
+        "tags": [],
+        "threat_ruleType": "network",
+        "vendor_direct_ref": []
+    },
+    "MATCH-S01163": {
+        "all_fields": [
+            "file_path",
+            "metadata_product",
+            "metadata_vendor",
+            "normalizedSeverity",
+            "resource",
+            "srcDevice_ip",
+            "threat_ruleType",
+            "threat_signalName",
+            "user_email",
+            "user_username"
+        ],
+        "asset_field": "resource",
+        "category": "Exfiltration",
+        "commit_message": "TLAB-2660 Runtime passthrough mappers (#6007)",
+        "commit_origin_hash": "bed6cfa442621657fbb13573d729884506c7eab3",
+        "content_type": "RULE",
+        "description_expression": "Passes through a data-protection, email, or deception detection (e.g. DLP, Proofpoint, Thinkst Canary) and adjusts the severity accordingly based on the severity provided in the log.",
+        "enabled_by_default": true,
+        "entity_selectors": [
+            {
+                "entity_type": "_resource",
+                "expression": "resource"
+            },
+            {
+                "entity_type": "_file",
+                "expression": "file_path"
+            },
+            {
+                "entity_type": "_email",
+                "expression": "user_email"
+            },
+            {
+                "entity_type": "_username",
+                "expression": "user_username"
+            },
+            {
+                "entity_type": "_ip",
+                "expression": "srcDevice_ip"
+            }
+        ],
+        "expression": "threat_ruleType = 'data_protection'",
+        "file_path": "rules_v3/Normalized_Data_Protection_Detection.json",
+        "id": 1163,
+        "id_compiled": "MATCH-S01163",
+        "is_prototype": false,
+        "name": "Normalized Data Protection Detection",
+        "name_expression": "{{metadata_vendor}} {{metadata_product}} - {{threat_signalName}}",
+        "normalized_description": "Passes through a data-protection, email, or deception detection (e.g. DLP, Proofpoint, Thinkst Canary) and adjusts the severity accordingly based on the severity provided in the log.",
+        "normalized_score_description": null,
+        "normalized_score_possibilities": null,
+        "normalized_score_range": null,
+        "normalized_score_type": null,
+        "normalized_signal_name": "{{metadata_vendor}} {{metadata_product}} - {{threat_signalName}}",
+        "normalized_summary": "Data protection detection: {{threat_signalName}} on {{resource}}",
+        "pattern_type": "templated_match",
+        "product_direct_ref": [],
+        "product_guids": [],
+        "record_type_direct_ref": [],
+        "rule_source": "sumo",
+        "score_expression": null,
+        "score_mapping": {
+            "default": 0,
+            "field": "normalizedSeverity",
+            "mapping": [],
+            "type": "fieldValue"
+        },
+        "stream": "record",
+        "summary_expression": "Data protection detection: {{threat_signalName}} on {{resource}}",
+        "tags": [],
+        "threat_ruleType": "data_protection",
+        "vendor_direct_ref": []
+    },
     "OUTLIER-S00001": {
         "aggregation_functions": [
             {
@@ -71044,15 +71531,12 @@
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
-            "4809be0f-c6f3-4cbb-b1f6-ae9ae817712e",
             "51278354-d6b5-4c8e-a8fd-8197df334e67",
             "54B36B3F-A63F-4BA4-9DE4-02DBF69A429F",
             "5be5af82-c248-4c4c-a485-0571025f242c",
-            "70f80fa8-200a-449b-8100-f8d4b7687380",
             "7205db83-88e8-4074-8288-136a6c493d69",
             "79da6240-7617-49c8-b130-96278579766e",
             "8276b520-fdeb-4f79-9f5d-67865818562b",
-            "90bba037-f944-480e-89fa-a3b104451af3",
             "93072f9e-3561-401e-980d-6b49f475c2fd",
             "9f6d624f-6d8f-43c7-a4b0-51179061631c",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
@@ -71067,6 +71551,7 @@
             "d3ed003d-5ddd-4c7a-bea5-63eae6311833",
             "e43ba0e4-1e3f-40c6-8bca-cb06a656a40b",
             "e73cd65a-7a4b-4ce9-9d73-e5d9c824c214",
+            "ebb99eec-3585-4673-ac0f-676632a78305",
             "ede052db-d472-408f-949c-be642237ef3f",
             "fe5a3e8b-8b6e-44c7-92a8-adfb20df5c75"
         ],
@@ -71445,8 +71930,8 @@
         "pattern_type": "outlier",
         "product_direct_ref": [],
         "product_guids": [
-            "991a55cf-8c5a-49ba-ae72-6f64a002bacf",
             "af61d8a8-3eba-42fb-9f17-87443924f3f4",
+            "bf865cb5-0b26-4010-8b3c-5ae2d1f716d8",
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad"
         ],
         "record_type_direct_ref": [],
@@ -71927,8 +72412,7 @@
         "product_direct_ref": [],
         "product_guids": [
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
-            "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
-            "d4a9e7ce-082e-4f41-891f-4c43e604c850"
+            "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad"
         ],
         "record_type_direct_ref": [],
         "retention_window_size": 7776000000,
@@ -72276,8 +72760,8 @@
         ],
         "baseline_window_size": 2592000000,
         "category": "Discovery",
-        "commit_message": "Clean up rules",
-        "commit_origin_hash": "5fd899ef16f077a0da4049c262275a7bfcc06e30",
+        "commit_message": "TLAB-2492 ATLAS tags for existing AI rules (#5998)",
+        "commit_origin_hash": "f21adab45c2f57909754005a8f82b7fc0e07dbdb",
         "content_type": "ANOMALY",
         "description_expression": "An outlier in the number of API calls made to AWS Bedrock from a user within an hour time period was observed. These events may be part of normal Bedrock operations or may be indicative of enumeration/discovery attempts. Observe the username, role, user agent and source IP to confirm whether this activity is expected. If this signal is triggering frequently, consider excluding certain authorized users via tuning expression.",
         "deviation_threshold": 2,
@@ -72326,7 +72810,9 @@
         "summary_expression": "Outlier in AWS Bedrock API Calls from User: {{user_username}}",
         "tags": [
             "_mitreAttackTechnique:T1526",
-            "_mitreAttackTactic:TA0007"
+            "_mitreAttackTactic:TA0007",
+            "_mitreAtlasTactic:AML.TA0002",
+            "_mitreAtlasTechnique:AML.T0006"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": [],
@@ -72350,8 +72836,8 @@
         ],
         "baseline_window_size": 2592000000,
         "category": "Discovery",
-        "commit_message": "Clean up rules",
-        "commit_origin_hash": "5fd899ef16f077a0da4049c262275a7bfcc06e30",
+        "commit_message": "TLAB-2492 ATLAS tags for existing AI rules (#5998)",
+        "commit_origin_hash": "f21adab45c2f57909754005a8f82b7fc0e07dbdb",
         "content_type": "ANOMALY",
         "description_expression": "An outlier in the number of Foundation Model Enumeration API Calls from a user within an hour time period was observed. These events may be part of normal Bedrock operations or may be indicative of enumeration/discovery attempts. Observe the username, role, user agent and source IP to confirm whether this activity is expected. If this signal is triggering frequently, consider excluding certain authorized users via tuning expression.",
         "deviation_threshold": 1,
@@ -72400,7 +72886,9 @@
         "summary_expression": "Outlier in AWS Bedrock Foundation Model Enumeration Calls from User: {{user_username}}",
         "tags": [
             "_mitreAttackTechnique:T1526",
-            "_mitreAttackTactic:TA0007"
+            "_mitreAttackTactic:TA0007",
+            "_mitreAtlasTactic:AML.TA0008",
+            "_mitreAtlasTechnique:AML.T0007"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": [],
@@ -73446,6 +73934,7 @@
         "product_direct_ref": [],
         "product_guids": [
             "072b85a2-1765-45c2-911d-b0509880326e",
+            "0fb003bc-8383-442f-8f3d-afcfbaefe617",
             "2a678bcd-898e-43cd-ab3f-91feb0602a18",
             "37C866BF-72E1-470A-9072-EDB908F56951",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
@@ -73663,6 +74152,7 @@
             "af61d8a8-3eba-42fb-9f17-87443924f3f4",
             "b32a58b9-8bfd-4b1d-8b68-91611fe5c37e",
             "c2503fcc-ef30-4e40-bb32-0bf47151b140",
+            "c8301344-a2be-4203-8081-776bec73221f",
             "dcc85cfc-a698-4d09-87de-f2c723f3ad07",
             "ede052db-d472-408f-949c-be642237ef3f",
             "fca8785d-4823-4442-86b2-8acbaa176da4"
@@ -73840,7 +74330,6 @@
             "991a55cf-8c5a-49ba-ae72-6f64a002bacf",
             "9a28f2af-5526-414d-973b-c3fc7984b8a1",
             "9e0641a7-22ce-4ac8-8113-ee48b368ac3d",
-            "9f76f1fd-fbb0-42d2-9bf5-0f4fd2c1ab82",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "af61d8a8-3eba-42fb-9f17-87443924f3f4",
             "bf865cb5-0b26-4010-8b3c-5ae2d1f716d8",
@@ -74603,7 +75092,6 @@
         "pattern_type": "threshold",
         "product_direct_ref": [],
         "product_guids": [
-            "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "5ba50e74-3c05-4ea8-aeaf-5efde588c60f",
             "e2393771-bda2-414a-8661-0a57069287ad"
         ],
@@ -75424,7 +75912,6 @@
             "724c9add-8cd9-4013-b9e1-a907b96da426",
             "951a004d-54bf-441d-98e1-fcc6a032f475",
             "9a28f2af-5526-414d-973b-c3fc7984b8a1",
-            "9e0641a7-22ce-4ac8-8113-ee48b368ac3d",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "b2f99a76-0771-49bf-9a89-d3e69370806e",
             "be4f7473-fe69-4311-8859-3561900060bf",
@@ -75753,7 +76240,9 @@
             "c3c1a4fc-10cc-4155-8a30-a3bb14fc9f31",
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
             "cf2af9e8-bade-4f28-8bca-b30aa41baec4",
-            "da9e05a5-3fd3-46a7-a107-ae03c01e3f5a"
+            "d0aebc1c-db4d-440f-b69f-70dae24befff",
+            "da9e05a5-3fd3-46a7-a107-ae03c01e3f5a",
+            "ef11c9cd-df72-42c6-81f5-70b91fd0f38a"
         ],
         "record_type_direct_ref": [],
         "rule_source": "sumo",
@@ -75932,7 +76421,6 @@
             "c3c1a4fc-10cc-4155-8a30-a3bb14fc9f31",
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
             "cf2af9e8-bade-4f28-8bca-b30aa41baec4",
-            "d4a9e7ce-082e-4f41-891f-4c43e604c850",
             "da9e05a5-3fd3-46a7-a107-ae03c01e3f5a",
             "dcc85cfc-a698-4d09-87de-f2c723f3ad07",
             "ef11c9cd-df72-42c6-81f5-70b91fd0f38a"
@@ -76797,7 +77285,7 @@
             "70f80fa8-200a-449b-8100-f8d4b7687380",
             "79da6240-7617-49c8-b130-96278579766e",
             "8276b520-fdeb-4f79-9f5d-67865818562b",
-            "90bba037-f944-480e-89fa-a3b104451af3",
+            "840c72e0-4e47-41e7-9b93-31f55d12f07d",
             "9f6d624f-6d8f-43c7-a4b0-51179061631c",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "acb7e80e-2b66-496c-ba2e-1e7c3933a98e",
@@ -76809,6 +77297,7 @@
             "d3ed003d-5ddd-4c7a-bea5-63eae6311833",
             "e43ba0e4-1e3f-40c6-8bca-cb06a656a40b",
             "e73cd65a-7a4b-4ce9-9d73-e5d9c824c214",
+            "ebb99eec-3585-4673-ac0f-676632a78305",
             "ede052db-d472-408f-949c-be642237ef3f",
             "fe5a3e8b-8b6e-44c7-92a8-adfb20df5c75"
         ],
@@ -76987,7 +77476,6 @@
         "product_guids": [
             "033624b0-218e-4dcb-b93f-0f1fb1806c56",
             "0472f22e-e3fa-4c9f-a529-8355f671927e",
-            "05bfaf47-5e21-4d5f-b724-98960a6fca8a",
             "0b45ccba-20b4-41e4-973d-b50fd291944d",
             "0e20c932-d992-4bd4-b276-c15119ca5c0b",
             "153794da-09e8-48fe-b511-1306fbb94d07",
@@ -78271,12 +78759,12 @@
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "37a906de-5e9c-475e-881a-65a1d984f377",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
-            "4809be0f-c6f3-4cbb-b1f6-ae9ae817712e",
             "51278354-d6b5-4c8e-a8fd-8197df334e67",
             "54B36B3F-A63F-4BA4-9DE4-02DBF69A429F",
             "5be5af82-c248-4c4c-a485-0571025f242c",
             "70f80fa8-200a-449b-8100-f8d4b7687380",
             "7205db83-88e8-4074-8288-136a6c493d69",
+            "79da6240-7617-49c8-b130-96278579766e",
             "8276b520-fdeb-4f79-9f5d-67865818562b",
             "9f6d624f-6d8f-43c7-a4b0-51179061631c",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
@@ -78393,8 +78881,8 @@
             "user_username_role"
         ],
         "category": "Impact",
-        "commit_message": "TLAB-2625: Disable silent_mode for 11 rules (#5984)",
-        "commit_origin_hash": "ff8fc4be386672c8c4167e835508d09929962595",
+        "commit_message": "TLAB-2492 ATLAS tags for existing AI rules (#5998)",
+        "commit_origin_hash": "f21adab45c2f57909754005a8f82b7fc0e07dbdb",
         "content_type": "RULE",
         "count_distinct": true,
         "count_field": "resource",
@@ -78444,7 +78932,9 @@
         "summary_expression": "User {{user_username}} from IP {{srcDevice_ip}} deleted multiple AWS Bedrock Knowledge Bases rapidly",
         "tags": [
             "_mitreAttackTechnique:T1485",
-            "_mitreAttackTactic:TA0040"
+            "_mitreAttackTactic:TA0040",
+            "_mitreAtlasTactic:AML.TA0011",
+            "_mitreAtlasTechnique:AML.T0031"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": [
@@ -78597,6 +79087,7 @@
             "3a82061c-2ca3-4289-9c9b-78756001aa38",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
             "724c9add-8cd9-4013-b9e1-a907b96da426",
+            "8e605871-e24c-4126-8fed-af8b13871595",
             "afabb29d-e728-410f-b7c6-acfa9efbe1ed",
             "be4f7473-fe69-4311-8859-3561900060bf",
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",

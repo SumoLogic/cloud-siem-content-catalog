@@ -30,7 +30,7 @@
 |http_userAgent|USER_AGENT||
 |normalizedSeverity|None|The static text `3` is populated in this schema field.|
 |srcDevice_ip|source_ip||
-|threat_ruleType|None|The static text `direct` is populated in this schema field.|
+|threat_ruleType|None|The static text `identity` is populated in this schema field.|
 |threat_signalName|Action||
 |user_userId|user_id||
 |user_username|username||

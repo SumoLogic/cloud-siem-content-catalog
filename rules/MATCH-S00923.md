@@ -14,7 +14,7 @@ A user has attempted to invoke a model via AWS Bedrock for which access was deni
 |Score/Severity|Static: 2|
 |Enabled by Default|True|
 |Prototype|False|
-|Tags|_mitreAttackTactic:TA0007, _mitreAttackTechnique:T1526|
+|Tags|_mitreAttackTactic:TA0007, _mitreAttackTechnique:T1526, _mitreAtlasTactic:AML.TA0002, _mitreAtlasTechnique:AML.T0006|
 ## Vendors and Products
 - [Amazon AWS - CloudTrail](../products/033624b0-218e-4dcb-b93f-0f1fb1806c56.md)
 

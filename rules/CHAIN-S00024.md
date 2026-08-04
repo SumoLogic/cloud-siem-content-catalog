@@ -27,6 +27,7 @@ Note that this rule is more likely to trigger when the destination host is a mul
 |Prototype|False|
 |Tags|_mitreAttackTactic:TA0006, _mitreAttackTechnique:T1110.001, _mitreAttackTechnique:T1110|
 ## Vendors and Products
+- [Illumio - Adaptive Security Platform](../products/1afb4979-e858-43fe-8a55-87f444f0417b.md)
 - [Microsoft - Windows](../products/1ff7546c-cb36-4a24-87f7-89d2cecc5761.md)
 
 

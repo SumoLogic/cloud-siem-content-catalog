@@ -25,8 +25,7 @@ Microsoft Teams External Access has been enabled, this settings allows any users
 |----|----|
 |Normalized Schema|action|
 |Normalized Schema|device_ip|
-|Direct from Record|fields["ModifiedProperties.1.Name"]|
-|Direct from Record|fields["ModifiedProperties.1.NewValue"]|
+|Direct from Record|fields["ModifiedProperties_AllowFederatedUsers_New"]|
 |Normalized Schema|metadata_product|
 |Normalized Schema|user_UserId|
 

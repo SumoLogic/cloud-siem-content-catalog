@@ -35,6 +35,7 @@ HTTP web services provide response codes to client requests. The response code n
 - [Imperva - Imperva Incapsula](../products/2a236ab1-77d2-4867-a571-a1cfd64528e6.md)
 - [JFrog - Artifactory](../products/abe4975e-de65-4f82-8b35-e6ce392e165c.md)
 - [Microsoft - Azure](../products/a1225af5-e778-4068-a9a2-47da93d1ff24.md)
+- [Microsoft - Exchange](../products/c8301344-a2be-4203-8081-776bec73221f.md)
 - [Microsoft - IIS](../products/fca8785d-4823-4442-86b2-8acbaa176da4.md)
 - [Nginx - Nginx](../products/1ce88b4b-d90d-4d50-9a89-3abe83e8d5f8.md)
 - [Oracle - Oracle Cloud Infrastructure](../products/37a906de-5e9c-475e-881a-65a1d984f377.md)

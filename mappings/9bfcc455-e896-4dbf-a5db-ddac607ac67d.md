@@ -27,7 +27,7 @@
 |severity|severity||
 |threat_name|name||
 |threat_referenceUrl|cs1||
-|threat_ruleType|None|The static text `direct` is populated in this schema field.|
+|threat_ruleType|None|The static text `identity` is populated in this schema field.|
 |threat_signalName|msg||
 |timestamp|rt|We expect the original record value of `rt` is in the format `epoch`|
 |user_username|suser||

@@ -14,7 +14,7 @@ Observes for GitHub staff manually revoking copilot access for a user. This acti
 |Score/Severity|Static: 5|
 |Enabled by Default|True|
 |Prototype|False|
-|Tags|_mitreAttackTactic:TA0040|
+|Tags|_mitreAttackTactic:TA0040, _mitreAtlasTactic:AML.TA0000, _mitreAtlasTechnique:AML.T0047|
 ## Vendors and Products
 - [Github - GitHub Enterprise Audit](../products/e3c8bd8b-6ed8-4332-944d-d0f5dfc462df.md)
 

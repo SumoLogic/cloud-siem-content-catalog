@@ -17,7 +17,7 @@ A first seen model id was observed in AWS Bedrock. The PutFoundationModelEntitle
 |Score/Severity|Static: 1|
 |Enabled by Default|True|
 |Prototype|False|
-|Tags|_mitreAttackTechnique:T1583, _mitreAttackTactic:TA0040|
+|Tags|_mitreAttackTechnique:T1583, _mitreAttackTactic:TA0040, _mitreAtlasTactic:AML.TA0000, _mitreAtlasTechnique:AML.T0040|
 ## Vendors and Products
 - [Amazon AWS - CloudTrail](../products/033624b0-218e-4dcb-b93f-0f1fb1806c56.md)
 

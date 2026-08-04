@@ -9,13 +9,13 @@
 |THRESHOLD-S00079|[Inbound Port Scan](../rules/THRESHOLD-S00079.md)|
 |THRESHOLD-S00080|[Internal Port Scan](../rules/THRESHOLD-S00080.md)|
 |THRESHOLD-S00081|[Internal Port Sweep](../rules/THRESHOLD-S00081.md)|
+|MATCH-S00555|[Legacy Threat Intel - Inbound Traffic Context](../rules/MATCH-S00555.md)|
+|LEGACY-S00107|[Legacy Threat Intel Match - IP Address](../rules/LEGACY-S00107.md)|
 |MATCH-S00554|[Outbound IRC Traffic](../rules/MATCH-S00554.md)|
 |MATCH-S01007|[Threat Intel - Destination Device Hostname](../rules/MATCH-S01007.md)|
 |MATCH-S01026|[Threat Intel - Destination IP Address (Low Confidence)](../rules/MATCH-S01026.md)|
 |MATCH-S01028|[Threat Intel - Destination IP Address (Medium Confidence)](../rules/MATCH-S01028.md)|
-|MATCH-S00555|[Threat Intel - Inbound Traffic Context](../rules/MATCH-S00555.md)|
 |MATCH-S01005|[Threat Intel - Source Hostname](../rules/MATCH-S01005.md)|
-|LEGACY-S00107|[Threat Intel Match - IP Address](../rules/LEGACY-S00107.md)|
 |MATCH-S00559|[Traffic to Honeypot IP](../rules/MATCH-S00559.md)|
 
 

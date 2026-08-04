@@ -18,7 +18,7 @@ An outlier in the number of Foundation Model Enumeration API Calls from a user w
 |Score/Severity|Static: 1|
 |Enabled by Default|True|
 |Prototype|False|
-|Tags|_mitreAttackTechnique:T1526, _mitreAttackTactic:TA0007|
+|Tags|_mitreAttackTechnique:T1526, _mitreAttackTactic:TA0007, _mitreAtlasTactic:AML.TA0008, _mitreAtlasTechnique:AML.T0007|
 ## Vendors and Products
 - [Amazon AWS - CloudTrail](../products/033624b0-218e-4dcb-b93f-0f1fb1806c56.md)
 

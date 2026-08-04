@@ -1,7 +1,7 @@
-# [Rules](README.md): Threat Intel Match - IP Address
+# [Rules](README.md): Legacy Threat Intel Match - IP Address
 
 ## Description
-A record flagged an IP address from a threat intelligence match list
+Legacy Threat Intelligence is being deprecated. This rule and rules using `array_contains(listMatches, 'threat')` will be removed and will cease to work upon deprecation. New rules using the hasThreatMatch operator have been introduced and should be used going forward. A record flagged an IP address from a threat intelligence match list
 
 ## Additional Details
 |Detail|Value|
@@ -9,7 +9,7 @@ A record flagged an IP address from a threat intelligence match list
 |Type|Match|
 |Category|Threat Intelligence|
 |Apply Risk to Entities|srcDevice_hostname, srcDevice_ip, srcDevice_natIp, device_ip, srcDevice_mac, user_username, dns_replyIp|
-|Signal Name|Threat Intel Match - IP Address|
+|Signal Name|Legacy Threat Intel Match - IP Address|
 |Summary Expression|None|
 |Score/Severity|Static: 1|
 |Enabled by Default|True|
@@ -43,13 +43,13 @@ A record flagged an IP address from a threat intelligence match list
 - [Microsoft - O365 Exchange Message Trace](../products/183c5127-6594-4d45-9bab-ce5f2df9e38b.md)
 - [Microsoft - Windows](../products/1ff7546c-cb36-4a24-87f7-89d2cecc5761.md)
 - [Netskope - Security Cloud](../products/B3582ED2-1A0C-452D-9802-97433D143486.md)
+- [Palo Alto Networks - Cortex XDR](../products/146522A1-DC9A-40A5-A909-2EB3B665B1D1.md)
 - [Palo Alto Networks - Next Generation Firewall](../products/46f5fa2c-1a62-4692-82ad-ed87800a0adb.md)
 - [SonicWall - Firewall](../products/951a004d-54bf-441d-98e1-fcc6a032f475.md)
 - [Sophos - UTM 9](../products/0fb003bc-8383-442f-8f3d-afcfbaefe617.md)
 - [Symantec - Data Loss Prevention](../products/DFD96D65-65F6-413B-B4BE-F09D4870B377.md)
 - [Symantec - Proxy Secure Gateway](../products/991a55cf-8c5a-49ba-ae72-6f64a002bacf.md)
 - [Symantec - Web Security Service](../products/bf865cb5-0b26-4010-8b3c-5ae2d1f716d8.md)
-- [Trend Micro - Deep Security](../products/57cec26c-f94e-4403-add4-dae2382b5c16.md)
 - [WatchGuard - Fireware](../products/14aa46d3-0710-44b6-9ce3-0a6b8f36b076.md)
 - [Zero Networks - Segment](../products/cf2af9e8-bade-4f28-8bca-b30aa41baec4.md)
 - [Zscaler - Firewall](../products/9e0641a7-22ce-4ac8-8113-ee48b368ac3d.md)

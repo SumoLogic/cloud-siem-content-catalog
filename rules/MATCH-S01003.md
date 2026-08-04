@@ -16,6 +16,7 @@ This rule detects a SHA1 hash indicator match from a threat intelligence feed
 |Prototype|False|
 |Tags||
 ## Vendors and Products
+- [Box - Box](../products/0472f22e-e3fa-4c9f-a529-8355f671927e.md)
 - [Bro - Bro](../products/37C866BF-72E1-470A-9072-EDB908F56951.md)
 - [Cisco Systems - Advanced Malware Protection (AMP)](../products/7eaa4c44-5b7f-4d9e-8c1c-c4105c2b7506.md)
 - [CrowdStrike - Falcon](../products/840c72e0-4e47-41e7-9b93-31f55d12f07d.md)

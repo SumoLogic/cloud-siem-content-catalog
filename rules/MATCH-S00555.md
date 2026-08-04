@@ -1,7 +1,7 @@
-# [Rules](README.md): Threat Intel - Inbound Traffic Context
+# [Rules](README.md): Legacy Threat Intel - Inbound Traffic Context
 
 ## Description
-This rule detects allowed inbound traffic from an IP address associated with a known malicious campaign as designated by threat intelligence.
+Legacy Threat Intelligence is being deprecated. This rule and rules using `array_contains(listMatches, 'threat')` will be removed and will cease to work upon deprecation. New rules using the hasThreatMatch operator have been introduced and should be used going forward. This rule detects allowed inbound traffic from an IP address associated with a known malicious campaign as designated by threat intelligence.
 
 ## Additional Details
 |Detail|Value|
@@ -9,7 +9,7 @@ This rule detects allowed inbound traffic from an IP address associated with a k
 |Type|Templated Match|
 |Category|Threat Intelligence|
 |Apply Risk to Entities|srcDevice_ip, device_ip|
-|Signal Name|Threat Intel - Inbound Traffic Context|
+|Signal Name|Legacy Threat Intel - Inbound Traffic Context|
 |Summary Expression|This rule detects inbound traffic from an IP address associated with a known malicious campaign as designated by threat intelligence.|
 |Score/Severity|Static: 0|
 |Enabled by Default|True|
@@ -36,7 +36,6 @@ This rule detects allowed inbound traffic from an IP address associated with a k
 - [Juniper - SRX Series Firewall](../products/A17B3F3C-04F1-40C8-9497-3C499EB18A74.md)
 - [Linux - Systemd Journal](../products/5be5af82-c248-4c4c-a485-0571025f242c.md)
 - [Microsoft - Azure](../products/a1225af5-e778-4068-a9a2-47da93d1ff24.md)
-- [Microsoft - Defender Advanced Hunting](../products/3382523e-2072-41bd-b50b-6b148957d0b0.md)
 - [Microsoft - IIS](../products/fca8785d-4823-4442-86b2-8acbaa176da4.md)
 - [Microsoft - O365 Exchange Message Trace](../products/183c5127-6594-4d45-9bab-ce5f2df9e38b.md)
 - [Microsoft - Office 365](../products/d3ed003d-5ddd-4c7a-bea5-63eae6311833.md)
@@ -47,7 +46,6 @@ This rule detects allowed inbound traffic from an IP address associated with a k
 - [Proofpoint - Targeted Attack Protection](../products/de3d4b6b-36a3-4436-8bfc-0561ac95037e.md)
 - [Sophos - UTM 9](../products/0fb003bc-8383-442f-8f3d-afcfbaefe617.md)
 - [Zero Networks - Segment](../products/cf2af9e8-bade-4f28-8bca-b30aa41baec4.md)
-- [Zscaler - Nanolog Streaming Service](../products/6299d728-14f7-455e-85c5-ea8ec65a654a.md)
 
 
 ## Fields Used
