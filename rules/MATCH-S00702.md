@@ -23,7 +23,6 @@ Attackers may dump the content of the keychain storage data from a system to acq
 - [Microsoft - Azure](../products/a1225af5-e778-4068-a9a2-47da93d1ff24.md)
 - [Microsoft - Defender Advanced Hunting](../products/3382523e-2072-41bd-b50b-6b148957d0b0.md)
 - [Microsoft - Graph Security API](../products/ef42eb74-7444-4fee-b231-b4eb1e7c9660.md)
-- [Trend Micro - Vision One](../products/72a5ddec-abb9-41ff-a2da-6a58beff980c.md)
 
 
 ## Fields Used

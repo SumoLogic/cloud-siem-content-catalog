@@ -35,7 +35,7 @@
 |success|action|This is a lookup field. More info to come in the catalog later...|
 |threat_category|category||
 |threat_name|threat_name||
-|threat_ruleType|None|The static text `direct` is populated in this schema field.|
+|threat_ruleType|None|The static text `network` is populated in this schema field.|
 |threat_signalName|threat_name||
 |user_username|source_user||
 

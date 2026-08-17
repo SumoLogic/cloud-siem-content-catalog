@@ -27,6 +27,6 @@
 |device_osName|device_os||
 |severity|severity||
 |threat_name|alert_description||
-|threat_ruleType|None|The static text `direct` is populated in this schema field.|
+|threat_ruleType|None|The static text `network` is populated in this schema field.|
 |threat_signalName|alert_type_name||
 

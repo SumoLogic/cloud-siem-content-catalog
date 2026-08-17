@@ -256,6 +256,7 @@ You will find our complete list of mappers for content here.
  - [Check Point Block](04d956ea-d444-4cfc-8b72-f849b6b5d743.md)
  - [Check Point Bypass](00d82464-50b6-46ef-8802-60cc0da03be0.md)
  - [Check Point Catch All](8bfbab0c-29dc-48e8-88bb-92a1115fb818.md)
+ - [Check Point CloudGuard](75a5a4bf-9a39-4a46-8ca7-00683f9b3582.md)
  - [Check Point Deauthorize Logs](d48ad788-160c-462f-933f-31bc7939d692.md)
  - [Check Point Decrypt Logs](56673afa-162e-4712-9aec-c2f9f5646bec.md)
  - [Check Point Detect](bc02f421-24e9-4537-9eed-59f25ef5d736.md)

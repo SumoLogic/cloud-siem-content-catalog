@@ -35,7 +35,7 @@
 |threat_category|tap_threat_types.1||
 |threat_identifier|incidents.1.id||
 |threat_name|incidents.1.title||
-|threat_ruleType|None|The static text `direct` is populated in this schema field.|
+|threat_ruleType|None|The static text `data_protection` is populated in this schema field.|
 |threat_signalName|incidents.1.title||
 |user_email|sender_address||
 |user_username|sender_address|This is a split field. More info to come in the catalog later...|

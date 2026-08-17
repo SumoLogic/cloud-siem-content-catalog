@@ -7,6 +7,7 @@ The `type` listed lets you know if you can directly apply the parser to a collec
 |Parser|/Parsers/System/1Password/1Password|
 |Parser|/Parsers/System/1PasswordC2C/1PasswordC2C|
 |Parser|/Parsers/System/AWS/AWS ALB|
+|Parser|/Parsers/System/AWS/AWS API Gateway|
 |Parser|/Parsers/System/AWS/AWS CloudFront|
 |Parser|/Parsers/System/AWS/AWS CloudWatch|
 |Parser|/Parsers/System/AWS/AWS Config|
@@ -50,6 +51,7 @@ The `type` listed lets you know if you can directly apply the parser to a collec
 |Parser|/Parsers/System/BlueCat/BlueCat DHCP-DNS Syslog|
 |Parser|/Parsers/System/Cato Networks/Cato Networks|
 |Parser|/Parsers/System/Check Point/Check Point Avanan JSON|
+|Parser|/Parsers/System/Check Point/Check Point CloudGuard|
 |Parser|/Parsers/System/Check Point/Check Point Firewall JSON|
 |Parser|/Parsers/System/Check Point/Check Point Firewall Syslog|
 |Parser|/Parsers/System/Cisco/Cisco ASA|

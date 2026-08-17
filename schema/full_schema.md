@@ -542,6 +542,7 @@ In cases where the log data has a source or destination context, there are situa
 |srcDevice_uniqueId|string|The unique ID of the host which network traffic originated from. This field is frequently used by cloud providers to identify instances.|
 |srcPort|int|The port number which the network traffic originated from.|
 |success|boolean|True or false showing whether or not an action or event recorded in a log was successful. This field is either defined as a constant or based on a lookup in a mapping.|
+|targetUser_accessId|string|The identifier of a programmatic credential belonging to the impacted or acted upon identity, such as an AWS IAM access key ID, an API key ID, or a service token ID.|
 |targetUser_authDomain|string|The authentication domain of a user which is subject to or is otherwise impacted by activity undertaken by another user. Such as the Active Directory domain to which a new user account being created belongs.|
 |targetUser_email|string|E-Mail address associated with the user which is subject to activity undertaken by another account. Such as an E-Mail address which was created for a new user account.|
 |targetUser_phoneNumber|string|Telephone number associated with the impacted or acted upon user.|
@@ -563,6 +564,7 @@ The value determines which normalized rule set the record participates in.|
 |threat_signalSummary|string|This field is used in conjunction with normalized rules. Those rules will use the text populated in this field as an element of the signal summary, allowing different signal summaries for different products while retaining the normalized rule logic.|
 |timestamp|long|The timestamp of the event stored as milliseconds since epoch. Time can be directly mapped if the log contains epoch time, however other time formats can be mapped if the format is provided. If no timestamp is defined in the mapping, ingest time will be used by default.|
 |uid|string|UID for the parsed record in Sumo Logic CSE.|
+|user_accessId|string|The identifier of a programmatic credential used by the acting identity to authenticate, such as an AWS IAM access key ID, an API key ID, or a service token ID. This identifies the credential itself rather than the account which owns it.|
 |user_authDomain|string|The authentication domain associated with an acting user. Such as an Active Directory domain of a user logging in or is performing an action.|
 |user_email|string|E-Mail address associated with the acting user.|
 |user_phoneNumber|string|Telephone number associated with the acting user.|

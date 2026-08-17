@@ -5,7 +5,6 @@
 |Rule ID|Rule Name|
 |----|----|
 |MATCH-S00402|[Normalized Security Signal](../rules/MATCH-S00402.md)|
-|MATCH-S01024|[Threat Intel - Destination IP Address (High Confidence)](../rules/MATCH-S01024.md)|
 
 
 ## Log Mappers

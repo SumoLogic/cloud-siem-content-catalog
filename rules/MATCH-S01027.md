@@ -2,7 +2,8 @@
 
 ## Description
 This rule detects traffic to IP address with a medium confidence rating from a threat intelligence feed.
-Note that this rule is disabled by default due to a high likelihood of excessive signal volume and risk assignment to entities triggering this rule as-is. Tuning to reduce signal volume and potential false positives is highly recommended before activating this rule.
+Note that this rule is disabled by default due to a high likelihood of excessive signal volume and risk assignment to entities triggering this rule as-is. Using Rule Tuning Expressions to reduce signal volume and potential false positives is highly recommended before activating this rule.
+Severity level can also be overridden to increase or decrease signal severity from the default.
 
 ## Additional Details
 |Detail|Value|
@@ -12,7 +13,7 @@ Note that this rule is disabled by default due to a high likelihood of excessive
 |Apply Risk to Entities|srcDevice_ip, dstDevice_ip, device_ip, srcDevice_ip, srcDevice_hostname, srcDevice_hostname, dstDevice_hostname, device_hostname, user_username|
 |Signal Name|Threat Intel - Inbound Traffic From Threat IP|
 |Summary Expression|Successful inbound network traffic from Threat IP address {{srcDevice_ip}}}|
-|Score/Severity|Static: 0|
+|Score/Severity|Static: 1|
 |Enabled by Default|False|
 |Prototype|False|
 |Tags||
@@ -39,8 +40,6 @@ Note that this rule is disabled by default due to a high likelihood of excessive
 - [Okta - Single Sign-On](../products/51278354-d6b5-4c8e-a8fd-8197df334e67.md)
 - [Palo Alto Networks - Next Generation Firewall](../products/46f5fa2c-1a62-4692-82ad-ed87800a0adb.md)
 - [PingIdentity - PingFederate](../products/b0a0ae6d-dd5b-450c-9d68-36d6c61c67b0.md)
-- [Proofpoint - Targeted Attack Protection](../products/de3d4b6b-36a3-4436-8bfc-0561ac95037e.md)
-- [Slack - Slack](../products/79da6240-7617-49c8-b130-96278579766e.md)
 - [Sophos - UTM 9](../products/0fb003bc-8383-442f-8f3d-afcfbaefe617.md)
 - [Zscaler - Nanolog Streaming Service](../products/6299d728-14f7-455e-85c5-ea8ec65a654a.md)
 

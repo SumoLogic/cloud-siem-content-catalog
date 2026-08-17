@@ -2,6 +2,8 @@
 
 ## Description
 This rule detects traffic to IP address with a high confidence rating from a threat intelligence feed.
+Use Rule Tuning Expressions to reduce signal volume from false positives if desired.
+Severity level can also be overridden to increase or decrease signal severity from the default.
 
 ## Additional Details
 |Detail|Value|
@@ -11,18 +13,15 @@ This rule detects traffic to IP address with a high confidence rating from a thr
 |Apply Risk to Entities|srcDevice_ip, dstDevice_ip, device_ip, srcDevice_ip, srcDevice_hostname, srcDevice_hostname, dstDevice_hostname, device_hostname, user_username|
 |Signal Name|Threat Intel - Inbound Traffic From a High Confidence Threat IP|
 |Summary Expression|Successful inbound network traffic from Threat IP address {{srcDevice_ip}}}|
-|Score/Severity|Static: 0|
+|Score/Severity|Static: 2|
 |Enabled by Default|True|
 |Prototype|False|
 |Tags||
 ## Vendors and Products
-- [1Password - 1Password](../products/3fe1afe0-c1c2-45d6-835e-0bdb1e4b703f.md)
 - [Amazon AWS - AWS S3 Server Access Logs](../products/41f70c6e-18a9-462c-a04d-4edc7baead7a.md)
 - [Amazon AWS - Application Load Balancer](../products/5bb9e0b3-8d57-4b10-8952-0b6ffe91b599.md)
-- [Amazon AWS - CloudTrail](../products/033624b0-218e-4dcb-b93f-0f1fb1806c56.md)
 - [Amazon AWS - VpcFlowLogs](../products/021d1ded-1c82-4663-bf5d-d6ed5170efa3.md)
 - [Amazon AWS - Web Application Firewall (WAF)](../products/072b85a2-1765-45c2-911d-b0509880326e.md)
-- [CheckPoint - Application Control](../products/1624169f-36c4-4309-8400-1409a171d00b.md)
 - [CheckPoint - Firewall and VPN](../products/c3c1a4fc-10cc-4155-8a30-a3bb14fc9f31.md)
 - [CheckPoint - SmartDefense](../products/2b82e665-bdde-474a-ae29-4f0f76598556.md)
 - [CheckPoint - URL Filtering](../products/2a678bcd-898e-43cd-ab3f-91feb0602a18.md)
@@ -35,15 +34,12 @@ This rule detects traffic to IP address with a high confidence rating from a thr
 - [Google - Google Cloud Platform](../products/dcc85cfc-a698-4d09-87de-f2c723f3ad07.md)
 - [Google - Google Workspace](../products/e73cd65a-7a4b-4ce9-9d73-e5d9c824c214.md)
 - [Juniper - SRX Series Firewall](../products/A17B3F3C-04F1-40C8-9497-3C499EB18A74.md)
-- [Linux - Systemd Journal](../products/5be5af82-c248-4c4c-a485-0571025f242c.md)
 - [Microsoft - Azure](../products/a1225af5-e778-4068-a9a2-47da93d1ff24.md)
 - [Microsoft - Defender Advanced Hunting](../products/3382523e-2072-41bd-b50b-6b148957d0b0.md)
 - [Microsoft - IIS](../products/fca8785d-4823-4442-86b2-8acbaa176da4.md)
-- [Microsoft - O365 Exchange Message Trace](../products/183c5127-6594-4d45-9bab-ce5f2df9e38b.md)
 - [Microsoft - Office 365](../products/d3ed003d-5ddd-4c7a-bea5-63eae6311833.md)
 - [Okta - Single Sign-On](../products/51278354-d6b5-4c8e-a8fd-8197df334e67.md)
 - [Palo Alto Networks - Next Generation Firewall](../products/46f5fa2c-1a62-4692-82ad-ed87800a0adb.md)
-- [PingIdentity - PingFederate](../products/b0a0ae6d-dd5b-450c-9d68-36d6c61c67b0.md)
 - [Proofpoint - Targeted Attack Protection](../products/de3d4b6b-36a3-4436-8bfc-0561ac95037e.md)
 - [WatchGuard - Fireware](../products/14aa46d3-0710-44b6-9ce3-0a6b8f36b076.md)
 

@@ -22,8 +22,6 @@ Detects excessive failed login attempts for the same username based on a daily o
 ## Vendors and Products
 - [Amazon AWS - CloudTrail](../products/033624b0-218e-4dcb-b93f-0f1fb1806c56.md)
 - [Auth0 - Auth0](../products/0b45ccba-20b4-41e4-973d-b50fd291944d.md)
-- [Bitwarden - Bitwarden](../products/ebb99eec-3585-4673-ac0f-676632a78305.md)
-- [CheckPoint - Firewall and VPN](../products/c3c1a4fc-10cc-4155-8a30-a3bb14fc9f31.md)
 - [Cisco Systems - ASA](../products/be4f7473-fe69-4311-8859-3561900060bf.md)
 - [Cisco Systems - Identity Services Engine](../products/153794da-09e8-48fe-b511-1306fbb94d07.md)
 - [Cisco Systems - Router and Switch IOS](../products/1abefd5b-ec3d-49c1-8a54-7e6363d52db0.md)
@@ -33,7 +31,6 @@ Detects excessive failed login attempts for the same username based on a daily o
 - [Fortinet - Fortigate](../products/c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad.md)
 - [Google - Google Workspace](../products/e73cd65a-7a4b-4ce9-9d73-e5d9c824c214.md)
 - [HP - Aruba ClearPass](../products/12aba181-2b31-472c-a685-2be492f4778d.md)
-- [JFrog - Artifactory](../products/abe4975e-de65-4f82-8b35-e6ce392e165c.md)
 - [JumpCloud - Directory Insights](../products/05bfaf47-5e21-4d5f-b724-98960a6fca8a.md)
 - [JumpCloud - IdP](../products/1ed80351-d779-4f1f-9ddb-b3881f19d487.md)
 - [Linux - Linux OS Syslog](../products/0e20c932-d992-4bd4-b276-c15119ca5c0b.md)

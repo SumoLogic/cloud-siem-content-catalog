@@ -16,8 +16,6 @@ Passes through an identity or access anomaly detection (e.g. Azure risky user, G
 |Prototype|False|
 |Tags||
 ## Vendors and Products
-- [Microsoft - Azure](../products/a1225af5-e778-4068-a9a2-47da93d1ff24.md)
-- [Slack - Slack](../products/79da6240-7617-49c8-b130-96278579766e.md)
 
 
 ## Fields Used

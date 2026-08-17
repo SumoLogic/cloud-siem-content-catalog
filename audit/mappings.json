@@ -365,8 +365,8 @@
         "uid": "00b5271f-3455-4dd5-b1e6-9cb7f2b8300e"
     },
     "00b5271f-3455-4dd5-b1e6-9cb7f2b8300f": {
-        "commit_message": "Merge branch 'dev' into TRIDENT-11934-FireEye-CMS-Normalized-Rule-Update",
-        "commit_origin_hash": "61fc51b742aa2b0ff2dbf37237c5129bec8d1f15",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "action": {
                 "value": "act"
@@ -416,7 +416,7 @@
                 "value": "cs4"
             },
             "threat_ruleType": {
-                "value": "direct",
+                "value": "network",
                 "value_type": "constant"
             },
             "threat_signalName": {
@@ -1646,8 +1646,8 @@
         "uid": "035baac3-1d87-4d5e-a3e5-ef77bed84f5a"
     },
     "03717690-868e-48e2-be0d-e381a053972e": {
-        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
-        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "description": {
                 "value": "type"
@@ -1754,8 +1754,8 @@
         "uid": "037a5242-77de-443f-b212-e16051c6e7db"
     },
     "03a073b1-75da-404e-b221-a3fac810632a": {
-        "commit_message": "TLAB-2664 PAN session and flag remapping (#5996)",
-        "commit_origin_hash": "a4191240523ce753371bb67c19d7c8b8855860c9",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "action": {
                 "alternate_values": [
@@ -1879,7 +1879,7 @@
                 "value": "threat_name"
             },
             "threat_ruleType": {
-                "value": "direct",
+                "value": "network",
                 "value_type": "constant"
             },
             "threat_signalName": {
@@ -2186,8 +2186,8 @@
         "uid": "04121705-9ef8-4620-99ca-795045ef94dc"
     },
     "0415ad55-fdc3-4cff-a4b0-3f148b7b7737": {
-        "commit_message": "Merge branch 'dev' into TRIDENT-11934-FireEye-CMS-Normalized-Rule-Update",
-        "commit_origin_hash": "61fc51b742aa2b0ff2dbf37237c5129bec8d1f15",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "action": {
                 "value": "act"
@@ -2506,8 +2506,8 @@
         "uid": "0480a75f-94b1-4966-b449-106df44df405"
     },
     "04a8ffb0-f7d8-4999-b9f4-63108097197d": {
-        "commit_message": "TLAB-1212 added skip value",
-        "commit_origin_hash": "f0fe378f1f198f83dd801171cdff6fed7f0ccaa8",
+        "commit_message": "TLAB-2542_Redundancy remediation: Cisco Firepower device/srcDevice mappings (#6011)",
+        "commit_origin_hash": "a8526724473e8db4eaea948dedf1050edaf9e9ba",
         "field_mappings": {
             "action": {
                 "value": "AccessControlRuleAction"
@@ -2916,8 +2916,8 @@
         "uid": "056fef7d-6b70-4163-be8b-373b43cd7225"
     },
     "058c85f4-1e48-44be-9624-99503c435705": {
-        "commit_message": "TLAB-2590 Fortigate Test Fixes (#5971)",
-        "commit_origin_hash": "90bce1b19a116cb5b64837d10ece2cbad27144cc",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -4188,8 +4188,8 @@
         "uid": "093f1178-2597-4a3b-8c6b-6b19f587781f"
     },
     "09680309-ab63-486a-b3b0-70c2e2f28459": {
-        "commit_message": "TLAB-2590 Fortigate Test Fixes (#5971)",
-        "commit_origin_hash": "90bce1b19a116cb5b64837d10ece2cbad27144cc",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "action": {
                 "value": "act"
@@ -4302,8 +4302,8 @@
         "uid": "0973f1a0-7b57-4083-ad42-4f553c5c210d"
     },
     "09a000f5-0586-4ce4-b5d2-c7e99ea14650": {
-        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
-        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "commandLine": {
                 "value": "CommandLine"
@@ -4406,8 +4406,8 @@
         "uid": "09a000f5-0586-4ce4-b5d2-c7e99ea14650"
     },
     "09b8843d-a2dc-4f1b-8562-7a3a8b3760b2": {
-        "commit_message": "feat(mapper): add http_userAgent mapping from ExtendedProperties_UserAgent for O365 Authentication Events (#5983)",
-        "commit_origin_hash": "89274c72ab701d8dee00c5a19a0e8f5b95dc4dbd",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "device_ip": {
                 "value": "0.0.0.0",
@@ -4842,8 +4842,8 @@
         "uid": "09d8aecf-be24-441b-827a-a5ad6aa9c8d6"
     },
     "09ed1bbd-bea6-46b0-b4a0-f830bf73ca8c": {
-        "commit_message": "TLAB-2664 PAN session and flag remapping (#5996)",
-        "commit_origin_hash": "a4191240523ce753371bb67c19d7c8b8855860c9",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "action": {
                 "alternate_values": [
@@ -5413,8 +5413,8 @@
         "uid": "0a95d5c8-db57-4a44-a55f-3359c7420329"
     },
     "0a9bdfb5-9f73-41fe-a51d-1dec2047ac49": {
-        "commit_message": "TLAB-1763 updated the mapper",
-        "commit_origin_hash": "1206481b114573497ec55a8d3db063060ec2005b",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "action": {
                 "value": "act"
@@ -5685,8 +5685,8 @@
         "uid": "0b2fed6f-4039-4854-b6fe-b0035557bd54"
     },
     "0b58e776-a684-400a-8989-6fc162e65111": {
-        "commit_message": "Merge branch 'dev' into TRIDENT-11934-FireEye-CMS-Normalized-Rule-Update",
-        "commit_origin_hash": "61fc51b742aa2b0ff2dbf37237c5129bec8d1f15",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "action": {
                 "value": "act"
@@ -6214,8 +6214,8 @@
         "uid": "0c19b2b2-c901-4038-a9d4-b938d1cad043"
     },
     "0c48fabc-fe89-475d-b539-1f3a8fc4ed64": {
-        "commit_message": "Merge branch 'dev' into TRIDENT-11934-FireEye-CMS-Normalized-Rule-Update",
-        "commit_origin_hash": "61fc51b742aa2b0ff2dbf37237c5129bec8d1f15",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "description": {
                 "value": "CMS Web Infection",
@@ -6262,7 +6262,7 @@
                 "value": "cs4"
             },
             "threat_ruleType": {
-                "value": "direct",
+                "value": "network",
                 "value_type": "constant"
             },
             "threat_signalName": {
@@ -6398,8 +6398,8 @@
         "uid": "0c7120d1-0adc-48c0-a824-526eac5c10e3"
     },
     "0c72a484-087d-4927-8700-efed8f6cd450": {
-        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
-        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "commandLine": {
                 "value": "event.CommandLine"
@@ -6679,8 +6679,8 @@
         "uid": "0d260099-d4a3-4448-83c5-2d3a05365823"
     },
     "0d31d680-6a82-11ea-bc55-0242ac130003": {
-        "commit_message": "feat(mapper): add http_userAgent mapping from ExtendedProperties_UserAgent for O365 Authentication Events (#5983)",
-        "commit_origin_hash": "89274c72ab701d8dee00c5a19a0e8f5b95dc4dbd",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "action": {
                 "value": "Operation"
@@ -6789,8 +6789,8 @@
         "uid": "0dd01f52-eb12-4b8f-adac-982d3a39aed5"
     },
     "0de08132-a926-4741-a5f3-16fa02c3ca2a": {
-        "commit_message": "TRIDENT-14051 Update mappers to use _default_",
-        "commit_origin_hash": "46fe8bfb2159d2b1bc49dd2d481af2c41d0fdf1d",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -6844,7 +6844,7 @@
                 "value": "href"
             },
             "threat_ruleType": {
-                "value": "direct",
+                "value": "network",
                 "value_type": "constant"
             },
             "threat_signalName": {
@@ -7747,8 +7747,8 @@
         "uid": "0efb88b1-a2b5-46e6-bb3c-18c3cbf352b7"
     },
     "0f089ffd-5e40-44a3-8b2d-14a160197bcc": {
-        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
-        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "accountId": {
                 "value": "userStates.1.aadUserId"
@@ -8261,8 +8261,8 @@
         "uid": "1027748c-f2ac-427f-a1eb-8835160a3b38"
     },
     "104cdeac-1041-24e8-10c1-ga7ae01bceb8": {
-        "commit_message": "TLAB-1763 updated the mapper",
-        "commit_origin_hash": "1206481b114573497ec55a8d3db063060ec2005b",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "action": {
                 "value": "act"
@@ -8430,8 +8430,8 @@
         "uid": "10539af5-6147-406c-a8bf-fbdc5c1d5894"
     },
     "10696f30-7c13-4000-94d0-6a5dd69b229e": {
-        "commit_message": "Updated fortinet authentication mapper event_id_pattern (#5981)",
-        "commit_origin_hash": "c53a1eeba4374751c753356236ebf0410f4fe05b",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -8702,8 +8702,8 @@
         "uid": "1133ee12-4b12-4a50-b69f-21a40709eea4"
     },
     "114cdeac-1141-24e8-11c1-ga7ae11bcc10": {
-        "commit_message": "TLAB-1763 updated the mapper",
-        "commit_origin_hash": "1206481b114573497ec55a8d3db063060ec2005b",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "action": {
                 "value": "act"
@@ -8732,7 +8732,7 @@
                 "value": "cat"
             },
             "threat_ruleType": {
-                "value": "direct",
+                "value": "network",
                 "value_type": "constant"
             },
             "threat_signalName": {
@@ -8767,8 +8767,8 @@
         "uid": "114cdeac-1141-24e8-11c1-ga7ae11bcc10"
     },
     "117b79b3-599d-4eb4-b21e-296892d65482": {
-        "commit_message": "TLAB-2137: Created the mapper for Vectra AI (#5817)",
-        "commit_origin_hash": "10c1d390f3f222311085482f893bb4f382122d16",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "action": {
                 "value": "summary.operations.1"
@@ -9033,7 +9033,7 @@
                 "value": "url"
             },
             "threat_ruleType": {
-                "value": "direct",
+                "value": "network",
                 "value_type": "constant"
             },
             "threat_signalName": {
@@ -9247,8 +9247,8 @@
         "uid": "11a504e8-085d-489a-8792-2d36a63e0877"
     },
     "11acde72-ed1c-44e6-8fd5-61debaf06512": {
-        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
-        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "description": {
                 "value": "event.IncidentDescription"
@@ -9432,8 +9432,8 @@
         "uid": "11bdca6a-3201-4331-a871-4a9e24d2a343"
     },
     "11e05ff0-cf14-47d4-9e5f-ec702a3fd53e": {
-        "commit_message": "TLAB-2067: updated fields mappings (#5939)",
-        "commit_origin_hash": "ca238e9c16094d90ebd6786d3ac42b31babfee4e",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "application": {
                 "value": "app"
@@ -9526,7 +9526,7 @@
                 "value": "alert_name"
             },
             "threat_ruleType": {
-                "value": "direct",
+                "value": "data_protection",
                 "value_type": "constant"
             },
             "threat_signalName": {
@@ -9763,8 +9763,8 @@
         "uid": "12996e2b-9330-4984-9992-424e9942e617"
     },
     "12b6bde9-4919-446c-8794-cad266a53df4": {
-        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
-        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "description": {
                 "value": "cat"
@@ -11456,8 +11456,8 @@
         "uid": "17e4bad6-e477-43fc-9d31-3d72ac9e5970"
     },
     "17f6e54b-5afb-4654-923b-daa2ba6601cd": {
-        "commit_message": "TLAB-2664 PAN session and flag remapping (#5996)",
-        "commit_origin_hash": "a4191240523ce753371bb67c19d7c8b8855860c9",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "action": {
                 "alternate_values": [
@@ -11891,8 +11891,8 @@
         "uid": "180e8a5a-8184-4a84-a8fa-93b914738a86"
     },
     "18615b96-a972-11ea-bb37-0242ac130002": {
-        "commit_message": "feat(mapper): add http_userAgent mapping from ExtendedProperties_UserAgent for O365 Authentication Events (#5983)",
-        "commit_origin_hash": "89274c72ab701d8dee00c5a19a0e8f5b95dc4dbd",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "device_ip": {
                 "value": "ClientIP"
@@ -12040,8 +12040,8 @@
         "uid": "18768bc7-df8e-437a-8ac9-8eab87db4add"
     },
     "1887d1cc-3fdc-481d-8da0-1ee18d6ce863": {
-        "commit_message": "TRIDENT-14051 Update mappers to use _default_",
-        "commit_origin_hash": "46fe8bfb2159d2b1bc49dd2d481af2c41d0fdf1d",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "description": {
                 "value": "name"
@@ -12065,7 +12065,7 @@
                 "value": "query"
             },
             "threat_ruleType": {
-                "value": "direct",
+                "value": "network",
                 "value_type": "constant"
             },
             "threat_signalName": {
@@ -12097,8 +12097,8 @@
         "uid": "1887d1cc-3fdc-481d-8da0-1ee18d6ce863"
     },
     "18a1a332-3053-4c1c-8476-2851305db333": {
-        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
-        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "description": {
                 "value": "event.DetectDescription"
@@ -12449,8 +12449,8 @@
         "uid": "1915bd6c-193e-4a7d-b3fc-f947a55c9bd8"
     },
     "1929a11a-b312-4bd3-9f80-a152c1c7182b": {
-        "commit_message": "TLAB-2118: added alternate for threat name (#5812)",
-        "commit_origin_hash": "c7cb417cab4c590dea7a0dc0633df576dd1d3b08",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -13844,8 +13844,8 @@
         "uid": "1add6fe1-8aff-4b55-817e-0ccd569f99d6"
     },
     "1b0609f0-44bd-4333-bf67-dcbfe20cf855": {
-        "commit_message": "TLAB-2664 PAN session and flag remapping (#5996)",
-        "commit_origin_hash": "a4191240523ce753371bb67c19d7c8b8855860c9",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "action": {
                 "alternate_values": [
@@ -15555,8 +15555,8 @@
         "uid": "1e2f3a4b-5c6d-7e8f-9a0b-1c2d3e4f5a6b"
     },
     "1e4f0404-fa49-4570-83fb-2933611941d0": {
-        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
-        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "action": {
                 "value": "data.systemActionType"
@@ -15602,7 +15602,7 @@
                 "value": "type"
             },
             "threat_ruleType": {
-                "value": "direct",
+                "value": "data_protection",
                 "value_type": "constant"
             },
             "threat_signalName": {
@@ -16528,8 +16528,8 @@
         "uid": "1fdbfae1-89ee-4a12-a43e-983e3cb60ecc"
     },
     "1fe1e307-3010-43dc-8be6-9855d74f07cd": {
-        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
-        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "description": {
                 "value": "type"
@@ -16908,8 +16908,8 @@
         "uid": "202b0cfa-4227-4f96-863a-bdf65f2d11f3"
     },
     "2041eb1c-fdbf-46bd-aed9-b48047ae6962": {
-        "commit_message": "TLAB-2118: added alternate for threat name (#5812)",
-        "commit_origin_hash": "c7cb417cab4c590dea7a0dc0633df576dd1d3b08",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "action": {
                 "value": "auditType"
@@ -16970,8 +16970,8 @@
         "uid": "2041eb1c-fdbf-46bd-aed9-b48047ae6962"
     },
     "20871df8-533d-4aff-8328-037a9462f279": {
-        "commit_message": "feat(mapper): add http_userAgent mapping from ExtendedProperties_UserAgent for O365 Authentication Events (#5983)",
-        "commit_origin_hash": "89274c72ab701d8dee00c5a19a0e8f5b95dc4dbd",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "action": {
                 "value": "Operation"
@@ -16981,9 +16981,6 @@
             },
             "cause": {
                 "value": "LogonError"
-            },
-            "device_ip": {
-                "value": "ActorIpAddress"
             },
             "http_userAgent": {
                 "value": "ExtendedProperties_UserAgent"
@@ -17067,8 +17064,8 @@
         "uid": "20871df8-533d-4aff-8328-037a9462f279"
     },
     "20d40265-d406-4240-b15b-853dc633c101": {
-        "commit_message": "Update claroty_xdome.yaml",
-        "commit_origin_hash": "b469cf617efcbba395b86ae1a431c73b821e113e",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "description": {
                 "value": "event_description"
@@ -17194,8 +17191,8 @@
         "uid": "212dc2dd-c919-498c-aa72-5e2e2d7cb094"
     },
     "217675d0-ca6c-4f18-9abb-e160a5360d34": {
-        "commit_message": "TRIDENT-15588 Adjust BitDefender mapper, etc to accept all modules",
-        "commit_origin_hash": "c24e597127203372b2e89a64adcb544cdbdcdd80",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "action": {
                 "value": "params.events.status"
@@ -17221,7 +17218,7 @@
                 "value": "params.events.status"
             },
             "threat_ruleType": {
-                "value": "direct",
+                "value": "network",
                 "value_type": "constant"
             },
             "threat_signalName": {
@@ -17851,8 +17848,8 @@
         "uid": "2325f6db-aa0e-4435-8543-d8dbf4ab45a3"
     },
     "239e413b-5cd1-40fa-b775-e35b444856b5": {
-        "commit_message": "Updated fortinet authentication mapper event_id_pattern (#5981)",
-        "commit_origin_hash": "c53a1eeba4374751c753356236ebf0410f4fe05b",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "description": {
                 "alternate_values": [
@@ -18063,8 +18060,8 @@
         "uid": "23c8887f-991b-4f7b-8285-e1082e4581bc"
     },
     "23fff586-11d2-4e64-af26-7d93dd575779": {
-        "commit_message": "TLAB-2067: updated fields mappings (#5939)",
-        "commit_origin_hash": "ca238e9c16094d90ebd6786d3ac42b31babfee4e",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "application": {
                 "value": "x-cs-app"
@@ -18512,8 +18509,8 @@
         "uid": "253376bf-dbdd-4a19-9ede-29d3c16cccf4"
     },
     "256df1c8-7090-4499-a46e-289f7ee8a5f6": {
-        "commit_message": "Merge branch 'dev' into TRIDENT-11934-FireEye-CMS-Normalized-Rule-Update",
-        "commit_origin_hash": "61fc51b742aa2b0ff2dbf37237c5129bec8d1f15",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "description": {
                 "value": "CMS IPS",
@@ -18589,8 +18586,8 @@
         "uid": "256df1c8-7090-4499-a46e-289f7ee8a5f6"
     },
     "256df1c8-7090-4499-a46e-289f7ee8a5f7": {
-        "commit_message": "Merge branch 'dev' into TRIDENT-11934-FireEye-CMS-Normalized-Rule-Update",
-        "commit_origin_hash": "61fc51b742aa2b0ff2dbf37237c5129bec8d1f15",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "description": {
                 "value": "CMS Domain Match",
@@ -18634,7 +18631,7 @@
                 "value": "cs4"
             },
             "threat_ruleType": {
-                "value": "direct",
+                "value": "network",
                 "value_type": "constant"
             },
             "threat_signalName": {
@@ -18666,8 +18663,8 @@
         "uid": "256df1c8-7090-4499-a46e-289f7ee8a5f7"
     },
     "256df1c8-7090-4499-a46e-289f7ee8a5f8": {
-        "commit_message": "Merge branch 'dev' into TRIDENT-11934-FireEye-CMS-Normalized-Rule-Update",
-        "commit_origin_hash": "61fc51b742aa2b0ff2dbf37237c5129bec8d1f15",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "description": {
                 "value": "CMS Infect Match",
@@ -18711,7 +18708,7 @@
                 "value": "cs4"
             },
             "threat_ruleType": {
-                "value": "direct",
+                "value": "network",
                 "value_type": "constant"
             },
             "threat_signalName": {
@@ -18743,8 +18740,8 @@
         "uid": "256df1c8-7090-4499-a46e-289f7ee8a5f8"
     },
     "256df1c8-7090-4499-a46e-289f7ee8a5f9": {
-        "commit_message": "Merge branch 'dev' into TRIDENT-11934-FireEye-CMS-Normalized-Rule-Update",
-        "commit_origin_hash": "61fc51b742aa2b0ff2dbf37237c5129bec8d1f15",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "description": {
                 "value": "CMS Riskware Callback",
@@ -18791,7 +18788,7 @@
                 "value": "cs4"
             },
             "threat_ruleType": {
-                "value": "direct",
+                "value": "network",
                 "value_type": "constant"
             },
             "threat_signalName": {
@@ -18823,8 +18820,8 @@
         "uid": "256df1c8-7090-4499-a46e-289f7ee8a5f9"
     },
     "256df1c8-7090-4499-a46e-289f7ee8a5g1": {
-        "commit_message": "Merge branch 'dev' into TRIDENT-11934-FireEye-CMS-Normalized-Rule-Update",
-        "commit_origin_hash": "61fc51b742aa2b0ff2dbf37237c5129bec8d1f15",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "description": {
                 "value": "CMS Riskware Object",
@@ -18862,7 +18859,7 @@
                 "value": "cs4"
             },
             "threat_ruleType": {
-                "value": "direct",
+                "value": "network",
                 "value_type": "constant"
             },
             "threat_signalName": {
@@ -19690,8 +19687,8 @@
         "uid": "26cf4e3d-541a-445e-bf7b-685b187c7f6c"
     },
     "2735f433-02f8-43e2-9af1-4cf14b9d7133": {
-        "commit_message": "TLAB-2137: Created the mapper for Vectra AI (#5817)",
-        "commit_origin_hash": "10c1d390f3f222311085482f893bb4f382122d16",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "application": {
                 "alternate_values": [
@@ -19918,7 +19915,7 @@
                 "value": "url"
             },
             "threat_ruleType": {
-                "value": "direct",
+                "value": "network",
                 "value_type": "constant"
             },
             "threat_signalName": {
@@ -19961,8 +19958,8 @@
         "uid": "2735f433-02f8-43e2-9af1-4cf14b9d7133"
     },
     "27361649-179a-442a-bda9-00dc99ed1e79": {
-        "commit_message": "TRIDENT-15588 Adjust BitDefender mapper, etc to accept all modules",
-        "commit_origin_hash": "c24e597127203372b2e89a64adcb544cdbdcdd80",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "baseImage": {
                 "value": "params.events.file_path"
@@ -20149,8 +20146,8 @@
         "uid": "27479c62-d71d-4ba4-9589-95860301ad0d"
     },
     "2771d5de-5a61-41fd-8b8e-b305f74a156b": {
-        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
-        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "description": {
                 "alternate_values": [
@@ -20386,8 +20383,8 @@
         "uid": "27909e48-6b07-44c7-be5d-50a61bb58145"
     },
     "279fabe5-d3a3-468a-a908-d110099bb244": {
-        "commit_message": "feat(mapper): add http_userAgent mapping from ExtendedProperties_UserAgent for O365 Authentication Events (#5983)",
-        "commit_origin_hash": "89274c72ab701d8dee00c5a19a0e8f5b95dc4dbd",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "device_ip": {
                 "value": "0.0.0.0",
@@ -21788,8 +21785,8 @@
         "uid": "299982c4-2111-48fc-ab52-77bbdeef3670"
     },
     "29d502c1-9182-439a-86f3-bc3760e6eef2": {
-        "commit_message": "TLAB-1763 updated the mapper",
-        "commit_origin_hash": "1206481b114573497ec55a8d3db063060ec2005b",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "action": {
                 "value": "act"
@@ -22411,8 +22408,8 @@
         "uid": "2aa066b7-cb03-4827-96e5-6f37af056599"
     },
     "2b2a6f91-1b25-402a-a53b-255da3cca21b": {
-        "commit_message": "TLAB-270 Darktrace Mapper Additions",
-        "commit_origin_hash": "6b77f4d6babd6b8d2e62fa1d625ee8d8bac17788",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "description": {
                 "value": "model.description"
@@ -23708,8 +23705,8 @@
         "uid": "2d425a59-1850-4867-bbe4-b96b9a94a6ff"
     },
     "2d4dc77e-5064-4a07-8cff-1822dce0509a": {
-        "commit_message": "TLAB-1763 updated the mapper",
-        "commit_origin_hash": "1206481b114573497ec55a8d3db063060ec2005b",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "commandLine": {
                 "value": "command_line"
@@ -23917,8 +23914,8 @@
         "uid": "2d8a8585-9f03-4668-9e97-fa7b6853accc"
     },
     "2dcf62db-d79f-4a03-9a3a-24bf67bdbe67": {
-        "commit_message": "TLAB-2664 PAN session and flag remapping (#5996)",
-        "commit_origin_hash": "a4191240523ce753371bb67c19d7c8b8855860c9",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "action": {
                 "value": "stage"
@@ -24190,8 +24187,8 @@
         "uid": "2e66cc69-ae68-4962-92c6-6640442dc193"
     },
     "2e935d31-5a80-4a56-b6d0-534ce26f60d2": {
-        "commit_message": "TLAB-2118: added alternate for threat name (#5812)",
-        "commit_origin_hash": "c7cb417cab4c590dea7a0dc0633df576dd1d3b08",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "action": {
                 "alternate_values": [
@@ -25465,8 +25462,8 @@
         "uid": "2f81fa0d-bb46-41e7-b1bd-4cc6dd0ad02d"
     },
     "2f879e2d-56b8-4253-a257-a35c13b0e83f": {
-        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
-        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "action": {
                 "value": "metadata.eventType"
@@ -25596,8 +25593,8 @@
         "uid": "2f9155e7-9f63-496d-89dc-ee5799f800a8"
     },
     "2fccc17b-4b0e-4507-9399-86b45d1014cd": {
-        "commit_message": "TLAB-2118: added alternate for threat name (#5812)",
-        "commit_origin_hash": "c7cb417cab4c590dea7a0dc0633df576dd1d3b08",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "application": {
                 "value": "Application"
@@ -25619,7 +25616,7 @@
                 "value": "url"
             },
             "threat_ruleType": {
-                "value": "direct",
+                "value": "data_protection",
                 "value_type": "constant"
             },
             "threat_signalName": {
@@ -25735,10 +25732,13 @@
         "uid": "2ff7bbe8-4347-45e5-ad56-ffb97c453d1f"
     },
     "3059a962-1a71-4daa-a7b7-47b2d7e321e0": {
-        "commit_message": "TRIDENT-16561 AWS Mapper Normalization",
-        "commit_origin_hash": "99630529c7e32b193cb7add5590bcf9dd5e5e727",
+        "commit_message": "TLAB-2713 added alternate input values to support samples provided by customer (#6016)",
+        "commit_origin_hash": "e58600d15ca16c542c8d8e0bbc9ddb76ab7445c1",
         "field_mappings": {
             "accountId": {
+                "alternate_values": [
+                    "accountId"
+                ],
                 "value": "message.accountId"
             },
             "cloud_provider": {
@@ -25749,25 +25749,49 @@
                 "value": "API Gateway",
                 "value_type": "constant"
             },
+            "http_hostname": {
+                "value": "domainName"
+            },
             "http_method": {
+                "alternate_values": [
+                    "httpMethod"
+                ],
                 "value": "message.httpMethod"
             },
             "http_response_contentLength": {
+                "alternate_values": [
+                    "responseLength"
+                ],
                 "value": "message.responseLength"
             },
             "http_response_statusCode": {
+                "alternate_values": [
+                    "status"
+                ],
                 "value": "message.status"
             },
+            "http_url": {
+                "value": "path"
+            },
             "http_userAgent": {
+                "alternate_values": [
+                    "identityUserAgent"
+                ],
                 "value": "message.userAgent"
             },
             "srcDevice_ip": {
+                "alternate_values": [
+                    "identitySourceIp"
+                ],
                 "value": "message_ip"
             },
             "tcpProtocol": {
                 "value": "message.protocol"
             },
             "timestamp": {
+                "alternate_values": [
+                    "requestTime"
+                ],
                 "format": "dd/MMM/yyyy:HH:mm:ss Z",
                 "value": "message.requestTime",
                 "value_type": "time"
@@ -26552,8 +26576,8 @@
         "uid": "3152d898-4618-4b29-9ebf-7f107a1e814e"
     },
     "31886ca5-59da-45e2-b2a2-3b1381c0f06e": {
-        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
-        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "accountId": {
                 "value": "userStates.1.aadUserId"
@@ -26827,8 +26851,8 @@
         "uid": "31C3106A-847C-4965-91C5-9B137667475C"
     },
     "32325f4b-d00f-4823-aee1-9b79dd5aa10c": {
-        "commit_message": "TLAB-2118: added alternate for threat name (#5812)",
-        "commit_origin_hash": "c7cb417cab4c590dea7a0dc0633df576dd1d3b08",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "accountId": {
                 "alternate_values": [
@@ -27783,12 +27807,9 @@
         "uid": "34e51720-23f4-4a86-86c2-ba121ffa0fae"
     },
     "34fd7e6c-85ef-421c-ab4f-84f9a31b835b": {
-        "commit_message": "TLAB-1212 added skip value",
-        "commit_origin_hash": "f0fe378f1f198f83dd801171cdff6fed7f0ccaa8",
+        "commit_message": "TLAB-2542_Redundancy remediation: Cisco Firepower device/srcDevice mappings (#6011)",
+        "commit_origin_hash": "a8526724473e8db4eaea948dedf1050edaf9e9ba",
         "field_mappings": {
-            "device_ip": {
-                "value": "SrcIP"
-            },
             "dstDevice_ip": {
                 "value": "DstIP"
             },
@@ -27907,8 +27928,8 @@
         "uid": "350a22fe-dd0e-4cbc-985e-a62e6ddea383"
     },
     "354f3ec7-3c0a-470b-94b3-04a706cdf428": {
-        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
-        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "accountId": {
                 "value": "userStates.1.aadUserId"
@@ -28608,8 +28629,8 @@
         "uid": "37eb382b-c790-47f1-ad90-011cf04ae821"
     },
     "381881fc8-bdc5-48fd-bd12-f01c893ad529": {
-        "commit_message": "TLAB-2067: updated fields mappings (#5939)",
-        "commit_origin_hash": "ca238e9c16094d90ebd6786d3ac42b31babfee4e",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "application": {
                 "value": "app"
@@ -28804,8 +28825,8 @@
         "uid": "3859c1da-3644-410b-931e-2ee949d1917a"
     },
     "38a062b1-1308-4b5d-851e-e0f93e27c1c9": {
-        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
-        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "description": {
                 "value": "cat"
@@ -29037,8 +29058,8 @@
         "uid": "38eab1f4-619f-40c4-b64d-0f43a311d6ff"
     },
     "3952b643-4001-483e-bc06-8f8faf264262": {
-        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
-        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "commandLine": {
                 "value": "event.CommandLine"
@@ -29347,8 +29368,8 @@
         "uid": "399c5b78-ac62-4174-82e5-c1c776e10216"
     },
     "39d2b5a4-98e3-4b43-b278-a25330a1a018": {
-        "commit_message": "TLAB-2243: added threat signal name and rule type (#5862)",
-        "commit_origin_hash": "f90febfa9fd9fd94f2be2d463cb7c5e87015e756",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "action": {
                 "value": "event.security_event.security_event_action.1.action_type"
@@ -29384,7 +29405,7 @@
                 "value": "event.security_event.entity_payload.category"
             },
             "threat_ruleType": {
-                "value": "direct",
+                "value": "data_protection",
                 "value_type": "constant"
             },
             "threat_signalName": {
@@ -29451,8 +29472,8 @@
         "uid": "39e38e77-3027-4083-9eb8-c41c6415fe16"
     },
     "3E90EADD-5BA4-469A-8501-5FC0BE433B21": {
-        "commit_message": "TLAB-2067: updated fields mappings (#5939)",
-        "commit_origin_hash": "ca238e9c16094d90ebd6786d3ac42b31babfee4e",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "action": {
                 "alternate_values": [
@@ -29589,7 +29610,7 @@
                 "value": "alert_name"
             },
             "threat_ruleType": {
-                "value": "direct",
+                "value": "data_protection",
                 "value_type": "constant"
             },
             "threat_signalName": {
@@ -30340,8 +30361,8 @@
         "uid": "3cdb4d00-34fb-43d2-af37-a9c0a3383e87"
     },
     "3cf18a06-4509-42c1-ae8f-d5e0a9f47611": {
-        "commit_message": "TLAB-270 Darktrace Mapper Additions",
-        "commit_origin_hash": "6b77f4d6babd6b8d2e62fa1d625ee8d8bac17788",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "description": {
                 "value": "model.description"
@@ -30530,8 +30551,8 @@
         "uid": "3d258ba5-0e2d-4b15-a419-25ccf870c9cc"
     },
     "3d305450-6c23-4e0f-b7e1-b1b7a648f0ec": {
-        "commit_message": "feat(mapper): add http_userAgent mapping from ExtendedProperties_UserAgent for O365 Authentication Events (#5983)",
-        "commit_origin_hash": "89274c72ab701d8dee00c5a19a0e8f5b95dc4dbd",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "device_ip": {
                 "value": "0.0.0.0",
@@ -30625,8 +30646,8 @@
         "uid": "3d3b8b62-3d64-4305-90cd-881f6541af31"
     },
     "3d42cc1a-80d1-4da5-a6a4-022dabbaca77": {
-        "commit_message": "TLAB-1763 updated the mapper",
-        "commit_origin_hash": "1206481b114573497ec55a8d3db063060ec2005b",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "severity": {
                 "value": "cn1"
@@ -30657,8 +30678,8 @@
         "uid": "3d42cc1a-80d1-4da5-a6a4-022dabbaca77"
     },
     "3d830705-fc67-45e9-878a-443ed806cf32": {
-        "commit_message": "feat(mapper): add http_userAgent mapping from ExtendedProperties_UserAgent for O365 Authentication Events (#5983)",
-        "commit_origin_hash": "89274c72ab701d8dee00c5a19a0e8f5b95dc4dbd",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "action": {
                 "value": "Operation"
@@ -31835,8 +31856,8 @@
         "uid": "3fe47187-8a81-4e1a-b80b-c0f2c4237ff6"
     },
     "3ff36059-f6f2-48aa-a88c-ef4485e7b151": {
-        "commit_message": "feat(mapper): add http_userAgent mapping from ExtendedProperties_UserAgent for O365 Authentication Events (#5983)",
-        "commit_origin_hash": "89274c72ab701d8dee00c5a19a0e8f5b95dc4dbd",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "action": {
                 "value": "Operation"
@@ -32607,8 +32628,8 @@
         "uid": "4059c1da-4644-510b-931e-7ee949d1918b"
     },
     "409d74ba-3084-4a5b-a840-50e3bd428867": {
-        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
-        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "device_ip": {
                 "value": "event.UserIp"
@@ -32948,8 +32969,8 @@
         "uid": "4149aadf-b757-44fd-8a28-9ecc1dc39a78"
     },
     "4185bef3-0a54-4333-8c12-e8964df47af5": {
-        "commit_message": "TLAB-2070: added new mapper",
-        "commit_origin_hash": "e2cc8ff669d7b18070b010fb581ae90853a62fbe",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "device_hostname": {
                 "alternate_values": [
@@ -32977,7 +32998,7 @@
                 "value_type": "constant"
             },
             "threat_ruleType": {
-                "value": "direct",
+                "value": "network",
                 "value_type": "constant"
             },
             "threat_signalName": {
@@ -33105,8 +33126,8 @@
         "uid": "4219f2ac-0630-47a7-993e-bc51f37f5620"
     },
     "42220608-501e-4a74-ab9b-1b31d5a8a2a5": {
-        "commit_message": "feat(mapper): add http_userAgent mapping from ExtendedProperties_UserAgent for O365 Authentication Events (#5983)",
-        "commit_origin_hash": "89274c72ab701d8dee00c5a19a0e8f5b95dc4dbd",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "action": {
                 "value": "Operation"
@@ -33140,7 +33161,7 @@
                 "value": "EventDeepLink"
             },
             "threat_ruleType": {
-                "value": "direct",
+                "value": "data_protection",
                 "value_type": "constant"
             },
             "threat_signalName": {
@@ -34355,8 +34376,8 @@
         "uid": "45912489-975f-479d-8806-0ab51acbf168"
     },
     "459c7c66-b87e-48b9-a35b-9315204f9a6c": {
-        "commit_message": "feat(mapper): add http_userAgent mapping from ExtendedProperties_UserAgent for O365 Authentication Events (#5983)",
-        "commit_origin_hash": "89274c72ab701d8dee00c5a19a0e8f5b95dc4dbd",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "device_ip": {
                 "value": "ClientIP"
@@ -34876,8 +34897,8 @@
         "uid": "462b7940-6803-4387-8669-c1322cb424ca"
     },
     "46404344-3d7a-4fd8-a580-accf6180cceb": {
-        "commit_message": "feat(mapper): add http_userAgent mapping from ExtendedProperties_UserAgent for O365 Authentication Events (#5983)",
-        "commit_origin_hash": "89274c72ab701d8dee00c5a19a0e8f5b95dc4dbd",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "device_ip": {
                 "value": "0.0.0.0",
@@ -35359,8 +35380,8 @@
         "uid": "46b25ce8-b185-4e22-864d-80d97e26460f"
     },
     "46be6981-3d59-47cc-b358-a091280a0af5": {
-        "commit_message": "feat(mapper): add http_userAgent mapping from ExtendedProperties_UserAgent for O365 Authentication Events (#5983)",
-        "commit_origin_hash": "89274c72ab701d8dee00c5a19a0e8f5b95dc4dbd",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "description": {
                 "value": "Name"
@@ -35400,7 +35421,7 @@
                 "value": "AlertLinks.1.AlertLinkHref"
             },
             "threat_ruleType": {
-                "value": "direct",
+                "value": "data_protection",
                 "value_type": "constant"
             },
             "threat_signalName": {
@@ -36005,8 +36026,8 @@
         "uid": "47e77961-aaaf-4e85-94b6-8e3a4e17e442"
     },
     "480af86a-a973-11ea-bb37-0242ac130002": {
-        "commit_message": "feat(mapper): add http_userAgent mapping from ExtendedProperties_UserAgent for O365 Authentication Events (#5983)",
-        "commit_origin_hash": "89274c72ab701d8dee00c5a19a0e8f5b95dc4dbd",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "action": {
                 "value": "Operation"
@@ -36587,8 +36608,8 @@
         "uid": "497f325f-2dfe-4ac5-92ab-a0a209aba2f4"
     },
     "4986836c-1759-422b-b5c4-8a548f18616b": {
-        "commit_message": "TLAB-2590 Fortigate Test Fixes (#5971)",
-        "commit_origin_hash": "90bce1b19a116cb5b64837d10ece2cbad27144cc",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "action": {
                 "value": "act"
@@ -37060,8 +37081,8 @@
         "uid": "4FBE61BE-97D5-4134-926C-F91A453C095A"
     },
     "4a0c8b8c-6c3b-48c3-9d92-a378dfe8c191": {
-        "commit_message": "TRIDENT-15317 Varonis product DatAlert (UBA)",
-        "commit_origin_hash": "5eaf4259cf29c5ed3f172442b2729a79c0945128",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "description": {
                 "alternate_values": [
@@ -37100,7 +37121,7 @@
                 "value": "Severity"
             },
             "threat_ruleType": {
-                "value": "direct",
+                "value": "data_protection",
                 "value_type": "constant"
             },
             "threat_signalName": {
@@ -37741,8 +37762,8 @@
         "uid": "4bhd6341-1e3c-45a1-2145-5b5e7eb5250f"
     },
     "4c0bdae5-7127-4caf-b9be-bd5eed63a962": {
-        "commit_message": "TLAB-2067: updated fields mappings (#5939)",
-        "commit_origin_hash": "ca238e9c16094d90ebd6786d3ac42b31babfee4e",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "action": {
                 "value": "activity"
@@ -38059,8 +38080,8 @@
         "uid": "4d0d8b01-a9b7-43b1-a4c0-f20204bcb489"
     },
     "4d14a9ab-2427-44e6-a56a-20c7f2d55460": {
-        "commit_message": "TLAB-1763 updated the mapper",
-        "commit_origin_hash": "1206481b114573497ec55a8d3db063060ec2005b",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "action": {
                 "value": "ActionResult"
@@ -38239,8 +38260,8 @@
         "uid": "4d290a08-89cb-45b8-8504-954817ac4b9e"
     },
     "4d3cad22-db35-4aa0-83ae-025d728e8a22": {
-        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
-        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "action": {
                 "value": "metadata.status"
@@ -40773,8 +40794,8 @@
         "uid": "5230380b-14fd-447e-8a0f-c652769e95b0"
     },
     "52351529-dfdd-4f70-8d0f-1321cf55a61f": {
-        "commit_message": "TLAB-2664 PAN session and flag remapping (#5996)",
-        "commit_origin_hash": "a4191240523ce753371bb67c19d7c8b8855860c9",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "action": {
                 "alternate_values": [
@@ -41236,8 +41257,8 @@
         "uid": "52a09f38-549b-4fb5-a351-a126a1c7c5c7"
     },
     "52a8f830-0053-4253-b07d-8cfd7082b778": {
-        "commit_message": "TRIDENT-15404 Assistance with Egnyte DLP Parser",
-        "commit_origin_hash": "4b2f853f2c4aab22800a5818a23e1dcfa5274abc",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "action": {
                 "value": "status"
@@ -41274,7 +41295,7 @@
                 "value": "type"
             },
             "threat_ruleType": {
-                "value": "direct",
+                "value": "data_protection",
                 "value_type": "constant"
             },
             "threat_signalName": {
@@ -42101,8 +42122,8 @@
         "uid": "5406ec15-2203-460b-bd6e-ea8facf33082"
     },
     "54198319-5c3b-4897-a857-be82962cfd00": {
-        "commit_message": "TLAB-2590 Fortigate Test Fixes (#5971)",
-        "commit_origin_hash": "90bce1b19a116cb5b64837d10ece2cbad27144cc",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "description": {
                 "value": "logdesc"
@@ -44397,8 +44418,8 @@
         "uid": "57912336-4c06-4176-9e93-a4b75051552f"
     },
     "5792195e-5a2a-487c-a71f-63becfe8895f": {
-        "commit_message": "feat(mapper): add http_userAgent mapping from ExtendedProperties_UserAgent for O365 Authentication Events (#5983)",
-        "commit_origin_hash": "89274c72ab701d8dee00c5a19a0e8f5b95dc4dbd",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "description": {
                 "value": "PolicyDetails.1.Rules.1.RuleName"
@@ -44417,7 +44438,7 @@
                 "value": "PolicyDetails.1.Rules.1.Severity"
             },
             "threat_ruleType": {
-                "value": "direct",
+                "value": "data_protection",
                 "value_type": "constant"
             },
             "threat_signalName": {
@@ -44572,8 +44593,8 @@
         "uid": "57b9743d-249a-41d8-a216-32657adcc248"
     },
     "57d88cb7-d80d-4e02-b6ab-b4b722529bea": {
-        "commit_message": "feat(mapper): add http_userAgent mapping from ExtendedProperties_UserAgent for O365 Authentication Events (#5983)",
-        "commit_origin_hash": "89274c72ab701d8dee00c5a19a0e8f5b95dc4dbd",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "action": {
                 "value": "Operation"
@@ -44623,8 +44644,8 @@
         "uid": "57d88cb7-d80d-4e02-b6ab-b4b722529bea"
     },
     "58649ff1-4945-4b53-928b-26845d1e410b": {
-        "commit_message": "Merge branch 'dev' into TRIDENT-11934-FireEye-CMS-Normalized-Rule-Update",
-        "commit_origin_hash": "61fc51b742aa2b0ff2dbf37237c5129bec8d1f15",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "action": {
                 "value": "act"
@@ -44974,8 +44995,8 @@
         "uid": "592fd1db-91d1-4305-a1f9-fe8e2c7457bf"
     },
     "5973FCD7-7D5A-4BDF-BB58-4AB6868D428C": {
-        "commit_message": "TLAB-2067: updated fields mappings (#5939)",
-        "commit_origin_hash": "ca238e9c16094d90ebd6786d3ac42b31babfee4e",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "action": {
                 "value": "activity"
@@ -45630,8 +45651,8 @@
         "uid": "5a914e06-8972-11ea-bc55-0242ac130003"
     },
     "5ac00bf7-2a94-4c2f-a56a-da56c2fd0f3c": {
-        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
-        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "description": {
                 "value": "cat"
@@ -46205,8 +46226,8 @@
         "uid": "5c2c9bfd-e09b-4a37-9e63-efd084fd4594"
     },
     "5c55809d-b468-4543-b4ed-4c310d4034e8": {
-        "commit_message": "feat(mapper): add http_userAgent mapping from ExtendedProperties_UserAgent for O365 Authentication Events (#5983)",
-        "commit_origin_hash": "89274c72ab701d8dee00c5a19a0e8f5b95dc4dbd",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "description": {
                 "value": "Name"
@@ -46897,8 +46918,8 @@
         "uid": "5e6f7a8b-9c0d-1e2f-3a4b-5c6d7e8f9a0b"
     },
     "5f2f0759-0e26-412a-b5d4-aeeb52a6b9ea": {
-        "commit_message": "feat(mapper): add http_userAgent mapping from ExtendedProperties_UserAgent for O365 Authentication Events (#5983)",
-        "commit_origin_hash": "89274c72ab701d8dee00c5a19a0e8f5b95dc4dbd",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "action": {
                 "value": "Operation"
@@ -46959,8 +46980,8 @@
         "uid": "5f2f0759-0e26-412a-b5d4-aeeb52a6b9ea"
     },
     "5f74dfe5-d915-4041-b71a-c8659dc2074d": {
-        "commit_message": "TRIDENT-15317 Varonis product DatAlert (UBA)",
-        "commit_origin_hash": "5eaf4259cf29c5ed3f172442b2729a79c0945128",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "action": {
                 "value": "act"
@@ -46997,7 +47018,7 @@
                 "value": "severity"
             },
             "threat_ruleType": {
-                "value": "direct",
+                "value": "data_protection",
                 "value_type": "constant"
             },
             "threat_signalName": {
@@ -48856,8 +48877,8 @@
         "uid": "6216f49a-14e7-4fc9-afc7-0a8163e4bde9"
     },
     "621c0480-bc2e-4086-8ef8-a74a3ae45c65": {
-        "commit_message": "Updated fortinet authentication mapper event_id_pattern (#5981)",
-        "commit_origin_hash": "c53a1eeba4374751c753356236ebf0410f4fe05b",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -48915,8 +48936,8 @@
         "uid": "621c0480-bc2e-4086-8ef8-a74a3ae45c65"
     },
     "6259f6a3-ddd8-41b6-8b02-ef16f6dbd174": {
-        "commit_message": "TLAB-1212 added skip value",
-        "commit_origin_hash": "f0fe378f1f198f83dd801171cdff6fed7f0ccaa8",
+        "commit_message": "TLAB-2542_Redundancy remediation: Cisco Firepower device/srcDevice mappings (#6011)",
+        "commit_origin_hash": "a8526724473e8db4eaea948dedf1050edaf9e9ba",
         "field_mappings": {
             "action": {
                 "alternate_values": [
@@ -48932,9 +48953,6 @@
             },
             "description": {
                 "value": "@computed.recordTypeDescription"
-            },
-            "device_ip": {
-                "value": "SrcIP"
             },
             "dstDevice_ip": {
                 "alternate_values": [
@@ -49041,8 +49059,8 @@
         "uid": "6259f6a3-ddd8-41b6-8b02-ef16f6dbd174"
     },
     "625e3844-5ff4-4c3c-aab7-7c2dffcba260": {
-        "commit_message": "feat(mapper): add http_userAgent mapping from ExtendedProperties_UserAgent for O365 Authentication Events (#5983)",
-        "commit_origin_hash": "89274c72ab701d8dee00c5a19a0e8f5b95dc4dbd",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "description": {
                 "value": "RecordTypeString"
@@ -49061,7 +49079,7 @@
                 "value": "PolicyDetails.1.Rules.1.Severity"
             },
             "threat_ruleType": {
-                "value": "direct",
+                "value": "data_protection",
                 "value_type": "constant"
             },
             "threat_signalName": {
@@ -49349,8 +49367,8 @@
         "uid": "634b73f7-f5e1-4640-ab23-aa8973b78746"
     },
     "63819b5e-e8e9-44a5-9dd8-c0df5ddaf370": {
-        "commit_message": "TLAB-1763 updated the mapper",
-        "commit_origin_hash": "1206481b114573497ec55a8d3db063060ec2005b",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "action": {
                 "default_value": "Unknown",
@@ -50313,8 +50331,8 @@
         "uid": "66227412-64e9-4d71-9565-338bcde62ae0"
     },
     "6631785C-901C-42CE-AC18-EDEA8D2829D1": {
-        "commit_message": "TLAB-2067: updated fields mappings (#5939)",
-        "commit_origin_hash": "ca238e9c16094d90ebd6786d3ac42b31babfee4e",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "application": {
                 "value": "app"
@@ -50390,8 +50408,8 @@
         "uid": "6631785C-901C-42CE-AC18-EDEA8D2829D1"
     },
     "665717e8-a975-11ea-bb37-0242ac130002": {
-        "commit_message": "feat(mapper): add http_userAgent mapping from ExtendedProperties_UserAgent for O365 Authentication Events (#5983)",
-        "commit_origin_hash": "89274c72ab701d8dee00c5a19a0e8f5b95dc4dbd",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "action": {
                 "value": "Operation"
@@ -51125,8 +51143,8 @@
         "uid": "685259c2-dbb1-434c-8172-6dd9d253ef6d"
     },
     "6861570d-e513-46de-a60f-5c90b53e6c8b": {
-        "commit_message": "TLAB-2664 PAN session and flag remapping (#5996)",
-        "commit_origin_hash": "a4191240523ce753371bb67c19d7c8b8855860c9",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "action": {
                 "alternate_values": [
@@ -51284,8 +51302,8 @@
         "uid": "6861570d-e513-46de-a60f-5c90b53e6c8b"
     },
     "68fb47a0-1dac-48d2-a8c0-d76997350793": {
-        "commit_message": "feat(mapper): add http_userAgent mapping from ExtendedProperties_UserAgent for O365 Authentication Events (#5983)",
-        "commit_origin_hash": "89274c72ab701d8dee00c5a19a0e8f5b95dc4dbd",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "action": {
                 "value": "Operation"
@@ -51933,14 +51951,11 @@
         "uid": "69cbcdf5-5291-4e07-99e4-5eded22d2589"
     },
     "69d9ee44-29fc-497a-85d5-aed507a923db": {
-        "commit_message": "TLAB-1212 added skip value",
-        "commit_origin_hash": "f0fe378f1f198f83dd801171cdff6fed7f0ccaa8",
+        "commit_message": "TLAB-2542_Redundancy remediation: Cisco Firepower device/srcDevice mappings (#6011)",
+        "commit_origin_hash": "a8526724473e8db4eaea948dedf1050edaf9e9ba",
         "field_mappings": {
             "action": {
                 "value": "InlineResult"
-            },
-            "device_ip": {
-                "value": "SrcIP"
             },
             "dstDevice_ip": {
                 "value": "DstIP"
@@ -52005,8 +52020,8 @@
         "uid": "69d9ee44-29fc-497a-85d5-aed507a923db"
     },
     "6A93C9CD-5B9D-4056-A0DD-E98F87A1C272": {
-        "commit_message": "TLAB-2067: updated fields mappings (#5939)",
-        "commit_origin_hash": "ca238e9c16094d90ebd6786d3ac42b31babfee4e",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "severity": {
                 "lookup": {
@@ -52864,8 +52879,8 @@
         "uid": "6ac3a0a7-d1be-48dc-a0f7-cf5bf6678d6a"
     },
     "6b027e35-6ea1-42df-abce-a5696db220c9": {
-        "commit_message": "TLAB-2381: Created Mapper for The Noname API Security (#5912)",
-        "commit_origin_hash": "850be6fc70238cf2219ce86763ec2bec417a892b",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "description": {
                 "value": "issue_message"
@@ -52909,7 +52924,7 @@
                 "value": "issue_message"
             },
             "threat_ruleType": {
-                "value": "direct",
+                "value": "data_protection",
                 "value_type": "constant"
             },
             "threat_signalName": {
@@ -52948,8 +52963,8 @@
         "uid": "6b027e35-6ea1-42df-abce-a5696db220c9"
     },
     "6b8a3219-575f-4b34-b38b-751e75d26988": {
-        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
-        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "description": {
                 "value": "event.Description"
@@ -52993,7 +53008,7 @@
                 "value": "event.Name"
             },
             "threat_ruleType": {
-                "value": "direct",
+                "value": "data_protection",
                 "value_type": "constant"
             },
             "threat_signalName": {
@@ -53085,8 +53100,8 @@
         "uid": "6b94825c-581c-47ff-ad57-156d24ca4c76"
     },
     "6b98c6bd-0d2b-45ee-8897-ad9e4f146e5f": {
-        "commit_message": "feat(mapper): add http_userAgent mapping from ExtendedProperties_UserAgent for O365 Authentication Events (#5983)",
-        "commit_origin_hash": "89274c72ab701d8dee00c5a19a0e8f5b95dc4dbd",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "timestamp": {
                 "format": "yyyy-MM-dd'T'HH:mm:ss",
@@ -54659,8 +54674,8 @@
         "uid": "703f7d62-a28f-4f57-8df7-684d6af19a1c"
     },
     "7043aa13-df3d-46fd-b76a-dd702f703782": {
-        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
-        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "description": {
                 "value": "cat"
@@ -55666,8 +55681,8 @@
         "uid": "72721bcc-a069-430b-add9-9afbd7e574cf"
     },
     "729bc327-a065-4fb8-81ed-5bb8f75d7fc2": {
-        "commit_message": "feat(mapper): add http_userAgent mapping from ExtendedProperties_UserAgent for O365 Authentication Events (#5983)",
-        "commit_origin_hash": "89274c72ab701d8dee00c5a19a0e8f5b95dc4dbd",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "timestamp": {
                 "format": "yyyy-MM-dd'T'HH:mm:ss",
@@ -56063,8 +56078,8 @@
         "uid": "7382bdd9-df50-44f9-9dbf-18b35e7aa158"
     },
     "738f7174-1192-48d0-a2fc-f1b8364370d0": {
-        "commit_message": "TLAB-1763 updated the mapper",
-        "commit_origin_hash": "1206481b114573497ec55a8d3db063060ec2005b",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "device_hostname": {
                 "value": "shost"
@@ -56578,8 +56593,8 @@
         "uid": "74a1403a-a31d-41e3-9799-3f683c7a4243"
     },
     "74ea4bd5-67eb-4c82-97d7-0caf2e179a5e": {
-        "commit_message": "TLAB-2590 Fortigate Test Fixes (#5971)",
-        "commit_origin_hash": "90bce1b19a116cb5b64837d10ece2cbad27144cc",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -56926,9 +56941,91 @@
         "source": "jask",
         "uid": "75293d40-af14-4356-a264-549ba5ed30c1"
     },
+    "75a5a4bf-9a39-4a46-8ca7-00683f9b3582": {
+        "commit_message": "TLAB-1063 Add mapper for Check Point CloudGuard (#6012)",
+        "commit_origin_hash": "52d60a2cbee706bfed9a057be0fecf5fc8912ef7",
+        "field_mappings": {
+            "accountId": {
+                "value": "account.id"
+            },
+            "action": {
+                "value": "action"
+            },
+            "application": {
+                "value": "origin"
+            },
+            "cloud_provider": {
+                "value": "account.vendor"
+            },
+            "cloud_region": {
+                "value": "region"
+            },
+            "cloud_service": {
+                "value": "CloudGuard",
+                "value_type": "constant"
+            },
+            "description": {
+                "value": "rule.description"
+            },
+            "normalizedSeverity": {
+                "case_insensitive": true,
+                "default_value": "0",
+                "lookup": {
+                    "Critical": "5",
+                    "High": "3",
+                    "Informational": "0",
+                    "Low": "1",
+                    "Medium": "2"
+                },
+                "value": "rule.severity",
+                "value_type": "lookup"
+            },
+            "resource": {
+                "value": "account.name"
+            },
+            "resourceType": {
+                "value": "bundle.name"
+            },
+            "severity": {
+                "value": "rule.severity"
+            },
+            "threat_identifier": {
+                "value": "findingId"
+            },
+            "threat_name": {
+                "value": "rule.name"
+            },
+            "threat_ruleType": {
+                "value": "direct",
+                "value_type": "constant"
+            },
+            "threat_signalName": {
+                "value": "rule.ruleId"
+            }
+        },
+        "file_path": "mappings_schemav3/checkpoint_cloudguard.yaml",
+        "input": {
+            "event_id_pattern": "_default_",
+            "log_format": "JSON",
+            "product": "CloudGuard",
+            "vendor": "Check Point"
+        },
+        "name": "Check Point CloudGuard",
+        "output": {
+            "product_guid": "c3576aad-5a93-480b-830f-75fbaa377453",
+            "record_type": "Audit"
+        },
+        "skipped_values": [
+            ",",
+            "-",
+            "null"
+        ],
+        "source": "jask",
+        "uid": "75a5a4bf-9a39-4a46-8ca7-00683f9b3582"
+    },
     "75afe8f9-63d1-4c2c-ad65-f0b3231a0c9b": {
-        "commit_message": "TRIDENT-15588 Adjust BitDefender mapper, etc to accept all modules",
-        "commit_origin_hash": "c24e597127203372b2e89a64adcb544cdbdcdd80",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "action": {
                 "value": "params.events.status"
@@ -57157,8 +57254,8 @@
         "uid": "75fb9fb0-abbe-4aca-9c89-9652a5f5ace0"
     },
     "76081f53-a146-4a95-9049-799d0cdd9385": {
-        "commit_message": "TLAB-2664 PAN session and flag remapping (#5996)",
-        "commit_origin_hash": "a4191240523ce753371bb67c19d7c8b8855860c9",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "description": {
                 "alternate_values": [
@@ -57587,8 +57684,8 @@
         "uid": "76893103-7434-4729-996d-e0cffc8b399e"
     },
     "76b2e178-ff09-40c9-9755-745661f30a22": {
-        "commit_message": "TLAB-2590 Fortigate Test Fixes (#5971)",
-        "commit_origin_hash": "90bce1b19a116cb5b64837d10ece2cbad27144cc",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -57683,8 +57780,8 @@
         "uid": "76b2e178-ff09-40c9-9755-745661f30a22"
     },
     "76dd85d1-d634-4fcd-9af8-d2face9181ad": {
-        "commit_message": "TLAB-2014: added threat_rule_Type",
-        "commit_origin_hash": "1055040ef15ba58cd38225c137f584fbeead9fb2",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "action": {
                 "value": "cpcAlertType"
@@ -57733,7 +57830,7 @@
                 "value": "cpcAlertLink"
             },
             "threat_ruleType": {
-                "value": "direct",
+                "value": "data_protection",
                 "value_type": "constant"
             },
             "threat_signalName": {
@@ -58135,8 +58232,8 @@
         "uid": "7797ac55-b4ca-484c-be19-4624f96ac4f7"
     },
     "779cdb4d-382c-4f25-9c9d-0bc59721fd8c": {
-        "commit_message": "TLAB-2664 PAN session and flag remapping (#5996)",
-        "commit_origin_hash": "a4191240523ce753371bb67c19d7c8b8855860c9",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "action": {
                 "alternate_values": [
@@ -58262,7 +58359,7 @@
                 "value": "threat_name"
             },
             "threat_ruleType": {
-                "value": "direct",
+                "value": "network",
                 "value_type": "constant"
             },
             "threat_signalName": {
@@ -58352,8 +58449,8 @@
         "uid": "77c69a2d-90bc-437e-a9dc-93bc1fd6dcc4"
     },
     "77cf5d4a-8c57-4527-890c-9536e99345de": {
-        "commit_message": "feat(mapper): add http_userAgent mapping from ExtendedProperties_UserAgent for O365 Authentication Events (#5983)",
-        "commit_origin_hash": "89274c72ab701d8dee00c5a19a0e8f5b95dc4dbd",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "action": {
                 "value": "Operation"
@@ -58572,8 +58669,8 @@
         "uid": "78495bef-4079-4d64-b80d-d8be1e8faf8a"
     },
     "78922a8d-e50c-4f4c-9129-bfdb70ba6d6d": {
-        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
-        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "description": {
                 "value": "type"
@@ -58601,7 +58698,7 @@
                 "value": "type"
             },
             "threat_ruleType": {
-                "value": "direct",
+                "value": "data_protection",
                 "value_type": "constant"
             },
             "threat_signalName": {
@@ -58786,8 +58883,8 @@
         "uid": "792dbe56-0381-4d86-9eb2-b9659687fb2a"
     },
     "7940926a-4518-4efd-b65c-77dd4dfc79db": {
-        "commit_message": "TLAB-1763 updated the mapper",
-        "commit_origin_hash": "1206481b114573497ec55a8d3db063060ec2005b",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "action": {
                 "value": "act"
@@ -60039,8 +60136,8 @@
         "uid": "7a8f93f4-cd40-4c60-babf-bfdcf3b6ad80"
     },
     "7b3663a8-0137-41ad-bb01-c4d713aafca0": {
-        "commit_message": "Merge branch 'dev' into TRIDENT-11934-FireEye-CMS-Normalized-Rule-Update",
-        "commit_origin_hash": "61fc51b742aa2b0ff2dbf37237c5129bec8d1f15",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "action": {
                 "value": "act"
@@ -60996,8 +61093,8 @@
         "uid": "7f4daf7f-f391-44be-908a-f36e6f1b360f"
     },
     "7f58d5e0-3efe-4b92-be17-9e8760e3ee4e": {
-        "commit_message": "TLAB-2664 PAN session and flag remapping (#5996)",
-        "commit_origin_hash": "a4191240523ce753371bb67c19d7c8b8855860c9",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -61126,8 +61223,8 @@
         "uid": "7f58d5e0-3efe-4b92-be17-9e8760e3ee4e"
     },
     "7fa52b16-621e-4970-bbdc-e61f76864a58": {
-        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
-        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "description": {
                 "value": "data.title"
@@ -61382,8 +61479,8 @@
         "uid": "80ac2dcc-a1d3-46a5-a9ae-bc4f9a1a2430"
     },
     "80f366f7-9fd9-4097-86d5-eb908a1b9912": {
-        "commit_message": "feat(mapper): add http_userAgent mapping from ExtendedProperties_UserAgent for O365 Authentication Events (#5983)",
-        "commit_origin_hash": "89274c72ab701d8dee00c5a19a0e8f5b95dc4dbd",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "description": {
                 "value": "RecordTypeString"
@@ -61571,8 +61668,8 @@
         "uid": "8103115b-d634-445c-bee6-8a80f30bbd56"
     },
     "810cafdb-8288-45a0-9ef7-d15cdc85307a": {
-        "commit_message": "Updated fortinet authentication mapper event_id_pattern (#5981)",
-        "commit_origin_hash": "c53a1eeba4374751c753356236ebf0410f4fe05b",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "description": {
                 "alternate_values": [
@@ -61734,8 +61831,8 @@
         "uid": "81112448-48b5-4799-bc6e-a712a87ca34c"
     },
     "8113fa7b-93bd-4c07-93fe-c3290666f1ad": {
-        "commit_message": "TLAB-2070: added new mapper",
-        "commit_origin_hash": "e2cc8ff669d7b18070b010fb581ae90853a62fbe",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "device_hostname": {
                 "alternate_values": [
@@ -62845,8 +62942,8 @@
         "uid": "825599bd-22ed-47a5-9a88-792cda9f4d56"
     },
     "826cd3ba-46c5-4703-a343-3211cdd809fd": {
-        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
-        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "application": {
                 "value": "data.triggerSource"
@@ -63335,14 +63432,11 @@
         "uid": "82b9f2ea-4ebb-4f58-9709-1b0e201db46f"
     },
     "82de581f-dd41-4acd-b62e-e3a8a33c0e72": {
-        "commit_message": "TLAB-1212 added skip value",
-        "commit_origin_hash": "f0fe378f1f198f83dd801171cdff6fed7f0ccaa8",
+        "commit_message": "TLAB-2542_Redundancy remediation: Cisco Firepower device/srcDevice mappings (#6011)",
+        "commit_origin_hash": "a8526724473e8db4eaea948dedf1050edaf9e9ba",
         "field_mappings": {
             "action": {
                 "value": "FileAction"
-            },
-            "device_ip": {
-                "value": "SrcIP"
             },
             "dstDevice_ip": {
                 "value": "DstIP"
@@ -63725,8 +63819,8 @@
         "uid": "833d135d-6811-4bf8-a73e-633aaba65cbf"
     },
     "8345560d-add1-413c-9b93-ad3ada8ed1b0": {
-        "commit_message": "TLAB-2067: updated fields mappings (#5939)",
-        "commit_origin_hash": "ca238e9c16094d90ebd6786d3ac42b31babfee4e",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "action": {
                 "value": "audit_log_event"
@@ -63949,8 +64043,8 @@
         "uid": "83eb070d-8280-4b2c-9cb7-c919a985063f"
     },
     "83ecd496-9783-4309-80ca-ee18f0ee92ef": {
-        "commit_message": "change threat_ruleType to direct",
-        "commit_origin_hash": "0ca180ad6b12f8aa1aad43335afdfde14521f0a6",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "description": {
                 "value": "description"
@@ -63975,7 +64069,7 @@
                 "value": "msg"
             },
             "threat_ruleType": {
-                "value": "direct",
+                "value": "network",
                 "value_type": "constant"
             },
             "threat_signalName": {
@@ -64536,8 +64630,8 @@
         "uid": "86DC4C25-87C5-4EEA-A6EB-F70CB3FAF99D"
     },
     "86bfb3aa-e12a-4227-8504-1ce6b1ed1979": {
-        "commit_message": "Merge branch 'dev' into TRIDENT-11934-FireEye-CMS-Normalized-Rule-Update",
-        "commit_origin_hash": "61fc51b742aa2b0ff2dbf37237c5129bec8d1f15",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "action": {
                 "value": "act"
@@ -64575,7 +64669,7 @@
                 "value": "cs4"
             },
             "threat_ruleType": {
-                "value": "direct",
+                "value": "network",
                 "value_type": "constant"
             },
             "threat_signalName": {
@@ -65349,8 +65443,8 @@
         "uid": "874c8ee4-1afa-4106-9bd9-d0c0e852a77d"
     },
     "874cdeac-8341-24e8-adc1-ga7ae01bbebe": {
-        "commit_message": "TLAB-1763 updated the mapper",
-        "commit_origin_hash": "1206481b114573497ec55a8d3db063060ec2005b",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "action": {
                 "value": "act"
@@ -65582,8 +65676,8 @@
         "uid": "88383f45-4b56-45e4-b0da-03be50c845e7"
     },
     "88466900-6cf8-4497-812e-a5ed70343885": {
-        "commit_message": "feat(mapper): add http_userAgent mapping from ExtendedProperties_UserAgent for O365 Authentication Events (#5983)",
-        "commit_origin_hash": "89274c72ab701d8dee00c5a19a0e8f5b95dc4dbd",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "action": {
                 "value": "Operation"
@@ -66000,8 +66094,8 @@
         "uid": "895b83e2-e169-4e3b-a768-46cf23670b24"
     },
     "89745f55-029f-482b-9f17-31c2a5bd9efd": {
-        "commit_message": "TLAB-2590 Fortigate Test Fixes (#5971)",
-        "commit_origin_hash": "90bce1b19a116cb5b64837d10ece2cbad27144cc",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "action": {
                 "value": "act"
@@ -66515,8 +66609,8 @@
         "uid": "8a3e7b76-57da-432f-a6e7-40b5d9137ba2"
     },
     "8a6aef8b-8983-4798-8539-bb86b4d7d271": {
-        "commit_message": "TLAB-1212 added skip value",
-        "commit_origin_hash": "f0fe378f1f198f83dd801171cdff6fed7f0ccaa8",
+        "commit_message": "TLAB-2542_Redundancy remediation: Cisco Firepower device/srcDevice mappings (#6011)",
+        "commit_origin_hash": "a8526724473e8db4eaea948dedf1050edaf9e9ba",
         "field_mappings": {
             "action": {
                 "value": "observed",
@@ -66524,9 +66618,6 @@
             },
             "device_hostname": {
                 "value": "srcHost"
-            },
-            "device_ip": {
-                "value": "srcIP"
             },
             "dstDevice_ip": {
                 "value": "dstIP"
@@ -66588,8 +66679,8 @@
         "uid": "8a6aef8b-8983-4798-8539-bb86b4d7d271"
     },
     "8ab7c22e-a0a6-432c-b031-4dc3f325188c": {
-        "commit_message": "feat(mapper): add http_userAgent mapping from ExtendedProperties_UserAgent for O365 Authentication Events (#5983)",
-        "commit_origin_hash": "89274c72ab701d8dee00c5a19a0e8f5b95dc4dbd",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "device_ip": {
                 "value": "ClientIP"
@@ -67554,8 +67645,8 @@
         "uid": "8c80d8b8-7879-42cc-99ed-44ee11c1bcff"
     },
     "8cd5ce67-c75c-4935-bc03-c626fe50eaf7": {
-        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
-        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "action": {
                 "value": "event.OperationName"
@@ -67961,8 +68052,8 @@
         "uid": "8d98a4d6-6cbb-473f-bf16-a0dee8cb4b84"
     },
     "8d9e112e-167d-4cad-ba6f-12cd9918c10e": {
-        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
-        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "accountId": {
                 "alternate_values": [
@@ -68419,8 +68510,8 @@
         "uid": "8e4e87b9-5647-4ed5-b70c-0b3dd673743d"
     },
     "8e7deb16-029d-4af5-97eb-b9cbe4d5ddb2": {
-        "commit_message": "TLAB-2528: Created a New Mapper for Proofpoint TRAP (#5936)",
-        "commit_origin_hash": "1376649e4509f7f723617f21456fd3b944a6f986",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "accountId": {
                 "value": "tenant_id"
@@ -68477,7 +68568,7 @@
                 "value": "incidents.1.title"
             },
             "threat_ruleType": {
-                "value": "direct",
+                "value": "data_protection",
                 "value_type": "constant"
             },
             "threat_signalName": {
@@ -70532,8 +70623,8 @@
         "uid": "928fa5c2-ceeb-4c1b-b41e-c5ed6f18b24f"
     },
     "92ad9200-083c-4c89-a3c1-5e63d3e2801f": {
-        "commit_message": "Updated fortinet authentication mapper event_id_pattern (#5981)",
-        "commit_origin_hash": "c53a1eeba4374751c753356236ebf0410f4fe05b",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -72157,8 +72248,8 @@
         "uid": "940be912-b545-11ea-b3de-0242ac130004"
     },
     "94279d57-bf7d-479d-84af-786c8ff8890f": {
-        "commit_message": "Update claroty_xdome.yaml",
-        "commit_origin_hash": "b469cf617efcbba395b86ae1a431c73b821e113e",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "description": {
                 "value": "vulnerability_description"
@@ -72549,8 +72640,8 @@
         "uid": "949e6e12-ddd6-49e5-bdbe-cc63e1c9c5ed"
     },
     "94F238FF-AC1F-45CD-B6D2-9BAC76EB9717": {
-        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
-        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "application": {
                 "value": "deviceProcessName"
@@ -73997,8 +74088,8 @@
         "uid": "98c096f5-3408-49c3-9a22-d6b9255b31cb"
     },
     "98fb8636-da42-4e53-ab47-dc81e1d0ffbb": {
-        "commit_message": "TLAB-2118: added alternate for threat name (#5812)",
-        "commit_origin_hash": "c7cb417cab4c590dea7a0dc0633df576dd1d3b08",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "action": {
                 "value": "held",
@@ -74449,8 +74540,8 @@
         "uid": "99cd6835-a726-4032-9406-a3358beba9a9"
     },
     "99ef5972-d88b-4e04-bb1f-c20a43af5e44": {
-        "commit_message": "Updated fortinet authentication mapper event_id_pattern (#5981)",
-        "commit_origin_hash": "c53a1eeba4374751c753356236ebf0410f4fe05b",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -74764,8 +74855,8 @@
         "uid": "9a51e2c5-29cc-4e5c-b8ba-f9ff6b26f59f"
     },
     "9a633133-6efa-40f3-a304-4f4d5fc00497": {
-        "commit_message": "TLAB-2664 PAN session and flag remapping (#5996)",
-        "commit_origin_hash": "a4191240523ce753371bb67c19d7c8b8855860c9",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "action": {
                 "value": "op"
@@ -75491,8 +75582,8 @@
         "uid": "9bcb89c4-a5c5-489f-8798-40961306f49c"
     },
     "9bd4f7bc-a29b-46e9-8a50-cb1ebf53f275": {
-        "commit_message": "Merge branch 'dev' into TRIDENT-11934-FireEye-CMS-Normalized-Rule-Update",
-        "commit_origin_hash": "61fc51b742aa2b0ff2dbf37237c5129bec8d1f15",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "action": {
                 "value": "Quarantine action"
@@ -76847,8 +76938,8 @@
         "uid": "9f520b1d-3ecf-4371-b227-129e2c362b12"
     },
     "9fd65404-2524-4859-8877-e44c97538415": {
-        "commit_message": "TLAB-2664 PAN session and flag remapping (#5996)",
-        "commit_origin_hash": "a4191240523ce753371bb67c19d7c8b8855860c9",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "action": {
                 "alternate_values": [
@@ -77096,8 +77187,8 @@
         "uid": "A62309CA-3CEE-4F2D-8646-5D88FE78755C"
     },
     "AB8A5262-6A3A-499C-AACB-499C2686394E": {
-        "commit_message": "TLAB-2067: updated fields mappings (#5939)",
-        "commit_origin_hash": "ca238e9c16094d90ebd6786d3ac42b31babfee4e",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "action": {
                 "value": "audit_log_event"
@@ -77520,8 +77611,8 @@
         "uid": "C58BDBCA-F07D-4832-BEB2-FFA79727370F"
     },
     "D6ED923F-2647-4094-92E1-CCF66B3C0048": {
-        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
-        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "application": {
                 "value": "deviceProcessName"
@@ -78020,8 +78111,8 @@
         "uid": "FDE55C18-7338-41E3-8DB2-3AD5EF6D8831"
     },
     "FF1BADCE-0DC2-41F5-888F-88ECA95AE8A0": {
-        "commit_message": "TLAB-2067: updated fields mappings (#5939)",
-        "commit_origin_hash": "ca238e9c16094d90ebd6786d3ac42b31babfee4e",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "description": {
                 "value": "alarm_name"
@@ -78074,8 +78165,8 @@
         "uid": "FF1BADCE-0DC2-41F5-888F-88ECA95AE8A0"
     },
     "a00c315a-8806-42f1-8deb-39a85f4d5b7e": {
-        "commit_message": "feat(mapper): add http_userAgent mapping from ExtendedProperties_UserAgent for O365 Authentication Events (#5983)",
-        "commit_origin_hash": "89274c72ab701d8dee00c5a19a0e8f5b95dc4dbd",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "timestamp": {
                 "format": "yyyy-MM-dd'T'HH:mm:ss",
@@ -78158,8 +78249,8 @@
         "uid": "a0388783-0a9b-4473-ba83-d9c8b2013170"
     },
     "a09cb576-bab2-4b0d-a9c9-7a7c46c48870": {
-        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
-        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "description": {
                 "alternate_values": [
@@ -78668,8 +78759,8 @@
         "uid": "a112519f-d29c-47cb-924e-a79c5207107b"
     },
     "a119686a-c0a6-44af-a36d-9d01d1aac496": {
-        "commit_message": "Updated fortinet authentication mapper event_id_pattern (#5981)",
-        "commit_origin_hash": "c53a1eeba4374751c753356236ebf0410f4fe05b",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -78774,8 +78865,8 @@
         "uid": "a119686a-c0a6-44af-a36d-9d01d1aac496"
     },
     "a124aee5-ca59-4f62-aff9-eefa2090e25c": {
-        "commit_message": "Merge branch 'dev' into TRIDENT-11934-FireEye-CMS-Normalized-Rule-Update",
-        "commit_origin_hash": "61fc51b742aa2b0ff2dbf37237c5129bec8d1f15",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "action": {
                 "value": "act"
@@ -79038,8 +79129,8 @@
         "uid": "a19223a3-568d-422c-94ec-c10b3c0fa112"
     },
     "a1c34f6a-62e0-45fc-80c8-7c8cbc97edb1": {
-        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
-        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "application": {
                 "value": "deviceProcessName"
@@ -79128,8 +79219,8 @@
         "uid": "a1eeb6c8-feec-4593-9cae-7858b56e12b7"
     },
     "a20fdb3d-2294-43b0-b10c-18fc9921b1d1": {
-        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
-        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "commandLine": {
                 "value": "event.CommandLine"
@@ -79417,8 +79508,8 @@
         "uid": "a2b8171c-c72c-11ea-87d0-0242ac130003"
     },
     "a2bdaf5f-92f8-45f3-be99-eb8fa34d26a7": {
-        "commit_message": "feat(mapper): add http_userAgent mapping from ExtendedProperties_UserAgent for O365 Authentication Events (#5983)",
-        "commit_origin_hash": "89274c72ab701d8dee00c5a19a0e8f5b95dc4dbd",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "action": {
                 "default_value": "Unknown",
@@ -79447,9 +79538,6 @@
             },
             "description": {
                 "value": "Subject"
-            },
-            "device_ip": {
-                "value": "SenderIp"
             },
             "email_subject": {
                 "value": "Subject"
@@ -79527,7 +79615,7 @@
                 "value": "EventDeepLink"
             },
             "threat_ruleType": {
-                "value": "direct",
+                "value": "data_protection",
                 "value_type": "constant"
             },
             "threat_signalName": {
@@ -79563,8 +79651,8 @@
         "uid": "a2bdaf5f-92f8-45f3-be99-eb8fa34d26a7"
     },
     "a334a0ca-b389-4f59-b34b-66b19becfbe2": {
-        "commit_message": "TLAB-2590 Fortigate Test Fixes (#5971)",
-        "commit_origin_hash": "90bce1b19a116cb5b64837d10ece2cbad27144cc",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "bytesIn": {
                 "value": "ad.lanin"
@@ -80510,8 +80598,8 @@
         "uid": "a4967bae-89ca-11ea-bc55-0242ac130003"
     },
     "a4a85fa1-c67e-4dc5-8685-4c39a3a9e012": {
-        "commit_message": "TLAB-2590 Fortigate Test Fixes (#5971)",
-        "commit_origin_hash": "90bce1b19a116cb5b64837d10ece2cbad27144cc",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -80601,8 +80689,8 @@
         "uid": "a4a85fa1-c67e-4dc5-8685-4c39a3a9e012"
     },
     "a4beb12c-46a2-4950-bf7f-7711344b452b": {
-        "commit_message": "TLAB-2118: added alternate for threat name (#5812)",
-        "commit_origin_hash": "c7cb417cab4c590dea7a0dc0633df576dd1d3b08",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "accountId": {
                 "alternate_values": [
@@ -80987,8 +81075,8 @@
         "uid": "a4fbc8a4-ef01-4c01-b336-67923aa94e1a"
     },
     "a509a0b7-d91a-405a-ab6c-9ff4285041a5": {
-        "commit_message": "TLAB-2664 PAN session and flag remapping (#5996)",
-        "commit_origin_hash": "a4191240523ce753371bb67c19d7c8b8855860c9",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "action": {
                 "alternate_values": [
@@ -81384,8 +81472,8 @@
         "uid": "a66d5268-50f9-477e-86db-e490a7e40a31"
     },
     "a69a97f7-5dd3-438e-814d-2eb0ed589a0f": {
-        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
-        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "action": {
                 "value": "data.ruleViolationInfo.triggeredActionTypes"
@@ -81422,7 +81510,7 @@
                 "value": "type"
             },
             "threat_ruleType": {
-                "value": "direct",
+                "value": "data_protection",
                 "value_type": "constant"
             },
             "threat_signalName": {
@@ -81778,8 +81866,8 @@
         "uid": "a6e68363-ad08-4454-a8ed-d85181b9168c"
     },
     "a7215602-242d-404a-bd8d-38bfc443eb88": {
-        "commit_message": "TRIDENT-15588 Adjust BitDefender mapper, etc to accept all modules",
-        "commit_origin_hash": "c24e597127203372b2e89a64adcb544cdbdcdd80",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "action": {
                 "value": "params.events.actionTaken"
@@ -81807,7 +81895,7 @@
                 "value": "params.events.detection_name"
             },
             "threat_ruleType": {
-                "value": "direct",
+                "value": "network",
                 "value_type": "constant"
             },
             "threat_signalName": {
@@ -82460,8 +82548,8 @@
         "uid": "a9352f93-c8b9-4652-812b-3673133307d1"
     },
     "aa0263c9-a102-492c-b614-67d9aaf98ac1": {
-        "commit_message": "feat(mapper): add http_userAgent mapping from ExtendedProperties_UserAgent for O365 Authentication Events (#5983)",
-        "commit_origin_hash": "89274c72ab701d8dee00c5a19a0e8f5b95dc4dbd",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "device_ip": {
                 "value": "0.0.0.0",
@@ -82496,8 +82584,8 @@
         "uid": "aa0263c9-a102-492c-b614-67d9aaf98ac1"
     },
     "aa5386ab-8afd-4778-971d-88426f6c4099": {
-        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
-        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "application": {
                 "value": "event.ServiceName"
@@ -82717,8 +82805,8 @@
         "uid": "aaa2d5b5-0a1b-46d3-b467-bf6ff95aed94"
     },
     "aac55d27-898b-4bc4-9a20-19b8e3897f61": {
-        "commit_message": "TLAB-2590 Fortigate Test Fixes (#5971)",
-        "commit_origin_hash": "90bce1b19a116cb5b64837d10ece2cbad27144cc",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -82810,7 +82898,7 @@
                 "value": "ref"
             },
             "threat_ruleType": {
-                "value": "direct",
+                "value": "network",
                 "value_type": "constant"
             },
             "threat_signalName": {
@@ -82977,8 +83065,8 @@
         "uid": "ab4b8e31-3e11-43c5-ad3b-0d235d26da9f"
     },
     "ab4d40ab-4286-4db5-b0ec-e26cd4172f19": {
-        "commit_message": "feat(mapper): add http_userAgent mapping from ExtendedProperties_UserAgent for O365 Authentication Events (#5983)",
-        "commit_origin_hash": "89274c72ab701d8dee00c5a19a0e8f5b95dc4dbd",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "description": {
                 "value": "RecordTypeString"
@@ -83000,7 +83088,7 @@
                 "value": "EventDeepLink"
             },
             "threat_ruleType": {
-                "value": "direct",
+                "value": "data_protection",
                 "value_type": "constant"
             },
             "threat_signalName": {
@@ -83314,8 +83402,8 @@
         "uid": "ac0149c5-b3d9-45c0-8ab3-b96a18cb1cdb"
     },
     "ac1d101a-1ac6-429a-930a-040d54931332": {
-        "commit_message": "TLAB-2590 Fortigate Test Fixes (#5971)",
-        "commit_origin_hash": "90bce1b19a116cb5b64837d10ece2cbad27144cc",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -83632,8 +83720,8 @@
         "uid": "ac79718b-60a0-4b47-a45a-39379f8142f1"
     },
     "ac8586c6-9954-4c70-860e-99a6dbcb3fc8": {
-        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
-        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "accountId": {
                 "value": "userStates.1.aadUserId"
@@ -83671,7 +83759,7 @@
                 "value": "title"
             },
             "threat_ruleType": {
-                "value": "direct",
+                "value": "data_protection",
                 "value_type": "constant"
             },
             "threat_signalName": {
@@ -83750,8 +83838,8 @@
         "uid": "ace70500-eed9-4628-a9a4-970e5e34e228"
     },
     "ad133542-26f6-45d4-a082-0118e80307aa": {
-        "commit_message": "TLAB-2590 Fortigate Test Fixes (#5971)",
-        "commit_origin_hash": "90bce1b19a116cb5b64837d10ece2cbad27144cc",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -83972,8 +84060,8 @@
         "uid": "addda6e4-9041-11e8-9eb6-529269fb1459"
     },
     "ae0e97d8-3fb2-444f-a177-4047ec9784a0": {
-        "commit_message": "TLAB-1763 updated the mapper",
-        "commit_origin_hash": "1206481b114573497ec55a8d3db063060ec2005b",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "description": {
                 "value": "name"
@@ -84391,8 +84479,8 @@
         "uid": "af395338-a70d-495b-85fe-7b889f2da0ba"
     },
     "af4e514b-fcbe-4d80-9ae6-af17bfee4ca5": {
-        "commit_message": "TLAB-1763 updated the mapper",
-        "commit_origin_hash": "1206481b114573497ec55a8d3db063060ec2005b",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "description": {
                 "value": "msg"
@@ -84504,8 +84592,8 @@
         "uid": "af8a05ad-4c2e-4a54-87dc-4b3c62acc128"
     },
     "aff99b4d-643e-476d-95fb-e5a4c1c92471": {
-        "commit_message": "TLAB-1763 updated the mapper",
-        "commit_origin_hash": "1206481b114573497ec55a8d3db063060ec2005b",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "action": {
                 "value": "ActionResult"
@@ -85419,8 +85507,8 @@
         "uid": "b1eec1b4-d39e-4f5f-a17b-41468fda9a8f"
     },
     "b2029a3c-fe26-4368-810f-e6164749dad1": {
-        "commit_message": "TLAB-2070: added new mapper",
-        "commit_origin_hash": "e2cc8ff669d7b18070b010fb581ae90853a62fbe",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "device_hostname": {
                 "alternate_values": [
@@ -85480,8 +85568,8 @@
         "uid": "b2029a3c-fe26-4368-810f-e6164749dad1"
     },
     "b21dd6bd-d73f-4e9d-aca7-d95f5fd6c93d": {
-        "commit_message": "TLAB-2067: updated fields mappings (#5939)",
-        "commit_origin_hash": "ca238e9c16094d90ebd6786d3ac42b31babfee4e",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "action": {
                 "value": "activity"
@@ -85684,8 +85772,8 @@
         "uid": "b28d2c05-12a8-4678-921f-a8a277f370e3"
     },
     "b28e6ee8-063a-4a97-975f-aba5a6161c98": {
-        "commit_message": "TLAB-2664 PAN session and flag remapping (#5996)",
-        "commit_origin_hash": "a4191240523ce753371bb67c19d7c8b8855860c9",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "device_hostname": {
                 "alternate_values": [
@@ -85955,8 +86043,8 @@
         "uid": "b2de8aea-eaf5-44af-a730-d1e24cd017a9"
     },
     "b2f5958-9e00-4e4c-bc8c-de811ddb883b": {
-        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
-        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "commandLine": {
                 "value": "event.CommandLine"
@@ -86104,8 +86192,8 @@
         "uid": "b33c4289-78c5-4262-a420-26d97a2788db"
     },
     "b34ed686-f195-4c21-a688-1141ab8a71ec": {
-        "commit_message": "TLAB-2070: added new mapper",
-        "commit_origin_hash": "e2cc8ff669d7b18070b010fb581ae90853a62fbe",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "device_hostname": {
                 "value": "aid"
@@ -86491,8 +86579,8 @@
         "uid": "b3edeaee-6d9a-4192-9381-b79261bdefb2"
     },
     "b3ff45ad-e402-43c0-8406-f44441c226f2": {
-        "commit_message": "feat(mapper): add http_userAgent mapping from ExtendedProperties_UserAgent for O365 Authentication Events (#5983)",
-        "commit_origin_hash": "89274c72ab701d8dee00c5a19a0e8f5b95dc4dbd",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "action": {
                 "value": "Operation"
@@ -87288,8 +87376,8 @@
         "uid": "b58475cc-681c-479e-ae94-656eaafd333c"
     },
     "b593dc79-fab8-4a4d-82a9-3539980e98c1": {
-        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
-        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "accountId": {
                 "value": "event.CustomerId"
@@ -87594,8 +87682,8 @@
         "uid": "b6abd358-d7de-4210-9680-700970725f8a"
     },
     "b6c01dc5-a74b-435d-a22a-96b4f9f3168e": {
-        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
-        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "accountId": {
                 "value": "userStates.1.aadUserId"
@@ -87749,8 +87837,8 @@
         "uid": "b6f6c7ab-88a7-420c-8800-8c029bfc9ac3"
     },
     "b722f175-2dd7-4509-b97f-63de578cbb59": {
-        "commit_message": "TLAB-2590 Fortigate Test Fixes (#5971)",
-        "commit_origin_hash": "90bce1b19a116cb5b64837d10ece2cbad27144cc",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -89139,8 +89227,8 @@
         "uid": "b99387f5-969d-49e8-9730-ebd952e6a37f"
     },
     "b993e0c4-67c9-4080-8339-1156bca5ef7e": {
-        "commit_message": "feat(mapper): add http_userAgent mapping from ExtendedProperties_UserAgent for O365 Authentication Events (#5983)",
-        "commit_origin_hash": "89274c72ab701d8dee00c5a19a0e8f5b95dc4dbd",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "action": {
                 "value": "Operation"
@@ -90174,8 +90262,8 @@
         "uid": "baf05dd7-9cd2-4a6d-bbba-72a904a52c83"
     },
     "bb41f15f-99b4-4f6b-aa69-83e1119d4810": {
-        "commit_message": "TLAB-2067: updated fields mappings (#5939)",
-        "commit_origin_hash": "ca238e9c16094d90ebd6786d3ac42b31babfee4e",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "action": {
                 "value": "activity"
@@ -91334,8 +91422,8 @@
         "uid": "c088e78a-ff9d-45c5-87c2-fd48f6248b9d"
     },
     "c0c6268a-28f8-4ae7-987a-4112b3b1d8f7": {
-        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
-        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "application": {
                 "value": "ServiceName"
@@ -91442,8 +91530,8 @@
         "uid": "c0d80f48-2583-41ce-b667-5c2b65b77daa"
     },
     "c104d8f5-a6f8-48cc-bce8-15af3a294c40": {
-        "commit_message": "TLAB-2118: added alternate for threat name (#5812)",
-        "commit_origin_hash": "c7cb417cab4c590dea7a0dc0633df576dd1d3b08",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "action": {
                 "value": "Action"
@@ -91497,8 +91585,8 @@
         "uid": "c104d8f5-a6f8-48cc-bce8-15af3a294c40"
     },
     "c11a6f1b-73fd-42a8-a55f-b8fc2742fa21": {
-        "commit_message": "TLAB-270 Darktrace Mapper Additions",
-        "commit_origin_hash": "6b77f4d6babd6b8d2e62fa1d625ee8d8bac17788",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "description": {
                 "value": "model.description"
@@ -91560,8 +91648,8 @@
         "uid": "c11a6f1b-73fd-42a8-a55f-b8fc2742fa21"
     },
     "c17b35e5-dc9d-4fd8-94e4-f49b29589288": {
-        "commit_message": "Updated fortinet authentication mapper event_id_pattern (#5981)",
-        "commit_origin_hash": "c53a1eeba4374751c753356236ebf0410f4fe05b",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -91907,8 +91995,8 @@
         "uid": "c1f966d9-4a30-4e67-a5ba-9630545f757f"
     },
     "c26eb2a4-4b11-45a2-b3cf-173c1a12f5ab": {
-        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
-        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "application": {
                 "value": "deviceProcessName"
@@ -92700,8 +92788,8 @@
         "uid": "c3eaf746-896b-11ea-bc55-0242ac130003"
     },
     "c3f3c9f3-90f5-4340-823f-7a133a278647": {
-        "commit_message": "feat(mapper): add http_userAgent mapping from ExtendedProperties_UserAgent for O365 Authentication Events (#5983)",
-        "commit_origin_hash": "89274c72ab701d8dee00c5a19a0e8f5b95dc4dbd",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "action": {
                 "value": "Operation"
@@ -92819,8 +92907,8 @@
         "uid": "c42bfa1c-9ead-4797-abc8-629df562bb61"
     },
     "c459d102-6709-424a-b9a0-69932ea9f5e5": {
-        "commit_message": "TLAB-2664 PAN session and flag remapping (#5996)",
-        "commit_origin_hash": "a4191240523ce753371bb67c19d7c8b8855860c9",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "action": {
                 "alternate_values": [
@@ -93471,8 +93559,8 @@
         "uid": "c5b68c1d-1d67-417a-89c3-1a33266778f7"
     },
     "c5d57c30-5458-4895-91eb-40a2483e9008": {
-        "commit_message": "TLAB-2590 Fortigate Test Fixes (#5971)",
-        "commit_origin_hash": "90bce1b19a116cb5b64837d10ece2cbad27144cc",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -93891,8 +93979,8 @@
         "uid": "c6f40cdd-1908-4826-95d8-d4c52186c4c0"
     },
     "c708976b-a216-48a2-a492-d6a7a4fc2529": {
-        "commit_message": "feat(mapper): add http_userAgent mapping from ExtendedProperties_UserAgent for O365 Authentication Events (#5983)",
-        "commit_origin_hash": "89274c72ab701d8dee00c5a19a0e8f5b95dc4dbd",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "action": {
                 "value": "Operation"
@@ -94176,8 +94264,8 @@
         "uid": "c7abbbdf-8fb0-486a-93b0-fddf5396be38"
     },
     "c7d1f7ef-5ef8-464d-b483-d4539c1db75a": {
-        "commit_message": "TLAB-2664 PAN session and flag remapping (#5996)",
-        "commit_origin_hash": "a4191240523ce753371bb67c19d7c8b8855860c9",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "action": {
                 "alternate_values": [
@@ -94634,8 +94722,8 @@
         "uid": "c8a79801-48cc-4edd-879a-c2354ac8ab7b"
     },
     "c9abc135-6d47-48fc-861e-6ec0301ff160": {
-        "commit_message": "TLAB-1763 updated the mapper",
-        "commit_origin_hash": "1206481b114573497ec55a8d3db063060ec2005b",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "action": {
                 "value": "act"
@@ -94888,8 +94976,8 @@
         "uid": "ca60e048-c6dd-44ce-b606-5b49aa33deb9"
     },
     "ca8610b2-185e-4c44-885c-769329fbddc5": {
-        "commit_message": "feat(mapper): add http_userAgent mapping from ExtendedProperties_UserAgent for O365 Authentication Events (#5983)",
-        "commit_origin_hash": "89274c72ab701d8dee00c5a19a0e8f5b95dc4dbd",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "action": {
                 "value": "Operation"
@@ -95570,8 +95658,8 @@
         "uid": "cb107f45-2e4d-4c8b-ba9d-4805aee79fb7"
     },
     "cb996e17-3f10-477e-a9fb-1acbba2bd730": {
-        "commit_message": "feat(mapper): add http_userAgent mapping from ExtendedProperties_UserAgent for O365 Authentication Events (#5983)",
-        "commit_origin_hash": "89274c72ab701d8dee00c5a19a0e8f5b95dc4dbd",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "timestamp": {
                 "format": "yyyy-MM-dd'T'HH:mm:ss",
@@ -95649,8 +95737,8 @@
         "uid": "cb9dcfbd-d443-4111-ad08-7e7050518838"
     },
     "cbd41736-9ba9-4442-bbd4-525a38dadb49": {
-        "commit_message": "TLAB-2664 PAN session and flag remapping (#5996)",
-        "commit_origin_hash": "a4191240523ce753371bb67c19d7c8b8855860c9",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "action": {
                 "alternate_values": [
@@ -95953,8 +96041,8 @@
         "uid": "cc421929-d647-4059-8ee5-916932ad4fe9"
     },
     "cc658a93-1225-44ff-b6fc-95acd14a7861": {
-        "commit_message": "TLAB-2067: updated fields mappings (#5939)",
-        "commit_origin_hash": "ca238e9c16094d90ebd6786d3ac42b31babfee4e",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "action": {
                 "value": "activity"
@@ -96112,8 +96200,8 @@
         "uid": "cc658a93-1225-44ff-b6fc-95acd14a7861"
     },
     "cca91bd6-c001-4bcb-bb98-2f15ece96bcc": {
-        "commit_message": "Update claroty_xdome.yaml",
-        "commit_origin_hash": "b469cf617efcbba395b86ae1a431c73b821e113e",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "description": {
                 "value": "alert_description"
@@ -96134,7 +96222,7 @@
                 "value": "alert_description"
             },
             "threat_ruleType": {
-                "value": "direct",
+                "value": "network",
                 "value_type": "constant"
             },
             "threat_signalName": {
@@ -97136,8 +97224,8 @@
         "uid": "cf6d35ed-79bc-4316-b8ab-62e7a606818b"
     },
     "cf7c6c83-2b73-47c4-933d-aaf0bdae6450": {
-        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
-        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "action": {
                 "value": "metadata.status"
@@ -97220,8 +97308,8 @@
         "uid": "cf7c6c83-2b73-47c4-933d-aaf0bdae6450"
     },
     "cf87663f-bf57-49c2-b0a5-0e1c5e7f50fc": {
-        "commit_message": "feat(mapper): add http_userAgent mapping from ExtendedProperties_UserAgent for O365 Authentication Events (#5983)",
-        "commit_origin_hash": "89274c72ab701d8dee00c5a19a0e8f5b95dc4dbd",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "device_ip": {
                 "value": "ClientIP"
@@ -97412,8 +97500,8 @@
         "uid": "cfb2c4e8-72eb-4b69-ae52-c865ca397dfc"
     },
     "cfc24f6e-44a4-4881-8a0c-fec7cdae578e": {
-        "commit_message": "Merge branch 'dev' into TRIDENT-11934-FireEye-CMS-Normalized-Rule-Update",
-        "commit_origin_hash": "61fc51b742aa2b0ff2dbf37237c5129bec8d1f15",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "action": {
                 "value": "act"
@@ -97612,8 +97700,8 @@
         "uid": "d01cd3a1-c603-4128-8eb7-2200ff692fcb"
     },
     "d01f4ea7-2a17-4a03-a67c-da572df33b9c": {
-        "commit_message": "TRIDENT-15588 Adjust BitDefender mapper, etc to accept all modules",
-        "commit_origin_hash": "c24e597127203372b2e89a64adcb544cdbdcdd80",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "action": {
                 "value": "params.events.main_action"
@@ -99224,8 +99312,8 @@
         "uid": "d437fadd-4bbc-46ff-b9d4-6e303404c8db"
     },
     "d445809e-76ab-4a59-a4d6-2277b3069347": {
-        "commit_message": "change threat_ruleType to direct",
-        "commit_origin_hash": "0ca180ad6b12f8aa1aad43335afdfde14521f0a6",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -99664,8 +99752,8 @@
         "uid": "d4c5da9c-c753-4c91-b749-c98a0ac24c53"
     },
     "d4d12cbf-66cd-4e9b-a42a-d0bc7c3a26b3": {
-        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
-        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "description": {
                 "value": "event.IncidentDescription"
@@ -99933,8 +100021,8 @@
         "uid": "d5ac14fb-0ee6-4fe7-b8b5-ad6012387cc6"
     },
     "d5ce3ea4-4242-41ef-b4fa-4119a7ba8101": {
-        "commit_message": "TLAB-2070: added new mapper",
-        "commit_origin_hash": "e2cc8ff669d7b18070b010fb581ae90853a62fbe",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "accountId": {
                 "value": "UserSid"
@@ -100154,8 +100242,8 @@
         "uid": "d65a4b67-4089-4e69-8bc6-8d5a3f1f4685"
     },
     "d6a16750-c9c5-4c31-bc14-2fa583172e3f": {
-        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
-        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "accountId": {
                 "value": "userStates.1.aadUserId"
@@ -100193,7 +100281,7 @@
                 "value": "title"
             },
             "threat_ruleType": {
-                "value": "direct",
+                "value": "data_protection",
                 "value_type": "constant"
             },
             "threat_signalName": {
@@ -100233,8 +100321,8 @@
         "uid": "d6a16750-c9c5-4c31-bc14-2fa583172e3f"
     },
     "d6a48aaf-c3e2-4f10-98ce-3821eec55002": {
-        "commit_message": "TLAB-2664 PAN session and flag remapping (#5996)",
-        "commit_origin_hash": "a4191240523ce753371bb67c19d7c8b8855860c9",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "action": {
                 "alternate_values": [
@@ -100573,8 +100661,8 @@
         "uid": "d6d47d9b-ca45-4dc2-89bf-a9f7c99f42ba"
     },
     "d76fff10-f948-43ce-a51a-31a99ddd09d0": {
-        "commit_message": "TLAB-270 Darktrace Mapper Additions",
-        "commit_origin_hash": "6b77f4d6babd6b8d2e62fa1d625ee8d8bac17788",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "description": {
                 "value": "model.description"
@@ -100636,8 +100724,8 @@
         "uid": "d76fff10-f948-43ce-a51a-31a99ddd09d0"
     },
     "d770ed94-4151-4eee-97a0-361178905de7": {
-        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
-        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "description": {
                 "value": "type"
@@ -100683,7 +100771,7 @@
                 "value": "type"
             },
             "threat_ruleType": {
-                "value": "direct",
+                "value": "data_protection",
                 "value_type": "constant"
             },
             "threat_signalName": {
@@ -100878,8 +100966,8 @@
         "uid": "d7b74a8a-4bbe-41d8-914b-8138c6b14150"
     },
     "d7cad270-f8fc-4d0d-982b-31fe9fb90334": {
-        "commit_message": "TLAB-2067: updated fields mappings (#5939)",
-        "commit_origin_hash": "ca238e9c16094d90ebd6786d3ac42b31babfee4e",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "action": {
                 "value": "activity"
@@ -102603,8 +102691,8 @@
         "uid": "dc4001fc-3621-41f7-9f53-a5fd7d72eb0e"
     },
     "dc596d84-47fe-4a4f-8132-dca3fe5920c9": {
-        "commit_message": "TLAB-2590 Fortigate Test Fixes (#5971)",
-        "commit_origin_hash": "90bce1b19a116cb5b64837d10ece2cbad27144cc",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -102674,7 +102762,7 @@
                 "value": "ref"
             },
             "threat_ruleType": {
-                "value": "direct",
+                "value": "network",
                 "value_type": "constant"
             },
             "threat_signalName": {
@@ -102863,8 +102951,8 @@
         "uid": "dc975eac-b121-408f-8688-48b80ce09d8b"
     },
     "dca6ce19-449e-468b-9bea-3db2cb87fa9c": {
-        "commit_message": "TLAB-2590 Fortigate Test Fixes (#5971)",
-        "commit_origin_hash": "90bce1b19a116cb5b64837d10ece2cbad27144cc",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -103475,8 +103563,8 @@
         "uid": "ddbefdf2-2f53-422f-92e9-5c050e756047"
     },
     "ddd7a5fb-60e7-4b33-a81a-4e7491977601": {
-        "commit_message": "TLAB-2295: create mapper for the varonis alert (#5874)",
-        "commit_origin_hash": "c577b3b1b1706e0491d2a489aac5c7419510941c",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "normalizedResource": {
                 "lookup": {
@@ -103521,7 +103609,7 @@
                 "value": "policy.name"
             },
             "threat_ruleType": {
-                "value": "direct",
+                "value": "data_protection",
                 "value_type": "constant"
             },
             "threat_signalName": {
@@ -104036,8 +104124,8 @@
         "uid": "df17837b-a59a-492a-b8ca-890580dbb3c6"
     },
     "df5cf29a-4b96-4ce2-b6ce-9abbf882f86e": {
-        "commit_message": "feat(mapper): add http_userAgent mapping from ExtendedProperties_UserAgent for O365 Authentication Events (#5983)",
-        "commit_origin_hash": "89274c72ab701d8dee00c5a19a0e8f5b95dc4dbd",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "device_ip": {
                 "value": "0.0.0.0",
@@ -104364,8 +104452,8 @@
         "uid": "dffce69e-85d4-4894-9b32-a5ff9657b101"
     },
     "e018g3c3-df8a-4722-8382-b8r4er0641ee": {
-        "commit_message": "TLAB-2590 Fortigate Test Fixes (#5971)",
-        "commit_origin_hash": "90bce1b19a116cb5b64837d10ece2cbad27144cc",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -104443,8 +104531,8 @@
         "uid": "e018g3c3-df8a-4722-8382-b8r4er0641ee"
     },
     "e018r3c3-da8a-4022-8382-b8r4er0641ee": {
-        "commit_message": "TLAB-2590 Fortigate Test Fixes (#5971)",
-        "commit_origin_hash": "90bce1b19a116cb5b64837d10ece2cbad27144cc",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -104529,8 +104617,8 @@
         "uid": "e018r3c3-da8a-4022-8382-b8r4er0641ee"
     },
     "e018v5c1-df0g-4712-8582-b8d4er0642ee": {
-        "commit_message": "TLAB-2590 Fortigate Test Fixes (#5971)",
-        "commit_origin_hash": "90bce1b19a116cb5b64837d10ece2cbad27144cc",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -104947,8 +105035,8 @@
         "uid": "e0a19ce7-0934-4a8c-a714-0d8efab68bdf"
     },
     "e0c69b8a-2fde-4e4c-a535-51f95298ab24": {
-        "commit_message": "TLAB-2067: updated fields mappings (#5939)",
-        "commit_origin_hash": "ca238e9c16094d90ebd6786d3ac42b31babfee4e",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "action": {
                 "value": "audit_log_event"
@@ -106243,8 +106331,8 @@
         "uid": "e3f5b429-af48-4135-abf1-c3a32db01a14"
     },
     "e3f84313-4099-4c1f-97f1-700f73a76311": {
-        "commit_message": "Updated fortinet authentication mapper event_id_pattern (#5981)",
-        "commit_origin_hash": "c53a1eeba4374751c753356236ebf0410f4fe05b",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -106313,7 +106401,7 @@
                 "value": "srcport"
             },
             "threat_ruleType": {
-                "value": "direct",
+                "value": "data_protection",
                 "value_type": "constant"
             },
             "threat_signalName": {
@@ -106349,8 +106437,8 @@
         "uid": "e3f84313-4099-4c1f-97f1-700f73a76311"
     },
     "e407808f-9ddb-4a02-856d-33ba781213f4": {
-        "commit_message": "TLAB-270 Darktrace Mapper Additions",
-        "commit_origin_hash": "6b77f4d6babd6b8d2e62fa1d625ee8d8bac17788",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "description": {
                 "value": "model.description"
@@ -106375,7 +106463,7 @@
                 "value": "breachUrl"
             },
             "threat_ruleType": {
-                "value": "direct",
+                "value": "network",
                 "value_type": "constant"
             },
             "threat_signalName": {
@@ -106667,8 +106755,8 @@
         "uid": "e4883fa4-baaa-47bc-948d-17ca3ba7ac94"
     },
     "e4dd1018-6a82-11ea-bc55-0242ac130003": {
-        "commit_message": "feat(mapper): add http_userAgent mapping from ExtendedProperties_UserAgent for O365 Authentication Events (#5983)",
-        "commit_origin_hash": "89274c72ab701d8dee00c5a19a0e8f5b95dc4dbd",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "action": {
                 "value": "Operation"
@@ -106702,8 +106790,8 @@
         "uid": "e4dd1018-6a82-11ea-bc55-0242ac130003"
     },
     "e4e783d6-9d89-44e1-ae23-4f622dca74a9": {
-        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
-        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "description": {
                 "value": "type"
@@ -107020,8 +107108,8 @@
         "uid": "e5a1ef69-b11f-4ccd-81a7-fdf322543e64"
     },
     "e69b5d13-5862-430a-a47d-5e9afd51b957": {
-        "commit_message": "TLAB-2664 PAN session and flag remapping (#5996)",
-        "commit_origin_hash": "a4191240523ce753371bb67c19d7c8b8855860c9",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "action": {
                 "alternate_values": [
@@ -107395,8 +107483,8 @@
         "uid": "e6da534c-057e-484b-9420-18b257745739"
     },
     "e70b51c6-7240-4b03-8c91-6c703feff198": {
-        "commit_message": "TLAB-2590 Fortigate Test Fixes (#5971)",
-        "commit_origin_hash": "90bce1b19a116cb5b64837d10ece2cbad27144cc",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "description": {
                 "value": "msg"
@@ -107577,8 +107665,8 @@
         "uid": "e77c575d-8d97-4fa3-ae9f-df9cc7e38fd8"
     },
     "e78a34a9-2db5-456b-92c7-d95689f1638f": {
-        "commit_message": "TLAB-2664 PAN session and flag remapping (#5996)",
-        "commit_origin_hash": "a4191240523ce753371bb67c19d7c8b8855860c9",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "action": {
                 "alternate_values": [
@@ -108306,8 +108394,8 @@
         "uid": "e881a967-4945-4e64-b1bb-ef2f270598a4"
     },
     "e950f317-cca3-4b1c-88a2-e3d111e9bbd0": {
-        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
-        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "description": {
                 "value": "type"
@@ -108524,8 +108612,8 @@
         "uid": "e95e03dc-5c20-4ad8-9db9-85f765b08ca2"
     },
     "e9b86fb4-19e5-46f5-81ee-6e647e3e669a": {
-        "commit_message": "TLAB-1763 updated the mapper",
-        "commit_origin_hash": "1206481b114573497ec55a8d3db063060ec2005b",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "action": {
                 "value": "act"
@@ -109013,8 +109101,8 @@
         "uid": "eab0642b-862f-4328-af33-e3b29893c41f"
     },
     "eab4df6a-a268-4c9d-9de9-39306124c64d": {
-        "commit_message": "Updated fortinet authentication mapper event_id_pattern (#5981)",
-        "commit_origin_hash": "c53a1eeba4374751c753356236ebf0410f4fe05b",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -109393,8 +109481,8 @@
         "uid": "eb91afed-79e3-415e-a25a-f85e5688d73d"
     },
     "eba2f49f-b86e-4a55-913b-90dc8423f4a1": {
-        "commit_message": "feat(mapper): add http_userAgent mapping from ExtendedProperties_UserAgent for O365 Authentication Events (#5983)",
-        "commit_origin_hash": "89274c72ab701d8dee00c5a19a0e8f5b95dc4dbd",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "device_ip": {
                 "value": "0.0.0.0",
@@ -109429,8 +109517,8 @@
         "uid": "eba2f49f-b86e-4a55-913b-90dc8423f4a1"
     },
     "ebdfc811-612b-48ed-ab66-abc2ca8b9c89": {
-        "commit_message": "TLAB-2664 PAN session and flag remapping (#5996)",
-        "commit_origin_hash": "a4191240523ce753371bb67c19d7c8b8855860c9",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "action": {
                 "alternate_values": [
@@ -109549,7 +109637,7 @@
                 "value": "threat_name"
             },
             "threat_ruleType": {
-                "value": "direct",
+                "value": "network",
                 "value_type": "constant"
             },
             "threat_signalName": {
@@ -109587,8 +109675,8 @@
         "uid": "ebdfc811-612b-48ed-ab66-abc2ca8b9c89"
     },
     "ebe12b29-1f36-435a-b9bb-95bef42c4af2": {
-        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
-        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "description": {
                 "value": "message"
@@ -109832,8 +109920,8 @@
         "uid": "ec47f79e-3512-44a7-8491-3d4a02b97f2f"
     },
     "ec4cdeac-8e41-21e8-adc0-ga7ae01bbebd": {
-        "commit_message": "TLAB-1763 updated the mapper",
-        "commit_origin_hash": "1206481b114573497ec55a8d3db063060ec2005b",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "device_hostname": {
                 "value": "shost"
@@ -109870,8 +109958,8 @@
         "uid": "ec4cdeac-8e41-21e8-adc0-ga7ae01bbebd"
     },
     "ecb3c4ff-a538-417a-91f7-7b7da76b5600": {
-        "commit_message": "TLAB-2332:updated mapping for thinkst canary (#5885)",
-        "commit_origin_hash": "b2aadd8d985282309620f0f9c58c44470c45529b",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "action": {
                 "value": "Description"
@@ -109943,7 +110031,7 @@
                 "value": "Description"
             },
             "threat_ruleType": {
-                "value": "direct",
+                "value": "data_protection",
                 "value_type": "constant"
             },
             "threat_signalName": {
@@ -110575,8 +110663,8 @@
         "uid": "edc80da0-7594-413c-9b55-3f1c1bad3acf"
     },
     "edcfa819-4c92-4691-b612-600852bd48d6": {
-        "commit_message": "TLAB-2664 PAN session and flag remapping (#5996)",
-        "commit_origin_hash": "a4191240523ce753371bb67c19d7c8b8855860c9",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "action": {
                 "value": "success"
@@ -110657,8 +110745,8 @@
         "uid": "edcfa819-4c92-4691-b612-600852bd48d6"
     },
     "edef03eb-307e-4360-8f9a-2dd87c71f4e6": {
-        "commit_message": "TRIDENT-14051 Update mappers to use _default_",
-        "commit_origin_hash": "46fe8bfb2159d2b1bc49dd2d481af2c41d0fdf1d",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "device_ip": {
                 "value": "src"
@@ -110695,7 +110783,7 @@
                 "value": "classification"
             },
             "threat_ruleType": {
-                "value": "direct",
+                "value": "data_protection",
                 "value_type": "constant"
             },
             "threat_signalName": {
@@ -111411,8 +111499,8 @@
         "uid": "f06b0da6-4e71-40ff-9c7f-4719d73f008e"
     },
     "f096edb3-5d42-4834-bfd0-16ff99fae568": {
-        "commit_message": "feat(mapper): add http_userAgent mapping from ExtendedProperties_UserAgent for O365 Authentication Events (#5983)",
-        "commit_origin_hash": "89274c72ab701d8dee00c5a19a0e8f5b95dc4dbd",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "action": {
                 "value": "Operation"
@@ -112160,8 +112248,8 @@
         "uid": "f3076e8d-b3c3-4401-82a0-179742707511"
     },
     "f35c71f7-eb5e-472a-94a9-9e9965492f1c": {
-        "commit_message": "feat(mapper): add http_userAgent mapping from ExtendedProperties_UserAgent for O365 Authentication Events (#5983)",
-        "commit_origin_hash": "89274c72ab701d8dee00c5a19a0e8f5b95dc4dbd",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "action": {
                 "value": "Operation"
@@ -112495,8 +112583,8 @@
         "uid": "f3c88519-7172-480d-9311-8a82b1c47a93"
     },
     "f418724b-a188-4848-80e6-1a46b6c2c98a": {
-        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
-        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "accountId": {
                 "value": "cid"
@@ -112875,8 +112963,8 @@
         "uid": "f437d4e7-7b09-4f58-924e-606eb49a2418"
     },
     "f4ccf8eb-1cf4-4427-9b06-3d79271a4d83": {
-        "commit_message": "TLAB-2664 PAN session and flag remapping (#5996)",
-        "commit_origin_hash": "a4191240523ce753371bb67c19d7c8b8855860c9",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "action": {
                 "alternate_values": [
@@ -113065,8 +113153,8 @@
         "uid": "f50113e5-8a13-49a8-873e-6af7030f9b6d"
     },
     "f5471bd2-a961-4aad-bae4-0e182bdfd05e": {
-        "commit_message": "TLAB-2590 Fortigate Test Fixes (#5971)",
-        "commit_origin_hash": "90bce1b19a116cb5b64837d10ece2cbad27144cc",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -113165,8 +113253,8 @@
         "uid": "f5800ba9-3b7a-4d54-8cc2-380b61e1ba63"
     },
     "f5929aaf-fa42-450d-b10b-30b48a9f8461": {
-        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
-        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "description": {
                 "value": "type"
@@ -113523,8 +113611,8 @@
         "uid": "f64a71fe-bc0b-4d28-bad7-9f6b6854c771"
     },
     "f64ab8dd-9149-4284-bdd9-fe0d695cba75": {
-        "commit_message": "TLAB-2070: added new mapper",
-        "commit_origin_hash": "e2cc8ff669d7b18070b010fb581ae90853a62fbe",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "device_hostname": {
                 "value": "aid"
@@ -114420,8 +114508,8 @@
         "uid": "f8794970-48a2-409f-883a-89fbd566b379"
     },
     "f8aece90-2f37-4086-8193-0adb47056800": {
-        "commit_message": "TLAB-2590 Fortigate Test Fixes (#5971)",
-        "commit_origin_hash": "90bce1b19a116cb5b64837d10ece2cbad27144cc",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -114573,8 +114661,8 @@
         "uid": "f8d81468-a912-4bcd-8aa3-26df0d0c1e8d"
     },
     "f92aeb36-4690-47b7-ba7b-be1d0ec491ce": {
-        "commit_message": "feat(mapper): add http_userAgent mapping from ExtendedProperties_UserAgent for O365 Authentication Events (#5983)",
-        "commit_origin_hash": "89274c72ab701d8dee00c5a19a0e8f5b95dc4dbd",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "action": {
                 "value": "Operation"
@@ -114683,8 +114771,8 @@
         "uid": "f95d4f87-7e41-42ae-be1f-6d8890d93508"
     },
     "f9b6ec33-d0b5-468a-a92c-a8c62a4bcca9": {
-        "commit_message": "Updated fortinet authentication mapper event_id_pattern (#5981)",
-        "commit_origin_hash": "c53a1eeba4374751c753356236ebf0410f4fe05b",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -115378,8 +115466,8 @@
         "uid": "fa1d880c-919b-4548-b03c-01e37c3f1a45"
     },
     "fa4028ba-0c1d-4fb3-a152-6e65e0b5200e": {
-        "commit_message": "TLAB-2664 PAN session and flag remapping (#5996)",
-        "commit_origin_hash": "a4191240523ce753371bb67c19d7c8b8855860c9",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "action": {
                 "alternate_values": [
@@ -115499,8 +115587,8 @@
         "uid": "fa4028ba-0c1d-4fb3-a152-6e65e0b5200e"
     },
     "fa572950-571a-4570-9299-8cd3fa64fad2": {
-        "commit_message": "feat(mapper): add http_userAgent mapping from ExtendedProperties_UserAgent for O365 Authentication Events (#5983)",
-        "commit_origin_hash": "89274c72ab701d8dee00c5a19a0e8f5b95dc4dbd",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "action": {
                 "value": "Operation"
@@ -115787,8 +115875,8 @@
         "uid": "fa941c09-d584-427a-992c-b543cf611346"
     },
     "fab7ef6d-cabb-406c-b03d-a593e6134f4f": {
-        "commit_message": "TLAB-2070: added new mapper",
-        "commit_origin_hash": "e2cc8ff669d7b18070b010fb581ae90853a62fbe",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "accountId": {
                 "value": "UserSid"
@@ -116502,8 +116590,8 @@
         "uid": "fbfddcc8-cd41-41a7-a163-99dfec7119e6"
     },
     "fc4bdeac-7e41-11e8-adc0-fa7ae01bbebc": {
-        "commit_message": "TLAB-1763 updated the mapper",
-        "commit_origin_hash": "1206481b114573497ec55a8d3db063060ec2005b",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "action": {
                 "value": "name"
@@ -116553,8 +116641,8 @@
         "uid": "fc4bdeac-7e41-11e8-adc0-fa7ae01bbebc"
     },
     "fc4bdead-7e41-11e8-adc1-fa7ae01bbede": {
-        "commit_message": "TLAB-1763 updated the mapper",
-        "commit_origin_hash": "1206481b114573497ec55a8d3db063060ec2005b",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "action": {
                 "value": "act"
@@ -116616,8 +116704,8 @@
         "uid": "fc4bdead-7e41-11e8-adc1-fa7ae01bbede"
     },
     "fc8169ec-a972-11ea-bb37-0242ac130002": {
-        "commit_message": "feat(mapper): add http_userAgent mapping from ExtendedProperties_UserAgent for O365 Authentication Events (#5983)",
-        "commit_origin_hash": "89274c72ab701d8dee00c5a19a0e8f5b95dc4dbd",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "device_ip": {
                 "value": "ClientIP"
@@ -116965,8 +117053,8 @@
         "uid": "fd5cf2c5-3f74-458e-9052-3d53f182eef8"
     },
     "fdcdc2ff-df99-457c-a709-ce08dafc74b8": {
-        "commit_message": "TRIDENT-15588 Adjust BitDefender mapper, etc to accept all modules",
-        "commit_origin_hash": "c24e597127203372b2e89a64adcb544cdbdcdd80",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "action": {
                 "value": "params.events.main_action"
@@ -117629,8 +117717,8 @@
         "uid": "ff18353f-3a63-4ffb-aeff-bb2d5a4fadba"
     },
     "ff1e86b2-347d-4a94-9f33-c6e8250b7003": {
-        "commit_message": "TLAB-2664 PAN session and flag remapping (#5996)",
-        "commit_origin_hash": "a4191240523ce753371bb67c19d7c8b8855860c9",
+        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
+        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
         "field_mappings": {
             "action": {
                 "value": "op"
@@ -117774,8 +117862,8 @@
         "uid": "ff59f645-a195-4cdf-ba07-8638be08621f"
     },
     "ff765ece-8824-468e-853a-1bf537948045": {
-        "commit_message": "TLAB-2118: added alternate for threat name (#5812)",
-        "commit_origin_hash": "c7cb417cab4c590dea7a0dc0633df576dd1d3b08",
+        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
+        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
         "field_mappings": {
             "accountId": {
                 "alternate_values": [
