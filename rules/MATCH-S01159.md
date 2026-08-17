@@ -16,11 +16,6 @@ Passes through a container, cloud-native, or application runtime detection (e.g.
 |Prototype|False|
 |Tags||
 ## Vendors and Products
-- [Aqua - Aqua](../products/4c2a186d-6aa5-47da-a6af-7fddfe16b528.md)
-- [Contrast Security - Contrast ADR](../products/fa3c148a-4272-4a94-aea2-499ab90424c2.md)
-- [Falco - Falco](../products/d6cb76d3-939e-4e02-b399-b15e0278c877.md)
-- [Sysdig - Sysdig](../products/55ec1d4a-6985-4f04-8de5-f9812871fda2.md)
-- [Twistlock - Twistlock](../products/581D3DD8-4DA7-4192-9E49-320D7AFB8B53.md)
 
 
 ## Fields Used

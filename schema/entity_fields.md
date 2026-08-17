@@ -47,9 +47,11 @@ Here is a list of schema fields which Cloud SIEM considers entities and the type
 |srcDevice_k8s_normalizedReplicaSetName|_replicaset|
 |srcDevice_mac|_mac|
 |srcDevice_natIp|_ip|
+|targetUser_accessId|_accessid|
 |targetUser_email|_email|
 |targetUser_username|_username|
 |targetUser_username_raw|_username|
+|user_accessId|_accessid|
 |user_email|_email|
 |user_username|_username|
 |user_username_raw|_username|

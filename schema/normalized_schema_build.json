@@ -3689,6 +3689,15 @@
         "mappable": false,
         "type": "string"
     },
+    "fromUser_accessId": {
+        "deprecated": true,
+        "description": "The identifier of a programmatic credential used by a user or service identity to authenticate, such as an AWS IAM access key ID, an API key ID, or a service token ID. This identifies the credential itself and is distinct from the account identifier in userId.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": null,
+        "mappable": false,
+        "type": "string"
+    },
     "fromUser_authDomain": {
         "deprecated": true,
         "description": "The domain associated with this particular user. (e.g. sumologic.com, sumologic.local)",
@@ -4994,6 +5003,15 @@
         "mappable": true,
         "type": "boolean"
     },
+    "targetUser_accessId": {
+        "deprecated": false,
+        "description": "The identifier of a programmatic credential belonging to the impacted or acted upon identity, such as an AWS IAM access key ID, an API key ID, or a service token ID.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": "_accessid",
+        "mappable": true,
+        "type": "string"
+    },
     "targetUser_authDomain": {
         "deprecated": false,
         "description": "The authentication domain of a user which is subject to or is otherwise impacted by activity undertaken by another user. Such as the Active Directory domain to which a new user account being created belongs.",
@@ -5154,6 +5172,15 @@
         "enrichment_type": null,
         "entity_type": null,
         "mappable": false,
+        "type": "string"
+    },
+    "user_accessId": {
+        "deprecated": false,
+        "description": "The identifier of a programmatic credential used by the acting identity to authenticate, such as an AWS IAM access key ID, an API key ID, or a service token ID. This identifies the credential itself rather than the account which owns it.",
+        "enrichment_populated": false,
+        "enrichment_type": null,
+        "entity_type": "_accessid",
+        "mappable": true,
         "type": "string"
     },
     "user_authDomain": {

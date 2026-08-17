@@ -20,6 +20,13 @@
         "name": "AWS ALB",
         "parser_text": "[parser]\n\nTRANSFORM_IF_ELSE:^\\d+ = conn_lb,classic_lb\n\n# Establish mapper configuration for all events in one place\nMAPPER:vendor = AWS\nMAPPER:product = Application Load Balancer\nMAPPER:event_id = {{event_name}}\n\n#Running Parser for Regular ALB Logs\n\n[transform:classic_lb]\n# Establish log format and fields\nFORMAT = CSV\nFIELD_DELIMS=\" \"\nFIELDS = type time elb client target request_processing_time target_processing_time response_processing_time elb_status_code target_status_code received_bytes sent_bytes request user_agent ssl_cipher ssl_protocol target_group_arn trace_id domain_name chosen_cert_arn matched_rule_priority request_creation_time actions_executed redirect_url error_reason target:port_list target_status_code_list classification classification_reason\nOPTIONAL_FIELDS = conn_trace_id\n\nSET:event_name = AWS_ALB\n\n#Handle time\nTIME_PARSER = yyyy-MM-dd'T'HH:mm:ss.SSSSSSX\nSTART_TIME_FIELD = time\n\n# Split out values from fields that contain multiples\nTRANSFORM_FIELD_IF_PRESENT:target = Split_IP_Port\nTRANSFORM:client = Split_IP_Port\nTRANSFORM:request = Parse_Request\n\n#Split out ports and IPs into separate fields\n[transform:Split_IP_Port]\nREGEX = -|(?<ip>[^\\-:]+):(?<port>.*)\nRENAME_FIELD:{{_$log_entry_field}}_ip = ip\nRENAME_FIELD:{{_$log_entry_field}}_port = port\n\n# Split out fields from request field\n[transform:Parse_Request]\nFORMAT = CSV\nFIELD_DELIMS=\" \"\nFIELD_HEADER_DELIMS=\",\"\nFIELDS = request_type, request_url, request_protocol\n\n#Running Parser for Regular ALB Logs\n[transform:conn_lb]\n# Establish log format and fields\nFORMAT = CSV\nFIELD_DELIMS=\" \"\nFIELDS = timestamp client_ip client_port listener_port tls_protocol tls_cipher tls_handshake_latency leaf_client_cert_subject leaf_client_cert_validity leaf_client_cert_serial_number tls_verify_status conn_trace_id\nOPTIONAL_FIELDS = conn_trace_id\n\nSET:event_name = AWS_ALB_CONN\n\n#Handle time\nTIME_PARSER = yyyy-MM-dd'T'HH:mm:ss.SSSSSSX\nSTART_TIME_FIELD = timestamp"
     },
+    "/Parsers/System/AWS/AWS API Gateway": {
+        "commit_message": "TLAB-2713 new parser for AWS API gateway logs",
+        "commit_origin_hash": "d7e7ca975d4d947094bb23c9524b1d4ed015bed5",
+        "description": "",
+        "name": "AWS API Gateway",
+        "parser_text": "[parser]\nFORMAT = JSON\n\n#Handle time\nSTART_TIME_FIELD = requestTime\nTIME_PARSER = dd/MMM/yyyy:HH:mm:ss Z\n\n#Set mapper information\nMAPPER:vendor = AWS\nMAPPER:product = API Gateway\nMAPPER:event_id = API Request"
+    },
     "/Parsers/System/AWS/AWS CloudFront": {
         "commit_message": "SUMO-215104: Migrate all parsers to system parser path",
         "commit_origin_hash": "9a68f7c517008c4725784de78522f630de8b92fa",
@@ -320,6 +327,13 @@
         "description": "Parser for Check Point Avanan events sent in JSON format",
         "name": "Check Point Avanan JSON",
         "parser_text": "[parser]\nFORMAT = JSON\n\n#Set CSE Mapping information\nMAPPER:vendor = Check Point\nMAPPER:product = Avanan\nMAPPER:event_id = {{event.entity.entity_info.entity_type}}\n\n#Handle time\nSTART_TIME_FIELD = event.entity.time\nTIME_PARSER = yyyy-MM-dd'T'HH:mm:ss.SSSSSSX"
+    },
+    "/Parsers/System/Check Point/Check Point CloudGuard": {
+        "commit_message": "Fix ZIP/DROP ordering: extract additionalFields before dropping",
+        "commit_origin_hash": "03859b2ac38e483883677edec8ce94ff53f32159",
+        "description": "Parser for Check Point CloudGuard posture management and workload protection findings in JSON format",
+        "name": "Check Point CloudGuard",
+        "parser_text": "[parser]\nFORMAT = JSON\nJSON_DROP_NULLS = true\n\n#Zip additionalFields array into key-value pairs before dropping indexed fields\nZIP:r|^additionalFields\\.(?P<_$INDEX>\\d+)\\.name:r|additionalFields\\.(?P<_$INDEX>\\d+)\\.value = \n\n#Drop high-cardinality nested fields to stay within field count limits\nDROP:r|^entity\\. = true\nDROP:r|^remediationActions\\. = true\nDROP:r|^additionalFields\\. = true\n\n#Set CSE Mapping information\nMAPPER:vendor = Check Point\nMAPPER:product = CloudGuard\nMAPPER:event_id = {{rule.ruleId}}\n\n#Handle time\nSTART_TIME_FIELD = reportTime\nTIME_PARSER = yyyy-MM-dd'T'HH:mm:ss.SSSX,yyyy-MM-dd'T'HH:mm:ss.SSX,yyyy-MM-dd'T'HH:mm:ssX\n\nDROP:_log_entry = true"
     },
     "/Parsers/System/Check Point/Check Point Firewall JSON": {
         "commit_message": "TLAB-2657_support fw_subproduct whenever the main product field isn't there.",

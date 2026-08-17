@@ -17,11 +17,8 @@ User-Agent strings used by Houdini/Iniduoh/njRAT malware.
 |Tags|_mitreAttackTactic:TA0011, _mitreAttackTechnique:T1071, _mitreAttackTechnique:T1071.001, _mitreAttackTactic:TA0009, _mitreAttackTechnique:T1213, _mitreAttackTechnique:T1213.001|
 ## Vendors and Products
 - [Amazon AWS - AWS S3 Server Access Logs](../products/41f70c6e-18a9-462c-a04d-4edc7baead7a.md)
-- [Amazon AWS - Web Application Firewall (WAF)](../products/072b85a2-1765-45c2-911d-b0509880326e.md)
 - [Cloudflare - Logpush](../products/c2503fcc-ef30-4e40-bb32-0bf47151b140.md)
 - [Forcepoint - Web Security](../products/e90edc67-68d4-4d67-82f6-4524f94b59bb.md)
-- [Microsoft - IIS](../products/fca8785d-4823-4442-86b2-8acbaa176da4.md)
-- [Nginx - Nginx](../products/1ce88b4b-d90d-4d50-9a89-3abe83e8d5f8.md)
 
 
 ## Fields Used

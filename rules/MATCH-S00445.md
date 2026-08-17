@@ -21,7 +21,6 @@ https://techviral.net/ransomware-encrypted-file-extensions/
 |Prototype|False|
 |Tags|_mitreAttackTactic:TA0040, _mitreAttackTechnique:T1486|
 ## Vendors and Products
-- [Bitdefender - GravityZone](../products/046b3623-69fe-409f-9e80-fd3ebef0654f.md)
 - [Cloudflare - Logpush](../products/c2503fcc-ef30-4e40-bb32-0bf47151b140.md)
 - [CrowdStrike - FDR](../products/569a3a44-c29f-492e-bcf4-5dc04e2ab0f3.md)
 - [Fortinet - Fortigate](../products/c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad.md)
@@ -32,7 +31,6 @@ https://techviral.net/ransomware-encrypted-file-extensions/
 - [Microsoft - Defender Advanced Hunting](../products/3382523e-2072-41bd-b50b-6b148957d0b0.md)
 - [Microsoft - Office 365](../products/d3ed003d-5ddd-4c7a-bea5-63eae6311833.md)
 - [Microsoft - Windows](../products/1ff7546c-cb36-4a24-87f7-89d2cecc5761.md)
-- [Slack - Slack](../products/79da6240-7617-49c8-b130-96278579766e.md)
 - [Trend Micro - Vision One](../products/72a5ddec-abb9-41ff-a2da-6a58beff980c.md)
 - [Varonis - DatAdvantage](../products/4d6a3683-4edb-4330-9e9f-b8608cd63981.md)
 

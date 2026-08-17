@@ -8,7 +8,7 @@ Detects a successful authentication to Office 365 where the user agent string co
 |----|----|
 |Type|Templated Match|
 |Category|Credential Access|
-|Apply Risk to Entities|device_ip, user_username|
+|Apply Risk to Entities|srcDevice_ip, user_username|
 |Signal Name|O365 - Successful Authentication with PowerShell User Agent|
 |Summary Expression|User: {{user_username}} successfully logged on|
 |Score/Severity|Static: 5|
@@ -23,11 +23,11 @@ Detects a successful authentication to Office 365 where the user agent string co
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|device_ip|
 |Direct from Record|fields['ExtendedProperties.1.Value']|
 |Normalized Schema|metadata_deviceEventId|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|
+|Normalized Schema|srcDevice_ip|
 |Normalized Schema|success|
 |Normalized Schema|user_username|
 

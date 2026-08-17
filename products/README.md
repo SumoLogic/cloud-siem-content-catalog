@@ -68,6 +68,7 @@ Below is a full list of Cloud SIEM products.
 |[CheckPoint](../vendors/6ee43776-3c2c-49b9-a5cf-51309e815aa3.md)|[Application Control](1624169f-36c4-4309-8400-1409a171d00b.md)|
 |[CheckPoint](../vendors/6ee43776-3c2c-49b9-a5cf-51309e815aa3.md)|[Application Control URL Filtering](ec98f4a8-f961-4e5b-ad7c-dc3c64301f47.md)|
 |[CheckPoint](../vendors/6ee43776-3c2c-49b9-a5cf-51309e815aa3.md)|[Avanan](b8956e27-b893-4518-85ff-20835710c3cf.md)|
+|[CheckPoint](../vendors/6ee43776-3c2c-49b9-a5cf-51309e815aa3.md)|[CloudGuard](c3576aad-5a93-480b-830f-75fbaa377453.md)|
 |[CheckPoint](../vendors/6ee43776-3c2c-49b9-a5cf-51309e815aa3.md)|[Firewall and VPN](c3c1a4fc-10cc-4155-8a30-a3bb14fc9f31.md)|
 |[CheckPoint](../vendors/6ee43776-3c2c-49b9-a5cf-51309e815aa3.md)|[IPS](18397be3-8078-4de3-96b1-860d22fd7bd6.md)|
 |[CheckPoint](../vendors/6ee43776-3c2c-49b9-a5cf-51309e815aa3.md)|[New Anti Virus](16adccbd-5988-42e4-931d-fa413dc7949e.md)|

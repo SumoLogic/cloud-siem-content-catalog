@@ -23,7 +23,6 @@ Attackers may use improper URL checking to inject code that is executed on a ser
 - [Amazon AWS - Web Application Firewall (WAF)](../products/072b85a2-1765-45c2-911d-b0509880326e.md)
 - [Apache - Apache HTTP Server](../products/6787d77a-1ee0-43d4-8ca0-96af8ee755bc.md)
 - [Bro - Bro](../products/37C866BF-72E1-470A-9072-EDB908F56951.md)
-- [Cisco Systems - Umbrella](../products/5ba50e74-3c05-4ea8-aeaf-5efde588c60f.md)
 - [Cloudflare - Logpush](../products/c2503fcc-ef30-4e40-bb32-0bf47151b140.md)
 - [Contrast Security - Contrast ADR](../products/fa3c148a-4272-4a94-aea2-499ab90424c2.md)
 - [F5 - F5](../products/ede052db-d472-408f-949c-be642237ef3f.md)
@@ -32,7 +31,6 @@ Attackers may use improper URL checking to inject code that is executed on a ser
 - [Microsoft - Azure](../products/a1225af5-e778-4068-a9a2-47da93d1ff24.md)
 - [Microsoft - IIS](../products/fca8785d-4823-4442-86b2-8acbaa176da4.md)
 - [Nginx - Nginx](../products/1ce88b4b-d90d-4d50-9a89-3abe83e8d5f8.md)
-- [Palo Alto Networks - Next Generation Firewall](../products/46f5fa2c-1a62-4692-82ad-ed87800a0adb.md)
 - [Zscaler - Nanolog Streaming Service](../products/6299d728-14f7-455e-85c5-ea8ec65a654a.md)
 
 
