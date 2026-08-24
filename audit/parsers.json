@@ -174,6 +174,13 @@
         "name": "Akamai CPC",
         "parser_text": "[parser]\nFORMAT = JSON\n\n# Set CSE Meta Data\nMAPPER:vendor = Akamai\nMAPPER:product = CPC\nMAPPER:event_id = {{cpcAlertType}}\n\n# Handle the time \nSTART_TIME_FIELD = _messagetime\nTIME_PARSER = X1000"
     },
+    "/Parsers/System/Akamai/Akamai SIEM C2C": {
+        "commit_message": "TLAB-2778 Akamai SIEM parser",
+        "commit_origin_hash": "4667bf9cb2f14bcaa80dd4905e7ea1fc623f21dc",
+        "description": "",
+        "name": "Akamai SIEM C2C",
+        "parser_text": "[parser]\n\nFORMAT = JSON\n\n# Set mapping metadata\nMAPPER:vendor = Akamai\nMAPPER:product = SIEM\nMAPPER:event_id = {{type}}\n\n# Handle Time\nSTART_TIME_FIELD = _messagetime\nTIME_PARSER = X1000"
+    },
     "/Parsers/System/Akamai/Noname API Security": {
         "commit_message": "SUMO-215104: Migrate all parsers to system parser path",
         "commit_origin_hash": "9a68f7c517008c4725784de78522f630de8b92fa",
