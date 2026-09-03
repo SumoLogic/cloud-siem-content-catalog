@@ -18,17 +18,21 @@ This rule detects successful authentications from an IP address associated with 
 ## Vendors and Products
 - [1Password - 1Password](../products/3fe1afe0-c1c2-45d6-835e-0bdb1e4b703f.md)
 - [Amazon AWS - CloudTrail](../products/033624b0-218e-4dcb-b93f-0f1fb1806c56.md)
+- [Atlassian - Atlassian Audit Events](../products/23342262-740c-41b7-9b77-08267ae01612.md)
 - [Auth0 - Auth0](../products/0b45ccba-20b4-41e4-973d-b50fd291944d.md)
+- [Cisco Systems - ASA](../products/be4f7473-fe69-4311-8859-3561900060bf.md)
 - [Cisco Systems - Identity Services Engine](../products/153794da-09e8-48fe-b511-1306fbb94d07.md)
 - [Citrix - ADC](../products/d3606245-76d3-4173-a2fe-832c0e71b0f9.md)
 - [Duo Security - Multi-Factor Authentication (MFA)](../products/acb7e80e-2b66-496c-ba2e-1e7c3933a98e.md)
 - [Google - Google Workspace](../products/e73cd65a-7a4b-4ce9-9d73-e5d9c824c214.md)
+- [JumpCloud - Directory Insights](../products/05bfaf47-5e21-4d5f-b724-98960a6fca8a.md)
 - [Linux - Linux OS Syslog](../products/0e20c932-d992-4bd4-b276-c15119ca5c0b.md)
 - [Microsoft - Azure](../products/a1225af5-e778-4068-a9a2-47da93d1ff24.md)
 - [Microsoft - Defender Advanced Hunting](../products/3382523e-2072-41bd-b50b-6b148957d0b0.md)
 - [Microsoft - Graph AD Reporting API](../products/fe5a3e8b-8b6e-44c7-92a8-adfb20df5c75.md)
 - [Microsoft - Office 365](../products/d3ed003d-5ddd-4c7a-bea5-63eae6311833.md)
 - [Microsoft - Windows](../products/1ff7546c-cb36-4a24-87f7-89d2cecc5761.md)
+- [Mimecast - Mimecast](../products/54B36B3F-A63F-4BA4-9DE4-02DBF69A429F.md)
 - [Okta - Single Sign-On](../products/51278354-d6b5-4c8e-a8fd-8197df334e67.md)
 - [OneLogin - OneLogin Single Sign-On](../products/e43ba0e4-1e3f-40c6-8bca-cb06a656a40b.md)
 - [OpenVPN - OpenVPN](../products/9f6d624f-6d8f-43c7-a4b0-51179061631c.md)
@@ -36,7 +40,11 @@ This rule detects successful authentications from an IP address associated with 
 - [Palo Alto Networks - Next Generation Firewall](../products/46f5fa2c-1a62-4692-82ad-ed87800a0adb.md)
 - [PingIdentity - PingFederate](../products/b0a0ae6d-dd5b-450c-9d68-36d6c61c67b0.md)
 - [SailPoint - SailPoint](../products/c3954250-68a0-49c3-ab6a-ef0daa95ff90.md)
+- [Salesforce - Salesforce](../products/1b7798df-963b-4582-a82b-b8176c3a6a22.md)
 - [Slack - Slack](../products/79da6240-7617-49c8-b130-96278579766e.md)
+- [Snowflake - Snowflake](../products/8276b520-fdeb-4f79-9f5d-67865818562b.md)
+- [Workday - Workday](../products/0438df6b-16ba-4da7-a7a7-626316d0061f.md)
+- [Zendesk - Zendesk](../products/a301559a-8110-4dd0-a41d-35b9baa1c740.md)
 
 
 ## Fields Used

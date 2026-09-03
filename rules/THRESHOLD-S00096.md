@@ -20,10 +20,15 @@ Detects multiple failed login attempts for the same username over a 24 hour time
 ## Vendors and Products
 - [Amazon AWS - CloudTrail](../products/033624b0-218e-4dcb-b93f-0f1fb1806c56.md)
 - [Auth0 - Auth0](../products/0b45ccba-20b4-41e4-973d-b50fd291944d.md)
+- [Bitwarden - Bitwarden](../products/ebb99eec-3585-4673-ac0f-676632a78305.md)
+- [Box - Box](../products/0472f22e-e3fa-4c9f-a529-8355f671927e.md)
+- [CheckPoint - Firewall and VPN](../products/c3c1a4fc-10cc-4155-8a30-a3bb14fc9f31.md)
 - [Cisco Systems - ASA](../products/be4f7473-fe69-4311-8859-3561900060bf.md)
 - [Cisco Systems - Identity Services Engine](../products/153794da-09e8-48fe-b511-1306fbb94d07.md)
 - [Cisco Systems - Router and Switch IOS](../products/1abefd5b-ec3d-49c1-8a54-7e6363d52db0.md)
 - [Citrix - ADC](../products/d3606245-76d3-4173-a2fe-832c0e71b0f9.md)
+- [CrowdStrike - Falcon](../products/840c72e0-4e47-41e7-9b93-31f55d12f07d.md)
+- [Dropbox - Dropbox](../products/5bfda3d2-03e7-4d9a-8072-c59430a131d7.md)
 - [Duo Security - Multi-Factor Authentication (MFA)](../products/acb7e80e-2b66-496c-ba2e-1e7c3933a98e.md)
 - [F5 - F5](../products/ede052db-d472-408f-949c-be642237ef3f.md)
 - [Fortinet - Fortigate](../products/c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad.md)
@@ -42,13 +47,17 @@ Detects multiple failed login attempts for the same username over a 24 hour time
 - [Okta - Single Sign-On](../products/51278354-d6b5-4c8e-a8fd-8197df334e67.md)
 - [OneLogin - OneLogin Single Sign-On](../products/e43ba0e4-1e3f-40c6-8bca-cb06a656a40b.md)
 - [OpenVPN - OpenVPN](../products/9f6d624f-6d8f-43c7-a4b0-51179061631c.md)
+- [Oracle - Oracle Cloud Infrastructure](../products/37a906de-5e9c-475e-881a-65a1d984f377.md)
 - [Palo Alto Networks - GlobalProtect](../products/b0fe0dde-4e19-4712-957b-1ea7418c132e.md)
 - [Palo Alto Networks - Next Generation Firewall](../products/46f5fa2c-1a62-4692-82ad-ed87800a0adb.md)
 - [PingIdentity - PingFederate](../products/b0a0ae6d-dd5b-450c-9d68-36d6c61c67b0.md)
+- [PingIdentity - PingIdentity MFA](../products/93072f9e-3561-401e-980d-6b49f475c2fd.md)
 - [Pritunl - Pritunl](../products/70f80fa8-200a-449b-8100-f8d4b7687380.md)
 - [Salesforce - Salesforce](../products/1b7798df-963b-4582-a82b-b8176c3a6a22.md)
 - [Slack - Slack](../products/79da6240-7617-49c8-b130-96278579766e.md)
 - [Snowflake - Snowflake](../products/8276b520-fdeb-4f79-9f5d-67865818562b.md)
+- [Teleport - Teleport](../products/46c71698-9c21-4273-9561-94ff5af52edd.md)
+- [Tenable - Cloud API](../products/1C384C22-411B-49C0-8029-A7F6C13424B1.md)
 
 
 ## Fields Used

@@ -16,6 +16,7 @@ Attackers may dump the content of the keychain storage data from a system to acq
 |Prototype|False|
 |Tags|_mitreAttackTactic:TA0006, _mitreAttackTechnique:T1555, _mitreAttackTechnique:T1555.001, _mitreAttackTechnique:T1555.002|
 ## Vendors and Products
+- [Anthropic - Claude Code](../products/eabd9eed-b071-4773-ad07-706ea5b51b9c.md)
 - [CrowdStrike - FDR](../products/569a3a44-c29f-492e-bcf4-5dc04e2ab0f3.md)
 - [CrowdStrike - Falcon](../products/840c72e0-4e47-41e7-9b93-31f55d12f07d.md)
 - [Jamf - Jamf](../products/5c2cc0de-ca31-4ef0-bcfa-133fc8b387ad.md)
@@ -23,6 +24,8 @@ Attackers may dump the content of the keychain storage data from a system to acq
 - [Microsoft - Azure](../products/a1225af5-e778-4068-a9a2-47da93d1ff24.md)
 - [Microsoft - Defender Advanced Hunting](../products/3382523e-2072-41bd-b50b-6b148957d0b0.md)
 - [Microsoft - Graph Security API](../products/ef42eb74-7444-4fee-b231-b4eb1e7c9660.md)
+- [OpenAI - OpenAI Audit](../products/7f8a9b0c-1d2e-3f4a-5b6c-7d8e9f0a1b2c.md)
+- [Trend Micro - Vision One](../products/72a5ddec-abb9-41ff-a2da-6a58beff980c.md)
 
 
 ## Fields Used

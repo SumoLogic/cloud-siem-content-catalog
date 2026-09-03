@@ -4406,8 +4406,8 @@
         "uid": "09a000f5-0586-4ce4-b5d2-c7e99ea14650"
     },
     "09b8843d-a2dc-4f1b-8562-7a3a8b3760b2": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
-        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
+        "commit_message": "TLAB-2716 added srcDevice_ip mapping for Microsoft Office 365 Teams E\u2026 (#6021)",
+        "commit_origin_hash": "69ddf4c7f1c34a89755ca46d142d2c1d7e5697a6",
         "field_mappings": {
             "device_ip": {
                 "value": "0.0.0.0",
@@ -6679,8 +6679,8 @@
         "uid": "0d260099-d4a3-4448-83c5-2d3a05365823"
     },
     "0d31d680-6a82-11ea-bc55-0242ac130003": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
-        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
+        "commit_message": "TLAB-2716 added srcDevice_ip mapping for Microsoft Office 365 Teams E\u2026 (#6021)",
+        "commit_origin_hash": "69ddf4c7f1c34a89755ca46d142d2c1d7e5697a6",
         "field_mappings": {
             "action": {
                 "value": "Operation"
@@ -7015,8 +7015,8 @@
         "uid": "0e195da8-5093-4863-94f5-0c1a11146765"
     },
     "0e22eac6-b12e-44b8-95d8-4c984cdb0ab4": {
-        "commit_message": "TRIDENT-15204 Remove Unused Groks and Mappings",
-        "commit_origin_hash": "2b9429213b6fee135ee10be515b538fe37f155c6",
+        "commit_message": "TLAB-2540 Remove redundant device_ip mapping from Suricata (#6015)",
+        "commit_origin_hash": "e7bbb056a22e8929b2d28740da7f599d27434282",
         "field_mappings": {
             "action": {
                 "value": "alert.action"
@@ -7033,12 +7033,6 @@
             },
             "device_hostname": {
                 "value": "hostname"
-            },
-            "device_ip": {
-                "alternate_values": [
-                    "src"
-                ],
-                "value": "src_ip"
             },
             "dstDevice_ip": {
                 "alternate_values": [
@@ -11891,8 +11885,8 @@
         "uid": "180e8a5a-8184-4a84-a8fa-93b914738a86"
     },
     "18615b96-a972-11ea-bb37-0242ac130002": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
-        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
+        "commit_message": "TLAB-2716 added srcDevice_ip mapping for Microsoft Office 365 Teams E\u2026 (#6021)",
+        "commit_origin_hash": "69ddf4c7f1c34a89755ca46d142d2c1d7e5697a6",
         "field_mappings": {
             "device_ip": {
                 "value": "ClientIP"
@@ -16711,11 +16705,11 @@
         "uid": "1feef4d7-96d6-49c8-a4c0-e3abf46eeb76"
     },
     "1ff3e9a4-0588-4f08-91dc-e17506bd4c86": {
-        "commit_message": "TRIDENT-14585 Proofpoint POD C2C Mappings and Rules",
-        "commit_origin_hash": "30c20bfe096e67f18da8c80dbcd9a939e5f8c97e",
+        "commit_message": "TLAB-2781 Fix Proofpoint on Demand action field mapping (#6027)",
+        "commit_origin_hash": "6e83911012c3b5b9348f9d65428fe089fdc0c288",
         "field_mappings": {
             "action": {
-                "value": "final_action"
+                "value": "filter.disposition"
             },
             "email_messageId": {
                 "value": "msg.normalizedHeader.message-id.1"
@@ -16741,11 +16735,35 @@
             "file_size": {
                 "value": "msgParts.1.detectedSizeBytes"
             },
+            "normalizedAction": {
+                "default_value": "allow",
+                "lookup": {
+                    "accept": "allow",
+                    "continue": "allow",
+                    "discard": "deny",
+                    "quarantine": "deny",
+                    "reject": "deny",
+                    "retry": "allow"
+                },
+                "value": "filter.disposition",
+                "value_type": "lookup"
+            },
             "srcDevice_hostname": {
                 "value": "connection.host"
             },
             "srcDevice_ip": {
                 "value": "connection.ip"
+            },
+            "success": {
+                "lookup": {
+                    "accept": "true",
+                    "continue": "true",
+                    "discard": "false",
+                    "quarantine": "false",
+                    "reject": "false"
+                },
+                "value": "filter.disposition",
+                "value_type": "lookup"
             },
             "targetUser_email": {
                 "value": "msg.parsedAddresses.to.1"
@@ -16970,8 +16988,8 @@
         "uid": "2041eb1c-fdbf-46bd-aed9-b48047ae6962"
     },
     "20871df8-533d-4aff-8328-037a9462f279": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
-        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
+        "commit_message": "TLAB-2716 added srcDevice_ip mapping for Microsoft Office 365 Teams E\u2026 (#6021)",
+        "commit_origin_hash": "69ddf4c7f1c34a89755ca46d142d2c1d7e5697a6",
         "field_mappings": {
             "action": {
                 "value": "Operation"
@@ -20383,8 +20401,8 @@
         "uid": "27909e48-6b07-44c7-be5d-50a61bb58145"
     },
     "279fabe5-d3a3-468a-a908-d110099bb244": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
-        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
+        "commit_message": "TLAB-2716 added srcDevice_ip mapping for Microsoft Office 365 Teams E\u2026 (#6021)",
+        "commit_origin_hash": "69ddf4c7f1c34a89755ca46d142d2c1d7e5697a6",
         "field_mappings": {
             "device_ip": {
                 "value": "0.0.0.0",
@@ -30551,8 +30569,8 @@
         "uid": "3d258ba5-0e2d-4b15-a419-25ccf870c9cc"
     },
     "3d305450-6c23-4e0f-b7e1-b1b7a648f0ec": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
-        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
+        "commit_message": "TLAB-2716 added srcDevice_ip mapping for Microsoft Office 365 Teams E\u2026 (#6021)",
+        "commit_origin_hash": "69ddf4c7f1c34a89755ca46d142d2c1d7e5697a6",
         "field_mappings": {
             "device_ip": {
                 "value": "0.0.0.0",
@@ -30678,8 +30696,8 @@
         "uid": "3d42cc1a-80d1-4da5-a6a4-022dabbaca77"
     },
     "3d830705-fc67-45e9-878a-443ed806cf32": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
-        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
+        "commit_message": "TLAB-2716 added srcDevice_ip mapping for Microsoft Office 365 Teams E\u2026 (#6021)",
+        "commit_origin_hash": "69ddf4c7f1c34a89755ca46d142d2c1d7e5697a6",
         "field_mappings": {
             "action": {
                 "value": "Operation"
@@ -31856,8 +31874,8 @@
         "uid": "3fe47187-8a81-4e1a-b80b-c0f2c4237ff6"
     },
     "3ff36059-f6f2-48aa-a88c-ef4485e7b151": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
-        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
+        "commit_message": "TLAB-2716 added srcDevice_ip mapping for Microsoft Office 365 Teams E\u2026 (#6021)",
+        "commit_origin_hash": "69ddf4c7f1c34a89755ca46d142d2c1d7e5697a6",
         "field_mappings": {
             "action": {
                 "value": "Operation"
@@ -33126,8 +33144,8 @@
         "uid": "4219f2ac-0630-47a7-993e-bc51f37f5620"
     },
     "42220608-501e-4a74-ab9b-1b31d5a8a2a5": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
-        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
+        "commit_message": "TLAB-2716 added srcDevice_ip mapping for Microsoft Office 365 Teams E\u2026 (#6021)",
+        "commit_origin_hash": "69ddf4c7f1c34a89755ca46d142d2c1d7e5697a6",
         "field_mappings": {
             "action": {
                 "value": "Operation"
@@ -34376,8 +34394,8 @@
         "uid": "45912489-975f-479d-8806-0ab51acbf168"
     },
     "459c7c66-b87e-48b9-a35b-9315204f9a6c": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
-        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
+        "commit_message": "TLAB-2716 added srcDevice_ip mapping for Microsoft Office 365 Teams E\u2026 (#6021)",
+        "commit_origin_hash": "69ddf4c7f1c34a89755ca46d142d2c1d7e5697a6",
         "field_mappings": {
             "device_ip": {
                 "value": "ClientIP"
@@ -34897,8 +34915,8 @@
         "uid": "462b7940-6803-4387-8669-c1322cb424ca"
     },
     "46404344-3d7a-4fd8-a580-accf6180cceb": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
-        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
+        "commit_message": "TLAB-2716 added srcDevice_ip mapping for Microsoft Office 365 Teams E\u2026 (#6021)",
+        "commit_origin_hash": "69ddf4c7f1c34a89755ca46d142d2c1d7e5697a6",
         "field_mappings": {
             "device_ip": {
                 "value": "0.0.0.0",
@@ -35380,8 +35398,8 @@
         "uid": "46b25ce8-b185-4e22-864d-80d97e26460f"
     },
     "46be6981-3d59-47cc-b358-a091280a0af5": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
-        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
+        "commit_message": "TLAB-2716 added srcDevice_ip mapping for Microsoft Office 365 Teams E\u2026 (#6021)",
+        "commit_origin_hash": "69ddf4c7f1c34a89755ca46d142d2c1d7e5697a6",
         "field_mappings": {
             "description": {
                 "value": "Name"
@@ -36026,8 +36044,8 @@
         "uid": "47e77961-aaaf-4e85-94b6-8e3a4e17e442"
     },
     "480af86a-a973-11ea-bb37-0242ac130002": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
-        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
+        "commit_message": "TLAB-2716 added srcDevice_ip mapping for Microsoft Office 365 Teams E\u2026 (#6021)",
+        "commit_origin_hash": "69ddf4c7f1c34a89755ca46d142d2c1d7e5697a6",
         "field_mappings": {
             "action": {
                 "value": "Operation"
@@ -44418,8 +44436,8 @@
         "uid": "57912336-4c06-4176-9e93-a4b75051552f"
     },
     "5792195e-5a2a-487c-a71f-63becfe8895f": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
-        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
+        "commit_message": "TLAB-2716 added srcDevice_ip mapping for Microsoft Office 365 Teams E\u2026 (#6021)",
+        "commit_origin_hash": "69ddf4c7f1c34a89755ca46d142d2c1d7e5697a6",
         "field_mappings": {
             "description": {
                 "value": "PolicyDetails.1.Rules.1.RuleName"
@@ -44593,8 +44611,8 @@
         "uid": "57b9743d-249a-41d8-a216-32657adcc248"
     },
     "57d88cb7-d80d-4e02-b6ab-b4b722529bea": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
-        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
+        "commit_message": "TLAB-2716 added srcDevice_ip mapping for Microsoft Office 365 Teams E\u2026 (#6021)",
+        "commit_origin_hash": "69ddf4c7f1c34a89755ca46d142d2c1d7e5697a6",
         "field_mappings": {
             "action": {
                 "value": "Operation"
@@ -46226,8 +46244,8 @@
         "uid": "5c2c9bfd-e09b-4a37-9e63-efd084fd4594"
     },
     "5c55809d-b468-4543-b4ed-4c310d4034e8": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
-        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
+        "commit_message": "TLAB-2716 added srcDevice_ip mapping for Microsoft Office 365 Teams E\u2026 (#6021)",
+        "commit_origin_hash": "69ddf4c7f1c34a89755ca46d142d2c1d7e5697a6",
         "field_mappings": {
             "description": {
                 "value": "Name"
@@ -46918,8 +46936,8 @@
         "uid": "5e6f7a8b-9c0d-1e2f-3a4b-5c6d7e8f9a0b"
     },
     "5f2f0759-0e26-412a-b5d4-aeeb52a6b9ea": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
-        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
+        "commit_message": "TLAB-2716 added srcDevice_ip mapping for Microsoft Office 365 Teams E\u2026 (#6021)",
+        "commit_origin_hash": "69ddf4c7f1c34a89755ca46d142d2c1d7e5697a6",
         "field_mappings": {
             "action": {
                 "value": "Operation"
@@ -49059,8 +49077,8 @@
         "uid": "6259f6a3-ddd8-41b6-8b02-ef16f6dbd174"
     },
     "625e3844-5ff4-4c3c-aab7-7c2dffcba260": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
-        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
+        "commit_message": "TLAB-2716 added srcDevice_ip mapping for Microsoft Office 365 Teams E\u2026 (#6021)",
+        "commit_origin_hash": "69ddf4c7f1c34a89755ca46d142d2c1d7e5697a6",
         "field_mappings": {
             "description": {
                 "value": "RecordTypeString"
@@ -50408,8 +50426,8 @@
         "uid": "6631785C-901C-42CE-AC18-EDEA8D2829D1"
     },
     "665717e8-a975-11ea-bb37-0242ac130002": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
-        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
+        "commit_message": "TLAB-2716 added srcDevice_ip mapping for Microsoft Office 365 Teams E\u2026 (#6021)",
+        "commit_origin_hash": "69ddf4c7f1c34a89755ca46d142d2c1d7e5697a6",
         "field_mappings": {
             "action": {
                 "value": "Operation"
@@ -51302,8 +51320,8 @@
         "uid": "6861570d-e513-46de-a60f-5c90b53e6c8b"
     },
     "68fb47a0-1dac-48d2-a8c0-d76997350793": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
-        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
+        "commit_message": "TLAB-2716 added srcDevice_ip mapping for Microsoft Office 365 Teams E\u2026 (#6021)",
+        "commit_origin_hash": "69ddf4c7f1c34a89755ca46d142d2c1d7e5697a6",
         "field_mappings": {
             "action": {
                 "value": "Operation"
@@ -53100,8 +53118,8 @@
         "uid": "6b94825c-581c-47ff-ad57-156d24ca4c76"
     },
     "6b98c6bd-0d2b-45ee-8897-ad9e4f146e5f": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
-        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
+        "commit_message": "TLAB-2716 added srcDevice_ip mapping for Microsoft Office 365 Teams E\u2026 (#6021)",
+        "commit_origin_hash": "69ddf4c7f1c34a89755ca46d142d2c1d7e5697a6",
         "field_mappings": {
             "timestamp": {
                 "format": "yyyy-MM-dd'T'HH:mm:ss",
@@ -55681,8 +55699,8 @@
         "uid": "72721bcc-a069-430b-add9-9afbd7e574cf"
     },
     "729bc327-a065-4fb8-81ed-5bb8f75d7fc2": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
-        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
+        "commit_message": "TLAB-2716 added srcDevice_ip mapping for Microsoft Office 365 Teams E\u2026 (#6021)",
+        "commit_origin_hash": "69ddf4c7f1c34a89755ca46d142d2c1d7e5697a6",
         "field_mappings": {
             "timestamp": {
                 "format": "yyyy-MM-dd'T'HH:mm:ss",
@@ -58449,8 +58467,8 @@
         "uid": "77c69a2d-90bc-437e-a9dc-93bc1fd6dcc4"
     },
     "77cf5d4a-8c57-4527-890c-9536e99345de": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
-        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
+        "commit_message": "TLAB-2716 added srcDevice_ip mapping for Microsoft Office 365 Teams E\u2026 (#6021)",
+        "commit_origin_hash": "69ddf4c7f1c34a89755ca46d142d2c1d7e5697a6",
         "field_mappings": {
             "action": {
                 "value": "Operation"
@@ -61479,8 +61497,8 @@
         "uid": "80ac2dcc-a1d3-46a5-a9ae-bc4f9a1a2430"
     },
     "80f366f7-9fd9-4097-86d5-eb908a1b9912": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
-        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
+        "commit_message": "TLAB-2716 added srcDevice_ip mapping for Microsoft Office 365 Teams E\u2026 (#6021)",
+        "commit_origin_hash": "69ddf4c7f1c34a89755ca46d142d2c1d7e5697a6",
         "field_mappings": {
             "description": {
                 "value": "RecordTypeString"
@@ -65676,8 +65694,8 @@
         "uid": "88383f45-4b56-45e4-b0da-03be50c845e7"
     },
     "88466900-6cf8-4497-812e-a5ed70343885": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
-        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
+        "commit_message": "TLAB-2716 added srcDevice_ip mapping for Microsoft Office 365 Teams E\u2026 (#6021)",
+        "commit_origin_hash": "69ddf4c7f1c34a89755ca46d142d2c1d7e5697a6",
         "field_mappings": {
             "action": {
                 "value": "Operation"
@@ -66679,8 +66697,8 @@
         "uid": "8a6aef8b-8983-4798-8539-bb86b4d7d271"
     },
     "8ab7c22e-a0a6-432c-b031-4dc3f325188c": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
-        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
+        "commit_message": "TLAB-2716 added srcDevice_ip mapping for Microsoft Office 365 Teams E\u2026 (#6021)",
+        "commit_origin_hash": "69ddf4c7f1c34a89755ca46d142d2c1d7e5697a6",
         "field_mappings": {
             "device_ip": {
                 "value": "ClientIP"
@@ -78165,8 +78183,8 @@
         "uid": "FF1BADCE-0DC2-41F5-888F-88ECA95AE8A0"
     },
     "a00c315a-8806-42f1-8deb-39a85f4d5b7e": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
-        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
+        "commit_message": "TLAB-2716 added srcDevice_ip mapping for Microsoft Office 365 Teams E\u2026 (#6021)",
+        "commit_origin_hash": "69ddf4c7f1c34a89755ca46d142d2c1d7e5697a6",
         "field_mappings": {
             "timestamp": {
                 "format": "yyyy-MM-dd'T'HH:mm:ss",
@@ -79508,8 +79526,8 @@
         "uid": "a2b8171c-c72c-11ea-87d0-0242ac130003"
     },
     "a2bdaf5f-92f8-45f3-be99-eb8fa34d26a7": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
-        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
+        "commit_message": "TLAB-2716 added srcDevice_ip mapping for Microsoft Office 365 Teams E\u2026 (#6021)",
+        "commit_origin_hash": "69ddf4c7f1c34a89755ca46d142d2c1d7e5697a6",
         "field_mappings": {
             "action": {
                 "default_value": "Unknown",
@@ -82548,8 +82566,8 @@
         "uid": "a9352f93-c8b9-4652-812b-3673133307d1"
     },
     "aa0263c9-a102-492c-b614-67d9aaf98ac1": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
-        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
+        "commit_message": "TLAB-2716 added srcDevice_ip mapping for Microsoft Office 365 Teams E\u2026 (#6021)",
+        "commit_origin_hash": "69ddf4c7f1c34a89755ca46d142d2c1d7e5697a6",
         "field_mappings": {
             "device_ip": {
                 "value": "0.0.0.0",
@@ -83065,8 +83083,8 @@
         "uid": "ab4b8e31-3e11-43c5-ad3b-0d235d26da9f"
     },
     "ab4d40ab-4286-4db5-b0ec-e26cd4172f19": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
-        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
+        "commit_message": "TLAB-2716 added srcDevice_ip mapping for Microsoft Office 365 Teams E\u2026 (#6021)",
+        "commit_origin_hash": "69ddf4c7f1c34a89755ca46d142d2c1d7e5697a6",
         "field_mappings": {
             "description": {
                 "value": "RecordTypeString"
@@ -86579,8 +86597,8 @@
         "uid": "b3edeaee-6d9a-4192-9381-b79261bdefb2"
     },
     "b3ff45ad-e402-43c0-8406-f44441c226f2": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
-        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
+        "commit_message": "TLAB-2716 added srcDevice_ip mapping for Microsoft Office 365 Teams E\u2026 (#6021)",
+        "commit_origin_hash": "69ddf4c7f1c34a89755ca46d142d2c1d7e5697a6",
         "field_mappings": {
             "action": {
                 "value": "Operation"
@@ -89227,8 +89245,8 @@
         "uid": "b99387f5-969d-49e8-9730-ebd952e6a37f"
     },
     "b993e0c4-67c9-4080-8339-1156bca5ef7e": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
-        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
+        "commit_message": "TLAB-2716 added srcDevice_ip mapping for Microsoft Office 365 Teams E\u2026 (#6021)",
+        "commit_origin_hash": "69ddf4c7f1c34a89755ca46d142d2c1d7e5697a6",
         "field_mappings": {
             "action": {
                 "value": "Operation"
@@ -92788,8 +92806,8 @@
         "uid": "c3eaf746-896b-11ea-bc55-0242ac130003"
     },
     "c3f3c9f3-90f5-4340-823f-7a133a278647": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
-        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
+        "commit_message": "TLAB-2716 added srcDevice_ip mapping for Microsoft Office 365 Teams E\u2026 (#6021)",
+        "commit_origin_hash": "69ddf4c7f1c34a89755ca46d142d2c1d7e5697a6",
         "field_mappings": {
             "action": {
                 "value": "Operation"
@@ -93979,8 +93997,8 @@
         "uid": "c6f40cdd-1908-4826-95d8-d4c52186c4c0"
     },
     "c708976b-a216-48a2-a492-d6a7a4fc2529": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
-        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
+        "commit_message": "TLAB-2716 added srcDevice_ip mapping for Microsoft Office 365 Teams E\u2026 (#6021)",
+        "commit_origin_hash": "69ddf4c7f1c34a89755ca46d142d2c1d7e5697a6",
         "field_mappings": {
             "action": {
                 "value": "Operation"
@@ -94976,11 +94994,14 @@
         "uid": "ca60e048-c6dd-44ce-b606-5b49aa33deb9"
     },
     "ca8610b2-185e-4c44-885c-769329fbddc5": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
-        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
+        "commit_message": "TLAB-2716 added srcDevice_ip mapping for Microsoft Office 365 Teams E\u2026 (#6021)",
+        "commit_origin_hash": "69ddf4c7f1c34a89755ca46d142d2c1d7e5697a6",
         "field_mappings": {
             "action": {
                 "value": "Operation"
+            },
+            "srcDevice_ip": {
+                "value": "ClientIP"
             },
             "timestamp": {
                 "format": "yyyy-MM-dd'T'HH:mm:ss",
@@ -95658,8 +95679,8 @@
         "uid": "cb107f45-2e4d-4c8b-ba9d-4805aee79fb7"
     },
     "cb996e17-3f10-477e-a9fb-1acbba2bd730": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
-        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
+        "commit_message": "TLAB-2716 added srcDevice_ip mapping for Microsoft Office 365 Teams E\u2026 (#6021)",
+        "commit_origin_hash": "69ddf4c7f1c34a89755ca46d142d2c1d7e5697a6",
         "field_mappings": {
             "timestamp": {
                 "format": "yyyy-MM-dd'T'HH:mm:ss",
@@ -97308,8 +97329,8 @@
         "uid": "cf7c6c83-2b73-47c4-933d-aaf0bdae6450"
     },
     "cf87663f-bf57-49c2-b0a5-0e1c5e7f50fc": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
-        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
+        "commit_message": "TLAB-2716 added srcDevice_ip mapping for Microsoft Office 365 Teams E\u2026 (#6021)",
+        "commit_origin_hash": "69ddf4c7f1c34a89755ca46d142d2c1d7e5697a6",
         "field_mappings": {
             "device_ip": {
                 "value": "ClientIP"
@@ -104124,8 +104145,8 @@
         "uid": "df17837b-a59a-492a-b8ca-890580dbb3c6"
     },
     "df5cf29a-4b96-4ce2-b6ce-9abbf882f86e": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
-        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
+        "commit_message": "TLAB-2716 added srcDevice_ip mapping for Microsoft Office 365 Teams E\u2026 (#6021)",
+        "commit_origin_hash": "69ddf4c7f1c34a89755ca46d142d2c1d7e5697a6",
         "field_mappings": {
             "device_ip": {
                 "value": "0.0.0.0",
@@ -106755,8 +106776,8 @@
         "uid": "e4883fa4-baaa-47bc-948d-17ca3ba7ac94"
     },
     "e4dd1018-6a82-11ea-bc55-0242ac130003": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
-        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
+        "commit_message": "TLAB-2716 added srcDevice_ip mapping for Microsoft Office 365 Teams E\u2026 (#6021)",
+        "commit_origin_hash": "69ddf4c7f1c34a89755ca46d142d2c1d7e5697a6",
         "field_mappings": {
             "action": {
                 "value": "Operation"
@@ -109481,8 +109502,8 @@
         "uid": "eb91afed-79e3-415e-a25a-f85e5688d73d"
     },
     "eba2f49f-b86e-4a55-913b-90dc8423f4a1": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
-        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
+        "commit_message": "TLAB-2716 added srcDevice_ip mapping for Microsoft Office 365 Teams E\u2026 (#6021)",
+        "commit_origin_hash": "69ddf4c7f1c34a89755ca46d142d2c1d7e5697a6",
         "field_mappings": {
             "device_ip": {
                 "value": "0.0.0.0",
@@ -111499,8 +111520,8 @@
         "uid": "f06b0da6-4e71-40ff-9c7f-4719d73f008e"
     },
     "f096edb3-5d42-4834-bfd0-16ff99fae568": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
-        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
+        "commit_message": "TLAB-2716 added srcDevice_ip mapping for Microsoft Office 365 Teams E\u2026 (#6021)",
+        "commit_origin_hash": "69ddf4c7f1c34a89755ca46d142d2c1d7e5697a6",
         "field_mappings": {
             "action": {
                 "value": "Operation"
@@ -112248,8 +112269,8 @@
         "uid": "f3076e8d-b3c3-4401-82a0-179742707511"
     },
     "f35c71f7-eb5e-472a-94a9-9e9965492f1c": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
-        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
+        "commit_message": "TLAB-2716 added srcDevice_ip mapping for Microsoft Office 365 Teams E\u2026 (#6021)",
+        "commit_origin_hash": "69ddf4c7f1c34a89755ca46d142d2c1d7e5697a6",
         "field_mappings": {
             "action": {
                 "value": "Operation"
@@ -114661,8 +114682,8 @@
         "uid": "f8d81468-a912-4bcd-8aa3-26df0d0c1e8d"
     },
     "f92aeb36-4690-47b7-ba7b-be1d0ec491ce": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
-        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
+        "commit_message": "TLAB-2716 added srcDevice_ip mapping for Microsoft Office 365 Teams E\u2026 (#6021)",
+        "commit_origin_hash": "69ddf4c7f1c34a89755ca46d142d2c1d7e5697a6",
         "field_mappings": {
             "action": {
                 "value": "Operation"
@@ -115587,8 +115608,8 @@
         "uid": "fa4028ba-0c1d-4fb3-a152-6e65e0b5200e"
     },
     "fa572950-571a-4570-9299-8cd3fa64fad2": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
-        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
+        "commit_message": "TLAB-2716 added srcDevice_ip mapping for Microsoft Office 365 Teams E\u2026 (#6021)",
+        "commit_origin_hash": "69ddf4c7f1c34a89755ca46d142d2c1d7e5697a6",
         "field_mappings": {
             "action": {
                 "value": "Operation"
@@ -116704,8 +116725,8 @@
         "uid": "fc4bdead-7e41-11e8-adc1-fa7ae01bbede"
     },
     "fc8169ec-a972-11ea-bb37-0242ac130002": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
-        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
+        "commit_message": "TLAB-2716 added srcDevice_ip mapping for Microsoft Office 365 Teams E\u2026 (#6021)",
+        "commit_origin_hash": "69ddf4c7f1c34a89755ca46d142d2c1d7e5697a6",
         "field_mappings": {
             "device_ip": {
                 "value": "ClientIP"
