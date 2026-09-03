@@ -16,6 +16,9 @@ Passes through a network, NDR, or WAF detection (e.g. Kemp, Palo Alto, FortiGate
 |Prototype|False|
 |Tags||
 ## Vendors and Products
+- [Kemp - LoadMaster](../products/e0763d80-29ce-43a0-b0ab-69c621abb3eb.md)
+- [Palo Alto Networks - Next Generation Firewall](../products/46f5fa2c-1a62-4692-82ad-ed87800a0adb.md)
+- [Vectra - Vectra AI](../products/d4a9e7ce-082e-4f41-891f-4c43e604c850.md)
 
 
 ## Fields Used

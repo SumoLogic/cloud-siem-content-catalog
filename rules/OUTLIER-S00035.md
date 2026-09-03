@@ -30,6 +30,7 @@ Adjust the floor_value based on your organization's normal deletion patterns. Us
 |Prototype|False|
 |Tags|_mitreAttackTactic:TA0040, _mitreAttackTechnique:T1485, _mitreAtlasTactic:AML.TA0011, _mitreAtlasTechnique:AML.T0029, _mitreAtlasTechnique:AML.T0101|
 ## Vendors and Products
+- [Anthropic - Claude Activity Logs](../products/8ad9c55c-1271-4e8a-a8ca-f1663051f4d1.md)
 
 
 ## Fields Used

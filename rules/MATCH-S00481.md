@@ -17,6 +17,7 @@ From FireEye Red Team Tool Countermeasures: This rule identifies URL requests mi
 |Tags|_mitreAttackTactic:TA0001, _mitreAttackTechnique:T1195, _mitreAttackTechnique:T1195.001, _mitreAttackTechnique:T1195.002|
 ## Vendors and Products
 - [Bro - Bro](../products/37C866BF-72E1-470A-9072-EDB908F56951.md)
+- [Symantec - Proxy Secure Gateway](../products/991a55cf-8c5a-49ba-ae72-6f64a002bacf.md)
 
 
 ## Fields Used

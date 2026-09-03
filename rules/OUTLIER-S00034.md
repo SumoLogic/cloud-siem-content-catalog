@@ -30,6 +30,7 @@ Adjust the floor_value based on your organization's normal Compliance API usage 
 |Prototype|False|
 |Tags|_mitreAttackTactic:TA0009, _mitreAttackTechnique:T1530, _mitreAtlasTactic:AML.TA0009, _mitreAtlasTechnique:AML.T0085, _mitreAtlasTechnique:AML.T0096|
 ## Vendors and Products
+- [Anthropic - Claude Activity Logs](../products/8ad9c55c-1271-4e8a-a8ca-f1663051f4d1.md)
 
 
 ## Fields Used
