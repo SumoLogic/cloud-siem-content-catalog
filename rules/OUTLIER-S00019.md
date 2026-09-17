@@ -27,6 +27,7 @@ An outlier in the number of API calls made to AWS Bedrock from a user within an 
 
 |Origin|Field|
 |----|----|
+|Normalized Schema|application|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|
 |Normalized Schema|user_username|

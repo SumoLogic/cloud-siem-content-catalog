@@ -26,6 +26,7 @@ Detects a variety of AWS Route 53 API actions that when observed together could 
 |Origin|Field|
 |----|----|
 |Normalized Schema|action|
+|Normalized Schema|application|
 |Normalized Schema|device_hostname|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|

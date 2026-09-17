@@ -32,6 +32,7 @@ The default score of `2` is used as a catch all if none of the translations are 
 |Origin|Field|
 |----|----|
 |Normalized Schema|action|
+|Normalized Schema|application|
 |Normalized Schema|device_hostname|
 |Direct from Record|fields['requestParameters.groupName']|
 |Direct from Record|fields['requestParameters.policyArn']|

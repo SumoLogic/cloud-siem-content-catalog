@@ -21,6 +21,7 @@ Detects suspicious msiexec process starts with web addresses as parameter.
 - [Microsoft - Azure](../products/a1225af5-e778-4068-a9a2-47da93d1ff24.md)
 - [Microsoft - Defender Advanced Hunting](../products/3382523e-2072-41bd-b50b-6b148957d0b0.md)
 - [Microsoft - Windows](../products/1ff7546c-cb36-4a24-87f7-89d2cecc5761.md)
+- [OpenAI - OpenAI Audit](../products/7f8a9b0c-1d2e-3f4a-5b6c-7d8e9f0a1b2c.md)
 
 
 ## Fields Used

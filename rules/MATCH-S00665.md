@@ -24,6 +24,7 @@ Detects the AWS CloudWatch DeleteLogGroup API action. DeleteLogGroup deletes the
 |Origin|Field|
 |----|----|
 |Normalized Schema|action|
+|Normalized Schema|application|
 |Normalized Schema|device_hostname|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|

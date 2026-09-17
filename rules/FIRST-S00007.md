@@ -27,6 +27,7 @@ A user was observed as performing enumeration of DynamoDB tables for the first t
 |Origin|Field|
 |----|----|
 |Normalized Schema|action|
+|Normalized Schema|application|
 |Direct from Record|fields["userIdentity.type"]|
 |Normalized Schema|metadata_product|
 |Normalized Schema|user_username|

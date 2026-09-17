@@ -26,6 +26,7 @@ First Seen Kerberos RC4 Request - If RC4 isn't used in the environment this indi
 
 |Origin|Field|
 |----|----|
+|Normalized Schema|application|
 |Normalized Schema|device_hostname|
 |Normalized Schema|metadata_deviceEventId|
 |Normalized Schema|metadata_product|

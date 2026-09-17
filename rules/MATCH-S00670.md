@@ -24,6 +24,7 @@ Detects various AWS Config API actions that involve the alternation of a Config 
 |Origin|Field|
 |----|----|
 |Normalized Schema|action|
+|Normalized Schema|application|
 |Normalized Schema|device_hostname|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|

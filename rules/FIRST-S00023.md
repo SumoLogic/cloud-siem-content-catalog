@@ -26,6 +26,7 @@ Threat actors may collect information from AWS API Gateway, including enumeratio
 
 |Origin|Field|
 |----|----|
+|Normalized Schema|application|
 |Direct from Record|fields["userIdentity.type"]|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|

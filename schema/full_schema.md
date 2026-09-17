@@ -368,7 +368,7 @@ In cases where the log data has a source or destination context, there are situa
 |dstDevice_k8s_pod|string|The name given to a pod described in the log.|
 |dstDevice_k8s_replicaSet|string|The replica set name described in the log|
 |dstDevice_mac|string|The media access control (MAC) address of the host for which network traffic is destined.|
-|dstDevice_natIp|string|The external IP in cases where the internal IP goes through network address translation.|
+|dstDevice_natIp|string|The external network address translated (NAT) IP address for which network traffic is destined.|
 |dstDevice_natIp_asnNumber|int|An autonomous system number for the IP address based on the Neustar GeoIP database.|
 |dstDevice_natIp_asnOrg|string|Organization associated with the IP address address based on the Neustar GeoIP database.|
 |dstDevice_natIp_city|string|City for the IP address based on the Neustar GeoIP database.|
@@ -523,7 +523,7 @@ In cases where the log data has a source or destination context, there are situa
 |srcDevice_k8s_pod|string|The name given to a pod described in the log.|
 |srcDevice_k8s_replicaSet|string|The replica set name described in the log|
 |srcDevice_mac|string|The media access control (MAC) address of the host which network traffic originated from.|
-|srcDevice_natIp|string|The external IP in cases where the internal IP goes through network address translation.|
+|srcDevice_natIp|string|The external network address translated (NAT) IP address which network traffic originated from.|
 |srcDevice_natIp_asnNumber|int|An autonomous system number for the IP address based on the Neustar GeoIP database.|
 |srcDevice_natIp_asnOrg|string|Organization associated with the IP address address based on the Neustar GeoIP database.|
 |srcDevice_natIp_city|string|City for the IP address based on the Neustar GeoIP database.|

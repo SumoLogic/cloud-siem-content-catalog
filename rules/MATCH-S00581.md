@@ -23,6 +23,7 @@ Observes for service installations related to smbexec.py
 
 |Origin|Field|
 |----|----|
+|Normalized Schema|application|
 |Normalized Schema|device_hostname|
 |Direct from Record|fields['EventData.ImagePath']|
 |Normalized Schema|metadata_deviceEventId|

@@ -24,6 +24,7 @@ Detects the AWS Route 53 TestDNSAnswer API action. TestDNSAnswer gets the value 
 |Origin|Field|
 |----|----|
 |Normalized Schema|action|
+|Normalized Schema|application|
 |Normalized Schema|device_hostname|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|

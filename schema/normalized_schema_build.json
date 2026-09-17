@@ -3340,7 +3340,7 @@
     },
     "dstDevice_natIp": {
         "deprecated": false,
-        "description": "The external IP in cases where the internal IP goes through network address translation.",
+        "description": "The external network address translated (NAT) IP address for which network traffic is destined.",
         "enrichment_populated": false,
         "enrichment_type": "ip",
         "entity_type": "_ip",
@@ -4834,7 +4834,7 @@
     },
     "srcDevice_natIp": {
         "deprecated": false,
-        "description": "The external IP in cases where the internal IP goes through network address translation.",
+        "description": "The external network address translated (NAT) IP address which network traffic originated from.",
         "enrichment_populated": false,
         "enrichment_type": "ip",
         "entity_type": "_ip",

@@ -141,6 +141,7 @@ Below is a full list of Cloud SIEM products.
 |[Google](../vendors/45601247-66a5-4c9c-b3af-c422f5b4cbeb.md)|[Google Cloud Platform](dcc85cfc-a698-4d09-87de-f2c723f3ad07.md)|
 |[Google](../vendors/45601247-66a5-4c9c-b3af-c422f5b4cbeb.md)|[Google Workspace](e73cd65a-7a4b-4ce9-9d73-e5d9c824c214.md)|
 |[Google](../vendors/45601247-66a5-4c9c-b3af-c422f5b4cbeb.md)|[Security Command Center](78a80406-d37b-4a17-a25e-dbf53289b647.md)|
+|[Google](../vendors/45601247-66a5-4c9c-b3af-c422f5b4cbeb.md)|[Vertex AI](0da6960b-a16c-4221-9600-2694216e8a50.md)|
 |[HP](../vendors/8C78ABDA-69C2-480A-9D64-F906C68AE8EC.md)|[Aruba ClearPass](12aba181-2b31-472c-a685-2be492f4778d.md)|
 |[HP](../vendors/8C78ABDA-69C2-480A-9D64-F906C68AE8EC.md)|[Aruba Mobility Master](c568879a-11ef-4566-bc20-71ce8136a469.md)|
 |[HP](../vendors/8C78ABDA-69C2-480A-9D64-F906C68AE8EC.md)|[Aruba WAP](099fd781-2ece-4b5b-b05c-85dbdbf77ffe.md)|
@@ -239,6 +240,7 @@ Below is a full list of Cloud SIEM products.
 |[Pfsense](../vendors/6c0a6808-4153-4db0-81e4-430dd908c1a8.md)|[Pfsense Firewall](ef11c9cd-df72-42c6-81f5-70b91fd0f38a.md)|
 |[PingIdentity](../vendors/b65ae958-55ad-43d0-a2d9-ac04442e0a36.md)|[PingFederate](b0a0ae6d-dd5b-450c-9d68-36d6c61c67b0.md)|
 |[PingIdentity](../vendors/b65ae958-55ad-43d0-a2d9-ac04442e0a36.md)|[PingIdentity MFA](93072f9e-3561-401e-980d-6b49f475c2fd.md)|
+|[PingIdentity](../vendors/b65ae958-55ad-43d0-a2d9-ac04442e0a36.md)|[PingOne](3df88ccb-10a9-4a30-a36f-74bd891d55a1.md)|
 |[PreemptSecurity](../vendors/15c77a62-0fbb-4a60-9fae-ead49ec423f9.md)|[PBF](134ee5df-403a-4b13-b0e7-7c8e0ebd3901.md)|
 |[Pritunl](../vendors/598b6820-feff-4169-89da-77211493a91d.md)|[Pritunl](70f80fa8-200a-449b-8100-f8d4b7687380.md)|
 |[Proofpoint](../vendors/e0bbbae5-9a03-48f4-b138-9c3b49522f1a.md)|[Proofpoint on Demand](332856e9-3111-446f-8df7-e64694e4b9a1.md)|

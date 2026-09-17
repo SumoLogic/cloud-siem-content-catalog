@@ -29,6 +29,7 @@ Observes for successful TCP traffic to default VNC ports or explicit VNC/RFB tra
 
 |Origin|Field|
 |----|----|
+|Normalized Schema|application|
 |Normalized Schema|dstDevice_hostname|
 |Normalized Schema|dstDevice_ip|
 |Normalized Schema|dstPort|

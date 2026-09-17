@@ -119,6 +119,7 @@ The `type` listed lets you know if you can directly apply the parser to a collec
 |Parser|/Parsers/System/Google/G Suite Audit|
 |Parser|/Parsers/System/Google/GCP|
 |Parser|/Parsers/System/Google/GCP BigQuery Gmail|
+|Parser|/Parsers/System/Google/Google Cloud Platform Vertex AI|
 |Parser|/Parsers/System/Google/Google Workspace Alert Center|
 |Parser|/Parsers/System/Google/Google Workspace Audit|
 |Parser|/Parsers/System/Google/Security Command Center|
@@ -220,6 +221,7 @@ The `type` listed lets you know if you can directly apply the parser to a collec
 |Parser|/Parsers/System/Pfsense/Pfsense Firewall|
 |Parser|/Parsers/System/PingIdentity/PingFederate|
 |Parser|/Parsers/System/PingIdentity/PingIdentity MFA|
+|Parser|/Parsers/System/PingIdentity/PingOne|
 |Parser|/Parsers/System/Proofpoint/Proofpoint TRAP|
 |Parser|/Parsers/System/Pulse Secure/Pulse Secure Appliance|
 |Parser|/Parsers/System/Qualys/Qualys Vulnerability Data|

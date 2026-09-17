@@ -24,6 +24,7 @@ Detects the AWS Config StopConfigurationRecorder API action. StopConfigurationRe
 |Origin|Field|
 |----|----|
 |Normalized Schema|action|
+|Normalized Schema|application|
 |Normalized Schema|device_hostname|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|

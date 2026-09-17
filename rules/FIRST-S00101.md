@@ -37,6 +37,7 @@ Create a match list named 'authorized_bedrock_external_accounts' containing trus
 |Origin|Field|
 |----|----|
 |Normalized Schema|action|
+|Normalized Schema|application|
 |Direct from Record|fields['responseElements.dataSource.dataSourceConfiguration.s3Configuration.bucketOwnerAccountId']|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|

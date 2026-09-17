@@ -38,6 +38,7 @@ Observes for SMB traffic allowed through the firewall.
 |Origin|Field|
 |----|----|
 |Normalized Schema|action|
+|Normalized Schema|application|
 |Normalized Schema|dstDevice_hostname|
 |Normalized Schema|dstDevice_ip|
 |Normalized Schema|dstDevice_ip_isInternal|

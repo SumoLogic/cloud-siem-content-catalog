@@ -24,6 +24,7 @@ This event sourced from AWS OpsWorks occurs rarely.  It could indicate that an a
 |Origin|Field|
 |----|----|
 |Normalized Schema|action|
+|Normalized Schema|application|
 |Normalized Schema|device_hostname|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|

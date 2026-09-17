@@ -70,7 +70,7 @@ Below is a full list of Cloud SIEM vendors.
 |[Genetec](e71c7bca-0423-4dbe-885e-efed5e058190.md)|1|
 |[Gigamon](f575ffed-7b6d-406e-9a55-848b4b6a720f.md)|1|
 |[Github](193c791a-bb10-4742-a429-1256535f888b.md)|2|
-|[Google](45601247-66a5-4c9c-b3af-c422f5b4cbeb.md)|4|
+|[Google](45601247-66a5-4c9c-b3af-c422f5b4cbeb.md)|5|
 |[HP](8C78ABDA-69C2-480A-9D64-F906C68AE8EC.md)|5|
 |[Honeywell](e7e04985-0828-4b29-ad06-e9d8569087d7.md)|1|
 |[IBM](24ace3b6-5dfa-4a4f-a3ed-1c99f3384b34.md)|3|
@@ -116,7 +116,7 @@ Below is a full list of Cloud SIEM vendors.
 |[Palo Alto Networks](938210de-ab6c-46fb-89d7-8530682581c6.md)|5|
 |[PassiveDns](ab6459e5-53ac-4791-845f-0f7b861a8f4c.md)|1|
 |[Pfsense](6c0a6808-4153-4db0-81e4-430dd908c1a8.md)|1|
-|[PingIdentity](b65ae958-55ad-43d0-a2d9-ac04442e0a36.md)|2|
+|[PingIdentity](b65ae958-55ad-43d0-a2d9-ac04442e0a36.md)|3|
 |[PreemptSecurity](15c77a62-0fbb-4a60-9fae-ead49ec423f9.md)|1|
 |[Pritunl](598b6820-feff-4169-89da-77211493a91d.md)|1|
 |[Proofpoint](e0bbbae5-9a03-48f4-b138-9c3b49522f1a.md)|3|

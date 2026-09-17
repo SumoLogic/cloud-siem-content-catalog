@@ -24,6 +24,7 @@ A ListSecrets API call has been made to the AWS Secrets Manager service. Ensure 
 |Origin|Field|
 |----|----|
 |Normalized Schema|action|
+|Normalized Schema|application|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|
 |Normalized Schema|user_username|

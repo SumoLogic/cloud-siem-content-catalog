@@ -24,6 +24,7 @@ This rule detects when an AWS Bedrock Agent has been created in the environment.
 |Origin|Field|
 |----|----|
 |Normalized Schema|action|
+|Normalized Schema|application|
 |Normalized Schema|cloud_provider|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|

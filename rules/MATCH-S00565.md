@@ -23,6 +23,7 @@ This rule detects DNS traffic sent directly to an external server from an intern
 
 |Origin|Field|
 |----|----|
+|Normalized Schema|application|
 |Normalized Schema|srcDevice_ip|
 |Normalized Schema|srcDevice_ip_isInternal|
 
