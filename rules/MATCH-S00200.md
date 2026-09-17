@@ -23,6 +23,7 @@ The behavior discovered here loosely matches the behavior of known pass the hash
 
 |Origin|Field|
 |----|----|
+|Normalized Schema|application|
 |Normalized Schema|device_hostname|
 |Normalized Schema|device_ip|
 |Direct from Record|fields['EventData.KeyLength']|

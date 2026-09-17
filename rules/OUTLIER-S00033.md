@@ -28,6 +28,7 @@
 |Origin|Field|
 |----|----|
 |Normalized Schema|action|
+|Normalized Schema|application|
 |Direct from Record|fields["eventCategory"]|
 |Normalized Schema|metadata_vendor|
 |Normalized Schema|user_username|

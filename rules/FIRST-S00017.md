@@ -26,6 +26,7 @@ First Seen Kerberoasting Attempt from User - Global
 
 |Origin|Field|
 |----|----|
+|Normalized Schema|application|
 |Normalized Schema|device_hostname|
 |Normalized Schema|metadata_deviceEventId|
 |Normalized Schema|metadata_product|

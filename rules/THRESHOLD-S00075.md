@@ -25,6 +25,7 @@ Kerberoasting is an attack method that allows an attacker to crack the passwords
 
 |Origin|Field|
 |----|----|
+|Normalized Schema|application|
 |Direct from Record|fields['EventData.TicketEncryptionType']|
 |Direct from Record|fields['EventData.TicketOptions']|
 |Direct from Record|fields['insertionstrings_f05']|

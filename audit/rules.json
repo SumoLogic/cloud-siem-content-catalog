@@ -97,6 +97,7 @@
             }
         ],
         "all_fields": [
+            "application",
             "fields[\"requestParameters.roleSessionName\"]",
             "fields[\"userIdentity.type\"]",
             "metadata_product",
@@ -961,6 +962,7 @@
         ],
         "product_guids": [
             "033624b0-218e-4dcb-b93f-0f1fb1806c56",
+            "05bfaf47-5e21-4d5f-b724-98960a6fca8a",
             "0b45ccba-20b4-41e4-973d-b50fd291944d",
             "0e20c932-d992-4bd4-b276-c15119ca5c0b",
             "12aba181-2b31-472c-a685-2be492f4778d",
@@ -975,7 +977,6 @@
             "5be5af82-c248-4c4c-a485-0571025f242c",
             "79da6240-7617-49c8-b130-96278579766e",
             "8276b520-fdeb-4f79-9f5d-67865818562b",
-            "93072f9e-3561-401e-980d-6b49f475c2fd",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "acb7e80e-2b66-496c-ba2e-1e7c3933a98e",
             "b0fe0dde-4e19-4712-957b-1ea7418c132e",
@@ -2202,6 +2203,7 @@
     "CHAIN-S00026": {
         "all_fields": [
             "action",
+            "application",
             "metadata_product",
             "metadata_vendor",
             "resource",
@@ -2495,6 +2497,7 @@
     "FIRST-S00003": {
         "all_fields": [
             "action",
+            "application",
             "fields[\"userIdentity.type\"]",
             "metadata_product",
             "metadata_vendor",
@@ -2767,6 +2770,7 @@
     "FIRST-S00007": {
         "all_fields": [
             "action",
+            "application",
             "fields[\"userIdentity.type\"]",
             "metadata_product",
             "user_username",
@@ -3295,6 +3299,7 @@
     },
     "FIRST-S00017": {
         "all_fields": [
+            "application",
             "device_hostname",
             "metadata_deviceEventId",
             "metadata_product",
@@ -3368,6 +3373,7 @@
     },
     "FIRST-S00018": {
         "all_fields": [
+            "application",
             "device_hostname",
             "metadata_deviceEventId",
             "metadata_product",
@@ -3716,6 +3722,7 @@
     },
     "FIRST-S00023": {
         "all_fields": [
+            "application",
             "fields[\"userIdentity.type\"]",
             "metadata_product",
             "metadata_vendor",
@@ -3784,6 +3791,7 @@
     "FIRST-S00024": {
         "all_fields": [
             "action",
+            "application",
             "fields[\"requestParameters.documentName\"]",
             "metadata_product",
             "metadata_vendor",
@@ -3853,6 +3861,7 @@
     "FIRST-S00025": {
         "all_fields": [
             "action",
+            "application",
             "dstDevice_ip_isInternal",
             "dstPort",
             "ipProtocol",
@@ -3909,6 +3918,7 @@
             "840c72e0-4e47-41e7-9b93-31f55d12f07d",
             "9e0641a7-22ce-4ac8-8113-ee48b368ac3d",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
+            "acc19092-f1ce-4641-a4db-530a55418c1d",
             "b2f99a76-0771-49bf-9a89-d3e69370806e",
             "c2503fcc-ef30-4e40-bb32-0bf47151b140",
             "c3c1a4fc-10cc-4155-8a30-a3bb14fc9f31",
@@ -4217,7 +4227,8 @@
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
             "cf2af9e8-bade-4f28-8bca-b30aa41baec4",
             "da9e05a5-3fd3-46a7-a107-ae03c01e3f5a",
-            "dcc85cfc-a698-4d09-87de-f2c723f3ad07"
+            "dcc85cfc-a698-4d09-87de-f2c723f3ad07",
+            "ef11c9cd-df72-42c6-81f5-70b91fd0f38a"
         ],
         "record_type_direct_ref": [],
         "retention_window_size": 7776000000,
@@ -4373,6 +4384,7 @@
     "FIRST-S00034": {
         "all_fields": [
             "action",
+            "application",
             "metadata_product",
             "metadata_vendor",
             "user_username"
@@ -4510,6 +4522,7 @@
     "FIRST-S00036": {
         "all_fields": [
             "action",
+            "application",
             "cloud_provider",
             "fields[\"errorCode\"]",
             "metadata_product",
@@ -4838,7 +4851,6 @@
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "5c2cc0de-ca31-4ef0-bcfa-133fc8b387ad",
-            "60829f4a-7acb-47d1-ad23-8424fcf83dcb",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "b238758d-ade8-41d2-b32d-c99159e9fd74"
         ],
@@ -5800,7 +5812,6 @@
             "05bfaf47-5e21-4d5f-b724-98960a6fca8a",
             "0b45ccba-20b4-41e4-973d-b50fd291944d",
             "0e20c932-d992-4bd4-b276-c15119ca5c0b",
-            "12aba181-2b31-472c-a685-2be492f4778d",
             "153794da-09e8-48fe-b511-1306fbb94d07",
             "1ed80351-d779-4f1f-9ddb-b3881f19d487",
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
@@ -6422,6 +6433,7 @@
     },
     "FIRST-S00075": {
         "all_fields": [
+            "application",
             "metadata_product",
             "metadata_vendor",
             "user_username",
@@ -6648,6 +6660,7 @@
     },
     "FIRST-S00080": {
         "all_fields": [
+            "application",
             "metadata_deviceEventId",
             "metadata_product",
             "metadata_vendor",
@@ -6721,6 +6734,7 @@
     "FIRST-S00081": {
         "all_fields": [
             "action",
+            "application",
             "fields[\"responseElements.status\"]",
             "metadata_product",
             "metadata_vendor",
@@ -6791,6 +6805,7 @@
     "FIRST-S00082": {
         "all_fields": [
             "action",
+            "application",
             "metadata_product",
             "metadata_vendor",
             "user_username"
@@ -6858,6 +6873,7 @@
     "FIRST-S00084": {
         "all_fields": [
             "action",
+            "application",
             "cloud_provider",
             "metadata_product",
             "metadata_vendor",
@@ -6932,6 +6948,7 @@
     "FIRST-S00085": {
         "all_fields": [
             "action",
+            "application",
             "cloud_provider",
             "metadata_product",
             "metadata_vendor",
@@ -7069,6 +7086,7 @@
     "FIRST-S00087": {
         "all_fields": [
             "action",
+            "application",
             "metadata_vendor",
             "user_username"
         ],
@@ -7811,6 +7829,7 @@
     "FIRST-S00100": {
         "all_fields": [
             "action",
+            "application",
             "metadata_product",
             "metadata_vendor",
             "user_username"
@@ -7878,6 +7897,7 @@
     "FIRST-S00101": {
         "all_fields": [
             "action",
+            "application",
             "fields['responseElements.dataSource.dataSourceConfiguration.s3Configuration.bucketOwnerAccountId']",
             "metadata_product",
             "metadata_vendor",
@@ -8130,7 +8150,6 @@
         "pattern_type": "match",
         "product_direct_ref": [],
         "product_guids": [
-            "1768a42a-37e6-4a2b-aa42-314583f63e1b",
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "37C866BF-72E1-470A-9072-EDB908F56951",
             "5ba50e74-3c05-4ea8-aeaf-5efde588c60f",
@@ -8197,7 +8216,6 @@
             "9e0641a7-22ce-4ac8-8113-ee48b368ac3d",
             "B3582ED2-1A0C-452D-9802-97433D143486",
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
-            "da9e05a5-3fd3-46a7-a107-ae03c01e3f5a",
             "e90edc67-68d4-4d67-82f6-4524f94b59bb"
         ],
         "record_type_direct_ref": [],
@@ -8464,7 +8482,6 @@
             "072b85a2-1765-45c2-911d-b0509880326e",
             "0fb003bc-8383-442f-8f3d-afcfbaefe617",
             "14aa46d3-0710-44b6-9ce3-0a6b8f36b076",
-            "168afd8d-2893-4c74-95b1-a975d576ea56",
             "1768a42a-37e6-4a2b-aa42-314583f63e1b",
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "37C866BF-72E1-470A-9072-EDB908F56951",
@@ -8658,8 +8675,8 @@
             "072b85a2-1765-45c2-911d-b0509880326e",
             "0fb003bc-8383-442f-8f3d-afcfbaefe617",
             "2a678bcd-898e-43cd-ab3f-91feb0602a18",
+            "2b82e665-bdde-474a-ae29-4f0f76598556",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
-            "343b9323-d279-40d9-946f-809242e5cf98",
             "37C866BF-72E1-470A-9072-EDB908F56951",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
             "59a3cd41-b6d2-4ab7-a0ff-6d5abd14ac43",
@@ -9469,7 +9486,6 @@
             "072b85a2-1765-45c2-911d-b0509880326e",
             "0fb003bc-8383-442f-8f3d-afcfbaefe617",
             "14aa46d3-0710-44b6-9ce3-0a6b8f36b076",
-            "168afd8d-2893-4c74-95b1-a975d576ea56",
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "34dd9c1e-ceec-4cba-8f5d-4776f680d785",
             "37C866BF-72E1-470A-9072-EDB908F56951",
@@ -9479,7 +9495,6 @@
             "5bb9e0b3-8d57-4b10-8952-0b6ffe91b599",
             "5c2cc0de-ca31-4ef0-bcfa-133fc8b387ad",
             "6299d728-14f7-455e-85c5-ea8ec65a654a",
-            "c2503fcc-ef30-4e40-bb32-0bf47151b140",
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
             "e2393771-bda2-414a-8661-0a57069287ad",
             "e362ae18-9af1-496d-9ace-efa05a8381c6"
@@ -9554,8 +9569,8 @@
         "product_direct_ref": [],
         "product_guids": [
             "072b85a2-1765-45c2-911d-b0509880326e",
+            "0fb003bc-8383-442f-8f3d-afcfbaefe617",
             "14aa46d3-0710-44b6-9ce3-0a6b8f36b076",
-            "168afd8d-2893-4c74-95b1-a975d576ea56",
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "37C866BF-72E1-470A-9072-EDB908F56951",
             "43808f4c-15e9-480c-ab1a-38bdef3b6798",
@@ -10407,7 +10422,6 @@
             "5ba50e74-3c05-4ea8-aeaf-5efde588c60f",
             "6299d728-14f7-455e-85c5-ea8ec65a654a",
             "724c9add-8cd9-4013-b9e1-a907b96da426",
-            "9a28f2af-5526-414d-973b-c3fc7984b8a1",
             "B3582ED2-1A0C-452D-9802-97433D143486",
             "F362EA03-9BBB-4701-B2DF-5460C4A289CF",
             "bf865cb5-0b26-4010-8b3c-5ae2d1f716d8",
@@ -10676,7 +10690,8 @@
         "product_guids": [
             "37C866BF-72E1-470A-9072-EDB908F56951",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
-            "5bb9e0b3-8d57-4b10-8952-0b6ffe91b599"
+            "5bb9e0b3-8d57-4b10-8952-0b6ffe91b599",
+            "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad"
         ],
         "record_type_direct_ref": [],
         "rule_source": "sumo",
@@ -13944,6 +13959,7 @@
             "9a28f2af-5526-414d-973b-c3fc7984b8a1",
             "9f76f1fd-fbb0-42d2-9bf5-0f4fd2c1ab82",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
+            "ae07663e-2c2c-4932-be5d-c9f985e95276",
             "c2503fcc-ef30-4e40-bb32-0bf47151b140",
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
             "da9e05a5-3fd3-46a7-a107-ae03c01e3f5a",
@@ -14511,10 +14527,8 @@
         "product_guids": [
             "072b85a2-1765-45c2-911d-b0509880326e",
             "14aa46d3-0710-44b6-9ce3-0a6b8f36b076",
-            "168afd8d-2893-4c74-95b1-a975d576ea56",
             "1ce88b4b-d90d-4d50-9a89-3abe83e8d5f8",
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
-            "2a678bcd-898e-43cd-ab3f-91feb0602a18",
             "2ca0adcf-7616-4474-8557-a3773515aa6d",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "37C866BF-72E1-470A-9072-EDB908F56951",
@@ -15533,6 +15547,7 @@
             "2f2fbe08-ab8b-4626-81fd-eaa41b563c49",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "37C866BF-72E1-470A-9072-EDB908F56951",
+            "41f70c6e-18a9-462c-a04d-4edc7baead7a",
             "44f07c08-c2ad-4a95-a058-1d0737ff90db",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
             "51278354-d6b5-4c8e-a8fd-8197df334e67",
@@ -15550,6 +15565,7 @@
             "9f76f1fd-fbb0-42d2-9bf5-0f4fd2c1ab82",
             "B3582ED2-1A0C-452D-9802-97433D143486",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
+            "ae07663e-2c2c-4932-be5d-c9f985e95276",
             "af61d8a8-3eba-42fb-9f17-87443924f3f4",
             "afabb29d-e728-410f-b7c6-acfa9efbe1ed",
             "b8e88b31-2f07-45d9-9dda-6af362c63003",
@@ -17019,6 +17035,7 @@
     "LEGACY-S00206": {
         "all_fields": [
             "action",
+            "application",
             "metadata_product",
             "metadata_vendor",
             "srcDevice_ip",
@@ -17086,6 +17103,7 @@
     "LEGACY-S00207": {
         "all_fields": [
             "action",
+            "application",
             "device_hostname",
             "metadata_product",
             "metadata_vendor",
@@ -18502,6 +18520,7 @@
     "MATCH-S00096": {
         "all_fields": [
             "action",
+            "application",
             "device_hostname",
             "fields['userIdentity.type']",
             "metadata_product",
@@ -18645,6 +18664,7 @@
     "MATCH-S00099": {
         "all_fields": [
             "action",
+            "application",
             "device_hostname",
             "fields['requestParameters.policyArn']",
             "fields['requestParameters.userName']",
@@ -18737,6 +18757,7 @@
     "MATCH-S00101": {
         "all_fields": [
             "action",
+            "application",
             "device_hostname",
             "fields['requestParameters.groupName']",
             "fields['requestParameters.policyArn']",
@@ -18829,6 +18850,7 @@
     "MATCH-S00102": {
         "all_fields": [
             "action",
+            "application",
             "fields['requestParameters.groupName']",
             "fields['requestParameters.policyArn']",
             "metadata_product",
@@ -18905,6 +18927,7 @@
     "MATCH-S00104": {
         "all_fields": [
             "action",
+            "application",
             "device_hostname",
             "fields['requestParameters.policyArn']",
             "fields['requestParameters.roleName']",
@@ -18997,6 +19020,7 @@
     "MATCH-S00105": {
         "all_fields": [
             "action",
+            "application",
             "device_hostname",
             "fields['requestParameters.AccessControlPolicy.AccessControlList.Grant.1.Grantee.URI']",
             "fields['requestParameters.AccessControlPolicy.AccessControlList.Grant.2.Grantee.URI']",
@@ -19163,6 +19187,7 @@
     "MATCH-S00109": {
         "all_fields": [
             "action",
+            "application",
             "device_hostname",
             "metadata_product",
             "metadata_vendor",
@@ -19241,6 +19266,7 @@
     "MATCH-S00111": {
         "all_fields": [
             "action",
+            "application",
             "device_hostname",
             "metadata_product",
             "metadata_vendor",
@@ -21376,8 +21402,7 @@
         "pattern_type": "templated_match",
         "product_direct_ref": [],
         "product_guids": [
-            "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
-            "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3"
+            "1ff7546c-cb36-4a24-87f7-89d2cecc5761"
         ],
         "record_type_direct_ref": [],
         "rule_source": "sumo",
@@ -22519,7 +22544,6 @@
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "5c2cc0de-ca31-4ef0-bcfa-133fc8b387ad",
-            "72a5ddec-abb9-41ff-a2da-6a58beff980c",
             "840c72e0-4e47-41e7-9b93-31f55d12f07d",
             "a1225af5-e778-4068-a9a2-47da93d1ff24"
         ],
@@ -23160,6 +23184,7 @@
     },
     "MATCH-S00196": {
         "all_fields": [
+            "application",
             "device_hostname",
             "device_ip",
             "fields['EventData.AuthenticationPackage']",
@@ -23320,6 +23345,7 @@
     },
     "MATCH-S00200": {
         "all_fields": [
+            "application",
             "device_hostname",
             "device_ip",
             "fields['EventData.KeyLength']",
@@ -23559,6 +23585,7 @@
     "MATCH-S00208": {
         "all_fields": [
             "action",
+            "application",
             "metadata_product",
             "metadata_vendor",
             "srcDevice_ip",
@@ -23701,6 +23728,7 @@
             "2f2fbe08-ab8b-4626-81fd-eaa41b563c49",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "37C866BF-72E1-470A-9072-EDB908F56951",
+            "41f70c6e-18a9-462c-a04d-4edc7baead7a",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
             "51278354-d6b5-4c8e-a8fd-8197df334e67",
             "57cec26c-f94e-4403-add4-dae2382b5c16",
@@ -23755,6 +23783,7 @@
     "MATCH-S00210": {
         "all_fields": [
             "action",
+            "application",
             "device_hostname",
             "metadata_product",
             "metadata_vendor",
@@ -26595,6 +26624,7 @@
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "72a5ddec-abb9-41ff-a2da-6a58beff980c",
+            "7f8a9b0c-1d2e-3f4a-5b6c-7d8e9f0a1b2c",
             "840c72e0-4e47-41e7-9b93-31f55d12f07d",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "eabd9eed-b071-4773-ad07-706ea5b51b9c",
@@ -27167,6 +27197,7 @@
     },
     "MATCH-S00301": {
         "all_fields": [
+            "application",
             "fields['event.parameters.scope.10']",
             "metadata_deviceEventId",
             "metadata_product",
@@ -27539,6 +27570,7 @@
     "MATCH-S00308": {
         "all_fields": [
             "action",
+            "application",
             "device_hostname",
             "metadata_product",
             "metadata_vendor",
@@ -30919,8 +30951,7 @@
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
-            "840c72e0-4e47-41e7-9b93-31f55d12f07d",
-            "a1225af5-e778-4068-a9a2-47da93d1ff24"
+            "840c72e0-4e47-41e7-9b93-31f55d12f07d"
         ],
         "record_type_direct_ref": [],
         "rule_source": "sumo",
@@ -30993,7 +31024,6 @@
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
-            "840c72e0-4e47-41e7-9b93-31f55d12f07d",
             "a1225af5-e778-4068-a9a2-47da93d1ff24"
         ],
         "record_type_direct_ref": [],
@@ -31990,8 +32020,7 @@
         "product_direct_ref": [],
         "product_guids": [
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
-            "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
-            "a1225af5-e778-4068-a9a2-47da93d1ff24"
+            "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3"
         ],
         "record_type_direct_ref": [],
         "rule_source": "sumo",
@@ -32375,7 +32404,6 @@
         "product_guids": [
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
-            "60829f4a-7acb-47d1-ad23-8424fcf83dcb",
             "93e2d3d-fab1-4d61-845f-49bc1ae5bed9"
         ],
         "record_type_direct_ref": [],
@@ -32473,6 +32501,7 @@
     "MATCH-S00454": {
         "all_fields": [
             "action",
+            "application",
             "dstDevice_hostname",
             "dstDevice_ip",
             "dstDevice_ip_isInternal",
@@ -32695,7 +32724,8 @@
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
             "d4a9e7ce-082e-4f41-891f-4c43e604c850",
             "da9e05a5-3fd3-46a7-a107-ae03c01e3f5a",
-            "dcc85cfc-a698-4d09-87de-f2c723f3ad07"
+            "dcc85cfc-a698-4d09-87de-f2c723f3ad07",
+            "e90edc67-68d4-4d67-82f6-4524f94b59bb"
         ],
         "record_type_direct_ref": [],
         "rule_source": "sumo",
@@ -33213,6 +33243,7 @@
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
+            "7f8a9b0c-1d2e-3f4a-5b6c-7d8e9f0a1b2c",
             "840c72e0-4e47-41e7-9b93-31f55d12f07d",
             "a1225af5-e778-4068-a9a2-47da93d1ff24"
         ],
@@ -37434,13 +37465,13 @@
             "146522A1-DC9A-40A5-A909-2EB3B665B1D1",
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
-            "6299d728-14f7-455e-85c5-ea8ec65a654a",
             "79da6240-7617-49c8-b130-96278579766e",
             "B3582ED2-1A0C-452D-9802-97433D143486",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "bb75c481-648d-4953-80cf-1c8cbde8fbb8",
             "be4f7473-fe69-4311-8859-3561900060bf",
-            "d3ed003d-5ddd-4c7a-bea5-63eae6311833"
+            "d3ed003d-5ddd-4c7a-bea5-63eae6311833",
+            "de3d4b6b-36a3-4436-8bfc-0561ac95037e"
         ],
         "record_type_direct_ref": [],
         "rule_source": "sumo",
@@ -38751,6 +38782,7 @@
     },
     "MATCH-S00545": {
         "all_fields": [
+            "application",
             "baseImage",
             "device_hostname",
             "device_ip",
@@ -39291,6 +39323,7 @@
     },
     "MATCH-S00553": {
         "all_fields": [
+            "application",
             "dstDevice_hostname",
             "dstDevice_ip",
             "dstPort",
@@ -39563,8 +39596,7 @@
             "dcc85cfc-a698-4d09-87de-f2c723f3ad07",
             "de3d4b6b-36a3-4436-8bfc-0561ac95037e",
             "e73cd65a-7a4b-4ce9-9d73-e5d9c824c214",
-            "ede052db-d472-408f-949c-be642237ef3f",
-            "fca8785d-4823-4442-86b2-8acbaa176da4"
+            "ede052db-d472-408f-949c-be642237ef3f"
         ],
         "record_type_direct_ref": [
             "Authentication"
@@ -39585,6 +39617,7 @@
     },
     "MATCH-S00556": {
         "all_fields": [
+            "application",
             "dstDevice_ip_isInternal",
             "dstPort",
             "srcDevice_hostname",
@@ -39637,7 +39670,8 @@
             "951a004d-54bf-441d-98e1-fcc6a032f475",
             "9e0641a7-22ce-4ac8-8113-ee48b368ac3d",
             "A17B3F3C-04F1-40C8-9497-3C499EB18A74",
-            "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad"
+            "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
+            "da9e05a5-3fd3-46a7-a107-ae03c01e3f5a"
         ],
         "record_type_direct_ref": [],
         "rule_source": "sumo",
@@ -39739,6 +39773,7 @@
     },
     "MATCH-S00558": {
         "all_fields": [
+            "application",
             "dstDevice_hostname",
             "dstDevice_ip",
             "dstPort",
@@ -39938,7 +39973,7 @@
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "6299d728-14f7-455e-85c5-ea8ec65a654a",
             "724c9add-8cd9-4013-b9e1-a907b96da426",
-            "951a004d-54bf-441d-98e1-fcc6a032f475",
+            "B3582ED2-1A0C-452D-9802-97433D143486",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "afabb29d-e728-410f-b7c6-acfa9efbe1ed",
             "be4f7473-fe69-4311-8859-3561900060bf",
@@ -40006,7 +40041,6 @@
         "pattern_type": "templated_match",
         "product_direct_ref": [],
         "product_guids": [
-            "be4f7473-fe69-4311-8859-3561900060bf",
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad"
         ],
         "record_type_direct_ref": [],
@@ -40229,6 +40263,7 @@
     },
     "MATCH-S00565": {
         "all_fields": [
+            "application",
             "srcDevice_ip",
             "srcDevice_ip_isInternal"
         ],
@@ -40338,8 +40373,7 @@
             "724c9add-8cd9-4013-b9e1-a907b96da426",
             "991a55cf-8c5a-49ba-ae72-6f64a002bacf",
             "9e0641a7-22ce-4ac8-8113-ee48b368ac3d",
-            "c2503fcc-ef30-4e40-bb32-0bf47151b140",
-            "e90edc67-68d4-4d67-82f6-4524f94b59bb"
+            "c2503fcc-ef30-4e40-bb32-0bf47151b140"
         ],
         "record_type_direct_ref": [],
         "rule_source": "sumo",
@@ -40757,7 +40791,8 @@
         "product_guids": [
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
-            "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3"
+            "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
+            "a1225af5-e778-4068-a9a2-47da93d1ff24"
         ],
         "record_type_direct_ref": [],
         "rule_source": "sumo",
@@ -41355,6 +41390,7 @@
     },
     "MATCH-S00581": {
         "all_fields": [
+            "application",
             "device_hostname",
             "fields['EventData.ImagePath']",
             "metadata_deviceEventId",
@@ -41429,6 +41465,7 @@
     },
     "MATCH-S00582": {
         "all_fields": [
+            "application",
             "device_hostname",
             "file_path",
             "metadata_deviceEventId",
@@ -41846,8 +41883,7 @@
         "product_direct_ref": [],
         "product_guids": [
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
-            "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
-            "a1225af5-e778-4068-a9a2-47da93d1ff24"
+            "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3"
         ],
         "record_type_direct_ref": [],
         "rule_source": "sumo",
@@ -42370,6 +42406,7 @@
         "pattern_type": "templated_match",
         "product_direct_ref": [],
         "product_guids": [
+            "0fb003bc-8383-442f-8f3d-afcfbaefe617",
             "14aa46d3-0710-44b6-9ce3-0a6b8f36b076",
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
@@ -43255,6 +43292,7 @@
     "MATCH-S00613": {
         "all_fields": [
             "action",
+            "application",
             "metadata_product",
             "metadata_vendor",
             "srcDevice_ip",
@@ -43330,6 +43368,7 @@
     "MATCH-S00614": {
         "all_fields": [
             "action",
+            "application",
             "metadata_product",
             "metadata_vendor",
             "srcDevice_ip",
@@ -45989,6 +46028,7 @@
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "5c2cc0de-ca31-4ef0-bcfa-133fc8b387ad",
+            "72a5ddec-abb9-41ff-a2da-6a58beff980c",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "d6cb76d3-939e-4e02-b399-b15e0278c877"
         ],
@@ -46951,6 +46991,7 @@
     "MATCH-S00661": {
         "all_fields": [
             "action",
+            "application",
             "device_hostname",
             "metadata_product",
             "metadata_vendor",
@@ -47033,6 +47074,7 @@
     "MATCH-S00662": {
         "all_fields": [
             "action",
+            "application",
             "device_hostname",
             "metadata_product",
             "metadata_vendor",
@@ -47115,6 +47157,7 @@
     "MATCH-S00663": {
         "all_fields": [
             "action",
+            "application",
             "device_hostname",
             "metadata_product",
             "metadata_vendor",
@@ -47197,6 +47240,7 @@
     "MATCH-S00664": {
         "all_fields": [
             "action",
+            "application",
             "device_hostname",
             "metadata_product",
             "metadata_vendor",
@@ -47279,6 +47323,7 @@
     "MATCH-S00665": {
         "all_fields": [
             "action",
+            "application",
             "device_hostname",
             "metadata_product",
             "metadata_vendor",
@@ -47684,6 +47729,7 @@
     "MATCH-S00670": {
         "all_fields": [
             "action",
+            "application",
             "device_hostname",
             "metadata_product",
             "metadata_vendor",
@@ -47766,6 +47812,7 @@
     "MATCH-S00671": {
         "all_fields": [
             "action",
+            "application",
             "device_hostname",
             "metadata_product",
             "metadata_vendor",
@@ -47848,6 +47895,7 @@
     "MATCH-S00672": {
         "all_fields": [
             "action",
+            "application",
             "device_hostname",
             "metadata_product",
             "metadata_vendor",
@@ -47930,6 +47978,7 @@
     "MATCH-S00673": {
         "all_fields": [
             "action",
+            "application",
             "device_hostname",
             "metadata_product",
             "metadata_vendor",
@@ -48045,6 +48094,7 @@
     "MATCH-S00674": {
         "all_fields": [
             "action",
+            "application",
             "device_hostname",
             "metadata_product",
             "metadata_vendor",
@@ -48127,6 +48177,7 @@
     "MATCH-S00675": {
         "all_fields": [
             "action",
+            "application",
             "device_hostname",
             "metadata_product",
             "metadata_vendor",
@@ -48209,6 +48260,7 @@
     "MATCH-S00676": {
         "all_fields": [
             "action",
+            "application",
             "device_hostname",
             "metadata_product",
             "metadata_vendor",
@@ -48291,6 +48343,7 @@
     "MATCH-S00677": {
         "all_fields": [
             "action",
+            "application",
             "device_hostname",
             "metadata_product",
             "metadata_vendor",
@@ -48415,6 +48468,7 @@
     "MATCH-S00678": {
         "all_fields": [
             "action",
+            "application",
             "device_hostname",
             "metadata_product",
             "metadata_vendor",
@@ -48497,6 +48551,7 @@
     "MATCH-S00679": {
         "all_fields": [
             "action",
+            "application",
             "device_hostname",
             "metadata_product",
             "metadata_vendor",
@@ -48577,6 +48632,7 @@
     "MATCH-S00680": {
         "all_fields": [
             "action",
+            "application",
             "device_hostname",
             "metadata_product",
             "metadata_vendor",
@@ -49216,8 +49272,7 @@
             "840c72e0-4e47-41e7-9b93-31f55d12f07d",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "b238758d-ade8-41d2-b32d-c99159e9fd74",
-            "d6cb76d3-939e-4e02-b399-b15e0278c877",
-            "ef42eb74-7444-4fee-b231-b4eb1e7c9660"
+            "d6cb76d3-939e-4e02-b399-b15e0278c877"
         ],
         "record_type_direct_ref": [],
         "rule_source": "sumo",
@@ -49632,8 +49687,7 @@
         "pattern_type": "templated_match",
         "product_direct_ref": [],
         "product_guids": [
-            "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
-            "840c72e0-4e47-41e7-9b93-31f55d12f07d"
+            "1ff7546c-cb36-4a24-87f7-89d2cecc5761"
         ],
         "record_type_direct_ref": [],
         "rule_source": "sumo",
@@ -52050,8 +52104,6 @@
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
-            "5be5af82-c248-4c4c-a485-0571025f242c",
-            "840c72e0-4e47-41e7-9b93-31f55d12f07d",
             "B3582ED2-1A0C-452D-9802-97433D143486",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "bb75c481-648d-4953-80cf-1c8cbde8fbb8",
@@ -52131,7 +52183,6 @@
         "product_guids": [
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
-            "5be5af82-c248-4c4c-a485-0571025f242c",
             "5c2cc0de-ca31-4ef0-bcfa-133fc8b387ad",
             "93e2d3d-fab1-4d61-845f-49bc1ae5bed9",
             "a1225af5-e778-4068-a9a2-47da93d1ff24"
@@ -56035,6 +56086,7 @@
             "6787d77a-1ee0-43d4-8ca0-96af8ee755bc",
             "9a28f2af-5526-414d-973b-c3fc7984b8a1",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
+            "ae07663e-2c2c-4932-be5d-c9f985e95276",
             "af61d8a8-3eba-42fb-9f17-87443924f3f4",
             "c2503fcc-ef30-4e40-bb32-0bf47151b140",
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
@@ -58544,6 +58596,7 @@
     },
     "MATCH-S00818": {
         "all_fields": [
+            "application",
             "errorCode",
             "fields['properties.incomingTokenType']",
             "fields['properties.userAgent']",
@@ -58907,6 +58960,7 @@
     "MATCH-S00823": {
         "all_fields": [
             "action",
+            "application",
             "metadata_product",
             "metadata_vendor",
             "user_username"
@@ -59040,6 +59094,7 @@
     "MATCH-S00825": {
         "all_fields": [
             "action",
+            "application",
             "metadata_product",
             "metadata_vendor",
             "user_username"
@@ -59174,6 +59229,7 @@
     "MATCH-S00827": {
         "all_fields": [
             "action",
+            "application",
             "metadata_product",
             "metadata_vendor",
             "user_username"
@@ -59365,6 +59421,7 @@
     "MATCH-S00830": {
         "all_fields": [
             "action",
+            "application",
             "metadata_product",
             "success",
             "user_username"
@@ -59555,6 +59612,7 @@
     "MATCH-S00833": {
         "all_fields": [
             "action",
+            "application",
             "metadata_product",
             "user_username"
         ],
@@ -59754,6 +59812,7 @@
             "A17B3F3C-04F1-40C8-9497-3C499EB18A74",
             "B3582ED2-1A0C-452D-9802-97433D143486",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
+            "ae07663e-2c2c-4932-be5d-c9f985e95276",
             "af61d8a8-3eba-42fb-9f17-87443924f3f4",
             "be4f7473-fe69-4311-8859-3561900060bf",
             "bf865cb5-0b26-4010-8b3c-5ae2d1f716d8",
@@ -64840,6 +64899,7 @@
     "MATCH-S00921": {
         "all_fields": [
             "action",
+            "application",
             "metadata_product",
             "metadata_vendor",
             "user_username"
@@ -64904,6 +64964,7 @@
     "MATCH-S00922": {
         "all_fields": [
             "action",
+            "application",
             "cloud_provider",
             "metadata_product",
             "metadata_vendor",
@@ -64969,6 +65030,7 @@
     "MATCH-S00923": {
         "all_fields": [
             "action",
+            "application",
             "fields[\"errorCode\"]",
             "metadata_product",
             "metadata_vendor",
@@ -65034,6 +65096,7 @@
     "MATCH-S00924": {
         "all_fields": [
             "action",
+            "application",
             "metadata_product",
             "metadata_vendor",
             "user_username"
@@ -66938,7 +67001,9 @@
         "normalized_summary": "The record contains a matching IMPHASH from a threat intelligence feed: {{file_hash_imphash}}",
         "pattern_type": "templated_match",
         "product_direct_ref": [],
-        "product_guids": [],
+        "product_guids": [
+            "1ff7546c-cb36-4a24-87f7-89d2cecc5761"
+        ],
         "record_type_direct_ref": [],
         "rule_description": null,
         "rule_source": "sumo",
@@ -67052,6 +67117,7 @@
             "8c342fa0-4147-47c9-b574-965ad2eddafa",
             "B3582ED2-1A0C-452D-9802-97433D143486",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
+            "c2503fcc-ef30-4e40-bb32-0bf47151b140",
             "cc523ad6-7193-4de5-a254-d0243fca63f3",
             "de3d4b6b-36a3-4436-8bfc-0561ac95037e"
         ],
@@ -67593,7 +67659,6 @@
             "4a75a995-0e10-45fc-8b4d-7fcfc0e98e25",
             "6299d728-14f7-455e-85c5-ea8ec65a654a",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
-            "af61d8a8-3eba-42fb-9f17-87443924f3f4",
             "cf2af9e8-bade-4f28-8bca-b30aa41baec4"
         ],
         "record_type_direct_ref": [],
@@ -67955,6 +68020,7 @@
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
             "5ba50e74-3c05-4ea8-aeaf-5efde588c60f",
             "6299d728-14f7-455e-85c5-ea8ec65a654a",
+            "991a55cf-8c5a-49ba-ae72-6f64a002bacf",
             "B3582ED2-1A0C-452D-9802-97433D143486",
             "c2503fcc-ef30-4e40-bb32-0bf47151b140",
             "da9e05a5-3fd3-46a7-a107-ae03c01e3f5a",
@@ -68338,7 +68404,6 @@
             "be4f7473-fe69-4311-8859-3561900060bf",
             "bf865cb5-0b26-4010-8b3c-5ae2d1f716d8",
             "c07b5749-deda-4c7e-8e78-4a5dec1fcf4d",
-            "c2503fcc-ef30-4e40-bb32-0bf47151b140",
             "c3c1a4fc-10cc-4155-8a30-a3bb14fc9f31",
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
             "d3ed003d-5ddd-4c7a-bea5-63eae6311833",
@@ -68683,6 +68748,7 @@
             "b0fe0dde-4e19-4712-957b-1ea7418c132e",
             "be4f7473-fe69-4311-8859-3561900060bf",
             "c3954250-68a0-49c3-ab6a-ef0daa95ff90",
+            "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
             "d3606245-76d3-4173-a2fe-832c0e71b0f9",
             "d3ed003d-5ddd-4c7a-bea5-63eae6311833",
             "e43ba0e4-1e3f-40c6-8bca-cb06a656a40b",
@@ -68766,8 +68832,6 @@
             "51278354-d6b5-4c8e-a8fd-8197df334e67",
             "54B36B3F-A63F-4BA4-9DE4-02DBF69A429F",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
-            "a67d97fe-6e68-4cfb-9500-cfc5492da565",
-            "ad8d40a9-ee64-4615-bd92-aa964b4ae3b0",
             "e73cd65a-7a4b-4ce9-9d73-e5d9c824c214"
         ],
         "record_type_direct_ref": [],
@@ -68843,7 +68907,6 @@
             "332856e9-3111-446f-8df7-e64694e4b9a1",
             "51278354-d6b5-4c8e-a8fd-8197df334e67",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
-            "ad8d40a9-ee64-4615-bd92-aa964b4ae3b0",
             "e73cd65a-7a4b-4ce9-9d73-e5d9c824c214"
         ],
         "record_type_direct_ref": [],
@@ -69084,8 +69147,8 @@
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "343b9323-d279-40d9-946f-809242e5cf98",
             "37C866BF-72E1-470A-9072-EDB908F56951",
+            "37a906de-5e9c-475e-881a-65a1d984f377",
             "3a82061c-2ca3-4289-9c9b-78756001aa38",
-            "43808f4c-15e9-480c-ab1a-38bdef3b6798",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
             "51afd72e-94b0-42f3-b65c-cf8edbacf7cf",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
@@ -69108,8 +69171,7 @@
             "da9e05a5-3fd3-46a7-a107-ae03c01e3f5a",
             "dcc85cfc-a698-4d09-87de-f2c723f3ad07",
             "e611250c-6b5f-4b40-b84b-329a1d5b391c",
-            "e90edc67-68d4-4d67-82f6-4524f94b59bb",
-            "ebf65636-e08d-4560-a692-d7ee9692b7db"
+            "e90edc67-68d4-4d67-82f6-4524f94b59bb"
         ],
         "record_type_direct_ref": [],
         "rule_source": "sumo",
@@ -69210,6 +69272,7 @@
             "033624b0-218e-4dcb-b93f-0f1fb1806c56",
             "072b85a2-1765-45c2-911d-b0509880326e",
             "2b82e665-bdde-474a-ae29-4f0f76598556",
+            "332856e9-3111-446f-8df7-e64694e4b9a1",
             "41f70c6e-18a9-462c-a04d-4edc7baead7a",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
             "51278354-d6b5-4c8e-a8fd-8197df334e67",
@@ -69340,7 +69403,6 @@
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "6299d728-14f7-455e-85c5-ea8ec65a654a",
             "724c9add-8cd9-4013-b9e1-a907b96da426",
-            "840c72e0-4e47-41e7-9b93-31f55d12f07d",
             "B3582ED2-1A0C-452D-9802-97433D143486",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "afabb29d-e728-410f-b7c6-acfa9efbe1ed",
@@ -69592,7 +69654,8 @@
             "cc523ad6-7193-4de5-a254-d0243fca63f3",
             "cf2af9e8-bade-4f28-8bca-b30aa41baec4",
             "da9e05a5-3fd3-46a7-a107-ae03c01e3f5a",
-            "dcc85cfc-a698-4d09-87de-f2c723f3ad07"
+            "dcc85cfc-a698-4d09-87de-f2c723f3ad07",
+            "e2393771-bda2-414a-8661-0a57069287ad"
         ],
         "record_type_direct_ref": [],
         "rule_source": "sumo",
@@ -70525,6 +70588,7 @@
     "MATCH-S01151": {
         "all_fields": [
             "action",
+            "application",
             "fields['requestParameters.policyArn']",
             "metadata_product",
             "metadata_vendor",
@@ -71569,6 +71633,7 @@
             "7205db83-88e8-4074-8288-136a6c493d69",
             "79da6240-7617-49c8-b130-96278579766e",
             "8276b520-fdeb-4f79-9f5d-67865818562b",
+            "90bba037-f944-480e-89fa-a3b104451af3",
             "93072f9e-3561-401e-980d-6b49f475c2fd",
             "9f6d624f-6d8f-43c7-a4b0-51179061631c",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
@@ -72280,6 +72345,7 @@
             "991a55cf-8c5a-49ba-ae72-6f64a002bacf",
             "9a28f2af-5526-414d-973b-c3fc7984b8a1",
             "9e0641a7-22ce-4ac8-8113-ee48b368ac3d",
+            "9f76f1fd-fbb0-42d2-9bf5-0f4fd2c1ab82",
             "B3582ED2-1A0C-452D-9802-97433D143486",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "af61d8a8-3eba-42fb-9f17-87443924f3f4",
@@ -72785,6 +72851,7 @@
             }
         ],
         "all_fields": [
+            "application",
             "metadata_product",
             "metadata_vendor",
             "user_username"
@@ -72861,6 +72928,7 @@
             }
         ],
         "all_fields": [
+            "application",
             "metadata_product",
             "metadata_vendor",
             "user_username"
@@ -72938,6 +73006,7 @@
         ],
         "all_fields": [
             "action",
+            "application",
             "fields[\"eventCategory\"]",
             "metadata_vendor",
             "user_username"
@@ -73013,6 +73082,7 @@
         ],
         "all_fields": [
             "action",
+            "application",
             "fields[\"errorCode\"]",
             "fields[\"errorMessage\"]",
             "metadata_vendor",
@@ -73390,6 +73460,7 @@
         ],
         "all_fields": [
             "action",
+            "application",
             "fields[\"eventCategory\"]",
             "metadata_vendor",
             "user_username"
@@ -73465,6 +73536,7 @@
         ],
         "all_fields": [
             "action",
+            "application",
             "fields[\"eventCategory\"]",
             "metadata_vendor",
             "user_username"
@@ -73541,6 +73613,7 @@
         ],
         "all_fields": [
             "action",
+            "application",
             "fields[\"eventCategory\"]",
             "metadata_vendor",
             "user_username"
@@ -74067,6 +74140,7 @@
         "pattern_type": "threshold",
         "product_direct_ref": [],
         "product_guids": [
+            "0fb003bc-8383-442f-8f3d-afcfbaefe617",
             "37C866BF-72E1-470A-9072-EDB908F56951",
             "59a3cd41-b6d2-4ab7-a0ff-6d5abd14ac43",
             "5bb9e0b3-8d57-4b10-8952-0b6ffe91b599",
@@ -75969,6 +76043,7 @@
     },
     "THRESHOLD-S00075": {
         "all_fields": [
+            "application",
             "fields['EventData.TicketEncryptionType']",
             "fields['EventData.TicketOptions']",
             "fields['insertionstrings_f05']",
@@ -76256,7 +76331,6 @@
         "product_guids": [
             "021d1ded-1c82-4663-bf5d-d6ed5170efa3",
             "072b85a2-1765-45c2-911d-b0509880326e",
-            "0e3d5c19-0a50-4ecf-b6f9-b1410d5dbb63",
             "0fb003bc-8383-442f-8f3d-afcfbaefe617",
             "2b82e665-bdde-474a-ae29-4f0f76598556",
             "37C866BF-72E1-470A-9072-EDB908F56951",
@@ -76528,7 +76602,7 @@
             "2b82e665-bdde-474a-ae29-4f0f76598556",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
-            "724c9add-8cd9-4013-b9e1-a907b96da426",
+            "6299d728-14f7-455e-85c5-ea8ec65a654a",
             "be4f7473-fe69-4311-8859-3561900060bf",
             "c3c1a4fc-10cc-4155-8a30-a3bb14fc9f31",
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
@@ -76972,6 +77046,7 @@
     "THRESHOLD-S00092": {
         "all_fields": [
             "action",
+            "application",
             "device_hostname",
             "metadata_product",
             "metadata_vendor",
@@ -77053,6 +77128,7 @@
     "THRESHOLD-S00093": {
         "all_fields": [
             "action",
+            "application",
             "device_hostname",
             "metadata_product",
             "metadata_vendor",
@@ -77192,6 +77268,7 @@
             "51278354-d6b5-4c8e-a8fd-8197df334e67",
             "70f80fa8-200a-449b-8100-f8d4b7687380",
             "7205db83-88e8-4074-8288-136a6c493d69",
+            "90bba037-f944-480e-89fa-a3b104451af3",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "acb7e80e-2b66-496c-ba2e-1e7c3933a98e",
             "b0fe0dde-4e19-4712-957b-1ea7418c132e"
@@ -77314,9 +77391,11 @@
             "5be5af82-c248-4c4c-a485-0571025f242c",
             "5bfda3d2-03e7-4d9a-8072-c59430a131d7",
             "70f80fa8-200a-449b-8100-f8d4b7687380",
+            "7205db83-88e8-4074-8288-136a6c493d69",
             "79da6240-7617-49c8-b130-96278579766e",
             "8276b520-fdeb-4f79-9f5d-67865818562b",
             "840c72e0-4e47-41e7-9b93-31f55d12f07d",
+            "90bba037-f944-480e-89fa-a3b104451af3",
             "93072f9e-3561-401e-980d-6b49f475c2fd",
             "9f6d624f-6d8f-43c7-a4b0-51179061631c",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
@@ -78791,6 +78870,7 @@
             "153794da-09e8-48fe-b511-1306fbb94d07",
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
+            "37a906de-5e9c-475e-881a-65a1d984f377",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
             "51278354-d6b5-4c8e-a8fd-8197df334e67",
             "54B36B3F-A63F-4BA4-9DE4-02DBF69A429F",
@@ -78909,6 +78989,7 @@
     "THRESHOLD-S00125": {
         "all_fields": [
             "action",
+            "application",
             "metadata_vendor",
             "srcDevice_ip",
             "user_username",

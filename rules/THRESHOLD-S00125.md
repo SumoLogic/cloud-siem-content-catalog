@@ -36,6 +36,7 @@ Create a match list named 'authorized_automation_accounts' for legitimate automa
 |Origin|Field|
 |----|----|
 |Normalized Schema|action|
+|Normalized Schema|application|
 |Normalized Schema|metadata_vendor|
 |Normalized Schema|srcDevice_ip|
 |Normalized Schema|user_username|

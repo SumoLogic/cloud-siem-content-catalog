@@ -23,6 +23,7 @@ Observes for several known malicious services being installed on a system
 
 |Origin|Field|
 |----|----|
+|Normalized Schema|application|
 |Normalized Schema|device_hostname|
 |Normalized Schema|file_path|
 |Normalized Schema|metadata_deviceEventId|

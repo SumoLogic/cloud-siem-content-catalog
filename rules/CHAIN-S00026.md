@@ -34,6 +34,7 @@ The rule excludes AWS service-linked roles. Create match list 'authorized_bedroc
 |Origin|Field|
 |----|----|
 |Normalized Schema|action|
+|Normalized Schema|application|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|
 |Normalized Schema|resource|

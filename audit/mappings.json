@@ -14345,16 +14345,26 @@
         "uid": "1bhd6361-1e3c-45a1-2135-5b5e7eb5250f"
     },
     "1c798d67-4d63-4ce5-a6a9-72f3f6d1effe": {
-        "commit_message": "TLAB-2225:added support for the traffic events (#5853)",
-        "commit_origin_hash": "5a35a14bdd91fe8761072a8b4f30b37584e595c0",
+        "commit_message": "TLAB-2794 Fix Meraki Traffic Events hostname + WPA mapper for C2C (#6032)",
+        "commit_origin_hash": "86637b318ddbe5db31a60aaa4f65e8dc526f3a39",
         "field_mappings": {
             "device_hostname": {
+                "alternate_values": [
+                    "deviceName"
+                ],
                 "value": "syslog_device_name"
             },
             "srcDevice_ip": {
+                "alternate_values": [
+                    "eventData.client_ip",
+                    "eventData.ip_src"
+                ],
                 "value": "client_ip"
             },
             "srcDevice_mac": {
+                "alternate_values": [
+                    "eventData.client_mac"
+                ],
                 "value": "client_mac"
             },
             "timestamp": {
@@ -16873,8 +16883,8 @@
         "uid": "2015b1c0-a1c7-47b4-9dd5-e87fb392abcf"
     },
     "202b0cfa-4227-4f96-863a-bdf65f2d11f3": {
-        "commit_message": "TLAB-2225:added support for the traffic events (#5853)",
-        "commit_origin_hash": "5a35a14bdd91fe8761072a8b4f30b37584e595c0",
+        "commit_message": "TLAB-2794 Fix Meraki Traffic Events hostname + WPA mapper for C2C (#6032)",
+        "commit_origin_hash": "86637b318ddbe5db31a60aaa4f65e8dc526f3a39",
         "field_mappings": {
             "dstDevice_ip": {
                 "value": "dst"
@@ -20345,8 +20355,8 @@
         "uid": "2771d5de-5a61-41fd-8b8e-b305f74a156b"
     },
     "27909e48-6b07-44c7-be5d-50a61bb58145": {
-        "commit_message": "TLAB-2225:added support for the traffic events (#5853)",
-        "commit_origin_hash": "5a35a14bdd91fe8761072a8b4f30b37584e595c0",
+        "commit_message": "TLAB-2794 Fix Meraki Traffic Events hostname + WPA mapper for C2C (#6032)",
+        "commit_origin_hash": "86637b318ddbe5db31a60aaa4f65e8dc526f3a39",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -21246,8 +21256,8 @@
         "uid": "286e19bd-2207-4a0f-b27e-efccd7a98b96"
     },
     "2876b2f3-6e68-48bd-82e5-24f142e3c749": {
-        "commit_message": "TLAB-2654_New mapper for AWS Guardduty attackSequence events (#5992)",
-        "commit_origin_hash": "3c055b13ca42d32596b0c922d49ed27d8bdaadfa",
+        "commit_message": "TLAB-2798 Accept both / and - delimiters in GuardDuty event_id_patterns (#6031)",
+        "commit_origin_hash": "22b26b4e584bc3d89c8e1fb09728114ca560c3d7",
         "field_mappings": {
             "accountId": {
                 "alternate_values": [
@@ -31601,8 +31611,8 @@
         "uid": "3f2bd88a-69b4-11ea-bc55-0242ac130003"
     },
     "3f3c35bf-e896-4c34-961e-6868224c0f69": {
-        "commit_message": "TLAB-2654_New mapper for AWS Guardduty attackSequence events (#5992)",
-        "commit_origin_hash": "3c055b13ca42d32596b0c922d49ed27d8bdaadfa",
+        "commit_message": "TLAB-2798 Accept both / and - delimiters in GuardDuty event_id_patterns (#6031)",
+        "commit_origin_hash": "22b26b4e584bc3d89c8e1fb09728114ca560c3d7",
         "field_mappings": {
             "accountId": {
                 "value": "detail.accountId"
@@ -33320,8 +33330,8 @@
         "uid": "42656056-8445-4313-ba3e-56913a21cd3f"
     },
     "42710bf7-5cb5-4964-b063-b00e7b2f3048": {
-        "commit_message": "TLAB-2654_New mapper for AWS Guardduty attackSequence events (#5992)",
-        "commit_origin_hash": "3c055b13ca42d32596b0c922d49ed27d8bdaadfa",
+        "commit_message": "TLAB-2798 Accept both / and - delimiters in GuardDuty event_id_patterns (#6031)",
+        "commit_origin_hash": "22b26b4e584bc3d89c8e1fb09728114ca560c3d7",
         "field_mappings": {
             "accountId": {
                 "alternate_values": [
@@ -33421,7 +33431,7 @@
         },
         "file_path": "mappings_schemav3/aws_guardduty_custom_parser.yaml",
         "input": {
-            "event_id_pattern": "(Recon:IAMUser/|UnauthorizedAccess:IAMUser|Persistence|Policy|ResourceConsumption|Stealth).*",
+            "event_id_pattern": "(Recon:IAMUser[/-]|UnauthorizedAccess:IAMUser|Persistence|Policy|ResourceConsumption|Stealth).*",
             "log_format": "JSON",
             "product": "GuardDuty",
             "vendor": "AWS"
@@ -36712,8 +36722,8 @@
         "uid": "4986836c-1759-422b-b5c4-8a548f18616b"
     },
     "499c828d-ee7e-420c-8369-d46ed029a074": {
-        "commit_message": "TLAB-2654_New mapper for AWS Guardduty attackSequence events (#5992)",
-        "commit_origin_hash": "3c055b13ca42d32596b0c922d49ed27d8bdaadfa",
+        "commit_message": "TLAB-2798 Accept both / and - delimiters in GuardDuty event_id_patterns (#6031)",
+        "commit_origin_hash": "22b26b4e584bc3d89c8e1fb09728114ca560c3d7",
         "field_mappings": {
             "accountId": {
                 "alternate_values": [
@@ -36814,7 +36824,7 @@
         },
         "file_path": "mappings_schemav3/aws_guardduty_custom_parser.yaml",
         "input": {
-            "event_id_pattern": "(Behavior|PenTest|Recon:EC2/PortProbeUnprotectedPort|Recon:EC2/Portscan|Backdoor|CryptoCurrency|Trojan).*",
+            "event_id_pattern": "(Behavior|PenTest|Recon:EC2[/-]PortProbeUnprotectedPort|Recon:EC2[/-]Portscan|Backdoor|CryptoCurrency|Trojan).*",
             "log_format": "JSON",
             "product": "GuardDuty",
             "vendor": "AWS"
@@ -38228,8 +38238,8 @@
         "uid": "4d24d0e9-1f78-4669-ac57-cab162707697"
     },
     "4d290a08-89cb-45b8-8504-954817ac4b9e": {
-        "commit_message": "TLAB-2225:added support for the traffic events (#5853)",
-        "commit_origin_hash": "5a35a14bdd91fe8761072a8b4f30b37584e595c0",
+        "commit_message": "TLAB-2794 Fix Meraki Traffic Events hostname + WPA mapper for C2C (#6032)",
+        "commit_origin_hash": "86637b318ddbe5db31a60aaa4f65e8dc526f3a39",
         "field_mappings": {
             "dstDevice_ip": {
                 "value": "dst_ip"
@@ -42398,8 +42408,8 @@
         "uid": "54b3f101-a8da-4eb4-b1eb-a48efb095365"
     },
     "54ed912b-0a61-45ee-8677-f1df0aa7d765": {
-        "commit_message": "TLAB-2654_New mapper for AWS Guardduty attackSequence events (#5992)",
-        "commit_origin_hash": "3c055b13ca42d32596b0c922d49ed27d8bdaadfa",
+        "commit_message": "TLAB-2798 Accept both / and - delimiters in GuardDuty event_id_patterns (#6031)",
+        "commit_origin_hash": "22b26b4e584bc3d89c8e1fb09728114ca560c3d7",
         "field_mappings": {
             "accountId": {
                 "value": "accountId"
@@ -53992,8 +54002,8 @@
         "uid": "6e6d4334-69b1-11ea-bc55-0242ac130003"
     },
     "6eaf7d72-b132-45b7-8e2e-6a9811ee0511": {
-        "commit_message": "TLAB-2225:added support for the traffic events (#5853)",
-        "commit_origin_hash": "5a35a14bdd91fe8761072a8b4f30b37584e595c0",
+        "commit_message": "TLAB-2794 Fix Meraki Traffic Events hostname + WPA mapper for C2C (#6032)",
+        "commit_origin_hash": "86637b318ddbe5db31a60aaa4f65e8dc526f3a39",
         "field_mappings": {
             "action": {
                 "lookup": {
@@ -54571,8 +54581,8 @@
         "uid": "701835ed-8f1f-4c3f-8a1d-48cb7d30aa57"
     },
     "701febb4-9985-4cfa-b07e-174b5610ade3": {
-        "commit_message": "TLAB-2654_New mapper for AWS Guardduty attackSequence events (#5992)",
-        "commit_origin_hash": "3c055b13ca42d32596b0c922d49ed27d8bdaadfa",
+        "commit_message": "TLAB-2798 Accept both / and - delimiters in GuardDuty event_id_patterns (#6031)",
+        "commit_origin_hash": "22b26b4e584bc3d89c8e1fb09728114ca560c3d7",
         "field_mappings": {
             "accountId": {
                 "alternate_values": [
@@ -55025,8 +55035,8 @@
         "uid": "71958300-7D31-4909-9448-4DF68E80B706"
     },
     "71a4e74c-d8b7-4148-b755-5298f5e1b49e": {
-        "commit_message": "TLAB-2654_New mapper for AWS Guardduty attackSequence events (#5992)",
-        "commit_origin_hash": "3c055b13ca42d32596b0c922d49ed27d8bdaadfa",
+        "commit_message": "TLAB-2798 Accept both / and - delimiters in GuardDuty event_id_patterns (#6031)",
+        "commit_origin_hash": "22b26b4e584bc3d89c8e1fb09728114ca560c3d7",
         "field_mappings": {
             "accountId": {
                 "alternate_values": [
@@ -55150,7 +55160,7 @@
         },
         "file_path": "mappings_schemav3/aws_guardduty_custom_parser.yaml",
         "input": {
-            "event_id_pattern": "(UnauthorizedAccess:EC2/TorClient|UnauthorizedAccess:EC2/TorRelay)",
+            "event_id_pattern": "(UnauthorizedAccess:EC2[/-]TorClient|UnauthorizedAccess:EC2[/-]TorRelay)",
             "log_format": "JSON",
             "product": "GuardDuty",
             "vendor": "AWS"
@@ -66592,8 +66602,8 @@
         "uid": "8a28d0b2-6778-4cae-a23d-905b87bcb282"
     },
     "8a3e7b76-57da-432f-a6e7-40b5d9137ba2": {
-        "commit_message": "TLAB-2225:added support for the traffic events (#5853)",
-        "commit_origin_hash": "5a35a14bdd91fe8761072a8b4f30b37584e595c0",
+        "commit_message": "TLAB-2794 Fix Meraki Traffic Events hostname + WPA mapper for C2C (#6032)",
+        "commit_origin_hash": "86637b318ddbe5db31a60aaa4f65e8dc526f3a39",
         "field_mappings": {
             "srcDevice_mac": {
                 "value": "client_mac"
@@ -67246,8 +67256,8 @@
         "uid": "8bbbe645-df62-4048-b420-9db3345e2a78"
     },
     "8bd2d994-32e4-4496-97e1-35f8b5bd8c2a": {
-        "commit_message": "TLAB-2225:added support for the traffic events (#5853)",
-        "commit_origin_hash": "5a35a14bdd91fe8761072a8b4f30b37584e595c0",
+        "commit_message": "TLAB-2794 Fix Meraki Traffic Events hostname + WPA mapper for C2C (#6032)",
+        "commit_origin_hash": "86637b318ddbe5db31a60aaa4f65e8dc526f3a39",
         "field_mappings": {
             "srcDevice_ip": {
                 "value": "last_known_client_ip"
@@ -73769,6 +73779,109 @@
         "source": "jask",
         "uid": "976F0C87-A1A0-4B26-B9AE-A0983069517A"
     },
+    "97bc4ff2-95e2-4d37-b76a-e1d2e359ce6b": {
+        "commit_message": "TLAB-2777 new mapper for pingone audit logs (#6024)",
+        "commit_origin_hash": "79597c641f46064f25cacaf6becc9b8089de71a7",
+        "field_mappings": {
+            "action": {
+                "value": "action.type"
+            },
+            "application": {
+                "value": "actors.client.name"
+            },
+            "description": {
+                "value": "result.description"
+            },
+            "http_userAgent": {
+                "value": "source.userAgent"
+            },
+            "normalizedAction": {
+                "lookup": {
+                    "AUTHENTICATION.CREATED": "create",
+                    "AUTHENTICATION.UPDATED": "change",
+                    "FLOW.CREATED": "start",
+                    "FLOW.DELETED": "delete",
+                    "FLOW.UPDATED": "change",
+                    "MEMBER_OF_GROUP.CREATED": "create",
+                    "ROLE_ASSIGNMENT.CREATED": "create",
+                    "ROLE_ASSIGNMENT.DELETED": "delete",
+                    "SESSION.CREATED": "logon",
+                    "SESSION.UPDATED": "change",
+                    "USER.ACCESS_ALLOWED": "allow",
+                    "USER.UPDATED": "change"
+                },
+                "value": "action.type",
+                "value_type": "lookup"
+            },
+            "normalizedSeverity": {
+                "lookup": {
+                    "EXTERNAL_AUTHENTICATION_REQUIRED": "1",
+                    "FAILURE": "3",
+                    "SUCCESS": "1",
+                    "USERNAME_PASSWORD_REQUIRED": "1"
+                },
+                "value": "result.status",
+                "value_type": "lookup"
+            },
+            "resource": {
+                "value": "resources.1.name"
+            },
+            "resourceType": {
+                "value": "resources.1.type"
+            },
+            "sessionId": {
+                "value": "internalCorrelation.sessionId"
+            },
+            "sourceUid": {
+                "value": "id"
+            },
+            "srcDevice_ip": {
+                "value": "source.ipAddress"
+            },
+            "success": {
+                "lookup": {
+                    "EXTERNAL_AUTHENTICATION_REQUIRED": "False",
+                    "FAILURE": "False",
+                    "SUCCESS": "True",
+                    "USERNAME_PASSWORD_REQUIRED": "False"
+                },
+                "value": "result.status",
+                "value_type": "lookup"
+            },
+            "targetUser_userId": {
+                "value": "targetUser_id"
+            },
+            "targetUser_username": {
+                "value": "targetUser_name"
+            },
+            "user_userId": {
+                "value": "actors.user.id"
+            },
+            "user_username": {
+                "alternate_values": [
+                    "_embedded.externalId"
+                ],
+                "value": "actors.user.name"
+            }
+        },
+        "file_path": "mappings_schemav3/pingidentity_pingone.yaml",
+        "input": {
+            "event_id_pattern": "audit",
+            "log_format": "JSON",
+            "product": "PingOne",
+            "vendor": "PingIdentity"
+        },
+        "name": "PingOne - Audit Event",
+        "output": {
+            "product_guid": "3df88ccb-10a9-4a30-a36f-74bd891d55a1",
+            "record_type": "Audit"
+        },
+        "skipped_values": [
+            ""
+        ],
+        "source": "jask",
+        "uid": "97bc4ff2-95e2-4d37-b76a-e1d2e359ce6b"
+    },
     "97cfb388-e2d6-4765-a893-914500795cac": {
         "commit_message": "TRIDENT-14051 Update mappers to use _default_",
         "commit_origin_hash": "46fe8bfb2159d2b1bc49dd2d481af2c41d0fdf1d",
@@ -75928,8 +76041,8 @@
         "uid": "9c735264-612b-42e3-9685-fc47b0cf72ab"
     },
     "9cd7d33e-bc90-4b12-8bc6-1c5da6e753aa": {
-        "commit_message": "TLAB-2225:added support for the traffic events (#5853)",
-        "commit_origin_hash": "5a35a14bdd91fe8761072a8b4f30b37584e595c0",
+        "commit_message": "TLAB-2794 Fix Meraki Traffic Events hostname + WPA mapper for C2C (#6032)",
+        "commit_origin_hash": "86637b318ddbe5db31a60aaa4f65e8dc526f3a39",
         "field_mappings": {
             "action": {
                 "lookup": {
@@ -89553,8 +89666,8 @@
         "uid": "b9e26b82-bdca-4a36-807b-7bf5e8066ae8"
     },
     "ba2d72de-8d25-4e0f-a4f7-85d263c62b7e": {
-        "commit_message": "TLAB-2225:added support for the traffic events (#5853)",
-        "commit_origin_hash": "5a35a14bdd91fe8761072a8b4f30b37584e595c0",
+        "commit_message": "TLAB-2794 Fix Meraki Traffic Events hostname + WPA mapper for C2C (#6032)",
+        "commit_origin_hash": "86637b318ddbe5db31a60aaa4f65e8dc526f3a39",
         "field_mappings": {
             "action": {
                 "value": "decision"
@@ -91209,8 +91322,8 @@
         "uid": "be3547e5-f844-45d4-84c5-f887e1b79f62"
     },
     "bee80284-3667-4ebb-97d0-7db091f00450": {
-        "commit_message": "TLAB-2225:added support for the traffic events (#5853)",
-        "commit_origin_hash": "5a35a14bdd91fe8761072a8b4f30b37584e595c0",
+        "commit_message": "TLAB-2794 Fix Meraki Traffic Events hostname + WPA mapper for C2C (#6032)",
+        "commit_origin_hash": "86637b318ddbe5db31a60aaa4f65e8dc526f3a39",
         "field_mappings": {
             "application": {
                 "value": "application"
@@ -91220,6 +91333,9 @@
             },
             "bytesOut": {
                 "value": "sent"
+            },
+            "dstDevice_hostname": {
+                "value": "destination"
             },
             "dstDevice_ip": {
                 "value": "destination"
@@ -91969,8 +92085,8 @@
         "uid": "c1e1d917-59c9-4e15-987e-56000f7778e6"
     },
     "c1f966d9-4a30-4e67-a5ba-9630545f757f": {
-        "commit_message": "TLAB-2225:added support for the traffic events (#5853)",
-        "commit_origin_hash": "5a35a14bdd91fe8761072a8b4f30b37584e595c0",
+        "commit_message": "TLAB-2794 Fix Meraki Traffic Events hostname + WPA mapper for C2C (#6032)",
+        "commit_origin_hash": "86637b318ddbe5db31a60aaa4f65e8dc526f3a39",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -103658,8 +103774,8 @@
         "uid": "ddd7a5fb-60e7-4b33-a81a-4e7491977601"
     },
     "ddfbc7e4-5f83-46b5-90fd-5d3e9bdb1ff6": {
-        "commit_message": "TLAB-2225:added support for the traffic events (#5853)",
-        "commit_origin_hash": "5a35a14bdd91fe8761072a8b4f30b37584e595c0",
+        "commit_message": "TLAB-2794 Fix Meraki Traffic Events hostname + WPA mapper for C2C (#6032)",
+        "commit_origin_hash": "86637b318ddbe5db31a60aaa4f65e8dc526f3a39",
         "field_mappings": {
             "description": {
                 "value": "message"
@@ -104914,8 +105030,8 @@
         "uid": "e0497f50-c29c-42c5-a996-31be6e02b909"
     },
     "e0a19ce7-0934-4a8c-a714-0d8efab68bdf": {
-        "commit_message": "TLAB-2654_New mapper for AWS Guardduty attackSequence events (#5992)",
-        "commit_origin_hash": "3c055b13ca42d32596b0c922d49ed27d8bdaadfa",
+        "commit_message": "TLAB-2798 Accept both / and - delimiters in GuardDuty event_id_patterns (#6031)",
+        "commit_origin_hash": "22b26b4e584bc3d89c8e1fb09728114ca560c3d7",
         "field_mappings": {
             "accountId": {
                 "alternate_values": [
@@ -105038,7 +105154,7 @@
         },
         "file_path": "mappings_schemav3/aws_guardduty_custom_parser.yaml",
         "input": {
-            "event_id_pattern": "UnauthorizedAccess:EC2/TorIPCaller",
+            "event_id_pattern": "UnauthorizedAccess:EC2[/-]TorIPCaller",
             "log_format": "JSON",
             "product": "GuardDuty",
             "vendor": "AWS"
@@ -106637,8 +106753,8 @@
         "uid": "e4177d7b-56ec-45d3-8572-780c93a30087"
     },
     "e4883fa4-baaa-47bc-948d-17ca3ba7ac94": {
-        "commit_message": "TLAB-2654_New mapper for AWS Guardduty attackSequence events (#5992)",
-        "commit_origin_hash": "3c055b13ca42d32596b0c922d49ed27d8bdaadfa",
+        "commit_message": "TLAB-2798 Accept both / and - delimiters in GuardDuty event_id_patterns (#6031)",
+        "commit_origin_hash": "22b26b4e584bc3d89c8e1fb09728114ca560c3d7",
         "field_mappings": {
             "accountId": {
                 "alternate_values": [
@@ -106758,7 +106874,7 @@
         },
         "file_path": "mappings_schemav3/aws_guardduty_custom_parser.yaml",
         "input": {
-            "event_id_pattern": "UnauthorizedAccess:EC2/SSHBruteForce",
+            "event_id_pattern": "UnauthorizedAccess:EC2[/-]SSHBruteForce",
             "log_format": "JSON",
             "product": "GuardDuty",
             "vendor": "AWS"
@@ -107262,8 +107378,8 @@
         "uid": "e69b5d13-5862-430a-a47d-5e9afd51b957"
     },
     "e69d3f69-59b1-43c2-b32f-42baa4ab5ef0": {
-        "commit_message": "TLAB-2225:added support for the traffic events (#5853)",
-        "commit_origin_hash": "5a35a14bdd91fe8761072a8b4f30b37584e595c0",
+        "commit_message": "TLAB-2794 Fix Meraki Traffic Events hostname + WPA mapper for C2C (#6032)",
+        "commit_origin_hash": "86637b318ddbe5db31a60aaa4f65e8dc526f3a39",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -107462,8 +107578,8 @@
         "uid": "e6bb4f13-6c0d-4400-9671-81f4d20ed693"
     },
     "e6da534c-057e-484b-9420-18b257745739": {
-        "commit_message": "TLAB-2225:added support for the traffic events (#5853)",
-        "commit_origin_hash": "5a35a14bdd91fe8761072a8b4f30b37584e595c0",
+        "commit_message": "TLAB-2794 Fix Meraki Traffic Events hostname + WPA mapper for C2C (#6032)",
+        "commit_origin_hash": "86637b318ddbe5db31a60aaa4f65e8dc526f3a39",
         "field_mappings": {
             "action": {
                 "value": "label"
@@ -110928,8 +111044,8 @@
         "uid": "ee1d046d-031f-4a93-982c-e024a76f9732"
     },
     "ee6f31c0-b462-44ae-9eb5-4318ba441025": {
-        "commit_message": "TLAB-2225:added support for the traffic events (#5853)",
-        "commit_origin_hash": "5a35a14bdd91fe8761072a8b4f30b37584e595c0",
+        "commit_message": "TLAB-2794 Fix Meraki Traffic Events hostname + WPA mapper for C2C (#6032)",
+        "commit_origin_hash": "86637b318ddbe5db31a60aaa4f65e8dc526f3a39",
         "field_mappings": {
             "description": {
                 "value": "message"
@@ -113988,6 +114104,88 @@
         "source": "jask",
         "uid": "f798aeaa-7b0c-4f7c-808b-dd8ab653baa7"
     },
+    "f7a3e1c2-8d4b-4f9e-a156-2c7d8e9f0b3a": {
+        "commit_message": "Hackathon 2026 [testing] - TLAB-2756 Add mapper for Google Cloud Platform Vertex AI (#6026)",
+        "commit_origin_hash": "4f596a6b3e899aa2ed5d805246c07a48dd55779a",
+        "field_mappings": {
+            "accountId": {
+                "value": "resource.labels.project_id"
+            },
+            "action": {
+                "value": "protoPayload.methodName"
+            },
+            "application": {
+                "value": "protoPayload.serviceName"
+            },
+            "cloud_provider": {
+                "value": "GCP",
+                "value_type": "constant"
+            },
+            "cloud_service": {
+                "value": "protoPayload.serviceName"
+            },
+            "description": {
+                "value": "protoPayload.methodName"
+            },
+            "http_userAgent": {
+                "value": "protoPayload.requestMetadata.callerSuppliedUserAgent"
+            },
+            "normalizedAction": {
+                "value": "access",
+                "value_type": "constant"
+            },
+            "normalizedSeverity": {
+                "case_insensitive": true,
+                "default_value": "0",
+                "lookup": {
+                    "ALERT": "5",
+                    "CRITICAL": "5",
+                    "DEBUG": "0",
+                    "EMERGENCY": "5",
+                    "ERROR": "3",
+                    "INFO": "1",
+                    "NOTICE": "1",
+                    "WARNING": "2"
+                },
+                "value": "severity",
+                "value_type": "lookup"
+            },
+            "resource": {
+                "value": "protoPayload.resourceName"
+            },
+            "severity": {
+                "value": "severity"
+            },
+            "srcDevice_ip": {
+                "value": "protoPayload.requestMetadata.callerIp"
+            },
+            "success": {
+                "value": "success"
+            },
+            "user_username": {
+                "value": "protoPayload.authenticationInfo.principalEmail"
+            }
+        },
+        "file_path": "mappings_schemav3/gcp_vertex_ai.yaml",
+        "input": {
+            "event_id_pattern": "_default_",
+            "log_format": "JSON",
+            "product": "Vertex AI",
+            "vendor": "Google"
+        },
+        "name": "Google Cloud Platform Vertex AI",
+        "output": {
+            "product_guid": "0da6960b-a16c-4221-9600-2694216e8a50",
+            "record_type": "Audit"
+        },
+        "skipped_values": [
+            ",",
+            "-",
+            "null"
+        ],
+        "source": "jask",
+        "uid": "f7a3e1c2-8d4b-4f9e-a156-2c7d8e9f0b3a"
+    },
     "f7f43d43-d436-41dc-bab7-d581aa1c8546": {
         "commit_message": "TLAB-1548 created a new mapper",
         "commit_origin_hash": "6607568a2ac26f1f27dc4d834ef13e41fdd44412",
@@ -116240,8 +116438,8 @@
         }
     },
     "fb41a180-de25-43d6-9e22-a3dd504003fc": {
-        "commit_message": "TLAB-2225:added support for the traffic events (#5853)",
-        "commit_origin_hash": "5a35a14bdd91fe8761072a8b4f30b37584e595c0",
+        "commit_message": "TLAB-2794 Fix Meraki Traffic Events hostname + WPA mapper for C2C (#6032)",
+        "commit_origin_hash": "86637b318ddbe5db31a60aaa4f65e8dc526f3a39",
         "field_mappings": {
             "device_hostname": {
                 "value": "bssids.1.detectedBy.1.device"
@@ -117482,8 +117680,8 @@
         "uid": "fec61999-f928-48f3-a606-73db766d7186"
     },
     "fef99d8e-98aa-41eb-a051-3e9cb9ab32cc": {
-        "commit_message": "TLAB-2225:added support for the traffic events (#5853)",
-        "commit_origin_hash": "5a35a14bdd91fe8761072a8b4f30b37584e595c0",
+        "commit_message": "TLAB-2794 Fix Meraki Traffic Events hostname + WPA mapper for C2C (#6032)",
+        "commit_origin_hash": "86637b318ddbe5db31a60aaa4f65e8dc526f3a39",
         "field_mappings": {
             "action": {
                 "value": "decision"
@@ -117836,8 +118034,8 @@
         "uid": "ff569da2-93bf-4445-b8b4-9fc42be14ab5"
     },
     "ff59f645-a195-4cdf-ba07-8638be08621f": {
-        "commit_message": "TLAB-2225:added support for the traffic events (#5853)",
-        "commit_origin_hash": "5a35a14bdd91fe8761072a8b4f30b37584e595c0",
+        "commit_message": "TLAB-2794 Fix Meraki Traffic Events hostname + WPA mapper for C2C (#6032)",
+        "commit_origin_hash": "86637b318ddbe5db31a60aaa4f65e8dc526f3a39",
         "field_mappings": {
             "device_hostname": {
                 "value": "syslog_device_name"

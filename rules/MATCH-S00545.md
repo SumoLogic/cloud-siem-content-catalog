@@ -23,6 +23,7 @@ This rule looks for registry activity associated with application compatibility 
 
 |Origin|Field|
 |----|----|
+|Normalized Schema|application|
 |Normalized Schema|baseImage|
 |Normalized Schema|device_hostname|
 |Normalized Schema|device_ip|

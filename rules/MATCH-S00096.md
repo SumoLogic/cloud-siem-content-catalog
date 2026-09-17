@@ -24,6 +24,7 @@ This signal detects when a successful root account login occurred within an AWS 
 |Origin|Field|
 |----|----|
 |Normalized Schema|action|
+|Normalized Schema|application|
 |Normalized Schema|device_hostname|
 |Direct from Record|fields['userIdentity.type']|
 |Normalized Schema|metadata_product|

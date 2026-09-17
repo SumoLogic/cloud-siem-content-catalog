@@ -24,6 +24,7 @@ Detects the AWS CloudWatch DeleteAlarms API action. DeleteAlarms deletes the spe
 |Origin|Field|
 |----|----|
 |Normalized Schema|action|
+|Normalized Schema|application|
 |Normalized Schema|device_hostname|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|

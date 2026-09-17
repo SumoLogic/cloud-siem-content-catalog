@@ -24,6 +24,7 @@ Detects the AWS WAF UpdateRuleGroup API action. UpdateRuleGroup updates the spec
 |Origin|Field|
 |----|----|
 |Normalized Schema|action|
+|Normalized Schema|application|
 |Normalized Schema|device_hostname|
 |Normalized Schema|metadata_product|
 |Normalized Schema|metadata_vendor|
