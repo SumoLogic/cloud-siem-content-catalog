@@ -6,7 +6,6 @@
 |----|----|
 |MATCH-S00686|[Base64 Decode in Command Line](../rules/MATCH-S00686.md)|
 |MATCH-S00543|[Detect Psexec With Accepteula Flag](../rules/MATCH-S00543.md)|
-|MATCH-S00702|[Keychain Credential Dumping](../rules/MATCH-S00702.md)|
 |MATCH-S00445|[Known Ransomware File Extensions](../rules/MATCH-S00445.md)|
 |MATCH-S00648|[Kubernetes ListSecrets](../rules/MATCH-S00648.md)|
 |MATCH-S00687|[Linux Security Tool Usage](../rules/MATCH-S00687.md)|

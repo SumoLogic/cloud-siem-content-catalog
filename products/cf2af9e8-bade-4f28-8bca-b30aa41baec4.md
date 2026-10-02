@@ -13,6 +13,7 @@
 |LEGACY-S00107|[Legacy Threat Intel Match - IP Address](../rules/LEGACY-S00107.md)|
 |MATCH-S00554|[Outbound IRC Traffic](../rules/MATCH-S00554.md)|
 |MATCH-S01007|[Threat Intel - Destination Device Hostname](../rules/MATCH-S01007.md)|
+|MATCH-S01024|[Threat Intel - Destination IP Address (High Confidence)](../rules/MATCH-S01024.md)|
 |MATCH-S01026|[Threat Intel - Destination IP Address (Low Confidence)](../rules/MATCH-S01026.md)|
 |MATCH-S01028|[Threat Intel - Destination IP Address (Medium Confidence)](../rules/MATCH-S01028.md)|
 |MATCH-S01005|[Threat Intel - Source Hostname](../rules/MATCH-S01005.md)|

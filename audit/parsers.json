@@ -328,6 +328,13 @@
         "name": "Cato Networks",
         "parser_text": "[parser]\nFORMAT= JSON\n\nMAPPER:vendor= Cato Networks\nMAPPER:product= Cato Networks\n\nTRANSFORM_IF_PRESENT:event_type = map_security\nTRANSFORM_IF_PRESENT:change_type = map_audits\n\n[transform:map_security]\nMAPPER:event_id = {{event_type}}\nSTART_TIME_FIELD = time\nTIME_PARSER = X1000\n\n[transform:map_audits]\nMAPPER:event_id = Audits\nSTART_TIME_FIELD = creation_date\nTIME_PARSER = X1000"
     },
+    "/Parsers/System/Check Point/Check Point Audit JSON": {
+        "commit_message": "TLAB-2805 checkpoint audit parser and tests",
+        "commit_origin_hash": "9eecf36a24ca7f213d66b19b30d236750ce34d00",
+        "description": "Parser for Check Point Management Server audit logs sent in JSON format",
+        "name": "Check Point Audit JSON",
+        "parser_text": "###################################\n#            Resources            #\n###################################\n#https://support.checkpoint.com/results/sk/sk144192\n\n[parser]\nFORMAT = JSON\n\n#Set mapper information\nMAPPER:vendor = Check Point\nMAPPER:product = Audit\n\n#Handle time\nSTART_TIME_FIELD = time\nTIME_PARSER = X1\n\n#Set event_id from operation field, default to unknown if not present\nTRANSFORM_IF_NOT_PRESENT:operation = set_default_event_id\nMAPPER:event_id = {{operation}}\n\n[transform:set_default_event_id]\nSET:operation = unknown"
+    },
     "/Parsers/System/Check Point/Check Point Avanan JSON": {
         "commit_message": "SUMO-215104: Migrate all parsers to system parser path",
         "commit_origin_hash": "9a68f7c517008c4725784de78522f630de8b92fa",

@@ -37,7 +37,6 @@ Passes through an alert from an endpoint security product and adjusts the severi
 - [Google - Security Command Center](../products/78a80406-d37b-4a17-a25e-dbf53289b647.md)
 - [IBM - Guardium](../products/dca03a0f-0053-4c34-b7b6-56060bbd110c.md)
 - [Jamf - Jamf](../products/5c2cc0de-ca31-4ef0-bcfa-133fc8b387ad.md)
-- [JumpCloud - Directory Insights](../products/05bfaf47-5e21-4d5f-b724-98960a6fca8a.md)
 - [Kemp - LoadMaster](../products/e0763d80-29ce-43a0-b0ab-69c621abb3eb.md)
 - [Lacework - Lacework](../products/72ad5cb2-9b51-4954-970c-f826d593ccc7.md)
 - [Malwarebytes - Malwarebytes Endpoint Protection](../products/e611250c-6b5f-4b40-b84b-329a1d5b391c.md)
