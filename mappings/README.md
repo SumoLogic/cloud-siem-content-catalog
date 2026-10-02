@@ -251,6 +251,7 @@ You will find our complete list of mappers for content here.
  - [Check Point Anti Malware](858ed416-e708-4525-9153-e4a3bd3d6c44.md)
  - [Check Point Application Control](699a5dc8-7992-44f1-8dc8-0e32e52c1706.md)
  - [Check Point Application Control URL Filtering](d4b6c850-07f7-4826-9865-7f8dab6318f4.md)
+ - [Check Point Audit](b49b79ed-6665-43e0-b1e2-078a448928ac.md)
  - [Check Point Authorize Logs](1fdbfae1-89ee-4a12-a43e-983e3cb60ecc.md)
  - [Check Point Avanan](39d2b5a4-98e3-4b43-b278-a25330a1a018.md)
  - [Check Point Block](04d956ea-d444-4cfc-8b72-f849b6b5d743.md)

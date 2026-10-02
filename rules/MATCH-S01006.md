@@ -20,6 +20,7 @@ This rule detects an indicator match from a threat intelligence feed
 - [Cato Networks - Cato Networks](../products/168afd8d-2893-4c74-95b1-a975d576ea56.md)
 - [Jamf - Jamf](../products/5c2cc0de-ca31-4ef0-bcfa-133fc8b387ad.md)
 - [Microsoft - Windows](../products/1ff7546c-cb36-4a24-87f7-89d2cecc5761.md)
+- [SailPoint - SailPoint](../products/c3954250-68a0-49c3-ab6a-ef0daa95ff90.md)
 - [Zscaler - Nanolog Streaming Service](../products/6299d728-14f7-455e-85c5-ea8ec65a654a.md)
 
 

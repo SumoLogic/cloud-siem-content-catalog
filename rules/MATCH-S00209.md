@@ -34,7 +34,6 @@ Apache Log4j2 <=2.14.1 using JNDI features has an exploit allowing attackers to 
 - [Cisco Systems - Umbrella](../products/5ba50e74-3c05-4ea8-aeaf-5efde588c60f.md)
 - [Citrix - ADC](../products/d3606245-76d3-4173-a2fe-832c0e71b0f9.md)
 - [Cloudflare - Logpush](../products/c2503fcc-ef30-4e40-bb32-0bf47151b140.md)
-- [Contrast Security - Contrast ADR](../products/fa3c148a-4272-4a94-aea2-499ab90424c2.md)
 - [F5 - F5](../products/ede052db-d472-408f-949c-be642237ef3f.md)
 - [Fortinet - Fortigate](../products/c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad.md)
 - [Google - Google Cloud Platform](../products/dcc85cfc-a698-4d09-87de-f2c723f3ad07.md)

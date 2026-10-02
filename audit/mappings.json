@@ -1754,8 +1754,8 @@
         "uid": "037a5242-77de-443f-b212-e16051c6e7db"
     },
     "03a073b1-75da-404e-b221-a3fac810632a": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
-        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
+        "commit_message": "Update pan_firewall_custom_parser.yaml (#6034)",
+        "commit_origin_hash": "f31bb702aa26a4178c1cda72681820c338c83d1c",
         "field_mappings": {
             "action": {
                 "alternate_values": [
@@ -1851,10 +1851,18 @@
                 ],
                 "default_value": "true",
                 "lookup": {
+                    "block": "false",
+                    "block-continue": "false",
                     "block-ip": "false",
+                    "block-override": "false",
                     "block-url": "false",
                     "deny": "false",
                     "drop": "false",
+                    "drop-all": "false",
+                    "drop-all-packets": "false",
+                    "drop-packet": "false",
+                    "drop-reset": "false",
+                    "override-lockout": "false",
                     "random-drop": "false",
                     "reset-both": "false",
                     "reset-client": "false",
@@ -4302,8 +4310,8 @@
         "uid": "0973f1a0-7b57-4083-ad42-4f553c5c210d"
     },
     "09a000f5-0586-4ce4-b5d2-c7e99ea14650": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
-        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
+        "commit_message": "TLAB-2790 Fix CrowdStrike Data Protection severity mapping (#6035)",
+        "commit_origin_hash": "8ea193375ec539b625a325c708668517a48622aa",
         "field_mappings": {
             "commandLine": {
                 "value": "CommandLine"
@@ -4842,8 +4850,8 @@
         "uid": "09d8aecf-be24-441b-827a-a5ad6aa9c8d6"
     },
     "09ed1bbd-bea6-46b0-b4a0-f830bf73ca8c": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
-        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
+        "commit_message": "Update pan_firewall_custom_parser.yaml (#6034)",
+        "commit_origin_hash": "f31bb702aa26a4178c1cda72681820c338c83d1c",
         "field_mappings": {
             "action": {
                 "alternate_values": [
@@ -4947,10 +4955,17 @@
             "success": {
                 "default_value": "true",
                 "lookup": {
+                    "block": "false",
+                    "block-continue": "false",
                     "block-ip": "false",
+                    "block-override": "false",
                     "block-url": "false",
                     "deny": "false",
                     "drop": "false",
+                    "drop-all": "false",
+                    "drop-all-packets": "false",
+                    "drop-packet": "false",
+                    "drop-reset": "false",
                     "override-lockout": "false",
                     "random-drop": "false",
                     "reset-both": "false",
@@ -5250,8 +5265,8 @@
         "uid": "0a06c158-6088-4d40-bf35-3a2dec8ead56"
     },
     "0a0f1a7e-1019-4862-8bb4-6df7ff99f3d3": {
-        "commit_message": "TLAB-1147 updated mapper",
-        "commit_origin_hash": "a52d7fdb663fd2d4e88afb27c021eae581712e88",
+        "commit_message": "TLAB-2624 Add GPGatekeeperEvent and GPThreatMatchExecEvent to Jamf Protect mapper (#6017)",
+        "commit_origin_hash": "cc6c0ef80f7cb822e58e7d3e335b67460ceea7f9",
         "field_mappings": {
             "action": {
                 "value": "event.action"
@@ -6398,8 +6413,8 @@
         "uid": "0c7120d1-0adc-48c0-a824-526eac5c10e3"
     },
     "0c72a484-087d-4927-8700-efed8f6cd450": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
-        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
+        "commit_message": "TLAB-2790 Fix CrowdStrike Data Protection severity mapping (#6035)",
+        "commit_origin_hash": "8ea193375ec539b625a325c708668517a48622aa",
         "field_mappings": {
             "commandLine": {
                 "value": "event.CommandLine"
@@ -9241,8 +9256,8 @@
         "uid": "11a504e8-085d-489a-8792-2d36a63e0877"
     },
     "11acde72-ed1c-44e6-8fd5-61debaf06512": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
-        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
+        "commit_message": "TLAB-2790 Fix CrowdStrike Data Protection severity mapping (#6035)",
+        "commit_origin_hash": "8ea193375ec539b625a325c708668517a48622aa",
         "field_mappings": {
             "description": {
                 "value": "event.IncidentDescription"
@@ -9757,8 +9772,8 @@
         "uid": "12996e2b-9330-4984-9992-424e9942e617"
     },
     "12b6bde9-4919-446c-8794-cad266a53df4": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
-        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
+        "commit_message": "TLAB-2790 Fix CrowdStrike Data Protection severity mapping (#6035)",
+        "commit_origin_hash": "8ea193375ec539b625a325c708668517a48622aa",
         "field_mappings": {
             "description": {
                 "value": "cat"
@@ -11450,8 +11465,8 @@
         "uid": "17e4bad6-e477-43fc-9d31-3d72ac9e5970"
     },
     "17f6e54b-5afb-4654-923b-daa2ba6601cd": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
-        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
+        "commit_message": "Update pan_firewall_custom_parser.yaml (#6034)",
+        "commit_origin_hash": "f31bb702aa26a4178c1cda72681820c338c83d1c",
         "field_mappings": {
             "action": {
                 "alternate_values": [
@@ -12091,8 +12106,8 @@
         "uid": "1887d1cc-3fdc-481d-8da0-1ee18d6ce863"
     },
     "18a1a332-3053-4c1c-8476-2851305db333": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
-        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
+        "commit_message": "TLAB-2790 Fix CrowdStrike Data Protection severity mapping (#6035)",
+        "commit_origin_hash": "8ea193375ec539b625a325c708668517a48622aa",
         "field_mappings": {
             "description": {
                 "value": "event.DetectDescription"
@@ -13838,8 +13853,8 @@
         "uid": "1add6fe1-8aff-4b55-817e-0ccd569f99d6"
     },
     "1b0609f0-44bd-4333-bf67-dcbfe20cf855": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
-        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
+        "commit_message": "Update pan_firewall_custom_parser.yaml (#6034)",
+        "commit_origin_hash": "f31bb702aa26a4178c1cda72681820c338c83d1c",
         "field_mappings": {
             "action": {
                 "alternate_values": [
@@ -17351,8 +17366,8 @@
         "uid": "21953b47-4f2f-4196-ae4f-b748d7924cd2"
     },
     "220de41a-b2a3-4ec6-ace6-ae26a9b4f04f": {
-        "commit_message": "TLAB-1147 updated mapper",
-        "commit_origin_hash": "a52d7fdb663fd2d4e88afb27c021eae581712e88",
+        "commit_message": "TLAB-2624 Add GPGatekeeperEvent and GPThreatMatchExecEvent to Jamf Protect mapper (#6017)",
+        "commit_origin_hash": "cc6c0ef80f7cb822e58e7d3e335b67460ceea7f9",
         "field_mappings": {
             "action": {
                 "value": "input.related.processes.1.signingInfo.statusMessage"
@@ -17493,7 +17508,7 @@
         },
         "file_path": "mappings_schemav3/jamf.yaml",
         "input": {
-            "event_id_pattern": "GPFSEvent|GPProcessEvent|GPSyntheticClickEvent|GPScreenshotEvent|GPUSBEvent|GPDownloadEvents|^MRT|Malware.*|Gatekeeper.*|Keylog.*",
+            "event_id_pattern": "GPFSEvent|GPProcessEvent|GPSyntheticClickEvent|GPScreenshotEvent|GPUSBEvent|GPDownloadEvents|GPGatekeeperEvent|GPThreatMatchExecEvent|^MRT|Malware.*|Gatekeeper.*|Keylog.*",
             "log_format": "JSON",
             "product": "Jamf",
             "vendor": "Jamf"
@@ -20174,8 +20189,8 @@
         "uid": "27479c62-d71d-4ba4-9589-95860301ad0d"
     },
     "2771d5de-5a61-41fd-8b8e-b305f74a156b": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
-        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
+        "commit_message": "TLAB-2790 Fix CrowdStrike Data Protection severity mapping (#6035)",
+        "commit_origin_hash": "8ea193375ec539b625a325c708668517a48622aa",
         "field_mappings": {
             "description": {
                 "alternate_values": [
@@ -23942,8 +23957,8 @@
         "uid": "2d8a8585-9f03-4668-9e97-fa7b6853accc"
     },
     "2dcf62db-d79f-4a03-9a3a-24bf67bdbe67": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
-        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
+        "commit_message": "Update pan_firewall_custom_parser.yaml (#6034)",
+        "commit_origin_hash": "f31bb702aa26a4178c1cda72681820c338c83d1c",
         "field_mappings": {
             "action": {
                 "value": "stage"
@@ -25490,8 +25505,8 @@
         "uid": "2f81fa0d-bb46-41e7-b1bd-4cc6dd0ad02d"
     },
     "2f879e2d-56b8-4253-a257-a35c13b0e83f": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
-        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
+        "commit_message": "TLAB-2790 Fix CrowdStrike Data Protection severity mapping (#6035)",
+        "commit_origin_hash": "8ea193375ec539b625a325c708668517a48622aa",
         "field_mappings": {
             "action": {
                 "value": "metadata.eventType"
@@ -28853,8 +28868,8 @@
         "uid": "3859c1da-3644-410b-931e-2ee949d1917a"
     },
     "38a062b1-1308-4b5d-851e-e0f93e27c1c9": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
-        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
+        "commit_message": "TLAB-2790 Fix CrowdStrike Data Protection severity mapping (#6035)",
+        "commit_origin_hash": "8ea193375ec539b625a325c708668517a48622aa",
         "field_mappings": {
             "description": {
                 "value": "cat"
@@ -29086,8 +29101,8 @@
         "uid": "38eab1f4-619f-40c4-b64d-0f43a311d6ff"
     },
     "3952b643-4001-483e-bc06-8f8faf264262": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
-        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
+        "commit_message": "TLAB-2790 Fix CrowdStrike Data Protection severity mapping (#6035)",
+        "commit_origin_hash": "8ea193375ec539b625a325c708668517a48622aa",
         "field_mappings": {
             "commandLine": {
                 "value": "event.CommandLine"
@@ -32656,8 +32671,8 @@
         "uid": "4059c1da-4644-510b-931e-7ee949d1918b"
     },
     "409d74ba-3084-4a5b-a840-50e3bd428867": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
-        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
+        "commit_message": "TLAB-2790 Fix CrowdStrike Data Protection severity mapping (#6035)",
+        "commit_origin_hash": "8ea193375ec539b625a325c708668517a48622aa",
         "field_mappings": {
             "device_ip": {
                 "value": "event.UserIp"
@@ -40822,8 +40837,8 @@
         "uid": "5230380b-14fd-447e-8a0f-c652769e95b0"
     },
     "52351529-dfdd-4f70-8d0f-1321cf55a61f": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
-        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
+        "commit_message": "Update pan_firewall_custom_parser.yaml (#6034)",
+        "commit_origin_hash": "f31bb702aa26a4178c1cda72681820c338c83d1c",
         "field_mappings": {
             "action": {
                 "alternate_values": [
@@ -40925,10 +40940,18 @@
                 ],
                 "default_value": "true",
                 "lookup": {
+                    "block": "false",
+                    "block-continue": "false",
                     "block-ip": "false",
+                    "block-override": "false",
                     "block-url": "false",
                     "deny": "false",
                     "drop": "false",
+                    "drop-all": "false",
+                    "drop-all-packets": "false",
+                    "drop-packet": "false",
+                    "drop-reset": "false",
+                    "override-lockout": "false",
                     "random-drop": "false",
                     "reset-both": "false",
                     "reset-client": "false",
@@ -45679,8 +45702,8 @@
         "uid": "5a914e06-8972-11ea-bc55-0242ac130003"
     },
     "5ac00bf7-2a94-4c2f-a56a-da56c2fd0f3c": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
-        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
+        "commit_message": "TLAB-2790 Fix CrowdStrike Data Protection severity mapping (#6035)",
+        "commit_origin_hash": "8ea193375ec539b625a325c708668517a48622aa",
         "field_mappings": {
             "description": {
                 "value": "cat"
@@ -50705,8 +50728,8 @@
         "uid": "66df4b9c-7573-4868-b566-69865bb03eca"
     },
     "671b5df7-c62b-4c38-b12b-ace97c48f035": {
-        "commit_message": "TLAB-1147 updated mapper",
-        "commit_origin_hash": "a52d7fdb663fd2d4e88afb27c021eae581712e88",
+        "commit_message": "TLAB-2624 Add GPGatekeeperEvent and GPThreatMatchExecEvent to Jamf Protect mapper (#6017)",
+        "commit_origin_hash": "cc6c0ef80f7cb822e58e7d3e335b67460ceea7f9",
         "field_mappings": {
             "action": {
                 "value": "webhook.webhookEvent"
@@ -51171,8 +51194,8 @@
         "uid": "685259c2-dbb1-434c-8172-6dd9d253ef6d"
     },
     "6861570d-e513-46de-a60f-5c90b53e6c8b": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
-        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
+        "commit_message": "Update pan_firewall_custom_parser.yaml (#6034)",
+        "commit_origin_hash": "f31bb702aa26a4178c1cda72681820c338c83d1c",
         "field_mappings": {
             "action": {
                 "alternate_values": [
@@ -51274,10 +51297,18 @@
                 ],
                 "default_value": "true",
                 "lookup": {
+                    "block": "false",
+                    "block-continue": "false",
                     "block-ip": "false",
+                    "block-override": "false",
                     "block-url": "false",
                     "deny": "false",
                     "drop": "false",
+                    "drop-all": "false",
+                    "drop-all-packets": "false",
+                    "drop-packet": "false",
+                    "drop-reset": "false",
+                    "override-lockout": "false",
                     "random-drop": "false",
                     "reset-both": "false",
                     "reset-client": "false",
@@ -52991,8 +53022,8 @@
         "uid": "6b027e35-6ea1-42df-abce-a5696db220c9"
     },
     "6b8a3219-575f-4b34-b38b-751e75d26988": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
-        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
+        "commit_message": "TLAB-2790 Fix CrowdStrike Data Protection severity mapping (#6035)",
+        "commit_origin_hash": "8ea193375ec539b625a325c708668517a48622aa",
         "field_mappings": {
             "description": {
                 "value": "event.Description"
@@ -53013,18 +53044,20 @@
                 "lookup": {
                     "Critical": "7",
                     "High": "5",
+                    "Informational": "0",
                     "Low": "0",
                     "Medium": "3",
                     "critical": "7",
                     "high": "5",
+                    "informational": "0",
                     "low": "0",
                     "medium": "3"
                 },
-                "value": "SeverityName",
+                "value": "event.SeverityName",
                 "value_type": "lookup"
             },
             "severity": {
-                "value": "SeverityName"
+                "value": "event.SeverityName"
             },
             "targetUser_username": {
                 "value": "event.Destination.Web.Username"
@@ -54702,8 +54735,8 @@
         "uid": "703f7d62-a28f-4f57-8df7-684d6af19a1c"
     },
     "7043aa13-df3d-46fd-b76a-dd702f703782": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
-        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
+        "commit_message": "TLAB-2790 Fix CrowdStrike Data Protection severity mapping (#6035)",
+        "commit_origin_hash": "8ea193375ec539b625a325c708668517a48622aa",
         "field_mappings": {
             "description": {
                 "value": "cat"
@@ -57282,8 +57315,8 @@
         "uid": "75fb9fb0-abbe-4aca-9c89-9652a5f5ace0"
     },
     "76081f53-a146-4a95-9049-799d0cdd9385": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
-        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
+        "commit_message": "Update pan_firewall_custom_parser.yaml (#6034)",
+        "commit_origin_hash": "f31bb702aa26a4178c1cda72681820c338c83d1c",
         "field_mappings": {
             "description": {
                 "alternate_values": [
@@ -58260,8 +58293,8 @@
         "uid": "7797ac55-b4ca-484c-be19-4624f96ac4f7"
     },
     "779cdb4d-382c-4f25-9c9d-0bc59721fd8c": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
-        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
+        "commit_message": "Update pan_firewall_custom_parser.yaml (#6034)",
+        "commit_origin_hash": "f31bb702aa26a4178c1cda72681820c338c83d1c",
         "field_mappings": {
             "action": {
                 "alternate_values": [
@@ -58359,10 +58392,18 @@
                 ],
                 "default_value": "true",
                 "lookup": {
+                    "block": "false",
+                    "block-continue": "false",
                     "block-ip": "false",
+                    "block-override": "false",
                     "block-url": "false",
                     "deny": "false",
                     "drop": "false",
+                    "drop-all": "false",
+                    "drop-all-packets": "false",
+                    "drop-packet": "false",
+                    "drop-reset": "false",
+                    "override-lockout": "false",
                     "random-drop": "false",
                     "reset-both": "false",
                     "reset-client": "false",
@@ -60306,8 +60347,8 @@
         "uid": "7c868d59-3614-4e2d-a298-7b6b0a8e3b09"
     },
     "7c8b105b-0a52-4f24-9c8e-4031c5389f72": {
-        "commit_message": "TLAB-1147 updated mapper",
-        "commit_origin_hash": "a52d7fdb663fd2d4e88afb27c021eae581712e88",
+        "commit_message": "TLAB-2624 Add GPGatekeeperEvent and GPThreatMatchExecEvent to Jamf Protect mapper (#6017)",
+        "commit_origin_hash": "cc6c0ef80f7cb822e58e7d3e335b67460ceea7f9",
         "field_mappings": {
             "action": {
                 "value": "return.description"
@@ -61121,8 +61162,8 @@
         "uid": "7f4daf7f-f391-44be-908a-f36e6f1b360f"
     },
     "7f58d5e0-3efe-4b92-be17-9e8760e3ee4e": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
-        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
+        "commit_message": "Update pan_firewall_custom_parser.yaml (#6034)",
+        "commit_origin_hash": "f31bb702aa26a4178c1cda72681820c338c83d1c",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -61195,10 +61236,18 @@
                 ],
                 "default_value": "true",
                 "lookup": {
+                    "block": "false",
+                    "block-continue": "false",
                     "block-ip": "false",
+                    "block-override": "false",
                     "block-url": "false",
                     "deny": "false",
                     "drop": "false",
+                    "drop-all": "false",
+                    "drop-all-packets": "false",
+                    "drop-packet": "false",
+                    "drop-reset": "false",
+                    "override-lockout": "false",
                     "random-drop": "false",
                     "reset-both": "false",
                     "reset-client": "false",
@@ -62155,8 +62204,8 @@
         "uid": "813a83c2-d0f0-45f2-8a49-7cf1f3dd0e5a"
     },
     "818d5001-4366-4c38-99b8-699b1ee5faab": {
-        "commit_message": "TLAB-1147 updated mapper",
-        "commit_origin_hash": "a52d7fdb663fd2d4e88afb27c021eae581712e88",
+        "commit_message": "TLAB-2624 Add GPGatekeeperEvent and GPThreatMatchExecEvent to Jamf Protect mapper (#6017)",
+        "commit_origin_hash": "cc6c0ef80f7cb822e58e7d3e335b67460ceea7f9",
         "field_mappings": {
             "action": {
                 "value": "return.description"
@@ -63674,8 +63723,8 @@
         "uid": "833753fb-ce55-4311-bb7c-cca34e4d87c8"
     },
     "833d135d-6811-4bf8-a73e-633aaba65cbf": {
-        "commit_message": "TLAB-1147 updated mapper",
-        "commit_origin_hash": "a52d7fdb663fd2d4e88afb27c021eae581712e88",
+        "commit_message": "TLAB-2624 Add GPGatekeeperEvent and GPThreatMatchExecEvent to Jamf Protect mapper (#6017)",
+        "commit_origin_hash": "cc6c0ef80f7cb822e58e7d3e335b67460ceea7f9",
         "field_mappings": {
             "action": {
                 "value": "return.description"
@@ -67673,8 +67722,8 @@
         "uid": "8c80d8b8-7879-42cc-99ed-44ee11c1bcff"
     },
     "8cd5ce67-c75c-4935-bc03-c626fe50eaf7": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
-        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
+        "commit_message": "TLAB-2790 Fix CrowdStrike Data Protection severity mapping (#6035)",
+        "commit_origin_hash": "8ea193375ec539b625a325c708668517a48622aa",
         "field_mappings": {
             "action": {
                 "value": "event.OperationName"
@@ -72668,8 +72717,8 @@
         "uid": "949e6e12-ddd6-49e5-bdbe-cc63e1c9c5ed"
     },
     "94F238FF-AC1F-45CD-B6D2-9BAC76EB9717": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
-        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
+        "commit_message": "TLAB-2790 Fix CrowdStrike Data Protection severity mapping (#6035)",
+        "commit_origin_hash": "8ea193375ec539b625a325c708668517a48622aa",
         "field_mappings": {
             "application": {
                 "value": "deviceProcessName"
@@ -74986,8 +75035,8 @@
         "uid": "9a51e2c5-29cc-4e5c-b8ba-f9ff6b26f59f"
     },
     "9a633133-6efa-40f3-a304-4f4d5fc00497": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
-        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
+        "commit_message": "Update pan_firewall_custom_parser.yaml (#6034)",
+        "commit_origin_hash": "f31bb702aa26a4178c1cda72681820c338c83d1c",
         "field_mappings": {
             "action": {
                 "value": "op"
@@ -77069,8 +77118,8 @@
         "uid": "9f520b1d-3ecf-4371-b227-129e2c362b12"
     },
     "9fd65404-2524-4859-8877-e44c97538415": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
-        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
+        "commit_message": "Update pan_firewall_custom_parser.yaml (#6034)",
+        "commit_origin_hash": "f31bb702aa26a4178c1cda72681820c338c83d1c",
         "field_mappings": {
             "action": {
                 "alternate_values": [
@@ -77742,8 +77791,8 @@
         "uid": "C58BDBCA-F07D-4832-BEB2-FFA79727370F"
     },
     "D6ED923F-2647-4094-92E1-CCF66B3C0048": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
-        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
+        "commit_message": "TLAB-2790 Fix CrowdStrike Data Protection severity mapping (#6035)",
+        "commit_origin_hash": "8ea193375ec539b625a325c708668517a48622aa",
         "field_mappings": {
             "application": {
                 "value": "deviceProcessName"
@@ -78380,8 +78429,8 @@
         "uid": "a0388783-0a9b-4473-ba83-d9c8b2013170"
     },
     "a09cb576-bab2-4b0d-a9c9-7a7c46c48870": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
-        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
+        "commit_message": "TLAB-2790 Fix CrowdStrike Data Protection severity mapping (#6035)",
+        "commit_origin_hash": "8ea193375ec539b625a325c708668517a48622aa",
         "field_mappings": {
             "description": {
                 "alternate_values": [
@@ -79260,8 +79309,8 @@
         "uid": "a19223a3-568d-422c-94ec-c10b3c0fa112"
     },
     "a1c34f6a-62e0-45fc-80c8-7c8cbc97edb1": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
-        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
+        "commit_message": "TLAB-2790 Fix CrowdStrike Data Protection severity mapping (#6035)",
+        "commit_origin_hash": "8ea193375ec539b625a325c708668517a48622aa",
         "field_mappings": {
             "application": {
                 "value": "deviceProcessName"
@@ -79350,8 +79399,8 @@
         "uid": "a1eeb6c8-feec-4593-9cae-7858b56e12b7"
     },
     "a20fdb3d-2294-43b0-b10c-18fc9921b1d1": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
-        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
+        "commit_message": "TLAB-2790 Fix CrowdStrike Data Protection severity mapping (#6035)",
+        "commit_origin_hash": "8ea193375ec539b625a325c708668517a48622aa",
         "field_mappings": {
             "commandLine": {
                 "value": "event.CommandLine"
@@ -81206,8 +81255,8 @@
         "uid": "a4fbc8a4-ef01-4c01-b336-67923aa94e1a"
     },
     "a509a0b7-d91a-405a-ab6c-9ff4285041a5": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
-        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
+        "commit_message": "Update pan_firewall_custom_parser.yaml (#6034)",
+        "commit_origin_hash": "f31bb702aa26a4178c1cda72681820c338c83d1c",
         "field_mappings": {
             "action": {
                 "alternate_values": [
@@ -82715,8 +82764,8 @@
         "uid": "aa0263c9-a102-492c-b614-67d9aaf98ac1"
     },
     "aa5386ab-8afd-4778-971d-88426f6c4099": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
-        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
+        "commit_message": "TLAB-2790 Fix CrowdStrike Data Protection severity mapping (#6035)",
+        "commit_origin_hash": "8ea193375ec539b625a325c708668517a48622aa",
         "field_mappings": {
             "application": {
                 "value": "event.ServiceName"
@@ -85903,8 +85952,8 @@
         "uid": "b28d2c05-12a8-4678-921f-a8a277f370e3"
     },
     "b28e6ee8-063a-4a97-975f-aba5a6161c98": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
-        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
+        "commit_message": "Update pan_firewall_custom_parser.yaml (#6034)",
+        "commit_origin_hash": "f31bb702aa26a4178c1cda72681820c338c83d1c",
         "field_mappings": {
             "device_hostname": {
                 "alternate_values": [
@@ -86174,8 +86223,8 @@
         "uid": "b2de8aea-eaf5-44af-a730-d1e24cd017a9"
     },
     "b2f5958-9e00-4e4c-bc8c-de811ddb883b": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
-        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
+        "commit_message": "TLAB-2790 Fix CrowdStrike Data Protection severity mapping (#6035)",
+        "commit_origin_hash": "8ea193375ec539b625a325c708668517a48622aa",
         "field_mappings": {
             "commandLine": {
                 "value": "event.CommandLine"
@@ -87184,6 +87233,71 @@
         "source": "jask",
         "uid": "b47e4d87-3d2e-4fa7-9de1-a0be471a088c"
     },
+    "b49b79ed-6665-43e0-b1e2-078a448928ac": {
+        "commit_message": "TLAB-2805 mapper for checkpoint_audit logs (#6036)",
+        "commit_origin_hash": "f358cd5fee2ee019cea3cd2d2c0ff5dce6530c46",
+        "field_mappings": {
+            "action": {
+                "value": "action"
+            },
+            "changeTarget": {
+                "value": "objecttype"
+            },
+            "changeType": {
+                "value": "operation"
+            },
+            "description": {
+                "value": "fieldschanges"
+            },
+            "device_ip": {
+                "value": "origin"
+            },
+            "normalizedAction": {
+                "lookup": {
+                    "Create Object": "create",
+                    "Delete Object": "delete",
+                    "Modify Object": "change"
+                },
+                "value": "operation",
+                "value_type": "lookup"
+            },
+            "sessionId": {
+                "value": "session_uid"
+            },
+            "srcDevice_ip": {
+                "value": "client_ip"
+            },
+            "success": {
+                "lookup": {
+                    "Accept": "true",
+                    "Reject": "false"
+                },
+                "value": "action",
+                "value_type": "lookup"
+            },
+            "user_username": {
+                "value": "administrator"
+            }
+        },
+        "file_path": "mappings_schemav3/checkpoint_audit.yaml",
+        "input": {
+            "event_id_pattern": "_default_",
+            "log_format": "JSON",
+            "product": "Audit",
+            "vendor": "Check Point"
+        },
+        "name": "Check Point Audit",
+        "output": {
+            "product_guid": "ab11302b-a24a-4c9b-9741-d8e740f852e3",
+            "record_type": "Audit"
+        },
+        "skipped_values": [
+            ",",
+            "-"
+        ],
+        "source": "jask",
+        "uid": "b49b79ed-6665-43e0-b1e2-078a448928ac"
+    },
     "b5052885-da7a-4590-a93a-760eb1643e83": {
         "commit_message": "TLAB-2576 Claude Activity Log Mappings and Rules (#5978)",
         "commit_origin_hash": "7dcf4af3a82fa7cee50d6a375e66ee8e597fa5ef",
@@ -87507,8 +87621,8 @@
         "uid": "b58475cc-681c-479e-ae94-656eaafd333c"
     },
     "b593dc79-fab8-4a4d-82a9-3539980e98c1": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
-        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
+        "commit_message": "TLAB-2790 Fix CrowdStrike Data Protection severity mapping (#6035)",
+        "commit_origin_hash": "8ea193375ec539b625a325c708668517a48622aa",
         "field_mappings": {
             "accountId": {
                 "value": "event.CustomerId"
@@ -88147,8 +88261,8 @@
         "uid": "b74a5250-953c-4df0-8ecf-c9b32f6c73d3"
     },
     "b7666280-63a6-414f-bf31-e274f766b9fd": {
-        "commit_message": "TLAB-1147 updated mapper",
-        "commit_origin_hash": "a52d7fdb663fd2d4e88afb27c021eae581712e88",
+        "commit_message": "TLAB-2624 Add GPGatekeeperEvent and GPThreatMatchExecEvent to Jamf Protect mapper (#6017)",
+        "commit_origin_hash": "cc6c0ef80f7cb822e58e7d3e335b67460ceea7f9",
         "field_mappings": {
             "action": {
                 "value": "return.description"
@@ -91556,8 +91670,8 @@
         "uid": "c088e78a-ff9d-45c5-87c2-fd48f6248b9d"
     },
     "c0c6268a-28f8-4ae7-987a-4112b3b1d8f7": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
-        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
+        "commit_message": "TLAB-2790 Fix CrowdStrike Data Protection severity mapping (#6035)",
+        "commit_origin_hash": "8ea193375ec539b625a325c708668517a48622aa",
         "field_mappings": {
             "application": {
                 "value": "ServiceName"
@@ -92129,8 +92243,8 @@
         "uid": "c1f966d9-4a30-4e67-a5ba-9630545f757f"
     },
     "c26eb2a4-4b11-45a2-b3cf-173c1a12f5ab": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
-        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
+        "commit_message": "TLAB-2790 Fix CrowdStrike Data Protection severity mapping (#6035)",
+        "commit_origin_hash": "8ea193375ec539b625a325c708668517a48622aa",
         "field_mappings": {
             "application": {
                 "value": "deviceProcessName"
@@ -92681,8 +92795,8 @@
         "uid": "c3089ac5-982a-4bcf-919f-19bd7c58eb6d"
     },
     "c389482c-8691-4320-bc52-d0110d759502": {
-        "commit_message": "TLAB-1147 updated mapper",
-        "commit_origin_hash": "a52d7fdb663fd2d4e88afb27c021eae581712e88",
+        "commit_message": "TLAB-2624 Add GPGatekeeperEvent and GPThreatMatchExecEvent to Jamf Protect mapper (#6017)",
+        "commit_origin_hash": "cc6c0ef80f7cb822e58e7d3e335b67460ceea7f9",
         "field_mappings": {
             "action": {
                 "default_value": "Allow",
@@ -93041,8 +93155,8 @@
         "uid": "c42bfa1c-9ead-4797-abc8-629df562bb61"
     },
     "c459d102-6709-424a-b9a0-69932ea9f5e5": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
-        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
+        "commit_message": "Update pan_firewall_custom_parser.yaml (#6034)",
+        "commit_origin_hash": "f31bb702aa26a4178c1cda72681820c338c83d1c",
         "field_mappings": {
             "action": {
                 "alternate_values": [
@@ -93116,10 +93230,17 @@
                 "default_value": "true",
                 "lookup": {
                     "block": "false",
+                    "block-continue": "false",
                     "block-ip": "false",
+                    "block-override": "false",
                     "block-url": "false",
                     "deny": "false",
                     "drop": "false",
+                    "drop-all": "false",
+                    "drop-all-packets": "false",
+                    "drop-packet": "false",
+                    "drop-reset": "false",
+                    "override-lockout": "false",
                     "random-drop": "false",
                     "reset-both": "false",
                     "reset-client": "false",
@@ -94398,8 +94519,8 @@
         "uid": "c7abbbdf-8fb0-486a-93b0-fddf5396be38"
     },
     "c7d1f7ef-5ef8-464d-b483-d4539c1db75a": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
-        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
+        "commit_message": "Update pan_firewall_custom_parser.yaml (#6034)",
+        "commit_origin_hash": "f31bb702aa26a4178c1cda72681820c338c83d1c",
         "field_mappings": {
             "action": {
                 "alternate_values": [
@@ -94475,10 +94596,18 @@
                 ],
                 "default_value": "true",
                 "lookup": {
+                    "block": "false",
+                    "block-continue": "false",
                     "block-ip": "false",
+                    "block-override": "false",
                     "block-url": "false",
                     "deny": "false",
                     "drop": "false",
+                    "drop-all": "false",
+                    "drop-all-packets": "false",
+                    "drop-packet": "false",
+                    "drop-reset": "false",
+                    "override-lockout": "false",
                     "random-drop": "false",
                     "reset-both": "false",
                     "reset-client": "false",
@@ -95874,8 +96003,8 @@
         "uid": "cb9dcfbd-d443-4111-ad08-7e7050518838"
     },
     "cbd41736-9ba9-4442-bbd4-525a38dadb49": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
-        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
+        "commit_message": "Update pan_firewall_custom_parser.yaml (#6034)",
+        "commit_origin_hash": "f31bb702aa26a4178c1cda72681820c338c83d1c",
         "field_mappings": {
             "action": {
                 "alternate_values": [
@@ -95951,10 +96080,18 @@
                 ],
                 "default_value": "true",
                 "lookup": {
+                    "block": "false",
+                    "block-continue": "false",
                     "block-ip": "false",
+                    "block-override": "false",
                     "block-url": "false",
                     "deny": "false",
                     "drop": "false",
+                    "drop-all": "false",
+                    "drop-all-packets": "false",
+                    "drop-packet": "false",
+                    "drop-reset": "false",
+                    "override-lockout": "false",
                     "random-drop": "false",
                     "reset-both": "false",
                     "reset-client": "false",
@@ -99889,8 +100026,8 @@
         "uid": "d4c5da9c-c753-4c91-b749-c98a0ac24c53"
     },
     "d4d12cbf-66cd-4e9b-a42a-d0bc7c3a26b3": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
-        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
+        "commit_message": "TLAB-2790 Fix CrowdStrike Data Protection severity mapping (#6035)",
+        "commit_origin_hash": "8ea193375ec539b625a325c708668517a48622aa",
         "field_mappings": {
             "description": {
                 "value": "event.IncidentDescription"
@@ -100458,8 +100595,8 @@
         "uid": "d6a16750-c9c5-4c31-bc14-2fa583172e3f"
     },
     "d6a48aaf-c3e2-4f10-98ce-3821eec55002": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
-        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
+        "commit_message": "Update pan_firewall_custom_parser.yaml (#6034)",
+        "commit_origin_hash": "f31bb702aa26a4178c1cda72681820c338c83d1c",
         "field_mappings": {
             "action": {
                 "alternate_values": [
@@ -100533,10 +100670,17 @@
                 "default_value": "true",
                 "lookup": {
                     "block": "false",
+                    "block-continue": "false",
                     "block-ip": "false",
+                    "block-override": "false",
                     "block-url": "false",
                     "deny": "false",
                     "drop": "false",
+                    "drop-all": "false",
+                    "drop-all-packets": "false",
+                    "drop-packet": "false",
+                    "drop-reset": "false",
+                    "override-lockout": "false",
                     "random-drop": "false",
                     "reset-both": "false",
                     "reset-client": "false",
@@ -107245,8 +107389,8 @@
         "uid": "e5a1ef69-b11f-4ccd-81a7-fdf322543e64"
     },
     "e69b5d13-5862-430a-a47d-5e9afd51b957": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
-        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
+        "commit_message": "Update pan_firewall_custom_parser.yaml (#6034)",
+        "commit_origin_hash": "f31bb702aa26a4178c1cda72681820c338c83d1c",
         "field_mappings": {
             "action": {
                 "alternate_values": [
@@ -107322,10 +107466,18 @@
                 ],
                 "default_value": "true",
                 "lookup": {
+                    "block": "false",
+                    "block-continue": "false",
                     "block-ip": "false",
+                    "block-override": "false",
                     "block-url": "false",
                     "deny": "false",
                     "drop": "false",
+                    "drop-all": "false",
+                    "drop-all-packets": "false",
+                    "drop-packet": "false",
+                    "drop-reset": "false",
+                    "override-lockout": "false",
                     "random-drop": "false",
                     "reset-both": "false",
                     "reset-client": "false",
@@ -107802,8 +107954,8 @@
         "uid": "e77c575d-8d97-4fa3-ae9f-df9cc7e38fd8"
     },
     "e78a34a9-2db5-456b-92c7-d95689f1638f": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
-        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
+        "commit_message": "Update pan_firewall_custom_parser.yaml (#6034)",
+        "commit_origin_hash": "f31bb702aa26a4178c1cda72681820c338c83d1c",
         "field_mappings": {
             "action": {
                 "alternate_values": [
@@ -109654,8 +109806,8 @@
         "uid": "eba2f49f-b86e-4a55-913b-90dc8423f4a1"
     },
     "ebdfc811-612b-48ed-ab66-abc2ca8b9c89": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
-        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
+        "commit_message": "Update pan_firewall_custom_parser.yaml (#6034)",
+        "commit_origin_hash": "f31bb702aa26a4178c1cda72681820c338c83d1c",
         "field_mappings": {
             "action": {
                 "alternate_values": [
@@ -109748,10 +109900,18 @@
             "success": {
                 "default_value": "true",
                 "lookup": {
+                    "block": "false",
+                    "block-continue": "false",
                     "block-ip": "false",
+                    "block-override": "false",
                     "block-url": "false",
                     "deny": "false",
                     "drop": "false",
+                    "drop-all": "false",
+                    "drop-all-packets": "false",
+                    "drop-packet": "false",
+                    "drop-reset": "false",
+                    "override-lockout": "false",
                     "random-drop": "false",
                     "reset-both": "false",
                     "reset-client": "false",
@@ -109812,8 +109972,8 @@
         "uid": "ebdfc811-612b-48ed-ab66-abc2ca8b9c89"
     },
     "ebe12b29-1f36-435a-b9bb-95bef42c4af2": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
-        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
+        "commit_message": "TLAB-2790 Fix CrowdStrike Data Protection severity mapping (#6035)",
+        "commit_origin_hash": "8ea193375ec539b625a325c708668517a48622aa",
         "field_mappings": {
             "description": {
                 "value": "message"
@@ -110800,8 +110960,8 @@
         "uid": "edc80da0-7594-413c-9b55-3f1c1bad3acf"
     },
     "edcfa819-4c92-4691-b612-600852bd48d6": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
-        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
+        "commit_message": "Update pan_firewall_custom_parser.yaml (#6034)",
+        "commit_origin_hash": "f31bb702aa26a4178c1cda72681820c338c83d1c",
         "field_mappings": {
             "action": {
                 "value": "success"
@@ -112720,8 +112880,8 @@
         "uid": "f3c88519-7172-480d-9311-8a82b1c47a93"
     },
     "f418724b-a188-4848-80e6-1a46b6c2c98a": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
-        "commit_origin_hash": "24d8f40064a4dfa2b33991d9c72cc8702ec45892",
+        "commit_message": "TLAB-2790 Fix CrowdStrike Data Protection severity mapping (#6035)",
+        "commit_origin_hash": "8ea193375ec539b625a325c708668517a48622aa",
         "field_mappings": {
             "accountId": {
                 "value": "cid"
@@ -113100,8 +113260,8 @@
         "uid": "f437d4e7-7b09-4f58-924e-606eb49a2418"
     },
     "f4ccf8eb-1cf4-4427-9b06-3d79271a4d83": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
-        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
+        "commit_message": "Update pan_firewall_custom_parser.yaml (#6034)",
+        "commit_origin_hash": "f31bb702aa26a4178c1cda72681820c338c83d1c",
         "field_mappings": {
             "action": {
                 "alternate_values": [
@@ -113201,10 +113361,18 @@
             "success": {
                 "default_value": "true",
                 "lookup": {
+                    "block": "false",
+                    "block-continue": "false",
                     "block-ip": "false",
+                    "block-override": "false",
                     "block-url": "false",
                     "deny": "false",
                     "drop": "false",
+                    "drop-all": "false",
+                    "drop-all-packets": "false",
+                    "drop-packet": "false",
+                    "drop-reset": "false",
+                    "override-lockout": "false",
                     "random-drop": "false",
                     "reset-both": "false",
                     "reset-client": "false",
@@ -115685,8 +115853,8 @@
         "uid": "fa1d880c-919b-4548-b03c-01e37c3f1a45"
     },
     "fa4028ba-0c1d-4fb3-a152-6e65e0b5200e": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
-        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
+        "commit_message": "Update pan_firewall_custom_parser.yaml (#6034)",
+        "commit_origin_hash": "f31bb702aa26a4178c1cda72681820c338c83d1c",
         "field_mappings": {
             "action": {
                 "alternate_values": [
@@ -117936,8 +118104,8 @@
         "uid": "ff18353f-3a63-4ffb-aeff-bb2d5a4fadba"
     },
     "ff1e86b2-347d-4a94-9f33-c6e8250b7003": {
-        "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
-        "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
+        "commit_message": "Update pan_firewall_custom_parser.yaml (#6034)",
+        "commit_origin_hash": "f31bb702aa26a4178c1cda72681820c338c83d1c",
         "field_mappings": {
             "action": {
                 "value": "op"

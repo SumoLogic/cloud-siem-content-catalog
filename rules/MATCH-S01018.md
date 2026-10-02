@@ -20,6 +20,7 @@ This rule detects successful authentications from an IP address associated with 
 - [Amazon AWS - CloudTrail](../products/033624b0-218e-4dcb-b93f-0f1fb1806c56.md)
 - [Atlassian - Atlassian Audit Events](../products/23342262-740c-41b7-9b77-08267ae01612.md)
 - [Auth0 - Auth0](../products/0b45ccba-20b4-41e4-973d-b50fd291944d.md)
+- [Box - Box](../products/0472f22e-e3fa-4c9f-a529-8355f671927e.md)
 - [Cisco Systems - ASA](../products/be4f7473-fe69-4311-8859-3561900060bf.md)
 - [Cisco Systems - Identity Services Engine](../products/153794da-09e8-48fe-b511-1306fbb94d07.md)
 - [Citrix - ADC](../products/d3606245-76d3-4173-a2fe-832c0e71b0f9.md)

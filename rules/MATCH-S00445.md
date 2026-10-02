@@ -33,7 +33,6 @@ https://techviral.net/ransomware-encrypted-file-extensions/
 - [Microsoft - Windows](../products/1ff7546c-cb36-4a24-87f7-89d2cecc5761.md)
 - [Slack - Slack](../products/79da6240-7617-49c8-b130-96278579766e.md)
 - [Trend Micro - Vision One](../products/72a5ddec-abb9-41ff-a2da-6a58beff980c.md)
-- [Varonis - DatAdvantage](../products/4d6a3683-4edb-4330-9e9f-b8608cd63981.md)
 
 
 ## Fields Used

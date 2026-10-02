@@ -42,7 +42,6 @@ Note that this rule is disabled by default due to a high likelihood of excessive
 - [PingIdentity - PingFederate](../products/b0a0ae6d-dd5b-450c-9d68-36d6c61c67b0.md)
 - [Proofpoint - Proofpoint on Demand](../products/332856e9-3111-446f-8df7-e64694e4b9a1.md)
 - [Vectra - Vectra AI](../products/d4a9e7ce-082e-4f41-891f-4c43e604c850.md)
-- [Zscaler - Nanolog Streaming Service](../products/6299d728-14f7-455e-85c5-ea8ec65a654a.md)
 
 
 ## Fields Used
