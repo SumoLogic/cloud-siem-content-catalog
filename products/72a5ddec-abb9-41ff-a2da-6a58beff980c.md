@@ -12,7 +12,6 @@
 |MATCH-S00723|[Loadable Kernel Module Modifications](../rules/MATCH-S00723.md)|
 |MATCH-S00729|[MacOS Gatekeeper Bypass](../rules/MATCH-S00729.md)|
 |MATCH-S00402|[Normalized Security Signal](../rules/MATCH-S00402.md)|
-|MATCH-S00431|[Suspicious Use of Procdump](../rules/MATCH-S00431.md)|
 |MATCH-S01000|[Threat Intel - MD5 Match](../rules/MATCH-S01000.md)|
 |MATCH-S01003|[Threat Intel - SHA1 Match](../rules/MATCH-S01003.md)|
 |MATCH-S01004|[Threat Intel - SHA256 Match](../rules/MATCH-S01004.md)|

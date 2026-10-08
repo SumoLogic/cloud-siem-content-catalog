@@ -25,6 +25,7 @@ The com.apple.quarantine flag is usually automatically set for downloaded files 
 - [OpenAI - OpenAI Audit](../products/7f8a9b0c-1d2e-3f4a-5b6c-7d8e9f0a1b2c.md)
 - [Osquery - Osquery](../products/93e2d3d-fab1-4d61-845f-49bc1ae5bed9.md)
 - [Trend Micro - Vision One](../products/72a5ddec-abb9-41ff-a2da-6a58beff980c.md)
+- [VMware - Carbon Black Cloud](../products/f9cea291-9030-4e41-9836-6dd9274d6df4.md)
 
 
 ## Fields Used
