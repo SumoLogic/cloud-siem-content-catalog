@@ -30,6 +30,7 @@ If additional setuid binaries in your environment legitimately produce root proc
 |Tags||
 ## Vendors and Products
 - [Laurel - Laurel Linux Audit](../products/f3803323-e4d1-4098-96c6-12e5bf2ab1f5.md)
+- [Linux - Auditd](../products/5e298fe7-088a-467a-b57f-d8558368621d.md)
 
 
 ## Fields Used

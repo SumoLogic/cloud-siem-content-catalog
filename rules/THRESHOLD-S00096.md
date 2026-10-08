@@ -53,7 +53,6 @@ Detects multiple failed login attempts for the same username over a 24 hour time
 - [Palo Alto Networks - Next Generation Firewall](../products/46f5fa2c-1a62-4692-82ad-ed87800a0adb.md)
 - [PingIdentity - PingFederate](../products/b0a0ae6d-dd5b-450c-9d68-36d6c61c67b0.md)
 - [PingIdentity - PingIdentity MFA](../products/93072f9e-3561-401e-980d-6b49f475c2fd.md)
-- [Pritunl - Pritunl](../products/70f80fa8-200a-449b-8100-f8d4b7687380.md)
 - [RSA - SecurID SinglePoint](../products/90bba037-f944-480e-89fa-a3b104451af3.md)
 - [Salesforce - Salesforce](../products/1b7798df-963b-4582-a82b-b8176c3a6a22.md)
 - [Slack - Slack](../products/79da6240-7617-49c8-b130-96278579766e.md)

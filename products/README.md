@@ -16,6 +16,8 @@ Below is a full list of Cloud SIEM products.
 |[Alibaba](../vendors/d7de27e2-7680-48a0-96aa-1c26cf8d1ca4.md)|[ActionTrail](79055042-52c8-4998-b201-bd2cd2dbca1f.md)|
 |[AlphaSOC](../vendors/84ffd6de-c32b-49fe-88cb-d3e744df4141.md)|[Network Flight Recorder](f3ee680a-bbe5-4fa8-a92e-9b191286f8e2.md)|
 |[Amazon AWS](../vendors/210d6727-ac50-468e-ab00-1f7586845326.md)|[API Gateway](9f76f1fd-fbb0-42d2-9bf5-0f4fd2c1ab82.md)|
+|[Amazon AWS](../vendors/210d6727-ac50-468e-ab00-1f7586845326.md)|[AWS Config - OCSF](ebcce706-67c1-42ff-9cf9-4cb2268029c3.md)|
+|[Amazon AWS](../vendors/210d6727-ac50-468e-ab00-1f7586845326.md)|[AWS Health - OCSF](a8611d48-1974-4091-bc6d-a8c2242f58ec.md)|
 |[Amazon AWS](../vendors/210d6727-ac50-468e-ab00-1f7586845326.md)|[AWS S3 Server Access Logs](41f70c6e-18a9-462c-a04d-4edc7baead7a.md)|
 |[Amazon AWS](../vendors/210d6727-ac50-468e-ab00-1f7586845326.md)|[Application Load Balancer](5bb9e0b3-8d57-4b10-8952-0b6ffe91b599.md)|
 |[Amazon AWS](../vendors/210d6727-ac50-468e-ab00-1f7586845326.md)|[CloudFront](44f07c08-c2ad-4a95-a058-1d0737ff90db.md)|

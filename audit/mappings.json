@@ -1546,8 +1546,8 @@
         "uid": "035295ee-fa17-4d52-a697-477a4fc4032a"
     },
     "035baac3-1d87-4d5e-a3e5-ef77bed84f5a": {
-        "commit_message": "TLAB-1352 addes resource and normalizedResource",
-        "commit_origin_hash": "2be97c8a1e3cdb10058e26811ad16813e5675467",
+        "commit_message": "TLAB-2814 Extend AWS S3 Server Access Logs mapper with additional field mappings (#6041)",
+        "commit_origin_hash": "85132b01c2e067bc5be094ab68eef6f4afb4e46d",
         "field_mappings": {
             "accountId": {
                 "value": "bucketowner"
@@ -1582,6 +1582,9 @@
             "dstDevice_hostname": {
                 "value": "hostheader"
             },
+            "file_path": {
+                "value": "key"
+            },
             "file_size": {
                 "value": "objectsize"
             },
@@ -1603,6 +1606,9 @@
             "resource": {
                 "value": "bucket"
             },
+            "sessionId": {
+                "value": "thread_id"
+            },
             "sourceUid": {
                 "value": "requestid"
             },
@@ -1621,6 +1627,9 @@
                 "format": "dd-MMM-yyyy:HH:mm:ss Z",
                 "value": "timestamp",
                 "value_type": "time"
+            },
+            "user_userId": {
+                "value": "app_user_id"
             },
             "user_username": {
                 "value": "requester"
@@ -2314,8 +2323,8 @@
         "uid": "045e5597-2824-4200-8ec8-766e10bbf960"
     },
     "0460cef5-59e3-4e52-be8c-59952694460e": {
-        "commit_message": "TRIDENT-19497: Updated the parser to support new customer logs (#5810)",
-        "commit_origin_hash": "baba0adf2533987de70cae5eeefd8e2e66d01311",
+        "commit_message": "TLAB-2824 Add Citrix NetScaler EVENT, APPFW, and ROUTING mappers (#6042)",
+        "commit_origin_hash": "fb41787966a9fa163ab71b63ae1a7801a30065e8",
         "field_mappings": {
             "action": {
                 "alternate_values": [
@@ -2348,7 +2357,7 @@
         },
         "file_path": "mappings_schemav3/citrix_netscaler_custom_parser.yaml",
         "input": {
-            "event_id_pattern": "ICA-MESSAGE|SSLVPN-Message|AAA-Message|AAATM-Message",
+            "event_id_pattern": "ICA-MESSAGE|SSLVPN-Message|AAA-Message|AAATM-Message|APPFW-Message|ROUTING-Message|IPSEC-Message",
             "log_format": "JSON",
             "product": "NetScaler",
             "vendor": "Citrix"
@@ -10769,8 +10778,8 @@
         "uid": "16e3dda5-abf4-472e-9aba-08c13ae4e03b"
     },
     "16f5dcb3-9685-491a-b0e7-08fd78c9fd8c": {
-        "commit_message": "TRIDENT-19497: Updated the parser to support new customer logs (#5810)",
-        "commit_origin_hash": "baba0adf2533987de70cae5eeefd8e2e66d01311",
+        "commit_message": "TLAB-2824 Add Citrix NetScaler EVENT, APPFW, and ROUTING mappers (#6042)",
+        "commit_origin_hash": "fb41787966a9fa163ab71b63ae1a7801a30065e8",
         "field_mappings": {
             "action": {
                 "value": "event_id"
@@ -13192,8 +13201,8 @@
         "uid": "1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d"
     },
     "1a63e8c0-2553-4433-bfd6-624bd62c08a9": {
-        "commit_message": "TRIDENT-19497: Updated the parser to support new customer logs (#5810)",
-        "commit_origin_hash": "baba0adf2533987de70cae5eeefd8e2e66d01311",
+        "commit_message": "TLAB-2824 Add Citrix NetScaler EVENT, APPFW, and ROUTING mappers (#6042)",
+        "commit_origin_hash": "fb41787966a9fa163ab71b63ae1a7801a30065e8",
         "field_mappings": {
             "action": {
                 "value": "event_id"
@@ -37585,8 +37594,8 @@
         "uid": "4acf430c-7582-4e40-a3ce-050f7f78bd29"
     },
     "4ad1bbb3-fdd4-4c92-8065-d919b8090e62": {
-        "commit_message": "TRIDENT-19497: Updated the parser to support new customer logs (#5810)",
-        "commit_origin_hash": "baba0adf2533987de70cae5eeefd8e2e66d01311",
+        "commit_message": "TLAB-2824 Add Citrix NetScaler EVENT, APPFW, and ROUTING mappers (#6042)",
+        "commit_origin_hash": "fb41787966a9fa163ab71b63ae1a7801a30065e8",
         "field_mappings": {
             "action": {
                 "value": "event_id"
@@ -38669,8 +38678,8 @@
         "uid": "4de9c6de-5dd0-4c0d-b174-254f17895155"
     },
     "4e3841fb-ebbe-43f1-91f4-287467f28338": {
-        "commit_message": "TRIDENT-19497: Updated the parser to support new customer logs (#5810)",
-        "commit_origin_hash": "baba0adf2533987de70cae5eeefd8e2e66d01311",
+        "commit_message": "TLAB-2824 Add Citrix NetScaler EVENT, APPFW, and ROUTING mappers (#6042)",
+        "commit_origin_hash": "fb41787966a9fa163ab71b63ae1a7801a30065e8",
         "field_mappings": {
             "action": {
                 "value": "event_id"
@@ -41237,6 +41246,106 @@
         ],
         "source": "jask",
         "uid": "5270a2c5-74ac-42d5-b2b5-1f654fdad84c"
+    },
+    "52931d1a-cbbf-43f8-87cc-09f5e7bc2e0b": {
+        "commit_message": "TLAB-2813Add AWS Config and Health OCSF Detection Finding mappers (#6040)",
+        "commit_origin_hash": "79681c6565c2a6ecdb7142a212c0f11c06999c5b",
+        "field_mappings": {
+            "accountId": {
+                "alternate_values": [
+                    "parse_observable_33"
+                ],
+                "value": "cloud.account.uid"
+            },
+            "action": {
+                "value": "activity_name"
+            },
+            "application": {
+                "alternate_values": [
+                    "metadata.product.feature.uid"
+                ],
+                "value": "metadata.product.feature.name"
+            },
+            "cloud_provider": {
+                "value": "cloud.provider"
+            },
+            "cloud_region": {
+                "value": "cloud.region"
+            },
+            "cloud_service": {
+                "value": "metadata.product.name"
+            },
+            "description": {
+                "alternate_values": [
+                    "message"
+                ],
+                "value": "finding_info.desc"
+            },
+            "http_url": {
+                "value": "finding_info.src_url"
+            },
+            "normalizedAction": {
+                "lookup": {
+                    "Create": "create",
+                    "Delete": "delete",
+                    "Update": "change"
+                },
+                "value": "activity_name",
+                "value_type": "lookup"
+            },
+            "normalizedSeverity": {
+                "lookup": {
+                    "Critical": "5",
+                    "Fatal": "6",
+                    "High": "3",
+                    "Informational": "0",
+                    "Low": "1",
+                    "Medium": "1"
+                },
+                "value": "severity",
+                "value_type": "lookup"
+            },
+            "resource": {
+                "alternate_values": [
+                    "resources.1.name",
+                    "resources.array.uid",
+                    "resources.array.name",
+                    "parse_observable_10"
+                ],
+                "value": "resources.1.uid"
+            },
+            "resourceType": {
+                "alternate_values": [
+                    "resources.array.type"
+                ],
+                "value": "resources.1.type"
+            },
+            "severity": {
+                "value": "severity"
+            },
+            "sourceUid": {
+                "value": "finding_info.uid"
+            }
+        },
+        "file_path": "mappings_schemav3/aws_ocsf_health.yaml",
+        "input": {
+            "event_id_pattern": "^Findings.*",
+            "log_format": "JSON",
+            "product": "Health - OCSF",
+            "vendor": "AWS"
+        },
+        "name": "AWS Health - OCSF Finding Events",
+        "output": {
+            "product_guid": "a8611d48-1974-4091-bc6d-a8c2242f58ec",
+            "record_type": "Notification"
+        },
+        "skipped_values": [
+            ",",
+            "-",
+            "null"
+        ],
+        "source": "jask",
+        "uid": "52931d1a-cbbf-43f8-87cc-09f5e7bc2e0b"
     },
     "52a09f38-549b-4fb5-a351-a126a1c7c5c7": {
         "commit_message": "TLAB-2078: added new mappers",
@@ -70840,6 +70949,69 @@
         "source": "jask",
         "uid": "92ad9200-083c-4c89-a3c1-5e63d3e2801f"
     },
+    "92ea711e-74ee-4f96-ad10-0be5961f5e50": {
+        "commit_message": "TLAB-2824 Add Citrix NetScaler EVENT, APPFW, and ROUTING mappers (#6042)",
+        "commit_origin_hash": "fb41787966a9fa163ab71b63ae1a7801a30065e8",
+        "field_mappings": {
+            "action": {
+                "value": "event_id"
+            },
+            "description": {
+                "value": "description"
+            },
+            "device_hostname": {
+                "alternate_values": [
+                    "hostName"
+                ],
+                "value": "device_hostname"
+            },
+            "device_ip": {
+                "value": "device_ip"
+            },
+            "normalizedAction": {
+                "default_value": "allow",
+                "lookup": {
+                    "blocked": "deny"
+                },
+                "value": "action",
+                "value_type": "lookup"
+            },
+            "sessionId": {
+                "value": "session_id"
+            },
+            "severity": {
+                "value": "severity"
+            },
+            "srcDevice_ip": {
+                "value": "src_ip"
+            },
+            "success": {
+                "lookup": {
+                    "blocked": "false"
+                },
+                "value": "action",
+                "value_type": "lookup"
+            }
+        },
+        "file_path": "mappings_schemav3/citrix_netscaler_custom_parser.yaml",
+        "input": {
+            "event_id_pattern": "APPFW-(APPFW_XSS|APPFW_SQL|APPFW_STARTURL|APPFW_POLICY_HIT|APPFW_COOKIE|APPFW_SCHEMA_VALUE_INCORRECT|APPFW_INV_RFC|APPFW_XML_ERR_NOT_WELLFORMED|AF_400_RESP|AF_MALFORMED_REQ_ERR|APPFW_SCHEMA_OTHER|APPFW_SCHEMA_PARAMETER_MISSING|APPFW_SCHEMA_ENDPOINT_NOTFOUND)",
+            "log_format": "JSON",
+            "product": "NetScaler",
+            "vendor": "Citrix"
+        },
+        "name": "Citrix NetScaler - AppFW",
+        "output": {
+            "product_guid": "d3606245-76d3-4173-a2fe-832c0e71b0f9",
+            "record_type": "NetworkProxy"
+        },
+        "skipped_values": [
+            ",",
+            "-"
+        ],
+        "source": "jask",
+        "uid": "92ea711e-74ee-4f96-ad10-0be5961f5e50"
+    },
     "930ce067-7ff4-4f38-a750-fb5db10e77e1": {
         "commit_message": "TRIDENT-15532-BIND-Parser-Mapper",
         "commit_origin_hash": "9832f64fe432de8bc406a29a98d8b574deecfbf9",
@@ -82227,6 +82399,74 @@
         "source": "jask",
         "uid": "a7b7f2c8-2b27-4958-b164-2be8a5ec12cf"
     },
+    "a803e7b9-a0b0-41ba-9f9a-ee2003b4cc3d": {
+        "commit_message": "TLAB-2824 Add Citrix NetScaler EVENT, APPFW, and ROUTING mappers (#6042)",
+        "commit_origin_hash": "fb41787966a9fa163ab71b63ae1a7801a30065e8",
+        "field_mappings": {
+            "action": {
+                "value": "event_id"
+            },
+            "description": {
+                "alternate_values": [
+                    "monitor_name",
+                    "route_name",
+                    "intf_name",
+                    "description"
+                ],
+                "value": "device_name"
+            },
+            "device_hostname": {
+                "alternate_values": [
+                    "hostName"
+                ],
+                "value": "device_hostname"
+            },
+            "device_ip": {
+                "value": "device_ip"
+            },
+            "normalizedAction": {
+                "lookup": {
+                    "CONFIGEND": "stop",
+                    "DEVICEDOWN": "stop",
+                    "DEVICEOFS": "stop",
+                    "DEVICEUP": "start",
+                    "MONITORDOWN": "stop",
+                    "MONITORUP": "start",
+                    "NICPOWERON": "start",
+                    "ROUTE6DOWN": "stop",
+                    "ROUTE6UP": "start",
+                    "ROUTEDOWN": "stop",
+                    "ROUTEUP": "start",
+                    "STARTSAVECONFIG": "start",
+                    "STATECHANGE": "change",
+                    "STOPSAVECONFIG": "stop"
+                },
+                "value": "eventName",
+                "value_type": "lookup"
+            },
+            "severity": {
+                "value": "severity"
+            }
+        },
+        "file_path": "mappings_schemav3/citrix_netscaler_custom_parser.yaml",
+        "input": {
+            "event_id_pattern": "EVENT-(DEVICEUP|DEVICEDOWN|MONITORUP|MONITORDOWN|STATECHANGE|DEVICEOFS|ROUTEUP|ROUTEDOWN|ROUTE6UP|ROUTE6DOWN|CONFIGEND|STARTSAVECONFIG|STOPSAVECONFIG|NICPOWERON|UNKNOWN)",
+            "log_format": "JSON",
+            "product": "NetScaler",
+            "vendor": "Citrix"
+        },
+        "name": "Citrix NetScaler - NetScaler Event",
+        "output": {
+            "product_guid": "d3606245-76d3-4173-a2fe-832c0e71b0f9",
+            "record_type": "Network"
+        },
+        "skipped_values": [
+            ",",
+            "-"
+        ],
+        "source": "jask",
+        "uid": "a803e7b9-a0b0-41ba-9f9a-ee2003b4cc3d"
+    },
     "a810cf50-7779-4555-b724-a10a92043c34": {
         "commit_message": "TLAB-2062:updated vendor name from gsuit to google workspace (#5884)",
         "commit_origin_hash": "f151e65ea1e1c08bf4109e0030129ac553ccfe8a",
@@ -82335,8 +82575,8 @@
         "uid": "a815dcbc-42e6-4d1f-b3fd-580c415b22f2"
     },
     "a82454bc-1ed8-471d-9e8c-973d7cbbb5c9": {
-        "commit_message": "TRIDENT-19497: Updated the parser to support new customer logs (#5810)",
-        "commit_origin_hash": "baba0adf2533987de70cae5eeefd8e2e66d01311",
+        "commit_message": "TLAB-2824 Add Citrix NetScaler EVENT, APPFW, and ROUTING mappers (#6042)",
+        "commit_origin_hash": "fb41787966a9fa163ab71b63ae1a7801a30065e8",
         "field_mappings": {
             "action": {
                 "value": "event_id"
@@ -94984,6 +95224,52 @@
         "source": "jask",
         "uid": "c8a79801-48cc-4edd-879a-c2354ac8ab7b"
     },
+    "c92078cc-e9bf-4c17-b23b-166e7d8c012a": {
+        "commit_message": "TLAB-2824 Add Citrix NetScaler EVENT, APPFW, and ROUTING mappers (#6042)",
+        "commit_origin_hash": "fb41787966a9fa163ab71b63ae1a7801a30065e8",
+        "field_mappings": {
+            "action": {
+                "value": "event_id"
+            },
+            "commandLine": {
+                "value": "command"
+            },
+            "device_hostname": {
+                "alternate_values": [
+                    "hostName"
+                ],
+                "value": "device_hostname"
+            },
+            "device_ip": {
+                "value": "device_ip"
+            },
+            "normalizedAction": {
+                "value": "execute",
+                "value_type": "constant"
+            },
+            "severity": {
+                "value": "severity"
+            }
+        },
+        "file_path": "mappings_schemav3/citrix_netscaler_custom_parser.yaml",
+        "input": {
+            "event_id_pattern": "ROUTING-ZEBOS_CMD_EXECUTED",
+            "log_format": "JSON",
+            "product": "NetScaler",
+            "vendor": "Citrix"
+        },
+        "name": "Citrix NetScaler - Routing Command Executed",
+        "output": {
+            "product_guid": "d3606245-76d3-4173-a2fe-832c0e71b0f9",
+            "record_type": "Audit"
+        },
+        "skipped_values": [
+            ",",
+            "-"
+        ],
+        "source": "jask",
+        "uid": "c92078cc-e9bf-4c17-b23b-166e7d8c012a"
+    },
     "c9abc135-6d47-48fc-861e-6ec0301ff160": {
         "commit_message": "TLAB-2661 Migrate Mappers for Network passthrough (#6019)",
         "commit_origin_hash": "4a3118f377550c6d360b378a3b903d407f5c2767",
@@ -98463,8 +98749,8 @@
         "uid": "d0dc0bc9-3674-4454-a625-63d12aa82f73"
     },
     "d102bd01-4e1b-4654-ba39-9dc44db84476": {
-        "commit_message": "TRIDENT-19497: Updated the parser to support new customer logs (#5810)",
-        "commit_origin_hash": "baba0adf2533987de70cae5eeefd8e2e66d01311",
+        "commit_message": "TLAB-2824 Add Citrix NetScaler EVENT, APPFW, and ROUTING mappers (#6042)",
+        "commit_origin_hash": "fb41787966a9fa163ab71b63ae1a7801a30065e8",
         "field_mappings": {
             "action": {
                 "value": "event_id"
@@ -99464,8 +99750,8 @@
         "uid": "d3fad8c1-3193-4879-870e-94fdeeaeef11"
     },
     "d41065cb-0786-40c4-8656-3934f27ba14c": {
-        "commit_message": "TRIDENT-19497: Updated the parser to support new customer logs (#5810)",
-        "commit_origin_hash": "baba0adf2533987de70cae5eeefd8e2e66d01311",
+        "commit_message": "TLAB-2824 Add Citrix NetScaler EVENT, APPFW, and ROUTING mappers (#6042)",
+        "commit_origin_hash": "fb41787966a9fa163ab71b63ae1a7801a30065e8",
         "field_mappings": {
             "action": {
                 "value": "event_id"
@@ -100889,8 +101175,8 @@
         "uid": "d6c9771e-aa44-4ffc-8688-72307bbff04y"
     },
     "d6d47d9b-ca45-4dc2-89bf-a9f7c99f42ba": {
-        "commit_message": "TRIDENT-19497: Updated the parser to support new customer logs (#5810)",
-        "commit_origin_hash": "baba0adf2533987de70cae5eeefd8e2e66d01311",
+        "commit_message": "TLAB-2824 Add Citrix NetScaler EVENT, APPFW, and ROUTING mappers (#6042)",
+        "commit_origin_hash": "fb41787966a9fa163ab71b63ae1a7801a30065e8",
         "field_mappings": {
             "action": {
                 "value": "auth-req",
@@ -102154,8 +102440,8 @@
         "uid": "da6ab8c9-66bf-497d-94ec-c540a55d7b40"
     },
     "dae628cd-6bed-42af-ba88-cddee5f577dc": {
-        "commit_message": "TRIDENT-19497: Updated the parser to support new customer logs (#5810)",
-        "commit_origin_hash": "baba0adf2533987de70cae5eeefd8e2e66d01311",
+        "commit_message": "TLAB-2824 Add Citrix NetScaler EVENT, APPFW, and ROUTING mappers (#6042)",
+        "commit_origin_hash": "fb41787966a9fa163ab71b63ae1a7801a30065e8",
         "field_mappings": {
             "action": {
                 "value": "event_id"
@@ -103842,6 +104128,141 @@
         ],
         "source": "jask",
         "uid": "ddbefdf2-2f53-422f-92e9-5c050e756047"
+    },
+    "ddc449c9-2394-4e55-b1ea-ac8b8cd7c152": {
+        "commit_message": "TLAB-2813Add AWS Config and Health OCSF Detection Finding mappers (#6040)",
+        "commit_origin_hash": "79681c6565c2a6ecdb7142a212c0f11c06999c5b",
+        "field_mappings": {
+            "accountId": {
+                "alternate_values": [
+                    "parse_observable_33"
+                ],
+                "value": "cloud.account.uid"
+            },
+            "action": {
+                "value": "activity_name"
+            },
+            "application": {
+                "alternate_values": [
+                    "metadata.product.feature.uid"
+                ],
+                "value": "metadata.product.feature.name"
+            },
+            "cloud_provider": {
+                "value": "cloud.provider"
+            },
+            "cloud_region": {
+                "value": "cloud.region"
+            },
+            "cloud_service": {
+                "value": "metadata.product.name"
+            },
+            "description": {
+                "alternate_values": [
+                    "message"
+                ],
+                "value": "finding_info.desc"
+            },
+            "normalizedAction": {
+                "lookup": {
+                    "Create": "create",
+                    "Delete": "delete",
+                    "Update": "change"
+                },
+                "value": "activity_name",
+                "value_type": "lookup"
+            },
+            "normalizedResource": {
+                "alternate_values": [
+                    "resources.array.type"
+                ],
+                "lookup": {
+                    "AWS::::Account": "account",
+                    "AWS::CloudTrail::Trail": "service",
+                    "AWS::DynamoDB::Table": "database",
+                    "AWS::EC2::EIP": "network",
+                    "AWS::EC2::Instance": "instance",
+                    "AWS::EC2::NetworkAcl": "network",
+                    "AWS::EC2::SecurityGroup": "group",
+                    "AWS::EC2::Subnet": "network",
+                    "AWS::EC2::VPC": "network",
+                    "AWS::EC2::Volume": "file",
+                    "AWS::ECS::Cluster": "service",
+                    "AWS::EKS::Cluster": "service",
+                    "AWS::IAM::AccessKey": "key",
+                    "AWS::IAM::User": "account",
+                    "AWS::KMS::Key": "key",
+                    "AWS::Lambda::Function": "service",
+                    "AWS::Organizations::Account": "account",
+                    "AWS::RDS::DBCluster": "database",
+                    "AWS::RDS::DBInstance": "instance",
+                    "AWS::S3::Bucket": "bucket",
+                    "AWS::SNS::Topic": "service",
+                    "AwsDynamoDbTable": "database",
+                    "AwsEc2Instance": "instance",
+                    "AwsEc2SecurityGroup": "group",
+                    "AwsIamAccessKey": "key",
+                    "AwsIamRole": "role",
+                    "AwsLambdaFunction": "service",
+                    "AwsRdsDbInstance": "instance",
+                    "AwsS3Bucket": "bucket"
+                },
+                "value": "resources.1.type",
+                "value_type": "lookup"
+            },
+            "normalizedSeverity": {
+                "lookup": {
+                    "Critical": "5",
+                    "Fatal": "6",
+                    "High": "3",
+                    "Informational": "0",
+                    "Low": "1",
+                    "Medium": "1"
+                },
+                "value": "severity",
+                "value_type": "lookup"
+            },
+            "resource": {
+                "alternate_values": [
+                    "resources.1.name",
+                    "resources.array.uid",
+                    "resources.array.name",
+                    "parse_observable_10"
+                ],
+                "value": "resources.1.uid"
+            },
+            "resourceType": {
+                "alternate_values": [
+                    "resources.array.type"
+                ],
+                "value": "resources.1.type"
+            },
+            "severity": {
+                "value": "severity"
+            },
+            "sourceUid": {
+                "value": "finding_info.uid"
+            }
+        },
+        "file_path": "mappings_schemav3/aws_ocsf_config.yaml",
+        "input": {
+            "event_id_pattern": "^Findings.*",
+            "log_format": "JSON",
+            "product": "Config - OCSF",
+            "vendor": "AWS"
+        },
+        "name": "AWS Config - OCSF Finding Events",
+        "output": {
+            "product_guid": "ebcce706-67c1-42ff-9cf9-4cb2268029c3",
+            "record_type": "Notification"
+        },
+        "skipped_values": [
+            ",",
+            "-",
+            "null"
+        ],
+        "source": "jask",
+        "uid": "ddc449c9-2394-4e55-b1ea-ac8b8cd7c152"
     },
     "ddd7a5fb-60e7-4b33-a81a-4e7491977601": {
         "commit_message": "TLAB-2661 Migrate Mappers for Data Protection Passthrough (#6020)",
@@ -112361,8 +112782,8 @@
         "uid": "f1ea6ca2-ca75-492e-a18f-51aa3a94c783"
     },
     "f1f18593-3ac5-497e-abae-14e3252b1c46": {
-        "commit_message": "TRIDENT-19497: Updated the parser to support new customer logs (#5810)",
-        "commit_origin_hash": "baba0adf2533987de70cae5eeefd8e2e66d01311",
+        "commit_message": "TLAB-2824 Add Citrix NetScaler EVENT, APPFW, and ROUTING mappers (#6042)",
+        "commit_origin_hash": "fb41787966a9fa163ab71b63ae1a7801a30065e8",
         "field_mappings": {
             "action": {
                 "value": "event_id"
@@ -112748,8 +113169,8 @@
         "uid": "f38659e3-1c46-4c83-a8b9-212a09a2c906"
     },
     "f38d18e2-ea57-449b-b564-aa82f9df0a91": {
-        "commit_message": "TRIDENT-19497: Updated the parser to support new customer logs (#5810)",
-        "commit_origin_hash": "baba0adf2533987de70cae5eeefd8e2e66d01311",
+        "commit_message": "TLAB-2824 Add Citrix NetScaler EVENT, APPFW, and ROUTING mappers (#6042)",
+        "commit_origin_hash": "fb41787966a9fa163ab71b63ae1a7801a30065e8",
         "field_mappings": {
             "action": {
                 "value": "event_id"
