@@ -16,6 +16,7 @@ Passes through an endpoint/EDR behavioral detection from a security product and 
 |Prototype|False|
 |Tags||
 ## Vendors and Products
+- [Sophos - Central](../products/e5a708c9-82be-4df9-8ea0-07cac95abf2a.md)
 
 
 ## Fields Used

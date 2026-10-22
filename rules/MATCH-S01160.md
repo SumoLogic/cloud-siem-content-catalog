@@ -16,6 +16,7 @@ Passes through a cloud posture or cloud-threat finding (e.g. AWS GuardDuty, Secu
 |Prototype|False|
 |Tags||
 ## Vendors and Products
+- [Amazon AWS - GuardDuty - OCSF](../products/5bb8e745-453b-47c3-bda4-f690249a6333.md)
 
 
 ## Fields Used

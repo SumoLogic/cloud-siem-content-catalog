@@ -16,6 +16,7 @@ Detects modifications to macOS login items. Login items are applications, files,
 |Prototype|False|
 |Tags|_mitreAttackTactic:TA0003, _mitreAttackTechnique:T1547.015|
 ## Vendors and Products
+- [Jamf - Jamf](../products/5c2cc0de-ca31-4ef0-bcfa-133fc8b387ad.md)
 - [Osquery - Osquery](../products/93e2d3d-fab1-4d61-845f-49bc1ae5bed9.md)
 
 

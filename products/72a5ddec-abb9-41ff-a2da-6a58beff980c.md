@@ -6,16 +6,18 @@
 |----|----|
 |MATCH-S00686|[Base64 Decode in Command Line](../rules/MATCH-S00686.md)|
 |MATCH-S00543|[Detect Psexec With Accepteula Flag](../rules/MATCH-S00543.md)|
+|FIRST-S00028|[First Seen Common Windows Recon Commands From User](../rules/FIRST-S00028.md)|
 |MATCH-S00445|[Known Ransomware File Extensions](../rules/MATCH-S00445.md)|
 |MATCH-S00648|[Kubernetes ListSecrets](../rules/MATCH-S00648.md)|
 |MATCH-S00687|[Linux Security Tool Usage](../rules/MATCH-S00687.md)|
 |MATCH-S00723|[Loadable Kernel Module Modifications](../rules/MATCH-S00723.md)|
 |MATCH-S00729|[MacOS Gatekeeper Bypass](../rules/MATCH-S00729.md)|
+|MATCH-S00466|[MsiExec Web Install](../rules/MATCH-S00466.md)|
 |MATCH-S00402|[Normalized Security Signal](../rules/MATCH-S00402.md)|
+|MATCH-S00920|[Suspicious PowerShell Window Discovery Cmdlet execution](../rules/MATCH-S00920.md)|
 |MATCH-S01000|[Threat Intel - MD5 Match](../rules/MATCH-S01000.md)|
 |MATCH-S01003|[Threat Intel - SHA1 Match](../rules/MATCH-S01003.md)|
 |MATCH-S01004|[Threat Intel - SHA256 Match](../rules/MATCH-S01004.md)|
-|MATCH-S00316|[WannaCry Ransomware](../rules/MATCH-S00316.md)|
 |MATCH-S00281|[Windows - PowerShell Process Discovery](../rules/MATCH-S00281.md)|
 |MATCH-S00178|[Windows Query Registry](../rules/MATCH-S00178.md)|
 

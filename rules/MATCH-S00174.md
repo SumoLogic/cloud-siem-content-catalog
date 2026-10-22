@@ -1,7 +1,13 @@
 # [Rules](README.md): Web Services Executing Common Web Shell Commands
 
 ## Description
-This rule looks for web server executables attempting to use commands commonly associated with adversaries utilizing a successfully uploaded web shell.
+Detection: This rule detects a web server process (IIS, Apache, Nginx, Tomcat, or PHP-CGI, on Windows or Linux) executing command-line reconnaissance or network utilities (whoami, net user, ping, systeminfo, netstat, arp, ipconfig/ifconfig, curl, wget, id, uname, cat /etc/passwd, or netcat) as a child process.
+
+Scenario: These commands are commonly run by attackers who have successfully uploaded and are interacting with a web shell to perform reconnaissance, establish a reverse shell, or pivot further into the environment. Legitimate web server processes have no routine need to execute these commands.
+
+Recommended Actions: Review commandLine for the full command executed, correlate with device_hostname and user_username, and inspect the web application directory for unauthorized script or web shell files.
+
+Tuning Recommendations: If legitimate monitoring agents or health-check scripts invoke these commands from web server processes, exclude the specific commandLine patterns or source hosts via a match list rather than removing the parent/child process conditions.
 
 ## Additional Details
 |Detail|Value|
@@ -24,10 +30,8 @@ This rule looks for web server executables attempting to use commands commonly a
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|commandLine|
 |Normalized Schema|device_hostname|
 |Normalized Schema|device_ip|
-|Normalized Schema|parentBaseImage|
 |Normalized Schema|user_username|
 
 

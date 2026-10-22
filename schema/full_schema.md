@@ -480,7 +480,7 @@ In cases where the log data has a source or destination context, there are situa
 |normalizedResource|string|Complementary to Resource, this field describes the resource being acted upon or otherwise referenced within a record in a common way across records. Intended to be used to provide further normalized context to a record, particularly in tandem with normalizedAction.|
 |normalizedSeverity|int|Severity score on a scale of 0 to 10 with 0 being informational and 10 being critical. This is defined either explicitly per mapping or by a lookup to normalize a vendor specific severity level. Certain normalized threat rules will use normalizedSeverity to pass a dynamic severity into the signal. normalizedSeverity is an enforced output value field, this means that the output value must be an integer between 0 and 10.|
 |normalizedSeverity_description|string|A string representing the severity.|
-|objectClassification|string|The classification of the record, based on the object type. This field was originally set by sumostream, but because this field exists in the normalized index in CIP, we should set it in Carto such that rules can be written against it.|
+|objectClassification|string|The classification of the record, based on the object type. This field exists in the normalized index in CIP and is set in Carto such that rules can be written against it.|
 |objectType|string|The name of the top level schema object type. (e.g. Authentication, Audit, Endpoint, Network, Notification, etc.). Displayed as Record Type in the UI.|
 |packetsIn|long|The count of packets received in a network connection.|
 |packetsOut|long|The count of packets sent in a network connection.|

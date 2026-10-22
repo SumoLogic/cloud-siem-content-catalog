@@ -21,6 +21,7 @@ https://techviral.net/ransomware-encrypted-file-extensions/
 |Prototype|False|
 |Tags|_mitreAttackTactic:TA0040, _mitreAttackTechnique:T1486|
 ## Vendors and Products
+- [Amazon AWS - AWS S3 Server Access Logs](../products/41f70c6e-18a9-462c-a04d-4edc7baead7a.md)
 - [Bitdefender - GravityZone](../products/046b3623-69fe-409f-9e80-fd3ebef0654f.md)
 - [Cloudflare - Logpush](../products/c2503fcc-ef30-4e40-bb32-0bf47151b140.md)
 - [CrowdStrike - FDR](../products/569a3a44-c29f-492e-bcf4-5dc04e2ab0f3.md)

@@ -41,6 +41,7 @@
 |MATCH-S01006|[Threat Intel - Device Hostname](../rules/MATCH-S01006.md)|
 |MATCH-S01003|[Threat Intel - SHA1 Match](../rules/MATCH-S01003.md)|
 |MATCH-S00684|[Wget Passed to Script Execution Command](../rules/MATCH-S00684.md)|
+|MATCH-S00192|[Windows - System Network Configuration Discovery](../rules/MATCH-S00192.md)|
 |MATCH-S00880|[macOS - Entitlement Enumeration via Xattr](../rules/MATCH-S00880.md)|
 |MATCH-S00883|[macOS - Keychain Enumeration](../rules/MATCH-S00883.md)|
 |MATCH-S00885|[macOS - Screen Sharing Session Established](../rules/MATCH-S00885.md)|
@@ -51,6 +52,7 @@
 |MATCH-S00882|[macOS - System Preference Enumeration via Security Binary](../rules/MATCH-S00882.md)|
 |MATCH-S00881|[macOS - csrutil status Usage Detected](../rules/MATCH-S00881.md)|
 |MATCH-S00726|[macOS Kernel Extension Load](../rules/MATCH-S00726.md)|
+|MATCH-S00748|[macOS Login Items Modification](../rules/MATCH-S00748.md)|
 
 
 ## Log Mappers

@@ -845,6 +845,8 @@
 |OUTLIER-S00006|[Spike in Data Transferred Outbound by User](OUTLIER-S00006.md)|
 |OUTLIER-S00008|[Spike in Failed Azure Sign In Attempts Due to Bad Password from IP Address](OUTLIER-S00008.md)|
 |OUTLIER-S00003|[Spike in Failed Share Access by User](OUTLIER-S00003.md)|
+|OUTLIER-S00036|[Spike in HTTP Server Errors from Source IP](OUTLIER-S00036.md)|
+|OUTLIER-S00037|[Spike in HTTP Server Errors to Destination IP](OUTLIER-S00037.md)|
 |OUTLIER-S00001|[Spike in Login Failures from a User](OUTLIER-S00001.md)|
 |OUTLIER-S00009|[Spike in PowerShell Command Line Length From Host](OUTLIER-S00009.md)|
 |OUTLIER-S00002|[Spike in Successful Distinct Share Access](OUTLIER-S00002.md)|
