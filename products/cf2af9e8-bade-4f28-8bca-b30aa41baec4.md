@@ -15,6 +15,7 @@
 |MATCH-S01024|[Threat Intel - Destination IP Address (High Confidence)](../rules/MATCH-S01024.md)|
 |MATCH-S01026|[Threat Intel - Destination IP Address (Low Confidence)](../rules/MATCH-S01026.md)|
 |MATCH-S01028|[Threat Intel - Destination IP Address (Medium Confidence)](../rules/MATCH-S01028.md)|
+|MATCH-S01023|[Threat Intel - Inbound Traffic from Threat Feed IP (High Confidence)](../rules/MATCH-S01023.md)|
 |MATCH-S01005|[Threat Intel - Source Hostname](../rules/MATCH-S01005.md)|
 |MATCH-S00559|[Traffic to Honeypot IP](../rules/MATCH-S00559.md)|
 

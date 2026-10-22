@@ -905,8 +905,8 @@
         ],
         "asset_field": "user_username",
         "category": "Credential Access",
-        "commit_message": "TLAB-481-Rule-Correction-for-Removed-Column-Filters-from-MatchList",
-        "commit_origin_hash": "d47f5e88ef4c669bde9d1b55671c838a4d54358c",
+        "commit_message": "TLAB-2833 Reference domain_controller_hostnames match list in Security-4776 rule exclusions (#6048)",
+        "commit_origin_hash": "cf2d9f69bac2d78bc53fcac24fb6bcf9c1e04c04",
         "content_type": "RULE",
         "description": "Detects a series of failed logins followed by a successful login. This could indicate that an attacker was successful in guessing a user's password and has compromised their account. This rule does not leverage authentication logs with a normalizedAction of domainLogon and does not have a Domain version, meaning that Windows workstation logging is required to achieve full visibility.",
         "enabled_by_default": true,
@@ -926,7 +926,7 @@
         ],
         "expressions_and_limits": [
             {
-                "expression": "objectType = 'Authentication'\nAND normalizedAction = 'logon'\nAND success = false\nAND NOT (\nmetadata_deviceEventId = 'Security-4776' AND (array_contains(listMatches, 'domain_controllers'))\n)\nAND NOT\n    (metadata_vendor IN ('Microsoft','Intersect Alliance')\n    AND metadata_product IN ('Windows','Snare Enterprise Agent for Windows')\n    AND user_username like '%$%')\nAND NOT\n    (metadata_vendor = 'Microsoft'\n    AND metadata_product = 'Azure'\n    AND fields['resultType'] = '700082')\nAND NOT array_contains(listMatches, 'vuln_scanners')",
+                "expression": "objectType = 'Authentication'\nAND normalizedAction = 'logon'\nAND success = false\nAND NOT (\nmetadata_deviceEventId = 'Security-4776' AND (array_contains(listMatches, 'domain_controller_hostnames'))\n)\nAND NOT\n    (metadata_vendor IN ('Microsoft','Intersect Alliance')\n    AND metadata_product IN ('Windows','Snare Enterprise Agent for Windows')\n    AND user_username like '%$%')\nAND NOT\n    (metadata_vendor = 'Microsoft'\n    AND metadata_product = 'Azure'\n    AND fields['resultType'] = '700082')\nAND NOT array_contains(listMatches, 'vuln_scanners')",
                 "limit": 25
             },
             {
@@ -972,6 +972,7 @@
             "1ed80351-d779-4f1f-9ddb-b3881f19d487",
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
+            "37a906de-5e9c-475e-881a-65a1d984f377",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
             "51278354-d6b5-4c8e-a8fd-8197df334e67",
             "54B36B3F-A63F-4BA4-9DE4-02DBF69A429F",
@@ -4088,7 +4089,8 @@
             "c2503fcc-ef30-4e40-bb32-0bf47151b140",
             "c3c1a4fc-10cc-4155-8a30-a3bb14fc9f31",
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
-            "da9e05a5-3fd3-46a7-a107-ae03c01e3f5a"
+            "da9e05a5-3fd3-46a7-a107-ae03c01e3f5a",
+            "dcc85cfc-a698-4d09-87de-f2c723f3ad07"
         ],
         "record_type_direct_ref": [],
         "retention_window_size": 7776000000,
@@ -4292,10 +4294,10 @@
             "0e20c932-d992-4bd4-b276-c15119ca5c0b",
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
-            "55ec1d4a-6985-4f04-8de5-f9812871fda2",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "5c2cc0de-ca31-4ef0-bcfa-133fc8b387ad",
             "60829f4a-7acb-47d1-ad23-8424fcf83dcb",
+            "72a5ddec-abb9-41ff-a2da-6a58beff980c",
             "840c72e0-4e47-41e7-9b93-31f55d12f07d",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "b238758d-ade8-41d2-b32d-c99159e9fd74",
@@ -8454,9 +8456,11 @@
         "pattern_type": "match",
         "product_direct_ref": [],
         "product_guids": [
+            "1768a42a-37e6-4a2b-aa42-314583f63e1b",
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "37C866BF-72E1-470A-9072-EDB908F56951",
             "5ba50e74-3c05-4ea8-aeaf-5efde588c60f",
+            "c2503fcc-ef30-4e40-bb32-0bf47151b140",
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
             "e2393771-bda2-414a-8661-0a57069287ad",
             "e362ae18-9af1-496d-9ace-efa05a8381c6"
@@ -8519,7 +8523,8 @@
             "724c9add-8cd9-4013-b9e1-a907b96da426",
             "9e0641a7-22ce-4ac8-8113-ee48b368ac3d",
             "B3582ED2-1A0C-452D-9802-97433D143486",
-            "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad"
+            "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
+            "e90edc67-68d4-4d67-82f6-4524f94b59bb"
         ],
         "record_type_direct_ref": [],
         "rule_source": "sumo",
@@ -9790,11 +9795,13 @@
             "072b85a2-1765-45c2-911d-b0509880326e",
             "0fb003bc-8383-442f-8f3d-afcfbaefe617",
             "14aa46d3-0710-44b6-9ce3-0a6b8f36b076",
+            "1768a42a-37e6-4a2b-aa42-314583f63e1b",
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "34dd9c1e-ceec-4cba-8f5d-4776f680d785",
             "37C866BF-72E1-470A-9072-EDB908F56951",
             "43808f4c-15e9-480c-ab1a-38bdef3b6798",
             "54B36B3F-A63F-4BA4-9DE4-02DBF69A429F",
+            "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "5ba50e74-3c05-4ea8-aeaf-5efde588c60f",
             "5bb9e0b3-8d57-4b10-8952-0b6ffe91b599",
             "5c2cc0de-ca31-4ef0-bcfa-133fc8b387ad",
@@ -11084,7 +11091,8 @@
             "af61d8a8-3eba-42fb-9f17-87443924f3f4",
             "be4f7473-fe69-4311-8859-3561900060bf",
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
-            "da9e05a5-3fd3-46a7-a107-ae03c01e3f5a"
+            "da9e05a5-3fd3-46a7-a107-ae03c01e3f5a",
+            "e90edc67-68d4-4d67-82f6-4524f94b59bb"
         ],
         "record_type_direct_ref": [],
         "rule_source": "sumo",
@@ -11943,6 +11951,7 @@
         "pattern_type": "match",
         "product_direct_ref": [],
         "product_guids": [
+            "1768a42a-37e6-4a2b-aa42-314583f63e1b",
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "343b9323-d279-40d9-946f-809242e5cf98",
@@ -14105,6 +14114,7 @@
         "product_guids": [
             "072b85a2-1765-45c2-911d-b0509880326e",
             "0fb003bc-8383-442f-8f3d-afcfbaefe617",
+            "2a236ab1-77d2-4867-a571-a1cfd64528e6",
             "37C866BF-72E1-470A-9072-EDB908F56951",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
             "6299d728-14f7-455e-85c5-ea8ec65a654a",
@@ -14625,7 +14635,6 @@
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "b238758d-ade8-41d2-b32d-c99159e9fd74",
             "be4f7473-fe69-4311-8859-3561900060bf",
-            "bf865cb5-0b26-4010-8b3c-5ae2d1f716d8",
             "c2503fcc-ef30-4e40-bb32-0bf47151b140",
             "c3c1a4fc-10cc-4155-8a30-a3bb14fc9f31",
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
@@ -14837,7 +14846,6 @@
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "2ca0adcf-7616-4474-8557-a3773515aa6d",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
-            "37C866BF-72E1-470A-9072-EDB908F56951",
             "43808f4c-15e9-480c-ab1a-38bdef3b6798",
             "44f07c08-c2ad-4a95-a058-1d0737ff90db",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
@@ -14846,7 +14854,6 @@
             "5bb9e0b3-8d57-4b10-8952-0b6ffe91b599",
             "6299d728-14f7-455e-85c5-ea8ec65a654a",
             "724c9add-8cd9-4013-b9e1-a907b96da426",
-            "9a28f2af-5526-414d-973b-c3fc7984b8a1",
             "9e0641a7-22ce-4ac8-8113-ee48b368ac3d",
             "A17B3F3C-04F1-40C8-9497-3C499EB18A74",
             "B3582ED2-1A0C-452D-9802-97433D143486",
@@ -14861,7 +14868,8 @@
             "e2393771-bda2-414a-8661-0a57069287ad",
             "e362ae18-9af1-496d-9ace-efa05a8381c6",
             "e90edc67-68d4-4d67-82f6-4524f94b59bb",
-            "ef42eb74-7444-4fee-b231-b4eb1e7c9660"
+            "ef42eb74-7444-4fee-b231-b4eb1e7c9660",
+            "fca8785d-4823-4442-86b2-8acbaa176da4"
         ],
         "record_type_direct_ref": [],
         "rule_source": "sumo",
@@ -21180,7 +21188,8 @@
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "840c72e0-4e47-41e7-9b93-31f55d12f07d",
-            "a1225af5-e778-4068-a9a2-47da93d1ff24"
+            "a1225af5-e778-4068-a9a2-47da93d1ff24",
+            "eabd9eed-b071-4773-ad07-706ea5b51b9c"
         ],
         "record_type_direct_ref": [],
         "rule_source": "sumo",
@@ -21708,7 +21717,8 @@
         "pattern_type": "templated_match",
         "product_direct_ref": [],
         "product_guids": [
-            "1ff7546c-cb36-4a24-87f7-89d2cecc5761"
+            "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
+            "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3"
         ],
         "record_type_direct_ref": [],
         "rule_source": "sumo",
@@ -22043,18 +22053,16 @@
     },
     "MATCH-S00164": {
         "all_fields": [
-            "baseImage",
             "device_hostname",
             "device_ip",
-            "parentBaseImage",
             "user_username"
         ],
         "asset_field": "device_hostname",
         "category": "Persistence",
-        "commit_message": "remove required_mapped_records",
-        "commit_origin_hash": "d40c255e05b8e4553720522d3692ae1c785e197a",
+        "commit_message": "TLAB-2840 Add PHP2Shell detections (#6049)",
+        "commit_origin_hash": "1c6cd333fa3b92f523ee75454a014b588f1df6c3",
         "content_type": "RULE",
-        "description_expression": "Web servers that spawn shell processes could be the result of a successfully placed web shell or an other attack",
+        "description_expression": "Detection: This rule detects a web server process (IIS, Apache, Nginx, Tomcat, or PHP-CGI, on Windows or Linux) spawning a shell or scripting interpreter (cmd, PowerShell, bash, sh, python, perl, etc.) as a child process.\n\nScenario: Web servers have no legitimate operational need to launch command shells. When this occurs, it typically indicates an attacker has exploited a vulnerability in the web application to achieve remote code execution, often to establish persistence via a web shell or pivot further into the environment.\n\nRecommended Actions: Review commandLine for the exact command executed, check device_hostname and user_username to identify the affected host and account context, and inspect the web application and file system for newly dropped web shell files or unauthorized script modifications.\n\nTuning Recommendations: If legitimate automation or administrative scripts regularly invoke shells from these web server processes, exclude the specific commandLine patterns or source hosts via a match list rather than removing the parent/child process conditions.",
         "enabled_by_default": true,
         "entity_selectors": [
             {
@@ -22070,14 +22078,14 @@
                 "expression": "user_username"
             }
         ],
-        "expression": "(\n  parentBaseImage like '%w3wp.exe' \n  OR parentBaseImage like '%httpd.exe' \n  OR parentBaseImage like '%nginx.exe' \n  OR parentBaseImage like '%php-cgi.exe'\n  OR parentBaseImage like '%tomcat.exe' \n) \nAND (\n  baseImage like '%cmd.exe' \n  OR baseImage like '%sh.exe' \n  OR baseImage like '%bash.exe' \n  OR baseImage like '%powershell.exe' \n  OR baseImage like '%bitsadmin.exe'\nOR baseImage like '%pwsh.exe'\nOR baseImage like '%powershell_ise.exe')",
+        "expression": "parentBaseImage matches /(?i)((^|[\\\\\\/])(w3wp|httpd|nginx|php-cgi|tomcat)\\.exe|\\/(httpd|nginx|apache2?|php-cgi|php-fpm[0-9.]*|tomcat))$/\nAND baseImage matches /(?i)((^|[\\\\\\/])(cmd|sh|bash|powershell|powershell_ise|pwsh|bitsadmin)\\.exe|\\/(bash|sh|dash|zsh|ksh|csh|python[0-9.]*|perl[0-9.]*))$/",
         "file_path": "rules_v3/Suspicious_Shells_Spawned_by_Web_Servers.json",
         "id": 164,
         "id_compiled": "MATCH-S00164",
         "is_prototype": false,
         "name": "Suspicious Shells Spawned by Web Servers",
         "name_expression": "Suspicious Shells Spawned by Web Servers",
-        "normalized_description": "Web servers that spawn shell processes could be the result of a successfully placed web shell or an other attack",
+        "normalized_description": "Detection: This rule detects a web server process (IIS, Apache, Nginx, Tomcat, or PHP-CGI, on Windows or Linux) spawning a shell or scripting interpreter (cmd, PowerShell, bash, sh, python, perl, etc.) as a child process.\n\nScenario: Web servers have no legitimate operational need to launch command shells. When this occurs, it typically indicates an attacker has exploited a vulnerability in the web application to achieve remote code execution, often to establish persistence via a web shell or pivot further into the environment.\n\nRecommended Actions: Review commandLine for the exact command executed, check device_hostname and user_username to identify the affected host and account context, and inspect the web application and file system for newly dropped web shell files or unauthorized script modifications.\n\nTuning Recommendations: If legitimate automation or administrative scripts regularly invoke shells from these web server processes, exclude the specific commandLine patterns or source hosts via a match list rather than removing the parent/child process conditions.",
         "normalized_score_description": "Static: 4",
         "normalized_score_possibilities": [
             4
@@ -22568,18 +22576,16 @@
     },
     "MATCH-S00174": {
         "all_fields": [
-            "commandLine",
             "device_hostname",
             "device_ip",
-            "parentBaseImage",
             "user_username"
         ],
         "asset_field": "device_hostname",
         "category": "Persistence",
-        "commit_message": "TLAB-1413 Update summary MATCH-S00174",
-        "commit_origin_hash": "80fdb462b76ac67c52e1e3f7144f629c1671701f",
+        "commit_message": "TLAB-2840 Add PHP2Shell detections (#6049)",
+        "commit_origin_hash": "1c6cd333fa3b92f523ee75454a014b588f1df6c3",
         "content_type": "RULE",
-        "description_expression": "This rule looks for web server executables attempting to use commands commonly associated with adversaries utilizing a successfully uploaded web shell.",
+        "description_expression": "Detection: This rule detects a web server process (IIS, Apache, Nginx, Tomcat, or PHP-CGI, on Windows or Linux) executing command-line reconnaissance or network utilities (whoami, net user, ping, systeminfo, netstat, arp, ipconfig/ifconfig, curl, wget, id, uname, cat /etc/passwd, or netcat) as a child process.\n\nScenario: These commands are commonly run by attackers who have successfully uploaded and are interacting with a web shell to perform reconnaissance, establish a reverse shell, or pivot further into the environment. Legitimate web server processes have no routine need to execute these commands.\n\nRecommended Actions: Review commandLine for the full command executed, correlate with device_hostname and user_username, and inspect the web application directory for unauthorized script or web shell files.\n\nTuning Recommendations: If legitimate monitoring agents or health-check scripts invoke these commands from web server processes, exclude the specific commandLine patterns or source hosts via a match list rather than removing the parent/child process conditions.",
         "enabled_by_default": true,
         "entity_selectors": [
             {
@@ -22595,14 +22601,14 @@
                 "expression": "user_username"
             }
         ],
-        "expression": "(\n  lower(parentBaseImage) LIKE '%w3wp.exe%'\n  OR lower(parentBaseImage) LIKE '%httpd.exe%'\n  OR lower(parentBaseImage) LIKE '%nginx.exe%'\n  OR lower(parentBaseImage) LIKE '%php-cgi.exe%'\n  OR lower(parentBaseImage) LIKE '%tomcat.exe%'\n  OR lower(parentBaseImage) LIKE '%apache%'\n)\nAND (\n  lower(commandLine) LIKE '%whoami%'\n  OR lower(commandLine) LIKE '%net user %'\n  OR lower(commandLine) LIKE '%ping %'\n  OR lower(commandLine) LIKE '%systeminfo %'\n  OR lower(commandLine) LIKE '%netstat %'\n  OR lower(commandLine) LIKE '%arp -a%'\n  OR lower(commandLine) LIKE '%ipconfig %'\n  OR lower(commandLine) LIKE '%ifconfig %'\n  OR lower(commandLine) LIKE '%curl %'\n  OR lower(commandLine) LIKE '%wget %'\n)",
+        "expression": "parentBaseImage matches /(?i)((^|[\\\\\\/])(w3wp|httpd|nginx|php-cgi|tomcat[0-9]*)\\.exe|\\/(httpd|nginx|apache2?|php-cgi|php-fpm[0-9.]*|tomcat))$/\nAND commandLine matches /(?i)(^|[\\s;&|\"'\\/\\\\])(whoami|net1?\\s+user|ping\\s|systeminfo|netstat|arp\\s+-a|ipconfig|ifconfig|curl\\s|wget\\s|id(\\s|$)|uname(\\s|$)|cat\\s+\\/etc\\/passwd|nc\\s+-|ncat|netcat)/",
         "file_path": "rules_v3/Web_Services_Executing_Common_Web_Shell_Commands.json",
         "id": 174,
         "id_compiled": "MATCH-S00174",
         "is_prototype": false,
         "name": "Web Services Executing Common Web Shell Commands",
         "name_expression": "Web Services Executing Common Web Shell Commands",
-        "normalized_description": "This rule looks for web server executables attempting to use commands commonly associated with adversaries utilizing a successfully uploaded web shell.",
+        "normalized_description": "Detection: This rule detects a web server process (IIS, Apache, Nginx, Tomcat, or PHP-CGI, on Windows or Linux) executing command-line reconnaissance or network utilities (whoami, net user, ping, systeminfo, netstat, arp, ipconfig/ifconfig, curl, wget, id, uname, cat /etc/passwd, or netcat) as a child process.\n\nScenario: These commands are commonly run by attackers who have successfully uploaded and are interacting with a web shell to perform reconnaissance, establish a reverse shell, or pivot further into the environment. Legitimate web server processes have no routine need to execute these commands.\n\nRecommended Actions: Review commandLine for the full command executed, correlate with device_hostname and user_username, and inspect the web application directory for unauthorized script or web shell files.\n\nTuning Recommendations: If legitimate monitoring agents or health-check scripts invoke these commands from web server processes, exclude the specific commandLine patterns or source hosts via a match list rather than removing the parent/child process conditions.",
         "normalized_score_description": "Static: 4",
         "normalized_score_possibilities": [
             4
@@ -23395,6 +23401,7 @@
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
+            "5c2cc0de-ca31-4ef0-bcfa-133fc8b387ad",
             "840c72e0-4e47-41e7-9b93-31f55d12f07d",
             "a1225af5-e778-4068-a9a2-47da93d1ff24"
         ],
@@ -28158,8 +28165,7 @@
         "product_direct_ref": [],
         "product_guids": [
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
-            "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
-            "72a5ddec-abb9-41ff-a2da-6a58beff980c"
+            "3382523e-2072-41bd-b50b-6b148957d0b0"
         ],
         "record_type_direct_ref": [],
         "rule_source": "sumo",
@@ -28478,7 +28484,8 @@
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
-            "840c72e0-4e47-41e7-9b93-31f55d12f07d"
+            "840c72e0-4e47-41e7-9b93-31f55d12f07d",
+            "a1225af5-e778-4068-a9a2-47da93d1ff24"
         ],
         "record_type_direct_ref": [],
         "rule_source": "sumo",
@@ -30607,6 +30614,7 @@
         "product_guids": [
             "021d1ded-1c82-4663-bf5d-d6ed5170efa3",
             "2b82e665-bdde-474a-ae29-4f0f76598556",
+            "6299d728-14f7-455e-85c5-ea8ec65a654a",
             "9e0641a7-22ce-4ac8-8113-ee48b368ac3d",
             "A17B3F3C-04F1-40C8-9497-3C499EB18A74",
             "B3582ED2-1A0C-452D-9802-97433D143486",
@@ -30984,7 +30992,6 @@
             "5c2cc0de-ca31-4ef0-bcfa-133fc8b387ad",
             "60829f4a-7acb-47d1-ad23-8424fcf83dcb",
             "72a5ddec-abb9-41ff-a2da-6a58beff980c",
-            "72ad5cb2-9b51-4954-970c-f826d593ccc7",
             "78a80406-d37b-4a17-a25e-dbf53289b647",
             "79da6240-7617-49c8-b130-96278579766e",
             "7eaa4c44-5b7f-4d9e-8c1c-c4105c2b7506",
@@ -32552,6 +32559,7 @@
             "046b3623-69fe-409f-9e80-fd3ebef0654f",
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
+            "41f70c6e-18a9-462c-a04d-4edc7baead7a",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "72a5ddec-abb9-41ff-a2da-6a58beff980c",
             "79da6240-7617-49c8-b130-96278579766e",
@@ -33550,6 +33558,7 @@
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
+            "72a5ddec-abb9-41ff-a2da-6a58beff980c",
             "7f8a9b0c-1d2e-3f4a-5b6c-7d8e9f0a1b2c",
             "840c72e0-4e47-41e7-9b93-31f55d12f07d",
             "a1225af5-e778-4068-a9a2-47da93d1ff24"
@@ -37070,7 +37079,6 @@
             "5be5af82-c248-4c4c-a485-0571025f242c",
             "60829f4a-7acb-47d1-ad23-8424fcf83dcb",
             "7eaa4c44-5b7f-4d9e-8c1c-c4105c2b7506",
-            "bb75c481-648d-4953-80cf-1c8cbde8fbb8",
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
             "c91067a3-e972-4a73-ac14-75df12d49cc8",
             "e5a708c9-82be-4df9-8ea0-07cac95abf2a",
@@ -38163,9 +38171,11 @@
         "product_direct_ref": [],
         "product_guids": [
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
+            "3382523e-2072-41bd-b50b-6b148957d0b0",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "840c72e0-4e47-41e7-9b93-31f55d12f07d",
-            "a1225af5-e778-4068-a9a2-47da93d1ff24"
+            "a1225af5-e778-4068-a9a2-47da93d1ff24",
+            "eabd9eed-b071-4773-ad07-706ea5b51b9c"
         ],
         "record_type_direct_ref": [],
         "rule_source": "sumo",
@@ -39291,6 +39301,7 @@
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
+            "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "f9cea291-9030-4e41-9836-6dd9274d6df4"
         ],
         "record_type_direct_ref": [],
@@ -39886,6 +39897,7 @@
             "183c5127-6594-4d45-9bab-ce5f2df9e38b",
             "2a678bcd-898e-43cd-ab3f-91feb0602a18",
             "2b82e665-bdde-474a-ae29-4f0f76598556",
+            "332856e9-3111-446f-8df7-e64694e4b9a1",
             "3fe1afe0-c1c2-45d6-835e-0bdb1e4b703f",
             "41f70c6e-18a9-462c-a04d-4edc7baead7a",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
@@ -39973,6 +39985,7 @@
         "pattern_type": "templated_match",
         "product_direct_ref": [],
         "product_guids": [
+            "146522A1-DC9A-40A5-A909-2EB3B665B1D1",
             "343b9323-d279-40d9-946f-809242e5cf98",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
             "6299d728-14f7-455e-85c5-ea8ec65a654a",
@@ -40279,7 +40292,6 @@
             "3a82061c-2ca3-4289-9c9b-78756001aa38",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
-            "6299d728-14f7-455e-85c5-ea8ec65a654a",
             "724c9add-8cd9-4013-b9e1-a907b96da426",
             "B3582ED2-1A0C-452D-9802-97433D143486",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
@@ -42122,6 +42134,7 @@
         "product_direct_ref": [],
         "product_guids": [
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
+            "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "840c72e0-4e47-41e7-9b93-31f55d12f07d"
         ],
         "record_type_direct_ref": [],
@@ -49228,6 +49241,7 @@
             "0e20c932-d992-4bd4-b276-c15119ca5c0b",
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
+            "54f01856-e973-4d7b-a3eb-95cc08ff44f5",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "5c2cc0de-ca31-4ef0-bcfa-133fc8b387ad",
             "840c72e0-4e47-41e7-9b93-31f55d12f07d",
@@ -52272,6 +52286,7 @@
             "5e298fe7-088a-467a-b57f-d8558368621d",
             "72a5ddec-abb9-41ff-a2da-6a58beff980c",
             "840c72e0-4e47-41e7-9b93-31f55d12f07d",
+            "8967aecc-ffb3-4cbe-a02e-258d1edca8d0",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "b238758d-ade8-41d2-b32d-c99159e9fd74",
             "d6cb76d3-939e-4e02-b399-b15e0278c877",
@@ -52418,10 +52433,10 @@
         "pattern_type": "templated_match",
         "product_direct_ref": [],
         "product_guids": [
-            "146522A1-DC9A-40A5-A909-2EB3B665B1D1",
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
+            "840c72e0-4e47-41e7-9b93-31f55d12f07d",
             "B3582ED2-1A0C-452D-9802-97433D143486",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "bb75c481-648d-4953-80cf-1c8cbde8fbb8",
@@ -54002,6 +54017,7 @@
         "pattern_type": "templated_match",
         "product_direct_ref": [],
         "product_guids": [
+            "5c2cc0de-ca31-4ef0-bcfa-133fc8b387ad",
             "93e2d3d-fab1-4d61-845f-49bc1ae5bed9"
         ],
         "record_type_direct_ref": [],
@@ -56406,7 +56422,6 @@
             "9a28f2af-5526-414d-973b-c3fc7984b8a1",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "ae07663e-2c2c-4932-be5d-c9f985e95276",
-            "af61d8a8-3eba-42fb-9f17-87443924f3f4",
             "c2503fcc-ef30-4e40-bb32-0bf47151b140",
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
             "da9e05a5-3fd3-46a7-a107-ae03c01e3f5a",
@@ -65191,6 +65206,8 @@
         "product_guids": [
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
+            "72a5ddec-abb9-41ff-a2da-6a58beff980c",
+            "840c72e0-4e47-41e7-9b93-31f55d12f07d",
             "a1225af5-e778-4068-a9a2-47da93d1ff24"
         ],
         "record_type_direct_ref": [],
@@ -67435,7 +67452,8 @@
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "c2503fcc-ef30-4e40-bb32-0bf47151b140",
             "cc523ad6-7193-4de5-a254-d0243fca63f3",
-            "de3d4b6b-36a3-4436-8bfc-0561ac95037e"
+            "de3d4b6b-36a3-4436-8bfc-0561ac95037e",
+            "f9cea291-9030-4e41-9836-6dd9274d6df4"
         ],
         "record_type_direct_ref": [],
         "rule_description": null,
@@ -67876,7 +67894,9 @@
             "d3ed003d-5ddd-4c7a-bea5-63eae6311833",
             "da9e05a5-3fd3-46a7-a107-ae03c01e3f5a",
             "de3d4b6b-36a3-4436-8bfc-0561ac95037e",
-            "e5a708c9-82be-4df9-8ea0-07cac95abf2a"
+            "e5a708c9-82be-4df9-8ea0-07cac95abf2a",
+            "ef42eb74-7444-4fee-b231-b4eb1e7c9660",
+            "f9cea291-9030-4e41-9836-6dd9274d6df4"
         ],
         "record_type_direct_ref": [],
         "rule_description": null,
@@ -68147,9 +68167,9 @@
         "product_direct_ref": [],
         "product_guids": [
             "072b85a2-1765-45c2-911d-b0509880326e",
-            "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "5c2cc0de-ca31-4ef0-bcfa-133fc8b387ad",
+            "6299d728-14f7-455e-85c5-ea8ec65a654a",
             "840c72e0-4e47-41e7-9b93-31f55d12f07d",
             "B3582ED2-1A0C-452D-9802-97433D143486",
             "c3c1a4fc-10cc-4155-8a30-a3bb14fc9f31",
@@ -68243,12 +68263,15 @@
             "0fb003bc-8383-442f-8f3d-afcfbaefe617",
             "168afd8d-2893-4c74-95b1-a975d576ea56",
             "37C866BF-72E1-470A-9072-EDB908F56951",
+            "6299d728-14f7-455e-85c5-ea8ec65a654a",
+            "798f8da8-c85b-4e9a-b2f1-eae0b07532fb",
             "991a55cf-8c5a-49ba-ae72-6f64a002bacf",
             "af61d8a8-3eba-42fb-9f17-87443924f3f4",
             "bf865cb5-0b26-4010-8b3c-5ae2d1f716d8",
             "c3c1a4fc-10cc-4155-8a30-a3bb14fc9f31",
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
-            "e90edc67-68d4-4d67-82f6-4524f94b59bb"
+            "e90edc67-68d4-4d67-82f6-4524f94b59bb",
+            "fca8785d-4823-4442-86b2-8acbaa176da4"
         ],
         "record_type_direct_ref": [],
         "rule_description": null,
@@ -68341,6 +68364,7 @@
             "ae07663e-2c2c-4932-be5d-c9f985e95276",
             "c2503fcc-ef30-4e40-bb32-0bf47151b140",
             "da9e05a5-3fd3-46a7-a107-ae03c01e3f5a",
+            "ede052db-d472-408f-949c-be642237ef3f",
             "fca8785d-4823-4442-86b2-8acbaa176da4"
         ],
         "record_type_direct_ref": [],
@@ -68814,7 +68838,6 @@
         "product_guids": [
             "072b85a2-1765-45c2-911d-b0509880326e",
             "0fb003bc-8383-442f-8f3d-afcfbaefe617",
-            "2a236ab1-77d2-4867-a571-a1cfd64528e6",
             "2a678bcd-898e-43cd-ab3f-91feb0602a18",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "343b9323-d279-40d9-946f-809242e5cf98",
@@ -69048,16 +69071,17 @@
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "23342262-740c-41b7-9b77-08267ae01612",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
+            "37a906de-5e9c-475e-881a-65a1d984f377",
             "3fe1afe0-c1c2-45d6-835e-0bdb1e4b703f",
             "46c71698-9c21-4273-9561-94ff5af52edd",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
             "51278354-d6b5-4c8e-a8fd-8197df334e67",
-            "54B36B3F-A63F-4BA4-9DE4-02DBF69A429F",
             "79da6240-7617-49c8-b130-96278579766e",
             "8276b520-fdeb-4f79-9f5d-67865818562b",
             "9f6d624f-6d8f-43c7-a4b0-51179061631c",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "a301559a-8110-4dd0-a41d-35b9baa1c740",
+            "abe4975e-de65-4f82-8b35-e6ce392e165c",
             "acb7e80e-2b66-496c-ba2e-1e7c3933a98e",
             "b0a0ae6d-dd5b-450c-9d68-36d6c61c67b0",
             "b0fe0dde-4e19-4712-957b-1ea7418c132e",
@@ -69343,6 +69367,7 @@
             "be4f7473-fe69-4311-8859-3561900060bf",
             "c3c1a4fc-10cc-4155-8a30-a3bb14fc9f31",
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
+            "cf2af9e8-bade-4f28-8bca-b30aa41baec4",
             "d3606245-76d3-4173-a2fe-832c0e71b0f9",
             "d3ed003d-5ddd-4c7a-bea5-63eae6311833",
             "d4a9e7ce-082e-4f41-891f-4c43e604c850",
@@ -69456,9 +69481,9 @@
             "14aa46d3-0710-44b6-9ce3-0a6b8f36b076",
             "168afd8d-2893-4c74-95b1-a975d576ea56",
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
+            "20b56f37-5fc0-485a-b5da-4010f9025b93",
             "2a678bcd-898e-43cd-ab3f-91feb0602a18",
             "2b82e665-bdde-474a-ae29-4f0f76598556",
-            "2ca0adcf-7616-4474-8557-a3773515aa6d",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "343b9323-d279-40d9-946f-809242e5cf98",
             "37C866BF-72E1-470A-9072-EDB908F56951",
@@ -71429,7 +71454,9 @@
         "normalized_summary": "Endpoint detection: {{threat_signalName}} on {{device_hostname}}",
         "pattern_type": "templated_match",
         "product_direct_ref": [],
-        "product_guids": [],
+        "product_guids": [
+            "e5a708c9-82be-4df9-8ea0-07cac95abf2a"
+        ],
         "record_type_direct_ref": [],
         "rule_source": "sumo",
         "score_expression": null,
@@ -71603,7 +71630,9 @@
         "normalized_summary": "Cloud detection: {{threat_signalName}} on {{resource}}",
         "pattern_type": "templated_match",
         "product_direct_ref": [],
-        "product_guids": [],
+        "product_guids": [
+            "5bb8e745-453b-47c3-bda4-f690249a6333"
+        ],
         "record_type_direct_ref": [],
         "rule_source": "sumo",
         "score_expression": null,
@@ -71885,8 +71914,8 @@
             "user_username"
         ],
         "category": "Exfiltration",
-        "commit_message": "TLAB-2646 FY27Q3 AI Campaign test use cases and silentmode deploy (#6037)",
-        "commit_origin_hash": "079ef92bd3975d4a75c59a48fe71ac93654d2a88",
+        "commit_message": "Normalize empty rule mappings to [] (#6044)",
+        "commit_origin_hash": "c4e87c752086838070825c3633ca98f67b015fa4",
         "content_type": "RULE",
         "description_expression": "Detection: This rule triggers when a single record contains both a DLP finding (threat_ruleType=data_protection, threat_category matching DLP, metadata_deviceEventId containing DLP, or dlp_rule_count > 0) AND a destination matching a known Generative AI domain or CASB category.\n\nScenario: An employee sends sensitive data (PII, credentials, source code) to a GenAI tool such as ChatGPT, Claude, Gemini, or Copilot. The DLP engine confirmed sensitive content and the destination URL confirms the GenAI service.\n\nRecommended Actions: Identify the user via user_username and host via srcDevice_ip. Review DLP finding details in threat_name and the fields bag. Check the destination URL. Determine if intentional exfiltration or accidental paste. Escalate if PHI, credentials, or source code confirmed.\n\nTuning Recommendations: Add sanctioned AI tools to approved_ai_tools match list to exclude enterprise Copilot/ChatGPT with built-in DLP. http_category = generative ai is the most durable condition \u2014 vendor-maintained CASB category.",
         "enabled_by_default": true,
@@ -71925,13 +71954,15 @@
         "normalized_summary": "DLP confirmed sensitive data ({{threat_name}}) sent to {{http_url_fqdn}} by {{user_username}} from {{srcDevice_ip}}",
         "pattern_type": "templated_match",
         "product_direct_ref": [],
-        "product_guids": [],
+        "product_guids": [
+            "B3582ED2-1A0C-452D-9802-97433D143486"
+        ],
         "record_type_direct_ref": [],
         "rule_source": "sumo",
         "score_mapping": {
             "default": 4,
             "field": null,
-            "mapping": null,
+            "mapping": [],
             "type": "constant"
         },
         "silent_mode": true,
@@ -71953,8 +71984,8 @@
             "user_username"
         ],
         "category": "Execution",
-        "commit_message": "TLAB-2646 FY27Q3 AI Campaign test use cases and silentmode deploy (#6037)",
-        "commit_origin_hash": "079ef92bd3975d4a75c59a48fe71ac93654d2a88",
+        "commit_message": "Normalize empty rule mappings to [] (#6044)",
+        "commit_origin_hash": "c4e87c752086838070825c3633ca98f67b015fa4",
         "content_type": "RULE",
         "description_expression": "Detection: This rule triggers when a process matching a known local AI inference runtime is observed on an endpoint. Matched runtimes include Ollama, llama.cpp (all llama- prefixed binaries), Llamafile, LM Studio, GPT4All, vLLM, KoboldCpp, LocalAI, Whisper.cpp, ComfyUI, and Python-based text-generation-webui or Stable Diffusion WebUI.\n\nScenario: Local AI runtimes process data entirely on the endpoint, bypassing proxy, CASB, and DLP visibility. This rule provides inventory \u2014 answering which AI runtimes are running on corporate endpoints. It does not determine whether the runtime is sanctioned or malicious.\n\nRecommended Actions: Identify the host and user. Check which runtime via baseImage. Check commandLine for the model being loaded. Determine if the host is an approved ML workstation. Correlate with UC6 to check if the runtime is serving external connections.\n\nTuning Recommendations: Add approved ML workstations to sanctioned_ai_hosts match list. Add approved users to ai_approved_users match list. Suppress CI/CD service accounts.",
         "enabled_by_default": true,
@@ -71999,7 +72030,7 @@
         "score_mapping": {
             "default": 2,
             "field": null,
-            "mapping": null,
+            "mapping": [],
             "type": "constant"
         },
         "silent_mode": true,
@@ -72021,8 +72052,8 @@
             "user_username"
         ],
         "category": "Initial Access",
-        "commit_message": "TLAB-2646 FY27Q3 AI Campaign test use cases and silentmode deploy (#6037)",
-        "commit_origin_hash": "079ef92bd3975d4a75c59a48fe71ac93654d2a88",
+        "commit_message": "Normalize empty rule mappings to [] (#6044)",
+        "commit_origin_hash": "c4e87c752086838070825c3633ca98f67b015fa4",
         "content_type": "RULE",
         "description_expression": "Detection: This rule triggers when a network request matches a known AI model repository domain with a model file extension in the URL path (.pkl, .pt, .pth, .bin, .gguf, .safetensors, .ckpt, .joblib, .onnx, .h5), or matches CDN/registry domains exclusively used for model file delivery (HuggingFace CDN, Ollama registry, Civitai download API).\n\nScenario: AI model files downloaded from public repositories represent a supply chain risk. Malicious actors have published weaponized models on HuggingFace (JFrog research: ~100 malicious models using pickle __reduce__) and typosquatted models (Mithril Security PoisonGPT). This rule provides visibility into which endpoints are pulling models from public sources.\n\nRecommended Actions: Identify who is downloading AI models via user_username and srcDevice_ip. Check the URL path for the specific model. For .pkl/.pt/.ckpt downloads, flag as higher risk (pickle-based, potential code execution). For .safetensors/.gguf/.onnx, lower risk (no code execution). Correlate with UC3 and UC4.\n\nTuning Recommendations: Sanctioned repos \u2014 if the org approves HuggingFace for ML teams, exclude by user match list. Suppress approved ML workstation hostnames.",
         "enabled_by_default": true,
@@ -72061,13 +72092,15 @@
         "normalized_summary": "AI model file downloaded from {{http_url_rootDomain}} ({{http_url_path}}) by {{srcDevice_ip}}",
         "pattern_type": "templated_match",
         "product_direct_ref": [],
-        "product_guids": [],
+        "product_guids": [
+            "af61d8a8-3eba-42fb-9f17-87443924f3f4"
+        ],
         "record_type_direct_ref": [],
         "rule_source": "sumo",
         "score_mapping": {
             "default": 2,
             "field": null,
-            "mapping": null,
+            "mapping": [],
             "type": "constant"
         },
         "silent_mode": true,
@@ -72093,8 +72126,8 @@
             "user_username"
         ],
         "category": "Discovery",
-        "commit_message": "TLAB-2646 FY27Q3 AI Campaign test use cases and silentmode deploy (#6037)",
-        "commit_origin_hash": "079ef92bd3975d4a75c59a48fe71ac93654d2a88",
+        "commit_message": "Normalize empty rule mappings to [] (#6044)",
+        "commit_origin_hash": "c4e87c752086838070825c3633ca98f67b015fa4",
         "content_type": "RULE",
         "description_expression": "Detection: This rule triggers when a non-localhost source IP connects to a known AI inference runtime process on a known AI serving port. The Initiated field filters for inbound connections where available (Sysmon). For sources without the Initiated field (Carbon Black, CrowdStrike), the rule falls back to port + non-localhost matching.\n\nScenario: An AI runtime bound to the network and accepting external connections indicates unauthorized AI model hosting. CVE-2024-37032 (Probllama) found 1,000+ Ollama instances exposed to the internet with no authentication. This detection proves the runtime is serving, not just running locally.\n\nRecommended Actions: Identify the host running the runtime via device_hostname. Identify who connected via srcDevice_ip \u2014 is the source internal or external/internet? Check if the runtime is bound to 0.0.0.0 or a specific interface. Correlate with UC4 to confirm which runtime is running.\n\nTuning Recommendations: Add approved AI hosting endpoints to sanctioned_ai_hosts match list. srcDevice_ip != 127.0.0.1 is already in the expression. Port 8080/8000 may collide with non-AI services \u2014 mitigated by baseImage requirement.",
         "enabled_by_default": true,
@@ -72139,7 +72172,7 @@
         "score_mapping": {
             "default": 3,
             "field": null,
-            "mapping": null,
+            "mapping": [],
             "type": "constant"
         },
         "silent_mode": true,
@@ -72175,8 +72208,8 @@
         ],
         "baseline_window_size": 604800000,
         "category": "Credential Access",
-        "commit_message": "Fix OUTLIER-S00001",
-        "commit_origin_hash": "7cf93120a14e2358928e6896c13dda036f0ad32b",
+        "commit_message": "TLAB-2833 Reference domain_controller_hostnames match list in Security-4776 rule exclusions (#6048)",
+        "commit_origin_hash": "cf2d9f69bac2d78bc53fcac24fb6bcf9c1e04c04",
         "content_type": "ANOMALY",
         "description_expression": "Detects excessive failed login attempts for the same username based on a daily outlier standard deviation for said user. This is designed to catch both slow and quick brute force type attacks using a user specific historic baseline. The minimum floor of failures expected by default is set to 10.",
         "deviation_threshold": 2,
@@ -72195,7 +72228,7 @@
         "id": 1,
         "id_compiled": "OUTLIER-S00001",
         "is_prototype": true,
-        "match_expression": "objectType = 'Authentication'\nAND normalizedAction = 'logon'\nAND success = false\nAND NOT\n    (metadata_deviceEventId = 'Security-4776'\n    AND (array_contains(listMatches, 'domain_controllers')))\nAND NOT\n    (metadata_vendor = 'Microsoft'\n    AND metadata_product = 'Azure'\n    AND fields['resultType'] = '700082')\nAND NOT\n    (metadata_vendor IN ('Microsoft','Intersect Alliance')\n    AND metadata_product IN ('Windows','Snare Enterprise Agent for Windows')\n    AND user_username like '%$%')\nAND NOT array_contains(listMatches, 'vuln_scanners')",
+        "match_expression": "objectType = 'Authentication'\nAND normalizedAction = 'logon'\nAND success = false\nAND NOT\n    (metadata_deviceEventId = 'Security-4776'\n    AND (array_contains(listMatches, 'domain_controller_hostnames')))\nAND NOT\n    (metadata_vendor = 'Microsoft'\n    AND metadata_product = 'Azure'\n    AND fields['resultType'] = '700082')\nAND NOT\n    (metadata_vendor IN ('Microsoft','Intersect Alliance')\n    AND metadata_product IN ('Windows','Snare Enterprise Agent for Windows')\n    AND user_username like '%$%')\nAND NOT array_contains(listMatches, 'vuln_scanners')",
         "name": "Spike in Login Failures from a User",
         "name_expression": "Spike in Login Failures from a User",
         "normalized_description": "Detects excessive failed login attempts for the same username based on a daily outlier standard deviation for said user. This is designed to catch both slow and quick brute force type attacks using a user specific historic baseline. The minimum floor of failures expected by default is set to 10.",
@@ -72627,6 +72660,7 @@
         "pattern_type": "outlier",
         "product_direct_ref": [],
         "product_guids": [
+            "6299d728-14f7-455e-85c5-ea8ec65a654a",
             "af61d8a8-3eba-42fb-9f17-87443924f3f4",
             "bf865cb5-0b26-4010-8b3c-5ae2d1f716d8",
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad"
@@ -72932,6 +72966,7 @@
         "pattern_type": "outlier",
         "product_direct_ref": [],
         "product_guids": [
+            "003d35b3-3ba8-4e93-8776-e5810b4e243e",
             "072b85a2-1765-45c2-911d-b0509880326e",
             "0fb003bc-8383-442f-8f3d-afcfbaefe617",
             "1ce88b4b-d90d-4d50-9a89-3abe83e8d5f8",
@@ -74436,6 +74471,147 @@
         "window": "T60M",
         "window_size": 3600000
     },
+    "OUTLIER-S00036": {
+        "aggregation_functions": [
+            {
+                "arguments": [
+                    "true"
+                ],
+                "function": "count",
+                "name": "current"
+            }
+        ],
+        "all_fields": [
+            "http_response_statusCode",
+            "srcDevice_ip"
+        ],
+        "baseline_window_size": 2592000000,
+        "category": "Discovery",
+        "commit_message": "TLAB-2840 Add PHP2Shell detections (#6049)",
+        "commit_origin_hash": "1c6cd333fa3b92f523ee75454a014b588f1df6c3",
+        "content_type": "ANOMALY",
+        "description_expression": "Detection: This rule detects a statistically significant spike in HTTP 5xx server error responses generated by a single source IP against known web servers, relative to that IP's own 30-day historical baseline.\n\nScenario: A sudden spike in server-side errors triggered by one source against web infrastructure often indicates exploitation attempts (e.g. malformed requests crashing an application), automated fuzzing, or a client repeatedly hitting a broken endpoint.\n\nRequirements: The web_servers and/or http_servers match lists must be populated with the hostnames of the web servers to monitor, and HTTP access logs from those servers (for example Apache, nginx or IIS) must be ingested with the HTTP response status code normalized. If both lists are empty, this rule will not fire.\n\nRecommended Actions: Review the source IP's request pattern -- URLs, user agents, and targeted hosts. Check whether requests span many distinct web servers (broad exploitation attempt) or concentrate on one (targeted attack on a specific service).\n\nTuning Recommendations: Scoped to the web_servers and http_servers match lists so only known web server traffic is evaluated. Authorized vulnerability scanners are excluded via the vuln_scanners match list.",
+        "deviation_threshold": 2,
+        "enabled_by_default": true,
+        "entity_selectors": [
+            {
+                "entity_type": "_ip",
+                "expression": "srcDevice_ip"
+            }
+        ],
+        "file_path": "rules_v3/Spike_in_HTTP_Server_Errors_from_Source_IP.json",
+        "floor_value": 5,
+        "group_by_fields": [
+            "srcDevice_ip"
+        ],
+        "id": 36,
+        "id_compiled": "OUTLIER-S00036",
+        "is_prototype": false,
+        "match_expression": "http_response_statusCode >= 500 AND http_response_statusCode <= 599\nAND (array_contains(listMatches, \"web_servers\") OR array_contains(listMatches, \"http_servers\"))\nAND NOT array_contains(listMatches, \"vuln_scanners\")",
+        "name": "Spike in HTTP Server Errors from Source IP",
+        "name_expression": "Spike in HTTP Server Errors from Source IP: {{srcDevice_ip}}",
+        "normalized_description": "Detection: This rule detects a statistically significant spike in HTTP 5xx server error responses generated by a single source IP against known web servers, relative to that IP's own 30-day historical baseline.\n\nScenario: A sudden spike in server-side errors triggered by one source against web infrastructure often indicates exploitation attempts (e.g. malformed requests crashing an application), automated fuzzing, or a client repeatedly hitting a broken endpoint.\n\nRequirements: The web_servers and/or http_servers match lists must be populated with the hostnames of the web servers to monitor, and HTTP access logs from those servers (for example Apache, nginx or IIS) must be ingested with the HTTP response status code normalized. If both lists are empty, this rule will not fire.\n\nRecommended Actions: Review the source IP's request pattern -- URLs, user agents, and targeted hosts. Check whether requests span many distinct web servers (broad exploitation attempt) or concentrate on one (targeted attack on a specific service).\n\nTuning Recommendations: Scoped to the web_servers and http_servers match lists so only known web server traffic is evaluated. Authorized vulnerability scanners are excluded via the vuln_scanners match list.",
+        "normalized_score_description": "Static: 3",
+        "normalized_score_possibilities": [
+            3
+        ],
+        "normalized_score_range": [
+            3,
+            3
+        ],
+        "normalized_score_type": "Static",
+        "normalized_signal_name": "Spike in HTTP Server Errors from Source IP: {{srcDevice_ip}}",
+        "normalized_summary": "An outlier in HTTP server error responses from source IP: {{srcDevice_ip}} has been detected",
+        "pattern_type": "outlier",
+        "product_direct_ref": [],
+        "product_guids": [],
+        "record_type_direct_ref": [],
+        "retention_window_size": 7776000000,
+        "rule_description": "",
+        "rule_source": "sumo",
+        "score": 3,
+        "stream": "record",
+        "summary_expression": "An outlier in HTTP server error responses from source IP: {{srcDevice_ip}} has been detected",
+        "tags": [
+            "_mitreAttackTactic:TA0043",
+            "_mitreAttackTechnique:T1595",
+            "_mitreAttackTechnique:T1595.002"
+        ],
+        "threat_ruleType": null,
+        "vendor_direct_ref": [],
+        "window": "T60M",
+        "window_size": 3600000
+    },
+    "OUTLIER-S00037": {
+        "aggregation_functions": [
+            {
+                "arguments": [
+                    "true"
+                ],
+                "function": "count",
+                "name": "current"
+            }
+        ],
+        "all_fields": [
+            "dstDevice_ip",
+            "http_response_statusCode"
+        ],
+        "baseline_window_size": 2592000000,
+        "category": "Impact",
+        "commit_message": "TLAB-2840 Add PHP2Shell detections (#6049)",
+        "commit_origin_hash": "1c6cd333fa3b92f523ee75454a014b588f1df6c3",
+        "content_type": "ANOMALY",
+        "description_expression": "Detection: This rule detects a statistically significant spike in HTTP 5xx server error responses returned by a known web server, relative to that server's own 30-day historical baseline.\n\nScenario: A sudden spike in server errors can indicate an exploitation attempt causing application failures, a misconfiguration or deployment regression, or a denial-of-service condition degrading availability.\n\nRequirements: The web_servers and/or http_servers match lists must be populated with the IP addresses of the web servers to monitor, and HTTP logs from those servers (for example Zeek HTTP, or web server access logs) must be ingested with the HTTP response status code and destination IP normalized. If both lists are empty, this rule will not fire.\n\nRecommended Actions: Review recent changes or deployments to the destination host, correlate with source IPs generating the errors, and check whether a narrow set of URLs/paths is driving the spike versus broad failure across the service.\n\nTuning Recommendations: Scoped to the web_servers and http_servers match lists so only known web server destinations are evaluated.",
+        "deviation_threshold": 2,
+        "enabled_by_default": true,
+        "entity_selectors": [
+            {
+                "entity_type": "_ip",
+                "expression": "dstDevice_ip"
+            }
+        ],
+        "file_path": "rules_v3/Spike_in_HTTP_Server_Errors_to_Destination_IP.json",
+        "floor_value": 5,
+        "group_by_fields": [
+            "dstDevice_ip"
+        ],
+        "id": 37,
+        "id_compiled": "OUTLIER-S00037",
+        "is_prototype": false,
+        "match_expression": "http_response_statusCode >= 500 AND http_response_statusCode <= 599\nAND (array_contains(listMatches, \"web_servers\") OR array_contains(listMatches, \"http_servers\"))",
+        "name": "Spike in HTTP Server Errors to Destination IP",
+        "name_expression": "Spike in HTTP Server Errors to Destination IP: {{dstDevice_ip}}",
+        "normalized_description": "Detection: This rule detects a statistically significant spike in HTTP 5xx server error responses returned by a known web server, relative to that server's own 30-day historical baseline.\n\nScenario: A sudden spike in server errors can indicate an exploitation attempt causing application failures, a misconfiguration or deployment regression, or a denial-of-service condition degrading availability.\n\nRequirements: The web_servers and/or http_servers match lists must be populated with the IP addresses of the web servers to monitor, and HTTP logs from those servers (for example Zeek HTTP, or web server access logs) must be ingested with the HTTP response status code and destination IP normalized. If both lists are empty, this rule will not fire.\n\nRecommended Actions: Review recent changes or deployments to the destination host, correlate with source IPs generating the errors, and check whether a narrow set of URLs/paths is driving the spike versus broad failure across the service.\n\nTuning Recommendations: Scoped to the web_servers and http_servers match lists so only known web server destinations are evaluated.",
+        "normalized_score_description": "Static: 3",
+        "normalized_score_possibilities": [
+            3
+        ],
+        "normalized_score_range": [
+            3,
+            3
+        ],
+        "normalized_score_type": "Static",
+        "normalized_signal_name": "Spike in HTTP Server Errors to Destination IP: {{dstDevice_ip}}",
+        "normalized_summary": "An outlier in HTTP server error responses to destination IP: {{dstDevice_ip}} has been detected",
+        "pattern_type": "outlier",
+        "product_direct_ref": [],
+        "product_guids": [],
+        "record_type_direct_ref": [],
+        "retention_window_size": 7776000000,
+        "rule_description": "",
+        "rule_source": "sumo",
+        "score": 3,
+        "stream": "record",
+        "summary_expression": "An outlier in HTTP server error responses to destination IP: {{dstDevice_ip}} has been detected",
+        "tags": [
+            "_mitreAttackTactic:TA0040",
+            "_mitreAttackTechnique:T1499"
+        ],
+        "threat_ruleType": null,
+        "vendor_direct_ref": [],
+        "window": "T60M",
+        "window_size": 3600000
+    },
     "THRESHOLD-S00003": {
         "all_fields": [
             "dstDevice_ip_isInternal",
@@ -74751,7 +74927,6 @@
             "6299d728-14f7-455e-85c5-ea8ec65a654a",
             "6787d77a-1ee0-43d4-8ca0-96af8ee755bc",
             "798f8da8-c85b-4e9a-b2f1-eae0b07532fb",
-            "9e0641a7-22ce-4ac8-8113-ee48b368ac3d",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "c2503fcc-ef30-4e40-bb32-0bf47151b140",
             "ede052db-d472-408f-949c-be642237ef3f",
@@ -75050,7 +75225,6 @@
             "c2503fcc-ef30-4e40-bb32-0bf47151b140",
             "dcc85cfc-a698-4d09-87de-f2c723f3ad07",
             "e90edc67-68d4-4d67-82f6-4524f94b59bb",
-            "ede052db-d472-408f-949c-be642237ef3f",
             "fa3c148a-4272-4a94-aea2-499ab90424c2",
             "fca8785d-4823-4442-86b2-8acbaa176da4"
         ],
@@ -76940,7 +77114,6 @@
             "2b82e665-bdde-474a-ae29-4f0f76598556",
             "37C866BF-72E1-470A-9072-EDB908F56951",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
-            "59a3cd41-b6d2-4ab7-a0ff-6d5abd14ac43",
             "6299d728-14f7-455e-85c5-ea8ec65a654a",
             "724c9add-8cd9-4013-b9e1-a907b96da426",
             "951a004d-54bf-441d-98e1-fcc6a032f475",
@@ -77028,7 +77201,6 @@
         "product_direct_ref": [],
         "product_guids": [
             "0fb003bc-8383-442f-8f3d-afcfbaefe617",
-            "2b82e665-bdde-474a-ae29-4f0f76598556",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
@@ -77828,8 +78000,8 @@
         ],
         "asset_field": "device_hostname",
         "category": "Initial Access",
-        "commit_message": "TLAB-1772 Fork THRESHOLD-S00095",
-        "commit_origin_hash": "38408ff102bd1db3fdf72e190be7cd5144e9a9cc",
+        "commit_message": "TLAB-2833 Reference domain_controller_hostnames match list in Security-4776 rule exclusions (#6048)",
+        "commit_origin_hash": "cf2d9f69bac2d78bc53fcac24fb6bcf9c1e04c04",
         "content_type": "RULE",
         "count_distinct": true,
         "count_field": "user_username",
@@ -77841,7 +78013,7 @@
                 "expression": "srcDevice_hostname"
             }
         ],
-        "expression": "objectType = 'Authentication'\nAND normalizedAction = 'logon'\nAND success = false\nAND NOT\n(\n    metadata_deviceEventId = 'Security-4776'\n    AND (array_contains(listMatches, 'domain_controllers'))\n)\nAND NOT\n(\n    metadata_vendor IN ('Microsoft','Intersect Alliance')\n    AND metadata_product IN ('Windows','Snare Enterprise Agent for Windows')\n    AND user_username like '%$%'\n)\nAND NOT\n(\n    metadata_vendor = 'Microsoft'\n    AND metadata_product = 'Azure'\n    AND fields['resultType'] = '700082'\n)\nAND NOT array_contains(listMatches, 'vuln_scanners')\nAND \n(\n    srcDevice_hostname IS NOT NULL\n)",
+        "expression": "objectType = 'Authentication'\nAND normalizedAction = 'logon'\nAND success = false\nAND NOT\n(\n    metadata_deviceEventId = 'Security-4776'\n    AND (array_contains(listMatches, 'domain_controller_hostnames'))\n)\nAND NOT\n(\n    metadata_vendor IN ('Microsoft','Intersect Alliance')\n    AND metadata_product IN ('Windows','Snare Enterprise Agent for Windows')\n    AND user_username like '%$%'\n)\nAND NOT\n(\n    metadata_vendor = 'Microsoft'\n    AND metadata_product = 'Azure'\n    AND fields['resultType'] = '700082'\n)\nAND NOT array_contains(listMatches, 'vuln_scanners')\nAND \n(\n    srcDevice_hostname IS NOT NULL\n)",
         "file_path": "rules_v3/Password_Attack_(Host).json",
         "group_by_fields": [
             "metadata_vendor",
@@ -77925,8 +78097,8 @@
         ],
         "asset_field": "device_hostname",
         "category": "Initial Access",
-        "commit_message": "TLAB-481-Rule-Correction-for-Removed-Column-Filters-from-MatchList",
-        "commit_origin_hash": "d47f5e88ef4c669bde9d1b55671c838a4d54358c",
+        "commit_message": "TLAB-2833 Reference domain_controller_hostnames match list in Security-4776 rule exclusions (#6048)",
+        "commit_origin_hash": "cf2d9f69bac2d78bc53fcac24fb6bcf9c1e04c04",
         "content_type": "RULE",
         "count_distinct": false,
         "count_field": null,
@@ -77946,7 +78118,7 @@
                 "expression": "user_username"
             }
         ],
-        "expression": "objectType = 'Authentication'\nAND normalizedAction = 'logon'\nAND success = false\nAND NOT (\nmetadata_deviceEventId = 'Security-4776' AND (array_contains(listMatches, 'domain_controllers')\n)\n)\nAND NOT\n    (metadata_vendor = 'Microsoft'\n    AND metadata_product = 'Azure'\n    AND fields['resultType'] = '700082')\nAND NOT\n    (metadata_vendor IN ('Microsoft','Intersect Alliance')\n    AND metadata_product IN ('Windows','Snare Enterprise Agent for Windows')\n    AND user_username like '%$%')\nAND NOT array_contains(listMatches, 'vuln_scanners')",
+        "expression": "objectType = 'Authentication'\nAND normalizedAction = 'logon'\nAND success = false\nAND NOT (\nmetadata_deviceEventId = 'Security-4776' AND (array_contains(listMatches, 'domain_controller_hostnames'))\n)\nAND NOT\n    (metadata_vendor = 'Microsoft'\n    AND metadata_product = 'Azure'\n    AND fields['resultType'] = '700082')\nAND NOT\n    (metadata_vendor IN ('Microsoft','Intersect Alliance')\n    AND metadata_product IN ('Windows','Snare Enterprise Agent for Windows')\n    AND user_username like '%$%')\nAND NOT array_contains(listMatches, 'vuln_scanners')",
         "file_path": "rules_v3/Brute_Force_Attempt.json",
         "group_by_fields": [
             "user_username",
@@ -77990,10 +78162,10 @@
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "37a906de-5e9c-475e-881a-65a1d984f377",
-            "46c71698-9c21-4273-9561-94ff5af52edd",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
             "51278354-d6b5-4c8e-a8fd-8197df334e67",
             "54B36B3F-A63F-4BA4-9DE4-02DBF69A429F",
+            "54f01856-e973-4d7b-a3eb-95cc08ff44f5",
             "5be5af82-c248-4c4c-a485-0571025f242c",
             "5bfda3d2-03e7-4d9a-8072-c59430a131d7",
             "7205db83-88e8-4074-8288-136a6c493d69",
@@ -78206,6 +78378,7 @@
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
             "51278354-d6b5-4c8e-a8fd-8197df334e67",
             "54B36B3F-A63F-4BA4-9DE4-02DBF69A429F",
+            "54f01856-e973-4d7b-a3eb-95cc08ff44f5",
             "5be5af82-c248-4c4c-a485-0571025f242c",
             "5bfda3d2-03e7-4d9a-8072-c59430a131d7",
             "79da6240-7617-49c8-b130-96278579766e",
@@ -78492,8 +78665,8 @@
         ],
         "asset_field": "device_hostname",
         "category": "Initial Access",
-        "commit_message": "TLAB-481-Rule-Correction-for-Removed-Column-Filters-from-MatchList",
-        "commit_origin_hash": "d47f5e88ef4c669bde9d1b55671c838a4d54358c",
+        "commit_message": "TLAB-2833 Reference domain_controller_hostnames match list in Security-4776 rule exclusions (#6048)",
+        "commit_origin_hash": "cf2d9f69bac2d78bc53fcac24fb6bcf9c1e04c04",
         "content_type": "RULE",
         "count_distinct": true,
         "count_field": "user_username",
@@ -78509,7 +78682,7 @@
                 "expression": "srcDevice_ip"
             }
         ],
-        "expression": "objectType = 'Authentication'\nAND success = false\nAND (normalizedAction = 'domainLogon'\nOR\n(\nmetadata_deviceEventId = 'Security-4776' AND (array_contains(listMatches, 'domain_controllers'))\n)\n)\nAND NOT\n    (metadata_vendor IN ('Microsoft','Intersect Alliance')\n    AND metadata_product IN ('Windows','Snare Enterprise Agent for Windows')\n    AND user_username like '%$%')\nAND NOT array_contains(listMatches, 'vuln_scanners')",
+        "expression": "objectType = 'Authentication'\nAND success = false\nAND (normalizedAction = 'domainLogon'\nOR\n(\nmetadata_deviceEventId = 'Security-4776' AND (array_contains(listMatches, 'domain_controller_hostnames'))\n)\n)\nAND NOT\n    (metadata_vendor IN ('Microsoft','Intersect Alliance')\n    AND metadata_product IN ('Windows','Snare Enterprise Agent for Windows')\n    AND user_username like '%$%')\nAND NOT array_contains(listMatches, 'vuln_scanners')",
         "file_path": "rules_v3/Domain_Password_Attack.json",
         "group_by_fields": [
             "metadata_vendor",
@@ -78581,8 +78754,8 @@
         ],
         "asset_field": "device_hostname",
         "category": "Initial Access",
-        "commit_message": "TLAB-481-Rule-Correction-for-Removed-Column-Filters-from-MatchList",
-        "commit_origin_hash": "d47f5e88ef4c669bde9d1b55671c838a4d54358c",
+        "commit_message": "TLAB-2833 Reference domain_controller_hostnames match list in Security-4776 rule exclusions (#6048)",
+        "commit_origin_hash": "cf2d9f69bac2d78bc53fcac24fb6bcf9c1e04c04",
         "content_type": "RULE",
         "count_distinct": false,
         "count_field": null,
@@ -78602,7 +78775,7 @@
                 "expression": "user_username"
             }
         ],
-        "expression": "objectType = 'Authentication'\nAND success = false\nAND (normalizedAction = 'domainLogon'\nOR\n(\nmetadata_deviceEventId = 'Security-4776' AND (array_contains(listMatches, 'domain_controllers')\n)\n)\n)\nAND NOT\n    (metadata_vendor IN ('Microsoft','Intersect Alliance')\n    AND metadata_product IN ('Windows','Snare Enterprise Agent for Windows')\n    AND user_username like '%$%')\nAND NOT array_contains(listMatches, 'vuln_scanners')",
+        "expression": "objectType = 'Authentication'\nAND success = false\nAND (normalizedAction = 'domainLogon'\nOR\n(\nmetadata_deviceEventId = 'Security-4776' AND (array_contains(listMatches, 'domain_controller_hostnames'))\n)\n)\nAND NOT\n    (metadata_vendor IN ('Microsoft','Intersect Alliance')\n    AND metadata_product IN ('Windows','Snare Enterprise Agent for Windows')\n    AND user_username like '%$%')\nAND NOT array_contains(listMatches, 'vuln_scanners')",
         "file_path": "rules_v3/Domain_Brute_Force_Attempt.json",
         "group_by_fields": [
             "metadata_vendor",
@@ -79428,8 +79601,8 @@
         ],
         "asset_field": "device_hostname",
         "category": "Initial Access",
-        "commit_message": "TLAB-1772 Fork THRESHOLD-S00095",
-        "commit_origin_hash": "38408ff102bd1db3fdf72e190be7cd5144e9a9cc",
+        "commit_message": "TLAB-2833 Reference domain_controller_hostnames match list in Security-4776 rule exclusions (#6048)",
+        "commit_origin_hash": "cf2d9f69bac2d78bc53fcac24fb6bcf9c1e04c04",
         "content_type": "RULE",
         "count_distinct": true,
         "count_field": "user_username",
@@ -79441,7 +79614,7 @@
                 "expression": "srcDevice_ip"
             }
         ],
-        "expression": "objectType = 'Authentication'\nAND normalizedAction = 'logon'\nAND success = false\nAND NOT\n(\n    metadata_deviceEventId = 'Security-4776'\n    AND (array_contains(listMatches, 'domain_controllers'))\n)\nAND NOT\n(\n    metadata_vendor IN ('Microsoft','Intersect Alliance')\n    AND metadata_product IN ('Windows','Snare Enterprise Agent for Windows')\n    AND user_username like '%$%'\n)\nAND NOT\n(\n    metadata_vendor = 'Microsoft'\n    AND metadata_product = 'Azure'\n    AND fields['resultType'] = '700082'\n)\nAND NOT array_contains(listMatches, 'vuln_scanners')\nAND \n(\n    srcDevice_ip IS NOT NULL\n)",
+        "expression": "objectType = 'Authentication'\nAND normalizedAction = 'logon'\nAND success = false\nAND NOT\n(\n    metadata_deviceEventId = 'Security-4776'\n    AND (array_contains(listMatches, 'domain_controller_hostnames'))\n)\nAND NOT\n(\n    metadata_vendor IN ('Microsoft','Intersect Alliance')\n    AND metadata_product IN ('Windows','Snare Enterprise Agent for Windows')\n    AND user_username like '%$%'\n)\nAND NOT\n(\n    metadata_vendor = 'Microsoft'\n    AND metadata_product = 'Azure'\n    AND fields['resultType'] = '700082'\n)\nAND NOT array_contains(listMatches, 'vuln_scanners')\nAND \n(\n    srcDevice_ip IS NOT NULL\n)",
         "file_path": "rules_v3/Password_Attack_(IP).json",
         "group_by_fields": [
             "metadata_vendor",

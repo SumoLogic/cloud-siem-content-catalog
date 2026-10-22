@@ -16,6 +16,7 @@ Attackers will often utilize The Managed Object Format (MOF) compiler to conceal
 |Prototype|False|
 |Tags|_mitreAttackTactic:TA0002, _mitreAttackTechnique:T1047|
 ## Vendors and Products
+- [Anthropic - Claude Code](../products/eabd9eed-b071-4773-ad07-706ea5b51b9c.md)
 - [CrowdStrike - FDR](../products/569a3a44-c29f-492e-bcf4-5dc04e2ab0f3.md)
 - [CrowdStrike - Falcon](../products/840c72e0-4e47-41e7-9b93-31f55d12f07d.md)
 - [Microsoft - Azure](../products/a1225af5-e778-4068-a9a2-47da93d1ff24.md)

@@ -38,7 +38,6 @@ Passes through an alert from an endpoint security product and adjusts the severi
 - [IBM - Guardium](../products/dca03a0f-0053-4c34-b7b6-56060bbd110c.md)
 - [Jamf - Jamf](../products/5c2cc0de-ca31-4ef0-bcfa-133fc8b387ad.md)
 - [Kemp - LoadMaster](../products/e0763d80-29ce-43a0-b0ab-69c621abb3eb.md)
-- [Lacework - Lacework](../products/72ad5cb2-9b51-4954-970c-f826d593ccc7.md)
 - [Malwarebytes - Malwarebytes Endpoint Protection](../products/e611250c-6b5f-4b40-b84b-329a1d5b391c.md)
 - [Microsoft - Advanced Threat Analytics](../products/ae48ad1f-04e5-47c6-9892-25555e5f728b.md)
 - [Microsoft - Azure Defender For Cloud](../products/ca718855-210e-430a-b13c-aec4f3c2885a.md)

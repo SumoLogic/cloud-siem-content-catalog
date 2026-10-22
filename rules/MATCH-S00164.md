@@ -1,7 +1,13 @@
 # [Rules](README.md): Suspicious Shells Spawned by Web Servers
 
 ## Description
-Web servers that spawn shell processes could be the result of a successfully placed web shell or an other attack
+Detection: This rule detects a web server process (IIS, Apache, Nginx, Tomcat, or PHP-CGI, on Windows or Linux) spawning a shell or scripting interpreter (cmd, PowerShell, bash, sh, python, perl, etc.) as a child process.
+
+Scenario: Web servers have no legitimate operational need to launch command shells. When this occurs, it typically indicates an attacker has exploited a vulnerability in the web application to achieve remote code execution, often to establish persistence via a web shell or pivot further into the environment.
+
+Recommended Actions: Review commandLine for the exact command executed, check device_hostname and user_username to identify the affected host and account context, and inspect the web application and file system for newly dropped web shell files or unauthorized script modifications.
+
+Tuning Recommendations: If legitimate automation or administrative scripts regularly invoke shells from these web server processes, exclude the specific commandLine patterns or source hosts via a match list rather than removing the parent/child process conditions.
 
 ## Additional Details
 |Detail|Value|
@@ -26,10 +32,8 @@ Web servers that spawn shell processes could be the result of a successfully pla
 
 |Origin|Field|
 |----|----|
-|Normalized Schema|baseImage|
 |Normalized Schema|device_hostname|
 |Normalized Schema|device_ip|
-|Normalized Schema|parentBaseImage|
 |Normalized Schema|user_username|
 
 

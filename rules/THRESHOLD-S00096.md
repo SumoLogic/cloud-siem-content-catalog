@@ -28,6 +28,7 @@ Detects multiple failed login attempts for the same username over a 24 hour time
 - [Cisco Systems - Router and Switch IOS](../products/1abefd5b-ec3d-49c1-8a54-7e6363d52db0.md)
 - [Citrix - ADC](../products/d3606245-76d3-4173-a2fe-832c0e71b0f9.md)
 - [CrowdStrike - Falcon](../products/840c72e0-4e47-41e7-9b93-31f55d12f07d.md)
+- [Cyber-Ark - CyberArk Audit](../products/54f01856-e973-4d7b-a3eb-95cc08ff44f5.md)
 - [Dropbox - Dropbox](../products/5bfda3d2-03e7-4d9a-8072-c59430a131d7.md)
 - [Duo Security - Multi-Factor Authentication (MFA)](../products/acb7e80e-2b66-496c-ba2e-1e7c3933a98e.md)
 - [F5 - F5](../products/ede052db-d472-408f-949c-be642237ef3f.md)
@@ -57,7 +58,6 @@ Detects multiple failed login attempts for the same username over a 24 hour time
 - [Salesforce - Salesforce](../products/1b7798df-963b-4582-a82b-b8176c3a6a22.md)
 - [Slack - Slack](../products/79da6240-7617-49c8-b130-96278579766e.md)
 - [Snowflake - Snowflake](../products/8276b520-fdeb-4f79-9f5d-67865818562b.md)
-- [Teleport - Teleport](../products/46c71698-9c21-4273-9561-94ff5af52edd.md)
 - [Tenable - Cloud API](../products/1C384C22-411B-49C0-8029-A7F6C13424B1.md)
 
 

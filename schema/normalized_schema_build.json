@@ -4447,7 +4447,7 @@
     },
     "objectClassification": {
         "deprecated": false,
-        "description": "The classification of the record, based on the object type. This field was originally set by sumostream, but because this field exists in the normalized index in CIP, we should set it in Carto such that rules can be written against it.",
+        "description": "The classification of the record, based on the object type. This field exists in the normalized index in CIP and is set in Carto such that rules can be written against it.",
         "enrichment_populated": false,
         "enrichment_type": null,
         "entity_type": null,
