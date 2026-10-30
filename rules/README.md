@@ -304,6 +304,7 @@
 |MATCH-S00392|[File or Folder Permissions Modifications](MATCH-S00392.md)|
 |MATCH-S00394|[Findstr Launching .lnk File](MATCH-S00394.md)|
 |MATCH-S00454|[Firewall Allowed SMB Traffic](MATCH-S00454.md)|
+|FIRST-S00103|[First Seen AI Runtime on Endpoint](FIRST-S00103.md)|
 |FIRST-S00047|[First Seen ASN Associated with User for a Successful Azure AD Sign In Event](FIRST-S00047.md)|
 |FIRST-S00002|[First Seen AWS API Call from User](FIRST-S00002.md)|
 |FIRST-S00023|[First Seen AWS API Gateway Enumeration by User](FIRST-S00023.md)|
@@ -329,6 +330,7 @@
 |FIRST-S00013|[First Seen Driver Load - Global](FIRST-S00013.md)|
 |FIRST-S00014|[First Seen Driver Load - Host](FIRST-S00014.md)|
 |FIRST-S00007|[First Seen DynamoDB Enumeration from User](FIRST-S00007.md)|
+|FIRST-S00104|[First Seen External Client to AI Runtime](FIRST-S00104.md)|
 |FIRST-S00073|[First Seen Get-ADDefaultDomainPasswordPolicy](FIRST-S00073.md)|
 |FIRST-S00072|[First Seen Group Policy Discovery Operation](FIRST-S00072.md)|
 |FIRST-S00062|[First Seen IP Address Connecting to Active Directory Certificate Services Process](FIRST-S00062.md)|
@@ -815,6 +817,7 @@
 |MATCH-S00437|[Secure Deletion with SDelete](MATCH-S00437.md)|
 |MATCH-S00299|[SecurityXploded Tool](MATCH-S00299.md)|
 |LEGACY-S00094|[Self-signed Certificates](LEGACY-S00094.md)|
+|CHAIN-S00028|[Sensitive Data Sent to Generative AI Tool - Cross-Vendor](CHAIN-S00028.md)|
 |MATCH-S00834|[Sensitive Registry Key (WDigest) Edit](MATCH-S00834.md)|
 |LEGACY-S00095|[Server-Side Code Injection in URL](LEGACY-S00095.md)|
 |CHAIN-S00010|[Service Installation Followed By Elevated CMD Prompt](CHAIN-S00010.md)|
@@ -866,6 +869,7 @@
 |MATCH-S00817|[Suspicious Azure Active Directory Device Code Authentication](MATCH-S00817.md)|
 |MATCH-S00842|[Suspicious Azure CLI Keys Access on Linux Host](MATCH-S00842.md)|
 |MATCH-S00359|[Suspicious Certutil Command](MATCH-S00359.md)|
+|CHAIN-S00029|[Suspicious Child Process Spawned After Python Model Deserialization](CHAIN-S00029.md)|
 |MATCH-S00356|[Suspicious Compression Tool Parameters](MATCH-S00356.md)|
 |MATCH-S00362|[Suspicious Curl File Upload](MATCH-S00362.md)|
 |LEGACY-S00105|[Suspicious DC Logon](LEGACY-S00105.md)|
