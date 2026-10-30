@@ -14,6 +14,7 @@
 |THRESHOLD-S00081|[Internal Port Sweep](../rules/THRESHOLD-S00081.md)|
 |THRESHOLD-S00514|[Intrusion Scan - Targeted](../rules/THRESHOLD-S00514.md)|
 |THRESHOLD-S00515|[Intrusion Sweep](../rules/THRESHOLD-S00515.md)|
+|LEGACY-S00107|[Legacy Threat Intel Match - IP Address](../rules/LEGACY-S00107.md)|
 |MATCH-S00668|[Low Severity Intrusion Signature](../rules/MATCH-S00668.md)|
 |MATCH-S00667|[Medium Severity Intrusion Signature](../rules/MATCH-S00667.md)|
 |MATCH-S00554|[Outbound IRC Traffic](../rules/MATCH-S00554.md)|

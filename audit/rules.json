@@ -2370,16 +2370,17 @@
             "fields['PolicyLocator']",
             "fields['dlp_rule_count']",
             "fields['event.entity.entity_security_result.combined_verdict.dlp']",
+            "http_url_fqdn",
+            "http_url_path",
             "http_url_rootDomain",
             "srcDevice_ip",
-            "threat_ruleType",
             "user_username"
         ],
         "category": "Exfiltration",
-        "commit_message": "TLAB-2646 FY27Q3 AI Campaign test use cases and silentmode deploy (#6037)",
-        "commit_origin_hash": "079ef92bd3975d4a75c59a48fe71ac93654d2a88",
+        "commit_message": "TLAB-2646 Set silent_mode to false for AI campaign rules (#6054)",
+        "commit_origin_hash": "4cfeee3951b55a98d3a9e8ddaf3b72c11d2a2fb6",
         "content_type": "RULE",
-        "description": "Detection: This unordered chain rule triggers when a DLP alert without a destination URL (isNull http_url) correlates with an outbound POST/PUT/PATCH to a known GenAI domain from the same source IP within 10 minutes. Stage 0 matches DLP findings from any vendor. Stage 1 matches GenAI destination traffic from proxy/CASB sources.\n\nScenario: The DLP engine and web proxy are separate products. A DLP finding from email, endpoint, or network DLP correlates with web traffic to a GenAI service from the same source IP, indicating sensitive data may have been sent to an AI tool.\n\nRecommended Actions: Verify that both stages describe the same user activity, not unrelated events sharing an egress IP. Review the DLP finding type and the GenAI destination. Check if NAT is in play for the source IP.\n\nTuning Recommendations: Monitor for NAT false joins on shared egress IPs. Add sanctioned AI tools to approved_ai_tools match list. The isNull(http_url) condition on Stage 0 ensures records with a URL are handled by the match rule only.",
+        "description": "Detection: This unordered chain rule triggers when a Data Loss Prevention (DLP) finding with no destination URL correlates with a POST, PUT or PATCH request to a Generative AI (GenAI) destination for the same entity within 10 minutes.\n\nScenario: Employees or automated integrations may send sensitive data to Generative AI (GenAI) tools through chat interfaces, direct API calls, or browser extensions, potentially exposing personally identifiable information (PII), protected health information (PHI), credentials, or proprietary source code outside the organization's control. This represents a data governance risk with regulatory, contractual, and intellectual property consequences, as many GenAI providers may retain or use submitted input for model training.\n\nRecommended Actions: Confirm both events describe the same user session by comparing timestamps, source IP, and user identity, and verify the user matches in both events when several users share an egress IP. Identify the data type from the DLP finding, confirm the GenAI destination, and escalate if sensitive data exposure is confirmed.\n\nTuning Recommendations: To exclude approved GenAI destinations, create a match list named allowed_ai_domains under Cloud SIEM > Match Lists and add the approved domains; the GenAI stage already excludes records that match it. If your approved domains already live in a list with another name, go to Cloud SIEM > Rule Tuning, create a tuning expression for this rule, choose to exclude, and enter array_contains(listMatches, '<your_list_name>').",
         "enabled_by_default": true,
         "entity_selectors": [
             {
@@ -2397,32 +2398,32 @@
         ],
         "expressions_and_limits": [
             {
-                "expression": "(threat_ruleType = 'data_protection'\n OR threat_category matches /(?i)^dlp/\n OR threat_name matches /(?i)dlp/\n OR metadata_deviceEventId matches /(?i)dlp/\n OR fields['dlp_rule_count'] > 0\n OR fields['pan_log_subtype'] matches /(?i)dlp/\n OR fields['PolicyLocator'] LIKE '%Data_Protection_DLP%'\n OR fields['alert_type'] matches /(?i)^dlp$/\n OR fields['event.entity.entity_security_result.combined_verdict.dlp'] = 'leak')\nAND isNull(http_url)",
+                "expression": "(threat_category matches /(?i)^dlp/\n OR threat_name matches /(?i)dlp/\n OR metadata_deviceEventId matches /(?i)dlp/\n OR fields['dlp_rule_count'] > 0\n OR fields['pan_log_subtype'] matches /(?i)dlp/\n OR fields['PolicyLocator'] LIKE '%Data_Protection_DLP%'\n OR fields['alert_type'] matches /(?i)^dlp$/\n OR fields['event.entity.entity_security_result.combined_verdict.dlp'] = 'leak'\n OR fields['Operation'] matches /(?i)^dlprulematch$/)\nAND NOT (action matches /(?i)^stationery$/ OR fields['route'] matches /(?i)^inbound$/)\nAND isNull(http_url)",
                 "limit": 1
             },
             {
-                "expression": "(http_category matches /(?i)generative.ai/\n OR fields['appcategory'] matches /(?i)generative.ai/\n OR fields['other_categories'] matches /(?i)genai/\n OR application matches /(?i)(chatgpt|google.gemini|claude|copilot|perplexity|midjourney|deepseek|grok|jasper|anthropic|mistral|cohere|stability.ai|cursor|replit.ai|github.copilot|amazon.q|windsurf)/\n OR http_url_rootDomain IN ('chatgpt.com', 'openai.com', 'claude.ai', 'anthropic.com', 'perplexity.ai', 'deepseek.com', 'grok.com', 'x.ai', 'midjourney.com', 'cursor.com', 'replit.com', 'cohere.com', 'mistral.ai', 'stability.ai', 'jasper.ai', 'poe.com', 'you.com', 'together.ai', 'groq.com')\n OR http_url_fqdn matches /(?i)(gemini\\.google\\.com|copilot\\.microsoft\\.com|openai|anthropic|deepseek)/)\nAND (http_method matches /(?i)(post|put|patch)/\n OR fields['activity'] matches /(?i)(upload|edit|post)/\n OR fields['reqmethod'] matches /(?i)(post|put|patch)/\n OR fields['requestMethod'] matches /(?i)(post|put|patch)/)",
+                "expression": "(http_category matches /(?i)generative.ai/\n OR fields['appcategory'] matches /(?i)generative.ai/\n OR fields['other_categories'] matches /(?i)genai/\n OR application matches /(?i)(chatgpt|google.gemini|claude|copilot|perplexity|midjourney|deepseek|grok|jasper|anthropic|mistral|\\bcohere\\b|stability.ai|cursor|replit.ai|github.copilot|amazon.q|windsurf)/\n OR http_url_rootDomain IN ('chatgpt.com', 'openai.com', 'claude.ai', 'anthropic.com', 'perplexity.ai', 'deepseek.com', 'grok.com', 'x.ai', 'midjourney.com', 'cursor.com', 'replit.com', 'cohere.com', 'mistral.ai', 'stability.ai', 'jasper.ai', 'poe.com', 'you.com', 'together.ai', 'groq.com')\n OR http_url_fqdn matches /(?i)(gemini\\.google\\.com|copilot\\.microsoft\\.com|(^|\\.)(openai|anthropic|deepseek)\\.)/)\nAND (http_method matches /(?i)(post|put|patch)/\n OR fields['activity'] matches /(?i)(upload|edit|post)/\n OR fields['reqmethod'] matches /(?i)(post|put|patch)/\n OR fields['requestMethod'] matches /(?i)(post|put|patch)/)\nAND NOT http_url_fqdn matches /(?i)^(ab\\.chatgpt\\.com|bzr\\.openai\\.com|(telemetry|exp)\\.[a-z]+\\.githubcopilot\\.com)$/\nAND NOT http_url_path matches /(?i)^\\/(ces|awe|otlp|cdn-cgi)\\/|^\\/backend-api\\/sentinel(\\/|$)/\nAND NOT array_contains(listMatches, 'allowed_ai_domains')",
                 "limit": 1
             }
         ],
-        "file_path": "rules_v3/Sensitive_Data_Exfiltration_to_Generative_AI_Tool_-_Cross-Vendor_Correlation.json",
+        "file_path": "rules_v3/Sensitive_Data_Sent_to_Generative_AI_Tool_Cross-Vendor.json",
         "group_by_fields": [],
         "id": 28,
         "id_compiled": "CHAIN-S00028",
         "is_prototype": false,
-        "name": "Sensitive Data Exfiltration to Generative AI Tool - Cross-Vendor Correlation",
-        "normalized_description": "Detection: This unordered chain rule triggers when a DLP alert without a destination URL (isNull http_url) correlates with an outbound POST/PUT/PATCH to a known GenAI domain from the same source IP within 10 minutes. Stage 0 matches DLP findings from any vendor. Stage 1 matches GenAI destination traffic from proxy/CASB sources.\n\nScenario: The DLP engine and web proxy are separate products. A DLP finding from email, endpoint, or network DLP correlates with web traffic to a GenAI service from the same source IP, indicating sensitive data may have been sent to an AI tool.\n\nRecommended Actions: Verify that both stages describe the same user activity, not unrelated events sharing an egress IP. Review the DLP finding type and the GenAI destination. Check if NAT is in play for the source IP.\n\nTuning Recommendations: Monitor for NAT false joins on shared egress IPs. Add sanctioned AI tools to approved_ai_tools match list. The isNull(http_url) condition on Stage 0 ensures records with a URL are handled by the match rule only.",
-        "normalized_score_description": "Static: 4",
+        "name": "Sensitive Data Sent to Generative AI Tool - Cross-Vendor",
+        "normalized_description": "Detection: This unordered chain rule triggers when a Data Loss Prevention (DLP) finding with no destination URL correlates with a POST, PUT or PATCH request to a Generative AI (GenAI) destination for the same entity within 10 minutes.\n\nScenario: Employees or automated integrations may send sensitive data to Generative AI (GenAI) tools through chat interfaces, direct API calls, or browser extensions, potentially exposing personally identifiable information (PII), protected health information (PHI), credentials, or proprietary source code outside the organization's control. This represents a data governance risk with regulatory, contractual, and intellectual property consequences, as many GenAI providers may retain or use submitted input for model training.\n\nRecommended Actions: Confirm both events describe the same user session by comparing timestamps, source IP, and user identity, and verify the user matches in both events when several users share an egress IP. Identify the data type from the DLP finding, confirm the GenAI destination, and escalate if sensitive data exposure is confirmed.\n\nTuning Recommendations: To exclude approved GenAI destinations, create a match list named allowed_ai_domains under Cloud SIEM > Match Lists and add the approved domains; the GenAI stage already excludes records that match it. If your approved domains already live in a list with another name, go to Cloud SIEM > Rule Tuning, create a tuning expression for this rule, choose to exclude, and enter array_contains(listMatches, '<your_list_name>').",
+        "normalized_score_description": "Static: 3",
         "normalized_score_possibilities": [
-            4
+            3
         ],
         "normalized_score_range": [
-            4,
-            4
+            3,
+            3
         ],
         "normalized_score_type": "Static",
-        "normalized_signal_name": "Sensitive Data Exfiltration to Generative AI Tool - Cross-Vendor Correlation",
-        "normalized_summary": "DLP alert correlated with GenAI POST from {{srcDevice_ip}} ({{user_username}}) \u2014 cross-vendor chain",
+        "normalized_signal_name": "Sensitive Data Sent to Generative AI Tool - Cross-Vendor",
+        "normalized_summary": "DLP alert correlated with GenAI POST from {{srcDevice_ip}} ({{user_username}}) - cross-vendor chain",
         "ordered": false,
         "pattern_type": "chain",
         "product_direct_ref": [],
@@ -2432,16 +2433,15 @@
         "record_type_direct_ref": [],
         "rule_description": "",
         "rule_source": "sumo",
-        "score": 4,
-        "silent_mode": true,
+        "score": 3,
+        "silent_mode": false,
         "stream": "record",
-        "summary_expression": "DLP alert correlated with GenAI POST from {{srcDevice_ip}} ({{user_username}}) \u2014 cross-vendor chain",
+        "summary_expression": "DLP alert correlated with GenAI POST from {{srcDevice_ip}} ({{user_username}}) - cross-vendor chain",
         "tags": [
             "_mitreAttackTactic:TA0010",
-            "_mitreAttackTechnique:T1567",
-            "_mitreAtlasTechnique:AML.T0024"
+            "_mitreAttackTechnique:T1567"
         ],
-        "threat_ruleType": "data_protection",
+        "threat_ruleType": null,
         "vendor_direct_ref": [],
         "window": "T10M",
         "window_size": 600000
@@ -2449,15 +2449,17 @@
     "CHAIN-S00029": {
         "all_fields": [
             "baseImage",
+            "commandLine",
             "device_hostname",
+            "metadata_deviceEventId",
             "srcDevice_ip",
             "user_username"
         ],
         "category": "Execution",
-        "commit_message": "TLAB-2646 FY27Q3 AI Campaign test use cases and silentmode deploy (#6037)",
-        "commit_origin_hash": "079ef92bd3975d4a75c59a48fe71ac93654d2a88",
+        "commit_message": "TLAB-2646 Set silent_mode to false for AI campaign rules (#6054)",
+        "commit_origin_hash": "4cfeee3951b55a98d3a9e8ddaf3b72c11d2a2fb6",
         "content_type": "RULE",
-        "description": "Detection: This ordered chain rule triggers when a Python process referencing a model file (.pkl, .pickle, .pth, .pt, .ckpt, .joblib) or deserialization function (pickle.load, torch.load, joblib.load) in its command line is followed by a suspicious child process spawned by Python on the same host within 10 minutes. The child process must match known malicious command patterns.\n\nScenario: An attacker publishes a weaponized serialized model file on a public repository. When a user loads the file with pickle.load() or torch.load(), the __reduce__ method executes arbitrary code, spawning a reverse shell, credential theft, or download-and-execute payload. This chain proves both the deserialization trigger and the malicious outcome on the same endpoint.\n\nRecommended Actions: Check Stage 0 commandLine for which model file was loaded. Check Stage 1 commandLine for the malicious payload. Identify the model file origin \u2014 was it downloaded from a public repository (correlate with UC5)? Isolate the host if reverse shell or C2 activity confirmed.\n\nTuning Recommendations: Suppress CI/CD hosts with ci_cd_hosts match list. Stage 1 only matches when the model file is in Python's commandLine arguments \u2014 script-based loading (python3 train.py with hardcoded paths) falls back to UC3c standalone detection.\n\nAttribution: Attack pattern based on JFrog HuggingFace findings (~100 malicious models using __reduce__ reverse shells) and Trail of Bits fickling research.",
+        "description": "Detection: This ordered chain rule triggers when a Python process referencing a serialized model file (.pkl, .pth, .pt, .ckpt, .joblib) or deserialization function (pickle.load, torch.load, joblib.load) in its command line is followed by a child process executing a reverse shell, download-and-execute, credential access, or encoded payload on the same host within 10 minutes.\n\nScenario: Engineers routinely download and load pretrained models from public repositories. Attackers exploit this by publishing weaponized models that execute arbitrary code during deserialization via Python's __reduce__ method - JFrog researchers identified multiple such models on HuggingFace establishing reverse shells upon loading. Link: https://jfrog.com/blog/data-scientists-targeted-by-malicious-hugging-face-ml-models-with-silent-backdoor/\n\nRecommended Actions: Identify the model file from the Python process command line and confirm the child process activity. Investigate whether the child process PID traces back to the Python process to strengthen attribution, check the model file origin, and isolate the host if malicious activity is confirmed.\n\nTuning Recommendations: To exclude CI/CD build servers and automation hosts that routinely run Python scripts spawning shell commands, create a match list named ci_cd_hosts of their hostnames under Cloud SIEM > Match Lists; the child-process stage already excludes records that match it, so no further change is needed.",
         "enabled_by_default": true,
         "entity_selectors": [
             {
@@ -2475,34 +2477,34 @@
         ],
         "expressions_and_limits": [
             {
-                "expression": "baseImage matches /(?i)python/\nAND (commandLine matches /(?i)\\.(pkl|pickle|pth|pt|ckpt|joblib)/\n  OR commandLine matches /(?i)(pickle\\.load|torch\\.load|joblib\\.load)/)",
+                "expression": "baseImage matches /(?i)python/\nAND NOT baseImage matches /(?i)google-cloud-sdk/\nAND (commandLine matches /(?i)\\.(pkl|pickle|pth|pt|ckpt|joblib)\\b/\n  OR commandLine matches /(?i)(pickle\\.load|torch\\.load|joblib\\.load)/)\nAND NOT metadata_deviceEventId matches /(?i)^(SharedObjectLoaded|SyntheticSharedObjectLoaded|MemoryProtectionChanged|FileOfInterestBasicInfo|TlsClientHello|SyntheticProcessRollup2)$/",
                 "limit": 1
             },
             {
-                "expression": "(parentBaseImage matches /(?i)python/\n OR fields['ParentImageFileName'] matches /(?i)python/\n OR fields['event.ParentImageFileName'] matches /(?i)python/)\nAND NOT baseImage matches /(?i)python/\nAND commandLine matches /(?i)(\\/dev\\/tcp|mkfifo.*nc\\s|ncat.*-e|curl.*\\|.*sh|wget.*\\|.*sh|\\/etc\\/(shadow|passwd)|base64.*-d.*\\|)/",
+                "expression": "(parentBaseImage matches /(?i)python/\n OR fields['ParentImageFileName'] matches /(?i)python/\n OR fields['event.ParentImageFileName'] matches /(?i)python/)\nAND NOT baseImage matches /(?i)python/\nAND (commandLine matches /(?i)(\\/dev\\/tcp\\/|\\bmkfifo\\b.*\\bnc\\s|\\bncat\\b.*\\s-e\\b|\\b(curl|wget)\\b[^|]*\\|\\s*(sudo\\s+)?(ba|z|da|k)?sh(\\s|$|;)|\\bbase64\\b.*-d.*\\|\\s*(sudo\\s+)?(ba|z|da|k)?sh(\\s|$|;))/\n OR (commandLine matches /(?i)\\/etc\\/(shadow|passwd)\\b/\n     AND NOT commandLine matches /(?i)\\b(curl|wget)\\b.*\\s(-d|--data[a-z-]*)\\s+['\\\"]?[{\\[]/))\nAND NOT array_contains(listMatches, 'ci_cd_hosts')",
                 "limit": 1
             }
         ],
-        "file_path": "rules_v3/Python_Model_Deserialization_Followed_by_Suspicious_Child_Process.json",
+        "file_path": "rules_v3/Suspicious_Child_Process_Spawned_After_Python_Model_Deserialization.json",
         "group_by_fields": [
             "device_hostname"
         ],
         "id": 29,
         "id_compiled": "CHAIN-S00029",
         "is_prototype": false,
-        "name": "Python Model Deserialization Followed by Suspicious Child Process",
-        "normalized_description": "Detection: This ordered chain rule triggers when a Python process referencing a model file (.pkl, .pickle, .pth, .pt, .ckpt, .joblib) or deserialization function (pickle.load, torch.load, joblib.load) in its command line is followed by a suspicious child process spawned by Python on the same host within 10 minutes. The child process must match known malicious command patterns.\n\nScenario: An attacker publishes a weaponized serialized model file on a public repository. When a user loads the file with pickle.load() or torch.load(), the __reduce__ method executes arbitrary code, spawning a reverse shell, credential theft, or download-and-execute payload. This chain proves both the deserialization trigger and the malicious outcome on the same endpoint.\n\nRecommended Actions: Check Stage 0 commandLine for which model file was loaded. Check Stage 1 commandLine for the malicious payload. Identify the model file origin \u2014 was it downloaded from a public repository (correlate with UC5)? Isolate the host if reverse shell or C2 activity confirmed.\n\nTuning Recommendations: Suppress CI/CD hosts with ci_cd_hosts match list. Stage 1 only matches when the model file is in Python's commandLine arguments \u2014 script-based loading (python3 train.py with hardcoded paths) falls back to UC3c standalone detection.\n\nAttribution: Attack pattern based on JFrog HuggingFace findings (~100 malicious models using __reduce__ reverse shells) and Trail of Bits fickling research.",
-        "normalized_score_description": "Static: 4",
+        "name": "Suspicious Child Process Spawned After Python Model Deserialization",
+        "normalized_description": "Detection: This ordered chain rule triggers when a Python process referencing a serialized model file (.pkl, .pth, .pt, .ckpt, .joblib) or deserialization function (pickle.load, torch.load, joblib.load) in its command line is followed by a child process executing a reverse shell, download-and-execute, credential access, or encoded payload on the same host within 10 minutes.\n\nScenario: Engineers routinely download and load pretrained models from public repositories. Attackers exploit this by publishing weaponized models that execute arbitrary code during deserialization via Python's __reduce__ method - JFrog researchers identified multiple such models on HuggingFace establishing reverse shells upon loading. Link: https://jfrog.com/blog/data-scientists-targeted-by-malicious-hugging-face-ml-models-with-silent-backdoor/\n\nRecommended Actions: Identify the model file from the Python process command line and confirm the child process activity. Investigate whether the child process PID traces back to the Python process to strengthen attribution, check the model file origin, and isolate the host if malicious activity is confirmed.\n\nTuning Recommendations: To exclude CI/CD build servers and automation hosts that routinely run Python scripts spawning shell commands, create a match list named ci_cd_hosts of their hostnames under Cloud SIEM > Match Lists; the child-process stage already excludes records that match it, so no further change is needed.",
+        "normalized_score_description": "Static: 2",
         "normalized_score_possibilities": [
-            4
+            2
         ],
         "normalized_score_range": [
-            4,
-            4
+            2,
+            2
         ],
         "normalized_score_type": "Static",
-        "normalized_signal_name": "Python Model Deserialization Followed by Suspicious Child Process",
-        "normalized_summary": "Python loaded model file then spawned suspicious child on {{device_hostname}} ({{user_username}})",
+        "normalized_signal_name": "Suspicious Child Process Spawned After Python Model Deserialization",
+        "normalized_summary": "Suspicious child process spawned after Python model deserialization on {{device_hostname}} by {{user_username}}",
         "ordered": true,
         "pattern_type": "chain",
         "product_direct_ref": [],
@@ -2512,15 +2514,17 @@
         "record_type_direct_ref": [],
         "rule_description": "",
         "rule_source": "sumo",
-        "score": 4,
-        "silent_mode": true,
+        "score": 2,
+        "silent_mode": false,
         "stream": "record",
-        "summary_expression": "Python loaded model file then spawned suspicious child on {{device_hostname}} ({{user_username}})",
+        "summary_expression": "Suspicious child process spawned after Python model deserialization on {{device_hostname}} by {{user_username}}",
         "tags": [
             "_mitreAttackTactic:TA0002",
             "_mitreAttackTechnique:T1059.006",
+            "_mitreAttackTechnique:T1059.004",
             "_mitreAttackTechnique:T1204.002",
-            "_mitreAtlasTechnique:AML.T0010"
+            "_mitreAtlasTactic:AML.TA0005",
+            "_mitreAtlasTechnique:AML.T0011.000"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": [],
@@ -4376,7 +4380,6 @@
             "37C866BF-72E1-470A-9072-EDB908F56951",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
-            "57cec26c-f94e-4403-add4-dae2382b5c16",
             "6299d728-14f7-455e-85c5-ea8ec65a654a",
             "724c9add-8cd9-4013-b9e1-a907b96da426",
             "840c72e0-4e47-41e7-9b93-31f55d12f07d",
@@ -5991,6 +5994,7 @@
             "54f01856-e973-4d7b-a3eb-95cc08ff44f5",
             "5be5af82-c248-4c4c-a485-0571025f242c",
             "5bfda3d2-03e7-4d9a-8072-c59430a131d7",
+            "79055042-52c8-4998-b201-bd2cd2dbca1f",
             "79da6240-7617-49c8-b130-96278579766e",
             "8276b520-fdeb-4f79-9f5d-67865818562b",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
@@ -8209,16 +8213,18 @@
     "FIRST-S00103": {
         "all_fields": [
             "baseImage",
+            "commandLine",
             "device_hostname",
+            "metadata_deviceEventId",
             "user_username"
         ],
         "baseline_type": "PER_ENTITY",
         "baseline_window_size": 1209600000,
         "category": "Execution",
-        "commit_message": "TLAB-2646 FY27Q3 AI Campaign test use cases and silentmode deploy (#6037)",
-        "commit_origin_hash": "079ef92bd3975d4a75c59a48fe71ac93654d2a88",
+        "commit_message": "TLAB-2646 Set silent_mode to false for AI campaign rules (#6054)",
+        "commit_origin_hash": "4cfeee3951b55a98d3a9e8ddaf3b72c11d2a2fb6",
         "content_type": "ANOMALY",
-        "description_expression": "Detection: This First Seen rule triggers when an AI inference runtime baseImage appears on a host for the first time after the 14-day baseline period. It fires once per novel runtime per device_hostname.\n\nScenario: A new AI runtime installation on a corporate endpoint is a governance event. After baseline, this rule only fires on genuinely new installations, providing higher signal than the base match rule for AI governance monitoring.\n\nRecommended Actions: Investigate why a new AI runtime appeared on this host. Was it installed by the user or deployed by IT? Is the host approved for AI workloads? Check if model files were also downloaded recently (correlate with UC5).\n\nTuning Recommendations: Same sanctioned host/user lists as the base match rule. First 14 days are a learning period \u2014 expect no signals during baseline building.",
+        "description_expression": "Detection: This rule triggers when an AI inference runtime process appears on a host for the first time after the 14-day baseline period, firing once per novel runtime per host.\nScenario: A previously unseen AI runtime on a corporate endpoint may indicate an unauthorized installation or a new tool adoption that has not been reviewed by IT or security. Early visibility into new runtime deployments supports AI governance programs and shadow IT detection.\nRecommended Actions: Investigate why a new AI runtime appeared on this host. Determine whether it was installed by the user or deployed through an approved channel, and verify the host is authorized for AI workloads.\nTuning Recommendations: To exclude approved AI hosts, create a match list of their hostnames under Cloud SIEM > Match Lists, or use an existing list of approved hosts, then go to Cloud SIEM > Rule Tuning, create a tuning expression for this rule, choose to exclude, and enter array_contains(listMatches, '<your_list_name>').",
         "enabled_by_default": true,
         "entity_selectors": [
             {
@@ -8230,38 +8236,38 @@
                 "expression": "user_username"
             }
         ],
-        "file_path": "rules_v3/First_Seen_AI_Runtime_on_Host.json",
-        "filter_expression": "baseImage matches /(?i)(ollama|llama-|llamafile|lmstudio|lm\\.studio|gpt4all|koboldcpp|local-?ai|whisper-server|comfyui)/ OR (baseImage matches /(?i)vllm/ AND NOT baseImage matches /(?i)svllm/) OR (baseImage matches /(?i)python/ AND commandLine matches /(?i)(text-generation|stable-diffusion)/) OR commandLine matches /(?i)(ollama\\s+(serve|run)|vllm\\.entrypoints)/",
+        "file_path": "rules_v3/First_Seen_AI_Runtime_on_Endpoint.json",
+        "filter_expression": "(\n    baseImage matches /(?i)(ollama|llama-|llamafile|lmstudio|lm\\.studio|gpt4all|koboldcpp|(^|[\\\\\\/])local-?ai(\\.exe)?$|whisper-server|comfyui)/\n OR (baseImage matches /(?i)vllm/ AND NOT baseImage matches /(?i)svllm/)\n OR (baseImage matches /(?i)python/ AND commandLine matches /(?i)(text-generation|stable-diffusion)/)\n OR commandLine matches /(?i)(ollama\\s+(serve|run)|vllm\\.entrypoints)/\n)\nAND NOT metadata_deviceEventId matches /(?i)^(ClassifiedModuleLoad|PeVersionInfo|SyntheticProcessRollup2|modifype|deletepe|createdir|createpe|scriptcreation|AdvancedHunting-DeviceEvents)$/\nAND NOT baseImage matches /(?i)(ollamasetup\\.(exe|tmp)$|[\\\\\\/]ollama[\\\\\\/]updates(_v2)?[\\\\\\/])/\nAND NOT commandLine matches /(?i)\\s--(version|list-devices)$/\nAND NOT baseImage matches /(?i)\\.(dll|class|py|node|so|dylib|jar|json|txt|md)$/",
         "group_by_fields": [
             "device_hostname"
         ],
         "id": 103,
         "id_compiled": "FIRST-S00103",
         "is_prototype": false,
-        "name": "First Seen AI Runtime on Host",
+        "name": "First Seen AI Runtime on Endpoint",
         "name_expression": "First Seen: {{baseImage}} on {{device_hostname}}",
-        "normalized_description": "Detection: This First Seen rule triggers when an AI inference runtime baseImage appears on a host for the first time after the 14-day baseline period. It fires once per novel runtime per device_hostname.\n\nScenario: A new AI runtime installation on a corporate endpoint is a governance event. After baseline, this rule only fires on genuinely new installations, providing higher signal than the base match rule for AI governance monitoring.\n\nRecommended Actions: Investigate why a new AI runtime appeared on this host. Was it installed by the user or deployed by IT? Is the host approved for AI workloads? Check if model files were also downloaded recently (correlate with UC5).\n\nTuning Recommendations: Same sanctioned host/user lists as the base match rule. First 14 days are a learning period \u2014 expect no signals during baseline building.",
-        "normalized_score_description": "Static: 3",
+        "normalized_description": "Detection: This rule triggers when an AI inference runtime process appears on a host for the first time after the 14-day baseline period, firing once per novel runtime per host.\nScenario: A previously unseen AI runtime on a corporate endpoint may indicate an unauthorized installation or a new tool adoption that has not been reviewed by IT or security. Early visibility into new runtime deployments supports AI governance programs and shadow IT detection.\nRecommended Actions: Investigate why a new AI runtime appeared on this host. Determine whether it was installed by the user or deployed through an approved channel, and verify the host is authorized for AI workloads.\nTuning Recommendations: To exclude approved AI hosts, create a match list of their hostnames under Cloud SIEM > Match Lists, or use an existing list of approved hosts, then go to Cloud SIEM > Rule Tuning, create a tuning expression for this rule, choose to exclude, and enter array_contains(listMatches, '<your_list_name>').",
+        "normalized_score_description": "Static: 2",
         "normalized_score_possibilities": [
-            3
+            2
         ],
         "normalized_score_range": [
-            3,
-            3
+            2,
+            2
         ],
         "normalized_score_type": "Static",
         "normalized_signal_name": "First Seen: {{baseImage}} on {{device_hostname}}",
-        "normalized_summary": "AI runtime {{baseImage}} first seen on {{device_hostname}} ({{user_username}})",
+        "normalized_summary": "AI runtime {{baseImage}} first seen on {{device_hostname}}",
         "pattern_type": "first_seen",
         "product_direct_ref": [],
         "product_guids": [],
         "record_type_direct_ref": [],
         "retention_window_size": 7776000000,
         "rule_source": "sumo",
-        "score": 3,
-        "silent_mode": true,
+        "score": 2,
+        "silent_mode": false,
         "stream": "record",
-        "summary_expression": "AI runtime {{baseImage}} first seen on {{device_hostname}} ({{user_username}})",
+        "summary_expression": "AI runtime {{baseImage}} first seen on {{device_hostname}}",
         "tags": [
             "_mitreAttackTactic:TA0002",
             "_mitreAttackTechnique:T1204.002"
@@ -8282,11 +8288,11 @@
         ],
         "baseline_type": "PER_ENTITY",
         "baseline_window_size": 1209600000,
-        "category": "Execution",
-        "commit_message": "TLAB-2646 FY27Q3 AI Campaign test use cases and silentmode deploy (#6037)",
-        "commit_origin_hash": "079ef92bd3975d4a75c59a48fe71ac93654d2a88",
+        "category": "Initial Access",
+        "commit_message": "TLAB-2646 Set silent_mode to false for AI campaign rules (#6054)",
+        "commit_origin_hash": "4cfeee3951b55a98d3a9e8ddaf3b72c11d2a2fb6",
         "content_type": "ANOMALY",
-        "description_expression": "Detection: This First Seen rule triggers when a new external source IP connects to a local AI inference runtime on a host for the first time after the 14-day baseline period. It fires once per novel srcDevice_ip per device_hostname combination.\n\nScenario: A new client discovering an AI runtime on a host is more actionable than repeated connections from known clients. After baseline, this rule identifies previously unseen source IPs connecting to AI runtimes, which may indicate discovery or unauthorized access.\n\nRecommended Actions: Identify the new client via srcDevice_ip. If the source is external/internet, treat as high priority \u2014 the runtime may be exposed. If internal, investigate whether this is approved inter-team model sharing. Correlate with UC4 to confirm the runtime.\n\nTuning Recommendations: Same sanctioned host lists as the base match rule. First 14 days are a learning period.",
+        "description_expression": "Detection: This rule triggers when a new external source IP connects to a local AI inference runtime on a host for the first time after the 14-day baseline period, firing once per novel source IP per host.\nScenario: AI runtimes such as Ollama bind to all network interfaces by default and do not require authentication, leaving them vulnerable to unauthorized access when exposed externally. A previously unseen client connecting to a runtime may indicate unauthorized discovery or a new consumer of an internal AI service.\nRecommended Actions: Identify the new client IP and verify the runtime is not inadvertently exposed to the internet. Confirm whether the client is an approved consumer of the AI service.\nTuning Recommendations: To exclude approved AI servers that are expected to receive connections, create a match list of their hostnames under Cloud SIEM > Match Lists, or use an existing list of approved hosts, then go to Cloud SIEM > Rule Tuning, create a tuning expression for this rule, choose to exclude, and enter array_contains(listMatches, '<your_list_name>').",
         "enabled_by_default": true,
         "entity_selectors": [
             {
@@ -8302,24 +8308,24 @@
                 "expression": "user_username"
             }
         ],
-        "file_path": "rules_v3/First_Seen_External_Client_to_AI_Inference_Runtime.json",
-        "filter_expression": "(baseImage matches /(?i)(ollama|llama-server|llama-rpc|llamafile|koboldcpp|local-?ai|whisper-server|comfyui)/\n OR baseImage matches /(?i)vllm/\n OR (baseImage matches /(?i)python/ AND dstPort IN (8080, 8000, 7860, 8188, 5001)))\nAND dstPort IN (11434, 1234, 8080, 8000, 5001, 7860, 8188, 1337)\nAND srcDevice_ip != '127.0.0.1'\nAND (fields['Initiated'] = 'false' OR fields['EventData.Initiated'] = 'false' OR fields['Initiated'] IS NULL)",
+        "file_path": "rules_v3/First_Seen_External_Client_to_AI_Runtime.json",
+        "filter_expression": "(baseImage matches /(?i)(ollama|llama-server|llama-rpc|llamafile|koboldcpp|local-?ai|whisper-server|comfyui)/\n OR baseImage matches /(?i)vllm/\n OR (baseImage matches /(?i)python/\n     AND commandLine matches /(?i)(text-generation|stable-diffusion|vllm|ollama|llama|comfyui|gradio|--port\\s+(7860|8188|11434))/\n     AND dstPort IN (8080, 8000, 7860, 8188, 5001)))\nAND dstPort IN (11434, 1234, 8080, 8000, 5001, 7860, 8188, 1337)\nAND NOT isNull(srcDevice_ip)\nAND NOT srcDevice_ip matches /^(10\\.|192\\.168\\.|172\\.(1[6-9]|2[0-9]|3[01])\\.|169\\.254\\.|127\\.|0\\.0\\.0\\.0|100\\.(6[4-9]|[7-9][0-9]|1[01][0-9]|12[0-7])\\.)/\nAND (fields['Initiated'] = 'false' OR fields['EventData.Initiated'] = 'false' OR fields['Initiated'] IS NULL)",
         "group_by_fields": [
             "device_hostname"
         ],
         "id": 104,
         "id_compiled": "FIRST-S00104",
         "is_prototype": false,
-        "name": "First Seen External Client to AI Inference Runtime",
+        "name": "First Seen External Client to AI Runtime",
         "name_expression": "First Seen Client {{srcDevice_ip}} to AI Runtime on {{device_hostname}}",
-        "normalized_description": "Detection: This First Seen rule triggers when a new external source IP connects to a local AI inference runtime on a host for the first time after the 14-day baseline period. It fires once per novel srcDevice_ip per device_hostname combination.\n\nScenario: A new client discovering an AI runtime on a host is more actionable than repeated connections from known clients. After baseline, this rule identifies previously unseen source IPs connecting to AI runtimes, which may indicate discovery or unauthorized access.\n\nRecommended Actions: Identify the new client via srcDevice_ip. If the source is external/internet, treat as high priority \u2014 the runtime may be exposed. If internal, investigate whether this is approved inter-team model sharing. Correlate with UC4 to confirm the runtime.\n\nTuning Recommendations: Same sanctioned host lists as the base match rule. First 14 days are a learning period.",
-        "normalized_score_description": "Static: 4",
+        "normalized_description": "Detection: This rule triggers when a new external source IP connects to a local AI inference runtime on a host for the first time after the 14-day baseline period, firing once per novel source IP per host.\nScenario: AI runtimes such as Ollama bind to all network interfaces by default and do not require authentication, leaving them vulnerable to unauthorized access when exposed externally. A previously unseen client connecting to a runtime may indicate unauthorized discovery or a new consumer of an internal AI service.\nRecommended Actions: Identify the new client IP and verify the runtime is not inadvertently exposed to the internet. Confirm whether the client is an approved consumer of the AI service.\nTuning Recommendations: To exclude approved AI servers that are expected to receive connections, create a match list of their hostnames under Cloud SIEM > Match Lists, or use an existing list of approved hosts, then go to Cloud SIEM > Rule Tuning, create a tuning expression for this rule, choose to exclude, and enter array_contains(listMatches, '<your_list_name>').",
+        "normalized_score_description": "Static: 3",
         "normalized_score_possibilities": [
-            4
+            3
         ],
         "normalized_score_range": [
-            4,
-            4
+            3,
+            3
         ],
         "normalized_score_type": "Static",
         "normalized_signal_name": "First Seen Client {{srcDevice_ip}} to AI Runtime on {{device_hostname}}",
@@ -8330,15 +8336,15 @@
         "record_type_direct_ref": [],
         "retention_window_size": 7776000000,
         "rule_source": "sumo",
-        "score": 4,
-        "silent_mode": true,
+        "score": 3,
+        "silent_mode": false,
         "stream": "record",
         "summary_expression": "First seen external client {{srcDevice_ip}} connecting to AI runtime on {{device_hostname}}",
         "tags": [
-            "_mitreAttackTactic:TA0002",
-            "_mitreAttackTechnique:T1219",
-            "_mitreAttackTechnique:T1571",
-            "_mitreAtlasTechnique:AML.T0011"
+            "_mitreAttackTactic:TA0001",
+            "_mitreAttackTechnique:T1190",
+            "_mitreAtlasTactic:AML.TA0000",
+            "_mitreAtlasTechnique:AML.T0040"
         ],
         "threat_ruleType": null,
         "value_expression": "srcDevice_ip",
@@ -9979,7 +9985,8 @@
             "5bb9e0b3-8d57-4b10-8952-0b6ffe91b599",
             "6787d77a-1ee0-43d4-8ca0-96af8ee755bc",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
-            "c2503fcc-ef30-4e40-bb32-0bf47151b140"
+            "c2503fcc-ef30-4e40-bb32-0bf47151b140",
+            "fca8785d-4823-4442-86b2-8acbaa176da4"
         ],
         "record_type_direct_ref": [],
         "rule_source": "sumo",
@@ -14631,8 +14638,8 @@
             "9e0641a7-22ce-4ac8-8113-ee48b368ac3d",
             "A17B3F3C-04F1-40C8-9497-3C499EB18A74",
             "B3582ED2-1A0C-452D-9802-97433D143486",
-            "DFD96D65-65F6-413B-B4BE-F09D4870B377",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
+            "afabb29d-e728-410f-b7c6-acfa9efbe1ed",
             "b238758d-ade8-41d2-b32d-c99159e9fd74",
             "be4f7473-fe69-4311-8859-3561900060bf",
             "c2503fcc-ef30-4e40-bb32-0bf47151b140",
@@ -15883,13 +15890,13 @@
             "af61d8a8-3eba-42fb-9f17-87443924f3f4",
             "afabb29d-e728-410f-b7c6-acfa9efbe1ed",
             "b8e88b31-2f07-45d9-9dda-6af362c63003",
+            "bee5bdb2-df30-4c71-9c13-fe207a101bb3",
             "c2503fcc-ef30-4e40-bb32-0bf47151b140",
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
             "d3606245-76d3-4173-a2fe-832c0e71b0f9",
             "d3ed003d-5ddd-4c7a-bea5-63eae6311833",
             "da9e05a5-3fd3-46a7-a107-ae03c01e3f5a",
             "dcc85cfc-a698-4d09-87de-f2c723f3ad07",
-            "e3c8bd8b-6ed8-4332-944d-d0f5dfc462df",
             "e90edc67-68d4-4d67-82f6-4524f94b59bb",
             "ede052db-d472-408f-949c-be642237ef3f",
             "fca8785d-4823-4442-86b2-8acbaa176da4"
@@ -22103,7 +22110,8 @@
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
-            "a1225af5-e778-4068-a9a2-47da93d1ff24"
+            "a1225af5-e778-4068-a9a2-47da93d1ff24",
+            "b238758d-ade8-41d2-b32d-c99159e9fd74"
         ],
         "record_type_direct_ref": [],
         "rule_source": "sumo",
@@ -22251,8 +22259,7 @@
         "product_direct_ref": [],
         "product_guids": [
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
-            "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
-            "a1225af5-e778-4068-a9a2-47da93d1ff24"
+            "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3"
         ],
         "record_type_direct_ref": [],
         "rule_source": "sumo",
@@ -22624,7 +22631,8 @@
         "product_direct_ref": [],
         "product_guids": [
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
-            "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3"
+            "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
+            "b238758d-ade8-41d2-b32d-c99159e9fd74"
         ],
         "record_type_direct_ref": [],
         "rule_source": "sumo",
@@ -29030,8 +29038,7 @@
         "pattern_type": "templated_match",
         "product_direct_ref": [],
         "product_guids": [
-            "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
-            "840c72e0-4e47-41e7-9b93-31f55d12f07d"
+            "1ff7546c-cb36-4a24-87f7-89d2cecc5761"
         ],
         "record_type_direct_ref": [],
         "rule_source": "sumo",
@@ -30865,7 +30872,6 @@
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
-            "60829f4a-7acb-47d1-ad23-8424fcf83dcb",
             "840c72e0-4e47-41e7-9b93-31f55d12f07d",
             "a1225af5-e778-4068-a9a2-47da93d1ff24"
         ],
@@ -32405,7 +32411,8 @@
         "product_guids": [
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
-            "93e2d3d-fab1-4d61-845f-49bc1ae5bed9"
+            "93e2d3d-fab1-4d61-845f-49bc1ae5bed9",
+            "a1225af5-e778-4068-a9a2-47da93d1ff24"
         ],
         "record_type_direct_ref": [],
         "rule_source": "sumo",
@@ -38990,7 +38997,6 @@
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
-            "72a5ddec-abb9-41ff-a2da-6a58beff980c",
             "840c72e0-4e47-41e7-9b93-31f55d12f07d",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "ef42eb74-7444-4fee-b231-b4eb1e7c9660",
@@ -39798,7 +39804,6 @@
             "3a82061c-2ca3-4289-9c9b-78756001aa38",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
-            "57cec26c-f94e-4403-add4-dae2382b5c16",
             "5c2cc0de-ca31-4ef0-bcfa-133fc8b387ad",
             "6299d728-14f7-455e-85c5-ea8ec65a654a",
             "724c9add-8cd9-4013-b9e1-a907b96da426",
@@ -39918,6 +39923,7 @@
             "dcc85cfc-a698-4d09-87de-f2c723f3ad07",
             "de3d4b6b-36a3-4436-8bfc-0561ac95037e",
             "e73cd65a-7a4b-4ce9-9d73-e5d9c824c214",
+            "ede052db-d472-408f-949c-be642237ef3f",
             "fca8785d-4823-4442-86b2-8acbaa176da4"
         ],
         "record_type_direct_ref": [
@@ -39986,6 +39992,7 @@
         "product_direct_ref": [],
         "product_guids": [
             "146522A1-DC9A-40A5-A909-2EB3B665B1D1",
+            "168afd8d-2893-4c74-95b1-a975d576ea56",
             "343b9323-d279-40d9-946f-809242e5cf98",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
             "6299d728-14f7-455e-85c5-ea8ec65a654a",
@@ -46354,6 +46361,7 @@
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "5c2cc0de-ca31-4ef0-bcfa-133fc8b387ad",
             "72a5ddec-abb9-41ff-a2da-6a58beff980c",
+            "840c72e0-4e47-41e7-9b93-31f55d12f07d",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "d6cb76d3-939e-4e02-b399-b15e0278c877"
         ],
@@ -49675,7 +49683,6 @@
             "0e20c932-d992-4bd4-b276-c15119ca5c0b",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "840c72e0-4e47-41e7-9b93-31f55d12f07d",
-            "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "b238758d-ade8-41d2-b32d-c99159e9fd74"
         ],
         "record_type_direct_ref": [],
@@ -56419,6 +56426,7 @@
             "5bb9e0b3-8d57-4b10-8952-0b6ffe91b599",
             "6299d728-14f7-455e-85c5-ea8ec65a654a",
             "6787d77a-1ee0-43d4-8ca0-96af8ee755bc",
+            "724c9add-8cd9-4013-b9e1-a907b96da426",
             "9a28f2af-5526-414d-973b-c3fc7984b8a1",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "ae07663e-2c2c-4932-be5d-c9f985e95276",
@@ -62742,6 +62750,7 @@
             "41f70c6e-18a9-462c-a04d-4edc7baead7a",
             "5ba50e74-3c05-4ea8-aeaf-5efde588c60f",
             "6299d728-14f7-455e-85c5-ea8ec65a654a",
+            "840c72e0-4e47-41e7-9b93-31f55d12f07d",
             "B3582ED2-1A0C-452D-9802-97433D143486",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "c2503fcc-ef30-4e40-bb32-0bf47151b140",
@@ -67445,6 +67454,7 @@
             "54B36B3F-A63F-4BA4-9DE4-02DBF69A429F",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "72a5ddec-abb9-41ff-a2da-6a58beff980c",
+            "79da6240-7617-49c8-b130-96278579766e",
             "7eaa4c44-5b7f-4d9e-8c1c-c4105c2b7506",
             "840c72e0-4e47-41e7-9b93-31f55d12f07d",
             "8c342fa0-4147-47c9-b574-965ad2eddafa",
@@ -68259,6 +68269,7 @@
         "pattern_type": "templated_match",
         "product_direct_ref": [],
         "product_guids": [
+            "003d35b3-3ba8-4e93-8776-e5810b4e243e",
             "072b85a2-1765-45c2-911d-b0509880326e",
             "0fb003bc-8383-442f-8f3d-afcfbaefe617",
             "168afd8d-2893-4c74-95b1-a975d576ea56",
@@ -68968,6 +68979,7 @@
         "pattern_type": "templated_match",
         "product_direct_ref": [],
         "product_guids": [
+            "003d35b3-3ba8-4e93-8776-e5810b4e243e",
             "0fb003bc-8383-442f-8f3d-afcfbaefe617",
             "2a678bcd-898e-43cd-ab3f-91feb0602a18",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
@@ -69078,6 +69090,7 @@
             "51278354-d6b5-4c8e-a8fd-8197df334e67",
             "79da6240-7617-49c8-b130-96278579766e",
             "8276b520-fdeb-4f79-9f5d-67865818562b",
+            "840c72e0-4e47-41e7-9b93-31f55d12f07d",
             "9f6d624f-6d8f-43c7-a4b0-51179061631c",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "a301559a-8110-4dd0-a41d-35b9baa1c740",
@@ -69981,7 +69994,6 @@
             "3a82061c-2ca3-4289-9c9b-78756001aa38",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
-            "5ba50e74-3c05-4ea8-aeaf-5efde588c60f",
             "6299d728-14f7-455e-85c5-ea8ec65a654a",
             "724c9add-8cd9-4013-b9e1-a907b96da426",
             "840c72e0-4e47-41e7-9b93-31f55d12f07d",
@@ -71795,6 +71807,7 @@
         "product_direct_ref": [],
         "product_guids": [
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
+            "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
             "d4a9e7ce-082e-4f41-891f-4c43e604c850",
             "e0763d80-29ce-43a0-b0ab-69c621abb3eb"
         ],
@@ -72972,6 +72985,7 @@
             "1ce88b4b-d90d-4d50-9a89-3abe83e8d5f8",
             "234ec2b5-4142-4837-bc78-95da8a2db81a",
             "2a236ab1-77d2-4867-a571-a1cfd64528e6",
+            "2f2fbe08-ab8b-4626-81fd-eaa41b563c49",
             "37C866BF-72E1-470A-9072-EDB908F56951",
             "44f07c08-c2ad-4a95-a058-1d0737ff90db",
             "5ba50e74-3c05-4ea8-aeaf-5efde588c60f",
@@ -74524,7 +74538,10 @@
         "normalized_summary": "An outlier in HTTP server error responses from source IP: {{srcDevice_ip}} has been detected",
         "pattern_type": "outlier",
         "product_direct_ref": [],
-        "product_guids": [],
+        "product_guids": [
+            "5bb9e0b3-8d57-4b10-8952-0b6ffe91b599",
+            "6787d77a-1ee0-43d4-8ca0-96af8ee755bc"
+        ],
         "record_type_direct_ref": [],
         "retention_window_size": 7776000000,
         "rule_description": "",
@@ -74595,7 +74612,10 @@
         "normalized_summary": "An outlier in HTTP server error responses to destination IP: {{dstDevice_ip}} has been detected",
         "pattern_type": "outlier",
         "product_direct_ref": [],
-        "product_guids": [],
+        "product_guids": [
+            "37C866BF-72E1-470A-9072-EDB908F56951",
+            "5bb9e0b3-8d57-4b10-8952-0b6ffe91b599"
+        ],
         "record_type_direct_ref": [],
         "retention_window_size": 7776000000,
         "rule_description": "",
@@ -74832,7 +74852,8 @@
             "be4f7473-fe69-4311-8859-3561900060bf",
             "c2503fcc-ef30-4e40-bb32-0bf47151b140",
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
-            "da9e05a5-3fd3-46a7-a107-ae03c01e3f5a"
+            "da9e05a5-3fd3-46a7-a107-ae03c01e3f5a",
+            "fca8785d-4823-4442-86b2-8acbaa176da4"
         ],
         "record_type_direct_ref": [],
         "rule_source": "sumo",
@@ -76060,7 +76081,6 @@
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "37C866BF-72E1-470A-9072-EDB908F56951",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
-            "55ec1d4a-6985-4f04-8de5-f9812871fda2",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "724c9add-8cd9-4013-b9e1-a907b96da426",
             "B3582ED2-1A0C-452D-9802-97433D143486",
@@ -78487,7 +78507,8 @@
         "product_direct_ref": [],
         "product_guids": [
             "5ba50e74-3c05-4ea8-aeaf-5efde588c60f",
-            "5bb9e0b3-8d57-4b10-8952-0b6ffe91b599"
+            "5bb9e0b3-8d57-4b10-8952-0b6ffe91b599",
+            "6299d728-14f7-455e-85c5-ea8ec65a654a"
         ],
         "record_type_direct_ref": [],
         "rule_description": "",
@@ -79655,6 +79676,7 @@
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
             "51278354-d6b5-4c8e-a8fd-8197df334e67",
             "54B36B3F-A63F-4BA4-9DE4-02DBF69A429F",
+            "54f01856-e973-4d7b-a3eb-95cc08ff44f5",
             "5be5af82-c248-4c4c-a485-0571025f242c",
             "7205db83-88e8-4074-8288-136a6c493d69",
             "79da6240-7617-49c8-b130-96278579766e",

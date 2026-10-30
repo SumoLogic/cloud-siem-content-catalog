@@ -5,7 +5,6 @@
 |Rule ID|Rule Name|
 |----|----|
 |MATCH-S00686|[Base64 Decode in Command Line](../rules/MATCH-S00686.md)|
-|MATCH-S00543|[Detect Psexec With Accepteula Flag](../rules/MATCH-S00543.md)|
 |FIRST-S00028|[First Seen Common Windows Recon Commands From User](../rules/FIRST-S00028.md)|
 |MATCH-S00445|[Known Ransomware File Extensions](../rules/MATCH-S00445.md)|
 |MATCH-S00648|[Kubernetes ListSecrets](../rules/MATCH-S00648.md)|

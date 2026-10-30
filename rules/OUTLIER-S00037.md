@@ -28,6 +28,8 @@ Tuning Recommendations: Scoped to the web_servers and http_servers match lists s
 |Prototype|False|
 |Tags|_mitreAttackTactic:TA0040, _mitreAttackTechnique:T1499|
 ## Vendors and Products
+- [Amazon AWS - Application Load Balancer](../products/5bb9e0b3-8d57-4b10-8952-0b6ffe91b599.md)
+- [Bro - Bro](../products/37C866BF-72E1-470A-9072-EDB908F56951.md)
 
 
 ## Fields Used
