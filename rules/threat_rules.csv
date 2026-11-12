@@ -70,6 +70,7 @@
 "direct","MATCH-S00402","Normalized Security Signal","38a062b1-1308-4b5d-851e-e0f93e27c1c9","CrowdStrike Falcon - All Detection Events"
 "direct","MATCH-S00402","Normalized Security Signal","5ac00bf7-2a94-4c2f-a56a-da56c2fd0f3c","CrowdStrike Falcon - All Detection Events - Custom Parser"
 "direct","MATCH-S00402","Normalized Security Signal","a09cb576-bab2-4b0d-a9c9-7a7c46c48870","CrowdStrike Falcon - Catch AutomatedLeadSummaryEvent|XdrDetectionSummaryEvent"
+"direct","MATCH-S00402","Normalized Security Signal","378f66f3-6c78-420b-aa61-353c42b61f81","CrowdStrike Falcon - CorrelationRuleDetectionSummaryEvent"
 "direct","MATCH-S00402","Normalized Security Signal","a20fdb3d-2294-43b0-b10c-18fc9921b1d1","CrowdStrike Falcon - EppDetectionSummaryEvents"
 "direct","MATCH-S00402","Normalized Security Signal","3952b643-4001-483e-bc06-8f8faf264262","CrowdStrike Falcon - EppDetectionSummaryEvents (CNC)"
 "direct","MATCH-S00402","Normalized Security Signal","09a000f5-0586-4ce4-b5d2-c7e99ea14650","CrowdStrike Falcon Host API DetectionSummaryEvent"

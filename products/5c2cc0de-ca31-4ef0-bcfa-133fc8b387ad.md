@@ -25,12 +25,14 @@
 |MATCH-S00647|[Kubernetes Pod Deletion](../rules/MATCH-S00647.md)|
 |MATCH-S00837|[Kubernetes Secrets Enumeration via Kubectl](../rules/MATCH-S00837.md)|
 |LEGACY-S00107|[Legacy Threat Intel Match - IP Address](../rules/LEGACY-S00107.md)|
+|MATCH-S00687|[Linux Security Tool Usage](../rules/MATCH-S00687.md)|
 |MATCH-S00534|[MacOS - Re-Opened Applications](../rules/MATCH-S00534.md)|
 |MATCH-S00729|[MacOS Gatekeeper Bypass](../rules/MATCH-S00729.md)|
 |MATCH-S00402|[Normalized Security Signal](../rules/MATCH-S00402.md)|
 |MATCH-S00554|[Outbound IRC Traffic](../rules/MATCH-S00554.md)|
 |MATCH-S00683|[Overly Permissive Chmod Command](../rules/MATCH-S00683.md)|
 |MATCH-S00698|[PATH Set to Current Directory](../rules/MATCH-S00698.md)|
+|MATCH-S00887|[Port Forwarding Enabled via Visual Studio Code](../rules/MATCH-S00887.md)|
 |MATCH-S00167|[Recon Using Common Windows Commands](../rules/MATCH-S00167.md)|
 |MATCH-S00356|[Suspicious Compression Tool Parameters](../rules/MATCH-S00356.md)|
 |AGGREGATION-S00004|[Suspicious K8s Enumeration](../rules/AGGREGATION-S00004.md)|

@@ -30,6 +30,8 @@ Tuning Recommendations: Scoped to the web_servers and http_servers match lists s
 ## Vendors and Products
 - [Amazon AWS - Application Load Balancer](../products/5bb9e0b3-8d57-4b10-8952-0b6ffe91b599.md)
 - [Apache - Apache HTTP Server](../products/6787d77a-1ee0-43d4-8ca0-96af8ee755bc.md)
+- [Bro - Bro](../products/37C866BF-72E1-470A-9072-EDB908F56951.md)
+- [Databricks - Databricks Audit](../products/b32a58b9-8bfd-4b1d-8b68-91611fe5c37e.md)
 
 
 ## Fields Used

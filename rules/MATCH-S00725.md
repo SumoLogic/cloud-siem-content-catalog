@@ -16,6 +16,7 @@ Compiled HTML Files (.chm) are blocked by default on modern Windows operating sy
 |Prototype|False|
 |Tags|_mitreAttackTactic:TA0005, _mitreAttackTechnique:T1218.001|
 ## Vendors and Products
+- [Anthropic - Claude Code](../products/eabd9eed-b071-4773-ad07-706ea5b51b9c.md)
 - [Cloudflare - Logpush](../products/c2503fcc-ef30-4e40-bb32-0bf47151b140.md)
 - [Code42 - Incydr](../products/cc523ad6-7193-4de5-a254-d0243fca63f3.md)
 - [CrowdStrike - FDR](../products/569a3a44-c29f-492e-bcf4-5dc04e2ab0f3.md)

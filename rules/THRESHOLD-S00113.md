@@ -27,6 +27,7 @@ An Azure firewall has denied a large number of requests to a URL within a short 
 |----|----|
 |Normalized Schema|description|
 |Normalized Schema|http_url|
+|Normalized Schema|metadata_deviceEventId|
 |Normalized Schema|metadata_product|
 |Normalized Schema|normalizedAction|
 

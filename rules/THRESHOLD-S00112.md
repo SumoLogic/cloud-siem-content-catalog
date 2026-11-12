@@ -26,6 +26,7 @@ An Azure firewall has denied a large number of request from an IP address within
 |Origin|Field|
 |----|----|
 |Normalized Schema|description|
+|Normalized Schema|metadata_deviceEventId|
 |Normalized Schema|metadata_product|
 |Normalized Schema|normalizedAction|
 |Normalized Schema|srcDevice_ip|
