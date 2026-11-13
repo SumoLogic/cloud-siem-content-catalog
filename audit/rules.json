@@ -969,7 +969,6 @@
             "12aba181-2b31-472c-a685-2be492f4778d",
             "153794da-09e8-48fe-b511-1306fbb94d07",
             "1b7798df-963b-4582-a82b-b8176c3a6a22",
-            "1ed80351-d779-4f1f-9ddb-b3881f19d487",
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "37a906de-5e9c-475e-881a-65a1d984f377",
@@ -977,6 +976,7 @@
             "51278354-d6b5-4c8e-a8fd-8197df334e67",
             "54B36B3F-A63F-4BA4-9DE4-02DBF69A429F",
             "5be5af82-c248-4c4c-a485-0571025f242c",
+            "7205db83-88e8-4074-8288-136a6c493d69",
             "79da6240-7617-49c8-b130-96278579766e",
             "8276b520-fdeb-4f79-9f5d-67865818562b",
             "90bba037-f944-480e-89fa-a3b104451af3",
@@ -2428,7 +2428,14 @@
         "pattern_type": "chain",
         "product_direct_ref": [],
         "product_guids": [
-            "B3582ED2-1A0C-452D-9802-97433D143486"
+            "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
+            "54B36B3F-A63F-4BA4-9DE4-02DBF69A429F",
+            "6299d728-14f7-455e-85c5-ea8ec65a654a",
+            "79da6240-7617-49c8-b130-96278579766e",
+            "B3582ED2-1A0C-452D-9802-97433D143486",
+            "d3ed003d-5ddd-4c7a-bea5-63eae6311833",
+            "e73cd65a-7a4b-4ce9-9d73-e5d9c824c214",
+            "ef42eb74-7444-4fee-b231-b4eb1e7c9660"
         ],
         "record_type_direct_ref": [],
         "rule_description": "",
@@ -4392,6 +4399,7 @@
             "afabb29d-e728-410f-b7c6-acfa9efbe1ed",
             "b2f99a76-0771-49bf-9a89-d3e69370806e",
             "be4f7473-fe69-4311-8859-3561900060bf",
+            "c2503fcc-ef30-4e40-bb32-0bf47151b140",
             "c3c1a4fc-10cc-4155-8a30-a3bb14fc9f31",
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
             "cf2af9e8-bade-4f28-8bca-b30aa41baec4",
@@ -4880,8 +4888,7 @@
             "55ec1d4a-6985-4f04-8de5-f9812871fda2",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "5c2cc0de-ca31-4ef0-bcfa-133fc8b387ad",
-            "a1225af5-e778-4068-a9a2-47da93d1ff24",
-            "b238758d-ade8-41d2-b32d-c99159e9fd74"
+            "a1225af5-e778-4068-a9a2-47da93d1ff24"
         ],
         "record_type_direct_ref": [],
         "retention_window_size": 7776000000,
@@ -5987,6 +5994,7 @@
             "23342262-740c-41b7-9b77-08267ae01612",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "37a906de-5e9c-475e-881a-65a1d984f377",
+            "3fac5918-eea5-4dc0-a5fe-6c94c1919482",
             "46c71698-9c21-4273-9561-94ff5af52edd",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
             "51278354-d6b5-4c8e-a8fd-8197df334e67",
@@ -6005,6 +6013,7 @@
             "b32a58b9-8bfd-4b1d-8b68-91611fe5c37e",
             "be4f7473-fe69-4311-8859-3561900060bf",
             "c3954250-68a0-49c3-ab6a-ef0daa95ff90",
+            "c3c1a4fc-10cc-4155-8a30-a3bb14fc9f31",
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
             "d3606245-76d3-4173-a2fe-832c0e71b0f9",
             "d3ed003d-5ddd-4c7a-bea5-63eae6311833",
@@ -8260,7 +8269,12 @@
         "normalized_summary": "AI runtime {{baseImage}} first seen on {{device_hostname}}",
         "pattern_type": "first_seen",
         "product_direct_ref": [],
-        "product_guids": [],
+        "product_guids": [
+            "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
+            "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
+            "93e2d3d-fab1-4d61-845f-49bc1ae5bed9",
+            "a1225af5-e778-4068-a9a2-47da93d1ff24"
+        ],
         "record_type_direct_ref": [],
         "retention_window_size": 7776000000,
         "rule_source": "sumo",
@@ -8986,11 +9000,11 @@
         "pattern_type": "match",
         "product_direct_ref": [],
         "product_guids": [
+            "003d35b3-3ba8-4e93-8776-e5810b4e243e",
             "072b85a2-1765-45c2-911d-b0509880326e",
             "0fb003bc-8383-442f-8f3d-afcfbaefe617",
             "2a678bcd-898e-43cd-ab3f-91feb0602a18",
             "2b82e665-bdde-474a-ae29-4f0f76598556",
-            "3382523e-2072-41bd-b50b-6b148957d0b0",
             "37C866BF-72E1-470A-9072-EDB908F56951",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
             "59a3cd41-b6d2-4ab7-a0ff-6d5abd14ac43",
@@ -9008,7 +9022,6 @@
             "be4f7473-fe69-4311-8859-3561900060bf",
             "c07b5749-deda-4c7e-8e78-4a5dec1fcf4d",
             "c2503fcc-ef30-4e40-bb32-0bf47151b140",
-            "c3c1a4fc-10cc-4155-8a30-a3bb14fc9f31",
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
             "da9e05a5-3fd3-46a7-a107-ae03c01e3f5a",
             "dcc85cfc-a698-4d09-87de-f2c723f3ad07",
@@ -9888,6 +9901,7 @@
             "072b85a2-1765-45c2-911d-b0509880326e",
             "0fb003bc-8383-442f-8f3d-afcfbaefe617",
             "14aa46d3-0710-44b6-9ce3-0a6b8f36b076",
+            "168afd8d-2893-4c74-95b1-a975d576ea56",
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "37C866BF-72E1-470A-9072-EDB908F56951",
             "43808f4c-15e9-480c-ab1a-38bdef3b6798",
@@ -10677,8 +10691,7 @@
             "B3582ED2-1A0C-452D-9802-97433D143486",
             "bf865cb5-0b26-4010-8b3c-5ae2d1f716d8",
             "c2503fcc-ef30-4e40-bb32-0bf47151b140",
-            "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
-            "da9e05a5-3fd3-46a7-a107-ae03c01e3f5a"
+            "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad"
         ],
         "record_type_direct_ref": [],
         "rule_source": "sumo",
@@ -11087,7 +11100,6 @@
             "0fb003bc-8383-442f-8f3d-afcfbaefe617",
             "2a678bcd-898e-43cd-ab3f-91feb0602a18",
             "2b82e665-bdde-474a-ae29-4f0f76598556",
-            "3382523e-2072-41bd-b50b-6b148957d0b0",
             "343b9323-d279-40d9-946f-809242e5cf98",
             "37C866BF-72E1-470A-9072-EDB908F56951",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
@@ -11195,6 +11207,7 @@
             "41f70c6e-18a9-462c-a04d-4edc7baead7a",
             "B3582ED2-1A0C-452D-9802-97433D143486",
             "c2503fcc-ef30-4e40-bb32-0bf47151b140",
+            "dcc85cfc-a698-4d09-87de-f2c723f3ad07",
             "e90edc67-68d4-4d67-82f6-4524f94b59bb",
             "fca8785d-4823-4442-86b2-8acbaa176da4"
         ],
@@ -14119,7 +14132,6 @@
         "pattern_type": "match",
         "product_direct_ref": [],
         "product_guids": [
-            "072b85a2-1765-45c2-911d-b0509880326e",
             "0fb003bc-8383-442f-8f3d-afcfbaefe617",
             "2a236ab1-77d2-4867-a571-a1cfd64528e6",
             "37C866BF-72E1-470A-9072-EDB908F56951",
@@ -14852,9 +14864,7 @@
             "1ce88b4b-d90d-4d50-9a89-3abe83e8d5f8",
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "2ca0adcf-7616-4474-8557-a3773515aa6d",
-            "3382523e-2072-41bd-b50b-6b148957d0b0",
             "43808f4c-15e9-480c-ab1a-38bdef3b6798",
-            "44f07c08-c2ad-4a95-a058-1d0737ff90db",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "5ba50e74-3c05-4ea8-aeaf-5efde588c60f",
@@ -14873,7 +14883,6 @@
             "da9e05a5-3fd3-46a7-a107-ae03c01e3f5a",
             "de3d4b6b-36a3-4436-8bfc-0561ac95037e",
             "e2393771-bda2-414a-8661-0a57069287ad",
-            "e362ae18-9af1-496d-9ace-efa05a8381c6",
             "e90edc67-68d4-4d67-82f6-4524f94b59bb",
             "ef42eb74-7444-4fee-b231-b4eb1e7c9660",
             "fca8785d-4823-4442-86b2-8acbaa176da4"
@@ -15144,9 +15153,11 @@
         "product_direct_ref": [],
         "product_guids": [
             "003d35b3-3ba8-4e93-8776-e5810b4e243e",
+            "072b85a2-1765-45c2-911d-b0509880326e",
             "0fb003bc-8383-442f-8f3d-afcfbaefe617",
             "37C866BF-72E1-470A-9072-EDB908F56951",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
+            "5ba50e74-3c05-4ea8-aeaf-5efde588c60f",
             "6299d728-14f7-455e-85c5-ea8ec65a654a",
             "9e0641a7-22ce-4ac8-8113-ee48b368ac3d",
             "B3582ED2-1A0C-452D-9802-97433D143486",
@@ -16325,10 +16336,17 @@
         "product_guids": [
             "033624b0-218e-4dcb-b93f-0f1fb1806c56",
             "072b85a2-1765-45c2-911d-b0509880326e",
+            "1ce88b4b-d90d-4d50-9a89-3abe83e8d5f8",
+            "2a236ab1-77d2-4867-a571-a1cfd64528e6",
             "44f07c08-c2ad-4a95-a058-1d0737ff90db",
             "51278354-d6b5-4c8e-a8fd-8197df334e67",
+            "5bb9e0b3-8d57-4b10-8952-0b6ffe91b599",
+            "9a28f2af-5526-414d-973b-c3fc7984b8a1",
+            "ae07663e-2c2c-4932-be5d-c9f985e95276",
+            "afabb29d-e728-410f-b7c6-acfa9efbe1ed",
             "c2503fcc-ef30-4e40-bb32-0bf47151b140",
             "d3ed003d-5ddd-4c7a-bea5-63eae6311833",
+            "dcc85cfc-a698-4d09-87de-f2c723f3ad07",
             "e90edc67-68d4-4d67-82f6-4524f94b59bb"
         ],
         "record_type_direct_ref": [],
@@ -22035,7 +22053,8 @@
         "product_direct_ref": [],
         "product_guids": [
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
-            "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3"
+            "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
+            "a1225af5-e778-4068-a9a2-47da93d1ff24"
         ],
         "record_type_direct_ref": [],
         "rule_source": "sumo",
@@ -22259,6 +22278,7 @@
         "product_direct_ref": [],
         "product_guids": [
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
+            "3382523e-2072-41bd-b50b-6b148957d0b0",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3"
         ],
         "record_type_direct_ref": [],
@@ -23238,8 +23258,7 @@
         "pattern_type": "templated_match",
         "product_direct_ref": [],
         "product_guids": [
-            "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
-            "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3"
+            "1ff7546c-cb36-4a24-87f7-89d2cecc5761"
         ],
         "record_type_direct_ref": [],
         "rule_source": "sumo",
@@ -24046,7 +24065,6 @@
             "234ec2b5-4142-4837-bc78-95da8a2db81a",
             "2a236ab1-77d2-4867-a571-a1cfd64528e6",
             "2f2fbe08-ab8b-4626-81fd-eaa41b563c49",
-            "3382523e-2072-41bd-b50b-6b148957d0b0",
             "37C866BF-72E1-470A-9072-EDB908F56951",
             "41f70c6e-18a9-462c-a04d-4edc7baead7a",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
@@ -26788,7 +26806,8 @@
         "product_guids": [
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
-            "840c72e0-4e47-41e7-9b93-31f55d12f07d"
+            "840c72e0-4e47-41e7-9b93-31f55d12f07d",
+            "a1225af5-e778-4068-a9a2-47da93d1ff24"
         ],
         "record_type_direct_ref": [],
         "rule_source": "sumo",
@@ -29274,7 +29293,6 @@
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
-            "60829f4a-7acb-47d1-ad23-8424fcf83dcb",
             "a1225af5-e778-4068-a9a2-47da93d1ff24"
         ],
         "record_type_direct_ref": [],
@@ -32563,6 +32581,7 @@
         "pattern_type": "templated_match",
         "product_direct_ref": [],
         "product_guids": [
+            "033624b0-218e-4dcb-b93f-0f1fb1806c56",
             "046b3623-69fe-409f-9e80-fd3ebef0654f",
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
@@ -32572,7 +32591,6 @@
             "79da6240-7617-49c8-b130-96278579766e",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "abe4975e-de65-4f82-8b35-e6ce392e165c",
-            "b238758d-ade8-41d2-b32d-c99159e9fd74",
             "c2503fcc-ef30-4e40-bb32-0bf47151b140",
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
             "d3ed003d-5ddd-4c7a-bea5-63eae6311833"
@@ -33044,7 +33062,6 @@
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "be4f7473-fe69-4311-8859-3561900060bf",
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
-            "d4a9e7ce-082e-4f41-891f-4c43e604c850",
             "da9e05a5-3fd3-46a7-a107-ae03c01e3f5a",
             "dcc85cfc-a698-4d09-87de-f2c723f3ad07",
             "e90edc67-68d4-4d67-82f6-4524f94b59bb"
@@ -37335,7 +37352,8 @@
         "product_direct_ref": [],
         "product_guids": [
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
-            "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3"
+            "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
+            "a1225af5-e778-4068-a9a2-47da93d1ff24"
         ],
         "record_type_direct_ref": [],
         "rule_source": "sumo",
@@ -37785,7 +37803,6 @@
         "pattern_type": "templated_match",
         "product_direct_ref": [],
         "product_guids": [
-            "146522A1-DC9A-40A5-A909-2EB3B665B1D1",
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "79da6240-7617-49c8-b130-96278579766e",
@@ -38680,7 +38697,6 @@
         "product_direct_ref": [],
         "product_guids": [
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
-            "3382523e-2072-41bd-b50b-6b148957d0b0",
             "ef42eb74-7444-4fee-b231-b4eb1e7c9660"
         ],
         "record_type_direct_ref": [],
@@ -39624,7 +39640,6 @@
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
-            "60829f4a-7acb-47d1-ad23-8424fcf83dcb",
             "840c72e0-4e47-41e7-9b93-31f55d12f07d"
         ],
         "record_type_direct_ref": [],
@@ -39700,6 +39715,7 @@
         "product_direct_ref": [],
         "product_guids": [
             "021d1ded-1c82-4663-bf5d-d6ed5170efa3",
+            "1624169f-36c4-4309-8400-1409a171d00b",
             "2b82e665-bdde-474a-ae29-4f0f76598556",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
@@ -39811,6 +39827,7 @@
             "951a004d-54bf-441d-98e1-fcc6a032f475",
             "9e0641a7-22ce-4ac8-8113-ee48b368ac3d",
             "A17B3F3C-04F1-40C8-9497-3C499EB18A74",
+            "B3582ED2-1A0C-452D-9802-97433D143486",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "afabb29d-e728-410f-b7c6-acfa9efbe1ed",
             "b2f99a76-0771-49bf-9a89-d3e69370806e",
@@ -41119,7 +41136,8 @@
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
-            "a1225af5-e778-4068-a9a2-47da93d1ff24"
+            "a1225af5-e778-4068-a9a2-47da93d1ff24",
+            "eabd9eed-b071-4773-ad07-706ea5b51b9c"
         ],
         "record_type_direct_ref": [],
         "rule_source": "sumo",
@@ -41995,7 +42013,6 @@
         "pattern_type": "templated_match",
         "product_direct_ref": [],
         "product_guids": [
-            "6299d728-14f7-455e-85c5-ea8ec65a654a",
             "991a55cf-8c5a-49ba-ae72-6f64a002bacf",
             "B3582ED2-1A0C-452D-9802-97433D143486"
         ],
@@ -42504,10 +42521,17 @@
         "product_guids": [
             "033624b0-218e-4dcb-b93f-0f1fb1806c56",
             "072b85a2-1765-45c2-911d-b0509880326e",
+            "1ce88b4b-d90d-4d50-9a89-3abe83e8d5f8",
+            "2a236ab1-77d2-4867-a571-a1cfd64528e6",
             "44f07c08-c2ad-4a95-a058-1d0737ff90db",
             "51278354-d6b5-4c8e-a8fd-8197df334e67",
+            "5bb9e0b3-8d57-4b10-8952-0b6ffe91b599",
+            "9a28f2af-5526-414d-973b-c3fc7984b8a1",
+            "ae07663e-2c2c-4932-be5d-c9f985e95276",
+            "afabb29d-e728-410f-b7c6-acfa9efbe1ed",
             "c2503fcc-ef30-4e40-bb32-0bf47151b140",
             "d3ed003d-5ddd-4c7a-bea5-63eae6311833",
+            "dcc85cfc-a698-4d09-87de-f2c723f3ad07",
             "e90edc67-68d4-4d67-82f6-4524f94b59bb"
         ],
         "record_type_direct_ref": [],
@@ -49329,7 +49353,6 @@
         "pattern_type": "templated_match",
         "product_direct_ref": [],
         "product_guids": [
-            "033624b0-218e-4dcb-b93f-0f1fb1806c56",
             "0e20c932-d992-4bd4-b276-c15119ca5c0b",
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
@@ -49600,12 +49623,11 @@
         "pattern_type": "templated_match",
         "product_direct_ref": [],
         "product_guids": [
-            "033624b0-218e-4dcb-b93f-0f1fb1806c56",
             "0e20c932-d992-4bd4-b276-c15119ca5c0b",
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
-            "55ec1d4a-6985-4f04-8de5-f9812871fda2",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
+            "5c2cc0de-ca31-4ef0-bcfa-133fc8b387ad",
             "5e298fe7-088a-467a-b57f-d8558368621d",
             "72a5ddec-abb9-41ff-a2da-6a58beff980c",
             "840c72e0-4e47-41e7-9b93-31f55d12f07d",
@@ -50486,6 +50508,7 @@
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "5c2cc0de-ca31-4ef0-bcfa-133fc8b387ad",
+            "840c72e0-4e47-41e7-9b93-31f55d12f07d",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "eabd9eed-b071-4773-ad07-706ea5b51b9c"
         ],
@@ -50862,8 +50885,7 @@
             "0e20c932-d992-4bd4-b276-c15119ca5c0b",
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
-            "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
-            "a1225af5-e778-4068-a9a2-47da93d1ff24"
+            "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3"
         ],
         "record_type_direct_ref": [],
         "rule_description": "",
@@ -52297,6 +52319,7 @@
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "b238758d-ade8-41d2-b32d-c99159e9fd74",
             "d6cb76d3-939e-4e02-b399-b15e0278c877",
+            "eabd9eed-b071-4773-ad07-706ea5b51b9c",
             "f3803323-e4d1-4098-96c6-12e5bf2ab1f5"
         ],
         "record_type_direct_ref": [],
@@ -52450,7 +52473,8 @@
             "c2503fcc-ef30-4e40-bb32-0bf47151b140",
             "cc523ad6-7193-4de5-a254-d0243fca63f3",
             "d3ed003d-5ddd-4c7a-bea5-63eae6311833",
-            "de3d4b6b-36a3-4436-8bfc-0561ac95037e"
+            "de3d4b6b-36a3-4436-8bfc-0561ac95037e",
+            "eabd9eed-b071-4773-ad07-706ea5b51b9c"
         ],
         "record_type_direct_ref": [],
         "rule_description": "",
@@ -52525,7 +52549,8 @@
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "5c2cc0de-ca31-4ef0-bcfa-133fc8b387ad",
             "93e2d3d-fab1-4d61-845f-49bc1ae5bed9",
-            "a1225af5-e778-4068-a9a2-47da93d1ff24"
+            "a1225af5-e778-4068-a9a2-47da93d1ff24",
+            "eabd9eed-b071-4773-ad07-706ea5b51b9c"
         ],
         "record_type_direct_ref": [],
         "rule_description": "",
@@ -54209,7 +54234,8 @@
         "pattern_type": "templated_match",
         "product_direct_ref": [],
         "product_guids": [
-            "93e2d3d-fab1-4d61-845f-49bc1ae5bed9"
+            "93e2d3d-fab1-4d61-845f-49bc1ae5bed9",
+            "b238758d-ade8-41d2-b32d-c99159e9fd74"
         ],
         "record_type_direct_ref": [],
         "rule_description": "",
@@ -58758,7 +58784,6 @@
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
             "d3606245-76d3-4173-a2fe-832c0e71b0f9",
             "d3ed003d-5ddd-4c7a-bea5-63eae6311833",
-            "e43ba0e4-1e3f-40c6-8bca-cb06a656a40b",
             "e73cd65a-7a4b-4ce9-9d73-e5d9c824c214",
             "fe5a3e8b-8b6e-44c7-92a8-adfb20df5c75"
         ],
@@ -60137,7 +60162,6 @@
             "0fb003bc-8383-442f-8f3d-afcfbaefe617",
             "1ce88b4b-d90d-4d50-9a89-3abe83e8d5f8",
             "2a678bcd-898e-43cd-ab3f-91feb0602a18",
-            "3382523e-2072-41bd-b50b-6b148957d0b0",
             "343b9323-d279-40d9-946f-809242e5cf98",
             "37C866BF-72E1-470A-9072-EDB908F56951",
             "44f07c08-c2ad-4a95-a058-1d0737ff90db",
@@ -60164,8 +60188,7 @@
             "dcc85cfc-a698-4d09-87de-f2c723f3ad07",
             "de3d4b6b-36a3-4436-8bfc-0561ac95037e",
             "e2393771-bda2-414a-8661-0a57069287ad",
-            "e90edc67-68d4-4d67-82f6-4524f94b59bb",
-            "fca8785d-4823-4442-86b2-8acbaa176da4"
+            "e90edc67-68d4-4d67-82f6-4524f94b59bb"
         ],
         "record_type_direct_ref": [],
         "rule_source": "sumo",
@@ -62753,8 +62776,7 @@
             "840c72e0-4e47-41e7-9b93-31f55d12f07d",
             "B3582ED2-1A0C-452D-9802-97433D143486",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
-            "c2503fcc-ef30-4e40-bb32-0bf47151b140",
-            "e3c8bd8b-6ed8-4332-944d-d0f5dfc462df"
+            "c2503fcc-ef30-4e40-bb32-0bf47151b140"
         ],
         "record_type_direct_ref": [],
         "rule_description": "",
@@ -63527,7 +63549,8 @@
         "pattern_type": "templated_match",
         "product_direct_ref": [],
         "product_guids": [
-            "1ff7546c-cb36-4a24-87f7-89d2cecc5761"
+            "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
+            "5c2cc0de-ca31-4ef0-bcfa-133fc8b387ad"
         ],
         "record_type_direct_ref": [],
         "rule_description": "",
@@ -65148,6 +65171,7 @@
             "0e20c932-d992-4bd4-b276-c15119ca5c0b",
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
+            "54f01856-e973-4d7b-a3eb-95cc08ff44f5",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "5be5af82-c248-4c4c-a485-0571025f242c",
             "840c72e0-4e47-41e7-9b93-31f55d12f07d",
@@ -67885,12 +67909,12 @@
         "product_direct_ref": [],
         "product_guids": [
             "046b3623-69fe-409f-9e80-fd3ebef0654f",
+            "146522A1-DC9A-40A5-A909-2EB3B665B1D1",
             "332856e9-3111-446f-8df7-e64694e4b9a1",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "37C866BF-72E1-470A-9072-EDB908F56951",
             "54B36B3F-A63F-4BA4-9DE4-02DBF69A429F",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
-            "60829f4a-7acb-47d1-ad23-8424fcf83dcb",
             "6299d728-14f7-455e-85c5-ea8ec65a654a",
             "724c9add-8cd9-4013-b9e1-a907b96da426",
             "72a5ddec-abb9-41ff-a2da-6a58beff980c",
@@ -68001,7 +68025,6 @@
         "product_guids": [
             "2b79254e-8017-4dbf-8e39-590132172a7d",
             "332856e9-3111-446f-8df7-e64694e4b9a1",
-            "43808f4c-15e9-480c-ab1a-38bdef3b6798",
             "4a75a995-0e10-45fc-8b4d-7fcfc0e98e25",
             "6299d728-14f7-455e-85c5-ea8ec65a654a",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
@@ -68462,6 +68485,7 @@
             "072b85a2-1765-45c2-911d-b0509880326e",
             "0fb003bc-8383-442f-8f3d-afcfbaefe617",
             "14aa46d3-0710-44b6-9ce3-0a6b8f36b076",
+            "168afd8d-2893-4c74-95b1-a975d576ea56",
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "37C866BF-72E1-470A-9072-EDB908F56951",
             "43808f4c-15e9-480c-ab1a-38bdef3b6798",
@@ -68737,7 +68761,6 @@
             "072b85a2-1765-45c2-911d-b0509880326e",
             "0fb003bc-8383-442f-8f3d-afcfbaefe617",
             "2a678bcd-898e-43cd-ab3f-91feb0602a18",
-            "3382523e-2072-41bd-b50b-6b148957d0b0",
             "343b9323-d279-40d9-946f-809242e5cf98",
             "37C866BF-72E1-470A-9072-EDB908F56951",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
@@ -68850,7 +68873,6 @@
             "072b85a2-1765-45c2-911d-b0509880326e",
             "0fb003bc-8383-442f-8f3d-afcfbaefe617",
             "2a678bcd-898e-43cd-ab3f-91feb0602a18",
-            "3382523e-2072-41bd-b50b-6b148957d0b0",
             "343b9323-d279-40d9-946f-809242e5cf98",
             "37C866BF-72E1-470A-9072-EDB908F56951",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
@@ -68982,10 +69004,8 @@
             "003d35b3-3ba8-4e93-8776-e5810b4e243e",
             "0fb003bc-8383-442f-8f3d-afcfbaefe617",
             "2a678bcd-898e-43cd-ab3f-91feb0602a18",
-            "3382523e-2072-41bd-b50b-6b148957d0b0",
             "343b9323-d279-40d9-946f-809242e5cf98",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
-            "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "5ba50e74-3c05-4ea8-aeaf-5efde588c60f",
             "5bb9e0b3-8d57-4b10-8952-0b6ffe91b599",
             "6299d728-14f7-455e-85c5-ea8ec65a654a",
@@ -69000,6 +69020,7 @@
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
             "d3ed003d-5ddd-4c7a-bea5-63eae6311833",
             "da9e05a5-3fd3-46a7-a107-ae03c01e3f5a",
+            "dcc85cfc-a698-4d09-87de-f2c723f3ad07",
             "de3d4b6b-36a3-4436-8bfc-0561ac95037e",
             "e90edc67-68d4-4d67-82f6-4524f94b59bb",
             "ef42eb74-7444-4fee-b231-b4eb1e7c9660"
@@ -69179,6 +69200,7 @@
         "pattern_type": "templated_match",
         "product_direct_ref": [],
         "product_guids": [
+            "16c76d97-46c9-43f6-ba96-77d63085a4cf",
             "183c5127-6594-4d45-9bab-ce5f2df9e38b",
             "2b79254e-8017-4dbf-8e39-590132172a7d",
             "51278354-d6b5-4c8e-a8fd-8197df334e67",
@@ -69365,10 +69387,12 @@
             "2b82e665-bdde-474a-ae29-4f0f76598556",
             "332856e9-3111-446f-8df7-e64694e4b9a1",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
+            "343b9323-d279-40d9-946f-809242e5cf98",
             "3fe1afe0-c1c2-45d6-835e-0bdb1e4b703f",
             "41f70c6e-18a9-462c-a04d-4edc7baead7a",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
             "51278354-d6b5-4c8e-a8fd-8197df334e67",
+            "59a3cd41-b6d2-4ab7-a0ff-6d5abd14ac43",
             "5bb9e0b3-8d57-4b10-8952-0b6ffe91b599",
             "6299d728-14f7-455e-85c5-ea8ec65a654a",
             "724c9add-8cd9-4013-b9e1-a907b96da426",
@@ -69623,14 +69647,12 @@
         "product_direct_ref": [],
         "product_guids": [
             "021d1ded-1c82-4663-bf5d-d6ed5170efa3",
-            "033624b0-218e-4dcb-b93f-0f1fb1806c56",
             "072b85a2-1765-45c2-911d-b0509880326e",
             "2b82e665-bdde-474a-ae29-4f0f76598556",
             "332856e9-3111-446f-8df7-e64694e4b9a1",
             "41f70c6e-18a9-462c-a04d-4edc7baead7a",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
             "51278354-d6b5-4c8e-a8fd-8197df334e67",
-            "59a3cd41-b6d2-4ab7-a0ff-6d5abd14ac43",
             "5ba50e74-3c05-4ea8-aeaf-5efde588c60f",
             "5bb9e0b3-8d57-4b10-8952-0b6ffe91b599",
             "724c9add-8cd9-4013-b9e1-a907b96da426",
@@ -69745,7 +69767,6 @@
         "product_direct_ref": [],
         "product_guids": [
             "021d1ded-1c82-4663-bf5d-d6ed5170efa3",
-            "072b85a2-1765-45c2-911d-b0509880326e",
             "0e20c932-d992-4bd4-b276-c15119ca5c0b",
             "0fb003bc-8383-442f-8f3d-afcfbaefe617",
             "168afd8d-2893-4c74-95b1-a975d576ea56",
@@ -69756,6 +69777,7 @@
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "6299d728-14f7-455e-85c5-ea8ec65a654a",
             "724c9add-8cd9-4013-b9e1-a907b96da426",
+            "9e0641a7-22ce-4ac8-8113-ee48b368ac3d",
             "B3582ED2-1A0C-452D-9802-97433D143486",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "afabb29d-e728-410f-b7c6-acfa9efbe1ed",
@@ -70010,7 +70032,8 @@
             "cf2af9e8-bade-4f28-8bca-b30aa41baec4",
             "da9e05a5-3fd3-46a7-a107-ae03c01e3f5a",
             "dcc85cfc-a698-4d09-87de-f2c723f3ad07",
-            "e2393771-bda2-414a-8661-0a57069287ad"
+            "e2393771-bda2-414a-8661-0a57069287ad",
+            "e90edc67-68d4-4d67-82f6-4524f94b59bb"
         ],
         "record_type_direct_ref": [],
         "rule_source": "sumo",
@@ -71806,6 +71829,7 @@
         "pattern_type": "templated_match",
         "product_direct_ref": [],
         "product_guids": [
+            "046b3623-69fe-409f-9e80-fd3ebef0654f",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
             "d4a9e7ce-082e-4f41-891f-4c43e604c850",
@@ -72275,6 +72299,7 @@
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
             "51278354-d6b5-4c8e-a8fd-8197df334e67",
             "54B36B3F-A63F-4BA4-9DE4-02DBF69A429F",
+            "54f01856-e973-4d7b-a3eb-95cc08ff44f5",
             "5be5af82-c248-4c4c-a485-0571025f242c",
             "5bfda3d2-03e7-4d9a-8072-c59430a131d7",
             "7205db83-88e8-4074-8288-136a6c493d69",
@@ -72482,14 +72507,15 @@
         ],
         "all_fields": [
             "description",
+            "metadata_deviceEventId",
             "metadata_product",
             "normalizedAction",
             "srcDevice_ip"
         ],
         "baseline_window_size": 1296000000,
         "category": "Discovery",
-        "commit_message": "TLAB-766 Move Outlier Rules out of Prototype",
-        "commit_origin_hash": "1221063f10103837099975bc58ec681c9288f511",
+        "commit_message": "TLAB-2831 Support Azure Firewall Resource Specific logs in mappers and deny rules (#6057)",
+        "commit_origin_hash": "d9dfb0f76c8ee2045df8d5898f118a05518205de",
         "content_type": "ANOMALY",
         "description_expression": "This rule is designed to detect spikes of excessive firewall deny events within Azure for the same source IP based on a daily outliers standard deviation using a designated historic baseline. The minimum floor of firewall denies expected by default is set to 30. Customers will need to adjust the Model Sensitivity threshold (standard deviation multiplier) and Minimum Count Value of this rule to align with their environment's normal vs abnormal firewall traffic patterns.",
         "deviation_threshold": 4,
@@ -72508,7 +72534,7 @@
         "id": 4,
         "id_compiled": "OUTLIER-S00004",
         "is_prototype": false,
-        "match_expression": "metadata_product = 'Azure'\nAND description = 'AzureFirewallNetworkRuleLog'\nOR description = 'AzureFirewallNetworkRuleLog'\nAND normalizedAction = 'deny'",
+        "match_expression": "metadata_product = 'Azure'\nAND (description = 'AzureFirewallNetworkRuleLog'\n     OR metadata_deviceEventId = 'AZFWNetworkRule')\nAND normalizedAction = 'deny'",
         "name": "Spike in Azure Firewall Deny Events from Source IP",
         "name_expression": "Spike in Azure Firewall Deny Events from Source IP",
         "normalized_description": "This rule is designed to detect spikes of excessive firewall deny events within Azure for the same source IP based on a daily outliers standard deviation using a designated historic baseline. The minimum floor of firewall denies expected by default is set to 30. Customers will need to adjust the Model Sensitivity threshold (standard deviation multiplier) and Minimum Count Value of this rule to align with their environment's normal vs abnormal firewall traffic patterns.",
@@ -72673,6 +72699,7 @@
         "pattern_type": "outlier",
         "product_direct_ref": [],
         "product_guids": [
+            "003d35b3-3ba8-4e93-8776-e5810b4e243e",
             "6299d728-14f7-455e-85c5-ea8ec65a654a",
             "af61d8a8-3eba-42fb-9f17-87443924f3f4",
             "bf865cb5-0b26-4010-8b3c-5ae2d1f716d8",
@@ -72905,7 +72932,6 @@
         "product_guids": [
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
-            "840c72e0-4e47-41e7-9b93-31f55d12f07d",
             "f9cea291-9030-4e41-9836-6dd9274d6df4"
         ],
         "record_type_direct_ref": [],
@@ -74539,8 +74565,10 @@
         "pattern_type": "outlier",
         "product_direct_ref": [],
         "product_guids": [
+            "37C866BF-72E1-470A-9072-EDB908F56951",
             "5bb9e0b3-8d57-4b10-8952-0b6ffe91b599",
-            "6787d77a-1ee0-43d4-8ca0-96af8ee755bc"
+            "6787d77a-1ee0-43d4-8ca0-96af8ee755bc",
+            "b32a58b9-8bfd-4b1d-8b68-91611fe5c37e"
         ],
         "record_type_direct_ref": [],
         "retention_window_size": 7776000000,
@@ -75042,6 +75070,7 @@
             "1ce88b4b-d90d-4d50-9a89-3abe83e8d5f8",
             "234ec2b5-4142-4837-bc78-95da8a2db81a",
             "2a236ab1-77d2-4867-a571-a1cfd64528e6",
+            "2f2fbe08-ab8b-4626-81fd-eaa41b563c49",
             "36f5ca33-0c1e-4223-8215-977ea04425ba",
             "37C866BF-72E1-470A-9072-EDB908F56951",
             "37a906de-5e9c-475e-881a-65a1d984f377",
@@ -76073,23 +76102,18 @@
         "product_guids": [
             "021d1ded-1c82-4663-bf5d-d6ed5170efa3",
             "0fb003bc-8383-442f-8f3d-afcfbaefe617",
-            "146522A1-DC9A-40A5-A909-2EB3B665B1D1",
             "183c5127-6594-4d45-9bab-ce5f2df9e38b",
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "2a678bcd-898e-43cd-ab3f-91feb0602a18",
             "2b82e665-bdde-474a-ae29-4f0f76598556",
-            "3382523e-2072-41bd-b50b-6b148957d0b0",
             "37C866BF-72E1-470A-9072-EDB908F56951",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
-            "724c9add-8cd9-4013-b9e1-a907b96da426",
-            "B3582ED2-1A0C-452D-9802-97433D143486",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "b238758d-ade8-41d2-b32d-c99159e9fd74",
             "c3c1a4fc-10cc-4155-8a30-a3bb14fc9f31",
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
             "dcc85cfc-a698-4d09-87de-f2c723f3ad07",
-            "e2393771-bda2-414a-8661-0a57069287ad",
             "ef11c9cd-df72-42c6-81f5-70b91fd0f38a"
         ],
         "record_type_direct_ref": [],
@@ -76817,6 +76841,7 @@
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
             "724c9add-8cd9-4013-b9e1-a907b96da426",
             "9a28f2af-5526-414d-973b-c3fc7984b8a1",
+            "9e0641a7-22ce-4ac8-8113-ee48b368ac3d",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "b2f99a76-0771-49bf-9a89-d3e69370806e",
             "be4f7473-fe69-4311-8859-3561900060bf",
@@ -77134,6 +77159,7 @@
             "2b82e665-bdde-474a-ae29-4f0f76598556",
             "37C866BF-72E1-470A-9072-EDB908F56951",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
+            "59a3cd41-b6d2-4ab7-a0ff-6d5abd14ac43",
             "6299d728-14f7-455e-85c5-ea8ec65a654a",
             "724c9add-8cd9-4013-b9e1-a907b96da426",
             "951a004d-54bf-441d-98e1-fcc6a032f475",
@@ -78393,14 +78419,12 @@
             "153794da-09e8-48fe-b511-1306fbb94d07",
             "1ed80351-d779-4f1f-9ddb-b3881f19d487",
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
-            "3382523e-2072-41bd-b50b-6b148957d0b0",
             "37a906de-5e9c-475e-881a-65a1d984f377",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
             "51278354-d6b5-4c8e-a8fd-8197df334e67",
             "54B36B3F-A63F-4BA4-9DE4-02DBF69A429F",
             "54f01856-e973-4d7b-a3eb-95cc08ff44f5",
             "5be5af82-c248-4c4c-a485-0571025f242c",
-            "5bfda3d2-03e7-4d9a-8072-c59430a131d7",
             "79da6240-7617-49c8-b130-96278579766e",
             "8276b520-fdeb-4f79-9f5d-67865818562b",
             "9f6d624f-6d8f-43c7-a4b0-51179061631c",
@@ -79419,14 +79443,15 @@
     "THRESHOLD-S00112": {
         "all_fields": [
             "description",
+            "metadata_deviceEventId",
             "metadata_product",
             "normalizedAction",
             "srcDevice_ip"
         ],
         "asset_field": "srcDevice_ip",
         "category": "Command and Control",
-        "commit_message": "Campaign 5 Rule Content and Test Case Creation",
-        "commit_origin_hash": "2c41def85d2f097ece5e8081469c5ba0be95a2ac",
+        "commit_message": "TLAB-2831 Support Azure Firewall Resource Specific logs in mappers and deny rules (#6057)",
+        "commit_origin_hash": "d9dfb0f76c8ee2045df8d5898f118a05518205de",
         "content_type": "RULE",
         "count_distinct": false,
         "count_field": null,
@@ -79438,7 +79463,7 @@
                 "expression": "srcDevice_ip"
             }
         ],
-        "expression": "metadata_product = \"Azure\"\nand description = \"AzureFirewallNetworkRuleLog\"\nand normalizedAction = \"deny\"\n",
+        "expression": "metadata_product = \"Azure\"\nand (description = \"AzureFirewallNetworkRuleLog\"\n     or metadata_deviceEventId = \"AZFWNetworkRule\")\nand normalizedAction = \"deny\"\n",
         "file_path": "rules_v3/Multiple_Azure_Firewall_Deny_Events_for_IP.json",
         "group_by_fields": [],
         "id": 112,
@@ -79482,13 +79507,14 @@
         "all_fields": [
             "description",
             "http_url",
+            "metadata_deviceEventId",
             "metadata_product",
             "normalizedAction"
         ],
         "asset_field": "http_url",
         "category": "Command and Control",
-        "commit_message": "Campaign 5 Rule Content and Test Case Creation",
-        "commit_origin_hash": "2c41def85d2f097ece5e8081469c5ba0be95a2ac",
+        "commit_message": "TLAB-2831 Support Azure Firewall Resource Specific logs in mappers and deny rules (#6057)",
+        "commit_origin_hash": "d9dfb0f76c8ee2045df8d5898f118a05518205de",
         "content_type": "RULE",
         "count_distinct": false,
         "count_field": null,
@@ -79500,7 +79526,7 @@
                 "expression": "http_url"
             }
         ],
-        "expression": "metadata_product = \"Azure\"\nand description = \"AzureFirewallApplicationRuleLog\"\nand normalizedAction = \"deny\"",
+        "expression": "metadata_product = \"Azure\"\nand (description = \"AzureFirewallApplicationRuleLog\"\n     or metadata_deviceEventId = \"AZFWApplicationRule\")\nand normalizedAction = \"deny\"",
         "file_path": "rules_v3/Multiple_Azure_Firewall_Deny_Events_for_URL.json",
         "group_by_fields": [],
         "id": 113,
@@ -79681,6 +79707,7 @@
             "7205db83-88e8-4074-8288-136a6c493d69",
             "79da6240-7617-49c8-b130-96278579766e",
             "8276b520-fdeb-4f79-9f5d-67865818562b",
+            "90bba037-f944-480e-89fa-a3b104451af3",
             "9f6d624f-6d8f-43c7-a4b0-51179061631c",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "acb7e80e-2b66-496c-ba2e-1e7c3933a98e",

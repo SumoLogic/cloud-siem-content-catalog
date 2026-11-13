@@ -22,6 +22,7 @@ Detects email addresses associated with known malicious actor(s) or campaign(s) 
 - [Microsoft - O365 Exchange Message Trace](../products/183c5127-6594-4d45-9bab-ce5f2df9e38b.md)
 - [Mimecast - Mimecast](../products/54B36B3F-A63F-4BA4-9DE4-02DBF69A429F.md)
 - [Okta - Single Sign-On](../products/51278354-d6b5-4c8e-a8fd-8197df334e67.md)
+- [Proofpoint - TRAP](../products/16c76d97-46c9-43f6-ba96-77d63085a4cf.md)
 
 
 ## Fields Used

@@ -28,6 +28,7 @@ This rule is designed to detect spikes of excessive firewall deny events within 
 |Origin|Field|
 |----|----|
 |Normalized Schema|description|
+|Normalized Schema|metadata_deviceEventId|
 |Normalized Schema|metadata_product|
 |Normalized Schema|normalizedAction|
 |Normalized Schema|srcDevice_ip|

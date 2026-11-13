@@ -16,6 +16,7 @@ Detects commands associated with modifications to loadable kernel modules. LKMs 
 |Prototype|False|
 |Tags|_mitreAttackTactic:TA0003, _mitreAttackTechnique:T1547.006|
 ## Vendors and Products
+- [Anthropic - Claude Code](../products/eabd9eed-b071-4773-ad07-706ea5b51b9c.md)
 - [CrowdStrike - FDR](../products/569a3a44-c29f-492e-bcf4-5dc04e2ab0f3.md)
 - [CrowdStrike - Falcon](../products/840c72e0-4e47-41e7-9b93-31f55d12f07d.md)
 - [Falco - Falco](../products/d6cb76d3-939e-4e02-b399-b15e0278c877.md)

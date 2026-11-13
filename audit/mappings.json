@@ -1725,8 +1725,8 @@
         "uid": "03717690-868e-48e2-be0d-e381a053972e"
     },
     "037a5242-77de-443f-b212-e16051c6e7db": {
-        "commit_message": "TRIDENT-15657 Update client handling for MS SQL mapper",
-        "commit_origin_hash": "3b1cca3fe96d525fb567787679bb4da9309dd93b",
+        "commit_message": "TLAB-2881 Improve SQL Mapper (#6060)",
+        "commit_origin_hash": "bc0f688c709bd62508a1aa19406fa7e9009e7d63",
         "field_mappings": {
             "description": {
                 "value": "Message"
@@ -1763,8 +1763,8 @@
         "uid": "037a5242-77de-443f-b212-e16051c6e7db"
     },
     "03a073b1-75da-404e-b221-a3fac810632a": {
-        "commit_message": "Update pan_firewall_custom_parser.yaml (#6034)",
-        "commit_origin_hash": "f31bb702aa26a4178c1cda72681820c338c83d1c",
+        "commit_message": "TLAB-2799 Expand PAN success lookups and remove threat mapper default (#6055)",
+        "commit_origin_hash": "22755ac7eb841bebc2580dec8eb87c17ea0ddcfd",
         "field_mappings": {
             "action": {
                 "alternate_values": [
@@ -1858,19 +1858,25 @@
                 "alternate_values": [
                     "act"
                 ],
-                "default_value": "true",
                 "lookup": {
+                    "alert": "true",
+                    "allow": "true",
                     "block": "false",
                     "block-continue": "false",
                     "block-ip": "false",
                     "block-override": "false",
                     "block-url": "false",
+                    "continue": "true",
                     "deny": "false",
                     "drop": "false",
+                    "drop ICMP": "false",
+                    "drop icmp": "false",
                     "drop-all": "false",
                     "drop-all-packets": "false",
+                    "drop-icmp": "false",
                     "drop-packet": "false",
                     "drop-reset": "false",
+                    "override": "true",
                     "override-lockout": "false",
                     "random-drop": "false",
                     "reset-both": "false",
@@ -4319,8 +4325,8 @@
         "uid": "0973f1a0-7b57-4083-ad42-4f553c5c210d"
     },
     "09a000f5-0586-4ce4-b5d2-c7e99ea14650": {
-        "commit_message": "TLAB-2790 Fix CrowdStrike Data Protection severity mapping (#6035)",
-        "commit_origin_hash": "8ea193375ec539b625a325c708668517a48622aa",
+        "commit_message": "TLAB-2882 Add CrowdStrike CorrelationRuleDetectionSummaryEvent mapper (#6062)",
+        "commit_origin_hash": "c0e3106f0b7f17f5d33fb0bba320390f4d126cd6",
         "field_mappings": {
             "commandLine": {
                 "value": "CommandLine"
@@ -4859,8 +4865,8 @@
         "uid": "09d8aecf-be24-441b-827a-a5ad6aa9c8d6"
     },
     "09ed1bbd-bea6-46b0-b4a0-f830bf73ca8c": {
-        "commit_message": "Update pan_firewall_custom_parser.yaml (#6034)",
-        "commit_origin_hash": "f31bb702aa26a4178c1cda72681820c338c83d1c",
+        "commit_message": "TLAB-2799 Expand PAN success lookups and remove threat mapper default (#6055)",
+        "commit_origin_hash": "22755ac7eb841bebc2580dec8eb87c17ea0ddcfd",
         "field_mappings": {
             "action": {
                 "alternate_values": [
@@ -4962,19 +4968,25 @@
                 "value": "source_port"
             },
             "success": {
-                "default_value": "true",
                 "lookup": {
+                    "alert": "true",
+                    "allow": "true",
                     "block": "false",
                     "block-continue": "false",
                     "block-ip": "false",
                     "block-override": "false",
                     "block-url": "false",
+                    "continue": "true",
                     "deny": "false",
                     "drop": "false",
+                    "drop ICMP": "false",
+                    "drop icmp": "false",
                     "drop-all": "false",
                     "drop-all-packets": "false",
+                    "drop-icmp": "false",
                     "drop-packet": "false",
                     "drop-reset": "false",
+                    "override": "true",
                     "override-lockout": "false",
                     "random-drop": "false",
                     "reset-both": "false",
@@ -5933,8 +5945,8 @@
         "uid": "0bb3b0d8-af2c-4ea9-8eed-836a9a88a3b5"
     },
     "0bd07b98-d543-4b2f-b1ea-ffef3b81dcc6": {
-        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
-        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
+        "commit_message": "TLAB-2831 Support Azure Firewall Resource Specific logs in mappers and deny rules (#6057)",
+        "commit_origin_hash": "d9dfb0f76c8ee2045df8d5898f118a05518205de",
         "field_mappings": {
             "accountId": {
                 "value": "tenantId"
@@ -6422,8 +6434,8 @@
         "uid": "0c7120d1-0adc-48c0-a824-526eac5c10e3"
     },
     "0c72a484-087d-4927-8700-efed8f6cd450": {
-        "commit_message": "TLAB-2790 Fix CrowdStrike Data Protection severity mapping (#6035)",
-        "commit_origin_hash": "8ea193375ec539b625a325c708668517a48622aa",
+        "commit_message": "TLAB-2882 Add CrowdStrike CorrelationRuleDetectionSummaryEvent mapper (#6062)",
+        "commit_origin_hash": "c0e3106f0b7f17f5d33fb0bba320390f4d126cd6",
         "field_mappings": {
             "commandLine": {
                 "value": "event.CommandLine"
@@ -9265,8 +9277,8 @@
         "uid": "11a504e8-085d-489a-8792-2d36a63e0877"
     },
     "11acde72-ed1c-44e6-8fd5-61debaf06512": {
-        "commit_message": "TLAB-2790 Fix CrowdStrike Data Protection severity mapping (#6035)",
-        "commit_origin_hash": "8ea193375ec539b625a325c708668517a48622aa",
+        "commit_message": "TLAB-2882 Add CrowdStrike CorrelationRuleDetectionSummaryEvent mapper (#6062)",
+        "commit_origin_hash": "c0e3106f0b7f17f5d33fb0bba320390f4d126cd6",
         "field_mappings": {
             "description": {
                 "value": "event.IncidentDescription"
@@ -9781,8 +9793,8 @@
         "uid": "12996e2b-9330-4984-9992-424e9942e617"
     },
     "12b6bde9-4919-446c-8794-cad266a53df4": {
-        "commit_message": "TLAB-2790 Fix CrowdStrike Data Protection severity mapping (#6035)",
-        "commit_origin_hash": "8ea193375ec539b625a325c708668517a48622aa",
+        "commit_message": "TLAB-2882 Add CrowdStrike CorrelationRuleDetectionSummaryEvent mapper (#6062)",
+        "commit_origin_hash": "c0e3106f0b7f17f5d33fb0bba320390f4d126cd6",
         "field_mappings": {
             "description": {
                 "value": "cat"
@@ -10044,8 +10056,8 @@
         "uid": "14d66ca4-56d5-4c4b-8951-96c0239a468e"
     },
     "14dd00c2-3b72-4269-a7a0-8f698834a867": {
-        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
-        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
+        "commit_message": "TLAB-2831 Support Azure Firewall Resource Specific logs in mappers and deny rules (#6057)",
+        "commit_origin_hash": "d9dfb0f76c8ee2045df8d5898f118a05518205de",
         "field_mappings": {
             "accountId": {
                 "value": "tenantId"
@@ -11474,8 +11486,8 @@
         "uid": "17e4bad6-e477-43fc-9d31-3d72ac9e5970"
     },
     "17f6e54b-5afb-4654-923b-daa2ba6601cd": {
-        "commit_message": "Update pan_firewall_custom_parser.yaml (#6034)",
-        "commit_origin_hash": "f31bb702aa26a4178c1cda72681820c338c83d1c",
+        "commit_message": "TLAB-2799 Expand PAN success lookups and remove threat mapper default (#6055)",
+        "commit_origin_hash": "22755ac7eb841bebc2580dec8eb87c17ea0ddcfd",
         "field_mappings": {
             "action": {
                 "alternate_values": [
@@ -12115,8 +12127,8 @@
         "uid": "1887d1cc-3fdc-481d-8da0-1ee18d6ce863"
     },
     "18a1a332-3053-4c1c-8476-2851305db333": {
-        "commit_message": "TLAB-2790 Fix CrowdStrike Data Protection severity mapping (#6035)",
-        "commit_origin_hash": "8ea193375ec539b625a325c708668517a48622aa",
+        "commit_message": "TLAB-2882 Add CrowdStrike CorrelationRuleDetectionSummaryEvent mapper (#6062)",
+        "commit_origin_hash": "c0e3106f0b7f17f5d33fb0bba320390f4d126cd6",
         "field_mappings": {
             "description": {
                 "value": "event.DetectDescription"
@@ -13294,8 +13306,8 @@
         "uid": "1a66c79f-0454-4c94-84fc-344b47727e8f"
     },
     "1a9bebd4-1bae-431d-a718-59e6f7b99db9": {
-        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
-        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
+        "commit_message": "TLAB-2831 Support Azure Firewall Resource Specific logs in mappers and deny rules (#6057)",
+        "commit_origin_hash": "d9dfb0f76c8ee2045df8d5898f118a05518205de",
         "field_mappings": {
             "accountId": {
                 "value": "tenantId"
@@ -13638,8 +13650,8 @@
         "uid": "1ab2a0df-124e-40fa-99e9-321c714e5b49"
     },
     "1ad53d6b-ae53-4650-be9d-eb9a7000c3d8": {
-        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
-        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
+        "commit_message": "TLAB-2831 Support Azure Firewall Resource Specific logs in mappers and deny rules (#6057)",
+        "commit_origin_hash": "d9dfb0f76c8ee2045df8d5898f118a05518205de",
         "field_mappings": {
             "accountId": {
                 "value": "tenantId"
@@ -13862,8 +13874,8 @@
         "uid": "1add6fe1-8aff-4b55-817e-0ccd569f99d6"
     },
     "1b0609f0-44bd-4333-bf67-dcbfe20cf855": {
-        "commit_message": "Update pan_firewall_custom_parser.yaml (#6034)",
-        "commit_origin_hash": "f31bb702aa26a4178c1cda72681820c338c83d1c",
+        "commit_message": "TLAB-2799 Expand PAN success lookups and remove threat mapper default (#6055)",
+        "commit_origin_hash": "22755ac7eb841bebc2580dec8eb87c17ea0ddcfd",
         "field_mappings": {
             "action": {
                 "alternate_values": [
@@ -13939,8 +13951,8 @@
         "uid": "1b0609f0-44bd-4333-bf67-dcbfe20cf855"
     },
     "1b23141e-b15d-4b26-b792-6b0ca3a0b63a": {
-        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
-        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
+        "commit_message": "TLAB-2831 Support Azure Firewall Resource Specific logs in mappers and deny rules (#6057)",
+        "commit_origin_hash": "d9dfb0f76c8ee2045df8d5898f118a05518205de",
         "field_mappings": {
             "accountId": {
                 "value": "tenantId"
@@ -14827,8 +14839,8 @@
         "uid": "1d1d8a94-fd27-42fd-9927-1397623aea32"
     },
     "1d4327aa-d984-43d1-8ea8-179dcd5779fc": {
-        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
-        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
+        "commit_message": "TLAB-2831 Support Azure Firewall Resource Specific logs in mappers and deny rules (#6057)",
+        "commit_origin_hash": "d9dfb0f76c8ee2045df8d5898f118a05518205de",
         "field_mappings": {
             "accountId": {
                 "value": "tenantId"
@@ -15888,8 +15900,8 @@
         "uid": "1e9a6865-7208-460d-8bc9-a292117a27d4"
     },
     "1ec83af5-25f8-4b0e-891e-28008e03f6d4": {
-        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
-        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
+        "commit_message": "TLAB-2831 Support Azure Firewall Resource Specific logs in mappers and deny rules (#6057)",
+        "commit_origin_hash": "d9dfb0f76c8ee2045df8d5898f118a05518205de",
         "field_mappings": {
             "action": {
                 "value": "operationName"
@@ -17645,8 +17657,8 @@
         "uid": "22c60a0b-b222-49b2-9ce0-59be7147694b"
     },
     "22fd3764-dd3a-403f-833b-be8a1fa12df7": {
-        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
-        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
+        "commit_message": "TLAB-2831 Support Azure Firewall Resource Specific logs in mappers and deny rules (#6057)",
+        "commit_origin_hash": "d9dfb0f76c8ee2045df8d5898f118a05518205de",
         "field_mappings": {
             "action": {
                 "value": "operationName"
@@ -19546,8 +19558,8 @@
         "uid": "2609ee7a-13fb-428f-b443-3e8fd0e0c916"
     },
     "262182dd-88f6-4818-9b6e-0e54b17339cb": {
-        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
-        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
+        "commit_message": "TLAB-2831 Support Azure Firewall Resource Specific logs in mappers and deny rules (#6057)",
+        "commit_origin_hash": "d9dfb0f76c8ee2045df8d5898f118a05518205de",
         "field_mappings": {
             "action": {
                 "value": "properties.type"
@@ -20198,8 +20210,8 @@
         "uid": "27479c62-d71d-4ba4-9589-95860301ad0d"
     },
     "2771d5de-5a61-41fd-8b8e-b305f74a156b": {
-        "commit_message": "TLAB-2790 Fix CrowdStrike Data Protection severity mapping (#6035)",
-        "commit_origin_hash": "8ea193375ec539b625a325c708668517a48622aa",
+        "commit_message": "TLAB-2882 Add CrowdStrike CorrelationRuleDetectionSummaryEvent mapper (#6062)",
+        "commit_origin_hash": "c0e3106f0b7f17f5d33fb0bba320390f4d126cd6",
         "field_mappings": {
             "description": {
                 "alternate_values": [
@@ -21630,8 +21642,8 @@
         "uid": "298ed30f-e7dc-422f-881b-7a556dc07eb0"
     },
     "298f3884-a74a-4c65-a4e1-72d4c54bd13b": {
-        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
-        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
+        "commit_message": "TLAB-2831 Support Azure Firewall Resource Specific logs in mappers and deny rules (#6057)",
+        "commit_origin_hash": "d9dfb0f76c8ee2045df8d5898f118a05518205de",
         "field_mappings": {
             "accountId": {
                 "value": "tenantId"
@@ -22205,8 +22217,8 @@
         "uid": "2a1e94cc-ddf7-4e76-b3e0-bb6c0b7c4388"
     },
     "2a709311-ca87-47b7-bfcc-0642210fc30b": {
-        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
-        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
+        "commit_message": "TLAB-2831 Support Azure Firewall Resource Specific logs in mappers and deny rules (#6057)",
+        "commit_origin_hash": "d9dfb0f76c8ee2045df8d5898f118a05518205de",
         "field_mappings": {
             "action": {
                 "value": "operationName"
@@ -23223,8 +23235,8 @@
         "uid": "2c6a02e4-89b0-4d30-b03d-45756f074266"
     },
     "2c7bf143-bd3e-4b3f-ac0c-19ba568922fc": {
-        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
-        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
+        "commit_message": "TLAB-2831 Support Azure Firewall Resource Specific logs in mappers and deny rules (#6057)",
+        "commit_origin_hash": "d9dfb0f76c8ee2045df8d5898f118a05518205de",
         "field_mappings": {
             "action": {
                 "value": "operationName"
@@ -23966,8 +23978,8 @@
         "uid": "2d8a8585-9f03-4668-9e97-fa7b6853accc"
     },
     "2dcf62db-d79f-4a03-9a3a-24bf67bdbe67": {
-        "commit_message": "Update pan_firewall_custom_parser.yaml (#6034)",
-        "commit_origin_hash": "f31bb702aa26a4178c1cda72681820c338c83d1c",
+        "commit_message": "TLAB-2799 Expand PAN success lookups and remove threat mapper default (#6055)",
+        "commit_origin_hash": "22755ac7eb841bebc2580dec8eb87c17ea0ddcfd",
         "field_mappings": {
             "action": {
                 "value": "stage"
@@ -25514,8 +25526,8 @@
         "uid": "2f81fa0d-bb46-41e7-b1bd-4cc6dd0ad02d"
     },
     "2f879e2d-56b8-4253-a257-a35c13b0e83f": {
-        "commit_message": "TLAB-2790 Fix CrowdStrike Data Protection severity mapping (#6035)",
-        "commit_origin_hash": "8ea193375ec539b625a325c708668517a48622aa",
+        "commit_message": "TLAB-2882 Add CrowdStrike CorrelationRuleDetectionSummaryEvent mapper (#6062)",
+        "commit_origin_hash": "c0e3106f0b7f17f5d33fb0bba320390f4d126cd6",
         "field_mappings": {
             "action": {
                 "value": "metadata.eventType"
@@ -26567,8 +26579,8 @@
         "uid": "314ea562-303f-48ad-b612-39e42545331a"
     },
     "3152d898-4618-4b29-9ebf-7f107a1e814e": {
-        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
-        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
+        "commit_message": "TLAB-2831 Support Azure Firewall Resource Specific logs in mappers and deny rules (#6057)",
+        "commit_origin_hash": "d9dfb0f76c8ee2045df8d5898f118a05518205de",
         "field_mappings": {
             "bytesIn": {
                 "value": "properties.receivedBytes"
@@ -28323,6 +28335,272 @@
         "source": "jask",
         "uid": "3755f978-b036-49fc-bfec-7634a59b32e4"
     },
+    "378f66f3-6c78-420b-aa61-353c42b61f81": {
+        "commit_message": "TLAB-2882 Add CrowdStrike CorrelationRuleDetectionSummaryEvent mapper (#6062)",
+        "commit_origin_hash": "c0e3106f0b7f17f5d33fb0bba320390f4d126cd6",
+        "field_mappings": {
+            "device_hostname": {
+                "value": "event.HostNames.1"
+            },
+            "device_ip": {
+                "value": "event.SourceIPs.1"
+            },
+            "normalizedSeverity": {
+                "default_value": "0",
+                "lookup": {
+                    "1": "0",
+                    "10": "0",
+                    "100": "8",
+                    "11": "1",
+                    "12": "1",
+                    "13": "1",
+                    "14": "1",
+                    "15": "1",
+                    "16": "1",
+                    "17": "1",
+                    "18": "1",
+                    "19": "1",
+                    "2": "0",
+                    "20": "1",
+                    "21": "1",
+                    "22": "1",
+                    "23": "1",
+                    "24": "1",
+                    "25": "1",
+                    "26": "2",
+                    "27": "2",
+                    "28": "2",
+                    "29": "2",
+                    "3": "0",
+                    "30": "2",
+                    "31": "2",
+                    "32": "2",
+                    "33": "2",
+                    "34": "2",
+                    "35": "2",
+                    "36": "2",
+                    "37": "2",
+                    "38": "2",
+                    "39": "2",
+                    "4": "0",
+                    "40": "2",
+                    "41": "3",
+                    "42": "3",
+                    "43": "3",
+                    "44": "3",
+                    "45": "3",
+                    "46": "3",
+                    "47": "3",
+                    "48": "3",
+                    "49": "3",
+                    "5": "0",
+                    "50": "3",
+                    "51": "4",
+                    "52": "4",
+                    "53": "4",
+                    "54": "4",
+                    "55": "4",
+                    "56": "4",
+                    "57": "4",
+                    "58": "4",
+                    "59": "4",
+                    "6": "0",
+                    "60": "4",
+                    "61": "5",
+                    "62": "5",
+                    "63": "5",
+                    "64": "5",
+                    "65": "5",
+                    "66": "6",
+                    "67": "6",
+                    "68": "6",
+                    "69": "6",
+                    "7": "0",
+                    "70": "6",
+                    "71": "6",
+                    "72": "6",
+                    "73": "6",
+                    "74": "6",
+                    "75": "6",
+                    "76": "6",
+                    "77": "6",
+                    "78": "6",
+                    "79": "6",
+                    "8": "0",
+                    "80": "6",
+                    "81": "7",
+                    "82": "7",
+                    "83": "7",
+                    "84": "7",
+                    "85": "7",
+                    "86": "7",
+                    "87": "7",
+                    "88": "7",
+                    "89": "7",
+                    "9": "0",
+                    "90": "7",
+                    "91": "8",
+                    "92": "8",
+                    "93": "8",
+                    "94": "8",
+                    "95": "8",
+                    "96": "8",
+                    "97": "8",
+                    "98": "8",
+                    "99": "8"
+                },
+                "value": "event.Severity",
+                "value_type": "lookup"
+            },
+            "severity": {
+                "lookup": {
+                    "1": "Low",
+                    "10": "Low",
+                    "100": "Critical",
+                    "11": "Low",
+                    "12": "Low",
+                    "13": "Low",
+                    "14": "Low",
+                    "15": "Low",
+                    "16": "Low",
+                    "17": "Low",
+                    "18": "Low",
+                    "19": "Low",
+                    "2": "Low",
+                    "20": "Low",
+                    "21": "Low",
+                    "22": "Low",
+                    "23": "Low",
+                    "24": "Low",
+                    "25": "Low",
+                    "26": "Medium",
+                    "27": "Medium",
+                    "28": "Medium",
+                    "29": "Medium",
+                    "3": "Low",
+                    "30": "Medium",
+                    "31": "Medium",
+                    "32": "Medium",
+                    "33": "Medium",
+                    "34": "Medium",
+                    "35": "Medium",
+                    "36": "Medium",
+                    "37": "Medium",
+                    "38": "Medium",
+                    "39": "Medium",
+                    "4": "Low",
+                    "40": "Medium",
+                    "41": "Medium",
+                    "42": "Medium",
+                    "43": "Medium",
+                    "44": "Medium",
+                    "45": "Medium",
+                    "46": "Medium",
+                    "47": "Medium",
+                    "48": "Medium",
+                    "49": "Medium",
+                    "5": "Low",
+                    "50": "Medium",
+                    "51": "Medium",
+                    "52": "Medium",
+                    "53": "Medium",
+                    "54": "Medium",
+                    "55": "Medium",
+                    "56": "Medium",
+                    "57": "Medium",
+                    "58": "Medium",
+                    "59": "Medium",
+                    "6": "Low",
+                    "60": "Medium",
+                    "61": "Medium",
+                    "62": "Medium",
+                    "63": "Medium",
+                    "64": "Medium",
+                    "65": "Medium",
+                    "66": "Medium",
+                    "67": "Medium",
+                    "68": "Medium",
+                    "69": "Medium",
+                    "7": "Low",
+                    "70": "High",
+                    "71": "High",
+                    "72": "High",
+                    "73": "High",
+                    "74": "High",
+                    "75": "High",
+                    "76": "High",
+                    "77": "High",
+                    "78": "High",
+                    "79": "High",
+                    "8": "Low",
+                    "80": "High",
+                    "81": "High",
+                    "82": "High",
+                    "83": "High",
+                    "84": "High",
+                    "85": "High",
+                    "86": "Critical",
+                    "87": "Critical",
+                    "88": "Critical",
+                    "89": "Critical",
+                    "9": "Low",
+                    "90": "Critical",
+                    "91": "Critical",
+                    "92": "Critical",
+                    "93": "Critical",
+                    "94": "Critical",
+                    "95": "Critical",
+                    "96": "Critical",
+                    "97": "Critical",
+                    "98": "Critical",
+                    "99": "Critical"
+                },
+                "value": "event.Severity",
+                "value_type": "lookup"
+            },
+            "threat_category": {
+                "value": "event.MitreAttack.1.Tactic"
+            },
+            "threat_identifier": {
+                "value": "event.NGSIEMDetectionId"
+            },
+            "threat_name": {
+                "value": "event.RuleName"
+            },
+            "threat_referenceUrl": {
+                "value": "event.FalconHostLink"
+            },
+            "threat_ruleType": {
+                "value": "direct",
+                "value_type": "constant"
+            },
+            "threat_signalName": {
+                "value": "event.RuleName"
+            },
+            "user_username": {
+                "value": "event.UserNames.1"
+            }
+        },
+        "file_path": "mappings_schemav3/crowdstrike.yaml",
+        "input": {
+            "event_id_pattern": "CorrelationRuleDetectionSummaryEvent",
+            "log_format": "JSON",
+            "product": "Falcon Endpoint Protection",
+            "vendor": "CrowdStrike"
+        },
+        "name": "CrowdStrike Falcon - CorrelationRuleDetectionSummaryEvent",
+        "output": {
+            "product_guid": "840c72e0-4e47-41e7-9b93-31f55d12f07d",
+            "record_type": "Endpoint"
+        },
+        "relates_entities": true,
+        "skipped_values": [
+            ",",
+            "-"
+        ],
+        "source": "jask",
+        "uid": "378f66f3-6c78-420b-aa61-353c42b61f81"
+    },
     "37921347-8294-44b5-b0a4-06cd744c6bed": {
         "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
         "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
@@ -28495,8 +28773,8 @@
         "uid": "37921347-8294-44b5-b0a4-06cd744c6bed"
     },
     "379364a9-1ef1-4546-bbf6-4065b2d781e8": {
-        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
-        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
+        "commit_message": "TLAB-2831 Support Azure Firewall Resource Specific logs in mappers and deny rules (#6057)",
+        "commit_origin_hash": "d9dfb0f76c8ee2045df8d5898f118a05518205de",
         "field_mappings": {
             "accountId": {
                 "value": "tenantId"
@@ -28877,8 +29155,8 @@
         "uid": "3859c1da-3644-410b-931e-2ee949d1917a"
     },
     "38a062b1-1308-4b5d-851e-e0f93e27c1c9": {
-        "commit_message": "TLAB-2790 Fix CrowdStrike Data Protection severity mapping (#6035)",
-        "commit_origin_hash": "8ea193375ec539b625a325c708668517a48622aa",
+        "commit_message": "TLAB-2882 Add CrowdStrike CorrelationRuleDetectionSummaryEvent mapper (#6062)",
+        "commit_origin_hash": "c0e3106f0b7f17f5d33fb0bba320390f4d126cd6",
         "field_mappings": {
             "description": {
                 "value": "cat"
@@ -29110,8 +29388,8 @@
         "uid": "38eab1f4-619f-40c4-b64d-0f43a311d6ff"
     },
     "3952b643-4001-483e-bc06-8f8faf264262": {
-        "commit_message": "TLAB-2790 Fix CrowdStrike Data Protection severity mapping (#6035)",
-        "commit_origin_hash": "8ea193375ec539b625a325c708668517a48622aa",
+        "commit_message": "TLAB-2882 Add CrowdStrike CorrelationRuleDetectionSummaryEvent mapper (#6062)",
+        "commit_origin_hash": "c0e3106f0b7f17f5d33fb0bba320390f4d126cd6",
         "field_mappings": {
             "commandLine": {
                 "value": "event.CommandLine"
@@ -32680,8 +32958,8 @@
         "uid": "4059c1da-4644-510b-931e-7ee949d1918b"
     },
     "409d74ba-3084-4a5b-a840-50e3bd428867": {
-        "commit_message": "TLAB-2790 Fix CrowdStrike Data Protection severity mapping (#6035)",
-        "commit_origin_hash": "8ea193375ec539b625a325c708668517a48622aa",
+        "commit_message": "TLAB-2882 Add CrowdStrike CorrelationRuleDetectionSummaryEvent mapper (#6062)",
+        "commit_origin_hash": "c0e3106f0b7f17f5d33fb0bba320390f4d126cd6",
         "field_mappings": {
             "device_ip": {
                 "value": "event.UserIp"
@@ -40581,8 +40859,8 @@
         "uid": "50ee5df8-20ae-4183-a282-b96369005935"
     },
     "50febf8f-5d62-46af-bc91-c4b04510a106": {
-        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
-        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
+        "commit_message": "TLAB-2831 Support Azure Firewall Resource Specific logs in mappers and deny rules (#6057)",
+        "commit_origin_hash": "d9dfb0f76c8ee2045df8d5898f118a05518205de",
         "field_mappings": {
             "device_hostname": {
                 "value": "DeploymentUnit"
@@ -40846,8 +41124,8 @@
         "uid": "5230380b-14fd-447e-8a0f-c652769e95b0"
     },
     "52351529-dfdd-4f70-8d0f-1321cf55a61f": {
-        "commit_message": "Update pan_firewall_custom_parser.yaml (#6034)",
-        "commit_origin_hash": "f31bb702aa26a4178c1cda72681820c338c83d1c",
+        "commit_message": "TLAB-2799 Expand PAN success lookups and remove threat mapper default (#6055)",
+        "commit_origin_hash": "22755ac7eb841bebc2580dec8eb87c17ea0ddcfd",
         "field_mappings": {
             "action": {
                 "alternate_values": [
@@ -40947,19 +41225,25 @@
                 "alternate_values": [
                     "act"
                 ],
-                "default_value": "true",
                 "lookup": {
+                    "alert": "true",
+                    "allow": "true",
                     "block": "false",
                     "block-continue": "false",
                     "block-ip": "false",
                     "block-override": "false",
                     "block-url": "false",
+                    "continue": "true",
                     "deny": "false",
                     "drop": "false",
+                    "drop ICMP": "false",
+                    "drop icmp": "false",
                     "drop-all": "false",
                     "drop-all-packets": "false",
+                    "drop-icmp": "false",
                     "drop-packet": "false",
                     "drop-reset": "false",
+                    "override": "true",
                     "override-lockout": "false",
                     "random-drop": "false",
                     "reset-both": "false",
@@ -41694,8 +41978,8 @@
         "uid": "52e8cc4d-62af-46c9-b216-7c5178fad0a4"
     },
     "52e9a9ef-c9b7-4e07-941a-c4011f705301": {
-        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
-        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
+        "commit_message": "TLAB-2831 Support Azure Firewall Resource Specific logs in mappers and deny rules (#6057)",
+        "commit_origin_hash": "d9dfb0f76c8ee2045df8d5898f118a05518205de",
         "field_mappings": {
             "bytesIn": {
                 "value": "properties.requestBytes"
@@ -42787,8 +43071,8 @@
         "uid": "556dc316-280b-45cc-a457-d9a4e24f8741"
     },
     "559ba38b-e281-4c1c-9cea-24715c1cc4ca": {
-        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
-        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
+        "commit_message": "TLAB-2831 Support Azure Firewall Resource Specific logs in mappers and deny rules (#6057)",
+        "commit_origin_hash": "d9dfb0f76c8ee2045df8d5898f118a05518205de",
         "field_mappings": {
             "accountId": {
                 "value": "tenantId"
@@ -42910,7 +43194,7 @@
         },
         "file_path": "mappings_schemav3/azure_custom_parser.yaml",
         "input": {
-            "event_id_pattern": "(AdvancedHunting-(DeviceNetworkEvents|DeviceNetworkInfo))|(AZFW(ThreatIntel|NetworkRule))",
+            "event_id_pattern": "(AdvancedHunting-(DeviceNetworkEvents|DeviceNetworkInfo))|(AZFWThreatIntel)",
             "log_format": "JSON",
             "product": "Azure",
             "vendor": "Microsoft"
@@ -43084,8 +43368,8 @@
         "uid": "55d8ec38-d5ca-4ca9-b6e7-2cca16384235"
     },
     "562de066-eaab-4d04-a7d7-86cc3c8fa79e": {
-        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
-        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
+        "commit_message": "TLAB-2831 Support Azure Firewall Resource Specific logs in mappers and deny rules (#6057)",
+        "commit_origin_hash": "d9dfb0f76c8ee2045df8d5898f118a05518205de",
         "field_mappings": {
             "action": {
                 "value": "operationName"
@@ -45554,8 +45838,8 @@
         "uid": "5F7A6C70-9613-494A-AA69-E8CBC4EC6C42"
     },
     "5a47e54c-a8cc-4f38-af4d-842acd85d2ac": {
-        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
-        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
+        "commit_message": "TLAB-2831 Support Azure Firewall Resource Specific logs in mappers and deny rules (#6057)",
+        "commit_origin_hash": "d9dfb0f76c8ee2045df8d5898f118a05518205de",
         "field_mappings": {
             "accountId": {
                 "value": "tenantId"
@@ -45811,8 +46095,8 @@
         "uid": "5a914e06-8972-11ea-bc55-0242ac130003"
     },
     "5ac00bf7-2a94-4c2f-a56a-da56c2fd0f3c": {
-        "commit_message": "TLAB-2790 Fix CrowdStrike Data Protection severity mapping (#6035)",
-        "commit_origin_hash": "8ea193375ec539b625a325c708668517a48622aa",
+        "commit_message": "TLAB-2882 Add CrowdStrike CorrelationRuleDetectionSummaryEvent mapper (#6062)",
+        "commit_origin_hash": "c0e3106f0b7f17f5d33fb0bba320390f4d126cd6",
         "field_mappings": {
             "description": {
                 "value": "cat"
@@ -45894,8 +46178,8 @@
         "uid": "5ac00bf7-2a94-4c2f-a56a-da56c2fd0f3c"
     },
     "5b143610-ad79-41d2-b9c2-a79dfff9b21e": {
-        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
-        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
+        "commit_message": "TLAB-2831 Support Azure Firewall Resource Specific logs in mappers and deny rules (#6057)",
+        "commit_origin_hash": "d9dfb0f76c8ee2045df8d5898f118a05518205de",
         "field_mappings": {
             "accountId": {
                 "value": "properties.servicePrincipalId"
@@ -47891,8 +48175,8 @@
         "uid": "5ffc7e47-55d8-48bf-9ead-b00358251f96"
     },
     "6014dc76-0147-421a-af0a-5b88a0c1b4a5": {
-        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
-        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
+        "commit_message": "TLAB-2831 Support Azure Firewall Resource Specific logs in mappers and deny rules (#6057)",
+        "commit_origin_hash": "d9dfb0f76c8ee2045df8d5898f118a05518205de",
         "field_mappings": {
             "action": {
                 "value": "properties.action"
@@ -50001,10 +50285,13 @@
         "uid": "640b4eb0-669a-46f4-9229-48c30c50e5ef"
     },
     "6411d15f-13c6-41eb-88a9-e565563943e6": {
-        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
-        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
+        "commit_message": "TLAB-2831 Support Azure Firewall Resource Specific logs in mappers and deny rules (#6057)",
+        "commit_origin_hash": "d9dfb0f76c8ee2045df8d5898f118a05518205de",
         "field_mappings": {
             "bytesIn": {
+                "alternate_values": [
+                    "properties.RequestSize"
+                ],
                 "value": "request_bytes"
             },
             "description": {
@@ -50014,18 +50301,36 @@
                 "format_parameters": [
                     "request_type",
                     "request_class",
-                    "request_name"
+                    "request_name",
+                    "properties.QueryType",
+                    "properties.QueryClass",
+                    "properties.QueryName"
                 ],
                 "value": "%s %s %s",
                 "value_type": "format"
             },
             "dns_queryDomain": {
-                "value": "destination"
+                "alternate_values": [
+                    "properties.QueryName"
+                ],
+                "value": "request_name"
+            },
+            "dns_queryType": {
+                "alternate_values": [
+                    "properties.QueryType"
+                ],
+                "value": "request_type"
             },
             "dns_returnCode": {
+                "alternate_values": [
+                    "properties.ResponseCode"
+                ],
                 "value": "response_code"
             },
             "ipProtocol": {
+                "alternate_values": [
+                    "properties.Protocol"
+                ],
                 "value": "protocol"
             },
             "normalizedResource": {
@@ -50036,9 +50341,15 @@
                 "value": "resourceId"
             },
             "srcDevice_ip": {
+                "alternate_values": [
+                    "properties.SourceIp"
+                ],
                 "value": "client_ip"
             },
             "srcPort": {
+                "alternate_values": [
+                    "properties.SourcePort"
+                ],
                 "value": "client_port"
             },
             "success": {
@@ -50053,7 +50364,7 @@
         },
         "file_path": "mappings_schemav3/azure_custom_parser.yaml",
         "input": {
-            "event_id_pattern": "AzureFirewallDnsProxy",
+            "event_id_pattern": "AzureFirewallDnsProxy|AZFWDnsQuery",
             "log_format": "JSON",
             "product": "Azure",
             "vendor": "Microsoft"
@@ -51112,8 +51423,8 @@
         "uid": "6798c977-09ca-4c33-8848-4158732fe83b"
     },
     "6807aa3d-bd9f-4715-b9ba-4851f8f881d6": {
-        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
-        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
+        "commit_message": "TLAB-2831 Support Azure Firewall Resource Specific logs in mappers and deny rules (#6057)",
+        "commit_origin_hash": "d9dfb0f76c8ee2045df8d5898f118a05518205de",
         "field_mappings": {
             "action": {
                 "value": "operationName"
@@ -51303,8 +51614,8 @@
         "uid": "685259c2-dbb1-434c-8172-6dd9d253ef6d"
     },
     "6861570d-e513-46de-a60f-5c90b53e6c8b": {
-        "commit_message": "Update pan_firewall_custom_parser.yaml (#6034)",
-        "commit_origin_hash": "f31bb702aa26a4178c1cda72681820c338c83d1c",
+        "commit_message": "TLAB-2799 Expand PAN success lookups and remove threat mapper default (#6055)",
+        "commit_origin_hash": "22755ac7eb841bebc2580dec8eb87c17ea0ddcfd",
         "field_mappings": {
             "action": {
                 "alternate_values": [
@@ -51404,19 +51715,25 @@
                 "alternate_values": [
                     "act"
                 ],
-                "default_value": "true",
                 "lookup": {
+                    "alert": "true",
+                    "allow": "true",
                     "block": "false",
                     "block-continue": "false",
                     "block-ip": "false",
                     "block-override": "false",
                     "block-url": "false",
+                    "continue": "true",
                     "deny": "false",
                     "drop": "false",
+                    "drop ICMP": "false",
+                    "drop icmp": "false",
                     "drop-all": "false",
                     "drop-all-packets": "false",
+                    "drop-icmp": "false",
                     "drop-packet": "false",
                     "drop-reset": "false",
+                    "override": "true",
                     "override-lockout": "false",
                     "random-drop": "false",
                     "reset-both": "false",
@@ -53131,8 +53448,8 @@
         "uid": "6b027e35-6ea1-42df-abce-a5696db220c9"
     },
     "6b8a3219-575f-4b34-b38b-751e75d26988": {
-        "commit_message": "TLAB-2790 Fix CrowdStrike Data Protection severity mapping (#6035)",
-        "commit_origin_hash": "8ea193375ec539b625a325c708668517a48622aa",
+        "commit_message": "TLAB-2882 Add CrowdStrike CorrelationRuleDetectionSummaryEvent mapper (#6062)",
+        "commit_origin_hash": "c0e3106f0b7f17f5d33fb0bba320390f4d126cd6",
         "field_mappings": {
             "description": {
                 "value": "event.Description"
@@ -53879,8 +54196,8 @@
         "uid": "6ca55368-0d59-4c92-b312-4b5940147be5"
     },
     "6d496433-7cd5-463f-adb8-1c02a22": {
-        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
-        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
+        "commit_message": "TLAB-2831 Support Azure Firewall Resource Specific logs in mappers and deny rules (#6057)",
+        "commit_origin_hash": "d9dfb0f76c8ee2045df8d5898f118a05518205de",
         "field_mappings": {
             "action": {
                 "value": "properties.message"
@@ -54416,8 +54733,8 @@
         "uid": "6eec80f5-0c08-4e10-9077-f05f8f6c5a7e"
     },
     "6f1ac81b-7e70-444e-8abb-62f8ef39e9a1": {
-        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
-        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
+        "commit_message": "TLAB-2831 Support Azure Firewall Resource Specific logs in mappers and deny rules (#6057)",
+        "commit_origin_hash": "d9dfb0f76c8ee2045df8d5898f118a05518205de",
         "field_mappings": {
             "device_hostname": {
                 "value": "LogicalServerName"
@@ -54844,8 +55161,8 @@
         "uid": "703f7d62-a28f-4f57-8df7-684d6af19a1c"
     },
     "7043aa13-df3d-46fd-b76a-dd702f703782": {
-        "commit_message": "TLAB-2790 Fix CrowdStrike Data Protection severity mapping (#6035)",
-        "commit_origin_hash": "8ea193375ec539b625a325c708668517a48622aa",
+        "commit_message": "TLAB-2882 Add CrowdStrike CorrelationRuleDetectionSummaryEvent mapper (#6062)",
+        "commit_origin_hash": "c0e3106f0b7f17f5d33fb0bba320390f4d126cd6",
         "field_mappings": {
             "description": {
                 "value": "cat"
@@ -54960,8 +55277,8 @@
         "uid": "7090dfcd-5b24-4947-a610-42d3dcce2b55"
     },
     "70d1f8dc-fc03-4bff-8b50-45ba64d08c9f": {
-        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
-        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
+        "commit_message": "TLAB-2831 Support Azure Firewall Resource Specific logs in mappers and deny rules (#6057)",
+        "commit_origin_hash": "d9dfb0f76c8ee2045df8d5898f118a05518205de",
         "field_mappings": {
             "action": {
                 "value": "operationName"
@@ -57424,8 +57741,8 @@
         "uid": "75fb9fb0-abbe-4aca-9c89-9652a5f5ace0"
     },
     "76081f53-a146-4a95-9049-799d0cdd9385": {
-        "commit_message": "Update pan_firewall_custom_parser.yaml (#6034)",
-        "commit_origin_hash": "f31bb702aa26a4178c1cda72681820c338c83d1c",
+        "commit_message": "TLAB-2799 Expand PAN success lookups and remove threat mapper default (#6055)",
+        "commit_origin_hash": "22755ac7eb841bebc2580dec8eb87c17ea0ddcfd",
         "field_mappings": {
             "description": {
                 "alternate_values": [
@@ -58367,8 +58684,8 @@
         "uid": "778d4ea8-5df1-4f96-9cae-31780e9d1bb7"
     },
     "7797ac55-b4ca-484c-be19-4624f96ac4f7": {
-        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
-        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
+        "commit_message": "TLAB-2831 Support Azure Firewall Resource Specific logs in mappers and deny rules (#6057)",
+        "commit_origin_hash": "d9dfb0f76c8ee2045df8d5898f118a05518205de",
         "field_mappings": {
             "action": {
                 "value": "properties.type"
@@ -58402,8 +58719,8 @@
         "uid": "7797ac55-b4ca-484c-be19-4624f96ac4f7"
     },
     "779cdb4d-382c-4f25-9c9d-0bc59721fd8c": {
-        "commit_message": "Update pan_firewall_custom_parser.yaml (#6034)",
-        "commit_origin_hash": "f31bb702aa26a4178c1cda72681820c338c83d1c",
+        "commit_message": "TLAB-2799 Expand PAN success lookups and remove threat mapper default (#6055)",
+        "commit_origin_hash": "22755ac7eb841bebc2580dec8eb87c17ea0ddcfd",
         "field_mappings": {
             "action": {
                 "alternate_values": [
@@ -58499,19 +58816,25 @@
                 "alternate_values": [
                     "act"
                 ],
-                "default_value": "true",
                 "lookup": {
+                    "alert": "true",
+                    "allow": "true",
                     "block": "false",
                     "block-continue": "false",
                     "block-ip": "false",
                     "block-override": "false",
                     "block-url": "false",
+                    "continue": "true",
                     "deny": "false",
                     "drop": "false",
+                    "drop ICMP": "false",
+                    "drop icmp": "false",
                     "drop-all": "false",
                     "drop-all-packets": "false",
+                    "drop-icmp": "false",
                     "drop-packet": "false",
                     "drop-reset": "false",
+                    "override": "true",
                     "override-lockout": "false",
                     "random-drop": "false",
                     "reset-both": "false",
@@ -61271,8 +61594,8 @@
         "uid": "7f4daf7f-f391-44be-908a-f36e6f1b360f"
     },
     "7f58d5e0-3efe-4b92-be17-9e8760e3ee4e": {
-        "commit_message": "Update pan_firewall_custom_parser.yaml (#6034)",
-        "commit_origin_hash": "f31bb702aa26a4178c1cda72681820c338c83d1c",
+        "commit_message": "TLAB-2799 Expand PAN success lookups and remove threat mapper default (#6055)",
+        "commit_origin_hash": "22755ac7eb841bebc2580dec8eb87c17ea0ddcfd",
         "field_mappings": {
             "action": {
                 "value": "action"
@@ -61343,19 +61666,25 @@
                 "alternate_values": [
                     "act"
                 ],
-                "default_value": "true",
                 "lookup": {
+                    "alert": "true",
+                    "allow": "true",
                     "block": "false",
                     "block-continue": "false",
                     "block-ip": "false",
                     "block-override": "false",
                     "block-url": "false",
+                    "continue": "true",
                     "deny": "false",
                     "drop": "false",
+                    "drop ICMP": "false",
+                    "drop icmp": "false",
                     "drop-all": "false",
                     "drop-all-packets": "false",
+                    "drop-icmp": "false",
                     "drop-packet": "false",
                     "drop-reset": "false",
+                    "override": "true",
                     "override-lockout": "false",
                     "random-drop": "false",
                     "reset-both": "false",
@@ -63303,8 +63632,8 @@
         "uid": "82792c8e-dbec-4e10-ae42-b6a0944dec23"
     },
     "8299b68c-ac5f-40fd-b107-bd3a3705a5e7": {
-        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
-        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
+        "commit_message": "TLAB-2831 Support Azure Firewall Resource Specific logs in mappers and deny rules (#6057)",
+        "commit_origin_hash": "d9dfb0f76c8ee2045df8d5898f118a05518205de",
         "field_mappings": {
             "action": {
                 "alternate_values": [
@@ -67358,9 +67687,12 @@
         "uid": "8b9c0d1e-2f3a-4b5c-6d7e-8f9a0b1c2d3e"
     },
     "8bbbe645-df62-4048-b420-9db3345e2a78": {
-        "commit_message": "TRIDENT-15657 Update client handling for MS SQL mapper",
-        "commit_origin_hash": "3b1cca3fe96d525fb567787679bb4da9309dd93b",
+        "commit_message": "TLAB-2881 Improve SQL Mapper (#6060)",
+        "commit_origin_hash": "bc0f688c709bd62508a1aa19406fa7e9009e7d63",
         "field_mappings": {
+            "cause": {
+                "value": "reason"
+            },
             "description": {
                 "value": "Message"
             },
@@ -67373,6 +67705,15 @@
             "normalizedAction": {
                 "value": "logon",
                 "value_type": "constant"
+            },
+            "normalizedCause": {
+                "lookup": {
+                    "Could not find a login matching the name provided": "incorrect username",
+                    "Password did not match that for the login provided": "incorrect password",
+                    "The account is disabled": "deny list"
+                },
+                "value": "reason",
+                "value_type": "lookup"
             },
             "srcDevice_ip": {
                 "value": "host"
@@ -67831,8 +68172,8 @@
         "uid": "8c80d8b8-7879-42cc-99ed-44ee11c1bcff"
     },
     "8cd5ce67-c75c-4935-bc03-c626fe50eaf7": {
-        "commit_message": "TLAB-2790 Fix CrowdStrike Data Protection severity mapping (#6035)",
-        "commit_origin_hash": "8ea193375ec539b625a325c708668517a48622aa",
+        "commit_message": "TLAB-2882 Add CrowdStrike CorrelationRuleDetectionSummaryEvent mapper (#6062)",
+        "commit_origin_hash": "c0e3106f0b7f17f5d33fb0bba320390f4d126cd6",
         "field_mappings": {
             "action": {
                 "value": "event.OperationName"
@@ -71130,28 +71471,43 @@
         "uid": "9348e69b-b769-48a6-9f31-c43748cb5125"
     },
     "93539fd8-02ce-485d-aa64-a242e0d97ead": {
-        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
-        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
+        "commit_message": "TLAB-2831 Support Azure Firewall Resource Specific logs in mappers and deny rules (#6057)",
+        "commit_origin_hash": "d9dfb0f76c8ee2045df8d5898f118a05518205de",
         "field_mappings": {
             "action": {
+                "alternate_values": [
+                    "properties.Action"
+                ],
                 "value": "action"
             },
             "description": {
                 "value": "operationName"
             },
             "dstDevice_ip": {
+                "alternate_values": [
+                    "properties.DestinationIp"
+                ],
                 "value": "destination"
             },
             "dstDevice_natIp": {
                 "value": "destination_nat"
             },
             "dstPort": {
+                "alternate_values": [
+                    "properties.DestinationPort"
+                ],
                 "value": "dest_port"
             },
             "ipProtocol": {
+                "alternate_values": [
+                    "properties.Protocol"
+                ],
                 "value": "protocol"
             },
             "normalizedAction": {
+                "alternate_values": [
+                    "properties.Action"
+                ],
                 "default_value": "deny",
                 "lookup": {
                     "Allow": "allow",
@@ -71165,12 +71521,21 @@
                 "value_type": "constant"
             },
             "srcDevice_ip": {
+                "alternate_values": [
+                    "properties.SourceIp"
+                ],
                 "value": "source_ip"
             },
             "srcPort": {
+                "alternate_values": [
+                    "properties.SourcePort"
+                ],
                 "value": "source_port"
             },
             "success": {
+                "alternate_values": [
+                    "properties.Action"
+                ],
                 "default_value": "false",
                 "lookup": {
                     "Allow": "true",
@@ -71187,7 +71552,7 @@
         },
         "file_path": "mappings_schemav3/azure_custom_parser.yaml",
         "input": {
-            "event_id_pattern": "AzureFirewallNetworkRule",
+            "event_id_pattern": "AzureFirewallNetworkRule|AZFWNetworkRule",
             "log_format": "JSON",
             "product": "Azure",
             "vendor": "Microsoft"
@@ -72889,8 +73254,8 @@
         "uid": "949e6e12-ddd6-49e5-bdbe-cc63e1c9c5ed"
     },
     "94F238FF-AC1F-45CD-B6D2-9BAC76EB9717": {
-        "commit_message": "TLAB-2790 Fix CrowdStrike Data Protection severity mapping (#6035)",
-        "commit_origin_hash": "8ea193375ec539b625a325c708668517a48622aa",
+        "commit_message": "TLAB-2882 Add CrowdStrike CorrelationRuleDetectionSummaryEvent mapper (#6062)",
+        "commit_origin_hash": "c0e3106f0b7f17f5d33fb0bba320390f4d126cd6",
         "field_mappings": {
             "application": {
                 "value": "deviceProcessName"
@@ -75207,8 +75572,8 @@
         "uid": "9a51e2c5-29cc-4e5c-b8ba-f9ff6b26f59f"
     },
     "9a633133-6efa-40f3-a304-4f4d5fc00497": {
-        "commit_message": "Update pan_firewall_custom_parser.yaml (#6034)",
-        "commit_origin_hash": "f31bb702aa26a4178c1cda72681820c338c83d1c",
+        "commit_message": "TLAB-2799 Expand PAN success lookups and remove threat mapper default (#6055)",
+        "commit_origin_hash": "22755ac7eb841bebc2580dec8eb87c17ea0ddcfd",
         "field_mappings": {
             "action": {
                 "value": "op"
@@ -77290,8 +77655,8 @@
         "uid": "9f520b1d-3ecf-4371-b227-129e2c362b12"
     },
     "9fd65404-2524-4859-8877-e44c97538415": {
-        "commit_message": "Update pan_firewall_custom_parser.yaml (#6034)",
-        "commit_origin_hash": "f31bb702aa26a4178c1cda72681820c338c83d1c",
+        "commit_message": "TLAB-2799 Expand PAN success lookups and remove threat mapper default (#6055)",
+        "commit_origin_hash": "22755ac7eb841bebc2580dec8eb87c17ea0ddcfd",
         "field_mappings": {
             "action": {
                 "alternate_values": [
@@ -77963,8 +78328,8 @@
         "uid": "C58BDBCA-F07D-4832-BEB2-FFA79727370F"
     },
     "D6ED923F-2647-4094-92E1-CCF66B3C0048": {
-        "commit_message": "TLAB-2790 Fix CrowdStrike Data Protection severity mapping (#6035)",
-        "commit_origin_hash": "8ea193375ec539b625a325c708668517a48622aa",
+        "commit_message": "TLAB-2882 Add CrowdStrike CorrelationRuleDetectionSummaryEvent mapper (#6062)",
+        "commit_origin_hash": "c0e3106f0b7f17f5d33fb0bba320390f4d126cd6",
         "field_mappings": {
             "application": {
                 "value": "deviceProcessName"
@@ -78601,8 +78966,8 @@
         "uid": "a0388783-0a9b-4473-ba83-d9c8b2013170"
     },
     "a09cb576-bab2-4b0d-a9c9-7a7c46c48870": {
-        "commit_message": "TLAB-2790 Fix CrowdStrike Data Protection severity mapping (#6035)",
-        "commit_origin_hash": "8ea193375ec539b625a325c708668517a48622aa",
+        "commit_message": "TLAB-2882 Add CrowdStrike CorrelationRuleDetectionSummaryEvent mapper (#6062)",
+        "commit_origin_hash": "c0e3106f0b7f17f5d33fb0bba320390f4d126cd6",
         "field_mappings": {
             "description": {
                 "alternate_values": [
@@ -79481,8 +79846,8 @@
         "uid": "a19223a3-568d-422c-94ec-c10b3c0fa112"
     },
     "a1c34f6a-62e0-45fc-80c8-7c8cbc97edb1": {
-        "commit_message": "TLAB-2790 Fix CrowdStrike Data Protection severity mapping (#6035)",
-        "commit_origin_hash": "8ea193375ec539b625a325c708668517a48622aa",
+        "commit_message": "TLAB-2882 Add CrowdStrike CorrelationRuleDetectionSummaryEvent mapper (#6062)",
+        "commit_origin_hash": "c0e3106f0b7f17f5d33fb0bba320390f4d126cd6",
         "field_mappings": {
             "application": {
                 "value": "deviceProcessName"
@@ -79571,8 +79936,8 @@
         "uid": "a1eeb6c8-feec-4593-9cae-7858b56e12b7"
     },
     "a20fdb3d-2294-43b0-b10c-18fc9921b1d1": {
-        "commit_message": "TLAB-2790 Fix CrowdStrike Data Protection severity mapping (#6035)",
-        "commit_origin_hash": "8ea193375ec539b625a325c708668517a48622aa",
+        "commit_message": "TLAB-2882 Add CrowdStrike CorrelationRuleDetectionSummaryEvent mapper (#6062)",
+        "commit_origin_hash": "c0e3106f0b7f17f5d33fb0bba320390f4d126cd6",
         "field_mappings": {
             "commandLine": {
                 "value": "event.CommandLine"
@@ -81427,8 +81792,8 @@
         "uid": "a4fbc8a4-ef01-4c01-b336-67923aa94e1a"
     },
     "a509a0b7-d91a-405a-ab6c-9ff4285041a5": {
-        "commit_message": "Update pan_firewall_custom_parser.yaml (#6034)",
-        "commit_origin_hash": "f31bb702aa26a4178c1cda72681820c338c83d1c",
+        "commit_message": "TLAB-2799 Expand PAN success lookups and remove threat mapper default (#6055)",
+        "commit_origin_hash": "22755ac7eb841bebc2580dec8eb87c17ea0ddcfd",
         "field_mappings": {
             "action": {
                 "alternate_values": [
@@ -81701,8 +82066,8 @@
         "uid": "a5c692ba-49e1-4cd6-810c-f0ccd3174c75"
     },
     "a5ef3b4e-9ea4-4429-a736-65bf15da78d9": {
-        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
-        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
+        "commit_message": "TLAB-2831 Support Azure Firewall Resource Specific logs in mappers and deny rules (#6057)",
+        "commit_origin_hash": "d9dfb0f76c8ee2045df8d5898f118a05518205de",
         "field_mappings": {
             "timestamp": {
                 "format": "yyyy-MM-dd'T'HH:mm:ss.SSSSSSSZ",
@@ -83004,8 +83369,8 @@
         "uid": "aa0263c9-a102-492c-b614-67d9aaf98ac1"
     },
     "aa5386ab-8afd-4778-971d-88426f6c4099": {
-        "commit_message": "TLAB-2790 Fix CrowdStrike Data Protection severity mapping (#6035)",
-        "commit_origin_hash": "8ea193375ec539b625a325c708668517a48622aa",
+        "commit_message": "TLAB-2882 Add CrowdStrike CorrelationRuleDetectionSummaryEvent mapper (#6062)",
+        "commit_origin_hash": "c0e3106f0b7f17f5d33fb0bba320390f4d126cd6",
         "field_mappings": {
             "application": {
                 "value": "event.ServiceName"
@@ -86192,8 +86557,8 @@
         "uid": "b28d2c05-12a8-4678-921f-a8a277f370e3"
     },
     "b28e6ee8-063a-4a97-975f-aba5a6161c98": {
-        "commit_message": "Update pan_firewall_custom_parser.yaml (#6034)",
-        "commit_origin_hash": "f31bb702aa26a4178c1cda72681820c338c83d1c",
+        "commit_message": "TLAB-2799 Expand PAN success lookups and remove threat mapper default (#6055)",
+        "commit_origin_hash": "22755ac7eb841bebc2580dec8eb87c17ea0ddcfd",
         "field_mappings": {
             "device_hostname": {
                 "alternate_values": [
@@ -86463,8 +86828,8 @@
         "uid": "b2de8aea-eaf5-44af-a730-d1e24cd017a9"
     },
     "b2f5958-9e00-4e4c-bc8c-de811ddb883b": {
-        "commit_message": "TLAB-2790 Fix CrowdStrike Data Protection severity mapping (#6035)",
-        "commit_origin_hash": "8ea193375ec539b625a325c708668517a48622aa",
+        "commit_message": "TLAB-2882 Add CrowdStrike CorrelationRuleDetectionSummaryEvent mapper (#6062)",
+        "commit_origin_hash": "c0e3106f0b7f17f5d33fb0bba320390f4d126cd6",
         "field_mappings": {
             "commandLine": {
                 "value": "event.CommandLine"
@@ -87861,8 +88226,8 @@
         "uid": "b58475cc-681c-479e-ae94-656eaafd333c"
     },
     "b593dc79-fab8-4a4d-82a9-3539980e98c1": {
-        "commit_message": "TLAB-2790 Fix CrowdStrike Data Protection severity mapping (#6035)",
-        "commit_origin_hash": "8ea193375ec539b625a325c708668517a48622aa",
+        "commit_message": "TLAB-2882 Add CrowdStrike CorrelationRuleDetectionSummaryEvent mapper (#6062)",
+        "commit_origin_hash": "c0e3106f0b7f17f5d33fb0bba320390f4d126cd6",
         "field_mappings": {
             "accountId": {
                 "value": "event.CustomerId"
@@ -89466,8 +89831,8 @@
         "uid": "b95829e9-41fc-4b5a-a499-bb9fc9e8720b"
     },
     "b95a059a-ec11-4b27-8c83-f1c1617fa862": {
-        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
-        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
+        "commit_message": "TLAB-2831 Support Azure Firewall Resource Specific logs in mappers and deny rules (#6057)",
+        "commit_origin_hash": "d9dfb0f76c8ee2045df8d5898f118a05518205de",
         "field_mappings": {
             "accountId": {
                 "value": "tenantId"
@@ -91910,8 +92275,8 @@
         "uid": "c088e78a-ff9d-45c5-87c2-fd48f6248b9d"
     },
     "c0c6268a-28f8-4ae7-987a-4112b3b1d8f7": {
-        "commit_message": "TLAB-2790 Fix CrowdStrike Data Protection severity mapping (#6035)",
-        "commit_origin_hash": "8ea193375ec539b625a325c708668517a48622aa",
+        "commit_message": "TLAB-2882 Add CrowdStrike CorrelationRuleDetectionSummaryEvent mapper (#6062)",
+        "commit_origin_hash": "c0e3106f0b7f17f5d33fb0bba320390f4d126cd6",
         "field_mappings": {
             "application": {
                 "value": "ServiceName"
@@ -92483,8 +92848,8 @@
         "uid": "c1f966d9-4a30-4e67-a5ba-9630545f757f"
     },
     "c26eb2a4-4b11-45a2-b3cf-173c1a12f5ab": {
-        "commit_message": "TLAB-2790 Fix CrowdStrike Data Protection severity mapping (#6035)",
-        "commit_origin_hash": "8ea193375ec539b625a325c708668517a48622aa",
+        "commit_message": "TLAB-2882 Add CrowdStrike CorrelationRuleDetectionSummaryEvent mapper (#6062)",
+        "commit_origin_hash": "c0e3106f0b7f17f5d33fb0bba320390f4d126cd6",
         "field_mappings": {
             "application": {
                 "value": "deviceProcessName"
@@ -92800,8 +93165,8 @@
         "uid": "c2bdf6be-f124-4e2f-8406-c5301be476d3"
     },
     "c3089ac5-982a-4bcf-919f-19bd7c58eb6d": {
-        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
-        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
+        "commit_message": "TLAB-2831 Support Azure Firewall Resource Specific logs in mappers and deny rules (#6057)",
+        "commit_origin_hash": "d9dfb0f76c8ee2045df8d5898f118a05518205de",
         "field_mappings": {
             "accountId": {
                 "value": "tenantId"
@@ -93395,8 +93760,8 @@
         "uid": "c42bfa1c-9ead-4797-abc8-629df562bb61"
     },
     "c459d102-6709-424a-b9a0-69932ea9f5e5": {
-        "commit_message": "Update pan_firewall_custom_parser.yaml (#6034)",
-        "commit_origin_hash": "f31bb702aa26a4178c1cda72681820c338c83d1c",
+        "commit_message": "TLAB-2799 Expand PAN success lookups and remove threat mapper default (#6055)",
+        "commit_origin_hash": "22755ac7eb841bebc2580dec8eb87c17ea0ddcfd",
         "field_mappings": {
             "action": {
                 "alternate_values": [
@@ -93467,19 +93832,25 @@
                 "value": "source_port"
             },
             "success": {
-                "default_value": "true",
                 "lookup": {
+                    "alert": "true",
+                    "allow": "true",
                     "block": "false",
                     "block-continue": "false",
                     "block-ip": "false",
                     "block-override": "false",
                     "block-url": "false",
+                    "continue": "true",
                     "deny": "false",
                     "drop": "false",
+                    "drop ICMP": "false",
+                    "drop icmp": "false",
                     "drop-all": "false",
                     "drop-all-packets": "false",
+                    "drop-icmp": "false",
                     "drop-packet": "false",
                     "drop-reset": "false",
+                    "override": "true",
                     "override-lockout": "false",
                     "random-drop": "false",
                     "reset-both": "false",
@@ -94759,8 +95130,8 @@
         "uid": "c7abbbdf-8fb0-486a-93b0-fddf5396be38"
     },
     "c7d1f7ef-5ef8-464d-b483-d4539c1db75a": {
-        "commit_message": "Update pan_firewall_custom_parser.yaml (#6034)",
-        "commit_origin_hash": "f31bb702aa26a4178c1cda72681820c338c83d1c",
+        "commit_message": "TLAB-2799 Expand PAN success lookups and remove threat mapper default (#6055)",
+        "commit_origin_hash": "22755ac7eb841bebc2580dec8eb87c17ea0ddcfd",
         "field_mappings": {
             "action": {
                 "alternate_values": [
@@ -94834,19 +95205,25 @@
                 "alternate_values": [
                     "act"
                 ],
-                "default_value": "true",
                 "lookup": {
+                    "alert": "true",
+                    "allow": "true",
                     "block": "false",
                     "block-continue": "false",
                     "block-ip": "false",
                     "block-override": "false",
                     "block-url": "false",
+                    "continue": "true",
                     "deny": "false",
                     "drop": "false",
+                    "drop ICMP": "false",
+                    "drop icmp": "false",
                     "drop-all": "false",
                     "drop-all-packets": "false",
+                    "drop-icmp": "false",
                     "drop-packet": "false",
                     "drop-reset": "false",
+                    "override": "true",
                     "override-lockout": "false",
                     "random-drop": "false",
                     "reset-both": "false",
@@ -95563,8 +95940,8 @@
         "uid": "ca8610b2-185e-4c44-885c-769329fbddc5"
     },
     "ca8cd943-e73e-40ac-8a00-3a949b2228dc": {
-        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
-        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
+        "commit_message": "TLAB-2831 Support Azure Firewall Resource Specific logs in mappers and deny rules (#6057)",
+        "commit_origin_hash": "d9dfb0f76c8ee2045df8d5898f118a05518205de",
         "field_mappings": {
             "action": {
                 "alternate_values": [
@@ -96289,8 +96666,8 @@
         "uid": "cb9dcfbd-d443-4111-ad08-7e7050518838"
     },
     "cbd41736-9ba9-4442-bbd4-525a38dadb49": {
-        "commit_message": "Update pan_firewall_custom_parser.yaml (#6034)",
-        "commit_origin_hash": "f31bb702aa26a4178c1cda72681820c338c83d1c",
+        "commit_message": "TLAB-2799 Expand PAN success lookups and remove threat mapper default (#6055)",
+        "commit_origin_hash": "22755ac7eb841bebc2580dec8eb87c17ea0ddcfd",
         "field_mappings": {
             "action": {
                 "alternate_values": [
@@ -96364,19 +96741,25 @@
                 "alternate_values": [
                     "act"
                 ],
-                "default_value": "true",
                 "lookup": {
+                    "alert": "true",
+                    "allow": "true",
                     "block": "false",
                     "block-continue": "false",
                     "block-ip": "false",
                     "block-override": "false",
                     "block-url": "false",
+                    "continue": "true",
                     "deny": "false",
                     "drop": "false",
+                    "drop ICMP": "false",
+                    "drop icmp": "false",
                     "drop-all": "false",
                     "drop-all-packets": "false",
+                    "drop-icmp": "false",
                     "drop-packet": "false",
                     "drop-reset": "false",
+                    "override": "true",
                     "override-lockout": "false",
                     "random-drop": "false",
                     "reset-both": "false",
@@ -98748,6 +99131,124 @@
         "source": "jask",
         "uid": "d0dc0bc9-3674-4454-a625-63d12aa82f73"
     },
+    "d0f316dc-adb7-4d23-a123-220e360e9da9": {
+        "commit_message": "TLAB-2880 Add Mapping for GCP Cloud Run Requests (#6058)",
+        "commit_origin_hash": "3e99c50d58186f515fcc4d7e081916e76a89daa2",
+        "field_mappings": {
+            "application": {
+                "value": "message.data.resource.labels.service_name"
+            },
+            "bytesIn": {
+                "value": "message.data.httpRequest.requestSize"
+            },
+            "bytesOut": {
+                "value": "message.data.httpRequest.responseSize"
+            },
+            "cloud_provider": {
+                "value": "GCP",
+                "value_type": "constant"
+            },
+            "cloud_service": {
+                "value": "Cloud Run",
+                "value_type": "constant"
+            },
+            "device_ip": {
+                "value": "message.data.httpRequest.serverIp"
+            },
+            "http_method": {
+                "value": "message.data.httpRequest.requestMethod"
+            },
+            "http_referer": {
+                "value": "message.data.httpRequest.referer"
+            },
+            "http_response_statusCode": {
+                "value": "message.data.httpRequest.status"
+            },
+            "http_url": {
+                "value": "message.data.httpRequest.requestUrl"
+            },
+            "http_userAgent": {
+                "value": "message.data.httpRequest.userAgent"
+            },
+            "normalizedResource": {
+                "lookup": {
+                    "cloud_run_revision": "service"
+                },
+                "value": "message.data.resource.type",
+                "value_type": "lookup"
+            },
+            "resource": {
+                "value": "message.data.resource.type"
+            },
+            "resourceType": {
+                "value": "message.data.resource.type"
+            },
+            "severity": {
+                "value": "message.data.severity"
+            },
+            "srcDevice_ip": {
+                "value": "message.data.httpRequest.remoteIp"
+            },
+            "success": {
+                "lookup": {
+                    "200": "true",
+                    "201": "true",
+                    "202": "true",
+                    "203": "true",
+                    "204": "true",
+                    "205": "true",
+                    "206": "true",
+                    "300": "true",
+                    "301": "true",
+                    "302": "true",
+                    "303": "true",
+                    "304": "true",
+                    "307": "true",
+                    "308": "true",
+                    "400": "false",
+                    "401": "false",
+                    "403": "false",
+                    "404": "false",
+                    "405": "false",
+                    "408": "false",
+                    "409": "false",
+                    "410": "false",
+                    "413": "false",
+                    "429": "false",
+                    "500": "false",
+                    "501": "false",
+                    "502": "false",
+                    "503": "false",
+                    "504": "false"
+                },
+                "value": "message.data.httpRequest.status",
+                "value_type": "lookup"
+            },
+            "timestamp": {
+                "format": "yyyy-MM-dd'T'HH:mm:ss.SSSSSSSSSZ",
+                "value": "message.data.timestamp",
+                "value_type": "time"
+            }
+        },
+        "file_path": "mappings_schemav3/gcp_cloud_run_custom_parser.yaml",
+        "input": {
+            "event_id_pattern": "requests-default",
+            "log_format": "JSON",
+            "product": "Google Cloud Platform",
+            "vendor": "Google"
+        },
+        "name": "GCP Parser - Cloud Run Requests",
+        "output": {
+            "product_guid": "dcc85cfc-a698-4d09-87de-f2c723f3ad07",
+            "record_type": "NetworkHTTP"
+        },
+        "skipped_values": [
+            ",",
+            "-"
+        ],
+        "source": "jask",
+        "uid": "d0f316dc-adb7-4d23-a123-220e360e9da9"
+    },
     "d102bd01-4e1b-4654-ba39-9dc44db84476": {
         "commit_message": "TLAB-2824 Add Citrix NetScaler EVENT, APPFW, and ROUTING mappers (#6042)",
         "commit_origin_hash": "fb41787966a9fa163ab71b63ae1a7801a30065e8",
@@ -100312,8 +100813,8 @@
         "uid": "d4c5da9c-c753-4c91-b749-c98a0ac24c53"
     },
     "d4d12cbf-66cd-4e9b-a42a-d0bc7c3a26b3": {
-        "commit_message": "TLAB-2790 Fix CrowdStrike Data Protection severity mapping (#6035)",
-        "commit_origin_hash": "8ea193375ec539b625a325c708668517a48622aa",
+        "commit_message": "TLAB-2882 Add CrowdStrike CorrelationRuleDetectionSummaryEvent mapper (#6062)",
+        "commit_origin_hash": "c0e3106f0b7f17f5d33fb0bba320390f4d126cd6",
         "field_mappings": {
             "description": {
                 "value": "event.IncidentDescription"
@@ -100881,8 +101382,8 @@
         "uid": "d6a16750-c9c5-4c31-bc14-2fa583172e3f"
     },
     "d6a48aaf-c3e2-4f10-98ce-3821eec55002": {
-        "commit_message": "Update pan_firewall_custom_parser.yaml (#6034)",
-        "commit_origin_hash": "f31bb702aa26a4178c1cda72681820c338c83d1c",
+        "commit_message": "TLAB-2799 Expand PAN success lookups and remove threat mapper default (#6055)",
+        "commit_origin_hash": "22755ac7eb841bebc2580dec8eb87c17ea0ddcfd",
         "field_mappings": {
             "action": {
                 "alternate_values": [
@@ -100953,19 +101454,25 @@
                 "value": "source_port"
             },
             "success": {
-                "default_value": "true",
                 "lookup": {
+                    "alert": "true",
+                    "allow": "true",
                     "block": "false",
                     "block-continue": "false",
                     "block-ip": "false",
                     "block-override": "false",
                     "block-url": "false",
+                    "continue": "true",
                     "deny": "false",
                     "drop": "false",
+                    "drop ICMP": "false",
+                    "drop icmp": "false",
                     "drop-all": "false",
                     "drop-all-packets": "false",
+                    "drop-icmp": "false",
                     "drop-packet": "false",
                     "drop-reset": "false",
+                    "override": "true",
                     "override-lockout": "false",
                     "random-drop": "false",
                     "reset-both": "false",
@@ -102613,25 +103120,40 @@
         "uid": "db1d6e12-03b6-415f-bb6b-3cd2a299ff70"
     },
     "db25fd08-e994-4f29-8c94-c2ef9ffd68e2": {
-        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
-        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
+        "commit_message": "TLAB-2831 Support Azure Firewall Resource Specific logs in mappers and deny rules (#6057)",
+        "commit_origin_hash": "d9dfb0f76c8ee2045df8d5898f118a05518205de",
         "field_mappings": {
             "action": {
+                "alternate_values": [
+                    "properties.Action"
+                ],
                 "value": "action"
             },
             "description": {
                 "value": "operationName"
             },
             "dstPort": {
+                "alternate_values": [
+                    "properties.DestinationPort"
+                ],
                 "value": "dest_port"
             },
             "http_category": {
+                "alternate_values": [
+                    "properties.WebCategory"
+                ],
                 "value": "web_category"
             },
             "http_url": {
+                "alternate_values": [
+                    "properties.Fqdn"
+                ],
                 "value": "destination"
             },
             "normalizedAction": {
+                "alternate_values": [
+                    "properties.Action"
+                ],
                 "default_value": "deny",
                 "lookup": {
                     "Allow": "allow",
@@ -102645,12 +103167,21 @@
                 "value_type": "constant"
             },
             "srcDevice_ip": {
+                "alternate_values": [
+                    "properties.SourceIp"
+                ],
                 "value": "source_ip"
             },
             "srcPort": {
+                "alternate_values": [
+                    "properties.SourcePort"
+                ],
                 "value": "source_port"
             },
             "success": {
+                "alternate_values": [
+                    "properties.Action"
+                ],
                 "default_value": "false",
                 "lookup": {
                     "Allow": "true",
@@ -102660,6 +103191,9 @@
                 "value_type": "lookup"
             },
             "tcpProtocol": {
+                "alternate_values": [
+                    "properties.Protocol"
+                ],
                 "value": "protocol"
             },
             "timestamp": {
@@ -102670,7 +103204,7 @@
         },
         "file_path": "mappings_schemav3/azure_custom_parser.yaml",
         "input": {
-            "event_id_pattern": "AzureFirewallApplicationRule",
+            "event_id_pattern": "AzureFirewallApplicationRule|AZFWApplicationRule",
             "log_format": "JSON",
             "product": "Azure",
             "vendor": "Microsoft"
@@ -103361,8 +103895,8 @@
         "uid": "dc596d84-47fe-4a4f-8132-dca3fe5920c9"
     },
     "dc8d2b86-b165-433c-85ce-092c389d0d79": {
-        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
-        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
+        "commit_message": "TLAB-2831 Support Azure Firewall Resource Specific logs in mappers and deny rules (#6057)",
+        "commit_origin_hash": "d9dfb0f76c8ee2045df8d5898f118a05518205de",
         "field_mappings": {
             "accountId": {
                 "value": "tenantId"
@@ -104668,8 +105202,8 @@
         "uid": "deb1083f-6ea2-4ae8-b92a-d961035ed38b"
     },
     "df04fa8e-8cf7-4ae1-9ea3-03f503ce6cf1": {
-        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
-        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
+        "commit_message": "TLAB-2831 Support Azure Firewall Resource Specific logs in mappers and deny rules (#6057)",
+        "commit_origin_hash": "d9dfb0f76c8ee2045df8d5898f118a05518205de",
         "field_mappings": {
             "action": {
                 "value": "resultType"
@@ -106439,8 +106973,8 @@
         "uid": "e32f5591-3a43-47b6-82a1-a6556b03d74e"
     },
     "e364663b-43c0-4be0-af90-b085fa0d5be8": {
-        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
-        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
+        "commit_message": "TLAB-2831 Support Azure Firewall Resource Specific logs in mappers and deny rules (#6057)",
+        "commit_origin_hash": "d9dfb0f76c8ee2045df8d5898f118a05518205de",
         "field_mappings": {
             "action": {
                 "value": "category"
@@ -107810,8 +108344,8 @@
         "uid": "e5a1ef69-b11f-4ccd-81a7-fdf322543e64"
     },
     "e69b5d13-5862-430a-a47d-5e9afd51b957": {
-        "commit_message": "Update pan_firewall_custom_parser.yaml (#6034)",
-        "commit_origin_hash": "f31bb702aa26a4178c1cda72681820c338c83d1c",
+        "commit_message": "TLAB-2799 Expand PAN success lookups and remove threat mapper default (#6055)",
+        "commit_origin_hash": "22755ac7eb841bebc2580dec8eb87c17ea0ddcfd",
         "field_mappings": {
             "action": {
                 "alternate_values": [
@@ -107885,19 +108419,25 @@
                 "alternate_values": [
                     "act"
                 ],
-                "default_value": "true",
                 "lookup": {
+                    "alert": "true",
+                    "allow": "true",
                     "block": "false",
                     "block-continue": "false",
                     "block-ip": "false",
                     "block-override": "false",
                     "block-url": "false",
+                    "continue": "true",
                     "deny": "false",
                     "drop": "false",
+                    "drop ICMP": "false",
+                    "drop icmp": "false",
                     "drop-all": "false",
                     "drop-all-packets": "false",
+                    "drop-icmp": "false",
                     "drop-packet": "false",
                     "drop-reset": "false",
+                    "override": "true",
                     "override-lockout": "false",
                     "random-drop": "false",
                     "reset-both": "false",
@@ -108375,8 +108915,8 @@
         "uid": "e77c575d-8d97-4fa3-ae9f-df9cc7e38fd8"
     },
     "e78a34a9-2db5-456b-92c7-d95689f1638f": {
-        "commit_message": "Update pan_firewall_custom_parser.yaml (#6034)",
-        "commit_origin_hash": "f31bb702aa26a4178c1cda72681820c338c83d1c",
+        "commit_message": "TLAB-2799 Expand PAN success lookups and remove threat mapper default (#6055)",
+        "commit_origin_hash": "22755ac7eb841bebc2580dec8eb87c17ea0ddcfd",
         "field_mappings": {
             "action": {
                 "alternate_values": [
@@ -109177,8 +109717,8 @@
         "uid": "e950f317-cca3-4b1c-88a2-e3d111e9bbd0"
     },
     "e959ce4b-b812-4407-9112-5d94f57864f4": {
-        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
-        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
+        "commit_message": "TLAB-2831 Support Azure Firewall Resource Specific logs in mappers and deny rules (#6057)",
+        "commit_origin_hash": "d9dfb0f76c8ee2045df8d5898f118a05518205de",
         "field_mappings": {
             "action": {
                 "value": "operationName"
@@ -110227,8 +110767,8 @@
         "uid": "eba2f49f-b86e-4a55-913b-90dc8423f4a1"
     },
     "ebdfc811-612b-48ed-ab66-abc2ca8b9c89": {
-        "commit_message": "Update pan_firewall_custom_parser.yaml (#6034)",
-        "commit_origin_hash": "f31bb702aa26a4178c1cda72681820c338c83d1c",
+        "commit_message": "TLAB-2799 Expand PAN success lookups and remove threat mapper default (#6055)",
+        "commit_origin_hash": "22755ac7eb841bebc2580dec8eb87c17ea0ddcfd",
         "field_mappings": {
             "action": {
                 "alternate_values": [
@@ -110319,19 +110859,25 @@
                 "value": "source_port"
             },
             "success": {
-                "default_value": "true",
                 "lookup": {
+                    "alert": "true",
+                    "allow": "true",
                     "block": "false",
                     "block-continue": "false",
                     "block-ip": "false",
                     "block-override": "false",
                     "block-url": "false",
+                    "continue": "true",
                     "deny": "false",
                     "drop": "false",
+                    "drop ICMP": "false",
+                    "drop icmp": "false",
                     "drop-all": "false",
                     "drop-all-packets": "false",
+                    "drop-icmp": "false",
                     "drop-packet": "false",
                     "drop-reset": "false",
+                    "override": "true",
                     "override-lockout": "false",
                     "random-drop": "false",
                     "reset-both": "false",
@@ -110393,8 +110939,8 @@
         "uid": "ebdfc811-612b-48ed-ab66-abc2ca8b9c89"
     },
     "ebe12b29-1f36-435a-b9bb-95bef42c4af2": {
-        "commit_message": "TLAB-2790 Fix CrowdStrike Data Protection severity mapping (#6035)",
-        "commit_origin_hash": "8ea193375ec539b625a325c708668517a48622aa",
+        "commit_message": "TLAB-2882 Add CrowdStrike CorrelationRuleDetectionSummaryEvent mapper (#6062)",
+        "commit_origin_hash": "c0e3106f0b7f17f5d33fb0bba320390f4d126cd6",
         "field_mappings": {
             "description": {
                 "value": "message"
@@ -111017,8 +111563,8 @@
         "uid": "ed20b603-08bd-4567-a52b-bee31acb8327"
     },
     "ed3eda48-9b64-41f2-8793-4b9776d3e377": {
-        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
-        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
+        "commit_message": "TLAB-2831 Support Azure Firewall Resource Specific logs in mappers and deny rules (#6057)",
+        "commit_origin_hash": "d9dfb0f76c8ee2045df8d5898f118a05518205de",
         "field_mappings": {
             "action": {
                 "value": "properties.ActionType"
@@ -111381,8 +111927,8 @@
         "uid": "edc80da0-7594-413c-9b55-3f1c1bad3acf"
     },
     "edcfa819-4c92-4691-b612-600852bd48d6": {
-        "commit_message": "Update pan_firewall_custom_parser.yaml (#6034)",
-        "commit_origin_hash": "f31bb702aa26a4178c1cda72681820c338c83d1c",
+        "commit_message": "TLAB-2799 Expand PAN success lookups and remove threat mapper default (#6055)",
+        "commit_origin_hash": "22755ac7eb841bebc2580dec8eb87c17ea0ddcfd",
         "field_mappings": {
             "action": {
                 "value": "success"
@@ -112928,8 +113474,8 @@
         "uid": "f3010711-dcc4-48d2-8982-06061925d900"
     },
     "f3076e8d-b3c3-4401-82a0-179742707511": {
-        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
-        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
+        "commit_message": "TLAB-2831 Support Azure Firewall Resource Specific logs in mappers and deny rules (#6057)",
+        "commit_origin_hash": "d9dfb0f76c8ee2045df8d5898f118a05518205de",
         "field_mappings": {
             "action": {
                 "value": "properties.action"
@@ -113301,8 +113847,8 @@
         "uid": "f3c88519-7172-480d-9311-8a82b1c47a93"
     },
     "f418724b-a188-4848-80e6-1a46b6c2c98a": {
-        "commit_message": "TLAB-2790 Fix CrowdStrike Data Protection severity mapping (#6035)",
-        "commit_origin_hash": "8ea193375ec539b625a325c708668517a48622aa",
+        "commit_message": "TLAB-2882 Add CrowdStrike CorrelationRuleDetectionSummaryEvent mapper (#6062)",
+        "commit_origin_hash": "c0e3106f0b7f17f5d33fb0bba320390f4d126cd6",
         "field_mappings": {
             "accountId": {
                 "value": "cid"
@@ -113681,8 +114227,8 @@
         "uid": "f437d4e7-7b09-4f58-924e-606eb49a2418"
     },
     "f4ccf8eb-1cf4-4427-9b06-3d79271a4d83": {
-        "commit_message": "Update pan_firewall_custom_parser.yaml (#6034)",
-        "commit_origin_hash": "f31bb702aa26a4178c1cda72681820c338c83d1c",
+        "commit_message": "TLAB-2799 Expand PAN success lookups and remove threat mapper default (#6055)",
+        "commit_origin_hash": "22755ac7eb841bebc2580dec8eb87c17ea0ddcfd",
         "field_mappings": {
             "action": {
                 "alternate_values": [
@@ -113789,8 +114335,11 @@
                     "block-url": "false",
                     "deny": "false",
                     "drop": "false",
+                    "drop ICMP": "false",
+                    "drop icmp": "false",
                     "drop-all": "false",
                     "drop-all-packets": "false",
+                    "drop-icmp": "false",
                     "drop-packet": "false",
                     "drop-reset": "false",
                     "override-lockout": "false",
@@ -116274,8 +116823,8 @@
         "uid": "fa1d880c-919b-4548-b03c-01e37c3f1a45"
     },
     "fa4028ba-0c1d-4fb3-a152-6e65e0b5200e": {
-        "commit_message": "Update pan_firewall_custom_parser.yaml (#6034)",
-        "commit_origin_hash": "f31bb702aa26a4178c1cda72681820c338c83d1c",
+        "commit_message": "TLAB-2799 Expand PAN success lookups and remove threat mapper default (#6055)",
+        "commit_origin_hash": "22755ac7eb841bebc2580dec8eb87c17ea0ddcfd",
         "field_mappings": {
             "action": {
                 "alternate_values": [
@@ -118063,8 +118612,8 @@
         "uid": "fe0b7371-9739-407f-bb06-cad44b6583e4"
     },
     "fe178309-4823-4043-8694-086b942438dc": {
-        "commit_message": "TLAB-2660 Identity Passthrough Mappers (#6008)",
-        "commit_origin_hash": "39c66096f550866447526468c483c994c854403d",
+        "commit_message": "TLAB-2831 Support Azure Firewall Resource Specific logs in mappers and deny rules (#6057)",
+        "commit_origin_hash": "d9dfb0f76c8ee2045df8d5898f118a05518205de",
         "field_mappings": {
             "accountId": {
                 "value": "tenantId"
@@ -118525,8 +119074,8 @@
         "uid": "ff18353f-3a63-4ffb-aeff-bb2d5a4fadba"
     },
     "ff1e86b2-347d-4a94-9f33-c6e8250b7003": {
-        "commit_message": "Update pan_firewall_custom_parser.yaml (#6034)",
-        "commit_origin_hash": "f31bb702aa26a4178c1cda72681820c338c83d1c",
+        "commit_message": "TLAB-2799 Expand PAN success lookups and remove threat mapper default (#6055)",
+        "commit_origin_hash": "22755ac7eb841bebc2580dec8eb87c17ea0ddcfd",
         "field_mappings": {
             "action": {
                 "value": "op"
