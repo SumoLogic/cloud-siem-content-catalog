@@ -15,6 +15,7 @@
 |MATCH-S00574|[.NET Framework Remote Code Execution Vulnerability](MATCH-S00574.md)|
 |MATCH-S00458|[ADPassHunt Tool](MATCH-S00458.md)|
 |MATCH-S01153|[AF_ALG Socket Opened by Unprivileged Process](MATCH-S01153.md)|
+|MATCH-S01166|[AI Model Downloaded from Public Repository](MATCH-S01166.md)|
 |MATCH-S00307|[AWS - Excessive OAuth Application Permissions Scope](MATCH-S00307.md)|
 |MATCH-S00306|[AWS - New UserPoolClient Created](MATCH-S00306.md)|
 |FIRST-S00101|[AWS Bedrock - KB Data Source from External S3 Bucket](FIRST-S00101.md)|
@@ -817,6 +818,7 @@
 |MATCH-S00437|[Secure Deletion with SDelete](MATCH-S00437.md)|
 |MATCH-S00299|[SecurityXploded Tool](MATCH-S00299.md)|
 |LEGACY-S00094|[Self-signed Certificates](LEGACY-S00094.md)|
+|MATCH-S01164|[Sensitive Data Sent to Generative AI Tool](MATCH-S01164.md)|
 |CHAIN-S00028|[Sensitive Data Sent to Generative AI Tool - Cross-Vendor](CHAIN-S00028.md)|
 |MATCH-S00834|[Sensitive Registry Key (WDigest) Edit](MATCH-S00834.md)|
 |LEGACY-S00095|[Server-Side Code Injection in URL](LEGACY-S00095.md)|

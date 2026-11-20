@@ -16,13 +16,13 @@ This rule looks for URL/refferer domains which appear to be associated with a dy
 |Prototype|False|
 |Tags|_mitreAttackTactic:TA0011, _mitreAttackTechnique:T1568, _mitreAttackTechnique:T1568.001, _mitreAttackTechnique:T1568.002, _mitreAttackTechnique:T1568.003|
 ## Vendors and Products
+- [Akamai - CPC](../products/6802abc5-262a-4f1c-9d6f-45c847db5bc5.md)
 - [Akamai - SIEM](../products/9a28f2af-5526-414d-973b-c3fc7984b8a1.md)
 - [Akamai - Web Application Firewall](../products/ae07663e-2c2c-4932-be5d-c9f985e95276.md)
 - [Amazon AWS - Application Load Balancer](../products/5bb9e0b3-8d57-4b10-8952-0b6ffe91b599.md)
 - [Amazon AWS - CloudFront](../products/44f07c08-c2ad-4a95-a058-1d0737ff90db.md)
 - [Amazon AWS - Route53](../products/e2393771-bda2-414a-8661-0a57069287ad.md)
 - [Amazon AWS - Web Application Firewall (WAF)](../products/072b85a2-1765-45c2-911d-b0509880326e.md)
-- [Apache - Apache HTTP Server](../products/6787d77a-1ee0-43d4-8ca0-96af8ee755bc.md)
 - [Bro - Bro](../products/37C866BF-72E1-470A-9072-EDB908F56951.md)
 - [CheckPoint - URL Filtering](../products/2a678bcd-898e-43cd-ab3f-91feb0602a18.md)
 - [Cisco Systems - ASA](../products/be4f7473-fe69-4311-8859-3561900060bf.md)

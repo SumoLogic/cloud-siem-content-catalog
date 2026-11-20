@@ -16,6 +16,7 @@ Apache Log4j2 <=2.14.1 using JNDI features has an exploit allowing attackers to 
 |Prototype|True|
 |Tags|_mitreAttackTactic:TA0043, _mitreAttackTechnique:T1595, _mitreAttackTechnique:T1595.001, _mitreAttackTechnique:T1595.002, _mitreAttackTechnique:T1189, _mitreAttackTechnique:T1190, _mitreAttackTechnique:T1133|
 ## Vendors and Products
+- [Akamai - CPC](../products/6802abc5-262a-4f1c-9d6f-45c847db5bc5.md)
 - [Akamai - SIEM](../products/9a28f2af-5526-414d-973b-c3fc7984b8a1.md)
 - [Amazon AWS - API Gateway](../products/9f76f1fd-fbb0-42d2-9bf5-0f4fd2c1ab82.md)
 - [Amazon AWS - AWS S3 Server Access Logs](../products/41f70c6e-18a9-462c-a04d-4edc7baead7a.md)
@@ -28,7 +29,6 @@ Apache Log4j2 <=2.14.1 using JNDI features has an exploit allowing attackers to 
 - [Atlassian - Jira](../products/64088efc-3f28-448d-b386-000deebc7d89.md)
 - [Barracuda - Web Application Firewall](../products/798f8da8-c85b-4e9a-b2f1-eae0b07532fb.md)
 - [Bro - Bro](../products/37C866BF-72E1-470A-9072-EDB908F56951.md)
-- [Cisco Systems - ASA](../products/be4f7473-fe69-4311-8859-3561900060bf.md)
 - [Cisco Systems - Firepower](../products/da9e05a5-3fd3-46a7-a107-ae03c01e3f5a.md)
 - [Cisco Systems - Meraki](../products/724c9add-8cd9-4013-b9e1-a907b96da426.md)
 - [Cisco Systems - Umbrella](../products/5ba50e74-3c05-4ea8-aeaf-5efde588c60f.md)

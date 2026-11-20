@@ -958,9 +958,7 @@
         "normalized_summary": "Successful brute force against user: {{user_username}}",
         "ordered": true,
         "pattern_type": "chain",
-        "product_direct_ref": [
-            "Azure"
-        ],
+        "product_direct_ref": [],
         "product_guids": [
             "033624b0-218e-4dcb-b93f-0f1fb1806c56",
             "05bfaf47-5e21-4d5f-b724-98960a6fca8a",
@@ -988,7 +986,6 @@
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
             "d3606245-76d3-4173-a2fe-832c0e71b0f9",
             "d3ed003d-5ddd-4c7a-bea5-63eae6311833",
-            "e43ba0e4-1e3f-40c6-8bca-cb06a656a40b",
             "e73cd65a-7a4b-4ce9-9d73-e5d9c824c214",
             "ebb99eec-3585-4673-ac0f-676632a78305",
             "fe5a3e8b-8b6e-44c7-92a8-adfb20df5c75"
@@ -1012,9 +1009,7 @@
             "_mitreAttackTechnique:T1586"
         ],
         "threat_ruleType": null,
-        "vendor_direct_ref": [
-            "Microsoft"
-        ],
+        "vendor_direct_ref": [],
         "window": "60m"
     },
     "CHAIN-S00010": {
@@ -1215,7 +1210,9 @@
         "normalized_summary": "Potential Azure Persistence via Automation Accounts",
         "ordered": false,
         "pattern_type": "chain",
-        "product_direct_ref": [],
+        "product_direct_ref": [
+            "Azure"
+        ],
         "product_guids": [
             "a1225af5-e778-4068-a9a2-47da93d1ff24"
         ],
@@ -1441,7 +1438,10 @@
         "product_guids": [
             "b238758d-ade8-41d2-b32d-c99159e9fd74"
         ],
-        "record_type_direct_ref": [],
+        "record_type_direct_ref": [
+            "EndpointProcess",
+            "Network"
+        ],
         "rule_description": "",
         "rule_source": "sumo",
         "score": 3,
@@ -1452,7 +1452,9 @@
             "_mitreAttackTactic:TA0001"
         ],
         "threat_ruleType": null,
-        "vendor_direct_ref": [],
+        "vendor_direct_ref": [
+            "Linux"
+        ],
         "window": "CUSTOM",
         "window_size": 300000
     },
@@ -1510,7 +1512,9 @@
         "normalized_summary": "macOS - Suspicious Osascript Execution followed by osascript network connection to external IP on {{device_hostname}}",
         "ordered": false,
         "pattern_type": "chain",
-        "product_direct_ref": [],
+        "product_direct_ref": [
+            "Jamf"
+        ],
         "product_guids": [
             "5c2cc0de-ca31-4ef0-bcfa-133fc8b387ad"
         ],
@@ -1525,7 +1529,9 @@
             "_mitreAttackTechnique:T1059.002"
         ],
         "threat_ruleType": null,
-        "vendor_direct_ref": [],
+        "vendor_direct_ref": [
+            "Jamf"
+        ],
         "window": "CUSTOM",
         "window_size": 300000
     },
@@ -1673,7 +1679,9 @@
             "_mitreAttackTechnique:T1091"
         ],
         "threat_ruleType": null,
-        "vendor_direct_ref": [],
+        "vendor_direct_ref": [
+            "Microsoft"
+        ],
         "window": "T05M",
         "window_size": 300000
     },
@@ -1741,7 +1749,9 @@
             "_mitreAttackTechnique:T1649"
         ],
         "threat_ruleType": null,
-        "vendor_direct_ref": [],
+        "vendor_direct_ref": [
+            "Microsoft"
+        ],
         "window": "CUSTOM",
         "window_size": 900000
     },
@@ -1813,7 +1823,9 @@
             "_mitreAttackTechnique:T1621"
         ],
         "threat_ruleType": null,
-        "vendor_direct_ref": [],
+        "vendor_direct_ref": [
+            "Okta"
+        ],
         "window": "CUSTOM",
         "window_size": 1500000
     },
@@ -1871,7 +1883,9 @@
         "normalized_summary": "User: {{user_username}} has been observed creating and deleting Azure DevOps Pipelines in a short period of time",
         "ordered": true,
         "pattern_type": "chain",
-        "product_direct_ref": [],
+        "product_direct_ref": [
+            "Azure DevOps Auditing"
+        ],
         "product_guids": [
             "c3b61ddb-4d2d-497c-b873-28938036b67b"
         ],
@@ -1886,7 +1900,9 @@
             "_mitreAttackTechnique:T1072"
         ],
         "threat_ruleType": null,
-        "vendor_direct_ref": [],
+        "vendor_direct_ref": [
+            "Microsoft"
+        ],
         "window": "T24H",
         "window_size": 86400000
     },
@@ -1944,7 +1960,9 @@
         "normalized_summary": "User: {{user_username}}  has created and deleted an agent pool in a short period of time",
         "ordered": true,
         "pattern_type": "chain",
-        "product_direct_ref": [],
+        "product_direct_ref": [
+            "Azure DevOps Auditing"
+        ],
         "product_guids": [
             "c3b61ddb-4d2d-497c-b873-28938036b67b"
         ],
@@ -1960,7 +1978,9 @@
             "_mitreAttackTactic:TA0112"
         ],
         "threat_ruleType": null,
-        "vendor_direct_ref": [],
+        "vendor_direct_ref": [
+            "Microsoft"
+        ],
         "window": "T05D",
         "window_size": 432000000
     },
@@ -2989,7 +3009,9 @@
         "normalized_signal_name": "First Seen DynamoDB Enumeration from User",
         "normalized_summary": "User: {{user_username}} observed enumerating DynamoDB service: {{application}} with the call: {{action}}",
         "pattern_type": "first_seen",
-        "product_direct_ref": [],
+        "product_direct_ref": [
+            "CloudTrail"
+        ],
         "product_guids": [
             "033624b0-218e-4dcb-b93f-0f1fb1806c56"
         ],
@@ -3740,11 +3762,15 @@
         "normalized_signal_name": "First Seen Azure OAUTH Application Consent: {{application}} from User",
         "normalized_summary": "Depending on configurations, Azure Active Directory users or administrators may be able to consent to API permissions for various Azure AD applications, these permissions can grant adversaries access to various Azure resources, depending on the type of permissions being granted.",
         "pattern_type": "first_seen",
-        "product_direct_ref": [],
+        "product_direct_ref": [
+            "Azure"
+        ],
         "product_guids": [
             "a1225af5-e778-4068-a9a2-47da93d1ff24"
         ],
-        "record_type_direct_ref": [],
+        "record_type_direct_ref": [
+            "Audit"
+        ],
         "retention_window_size": 7776000000,
         "rule_description": "",
         "rule_source": "sumo",
@@ -3805,7 +3831,9 @@
         "normalized_signal_name": "First Seen Azure Virtual Machine Run Command Issued by User",
         "normalized_summary": "Threat actors may leverage various levels of Azure Active Directory access in order to issue commands to Azure Virtual Machines via the Azure portal, resulting in potential privilege escalation avenues.",
         "pattern_type": "first_seen",
-        "product_direct_ref": [],
+        "product_direct_ref": [
+            "Azure"
+        ],
         "product_guids": [
             "a1225af5-e778-4068-a9a2-47da93d1ff24"
         ],
@@ -4303,11 +4331,11 @@
         "product_direct_ref": [],
         "product_guids": [
             "0e20c932-d992-4bd4-b276-c15119ca5c0b",
+            "153794da-09e8-48fe-b511-1306fbb94d07",
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "5c2cc0de-ca31-4ef0-bcfa-133fc8b387ad",
-            "60829f4a-7acb-47d1-ad23-8424fcf83dcb",
             "72a5ddec-abb9-41ff-a2da-6a58beff980c",
             "840c72e0-4e47-41e7-9b93-31f55d12f07d",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
@@ -4387,6 +4415,7 @@
             "37C866BF-72E1-470A-9072-EDB908F56951",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
+            "5c2cc0de-ca31-4ef0-bcfa-133fc8b387ad",
             "6299d728-14f7-455e-85c5-ea8ec65a654a",
             "724c9add-8cd9-4013-b9e1-a907b96da426",
             "840c72e0-4e47-41e7-9b93-31f55d12f07d",
@@ -4475,7 +4504,10 @@
             "5c2cc0de-ca31-4ef0-bcfa-133fc8b387ad",
             "a1225af5-e778-4068-a9a2-47da93d1ff24"
         ],
-        "record_type_direct_ref": [],
+        "record_type_direct_ref": [
+            "Endpoint",
+            "EndpointProcess"
+        ],
         "retention_window_size": 7776000000,
         "rule_description": "",
         "rule_source": "sumo",
@@ -5287,7 +5319,9 @@
         "normalized_signal_name": "First Seen AppId Generating MailItemsAccessed Event from {{user_username}}",
         "normalized_summary": "A First Seen AppId was observed as accessing an Office 365 mail item since the baseline period.",
         "pattern_type": "first_seen",
-        "product_direct_ref": [],
+        "product_direct_ref": [
+            "Office 365"
+        ],
         "product_guids": [
             "d3ed003d-5ddd-4c7a-bea5-63eae6311833"
         ],
@@ -5352,7 +5386,9 @@
         "normalized_signal_name": "First Seen Client Generating MailItemsAccessed Event from {{user_username}}",
         "normalized_summary": "A First Seen client was observed as accessing an Office 365 mail item since the baseline period.",
         "pattern_type": "first_seen",
-        "product_direct_ref": [],
+        "product_direct_ref": [
+            "Office 365"
+        ],
         "product_guids": [
             "d3ed003d-5ddd-4c7a-bea5-63eae6311833"
         ],
@@ -5419,11 +5455,15 @@
         "normalized_signal_name": "First Seen ASN Associated with User for a Successful Azure AD Sign In Event",
         "normalized_summary": "{{user_username}} has sucessfully signed into an Azure resource with a first seen ASN of {{device_ip_asnOrg}} since the baseline period.",
         "pattern_type": "first_seen",
-        "product_direct_ref": [],
+        "product_direct_ref": [
+            "Azure"
+        ],
         "product_guids": [
             "a1225af5-e778-4068-a9a2-47da93d1ff24"
         ],
-        "record_type_direct_ref": [],
+        "record_type_direct_ref": [
+            "Authentication"
+        ],
         "retention_window_size": 7776000000,
         "rule_description": "",
         "rule_source": "sumo",
@@ -5484,7 +5524,9 @@
         "normalized_signal_name": "First Seen Azure Device Code Authentication from User",
         "normalized_summary": "First Seen Azure Device Code Authentication from {{user_username}}",
         "pattern_type": "first_seen",
-        "product_direct_ref": [],
+        "product_direct_ref": [
+            "Azure"
+        ],
         "product_guids": [
             "a1225af5-e778-4068-a9a2-47da93d1ff24"
         ],
@@ -5796,7 +5838,9 @@
         "value_fields": [
             "fields[\"EventData.DeviceDescription\"]"
         ],
-        "vendor_direct_ref": []
+        "vendor_direct_ref": [
+            "Microsoft"
+        ]
     },
     "FIRST-S00062": {
         "all_fields": [
@@ -5867,7 +5911,9 @@
         "value_fields": [
             "srcDevice_ip"
         ],
-        "vendor_direct_ref": []
+        "vendor_direct_ref": [
+            "Microsoft"
+        ]
     },
     "FIRST-S00064": {
         "all_fields": [
@@ -5934,7 +5980,9 @@
         "value_fields": [
             "fields[\"EventData.CertThumbprint\"]"
         ],
-        "vendor_direct_ref": []
+        "vendor_direct_ref": [
+            "Microsoft"
+        ]
     },
     "FIRST-S00065": {
         "all_fields": [
@@ -6318,7 +6366,9 @@
         "value_fields": [
             "fields[\"target.1.alternateId\"]"
         ],
-        "vendor_direct_ref": []
+        "vendor_direct_ref": [
+            "Okta"
+        ]
     },
     "FIRST-S00071": {
         "all_fields": [
@@ -6957,7 +7007,9 @@
         "normalized_signal_name": "First Seen Model ID in AWS Bedrock Put Entitlement by {{user_username}}",
         "normalized_summary": "First Seen Model ID in AWS Bedrock Put Entitlement from {{user_username}}",
         "pattern_type": "first_seen",
-        "product_direct_ref": [],
+        "product_direct_ref": [
+            "CloudTrail"
+        ],
         "product_guids": [
             "033624b0-218e-4dcb-b93f-0f1fb1806c56"
         ],
@@ -6980,7 +7032,9 @@
         "value_fields": [
             "fields[\"requestParameters.modelId\"]"
         ],
-        "vendor_direct_ref": []
+        "vendor_direct_ref": [
+            "Amazon AWS"
+        ]
     },
     "FIRST-S00082": {
         "all_fields": [
@@ -7025,7 +7079,9 @@
         "normalized_signal_name": "First Seen User: {{user_username}} Enumerating AWS Bedrock Models",
         "normalized_summary": "First Seen User: {{user_username}} observed as enumerating AWS Bedrock models since the baseline period.",
         "pattern_type": "first_seen",
-        "product_direct_ref": [],
+        "product_direct_ref": [
+            "CloudTrail"
+        ],
         "product_guids": [
             "033624b0-218e-4dcb-b93f-0f1fb1806c56"
         ],
@@ -7048,7 +7104,9 @@
         "value_fields": [
             "user_username"
         ],
-        "vendor_direct_ref": []
+        "vendor_direct_ref": [
+            "Amazon AWS"
+        ]
     },
     "FIRST-S00084": {
         "all_fields": [
@@ -7195,7 +7253,9 @@
         "value_fields": [
             "user_role"
         ],
-        "vendor_direct_ref": []
+        "vendor_direct_ref": [
+            "Amazon AWS"
+        ]
     },
     "FIRST-S00086": {
         "all_fields": [
@@ -7240,7 +7300,9 @@
         "normalized_signal_name": "First Seen IP Address Performing Trufflehog AWS Credential Verification",
         "normalized_summary": "First Seen IP Address: {{srcDevice_ip}}  Performing Trufflehog AWS Credential Verification",
         "pattern_type": "first_seen",
-        "product_direct_ref": [],
+        "product_direct_ref": [
+            "CloudTrail"
+        ],
         "product_guids": [
             "033624b0-218e-4dcb-b93f-0f1fb1806c56"
         ],
@@ -7261,7 +7323,9 @@
         "value_fields": [
             "srcDevice_ip"
         ],
-        "vendor_direct_ref": []
+        "vendor_direct_ref": [
+            "Amazon AWS"
+        ]
     },
     "FIRST-S00087": {
         "all_fields": [
@@ -7328,7 +7392,9 @@
         "value_fields": [
             "user_username"
         ],
-        "vendor_direct_ref": []
+        "vendor_direct_ref": [
+            "Amazon AWS"
+        ]
     },
     "FIRST-S00088": {
         "all_fields": [
@@ -7401,7 +7467,9 @@
         "value_fields": [
             "user_username"
         ],
-        "vendor_direct_ref": []
+        "vendor_direct_ref": [
+            "Microsoft"
+        ]
     },
     "FIRST-S00090": {
         "all_fields": [
@@ -7587,7 +7655,9 @@
         "normalized_signal_name": "Azure DevOps - First Seen User Creating Release Pipeline",
         "normalized_summary": "First observance of user: {{user_username}} creating a Azure DevOps Release Pipeline",
         "pattern_type": "first_seen",
-        "product_direct_ref": [],
+        "product_direct_ref": [
+            "Azure DevOps Auditing"
+        ],
         "product_guids": [
             "c3b61ddb-4d2d-497c-b873-28938036b67b"
         ],
@@ -7608,7 +7678,9 @@
         "value_fields": [
             "user_username"
         ],
-        "vendor_direct_ref": []
+        "vendor_direct_ref": [
+            "Microsoft"
+        ]
     },
     "FIRST-S00094": {
         "all_fields": [
@@ -7653,7 +7725,9 @@
         "normalized_signal_name": "Azure DevOps - First Seen New Extension Installed",
         "normalized_summary": "User: {{user_username}} has installed a new Azure DevOps Extension",
         "pattern_type": "first_seen",
-        "product_direct_ref": [],
+        "product_direct_ref": [
+            "Azure DevOps Auditing"
+        ],
         "product_guids": [
             "c3b61ddb-4d2d-497c-b873-28938036b67b"
         ],
@@ -7674,7 +7748,9 @@
         "value_fields": [
             "fields[\"data.Data.ExtensionName\"]"
         ],
-        "vendor_direct_ref": []
+        "vendor_direct_ref": [
+            "Microsoft"
+        ]
     },
     "FIRST-S00095": {
         "all_fields": [
@@ -7719,7 +7795,9 @@
         "normalized_signal_name": "Azure DevOps - New Agent OS added to Agent Pool",
         "normalized_summary": "User: {{user_username}} has added a new Agent OS to an Agent Pool that is previously unseen",
         "pattern_type": "first_seen",
-        "product_direct_ref": [],
+        "product_direct_ref": [
+            "Azure DevOps Auditing"
+        ],
         "product_guids": [
             "c3b61ddb-4d2d-497c-b873-28938036b67b"
         ],
@@ -7740,7 +7818,9 @@
             "changeTarget",
             "fields[\"data.Data.osDescription\"]"
         ],
-        "vendor_direct_ref": []
+        "vendor_direct_ref": [
+            "Microsoft"
+        ]
     },
     "FIRST-S00096": {
         "all_fields": [
@@ -7785,7 +7865,9 @@
         "normalized_signal_name": "Azure DevOps - First Seen User Modifying Release Pipeline",
         "normalized_summary": "First observation of User: {{user_username}} modifying an Azure DevOps Release Pipeline",
         "pattern_type": "first_seen",
-        "product_direct_ref": [],
+        "product_direct_ref": [
+            "Azure DevOps Auditing"
+        ],
         "product_guids": [
             "c3b61ddb-4d2d-497c-b873-28938036b67b"
         ],
@@ -7806,7 +7888,9 @@
         "value_fields": [
             "user_username"
         ],
-        "vendor_direct_ref": []
+        "vendor_direct_ref": [
+            "Microsoft"
+        ]
     },
     "FIRST-S00097": {
         "all_fields": [
@@ -7851,7 +7935,9 @@
         "normalized_signal_name": "Azure DevOps - First Seen User Modifying Build Variables",
         "normalized_summary": "User: {{user_username}} has been observed modifying a Variable group",
         "pattern_type": "first_seen",
-        "product_direct_ref": [],
+        "product_direct_ref": [
+            "Azure DevOps Auditing"
+        ],
         "product_guids": [
             "c3b61ddb-4d2d-497c-b873-28938036b67b"
         ],
@@ -7873,7 +7959,9 @@
             "user_username",
             "changeTarget"
         ],
-        "vendor_direct_ref": []
+        "vendor_direct_ref": [
+            "Microsoft"
+        ]
     },
     "FIRST-S00098": {
         "all_fields": [
@@ -7918,7 +8006,9 @@
         "normalized_signal_name": "Azure DevOps - First Seen Pull Request Policy Bypassed",
         "normalized_summary": "User: {{user_username}} has been observed bypassing policy",
         "pattern_type": "first_seen",
-        "product_direct_ref": [],
+        "product_direct_ref": [
+            "Azure DevOps Auditing"
+        ],
         "product_guids": [
             "c3b61ddb-4d2d-497c-b873-28938036b67b"
         ],
@@ -7938,7 +8028,9 @@
         "value_fields": [
             "user_username"
         ],
-        "vendor_direct_ref": []
+        "vendor_direct_ref": [
+            "Microsoft"
+        ]
     },
     "FIRST-S00099": {
         "all_fields": [
@@ -7983,7 +8075,9 @@
         "normalized_signal_name": "First Seen - User Creating New Agent Pool",
         "normalized_summary": "User: {{user_username}}  has been observed creating a new Azure DevOps Agent Pool",
         "pattern_type": "first_seen",
-        "product_direct_ref": [],
+        "product_direct_ref": [
+            "Azure DevOps Auditing"
+        ],
         "product_guids": [
             "c3b61ddb-4d2d-497c-b873-28938036b67b"
         ],
@@ -8004,7 +8098,9 @@
         "value_fields": [
             "user_username"
         ],
-        "vendor_direct_ref": []
+        "vendor_direct_ref": [
+            "Microsoft"
+        ]
     },
     "FIRST-S00100": {
         "all_fields": [
@@ -8049,7 +8145,9 @@
         "normalized_signal_name": "First Seen User: {{user_username}} Enumerating Custom AWS Bedrock Models",
         "normalized_summary": "First Seen User: {{user_username}} observed as enumerating AWS custom Bedrock models since the baseline period.",
         "pattern_type": "first_seen",
-        "product_direct_ref": [],
+        "product_direct_ref": [
+            "CloudTrail"
+        ],
         "product_guids": [
             "033624b0-218e-4dcb-b93f-0f1fb1806c56"
         ],
@@ -8072,7 +8170,9 @@
         "value_fields": [
             "user_username"
         ],
-        "vendor_direct_ref": []
+        "vendor_direct_ref": [
+            "Amazon AWS"
+        ]
     },
     "FIRST-S00101": {
         "all_fields": [
@@ -8194,7 +8294,9 @@
         "normalized_signal_name": "User {{user_username}} Initiated Claude Data Export for the First Time",
         "normalized_summary": "User {{user_username}} initiated Claude data export for the first time since baseline",
         "pattern_type": "first_seen",
-        "product_direct_ref": [],
+        "product_direct_ref": [
+            "Claude Activity Logs"
+        ],
         "product_guids": [
             "8ad9c55c-1271-4e8a-a8ca-f1663051f4d1"
         ],
@@ -8217,7 +8319,9 @@
         "value_fields": [
             "user_username"
         ],
-        "vendor_direct_ref": []
+        "vendor_direct_ref": [
+            "Anthropic"
+        ]
     },
     "FIRST-S00103": {
         "all_fields": [
@@ -8816,7 +8920,6 @@
             "43808f4c-15e9-480c-ab1a-38bdef3b6798",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "5ba50e74-3c05-4ea8-aeaf-5efde588c60f",
-            "5bb9e0b3-8d57-4b10-8952-0b6ffe91b599",
             "6299d728-14f7-455e-85c5-ea8ec65a654a",
             "a67d97fe-6e68-4cfb-9500-cfc5492da565",
             "c2503fcc-ef30-4e40-bb32-0bf47151b140",
@@ -9825,6 +9928,7 @@
             "5bb9e0b3-8d57-4b10-8952-0b6ffe91b599",
             "5c2cc0de-ca31-4ef0-bcfa-133fc8b387ad",
             "6299d728-14f7-455e-85c5-ea8ec65a654a",
+            "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
             "e2393771-bda2-414a-8661-0a57069287ad",
             "e362ae18-9af1-496d-9ace-efa05a8381c6"
@@ -10680,6 +10784,7 @@
         "pattern_type": "match",
         "product_direct_ref": [],
         "product_guids": [
+            "003d35b3-3ba8-4e93-8776-e5810b4e243e",
             "072b85a2-1765-45c2-911d-b0509880326e",
             "0fb003bc-8383-442f-8f3d-afcfbaefe617",
             "2a678bcd-898e-43cd-ab3f-91feb0602a18",
@@ -10750,7 +10855,6 @@
             "1ce88b4b-d90d-4d50-9a89-3abe83e8d5f8",
             "37C866BF-72E1-470A-9072-EDB908F56951",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
-            "59a3cd41-b6d2-4ab7-a0ff-6d5abd14ac43",
             "5ba50e74-3c05-4ea8-aeaf-5efde588c60f",
             "6299d728-14f7-455e-85c5-ea8ec65a654a",
             "724c9add-8cd9-4013-b9e1-a907b96da426",
@@ -11021,6 +11125,7 @@
         "pattern_type": "match",
         "product_direct_ref": [],
         "product_guids": [
+            "072b85a2-1765-45c2-911d-b0509880326e",
             "37C866BF-72E1-470A-9072-EDB908F56951",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad"
@@ -11104,6 +11209,7 @@
             "37C866BF-72E1-470A-9072-EDB908F56951",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
             "6299d728-14f7-455e-85c5-ea8ec65a654a",
+            "6802abc5-262a-4f1c-9d6f-45c847db5bc5",
             "724c9add-8cd9-4013-b9e1-a907b96da426",
             "A17B3F3C-04F1-40C8-9497-3C499EB18A74",
             "B3582ED2-1A0C-452D-9802-97433D143486",
@@ -11978,7 +12084,9 @@
             "37C866BF-72E1-470A-9072-EDB908F56951",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "5ba50e74-3c05-4ea8-aeaf-5efde588c60f",
+            "6299d728-14f7-455e-85c5-ea8ec65a654a",
             "9e0641a7-22ce-4ac8-8113-ee48b368ac3d",
+            "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "c2503fcc-ef30-4e40-bb32-0bf47151b140",
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
             "e2393771-bda2-414a-8661-0a57069287ad",
@@ -13316,8 +13424,6 @@
         "product_guids": [
             "072b85a2-1765-45c2-911d-b0509880326e",
             "37C866BF-72E1-470A-9072-EDB908F56951",
-            "44f07c08-c2ad-4a95-a058-1d0737ff90db",
-            "5bb9e0b3-8d57-4b10-8952-0b6ffe91b599",
             "6299d728-14f7-455e-85c5-ea8ec65a654a",
             "c2503fcc-ef30-4e40-bb32-0bf47151b140"
         ],
@@ -14142,8 +14248,7 @@
             "afabb29d-e728-410f-b7c6-acfa9efbe1ed",
             "c2503fcc-ef30-4e40-bb32-0bf47151b140",
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
-            "da9e05a5-3fd3-46a7-a107-ae03c01e3f5a",
-            "e90edc67-68d4-4d67-82f6-4524f94b59bb"
+            "da9e05a5-3fd3-46a7-a107-ae03c01e3f5a"
         ],
         "record_type_direct_ref": [],
         "rule_source": "sumo",
@@ -14290,6 +14395,7 @@
             "5bb9e0b3-8d57-4b10-8952-0b6ffe91b599",
             "6299d728-14f7-455e-85c5-ea8ec65a654a",
             "6787d77a-1ee0-43d4-8ca0-96af8ee755bc",
+            "6802abc5-262a-4f1c-9d6f-45c847db5bc5",
             "9a28f2af-5526-414d-973b-c3fc7984b8a1",
             "9f76f1fd-fbb0-42d2-9bf5-0f4fd2c1ab82",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
@@ -14646,7 +14752,6 @@
             "6299d728-14f7-455e-85c5-ea8ec65a654a",
             "724c9add-8cd9-4013-b9e1-a907b96da426",
             "951a004d-54bf-441d-98e1-fcc6a032f475",
-            "991a55cf-8c5a-49ba-ae72-6f64a002bacf",
             "9e0641a7-22ce-4ac8-8113-ee48b368ac3d",
             "A17B3F3C-04F1-40C8-9497-3C499EB18A74",
             "B3582ED2-1A0C-452D-9802-97433D143486",
@@ -14756,6 +14861,7 @@
         "pattern_type": "match",
         "product_direct_ref": [],
         "product_guids": [
+            "146522A1-DC9A-40A5-A909-2EB3B665B1D1",
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "332856e9-3111-446f-8df7-e64694e4b9a1",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
@@ -15079,8 +15185,7 @@
             "bf865cb5-0b26-4010-8b3c-5ae2d1f716d8",
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
             "da9e05a5-3fd3-46a7-a107-ae03c01e3f5a",
-            "de3d4b6b-36a3-4436-8bfc-0561ac95037e",
-            "e90edc67-68d4-4d67-82f6-4524f94b59bb"
+            "de3d4b6b-36a3-4436-8bfc-0561ac95037e"
         ],
         "record_type_direct_ref": [],
         "rule_source": "sumo",
@@ -15162,8 +15267,7 @@
             "9e0641a7-22ce-4ac8-8113-ee48b368ac3d",
             "B3582ED2-1A0C-452D-9802-97433D143486",
             "c2503fcc-ef30-4e40-bb32-0bf47151b140",
-            "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
-            "e90edc67-68d4-4d67-82f6-4524f94b59bb"
+            "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad"
         ],
         "record_type_direct_ref": [],
         "rule_source": "sumo",
@@ -15888,6 +15992,7 @@
             "5bb9e0b3-8d57-4b10-8952-0b6ffe91b599",
             "6299d728-14f7-455e-85c5-ea8ec65a654a",
             "6787d77a-1ee0-43d4-8ca0-96af8ee755bc",
+            "6802abc5-262a-4f1c-9d6f-45c847db5bc5",
             "724c9add-8cd9-4013-b9e1-a907b96da426",
             "74662794-d8de-42ec-b504-cc0bccfaddd9",
             "798f8da8-c85b-4e9a-b2f1-eae0b07532fb",
@@ -16341,6 +16446,7 @@
             "44f07c08-c2ad-4a95-a058-1d0737ff90db",
             "51278354-d6b5-4c8e-a8fd-8197df334e67",
             "5bb9e0b3-8d57-4b10-8952-0b6ffe91b599",
+            "6802abc5-262a-4f1c-9d6f-45c847db5bc5",
             "9a28f2af-5526-414d-973b-c3fc7984b8a1",
             "ae07663e-2c2c-4932-be5d-c9f985e95276",
             "afabb29d-e728-410f-b7c6-acfa9efbe1ed",
@@ -22203,7 +22309,6 @@
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "5c2cc0de-ca31-4ef0-bcfa-133fc8b387ad",
-            "60829f4a-7acb-47d1-ad23-8424fcf83dcb",
             "840c72e0-4e47-41e7-9b93-31f55d12f07d",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "ef42eb74-7444-4fee-b231-b4eb1e7c9660"
@@ -24076,6 +24181,7 @@
             "6299d728-14f7-455e-85c5-ea8ec65a654a",
             "64088efc-3f28-448d-b386-000deebc7d89",
             "6787d77a-1ee0-43d4-8ca0-96af8ee755bc",
+            "6802abc5-262a-4f1c-9d6f-45c847db5bc5",
             "724c9add-8cd9-4013-b9e1-a907b96da426",
             "798f8da8-c85b-4e9a-b2f1-eae0b07532fb",
             "9a28f2af-5526-414d-973b-c3fc7984b8a1",
@@ -24084,7 +24190,6 @@
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "af61d8a8-3eba-42fb-9f17-87443924f3f4",
             "afabb29d-e728-410f-b7c6-acfa9efbe1ed",
-            "be4f7473-fe69-4311-8859-3561900060bf",
             "c2503fcc-ef30-4e40-bb32-0bf47151b140",
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
             "d3606245-76d3-4173-a2fe-832c0e71b0f9",
@@ -24720,7 +24825,10 @@
         "normalized_signal_name": "Azure - User Confirmed Compromised",
         "normalized_summary": "Administrator flagged sign in by {{user_username}} was not performed by the account owner",
         "pattern_type": "templated_match",
-        "product_direct_ref": [],
+        "product_direct_ref": [
+            "Azure",
+            "Graph AD Reporting API"
+        ],
         "product_guids": [
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "fe5a3e8b-8b6e-44c7-92a8-adfb20df5c75"
@@ -25489,7 +25597,10 @@
         "normalized_signal_name": "Azure - High Risk Sign-In (Aggregate)",
         "normalized_summary": "A sign-in from user: {{user_username}} on IP: {{device_ip}} with a high aggregate risk level was detected.",
         "pattern_type": "templated_match",
-        "product_direct_ref": [],
+        "product_direct_ref": [
+            "Azure",
+            "Graph AD Reporting API"
+        ],
         "product_guids": [
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "fe5a3e8b-8b6e-44c7-92a8-adfb20df5c75"
@@ -25581,7 +25692,10 @@
         "normalized_signal_name": "Azure - High Risk Sign-In (Real Time)",
         "normalized_summary": "A sign-in from user: {{user_username}} on IP: {{device_ip}} with a high real-time risk level was detected.",
         "pattern_type": "templated_match",
-        "product_direct_ref": [],
+        "product_direct_ref": [
+            "Azure",
+            "Graph AD Reporting API"
+        ],
         "product_guids": [
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "fe5a3e8b-8b6e-44c7-92a8-adfb20df5c75"
@@ -25831,7 +25945,10 @@
         "normalized_signal_name": "Azure - Suspicious User Risk State Associated with Sign On",
         "normalized_summary": "Sign in by {{user_username}} has been flagged as at risk.",
         "pattern_type": "templated_match",
-        "product_direct_ref": [],
+        "product_direct_ref": [
+            "Azure",
+            "Graph AD Reporting API"
+        ],
         "product_guids": [
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "fe5a3e8b-8b6e-44c7-92a8-adfb20df5c75"
@@ -28512,7 +28629,8 @@
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "840c72e0-4e47-41e7-9b93-31f55d12f07d",
-            "a1225af5-e778-4068-a9a2-47da93d1ff24"
+            "a1225af5-e778-4068-a9a2-47da93d1ff24",
+            "eabd9eed-b071-4773-ad07-706ea5b51b9c"
         ],
         "record_type_direct_ref": [],
         "rule_source": "sumo",
@@ -30486,8 +30604,7 @@
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
-            "a1225af5-e778-4068-a9a2-47da93d1ff24",
-            "f9cea291-9030-4e41-9836-6dd9274d6df4"
+            "a1225af5-e778-4068-a9a2-47da93d1ff24"
         ],
         "record_type_direct_ref": [],
         "rule_source": "sumo",
@@ -30638,6 +30755,7 @@
         "product_direct_ref": [],
         "product_guids": [
             "021d1ded-1c82-4663-bf5d-d6ed5170efa3",
+            "0fb003bc-8383-442f-8f3d-afcfbaefe617",
             "2b82e665-bdde-474a-ae29-4f0f76598556",
             "6299d728-14f7-455e-85c5-ea8ec65a654a",
             "9e0641a7-22ce-4ac8-8113-ee48b368ac3d",
@@ -32125,7 +32243,9 @@
         "normalized_signal_name": "Okta Account Lockout",
         "normalized_summary": "User: {{user_username}} locked out",
         "pattern_type": "templated_match",
-        "product_direct_ref": [],
+        "product_direct_ref": [
+            "Single Sign-On"
+        ],
         "product_guids": [
             "51278354-d6b5-4c8e-a8fd-8197df334e67"
         ],
@@ -35644,7 +35764,10 @@
         "product_guids": [
             "37C866BF-72E1-470A-9072-EDB908F56951"
         ],
-        "record_type_direct_ref": [],
+        "record_type_direct_ref": [
+            "Network",
+            "NetworkHTTP"
+        ],
         "rule_source": "sumo",
         "score_expression": null,
         "score_mapping": {
@@ -38421,8 +38544,7 @@
         "product_guids": [
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
-            "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
-            "a1225af5-e778-4068-a9a2-47da93d1ff24"
+            "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3"
         ],
         "record_type_direct_ref": [],
         "rule_source": "sumo",
@@ -39015,8 +39137,7 @@
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "840c72e0-4e47-41e7-9b93-31f55d12f07d",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
-            "ef42eb74-7444-4fee-b231-b4eb1e7c9660",
-            "f9cea291-9030-4e41-9836-6dd9274d6df4"
+            "ef42eb74-7444-4fee-b231-b4eb1e7c9660"
         ],
         "record_type_direct_ref": [],
         "rule_source": "sumo",
@@ -39920,6 +40041,7 @@
             "2a678bcd-898e-43cd-ab3f-91feb0602a18",
             "2b82e665-bdde-474a-ae29-4f0f76598556",
             "332856e9-3111-446f-8df7-e64694e4b9a1",
+            "3df88ccb-10a9-4a30-a36f-74bd891d55a1",
             "3fe1afe0-c1c2-45d6-835e-0bdb1e4b703f",
             "41f70c6e-18a9-462c-a04d-4edc7baead7a",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
@@ -39943,9 +40065,7 @@
             "ede052db-d472-408f-949c-be642237ef3f",
             "fca8785d-4823-4442-86b2-8acbaa176da4"
         ],
-        "record_type_direct_ref": [
-            "Authentication"
-        ],
+        "record_type_direct_ref": [],
         "rule_source": "sumo",
         "score_expression": null,
         "score_mapping": {
@@ -40323,7 +40443,8 @@
             "be4f7473-fe69-4311-8859-3561900060bf",
             "c3c1a4fc-10cc-4155-8a30-a3bb14fc9f31",
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
-            "da9e05a5-3fd3-46a7-a107-ae03c01e3f5a"
+            "da9e05a5-3fd3-46a7-a107-ae03c01e3f5a",
+            "ef11c9cd-df72-42c6-81f5-70b91fd0f38a"
         ],
         "record_type_direct_ref": [],
         "rule_source": "sumo",
@@ -40997,7 +41118,6 @@
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
-            "840c72e0-4e47-41e7-9b93-31f55d12f07d",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "ef42eb74-7444-4fee-b231-b4eb1e7c9660"
         ],
@@ -42526,6 +42646,7 @@
             "44f07c08-c2ad-4a95-a058-1d0737ff90db",
             "51278354-d6b5-4c8e-a8fd-8197df334e67",
             "5bb9e0b3-8d57-4b10-8952-0b6ffe91b599",
+            "6802abc5-262a-4f1c-9d6f-45c847db5bc5",
             "9a28f2af-5526-414d-973b-c3fc7984b8a1",
             "ae07663e-2c2c-4932-be5d-c9f985e95276",
             "afabb29d-e728-410f-b7c6-acfa9efbe1ed",
@@ -46381,6 +46502,7 @@
         "product_direct_ref": [],
         "product_guids": [
             "0e20c932-d992-4bd4-b276-c15119ca5c0b",
+            "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
             "5c2cc0de-ca31-4ef0-bcfa-133fc8b387ad",
@@ -49109,7 +49231,9 @@
         "normalized_signal_name": "Mimecast Message Held to {{targetUser_username}}",
         "normalized_summary": "Mimecast held an email message to {{targetUser_username}}  due to a policy.",
         "pattern_type": "templated_match",
-        "product_direct_ref": [],
+        "product_direct_ref": [
+            "Mimecast"
+        ],
         "product_guids": [
             "54B36B3F-A63F-4BA4-9DE4-02DBF69A429F"
         ],
@@ -49135,7 +49259,9 @@
             "_mitreAttackTechnique:T1114.003"
         ],
         "threat_ruleType": null,
-        "vendor_direct_ref": []
+        "vendor_direct_ref": [
+            "Mimecast"
+        ]
     },
     "MATCH-S00682": {
         "all_fields": [
@@ -49442,9 +49568,7 @@
         "normalized_signal_name": "{{metadata_vendor}} {{metadata_product}} - Authentication Without MFA",
         "normalized_summary": "{{user_username}} logged on without MFA",
         "pattern_type": "templated_match",
-        "product_direct_ref": [
-            "CloudTrail"
-        ],
+        "product_direct_ref": [],
         "product_guids": [
             "033624b0-218e-4dcb-b93f-0f1fb1806c56",
             "1ed80351-d779-4f1f-9ddb-b3881f19d487",
@@ -49474,9 +49598,7 @@
             "_mitreAttackTechnique:T1586.002"
         ],
         "threat_ruleType": null,
-        "vendor_direct_ref": [
-            "Amazon AWS"
-        ]
+        "vendor_direct_ref": []
     },
     "MATCH-S00686": {
         "all_fields": [
@@ -50885,7 +51007,8 @@
             "0e20c932-d992-4bd4-b276-c15119ca5c0b",
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
-            "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3"
+            "569a3a44-c29f-492e-bcf4-5dc04e2ab0f3",
+            "840c72e0-4e47-41e7-9b93-31f55d12f07d"
         ],
         "record_type_direct_ref": [],
         "rule_description": "",
@@ -55098,7 +55221,9 @@
         "normalized_signal_name": "Okta Credential Access User Impersonation",
         "normalized_summary": "User impersonation session initiated from IP {{srcDevice_ip}}",
         "pattern_type": "templated_match",
-        "product_direct_ref": [],
+        "product_direct_ref": [
+            "Single Sign-On"
+        ],
         "product_guids": [
             "51278354-d6b5-4c8e-a8fd-8197df334e67"
         ],
@@ -55173,7 +55298,9 @@
         "normalized_signal_name": "Okta MFA Deactivated for User",
         "normalized_summary": "MFA deactivated for user {{targetUser_username}}",
         "pattern_type": "templated_match",
-        "product_direct_ref": [],
+        "product_direct_ref": [
+            "Single Sign-On"
+        ],
         "product_guids": [
             "51278354-d6b5-4c8e-a8fd-8197df334e67"
         ],
@@ -55243,7 +55370,9 @@
         "normalized_signal_name": "Okta MFA Device Reset",
         "normalized_summary": "MFA device reset for user {{user_username}}",
         "pattern_type": "templated_match",
-        "product_direct_ref": [],
+        "product_direct_ref": [
+            "Single Sign-On"
+        ],
         "product_guids": [
             "51278354-d6b5-4c8e-a8fd-8197df334e67"
         ],
@@ -55313,7 +55442,9 @@
         "normalized_signal_name": "Okta MFA Bypass Attempt",
         "normalized_summary": "MFA bypass attempt for user {{user_username}} from ip {{srcDevice_ip}}",
         "pattern_type": "templated_match",
-        "product_direct_ref": [],
+        "product_direct_ref": [
+            "Single Sign-On"
+        ],
         "product_guids": [
             "51278354-d6b5-4c8e-a8fd-8197df334e67"
         ],
@@ -55383,7 +55514,9 @@
         "normalized_signal_name": "Okta Account Primary Email Address Update",
         "normalized_summary": "Primary email address changed for user {{user_username}}",
         "pattern_type": "templated_match",
-        "product_direct_ref": [],
+        "product_direct_ref": [
+            "Single Sign-On"
+        ],
         "product_guids": [
             "51278354-d6b5-4c8e-a8fd-8197df334e67"
         ],
@@ -56452,6 +56585,7 @@
             "5bb9e0b3-8d57-4b10-8952-0b6ffe91b599",
             "6299d728-14f7-455e-85c5-ea8ec65a654a",
             "6787d77a-1ee0-43d4-8ca0-96af8ee755bc",
+            "6802abc5-262a-4f1c-9d6f-45c847db5bc5",
             "724c9add-8cd9-4013-b9e1-a907b96da426",
             "9a28f2af-5526-414d-973b-c3fc7984b8a1",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
@@ -56788,7 +56922,9 @@
             "_mitreAttackTechnique:T1485"
         ],
         "threat_ruleType": null,
-        "vendor_direct_ref": []
+        "vendor_direct_ref": [
+            "Microsoft"
+        ]
     },
     "MATCH-S00788": {
         "all_fields": [
@@ -58932,7 +59068,9 @@
         "normalized_signal_name": "Suspicious Azure Active Directory Device Code Authentication",
         "normalized_summary": "A successful & suspcious Device Code authentication flow was completed to access the Azure resource: {{application}} for the user: {{user_username}}",
         "pattern_type": "templated_match",
-        "product_direct_ref": [],
+        "product_direct_ref": [
+            "Azure"
+        ],
         "product_guids": [
             "a1225af5-e778-4068-a9a2-47da93d1ff24"
         ],
@@ -59008,7 +59146,9 @@
         "normalized_signal_name": "Azure PRT Token Issued via Non Interactive Login",
         "normalized_summary": "A suspicious Azure Primary Refersh Token (PRT) was issued via non-interactive login to {{user_username}} for the {{application}} resource.",
         "pattern_type": "templated_match",
-        "product_direct_ref": [],
+        "product_direct_ref": [
+            "Azure"
+        ],
         "product_guids": [
             "a1225af5-e778-4068-a9a2-47da93d1ff24"
         ],
@@ -59567,7 +59707,9 @@
         "normalized_signal_name": "SSH Keys Added to EC2 Instance",
         "normalized_summary": "{{user_username}} using the IP address {{srcDevice_ip}} has added an SSH key to an EC2 Instance.",
         "pattern_type": "templated_match",
-        "product_direct_ref": [],
+        "product_direct_ref": [
+            "CloudTrail"
+        ],
         "product_guids": [
             "033624b0-218e-4dcb-b93f-0f1fb1806c56"
         ],
@@ -59589,7 +59731,9 @@
             "_mitreAttackTechnique:T1098.001"
         ],
         "threat_ruleType": null,
-        "vendor_direct_ref": []
+        "vendor_direct_ref": [
+            "Amazon AWS"
+        ]
     },
     "MATCH-S00827": {
         "all_fields": [
@@ -59698,7 +59842,9 @@
         "normalized_signal_name": "Office 365 Exchange Transport Rule Created",
         "normalized_summary": "{{user_username}} has created an Office 365 Transport Rule",
         "pattern_type": "templated_match",
-        "product_direct_ref": [],
+        "product_direct_ref": [
+            "Office 365"
+        ],
         "product_guids": [
             "d3ed003d-5ddd-4c7a-bea5-63eae6311833"
         ],
@@ -59760,7 +59906,9 @@
         "normalized_signal_name": "Office 365 Exchange Transport Rule Enabled",
         "normalized_summary": "{{user_username}} has enabled an Office 365 Transport Rule",
         "pattern_type": "templated_match",
-        "product_direct_ref": [],
+        "product_direct_ref": [
+            "Office 365"
+        ],
         "product_guids": [
             "d3ed003d-5ddd-4c7a-bea5-63eae6311833"
         ],
@@ -59824,7 +59972,9 @@
         "normalized_signal_name": "Office 365 Forwarding Rule Created",
         "normalized_summary": "{{user_username}} has created an Office 365 Forwarding Rule",
         "pattern_type": "templated_match",
-        "product_direct_ref": [],
+        "product_direct_ref": [
+            "Office 365"
+        ],
         "product_guids": [
             "d3ed003d-5ddd-4c7a-bea5-63eae6311833"
         ],
@@ -59887,7 +60037,9 @@
         "normalized_signal_name": "{{user_username}} has turned off Unified Audit Logging in Office 365",
         "normalized_summary": "The Office 365 Unified Audit Log logs Office 365 and Azure Active Directory activites including sign ins, Teams activity, SharePoint activity and OneDrive activity. Unplanned and unexpected occurances of this event should be investigated.",
         "pattern_type": "templated_match",
-        "product_direct_ref": [],
+        "product_direct_ref": [
+            "Office 365"
+        ],
         "product_guids": [
             "d3ed003d-5ddd-4c7a-bea5-63eae6311833"
         ],
@@ -59951,7 +60103,9 @@
         "normalized_signal_name": "Office 365 Inbox Rule Updated",
         "normalized_summary": "{{user_username}} has updated an Office 365 Inbox Rule",
         "pattern_type": "templated_match",
-        "product_direct_ref": [],
+        "product_direct_ref": [
+            "Office 365"
+        ],
         "product_guids": [
             "d3ed003d-5ddd-4c7a-bea5-63eae6311833"
         ],
@@ -60014,7 +60168,9 @@
         "normalized_signal_name": "Office 365 Inbox Rule Created",
         "normalized_summary": "{{user_username}} has created an Office 365 Inbox Rule",
         "pattern_type": "templated_match",
-        "product_direct_ref": [],
+        "product_direct_ref": [
+            "Office 365"
+        ],
         "product_guids": [
             "d3ed003d-5ddd-4c7a-bea5-63eae6311833"
         ],
@@ -60169,7 +60325,7 @@
             "5ba50e74-3c05-4ea8-aeaf-5efde588c60f",
             "5bb9e0b3-8d57-4b10-8952-0b6ffe91b599",
             "6299d728-14f7-455e-85c5-ea8ec65a654a",
-            "6787d77a-1ee0-43d4-8ca0-96af8ee755bc",
+            "6802abc5-262a-4f1c-9d6f-45c847db5bc5",
             "724c9add-8cd9-4013-b9e1-a907b96da426",
             "991a55cf-8c5a-49ba-ae72-6f64a002bacf",
             "9a28f2af-5526-414d-973b-c3fc7984b8a1",
@@ -60613,7 +60769,9 @@
             "_mitreAttackTechnique:T1552.001"
         ],
         "threat_ruleType": null,
-        "vendor_direct_ref": []
+        "vendor_direct_ref": [
+            "Laurel"
+        ]
     },
     "MATCH-S00842": {
         "all_fields": [
@@ -62109,7 +62267,9 @@
         "normalized_signal_name": "Azure Firewall Rule Modified or Created",
         "normalized_summary": "Azure Firewall Rule Modified or Created or Created by {{user_username}}",
         "pattern_type": "templated_match",
-        "product_direct_ref": [],
+        "product_direct_ref": [
+            "Azure"
+        ],
         "product_guids": [
             "a1225af5-e778-4068-a9a2-47da93d1ff24"
         ],
@@ -62703,7 +62863,9 @@
         "normalized_signal_name": "{{user_username}} has updated an AWS EKS Cluster Configuration",
         "normalized_summary": "An AWS EKS Cluster configuration has been updated by {{user_username}} from the IP address of {{srcDevice_ip}}",
         "pattern_type": "templated_match",
-        "product_direct_ref": [],
+        "product_direct_ref": [
+            "CloudTrail"
+        ],
         "product_guids": [
             "033624b0-218e-4dcb-b93f-0f1fb1806c56"
         ],
@@ -62724,7 +62886,9 @@
             "_mitreAttackTechnique:T1078.004"
         ],
         "threat_ruleType": null,
-        "vendor_direct_ref": []
+        "vendor_direct_ref": [
+            "Amazon AWS"
+        ]
     },
     "MATCH-S00874": {
         "all_fields": [
@@ -63351,7 +63515,9 @@
         "normalized_signal_name": "macOS - Suspicious Python PIP Execution on {{device_hostname}} by {{user_username}}",
         "normalized_summary": "macOS - Suspicious Python PIP Execution on {{device_hostname}} by {{user_username}}",
         "pattern_type": "templated_match",
-        "product_direct_ref": [],
+        "product_direct_ref": [
+            "Jamf"
+        ],
         "product_guids": [
             "5c2cc0de-ca31-4ef0-bcfa-133fc8b387ad"
         ],
@@ -63372,7 +63538,9 @@
             "_mitreAttackTechnique:T1059.006"
         ],
         "threat_ruleType": null,
-        "vendor_direct_ref": []
+        "vendor_direct_ref": [
+            "Jamf"
+        ]
     },
     "MATCH-S00885": {
         "all_fields": [
@@ -63417,7 +63585,9 @@
         "normalized_signal_name": "macOS - Screen Sharing Session Established on {{device_hostname}}",
         "normalized_summary": "macOS - Screen Sharing Session Established on {{device_hostname}}",
         "pattern_type": "templated_match",
-        "product_direct_ref": [],
+        "product_direct_ref": [
+            "Jamf"
+        ],
         "product_guids": [
             "5c2cc0de-ca31-4ef0-bcfa-133fc8b387ad"
         ],
@@ -63438,7 +63608,9 @@
             "_mitreAttackTechnique:T1021.005"
         ],
         "threat_ruleType": null,
-        "vendor_direct_ref": []
+        "vendor_direct_ref": [
+            "Jamf"
+        ]
     },
     "MATCH-S00886": {
         "all_fields": [
@@ -63611,7 +63783,9 @@
         "normalized_signal_name": "Microsoft Teams External Access Enabled by {{user_UserId}}",
         "normalized_summary": "Microsoft Team External Access has been enabled by {{user_UserId}}",
         "pattern_type": "templated_match",
-        "product_direct_ref": [],
+        "product_direct_ref": [
+            "Office 365"
+        ],
         "product_guids": [
             "d3ed003d-5ddd-4c7a-bea5-63eae6311833"
         ],
@@ -63673,7 +63847,9 @@
         "normalized_signal_name": "Microsoft Teams Guest Access Enabled by {{user_userId}}",
         "normalized_summary": "Microsoft Team Guest Access has been enabled by {{user_userId}}",
         "pattern_type": "templated_match",
-        "product_direct_ref": [],
+        "product_direct_ref": [
+            "Office 365"
+        ],
         "product_guids": [
             "d3ed003d-5ddd-4c7a-bea5-63eae6311833"
         ],
@@ -63734,7 +63910,9 @@
         "normalized_signal_name": "Owner Added to Azure Service Principal by {{user_username}}",
         "normalized_summary": "Owner Added to Azure Service Principal {{application}} by {{user_username}}",
         "pattern_type": "templated_match",
-        "product_direct_ref": [],
+        "product_direct_ref": [
+            "Azure"
+        ],
         "product_guids": [
             "a1225af5-e778-4068-a9a2-47da93d1ff24"
         ],
@@ -63798,11 +63976,15 @@
         "normalized_signal_name": "Azure OAUTH Application Consent: {{application}} from {{user_username}}",
         "normalized_summary": "{{user_username}} has consented to application permissions",
         "pattern_type": "templated_match",
-        "product_direct_ref": [],
+        "product_direct_ref": [
+            "Azure"
+        ],
         "product_guids": [
             "a1225af5-e778-4068-a9a2-47da93d1ff24"
         ],
-        "record_type_direct_ref": [],
+        "record_type_direct_ref": [
+            "Audit"
+        ],
         "rule_description": "",
         "rule_source": "sumo",
         "score_mapping": {
@@ -63862,7 +64044,9 @@
         "normalized_signal_name": "Value Added to Azure NSG Group",
         "normalized_summary": "An Azure Network Security Group (NSG) has been modified with a value being added",
         "pattern_type": "templated_match",
-        "product_direct_ref": [],
+        "product_direct_ref": [
+            "Azure"
+        ],
         "product_guids": [
             "a1225af5-e778-4068-a9a2-47da93d1ff24"
         ],
@@ -63924,7 +64108,9 @@
         "normalized_signal_name": "Certificate or Secret Added to Azure Service Principal {{targetUser_username_raw}}",
         "normalized_summary": "A new secret has been added to an Azure Service Principal",
         "pattern_type": "templated_match",
-        "product_direct_ref": [],
+        "product_direct_ref": [
+            "Azure"
+        ],
         "product_guids": [
             "a1225af5-e778-4068-a9a2-47da93d1ff24"
         ],
@@ -64262,7 +64448,9 @@
             "_mitreAttackTechnique:T1649"
         ],
         "threat_ruleType": null,
-        "vendor_direct_ref": []
+        "vendor_direct_ref": [
+            "Microsoft"
+        ]
     },
     "MATCH-S00899": {
         "all_fields": [
@@ -64330,7 +64518,9 @@
             "_mitreAttackTechnique:T1649"
         ],
         "threat_ruleType": null,
-        "vendor_direct_ref": []
+        "vendor_direct_ref": [
+            "Microsoft"
+        ]
     },
     "MATCH-S00900": {
         "all_fields": [
@@ -64391,7 +64581,9 @@
             "_mitreAttackTechnique:T1649"
         ],
         "threat_ruleType": null,
-        "vendor_direct_ref": []
+        "vendor_direct_ref": [
+            "Microsoft"
+        ]
     },
     "MATCH-S00901": {
         "all_fields": [
@@ -64452,7 +64644,9 @@
             "_mitreAttackTechnique:T1649"
         ],
         "threat_ruleType": null,
-        "vendor_direct_ref": []
+        "vendor_direct_ref": [
+            "Microsoft"
+        ]
     },
     "MATCH-S00902": {
         "all_fields": [
@@ -64521,7 +64715,9 @@
             "_mitreAttackTechnique:T1649"
         ],
         "threat_ruleType": null,
-        "vendor_direct_ref": []
+        "vendor_direct_ref": [
+            "Microsoft"
+        ]
     },
     "MATCH-S00903": {
         "all_fields": [
@@ -64915,7 +65111,9 @@
             "_mitreAttackTechnique:T1078.004"
         ],
         "threat_ruleType": null,
-        "vendor_direct_ref": []
+        "vendor_direct_ref": [
+            "Okta"
+        ]
     },
     "MATCH-S00916": {
         "all_fields": [
@@ -65176,7 +65374,6 @@
             "5be5af82-c248-4c4c-a485-0571025f242c",
             "840c72e0-4e47-41e7-9b93-31f55d12f07d",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
-            "a1f79987-b765-4f6f-bfe5-d657baa35144",
             "b238758d-ade8-41d2-b32d-c99159e9fd74"
         ],
         "record_type_direct_ref": [],
@@ -65302,7 +65499,9 @@
         "normalized_signal_name": "AWS Bedrock Model Invocation Logging Configuration Change Observed by {{user_username}}",
         "normalized_summary": "AWS Bedrock Model Invocation Logging Configuration Change Observed by {{user_username}} from IP {{srcDevice_ip}}",
         "pattern_type": "templated_match",
-        "product_direct_ref": [],
+        "product_direct_ref": [
+            "CloudTrail"
+        ],
         "product_guids": [
             "033624b0-218e-4dcb-b93f-0f1fb1806c56"
         ],
@@ -65325,7 +65524,9 @@
             "_mitreAtlasTechnique:AML.T0081"
         ],
         "threat_ruleType": null,
-        "vendor_direct_ref": []
+        "vendor_direct_ref": [
+            "Amazon AWS"
+        ]
     },
     "MATCH-S00922": {
         "all_fields": [
@@ -65368,7 +65569,9 @@
         "normalized_signal_name": "AWS Bedrock Agent Created by {{user_username}}",
         "normalized_summary": "AWS Bedrock Agent Created by {{user_username}} with the role {{user_username_role}}",
         "pattern_type": "templated_match",
-        "product_direct_ref": [],
+        "product_direct_ref": [
+            "CloudTrail"
+        ],
         "product_guids": [
             "033624b0-218e-4dcb-b93f-0f1fb1806c56"
         ],
@@ -65391,7 +65594,9 @@
             "_mitreAtlasTechnique:AML.T0103"
         ],
         "threat_ruleType": null,
-        "vendor_direct_ref": []
+        "vendor_direct_ref": [
+            "Amazon AWS"
+        ]
     },
     "MATCH-S00923": {
         "all_fields": [
@@ -65434,7 +65639,9 @@
         "normalized_signal_name": "AWS Bedrock Model Invocation Denied for {{user_username}}",
         "normalized_summary": "AWS Bedrock Model Invocation Denied for {{user_username}}",
         "pattern_type": "templated_match",
-        "product_direct_ref": [],
+        "product_direct_ref": [
+            "CloudTrail"
+        ],
         "product_guids": [
             "033624b0-218e-4dcb-b93f-0f1fb1806c56"
         ],
@@ -65457,7 +65664,9 @@
             "_mitreAtlasTechnique:AML.T0006"
         ],
         "threat_ruleType": null,
-        "vendor_direct_ref": []
+        "vendor_direct_ref": [
+            "Amazon AWS"
+        ]
     },
     "MATCH-S00924": {
         "all_fields": [
@@ -65499,7 +65708,9 @@
         "normalized_signal_name": "AWS Bedrock Guardrail Deleted",
         "normalized_summary": "AWS Bedrock Guardrail Deleted by {{user_username}}",
         "pattern_type": "templated_match",
-        "product_direct_ref": [],
+        "product_direct_ref": [
+            "CloudTrail"
+        ],
         "product_guids": [
             "033624b0-218e-4dcb-b93f-0f1fb1806c56"
         ],
@@ -65522,7 +65733,9 @@
             "_mitreAtlasTechnique:AML.T0081"
         ],
         "threat_ruleType": null,
-        "vendor_direct_ref": []
+        "vendor_direct_ref": [
+            "Amazon AWS"
+        ]
     },
     "MATCH-S00925": {
         "all_fields": [
@@ -65564,7 +65777,9 @@
         "normalized_signal_name": "Trufflehog AWS Credential Verification Detected",
         "normalized_summary": "Trufflehog AWS Credential Verification Detected for {{user_username}}  from IP: {{srcDevice_ip}}",
         "pattern_type": "templated_match",
-        "product_direct_ref": [],
+        "product_direct_ref": [
+            "CloudTrail"
+        ],
         "product_guids": [
             "033624b0-218e-4dcb-b93f-0f1fb1806c56"
         ],
@@ -65585,7 +65800,9 @@
             "_mitreAttackTechnique:T1552"
         ],
         "threat_ruleType": null,
-        "vendor_direct_ref": []
+        "vendor_direct_ref": [
+            "Amazon AWS"
+        ]
     },
     "MATCH-S00949": {
         "all_fields": [
@@ -66942,7 +67159,9 @@
         "normalized_signal_name": "Azure DevOps - Pipeline Retention Settings Reduced by User: {{user_username}}",
         "normalized_summary": "User: {{user_username}}  has reduced the Pipeline Retention settings",
         "pattern_type": "templated_match",
-        "product_direct_ref": [],
+        "product_direct_ref": [
+            "Azure DevOps Auditing"
+        ],
         "product_guids": [
             "c3b61ddb-4d2d-497c-b873-28938036b67b"
         ],
@@ -66962,7 +67181,9 @@
             "_mitreAttackTechnique:T1564"
         ],
         "threat_ruleType": null,
-        "vendor_direct_ref": []
+        "vendor_direct_ref": [
+            "Microsoft"
+        ]
     },
     "MATCH-S00994": {
         "all_fields": [
@@ -67004,7 +67225,9 @@
         "normalized_signal_name": "Azure DevOps - Member Added to Sensitive Group",
         "normalized_summary": "User: {{user_username}} added Member to a Sensitive Azure DevOps Group",
         "pattern_type": "templated_match",
-        "product_direct_ref": [],
+        "product_direct_ref": [
+            "Azure DevOps Auditing"
+        ],
         "product_guids": [
             "c3b61ddb-4d2d-497c-b873-28938036b67b"
         ],
@@ -67024,7 +67247,9 @@
             "_mitreAttackTechnique:T1078.004"
         ],
         "threat_ruleType": null,
-        "vendor_direct_ref": []
+        "vendor_direct_ref": [
+            "Microsoft"
+        ]
     },
     "MATCH-S00995": {
         "all_fields": [
@@ -67067,7 +67292,9 @@
         "normalized_signal_name": "Azure DevOps - Change Made to Administrator Group",
         "normalized_summary": "User: {{user_username}}  has performed a modifcation on a Project Administrative or Adminstrative group",
         "pattern_type": "templated_match",
-        "product_direct_ref": [],
+        "product_direct_ref": [
+            "Azure DevOps Auditing"
+        ],
         "product_guids": [
             "c3b61ddb-4d2d-497c-b873-28938036b67b"
         ],
@@ -67087,7 +67314,9 @@
             "_mitreAttackTechnique:T1098.003"
         ],
         "threat_ruleType": null,
-        "vendor_direct_ref": []
+        "vendor_direct_ref": [
+            "Microsoft"
+        ]
     },
     "MATCH-S00996": {
         "all_fields": [
@@ -67130,7 +67359,9 @@
         "normalized_signal_name": "Azure DevOps - Personal Access Token (PAT) Misuse Observed",
         "normalized_summary": "User: {{user_username}} Personal Access Token has been used suspiciously",
         "pattern_type": "templated_match",
-        "product_direct_ref": [],
+        "product_direct_ref": [
+            "Azure DevOps Auditing"
+        ],
         "product_guids": [
             "c3b61ddb-4d2d-497c-b873-28938036b67b"
         ],
@@ -67150,7 +67381,9 @@
             "_mitreAttackTechnique:T1496"
         ],
         "threat_ruleType": null,
-        "vendor_direct_ref": []
+        "vendor_direct_ref": [
+            "Microsoft"
+        ]
     },
     "MATCH-S00997": {
         "all_fields": [
@@ -67193,7 +67426,9 @@
         "normalized_signal_name": "Azure DevOps - Browser Observed in Personal Access Token (PAT) Use by {{user_username}}",
         "normalized_summary": "User: {{user_username}} has been observed using a PAT with a browser",
         "pattern_type": "templated_match",
-        "product_direct_ref": [],
+        "product_direct_ref": [
+            "Azure DevOps Auditing"
+        ],
         "product_guids": [
             "c3b61ddb-4d2d-497c-b873-28938036b67b"
         ],
@@ -67214,7 +67449,9 @@
             "_mitreAttackTactic:TA0006"
         ],
         "threat_ruleType": null,
-        "vendor_direct_ref": []
+        "vendor_direct_ref": [
+            "Microsoft"
+        ]
     },
     "MATCH-S00998": {
         "all_fields": [
@@ -67261,7 +67498,9 @@
         "normalized_signal_name": "Azure DevOps - ADOKit malicious tooling from IP: {{srcDevice_ip}}",
         "normalized_summary": "Detected use of malicious tooling ADOKit by User: {{user_username}} from IP: {{srcDevice_ip}}",
         "pattern_type": "templated_match",
-        "product_direct_ref": [],
+        "product_direct_ref": [
+            "Azure DevOps Auditing"
+        ],
         "product_guids": [
             "c3b61ddb-4d2d-497c-b873-28938036b67b"
         ],
@@ -67282,7 +67521,9 @@
             "_mitreAttackTactic:TA0009"
         ],
         "threat_ruleType": null,
-        "vendor_direct_ref": []
+        "vendor_direct_ref": [
+            "Microsoft"
+        ]
     },
     "MATCH-S00999": {
         "all_fields": [
@@ -69105,6 +69346,7 @@
             "23342262-740c-41b7-9b77-08267ae01612",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "37a906de-5e9c-475e-881a-65a1d984f377",
+            "3fac5918-eea5-4dc0-a5fe-6c94c1919482",
             "3fe1afe0-c1c2-45d6-835e-0bdb1e4b703f",
             "46c71698-9c21-4273-9561-94ff5af52edd",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
@@ -69388,6 +69630,7 @@
             "332856e9-3111-446f-8df7-e64694e4b9a1",
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "343b9323-d279-40d9-946f-809242e5cf98",
+            "37a906de-5e9c-475e-881a-65a1d984f377",
             "3fe1afe0-c1c2-45d6-835e-0bdb1e4b703f",
             "41f70c6e-18a9-462c-a04d-4edc7baead7a",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
@@ -69400,7 +69643,6 @@
             "A17B3F3C-04F1-40C8-9497-3C499EB18A74",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "a67d97fe-6e68-4cfb-9500-cfc5492da565",
-            "b0a0ae6d-dd5b-450c-9d68-36d6c61c67b0",
             "be4f7473-fe69-4311-8859-3561900060bf",
             "c3c1a4fc-10cc-4155-8a30-a3bb14fc9f31",
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
@@ -69414,9 +69656,7 @@
             "ede052db-d472-408f-949c-be642237ef3f",
             "fca8785d-4823-4442-86b2-8acbaa176da4"
         ],
-        "record_type_direct_ref": [
-            "Authentication"
-        ],
+        "record_type_direct_ref": [],
         "rule_source": "sumo",
         "score_expression": null,
         "score_mapping": {
@@ -69549,7 +69789,8 @@
             "da9e05a5-3fd3-46a7-a107-ae03c01e3f5a",
             "dcc85cfc-a698-4d09-87de-f2c723f3ad07",
             "e611250c-6b5f-4b40-b84b-329a1d5b391c",
-            "e90edc67-68d4-4d67-82f6-4524f94b59bb"
+            "e90edc67-68d4-4d67-82f6-4524f94b59bb",
+            "ec98f4a8-f961-4e5b-ad7c-dc3c64301f47"
         ],
         "record_type_direct_ref": [],
         "rule_source": "sumo",
@@ -69670,9 +69911,7 @@
             "ede052db-d472-408f-949c-be642237ef3f",
             "fca8785d-4823-4442-86b2-8acbaa176da4"
         ],
-        "record_type_direct_ref": [
-            "Authentication"
-        ],
+        "record_type_direct_ref": [],
         "rule_source": "sumo",
         "score_expression": null,
         "score_mapping": {
@@ -69911,9 +70150,7 @@
             "ede052db-d472-408f-949c-be642237ef3f",
             "fca8785d-4823-4442-86b2-8acbaa176da4"
         ],
-        "record_type_direct_ref": [
-            "Authentication"
-        ],
+        "record_type_direct_ref": [],
         "rule_source": "sumo",
         "score_expression": null,
         "score_mapping": {
@@ -70023,7 +70260,6 @@
             "B3582ED2-1A0C-452D-9802-97433D143486",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "afabb29d-e728-410f-b7c6-acfa9efbe1ed",
-            "b238758d-ade8-41d2-b32d-c99159e9fd74",
             "be4f7473-fe69-4311-8859-3561900060bf",
             "c2503fcc-ef30-4e40-bb32-0bf47151b140",
             "c3c1a4fc-10cc-4155-8a30-a3bb14fc9f31",
@@ -71267,7 +71503,9 @@
         "normalized_signal_name": "Claude Compliance API Logging Disabled by {{user_username}}",
         "normalized_summary": "Claude Compliance API Logging Disabled by {{user_username}} from IP {{device_ip}}",
         "pattern_type": "templated_match",
-        "product_direct_ref": [],
+        "product_direct_ref": [
+            "Claude Activity Logs"
+        ],
         "product_guids": [
             "8ad9c55c-1271-4e8a-a8ca-f1663051f4d1"
         ],
@@ -71290,7 +71528,9 @@
             "_mitreAtlasTechnique:AML.T0081"
         ],
         "threat_ruleType": null,
-        "vendor_direct_ref": []
+        "vendor_direct_ref": [
+            "Anthropic"
+        ]
     },
     "MATCH-S01156": {
         "all_fields": [
@@ -71331,7 +71571,9 @@
         "normalized_signal_name": "Claude {{action}} by {{user_username}}",
         "normalized_summary": "Claude {{action}} by {{user_username}} from IP {{device_ip}}",
         "pattern_type": "templated_match",
-        "product_direct_ref": [],
+        "product_direct_ref": [
+            "Claude Activity Logs"
+        ],
         "product_guids": [
             "8ad9c55c-1271-4e8a-a8ca-f1663051f4d1"
         ],
@@ -71355,7 +71597,9 @@
             "_mitreAtlasTechnique:AML.T0091.000"
         ],
         "threat_ruleType": null,
-        "vendor_direct_ref": []
+        "vendor_direct_ref": [
+            "Anthropic"
+        ]
     },
     "MATCH-S01157": {
         "all_fields": [
@@ -71396,7 +71640,9 @@
         "normalized_signal_name": "Claude Organization IP Restriction Deleted by {{user_username}}",
         "normalized_summary": "Claude Organization IP Restriction Deleted by {{user_username}} from IP {{device_ip}}",
         "pattern_type": "templated_match",
-        "product_direct_ref": [],
+        "product_direct_ref": [
+            "Claude Activity Logs"
+        ],
         "product_guids": [
             "8ad9c55c-1271-4e8a-a8ca-f1663051f4d1"
         ],
@@ -71419,7 +71665,9 @@
             "_mitreAtlasTechnique:AML.T0107"
         ],
         "threat_ruleType": null,
-        "vendor_direct_ref": []
+        "vendor_direct_ref": [
+            "Anthropic"
+        ]
     },
     "MATCH-S01158": {
         "all_fields": [
@@ -71946,15 +72194,13 @@
             "http_url_fqdn",
             "http_url_rootDomain",
             "srcDevice_ip",
-            "threat_name",
-            "threat_ruleType",
             "user_username"
         ],
         "category": "Exfiltration",
-        "commit_message": "Normalize empty rule mappings to [] (#6044)",
-        "commit_origin_hash": "c4e87c752086838070825c3633ca98f67b015fa4",
+        "commit_message": "TLAB-2646 match rules (#6063)",
+        "commit_origin_hash": "eb50a846b73a2c501765d2b7b2fcc38c54288bed",
         "content_type": "RULE",
-        "description_expression": "Detection: This rule triggers when a single record contains both a DLP finding (threat_ruleType=data_protection, threat_category matching DLP, metadata_deviceEventId containing DLP, or dlp_rule_count > 0) AND a destination matching a known Generative AI domain or CASB category.\n\nScenario: An employee sends sensitive data (PII, credentials, source code) to a GenAI tool such as ChatGPT, Claude, Gemini, or Copilot. The DLP engine confirmed sensitive content and the destination URL confirms the GenAI service.\n\nRecommended Actions: Identify the user via user_username and host via srcDevice_ip. Review DLP finding details in threat_name and the fields bag. Check the destination URL. Determine if intentional exfiltration or accidental paste. Escalate if PHI, credentials, or source code confirmed.\n\nTuning Recommendations: Add sanctioned AI tools to approved_ai_tools match list to exclude enterprise Copilot/ChatGPT with built-in DLP. http_category = generative ai is the most durable condition \u2014 vendor-maintained CASB category.",
+        "description_expression": "Detection: This rule triggers when a single record contains both a Data Loss Prevention (DLP) finding and a write request (POST, PUT, PATCH, upload or edit) to a Generative AI (GenAI) destination, identified by domain list or Cloud Access Security Broker category.\n\nScenario: Employees or automated integrations may send sensitive data to GenAI tools through chat interfaces, direct API calls, or browser extensions, exposing personal data, credentials or source code outside the organization's control. This is a data governance risk, as many GenAI providers may retain or use submitted input for model training.\n\nRecommended Actions: Review the DLP finding details and identify which GenAI tool was used. Determine whether the activity was intentional or accidental, and escalate if credentials, protected health information, or source code are confirmed.\n\nTuning Recommendations: To exclude approved GenAI destinations, create a match list named allowed_ai_domains under Cloud SIEM > Match Lists, set its target column to Domain, and add the approved domains; this rule already excludes records that match it.",
         "enabled_by_default": true,
         "entity_selectors": [
             {
@@ -71970,226 +72216,14 @@
                 "expression": "device_hostname"
             }
         ],
-        "expression": "(threat_ruleType = 'data_protection'\n OR threat_category matches /(?i)^dlp/\n OR metadata_deviceEventId matches /(?i)dlp/\n OR fields['dlp_rule_count'] > 0)\nAND (http_url_rootDomain IN ('chatgpt.com', 'openai.com', 'claude.ai', 'anthropic.com', 'perplexity.ai', 'deepseek.com', 'grok.com', 'x.ai', 'midjourney.com', 'cursor.com', 'replit.com', 'cohere.com', 'mistral.ai', 'stability.ai', 'jasper.ai', 'poe.com', 'you.com', 'together.ai', 'groq.com')\n    OR http_url_fqdn matches /(?i)(gemini\\.google\\.com|copilot\\.microsoft\\.com|openai|anthropic|deepseek)/\n    OR http_category matches /(?i)generative.ai/\n    OR fields['appcategory'] matches /(?i)generative.ai/)",
+        "expression": "(threat_category matches /(?i)^dlp/\n OR metadata_deviceEventId matches /(?i)dlp/\n OR fields['dlp_rule_count'] > 0)\nAND (http_url_rootDomain IN ('chatgpt.com', 'openai.com', 'claude.ai', 'anthropic.com', 'perplexity.ai', 'deepseek.com', 'grok.com', 'x.ai', 'midjourney.com', 'cursor.com', 'replit.com', 'cohere.com', 'mistral.ai', 'stability.ai', 'jasper.ai', 'poe.com', 'you.com', 'together.ai', 'groq.com')\n    OR http_url_fqdn matches /(?i)(gemini\\.google\\.com|copilot\\.microsoft\\.com|openai|anthropic|deepseek)/\n    OR http_category matches /(?i)generative.ai/\n    OR fields['appcategory'] matches /(?i)generative.ai/)\nAND (http_method matches /(?i)^(post|put|patch)$/\n OR fields['activity'] matches /(?i)(upload|edit|post)/)\nAND NOT array_contains(listMatches, 'allowed_ai_domains')",
         "file_path": "rules_v3/Sensitive_Data_Exfiltration_to_Generative_AI_Tool.json",
         "id": 1164,
         "id_compiled": "MATCH-S01164",
         "is_prototype": false,
-        "name": "Sensitive Data Exfiltration to Generative AI Tool",
-        "name_expression": "DLP: {{threat_name}} to {{http_url_fqdn}}",
-        "normalized_description": "Detection: This rule triggers when a single record contains both a DLP finding (threat_ruleType=data_protection, threat_category matching DLP, metadata_deviceEventId containing DLP, or dlp_rule_count > 0) AND a destination matching a known Generative AI domain or CASB category.\n\nScenario: An employee sends sensitive data (PII, credentials, source code) to a GenAI tool such as ChatGPT, Claude, Gemini, or Copilot. The DLP engine confirmed sensitive content and the destination URL confirms the GenAI service.\n\nRecommended Actions: Identify the user via user_username and host via srcDevice_ip. Review DLP finding details in threat_name and the fields bag. Check the destination URL. Determine if intentional exfiltration or accidental paste. Escalate if PHI, credentials, or source code confirmed.\n\nTuning Recommendations: Add sanctioned AI tools to approved_ai_tools match list to exclude enterprise Copilot/ChatGPT with built-in DLP. http_category = generative ai is the most durable condition \u2014 vendor-maintained CASB category.",
-        "normalized_score_description": "Static: 4",
-        "normalized_score_possibilities": [
-            4
-        ],
-        "normalized_score_range": [
-            4,
-            4
-        ],
-        "normalized_score_type": "Static",
-        "normalized_signal_name": "DLP: {{threat_name}} to {{http_url_fqdn}}",
-        "normalized_summary": "DLP confirmed sensitive data ({{threat_name}}) sent to {{http_url_fqdn}} by {{user_username}} from {{srcDevice_ip}}",
-        "pattern_type": "templated_match",
-        "product_direct_ref": [],
-        "product_guids": [
-            "B3582ED2-1A0C-452D-9802-97433D143486"
-        ],
-        "record_type_direct_ref": [],
-        "rule_source": "sumo",
-        "score_mapping": {
-            "default": 4,
-            "field": null,
-            "mapping": [],
-            "type": "constant"
-        },
-        "silent_mode": true,
-        "stream": "record",
-        "summary_expression": "DLP confirmed sensitive data ({{threat_name}}) sent to {{http_url_fqdn}} by {{user_username}} from {{srcDevice_ip}}",
-        "tags": [
-            "_mitreAttackTactic:TA0010",
-            "_mitreAttackTechnique:T1567",
-            "_mitreAtlasTechnique:AML.T0024"
-        ],
-        "threat_ruleType": "data_protection",
-        "vendor_direct_ref": []
-    },
-    "MATCH-S01165": {
-        "all_fields": [
-            "baseImage",
-            "device_hostname",
-            "srcDevice_ip",
-            "user_username"
-        ],
-        "category": "Execution",
-        "commit_message": "Normalize empty rule mappings to [] (#6044)",
-        "commit_origin_hash": "c4e87c752086838070825c3633ca98f67b015fa4",
-        "content_type": "RULE",
-        "description_expression": "Detection: This rule triggers when a process matching a known local AI inference runtime is observed on an endpoint. Matched runtimes include Ollama, llama.cpp (all llama- prefixed binaries), Llamafile, LM Studio, GPT4All, vLLM, KoboldCpp, LocalAI, Whisper.cpp, ComfyUI, and Python-based text-generation-webui or Stable Diffusion WebUI.\n\nScenario: Local AI runtimes process data entirely on the endpoint, bypassing proxy, CASB, and DLP visibility. This rule provides inventory \u2014 answering which AI runtimes are running on corporate endpoints. It does not determine whether the runtime is sanctioned or malicious.\n\nRecommended Actions: Identify the host and user. Check which runtime via baseImage. Check commandLine for the model being loaded. Determine if the host is an approved ML workstation. Correlate with UC6 to check if the runtime is serving external connections.\n\nTuning Recommendations: Add approved ML workstations to sanctioned_ai_hosts match list. Add approved users to ai_approved_users match list. Suppress CI/CD service accounts.",
-        "enabled_by_default": true,
-        "entity_selectors": [
-            {
-                "entity_type": "_hostname",
-                "expression": "device_hostname"
-            },
-            {
-                "entity_type": "_username",
-                "expression": "user_username"
-            },
-            {
-                "entity_type": "_ip",
-                "expression": "srcDevice_ip"
-            }
-        ],
-        "expression": "baseImage matches /(?i)(ollama|llama-|llamafile|lmstudio|lm\\.studio|gpt4all|koboldcpp|local-?ai|whisper-server|comfyui)/ OR (baseImage matches /(?i)vllm/ AND NOT baseImage matches /(?i)svllm/) OR (baseImage matches /(?i)python/ AND commandLine matches /(?i)(text-generation|stable-diffusion)/) OR commandLine matches /(?i)(ollama\\s+(serve|run)|vllm\\.entrypoints)/",
-        "file_path": "rules_v3/AI_Inference_Runtime_Detected_on_Endpoint.json",
-        "id": 1165,
-        "id_compiled": "MATCH-S01165",
-        "is_prototype": false,
-        "name": "AI Inference Runtime Detected on Endpoint",
-        "name_expression": "AI Runtime: {{baseImage}} on {{device_hostname}}",
-        "normalized_description": "Detection: This rule triggers when a process matching a known local AI inference runtime is observed on an endpoint. Matched runtimes include Ollama, llama.cpp (all llama- prefixed binaries), Llamafile, LM Studio, GPT4All, vLLM, KoboldCpp, LocalAI, Whisper.cpp, ComfyUI, and Python-based text-generation-webui or Stable Diffusion WebUI.\n\nScenario: Local AI runtimes process data entirely on the endpoint, bypassing proxy, CASB, and DLP visibility. This rule provides inventory \u2014 answering which AI runtimes are running on corporate endpoints. It does not determine whether the runtime is sanctioned or malicious.\n\nRecommended Actions: Identify the host and user. Check which runtime via baseImage. Check commandLine for the model being loaded. Determine if the host is an approved ML workstation. Correlate with UC6 to check if the runtime is serving external connections.\n\nTuning Recommendations: Add approved ML workstations to sanctioned_ai_hosts match list. Add approved users to ai_approved_users match list. Suppress CI/CD service accounts.",
-        "normalized_score_description": "Static: 2",
-        "normalized_score_possibilities": [
-            2
-        ],
-        "normalized_score_range": [
-            2,
-            2
-        ],
-        "normalized_score_type": "Static",
-        "normalized_signal_name": "AI Runtime: {{baseImage}} on {{device_hostname}}",
-        "normalized_summary": "AI runtime {{baseImage}} detected on {{device_hostname}} ({{user_username}})",
-        "pattern_type": "templated_match",
-        "product_direct_ref": [],
-        "product_guids": [],
-        "record_type_direct_ref": [],
-        "rule_source": "sumo",
-        "score_mapping": {
-            "default": 2,
-            "field": null,
-            "mapping": [],
-            "type": "constant"
-        },
-        "silent_mode": true,
-        "stream": "record",
-        "summary_expression": "AI runtime {{baseImage}} detected on {{device_hostname}} ({{user_username}})",
-        "tags": [
-            "_mitreAttackTactic:TA0002",
-            "_mitreAttackTechnique:T1204.002"
-        ],
-        "threat_ruleType": null,
-        "vendor_direct_ref": []
-    },
-    "MATCH-S01166": {
-        "all_fields": [
-            "device_hostname",
-            "http_url_path",
-            "http_url_rootDomain",
-            "srcDevice_ip",
-            "user_username"
-        ],
-        "category": "Initial Access",
-        "commit_message": "Normalize empty rule mappings to [] (#6044)",
-        "commit_origin_hash": "c4e87c752086838070825c3633ca98f67b015fa4",
-        "content_type": "RULE",
-        "description_expression": "Detection: This rule triggers when a network request matches a known AI model repository domain with a model file extension in the URL path (.pkl, .pt, .pth, .bin, .gguf, .safetensors, .ckpt, .joblib, .onnx, .h5), or matches CDN/registry domains exclusively used for model file delivery (HuggingFace CDN, Ollama registry, Civitai download API).\n\nScenario: AI model files downloaded from public repositories represent a supply chain risk. Malicious actors have published weaponized models on HuggingFace (JFrog research: ~100 malicious models using pickle __reduce__) and typosquatted models (Mithril Security PoisonGPT). This rule provides visibility into which endpoints are pulling models from public sources.\n\nRecommended Actions: Identify who is downloading AI models via user_username and srcDevice_ip. Check the URL path for the specific model. For .pkl/.pt/.ckpt downloads, flag as higher risk (pickle-based, potential code execution). For .safetensors/.gguf/.onnx, lower risk (no code execution). Correlate with UC3 and UC4.\n\nTuning Recommendations: Sanctioned repos \u2014 if the org approves HuggingFace for ML teams, exclude by user match list. Suppress approved ML workstation hostnames.",
-        "enabled_by_default": true,
-        "entity_selectors": [
-            {
-                "entity_type": "_ip",
-                "expression": "srcDevice_ip"
-            },
-            {
-                "entity_type": "_username",
-                "expression": "user_username"
-            },
-            {
-                "entity_type": "_hostname",
-                "expression": "device_hostname"
-            }
-        ],
-        "expression": "(http_url_rootDomain IN ('huggingface.co', 'hf-mirror.com', 'modelscope.cn', 'download.pytorch.org', 'githubusercontent.com')\n  AND http_url_path matches /(?i)\\.(pkl|pt|pth|bin|gguf|safetensors|ckpt|joblib|onnx|h5)/)\nOR http_url_fqdn matches /(?i)(cdn-lfs.*\\.huggingface\\.co|cdn\\.hf\\.co|aws\\.cdn\\.hf\\.co)/\nOR http_url_rootDomain = 'registry.ollama.ai'\nOR (http_url_rootDomain = 'civitai.com' AND http_url_path LIKE '%/api/download/%')\nOR (http_url_rootDomain = 'kaggle.com' AND http_url_path LIKE '%/download%')",
-        "file_path": "rules_v3/AI_Model_Downloaded_from_Public_Repository.json",
-        "id": 1166,
-        "id_compiled": "MATCH-S01166",
-        "is_prototype": false,
-        "name": "AI Model Downloaded from Public Repository",
-        "name_expression": "AI Model Download: {{http_url_path}} from {{http_url_rootDomain}}",
-        "normalized_description": "Detection: This rule triggers when a network request matches a known AI model repository domain with a model file extension in the URL path (.pkl, .pt, .pth, .bin, .gguf, .safetensors, .ckpt, .joblib, .onnx, .h5), or matches CDN/registry domains exclusively used for model file delivery (HuggingFace CDN, Ollama registry, Civitai download API).\n\nScenario: AI model files downloaded from public repositories represent a supply chain risk. Malicious actors have published weaponized models on HuggingFace (JFrog research: ~100 malicious models using pickle __reduce__) and typosquatted models (Mithril Security PoisonGPT). This rule provides visibility into which endpoints are pulling models from public sources.\n\nRecommended Actions: Identify who is downloading AI models via user_username and srcDevice_ip. Check the URL path for the specific model. For .pkl/.pt/.ckpt downloads, flag as higher risk (pickle-based, potential code execution). For .safetensors/.gguf/.onnx, lower risk (no code execution). Correlate with UC3 and UC4.\n\nTuning Recommendations: Sanctioned repos \u2014 if the org approves HuggingFace for ML teams, exclude by user match list. Suppress approved ML workstation hostnames.",
-        "normalized_score_description": "Static: 2",
-        "normalized_score_possibilities": [
-            2
-        ],
-        "normalized_score_range": [
-            2,
-            2
-        ],
-        "normalized_score_type": "Static",
-        "normalized_signal_name": "AI Model Download: {{http_url_path}} from {{http_url_rootDomain}}",
-        "normalized_summary": "AI model file downloaded from {{http_url_rootDomain}} ({{http_url_path}}) by {{srcDevice_ip}}",
-        "pattern_type": "templated_match",
-        "product_direct_ref": [],
-        "product_guids": [
-            "af61d8a8-3eba-42fb-9f17-87443924f3f4"
-        ],
-        "record_type_direct_ref": [],
-        "rule_source": "sumo",
-        "score_mapping": {
-            "default": 2,
-            "field": null,
-            "mapping": [],
-            "type": "constant"
-        },
-        "silent_mode": true,
-        "stream": "record",
-        "summary_expression": "AI model file downloaded from {{http_url_rootDomain}} ({{http_url_path}}) by {{srcDevice_ip}}",
-        "tags": [
-            "_mitreAttackTactic:TA0001",
-            "_mitreAttackTechnique:T1105",
-            "_mitreAttackTechnique:T1195",
-            "_mitreAtlasTechnique:AML.T0010.003"
-        ],
-        "threat_ruleType": null,
-        "vendor_direct_ref": []
-    },
-    "MATCH-S01167": {
-        "all_fields": [
-            "baseImage",
-            "device_hostname",
-            "dstPort",
-            "fields['EventData.Initiated']",
-            "fields['Initiated']",
-            "srcDevice_ip",
-            "user_username"
-        ],
-        "category": "Discovery",
-        "commit_message": "Normalize empty rule mappings to [] (#6044)",
-        "commit_origin_hash": "c4e87c752086838070825c3633ca98f67b015fa4",
-        "content_type": "RULE",
-        "description_expression": "Detection: This rule triggers when a non-localhost source IP connects to a known AI inference runtime process on a known AI serving port. The Initiated field filters for inbound connections where available (Sysmon). For sources without the Initiated field (Carbon Black, CrowdStrike), the rule falls back to port + non-localhost matching.\n\nScenario: An AI runtime bound to the network and accepting external connections indicates unauthorized AI model hosting. CVE-2024-37032 (Probllama) found 1,000+ Ollama instances exposed to the internet with no authentication. This detection proves the runtime is serving, not just running locally.\n\nRecommended Actions: Identify the host running the runtime via device_hostname. Identify who connected via srcDevice_ip \u2014 is the source internal or external/internet? Check if the runtime is bound to 0.0.0.0 or a specific interface. Correlate with UC4 to confirm which runtime is running.\n\nTuning Recommendations: Add approved AI hosting endpoints to sanctioned_ai_hosts match list. srcDevice_ip != 127.0.0.1 is already in the expression. Port 8080/8000 may collide with non-AI services \u2014 mitigated by baseImage requirement.",
-        "enabled_by_default": true,
-        "entity_selectors": [
-            {
-                "entity_type": "_hostname",
-                "expression": "device_hostname"
-            },
-            {
-                "entity_type": "_ip",
-                "expression": "srcDevice_ip"
-            },
-            {
-                "entity_type": "_username",
-                "expression": "user_username"
-            }
-        ],
-        "expression": "(baseImage matches /(?i)(ollama|llama-server|llama-rpc|llamafile|koboldcpp|local-?ai|whisper-server|comfyui)/\n OR baseImage matches /(?i)vllm/\n OR (baseImage matches /(?i)python/ AND dstPort IN (8080, 8000, 7860, 8188, 5001)))\nAND dstPort IN (11434, 1234, 8080, 8000, 5001, 7860, 8188, 1337)\nAND srcDevice_ip != '127.0.0.1'\nAND (fields['Initiated'] = 'false' OR fields['EventData.Initiated'] = 'false' OR fields['Initiated'] IS NULL)",
-        "file_path": "rules_v3/External_Connection_to_Local_AI_Inference_Runtime.json",
-        "id": 1167,
-        "id_compiled": "MATCH-S01167",
-        "is_prototype": false,
-        "name": "External Connection to Local AI Inference Runtime",
-        "name_expression": "External Connection to {{baseImage}} on {{device_hostname}} from {{srcDevice_ip}}",
-        "normalized_description": "Detection: This rule triggers when a non-localhost source IP connects to a known AI inference runtime process on a known AI serving port. The Initiated field filters for inbound connections where available (Sysmon). For sources without the Initiated field (Carbon Black, CrowdStrike), the rule falls back to port + non-localhost matching.\n\nScenario: An AI runtime bound to the network and accepting external connections indicates unauthorized AI model hosting. CVE-2024-37032 (Probllama) found 1,000+ Ollama instances exposed to the internet with no authentication. This detection proves the runtime is serving, not just running locally.\n\nRecommended Actions: Identify the host running the runtime via device_hostname. Identify who connected via srcDevice_ip \u2014 is the source internal or external/internet? Check if the runtime is bound to 0.0.0.0 or a specific interface. Correlate with UC4 to confirm which runtime is running.\n\nTuning Recommendations: Add approved AI hosting endpoints to sanctioned_ai_hosts match list. srcDevice_ip != 127.0.0.1 is already in the expression. Port 8080/8000 may collide with non-AI services \u2014 mitigated by baseImage requirement.",
+        "name": "Sensitive Data Sent to Generative AI Tool",
+        "name_expression": "Sensitive Data Sent to {{http_url_fqdn}}",
+        "normalized_description": "Detection: This rule triggers when a single record contains both a Data Loss Prevention (DLP) finding and a write request (POST, PUT, PATCH, upload or edit) to a Generative AI (GenAI) destination, identified by domain list or Cloud Access Security Broker category.\n\nScenario: Employees or automated integrations may send sensitive data to GenAI tools through chat interfaces, direct API calls, or browser extensions, exposing personal data, credentials or source code outside the organization's control. This is a data governance risk, as many GenAI providers may retain or use submitted input for model training.\n\nRecommended Actions: Review the DLP finding details and identify which GenAI tool was used. Determine whether the activity was intentional or accidental, and escalate if credentials, protected health information, or source code are confirmed.\n\nTuning Recommendations: To exclude approved GenAI destinations, create a match list named allowed_ai_domains under Cloud SIEM > Match Lists, set its target column to Domain, and add the approved domains; this rule already excludes records that match it.",
         "normalized_score_description": "Static: 3",
         "normalized_score_possibilities": [
             3
@@ -72199,11 +72233,13 @@
             3
         ],
         "normalized_score_type": "Static",
-        "normalized_signal_name": "External Connection to {{baseImage}} on {{device_hostname}} from {{srcDevice_ip}}",
-        "normalized_summary": "External connection from {{srcDevice_ip}} to AI runtime {{baseImage}} on {{device_hostname}}:{{dstPort}}",
+        "normalized_signal_name": "Sensitive Data Sent to {{http_url_fqdn}}",
+        "normalized_summary": "Sensitive data sent to {{http_url_fqdn}} by {{user_username}} from {{srcDevice_ip}}",
         "pattern_type": "templated_match",
         "product_direct_ref": [],
-        "product_guids": [],
+        "product_guids": [
+            "B3582ED2-1A0C-452D-9802-97433D143486"
+        ],
         "record_type_direct_ref": [],
         "rule_source": "sumo",
         "score_mapping": {
@@ -72212,14 +72248,85 @@
             "mapping": [],
             "type": "constant"
         },
-        "silent_mode": true,
+        "silent_mode": false,
         "stream": "record",
-        "summary_expression": "External connection from {{srcDevice_ip}} to AI runtime {{baseImage}} on {{device_hostname}}:{{dstPort}}",
+        "summary_expression": "Sensitive data sent to {{http_url_fqdn}} by {{user_username}} from {{srcDevice_ip}}",
         "tags": [
-            "_mitreAttackTactic:TA0007",
-            "_mitreAttackTechnique:T1219",
-            "_mitreAttackTechnique:T1571",
-            "_mitreAtlasTechnique:AML.T0011"
+            "_mitreAttackTactic:TA0010",
+            "_mitreAttackTechnique:T1567"
+        ],
+        "threat_ruleType": null,
+        "vendor_direct_ref": []
+    },
+    "MATCH-S01166": {
+        "all_fields": [
+            "device_hostname",
+            "http_url_fqdn",
+            "http_url_path",
+            "http_url_rootDomain",
+            "srcDevice_ip",
+            "user_username"
+        ],
+        "category": "Initial Access",
+        "commit_message": "TLAB-2646 match rules (#6063)",
+        "commit_origin_hash": "eb50a846b73a2c501765d2b7b2fcc38c54288bed",
+        "content_type": "RULE",
+        "description_expression": "Detection: This rule triggers when a network request names an AI model file extension (.pkl, .pt, .pth, .bin, .gguf, .safetensors, .ckpt, .joblib, .onnx, .h5) on a known model repository host, fetches a content-addressed object from a model repository content delivery network, or pulls from a model registry or download endpoint.\n\nScenario: Models pulled from public repositories can carry executable payloads, and attackers have published weaponized models and typosquatted names to reach organizations that adopt them. This rule shows which endpoints are pulling models from public sources.\n\nRecommended Actions: Identify the user and host that fetched the object and whether it was part of an approved workflow. Check the repository and file name where the path names one.\n\nTuning Recommendations: To exclude approved model sources, create a match list named allowed_ai_domains under Cloud SIEM > Match Lists, set its target column to Domain, and add the approved domains; this rule already excludes records that match it.",
+        "enabled_by_default": true,
+        "entity_selectors": [
+            {
+                "entity_type": "_ip",
+                "expression": "srcDevice_ip"
+            },
+            {
+                "entity_type": "_username",
+                "expression": "user_username"
+            },
+            {
+                "entity_type": "_hostname",
+                "expression": "device_hostname"
+            }
+        ],
+        "expression": "(\n  (\n    http_url_rootDomain IN ('huggingface.co', 'hf-mirror.com', 'modelscope.cn', 'pytorch.org', 'githubusercontent.com')\n    AND http_url_path matches /(?i)\\.(pkl|pt|pth|bin|gguf|safetensors|ckpt|joblib|onnx|h5)(\\?|$)/\n    AND NOT http_url_path matches /(?i)(\\/coremldata\\.bin|\\.index\\.json)(\\?|$)/\n  )\n  OR (\n    http_url_fqdn matches /(?i)(cdn-lfs.*\\.huggingface\\.co|cdn\\.hf\\.co|aws\\.cdn\\.hf\\.co)/\n    AND http_url_path matches /(?i)^\\/(xet-bridge(-[a-z0-9-]+)?\\/[0-9a-f]+|xorbs\\/[a-z0-9_-]+)\\/[0-9a-f]{32,64}(\\?.*)?$/\n  )\n  OR http_url_rootDomain = 'registry.ollama.ai'\n  OR (http_url_rootDomain = 'civitai.com' AND http_url_path LIKE '%/api/download/%')\n  OR (http_url_rootDomain = 'kaggle.com' AND http_url_path LIKE '%/download%')\n)\nAND NOT array_contains(listMatches, 'allowed_ai_domains')",
+        "file_path": "rules_v3/AI_Model_Downloaded_from_Public_Repository.json",
+        "id": 1166,
+        "id_compiled": "MATCH-S01166",
+        "is_prototype": false,
+        "name": "AI Model Downloaded from Public Repository",
+        "name_expression": "AI Model Downloaded from {{http_url_fqdn}}",
+        "normalized_description": "Detection: This rule triggers when a network request names an AI model file extension (.pkl, .pt, .pth, .bin, .gguf, .safetensors, .ckpt, .joblib, .onnx, .h5) on a known model repository host, fetches a content-addressed object from a model repository content delivery network, or pulls from a model registry or download endpoint.\n\nScenario: Models pulled from public repositories can carry executable payloads, and attackers have published weaponized models and typosquatted names to reach organizations that adopt them. This rule shows which endpoints are pulling models from public sources.\n\nRecommended Actions: Identify the user and host that fetched the object and whether it was part of an approved workflow. Check the repository and file name where the path names one.\n\nTuning Recommendations: To exclude approved model sources, create a match list named allowed_ai_domains under Cloud SIEM > Match Lists, set its target column to Domain, and add the approved domains; this rule already excludes records that match it.",
+        "normalized_score_description": "Static: 1",
+        "normalized_score_possibilities": [
+            1
+        ],
+        "normalized_score_range": [
+            1,
+            1
+        ],
+        "normalized_score_type": "Static",
+        "normalized_signal_name": "AI Model Downloaded from {{http_url_fqdn}}",
+        "normalized_summary": "AI model downloaded from {{http_url_fqdn}} by {{user_username}} from {{srcDevice_ip}}",
+        "pattern_type": "templated_match",
+        "product_direct_ref": [],
+        "product_guids": [
+            "af61d8a8-3eba-42fb-9f17-87443924f3f4"
+        ],
+        "record_type_direct_ref": [],
+        "rule_source": "sumo",
+        "score_mapping": {
+            "default": 1,
+            "field": null,
+            "mapping": [],
+            "type": "constant"
+        },
+        "silent_mode": false,
+        "stream": "record",
+        "summary_expression": "AI model downloaded from {{http_url_fqdn}} by {{user_username}} from {{srcDevice_ip}}",
+        "tags": [
+            "_mitreAttackTactic:TA0001",
+            "_mitreAttackTechnique:T1195",
+            "_mitreAtlasTactic:AML.TA0004",
+            "_mitreAtlasTechnique:AML.T0010.003"
         ],
         "threat_ruleType": null,
         "vendor_direct_ref": []
@@ -75079,6 +75186,7 @@
             "5bb9e0b3-8d57-4b10-8952-0b6ffe91b599",
             "6299d728-14f7-455e-85c5-ea8ec65a654a",
             "6787d77a-1ee0-43d4-8ca0-96af8ee755bc",
+            "6802abc5-262a-4f1c-9d6f-45c847db5bc5",
             "74662794-d8de-42ec-b504-cc0bccfaddd9",
             "798f8da8-c85b-4e9a-b2f1-eae0b07532fb",
             "991a55cf-8c5a-49ba-ae72-6f64a002bacf",
@@ -75264,8 +75372,8 @@
             "5bb9e0b3-8d57-4b10-8952-0b6ffe91b599",
             "6299d728-14f7-455e-85c5-ea8ec65a654a",
             "6787d77a-1ee0-43d4-8ca0-96af8ee755bc",
+            "6802abc5-262a-4f1c-9d6f-45c847db5bc5",
             "724c9add-8cd9-4013-b9e1-a907b96da426",
-            "991a55cf-8c5a-49ba-ae72-6f64a002bacf",
             "9a28f2af-5526-414d-973b-c3fc7984b8a1",
             "9e0641a7-22ce-4ac8-8113-ee48b368ac3d",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
@@ -76852,7 +76960,11 @@
             "dcc85cfc-a698-4d09-87de-f2c723f3ad07",
             "ef11c9cd-df72-42c6-81f5-70b91fd0f38a"
         ],
-        "record_type_direct_ref": [],
+        "record_type_direct_ref": [
+            "Network",
+            "NetworkFlow",
+            "NetworkHTTP"
+        ],
         "rule_source": "sumo",
         "score": 1,
         "stream": "record",
@@ -77077,6 +77189,7 @@
         "pattern_type": "threshold",
         "product_direct_ref": [],
         "product_guids": [
+            "1768a42a-37e6-4a2b-aa42-314583f63e1b",
             "37C866BF-72E1-470A-9072-EDB908F56951",
             "43808f4c-15e9-480c-ab1a-38bdef3b6798",
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
@@ -77427,6 +77540,7 @@
             "3382523e-2072-41bd-b50b-6b148957d0b0",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
             "6299d728-14f7-455e-85c5-ea8ec65a654a",
+            "724c9add-8cd9-4013-b9e1-a907b96da426",
             "a1225af5-e778-4068-a9a2-47da93d1ff24",
             "be4f7473-fe69-4311-8859-3561900060bf",
             "c3c1a4fc-10cc-4155-8a30-a3bb14fc9f31",
@@ -78084,9 +78198,7 @@
         "normalized_signal_name": "Password Attack from Host",
         "normalized_summary": "Password attack from host: {{srcDevice_hostname}}",
         "pattern_type": "threshold",
-        "product_direct_ref": [
-            "Azure"
-        ],
+        "product_direct_ref": [],
         "product_guids": [
             "0b45ccba-20b4-41e4-973d-b50fd291944d",
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
@@ -78123,9 +78235,7 @@
             "_mitreAttackTechnique:T1110.001"
         ],
         "threat_ruleType": null,
-        "vendor_direct_ref": [
-            "Microsoft"
-        ],
+        "vendor_direct_ref": [],
         "window": "24h"
     },
     "THRESHOLD-S00096": {
@@ -78190,9 +78300,7 @@
         "normalized_signal_name": "Brute Force Attempt",
         "normalized_summary": "Multiple failed login attempts for user: {{user_username}}",
         "pattern_type": "threshold",
-        "product_direct_ref": [
-            "Azure"
-        ],
+        "product_direct_ref": [],
         "product_guids": [
             "033624b0-218e-4dcb-b93f-0f1fb1806c56",
             "0472f22e-e3fa-4c9f-a529-8355f671927e",
@@ -78230,6 +78338,7 @@
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",
             "d3606245-76d3-4173-a2fe-832c0e71b0f9",
             "d3ed003d-5ddd-4c7a-bea5-63eae6311833",
+            "d7718485-f90e-4335-ae02-60a6001d4af4",
             "e43ba0e4-1e3f-40c6-8bca-cb06a656a40b",
             "e73cd65a-7a4b-4ce9-9d73-e5d9c824c214",
             "ebb99eec-3585-4673-ac0f-676632a78305",
@@ -78255,9 +78364,7 @@
             "_mitreAttackTechnique:T1110.001"
         ],
         "threat_ruleType": null,
-        "vendor_direct_ref": [
-            "Microsoft"
-        ],
+        "vendor_direct_ref": [],
         "window": "24h"
     },
     "THRESHOLD-S00097": {
@@ -78417,7 +78524,6 @@
             "0b45ccba-20b4-41e4-973d-b50fd291944d",
             "0e20c932-d992-4bd4-b276-c15119ca5c0b",
             "153794da-09e8-48fe-b511-1306fbb94d07",
-            "1ed80351-d779-4f1f-9ddb-b3881f19d487",
             "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "37a906de-5e9c-475e-881a-65a1d984f377",
             "46f5fa2c-1a62-4692-82ad-ed87800a0adb",
@@ -79484,7 +79590,9 @@
         "normalized_signal_name": "Multiple Azure Firewall Deny Events for IP",
         "normalized_summary": "Multiple Azure Firewall Deny Events from {{srcDevice_ip}}",
         "pattern_type": "threshold",
-        "product_direct_ref": [],
+        "product_direct_ref": [
+            "Azure"
+        ],
         "product_guids": [
             "a1225af5-e778-4068-a9a2-47da93d1ff24"
         ],
@@ -79547,7 +79655,9 @@
         "normalized_signal_name": "Multiple Azure Firewall Deny Events for URL",
         "normalized_summary": "Multiple Azure Firewall Deny Events for {{http_url}}",
         "pattern_type": "threshold",
-        "product_direct_ref": [],
+        "product_direct_ref": [
+            "Azure"
+        ],
         "product_guids": [
             "a1225af5-e778-4068-a9a2-47da93d1ff24"
         ],
@@ -79686,9 +79796,7 @@
         "normalized_signal_name": "Password Attack from IP",
         "normalized_summary": "Password attack from IP: {{srcDevice_ip}}",
         "pattern_type": "threshold",
-        "product_direct_ref": [
-            "Azure"
-        ],
+        "product_direct_ref": [],
         "product_guids": [
             "033624b0-218e-4dcb-b93f-0f1fb1806c56",
             "05bfaf47-5e21-4d5f-b724-98960a6fca8a",
@@ -79748,9 +79856,7 @@
             "_mitreAttackTechnique:T1110.001"
         ],
         "threat_ruleType": null,
-        "vendor_direct_ref": [
-            "Microsoft"
-        ],
+        "vendor_direct_ref": [],
         "window": "24h"
     },
     "THRESHOLD-S00124": {
@@ -79795,7 +79901,9 @@
         "normalized_signal_name": "AWS Bedrock - Rapid Guardrail Interventions",
         "normalized_summary": "Rapid AWS Bedrock Guardrail interventions have been triggered  for {{user_username}}",
         "pattern_type": "threshold",
-        "product_direct_ref": [],
+        "product_direct_ref": [
+            "CloudWatch"
+        ],
         "product_guids": [
             "b57c366d-e6a5-4e61-b950-5686a902bc24"
         ],
@@ -79811,7 +79919,9 @@
             "_mitreAtlasTechnique:AML.T0054"
         ],
         "threat_ruleType": null,
-        "vendor_direct_ref": [],
+        "vendor_direct_ref": [
+            "Amazon AWS"
+        ],
         "window": "CUSTOM",
         "window_size": 60000
     },
@@ -80108,6 +80218,7 @@
         "product_direct_ref": [],
         "product_guids": [
             "12d00042-d90d-4055-a171-01a1f635a613",
+            "1ff7546c-cb36-4a24-87f7-89d2cecc5761",
             "60829f4a-7acb-47d1-ad23-8424fcf83dcb",
             "7eaa4c44-5b7f-4d9e-8c1c-c4105c2b7506",
             "c57e2c85-4fc1-4fb7-8fa1-dbc5235231ad",

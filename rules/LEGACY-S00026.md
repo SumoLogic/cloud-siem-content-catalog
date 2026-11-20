@@ -27,6 +27,7 @@ DNS lookup of a high entropy domain name, which may be indicative of a domain ge
 - [ISC - Bind](../products/1768a42a-37e6-4a2b-aa42-314583f63e1b.md)
 - [Infoblox - Network Identity Operating System](../products/43808f4c-15e9-480c-ab1a-38bdef3b6798.md)
 - [Jamf - Jamf](../products/5c2cc0de-ca31-4ef0-bcfa-133fc8b387ad.md)
+- [Microsoft - Azure](../products/a1225af5-e778-4068-a9a2-47da93d1ff24.md)
 - [Microsoft - DNS](../products/e362ae18-9af1-496d-9ace-efa05a8381c6.md)
 - [Microsoft - Windows](../products/1ff7546c-cb36-4a24-87f7-89d2cecc5761.md)
 - [Mimecast - Mimecast](../products/54B36B3F-A63F-4BA4-9DE4-02DBF69A429F.md)
