@@ -16,6 +16,7 @@ This signal looks for HTTP requests where the user agent matches common names as
 |Prototype|False|
 |Tags|_mitreAttackTactic:TA0002, _mitreAttackTactic:TA0040, _mitreAttackTechnique:T1496, _mitreAttackTechnique:T1071.001, _mitreAttackTechnique:T1071|
 ## Vendors and Products
+- [Akamai - CPC](../products/6802abc5-262a-4f1c-9d6f-45c847db5bc5.md)
 - [Akamai - SIEM](../products/9a28f2af-5526-414d-973b-c3fc7984b8a1.md)
 - [Akamai - Web Application Firewall](../products/ae07663e-2c2c-4932-be5d-c9f985e95276.md)
 - [Amazon AWS - Application Load Balancer](../products/5bb9e0b3-8d57-4b10-8952-0b6ffe91b599.md)

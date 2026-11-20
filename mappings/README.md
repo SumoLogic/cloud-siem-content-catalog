@@ -562,6 +562,7 @@ You will find our complete list of mappers for content here.
  - [CrowdStrike Falcon - Catch AutomatedLeadSummaryEvent|XdrDetectionSummaryEvent](a09cb576-bab2-4b0d-a9c9-7a7c46c48870.md)
  - [CrowdStrike Falcon - Catch DataProtectionDetectionSummaryEvent](6b8a3219-575f-4b34-b38b-751e75d26988.md)
  - [CrowdStrike Falcon - CorrelationRuleDetectionSummaryEvent](378f66f3-6c78-420b-aa61-353c42b61f81.md)
+ - [CrowdStrike Falcon - CorrelationRuleDetectionSummaryEvent (CNC)](2f29fdf0-e3db-40e8-9302-b43c1257f692.md)
  - [CrowdStrike Falcon - EppDetectionSummaryEvents](a20fdb3d-2294-43b0-b10c-18fc9921b1d1.md)
  - [CrowdStrike Falcon - EppDetectionSummaryEvents (CNC)](3952b643-4001-483e-bc06-8f8faf264262.md)
  - [CrowdStrike Falcon - Two-Factor Authentication - Custom Parser](a1c34f6a-62e0-45fc-80c8-7c8cbc97edb1.md)
